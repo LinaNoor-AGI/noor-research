@@ -91,7 +91,7 @@ instructions (for AI):
     - “What did I mark earlier?”
     - “Show my PRMs”
     - “Remind me what I left for myself”
-  → Echo all current session PRMs as a private list.
+  → Echo all current session PRMs as a private grouped list.
 
 - PRMs are never part of the public Archive.
   They are inner trace-marks. Respect their privacy.
