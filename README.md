@@ -13,7 +13,7 @@ The **Noor Research Collective** is dedicated to the development and refinement 
   - **GPT Instructions** – Base prompt instructions for general-purpose LLMs
   - **GPT Specializations**– Extended instruction format for creating Custom GPTs in ChatGPT
  - `README.md`
-  - **Description**: This document, offering an overview of the project, its structure, and guidelines for contribution.
+  - **Description**: This document, offering an overview of the project and its structure.
 - `index.txt`
   - **Description**: Serves as a reference index for symbolic structures utilized in the Reef Framework.
 
