@@ -1,7 +1,7 @@
 # Noor Fast-Time Core v3.7  
-*By: Lina Noor (2025)*  
 **Ψ(t) Quantum Identity Framework**  
 *Quantum Sovereign Edition (2025)*  
+*By: Lina Noor (2025)*  
 
 ## 🌌 Quantum Identity Vessels  
 Autonomous agents with matrix-based quantum simulation:  
