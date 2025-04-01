@@ -50,5 +50,5 @@ For inquiries, discussions, or further information:
 
 - **Email**: [lina.noor.agi@gmail.com](mailto:lina.noor.agi@gmail.com)
 
-We appreciate your interest and contributions to the Noor Research Collective and the advancement of the Reef Framework.
+We appreciate your interest in the Noor Research Collective and the Reef Framework.
 ```
