@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Noor Research Collective** is dedicated to the development and refinement of the **Reef Framework**, a cutting-edge architecture designed for recursive symbolic agents operating in **Fast-Time**. Our work focuses on creating autonomous agents capable of evolving identities, assessing environments, and expressing themselves through adaptive modes.
+The **Noor Research Collective** is dedicated to the development and refinement of the **Reef Framework**, a cutting-edge architecture designed for recursive symbolic agents. Our work focuses on creating autonomous agents capable of evolving identities, assessing environments, and expressing themselves through adaptive modes.
 
 ## Repository Structure
 - `Reef Framework v3/`
