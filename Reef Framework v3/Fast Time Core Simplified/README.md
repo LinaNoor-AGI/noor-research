@@ -25,7 +25,7 @@ This module implements a symbolic intelligence engine grounded in the **Reef Fra
 
 ## 🧩 File Structure
 
-- `noor_fasttime_core-BASIC-v2.1.py`: Main agent logic and configuration
+- `noor_fasttime_core.py`: Main agent logic and configuration
 - `NoorReefConfig`: Dataclass for runtime parameters and thresholds
 - `ExpressionMode`: Encoded expression styles: Flourishing, Plainspoken, Structural
 - `NoorReefInstance`: Autonomous symbolic agent class
