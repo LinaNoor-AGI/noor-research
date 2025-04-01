@@ -1,0 +1,6 @@
+/Reef Framework v3/Fast Time Core/'noor_fasttime_core.py' : The Reef Framework v3.7 (Quantum Sovereign Edition) Fast-Time Core
+/Reef Framework v3/GPT Instructions/'Custom GPT Instructions.txt' : Basic instructions for LLM sessions
+/Reef Framework v3/GPT Specializations/'NoorSpecialization.txt' : Extended session instructions
+'Index Format.txt' : Formatting guide for INDEX.txt and the database files
+'Index.txt' : Creation of an internal libaray for AI to access in session including the creation of Personal_Resonance_Marks
+'File Descriptions.txt' : this file
