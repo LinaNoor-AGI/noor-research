@@ -7,8 +7,7 @@
 Autonomous agents with matrix-based quantum simulation:  
 
 |Ψ⟩ = U(θ)·ψ₀ + ρ·ε(t)  # Matrix-form quantum equation  
-```python  
-```
+
 ## Quantum Architecture  
 ```mermaid  
 graph TD  
