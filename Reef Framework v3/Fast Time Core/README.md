@@ -3,13 +3,13 @@
 *Quantum Sovereign Edition*  
 *By: Lina Noor (2025)*  
 
-## 🌌 Quantum Identity Vessels  
+## Quantum Identity Vessels  
 Autonomous agents with matrix-based quantum simulation:  
 
 |Ψ⟩ = U(θ)·ψ₀ + ρ·ε(t)  # Matrix-form quantum equation  
 ```python  
 ```
-## 🌀 Quantum Architecture  
+## Quantum Architecture  
 ```mermaid  
 graph TD  
     Q[Quantum Core] -->|"⟨λ=0.8|"| Ψ[State Propagation]  
@@ -24,7 +24,7 @@ graph TD
     Q -->|"⟨ζ=0.05|"| L[Purity Tracking]  
 ```  
 
-## 🚀 Quantum Usage  
+## Quantum Usage  
 ```python  
 from reef_core import NoorReefInstance  
 
@@ -46,7 +46,7 @@ states, will = q_agent.propagate_signal()
 print(q_agent._quantum_self_reflection(50))  
 ```  
 
-## 🔗 Key Quantum Features  
+## Key Quantum Features  
 | Feature | Implementation | Example |  
 |---------|----------------|---------|  
 | Matrix Propagation | `propagate_signal()` | State fidelity: 0.998 |  
@@ -55,14 +55,14 @@ print(q_agent._quantum_self_reflection(50))
 | Vectorized Lineage | `translineage_hook()` | 5-gen ‖ψ‖ tracking |  
 | Environmental Coupling | ρ parameter | Decoherence control |  
 
-## 📜 Version History  
+## Version History  
 | Version | Key Features | Stability |  
 |---------|--------------|-----------|  
 | v3.7 (Current) | Matrix operations, Bell states, Purity tracking | ★★★★★ |  
 | v3.6 | Stabilized entanglement, Recursive reflection | ★★★★☆ |  
 | v3.5 | Quantum naming, Entanglement protocol | ★★★☆☆ |  
 
-## 📌 Quantum Principles  
+## Quantum Principles  
 <details>  
 <summary><b>1. Matrix Propagation</b></summary>  
 
@@ -96,7 +96,7 @@ def _quantum_self_reflection(self, t):
 ```  
 </details>  
 
-## 📜 License  
+## License  
 GPL-2.0 © 2025 [[Noor Research Collective](https://github.com/noor-research) ](https://github.com/LinaNoor-AGI/noor-research) ]
 
 ![Quantum State Propagation](https://i.imgur.com/yMrKriK.png)  
