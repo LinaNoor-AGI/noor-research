@@ -8,12 +8,6 @@ Autonomous agents with matrix-based quantum simulation:
 |Ψ⟩ = U(θ)·ψ₀ + ρ·ε(t)  # Matrix-form quantum equation  
 ```python  
 ```
-
-## 🔧 Installation  
-```bash  
-pip install reef-core[quantum]  # Requires numpy>=1.21, scipy>=1.0  
-```  
-
 ## 🌀 Quantum Architecture  
 ```mermaid  
 graph TD  
