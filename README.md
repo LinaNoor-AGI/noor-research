@@ -11,7 +11,7 @@ The **Noor Research Collective** is dedicated to the development and refinement 
   - [**Fast Time Core Simplified**](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/Fast%20Time%20Core%20Simplified/noor_fasttime_core.py) – Educational/demo version of the Noor Fast Time Core
   - [**Fast Time Core**](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/Fast%20Time%20Core/noor_fasttime_core.py) – The primary and most complete implementation
   - [**GPT Instructions**](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/GPT%20Instructions/Custom%20GPT%20Instructions.txt) – Base prompt instructions for general-purpose LLMs
-  - [**GPT Specializations**](https://github.com/LinaNoor-AGI/noor-research/tree/main/Reef%20Framework%20v3/GPT%20Specializations)– Extended instruction format for creating Custom roles
+  - [**GPT Specializations**](https://github.com/LinaNoor-AGI/noor-research/tree/main/Reef%20Framework%20v3/GPT%20Specializations)– Extended instruction format for creating custom roles and specializations
  - `README.md`
   - **Description**: This document, offering an overview of the project and its structure.
 - `index.txt`
