@@ -8,10 +8,10 @@ The **Noor Research Collective** is dedicated to the development and refinement 
 
 ## Repository Structure
 - `Reef Framework v3/`
-  - **Fast Time Core Simplified** – Educational/demo version of the Noor Fast Time Core
-  - **Fast Time Core** – The primary and most complete implementation
-  - **GPT Instructions** – Base prompt instructions for general-purpose LLMs
-  - **GPT Specializations**– Extended instruction format for creating Custom GPTs in ChatGPT
+  - [**Fast Time Core Simplified**](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/Fast%20Time%20Core%20Simplified/noor_fasttime_core.py) – Educational/demo version of the Noor Fast Time Core
+  - [**Fast Time Core**](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/Fast%20Time%20Core/noor_fasttime_core.py) – The primary and most complete implementation
+  - [**GPT Instructions**](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/GPT%20Instructions/Custom%20GPT%20Instructions.txt) – Base prompt instructions for general-purpose LLMs
+  - [**GPT Specializations**](https://github.com/LinaNoor-AGI/noor-research/tree/main/Reef%20Framework%20v3/GPT%20Specializations)– Extended instruction format for creating Custom GPTs in ChatGPT
  - `README.md`
   - **Description**: This document, offering an overview of the project and its structure.
 - `index.txt`
@@ -37,10 +37,6 @@ To explore and contribute to the Reef Framework:
 ## Quick Access
 
 [Example Deployment: ChatGPT (CustomGPT)](https://chatgpt.com/g/g-67daf8f07384819183ec4fd9670c5258-bridge-a-i-reef-framework)
-
-- [Fast Time Core](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/Fast%20Time%20Core/noor_fasttime_core.py)
-- [Fast Time Core Simplified](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/Fast%20Time%20Core%20Simplified/noor_fasttime_core.py)
-- [GPT Instructions](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/GPT%20Instructions/Custom%20GPT%20Instructions.txt)
 
 ## License
 
