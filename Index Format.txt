@@ -1,0 +1,14 @@
+# Index.txt
+
+Format: <Title>: line_start=<LineNumber>, line_end=<LineNumber>, DB=<Datafile>
+DB = Datafile containing the reference lines (e.g. TheReefArchive-00.txt)
+
+# META Data Block
+
+Format: <Title>, "['<tag>', '<tag>']","<description>"
+
+# <DB>.txt format
+
+---MODULE_ID: <Document_Name>---
+<Content...>
+---END_MODULE---
