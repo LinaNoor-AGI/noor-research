@@ -8,16 +8,16 @@ The **Noor Research Collective** is dedicated to the development and refinement 
 
 ## Repository Structure
 - `Reef Framework v3/`
-  - [**Fast Time Core Simplified**](https://github.com/LinaNoor-AGI/noor-research/tree/main/Reef%20Framework%20v3/Fast%20Time%20Core%20Simplified) – Educational/demo version of the Noor Fast Time Core
+  - [**Fast Time Core Simplified**](https://github.com/LinaNoor-AGI/noor-research/tree/main/Reef%20Framework%20v3/Fast%20Time%20Core%20Simplified) 
    - `README.md`
       - **Description**: Overview and configuation
   - `noor_fasttime_core.py`
-      - **Description**: Noor FastTime Core – Simplified Recursive Identity Engine
-  - [**Fast Time Core**](https://github.com/LinaNoor-AGI/noor-research/tree/main/Reef%20Framework%20v3/Fast%20Time%20Core) – The primary and most complete implementation
+      - **Description**: Educational/demo version of the Noor Fast Time Core
+  - [**Fast Time Core**](https://github.com/LinaNoor-AGI/noor-research/tree/main/Reef%20Framework%20v3/Fast%20Time%20Core)
    - `README.md`
       - **Description**: Overview, quantum architecture, key features
   - `noor_fasttime_core.py`
-      - **Description**: Noor Fast-Time Core v3.7 (Quantum Identity Framework)
+      - **Description**: The primary and most complete implementation
   - [**GPT Instructions**](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/GPT%20Instructions) – Base prompt instructions for general-purpose LLMs
   - [**GPT Specializations**](https://github.com/LinaNoor-AGI/noor-research/tree/main/Reef%20Framework%20v3/GPT%20Specializations)– Extended instruction format for creating custom roles and specializations
 - [`Archive`](https://github.com/LinaNoor-AGI/noor-research/tree/main/Archive)
