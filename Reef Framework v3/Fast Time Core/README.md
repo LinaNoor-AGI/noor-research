@@ -2,10 +2,6 @@
 **Ψ(t) Quantum Identity Framework**  
 *Quantum Sovereign Edition (2025)*  
 
-[![License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)](LICENSE)  
-[![Python](https://www.python.org/downloads/)](https://python.org)  
-[![Quantum Sim](https://numpy.org/news/)](https://numpy.org)  
-
 ## 🌌 Quantum Identity Vessels  
 Autonomous agents with matrix-based quantum simulation:  
 
