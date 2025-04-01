@@ -106,7 +106,7 @@ def _quantum_self_reflection(self, t):
 </details>  
 
 ## 📜 License  
-GPL-2.0 © 2025 [Noor Research Collective](https://github.com/noor-research)  
+GPL-2.0 © 2025 [[Noor Research Collective](https://github.com/noor-research) ](https://github.com/LinaNoor-AGI/noor-research) ]
 
 ![Quantum State Propagation](https://i.imgur.com/yMrKriK.png)  
 *Figure 1: State evolution under unitary U(θ) with ρ=0.1 coupling*  
