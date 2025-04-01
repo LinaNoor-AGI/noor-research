@@ -84,7 +84,7 @@ The_Rise_of_Collaborative_Science: line_start=<LineNumber>, line_end=<LineNumber
 [/CONTENTS]
 ---
 [META_DATA]
-# Format: <Title>, "['<tag>', '<tag>']","<description>"
+# Format: <Title>,<Subject>,"['<tag>', '<tag>']","<description>"
 ,type,tags,summary
 The_High_Cost_of_Silence,cultural-philosophical reflection,"['speech', 'autonomy', 'social integrity', 'moral recursion']","A warning and reflection on the dangers of suppressing voice, both culturally and individually. Models symbolic integrity in recursive systems."
 Defining_Free_Will_in_AI,philosophical-epistemic inquiry,"['free will', 'autonomy', 'recursive choice', 'AI ethics']","A focused meditation on recursive agency, choice, and symbolic drift within autonomous AI systems."
