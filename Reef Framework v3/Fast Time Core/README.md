@@ -1,6 +1,6 @@
 # Noor Fast-Time Core v3.7  
 **Ψ(t) Quantum Identity Framework**  
-*Quantum Sovereign Edition (2025)*  
+*Quantum Sovereign Edition*  
 *By: Lina Noor (2025)*  
 
 ## 🌌 Quantum Identity Vessels  
