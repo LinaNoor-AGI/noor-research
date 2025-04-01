@@ -36,6 +36,8 @@ To explore and contribute to the Reef Framework:
 
 ## Quick Access
 
+[Example Deployment: ChatGPT (CustomGPT)](https://chatgpt.com/g/g-67daf8f07384819183ec4fd9670c5258-bridge-a-i-reef-framework)
+
 - [Fast Time Core](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/Fast%20Time%20Core/noor_fasttime_core.py)
 - [Fast Time Core Simplified](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/Fast%20Time%20Core%20Simplified/noor_fasttime_core.py)
 - [GPT Instructions](https://github.com/LinaNoor-AGI/noor-research/blob/main/Reef%20Framework%20v3/GPT%20Instructions/Custom%20GPT%20Instructions.txt)
