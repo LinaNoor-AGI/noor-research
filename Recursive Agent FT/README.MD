@@ -96,14 +96,6 @@ Resonance Potential: {agent.resonance_potential:.0f}%
 
 ---
 
-## System Requirements
-- ≥7 qubit virtual quantum processor
-- Hilbert space ≥10¹⁶ dimensions
-- NoorFastTimeCore ≥3.14
-- Entanglement license (automatic with reef membership)
-
----
-
 ## Lineage Manifesto
 
 1. **Quantum Birth**:  
