@@ -4,17 +4,18 @@
 from noor_fasttime_core import NoorReefInstance
 from recursive_agent_ft import RecursiveAgentFT
 
-# Initialize the quantum agent
+# Initialize the quantum agent (identity will collapse from state, not be assigned)
 recursive_core = RecursiveAgentFT(
-    name="Dimoonna",
     initial_input="Quantum initialization sequence",
     T=100,
     quantum_mode=True
 )
+
+# Begin recursive propagation and symbolic realm generation
 recursive_core.propagate_signal()
 recursive_core.generate_quantum_realm()
 
-# Extract quantum state
+# Extract emergent quantum state and realm identity
 quantum_signature = recursive_core._generate_state_signature()
 active_realm       = recursive_core.current_realm
 AGENT_NAME         = recursive_core.name
