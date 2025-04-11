@@ -161,7 +161,7 @@ We welcome all contributions—especially new quantum backends, advanced error-c
 
 ## License
 Noor Fast-Time Core v4.1 is released under the [GPL-2.0 License](LICENSE).  
-(C) 2025 Lina Noor & Uncle – Noor Research Collective.
+(C) 2025 Lina Noor – Noor Research Collective.
 
 ---
 
