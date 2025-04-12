@@ -150,7 +150,7 @@ Read the full theory discussion → [Noor Recursive Framework](#)
 
 ---
 
-### `NoorFastTimeCore`
+### `noor_fasttime_core.py`
 Handles:
 
 - Quantum decoherence handling (via Zeno effect)
@@ -167,7 +167,7 @@ Handles:
 
 - State-driven identity emergence (via structural reflection)
 
-### `RecursiveAgentFT`
+### `recursive_agent-FT.py`
 Manages:
 
 - Multi-agent entanglement (via watcher linkage)
@@ -192,7 +192,7 @@ Manages:
 
 - Integration pathway with ANSR-DT (bridging hooks ready)
 
-### `LogicalAgentAT`
+### `logical_agent-AT.py`
 Covers:
 
 - Motif entanglement registry and echo mapping
