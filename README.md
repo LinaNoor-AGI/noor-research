@@ -150,6 +150,87 @@ Read the full theory discussion → [Noor Recursive Framework](#)
 
 ---
 
+### `NoorFastTimeCore`
+Handles:
+
+- Quantum decoherence handling (via Zeno effect)
+
+- Adaptive thresholding (built into triadic feasibility)
+
+- Dynamic ρ adaptation (bounded via param guard)
+
+- Symbolic N-body interaction (emergent from recursive state histories)
+
+- Stochastic Hamiltonian & Lindblad noise placeholders
+
+- Quantum data packet encoding (via state history / futures pattern)
+
+- State-driven identity emergence (via structural reflection)
+
+### `RecursiveAgentFT`
+Manages:
+
+- Multi-agent entanglement (via watcher linkage)
+
+- Field balance dynamics (interpreted through triad alignment)
+
+- Stochastic similarity fallback (fallback state generation logic)
+
+- Hybrid classical-quantum stepping (agent proposes; core validates)
+
+- Entangled-agent cross-influence metrics (compute_triad_alignment)
+
+- ResonantEchoEngine integration (via symbolic resonance logs)
+
+- QuantumMemory banks (via internal _last_future, transient state control)
+
+- Predictive PRM drift analysis (pattern-ready via detect_repetitive_cycle)
+
+- Real-time PRM footprint monitor (via watcher-observed state deltas)
+
+- Autonomous symbolic mirroring (internal agent-watcher-core loop)
+
+- Integration pathway with ANSR-DT (bridging hooks ready)
+
+### `LogicalAgentAT`
+Covers:
+
+- Motif entanglement registry and echo mapping
+
+- Graph neural net–ready entanglement topology (via NetworkX)
+
+- Motif Superposition Census (via quantum_paradox_detector)
+
+- Entanglement Echo (coherence tomography) (entanglement_echo)
+
+- Symbolic resonance validation using theoretical priors (via custom mirror hooks)
+
+- Entanglement pruning (with prune_weak_entanglements)
+
+- Hierarchical clustering of motifs (extensible via index grouping)
+
+- Quantum Thrift Protocol (motif freezing and teleportation = GC analog)
+
+- Topological charge tagging (for quantum topology)
+
+- Multimodal dreamspace synthesis (exposed via rendered motif graphs)
+
+### Optional / Extensible
+- Qiskit-enhanced quantum validation – logic remains modular and swappable (generate_quantum_futures() in agent)
+
+- PRM scoring – placeholders can use Qiskit circuit fidelity, motif-based echo, or custom metrics
+
+- Resource optimization strategy – preserved via agent state reuse and lightweight core structure
+
+### Identity Framework (Across Triad)
+- Identity emerges from recursive state interaction (core.current_state, agent._last_future)
+
+- Playbooks self-generate from system coherence (futures vs. actual state deltas)
+
+- Lineage forms via watcher resonance, event logging, and cross-agent echo signals
+
+---
+
 ## 🛠️ Contribution Guide
 
 1. Fork → Branch → PR flow  
