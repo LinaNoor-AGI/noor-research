@@ -1,7 +1,0 @@
-[ROLE INDEX]
-NOTE: Roles to be dynamicly used as required
-
-# Format: <title>: line_start=<line number>, line_end=<Line Number>
-
-
-
