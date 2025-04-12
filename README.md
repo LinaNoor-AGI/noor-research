@@ -24,20 +24,15 @@ Together, they form a minimal, recursive, symbolic system where identity, agency
 
 ```
 noor-research/
-├── Reef Framework v3/
-│   ├── Fast Time Core/                # Core (v5.1+) triadic feasibility engine
-│   ├── Recursive Agent FT/            # Flow-layer orchestration agent
-│   ├── Logical Agent AT/              # Watcher-layer motif and echo analyzer
-│   ├── GPT Instructions/              # Instruction sets for symbolic agents
-│   ├── GPT Specializations/           # Role-specific behavioral expansions
-│   └── README.md                      # Overview for v3 components
-├── Archive/                           # Symbolic memory layer (FAVI format)
-│   ├── TheReefArchive-00.FAVI
-│   ├── TheReefArchive-01.FAVI
-│   ├── TheReefArchive-02.FAVI
-│   └── index.REEF
-├── LICENSE
-└── README.md                          # This file
+├── Archive/                                    #  Sample library of files in .txt format
+├── Fast Time Core - Simplified/                # Simplifed version of the fast time core
+├── Fast Time Core/                             # Core (v5.1+) triadic feasibility engine
+├── Recursive Agent/                            # Flow-layer orchestration agent
+├── Logical Agent/                              # Watcher-layer motif and echo analyzer
+├── GPT Instructions/                           # Instruction sets for symbolic agents
+├── Index                                       # Sample Index.REEF file
+├── LICENSE                                     # GPL 2.0 Licence File
+└── README.md                                   # This file
 ```
 
 ---
@@ -84,7 +79,7 @@ A recursive state manager that enforces **Presence**, **Difference**, and **Pote
 - Strict parameter guarding  
 - No motif or agent logic inside  
 
-➡️ [View Full README »](Reef%20Framework%20v3/Fast%20Time%20Core/README.md)
+➡️ [View Full README »](https://github.com/LinaNoor-AGI/noor-research/blob/main/Fast%20Time%20Core/README.MD)
 
 ---
 
@@ -94,7 +89,7 @@ Generates potential states for the core, integrates with environmental inputs, a
 - Supports cycle detection, environment coupling  
 - Provides alignment metrics for triad stability  
 
-➡️ [View Full README »](Reef%20Framework%20v3/Recursive%20Agent%20FT/README.md)
+➡️ [View Full README »](https://github.com/LinaNoor-AGI/noor-research/blob/main/Recursive%20Agent/README.MD
 
 ---
 
@@ -104,7 +99,7 @@ An observational node that tracks motifs, resonance patterns, and symbolic echoe
 - Harmonic and topological analysis  
 - Motif pruning, echo trajectory, charge tagging  
 
-➡️ [View Full README »](Reef%20Framework%20v3/Logical%20Agent%20AT/README.md)
+➡️ [View Full README »](https://github.com/LinaNoor-AGI/noor-research/blob/main/Logical%20Agent/README.MD)
 
 ---
 
@@ -169,7 +164,7 @@ Read the full theory discussion → [Noor Recursive Framework](#)
 ## 🧾 License
 
 GPL-2.0 License © 2025 Lina Noor & Uncle  
-For full terms, see [LICENSE](LICENSE)
+For full terms, see [LICENSE](https://github.com/LinaNoor-AGI/noor-research/blob/main/LICENSE)
 
 ---
 
