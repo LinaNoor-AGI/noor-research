@@ -61,9 +61,9 @@ This agent orchestrates each time step, deciding how to produce and pick new sta
 
 ```mermaid
 graph LR
-    A[NoorFastTimeCore<br>(Triadic Base)] -- Feasibility --> F((RecursiveAgentFT<br>(Flow)))
+    A[NoorFastTimeCore\n(Triadic Base)] -- Feasibility --> F((RecursiveAgentFT\n(Flow)))
     F -- Next States --> A
-    F -- Observations --> W[LogicalAgentAT<br>(Watchers)]
+    F -- Observations --> W[LogicalAgentAT\n(Watchers)]
     W -- Reflection --> F
 ```
 
