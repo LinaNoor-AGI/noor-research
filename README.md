@@ -231,7 +231,7 @@ Covers:
 
 ---
 
-## 🛠️ Contribution Guide
+## Contribution Guide
 
 1. Fork → Branch → PR flow  
 2. Maintain triadic separation:  
