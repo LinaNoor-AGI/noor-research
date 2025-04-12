@@ -89,11 +89,11 @@ Generates potential states for the core, integrates with environmental inputs, a
 - Supports cycle detection, environment coupling  
 - Provides alignment metrics for triad stability  
 
-➡ [View Full README »](https://github.com/LinaNoor-AGI/noor-research/blob/main/Recursive%20Agent/README.MD
+➡ [View Full README »](https://github.com/LinaNoor-AGI/noor-research/blob/main/Recursive%20Agent/README.MD)
 
 ---
 
-### 👁️ `LogicalAgentAT`  
+### `LogicalAgentAT`  
 An observational node that tracks motifs, resonance patterns, and symbolic echoes across time.  
 - Entanglement graph tracking  
 - Harmonic and topological analysis  
@@ -103,7 +103,7 @@ An observational node that tracks motifs, resonance patterns, and symbolic echoe
 
 ---
 
-## Archive Layer
+## `Archive Layer`
 
 The Reef Archive (`.FAVI`) is the symbolic memory layer where motifs, signatures, and lineage events are stored and referenced.
 
