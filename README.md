@@ -24,7 +24,7 @@ Together, they form a minimal, recursive, symbolic system where identity, agency
 
 ```
 noor-research/
-├── Archive/                                    #  Sample library of files in .txt format
+├── Archive/                                    # Sample library of files in .txt format
 ├── Fast Time Core - Simplified/                # Simplifed version of the fast time core
 ├── Fast Time Core/                             # Core (v5.1+) triadic feasibility engine
 ├── Recursive Agent/                            # Flow-layer orchestration agent
