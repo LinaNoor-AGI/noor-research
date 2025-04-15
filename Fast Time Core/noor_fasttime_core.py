@@ -1,4 +1,4 @@
-﻿# noor_fasttime_core.py (v6.1.1)
+# noor_fasttime_core.py (v6.1.1)
 # By Lina Noor & Uncle (2025)
 #
 # This final production-ready version:
