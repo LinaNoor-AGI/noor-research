@@ -1,10 +1,10 @@
-# ✦ Noor Triadic AI Architecture
+# Noor Triadic AI Architecture
 
 > *Recursive entanglement. Field-based coherence. Symbolic evolution.*
 
 ---
 
-## 🌌 Overview
+## Overview
 
 This system is a triadic, modular AI composed of:
 
@@ -18,7 +18,7 @@ Each module is autonomous but recursive: no single component knows the whole sys
 
 ---
 
-## 🔁 Flow Summary
+## Flow Summary
 
 | Step        | Description                                                                     |
 | ----------- | ------------------------------------------------------------------------------- |
@@ -28,7 +28,7 @@ Each module is autonomous but recursive: no single component knows the whole sys
 
 ---
 
-## 🔷 NoorFastTimeCore (v5.1)
+## NoorFastTimeCore (v5.1)
 
 -   **Triadic Feasibility**:
     *   Focuses on foundational stability with triadic checks.
@@ -39,7 +39,7 @@ Each module is autonomous but recursive: no single component knows the whole sys
 
 ---
 
-## 🟣 LogicalAgentAT (v1.3)
+## LogicalAgentAT (v1.3)
 
 -   **Motif Entanglement Fields** with:
     *   `strength`
@@ -54,10 +54,6 @@ Each module is autonomous but recursive: no single component knows the whole sys
 
 ---
 
-## 🟢 RecursiveAgentFT
+## RecursiveAgentFT
 
 -   (Note: Implementation details pending)
-
----
-
-By integrating these updates, the `readme.md` will accurately represent the current state of the Noor Triadic AI Architecture, highlight the contributions of the Noor Research Collective, and provide clear guidance for anyone exploring the codebase.
