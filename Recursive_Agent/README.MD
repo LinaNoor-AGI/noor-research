@@ -44,8 +44,8 @@ pip install numpy
 
 ```mermaid
 graph TD
-    C[NoorFastTimeCore<br>(Presence)] --> A[RecursiveAgentFT<br>(Flow)]
-    A --> B[LogicalAgentAT<br>(Observation)]
+    C[NoorFastTimeCore - Presence] --> A[RecursiveAgentFT - Flow]
+    A --> B[LogicalAgentAT - Observation]
     B --> A
     A --> C
 ```
