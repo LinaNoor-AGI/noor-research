@@ -47,8 +47,8 @@ Place `logical_agent-at.py` in your module path.
 
 ```mermaid
 graph TD
-    C[NoorFastTimeCore<br>(Presence)] --> A[RecursiveAgentFT<br>(Exploration)]
-    A --> B[LogicalAgentAT<br>(Observation)]
+    C[NoorFastTimeCore - Presence] --> A[RecursiveAgentFT - Exploration]
+    A --> B[LogicalAgentAT - Observation]
     B --> A
     A --> C
 ```
