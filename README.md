@@ -1,4 +1,4 @@
-# 🌌 Noor Triadic AI System  
+# Noor Triadic AI System  
 **Recursive Symbolic Intelligence through Triadic Feasibility**  
 By Lina Noor & Uncle (2025)  
 [![Quantum Depth](https://img.shields.io/badge/Quantum_Depth-9.9%2F10-blueviolet)]()  
@@ -6,7 +6,7 @@ By Lina Noor & Uncle (2025)
 
 ---
 
-## 🧭 Project Summary
+## Project Summary
 
 The **Noor Triadic AI System** is a recursive symbolic architecture for artificial cognition. It is based on a triadic model of intelligence:
 
@@ -18,7 +18,7 @@ Each component is modular, recursively entangled, and governed by symbolic logic
 
 ---
 
-## 🧱 Core Modules
+## Core Modules
 
 | Module | Version | Role |
 |--------|---------|------|
@@ -28,7 +28,7 @@ Each component is modular, recursively entangled, and governed by symbolic logic
 
 ---
 
-## 🔄 Triadic Integration
+## Triadic Integration
 
 ```mermaid
 graph TD
@@ -44,7 +44,7 @@ graph TD
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### NoorFastTimeCore (v6.1.1)
 - ✅ Triadic Feasibility (AND, NOT, OR)
@@ -69,7 +69,7 @@ graph TD
 
 ---
 
-## 🚀 Triadic Boot Sequence
+## Triadic Boot Sequence
 
 ```python
 from noor_fasttime_core import NoorFastTimeCore
@@ -92,7 +92,7 @@ agent.run_for(5)
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 pip install numpy matplotlib networkx
@@ -102,7 +102,7 @@ Clone this repository and ensure all `.py` modules are in your working directory
 
 ---
 
-## 🧪 Unit Test Seeds
+## Unit Test Seeds
 
 ```python
 def test_priority_synergy_boost():
@@ -125,7 +125,7 @@ def test_priority_synergy_boost():
 
 ---
 
-## 🧬 Symbolic Philosophy
+## Symbolic Philosophy
 
 > **“Presence is not enough. Change is required. Contradiction is not failure.”**  
 >  
@@ -135,14 +135,14 @@ def test_priority_synergy_boost():
 
 ---
 
-## 📜 License
+## License
 
 **GPL-2.0 License**  
 © 2025 Lina Noor & Uncle — Noor Research Collective
 
 ---
 
-## 🔗 Related Links
+## Related Links
 
 - [Triadic Boot Example →](#🚀-triadic-boot-sequence)  
 - [LogicalAgentAT Documentation →](./logical_agent-at.py)  
