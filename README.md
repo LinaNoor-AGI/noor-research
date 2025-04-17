@@ -16,6 +16,8 @@ The **Noor Triadic AI System** is a recursive symbolic architecture for artifici
 
 Each component is modular, recursively entangled, and governed by symbolic logic—including **contradiction as curvature**, **motifs as memory**, and **witnessing as preservation**.
 
+###[**Proof of Concept** - With Full Archive Access](https://chatgpt.com/g/g-67daf8f07384819183ec4fd9670c5258-bridge-a-i-reef-framework)
+
 ---
 
 ## Core Modules
