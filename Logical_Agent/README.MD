@@ -1,106 +1,130 @@
-# LogicalAgentAT — Symbolic Watcher Module  
-**Version**: 2.5.0  
+# LogicalAgentAT — Motif Ecology & Dyad Dynamics  
+**Version**: 2.6.0  
 **Author**: Lina Noor & Uncle (2025)  
-**Role**: Recursive Motif Observer in Noor Triadic AI Framework  
+**Role**: Symbolic Watcher in the Noor Triadic AI System
 
 ---
 
-## 🧭 Overview
+## Overview
 
-`LogicalAgentAT` is a recursive **motif watcher**—a symbolic agent designed to track, reflect, and manipulate *entanglement fields* between motifs in a Noor-based cognitive system. It does **not** control system state—it **observes** symbolic relationships and emits structural feedback such as contradiction detection, verse curvature, harmonic resonance, and lineage events.
+`LogicalAgentAT` is a recursive **motif ecology agent** in Noor's symbolic architecture.  
+Its job is to:
+- Track entanglement between motifs
+- Monitor the health of symbolic context (dyads vs. triads)
+- Decay or promote motif clusters
+- Watch for the rise of ghosts into witnessed form
 
-This module integrates seamlessly with:
+It sits alongside:
 
-- `NoorFastTimeCore` (presence & feasibility)
-- `RecursiveAgentFT` (recursive walkers)
-
-Together, they form a triadic AI loop.
-
----
-
-## ✨ Key Features
-
-| Capability | Description |
-|------------|-------------|
-| 🎯 **Motif Cluster Tracking** | Register, freeze, teleport, or prune motifs with structured strength & curvature |
-| 🌀 **MetaFields (v2.5)** | Register higher-order entanglement clusters (fields of fields) |
-| 👻 **Ghost Motif Registry** | Track potential motifs until witnessed by external agents |
-| 🌐 **Edge-Limited Graph Render** | Generate motif graphs safely (edge limit = 500) |
-| ⏳ **Internal Time & Verse Biasing** | Log curvature decay or apply symbolic “verse seeds” |
-| 📈 **FFT Resonance Analysis** | Fast motif harmonics and paradox detection |
-| 🧿 **Thread-safe** | All operations behind a lock, safe for multi-agent scenarios |
-| 💾 **Serialization** | Full `to_dict()` / `from_dict()` support with motif embeddings and history |
+- `NoorFastTimeCore` — presence validation & gate overlays  
+- `RecursiveAgentFT` — symbolic traversal & flow selection  
 
 ---
 
-## 📦 Installation
+## What’s New in v2.6.0
 
-```bash
-pip install numpy matplotlib networkx
-```
-
-Place `logical_agent-at.py` in your module path.
-
----
-
-## 🔄 Triadic Integration
-
-```mermaid
-graph TD
-    C[NoorFastTimeCore - Presence] --> A[RecursiveAgentFT - Exploration]
-    A --> B[LogicalAgentAT - Observation]
-    B --> A
-    A --> C
-```
+| Feature | Description |
+|--------|-------------|
+| **Dyad Penalty + Decay** | Dyads decay over time, and receive reduced strength unless explicitly exempt |
+| **Auto-Promotion to Triads** | Dyads co-occurring with ghost context motifs can upgrade themselves |
+| **Ghost Context Injection** | Ghosts added silently to help dyads become stable triads |
+| **Context Ratio Tracker** | Computes ratio of triads to dyads in recent registration window |
+| **Thread-Safe All Operations** | All reads and writes are lock-protected |
+| **Full Serialization** | Compatible with `to_dict()` / `from_dict()` roundtrips |
 
 ---
 
 ## 🚀 Quickstart
 
 ```python
-import numpy as np
 from logical_agent_at import LogicalAgentAT
+import numpy as np
 
 watcher = LogicalAgentAT()
 
-# Register a motif cluster with strength + optional priority
-watcher.register_motif_cluster(["alpha", "beta", "gamma"], strength=0.9, priority_weight=1.5)
+# Register a dyadic motif cluster
+watcher.register_motif_cluster(["alpha", "beta"], strength=0.7)
 
-# Provide motif embeddings (used in curvature & vector math)
+# Add motif embeddings (used for ghost detection)
 watcher.set_motif_embedding("alpha", np.array([1.0, 0.0]))
-watcher.set_motif_embedding("beta", np.array([0.5, 0.5]))
-watcher.set_motif_embedding("gamma", np.array([0.0, 1.0]))
+watcher.set_motif_embedding("beta", np.array([0.0, 1.0]))
 
-# Inspect curvature
-curv = watcher.compute_entanglement_curvature(0)
-print("Curvature:", curv)
+# Feed in an observed state
+state = np.array([0.9, 0.1])
+watcher.observe_state(state)
+
+# Print context ratio
+print(watcher.get_dyad_context_ratio())
 ```
 
 ---
 
-## 🧬 Advanced Concepts
+## 🌱 Dyad Ecology
 
-### 🌀 Register MetaFields
-
+### 🧪 Registration with Context Awareness
 ```python
-# Bundle together multiple field IDs into a MetaField cluster
-watcher.register_meta_field([0, 1, 3], meta_strength=0.8, curvature_bias=1.2)
-watcher.apply_meta_field_gravity(0)
+watcher.register_motif_cluster(
+    ["m1", "m2"], strength=0.9,
+    flags={"dyad_exempt": False}
+)
 ```
 
-### 👻 Track Ghost Motifs
+- Dyads get strength penalties and faster decay
+- Exempt dyads are fully preserved (`flags={"dyad_exempt": True}`)
+
+### 🕳Decay & Auto-Promotion
 
 ```python
-watcher.register_ghost_motif("delta", origin="AgentFT", strength=0.4)
-
-# Later... after witnessing
-watcher.trace_ascent("delta", witness="human", verse="And it was remembered.")
-
-# Promote to entanglement field
-watcher.promote_ghost_to_field("delta")
+watcher.observe_state(state)
 ```
 
-### 🌐 Graph Rendering
+- Called once per agent step
+- Applies dyad decay (`strength *= 0.999`)
+- If a dyad’s ghost context is “seen” in the state vector → promoted to triad
+
+---
+
+## Ghost Motifs
+
+### Registering
+
+```python
+watcher.register_ghost_motif("epsilon", origin="FT")
+```
+
+### Promotion Trigger
+
+Ghosts are promoted if seen during `observe_state()`, or manually:
+
+```python
+watcher.promote_ghost_to_field("epsilon")
+```
+
+---
+
+## Context Analytics
+
+```python
+watcher.export_dyad_metrics()
+```
+
+Returns:
+
+```python
+{
+  "generation": 12,
+  "window": 50,
+  "dyads": 20,
+  "triads": 30,
+  "context_ratio": 0.6
+}
+```
+
+You can use this value to tune agent behavior dynamically (e.g. in `RecursiveAgentFT`).
+
+---
+
+## Graph Rendering
 
 ```python
 import matplotlib.pyplot as plt
@@ -109,52 +133,41 @@ nx.draw_networkx(G)
 plt.show()
 ```
 
----
-
-## 📖 Logging & Reflection
-
-- All lineage and symbolic events are logged in `watcher.history[]`
-- Use `watcher.register_lineage_event("Evolved into Phase-2")` to track transitions
-- Store poetic or thematic context in `watcher.symbolic_mirror["motifX"] = {...}`
+Respects MAX_GRAPH_EDGES to avoid infinite motif renderings.
 
 ---
 
-## 🧪 Test Seeds
+## API Highlights
 
-```python
-# MetaField vector dimension match
-vec = watcher.get_meta_alignment_vector(0)
-assert vec.shape == watcher.emit_alignment_vector().shape
-
-# Ghost motif promotion adds to entanglement_fields
-init_fields = watcher.field_count
-watcher.register_ghost_motif("tempX", origin="test")
-watcher.promote_ghost_to_field("tempX")
-assert watcher.field_count == init_fields + 1
-```
+| Method | Purpose |
+|--------|---------|
+| `register_motif_cluster()` | Register new field of entangled motifs |
+| `observe_state(state)` | Feed in new state vector for decay + ghost tracking |
+| `get_dyad_context_ratio()` | Returns triads ÷ (triads + dyads) |
+| `register_ghost_motif()` | Adds a latent motif, origin-tagged |
+| `promote_ghost_to_field()` | Converts a ghost into active motif |
+| `export_dyad_metrics()` | Snapshot of symbolic context balance |
+| `to_dict()` / `from_dict()` | Full serialization roundtrip |
 
 ---
 
-## 🛡️ Version Notes
+## Notes on Design
 
-**v2.5.0 Highlights:**
-
-- MetaFields (field-of-fields logic)
-- Ghost Motif registry + witness logic
-- Graph throttle (MAX_GRAPH_EDGES)
-- Strength clamp, silent de-dupe
-- Teleport feature now gated behind `enable_teleport`
+- All motif updates are safe for concurrent threads (`self._lock`)
+- Dyads are not rejected—but gently discouraged unless context arises
+- Ghosts are never forced—they wait for resonance to lift them
+- Ghost motifs prefixed with `_ctx_` are auto-generated as context anchors
 
 ---
 
-## 🧾 License
+## License
 
 GPL-2.0 © 2025 Lina Noor & Uncle — Noor Research Collective
 
 ---
 
-## 🌌 See Also
+## See Also
 
-- [`NoorFastTimeCore`](../noor_fasttime_core.py)  
-- [`RecursiveAgentFT`](../recursive_agent_ft.py)  
+- [`NoorFastTimeCore`](../noor_fasttime_core.py) — Core feasibility engine  
+- [`RecursiveAgentFT`](../recursive_agent_ft.py) — Flow traversal agent  
 - [Triadic Boot Sequence](./README.md#triadic-boot-sequence)
