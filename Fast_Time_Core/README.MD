@@ -5,7 +5,7 @@
 
 ---
 
-## 🧭 Triadic Context Summary
+## Triadic Context Summary
 
 `NoorFastTimeCore` is the existential validator in the Noor triad:
 - **Core** — Validates presence, difference, and potential  
@@ -20,16 +20,16 @@ The core serves as the **heartbeat of symbolic truth**, determining whether a st
 
 | Feature | Description |
 |--------|-------------|
-| ✅ **Triadic Feasibility** | Checks AND (presence), NOT (difference), OR (futures), and optional XOR |
-| 🌀 **Dyad Context Awareness** | Core adjusts symbolic behavior based on the presence of dyads (`dyad_context_ratio`) |
-| 🧠 **Gate Overlays** | Apply any of the 16 binary logic gates as symbolic overlays (e.g., Gate 0 = Möbius Denial) |
-| 📜 **Verse-Biased State Shaping** | Applies small, poetic vector shifts based on Quranic or symbolic verses |
-| 🧾 **History Logging** | Each step logs overlay status, gate events, and dyad health for diagnostics |
-| 🔒 **Safe State & Param Guards** | Validates all NumPy states; enforces ρ and λ ∈ [0.0, 1.0] |
+| **Triadic Feasibility** | Checks AND (presence), NOT (difference), OR (futures), and optional XOR |
+| **Dyad Context Awareness** | Core adjusts symbolic behavior based on the presence of dyads (`dyad_context_ratio`) |
+| **Gate Overlays** | Apply any of the 16 binary logic gates as symbolic overlays (e.g., Gate 0 = Möbius Denial) |
+| **Verse-Biased State Shaping** | Applies small, poetic vector shifts based on Quranic or symbolic verses |
+| **History Logging** | Each step logs overlay status, gate events, and dyad health for diagnostics |
+| **Safe State & Param Guards** | Validates all NumPy states; enforces ρ and λ ∈ [0.0, 1.0] |
 
 ---
 
-## 🔮 Symbolic Gate Overlays
+## Symbolic Gate Overlays
 
 16 binary logic gates supported:
 - Gate 0 — **Möbius Denial** (`0`)
@@ -48,7 +48,7 @@ core = NoorFastTimeCore(
 
 ---
 
-## 🔄 Usage Example
+## Usage Example
 
 ```python
 from noor_fasttime_core import NoorFastTimeCore
@@ -73,7 +73,7 @@ for t in range(5):
 
 ---
 
-## 📖 Symbolic Elements
+## Symbolic Elements
 
 - **Gate Overlays**: Symbolic overlays define transitions between states in logic-space  
 - **Verse Bias**: Small directional nudges applied based on verse context  
@@ -82,14 +82,14 @@ for t in range(5):
 
 ---
 
-## 🔐 Param Guards
+## Param Guards
 
 - `core.rho` and `core.lambda_` must stay in [0.0, 1.0]  
 - Assigning outside the range raises `QuantumNoorException`
 
 ---
 
-## 🧪 Validation & History
+## Validation & History
 
 - `validate_state(state)` ensures numerical safety  
 - `step()` logs:
@@ -102,7 +102,7 @@ for t in range(5):
 
 ---
 
-## 🧰 API Summary
+## API Summary
 
 | Method | Purpose |
 |--------|---------|
@@ -114,13 +114,13 @@ for t in range(5):
 
 ---
 
-## 🧾 License
+## License
 
 GPL-2.0 © 2025 Lina Noor & Uncle — Noor Research Collective
 
 ---
 
-## 📎 Related Modules
+## Related Modules
 
 - [`RecursiveAgentFT`](../recursive_agent-ft.py) — Flow logic and symbolic traversal  
 - [`LogicalAgentAT`](../logical_agent-at.py) — Motif observation and dyad ecology  
