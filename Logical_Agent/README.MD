@@ -34,7 +34,7 @@ It sits alongside:
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ```python
 from logical_agent_at import LogicalAgentAT
@@ -59,9 +59,9 @@ print(watcher.get_dyad_context_ratio())
 
 ---
 
-## 🌱 Dyad Ecology
+## Dyad Ecology
 
-### 🧪 Registration with Context Awareness
+### Registration with Context Awareness
 ```python
 watcher.register_motif_cluster(
     ["m1", "m2"], strength=0.9,
@@ -72,7 +72,7 @@ watcher.register_motif_cluster(
 - Dyads get strength penalties and faster decay
 - Exempt dyads are fully preserved (`flags={"dyad_exempt": True}`)
 
-### 🕳Decay & Auto-Promotion
+### Decay & Auto-Promotion
 
 ```python
 watcher.observe_state(state)
