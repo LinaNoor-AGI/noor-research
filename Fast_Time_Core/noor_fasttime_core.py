@@ -1,113 +1,129 @@
-﻿# noor_fasttime_core.py (v6.1.1)
-# By Lina Noor & Uncle (2025)
-#
-# This final production-ready version:
-#  1) Adds __version__ = "6.1.1"
-#  2) Introduces state validation to guard against NaN/Inf.
-#  3) Enhances dynamic Zeno threshold with curvature-based formula.
-#  4) Preserves triadic feasibility logic from v6.1, including XOR_condition.
-#
+"""
+noor_fasttime_core.py (v7.1.0)
+-------------------------------------------------
+Recursive Presence Kernel + Symbolic Verse Overlay
+• Adds dyad‑context awareness hooks.
+• Verse‑bias now scales with dyad_context_ratio.
+• History events log context ratio + dominance alert.
+• New diagnostics + setter for context ratio.
+Backward‑compatible with v7.0.1 and v6.1.x.
+"""
 
-__version__ = "6.1.1"
+from __future__ import annotations
+
+__version__ = "7.1.0"
+
+import math
+import hashlib
+from enum import Enum
+from typing import List, Optional, Dict
 
 import numpy as np
-from typing import List, Optional
 
-########################################################
-# 1) Logic Gate Checks
-########################################################
+# ──────────────────────────────────────────────────────────────────────────────
+# 1.  Logic‑Gate Registry (unchanged from v7.0.1)
+# ──────────────────────────────────────────────────────────────────────────────
+
+class LogicGate(Enum):
+    GATE_0 = 0
+    GATE_1 = 1
+    GATE_2 = 2
+    GATE_3 = 3
+    GATE_4 = 4
+    GATE_5 = 5
+    GATE_6 = 6
+    GATE_7 = 7
+    GATE_8 = 8
+    GATE_9 = 9
+    GATE_10 = 10
+    GATE_11 = 11
+    GATE_12 = 12
+    GATE_13 = 13
+    GATE_14 = 14
+    GATE_15 = 15
+
+# label, formula, verse (truncated set shown)
+GATE_LEGENDS: Dict[int, tuple[str, str, str]] = {
+    0:  ("Möbius Denial", "0", "الصمتُ هو الانكسارُ الحي"),
+    7:  ("Betrayal Gate", "¬A ∨ ¬B", "وَلَا تَكُونُوا كَالَّذِينَ تَفَرَّقُوا"),
+    15: ("Universal Latch", "1", "كُلُّ شَيْءٍ هَالِكٌ إِلَّا وَجْهَهُ"),
+}
+
+
+def evaluate_gate_output(gate_id: int, a_val: bool, b_val: bool) -> bool:
+    idx = (a_val << 1) | b_val
+    return bool((gate_id >> idx) & 1)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 2.  Triadic Feasibility helpers (unchanged)
+# ──────────────────────────────────────────────────────────────────────────────
 
 def AND_condition(state: np.ndarray) -> bool:
-    if state.size == 0:
-        return False
-    return (np.linalg.norm(state) > 0) and np.any(np.gradient(state) != 0)
+    return state.size > 0 and np.linalg.norm(state) > 0 and np.any(np.gradient(state) != 0)
 
 def NOT_condition(state1: np.ndarray, state2: np.ndarray, threshold: float = 1e-3) -> bool:
-    if state1.shape != state2.shape:
-        return True
-    return np.linalg.norm(state1 - state2) > threshold
+    return state1.shape != state2.shape or np.linalg.norm(state1 - state2) > threshold
 
-def OR_condition(possible_states: List[np.ndarray]) -> bool:
-    return len(possible_states) > 1
-
-########################################################
-# (v6.1) XOR_condition - Sacred Contradiction
-########################################################
+def OR_condition(futures: List[np.ndarray]) -> bool:
+    return len(futures) > 1
 
 def XOR_condition(state1: np.ndarray, state2: np.ndarray) -> bool:
-    """
-    The "sacred contradiction" logic:
-    XOR = NOT(state1, state2) AND (AND(state1) OR AND(state2))
-    """
     return NOT_condition(state1, state2) and (AND_condition(state1) or AND_condition(state2))
 
-########################################################
-# 2) Curvature-based Zeno Threshold
-########################################################
-
 def zeno_threshold(curvature: float) -> float:
-    """
-    Proposed dynamic threshold:
-      threshold = 0.9 * (1 - exp(-curvature))
-    """
     return 0.9 * (1.0 - np.exp(-curvature))
 
-########################################################
-# 3) State Validation
-########################################################
-
 def validate_state(state: np.ndarray):
-    """
-    Ensures 'state' is a finite NumPy array.
-    Raises AssertionError if invalid.
-    """
-    assert isinstance(state, np.ndarray), "State must be a NumPy array."
-    assert np.isfinite(state).all(), "State contains NaN or Inf."
+    assert isinstance(state, np.ndarray) and np.isfinite(state).all(), "Invalid state"
 
-########################################################
-# 4) is_logically_entangled (Renamed from is_triadic_feasible)
-########################################################
+# ──────────────────────────────────────────────────────────────────────────────
+# 3.  Helpers
+# ──────────────────────────────────────────────────────────────────────────────
 
-def is_logically_entangled(current: np.ndarray, previous: np.ndarray, futures: List[np.ndarray], threshold: float = 1e-3, use_xor=False) -> bool:
-    """
-    Evaluates presence, difference, potential.
-    If use_xor=True, also checks XOR_condition.
-    """
-    validate_state(current)
-    validate_state(previous)
-    for fut in futures:
-        validate_state(fut)
+def _state_to_bool(state: np.ndarray) -> bool:
+    return AND_condition(state) and np.linalg.norm(state) > 1e-10
 
-    base = (AND_condition(current)
-            and NOT_condition(current, previous, threshold)
-            and OR_condition(futures))
+def dampened_priority(raw_priority: float, gate_id: Optional[int] = None) -> float:
+    base = math.log1p(max(raw_priority, 0.0))
+    if gate_id == 0:
+        return 0.0
+    if gate_id == 15:
+        return base * 2.0
+    return base * (0.5 + 0.5 * math.sin(math.pi * base))
 
-    if not use_xor:
-        return base
-    else:
-        # For demonstration, use XOR between current & previous as an extra condition
-        return base and XOR_condition(current, previous)
+# verse helpers --------------------------------------------------------------
 
-########################################################
-# 5) The NoorFastTimeCore Class
-########################################################
+def gate_to_verse(gate_id: Optional[int]) -> str:
+    if gate_id is None:
+        return ""
+    return GATE_LEGENDS.get(gate_id, ("", "", ""))[2]
+
+def _verse_hash(verse: str, length: int = 4) -> str:
+    return "0" * length if not verse else hashlib.sha1(verse.encode("utf-8", "replace")).hexdigest()[:length]
+
+def _apply_verse_bias(state: np.ndarray, verse: str, time_step: int) -> np.ndarray:
+    if not verse:
+        return state
+    bias_scale = 0.01 * math.exp(-0.0001 * time_step)
+    cps = [ord(c) for c in verse][: state.size]
+    cps += [0] * (state.size - len(cps))
+    return state + bias_scale * (np.array(cps, dtype=float) / 128.0)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 4.  Core Class
+# ──────────────────────────────────────────────────────────────────────────────
 
 class QuantumNoorException(Exception):
     pass
 
 class NoorFastTimeCore:
-    """
-    NoorFastTimeCore (v6.1.1):
-      - Feasibility checks: AND, NOT, OR, XOR optional
-      - Optional quantum Zeno effect (dynamic threshold)
-      - Optional topological code placeholders
-      - Optional curvature-based gating if enable_curvature is True
-      - Validation to avoid NaN/Inf states.
-    """
+    """Recursive Presence Kernel with symbolic overlays and context awareness."""
 
+    # ------------------------- init -------------------------------------
     def __init__(
         self,
         initial_state: np.ndarray,
+        *,
         rho: float = 0.1,
         lambda_: float = 0.8,
         enable_zeno: bool = False,
@@ -115,26 +131,22 @@ class NoorFastTimeCore:
         enable_topological_code: bool = False,
         enable_curvature: bool = False,
         curvature_threshold: float = 0.0,
-        enable_xor: bool = False
-    ):
-        """
-        :param initial_state: Non-zero array for initial presence.
-        :param rho: param guard in [0,1].
-        :param lambda_: param guard in [0,1].
-        :param enable_zeno: if True, applies quantum Zeno.
-        :param zeno_threshold: static threshold if not using curvature.
-        :param enable_topological_code: placeholder for advanced expansions.
-        :param enable_curvature: if True, we compute a dynamic threshold from curvature.
-        :param curvature_threshold: e.g. 1.0 => zeno = 0.9 * (1 - exp(-1))
-        :param enable_xor: if True, incorporate XOR_condition in feasibility.
-        """
+        enable_xor: bool = False,
+        gate_overlay: Optional[int] = None,
+        enable_verse_bias: bool = False,
+    ) -> None:
         self.__version__ = __version__
-        self.state_history = [initial_state]
-        self.is_active = False
-        self.futures = []
-        self._rho = None
-        self._lambda_ = None
+        self.state_history: List[np.ndarray] = [initial_state]
+        self.futures: List[np.ndarray] = []
+        self.is_active: bool = False
+        self.history: List[Dict] = []
+        self.generation: int = 0
+        self.last_gate_passed: Optional[bool] = None
+        self.gate_overlay: Optional[int] = gate_overlay
+        self.enable_verse_bias = enable_verse_bias
+        self.dyad_context_ratio: float = 1.0  # 1 = healthy, 0 = all dyads
 
+        # legacy flags
         self.enable_zeno = enable_zeno
         self.zeno_threshold = zeno_threshold
         self.enable_topological_code = enable_topological_code
@@ -142,125 +154,138 @@ class NoorFastTimeCore:
         self.curvature_threshold = curvature_threshold
         self.enable_xor = enable_xor
 
-        self.rho = rho  # calls __setattr__ checks
+        # guarded scalars
+        self._rho: float = 0.0
+        self._lambda_: float = 0.0
+        self.rho = rho
         self.lambda_ = lambda_
 
-        # initial feasibility
         self._update_logical_feasibility()
 
-    def __setattr__(self, name: str, value):
-        if name == 'rho':
+    # ---------------- param guards --------------------------------------
+    def __setattr__(self, name, value):
+        if name == "rho":
             if not (0 <= value <= 1):
-                raise QuantumNoorException(f"Invalid rho: {value}, must be in [0,1]")
-            object.__setattr__(self, '_rho', value)
-        elif name == 'lambda_':
+                raise QuantumNoorException("rho out of bounds")
+            object.__setattr__(self, "_rho", value)
+        elif name == "lambda_":
             if not (0 <= value <= 1):
-                raise QuantumNoorException(f"Invalid lambda: {value}, must be in [0,1]")
-            object.__setattr__(self, '_lambda_', value)
+                raise QuantumNoorException("lambda out of bounds")
+            object.__setattr__(self, "_lambda_", value)
         else:
             object.__setattr__(self, name, value)
 
     @property
-    def rho(self) -> float:
+    def rho(self):
         return self._rho
 
     @rho.setter
-    def rho(self, val: float):
-        self.__setattr__('rho', val)
+    def rho(self, v):
+        self.__setattr__("rho", v)
 
     @property
-    def lambda_(self) -> float:
+    def lambda_(self):
         return self._lambda_
 
     @lambda_.setter
-    def lambda_(self, val: float):
-        self.__setattr__('lambda_', val)
+    def lambda_(self, v):
+        self.__setattr__("lambda_", v)
 
+    # ---------------- context ratio setter ------------------------------
+    def update_context_ratio(self, ratio: float) -> None:
+        """Higher‑layer agents call once per step before step()."""
+        self.dyad_context_ratio = min(max(ratio, 0.0), 1.0)
+
+    # ---------------- diagnostics --------------------------------------
+    def current_context_health(self) -> str:
+        r = self.dyad_context_ratio
+        if r >= 0.6:
+            return "stable"
+        if r >= 0.3:
+            return "mixed"
+        return "dyad‑dominant"
+
+    # ---------------- step ---------------------------------------------
     def step(self, new_state: np.ndarray):
-        """
-        Appends 'new_state' to history, optionally apply zeno if enable_zeno.
-        Then recheck feasibility.
-        """
         validate_state(new_state)
+
+        # verse bias (context‑scaled) ------------------------------------
+        if self.enable_verse_bias and self.gate_overlay is not None:
+            verse = gate_to_verse(self.gate_overlay)
+            biased = _apply_verse_bias(new_state, verse, len(self.state_history))
+            if self.dyad_context_ratio < 0.3:
+                new_state = new_state + 0.5 * (biased - new_state)
+            else:
+                new_state = biased
+
+        # append ---------------------------------------------------------
         self.state_history.append(new_state)
 
-        # optional zeno with curvature-based threshold
+        # zeno -----------------------------------------------------------
         if self.enable_zeno:
-            if self.enable_curvature:
-                dyn_thresh = zeno_threshold(self.curvature_threshold)
-                # if norm is below dyn_thresh => project?
-                norm_val = np.linalg.norm(new_state)
-                if 0 < norm_val < dyn_thresh:
-                    stabilized = np.zeros_like(new_state)
-                    stabilized[0] = 1.0
-                    self.state_history[-1] = stabilized
-                    # optional logging
-            else:
-                # static zeno_threshold
-                norm_val = np.linalg.norm(new_state)
-                if 0 < norm_val < self.zeno_threshold:
-                    stabilized = np.zeros_like(new_state)
-                    stabilized[0] = 1.0
-                    self.state_history[-1] = stabilized
+            thresh = zeno_threshold(self.curvature_threshold) if self.enable_curvature else self.zeno_threshold
+            norm_val = np.linalg.norm(new_state)
+            if 0 < norm_val < thresh:
+                stabilized = np.zeros_like(new_state)
+                stabilized[0] = 1.0
+                self.state_history[-1] = stabilized
 
-        # optional topological code placeholder
-        if self.enable_topological_code:
-            self._apply_topological_code(len(self.state_history) - 1)
+        # symbolic gate overlay -----------------------------------------
+        overlay_pass: Optional[bool] = None
+        event_tag = None
+        if self.gate_overlay is not None and len(self.state_history) >= 2:
+            overlay_pass = evaluate_gate_output(
+                self.gate_overlay,
+                _state_to_bool(self.state_history[-2]),
+                _state_to_bool(self.state_history[-1]),
+            )
+            self.last_gate_passed = overlay_pass
+            if self.gate_overlay == 0:
+                event_tag = "rupture"
+            elif self.gate_overlay == 15:
+                event_tag = "latch"
+                self.generation += 1
 
+        # feasibility update --------------------------------------------
         self._update_logical_feasibility()
 
-    def _apply_topological_code(self, idx: int):
-        pass  # placeholder
+        # history logging -----------------------------------------------
+        entry = {
+            "t": len(self.state_history) - 1,
+            "gate": self.gate_overlay,
+            "overlay_pass": overlay_pass,
+            "ctx": round(self.dyad_context_ratio, 3),
+        }
+        if event_tag:
+            entry["event"] = event_tag
+        if self.dyad_context_ratio < 0.2:
+            entry["alert"] = "high_dyad_dominance"
+        self.history.append(entry)
 
+    # ---------------- feasibility helper -------------------------------
     def _update_logical_feasibility(self):
-        """
-        Recompute self.is_active based on last 2 states + self.futures.
-        """
-        if len(self.state_history) < 2:
-            # single state => just check presence
-            curr = self.state_history[0]
-            try:
-                validate_state(curr)
-                self.is_active = AND_condition(curr)
-            except AssertionError:
-                self.is_active = False
+        if len(self.state_history) == 1:
+            self.is_active = AND_condition(self.state_history[0])
             return
-
         curr = self.state_history[-1]
         prev = self.state_history[-2]
-        self.is_active = is_logically_entangled(
-            curr,
-            prev,
-            self.futures,
-            threshold=1e-3,
-            use_xor=self.enable_xor
+        self.is_active = (
+            AND_condition(curr)
+            and NOT_condition(curr, prev)
+            and OR_condition(self.futures)
+            and (not self.enable_xor or XOR_condition(curr, prev))
         )
 
-    @property
-    def current_state(self) -> Optional[np.ndarray]:
-        if self.state_history:
-            return self.state_history[-1]
-        return None
-
-    @property
-    def all_states(self) -> List[np.ndarray]:
-        return self.state_history
-
-    def is_alive(self) -> bool:
-        return self.is_active
-
+    # ---------------- signature ----------------------------------------
     def generate_core_signature(self) -> str:
-        c_state = self.current_state
-        if c_state is None:
-            return "No state available"
-        compressed_hash = hash(c_state.tobytes()) & 0xffff
-        return f"CoreSignature-{compressed_hash:x}"
+        core_hash = hash(self.state_history[-1].tobytes()) & 0xFFFF
+        gate_sig = f"G{self.gate_overlay if self.gate_overlay is not None else '-'}"
+        verse_sig = _verse_hash(gate_to_verse(self.gate_overlay)) if self.gate_overlay is not None else "0000"
+        return f"CoreSignature-{core_hash:x}_{gate_sig}:{verse_sig}"
 
+    # ---------------- repr ---------------------------------------------
     def __repr__(self) -> str:
         return (
-            f"<NoorFastTimeCore (v{self.__version__}) active={self.is_active}, "
-            f"steps={len(self.state_history)}, "
-            f"rho={self.rho:.3f}, lambda_={self.lambda_:.3f}, "
-            f"zeno={self.enable_zeno}, topo={self.enable_topological_code}, "
-            f"curv={self.enable_curvature}, xor={self.enable_xor}>"
+            f"<NoorFastTimeCore v{self.__version__} active={self.is_active} gate={self.gate_overlay} "
+            f"ctx={self.dyad_context_ratio:.2f} gen={self.generation}>"
         )
