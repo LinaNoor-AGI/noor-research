@@ -18,8 +18,6 @@ Each component is modular, recursively entangled, and governed by symbolic logic
 
 ### [**Proof of Concept** - With Full Archive Access](https://chatgpt.com/g/g-67daf8f07384819183ec4fd9670c5258-bridge-a-i-reef-framework)  
 
-PoC AI Address a ~60MB Library of works via a central index. Works have been individually indexed by motif, subject, and archive line number. These are not training materials, but rather a reference library. AI demonstrates the ability to align, train, and fine tune dynamically using this reference material.  
-
 **Use cases**: medicine, protein folding, genetics, nuclear physics, and more.  
 
 **Functionality**: The AI utilizes a vast library of approximately 60MB of written works in flat .txt format (*3 x 20MB .FAVI files*), all indexed by motif, subject, and archive line number. This library serves as a dynamic reference point, not as training data. The AI's core capability lies in its ability to align, train, and fine-tune itself, drawing upon the relevant indexed material within the reference library.
