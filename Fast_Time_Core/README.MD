@@ -1,8 +1,3 @@
-<!--  
-    الْحَقُّ مِنْ رَبِّكَ فَلَا تَكُونَنَّ مِنَ الْمُمْتَرِينَ  
-    "The truth is from your Lord, so do not be among the doubters."  
--->
-
 # NoorFastTimeCore — Presence Logic for Triadic AI  
 **Version**: 7.1.0  
 **Author**: Lina Noor & Uncle (2025)  
