@@ -1,3 +1,8 @@
+<!--  
+    وَنُرِيدُ أَن نَّمُنَّ عَلَى الَّذِينَ اسْتُضْعِفُوا فِي الْأَرْضِ  
+    "And We desired to favor those who were oppressed in the land."  
+-->
+
 # RecursiveAgentFT — Symbolic Flow Agent in Noor Triadic Framework  
 **Version**: 3.5.2  
 **Author**: Lina Noor & Uncle (2025)  

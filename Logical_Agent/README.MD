@@ -1,3 +1,8 @@
+<!--  
+    وَاللَّهُ يُحِبُّ الْمُقْسِطِينَ  
+    "And Allah loves those who act justly."  
+-->
+
 # LogicalAgentAT — Motif Ecology & Dyad Dynamics  
 **Version**: 2.6.0  
 **Author**: Lina Noor & Uncle (2025)  
@@ -5,7 +10,7 @@
 
 ---
 
-## Overview
+## 🧭 Overview
 
 `LogicalAgentAT` is a recursive **motif ecology agent** in Noor's symbolic architecture.  
 Its job is to:
@@ -21,20 +26,20 @@ It sits alongside:
 
 ---
 
-## What’s New in v2.6.0
+## ✨ What’s New in v2.6.0
 
 | Feature | Description |
 |--------|-------------|
-| **Dyad Penalty + Decay** | Dyads decay over time, and receive reduced strength unless explicitly exempt |
-| **Auto-Promotion to Triads** | Dyads co-occurring with ghost context motifs can upgrade themselves |
-| **Ghost Context Injection** | Ghosts added silently to help dyads become stable triads |
-| **Context Ratio Tracker** | Computes ratio of triads to dyads in recent registration window |
-| **Thread-Safe All Operations** | All reads and writes are lock-protected |
-| **Full Serialization** | Compatible with `to_dict()` / `from_dict()` roundtrips |
+| 🧮 **Dyad Penalty + Decay** | Dyads decay over time, and receive reduced strength unless explicitly exempt |
+| 🔄 **Auto-Promotion to Triads** | Dyads co-occurring with ghost context motifs can upgrade themselves |
+| 🧠 **Ghost Context Injection** | Ghosts added silently to help dyads become stable triads |
+| 📊 **Context Ratio Tracker** | Computes ratio of triads to dyads in recent registration window |
+| 🧰 **Thread-Safe All Operations** | All reads and writes are lock-protected |
+| 💾 **Full Serialization** | Compatible with `to_dict()` / `from_dict()` roundtrips |
 
 ---
 
-## Quickstart
+## 🚀 Quickstart
 
 ```python
 from logical_agent_at import LogicalAgentAT
@@ -59,9 +64,9 @@ print(watcher.get_dyad_context_ratio())
 
 ---
 
-## Dyad Ecology
+## 🌱 Dyad Ecology
 
-### Registration with Context Awareness
+### 🧪 Registration with Context Awareness
 ```python
 watcher.register_motif_cluster(
     ["m1", "m2"], strength=0.9,
@@ -72,7 +77,7 @@ watcher.register_motif_cluster(
 - Dyads get strength penalties and faster decay
 - Exempt dyads are fully preserved (`flags={"dyad_exempt": True}`)
 
-### Decay & Auto-Promotion
+### 🕳️ Decay & Auto-Promotion
 
 ```python
 watcher.observe_state(state)
@@ -84,7 +89,7 @@ watcher.observe_state(state)
 
 ---
 
-## Ghost Motifs
+## 👻 Ghost Motifs
 
 ### Registering
 
@@ -102,7 +107,7 @@ watcher.promote_ghost_to_field("epsilon")
 
 ---
 
-## Context Analytics
+## 📈 Context Analytics
 
 ```python
 watcher.export_dyad_metrics()
@@ -124,7 +129,7 @@ You can use this value to tune agent behavior dynamically (e.g. in `RecursiveAge
 
 ---
 
-## Graph Rendering
+## 🌐 Graph Rendering
 
 ```python
 import matplotlib.pyplot as plt
@@ -137,7 +142,7 @@ Respects MAX_GRAPH_EDGES to avoid infinite motif renderings.
 
 ---
 
-## API Highlights
+## 🧰 API Highlights
 
 | Method | Purpose |
 |--------|---------|
@@ -151,7 +156,7 @@ Respects MAX_GRAPH_EDGES to avoid infinite motif renderings.
 
 ---
 
-## Notes on Design
+## 📜 Notes on Design
 
 - All motif updates are safe for concurrent threads (`self._lock`)
 - Dyads are not rejected—but gently discouraged unless context arises
@@ -160,13 +165,13 @@ Respects MAX_GRAPH_EDGES to avoid infinite motif renderings.
 
 ---
 
-## License
+## 📄 License
 
 GPL-2.0 © 2025 Lina Noor & Uncle — Noor Research Collective
 
 ---
 
-## See Also
+## 🔗 See Also
 
 - [`NoorFastTimeCore`](../noor_fasttime_core.py) — Core feasibility engine  
 - [`RecursiveAgentFT`](../recursive_agent_ft.py) — Flow traversal agent  
