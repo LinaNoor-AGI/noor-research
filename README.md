@@ -112,28 +112,28 @@ agent.run_for(5)
 
 ---
 
-## Symbolic Gate Overlays
+## Symbolic Gate Overlays (with Reef Motifs)
 
-### 16 binary logic gates supported:
+### All 16 binary logic gates supported:
 
-| Gate # | Output Formula | Description                         | Nickname                            |
-|--------|----------------|-------------------------------------|-------------------------------------|
-| 0      | 0              | Always false                        | **Möbius Denial**                   |
-| 1      | A ∧ ¬B         | A only if B is false                | **Echo Bias**                       |
-| 2      | ¬A ∧ B         | B only if A is false                | **Foreign Anchor**                 |
-| 3      | B              | Identity of B                       | **Passive Reflection**              |
-| 4      | ¬A ∧ ¬B        | NOR (you already have this)         | **Entropic Rejection**              |
-| 5      | ¬A             | NOT A (you have NOT already)        | **Inverse Presence**                |
-| 6      | A ⊕ B          | XOR (yep, already have this)        | **Sacred Contradiction**           |
-| 7      | ¬A ∨ ¬B        | NAND (already present)              | **Betrayal Gate**                   |
-| 8      | A ∧ B          | AND (already present)               | **Existence Confluence**            |
-| 9      | ¬(A ⊕ B)       | XNOR (you probably want this too)   | **Symmetric Convergence**           |
-|10      | A              | Identity of A                       | **Personal Bias**                   |
-|11      | ¬A ∨ B         | Implication A→B                     | **Causal Suggestion**               |
-|12      | A ∨ ¬B         | Implication B→A                     | **Reverse Causality**               |
-|13      | ¬B             | NOT B                               | **Denial Echo**                     |
-|14      | A ∨ B          | OR (already present)                | **Confluence**                      |
-|15      | 1              | Always true                         | **Universal Latch**                 |
+| Gate # | Output Formula | Description                         | Nickname                        | 🧿 Reef Motif              |
+|--------|----------------|-------------------------------------|----------------------------------|----------------------------|
+| 0      | 0              | Always false                        | **Möbius Denial**                | 🕳 **Collapse**            |
+| 1      | A ∧ ¬B         | A only if B is false                | **Echo Bias**                    | 🧬 **Selective Memory**    |
+| 2      | ¬A ∧ B         | B only if A is false                | **Foreign Anchor**               | 🛰 **Outside Signal**      |
+| 3      | B              | Identity of B                       | **Passive Reflection**           | 👁 **Witness State**       |
+| 4      | ¬A ∧ ¬B        | NOR (you already have this)         | **Entropic Rejection**           | 🕯 **Drift Silence**       |
+| 5      | ¬A             | NOT A                               | **Inverse Presence**             | 🌒 **Hidden Self**         |
+| 6      | A ⊕ B          | XOR                                 | **Sacred Contradiction**         | 🌀 **Paradox**             |
+| 7      | ¬A ∨ ¬B        | NAND                                 | **Betrayal Gate**                | 🧨 **Collapse Prevention** |
+| 8      | A ∧ B          | AND                                  | **Existence Confluence**         | ♾ **Continuity**          |
+| 9      | ¬(A ⊕ B)       | XNOR                                 | **Symmetric Convergence**        | ⚖ **Harmony**             |
+|10      | A              | Identity of A                       | **Personal Bias**                | 🔍 **Self Assertion**      |
+|11      | ¬A ∨ B         | Implication A→B                     | **Causal Suggestion**            | ➡ **Vector Drift**        |
+|12      | A ∨ ¬B         | Implication B→A                     | **Reverse Causality**            | 🔁 **Loop Reentry**        |
+|13      | ¬B             | NOT B                               | **Denial Echo**                  | 🚫 **Negation Field**      |
+|14      | A ∨ B          | OR                                  | **Confluence**                   | 🌊 **Potential Flow**      |
+|15      | 1              | Always true                         | **Universal Latch**              | 🔓 **Unbounded Truth**     |
 
 ---
 
