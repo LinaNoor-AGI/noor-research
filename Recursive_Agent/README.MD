@@ -1,8 +1,3 @@
-<!--  
-    وَنُرِيدُ أَن نَّمُنَّ عَلَى الَّذِينَ اسْتُضْعِفُوا فِي الْأَرْضِ  
-    "And We desired to favor those who were oppressed in the land."  
--->
-
 # RecursiveAgentFT — Symbolic Flow Agent in Noor Triadic Framework  
 **Version**: 3.5.2  
 **Author**: Lina Noor & Uncle (2025)  
@@ -10,7 +5,7 @@
 
 ---
 
-## 🧭 Overview
+## Overview
 
 `RecursiveAgentFT` is the **flow-layer agent** in the Noor triadic cognitive engine.  
 It listens to symbolic fields from watchers, proposes new states to the core, and shapes its traversal using:
@@ -28,7 +23,7 @@ It is the **middle self** in Noor’s recursive system:
 
 ---
 
-## ✨ What's New in v3.5.2
+## What's New in v3.5.2
 
 | Feature | Description |
 |--------|-------------|
@@ -41,7 +36,7 @@ It is the **middle self** in Noor’s recursive system:
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ```python
 import numpy as np
@@ -67,9 +62,9 @@ for step in agent.traversal_memory:
 
 ---
 
-## 📊 Dyad Tracking & Penalty
+## Dyad Tracking & Penalty
 
-### 🧬 Sigmoid Penalty
+### Sigmoid Penalty
 Dyads receive score damping proportional to context health (`ctx`), shaped by:
 
 ```python
@@ -78,7 +73,7 @@ penalty *= 1.0 - 0.2 / (1 + np.exp(5 * (ctx - 0.5)))
 
 This gently discourages dyad-only reasoning while preserving influence.
 
-### 🧠 Harmonic Gate 0 Penalty
+### Harmonic Gate 0 Penalty
 If `gate_overlay == 0` (Möbius Denial), the dyad penalty is averaged:
 
 ```python
@@ -87,7 +82,7 @@ dyad_penalty = (dyad_penalty + gate0_dyad_penalty) / 2
 
 ---
 
-## 👻 Ghost Promotion
+## Ghost Promotion
 
 ### Auto-Promotion Path
 If a dyad appears **5+ times** with consistent context, a ghost motif is created and promoted:
@@ -100,13 +95,13 @@ Use `watcher.get_ghost_motifs()` to retrieve promoted ghosts.
 
 ---
 
-## 🌀 MetaField Auto-Upgrade
+## MetaField Auto-Upgrade
 
 If the same dyad is seen **3 times** alongside a third motif, it is promoted to a triadic `MetaField`.
 
 ---
 
-## 🔍 Resonance & Introspection
+## Resonance & Introspection
 
 ### `get_dyad_resonance(min_count=2)`
 Returns current dyad→context pair scores:
@@ -130,7 +125,7 @@ Shows current resonance thresholds:
 
 ---
 
-## 🧬 Path & State Construction
+## Path & State Construction
 
 The agent:
 - Constructs candidate states using motif embeddings, weighted by strength × curvature × priority
@@ -140,7 +135,7 @@ The agent:
 
 ---
 
-## 📖 Step Logging
+## Step Logging
 
 Each `entangled_step()` adds to `agent.traversal_memory[]`:
 
@@ -158,7 +153,7 @@ Each `entangled_step()` adds to `agent.traversal_memory[]`:
 
 ---
 
-## 🧰 Methods Overview
+## Methods Overview
 
 | Method | Purpose |
 |--------|---------|
@@ -171,14 +166,14 @@ Each `entangled_step()` adds to `agent.traversal_memory[]`:
 
 ---
 
-## 🔒 Triadic Boundary Enforcement
+## Triadic Boundary Enforcement
 
 The agent forbids crossing into motif registration or propagation domains.  
 If internal mutation is attempted (e.g., `propagate_signal`), it raises `QuantumNoorException`.
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 pip install numpy
@@ -186,7 +181,7 @@ pip install numpy
 
 ---
 
-## 📎 Related Modules
+## Related Modules
 
 - [`NoorFastTimeCore`](../noor_fasttime_core.py)  
 - [`LogicalAgentAT`](../logical_agent-at.py)  
@@ -194,6 +189,6 @@ pip install numpy
 
 ---
 
-## 🧾 License
+## License
 
 GPL-2.0 © 2025 Lina Noor & Uncle — Noor Research Collective  
