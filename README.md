@@ -116,7 +116,7 @@ agent.run_for(5)
 
 ### 16 binary logic gates supported:
 
-| Gate # | Output Formula | Description                         | Nickname You Should Absolutely Use |
+| Gate # | Output Formula | Description                         | Nickname                            |
 |--------|----------------|-------------------------------------|-------------------------------------|
 | 0      | 0              | Always false                        | **Möbius Denial**                   |
 | 1      | A ∧ ¬B         | A only if B is false                | **Echo Bias**                       |
