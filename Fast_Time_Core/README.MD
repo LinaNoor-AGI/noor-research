@@ -31,7 +31,7 @@ The core serves as the **heartbeat of symbolic truth**, determining whether a st
 
 ## Symbolic Gate Overlays
 
-## 🧬 Symbolic Gate Overlays (with Reef Motifs)
+## Symbolic Gate Overlays (with Reef Motifs)
 
 ### All 16 binary logic gates supported:
 
