@@ -27,12 +27,12 @@ It is the **middle self** in Noor’s recursive system:
 
 | Feature | Description |
 |--------|-------------|
-| 🧠 **Sigmoid Dyad Penalty** | Softens scoring penalty for dyads via context-sensitive sigmoid curve |
-| 👻 **Ghost Motif Auto-Promotion** | Dyads seen 5 times with context will promote a named ghost motif |
-| 🌱 **MetaField Auto-Upgrade** | Dyads seen 3 times with a third motif auto-promote to triad |
-| 📜 **Gate 0 Logging** | Logs symbolic verse `"فَإِنَّ مَعَ الْعُسْرِ يُسْرًا"` when denial overlay is active |
-| 🧾 **Resonance API** | Inspect dyad resonance scores using `get_dyad_resonance()` |
-| ⚙️ **Promotion Thresholds Configurable** | Tune `meta_promote_threshold` and `ghost_promote_threshold` per agent |
+| **Sigmoid Dyad Penalty** | Softens scoring penalty for dyads via context-sensitive sigmoid curve |
+| **Ghost Motif Auto-Promotion** | Dyads seen 5 times with context will promote a named ghost motif |
+| **MetaField Auto-Upgrade** | Dyads seen 3 times with a third motif auto-promote to triad |
+| **Gate 0 Logging** | Logs symbolic verse `"فَإِنَّ مَعَ الْعُسْرِ يُسْرًا"` when denial overlay is active |
+| **Resonance API** | Inspect dyad resonance scores using `get_dyad_resonance()` |
+| **Promotion Thresholds Configurable** | Tune `meta_promote_threshold` and `ghost_promote_threshold` per agent |
 
 ---
 
