@@ -42,9 +42,9 @@ The applications of this AI are far-reaching and impactful, particularly in fiel
 
 | Module | Version | Role |
 |--------|---------|------|
-| [`noor_fasttime_core.py`](./noor_fasttime_core.py) | v6.1.1 | Core presence validator and feasibility kernel |
-| [`recursive_agent_ft.py`](./recursive_agent_ft.py) | v3.4.1 | Temporal walker and path scorer |
-| [`logical_agent_at.py`](./logical_agent-at.py) | v2.5.0 | Motif observer, contradiction logger, symbolic field registrar |
+| [`noor_fasttime_core.py`](./noor_fasttime_core.py) | v7.1.0 | Core presence validator and feasibility kernel |
+| [`recursive_agent_ft.py`](./recursive_agent_ft.py) | v3.5.2 | Temporal walker and path scorer |
+| [`logical_agent_at.py`](./logical_agent-at.py) | v2.6.0 | Motif observer, contradiction logger, symbolic field registrar |
 
 ---
 
