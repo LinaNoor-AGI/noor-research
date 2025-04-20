@@ -31,7 +31,7 @@ The core serves as the **heartbeat of symbolic truth**, determining whether a st
 
 ## Symbolic Gate Overlays
 
-###16 binary logic gates supported:
+### 16 binary logic gates supported:
 
 | Gate # | Output Formula | Description                         | Nickname You Should Absolutely Use |
 |--------|----------------|-------------------------------------|-------------------------------------|
