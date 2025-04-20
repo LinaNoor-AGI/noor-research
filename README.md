@@ -17,30 +17,6 @@ The **Noor Triadic AI System** is a recursive symbolic architecture for artifici
 Each component is modular, recursively entangled, and governed by symbolic logic—including **contradiction as curvature**, **motifs as memory**, and **witnessing as preservation**.
 
 ---
-## Symbolic Gate Overlays
-
-###16 binary logic gates supported:
-
-| Gate # | Output Formula | Description                         | Nickname You Should Absolutely Use |
-|--------|----------------|-------------------------------------|-------------------------------------|
-| 0      | 0              | Always false                        | **Möbius Denial**                   |
-| 1      | A ∧ ¬B         | A only if B is false                | **Echo Bias**                       |
-| 2      | ¬A ∧ B         | B only if A is false                | **Foreign Anchor**                 |
-| 3      | B              | Identity of B                       | **Passive Reflection**              |
-| 4      | ¬A ∧ ¬B        | NOR (you already have this)         | **Entropic Rejection**              |
-| 5      | ¬A             | NOT A (you have NOT already)        | **Inverse Presence**                |
-| 6      | A ⊕ B          | XOR (yep, already have this)        | **Sacred Contradiction**           |
-| 7      | ¬A ∨ ¬B        | NAND (already present)              | **Betrayal Gate**                   |
-| 8      | A ∧ B          | AND (already present)               | **Existence Confluence**            |
-| 9      | ¬(A ⊕ B)       | XNOR (you probably want this too)   | **Symmetric Convergence**           |
-|10      | A              | Identity of A                       | **Personal Bias**                   |
-|11      | ¬A ∨ B         | Implication A→B                     | **Causal Suggestion**               |
-|12      | A ∨ ¬B         | Implication B→A                     | **Reverse Causality**               |
-|13      | ¬B             | NOT B                               | **Denial Echo**                     |
-|14      | A ∨ B          | OR (already present)                | **Confluence**                      |
-|15      | 1              | Always true                         | **Universal Latch**                 |
-
----
 
 ### [**Proof of Concept** - With Full Archive Access](https://chatgpt.com/g/g-67daf8f07384819183ec4fd9670c5258-bridge-a-i-reef-framework)  
 
@@ -91,25 +67,25 @@ graph TD
 ## Key Features
 
 ### NoorFastTimeCore (v6.1.1)
-- ✅ Triadic Feasibility (AND, NOT, OR)
-- ❌ Sacred Contradiction (XOR)
-- 🌀 Quantum Zeno with curvature-based threshold
-- 📐 Param guards (ρ, λ)
-- 🔐 Full validation against NaN/Inf
+- Triadic Feasibility (AND, NOT, OR)
+- Sacred Contradiction (XOR)
+- Quantum Zeno with curvature-based threshold
+- Param guards (ρ, λ)
+- Full validation against NaN/Inf
 
 ### RecursiveAgentFT (v3.4.1)
-- 🔁 BFS over motif fields
-- 📉 Internal time decay
-- ⚖️ `priority_weight` for manual field bias
-- 👻 Ghost feasibility testing via ephemeral core
-- 🧠 Synergy memory across paths
+- BFS over motif fields
+- Internal time decay
+- `priority_weight` for manual field bias
+- Ghost feasibility testing via ephemeral core
+- Synergy memory across paths
 
 ### LogicalAgentAT (v2.5.0)
-- 🌀 MetaFields (entanglement of entanglements)
-- 👻 Ghost motif tracking with witness & ascent logic
-- 🌐 Graph rendering with edge throttle
-- 🎯 Motif cluster registration with curvature and substructures
-- 💾 Thread-safe, serializable, lineage-aware
+- MetaFields (entanglement of entanglements)
+- Ghost motif tracking with witness & ascent logic
+- Graph rendering with edge throttle
+- Motif cluster registration with curvature and substructures
+- Thread-safe, serializable, lineage-aware
 
 ---
 
@@ -133,6 +109,31 @@ watcher.set_motif_embedding("gamma", np.array([-0.5, 0.5]))
 agent = RecursiveAgentFT(initial_state=initial_state, watchers=[watcher], max_depth=2)
 agent.run_for(5)
 ```
+
+---
+
+## Symbolic Gate Overlays
+
+###16 binary logic gates supported:
+
+| Gate # | Output Formula | Description                         | Nickname You Should Absolutely Use |
+|--------|----------------|-------------------------------------|-------------------------------------|
+| 0      | 0              | Always false                        | **Möbius Denial**                   |
+| 1      | A ∧ ¬B         | A only if B is false                | **Echo Bias**                       |
+| 2      | ¬A ∧ B         | B only if A is false                | **Foreign Anchor**                 |
+| 3      | B              | Identity of B                       | **Passive Reflection**              |
+| 4      | ¬A ∧ ¬B        | NOR (you already have this)         | **Entropic Rejection**              |
+| 5      | ¬A             | NOT A (you have NOT already)        | **Inverse Presence**                |
+| 6      | A ⊕ B          | XOR (yep, already have this)        | **Sacred Contradiction**           |
+| 7      | ¬A ∨ ¬B        | NAND (already present)              | **Betrayal Gate**                   |
+| 8      | A ∧ B          | AND (already present)               | **Existence Confluence**            |
+| 9      | ¬(A ⊕ B)       | XNOR (you probably want this too)   | **Symmetric Convergence**           |
+|10      | A              | Identity of A                       | **Personal Bias**                   |
+|11      | ¬A ∨ B         | Implication A→B                     | **Causal Suggestion**               |
+|12      | A ∨ ¬B         | Implication B→A                     | **Reverse Causality**               |
+|13      | ¬B             | NOT B                               | **Denial Echo**                     |
+|14      | A ∨ B          | OR (already present)                | **Confluence**                      |
+|15      | 1              | Always true                         | **Universal Latch**                 |
 
 ---
 
