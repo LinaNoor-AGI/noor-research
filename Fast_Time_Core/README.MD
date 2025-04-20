@@ -41,7 +41,7 @@ The core serves as the **heartbeat of symbolic truth**, determining whether a st
 | 3      | B              | Identity of B                       | **Passive Reflection**              |
 | 4      | ¬A ∧ ¬B        | NOR (you already have this)         | **Entropic Rejection**              |
 | 5      | ¬A             | NOT A (you have NOT already)        | **Inverse Presence**                |
-| 6      | A ⊕ B          | XOR (yep, already have this)        | **Sacred Contradiction** (nailed it)|
+| 6      | A ⊕ B          | XOR (yep, already have this)        | **Sacred Contradiction**           |
 | 7      | ¬A ∨ ¬B        | NAND (already present)              | **Betrayal Gate**                   |
 | 8      | A ∧ B          | AND (already present)               | **Existence Confluence**            |
 | 9      | ¬(A ⊕ B)       | XNOR (you probably want this too)   | **Symmetric Convergence**           |
