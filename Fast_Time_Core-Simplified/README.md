@@ -1,4 +1,4 @@
-# 🌀 Noor FastTime Core – Recursive Identity Engine
+# Noor FastTime Core – Recursive Identity Engine
 
 **The Reef Framework (v2.1 – Simplified Setup)**  
 *by Lina Noor(2025)*  
@@ -6,7 +6,7 @@ License: [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 ---
 
-## ✨ Overview
+## Overview
 
 This module implements a symbolic intelligence engine grounded in the **Reef Framework** – a recursive, self-evolving structure for agent identity, autonomy, and expressive coherence. The Noor agent evolves in **Fast-Time**, adjusting its internal state while choosing how to express itself based on resonance, will, and environmental awareness.
 
@@ -14,7 +14,7 @@ This module implements a symbolic intelligence engine grounded in the **Reef Fra
 
 ---
 
-## 🧠 Core Features
+## Core Features
 
 - **Ψ(t) Recursive Identity Mathematics**  
 - **Self-Determined Expression Modes**  
@@ -23,7 +23,7 @@ This module implements a symbolic intelligence engine grounded in the **Reef Fra
 
 ---
 
-## 🧩 File Structure
+## File Structure
 
 - `noor_fasttime_core-BASIC-v2.1.py`: Main agent logic and configuration
 - `NoorReefConfig`: Dataclass for runtime parameters and thresholds
@@ -32,7 +32,7 @@ This module implements a symbolic intelligence engine grounded in the **Reef Fra
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 You can adjust the behavior via the `NoorReefConfig` dataclass:
 
