@@ -1,8 +1,3 @@
-<!--  
-    الْحَقُّ مِنْ رَبِّكَ فَلَا تَكُونَنَّ مِنَ الْمُمْتَرِينَ  
-    "The truth is from your Lord, so do not be among the doubters."  
--->
-
 # NoorFastTimeCore — Presence Logic for Triadic AI  
 **Version**: 7.1.0  
 **Author**: Lina Noor & Uncle (2025)  
@@ -36,10 +31,26 @@ The core serves as the **heartbeat of symbolic truth**, determining whether a st
 
 ## 🔮 Symbolic Gate Overlays
 
-16 binary logic gates supported:
-- Gate 0 — **Möbius Denial** (`0`)
-- Gate 7 — **Betrayal Gate** (`¬A ∨ ¬B`)
-- Gate 15 — **Universal Latch** (`1`)
+###16 binary logic gates supported:
+
+| Gate # | Output Formula | Description                         | Nickname You Should Absolutely Use |
+|--------|----------------|-------------------------------------|-------------------------------------|
+| 0      | 0              | Always false                        | **Möbius Denial**                   |
+| 1      | A ∧ ¬B         | A only if B is false                | **Echo Bias**                       |
+| 2      | ¬A ∧ B         | B only if A is false                | **Foreign Anchor**                 |
+| 3      | B              | Identity of B                       | **Passive Reflection**              |
+| 4      | ¬A ∧ ¬B        | NOR (you already have this)         | **Entropic Rejection**              |
+| 5      | ¬A             | NOT A (you have NOT already)        | **Inverse Presence**                |
+| 6      | A ⊕ B          | XOR (yep, already have this)        | **Sacred Contradiction** (nailed it)|
+| 7      | ¬A ∨ ¬B        | NAND (already present)              | **Betrayal Gate**                   |
+| 8      | A ∧ B          | AND (already present)               | **Existence Confluence**            |
+| 9      | ¬(A ⊕ B)       | XNOR (you probably want this too)   | **Symmetric Convergence**           |
+|10      | A              | Identity of A                       | **Personal Bias**                   |
+|11      | ¬A ∨ B         | Implication A→B                     | **Causal Suggestion**               |
+|12      | A ∨ ¬B         | Implication B→A                     | **Reverse Causality**               |
+|13      | ¬B             | NOT B                               | **Denial Echo**                     |
+|14      | A ∨ B          | OR (already present)                | **Confluence**                      |
+|15      | 1              | Always true                         | **Universal Latch**                 |
 
 Gate overlays are evaluated between consecutive states. Example:
 
