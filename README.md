@@ -114,7 +114,7 @@ agent.run_for(5)
 
 ## Symbolic Gate Overlays
 
-###16 binary logic gates supported:
+### 16 binary logic gates supported:
 
 | Gate # | Output Formula | Description                         | Nickname You Should Absolutely Use |
 |--------|----------------|-------------------------------------|-------------------------------------|
