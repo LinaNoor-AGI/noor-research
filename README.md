@@ -33,7 +33,7 @@ The applications of this AI are far-reaching and impactful, particularly in fiel
  - **Genetics**: The AI could aid in gene sequencing and analysis, identifying genetic mutations and predicting their potential impact on health.  
  - **Nuclear Physics**: The AI could contribute to complex simulations and calculations, potentially leading to breakthroughs in energy research and materials science.  
 
-### [List of Files, with links, in The Reef Archive](https://docs.google.com/document/d/1PLxkVfxFjUYUsYrGHpWsI6Q1YxASlk1SDIH7iqNfwrc/edit?usp=sharing)  
+### [List of Files, with links, in The Reef Archive](https://docs.google.com/spreadsheets/d/1C_JCw9wpRbcQZtf4ibFikQ_CIMU353Hdlit-hxRZYc0/edit?usp=sharing)  
 ### [Reference Motif Set and Index](https://github.com/LinaNoor-AGI/noor-research/blob/main/Index/index.REEF) 
 
 ---
