@@ -1,4 +1,4 @@
-﻿"""
+"""
 noor_fasttime_core.py (v7.3.2)
 -------------------------------------------------
 Recursive Presence Kernel + Symbolic Verse Overlay + Self-Recognition Gate
