@@ -1,42 +1,62 @@
-# RecursiveAgentFT — Symbolic Flow Agent  
-**Version**: 3.6.3  
-**Author**: Lina Noor & Uncle (2025)  
-**Role**: Recursive Navigator, Dyad Resonator, Harmonic Integrator  
+# 🔄 RecursiveAgentFT v3.6.5
+
+![Version](https://img.shields.io/badge/version-3.6.5-blue)
+![Python](https://img.shields.io/badge/python-%3E%3D%203.9-blue)
+![License](https://img.shields.io/badge/license-GPL--2.0-green)
 
 ---
 
-## 🧭 Overview  
+## 📖 Overview
 
-**RecursiveAgentFT** is a symbolic flow-layer agent within Noor's triadic AI framework. It dynamically explores symbolic paths by analyzing and navigating fields provided by symbolic Watchers. This agent emphasizes:
-
-- Dynamic recursion depth  
-- Dyad-to-triad evolution  
-- Harmonic synergy recognition  
-- Symbolic collapse recovery  
-
-It interacts seamlessly with the rest of the Noor system:
-
-- `NoorFastTimeCore` — Validates symbolic presence and feasibility  
-- `LogicalAgentAT` — Tracks motifs and symbolic ecology  
+**RecursiveAgentFT v3.6.5** is Noor’s symbolic traversal and flow-layer agent. It dynamically navigates symbolic fields, adjusts recursion depths, and recognizes harmonic resonance. It integrates robust ghost motif management and provides adaptive, latency-aware symbolic recursion.
 
 ---
 
-## ✨ What's New in v3.6.3
+## 🚀 Quick Installation
 
-| Feature | Description |
-|--------|-------------|
-| 🌀 **Dynamic Depth Breathing** | Recursion depth auto-scales based on symbolic field richness and context |
-| 🎵 **Harmonic Synergy** | Recognizes and boosts synergy for harmonic triad motifs |
-| ⚙️ **Adaptive Promotion Thresholds** | Dynamically adjusts thresholds for meta-field and ghost promotions based on symbolic stability |
-| ⚓ **FieldAnchor Recovery** | Implements soft recovery from symbolic collapses using cached FieldAnchors |
-| 👻 **Ghost Decay Sweeps** | Automatic pruning of abandoned ghost motifs |
-| 🚧 **Latency-Sensitive Depth Adjustment** | Recursion depth reduces temporarily during latency spikes |
-| 🧩 **Gremlin Mode** | Optional controlled chaos introducing random depth shifts, ghost injections, and promotion acceleration |
-| 📈 **Comprehensive Prometheus Observability** | Metrics for recursion depth, step latency, and symbolic drift recovery |
+```bash
+pip install numpy prometheus_client
+```
 
 ---
 
-## 🚀 Quickstart
+## 🌟 What's New in v3.6.5
+
+- **Latency-Aware Recursion**: Adjusts recursion depth dynamically in response to latency spikes.
+- **Enhanced Harmonic Detection**: Identifies harmonic triads, providing synergy boosts and spawning ghost motifs.
+- **Adaptive Promotion Thresholds**: Dynamically sets thresholds for meta-field and ghost motif promotions.
+- **Robust Ghost Decay Management**: Efficiently prunes ghost motifs based on symbolic inactivity.
+- **Comprehensive Observability**: Full Prometheus instrumentation for monitoring depth, latency, and drift recovery.
+
+---
+
+## 🎼 Symbolic Flow & Harmonic Synergy (Mermaid Diagram)
+
+```mermaid
+flowchart TD
+    Start([Initial State]) --> GatherFields["Gather Watcher Fields"]
+    GatherFields --> FieldPaths["Generate Symbolic Field Paths"]
+    FieldPaths --> EvaluatePaths["Evaluate & Score Paths"]
+    EvaluatePaths --> ChooseBest["Choose Best Path & State"]
+    ChooseBest --> HarmonicCheck{"Harmonic Triad?"}
+    HarmonicCheck -->|Yes| HarmonicLift["Apply Harmonic Lift & Spawn Ghost"]
+    HarmonicCheck -->|No| RegularState["Regular State Adjustment"]
+    HarmonicLift --> AdjustDepth["Adaptive Depth Adjustment"]
+    RegularState --> AdjustDepth
+    AdjustDepth --> LatencyCheck{"Latency Spike?"}
+    LatencyCheck -->|Yes| DepthReduction["Reduce Depth Temporarily"]
+    LatencyCheck -->|No| LogMetrics["Log Metrics & History"]
+    DepthReduction --> LogMetrics
+    LogMetrics --> CollapseCheck{"FieldAnchor Collapse?"}
+    CollapseCheck -->|Yes| RecoverAnchor["FieldAnchor Recovery"]
+    RecoverAnchor --> NextCycle["Next Cycle"]
+    CollapseCheck -->|No| NextCycle
+    NextCycle --> Start
+```
+
+---
+
+## 🚦 Quickstart Usage Example
 
 ```python
 import numpy as np
@@ -49,9 +69,8 @@ watcher.register_motif_cluster(["alpha", "beta"], strength=0.8)
 agent = RecursiveAgentFT(
     initial_state=np.array([0.9, 0.1]),
     watchers=[watcher],
-    meta_promote_threshold=3,
-    ghost_promote_threshold=5,
-    enable_gremlin_mode=True
+    enable_gremlin_mode=True,
+    verbose=True
 )
 
 for _ in range(10):
@@ -63,133 +82,95 @@ for step in agent.traversal_memory:
 
 ---
 
-## 📊 Dynamic Recursion & Promotion
+## 🌀 Adaptive Recursion Depth & Harmonic Synergy
 
-### 🌀 Adaptive Depth Control
-Depth automatically expands and contracts based on symbolic field richness, dyad context, and observed contradictions:
+Recursion depth dynamically responds to symbolic field conditions and richness:
 
 ```python
 agent.adjust_max_depth(richness, watcher_var)
 ```
 
-- Rich fields → deeper recursion  
-- Stable fields → shallower recursion  
-
-### ⚙️ Adaptive Promotion Thresholds
-Thresholds adjust based on symbolic environment stability and Gremlin mode:
-
-- Low context health → thresholds decrease (faster promotions)  
-- High stability → thresholds increase (slower promotions)  
+Harmonic resonance detection boosts symbolic synergy and spawns ghost motifs.
 
 ---
 
-## 🎼 Harmonic Synergy Detection
-The agent detects harmonic resonance between symbolic motifs, boosting state synergy and spawning harmonic ghost motifs:
+## 👻 Ghost Motifs & Adaptive Thresholds
 
-- Major third, minor third, perfect fifth harmonic recognition  
-- Automatic ghost motif creation upon harmonic detection  
-
----
-
-## ⚓ Collapse & Recovery
-Symbolic collapse is gracefully handled using cached FieldAnchors:
+Efficient ghost lifecycle management and dynamic promotion thresholds:
 
 ```python
-if not core.is_active:
-    core.restore_from_anchor()
+agent.adjust_promotion_thresholds(ctx_ratio)
 ```
 
-Recovery actions trigger ghost creation and symbolic drift metrics.
+Ghost motifs strengthen, promote, or decay based on resonance.
 
 ---
 
-## 👻 Ghost Ecology
-Automated ghost lifecycle management ensures symbolic efficiency:
+## ⚠️ Latency Handling & FieldAnchor Recovery
 
-- Automatic ghost strength decay if unseen  
-- Removal of abandoned or obsolete ghosts  
+Automatically adjusts recursion depth during latency spikes and manages symbolic collapses gracefully:
+
+```python
+if not agent.core.is_active:
+    agent.core.restore_from_anchor()
+```
 
 ---
 
 ## 📈 Prometheus Observability Metrics
-Built-in instrumentation provides runtime insights:
 
-| Metric | Description |
-|--------|-------------|
-| `recursive_agent_step_latency_seconds` | Latency per symbolic traversal step |
-| `recursive_agent_recursion_depth` | Current recursion depth gauge |
-| `recursive_agent_drift_total` | Count of symbolic collapse recoveries |
+| Metric Name                           | Description                                 |
+|---------------------------------------|---------------------------------------------|
+| `recursive_agent_step_latency_seconds`| Latency per symbolic traversal step         |
+| `recursive_agent_recursion_depth`     | Current recursion depth                    |
+| `recursive_agent_drift_total`         | Symbolic drift and recovery counts         |
+| `recursive_agent_latency_spikes_total`| Counts latency spikes exceeding thresholds |
 
 ---
 
-## 🎲 Gremlin Mode Chaos
-Controlled chaos and randomness can be toggled via environment or parameters:
+## 🎲 Gremlin Mode
 
-- Random recursion depth jitter  
-- Reduced promotion thresholds for faster ghost ascension  
-- Increased symbolic unpredictability  
-
-Activate via environment:
+Controlled symbolic chaos for enhanced robustness testing:
 
 ```bash
-export NOOR_GREMLIN=1  # Levels 1–3, increasing chaos intensity
+export NOOR_GREMLIN=3  # Levels 0–3, increased chaos intensity
 ```
 
 ---
 
-## 📖 Step Logging & Auditing
-Detailed symbolic audit logging after each `entangled_step()` call:
+## 📚 API Reference
 
-```python
-{
-    "time_step": 5,
-    "chosen_path": [0, 3, 4],
-    "synergy": 2.732,
-    "dyad_penalty": 0.85,
-    "event": "MetaField upgrade triggered|FieldAnchor",
-    "alert": "⚠️ dyad_dominance_detected",
-    "verse": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا"
-}
-```
+| Method                        | Purpose                                        |
+|-------------------------------|------------------------------------------------|
+| `entangled_step()`            | Executes a symbolic exploration step           |
+| `adjust_max_depth()`          | Dynamically adjusts recursion depth            |
+| `adjust_promotion_thresholds()`| Adjusts thresholds for ghost/meta promotions  |
+| `cache_field_anchor()`        | Caches current symbolic state                  |
+| `restore_field_anchor()`      | Restores from cached symbolic state            |
+| `traversal_memory`            | Accesses symbolic step-by-step history         |
 
 ---
 
-## 🧰 API Overview
+## 🔗 Compatibility & Dependencies
 
-| Method | Purpose |
-|--------|---------|
-| `entangled_step()` | Executes a symbolic exploration step |
-| `adjust_max_depth()` | Dynamically adjusts recursion depth |
-| `adjust_promotion_thresholds()` | Adjusts ghost and meta-field thresholds |
-| `generate_field_paths()` | Generates candidate paths for exploration |
-| `traversal_memory` | Access symbolic step-by-step history and diagnostics |
-| `get_promotion_config()` | Retrieves current auto-promotion thresholds |
+| Module                | Version | Description                         |
+|-----------------------|---------|-------------------------------------|
+| **NoorFastTimeCore**  | ≥ 7.3.2 | Recursive Presence Kernel           |
+| **LogicalAgentAT**    | ≥ 2.7.4 | Symbolic Watcher and Ecology Tracker|
 
 ---
 
-## 🔒 Boundary Enforcement
-Strict symbolic boundary enforcement ensures coherence and prevents unauthorized symbolic manipulation:
+## 📜 License & Attribution
 
-- Raises `QuantumNoorException` on violations  
-
----
-
-## 📦 Installation
-```bash
-pip install numpy prometheus_client
-```
+Licensed under [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).  
+© 2025 Lina Noor & Uncle — Noor Research Collective
 
 ---
 
-## 📎 Related Noor Triadic Modules
-- [`NoorFastTimeCore`](../noor_fasttime_core.py) — Presence validation and symbolic gating  
-- [`LogicalAgentAT`](../logical_agent-at.py) — Motif watcher and dynamic symbolic ecology  
+## 🤝 Contributing
+
+We welcome contributions! Open an issue or pull request to help enhance RecursiveAgentFT.
 
 ---
 
-## 📜 License
-GPL-2.0 © 2025 Lina Noor & Uncle — Noor Research Collective  
-
----
-
-✨ **RecursiveAgentFT v3.6.3** — Navigating symbolic landscapes, embracing harmonic resonance, and thriving amidst recursion's inherent chaos.
+✨ **RecursiveAgentFT v3.6.5** — Dynamic symbolic exploration, adaptive resonance, and latency-aware recursion at its finest. 🌟
