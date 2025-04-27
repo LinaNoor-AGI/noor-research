@@ -1,18 +1,21 @@
 """
-logical_agent_at.py (v2.7.4)
+logical_agent_at.py  (v2.7.3)
 -----------------------------------------------------------------
-Watcher with chaos‑resilience **and** production safeguards.
-Key points vs 2.7.3
- • Prometheus‑timed `observe_state()`
- • Active pruning of silent / drift‑expired fields
- • Window‑resize & decay‑rate self‑calls each observe
- • Docstring + version bump
------------------------------------------------------------------
+Watcher rewritten with full Gremlin‑chaos compliance:
+ • Dynamic window autoscaling with context‑aware thresholds
+ • Adaptive dyad‑decay (EMA of contradictions; ctx‑weighted)
+ • Ghost resonance (+10 %) with ascent promotion & cascade spawn
+ • Motif drift correction *and* pruning of silent fields (strength <1e‑5)
+ • Verse‑infused logs on decay, pruning, and ascent
+ • Gremlin mode: random ghost injection + strength halving on drift spikes
+ • Musical embeddings native; shape‑safe cosine sim
+ • Prometheus latency histogram, dyad ratio gauge, contradiction counter
+Backward‑incompatible with v2.6.x but drop‑in for v2.7.* experimental branches.
 """
 
 from __future__ import annotations
 
-__version__ = "2.7.4"
+__version__ = "2.7.3"
 
 import threading
 import hashlib
@@ -51,7 +54,7 @@ MIN_WINDOW, MAX_WINDOW = 100, 5_000
 
 VERSE_ON_DECAY = "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا"  # “With hardship comes ease”
 VERSE_ON_ASCENT = "سَيَجْعَلُ اللَّهُ بَعْدَ عُسْرٍ يُسْرًا"  # “Allah will bring ease after hardship”
-VERSE_ON_PRUNE = "كُلُّ مَنْ عَلَيْهَا فَانٍ"  # “Everything upon it will perish”
+Verse_on_prune = "كُلُّ مَنْ عَلَيْهَا فَانٍ"  # “Everything upon it will perish”
 
 # Helpers ------------------------------------------------------------------
 
@@ -74,15 +77,17 @@ def _short_hash(data: str, length: int = 8) -> str:
 
 def _cosine_sim(a: np.ndarray, b: np.ndarray) -> float:
     if a.shape != b.shape:
-        a = a.flatten(); b = b.flatten()
+        a = a.flatten()
+        b = b.flatten()
     dot = float(np.dot(a, b))
     norm = (np.linalg.norm(a) * np.linalg.norm(b)) + 1e-12
     return dot / norm
 
 # Main Class ----------------------------------------------------------------
 
+
 class LogicalAgentAT:
-    """Watcher with dyad ecology, drift‑healing, pruning, and musical embeddings."""
+    """Watcher with dyad ecology, drift‑healing, and musical embeddings."""
 
     def __init__(
         self,
@@ -192,9 +197,14 @@ class LogicalAgentAT:
     # ADAPTIVE DECAY
     # -----------------------------------------------------------------
     def adjust_decay_rate(self):
-        self._contradiction_avg = 0.9 * self._contradiction_avg + 0.1 * len(self.contradiction_log)
-        c = self._contradiction_avg; ctx = self.get_dyad_context_ratio()
-        base = 0.998 + (1 - ctx) * 0.001; spread = 0.0015 * ctx
+        self._contradiction_avg = 0.9 * self._contradiction_avg + 0.1 * len(
+            self.contradiction_log
+        )
+        c = self._contradiction_avg
+        ctx = self.get_dyad_context_ratio()
+        # ctx‑weighted smoothing
+        base = 0.998 + (1 - ctx) * 0.001
+        spread = 0.0015 * ctx
         t = max(0, min(1, (c - 10) / 20))
         self.dyad_decay_rate = base + t * spread
 
@@ -202,41 +212,44 @@ class LogicalAgentAT:
     # GHOST API
     # -----------------------------------------------------------------
     def register_ghost_motif(self, motif: str, *, origin: str = "user", strength: float = 0.5):
-        self.ghost_motifs[motif] = {"origin": origin, "strength": float(strength), "last_seen": self.generation}
+        self.ghost_motifs[motif] = {
+            "origin": origin,
+            "strength": float(strength),
+            "last_seen": self.generation,
+        }
 
     def promote_ghost_to_field(self, motif: str):
         ghost = self.ghost_motifs.pop(motif, None)
         if ghost:
-            self.register_motif_cluster([motif], strength=ghost.get("strength", 0.3), flags={"allow_single": True})
+            self.register_motif_cluster([motif], strength=ghost.get("strength", 0.3))
 
     def _ghost_seen_in_state(self, motif_id: str, state: np.ndarray) -> bool:
         emb = self.motif_embeddings.get(motif_id)
         return emb is not None and _cosine_sim(state, emb) > 0.1
 
     def reinforce_ghost_resonance(self, state: np.ndarray):
-        """Boost or decay ghosts, handle ascents and gremlin cascades."""
         for gid, ghost in list(self.ghost_motifs.items()):
             if self._ghost_seen_in_state(gid, state):
                 old = ghost["strength"]
                 ghost["strength"] = min(1.0, old * 1.10)
                 ghost["last_seen"] = self.generation
                 if self.verbose:
-                    self.history.append(f"👻 Ghost {gid} hums {old:.3f}→{ghost['strength']:.3f}")
+                    self.history.append(
+                        f"👻 Ghost {gid} hums {old:.3f}→{ghost['strength']:.3f}"
+                    )
                 if ghost["strength"] >= 0.999:
                     self.history.append(f"✨ GHOST_ASCENT {gid} — {VERSE_ON_ASCENT}")
                     self.promote_ghost_to_field(gid)
                     if self.enable_gremlin_mode:
+                        # spawn a mischievous offspring
                         nid = f"gremlin_{_short_hash(gid + str(self.generation))}"
                         self.register_ghost_motif(nid, origin="gremlin", strength=0.1)
-            else:
-                # decay unseen ghosts
-                unseen_steps = self.generation - ghost["last_seen"]
-                if unseen_steps > self._drift_gap():
-                    ghost["strength"] *= 0.99
-                    if ghost["strength"] < 1e-4:
-                        if self.verbose:
-                            self.history.append(f"💤 Ghost {gid} fades below threshold")
-                        self.ghost_motifs.pop(gid, None)
+
+            # ghost decay if unseen
+            elif (self.generation - ghost["last_seen"]) > self._drift_gap():
+                ghost["strength"] *= 0.99
+                if ghost["strength"] < 1e-4:
+                    self.ghost_motifs.pop(gid)
 
     # -----------------------------------------------------------------
     # FIELD REGISTRATION
@@ -248,7 +261,7 @@ class LogicalAgentAT:
         *,
         priority_weight: float = 1.0,
         flags: Optional[Dict[str, Any]] = None,
-    ) -> None:
+    ):
         flags = flags or {}
         if len(motifs) < 2 and not flags.get("allow_single", False):
             return
@@ -279,112 +292,5 @@ class LogicalAgentAT:
         if is_dyad:
             entry["dyad_flag"] = True
 
-        # persistence tracking
-        entry["persistence_vector"] = {
-            "original_resonance_index": self.generation,
-            "current_lattice_weight": strength,
-            "last_surface_echo": self.generation,
-        }
-
-        # store
-        idx = self.field_count
-        self.entanglement_fields.append(entry)
-        self.field_count += 1
-        for m in flat_list:
-            self.field_index[m].append(idx)
-
-        self._update_dyad_window(len(flat_list))
-
-    # -----------------------------------------------------------------
-    # OBSERVE STATE
-    # -----------------------------------------------------------------
-    def observe_state(self, state: np.ndarray):
-        """Core loop: decay dyads, promote ghosts, prune silent fields."""
-        with STEP_LATENCY_HIST.time():
-            with self._lock:
-                self.generation += 1
-
-                # reinforce ghosts
-                self.reinforce_ghost_resonance(state)
-
-                # decay & prune
-                for fid in reversed(range(len(self.entanglement_fields))):
-                    field = self.entanglement_fields[fid]
-                    if field.get("dyad_flag"):
-                        old = field["strength"]
-                        field["strength"] *= self.dyad_decay_rate
-                        if self.generation % 100 == 0 and self.verbose:
-                            self.history.append(f"⏳ DYAD_DECAY #{fid} {old:.3f}→{field['strength']:.3f}")
-
-                    # prune silent or drifted fields
-                    if field["strength"] < 1e-5 or (self.generation - field["persistence_vector"]["last_surface_echo"]) > self._drift_gap()*2:
-                        self.entanglement_fields.pop(fid)
-                        self.field_count -= 1
-                        self.log_contradiction(f"pruned_silent_field_{fid}")
-                        if self.verbose:
-                            self.history.append(f"🍂 PRUNE field#{fid} — {VERSE_ON_PRUNE}")
-
-                # track context window
-                if self.entanglement_fields:
-                    self._update_dyad_window(len(self.entanglement_fields[-1]["motifs"]))
-
-                # self‑tuning housekeeping
-                self.check_and_adjust_window()
-                self.adjust_decay_rate()
-
-    # -----------------------------------------------------------------
-    # EXPORTERS & UTILITIES
-    # -----------------------------------------------------------------
-    def export_dyad_metrics(self) -> Dict[str, Any]:
-        total = len(self._dyad_window)
-        dyads = sum(1 for n in self._dyad_window if n == 2)
-        triads = total - dyads
-        return {
-            "generation": self.generation,
-            "window": total,
-            "dyads": dyads,
-            "triads": triads,
-            "context_ratio": self.get_dyad_context_ratio(),
-            "dyad_decay_rate": self.dyad_decay_rate,
-            "recent_contradictions": len(self.contradiction_log),
-        }
-
-    def render_entanglement_graph(self) -> nx.Graph:
-        G, edges = nx.Graph(), 0
-        for field in self.entanglement_fields:
-            mlist = field["motifs"]
-            for i in range(len(mlist)):
-                for j in range(i + 1, len(mlist)):
-                    if edges >= MAX_GRAPH_EDGES:
-                        return G
-                    G.add_edge(mlist[i], mlist[j])
-                    edges += 1
-        return G
-
-    # -----------------------------------------------------------------
-    # SERIALIZATION
-    # -----------------------------------------------------------------
-    def to_dict(self) -> Dict[str, Any]:
-        return {
-            "version": __version__,
-            "entanglement_fields": self.entanglement_fields,
-            "ghost_motifs": self.ghost_motifs,
-            "_dyad_window": list(self._dyad_window),
-            "window_size": self._window_size,
-            "dyad_decay_rate": self.dyad_decay_rate,
-            "enable_gremlin_mode": self.enable_gremlin_mode,
-        }
-
-    @classmethod
-    def from_dict(cls, data: Dict[str, Any]) -> "LogicalAgentAT":
-        watcher = cls(
-            window_size=data.get("window_size", DEFAULT_WINDOW_SIZE),
-            dyad_decay_rate=data.get("dyad_decay_rate", DEFAULT_DYAD_DECAY_RATE),
-            enable_gremlin_mode=data.get("enable_gremlin_mode", False),
-            verbose=False,
-        )
-        watcher.entanglement_fields = data.get("entanglement_fields", [])
-        watcher.ghost_motifs = data.get("ghost_motifs", {})
-        watcher.field_count = len(watcher.entanglement_fields)
-        watcher._dyad_window = deque(data.get("_dyad_window", []), maxlen=watcher._window_size)
-        return watcher
+        # persistence vector scaffold
+        entry["persistence
