@@ -12,7 +12,7 @@ Gremlin levels (via NOOR_GREMLIN env or enable_gremlin_mode param):
 
 from __future__ import annotations
 
-__version__ = "3.6.4"
+__version__ = "3.6.5"
 
 import os, math, time, hashlib, random
 from copy import deepcopy
