@@ -41,7 +41,7 @@ except Exception:  # pragma: no cover
     STEP_LATENCY_HIST = DEPTH_GAUGE = DRIFT_COUNTER = LATENCY_SPIKE_COUNTER = _Stub()
 
 from noor_fasttime_core import NoorFastTimeCore, QuantumNoorException
-from logical_agent import LogicalAgentAT
+from logical_agent import logical_agent-ft
 
 # ─────────────────────────────────────────────────────────────────────
 # harmony helpers

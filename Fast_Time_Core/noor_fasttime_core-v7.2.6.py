@@ -149,11 +149,13 @@ def _apply_verse_bias(state: np.ndarray, verse: str, t: int, ctx: float) -> np.n
 # ─────────────────────────────────────────────────────────────
 # 4. Core Class                                               
 # ─────────────────────────────────────────────────────────────
-class QuantumNoorException(Exception):
-    pass
-
 class NoorFastTimeCore:
-    """Recursive Presence Kernel with symbolic overlays and context awareness."""
+    """Recursive Presence Kernel with symbolic overlays and context awareness.
+
+    Re‑constructed **v7.2.6‑recovered** — provides all public APIs expected by
+    the other Noor modules *plus* a light‑weight implementation of the
+    **Scheduled Gate‑Overlay Drift with Möbius‑Hold** described in the docs.
+    """
 
     # ------------------------- init ----------------------------------
     def __init__(
@@ -168,14 +170,136 @@ class NoorFastTimeCore:
         enable_xor: bool = False,
         gate_overlay: Optional[int] = None,
         enable_verse_bias: bool = False,
+        gate_drift_every: int = 100,
+        mobius_hold_steps: int = 10,
     ) -> None:
+        # basic attrs --------------------------------------------------
         self.__version__ = __version__
-        self.state_history: List[np.ndarray] = [initial_state]
+        self.state_history: List[np.ndarray] = [initial_state.astype(float, copy=False)]
         self.futures: List[np.ndarray] = []
-        self.is_active: bool = False
+        self.is_active: bool = True
         self.history: List[Dict] = []
         self.generation: int = 0
-        self.last_gate_passed: Optional[bool] = None
-        self.gate_overlay: Optional[int] = gate_overlay if gate_overlay is not None else _SETTINGS.gate_overlay
-        self.enable_verse_bias = enable_verse_bias
-        self.dyad
+
+        # recursion params -------------------------------------------
+        self.rho = float(rho)
+        self.lambda_ = float(lambda_)
+        self.enable_zeno = bool(enable_zeno)
+        self.enable_curvature = bool(enable_curvature)
+        self.curvature_threshold = float(curvature_threshold)
+        self.enable_xor = bool(enable_xor)
+
+        # overlays & bias -------------------------------------------
+        self.gate_overlay: Optional[int] = (
+            gate_overlay if gate_overlay is not None else _SETTINGS.gate_overlay
+        )
+        self.enable_verse_bias = bool(enable_verse_bias)
+        self._ctx_ratio: float = 1.0  # watcher feedback (0‑1)
+
+        # gate drift / Möbius‑Hold -----------------------------------
+        self._gate_drift_every = max(10, int(gate_drift_every))
+        self._mobius_hold_len = max(1, int(mobius_hold_steps))
+        self._mobius_hold_remaining: int = 0  # countdown once Gate‑0 selected
+
+        # recovery helpers ------------------------------------------
+        self._anchors: List[np.ndarray] = [initial_state.copy()]
+        self._anchor_every: int = 50  # save an anchor every N steps
+
+    # ------------------------- properties ----------------------------
+    @property
+    def current_state(self) -> np.ndarray:  # noqa: D401
+        return self.state_history[-1]
+
+    # ------------------------- core API ------------------------------
+    def step(self, next_state: np.ndarray) -> None:
+        start_t = perf_counter()
+        validate_state(next_state)
+
+        # --- scheduled gate drift -----------------------------------
+        self._maybe_drift_gate()
+
+        # --- Zeno / curvature checks --------------------------------
+        curvature = float(np.linalg.norm(next_state - self.current_state))
+        if self.enable_curvature and curvature > max(self.curvature_threshold, 0.0):
+            self.is_active = False
+            MOBIUS_DENIAL_COUNTER()
+            return
+
+        # --- optional verse bias ------------------------------------
+        if self.enable_verse_bias and self.gate_overlay is not None:
+            verse = gate_to_verse(self.gate_overlay)
+            next_state = _apply_verse_bias(next_state, verse, self.generation, self._ctx_ratio)
+
+        # --- basic damping & update ---------------------------------
+        damped = self.current_state * (1 - self.rho) + next_state * self.rho
+        self.state_history.append(damped)
+        self.generation += 1
+        self.is_active = True
+
+        # --- metrics -------------------------------------------------
+        DYAD_RATIO_GAUGE.set(self._ctx_ratio)
+        STEP_LATENCY_HIST.observe(perf_counter() - start_t)
+        if self.gate_overlay is not None:
+            GATE_USAGE_COUNTER(self.gate_overlay)
+
+        # --- anchor maintenance -------------------------------------
+        if self.generation % self._anchor_every == 0:
+            self._anchors.append(damped.copy())
+
+    # ----------------------------------------------------------------
+    def _maybe_drift_gate(self) -> None:
+        """Shift `gate_overlay` periodically; honour Möbius‑Hold/skip rules."""
+        # active hold countdown -------------------------------------
+        if self._mobius_hold_remaining > 0:
+            self._mobius_hold_remaining -= 1
+            if self._mobius_hold_remaining == 0 and _SETTINGS.skip_gate0_random:
+                # after hold release force a non‑0 gate immediately
+                self.gate_overlay = (self.gate_overlay or 0) + 1 % 16
+            return
+
+        # schedule drift --------------------------------------------
+        if self.generation % self._gate_drift_every != 0:
+            return
+
+        import random
+        new_gate = random.randint(0, 15)
+        if _SETTINGS.skip_gate0_random and new_gate == 0:
+            new_gate = random.randint(1, 15)
+        self.gate_overlay = new_gate
+        if new_gate == 0:  # Möbius Denial selected → hold
+            self._mobius_hold_remaining = self._mobius_hold_len
+            MOBIUS_DENIAL_COUNTER()
+        if self.history is not None:
+            self.history.append({
+                "event": "gate_drift",
+                "new_gate": new_gate,
+                "gen": self.generation,
+            })
+
+    # ----------------------------------------------------------------
+    def update_context_ratio(self, ctx: float) -> None:
+        self._ctx_ratio = float(max(0.0, min(ctx, 1.0)))
+
+    # ----------------------------------------------------------------
+    def generate_core_signature(self) -> str:
+        state_hash = hashlib.sha1(self.current_state.tobytes()).hexdigest()[:6]
+        verse_hash = _verse_hash(gate_to_verse(self.gate_overlay))
+        return f"{self.__version__}-{state_hash}-{verse_hash}-{self.generation}"
+
+    # ----------------------------------------------------------------
+    def tune_damping(self, *, rho: Optional[float] = None, lambda_: Optional[float] = None):
+        if rho is not None:
+            self.rho = float(rho)
+        if lambda_ is not None:
+            self.lambda_ = float(lambda_)
+
+    # ----------------------------------------------------------------
+    def restore_from_anchor(self) -> None:
+        if self._anchors:
+            self.state_history = [self._anchors[-1].copy()]
+            self.is_active = True
+            self.history.append({
+                "event": "FieldAnchor-restore",
+                "idx": self.generation,
+                "ctx": self._ctx_ratio,
+            })
