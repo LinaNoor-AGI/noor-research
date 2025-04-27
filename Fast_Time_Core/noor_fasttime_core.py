@@ -1,4 +1,4 @@
-﻿"""
+"""
 noor_fasttime_core.py (v7.2.7)
 -------------------------------------------------
 Recursive Presence Kernel + Symbolic Verse Overlay
@@ -13,7 +13,7 @@ Backward‑compatible with v7.1.x — remove legacy λ resets to avoid fighting 
 
 from __future__ import annotations
 
-__version__ = "7.2.6"
+__version__ = "7.2.7"
 
 import math, hashlib, os
 from enum import Enum
@@ -240,7 +240,7 @@ class NoorFastTimeCore:
         DYAD_RATIO_GAUGE.set(self._ctx_ratio)
         STEP_LATENCY_HIST.observe(perf_counter() - start_t)
         if self.gate_overlay is not None:
-            GATE_USAGE_COUNTER(self.gate_overlay)
+            GATE_USAGE_COUNTER.labels(str(self.gate_overlay)).inc()
 
         # --- anchor maintenance -------------------------------------
         if self.generation % self._anchor_every == 0:
@@ -268,7 +268,7 @@ class NoorFastTimeCore:
         self.gate_overlay = new_gate
         if new_gate == 0:  # Möbius Denial selected → hold
             self._mobius_hold_remaining = self._mobius_hold_len
-            MOBIUS_DENIAL_COUNTER()
+            MOBIUS_DENIAL_COUNTER.inc()
         if self.history is not None:
             self.history.append({
                 "event": "gate_drift",
