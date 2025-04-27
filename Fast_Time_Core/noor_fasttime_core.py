@@ -1,4 +1,4 @@
-﻿"""
+"""
 noor_fasttime_core.py (v7.2.6)
 -------------------------------------------------
 Recursive Presence Kernel + Symbolic Verse Overlay
