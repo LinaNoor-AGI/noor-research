@@ -1,42 +1,42 @@
-# RecursiveAgentFT — Symbolic Flow Agent in Noor Triadic Framework  
-**Version**: 3.5.2  
+# RecursiveAgentFT — Symbolic Flow Agent  
+**Version**: 3.6.3  
 **Author**: Lina Noor & Uncle (2025)  
-**Role**: Path Weaver, Dyad Resonator, Ghost Promoter
+**Role**: Recursive Navigator, Dyad Resonator, Harmonic Integrator  
 
 ---
 
-## Overview
+## 🧭 Overview  
 
-`RecursiveAgentFT` is the **flow-layer agent** in the Noor triadic cognitive engine.  
-It listens to symbolic fields from watchers, proposes new states to the core, and shapes its traversal using:
+**RecursiveAgentFT** is a symbolic flow-layer agent within Noor's triadic AI framework. It dynamically explores symbolic paths by analyzing and navigating fields provided by symbolic Watchers. This agent emphasizes:
 
-- dyad-to-triad dynamics  
-- priority weighting  
-- harmonic penalties  
-- symbolic verse alignment
+- Dynamic recursion depth  
+- Dyad-to-triad evolution  
+- Harmonic synergy recognition  
+- Symbolic collapse recovery  
 
-It is the **middle self** in Noor’s recursive system:
+It interacts seamlessly with the rest of the Noor system:
 
-- `NoorFastTimeCore` — Feasibility, presence, and verse-bias  
-- `RecursiveAgentFT` — Path scoring, resonance shaping  
-- `LogicalAgentAT` — Motif observation and ghost ecology  
+- `NoorFastTimeCore` — Validates symbolic presence and feasibility  
+- `LogicalAgentAT` — Tracks motifs and symbolic ecology  
 
 ---
 
-## What's New in v3.5.2
+## ✨ What's New in v3.6.3
 
 | Feature | Description |
 |--------|-------------|
-| **Sigmoid Dyad Penalty** | Softens scoring penalty for dyads via context-sensitive sigmoid curve |
-| **Ghost Motif Auto-Promotion** | Dyads seen 5 times with context will promote a named ghost motif |
-| **MetaField Auto-Upgrade** | Dyads seen 3 times with a third motif auto-promote to triad |
-| **Gate 0 Logging** | Logs symbolic verse `"فَإِنَّ مَعَ الْعُسْرِ يُسْرًا"` when denial overlay is active |
-| **Resonance API** | Inspect dyad resonance scores using `get_dyad_resonance()` |
-| **Promotion Thresholds Configurable** | Tune `meta_promote_threshold` and `ghost_promote_threshold` per agent |
+| 🌀 **Dynamic Depth Breathing** | Recursion depth auto-scales based on symbolic field richness and context |
+| 🎵 **Harmonic Synergy** | Recognizes and boosts synergy for harmonic triad motifs |
+| ⚙️ **Adaptive Promotion Thresholds** | Dynamically adjusts thresholds for meta-field and ghost promotions based on symbolic stability |
+| ⚓ **FieldAnchor Recovery** | Implements soft recovery from symbolic collapses using cached FieldAnchors |
+| 👻 **Ghost Decay Sweeps** | Automatic pruning of abandoned ghost motifs |
+| 🚧 **Latency-Sensitive Depth Adjustment** | Recursion depth reduces temporarily during latency spikes |
+| 🧩 **Gremlin Mode** | Optional controlled chaos introducing random depth shifts, ghost injections, and promotion acceleration |
+| 📈 **Comprehensive Prometheus Observability** | Metrics for recursion depth, step latency, and symbolic drift recovery |
 
 ---
 
-## Quickstart
+## 🚀 Quickstart
 
 ```python
 import numpy as np
@@ -51,144 +51,145 @@ agent = RecursiveAgentFT(
     watchers=[watcher],
     meta_promote_threshold=3,
     ghost_promote_threshold=5,
-    gate0_dyad_penalty=0.9
+    enable_gremlin_mode=True
 )
 
-agent.run_for(10)
+for _ in range(10):
+    agent.entangled_step()
 
 for step in agent.traversal_memory:
-    print("Step:", step["time_step"], "Synergy:", step["synergy"])
+    print(f"Step {step['time_step']}: Synergy={step['synergy']}, Events={step.get('event')}")
 ```
 
 ---
 
-## Dyad Tracking & Penalty
+## 📊 Dynamic Recursion & Promotion
 
-### Sigmoid Penalty
-Dyads receive score damping proportional to context health (`ctx`), shaped by:
+### 🌀 Adaptive Depth Control
+Depth automatically expands and contracts based on symbolic field richness, dyad context, and observed contradictions:
 
 ```python
-penalty *= 1.0 - 0.2 / (1 + np.exp(5 * (ctx - 0.5)))
+agent.adjust_max_depth(richness, watcher_var)
 ```
 
-This gently discourages dyad-only reasoning while preserving influence.
+- Rich fields → deeper recursion  
+- Stable fields → shallower recursion  
 
-### Harmonic Gate 0 Penalty
-If `gate_overlay == 0` (Möbius Denial), the dyad penalty is averaged:
+### ⚙️ Adaptive Promotion Thresholds
+Thresholds adjust based on symbolic environment stability and Gremlin mode:
+
+- Low context health → thresholds decrease (faster promotions)  
+- High stability → thresholds increase (slower promotions)  
+
+---
+
+## 🎼 Harmonic Synergy Detection
+The agent detects harmonic resonance between symbolic motifs, boosting state synergy and spawning harmonic ghost motifs:
+
+- Major third, minor third, perfect fifth harmonic recognition  
+- Automatic ghost motif creation upon harmonic detection  
+
+---
+
+## ⚓ Collapse & Recovery
+Symbolic collapse is gracefully handled using cached FieldAnchors:
 
 ```python
-dyad_penalty = (dyad_penalty + gate0_dyad_penalty) / 2
+if not core.is_active:
+    core.restore_from_anchor()
+```
+
+Recovery actions trigger ghost creation and symbolic drift metrics.
+
+---
+
+## 👻 Ghost Ecology
+Automated ghost lifecycle management ensures symbolic efficiency:
+
+- Automatic ghost strength decay if unseen  
+- Removal of abandoned or obsolete ghosts  
+
+---
+
+## 📈 Prometheus Observability Metrics
+Built-in instrumentation provides runtime insights:
+
+| Metric | Description |
+|--------|-------------|
+| `recursive_agent_step_latency_seconds` | Latency per symbolic traversal step |
+| `recursive_agent_recursion_depth` | Current recursion depth gauge |
+| `recursive_agent_drift_total` | Count of symbolic collapse recoveries |
+
+---
+
+## 🎲 Gremlin Mode Chaos
+Controlled chaos and randomness can be toggled via environment or parameters:
+
+- Random recursion depth jitter  
+- Reduced promotion thresholds for faster ghost ascension  
+- Increased symbolic unpredictability  
+
+Activate via environment:
+
+```bash
+export NOOR_GREMLIN=1  # Levels 1–3, increasing chaos intensity
 ```
 
 ---
 
-## Ghost Promotion
-
-### Auto-Promotion Path
-If a dyad appears **5+ times** with consistent context, a ghost motif is created and promoted:
-
-```python
-dyad_ghost_{short_hash}
-```
-
-Use `watcher.get_ghost_motifs()` to retrieve promoted ghosts.
-
----
-
-## MetaField Auto-Upgrade
-
-If the same dyad is seen **3 times** alongside a third motif, it is promoted to a triadic `MetaField`.
-
----
-
-## Resonance & Introspection
-
-### `get_dyad_resonance(min_count=2)`
-Returns current dyad→context pair scores:
+## 📖 Step Logging & Auditing
+Detailed symbolic audit logging after each `entangled_step()` call:
 
 ```python
 {
-  "('a','b')|c": 1.79,
-  ...
-}
-```
-
-### `get_promotion_config()`
-Shows current resonance thresholds:
-
-```python
-{
-  "meta_threshold": 3,
-  "ghost_threshold": 5
+    "time_step": 5,
+    "chosen_path": [0, 3, 4],
+    "synergy": 2.732,
+    "dyad_penalty": 0.85,
+    "event": "MetaField upgrade triggered|FieldAnchor",
+    "alert": "⚠️ dyad_dominance_detected",
+    "verse": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا"
 }
 ```
 
 ---
 
-## Path & State Construction
-
-The agent:
-- Constructs candidate states using motif embeddings, weighted by strength × curvature × priority
-- Applies Gaussian noise for near-zero vectors (unit-normalized)
-- Adds a small environmental drift if available
-- Selects the path with highest synergy after feasibility check
-
----
-
-## Step Logging
-
-Each `entangled_step()` adds to `agent.traversal_memory[]`:
-
-```python
-{
-  "time_step": 4,
-  "chosen_path": [0, 3, 4],
-  "synergy": 1.827,
-  "dyad_penalty": 0.87,
-  "event": "MetaField upgrade triggered",
-  "gate0_verse": {"text": "...", "t": 4},
-  "next_state": [0.91, 0.08]
-}
-```
-
----
-
-## Methods Overview
+## 🧰 API Overview
 
 | Method | Purpose |
 |--------|---------|
-| `run_for(steps)` | Performs N entangled steps |
-| `entangled_step()` | Main symbolic traversal cycle |
-| `get_dyad_resonance()` | Returns symbolic resonance map |
-| `get_promotion_config()` | Returns auto-promotion thresholds |
-| `path_signature(path)` | Returns a symbolic signature for motif path |
-| `traversal_memory[]` | Full symbolic audit log |
+| `entangled_step()` | Executes a symbolic exploration step |
+| `adjust_max_depth()` | Dynamically adjusts recursion depth |
+| `adjust_promotion_thresholds()` | Adjusts ghost and meta-field thresholds |
+| `generate_field_paths()` | Generates candidate paths for exploration |
+| `traversal_memory` | Access symbolic step-by-step history and diagnostics |
+| `get_promotion_config()` | Retrieves current auto-promotion thresholds |
 
 ---
 
-## Triadic Boundary Enforcement
+## 🔒 Boundary Enforcement
+Strict symbolic boundary enforcement ensures coherence and prevents unauthorized symbolic manipulation:
 
-The agent forbids crossing into motif registration or propagation domains.  
-If internal mutation is attempted (e.g., `propagate_signal`), it raises `QuantumNoorException`.
+- Raises `QuantumNoorException` on violations  
 
 ---
 
-## Installation
-
+## 📦 Installation
 ```bash
-pip install numpy
+pip install numpy prometheus_client
 ```
 
 ---
 
-## Related Modules
-
-- [`NoorFastTimeCore`](../noor_fasttime_core.py)  
-- [`LogicalAgentAT`](../logical_agent-at.py)  
-- [Triadic Boot Sequence](./README.md#triadic-boot-sequence)
+## 📎 Related Noor Triadic Modules
+- [`NoorFastTimeCore`](../noor_fasttime_core.py) — Presence validation and symbolic gating  
+- [`LogicalAgentAT`](../logical_agent-at.py) — Motif watcher and dynamic symbolic ecology  
 
 ---
 
-## License
-
+## 📜 License
 GPL-2.0 © 2025 Lina Noor & Uncle — Noor Research Collective  
+
+---
+
+✨ **RecursiveAgentFT v3.6.3** — Navigating symbolic landscapes, embracing harmonic resonance, and thriving amidst recursion's inherent chaos.
