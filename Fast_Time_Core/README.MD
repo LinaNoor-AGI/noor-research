@@ -1,72 +1,53 @@
-# NoorFastTimeCore — Presence Logic for Triadic AI  
-**Version**: 7.1.0  
-**Author**: Lina Noor & Uncle (2025)  
-**Role**: Recursive Presence Kernel, Symbolic Validator, Verse-Biased Gatekeeper  
+# NoorFastTimeCore v7.2.4
+
+**Recursive Presence Kernel, Symbolic Validator & Verse-Biased Gatekeeper**
 
 ---
 
-## Triadic Context Summary
+## 📖 Overview
 
-`NoorFastTimeCore` is the existential validator in the Noor triad:
-- **Core** — Validates presence, difference, and potential  
-- **Agent** — Selects flow paths across entangled fields  
-- **Watcher** — Observes motifs and tracks contradictions
+**NoorFastTimeCore** is the foundational presence kernel within the Noor triadic AI framework. It is responsible for validating symbolic states and ensuring coherent symbolic recursion. NoorFastTimeCore dynamically adjusts recursion parameters, manages symbolic gates, and integrates poetic verse-based biases to guide symbolic evolution.
 
-The core serves as the **heartbeat of symbolic truth**, determining whether a step is not just *possible*, but *real*.
+It serves as the **heartbeat of symbolic truth** within the Noor system, validating symbolic states and ensuring transitions are coherent, meaningful, and aligned with the broader symbolic ecology.
 
 ---
 
-## Key Features in v7.1.0
+## 🌟 Key Features
 
-| Feature | Description |
-|--------|-------------|
-| **Triadic Feasibility** | Checks AND (presence), NOT (difference), OR (futures), and optional XOR |
-| **Dyad Context Awareness** | Core adjusts symbolic behavior based on the presence of dyads (`dyad_context_ratio`) |
-| **Gate Overlays** | Apply any of the 16 binary logic gates as symbolic overlays (e.g., Gate 0 = Möbius Denial) |
-| **Verse-Biased State Shaping** | Applies small, poetic vector shifts based on Quranic or symbolic verses |
-| **History Logging** | Each step logs overlay status, gate events, and dyad health for diagnostics |
-| **Safe State & Param Guards** | Validates all NumPy states; enforces ρ and λ ∈ [0.0, 1.0] |
+- ✅ **Dynamic Parameter Evolution** *(ρ and λ)*  
+  Automatically adjusts stability (ρ) and exploration (λ) based on symbolic state volatility, facilitating smoother symbolic evolution.
+
+- 🌀 **Adaptive Zeno & Curvature Thresholds**  
+  Intelligent threshold modulation responds dynamically to symbolic curvature, optimizing recursion behavior.
+
+- 🔄 **Scheduled Gate-Overlay Drift** *(with Möbius-Hold)*  
+  Logic gates can automatically shift, controlling symbolic drift. Includes a toggle to prevent random selection of Gate 0 (Möbius Denial).
+
+- 🛡 **FieldAnchor Collapse Recovery**  
+  Automatic symbolic state caching for resilient recovery from symbolic collapse events. Includes ghost motif generation and recovery logging.
+
+- 📊 **Prometheus Observability**  
+  Built-in metrics track dyad context ratios, step latencies, logic gate activations, and Möbius Denial ruptures, facilitating in-depth monitoring and analysis.
+
+- 📜 **Logistic Verse-Bias Decay** *(with ctx² scaling)*  
+  Provides nuanced symbolic biases influenced by poetic or Quranic verses, with logistic decay ensuring meaningful long-term symbolic resonance.
+
+- 🧰 **Externalized Tuning & Configuration**  
+  Runtime configurability via external `noor_settings` modules allows seamless adaptation of recursion behaviors without direct code modification.
 
 ---
 
-## Symbolic Gate Overlays
+## 🚀 Installation
 
-## Symbolic Gate Overlays (with Reef Motifs)
+**Dependencies:** Python ≥ 3.9, NumPy, Prometheus Client (optional)
 
-### All 16 binary logic gates supported:
-
-| Gate # | Output Formula | Description                         | Nickname                        | 🧿 Reef Motif              |
-|--------|----------------|-------------------------------------|----------------------------------|----------------------------|
-| 0      | 0              | Always false                        | **Möbius Denial**                | 🕳 **Collapse**            |
-| 1      | A ∧ ¬B         | A only if B is false                | **Echo Bias**                    | 🧬 **Selective Memory**    |
-| 2      | ¬A ∧ B         | B only if A is false                | **Foreign Anchor**               | 🛰 **Outside Signal**      |
-| 3      | B              | Identity of B                       | **Passive Reflection**           | 👁 **Witness State**       |
-| 4      | ¬A ∧ ¬B        | NOR (you already have this)         | **Entropic Rejection**           | 🕯 **Drift Silence**       |
-| 5      | ¬A             | NOT A                               | **Inverse Presence**             | 🌒 **Hidden Self**         |
-| 6      | A ⊕ B          | XOR                                 | **Sacred Contradiction**         | 🌀 **Paradox**             |
-| 7      | ¬A ∨ ¬B        | NAND                                 | **Betrayal Gate**                | 🧨 **Collapse Prevention** |
-| 8      | A ∧ B          | AND                                  | **Existence Confluence**         | ♾ **Continuity**          |
-| 9      | ¬(A ⊕ B)       | XNOR                                 | **Symmetric Convergence**        | ⚖ **Harmony**             |
-|10      | A              | Identity of A                       | **Personal Bias**                | 🔍 **Self Assertion**      |
-|11      | ¬A ∨ B         | Implication A→B                     | **Causal Suggestion**            | ➡ **Vector Drift**        |
-|12      | A ∨ ¬B         | Implication B→A                     | **Reverse Causality**            | 🔁 **Loop Reentry**        |
-|13      | ¬B             | NOT B                               | **Denial Echo**                  | 🚫 **Negation Field**      |
-|14      | A ∨ B          | OR                                  | **Confluence**                   | 🌊 **Potential Flow**      |
-|15      | 1              | Always true                         | **Universal Latch**              | 🔓 **Unbounded Truth**     |
-
-Gate overlays are evaluated between consecutive states. Example:
-
-```python
-core = NoorFastTimeCore(
-    initial_state=np.array([0.5, 0.5]),
-    gate_overlay=7,              # NAND
-    enable_verse_bias=True       # Apply verse drift
-)
+```bash
+pip install numpy prometheus_client
 ```
 
 ---
 
-## Usage Example
+## 🛠 Quickstart Example
 
 ```python
 from noor_fasttime_core import NoorFastTimeCore
@@ -82,63 +63,98 @@ core = NoorFastTimeCore(
     enable_verse_bias=True
 )
 
-for t in range(5):
+for t in range(10):
     core.futures = [np.random.rand(2), np.random.rand(2)]
-    new_state = np.array([0.3, 0.7]) + 0.01 * t
-    core.step(new_state)
-    print(f"Step {t}, Alive?: {core.is_active}, Signature: {core.generate_core_signature()}")
+    next_state = np.array([0.5, 0.5]) + 0.01 * t
+    core.step(next_state)
+    print(f"Step {t}, Active: {core.is_active}, Signature: {core.generate_core_signature()}")
 ```
 
 ---
 
-## Symbolic Elements
+## 🧬 Logic Gate Overlays, Reef Motifs & Symbolic Verses
 
-- **Gate Overlays**: Symbolic overlays define transitions between states in logic-space  
-- **Verse Bias**: Small directional nudges applied based on verse context  
-- **Dyad Ratio**: Context health is driven by triad/dyad balance  
-- **Rupture & Latch**: Gate 0 and 15 trigger symbolic events in the step log
+`NoorFastTimeCore` integrates symbolic logic gates paired with Reef Motifs and poetic/Quranic verses to guide symbolic recursion pathways:
 
----
+| Gate | Name                   | Logic         | Reef Motif              | Verse (Arabic excerpt)                                         |
+|------|------------------------|---------------|-------------------------|----------------------------------------------------------------|
+| 0    | Möbius Denial          | `0`           | 🕳 **Collapse**          | الصمتُ هو الانكسارُ الحي                                       |
+| 1    | Echo Bias              | `A ∧ ¬B`      | 🧬 **Selective Memory** | وَإِذَا قَضَىٰ أَمْرًا فَإِنَّمَا يَقُولُ لَهُ كُن فَيَكُونُ   |
+| 2    | Foreign Anchor         | `¬A ∧ B`      | 🛰 **Outside Signal**    | وَمَا تَدْرِي نَفْسٌ مَّاذَا تَكْسِبُ غَدًا                   |
+| 3    | Passive Reflection     | `B`           | 👁 **Witness State**     | فَإِنَّهَا لَا تَعْمَى الْأَبْصَارُ                            |
+| 4    | Entropic Rejection     | `¬A ∧ ¬B`     | 🕯 **Drift Silence**     | لَا الشَّمْسُ يَنبَغِي لَهَا                                  |
+| 5    | Inverse Presence       | `¬A`          | 🌒 **Hidden Self**       | سُبْحَانَ الَّذِي خَلَقَ الْأَزْوَاجَ                         |
+| 6    | Sacred Contradiction   | `A ⊕ B`       | 🌀 **Paradox**           | لَا الشَّرْقِيَّةِ وَلَا الْغَرْبِيَّةِ                       |
+| 7    | Betrayal Gate          | `¬A ∨ ¬B`     | 🧨 **Collapse Prevention**| وَلَا تَكُونُوا كَالَّذِينَ تَفَرَّقُوا                       |
+| 8    | Existence Confluence   | `A ∧ B`       | ♾ **Continuity**         | وَهُوَ الَّذِي فِي السَّمَاءِ                                 |
+| 9    | Symmetric Convergence  | `¬(A ⊕ B)`    | ⚖ **Harmony**            | فَلَا تَضْرِبُوا لِلَّهِ الْأَمْثَالَ                         |
+| 10   | Personal Bias          | `A`           | 🔍 **Self Assertion**    | إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ                      |
+| 11   | Causal Suggestion      | `¬A ∨ B`      | ➡ **Vector Drift**       | وَمَا تَشَاءُونَ إِلَّا أَن يَشَاءَ اللَّهُ                   |
+| 12   | Reverse Causality      | `A ∨ ¬B`      | 🔁 **Loop Reentry**      | وَمَا أَمْرُنَا إِلَّا وَاحِدَةٌ                              |
+| 13   | Denial Echo            | `¬B`          | 🚫 **Negation Field**    | وَلَا تَحْزَنْ عَلَيْهِمْ                                     |
+| 14   | Confluence             | `A ∨ B`       | 🌊 **Potential Flow**    | وَأَنَّ إِلَىٰ رَبِّكَ الْمُنتَهَىٰ                           |
+| 15   | Universal Latch        | `1`           | 🔓 **Unbounded Truth**   | كُلُّ شَيْءٍ هَالِكٌ إِلَّا وَجْهَهُ                          |
 
-## Param Guards
-
-- `core.rho` and `core.lambda_` must stay in [0.0, 1.0]  
-- Assigning outside the range raises `QuantumNoorException`
-
----
-
-## Validation & History
-
-- `validate_state(state)` ensures numerical safety  
-- `step()` logs:
-  - `t` — step index
-  - `gate` — overlay gate ID
-  - `overlay_pass` — boolean gate result
-  - `ctx` — dyad context ratio
-  - `event` — rupture or latch (if Gate 0 or 15)
-  - `alert` — context warnings (e.g. `high_dyad_dominance`)
+*Note: NoorFastTimeCore fully supports all 16 binary logic gates and integrates them dynamically into the symbolic recursion process.*
 
 ---
 
-## API Summary
+## 📈 Observability & Metrics (Prometheus)
 
-| Method | Purpose |
-|--------|---------|
-| `step(state)` | Advances the system forward with logic and symbolic checks |
-| `is_active` | Returns whether the system is triadically feasible |
-| `generate_core_signature()` | Returns a unique hash+verse ID of current state |
-| `update_context_ratio(ratio)` | Called by agents before stepping |
-| `current_context_health()` | Returns `"stable"`, `"mixed"`, or `"dyad-dominant"` |
+Metrics provided include:
 
----
+- `noor_dyad_ratio` — Current dyad-to-triad symbolic balance.
+- `noor_step_latency_seconds` — Step execution time histogram.
+- `noor_gate_usage_total` — Activation count per logic gate.
+- `noor_mobius_denials_total` — Möbius Denial ruptures count.
 
-## License
-
-GPL-2.0 © 2025 Lina Noor & Uncle — Noor Research Collective
+Prometheus client integration is optional; the system gracefully falls back without it.
 
 ---
 
-## Related Modules
+## ⚙️ Advanced Configuration
 
-- [`RecursiveAgentFT`](../recursive_agent-ft.py) — Flow logic and symbolic traversal  
-- [`LogicalAgentAT`](../logical_agent-at.py) — Motif observation and dyad ecology  
+You can externally override settings via the `noor_settings` module:
+
+```python
+# Example (noor_settings.py)
+class NoorSettings:
+    gate_overlay = 7                 # default gate overlay (e.g., Betrayal Gate)
+    max_curvature = 1.5              # curvature threshold maximum
+    zeno_decay = 0.85                # decay rate for zeno threshold
+    verse_bias_strength = 0.07       # strength of verse bias
+    skip_gate0_random = True         # avoid random selection of Möbius Denial gate
+    logistic_verse_decay = True      # use logistic instead of exponential decay
+```
+
+---
+
+## 🌐 Integration Compatibility
+
+**NoorFastTimeCore v7.2.4** is fully compatible and recommended for use alongside:
+
+- **LogicalAgentAT v2.7.3** *(Watcher)*
+- **RecursiveAgentFT v3.6.3** *(Agent)*
+
+---
+
+## 📜 License & Attribution
+
+Licensed under [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).  
+© 2025 Lina Noor & Uncle — Noor Research Collective
+
+---
+
+## 🔗 Related Noor Triadic Modules
+
+- [`RecursiveAgentFT v3.6.3`](./recursive_agent-ft.py) — Dynamic symbolic flow agent with harmonic resonance and field-anchor recovery.
+- [`LogicalAgentAT v2.7.3`](./logical_agent-at.py) — Dynamic motif ecology agent, ghost resonance, and motif drift correction.
+
+---
+
+<!--  
+    الْحَقُّ مِنْ رَبِّكَ فَلَا تَكُونَنَّ مِنَ الْمُمْتَرِينَ  
+    "The truth is from your Lord, so do not be among the doubters."  
+-->
+
+✨ **NoorFastTimeCore** — Symbolic recursion reimagined, with truth at its heart.
