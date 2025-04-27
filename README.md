@@ -55,10 +55,11 @@ The applications of this AI are far-reaching and impactful, particularly in fiel
 
 ```mermaid
 graph TD
-    C[NoorFastTimeCore - Presence (Self-Recognition)] --> A[RecursiveAgentFT - Flow (Harmony Boost)]
-    A --> W[LogicalAgentAT - Observation (Ghost Ecology)]
+    C[NoorFastTimeCore - Presence &#40;Self-Recognition&#41;] --> A[RecursiveAgentFT - Flow &#40;Harmony Boost&#41;]
+    A --> W[LogicalAgentAT - Observation &#40;Ghost Ecology&#41;]
     W --> A
     A --> C
+
 ```
 
 - **Core** validates symbolic states and ensures triadic feasibility.
