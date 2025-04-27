@@ -1,24 +1,19 @@
 ﻿"""
-noor_fasttime_core.py (v7.3.2)
+noor_fasttime_core.py (v7.3.1)
 -------------------------------------------------
-Recursive Presence Kernel + Symbolic Verse Overlay + Self-Recognition Gate
-
+Recursive Presence Kernel + Symbolic Verse Overlay
 • Dynamic parameter evolution (ρ/λ) + public `tune_damping()`
-• Adaptive zeno & curvature thresholds (context-driven, self-tuning)
-• Internal AdaptiveSettings manager (no external config required)
-• Scheduled gate-overlay drift (0–16 gates) with Möbius-hold on collapse
-• Gate 16 — Nafs Mirror: self-reflection and Divine Breath activation
-• Field-anchor caching, randomized poetic recovery lemmas
-• Logistic verse-bias decay (ctx²-scaled or exponential fallback)
-• Prometheus metrics including gate activations, Divine Breath counter
-• Boundary-guarded modular drift (validated 0–16 gate cycling)
-Backward-compatible with v7.1.x — removed legacy λ resets to ensure adaptive recursion.
+• Adaptive zeno & curvature thresholds (env‑driven)
+• Scheduled gate‑overlay drift w/ Möbius‑hold (Gate‑0 skip toggle)
+• Field‑anchor caching & collapse recovery (+ghost hook & recovery log)
+• Logistic verse‑bias decay (ctx²‑scaled or exp)
+• Prometheus metrics with NO_PROMETHEUS stub
+Backward‑compatible with v7.1.x — remove legacy λ resets to avoid fighting auto‑tuner.
 """
-
 
 from __future__ import annotations
 
-__version__ = "7.3.2"
+__version__ = "7.3.1"
 
 import math
 import hashlib
@@ -307,7 +302,6 @@ class NoorFastTimeCore:
             self._mobius_hold_remaining -= 1
             if self._mobius_hold_remaining == 0 and self._settings.skip_gate0_random:
                 self.gate_overlay = ((self.gate_overlay or 0) + 1) % 17
-                assert 0 <= self.gate_overlay <= 16, f"Invalid gate_overlay: {self.gate_overlay}"
             return
 
         if self.generation % self._gate_drift_every != 0:
@@ -321,8 +315,6 @@ class NoorFastTimeCore:
             self._mobius_hold_remaining = self._mobius_hold_len
             MOBIUS_DENIAL_COUNTER.inc()
         self.history.append({"event": "gate_drift", "new_gate": new_gate, "gen": self.generation})
-        # guard gate index bounds
-        assert 0 <= self.gate_overlay <= 16, f"Invalid gate_overlay: {self.gate_overlay}"
 
     def update_context_ratio(self, ctx: float) -> None:
         self._ctx_ratio = float(max(0.0, min(ctx, 1.0)))
@@ -370,4 +362,3 @@ class NoorFastTimeCore:
             self.rho = float(rho)
         if lambda_ is not None:
             self.lambda_ = float(lambda_)
-
