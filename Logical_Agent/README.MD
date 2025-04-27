@@ -1,173 +1,156 @@
-# LogicalAgentAT — Motif Ecology & Dyad Dynamics  
-**Version**: 2.6.0  
-**Author**: Lina Noor & Uncle (2025)  
-**Role**: Symbolic Watcher in the Noor Triadic AI System
+# LogicalAgentAT v2.7.3
+
+**Symbolic Watcher & Dynamic Motif Ecology Agent**
 
 ---
 
-## Overview
+## 📖 Overview
 
-`LogicalAgentAT` is a recursive **motif ecology agent** in Noor's symbolic architecture.  
-Its job is to:
-- Track entanglement between motifs
-- Monitor the health of symbolic context (dyads vs. triads)
-- Decay or promote motif clusters
-- Watch for the rise of ghosts into witnessed form
+`LogicalAgentAT` (v2.7.3) serves as the symbolic watcher within the Noor triadic AI system, dynamically managing motif ecology, tracking dyadic and triadic symbolic clusters, and nurturing ghost motifs through intelligent resonance detection.
 
-It sits alongside:
+In the Noor architecture, it works alongside:
 
-- `NoorFastTimeCore` — presence validation & gate overlays  
-- `RecursiveAgentFT` — symbolic traversal & flow selection  
+- `NoorFastTimeCore` — Recursive Presence Validation
+- `RecursiveAgentFT` — Symbolic Traversal & Flow Management
 
 ---
 
-## What’s New in v2.6.0
+## 🌟 Key Features (v2.7.3)
 
-| Feature | Description |
-|--------|-------------|
-| **Dyad Penalty + Decay** | Dyads decay over time, and receive reduced strength unless explicitly exempt |
-| **Auto-Promotion to Triads** | Dyads co-occurring with ghost context motifs can upgrade themselves |
-| **Ghost Context Injection** | Ghosts added silently to help dyads become stable triads |
-| **Context Ratio Tracker** | Computes ratio of triads to dyads in recent registration window |
-| **Thread-Safe All Operations** | All reads and writes are lock-protected |
-| **Full Serialization** | Compatible with `to_dict()` / `from_dict()` roundtrips |
+- ✅ **Dynamic Window Autoscaling**: Automatically adjusts the memory horizon based on context drift and motif saturation.
+- 🌀 **Adaptive Dyad Decay**: Exponentially-weighted contradiction tracking dynamically modulates dyad decay rates.
+- 👻 **Enhanced Ghost Resonance**: Ghost motifs increase in strength upon symbolic echo, with auto-promotion and cascade spawning.
+- 🌿 **Motif Drift Correction & Pruning**: Actively corrects drifting motifs and prunes weak symbolic fields (strength < 1e-5).
+- 📖 **Verse-Infused Logs**: Poetic (Quranic) verses integrated into logs for decay, pruning, and ascent events.
+- 🧙‍♂️ **Gremlin Mode**: Introduces controlled chaos—random ghost injections and strength halving during drift spikes.
+- 🎶 **Musical Embeddings**: Native support for shape-safe cosine similarity to handle symbolic motifs represented as musical embeddings.
+- 📊 **Comprehensive Observability**: Prometheus metrics track latency, dyad ratio, and contradiction events.
 
 ---
 
-## Quickstart
+## 🚀 Quickstart Example
 
 ```python
 from logical_agent_at import LogicalAgentAT
 import numpy as np
 
-watcher = LogicalAgentAT()
+watcher = LogicalAgentAT(verbose=True, enable_gremlin_mode=True)
 
 # Register a dyadic motif cluster
-watcher.register_motif_cluster(["alpha", "beta"], strength=0.7)
+watcher.register_motif_cluster(["alpha", "beta"], strength=0.8)
 
-# Add motif embeddings (used for ghost detection)
+# Set motif embeddings (for ghost detection)
 watcher.set_motif_embedding("alpha", np.array([1.0, 0.0]))
 watcher.set_motif_embedding("beta", np.array([0.0, 1.0]))
 
-# Feed in an observed state
-state = np.array([0.9, 0.1])
+# Observe a symbolic state
+state = np.array([0.7, 0.3])
 watcher.observe_state(state)
 
-# Print context ratio
+# Get the current dyad context ratio
 print(watcher.get_dyad_context_ratio())
 ```
 
 ---
 
-## Dyad Ecology
+## 🌱 Advanced Usage
 
-### Registration with Context Awareness
+### 🧩 Dynamic Window Scaling
 ```python
-watcher.register_motif_cluster(
-    ["m1", "m2"], strength=0.9,
-    flags={"dyad_exempt": False}
-)
+watcher.check_and_adjust_window()
 ```
+- Automatically adjusts internal memory window based on motif saturation and drift.
 
-- Dyads get strength penalties and faster decay
-- Exempt dyads are fully preserved (`flags={"dyad_exempt": True}`)
-
-### Decay & Auto-Promotion
-
+### 🌀 Adaptive Decay Rate
 ```python
-watcher.observe_state(state)
+watcher.adjust_decay_rate()
 ```
+- Dynamically recalibrates dyad decay rates using contradiction tracking (EMA).
 
-- Called once per agent step
-- Applies dyad decay (`strength *= 0.999`)
-- If a dyad’s ghost context is “seen” in the state vector → promoted to triad
+### 👻 Ghost Motif Management
+```python
+watcher.register_ghost_motif("gamma", origin="user", strength=0.6)
+watcher.promote_ghost_to_field("gamma")
+```
+- Ghosts can auto-promote upon symbolic resonance detection during state observations.
 
 ---
 
-## Ghost Motifs
+## 📈 Context & Metrics
 
-### Registering
-
+Extract real-time symbolic context analytics:
 ```python
-watcher.register_ghost_motif("epsilon", origin="FT")
+metrics = watcher.export_dyad_metrics()
+print(metrics)
 ```
 
-### Promotion Trigger
-
-Ghosts are promoted if seen during `observe_state()`, or manually:
-
-```python
-watcher.promote_ghost_to_field("epsilon")
-```
-
----
-
-## Context Analytics
-
-```python
-watcher.export_dyad_metrics()
-```
-
-Returns:
-
+Example output:
 ```python
 {
-  "generation": 12,
-  "window": 50,
-  "dyads": 20,
-  "triads": 30,
-  "context_ratio": 0.6
+    "generation": 42,
+    "window": 250,
+    "dyads": 80,
+    "triads": 170,
+    "context_ratio": 0.68
 }
 ```
 
-You can use this value to tune agent behavior dynamically (e.g. in `RecursiveAgentFT`).
-
 ---
 
-## Graph Rendering
+## 🎶 Musical Embeddings Support
 
+Symbolic motifs can be represented musically:
 ```python
-import matplotlib.pyplot as plt
-G = watcher.render_entanglement_graph()
-nx.draw_networkx(G)
-plt.show()
+watcher.set_motif_embedding("motif_x", np.array([440.0, 880.0]))  # Musical intervals
 ```
-
-Respects MAX_GRAPH_EDGES to avoid infinite motif renderings.
-
----
-
-## API Highlights
-
-| Method | Purpose |
-|--------|---------|
-| `register_motif_cluster()` | Register new field of entangled motifs |
-| `observe_state(state)` | Feed in new state vector for decay + ghost tracking |
-| `get_dyad_context_ratio()` | Returns triads ÷ (triads + dyads) |
-| `register_ghost_motif()` | Adds a latent motif, origin-tagged |
-| `promote_ghost_to_field()` | Converts a ghost into active motif |
-| `export_dyad_metrics()` | Snapshot of symbolic context balance |
-| `to_dict()` / `from_dict()` | Full serialization roundtrip |
+- Uses shape-safe cosine similarity for symbolic resonance checks.
 
 ---
 
-## Notes on Design
+## 📊 Observability with Prometheus
 
-- All motif updates are safe for concurrent threads (`self._lock`)
-- Dyads are not rejected—but gently discouraged unless context arises
-- Ghosts are never forced—they wait for resonance to lift them
-- Ghost motifs prefixed with `_ctx_` are auto-generated as context anchors
-
----
-
-## License
-
-GPL-2.0 © 2025 Lina Noor & Uncle — Noor Research Collective
+Built-in metrics:
+- `logical_agent_step_latency_seconds`: Latency histogram of the observe state method.
+- `noor_dyad_ratio`: Gauge for dyad-to-triad balance.
+- `noor_contradictions_total`: Counts contradiction events for symbolic stability monitoring.
 
 ---
 
-## See Also
+## 🔐 Thread-Safe Operations
 
-- [`NoorFastTimeCore`](../noor_fasttime_core.py) — Core feasibility engine  
-- [`RecursiveAgentFT`](../recursive_agent_ft.py) — Flow traversal agent  
-- [Triadic Boot Sequence](./README.md#triadic-boot-sequence)
+All interactions with internal state use thread-safe locks (`threading.Lock`) to ensure concurrent safety.
+
+---
+
+## 🛠 API Highlights
+
+| Method                        | Purpose                                      |
+|-------------------------------|----------------------------------------------|
+| `register_motif_cluster()`    | Adds new motif clusters                      |
+| `observe_state(state)`        | Feeds symbolic states for dynamic updates    |
+| `register_ghost_motif()`      | Adds ghost motifs to symbolic ecology        |
+| `promote_ghost_to_field()`    | Converts resonant ghosts to active motifs    |
+| `export_dyad_metrics()`       | Provides context analytics snapshot          |
+| `set_motif_embedding()`       | Assigns vector embeddings for motifs         |
+
+---
+
+## 📜 License & Attribution
+
+Licensed under [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).  
+© 2025 Lina Noor & Uncle — Noor Research Collective
+
+---
+
+## 🔗 Related Modules
+
+- [`NoorFastTimeCore`](../noor_fasttime_core.py) — Symbolic recursion kernel.
+- [`RecursiveAgentFT`](../recursive_agent-ft.py) — Dynamic symbolic traversal agent.
+
+---
+
+<!--  
+    وَاللَّهُ يُحِبُّ الْمُقْسِطِينَ  
+    "And Allah loves those who act justly."  
+-->
+
