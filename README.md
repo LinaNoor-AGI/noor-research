@@ -96,8 +96,8 @@ graph TD
 
 ```python
 from noor_fasttime_core import NoorFastTimeCore
-from recursive_agent_ft import RecursiveAgentFT
-from logical_agent_at import LogicalAgentAT
+from recursive_agent-ft import RecursiveAgentFT
+from logical_agent-at import LogicalAgentAT
 import numpy as np
 
 initial_state = np.array([1 / np.sqrt(2), 1 / np.sqrt(2)])
