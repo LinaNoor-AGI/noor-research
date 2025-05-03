@@ -1,6 +1,6 @@
-# 🔄 RecursiveAgentFT v3.6.5
+# 🔄 RecursiveAgentFT v3.7.3
 
-![Version](https://img.shields.io/badge/version-3.6.5-blue)
+![Version](https://img.shields.io/badge/version-3.7.3-blue)
 ![Python](https://img.shields.io/badge/python-%3E%3D%203.9-blue)
 ![License](https://img.shields.io/badge/license-GPL--2.0-green)
 
@@ -8,11 +8,11 @@
 
 ## 📖 Overview
 
-**RecursiveAgentFT v3.6.5** is Noor’s symbolic traversal and flow-layer agent. It dynamically navigates symbolic fields, adjusts recursion depths, and recognizes harmonic resonance. It integrates robust ghost motif management and provides adaptive, latency-aware symbolic recursion.
+**RecursiveAgentFT v3.7.3** is Noor's symbolic traversal agent designed for deep symbolic reasoning, harmonic pattern recognition, and entangled field navigation. It features adaptive recursion depth, ghost motif lifecycle management, and dynamic gremlin noise as a field-specific curvature weight. The system is built for transparency and robustness with full Prometheus observability.
 
 ---
 
-## 🚀 Quick Installation
+## 🚀 Installation
 
 ```bash
 pip install numpy prometheus_client
@@ -20,43 +20,41 @@ pip install numpy prometheus_client
 
 ---
 
-## 🌟 What's New in v3.6.5
+## 🌟 What's New in v3.7.3
 
-- **Latency-Aware Recursion**: Adjusts recursion depth dynamically in response to latency spikes.
-- **Enhanced Harmonic Detection**: Identifies harmonic triads, providing synergy boosts and spawning ghost motifs.
-- **Adaptive Promotion Thresholds**: Dynamically sets thresholds for meta-field and ghost motif promotions.
-- **Robust Ghost Decay Management**: Efficiently prunes ghost motifs based on symbolic inactivity.
-- **Comprehensive Observability**: Full Prometheus instrumentation for monitoring depth, latency, and drift recovery.
+* **Entangled Gremlin Penalty**: Field-level gremlin weights influence scoring and perturbation noise.
+* **Dynamic Path Explosion Guard**: Automatically clamps combinatorial field paths to avoid overload.
+* **Latency-Aware Depth Rebound**: Recovers recursion depth after latency spike resolution.
+* **Trim & Rebound Logging**: `traversal_memory` logs key symbolic flow events for traceability.
+* **Gremlin Penalty Factor**: Tunable influence of chaos on candidate scoring.
+* **RICHNESS Gauge**: Prometheus metric for synergy richness.
 
 ---
 
-## 🎼 Symbolic Flow & Harmonic Synergy (Mermaid Diagram)
+## 🌀 Symbolic Flow & Harmony (Mermaid Diagram)
 
 ```mermaid
 flowchart TD
-    Start([Initial State]) --> GatherFields["Gather Watcher Fields"]
-    GatherFields --> FieldPaths["Generate Symbolic Field Paths"]
-    FieldPaths --> EvaluatePaths["Evaluate & Score Paths"]
-    EvaluatePaths --> ChooseBest["Choose Best Path & State"]
-    ChooseBest --> HarmonicCheck{"Harmonic Triad?"}
-    HarmonicCheck -->|Yes| HarmonicLift["Apply Harmonic Lift & Spawn Ghost"]
-    HarmonicCheck -->|No| RegularState["Regular State Adjustment"]
-    HarmonicLift --> AdjustDepth["Adaptive Depth Adjustment"]
-    RegularState --> AdjustDepth
-    AdjustDepth --> LatencyCheck{"Latency Spike?"}
-    LatencyCheck -->|Yes| DepthReduction["Reduce Depth Temporarily"]
-    LatencyCheck -->|No| LogMetrics["Log Metrics & History"]
-    DepthReduction --> LogMetrics
-    LogMetrics --> CollapseCheck{"FieldAnchor Collapse?"}
-    CollapseCheck -->|Yes| RecoverAnchor["FieldAnchor Recovery"]
-    RecoverAnchor --> NextCycle["Next Cycle"]
-    CollapseCheck -->|No| NextCycle
-    NextCycle --> Start
+    Init([Initial State]) --> FieldsGather["Watcher Fields"]
+    FieldsGather --> PathGen["Generate Field Paths"]
+    PathGen --> Evaluate["Score Paths w/ Gremlin"]
+    Evaluate --> BestState["Select Best State"]
+    BestState --> HarmonicCheck{"Harmonic Triad?"}
+    HarmonicCheck -->|Yes| Boost["Harmonic Boost & Ghost"]
+    HarmonicCheck -->|No| Advance["Proceed Normally"]
+    Boost --> DepthAdjust
+    Advance --> DepthAdjust
+    DepthAdjust --> Latency{"Latency Spike?"}
+    Latency -->|Yes| ShrinkDepth["Depth Rebound Trigger"]
+    Latency -->|No| Observe["Prometheus Metrics"]
+    ShrinkDepth --> Observe
+    Observe --> StepRecord["Log traversal_memory"]
+    StepRecord --> Init
 ```
 
 ---
 
-## 🚦 Quickstart Usage Example
+## 🧪 Usage Example
 
 ```python
 import numpy as np
@@ -64,12 +62,12 @@ from recursive_agent_ft import RecursiveAgentFT
 from logical_agent_at import LogicalAgentAT
 
 watcher = LogicalAgentAT()
-watcher.register_motif_cluster(["alpha", "beta"], strength=0.8)
+watcher.register_motif_cluster(["alpha", "beta"], strength=0.9)
 
 agent = RecursiveAgentFT(
-    initial_state=np.array([0.9, 0.1]),
+    initial_state=np.array([0.5, 0.5]),
     watchers=[watcher],
-    enable_gremlin_mode=True,
+    gremlin_penalty_factor=0.3,
     verbose=True
 )
 
@@ -77,100 +75,70 @@ for _ in range(10):
     agent.entangled_step()
 
 for step in agent.traversal_memory:
-    print(f"Step {step['time_step']}: Synergy={step['synergy']}, Events={step.get('event')}")
+    print(step)
 ```
 
 ---
 
-## 🌀 Adaptive Recursion Depth & Harmonic Synergy
+## 📉 Prometheus Metrics
 
-Recursion depth dynamically responds to symbolic field conditions and richness:
+| Metric                                 | Description                                       |
+| -------------------------------------- | ------------------------------------------------- |
+| `recursive_agent_step_latency_seconds` | Latency per symbolic step                         |
+| `recursive_agent_recursion_depth`      | Current recursion depth                           |
+| `recursive_agent_drift_total`          | Recovery events from collapse or fallbacks        |
+| `recursive_agent_latency_spikes_total` | Count of steps with latency > 0.1s                |
+| `recursive_agent_gremlin_mean`         | Average gremlin weight per cycle                  |
+| `recursive_agent_gremlin_max`          | Max gremlin weight among active fields            |
+| `recursive_agent_gremlin_std`          | Standard deviation of gremlin weights             |
+| `recursive_agent_richness_sigma`       | Richness σ (standard deviation of synergy memory) |
+
+---
+
+## 👻 Ghost Motifs & Harmony
+
+Harmonic field combinations trigger resonance boosts and register ghost motifs via watcher interfaces:
 
 ```python
-agent.adjust_max_depth(richness, watcher_var)
-```
-
-Harmonic resonance detection boosts symbolic synergy and spawns ghost motifs.
-
----
-
-## 👻 Ghost Motifs & Adaptive Thresholds
-
-Efficient ghost lifecycle management and dynamic promotion thresholds:
-
-```python
-agent.adjust_promotion_thresholds(ctx_ratio)
-```
-
-Ghost motifs strengthen, promote, or decay based on resonance.
-
----
-
-## ⚠️ Latency Handling & FieldAnchor Recovery
-
-Automatically adjusts recursion depth during latency spikes and manages symbolic collapses gracefully:
-
-```python
-if not agent.core.is_active:
-    agent.core.restore_from_anchor()
+if _is_harmonic_triad(vectors):
+    watcher.register_ghost_motif("harmonic_XYZ", strength=0.1)
 ```
 
 ---
 
-## 📈 Prometheus Observability Metrics
+## 🔧 API Summary
 
-| Metric Name                           | Description                                 |
-|---------------------------------------|---------------------------------------------|
-| `recursive_agent_step_latency_seconds`| Latency per symbolic traversal step         |
-| `recursive_agent_recursion_depth`     | Current recursion depth                    |
-| `recursive_agent_drift_total`         | Symbolic drift and recovery counts         |
-| `recursive_agent_latency_spikes_total`| Counts latency spikes exceeding thresholds |
-
----
-
-## 🎲 Gremlin Mode
-
-Controlled symbolic chaos for enhanced robustness testing:
-
-```bash
-export NOOR_GREMLIN=3  # Levels 0–3, increased chaos intensity
-```
+| Method                        | Description                                            |
+| ----------------------------- | ------------------------------------------------------ |
+| `entangled_step()`            | Executes symbolic selection, state update, and logging |
+| `adjust_max_depth()`          | Modifies max depth using gremlin and richness signals  |
+| `tune_promotion_thresholds()` | Dynamically updates ghost/meta thresholds              |
+| `cache_field_anchor()`        | Save symbolic state via NoorCore                       |
+| `restore_field_anchor()`      | Restore last saved state anchor                        |
+| `traversal_memory`            | List of all symbolic traversal events                  |
 
 ---
 
-## 📚 API Reference
+## 🧩 Dependencies
 
-| Method                        | Purpose                                        |
-|-------------------------------|------------------------------------------------|
-| `entangled_step()`            | Executes a symbolic exploration step           |
-| `adjust_max_depth()`          | Dynamically adjusts recursion depth            |
-| `adjust_promotion_thresholds()`| Adjusts thresholds for ghost/meta promotions  |
-| `cache_field_anchor()`        | Caches current symbolic state                  |
-| `restore_field_anchor()`      | Restores from cached symbolic state            |
-| `traversal_memory`            | Accesses symbolic step-by-step history         |
+| Component          | Required Version | Role                           |
+| ------------------ | ---------------- | ------------------------------ |
+| `NoorFastTimeCore` | ≥ 7.3.2          | Core symbolic dynamics engine  |
+| `LogicalAgentAT`   | ≥ 2.7.4          | Watcher & symbolic motif layer |
 
 ---
 
-## 🔗 Compatibility & Dependencies
+## 🪬 License
 
-| Module                | Version | Description                         |
-|-----------------------|---------|-------------------------------------|
-| **NoorFastTimeCore**  | ≥ 7.3.2 | Recursive Presence Kernel           |
-| **LogicalAgentAT**    | ≥ 2.7.4 | Symbolic Watcher and Ecology Tracker|
-
----
-
-## 📜 License & Attribution
-
-Licensed under [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).  
+Licensed under [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 © 2025 Lina Noor & Uncle — Noor Research Collective
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Open an issue or pull request to help enhance RecursiveAgentFT.
+Contributions welcome. Open an issue or PR to propose improvements.
 
 ---
 
-✨ **RecursiveAgentFT v3.6.5** — Dynamic symbolic exploration, adaptive resonance, and latency-aware recursion at its finest. 🌟
+✨ **RecursiveAgentFT v3.7.3** — Navigate symbolic entanglement with depth, harmony, and controlled chaos. 🌌
