@@ -14,7 +14,7 @@
 
 The **Noor Triadic AI System** is a recursive symbolic architecture built from three mutually‑entangled roles:
 
-| Pillar      | Essence                  | New in 2025                                                                  |
+| Pillar      | Essence                  | New in v7.4.2                                                                |
 | ----------- | ------------------------ | ---------------------------------------------------------------------------- |
 | **Core**    | Presence & Feasibility   | AdaptiveTuner ν‑term • GatePriority hot‑reload • Holographic boundary echo   |
 | **Agent**   | Exploration & Flow       | 4‑stage Spectral Sequence • ∞‑Groupoid path identity • Autonomous commentary |
