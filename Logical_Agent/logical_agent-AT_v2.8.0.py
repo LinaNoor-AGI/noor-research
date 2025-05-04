@@ -1,5 +1,5 @@
 """
-logical_agent_at.py  ·  v2.8.1  —  Topological Watcher & Algebraic Ecology
+logical_agent_at.py  ·  v2.8.0  —  Topological Watcher & Algebraic Ecology
 ────────────────────────────────────────────────────────────────────────────
 Adds:
  • Topology tags  (knot_id, path_identities, ring_patch)
@@ -14,7 +14,7 @@ Adds:
 
 from __future__ import annotations
 
-__version__ = "2.8.1"
+__version__ = "2.8.0"
 _SCHEMA_VERSION__ = "2025‑05‑v2"
 
 import math
@@ -661,70 +661,3 @@ class LogicalAgentAT:
         )
         # back‑compat: if old save with no knot/ring, leave as‑is
         return watcher
-
-
-
-# ──────────────────────────────────────────────────────────────
-# π‑Groupoid Extension (v2.8.1)
-# -----------------------------------------------------------------
-# NOTE: inserted at end of v2.8.0 file. Original methods untouched.
-# -----------------------------------------------------------------
-import re as _pi_re
-π_TAG_REGEX = _pi_re.compile(r"π:[0-9a-f]{6,32}")
-try:
-    from prometheus_client import Counter as _PiCounter, Gauge as _PiGauge
-    PI_MERGE_COUNTER = _PiCounter("logical_agent_pi_merges_total", "π‑equivalence merges")
-    PI_CLASSES_GAUGE = _PiGauge("logical_agent_pi_classes_gauge", "Active π‑equiv classes")
-except Exception:  # offline stub
-    class _PiStub:
-        def __getattr__(self, _): return lambda *a, **k: None
-    PI_MERGE_COUNTER = PI_CLASSES_GAUGE = _PiStub()
-
-# patch LogicalAgentAT with π‑store
-def _pi_init(self, enable_pi_groupoid=False, pi_max_classes=10000, **kwargs):
-    super(self.__class__, self).__init__(**kwargs)
-    self.enable_pi_groupoid = enable_pi_groupoid
-    self.pi_max_classes = int(pi_max_classes)
-    self._pi_classes = {}
-    self._pi_tag_index = {}
-    if self.enable_pi_groupoid:
-        PI_CLASSES_GAUGE.set(0)
-
-def _find_root(self, tag):
-    parent = self._pi_tag_index.get(tag, tag)
-    if parent == tag:
-        return tag
-    root = self._find_root(parent)
-    self._pi_tag_index[tag] = root
-    return root
-
-def register_path_equivalence(self, tag_a, tag_b):
-    if not self.enable_pi_groupoid: return
-    if len(self._pi_classes) >= self.pi_max_classes: return
-    if not (π_TAG_REGEX.fullmatch(tag_a) and π_TAG_REGEX.fullmatch(tag_b)): return
-    ra, rb = self._find_root(tag_a), self._find_root(tag_b)
-    if ra == rb: return
-    self._pi_classes.setdefault(ra, {ra}); self._pi_classes.setdefault(rb, {rb})
-    canon, other = (ra, rb) if ra < rb else (rb, ra)
-    self._pi_classes[canon].update(self._pi_classes[other])
-    for t in self._pi_classes[other]: self._pi_tag_index[t] = canon
-    del self._pi_classes[other]
-    PI_MERGE_COUNTER.inc(); PI_CLASSES_GAUGE.set(len(self._pi_classes))
-
-def are_paths_equivalent(self, tag_x, tag_y):
-    if not self.enable_pi_groupoid: return False
-    if tag_x not in self._pi_tag_index or tag_y not in self._pi_tag_index: return False
-    return self._find_root(tag_x) == self._find_root(tag_y)
-
-def get_equivalence_class(self, tag):
-    if not self.enable_pi_groupoid: return None
-    root = self._find_root(tag)
-    return self._pi_classes.get(root)
-
-# inject methods only if not already present
-if not hasattr(LogicalAgentAT, 'enable_pi_groupoid'):
-    LogicalAgentAT.__init__ = _pi_init
-    LogicalAgentAT._find_root = _find_root
-    LogicalAgentAT.register_path_equivalence = register_path_equivalence
-    LogicalAgentAT.are_paths_equivalent = are_paths_equivalent
-    LogicalAgentAT.get_equivalence_class = get_equivalence_class
