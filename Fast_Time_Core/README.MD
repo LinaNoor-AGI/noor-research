@@ -41,17 +41,17 @@ pip install numpy yaml prometheus_client
 
 ```mermaid
 flowchart TD
-    Init([Initial State]) --> Feedback["receive_feedback()"]
+    Init(["Initial State"]) --> Feedback["receive_feedback()"]
     Feedback --> Tuner["AdaptiveTuner.update()"]
     Tuner --> Fluid["Fluid or Fallback Step"]
     Fluid --> GateSel["Select Gate Overlay"]
-    GateSel -->|16| Holo["Open Holography Buffer"]
-    GateSel -->|0| MobiusHold["Möbius Hold"]
+    GateSel -- 16 --> Holo["Open Holography Buffer"]
+    GateSel -- 0 --> MobiusHold["Möbius Hold"]
     GateSel --> VerseBias["Verse Bias (optional)"]
     VerseBias --> Damp["ρ‑λ Damping Blend"]
     Damp --> Metrics["Prometheus Metrics"]
     Metrics --> Drift["Scheduled Gate Drift"]
-    Drift --> Next([Next step()])
+    Drift --> Next(["Next step"])
 ```
 
 ---
