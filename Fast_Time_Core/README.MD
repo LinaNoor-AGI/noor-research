@@ -12,15 +12,22 @@
 
 ```mermaid
 flowchart LR
+    %% Triadic data‑flow (simplified labels)
     subgraph Triad
-        A[RecursiveAgentFT<br/>v4.2.0] -- QuantumTick --> W(LogicalAgentAT<br/>v3.2.0)
-        A -- feedback:<br/>&nbsp;entropy<br/>&nbsp;latency<br/>&nbsp;parallel → C(NoorFastTimeCore<br/>v8.2.0)
-        C -- bias_score<br/>next_latency_budget --> A
-        W -- MotifChangeID --> C
+        A[RecursiveAgentFT\nv4.2.0] -->|QuantumTick| W[LogicalAgentAT\nv3.2.0]
+        A -->|entropy\nlatency\nparallel| C[NoorFastTimeCore\nv8.2.0]
+        C -->|bias_score\nnext_latency_budget| A
+        W -->|MotifChangeID| C
     end
-    style A fill:#e0f7ff,stroke:#0288d1
-    style W fill:#fff3e0,stroke:#f57c00
-    style C fill:#ede7f6,stroke:#673ab7
+
+    %% Optional node styling
+    classDef agent   fill:#e0f7ff,stroke:#0288d1,color:#000;
+    classDef watcher fill:#fff3e0,stroke:#f57c00,color:#000;
+    classDef core    fill:#ede7f6,stroke:#673ab7,color:#000;
+
+    class A agent
+    class W watcher
+    class C core
 ```
 
 *Recursive Agent* emits signed ticks to the *Watcher* while sending metrics and the latest tick to the *Core*.
