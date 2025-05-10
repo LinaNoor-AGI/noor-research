@@ -52,9 +52,9 @@ cid = make_change_id(tick, "α")
 
 ```mermaid
 flowchart LR
-    Tick[QuantumTick] -->|hash differs| CID[make_change_id()]
-    CID --> WatcherRing[Watcher 16‑entry ring]
-    CID --> CoreEcho[Core snapshot payload]
+    Tick[QuantumTick] -->|hash_differs| CID[make_change_id()]
+    CID --> WatcherRing[Watcher&nbsp;16‑slot&nbsp;ring]
+    CID --> CoreEcho[Core&nbsp;snapshot&nbsp;payload]
 ```
 
 1. **Watcher (v3.2.0+)**
