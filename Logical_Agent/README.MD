@@ -1,6 +1,3 @@
-Thought for 6 seconds
-
-
 # 👁️ LogicalAgentAT v3.2.0
 
 ![version](https://img.shields.io/badge/version-3.2.0-blue)
