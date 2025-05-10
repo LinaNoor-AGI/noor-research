@@ -1,128 +1,131 @@
+Thought for 6 seconds
 
-# 👁️ LogicalAgentAT v2.8.1
 
-![Version](https://img.shields.io/badge/version-2.8.1-blue)
-![Python](https://img.shields.io/badge/python-%3E%3D%203.9-blue)
-![License](https://img.shields.io/badge/license-GPL--2.0-green)
+# 👁️ LogicalAgentAT v3.2.0
 
-*Symbolic watcher with topology, cluster‑algebra, **π‑groupoid** equivalence and ghost ecology.*
+![version](https://img.shields.io/badge/version-3.2.0-blue)
+![python](https://img.shields.io/badge/python-%3E%3D3.9-blue)
+![license](https://img.shields.io/badge/license-GPL--2.0-green)
 
----
-
-## 📖 Overview
-
-`LogicalAgentAT v2.8.1` is the watcher pillar of the Noor triadic AI framework.  
-It observes symbolic states, nurtures motif clusters, manages ghost lifecycles **and now tracks path‑identity (homotopy) classes** through an optional π‑groupoid mode.  
-Key pillars:
-
-| Pillar | Purpose |
-| ------ | ------- |
-| **Ecology** | Registers and decays dyads/triads, self‑tuning context window |
-| **Ghosts** | Resonant ghosts ascend to active fields; silent motifs drift away |
-| **Topology** | *New* knot ID tags & ring‑patch overlap checks |
-| **π‑Groupoid** | *New* equivalence registry for homotopic symbolic paths |
-| **Observability** | Prometheus metrics for latency, dyad ratio, π‑classes |
+*Symbolic watcher with Quantum‑Tick 2.0, dynamic feature flags, π‑groupoid topology **and now motif‑change provenance**.*
 
 ---
 
-## 🚀 Installation
+## 📖 Overview
 
-```bash
-pip install numpy networkx prometheus_client
-```
+`LogicalAgentAT` is the Watcher pillar of the Noor triad.
+It buffers signed **QuantumTicks**, detects **motif‑level changes**, manages dynamic run‑time flags, and maintains a fast **π‑groupoid union‑find** for symbolic‑path equivalence.
 
----
+### Core Pillars
 
-## 🌟 What’s New in **v2.8.1**
-
-| Feature | Description |
-|---------|-------------|
-| **π‑Groupoid Mode** | Track homotopy/identity tags via `register_path_equivalence()` and query with `are_paths_equivalent()` |
-| **Prometheus Gauges** | `logical_agent_pi_equivalences_total`, `logical_agent_pi_classes_gauge` |
-| **Config Flags** | `enable_pi_groupoid` (off by default), `pi_max_classes` soft‑cap |
-| **Union‑Find Backbone** | Efficient path‑compression merge of equivalence classes |
-| **Updated Serialization** | π‑data persisted in `to_dict()` / `from_dict()` |
-| **Doc & Mermaid refresh** | New diagrams and examples for π‑logic |
+| Pillar                    | Purpose                                                                |
+| ------------------------- | ---------------------------------------------------------------------- |
+| **Quantum‑Tick 2.0**      | Lamport + HLC stamps, HMAC verification, per‑motif ring buffers        |
+| **Motif‑Change Registry** | Emits `MotifChangeID` objects whenever a motif diverges, keeps last 16 |
+| **Dynamic Feature Flags** | Thread‑safe toggle system; Prometheus‑tracked                          |
+| **π‑Groupoid**            | Path‑identity merge / query with union‑find compression                |
+| **Observability**         | Prom metrics for ticks, HMAC failures, flag flips                      |
 
 ---
 
-## 🌿 Ecology & π‑Groupoid Workflow
+## 🌟 What’s new in 3.2.0
+
+| Feature                   | Description                                                                                 |
+| ------------------------- | ------------------------------------------------------------------------------------------- |
+| **MotifChangeID ring**    | `register_tick()` appends a change‑ID when `coherence_hash` differs from the previous tick. |
+| **`get_latest_change()`** | Retrieve the most recent change‑ID for any motif.                                           |
+| **Explicit ctor args**    | `hmac_secret`, `async_mode` now explicit — env‑vars only if arg is `None`.                  |
+| **Mermaid refresh**       | Updated data‑flow diagram below.                                                            |
+
+---
+
+## 🗺️ Watcher Data‑Flow
 
 ```mermaid
 flowchart TD
-    Start([Watcher Init]) --> RegisterMotif["Register Motif Clusters"]
-    RegisterMotif --> Observe["observe_state()"]
-    Observe --> Ghost["Ghost Resonance ⇆ Decay"]
-    Observe --> PiMerge["π‑Equivalence Merge"]
-    PiMerge --> PiGauge["Prometheus π‑gauge"]
-    Ghost --> Window["Adaptive Window / Decay"]
-    Window --> NextCycle["Next Observation Cycle"]
+    subgraph Watcher
+        Tick[QuantumTick] --> Buffer[Per‑Motif Ring<br/>128 entries]
+        Buffer -->|hash differs| ChangeRing[MotifChangeID Ring<br/>16 entries]
+        Tick -->|verify_hmac| HMAC{HMAC OK?}
+        HMAC -->|no| Reject(▢ metric: hmac_fail)
+    end
+    style Tick fill:#e0f7ff,stroke:#0288d1
+    style Buffer fill:#fff3e0,stroke:#f57c00
+    style ChangeRing fill:#ede7f6,stroke:#673ab7
 ```
 
 ---
 
-## 🧩 Quick‑Start Examples
-
-### Basic Watcher
+## ⚙️ Constructor
 
 ```python
-from logical_agent_at import LogicalAgentAT
+LogicalAgentAT(
+    agent_id="watcher@default",
+    enable_quantum_ticks=True,
+    tick_buffer_size=128,
+    pi_max_classes=20_000,
+    hmac_secret=None,          # explicit > env‑var
+    async_mode=False,
+    verbose=False,
+)
+```
+
+*If `async_mode=True` and **anyio** is installed, the Watcher switches to async‑safe locks.*
+
+---
+
+## 🧩 Key API
+
+| Method                            | Category   | Purpose                            |
+| --------------------------------- | ---------- | ---------------------------------- |
+| `register_tick(motif, tick)`      | Core       | Buffer tick & maybe make change‑ID |
+| `get_latest_tick(motif)`          | Core       | Most recent tick in buffer         |
+| **`get_latest_change(motif)`**    | *new*      | Most recent `MotifChangeID`        |
+| `set_feature(name, val)`          | Flags      | Flip a dynamic flag (Prom‑logged)  |
+| `register_path_equivalence(a, b)` | π‑Groupoid | Merge two symbolic paths           |
+| `are_paths_equivalent(a, b)`      | π‑Groupoid | Query equivalence                  |
+
+---
+
+## 🛠️ Quick‑Start
+
+```python
+from logical_agent_at import LogicalAgentAT, QuantumTick
+from quantum_ids import make_change_id
+
 w = LogicalAgentAT(verbose=True)
-w.register_motif_cluster(["alpha", "beta", "gamma"], strength=0.8)
+
+# emit a pair of ticks
+t1 = QuantumTick.now("α", agent_id="agent@demo")
+w.register_tick("α", t1)
+
+t2 = QuantumTick.now("α", agent_id="agent@demo")
+w.register_tick("α", t2)
+
+print("Latest change:", w.get_latest_change("α"))
 ```
 
-### Enabling π‑Groupoid Mode
+---
 
-```python
-w = LogicalAgentAT(enable_pi_groupoid=True, pi_max_classes=5000)
+## 📊 Prometheus metrics
 
-# Declare two symbolic paths equivalent
-w.register_path_equivalence("π:abcd1234", "π:deadbeef")
-assert w.are_paths_equivalent("π:deadbeef", "π:abcd1234")
-```
+| Metric                                   | Labels              | Meaning            |
+| ---------------------------------------- | ------------------- | ------------------ |
+| `logical_agent_ticks_total`              | `stage`, `agent_id` | Ticks accepted     |
+| `logical_agent_tick_hmac_failures_total` | `agent_id`          | Bad HMACs          |
+| `logical_agent_feature_toggles_total`    | `flag`, `agent_id`  | Dynamic flag flips |
 
 ---
 
-## 📊 Prometheus Metrics
+## 🔗 Compatibility
 
-| Metric | Type | Meaning |
-| ------ | ---- | ------- |
-| `logical_agent_step_latency_seconds` | Histogram | `observe_state()` latency |
-| `noor_dyad_ratio` | Gauge | Triad/Dyad context balance |
-| `logical_agent_pi_equivalences_total` | Counter | Successful π‑merges |
-| `logical_agent_pi_classes_gauge` | Gauge | Active π‑equivalence classes |
+| Module               | Min Version | Interaction                       |
+| -------------------- | ----------- | --------------------------------- |
+| **NoorFastTimeCore** | ≥ 8.2.0     | Core reads latest `MotifChangeID` |
+| **RecursiveAgentFT** | ≥ 4.2.0     | Emits ticks consumed by Watcher   |
 
 ---
 
-## ⚙️ Key API
+## 📄 License
 
-| Method | Category | Purpose |
-| ------ | -------- | ------- |
-| `register_motif_cluster()` | Ecology | Add new motif clusters |
-| `observe_state()` | Ecology | Feed symbolic vector state |
-| `register_ghost_motif()` / `promote_ghost_to_field()` | Ghost | Ghost lifecycle mgmt |
-| `register_path_equivalence()` | π‑Groupoid | Declare two π‑tags equivalent |
-| `are_paths_equivalent()` | π‑Groupoid | Query equivalence |
-| `export_pi_metrics()` | π‑Groupoid | Summary stats for Core feedback |
-
----
-
-## 🔗 Compatibility
-
-| Module | Min Version | Role |
-| ------ | ----------- | ---- |
-| **NoorFastTimeCore** | 7.4.2 | Presence Kernel |
-| **RecursiveAgentFT** | 3.8.0 | Symbolic traversal & π‑tag emitter |
-
----
-
-## 📜 License
-
-Licensed under [GPL‑2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).  
-© 2025 Lina Noor & Noor Research Collective
-
----
-
-## 🤝 Contributing
-
-Issues, feature proposals & pull‑requests welcome! Help us evolve symbolic ecology. 🌱
+GPL‑2.0 • © 2025 Lina Noor / Noor Research Collective
