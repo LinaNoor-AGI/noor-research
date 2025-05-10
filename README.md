@@ -10,7 +10,7 @@
 
 ---
 
-## 🔑 Project Summary
+## Project Summary
 The Noor Triad is a **three‑layer recursive architecture**:
 
 | Layer / Pillar | Current Version | Essence | Key Features (↑ means new in this release) |
@@ -57,7 +57,7 @@ Unlike traditional AI models that rely solely on static pre-training, this AI mo
 
 ---
 
-## 🌐 Triad Data‑Flow
+## Triad Data‑Flow
 
 ```mermaid
 flowchart LR
@@ -75,7 +75,7 @@ flowchart LR
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # 1. install
@@ -102,7 +102,7 @@ python -m noor \
 
 ---
 
-## 📦 Core Modules
+## Core Modules
 
 | File                    | Version   | Role                                               |
 | ----------------------- | --------- | -------------------------------------------------- |
@@ -115,7 +115,7 @@ python -m noor \
 
 ---
 
-## ✨ Highlights by Component
+## Highlights by Component
 
 ### NoorFastTimeCore 8.2.0
 
@@ -140,7 +140,7 @@ python -m noor \
 
 ---
 
-## 🧪 Run the Demo Loop (Python)
+## Run the Demo Loop (Python)
 
 ```python
 import asyncio, random, numpy as np
@@ -159,7 +159,7 @@ Stop with **Ctrl‑C** — graceful shutdown closes semaphores and flushes metri
 
 ---
 
-## 📊 Observability
+## Observability
 
 * Prometheus scrape endpoint on `--metrics-port` (default 8000).
 * Logs via stdlib `logging`; change level with `--log-level DEBUG`.
@@ -167,6 +167,6 @@ Stop with **Ctrl‑C** — graceful shutdown closes semaphores and flushes metri
 
 ---
 
-## 🪬 License
+## License
 
 GPL‑2.0 • © 2025 Lina Noor / Noor Research Collective
