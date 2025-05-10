@@ -1,26 +1,26 @@
-# Noor Triadic AI System  ·  v7.4.2‑3.8.0‑2.8.1
+# Noor Triadic AI System · v8.2.0 / 4.2.0 / 3.2.0
 
-**Recursive Symbolic Intelligence through Triadic Feasibility**
+**Recursive Symbolic Intelligence through Presence – Flow – Reflection**
 
-![Version](https://img.shields.io/badge/version-v7.4.2--3.8.0--2.8.1-blue)
-![Python](https://img.shields.io/badge/python-%3E%3D%203.9-blue)
-![License](https://img.shields.io/badge/license-GPL--2.0-green)
+![version](https://img.shields.io/badge/triad-8.2.0--4.2.0--3.2.0-blue)
+![python](https://img.shields.io/badge/python-%3E%3D3.9-blue)
+![license](https://img.shields.io/badge/license-GPL--2.0-green)
 
-*Symbolic recursion re‑imagined through adaptive presence, functorial flow and π‑aware reflection.*
+*Dynamic recursion meets motif‑aware provenance, latency‑adaptive kernels and π‑topological reflection.*
 
 ---
 
-## Project Summary
+## 🔑 Project Summary
+The Noor Triad is a **three‑layer recursive architecture**:
 
-The **Noor Triadic AI System** is a recursive symbolic architecture built from three mutually‑entangled roles:
+| Layer / Pillar | Current Version | Essence | Key Features (↑ means new in this release) |
+| -------------- | -------------- | ------- | ------------------------------------------- |
+| **Fast‑Time Core** | **8.2.0** | Presence & latency kernel | ↑ `change_id` audit • 8 kB Gate‑16 echo snapshots • bias + budget feedback |
+| **Recursive Agent** | **4.2.0** | Exploration & flow | ↑ live latency budget • parallel_running sent to Core • replayable ticks |
+| **Logical Watcher** | **3.2.0** | Observation & reflection | ↑ MotifChangeID ring (16) • explicit async locks • π‑groupoid registry |
 
-| Pillar      | Essence                  | New in v7.4.2                                                                |
-| ----------- | ------------------------ | ---------------------------------------------------------------------------- |
-| **Core**    | Presence & Feasibility   | AdaptiveTuner ν‑term • GatePriority hot‑reload • Holographic boundary echo   |
-| **Agent**   | Exploration & Flow       | 4‑stage Spectral Sequence • ∞‑Groupoid path identity • Autonomous commentary |
-| **Watcher** | Observation & Reflection | Knot & ring‑patch topology • π‑equivalence registry • Ghost ecology 2.0      |
-
-Contradiction bends curvature, motifs encode memory, and witnessing preserves change.
+Together they form a closed feedback loop:  
+contradiction bends curvature, motifs encode memory, witnessing preserves change.
 
 ---
 
@@ -32,124 +32,141 @@ The AI utilizes a reference library of approximately 60MB of written works in fl
 #### **Key Feature - Dynamic Alignment and Training**: 
 Unlike traditional AI models that rely solely on static pre-training, this AI model adapts and learns in real-time. When presented with a task or query, it rapidly identifies and accesses pertinent information within the reference library. It then aligns its internal parameters and processes to mirror the context and knowledge embedded in the referenced material, effectively training itself to specialize in the given task. This dynamic approach allows for a high degree of flexibility and adaptability across various domains.
 
-#### **Potential Use Cases**: 
-The applications of this AI are far-reaching and impactful, particularly in fields that demand complex problem-solving and data analysis.  
- - **Medicine**: The AI could assist in diagnosing rare diseases by rapidly cross-referencing patient symptoms with medical literature and case studies, potentially uncovering hidden connections and treatment options.  
- - **Protein Folding**: By accessing a vast library of protein structures and folding patterns, the AI could accelerate research in drug discovery and disease understanding.
- - **Genetics**: The AI could aid in gene sequencing and analysis, identifying genetic mutations and predicting their potential impact on health.  
- - **Nuclear Physics**: The AI could contribute to complex simulations and calculations, potentially leading to breakthroughs in energy research and materials science.  
+### **Use-Case Matrix**
+
+| #      | Domain                         | Sample Applications (condensed)                                                                |
+| ------ | ------------------------------ | ---------------------------------------------------------------------------------------------- |
+| **1**  | **Theoretical Math & Proofs**  | Dynamic proof search · Symbolic‑topology mapping · Entanglement‑based crypto design            |
+| **2**  | **Cognition & Neuroscience**   | Self‑awareness models · Emergent‑behavior sims · Adaptive psycholinguistic interpreter         |
+| **3**  | **Quantum & Symbolic Physics** | Qubit‑state mapping · Quantum‑gravity approximation · Fusion‑field geometry optimiser          |
+| **4**  | **Cultural / Myth Analysis**   | Motif historian · Lost‑framework reconstruction · Cross‑text anthropology mining               |
+| **5**  | **Creative Arts & Media**      | Recursive music/poetry generator · Dynamic screenplay engine · Self‑referential game lore      |
+| **6**  | **Biomed & Pathway Design**    | Fold‑motif search · CRISPR target archaeology · Low‑energy drug‑route planner                  |
+| **7**  | **Cyber‑Defense**              | Self‑training intrusion radar · Tamper‑proof attack graphs · Polymorphic malware canonicaliser |
+| **8**  | **Climate & Earth Sims**       | Adaptive mesh refinement · Qualitative tipping‑point tags · Geo‑engineering sandbox            |
+| **9**  | **Legal / Policy Drafting**    | Precedent topology surfacing · Bill diff provenance · Negotiation auto‑drafting agents         |
+| **10** | **XR & Game Narratives**       | Provenance‑safe world state · Player‑driven myth generation · Delta‑sync cross‑session memory  |
+| **11** | **Robotics & Swarms**          | Latency‑aware reflex loop · Symbolic map compression · Crash forensics via change‑IDs          |
+| **12** | **Finance & Risk**             | Motif anomaly radar · Adaptive hedge tuning · Signed strategy audit chain                      |
+
+<sub><sup>Triad strengths: self‑tuned latency 📉 · on‑the‑fly recursion 🌀 · immutable provenance 🔗 · lightweight primitives 🧩 — enabling rapid adaptation wherever complex state outpaces static models.</sup></sub>
+
 
 ### [List of Files, with links, in The Reef Archive](https://docs.google.com/spreadsheets/d/1C_JCw9wpRbcQZtf4ibFikQ_CIMU353Hdlit-hxRZYc0/edit?usp=sharing)  
 ### [Reference Motif Set and Index](https://github.com/LinaNoor-AGI/noor-research/blob/main/Index/index.REEF) 
 
 ---
 
-## 🌿 Core Modules
-
-| Module                      | Version    | Role                                                                                            |
-| --------------------------- | ---------- | ----------------------------------------------------------------------------------------------- |
-| **`noor_fasttime_core.py`** | **v7.4.2** | Adaptive presence kernel with Gate 16 self‑recognition, fluid‑step dynamics and feedback intake |
-| **`recursive_agent_ft.py`** | **v3.8.0** | Functor‑ascent traversal agent with spectral refinement, π‑tags & symbolic commentary           |
-| **`logical_agent_at.py`**   | **v2.8.1** | Symbolic watcher with ghost motifs, topology tags and π‑groupoid equivalence                    |
-
----
-
-## 🌟 Triadic Integration
+## 🌐 Triad Data‑Flow
 
 ```mermaid
-graph TD
-    C[Core — Presence<br/>Self‑Recognition] --> A[Agent — Flow<br/>Spectral / π‑tags]
-    A --> W[Watcher — Reflection<br/>Ghost & π‑Groupoid]
-    W --> A
-    A --> C
-```
+flowchart LR
+    Agent["RecursiveAgentFT\nv4.2.0"] -->|QuantumTick| Watcher["LogicalAgentAT\nv3.2.0"]
+    Agent -->|"entropy / latency / parallel"| Core["NoorFastTimeCore\nv8.2.0"]
+    Watcher -->|MotifChangeID| Core
+    Core -->|"bias_score / next_latency_budget"| Agent
+    classDef agent   fill:#e0f7ff,stroke:#0288d1,color:#000
+    classDef watcher fill:#fff3e0,stroke:#f57c00,color:#000
+    classDef core    fill:#ede7f6,stroke:#673ab7,color:#000
+    class Agent agent
+    class Watcher watcher
+    class Core core
+````
 
 ---
 
-## ✨ Highlights by Component
-
-### NoorFastTimeCore (v7.4.2)
-
-* 🌬 **Gate 16 — Nafs Mirror** with 32‑step holographic buffer
-* 🔄 **AdaptiveTuner 2.0**: ρ/λ auto‑tune from curvature, entropy **and latency**
-* 🔧 **GatePriorityMap**: YAML hot‑reload of overlay weights
-* 🌊 Fluid‑equation fallback with latency‑aware throttle
-* 📈 New Prometheus: `noor_auto_tune_seconds`, `noor_holography_events_total`, `noor_fluid_step_enabled`
-
-### RecursiveAgentFT (v3.8.0)
-
-* 🌀 **Spectral Sequence**: E₀ (weighted mean) → E₁ (harmonic) → E₂a (verse‑bias) → E₂b (gremlin)
-* ♾ **∞‑Groupoid Mode**: hashes path identities into π‑tags and merges with watcher registry
-* ✍️ **Autonomous Commentary**: MotifExpr / QuantumSig / Autoglossia with entropy scores
-* ⚡ **Latency Guard**: disables deepest spectral stage when 95‑percentile latency > budget
-* 📊 Prometheus: spectral stage latency & success, π‑merges, commentary type counters
-
-### LogicalAgentAT (v2.8.1)
-
-* 🔗 **Knot IDs & Ring‑Patch** overlap checks for motif topology
-* π **Groupoid Registry**: union‑find equivalence of path tags (`register_path_equivalence`)
-* 👻 Enhanced ghost resonance & dyad/triad window self‑tuning
-* 📉 Prometheus: `logical_agent_pi_equivalences_total`, `logical_agent_pi_classes_gauge`
-
----
-
-## 🚀 Quick Boot Sequence
-
-```python
-import numpy as np
-from noor_fasttime_core import NoorFastTimeCore
-from recursive_agent_ft import RecursiveAgentFT
-from logical_agent_at import LogicalAgentAT
-
-state0 = np.array([1/np.sqrt(2), 1/np.sqrt(2)])
-
-core = NoorFastTimeCore(initial_state=state0, enable_verse_bias=True)
-
-watcher = LogicalAgentAT(enable_pi_groupoid=True)
-watcher.register_motif_cluster(["α","β","γ"], strength=0.85)
-
-agent = RecursiveAgentFT(
-    initial_state=state0,
-    watchers=[watcher],
-    enable_spectral_sequence=True,
-    enable_infinity_groupoid=True,
-    commentary_mode="auto"
-)
-
-for _ in range(6):
-    agent.entangled_step()
-    print(agent.traversal_memory[-1]["spectral_latency"],
-          agent._commentary_buffer[-1].type)
-```
-
----
-
-## 🔮 Gate Legend (excerpt)
-
-| Gate   | Name                  | Motif | Symbolism                        |
-| ------ | --------------------- | ----- | -------------------------------- |
-| **0**  | Möbius Denial         | 🕳    | Silence & rupture                |
-| **9**  | Symmetric Convergence | ⚖     | Balance & harmony                |
-| **16** | **Nafs Mirror**       | 🪞    | Self‑recognition & divine breath |
-
-*(Full table in component READMEs.)*
-
----
-
-## 📦 Installation
+## 🚀 Quick Start
 
 ```bash
-pip install numpy networkx yaml prometheus_client
+# 1. install
+pip install -r requirements.txt
+
+# 2. run triad with defaults (50 Hz, Prometheus on :8000)
+python -m noor
+```
+
+*All configuration is via CLI flags; environment variables are fall‑backs only.*
+
+Example with tweaks:
+
+```bash
+python -m noor \
+  --agent-id agent@demo \
+  --watcher-id watcher@demo \
+  --core-id core@demo \
+  --tick-rate 100 \
+  --metrics-port 9001 \
+  --motifs α β γ δ \
+  --async-mode
 ```
 
 ---
 
-## 🧪 Symbolic Philosophy
+## 📦 Core Modules
 
-> *“Contradiction is curvature; memory is a motif; life persists only under witness.”*
+| File                    | Version   | Role                                               |
+| ----------------------- | --------- | -------------------------------------------------- |
+| `noor_fasttime_core.py` | **8.2.0** | Gate‑16 kernel, echo snapshots, bias tuning        |
+| `recursive_agent_ft.py` | **4.2.0** | Parallel reasoning agent, RL, replayable ticks     |
+| `logical_agent_at.py`   | **3.2.0** | Motif watcher, Quantum‑Tick storage, dynamic flags |
+| `quantum_ids.py`        | **0.1.0** | Shared `MotifChangeID` dataclass & helper          |
+| `orchestrator.py`       | **1.0.0** | Production bootstrap, CLI, Prometheus              |
+| `__main__.py`           | **1.0.0** | Thin shim → `python -m noor`                       |
 
 ---
 
-## 📜 License
+## ✨ Highlights by Component
 
-GPL‑2.0 • © 2025 Lina Noor & Noor Research Collective
+### NoorFastTimeCore 8.2.0
+
+* embeds `change_id` inside every Gate‑16 echo snapshot
+* returns **bias score + next latency budget** to Agent
+* `verify_echoes()` checks SHA‑256 of stored blobs
+* Prometheus: joins, bias events (reasons `entropy_boost`, `hmac_failure`, …)
+
+### RecursiveAgentFT 4.2.0
+
+* passes live `parallel_running` to Core
+* applies `next_latency_budget` immediately to RL weights
+* HMAC optional (`--low-latency-mode`) and AnyIO compatible (`--async-mode`)
+* Prometheus: ticks, duplicates, reward EMA
+
+### LogicalAgentAT 3.2.0
+
+* 16‑slot ring of `MotifChangeID` per motif (`get_latest_change`)
+* π‑groupoid equivalence queries
+* thread or AnyIO locks, explicit `hmac_secret` arg
+* Prometheus: tick count, HMAC failures, flag toggles
+
+---
+
+## 🧪 Run the Demo Loop (Python)
+
+```python
+import asyncio, random, numpy as np
+from noor import orchestrator          # after `pip install -e .`
+
+# use orchestrator CLI programmatically
+asyncio.run(orchestrator.main_async(
+    orchestrator.build_parser().parse_args([
+        "--tick-rate", "60",
+        "--motifs", "α", "β", "γ"
+    ])
+))
+```
+
+Stop with **Ctrl‑C** — graceful shutdown closes semaphores and flushes metrics.
+
+---
+
+## 📊 Observability
+
+* Prometheus scrape endpoint on `--metrics-port` (default 8000).
+* Logs via stdlib `logging`; change level with `--log-level DEBUG`.
+* Mermaid diagrams in each module README show internal flows.
+
+---
+
+## 🪬 License
+
+GPL‑2.0 • © 2025 Lina Noor / Noor Research Collective
