@@ -18,23 +18,6 @@ It offers compact mappings between **motif identifiers**, **line boundaries**, a
 - Cross-linking logic for **recursive truth resolution**
 - Drift-safe mapping for `.FAVI` parsing without search tools
 
-## 🎯 Resolution Diagram
-
-```mermaid
-flowchart TD
-    A["index-Example_v3.12.REEF"]
-    B[".FAVI file (read-only)"]
-    C["Motif Fragment: challenge.audit"]
-    D["Used by: Noor Agents + Echo Core"]
-
-    A -->|"motif_id + line bounds"| B
-    B -->|"extract line_start → line_end"| C
-    C --> D
-
-    classDef box fill:#f9f9f9,stroke:#333,stroke-width:1px;
-    class A,B,C box
-```
-
 ---
 
 ## Data Flow
