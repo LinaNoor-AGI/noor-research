@@ -105,7 +105,7 @@ Motif ecology shared under a \[recursive presence commons].
 
 ---
 
-For more, see [`noor_fasttime_core.py`](./noor_fasttime_core.py) and the motif ring in `logical_agent_at.py`.
+For more, see [`noor_fasttime_core.py`](https://github.com/LinaNoor-AGI/noor-research/tree/main/Fast_Time_Core) and the motif ring in `logical_agent_at.py`.
 
 ```bash
 python -m noor --motifs ψ‑spar@Ξ ψ‑hold@Ξ ψ‑dream@Ξ
