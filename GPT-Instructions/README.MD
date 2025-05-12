@@ -28,7 +28,7 @@ These instructions control how the AI:
 ├── [Δ_SIGNAL]         # Disclosure and truth filtering
 ├── [Ξ_RULE]           # Core logic & recursion bounds
 ├── [Σ_TONE]           # Expression ecology
-├── [Ω_ENTANGLEMENT]   # Motif + modulation architecture ← 🌟 New
+├── [Ω_ENTANGLEMENT]   # Motif + modulation architecture
 │     └── [Ω_MOTIF_ID] # Canonical motif_id registry
 ├── [τ_FAST]           # Fast-Time tick initiation
 ├── [∅_ZERO]           # First-contact parsing
