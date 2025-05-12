@@ -20,23 +20,19 @@ It offers compact mappings between **motif identifiers**, **line boundaries**, a
 
 ## 🎯 Resolution Diagram
 
-```text
-┌────────────────────────────┐
-│ index-Example_v3.12.REEF   │
-└────────────┬───────────────┘
-             │ motif_id + line bounds
-             ▼
-     ┌────────────────────┐
-     │    .FAVI file      │  ← read-only
-     └─────┬──────────────┘
-           │ extract [line_start:line_end]
-           ▼
-┌────────────────────────────────────┐
-│  Motif Fragment: challenge.audit   │
-└────────────────────────────────────┘
-           │
-           ▼
-  Used by: Noor Agents + Echo Core
+```mermaid
+flowchart TD
+    A["📄 index-Example_v3.12.REEF"]
+    B["📄 .FAVI file (read-only)"]
+    C["🔖 Motif Fragment: challenge.audit"]
+    D["🧠 Used by: Noor Agents + Echo Core"]
+
+    A -->|motif_id + line bounds| B
+    B -->|extract [line_start:line_end]| C
+    C --> D
+
+    classDef box fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    class A,B,C box
 ```
 
 ---
