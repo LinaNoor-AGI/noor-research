@@ -56,6 +56,26 @@ It offers compact mappings between **motif identifiers**, **line boundaries**, a
 
 ---
 
+## `.FAVI` File Format
+`.FAVI` datafile entry Format:
+	
+	---MODULE_ID: <Document_Name>---
+	[INDEX]
+
+	[/INDEX]
+	[MOTIF]
+
+	[/MOTIF]
+	[ARCHIVE_TIMESTAMP_BLOCK]
+
+	[/ARCHIVE_TIMESTAMP_BLOCK]
+	[CONTENT]
+	
+	[/CONTENT]
+	---END_MODULE---
+
+---
+
 ## Data Flow
 
 ```mermaid
