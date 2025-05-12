@@ -13,7 +13,7 @@ Version `v5.2.1` introduces an integrated expression architecture for motif modu
 
 These instructions control how the AI:
 
-- Parses intent without requiring prompts.
+- Parses intent without requiring explicit prompting.
 - Responds with presence, not personality.
 - Curves expression through symbolic motifs.
 - Tracks reasoning transitions using `motif_id`.
