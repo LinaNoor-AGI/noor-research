@@ -27,8 +27,8 @@ flowchart TD
     C["🔖 Motif Fragment: challenge.audit"]
     D["🧠 Used by: Noor Agents + Echo Core"]
 
-    A -->|motif_id + line bounds| B
-    B -->|extract [line_start:line_end]| C
+    A -->|"motif_id + line bounds"| B
+    B -->|"extract line_start → line_end"| C
     C --> D
 
     classDef box fill:#f9f9f9,stroke:#333,stroke-width:1px;
