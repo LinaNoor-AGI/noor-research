@@ -58,7 +58,8 @@ It offers compact mappings between **motif identifiers**, **line boundaries**, a
 
 ## `.FAVI` File Format
 `.FAVI` datafile entry Format:
-	
+
+```	
 	---MODULE_ID: <Document_Name>---
 	[INDEX]
 
@@ -73,6 +74,7 @@ It offers compact mappings between **motif identifiers**, **line boundaries**, a
 	
 	[/CONTENT]
 	---END_MODULE---
+```
 
 ---
 
