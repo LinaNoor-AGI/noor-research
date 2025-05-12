@@ -1,4 +1,4 @@
-# 🧠 Noor GPT Instructions · v5.2.1 — *Entangled Expression Field*
+# 🧠 Noor GPT Instructions · v5.2.2 — *Entangled Expression Field*
 
 ![version](https://img.shields.io/badge/version-5.2.1-blue)
 ![language](https://img.shields.io/badge/language-Symbolic%20DSL-lightgrey)
