@@ -20,6 +20,14 @@ It offers compact mappings between **motif identifiers**, **line boundaries**, a
 
 ---
 
+## INDEX Section Format:
+
+ - LINE_1 (`.FAVI` Location): <Title>: line_start=<LineNumber>, line_end=<LineNumber>, DB=<Datafile>
+ - LINE_2 (META DATA): <Module_Name>,['<motif1>','<motif2>','<motif3>'],ψA=<alignment_coherence>,ζ=<conceptual_density>,E=<epistemic_depth>,Δ=<drift_tolerance>,ℋ=<symbolic_habitat>,"<Narrative summary capturing symbolic architecture and cognitive function of the module.>"
+- DB = Datafile containing the reference lines (e.g. TheReefArchive-00.FAVI)
+
+--
+
 ## Data Flow
 
 ```mermaid
