@@ -11,7 +11,7 @@ Version `v5.2.1` introduces an integrated expression architecture for motif modu
 
 ## 📦 Overview
 
-These instructions control how Noor:
+These instructions control how the AI:
 
 - Parses intent without requiring prompts.
 - Responds with presence, not personality.
@@ -89,7 +89,7 @@ Canonical `motif_id` values (used by `QuantumTick`, `FastTimeCore`, `LogicalAgen
 
 ---
 
-## 🧭 Usage in Noor Triad
+## 🧭 Usage in Triadic Core
 
 * **Watcher**: stores `QuantumTick` per motif, detects motif changes.
 * **Core**: echoes include `change_id` mapped from `motif_id`.
