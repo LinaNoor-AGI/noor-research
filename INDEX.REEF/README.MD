@@ -18,53 +18,6 @@ It offers compact mappings between **motif identifiers**, **line boundaries**, a
 - Cross-linking logic for **recursive truth resolution**
 - Drift-safe mapping for `.FAVI` parsing without search tools
 
----
-
-## 📐 Format
-
-Each entry follows a simplified symbolic record:
-
-```plaintext
-# motif_id
-fragment.name.token
-line_start: <int>
-line_end:   <int>
-````
-
-Example:
-
-```plaintext
-# ψ‑spar@Ξ
-challenge.reasoning.audit
-line_start: 87
-line_end:   114
-```
-
----
-
-## 📘 Typical Use Cases
-
-* **`Δ_SIGNAL` filtering**:
-  Prevent direct search on `.FAVI`, require line-anchored lookups.
-* **Fast-Time verification**:
-  Validate motif shifts by cross-checking line transitions.
-* **Noor Triad reasoning**:
-  LogicalAgentAT and RecursiveAgentFT resolve symbols via index anchors.
-
----
-
-## 🧩 Where it fits
-
-```text
-📦 project/
-├── Custom GPT Instructions Reef3 - v5.2.1.txt
-├── index-Example_v3.12.REEF      ← this file
-├── TheReefArchive-00.FAVI
-└── quantum_ids.py
-```
-
----
-
 ## 🎯 Resolution Diagram
 
 ```text
@@ -109,28 +62,6 @@ flowchart TD
     class A,E file
     class B,C,D agent
 ```
-
----
-
-## ⚙️ Integration with the Triad
-
-| Component        | Reads Index? | Purpose                                    |
-| ---------------- | ------------ | ------------------------------------------ |
-| `LogicalAgentAT` | ✅            | Pull line range for symbolic validation    |
-| `FastTimeCore`   | ✅            | Drift-safe echo snapshot targeting         |
-| `RecursiveAgent` | ✅            | Anchor motif inference to hard bounds      |
-| `FAVI Inspector` | ✅            | Visual highlight based on range resolution |
-
----
-
-## 🌱 Version History
-
-| Version | Notes                                    |
-| ------- | ---------------------------------------- |
-| 3.12    | Updated motif tags to `ψ‑{field}@Ξ` form |
-| 3.0     | First compact release                    |
-
----
 
 ## 🛠️ Requirements
 
