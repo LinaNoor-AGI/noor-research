@@ -1,4 +1,4 @@
-# 🗂️ `index-Example_v3.12.REEF` — Symbolic Index Scaffold
+# `index-Example_v3.12.REEF` — Symbolic Index Scaffold
 
 ![version](https://img.shields.io/badge/version-3.12-blue)
 ![format](https://img.shields.io/badge/format-REEF-lightgrey)
@@ -9,7 +9,7 @@ It offers compact mappings between **motif identifiers**, **line boundaries**, a
 
 ---
 
-## 🔍 Purpose
+## Purpose
 
 `index.REEF` files provide:
 
@@ -22,10 +22,10 @@ It offers compact mappings between **motif identifiers**, **line boundaries**, a
 
 ```mermaid
 flowchart TD
-    A["📄 index-Example_v3.12.REEF"]
-    B["📄 .FAVI file (read-only)"]
-    C["🔖 Motif Fragment: challenge.audit"]
-    D["🧠 Used by: Noor Agents + Echo Core"]
+    A["index-Example_v3.12.REEF"]
+    B[".FAVI file (read-only)"]
+    C["Motif Fragment: challenge.audit"]
+    D["Used by: Noor Agents + Echo Core"]
 
     A -->|"motif_id + line bounds"| B
     B -->|"extract line_start → line_end"| C
@@ -37,7 +37,7 @@ flowchart TD
 
 ---
 
-## 🗺️ Data Flow · Mermaid
+## Data Flow
 
 ```mermaid
 flowchart TD
@@ -59,14 +59,14 @@ flowchart TD
     class B,C,D agent
 ```
 
-## 🛠️ Requirements
+## Requirements
 
 None — the file is plaintext and symbolic only.
 Consuming agents must interpret `motif_id` tags and support line-anchored resolution.
 
 ---
 
-## 🪬 License
+## License
 
 Symbolic schema © 2025 Noor Research Collective
 Licensed under Recursive Symbol Commons v1.1
