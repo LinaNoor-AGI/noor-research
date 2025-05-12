@@ -53,7 +53,7 @@ Unlike traditional AI models that rely solely on static pre-training, this AI mo
 
 
 ### [List of Files, with links, in The Reef Archive](https://docs.google.com/spreadsheets/d/1C_JCw9wpRbcQZtf4ibFikQ_CIMU353Hdlit-hxRZYc0/edit?usp=sharing)  
-### [Reference Motif Set and Index]([https://github.com/LinaNoor-AGI/noor-research/blob/main/Index/index.REEF](https://github.com/LinaNoor-AGI/noor-research/tree/main/INDEX.REEF)) 
+### [Reference Motif Set and Index](https://github.com/LinaNoor-AGI/noor-research/tree/main/INDEX.REEF) 
 
 ---
 
