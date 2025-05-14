@@ -20,6 +20,7 @@ import logging
 import os
 import sys
 import time
+import threading
 from collections import deque
 from typing import Dict, List, Optional, Tuple
 
@@ -40,7 +41,7 @@ except ImportError:  # pragma: no cover
     import pickle
     _dumps = pickle.dumps  # type: ignore
 
-from quantum_ids import MotifChangeID
+from .quantum_ids import MotifChangeID
 
 # ──────────────────────────────────────────────────────────────
 # Gate legends (unchanged poetry)

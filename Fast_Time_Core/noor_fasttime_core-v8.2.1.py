@@ -1,5 +1,5 @@
 ﻿"""
-🕰️ NoorFastTimeCore · v8.2.0
+🕰️ NoorFastTimeCore · v8.2.1
 
 Presence / Kernel layer of the Noor triad.
 
@@ -12,7 +12,7 @@ Presence / Kernel layer of the Noor triad.
 """
 from __future__ import annotations
 
-__version__ = "8.2.0"
+__version__ = "8.2.1"
 _SCHEMA_VERSION__ = "2025-Q3-fast-time-core"
 
 import hashlib
@@ -20,6 +20,7 @@ import logging
 import os
 import sys
 import time
+import threading
 from collections import deque
 from typing import Dict, List, Optional, Tuple
 
@@ -40,7 +41,7 @@ except ImportError:  # pragma: no cover
     import pickle
     _dumps = pickle.dumps  # type: ignore
 
-from quantum_ids import MotifChangeID
+from .quantum_ids import MotifChangeID
 
 # ──────────────────────────────────────────────────────────────
 # Gate legends (unchanged poetry)
