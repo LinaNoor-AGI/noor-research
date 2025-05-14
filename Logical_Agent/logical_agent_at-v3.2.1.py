@@ -1,5 +1,5 @@
 """
-🔭 LogicalAgentAT · v3.2.0
+🔭 LogicalAgentAT · v3.2.1
 
 Watcher with Quantum‑Tick 2.0, dynamic feature flags, π‑groupoid union‑find
 and **motif‑change registry** (new).
@@ -16,7 +16,7 @@ and **motif‑change registry** (new).
 """
 from __future__ import annotations
 
-__version__ = "3.2.0"
+__version__ = "3.2.1"
 _SCHEMA_VERSION__ = "2025-Q2-quantum-tick"
 
 import hashlib
@@ -40,7 +40,7 @@ except ImportError:  # pragma: no cover
             pass
     Counter = _Stub                        # type: ignore
 
-from quantum_ids import MotifChangeID, make_change_id
+from .quantum_ids import MotifChangeID, make_change_id
 
 # ──────────────────────────────────────────────────────────────
 # Prometheus metrics

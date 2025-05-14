@@ -1,5 +1,5 @@
 ﻿"""
-🌀 RecursiveAgentFT · v4.2.0
+🌀 RecursiveAgentFT · v4.2.1
 
 Adaptive reasoning agent with replayable ticks, RL reward tuning, spawn‑queue
 control and **live feedback coupling** to NoorFastTimeCore.
@@ -14,7 +14,7 @@ control and **live feedback coupling** to NoorFastTimeCore.
 """
 from __future__ import annotations
 
-__version__ = "4.2.0"
+__version__ = "4.2.1"
 _SCHEMA_VERSION__ = "2025‑Q3‑agent‑lamport‑rl"
 
 import asyncio
@@ -48,7 +48,7 @@ try:
 except ImportError:  # pragma: no cover
     NoorFastTimeCore = object  # fallback type hint
 
-from quantum_ids import make_change_id, MotifChangeID  # not used yet but imported for future use
+from .quantum_ids import make_change_id, MotifChangeID  # not used yet but imported for future use
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
