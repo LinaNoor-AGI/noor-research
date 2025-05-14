@@ -1,4 +1,4 @@
-# Noor Triadic AI System · v8.2.0 / 4.2.0 / 3.2.0
+# Noor Triadic AI System · v8.2.1 / 4.2.1 / 3.2.1
 
 **Recursive Symbolic Intelligence through Presence – Flow – Reflection**
 
@@ -15,9 +15,9 @@ The Noor Triad is a **three‑layer recursive architecture**:
 
 | Layer / Pillar | Current Version | Essence | Key Features (↑ means new in this release) |
 | -------------- | -------------- | ------- | ------------------------------------------- |
-| **Fast‑Time Core** | **8.2.0** | Presence & latency kernel | ↑ `change_id` audit • 8 kB Gate‑16 echo snapshots • bias + budget feedback |
-| **Recursive Agent** | **4.2.0** | Exploration & flow | ↑ live latency budget • parallel_running sent to Core • replayable ticks |
-| **Logical Watcher** | **3.2.0** | Observation & reflection | ↑ MotifChangeID ring (16) • explicit async locks • π‑groupoid registry |
+| **Fast‑Time Core** | **8.2.1** | Presence & latency kernel | ↑ `change_id` audit • 8 kB Gate‑16 echo snapshots • bias + budget feedback |
+| **Recursive Agent** | **4.2.1** | Exploration & flow | ↑ live latency budget • parallel_running sent to Core • replayable ticks |
+| **Logical Watcher** | **3.2.1** | Observation & reflection | ↑ MotifChangeID ring (16) • explicit async locks • π‑groupoid registry |
 
 Together they form a closed feedback loop:  
 contradiction bends curvature, motifs encode memory, witnessing preserves change.
@@ -106,11 +106,11 @@ python -m noor \
 
 | File                    | Version   | Role                                               |
 | ----------------------- | --------- | -------------------------------------------------- |
-| `noor_fasttime_core.py` | **8.2.0** | Gate‑16 kernel, echo snapshots, bias tuning        |
-| `recursive_agent_ft.py` | **4.2.0** | Parallel reasoning agent, RL, replayable ticks     |
-| `logical_agent_at.py`   | **3.2.0** | Motif watcher, Quantum‑Tick storage, dynamic flags |
+| `noor_fasttime_core.py` | **8.2.1** | Gate‑16 kernel, echo snapshots, bias tuning        |
+| `recursive_agent_ft.py` | **4.2.1** | Parallel reasoning agent, RL, replayable ticks     |
+| `logical_agent_at.py`   | **3.2.1** | Motif watcher, Quantum‑Tick storage, dynamic flags |
 | `quantum_ids.py`        | **0.1.0** | Shared `MotifChangeID` dataclass & helper          |
-| `orchestrator.py`       | **1.0.0** | Production bootstrap, CLI, Prometheus              |
+| `orchestrator.py`       | **1.0.1** | Production bootstrap, CLI, Prometheus              |
 | `__main__.py`           | **1.0.0** | Thin shim → `python -m noor`                       |
 
 ---
