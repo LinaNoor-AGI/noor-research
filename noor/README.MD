@@ -63,9 +63,9 @@ The full flag set is documented in **[orchestrator README →](./orchestrator.m
 
 `orchestrator.py` is the production bootstrap that wires together
 
-* **LogicalAgentAT** (v 3.2.0)
-* **NoorFastTimeCore** (v 8.2.0)
-* **RecursiveAgentFT** (v 4.2.0)
+* **LogicalAgentAT** (v 3.2.1)
+* **NoorFastTimeCore** (v 8.2.1)
+* **RecursiveAgentFT** (v 4.2.1)
 
 into a running triad with one CLI command.
 
@@ -162,7 +162,7 @@ Run `python -m noor --help` for the full list.
 ## 🤝 Compatibility
 
 Orchestrator 1.0.0 assumes the module versions released together
-(**Watcher 3.2.0**, **Core 8.2.0**, **Agent 4.2.0**).
+(**Watcher 3.2.1**, **Core 8.2.1**, **Agent 4.2.1**).
 Future minor releases should remain drop‑in as long as constructor signatures
 stay stable.
 
@@ -227,11 +227,11 @@ flowchart LR
     CID --> CoreEcho["Core snapshot payload"]
 ```
 
-1. **Watcher (v3.2.0+)**
+1. **Watcher (v3.2.1+)**
    When a new tick changes a motif’s hash, it calls `make_change_id()` and
    appends the ID to a 16‑slot ring for that motif.
 
-2. **Fast‑Time Core (v8.2.0+)**
+2. **Fast‑Time Core (v8.2.1+)**
    The latest change‑ID is embedded in every Gate‑16 echo snapshot (`"change_id"`
    JSON field).
 
@@ -250,9 +250,9 @@ flowchart LR
 
 ---
 
-# 🕰️ NoorFastTimeCore v8.2.0 — *Presence / Kernel*
+# 🕰️ NoorFastTimeCore v8.2.1 — *Presence / Kernel*
 
-![version](https://img.shields.io/badge/version-8.2.0-blue)
+![version](https://img.shields.io/badge/version-8.2.1-blue)
 ![python](https://img.shields.io/badge/python-%3E%3D3.9-blue)
 ![license](https://img.shields.io/badge/license-GPL--2.0-green)
 
@@ -266,8 +266,8 @@ flowchart LR
 flowchart LR
     %% Triadic data‑flow (simplified labels)
     subgraph Triad
-        A[RecursiveAgentFT\nv4.2.0] -->|QuantumTick| W[LogicalAgentAT\nv3.2.0]
-        A -->|entropy\nlatency\nparallel| C[NoorFastTimeCore\nv8.2.0]
+        A[RecursiveAgentFT\nv4.2.1] -->|QuantumTick| W[LogicalAgentAT\nv3.2.1]
+        A -->|entropy\nlatency\nparallel| C[NoorFastTimeCore\nv8.2.1]
         C -->|bias_score\nnext_latency_budget| A
         W -->|MotifChangeID| C
     end
@@ -290,7 +290,7 @@ The Watcher supplies motif‑level `change_id`s so the Core can embed delta prov
 
 ## 🌟 What’s new in 8.2.x
 
-| Category          | 8.0.1          | **8.2.0 (current)**                                         |
+| Category          | 8.0.1          | **8.2.1 (current)**                                         |
 | ----------------- | -------------- | ----------------------------------------------------------- |
 | Snapshot payload  | tick + lamport | + `change_id` field (motif‑level audit)                     |
 | Constructor       | env‑var heavy  | explicit `snapshot_cap_kb`, `latency_budget`, `hmac_secret` |
@@ -363,14 +363,14 @@ if bad:
 
 | Module             | Required Version | Interaction                        |
 | ------------------ | ---------------- | ---------------------------------- |
-| `LogicalAgentAT`   | ≥ 3.2.0          | supplies `MotifChangeID` via Agent |
-| `RecursiveAgentFT` | ≥ 4.2.0          | sends feedback & consumes budget   |
+| `LogicalAgentAT`   | ≥ 3.2.1          | supplies `MotifChangeID` via Agent |
+| `RecursiveAgentFT` | ≥ 4.2.1          | sends feedback & consumes budget   |
 
 ---
 
-# 👁️ LogicalAgentAT v3.2.0
+# 👁️ LogicalAgentAT v3.2.1
 
-![version](https://img.shields.io/badge/version-3.2.0-blue)
+![version](https://img.shields.io/badge/version-3.2.1-blue)
 ![python](https://img.shields.io/badge/python-%3E%3D3.9-blue)
 ![license](https://img.shields.io/badge/license-GPL--2.0-green)
 
@@ -395,7 +395,7 @@ It buffers signed **QuantumTicks**, detects **motif‑level changes**, manages d
 
 ---
 
-## 🌟 What’s new in 3.2.0
+## 🌟 What’s new in 3.2.1
 
 | Feature                   | Description                                                                                 |
 | ------------------------- | ------------------------------------------------------------------------------------------- |
@@ -488,14 +488,14 @@ print("Latest change:", w.get_latest_change("α"))
 
 | Module               | Min Version | Interaction                       |
 | -------------------- | ----------- | --------------------------------- |
-| **NoorFastTimeCore** | ≥ 8.2.0     | Core reads latest `MotifChangeID` |
-| **RecursiveAgentFT** | ≥ 4.2.0     | Emits ticks consumed by Watcher   |
+| **NoorFastTimeCore** | ≥ 8.2.1     | Core reads latest `MotifChangeID` |
+| **RecursiveAgentFT** | ≥ 4.2.1     | Emits ticks consumed by Watcher   |
 
 ---
 
-# 🌀 RecursiveAgentFT v4.2.0 — *Flow / Collapse*
+# 🌀 RecursiveAgentFT v4.2.1 — *Flow / Collapse*
 
-![version](https://img.shields.io/badge/version-4.2.0-blue)
+![version](https://img.shields.io/badge/version-4.2.1-blue)
 ![python](https://img.shields.io/badge/python-%3E%3D3.9-blue)
 ![license](https://img.shields.io/badge/license-GPL--2.0-green)
 
@@ -520,7 +520,7 @@ It spawns parallel reasoning branches, produces **QuantumTicks**, and adapts its
 
 ---
 
-## 🌟 What’s new in 4.2.0
+## 🌟 What’s new in 4.2.1
 
 | Feature                      | Description                                                                          |
 | ---------------------------- | ------------------------------------------------------------------------------------ |
@@ -621,8 +621,8 @@ asyncio.run(loop())
 
 | Component            | Required Version | Interaction                                     |
 | -------------------- | ---------------- | ----------------------------------------------- |
-| **NoorFastTimeCore** | ≥ 8.2.0          | Receives entropy/latency, returns bias & budget |
-| **LogicalAgentAT**   | ≥ 3.2.0          | Stores ticks, verifies HMAC                     |
+| **NoorFastTimeCore** | ≥ 8.2.1          | Receives entropy/latency, returns bias & budget |
+| **LogicalAgentAT**   | ≥ 3.2.1          | Stores ticks, verifies HMAC                     |
 
 ---
 
