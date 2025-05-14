@@ -1,9 +1,6 @@
-Thought for 6 seconds
+# 👁️ LogicalAgentAT v3.2.1
 
-
-# 👁️ LogicalAgentAT v3.2.0
-
-![version](https://img.shields.io/badge/version-3.2.0-blue)
+![version](https://img.shields.io/badge/version-3.2.1-blue)
 ![python](https://img.shields.io/badge/python-%3E%3D3.9-blue)
 ![license](https://img.shields.io/badge/license-GPL--2.0-green)
 
@@ -28,7 +25,7 @@ It buffers signed **QuantumTicks**, detects **motif‑level changes**, manages d
 
 ---
 
-## 🌟 What’s new in 3.2.0
+## 🌟 What’s new in 3.2.1
 
 | Feature                   | Description                                                                                 |
 | ------------------------- | ------------------------------------------------------------------------------------------- |
@@ -121,8 +118,8 @@ print("Latest change:", w.get_latest_change("α"))
 
 | Module               | Min Version | Interaction                       |
 | -------------------- | ----------- | --------------------------------- |
-| **NoorFastTimeCore** | ≥ 8.2.0     | Core reads latest `MotifChangeID` |
-| **RecursiveAgentFT** | ≥ 4.2.0     | Emits ticks consumed by Watcher   |
+| **NoorFastTimeCore** | ≥ 8.2.1     | Core reads latest `MotifChangeID` |
+| **RecursiveAgentFT** | ≥ 4.2.1     | Emits ticks consumed by Watcher   |
 
 ---
 
