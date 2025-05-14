@@ -1,4 +1,4 @@
-# 🚀 Orchestrator v1.0.0 — *Run the Noor Triad*
+# 🚀 Orchestrator v1.0.1 — *Run the Noor Triad*
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue)
 ![python](https://img.shields.io/badge/python-%3E%3D3.9-blue)
@@ -6,9 +6,9 @@
 
 `orchestrator.py` is the production bootstrap that wires together
 
-* **LogicalAgentAT** (v 3.2.0)
-* **NoorFastTimeCore** (v 8.2.0)
-* **RecursiveAgentFT** (v 4.2.0)
+* **LogicalAgentAT** (v 3.2.1)
+* **NoorFastTimeCore** (v 8.2.1)
+* **RecursiveAgentFT** (v 4.2.1)
 
 into a running triad with one CLI command.
 
@@ -105,7 +105,7 @@ Run `python -m noor --help` for the full list.
 ## 🤝 Compatibility
 
 Orchestrator 1.0.0 assumes the module versions released together
-(**Watcher 3.2.0**, **Core 8.2.0**, **Agent 4.2.0**).
+(**Watcher 3.2.1**, **Core 8.2.1**, **Agent 4.2.1**).
 Future minor releases should remain drop‑in as long as constructor signatures
 stay stable.
 
