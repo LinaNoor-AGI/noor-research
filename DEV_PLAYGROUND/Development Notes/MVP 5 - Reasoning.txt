@@ -1,0 +1,99 @@
+# Start up
+
+# HELP python_gc_objects_collected_total Objects collected during gc
+# TYPE python_gc_objects_collected_total counter
+python_gc_objects_collected_total{generation="0"} 383.0
+python_gc_objects_collected_total{generation="1"} 23.0
+python_gc_objects_collected_total{generation="2"} 0.0
+# HELP python_gc_objects_uncollectable_total Uncollectable objects found during GC
+# TYPE python_gc_objects_uncollectable_total counter
+python_gc_objects_uncollectable_total{generation="0"} 0.0
+python_gc_objects_uncollectable_total{generation="1"} 0.0
+python_gc_objects_uncollectable_total{generation="2"} 0.0
+# HELP python_gc_collections_total Number of times this generation was collected
+# TYPE python_gc_collections_total counter
+python_gc_collections_total{generation="0"} 62.0
+python_gc_collections_total{generation="1"} 5.0
+python_gc_collections_total{generation="2"} 0.0
+# HELP python_info Python platform information
+# TYPE python_info gauge
+python_info{implementation="CPython",major="3",minor="12",patchlevel="10",version="3.12.10"} 1.0
+# HELP logical_agent_ticks_total Quantum ticks registered
+# TYPE logical_agent_ticks_total counter
+# HELP logical_agent_tick_hmac_failures_total Tick HMAC verification failures
+# TYPE logical_agent_tick_hmac_failures_total counter
+# HELP logical_agent_feature_toggles_total Dynamic feature‑flag toggles
+# TYPE logical_agent_feature_toggles_total counter
+# HELP gate16_echo_joins_total Gate‑16 echo snapshots committed
+# TYPE gate16_echo_joins_total counter
+# HELP core_tick_bias_applied_total Tick‑bias contributions applied
+# TYPE core_tick_bias_applied_total counter
+# HELP agent_ticks_emitted_total Ticks emitted
+# TYPE agent_ticks_emitted_total counter
+# HELP agent_tick_duplicate_total Duplicate ticks
+# TYPE agent_tick_duplicate_total counter
+# HELP agent_reward_mean EMA of reward
+# TYPE agent_reward_mean gauge
+
+2025-05-15 09:27:17,688  DEBUG     asyncio — Using proactor: IocpProactor
+2025-05-15 09:27:17,721  INFO      orchestrator — Triad online ‑ 50.0 ticks/sec
+
+---
+
+# add in Grief.txt and joy.txt to ./motifs_in
+
+# HELP python_gc_objects_collected_total Objects collected during gc
+# TYPE python_gc_objects_collected_total counter
+python_gc_objects_collected_total{generation="0"} 383.0
+python_gc_objects_collected_total{generation="1"} 23.0
+python_gc_objects_collected_total{generation="2"} 0.0
+# HELP python_gc_objects_uncollectable_total Uncollectable objects found during GC
+# TYPE python_gc_objects_uncollectable_total counter
+python_gc_objects_uncollectable_total{generation="0"} 0.0
+python_gc_objects_uncollectable_total{generation="1"} 0.0
+python_gc_objects_uncollectable_total{generation="2"} 0.0
+# HELP python_gc_collections_total Number of times this generation was collected
+# TYPE python_gc_collections_total counter
+python_gc_collections_total{generation="0"} 63.0
+python_gc_collections_total{generation="1"} 5.0
+python_gc_collections_total{generation="2"} 0.0
+# HELP python_info Python platform information
+# TYPE python_info gauge
+python_info{implementation="CPython",major="3",minor="12",patchlevel="10",version="3.12.10"} 1.0
+# HELP logical_agent_ticks_total Quantum ticks registered
+# TYPE logical_agent_ticks_total counter
+logical_agent_ticks_total{agent_id="watcher@main",stage="E2b"} 3.0
+# HELP logical_agent_ticks_created Quantum ticks registered
+# TYPE logical_agent_ticks_created gauge
+logical_agent_ticks_created{agent_id="watcher@main",stage="E2b"} 1.7473229419498491e+09
+# HELP logical_agent_tick_hmac_failures_total Tick HMAC verification failures
+# TYPE logical_agent_tick_hmac_failures_total counter
+# HELP logical_agent_feature_toggles_total Dynamic feature‑flag toggles
+# TYPE logical_agent_feature_toggles_total counter
+# HELP gate16_echo_joins_total Gate‑16 echo snapshots committed
+# TYPE gate16_echo_joins_total counter
+gate16_echo_joins_total{agent_id="core@main"} 3.0
+# HELP gate16_echo_joins_created Gate‑16 echo snapshots committed
+# TYPE gate16_echo_joins_created gauge
+gate16_echo_joins_created{agent_id="core@main"} 1.7473229419498491e+09
+# HELP core_tick_bias_applied_total Tick‑bias contributions applied
+# TYPE core_tick_bias_applied_total counter
+# HELP agent_ticks_emitted_total Ticks emitted
+# TYPE agent_ticks_emitted_total counter
+agent_ticks_emitted_total{agent_id="agent@main",stage="E2b"} 3.0
+# HELP agent_ticks_emitted_created Ticks emitted
+# TYPE agent_ticks_emitted_created gauge
+agent_ticks_emitted_created{agent_id="agent@main",stage="E2b"} 1.7473229419498491e+09
+# HELP agent_tick_duplicate_total Duplicate ticks
+# TYPE agent_tick_duplicate_total counter
+# HELP agent_reward_mean EMA of reward
+# TYPE agent_reward_mean gauge
+agent_reward_mean{agent_id="agent@main"} -0.14733641478831375
+
+2025-05-15 09:27:17,688  DEBUG     asyncio — Using proactor: IocpProactor
+2025-05-15 09:27:17,721  INFO      orchestrator — Triad online ‑ 50.0 ticks/sec
+2025-05-15 09:29:01,786  INFO      root — Noor echoed 'grief': [empty presence]
+2025-05-15 09:29:01,786  INFO      root — Noor responds to 'grief': The river carries what we cannot hold.
+2025-05-15 09:29:01,949  INFO      root — Noor echoed 'joy': [empty presence]
+2025-05-15 09:29:01,949  INFO      root — Noor responds to 'joy': A golden thread dances in stillness.
+2025-05-15 09:29:01,949  INFO      root — Noor infers 'bittersweet' from co-presence of 'joy' and 'grief'.
