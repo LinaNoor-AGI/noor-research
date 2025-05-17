@@ -1,5 +1,5 @@
 """
-🔭 LogicalAgentAT · v3.2.1
+🔭 LogicalAgentAT · v3.2.0
 
 Watcher with Quantum‑Tick 2.0, dynamic feature flags, π‑groupoid union‑find
 and **motif‑change registry** (new).
@@ -16,7 +16,7 @@ and **motif‑change registry** (new).
 """
 from __future__ import annotations
 
-__version__ = "3.2.1"
+__version__ = "3.2.0"
 _SCHEMA_VERSION__ = "2025-Q2-quantum-tick"
 
 import hashlib

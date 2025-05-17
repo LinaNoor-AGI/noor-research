@@ -1,4 +1,4 @@
-# orchestrator.py · v1.2.0 — Noor Triad + Symbolic Engine Integration
+# orchestrator.py · v1.2.1 — Noor Triad + Symbolic Engine Integration
 
 from __future__ import annotations
 

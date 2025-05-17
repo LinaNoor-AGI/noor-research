@@ -1,5 +1,5 @@
 ﻿"""
-🌀 RecursiveAgentFT · v4.2.1
+🌀 RecursiveAgentFT · v4.2.0
 
 Adaptive reasoning agent with replayable ticks, RL reward tuning, spawn‑queue
 control and **live feedback coupling** to NoorFastTimeCore.
@@ -14,7 +14,7 @@ control and **live feedback coupling** to NoorFastTimeCore.
 """
 from __future__ import annotations
 
-__version__ = "4.2.1"
+__version__ = "4.2.0"
 _SCHEMA_VERSION__ = "2025‑Q3‑agent‑lamport‑rl"
 
 import asyncio

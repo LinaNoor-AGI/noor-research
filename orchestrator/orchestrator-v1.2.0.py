@@ -93,8 +93,7 @@ async def main_async(args):
     watcher, core, agent = build_triad(args)
 
     # Init symbolic reasoning engine
-    symbolic_engine = SymbolicTaskEngine()
-    SymbolicTaskEngine.INSTANCE = symbolic_engine
+    SymbolicTaskEngine.install()
 
     # Launch symbolic API
     Thread(target=run_symbolic_api, args=(args.symbolic_api_port,), daemon=True).start()

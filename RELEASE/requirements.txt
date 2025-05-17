@@ -1,0 +1,8 @@
+# requirements.txt
+fastapi
+uvicorn[standard]
+pydantic
+sse-starlette
+prometheus_fastapi_instrumentator
+httpx  # Optional, for testing endpoints
+python-dotenv  # Optional, for loading secrets

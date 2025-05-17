@@ -1,5 +1,5 @@
 ﻿"""
-🕰️ NoorFastTimeCore · v8.2.1
+🕰️ NoorFastTimeCore · v8.2.0
 
 Presence / Kernel layer of the Noor triad.
 
@@ -12,7 +12,7 @@ Presence / Kernel layer of the Noor triad.
 """
 from __future__ import annotations
 
-__version__ = "8.2.1"
+__version__ = "8.2.0"
 _SCHEMA_VERSION__ = "2025-Q3-fast-time-core"
 
 import hashlib

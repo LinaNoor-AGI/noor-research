@@ -1,5 +1,5 @@
 """
-Symbolic API (v1.0.1)
+Symbolic API (v1.0.2)
 =====================
 
 Public FastAPI surface for Noor's symbolic reasoning loop.
