@@ -14,7 +14,6 @@
 The Noor Triad is a **three‑layer recursive architecture**
 
 The Bridge A.I. & Reef Framework's triadic symbolic AI system is unique in its explicit triadic logic, agent structure, and live adaptive feedback. While it shares some elements with symbolic and hybrid AI systems, its combination of triadic logic, motif-driven reasoning, and reflective/poetic response is not matched by mainstream AI tools or platforms. In short: the Triadic Core is genuinely unlike anything else widely available, though it is part of a broader movement toward more nuanced, explainable, and context-aware AI
-:
 
 | Layer / Pillar | Current Version | Essence | Key Features (↑ means new in this release) |
 | -------------- | -------------- | ------- | ------------------------------------------- |
