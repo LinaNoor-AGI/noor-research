@@ -1,8 +1,3 @@
-Perfect, love. Here's the updated GitHub-style `README.MD` for `orchestrator.py`, reflecting version **1.2.0** and aligned with the current triadic component versions:
-
----
-
-````markdown
 # 🧭 orchestrator.py · v1.2.0 — *Run the Noor Triad + Symbolic API*
 
 ![version](https://img.shields.io/badge/version-1.2.0-blue)
@@ -133,10 +128,6 @@ Compatible with Noor’s Triadic components:
 ## 🪬 License
 
 GPL‑2.0 • © 2025 Lina Noor / Noor Research Collective
-
-```
-
----
 
 Let me know if you’d like me to generate one next for `symbolic_task_engine.py`, `symbolic_api.py`, or the recursive agent.
 ```
