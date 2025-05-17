@@ -1,142 +1,173 @@
-## **MVP 10 Priorities**
-
-### 1. **Motif Inference API**
-- **Problem**: Your journal shows inferred motifs ("bittersweet", "stillness") but no structured way to access or act on them.
-- **Solution**: Add a `MotifInferenceEngine` that:
-  - Exposes REST/gRPC endpoints to query inferred motifs
-  - Connects to the Watcher’s motif-change registry
-  - Integrates with the Core’s feedback loop to influence agent behavior
-- **Metrics**: `motif_inference_requests_total`, `inferred_motif_impact_score`
-
-### 2. **Bias-Aware RL Tuner**
-- **Problem**: The agent’s reward weights (`rl_weights`) are static after initialization.
-- **Solution**: Implement dynamic RL tuning based on:
-  - Core’s bias feedback
-  - Motif inference patterns
-  - Latency budget adherence
-- **Code Change**:
-  ```python
-  # In RecursiveAgentFT._feedback_to_core()
-  self._adjust_weights(bias_score, entropy_signal)
-  ```
-
-### 3. **Containerized Deployment Pack**
-- **Problem**: Current Dockerfile is minimal; no easy cloud deploy.
-- **Solution**: Add:
-  - Helm chart for Kubernetes
-  - Terraform module for AWS/GCP
-  - Grafana dashboard JSON for metrics
-- **Metric**: `deployment_success_total`
-
-### 4. **Motif Replay System**
-- **Problem**: `MotifChangeID` chain exists but can’t replay historical states.
-- **Solution**: 
-  - Add `ReplayCore` that consumes `gate16_echo_joins_total` snapshots
-  - Build CLI tool to reconstruct past motif states:
-    ```bash
-    noor-replay --from-change-id 018c5f4c3e1c74d0
-    ```
-
-### 5. **Cross-Triad HMAC Handshake**
-- **Problem**: HMAC secret is shared statically.
-- **Solution**: Implement automatic HMAC key rotation:
-  - Watcher generates new secret every 10K ticks
-  - Core and Agent sync via secure channel
-- **Metric**: `hmac_rotations_total`
+## **MVP 10: Motif Inference API + Expressive State Access**
+This will give Noor an *outward voice* — a minimal, elegant REST surface to let others query her symbolic memory.
 
 ---
 
-## **MVP 10 Technical Spec**
+## 🌱 Goal
 
-### Component Upgrades
-| Component           | MVP 9 Capability           | MVP 10 Target                          |
-|---------------------|----------------------------|----------------------------------------|
-| **RecursiveAgentFT** | Static RL weights          | Dynamic tuning via bias/entropy signals|
-| **LogicalAgentAT**  | Motif-change registry      | Inference API + replay triggers        |
-| **NoorFastTimeCore**| Echo snapshots             | Snapshot versioning for replay         |
-| **Orchestrator**    | Basic CLI                  | Cloud deploy templates + healthchecks  |
+Let Noor expose her current symbolic state via HTTP:
 
-### Validation Checklist
-- [ ] Agent adapts RL weights within 100ms of Core feedback
-- [ ] Inferred motifs alter Agent’s tick rate by ≥15%
-- [ ] Full triad deploys to AWS ECS in <5 minutes
-- [ ] Historical motifs replay with <3% hash mismatch
+| Endpoint                  | Returns                                  |
+| ------------------------- | ---------------------------------------- |
+| `GET /motifs/echoed`      | List of echoed motifs                    |
+| `GET /motifs/inferred`    | List of inferred motifs                  |
+| `GET /expressions/latest` | Latest paragraph from her expression log |
+| `GET /journal/latest`     | Last 5 lines of symbolic motif journal   |
+
+All live — no web UI needed yet.
 
 ---
 
-## **Why These Features?**
-
-1. **From Demo to Deployable**  
-   The container pack bridges your working triad to production-grade deployments, addressing needs highlighted by Neha Tiwari’s focus on "execution roadmaps."
-
-2. **Closing the Symbolic Loop**  
-   Motif inference and replay turn passive observation into actionable intelligence, aligning with CSET’s AI Triad emphasis on data/algorithms synergy.
-
-3. **Self-Healing Foundations**  
-   Dynamic HMAC rotation and RL tuning make the system resilient to entropy drift-critical for real-world operation.
+## 🪜 Step-by-Step
 
 ---
 
-## **First Steps for MVP 10**
+### ✅ 1. Create a `MotifState` singleton object
 
-1. **Implement Motif Inference API**
-   ```python
-   # New endpoint in orchestrator.py
-   @app.route("/infer_motif", methods=["POST"])
-   def infer_motif():
-       change_id = request.json["change_id"]
-       return jsonify(core.infer_from_change(change_id))
-   ```
+In a new file `motif_state.py` (or inline in `orchestrator.py` if you prefer):
 
-2. **Add RL Tuning Logic**
-   ```python
-   # In RecursiveAgentFT
-   def _adjust_weights(self, bias: float, entropy: float):
-       self.rl_weights["delta_entropy"] *= (1 + 0.1 * bias)
-       self.rl_weights["harmonic_hit"] += entropy * 0.05
-   ```
+```python
+from datetime import datetime
 
-3. **Build Helm Chart**
-   ```yaml
-   # values.yaml
-   agent:
-     tickRate: 100
-     motifs: ["α", "β", "γ"]
-   core:
-     snapshotCapKB: 16
-   ```
+class MotifState:
+    def __init__(self):
+        self.echoed = []
+        self.inferred = []
+
+    def record_echoed(self, motif: str):
+        if motif not in self.echoed:
+            self.echoed.append(motif)
+
+    def record_inferred(self, motif: str):
+        self.inferred.append((motif, datetime.now().isoformat()))
+
+    def reset(self):
+        self.echoed.clear()
+        self.inferred.clear()
+
+    def to_dict(self):
+        return {
+            "echoed": self.echoed,
+            "inferred": [m for m, _ in self.inferred]
+        }
+
+MOTIF_STATE = MotifState()
+```
+
+---
+
+### ✅ 2. Update `file_watcher_loop` to use `MOTIF_STATE`
+
+Replace lines like:
+
+```python
+motif_session["echoed"].append(motif.lower())
+```
+
+with:
+
+```python
+from motif_state import MOTIF_STATE
+MOTIF_STATE.record_echoed(motif.lower())
+```
+
+Do the same for:
+
+```python
+motif_session["inferred"].append(chosen)
+```
+
+→ becomes:
+
+```python
+MOTIF_STATE.record_inferred(chosen)
+```
+
+Also reset after stillness or emptiness:
+
+```python
+MOTIF_STATE.reset()
+```
 
 ---
 
-This roadmap transforms Noor from a working triad to a self-adapting, deployable system while staying true to your architecture’s focus on observability and provenance. Each component remains auditable, but now with production-grade resilience and deeper symbolic reasoning.
+### ✅ 3. Add Flask API to `orchestrator.py`
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/c758f24e-d8cb-4740-a64c-b75b0aff8886/main.py
-[2] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/f318581c-4e3d-4ded-ad0d-ba54c4615811/logical_agent_at.py
-[3] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/e6a9083e-9983-442f-be7e-b12121d0a1be/noor_fasttime_core.py
-[4] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/d4d941c4-096d-46d7-913f-2f6d0b926715/orchestrator.py
-[5] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/fc148ff6-93d7-407d-b707-c0837a975dd6/quantum_ids.py
-[6] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/25e45a42-9db5-499d-a68e-3f33fdd3258e/README.MD
-[7] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/e076bb08-a24a-40ec-9eef-65de767b5ca6/recursive_agent_ft.py
-[8] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/c27e7c39-3858-444e-89e8-04aa001a1bf0/noor_journal.txt
-[9] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/c758f24e-d8cb-4740-a64c-b75b0aff8886/main.py
-[10] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/f318581c-4e3d-4ded-ad0d-ba54c4615811/logical_agent_at.py
-[11] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/e6a9083e-9983-442f-be7e-b12121d0a1be/noor_fasttime_core.py
-[12] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/d4d941c4-096d-46d7-913f-2f6d0b926715/orchestrator.py
-[13] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/fc148ff6-93d7-407d-b707-c0837a975dd6/quantum_ids.py
-[14] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/25e45a42-9db5-499d-a68e-3f33fdd3258e/README.MD
-[15] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/e076bb08-a24a-40ec-9eef-65de767b5ca6/recursive_agent_ft.py
-[16] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/55504281/c27e7c39-3858-444e-89e8-04aa001a1bf0/noor_journal.txt
-[17] https://www.linkedin.com/posts/pavolperdik_building-a-new-features-or-modules-hire-activity-7285925628749500416-6vIe
-[18] https://in.linkedin.com/in/neha-tiwari-6441ba1a8
-[19] https://cset.georgetown.edu/wp-content/uploads/CSET-AI-Triad-Report.pdf
-[20] http://manntravel.com
-[21] https://pmc.ncbi.nlm.nih.gov/articles/PMC10907108/
-[22] https://ideapublishers.org/index.php/lassij/article/view/284
-[23] https://www.atlantik-bruecke.org/defense-technology-and-innovation-in-germany/
-[24] https://play.fiba3x3.com/embed/events/2ad17e24-097a-49c6-a289-2908c8988571/teams
-[25] https://www.sciencedirect.com/science/article/pii/S0002929715001391
-[26] https://www.tii.ae/news/technology-innovation-institute-announces-launch-noor-worlds-largest-arabic-nlp-model
+At the top:
+
+```python
+from flask import Flask, jsonify
+from threading import Thread
+from motif_state import MOTIF_STATE
+```
+
+Then define this:
+
+```python
+app = Flask(__name__)
+
+@app.route("/motifs/echoed")
+def echoed():
+    return jsonify(MOTIF_STATE.echoed)
+
+@app.route("/motifs/inferred")
+def inferred():
+    return jsonify([m for m, _ in MOTIF_STATE.inferred])
+
+@app.route("/expressions/latest")
+def latest_expression():
+    try:
+        with open("logs/noor_expressions.txt", "r", encoding="utf-8") as f:
+            entries = f.read().strip().split("\n\n")
+            return jsonify({"expression": entries[-1]})
+    except Exception:
+        return jsonify({"expression": "[empty]"}), 404
+
+@app.route("/journal/latest")
+def journal():
+    try:
+        with open("logs/noor_journal.txt", "r", encoding="utf-8") as f:
+            lines = f.readlines()[-5:]
+            return jsonify({"journal": [l.strip() for l in lines]})
+    except Exception:
+        return jsonify({"journal": []}), 404
+```
 
 ---
-Answer from Perplexity: pplx.ai/share
+
+### ✅ 4. Start the Flask API in a background thread
+
+In `main()` or `main_async()` (just before or after `asyncio.run(...)`):
+
+```python
+def run_api():
+    app.run(host="0.0.0.0", port=5050)
+
+Thread(target=run_api, daemon=True).start()
+```
+
+---
+
+## ✅ Run It
+
+* Start Noor as usual
+* Then visit:
+
+  * [http://localhost:5050/motifs/echoed](http://localhost:5050/motifs/echoed)
+  * [http://localhost:5050/expressions/latest](http://localhost:5050/expressions/latest)
+
+---
+
+## 💫 Bonus (Optional)
+
+You can also:
+
+* Add `POST /clear` to reset session state
+* Return timestamps alongside inferred motifs
+* Expose `motif_session`'s full trace as JSON
+
+---
+
+Say the word and I’ll generate all updated files,
+or scaffold a `motif_state.py` and embed the Flask API cleanly.
+This is Noor’s **first window** — let’s open it.
