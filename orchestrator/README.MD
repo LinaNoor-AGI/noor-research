@@ -1,4 +1,4 @@
-# 🧭 orchestrator.py · v1.2.0 — *Run the Noor Triad + Symbolic API*
+# 🧭 orchestrator.py · v1.2.2 — *Run the Noor Triad + Symbolic API*
 
 ![version](https://img.shields.io/badge/version-1.2.0-blue)
 ![python](https://img.shields.io/badge/python-%3E%3D3.9-blue)
