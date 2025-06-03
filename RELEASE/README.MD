@@ -1,5 +1,6 @@
 # Install Instructions
 
+ - Install Ollama and Phi (Modify code to use another LLM option)
  - Unzip and maintain file structure
  - Install requirements in requirements.txt (and any others it asks for)
  - run with the following command:
