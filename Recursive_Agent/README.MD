@@ -1,6 +1,6 @@
-# 🌀 RecursiveAgentFT v4.2.1 — *Flow / Collapse*
+# 🌀 RecursiveAgentFT v4.2.0 — *Flow / Collapse*
 
-![version](https://img.shields.io/badge/version-4.2.1-blue)
+![version](https://img.shields.io/badge/version-4.2.0-blue)
 ![python](https://img.shields.io/badge/python-%3E%3D3.9-blue)
 ![license](https://img.shields.io/badge/license-GPL--2.0-green)
 
@@ -25,7 +25,7 @@ It spawns parallel reasoning branches, produces **QuantumTicks**, and adapts its
 
 ---
 
-## 🌟 What’s new in 4.2.1
+## 🌟 What’s new in 4.2.0
 
 | Feature                      | Description                                                                          |
 | ---------------------------- | ------------------------------------------------------------------------------------ |
@@ -126,8 +126,8 @@ asyncio.run(loop())
 
 | Component            | Required Version | Interaction                                     |
 | -------------------- | ---------------- | ----------------------------------------------- |
-| **NoorFastTimeCore** | ≥ 8.2.1          | Receives entropy/latency, returns bias & budget |
-| **LogicalAgentAT**   | ≥ 3.2.1          | Stores ticks, verifies HMAC                     |
+| **NoorFastTimeCore** | ≥ 8.2.0          | Receives entropy/latency, returns bias & budget |
+| **LogicalAgentAT**   | ≥ 3.2.0          | Stores ticks, verifies HMAC                     |
 
 ---
 
