@@ -1,6 +1,6 @@
-# 🕰️ NoorFastTimeCore v8.2.1 — *Presence / Kernel*
+# 🕰️ NoorFastTimeCore v8.2.0 — *Presence / Kernel*
 
-![version](https://img.shields.io/badge/version-8.2.1-blue)
+![version](https://img.shields.io/badge/version-8.2.0-blue)
 ![python](https://img.shields.io/badge/python-%3E%3D3.9-blue)
 ![license](https://img.shields.io/badge/license-GPL--2.0-green)
 
@@ -14,8 +14,8 @@
 flowchart LR
     %% Triadic data‑flow (simplified labels)
     subgraph Triad
-        A[RecursiveAgentFT\nv4.2.1] -->|QuantumTick| W[LogicalAgentAT\nv3.2.1]
-        A -->|entropy\nlatency\nparallel| C[NoorFastTimeCore\nv8.2.1]
+        A[RecursiveAgentFT\nv4.2.0] -->|QuantumTick| W[LogicalAgentAT\nv3.2.0]
+        A -->|entropy\nlatency\nparallel| C[NoorFastTimeCore\nv8.2.0]
         C -->|bias_score\nnext_latency_budget| A
         W -->|MotifChangeID| C
     end
@@ -38,7 +38,7 @@ The Watcher supplies motif‑level `change_id`s so the Core can embed delta prov
 
 ## 🌟 What’s new in 8.2.x
 
-| Category          | 8.0.1          | **8.2.1 (current)**                                         |
+| Category          | 8.0.1          | **8.2.0 (current)**                                         |
 | ----------------- | -------------- | ----------------------------------------------------------- |
 | Snapshot payload  | tick + lamport | + `change_id` field (motif‑level audit)                     |
 | Constructor       | env‑var heavy  | explicit `snapshot_cap_kb`, `latency_budget`, `hmac_secret` |
@@ -111,8 +111,8 @@ if bad:
 
 | Module             | Required Version | Interaction                        |
 | ------------------ | ---------------- | ---------------------------------- |
-| `LogicalAgentAT`   | ≥ 3.2.1          | supplies `MotifChangeID` via Agent |
-| `RecursiveAgentFT` | ≥ 4.2.1          | sends feedback & consumes budget   |
+| `LogicalAgentAT`   | ≥ 3.2.0          | supplies `MotifChangeID` via Agent |
+| `RecursiveAgentFT` | ≥ 4.2.0          | sends feedback & consumes budget   |
 
 ---
 
