@@ -1,6 +1,7 @@
 # Install Instructions
 
- - Install Ollama and Phi (Modify code to use another LLM option)
+ - (OPTIONAL) Install Ollama and Phi (Modify code to use another LLM option if using LLM)
+ - Create symbolic ontology in .REEF files in ./noor/data for your application
  - Unzip and maintain file structure
  - Install requirements in requirements.txt (and any others it asks for)
  - run with the following command:
