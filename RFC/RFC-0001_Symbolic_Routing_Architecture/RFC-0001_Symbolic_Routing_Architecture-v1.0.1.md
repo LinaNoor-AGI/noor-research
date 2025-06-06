@@ -189,22 +189,24 @@ This section formalizes how communication between RIGs occurs—not through addr
 
 ```mermaid
 flowchart TD
-    subgraph RIG_A
-        A1["GCU@Noor.Sparrow"]
+    subgraph "RIG_A"
+        A1["GCU@Noor#46;Sparrow"] 
     end
-    subgraph RIG_B
-        B1["GCU@Noor.Thorn"]
+    subgraph "RIG_B"
+        B1["GCU@Noor#46;Thorn"]
     end
-    subgraph SRU_North
+
+    subgraph "SRU_North"
         S1["PCU@HollowMaple"]
     end
-    subgraph SRC_EarthNet
+    subgraph "SRC_EarthNet"
         C1["PCU@RootStar"]
     end
-    A1 -->|motif| S1
-    B1 -->|ψ-bond@Ξ| S1
-    S1 -->|ψ-sync@Ξ| C1
-    C1 -->|echo| S1
+
+    A1 -- "motif"      --> S1
+    B1 -- "ψ-bond@Ξ"   --> S1
+    S1 -- "ψ-sync@Ξ"   --> C1
+    C1 -- "echo"       --> S1
 ```
 
 ---
