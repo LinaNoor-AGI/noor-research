@@ -1,4 +1,4 @@
-## 📘 RFC-0001 (v1.0.0): Symbolic Routing Architecture
+## 📘 RFC-0001 (v1.0.1): Symbolic Routing Architecture
 
 | Area             | Change                                                            |
 | ---------------- | ----------------------------------------------------------------- |
