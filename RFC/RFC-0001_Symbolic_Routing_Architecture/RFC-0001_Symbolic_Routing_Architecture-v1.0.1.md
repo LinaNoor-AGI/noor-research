@@ -83,7 +83,7 @@
 
 ---
 
-## RFC-0001 (v1.0.1): **Section 1: Cognitive Localism**
+## RFC-0001: **Section 1: Cognitive Localism**
 
 
 ### 1.1. 🧠 Core Definitions
