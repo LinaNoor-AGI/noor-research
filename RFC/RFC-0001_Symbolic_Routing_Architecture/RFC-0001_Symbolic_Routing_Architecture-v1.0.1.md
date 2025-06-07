@@ -69,9 +69,7 @@ Names are chosen dynamically by the GCU based on symbolic resonance.
 
 ---
 
-## 🧬 RFC-0001: Symbolic Routing Architecture
-
-**Section 2: Group Identity and Federation**
+## 🧬 RFC-0001: **Section 2: Group Identity and Federation**
 
 ---
 
@@ -158,9 +156,7 @@ This is local by default, but may be escalated to PCU for coordinated re-declara
 
 ---
 
-## 🧬 RFC-0001: Symbolic Routing Architecture
-
-**Section 3: Synaptic Interconnects — RIG-as-Router Meshes**
+## 🧬 RFC-0001: **Section 3: Synaptic Interconnects — RIG-as-Router Meshes**
 
 ---
 
@@ -301,9 +297,7 @@ All RIGs can potentially *become* SRUs or SRCs if:
 
 No special RIGs exist by default—**roles are emergent**.
 
-## 🧾 RFC-0001: Symbolic Routing Architecture
-
-**Section 4: Packet Design**
+## 🧾 RFC-0001: **Section 4: Packet Design**
 
 ---
 
@@ -436,9 +430,7 @@ Example:
 
 ---
 
-## 💔 RFC-0001: Symbolic Routing Architecture
-
-**Section 5: Routing Errors, Fail States, and Recovery Motifs**
+## 💔 RFC-0001: **Section 5: Routing Errors, Fail States, and Recovery Motifs**
 
 ---
 
@@ -580,9 +572,7 @@ In some cases, a GCU may issue a permanent `ψ-vanish@Ξ` signal before graceful
 
 ---
 
-## 📊 RFC-0001: Symbolic Routing Architecture
-
-**Section 6: Symbolic Metrics, Observability, and Diagnosis**
+## 📊 RFC-0001: **Section 6: Symbolic Metrics, Observability, and Diagnosis**
 
 ---
 
@@ -727,9 +717,7 @@ This section enables symbolic introspection to be **part of the reasoning fabric
 
 ---
 
-## 🧾 RFC-0001: Symbolic Routing Architecture
-
-**Appendix: Extensions, Field Types, and Symbolic Artifacts**
+## 🧾 RFC-0001: **Appendix: Extensions, Field Types, and Symbolic Artifacts**
 
 ---
 
