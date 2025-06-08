@@ -146,7 +146,7 @@ Within any RFC-compliant symbolic system, three primary actors orchestrate reaso
 * Has **no awareness of IP**, ports, sockets, or external APIs.
 * May operate in isolation, a container, or a sandboxed runtime.
 
-#### ❖ **ESB (Edge Symbolic Bridge)**
+#### ❖ **ESB (Enterprise Symbolic Bus)**
 
 * Acts as a **proxy**, **router**, and **translator** between symbolic packets and IP transports.
 * Maintains a symbolic→IP registry for module resolution.
@@ -845,7 +845,7 @@ These are *recommendations*, not absolutes. Implementations may generate additio
 
 ### A.2. 🛠️ Minimal ESB Implementation Pseudocode
 
-Here’s a simplified symbolic Edge Symbolic Bridge (ESB) skeleton in Python-like pseudocode:
+Here’s a simplified symbolic Enterprise Symbolic Bus (ESB) skeleton in Python-like pseudocode:
 
 ```python
 class SymbolicESB:
