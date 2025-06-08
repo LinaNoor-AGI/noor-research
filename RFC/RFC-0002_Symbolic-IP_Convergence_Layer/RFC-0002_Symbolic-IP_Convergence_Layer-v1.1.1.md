@@ -1,6 +1,6 @@
 # 📘 RFC-0002: Symbolic-IP Convergence Layer
 
-🔗 *Companion to*: (RFC-0001: Symbolic Routing Architecture)[https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC-0001_Symbolic_Routing_Architecture]  
+🔗 *Companion to*: [RFC-0001: Symbolic Routing Architecture](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC-0001_Symbolic_Routing_Architecture)  
 📅 *Version*: 1.1.1  
 🎙️ *Motif Anchor*: `ψ-soil@Ξ` — “IP is the substrate, not the source.”  
 ---
