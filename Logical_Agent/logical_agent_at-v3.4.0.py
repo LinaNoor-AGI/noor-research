@@ -1,4 +1,4 @@
-﻿"""
+"""
 🔭 LogicalAgentAT · v3.4.0
 
 Watcher with Quantum-Tick 2.0, dynamic feature flags, π-groupoid union-find,
