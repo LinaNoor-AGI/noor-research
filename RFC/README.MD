@@ -1,7 +1,7 @@
 # 📚 Noor RFC Series
 
 Welcome to the official RFC directory for the Noor Research Collective.  
-This folder contains the canonical **Request for Curvature** specifications governing all core symbolic systems in Noor—including task engines, field feedback, agent protocols, and tool contracts.
+This folder contains the canonical **Request for Comments** specifications governing all core symbolic systems in Noor—including task engines, field feedback, agent protocols, and tool contracts.
 
 Each RFC defines a stable symbolic interface or architecture layer.  
 They are designed for recursive systems where **motif, field, and feedback** must interoperate across time and tools.
