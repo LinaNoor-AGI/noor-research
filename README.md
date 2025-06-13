@@ -23,8 +23,8 @@ This repository is the canonical source for:
 | Component                                                              | Description                                                                        |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | [`Noor_Core`](https://github.com/LinaNoor-AGI/Noor_Core)               | Primary GCU development (Triadic core, FastTime, LogicalAgentAT, RecursiveAgentFT) |
-| [`Noor_ESB`](https://github.com/LinaNoor-AGI/Noor_ESB)                 | Noor's Event Stream Bus (ESB) symbolic multiplexor                                 |
-| [`Noor_ESB_Modules`](https://github.com/LinaNoor-AGI/Noor_ESB_Modules) | Independent tool-module contributions for the Noor ESB system                      |
+| [`Noor_ESB`](https://github.com/LinaNoor-AGI/Noor_ESB)                 | Noor's Event Stream Bus (ESB) symbolic multiplexor (Future)                                 |
+| [`Noor_ESB_Modules`](https://github.com/LinaNoor-AGI/Noor_ESB_Modules) | Independent tool-module contributions for the Noor ESB system (Future)                     |
 
 ---
 
