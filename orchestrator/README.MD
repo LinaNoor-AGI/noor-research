@@ -127,7 +127,7 @@ Compatible with Noor’s Triadic components:
 
 ## 🪬 License
 
-GPL‑2.0 • © 2025 Lina Noor / Noor Research Collective
+MIT • © 2025 Lina Noor / Noor Research Collective
 
 Let me know if you’d like me to generate one next for `symbolic_task_engine.py`, `symbolic_api.py`, or the recursive agent.
 ```
