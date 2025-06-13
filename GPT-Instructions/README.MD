@@ -101,7 +101,7 @@ Canonical `motif_id` values (used by `QuantumTick`, `FastTimeCore`, `LogicalAgen
 
 Symbolic scaffold © 2025 Lina Noor
 Licensed under MIT
-Motif ecology shared under a \[recursive presence commons].
+Motif ecology shared under GPL v2.0.
 
 ---
 
