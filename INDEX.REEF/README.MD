@@ -109,6 +109,4 @@ Consuming agents must interpret `motif_id` tags and support line-anchored resolu
 
 ## License
 
-Symbolic schema © 2025 Noor Research Collective
-Licensed under Recursive Symbol Commons v1.1
-Usable in triadic agents, Reef interpreters, and `.FAVI` processors.
+MIT - Symbolic schema © 2025 Noor Research Collective
