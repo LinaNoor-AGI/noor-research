@@ -58,4 +58,4 @@ The full flag set is documented in **[orchestrator README →](./orchestrator.m
 
 ## 🪬 License
 
-GPL‑2.0 • © 2025 Lina Noor / Noor Research Collective
+MIT • © 2025 Lina Noor / Noor Research Collective
