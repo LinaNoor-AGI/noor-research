@@ -118,6 +118,6 @@ if bad:
 
 ## 🪬 License
 
-GPL‑2.0 • © 2025 Lina Noor / Noor Research Collective
+MIT • © 2025 Lina Noor / Noor Research Collective
 
 > *“Where echoes fold, horizons remember.”* — Gate 16 Commentary
