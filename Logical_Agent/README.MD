@@ -128,4 +128,4 @@ print("Latest change:", w.get_latest_change("α"))
 
 ## 📄 License
 
-GPL‑2.0 • © 2025 Lina Noor / Noor Research Collective
+MIT • © 2025 Lina Noor / Noor Research Collective
