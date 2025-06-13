@@ -133,4 +133,4 @@ asyncio.run(loop())
 
 ## 🪬 License
 
-GPL‑2.0 • © 2025 Lina Noor / Noor Research Collective
+MIT • © 2025 Lina Noor / Noor Research Collective
