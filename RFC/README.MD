@@ -17,6 +17,7 @@ They are designed for recursive systems where **motif, field, and feedback** mus
 | RFC‑0003 | [Noor Core Symbolic Interface](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface)                       | ✅ Stable |
 | RFC‑0004 | [Symbolic Tool Module Contracts](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts)                     | ✅ Stable |
 | RFC‑0005 | [Motif Transmission Across Time](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time)                     | ✅ Stable |
+| RFC‑0006 | [Motif‑Field Coherence Geometry](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry)                     | ✅ Stable |
 
 ---
 
