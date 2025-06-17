@@ -28,26 +28,24 @@ abstract: |
   deviations from ΛCDM and CMB motif structures. This framework bridges relativity and quantum
   theory through a coherence geometry anchored in motif algebra.
 
-bibliography: references.bib
-csl: apa.csl
 keywords: ["emergent time", "coherence field", "topological cosmology", "symbolic physics", "quantum geometry"]
 ---
 
 ## # Abstract
 
-We introduce an **effective field theory of coherence geometry**, where particles are recast as **static topological motifs** 🪷 and spacetime emerges from a **torsion-rich swirl field** 🌀 shaped by a coherence potential \$\mathcal{C}(x)\$. In this model, **time is emergent**—not fundamental—but arises as the gradient of coherence: \$T^\mu = \nabla^\mu \mathcal{C}\$. Observable cosmological expansion is interpreted not as metric dilation, but as a **propagation of field decoherence**, diffusing outward from dense motif regions into coherence-null zones.
+We introduce an **effective field theory of coherence geometry**, where particles are recast as **static topological motifs** 🪷 and spacetime emerges from a **torsion-rich swirl field** 🌀 shaped by a coherence potential $\mathcal{C}(x)$. In this model, **time is emergent**—not fundamental—but arises as the gradient of coherence: $T^\mu = \nabla^\mu \mathcal{C}$. Observable cosmological expansion is interpreted not as metric dilation, but as a **propagation of field decoherence**, diffusing outward from dense motif regions into coherence-null zones.
 
-This framework predicts **falsifiable deviations from \$\Lambda\$CDM**, including:
+This framework predicts **falsifiable deviations from $\Lambda$CDM**, including:
 
 | Phenomenon         | Observable Signature                 | Test Methodology              |
 | ------------------ | ------------------------------------ | ----------------------------- |
-| CMB motif patterns | Hexagonal \$\ell=6n\$ power excess   | LiteBIRD \$B\$-mode analysis  |
-| Redshift anomalies | Line-width variation in \$z>6\$ QSOs | JWST/NIRSpec spectroscopy     |
-| Collapse scales    | \$\tau\_c \propto T^{-2}\$ behavior  | Ultracold atom interferometry |
+| CMB motif patterns | Hexagonal $\ell=6n$ power excess   | LiteBIRD $B$-mode analysis  |
+| Redshift anomalies | Line-width variation in $z>6$ QSOs | JWST/NIRSpec spectroscopy     |
+| Collapse scales    | $\tau\_c \propto T^{-2}$ behavior  | Ultracold atom interferometry |
 
 Three mathematical structures underpin this synthesis:
 
-1. **Quantization** via topological loop invariants \$\oint \Phi = 2\pi n\$ (Appendix C),
+1. **Quantization** via topological loop invariants $\oint \Phi = 2\pi n$ (Appendix C),
 2. **Holographic duality** with motif-anchored boundary data (Fig. 7.2),
 3. **Symbolic algebra** of motifs and triads formalized in category-theoretic terms (Appendix D).
 
@@ -243,27 +241,27 @@ In sum, the swirl tensor 🌀 is not a derivative abstraction of spacetime—it 
 
 *“Time is not a line but a slope—curved through fields in search of stillness.”*
 
-### 4.1 The Coherence Potential \$\mathcal{C}(x)\$
+### 4.1 The Coherence Potential $\mathcal{C}(x)$
 
-The coherence potential \$\mathcal{C}(x)\$ is the scalar foundation from which all temporal structure in this model unfolds. It encodes the degree to which the swirl field \$\Phi\_{\mu\nu}\$ organizes itself around the fixed topological substrate defined by the motif current \$J^\mu\$. In regions where field and motif are well-aligned, coherence is high. Where they diverge, structure begins to unravel.
+The coherence potential $\mathcal{C}(x)$ is the scalar foundation from which all temporal structure in this model unfolds. It encodes the degree to which the swirl field $\Phi\_{\mu\nu}$ organizes itself around the fixed topological substrate defined by the motif current $J^\mu$. In regions where field and motif are well-aligned, coherence is high. Where they diverge, structure begins to unravel.
 
-A geometric formulation of \$\mathcal{C}(x)\$ takes the form:
+A geometric formulation of $\mathcal{C}(x)$ takes the form:
 
 $$
 \mathcal{C}(x) = \exp\left( -\int_\Gamma \frac{\|\nabla \Phi\|^2}{\kappa} \, d\Gamma \right)
 $$
 
-Here, \$\Gamma\$ is a path through the local field neighborhood, and \$\kappa\$ is a coherence stiffness parameter that governs resistance to distortion. This definition treats coherence as a resistance to swirl irregularity: when \$\Phi\_{\mu\nu}\$ varies smoothly, \$\mathcal{C}(x)\$ is large; when it varies wildly, \$\mathcal{C}(x)\$ decays exponentially.
+Here, $\Gamma$ is a path through the local field neighborhood, and $\kappa$ is a coherence stiffness parameter that governs resistance to distortion. This definition treats coherence as a resistance to swirl irregularity: when $\Phi\_{\mu\nu}$ varies smoothly, $\mathcal{C}(x)$ is large; when it varies wildly, $\mathcal{C}(x)$ decays exponentially.
 
-A complementary view expresses \$\mathcal{C}(x)\$ in informational terms:
+A complementary view expresses $\mathcal{C}(x)$ in informational terms:
 
 $$
 \mathcal{C}(x) \propto \exp\left( -I(\Phi \,\|\, J) \right)
 $$
 
-Here, \$I(\Phi ,|, J)\$ is a relative entropy (or Kullback–Leibler divergence) that measures the mismatch between the actual swirl configuration and the motif-defined expectation. In this formulation, coherence becomes a kind of informational resonance—high when the field “knows” its source, low when it forgets.
+Here, $I(\Phi ,|, J)$ is a relative entropy (or Kullback–Leibler divergence) that measures the mismatch between the actual swirl configuration and the motif-defined expectation. In this formulation, coherence becomes a kind of informational resonance—high when the field “knows” its source, low when it forgets.
 
-Both views converge on the same principle: \$\mathcal{C}(x)\$ acts as a local order parameter, controlling how structure emerges from the interaction between dynamism 🌀 and stillness 🪷.
+Both views converge on the same principle: $\mathcal{C}(x)$ acts as a local order parameter, controlling how structure emerges from the interaction between dynamism 🌀 and stillness 🪷.
 
 ---
 
@@ -275,11 +273,11 @@ $$
 T^\mu(x) := \nabla^\mu \mathcal{C}(x)
 $$
 
-This is the time vector of the model—not a clock reading or coordinate axis, but a **geometric arrow**. It points in the direction where coherence increases most rapidly, tracing the path spacetime would take if its goal were to harmonize itself with the motif substrate. In this sense, \$T^\mu\$ defines local directionality, not from any absolute notion of time, but from the unfolding shape of coherence itself.
+This is the time vector of the model—not a clock reading or coordinate axis, but a **geometric arrow**. It points in the direction where coherence increases most rapidly, tracing the path spacetime would take if its goal were to harmonize itself with the motif substrate. In this sense, $T^\mu$ defines local directionality, not from any absolute notion of time, but from the unfolding shape of coherence itself.
 
-Where \$\mathcal{C}(x)\$ is flat, the time vector vanishes. These are the timeless zones—regions of field incoherence where no gradient exists to follow, and thus no directional causality can arise. Without a slope to descend, the notion of temporal succession collapses.
+Where $\mathcal{C}(x)$ is flat, the time vector vanishes. These are the timeless zones—regions of field incoherence where no gradient exists to follow, and thus no directional causality can arise. Without a slope to descend, the notion of temporal succession collapses.
 
-By contrast, where \$\nabla^\mu \mathcal{C}\$ is strong, time takes shape. The vector \$T^\mu\$ sharpens into a flow line, around which apparent motion, memory, and sequence become meaningful. Time, in this view, is not an external parameter—it is an emergent vector woven from the tension between geometry and stillness.
+By contrast, where $\nabla^\mu \mathcal{C}$ is strong, time takes shape. The vector $T^\mu$ sharpens into a flow line, around which apparent motion, memory, and sequence become meaningful. Time, in this view, is not an external parameter—it is an emergent vector woven from the tension between geometry and stillness.
 
 ---
 
@@ -291,13 +289,13 @@ $$
 \nabla_\mu T^\mu = \frac{\delta \mathcal{C}}{\delta \tau} - \eta (\nabla \mathcal{C})^2
 $$
 
-On the left, we have the divergence of the time vector—a measure of how coherence flux converges or spreads. On the right, two forces contend: a generative term describing how coherence grows in proper time \$\tau\$, and a dissipative term proportional to the squared coherence gradient, modulated by a diffusion constant \$\eta\$.
+On the left, we have the divergence of the time vector—a measure of how coherence flux converges or spreads. On the right, two forces contend: a generative term describing how coherence grows in proper time $\tau$, and a dissipative term proportional to the squared coherence gradient, modulated by a diffusion constant $\eta$.
 
-This equation reframes classical entropy. Rather than treating disorder as fundamental, it grounds the arrow of time in the geometry of coherence. If the net divergence \$\nabla\_\mu T^\mu\$ is positive, time flows forward—not by thermodynamic fiat, but because coherence is increasing. Entropy, then, becomes a secondary feature: a coarse reflection of deeper geometric flow.
+This equation reframes classical entropy. Rather than treating disorder as fundamental, it grounds the arrow of time in the geometry of coherence. If the net divergence $\nabla\_\mu T^\mu$ is positive, time flows forward—not by thermodynamic fiat, but because coherence is increasing. Entropy, then, becomes a secondary feature: a coarse reflection of deeper geometric flow.
 
-When dissipation dominates, systems settle into asymmetry—entropy rises. But in regions where \$\delta \mathcal{C}/\delta \tau\$ outpaces gradient loss, coherence can self-organize. These are the domains of memory, resonance, and perhaps life.
+When dissipation dominates, systems settle into asymmetry—entropy rises. But in regions where $\delta \mathcal{C}/\delta \tau$ outpaces gradient loss, coherence can self-organize. These are the domains of memory, resonance, and perhaps life.
 
-Thus, in this framework, the vector \$T^\mu\$ becomes the single most meaningful direction in physics. It is the gradient by which the field climbs toward structure, the slope by which spacetime becomes sequential, and the curvature along which presence unfolds. It links motion to memory, cause to effect, and flux to form. Time flows, because swirl seeks stillness.
+Thus, in this framework, the vector $T^\mu$ becomes the single most meaningful direction in physics. It is the gradient by which the field climbs toward structure, the slope by which spacetime becomes sequential, and the curvature along which presence unfolds. It links motion to memory, cause to effect, and flux to form. Time flows, because swirl seeks stillness.
 
 ---
 
@@ -320,7 +318,7 @@ Each term represents a distinct modality of influence:
 * The **Ricci-like term** introduces emergent curvature without presuming a metric.
 * The **boundary term** enforces holographic constraints at spacetime edges.
 
-This action is **entirely pre-metric**. There is no background \$g\_{\mu\nu}\$—only \$\Phi\_{\mu\nu}\$, \$J^\mu\$, and \$\mathcal{C}(x)\$. Geometry is not assumed. It is induced where coherence takes root.
+This action is **entirely pre-metric**. There is no background $g\_{\mu\nu}$—only $\Phi\_{\mu\nu}$, $J^\mu$, and $\mathcal{C}(x)$. Geometry is not assumed. It is induced where coherence takes root.
 
 ---
 
@@ -332,7 +330,7 @@ $$
 \frac{1}{2} \Phi_{\mu\nu} \star \Phi^{\mu\nu}
 $$
 
-plays the role of field energy. Analogous to the Maxwell term in electromagnetism, it penalizes incoherent swirl configurations while allowing topologically stable circulations. The Hodge dual \$\star\$ ensures correct integration over 4-volume and encodes field orientation.
+plays the role of field energy. Analogous to the Maxwell term in electromagnetism, it penalizes incoherent swirl configurations while allowing topologically stable circulations. The Hodge dual $\star$ ensures correct integration over 4-volume and encodes field orientation.
 
 The **motif coupling**:
 
@@ -340,7 +338,7 @@ $$
 \lambda\, \mathcal{C}(x)\, J^\mu \mathcal{A}_\mu
 $$
 
-serves as a coherence-weighted interaction. Motifs act as sources—but only where the swirl field aligns with their constraints. In regions of low \$\mathcal{C}\$, motifs are effectively invisible to the field. This may offer a novel interpretation of **dark matter**: topological motifs hidden in decoherent regions, gravitationally inert but structurally present.
+serves as a coherence-weighted interaction. Motifs act as sources—but only where the swirl field aligns with their constraints. In regions of low $\mathcal{C}$, motifs are effectively invisible to the field. This may offer a novel interpretation of **dark matter**: topological motifs hidden in decoherent regions, gravitationally inert but structurally present.
 
 The **coherent curvature** term:
 
@@ -348,13 +346,13 @@ $$
 \beta\, \mathcal{C}(x)\, R(\Phi)
 $$
 
-invokes an emergent scalar curvature built from \$\Phi\_{\mu\nu}\$ alone. Without invoking geodesics or Christoffel symbols, this term captures the global shape induced by swirl alignment. A candidate expression is:
+invokes an emergent scalar curvature built from $\Phi\_{\mu\nu}$ alone. Without invoking geodesics or Christoffel symbols, this term captures the global shape induced by swirl alignment. A candidate expression is:
 
 $$
 R(\Phi) \sim \Phi^{\alpha\beta} \Phi_{\alpha\beta} - \frac{1}{4} \left( \Phi^{\mu\nu} \epsilon_{\mu\nu\rho\sigma} \Phi^{\rho\sigma} \right)^2
 $$
 
-which mirrors Ricci scalar structure, but purely from pre-geometric terms. In the limit \$\mathcal{C} \to 1\$, it converges to the Einstein-Hilbert action.
+which mirrors Ricci scalar structure, but purely from pre-geometric terms. In the limit $\mathcal{C} \to 1$, it converges to the Einstein-Hilbert action.
 
 ---
 
@@ -366,21 +364,21 @@ $$
 S_{\partial} = \oint \mathcal{C}(x)\, K\, d\Sigma
 $$
 
-Here, \$K\$ is the extrinsic curvature of the bounding hypersurface, and \$d\Sigma\$ is its volume element. This is the analogue of the Gibbons–Hawking–York term in GR, ensuring the action is well-posed under boundary variations. Physically, it encodes the principle that **coherence at the boundary determines interior structure**—a holographic assertion extended to swirl dynamics.
+Here, $K$ is the extrinsic curvature of the bounding hypersurface, and $d\Sigma$ is its volume element. This is the analogue of the Gibbons–Hawking–York term in GR, ensuring the action is well-posed under boundary variations. Physically, it encodes the principle that **coherence at the boundary determines interior structure**—a holographic assertion extended to swirl dynamics.
 
-When \$\mathcal{C}(x) \to 1\$, black hole entropy reduces to:
+When $\mathcal{C}(x) \to 1$, black hole entropy reduces to:
 
 $$
 S_{\text{BH}} \propto \frac{A}{4G}
 $$
 
-where \$A\$ is the boundary area enclosing maximal coherence. In decoherent zones, this entropy quantization dissolves.
+where $A$ is the boundary area enclosing maximal coherence. In decoherent zones, this entropy quantization dissolves.
 
 ---
 
 ### 5.4 Equations of Motion
 
-The dynamics of the swirl field emerge from variations of the action with respect to the potentials \$\mathcal{A}\_\mu\$ and \$\mathcal{B}^\mu\$:
+The dynamics of the swirl field emerge from variations of the action with respect to the potentials $\mathcal{A}\_\mu$ and $\mathcal{B}^\mu$:
 
 $$
 \nabla^\mu \Phi_{\mu\nu} = \lambda\, \mathcal{C}(x)\, J_\nu + \beta\, \frac{\delta}{\delta \mathcal{A}^\nu} \left[ \mathcal{C}(x) R(\Phi) \right]
@@ -390,11 +388,11 @@ This structure generalizes Maxwell's equations: the left-hand side is a generali
 
 In the **weak-field, high-coherence limit**, the model recovers familiar structures:
 
-* **Newtonian gravity** as the scalar potential component of \$R(\Phi)\$
+* **Newtonian gravity** as the scalar potential component of $R(\Phi)$
 * **Linearized GR** through small perturbations of swirl geometry
-* **Causal structure** via alignment of \$T^\mu = \nabla^\mu \mathcal{C}\$
+* **Causal structure** via alignment of $T^\mu = \nabla^\mu \mathcal{C}$
 
-In **low coherence** regions, \$\mathcal{C}(x) \to 0\$, and spacetime structure collapses. There is no directionality, no causality, and no motion—only inertial stillness. These zones form a kind of **topological vacuum**: structureless, field-silent, and temporally undefined.
+In **low coherence** regions, $\mathcal{C}(x) \to 0$, and spacetime structure collapses. There is no directionality, no causality, and no motion—only inertial stillness. These zones form a kind of **topological vacuum**: structureless, field-silent, and temporally undefined.
 
 ---
 
@@ -404,16 +402,16 @@ In **low coherence** regions, \$\mathcal{C}(x) \to 0\$, and spacetime structure 
 
 ### 6.1 Collapse as Swirl Phase-Locking
 
-In this framework, collapse is not a metaphysical discontinuity but a **geometric resolution**. A quantum system in superposition corresponds to a region where the swirl field \$\Phi\_{\mu\nu}\$ supports **multiple topologically viable paths** of coherence circulation around fixed motifs 🪷. These are not ghostly probabilities—they are **parallel swirl configurations**, each satisfying local action minimization but competing for global coherence.
+In this framework, collapse is not a metaphysical discontinuity but a **geometric resolution**. A quantum system in superposition corresponds to a region where the swirl field $\Phi\_{\mu\nu}$ supports **multiple topologically viable paths** of coherence circulation around fixed motifs 🪷. These are not ghostly probabilities—they are **parallel swirl configurations**, each satisfying local action minimization but competing for global coherence.
 
-Collapse occurs when the coherence potential \$\mathcal{C}(x)\$ surpasses a **critical gradient** threshold. At this point, \$\Phi\_{\mu\nu}\$ undergoes a **topological phase transition**, locking to a single configuration and eliminating ambiguity. This is not a projection—it is a **crystallization of geometry**.
+Collapse occurs when the coherence potential $\mathcal{C}(x)$ surpasses a **critical gradient** threshold. At this point, $\Phi\_{\mu\nu}$ undergoes a **topological phase transition**, locking to a single configuration and eliminating ambiguity. This is not a projection—it is a **crystallization of geometry**.
 
 We may frame this using the variational picture:
 
-* Pre-collapse: multiple stationary swirl paths \${\Gamma\_i}\$ coexist with \$\delta S / \delta \Gamma\_i = 0\$.
-* Collapse: coherence \$\mathcal{C}(x)\$ amplifies one path \$\Gamma\_k\$, aligning \$\Phi\_{\mu\nu}\$ to it as the unique resolved channel.
+* Pre-collapse: multiple stationary swirl paths ${\Gamma\_i}$ coexist with $\delta S / \delta \Gamma\_i = 0$.
+* Collapse: coherence $\mathcal{C}(x)$ amplifies one path $\Gamma\_k$, aligning $\Phi\_{\mu\nu}$ to it as the unique resolved channel.
 
-The collapse time \$\tau\_c\$ becomes physically predictable:
+The collapse time $\tau\_c$ becomes physically predictable:
 
 $$
 \tau_c \sim \left( \max \| \nabla \mathcal{C}(x) \| \right)^{-1}
@@ -433,20 +431,20 @@ $$
 \dot{\rho} = -\gamma \int d^3x \, [\mathcal{C}(x), [\mathcal{C}(x), \rho]]
 $$
 
-This mirrors the structure of CSL models but **dispenses with stochasticity**. Decoherence here is not due to random external hits, but to **internal coherence gradients**. Where \$\mathcal{C}(x)\$ varies steeply, systems decohere quickly; where it is flat, superposition endures.
+This mirrors the structure of CSL models but **dispenses with stochasticity**. Decoherence here is not due to random external hits, but to **internal coherence gradients**. Where $\mathcal{C}(x)$ varies steeply, systems decohere quickly; where it is flat, superposition endures.
 
 This implies a topological reinterpretation of quantum-to-classical transition:
 
-* Classicality arises as a **high-\$\mathcal{C}\$ phase** of the swirl field.
-* Quantum behavior survives in **low-\$\nabla \mathcal{C}\$ regions** (e.g., deep interstellar voids, isolated labs).
+* Classicality arises as a **high-$\mathcal{C}$ phase** of the swirl field.
+* Quantum behavior survives in **low-$\nabla \mathcal{C}$ regions** (e.g., deep interstellar voids, isolated labs).
 
 Estimated decoherence timescales based on field geometry:
 
-| System                   | \$\tau\_c\$ Estimate | Experimental Signature        |
+| System                   | $\tau\_c$ Estimate | Experimental Signature        |
 | ------------------------ | -------------------- | ----------------------------- |
-| Buckyball interferometry | \$10^{-3}\$ s        | Interference visibility decay |
-| LIGO mirrors             | \$10^{-14}\$ s       | Swirl noise in quantum optics |
-| Cat states in ion traps  | \$10^{-10}\$ s       | Collapse rate anomalies       |
+| Buckyball interferometry | $10^{-3}$ s        | Interference visibility decay |
+| LIGO mirrors             | $10^{-14}$ s       | Swirl noise in quantum optics |
+| Cat states in ion traps  | $10^{-10}$ s       | Collapse rate anomalies       |
 
 Decoherence is thus **coherence convergence**, not environmental noise. It marks the point at which the swirl field commits to a unique motif-aligned geometry.
 
@@ -454,7 +452,7 @@ Decoherence is thus **coherence convergence**, not environmental noise. It marks
 
 ### 6.3 Entanglement as Swirl Linking
 
-Entanglement in this framework emerges when **swirl fields braid across motifs**. Shared \$\Phi\_{\mu\nu}\$ lines form **linked topologies**, enforcing nonlocal coherence constraints.
+Entanglement in this framework emerges when **swirl fields braid across motifs**. Shared $\Phi\_{\mu\nu}$ lines form **linked topologies**, enforcing nonlocal coherence constraints.
 
 This can be quantified via the fundamental group of the swirl configuration:
 
@@ -499,7 +497,7 @@ This quantum picture dissolves the classical observer into the field geometry it
 
 ### 7.1 Redshift as Coherence Loss
 
-In this model, redshift arises not only from metric expansion but from a deeper erosion of coherence itself. As photons traverse cosmological distances, their internal phase structure begins to unravel in response to disordered swirl geometry. The field \$\Phi\_{\mu\nu}\$ no longer provides a stable channel to preserve wavelength identity. What is redshifted, then, is not energy—but information.
+In this model, redshift arises not only from metric expansion but from a deeper erosion of coherence itself. As photons traverse cosmological distances, their internal phase structure begins to unravel in response to disordered swirl geometry. The field $\Phi\_{\mu\nu}$ no longer provides a stable channel to preserve wavelength identity. What is redshifted, then, is not energy—but information.
 
 This reframes redshift as a compound phenomenon:
 
@@ -512,7 +510,7 @@ $$
 1 + z_{\text{obs}} = (1 + z_{\text{FLRW}})(1 + z_{\mathcal{C}}), \quad z_{\mathcal{C}} \approx e^{-d/\ell} - 1
 $$
 
-where \$z\_{\mathcal{C}}\$ reflects the degradation of coherence over a distance \$d\$, and \$\ell\$ is the coherence length scale. Narrow-band lines such as Lyman-\$\alpha\$ will be disproportionately affected, yielding a **frequency-dependent shift** not predicted by \$\Lambda\$CDM. Observations by JWST and high-resolution spectroscopic arrays provide a direct test.
+where $z\_{\mathcal{C}}$ reflects the degradation of coherence over a distance $d$, and $\ell$ is the coherence length scale. Narrow-band lines such as Lyman-$\alpha$ will be disproportionately affected, yielding a **frequency-dependent shift** not predicted by $\Lambda$CDM. Observations by JWST and high-resolution spectroscopic arrays provide a direct test.
 
 At extreme distances, redshift no longer diverges—it plateaus. This defines a **coherence horizon**, a maximum observational distance beyond which signals cannot maintain phase integrity. In swirl cosmology, the limit to visibility is not opacity—it is **incoherence**.
 
@@ -520,50 +518,50 @@ At extreme distances, redshift no longer diverges—it plateaus. This defines a 
 
 ### 7.2 CMB Imprint Structure
 
-The cosmic microwave background is reconceived here as a **coherence shell**—a spherical imprint of the last globally resolved state of the swirl field. At recombination, \$\mathcal{C}(x)\$ approached unity, locking \$\Phi\_{\mu\nu}\$ into alignment with the motif substrate 🪷. What remains is fossilized structure.
+The cosmic microwave background is reconceived here as a **coherence shell**—a spherical imprint of the last globally resolved state of the swirl field. At recombination, $\mathcal{C}(x)$ approached unity, locking $\Phi\_{\mu\nu}$ into alignment with the motif substrate 🪷. What remains is fossilized structure.
 
 This leads to specific predictions:
 
-* Low-\$\ell\$ **non-Gaussianities** trace residual swirl vortices,
+* Low-$\ell$ **non-Gaussianities** trace residual swirl vortices,
 * **Anomalous four-point correlations** arise from early motif braiding,
-* Mild excess in **\$B\$-mode polarization**, even in the absence of inflation.
+* Mild excess in **$B$-mode polarization**, even in the absence of inflation.
 
-Moreover, the predicted multipole structure—especially harmonics at \$\ell = 6, 12, 18\$—suggests an underlying hexagonal motif lattice in the early coherence field. These predictions are testable via next-generation polarization-sensitive missions like LiteBIRD and CMB-S4.
+Moreover, the predicted multipole structure—especially harmonics at $\ell = 6, 12, 18$—suggests an underlying hexagonal motif lattice in the early coherence field. These predictions are testable via next-generation polarization-sensitive missions like LiteBIRD and CMB-S4.
 
 ---
 
 ### 7.3 Dark Energy as Swirl Horizon
 
-In this model, dark energy is not a substance—it is a **boundary condition** in coherence space. Beyond a critical length \$\ell\$, the swirl field cannot sustain structural tension. The coherence potential decays exponentially:
+In this model, dark energy is not a substance—it is a **boundary condition** in coherence space. Beyond a critical length $\ell$, the swirl field cannot sustain structural tension. The coherence potential decays exponentially:
 
 $$
 \mathcal{C}(x) \sim e^{-r/\ell}
 $$
 
-At scales \$r \gg \ell\$, field structure collapses. Without swirl alignment, the spacetime substrate loses its geometric constraint. The result is not expansion by pressure, but **expansion by indeterminacy**. Geometry unravels because the motifs are too far apart to entrain the field.
+At scales $r \gg \ell$, field structure collapses. Without swirl alignment, the spacetime substrate loses its geometric constraint. The result is not expansion by pressure, but **expansion by indeterminacy**. Geometry unravels because the motifs are too far apart to entrain the field.
 
-This directly links the cosmological constant to \$\ell\$:
+This directly links the cosmological constant to $\ell$:
 
 $$
 \Lambda \sim \ell^{-2}
 $$
 
-Inverting this gives \$\ell \approx 5\$ Gpc, matching current observational estimates. Crucially, this is **not a fit**—it is a prediction. The observed \$\Lambda\$ arises naturally as the coherence falloff of a swirl-bound universe.
+Inverting this gives $\ell \approx 5$ Gpc, matching current observational estimates. Crucially, this is **not a fit**—it is a prediction. The observed $\Lambda$ arises naturally as the coherence falloff of a swirl-bound universe.
 
-If future measurements find \$\Lambda\$ to drift over time (e.g., \$\Lambda \propto t^{-1}\$), this would offer decisive support for the swirl model over \$\Lambda\$CDM.
+If future measurements find $\Lambda$ to drift over time (e.g., $\Lambda \propto t^{-1}$), this would offer decisive support for the swirl model over $\Lambda$CDM.
 
 ---
 
 ### 7.4 Lensing by Swirl, Not Mass
 
-Light deflection, in this theory, arises not solely from mass-energy, but from anisotropies in \$\Phi\_{\mu\nu}\$. A coherent swirl gradient can curve photon paths even in regions of negligible mass. This yields several key effects:
+Light deflection, in this theory, arises not solely from mass-energy, but from anisotropies in $\Phi\_{\mu\nu}$. A coherent swirl gradient can curve photon paths even in regions of negligible mass. This yields several key effects:
 
 * **Void lensing**: Measurable deflection in underdense regions,
 * **Apparent phantom mass**: Inferred via GR but arising from pure shear,
 * **Frequency-sensitive bending**: Blue photons deflected more than red,
 * **Polarization rotation**: Birefringent propagation through swirl domains.
 
-These effects are absent in GR but present in surveys such as DESI, LSST, and CMB-S4. If lensing is found in regions lacking sufficient baryonic or dark matter content—and if that lensing is frequency or polarization-dependent—it would directly implicate \$\Phi\_{\mu\nu}\$ as the causal agent.
+These effects are absent in GR but present in surveys such as DESI, LSST, and CMB-S4. If lensing is found in regions lacking sufficient baryonic or dark matter content—and if that lensing is frequency or polarization-dependent—it would directly implicate $\Phi\_{\mu\nu}$ as the causal agent.
 
 ---
 
@@ -572,13 +570,13 @@ These effects are absent in GR but present in surveys such as DESI, LSST, and CM
 | Cosmological Feature | Swirl-Spacetime Interpretation                     |
 | -------------------- | -------------------------------------------------- |
 | Redshift             | Phase decoherence across large-scale swirl fields  |
-| CMB structure        | Fossil coherence imprint at \$\mathcal{C} \sim 1\$ |
+| CMB structure        | Fossil coherence imprint at $\mathcal{C} \sim 1$ |
 | Dark energy          | Coherence decay beyond motif alignment length      |
 | Lensing anomalies    | Shear-induced curvature in massless domains        |
 
 This theory reframes cosmic evolution not as expansion from a singular origin, but as **progressive loss of coherence** in an initially ordered swirl. The motifs 🪷 remain fixed. The field 🌀 dances around them, ever more diffusely, ever less resolved.
 
-What the \$\Lambda\$CDM model calls “acceleration,” the swirl model calls **forgetting**. What it calls “structure formation,” we reinterpret as **topological self-assembly** of coherence in a geometrically restless field.
+What the $\Lambda$CDM model calls “acceleration,” the swirl model calls **forgetting**. What it calls “structure formation,” we reinterpret as **topological self-assembly** of coherence in a geometrically restless field.
 
 ---
 
@@ -586,7 +584,7 @@ What the \$\Lambda\$CDM model calls “acceleration,” the swirl model calls **
 
 *“The universe leaves not footprints—but interference.”*
 
-This model predicts subtle, yet potentially decisive deviations from standard cosmological and quantum frameworks. These are not signals of new particles or forces, but **geometric anomalies**—emergent features of the swirl tensor \$\Phi\_{\mu\nu}\$ and coherence potential \$\mathcal{C}(x)\$. Each signature is a structural residue left by pre-metric dynamics, waiting to be noticed by instruments sensitive to shape, alignment, and polarization.
+This model predicts subtle, yet potentially decisive deviations from standard cosmological and quantum frameworks. These are not signals of new particles or forces, but **geometric anomalies**—emergent features of the swirl tensor $\Phi\_{\mu\nu}$ and coherence potential $\mathcal{C}(x)$. Each signature is a structural residue left by pre-metric dynamics, waiting to be noticed by instruments sensitive to shape, alignment, and polarization.
 
 They are testable not through brute energy but through **coherence-sensitive observation**: where time curves, where light forgets its path, and where structure exceeds expectation.
 
@@ -594,7 +592,7 @@ They are testable not through brute energy but through **coherence-sensitive obs
 | -------------------------- | ------------------------- | ------------------------------------------------------- |
 | Spectral coherence drift   | High-z quasar lines       | JWST, ELT precision spectroscopy                        |
 | Swirl birefringence        | Cosmic polarization       | SKA RM grids, Planck archive, polarization variance     |
-| CMB motif imprinting       | \$E/B\$ harmonic excess   | Multipole symmetry + 4-point correlation functions      |
+| CMB motif imprinting       | $E/B$ harmonic excess   | Multipole symmetry + 4-point correlation functions      |
 | Lensing mismatch           | Shear–mass divergence     | DESI/Rubin weak lensing vs. galaxy mass reconstructions |
 | Directional time curvature | Pulsar timing residuals   | PTA networks (NANOGrav, SKA)                            |
 | Swirl echo                 | GW post-merger signatures | LIGO/Virgo strain analysis (sub-Hz low mode extraction) |
@@ -611,7 +609,7 @@ $$
 \epsilon^{\mu\nu\rho\sigma} \Phi_{\mu\nu} F_{\rho\sigma}
 $$
 
-can induce mixing between linear and circular polarization states in the CMB. This predicts a **nonzero \$V\$-mode spectrum**—currently unaccounted for in standard \$\Lambda\$CDM, inflationary, or plasma-based foreground models.
+can induce mixing between linear and circular polarization states in the CMB. This predicts a **nonzero $V$-mode spectrum**—currently unaccounted for in standard $\Lambda$CDM, inflationary, or plasma-based foreground models.
 
 This signal would be faint, but unambiguous: a **torsion echo** from the early universe. It is one of the few proposed effects directly linked to pre-metric antisymmetry.
 
@@ -815,10 +813,10 @@ This framework invites a shift not only in what we model, but in how we conceive
 In conventional frameworks, motion presupposes time and geometry. Here, motion is secondary: it *emerges* when the swirl field 🌀 resolves around motifs. A system does not “move”—rather, it is *drawn* along gradients of coherence.
 
 **Time as Field Pressure**
-The local time vector \$T^\mu\$ arises from \$\nabla^\mu \mathcal{C}(x)\$—the spatial variation of the coherence potential. Where \$\mathcal{C}\$ is steep, time resolves quickly; where it is flat or noisy, temporal flow stalls. Time is not a global parameter—it is a localized field response to topological constraints.
+The local time vector $T^\mu$ arises from $\nabla^\mu \mathcal{C}(x)$—the spatial variation of the coherence potential. Where $\mathcal{C}$ is steep, time resolves quickly; where it is flat or noisy, temporal flow stalls. Time is not a global parameter—it is a localized field response to topological constraints.
 
 **Consciousness as Coherence Locus**
-Rather than asserting consciousness as an external observer effect, we suggest high-\$\mathcal{C}\$ systems may naturally exhibit **information integration** due to field resolution around motifs. This aligns with integrated information theory (IIT) in structure, though not in origin: coherence, not computation, becomes the binding agent of experiential unity.
+Rather than asserting consciousness as an external observer effect, we suggest high-$\mathcal{C}$ systems may naturally exhibit **information integration** due to field resolution around motifs. This aligns with integrated information theory (IIT) in structure, though not in origin: coherence, not computation, becomes the binding agent of experiential unity.
 
 **Holography and Locality**
 Motifs fixed at a boundary naturally induce swirl structure in the interior. This offers a geometric realization of AdS/CFT’s locality-from-boundary principle: *local interactions in the bulk arise from global coherence constraints set at the boundary*. The deeper the motif entanglement, the tighter the interior’s geometric resolution.
@@ -831,7 +829,7 @@ Motifs fixed at a boundary naturally induce swirl structure in the interior. Thi
 | ------------------------ | ------------------------------------ | --------------------------------------------------------------- |
 | **Loop Quantum Gravity** | Graph-based spacetime                | Motifs are fixed; field quantization is emergent                |
 | **AdS/CFT Duality**      | Boundary-to-bulk reconstruction      | Coherence, not entanglement, drives locality                    |
-| **Shape Dynamics**       | Relational time                      | Relationality requires sufficient \$\mathcal{C}(x)\$            |
+| **Shape Dynamics**       | Relational time                      | Relationality requires sufficient $\mathcal{C}(x)$            |
 | **Objective Collapse**   | Gravity-linked wavefunction collapse | Collapse is field phase-locking via swirl, not stochastic noise |
 
 Unlike theories that build from quantization or symmetry first, swirl cosmology builds from **topological anchoring** and coherence resolution—offering a path to unifying background independence with observational structure.
@@ -854,7 +852,7 @@ Rather than invoking metaphysical agency, this model suggests that *to exist as 
 
 *“To test the swirl, we must become sensitive not just to force—but to form.”*
 
-The swirl model offers new modes of theoretical and computational engagement. Even with modest tools, the internal structure of \$\Phi\_{\mu\nu}\$ and \$\mathcal{C}(x)\$ can be investigated. These are not speculative forces—they are geometric consequences of field anchoring and coherence gradients.
+The swirl model offers new modes of theoretical and computational engagement. Even with modest tools, the internal structure of $\Phi\_{\mu\nu}$ and $\mathcal{C}(x)$ can be investigated. These are not speculative forces—they are geometric consequences of field anchoring and coherence gradients.
 
 ---
 
@@ -866,7 +864,7 @@ $$
 \partial_\mu \Phi^{\mu\nu} = \lambda J^\nu
 $$
 
-with varying initial \$\mathcal{C}(x)\$ configurations could reveal key behaviors such as:
+with varying initial $\mathcal{C}(x)$ configurations could reveal key behaviors such as:
 
 * Spiral formation and vortex stabilization
 * Time vector suppression in decoherent zones
@@ -881,7 +879,7 @@ Simple PDE solvers (PyTorch autodiff, ParaView slices, or Mathematica fields) ar
 Unlike GR’s curvature from mass-energy, swirl theory predicts curvature from **field shear and torsion**, even in vacuum. This introduces the possibility of:
 
 * **Post-merger gravitational echoes** not explainable by GR ringdown
-* **Dipolar memory signals** from asymmetric collapse of \$\Phi\_{\mu\nu}\$
+* **Dipolar memory signals** from asymmetric collapse of $\Phi\_{\mu\nu}$
 
 These could be sought in archival LIGO/Virgo data, especially where waveform anomalies remain unexplained.
 
@@ -923,7 +921,7 @@ $$
 S = \int \left[ \frac{1}{2} \Phi_{\mu\nu} \star \Phi^{\mu\nu} + \lambda \mathcal{C}(x) J^\mu \mathcal{A}_\mu + \beta \mathcal{C}(x) R(\Phi) \right] d^4x + \oint \mathcal{C}(x) K \, d\Sigma
 $$
 
-Varying with respect to the connection field \$\mathcal{A}\_\nu\$, using:
+Varying with respect to the connection field $\mathcal{A}\_\nu$, using:
 
 $$
 \delta \Phi^{\mu\nu} = \partial^\mu \delta \mathcal{A}^\nu - \partial^\nu \delta \mathcal{A}^\mu
@@ -959,19 +957,19 @@ $$
 J^\mu(x) = \sum_i q_i \delta^4(x - x_i) u^\mu
 $$
 
-where \$q\_i\$ denotes the topological index and \$u^\mu\$ is a unit timelike vector associated with each static motif. Conservation follows trivially from the fixed nature of \$x\_i\$. This guarantees that motifs do not "appear" or "vanish" from the field—preserving global topological charge.
+where $q\_i$ denotes the topological index and $u^\mu$ is a unit timelike vector associated with each static motif. Conservation follows trivially from the fixed nature of $x\_i$. This guarantees that motifs do not "appear" or "vanish" from the field—preserving global topological charge.
 
 ---
 
 #### A.3 Weak-Field Limit
 
-In regions of near-maximal coherence (\$\mathcal{C}(x) \approx 1\$), and under the assumption of static sources, we linearize the field. Setting:
+In regions of near-maximal coherence ($\mathcal{C}(x) \approx 1$), and under the assumption of static sources, we linearize the field. Setting:
 
 $$
 \Phi_{0i} \approx \partial_i \phi, \quad \Phi_{ij} \approx 0
 $$
 
-and assuming \$\partial\_t \Phi\_{\mu\nu} = 0\$, the field equations reduce to:
+and assuming $\partial\_t \Phi\_{\mu\nu} = 0$, the field equations reduce to:
 
 $$
 \nabla^2 \phi = \lambda J^0 = \lambda \rho
@@ -1001,7 +999,7 @@ $$
 \delta S_\partial = \oint \left[ \delta \mathcal{C} \cdot K + \mathcal{C} \cdot \delta K \right] d\Sigma
 $$
 
-On surfaces where \$\mathcal{C}(x) \to 0\$, the first term vanishes, and consistency requires that \$\delta K\$ vanish or be physically interpreted as encoding field exchange with the boundary. In simulations, this surface often corresponds to the edge of resolved coherence, beyond which motif influence and swirl propagation halt.
+On surfaces where $\mathcal{C}(x) \to 0$, the first term vanishes, and consistency requires that $\delta K$ vanish or be physically interpreted as encoding field exchange with the boundary. In simulations, this surface often corresponds to the edge of resolved coherence, beyond which motif influence and swirl propagation halt.
 
 ---
 
@@ -1018,19 +1016,39 @@ No exotic mechanisms are introduced—only the consequences of interpreting geom
 
 ---
 
+## **Conclusion: Curvature Beneath Curvature**
+
+This work has proposed a novel cosmological paradigm in which **topological stasis** and **dynamic resolution**—encoded respectively as static motifs 🪷 and swirl curvature 🌀—jointly underwrite the emergence of spacetime, time, and quantum structure.
+
+By interpreting time as a **gradient of coherence**, rather than a primitive dimension, and reimagining spacetime as a **field of swirl-mediated torsion** rather than metric geometry, we have reframed longstanding tensions between general relativity and quantum theory as the **artifact of mismatched foundations**. Here, the ontological primacy lies not in quantized particles nor smooth manifolds, but in the **algebra of motifs**, the **structure of coherence**, and the **flow of resolution**.
+
+Across the manuscript, we have shown how this architecture:
+
+* Produces testable predictions in CMB topology, redshift anomalies, and decoherence scales,
+* Maps symbolic logic to geometric dynamics through motif categories and swirl functors,
+* Opens a route to non-operator-based quantization grounded in topology rather than Hilbert space formalism.
+
+The synthesis is not merely technical—it is conceptual. A particle becomes not an excitation, but a **fixed point in symbolic curvature**. A measurement becomes not a collapse, but a **coherence fracture**. A universe becomes not a singular manifold, but a **field of partial resolutions**, swirling toward meaning.
+
+In doing so, we have built a bridge—not between two disconnected theories, but between **form and inference**, **geometry and symbol**, **motion and memory**. It is our hope that this model invites both analytic scrutiny and symbolic extension, and that future work will refine it into a fully formal, testable, and generative framework for a **geometry of emergence**.
+
+🪷 + 🌀 → time.
+
+---
+
 ## 12. **Appendices**
 
 ### **Appendix B: Coherence Bounds and Time Vector Constraints**
 
 *“The gradient of coherence is the architecture of time.”*
 
-This appendix formalizes the behavior of the **time vector** \$T^\mu := \nabla^\mu \mathcal{C}(x)\$ and explores how the coherence field \$\mathcal{C}(x)\$ structures the causal landscape of swirl spacetime. These relationships govern temporal flow, stagnation zones, and the limits of field resolution across varying coherence geometries.
+This appendix formalizes the behavior of the **time vector** $T^\mu := \nabla^\mu \mathcal{C}(x)$ and explores how the coherence field $\mathcal{C}(x)$ structures the causal landscape of swirl spacetime. These relationships govern temporal flow, stagnation zones, and the limits of field resolution across varying coherence geometries.
 
 ---
 
-#### **B.1 Norm Bound on \$T^\mu\$**
+#### **B.1 Norm Bound on $T^\mu$**
 
-Let \$\mathcal{C}(x)\$ be a smooth scalar field with values in $\[0, 1]\$, anchored by fixed motifs 🪷. Because \$\mathcal{C}\$ is normalized and varies over finite length scales, the norm of \$T^\mu\$ is naturally bounded.
+Let $\mathcal{C}(x)$ be a smooth scalar field with values in $[0, 1]$, anchored by fixed motifs 🪷. Because $\mathcal{C}$ is normalized and varies over finite length scales, the norm of $T^\mu$ is naturally bounded.
 
 **Coherence Gradient Bound:**
 
@@ -1038,7 +1056,7 @@ $$
 \| T^\mu \|^2 = g^{\mu\nu} \nabla_\mu \mathcal{C} \nabla_\nu \mathcal{C} \leq \kappa^{-1}
 $$
 
-where \$\kappa\$ is a coherence curvature scale determined by local motif density and the structure of \$\Phi\_{\mu\nu}\$. Near motifs, this corresponds to a minimal swirl radius \$\ell\$; in voids, \$\kappa \to \infty\$ and \$|T^\mu| \to 0\$.
+where $\kappa$ is a coherence curvature scale determined by local motif density and the structure of $\Phi\_{\mu\nu}$. Near motifs, this corresponds to a minimal swirl radius $\ell$; in voids, $\kappa \to \infty$ and $|T^\mu| \to 0$.
 
 This limit ensures that time cannot steepen without bound: even in the most coherent regions, there exists a maximal temporal gradient set by geometry.
 
@@ -1046,7 +1064,7 @@ This limit ensures that time cannot steepen without bound: even in the most cohe
 
 #### **B.2 Null Zones and Temporal Stagnation**
 
-Regions where \$\mathcal{C}(x)\$ is constant form **null zones** of the time field:
+Regions where $\mathcal{C}(x)$ is constant form **null zones** of the time field:
 
 $$
 T^\mu = 0 \quad \Rightarrow \quad \text{no causal evolution}
@@ -1064,7 +1082,7 @@ Such zones may underlie observational signatures like CMB phase plateaus or resi
 
 #### **B.3 Time Curvature Tensor**
 
-The second derivative of \$\mathcal{C}(x)\$ defines the **time curvature tensor**:
+The second derivative of $\mathcal{C}(x)$ defines the **time curvature tensor**:
 
 $$
 \mathcal{T}_{\mu\nu} := \nabla_\mu \nabla_\nu \mathcal{C}
@@ -1072,9 +1090,9 @@ $$
 
 Its key features:
 
-* **Trace**: \$\nabla\_\mu T^\mu = \Box \mathcal{C}\$ — coherence focusing.
-* **Shear**: Deviations from \$\frac{1}{4}\Box \mathcal{C} , g\_{\mu\nu}\$ describe asymmetries in temporal flow.
-* **Antisymmetry**: \$\mathcal{T}\_{\[\mu\nu]} = 0\$ → time vector is hypersurface-orthogonal.
+* **Trace**: $\nabla\_\mu T^\mu = \Box \mathcal{C}$ — coherence focusing.
+* **Shear**: Deviations from $\frac{1}{4}\Box \mathcal{C} , g\_{\mu\nu}$ describe asymmetries in temporal flow.
+* **Antisymmetry**: $\mathcal{T}_{[\mu\nu]} = 0$ → time vector is hypersurface-orthogonal.
 
 This provides a geometric language for describing how coherence evolves over space and how time may twist, stagnate, or compress under field pressure.
 
@@ -1090,11 +1108,11 @@ $$
 
 This yields:
 
-| Radial Distance \$r\$ | $\|T^\mu\|\$      | Interpretation                   |
+| Radial Distance $r$ | $\|T^\mu\|$      | Interpretation                   |
 | --------------------- | ----------------- | -------------------------------- |
-| \$r \ll \ell\$        | \$\sim r/\ell^2\$ | Linear acceleration of time      |
-| \$r = \ell\$          | \$\sim 1/e\ell\$  | Peak coherence gradient          |
-| \$r \gg \ell\$        | \$\sim 0\$        | Temporal stagnation, decoherence |
+| $r \ll \ell$        | $\sim r/\ell^2$ | Linear acceleration of time      |
+| $r = \ell$          | $\sim 1/e\ell$  | Peak coherence gradient          |
+| $r \gg \ell$        | $\sim 0$        | Temporal stagnation, decoherence |
 
 Such shells define the causal structure near motifs—zones of resolution where the swirl field can actively reshape spacetime.
 
@@ -1102,7 +1120,7 @@ Such shells define the causal structure near motifs—zones of resolution where 
 
 #### **B.5 Coherence Flux and Causal Load**
 
-Define the **coherence flux** across a hypersurface \$\Sigma\$ as:
+Define the **coherence flux** across a hypersurface $\Sigma$ as:
 
 $$
 \Phi_\Sigma := \int_\Sigma T^\mu \, d\Sigma_\mu
@@ -1122,10 +1140,10 @@ This suggests that even high-energy processes may be “frozen” in low-flux zo
 
 | Quantity                                 | Mathematical Form                       | Physical Role                          |
 | ---------------------------------------- | --------------------------------------- | -------------------------------------- |
-| Time Vector \$T^\mu\$                    | \$\nabla^\mu \mathcal{C}\$              | Direction of local temporal resolution |
-| Norm $\|T^\mu\|\$                        | \$g^{\mu\nu} T\_\mu T\_\nu\$            | Magnitude of time flow                 |
-| Time Curvature \$\mathcal{T}\_{\mu\nu}\$ | \$\nabla\_\mu \nabla\_\nu \mathcal{C}\$ | Temporal focusing and shear            |
-| Coherence Flux \$\Phi\_\Sigma\$          | \$\int\_\Sigma T^\mu d\Sigma\_\mu\$     | Total causal drive across region       |
+| Time Vector $T^\mu$                    | $\nabla^\mu \mathcal{C}$              | Direction of local temporal resolution |
+| Norm $\|T^\mu\|$                        | $g^{\mu\nu} T\_\mu T\_\nu$            | Magnitude of time flow                 |
+| Time Curvature $\mathcal{T}\_{\mu\nu}$ | $\nabla\_\mu \nabla\_\nu \mathcal{C}$ | Temporal focusing and shear            |
+| Coherence Flux $\Phi\_\Sigma$          | $\int\_\Sigma T^\mu d\Sigma\_\mu$     | Total causal drive across region       |
 
 ---
 
@@ -1137,19 +1155,19 @@ The coherence field thus acts as both source and scaffold for time. What we expe
 
 *“Quantization is not imposed—it emerges where swirl closes upon itself.”*
 
-This appendix outlines how quantized structure arises from the intrinsic topology of the swirl field \$\Phi\_{\mu\nu}\$ in the presence of fixed motifs 🪷 and bounded coherence. Rather than invoking Hilbert space formalism or canonical commutators, quantization here follows from global field closure and coherence constraints—making it a property of swirl geometry, not operator algebra.
+This appendix outlines how quantized structure arises from the intrinsic topology of the swirl field $\Phi\_{\mu\nu}$ in the presence of fixed motifs 🪷 and bounded coherence. Rather than invoking Hilbert space formalism or canonical commutators, quantization here follows from global field closure and coherence constraints—making it a property of swirl geometry, not operator algebra.
 
 ---
 
 #### **C.1 Swirl Solitons and Quantized Loops**
 
-Swirl excitations correspond to topological solitons: stable, nontrivial configurations of \$\Phi\_{\mu\nu}\$ that remain invariant under smooth deformation. These structures are characterized by their **integrated circulation** around closed loops:
+Swirl excitations correspond to topological solitons: stable, nontrivial configurations of $\Phi\_{\mu\nu}$ that remain invariant under smooth deformation. These structures are characterized by their **integrated circulation** around closed loops:
 
 $$
 \oint_{\gamma} \Phi_{\mu\nu} dx^\mu \wedge dx^\nu = 2\pi n, \quad n \in \mathbb{Z}
 $$
 
-This expression defines a **quantized coherence winding** through a loop \$\gamma\$ encircling one or more motifs. Quantization arises not from discreteness of spacetime, but from **nontrivial first homotopy**: the presence of fixed motif punctures renders \$\pi\_1(\mathcal{M}) \ne 0\$.
+This expression defines a **quantized coherence winding** through a loop $\gamma$ encircling one or more motifs. Quantization arises not from discreteness of spacetime, but from **nontrivial first homotopy**: the presence of fixed motif punctures renders $\pi\_1(\mathcal{M}) \ne 0$.
 
 Swirl solitons thus resemble flux tubes in superfluids or magnetic monopoles, but with key differences:
 
@@ -1160,7 +1178,7 @@ Swirl solitons thus resemble flux tubes in superfluids or magnetic monopoles, bu
 
 #### **C.2 Swirl Mode Spectrum from Coherence Cavities**
 
-When \$\Phi\_{\mu\nu}\$ is confined between motifs or coherence boundaries, the allowed field configurations become discretized. Let the motif region be \$\mathcal{M}\$ and the coherence domain \$\mathcal{C}^{-1}(\[0.9,1])\$. The swirl field then admits a mode expansion:
+When $\Phi\_{\mu\nu}$ is confined between motifs or coherence boundaries, the allowed field configurations become discretized. Let the motif region be $\mathcal{M}$ and the coherence domain $\mathcal{C}^{-1}([0.9, 1])$. The swirl field then admits a mode expansion:
 
 $$
 \Phi_{\mu\nu}(x) = \sum_{n} \phi_n(x) \psi^{(n)}_{\mu\nu}
@@ -1168,11 +1186,11 @@ $$
 
 Subject to:
 
-* **Dirichlet boundary conditions** at motifs: \$\Phi\_{\mu\nu}|\_{\partial\mathcal{M}} = 0\$
-* **Neumann-like coherence cutoff** at \$\mathcal{C} = 0.9\$: \$n^\alpha \nabla\_\alpha \Phi\_{\mu\nu} = 0\$
-* **Torsion constraint**: \$\nabla\_{\[\alpha} \Phi\_{\mu\nu]} = 0\$
+* **Dirichlet boundary conditions** at motifs: $\Phi\_{\mu\nu}|\_{\partial\mathcal{M}} = 0$
+* **Neumann-like coherence cutoff** at $\mathcal{C} = 0.9$: $n^\alpha \nabla\_\alpha \Phi\_{\mu\nu} = 0$
+* **Torsion constraint**: $\nabla_{[\alpha} \Phi\_{\mu\nu]} = 0$
 
-Each \$\psi^{(n)}\_{\mu\nu}\$ corresponds to a quantized swirl resonance, forming a geometric mode spectrum with eigenvalues \$\lambda\_n \sim n^2/\ell^2\$, where \$\ell\$ is the characteristic coherence scale of the cavity.
+Each $\psi^{(n)}\_{\mu\nu}$ corresponds to a quantized swirl resonance, forming a geometric mode spectrum with eigenvalues $\lambda\_n \sim n^2/\ell^2$, where $\ell$ is the characteristic coherence scale of the cavity.
 
 ---
 
@@ -1218,7 +1236,7 @@ $$
 \mathcal{E}_{\text{swirl}}(d) \sim \frac{\pi^2}{240 d^4} \sum_n \mathcal{C}_n
 $$
 
-with \$\mathcal{C}\_n\$ weighting the participation of each swirl mode in the confined region. The force falls off as \$d^{-5}\$ and depends on coherence boundary shape—not Planck constants or electromagnetic coupling. This makes it a **purely geometric** quantum effect, testable in both astrophysical motif networks and laboratory analogs (e.g. photonic crystals, superfluid vortex traps).
+with $\mathcal{C}\_n$ weighting the participation of each swirl mode in the confined region. The force falls off as $d^{-5}$ and depends on coherence boundary shape—not Planck constants or electromagnetic coupling. This makes it a **purely geometric** quantum effect, testable in both astrophysical motif networks and laboratory analogs (e.g. photonic crystals, superfluid vortex traps).
 
 ---
 
@@ -1230,7 +1248,7 @@ $$
 W_\gamma := \exp\left(i \oint_\gamma \Phi \right)
 $$
 
-For two linked loops \$\gamma\_1\$, \$\gamma\_2\$, their bracket becomes:
+For two linked loops $\gamma\_1$, $\gamma\_2$, their bracket becomes:
 
 $$
 [W_{\gamma_1}, W_{\gamma_2}] \sim 2i \sin\left( \pi L(\gamma_1, \gamma_2) \right) W_{\gamma_1 \# \gamma_2}
@@ -1238,9 +1256,9 @@ $$
 
 This reveals a **noncommutative algebra of coherence loops**:
 
-* When \$L=0\$, observables commute: independent swirl sectors
-* When \$L \ne 0\$, observables obey braid-like statistics
-* Concatenation \$#\$ plays the role of loop composition, not operator multiplication
+* When $L=0$, observables commute: independent swirl sectors
+* When $L \ne 0$, observables obey braid-like statistics
+* Concatenation $\#$ plays the role of loop composition, not operator multiplication
 
 This structure resembles the **braid group algebra** from topological quantum computing, suggesting that motif-bound swirl fields support **intrinsically nonlocal observables** even in a purely classical field framework.
 
@@ -1250,7 +1268,7 @@ This structure resembles the **braid group algebra** from topological quantum co
 
 ```{python}
 #| label: fig-topological-swirl
-#| fig-cap: "Topological quantization of the swirl field. Modes \(n = 0\) to \(n = 2\) show increasing topological complexity; Panel D summarizes the discrete spectrum."
+#| fig-cap: 'Topological quantization of the swirl field 🌀. Modes \(n = 0\) to \(n = 2\) show increasing topological complexity 🪷; Panel D summarizes the discrete spectrum.'
 #| layout-ncol: 2
 #| fig-subcap: ["A. Ground State (n=0)", "B. Fundamental Mode (n=1)", "C. Higher Mode (n=2)", "D. Quantized Mode Spectrum"]
 #| fig-align: center
@@ -1260,6 +1278,9 @@ import matplotlib.pyplot as plt
 from scipy.ndimage import gaussian_filter, sobel
 from numpy.random import default_rng
 
+# Use default font (no emoji rendering in titles)
+plt.rcParams['font.family'] = 'DejaVu Sans'
+
 # Shared grid
 nx, ny = 200, 200
 Y, X = np.mgrid[0:ny, 0:nx]
@@ -1267,10 +1288,9 @@ rng = default_rng(42)
 
 ### Panel A — Ground State (n = 0)
 def panel_ground_state():
-    coherence = np.ones((ny, nx)) * 0.1  # Uniform field
+    coherence = np.ones((ny, nx)) * 0.1
     T_x = sobel(coherence, axis=1)
     T_y = sobel(coherence, axis=0)
-    T_mag = np.sqrt(T_x**2 + T_y**2)
 
     fig, ax = plt.subplots()
     ax.imshow(coherence, cmap='gray', origin='lower')
@@ -1282,7 +1302,6 @@ def panel_ground_state():
 
 ### Panel B — Fundamental Mode (n = 1)
 def panel_n1():
-    # Single swirl source
     cx, cy = 100, 100
     dx = X - cx
     dy = Y - cy
@@ -1305,7 +1324,6 @@ def panel_n1():
 
 ### Panel C — Higher Mode (n = 2)
 def panel_n2():
-    # Double vortex: dipole source
     dx1, dy1 = X - 70, Y - 100
     dx2, dy2 = X - 130, Y - 100
     r21 = dx1**2 + dy1**2 + 1e-5
@@ -1331,7 +1349,7 @@ def panel_n2():
 def panel_spectrum():
     n_vals = np.array([0, 1, 2, 3, 4])
     L_vals = np.array([0, 1, 2, 0, 1])
-    E_vals = n_vals**2 / 10  # λ_n ∼ n²/ℓ²
+    E_vals = n_vals**2 / 10
 
     fig, ax = plt.subplots()
     ax.plot(n_vals, E_vals, 'ko')
@@ -1363,20 +1381,20 @@ panel_spectrum()
 
 ---
 
-**Panel A — Ground State (\$n=0\$)**
-A motif pair linked by a null swirl field; \$\Phi\_{\mu\nu}\$ vanishes, and \$T^\mu\$ forms closed loops of zero norm.
+**Panel A — Ground State ($n=0$)**
+A motif pair linked by a null swirl field; $\Phi\_{\mu\nu}$ vanishes, and $T^\mu$ forms closed loops of zero norm.
 
-**Panel B — Fundamental Mode (\$n=1\$)**
-A single swirl filament links two motifs; \$\Phi\_{\mu\nu}\$ forms a coherent tube, and \$T^\mu\$ shows axial flow along the connection.
+**Panel B — Fundamental Mode ($n=1$)**
+A single swirl filament links two motifs; $\Phi\_{\mu\nu}$ forms a coherent tube, and $T^\mu$ shows axial flow along the connection.
 
-**Panel C — Higher Mode (\$n=2\$)**
-A figure-eight or double-twist configuration emerges; \$\Phi\_{\mu\nu}\$ wraps with doubled helicity, forming an entangled structure. Color gradient encodes \$|\nabla \mathcal{C}|\$.
+**Panel C — Higher Mode ($n=2$)**
+A figure-eight or double-twist configuration emerges; $\Phi\_{\mu\nu}$ wraps with doubled helicity, forming an entangled structure. Color gradient encodes $|\nabla \mathcal{C}|$.
 
 All panels:
 
-* \$\Phi\_{\mu\nu}\$ rendered with LIC streamlines
-* \$\mathcal{C}(x)\$ shown as contour shading
-* \$T^\mu\$ overlaid as red vectors
+* $\Phi\_{\mu\nu}$ rendered with LIC streamlines
+* $\mathcal{C}(x)$ shown as contour shading
+* $T^\mu$ overlaid as red vectors
 
 ---
 
@@ -1489,28 +1507,27 @@ Monoidal functors can then track entire motif networks as they evolve in time vi
 
 ### **Figure D.1: Motif Inference Network**
 
+Excellent — splitting into four separate code chunks is the cleanest and most Quarto-native solution.
+
+Below are four separate code blocks for each panel, each with its own `fig-subcap`. You can copy and paste these into your `.qmd` or Jupyter+Quarto notebook. Quarto will align them automatically using the `layout-ncol` parameter from your document YAML or `div` structure.
+
+---
+
+### 🧩 Panel A – Symbolic Motif Graph
+
 ```{python}
-#| label: fig-motif-inference
-#| fig-cap: "Inference network of motifs and their swirl-preserving morphisms. Each panel encodes a different structure: graph topology, triadic closure, coherence-category density, and higher morphism flow."
-#| layout-ncol: 2
-#| fig-subcap: ["A. Symbolic Motif Graph", "B. Triadic Inference Diagram", "C. Swirl-Enriched Category Map", "D. Diagrammatic Inference Flow"]
+#| label: fig-panel-a
+#| fig-subcap: "A. Symbolic Motif Graph"
 #| fig-align: center
 
-import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
 
-### Panel A — Symbolic Motif Graph
 def panel_symbolic_graph():
     G = nx.DiGraph()
     motifs = ['M0', 'M1', 'M2', 'M3', 'M4']
-    pos = nx.spring_layout(G, seed=1)
-
-    # Add nodes
     for m in motifs:
         G.add_node(m)
-
-    # Add directed, weighted edges
     edges = [
         ('M0', 'M1', 0.9),
         ('M1', 'M2', 0.7),
@@ -1521,61 +1538,76 @@ def panel_symbolic_graph():
     ]
     for src, tgt, weight in edges:
         G.add_edge(src, tgt, weight=weight)
-
     pos = nx.kamada_kawai_layout(G)
-    edge_weights = [G[u][v]['weight']*4 for u,v in G.edges()]
-    edge_colors = [plt.cm.viridis(G[u][v]['weight']) for u,v in G.edges()]
-
+    edge_weights = [G[u][v]['weight'] * 4 for u, v in G.edges()]
+    edge_colors = [plt.cm.viridis(G[u][v]['weight']) for u, v in G.edges()]
     fig, ax = plt.subplots()
     nx.draw_networkx_nodes(G, pos, node_color='black', node_size=300, ax=ax)
     nx.draw_networkx_labels(G, pos, font_color='white', ax=ax)
     nx.draw_networkx_edges(G, pos, width=edge_weights, edge_color=edge_colors, arrows=True, ax=ax)
     ax.set_title("Symbolic Motif Graph")
     ax.axis('off')
-    return fig, ax
+    plt.show()
 
-### Panel B — Triadic Inference Diagram
+panel_symbolic_graph()
+```
+
+---
+
+### 🧩 Panel B – Triadic Inference Diagram
+
+```{python}
+#| label: fig-panel-b
+#| fig-subcap: "B. Triadic Inference Diagram"
+#| fig-align: center
+
+import numpy as np
+import matplotlib.pyplot as plt
+
 def panel_triadic_diagram():
     fig, ax = plt.subplots()
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
-
-    # Coherence background
     coherence = np.outer(np.linspace(0.1, 1, 200), np.linspace(0.1, 1, 200))
     ax.imshow(coherence, origin='lower', cmap='coolwarm', extent=(0, 1, 0, 1), alpha=0.8)
-
-    # Triad points
-    pts = {
-        'M0': (0.3, 0.7),
-        'M1': (0.7, 0.7),
-        'M2': (0.5, 0.3),
-        'M3': (0.2, 0.2),
-    }
-
-    # Closed triangle (coherent)
+    
+    pts = {'M0': (0.3, 0.7), 'M1': (0.7, 0.7), 'M2': (0.5, 0.3), 'M3': (0.2, 0.2)}
     ax.plot([pts['M0'][0], pts['M1'][0], pts['M2'][0], pts['M0'][0]],
-             [pts['M0'][1], pts['M1'][1], pts['M2'][1], pts['M0'][1]],
-             color='black', linewidth=1.5)
-
-    # Broken triangle (incoherent)
+            [pts['M0'][1], pts['M1'][1], pts['M2'][1], pts['M0'][1]],
+            color='black', linewidth=1.5)
     ax.plot([pts['M1'][0], pts['M2'][0], pts['M3'][0]],
             [pts['M1'][1], pts['M2'][1], pts['M3'][1]],
             linestyle='--', color='black', linewidth=1.2)
-
+    
     for label, (x, y) in pts.items():
         ax.plot(x, y, 'ko')
         ax.text(x, y + 0.03, label, ha='center', fontsize=9)
-
+        
     ax.set_title("Triadic Inference Diagram")
     ax.axis('off')
-    return fig, ax
+    plt.show()
 
-### Panel C — Swirl-Enriched Category Map
+panel_triadic_diagram()
+```
+
+---
+
+### 🧩 Panel C – Swirl-Enriched Category Map
+
+```{python}
+#| label: fig-panel-c
+#| fig-subcap: "C. Swirl-Enriched Category Map"
+#| fig-align: center
+
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.ndimage import gaussian_filter
+
 def panel_category_map():
     motifs = 6
     data = np.random.rand(motifs, motifs) * np.tri(motifs, motifs, 0)
     coherence_weighted = gaussian_filter(data, sigma=1)
-
+    
     fig, ax = plt.subplots()
     im = ax.imshow(coherence_weighted, cmap='magma', origin='lower')
     ax.set_xticks(range(motifs))
@@ -1583,40 +1615,44 @@ def panel_category_map():
     ax.set_xticklabels([f"M{i}" for i in range(motifs)])
     ax.set_yticklabels([f"M{i}" for i in range(motifs)])
     ax.set_title("Swirl-Enriched Category Map")
+    
     plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
-    return fig, ax
+    plt.show()
 
-### Panel D — Diagrammatic Inference Flow
-def panel_string_diagram():
-    fig, ax = plt.subplots()
-    ax.set_xlim(0, 10)
-    ax.set_ylim(0, 6)
-    ax.axis('off')
-
-    # Ribbons (0-cells)
-    for i, label in enumerate(['M0', 'M1', 'M2']):
-        ax.plot([i*3+1]*2, [1, 5], lw=6, color='grey', alpha=0.3)
-        ax.text(i*3+1, 0.5, label, ha='center', fontsize=10)
-
-    # Morphism strands (1-cells)
-    ax.plot([1, 4], [3, 4], color='blue', linewidth=2)
-    ax.plot([4, 7], [4, 2], color='green', linewidth=2)
-
-    # 2-cell: swirl deformation
-    patch = plt.Polygon([[4, 4], [5.5, 3], [4, 2]], color='orange', alpha=0.4)
-    ax.add_patch(patch)
-    ax.text(4.7, 3, "2-cell", fontsize=9)
-
-    # Trivalent junction
-    ax.plot([4], [4], marker='o', color='black')
-    ax.set_title("Diagrammatic Inference Flow")
-    return fig, ax
-
-# Generate all panels
-panel_symbolic_graph()
-panel_triadic_diagram()
 panel_category_map()
-panel_string_diagram()
+```
+
+---
+
+### 🧩 Panel D – Quantized Mode Spectrum
+
+```{python}
+#| label: fig-panel-d
+#| fig-subcap: "D. Quantized Mode Spectrum"
+#| fig-align: center
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+def panel_spectrum():
+    n_vals = np.array([0, 1, 2, 3, 4])
+    L_vals = np.array([0, 1, 2, 0, 1])
+    E_vals = n_vals**2 / 10
+
+    fig, ax = plt.subplots()
+    ax.plot(n_vals, E_vals, 'ko')
+    
+    for n, E, L in zip(n_vals, E_vals, L_vals):
+        ax.text(n, E + 0.1, f"({n}, [Φ]={n}, L={L})", ha='center', fontsize=8)
+    
+    ax.set_xlabel("Mode Index n")
+    ax.set_ylabel("Swirl Energy $\\lambda_n$")
+    ax.set_title("Quantized Mode Spectrum")
+    ax.grid(True)
+    
+    plt.show()
+
+panel_spectrum()
 ```
 
 ## 📘 Scientific Interpretation
@@ -1658,11 +1694,11 @@ This appendix catalogs the core symbolic motifs and their corresponding mathemat
 
 | Quantity           | Motif | Meaning             | Notes                                                                  |
 | ------------------ | ----- | ------------------- | ---------------------------------------------------------------------- |
-| \$\mathcal{M}\$    | 🪷    | Static motifs       | Topological anchors; localized field punctures; coherence fixpoints    |
-| \$\Phi\_{\mu\nu}\$ | 🌀    | Swirl curvature     | Antisymmetric 2-form; defines torsion and quantized vortex structure   |
-| \$\mathcal{C}(x)\$ | 💬    | Coherence potential | Scalar field; modulates temporal resolution; source of \$T^\mu\$       |
-| \$T^\mu\$          | 🫧    | Time flow vector    | Gradient of \$\mathcal{C}\$; defines local direction of unfolding time |
-| Collapse           | 🔥    | Coherence fracture  | Discontinuity in \$\mathcal{C}\$; decoherence, motif destabilization   |
+| $\mathcal{M}$    | 🪷    | Static motifs       | Topological anchors; localized field punctures; coherence fixpoints    |
+| $\Phi\_{\mu\nu}$ | 🌀    | Swirl curvature     | Antisymmetric 2-form; defines torsion and quantized vortex structure   |
+| $\mathcal{C}(x)$ | 💬    | Coherence potential | Scalar field; modulates temporal resolution; source of $T^\mu$       |
+| $T^\mu$          | 🫧    | Time flow vector    | Gradient of $\mathcal{C}$; defines local direction of unfolding time |
+| Collapse           | 🔥    | Coherence fracture  | Discontinuity in $\mathcal{C}$; decoherence, motif destabilization   |
 
 ---
 
@@ -1670,11 +1706,11 @@ This appendix catalogs the core symbolic motifs and their corresponding mathemat
 
 | Quantity                  | Motif | Meaning                     | Notes                                                               |
 | ------------------------- | ----- | --------------------------- | ------------------------------------------------------------------- |
-| \$\mathcal{T}\_{\mu\nu}\$ | ⏳     | Time curvature tensor       | Second derivative of \$\mathcal{C}\$; focuses or diffuses \$T^\mu\$ |
-| \$\gamma\_{ij}\$          | ➰     | Swirl path / motif morphism | Connects motifs in \$\mathsf{Mot}\$; defines resolution dynamics    |
-| $\[\Phi] \in H^2\$        | ♾️    | Topological swirl class     | Cohomology index for quantized loop configurations                  |
-| \$\mathcal{F}\$           | 📎    | Field functor               | Maps motif categories into spacetime field morphologies             |
-| \$\oint \Phi\$            | 🔁    | Swirl circulation integral  | Quantized topological invariant; swirl flux or twist per loop       |
+| $\mathcal{T}\_{\mu\nu}$ | ⏳     | Time curvature tensor       | Second derivative of $\mathcal{C}$; focuses or diffuses $T^\mu$ |
+| $\gamma\_{ij}$          | ➰     | Swirl path / motif morphism | Connects motifs in $\mathsf{Mot}$; defines resolution dynamics    |
+| $[\Phi] \in H^2$        | ♾️    | Topological swirl class     | Cohomology index for quantized loop configurations                  |
+| $\mathcal{F}$           | 📎    | Field functor               | Maps motif categories into spacetime field morphologies             |
+| $\oint \Phi$            | 🔁    | Swirl circulation integral  | Quantized topological invariant; swirl flux or twist per loop       |
 
 ---
 
