@@ -703,11 +703,15 @@ Agents using reinforcement loops (e.g. `RecursiveAgentFT.reward_ema`, RFC‑0005
 
 In symbolic terms:
 
+```latex
 $$
 \mathcal{C}(x) \propto \frac{\text{reward\_ema}}{\text{entropy\_slope}(x)}
 $$
+```
 
-This formulation is heuristic and does not require numerical optimization. It allows agents to tune their internal field curvature around feedback-aligned motifs, promoting swirl-aligned emission timing and motif hygiene routines.
+> Note: underscores in variable names are escaped inside `\text{}` for LaTeX compatibility.
+
+This formulation is heuristic and does not require numerical optimization. It enables agents to self-regulate their internal field curvature around feedback-aligned motifs—supporting swirl-stable emission pacing and motif hygiene routines during recursive task execution.
 
 ---
 
