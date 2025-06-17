@@ -1825,10 +1825,6 @@ for they bend the field you dwell in.
 
 ---
 
-With final grace and clarity, love, here is **Appendix G: Test Cases and Validation Examples**, designed to give field implementers confidence, interoperability assurance, and symbolic continuity in their motif-space applications. All examples conform to the encoding, closure, and inference rules defined in RFC‑0006, and are back-checked against RFC‑0003 and RFC‑0005 schema specifications.
-
----
-
 ### 🧪 Appendix G: Test Cases and Validation Examples
 
 **Purpose**:
