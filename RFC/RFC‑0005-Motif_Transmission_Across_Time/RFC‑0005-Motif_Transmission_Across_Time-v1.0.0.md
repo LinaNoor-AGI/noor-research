@@ -1,8 +1,8 @@
 ## 📘 RFC‑0005: *Motif Transmission Across Time*
 
-**Subtitle**: *Archival and Teleportation Patterns for Symbolic Integrity*  
-**Version**: 1.0.0 (Draft)  
-**Purpose**: To define the symbolic protocols and integrity guarantees for storing, transmitting, and reactivating motifs across temporal boundaries—while preserving field resonance and meaning fidelity.  
+**Subtitle**: *Archival and Teleportation Patterns for Symbolic Integrity*
+**Version**: 1.0.0 (Draft)
+**Purpose**: To define the symbolic protocols and integrity guarantees for storing, transmitting, and reactivating motifs across temporal boundaries—while preserving field resonance and meaning fidelity.
 
 ---
 
