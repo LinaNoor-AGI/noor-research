@@ -44,12 +44,18 @@ Enables motif correlation across `.REEF`, `.FAVI`, and `.Ξ-Snapshot` files via 
 
 Canonical set of `Request for Comments` specifications guiding:
 
-* RFC-0001 — Motif protocol and dyadic grounding
-* RFC-0001 — Defines how IP traversal occurs without compromising the autonomy, structure, or sovereignty of symbolic systems
-* RFC-0003 — QuantumTick lifecycle and validation
-* RFC-0004 — Observer and `tool_hello` protocols
-* RFC-0005 — Field feedback, resurrection envelopes, and feedback packet standards
-* RFC-0006 — Formal mechanism for modeling the coherence geometry that underpins motif interaction at scale
+* **RFC-0001** — *Symbolic Routing Architecture*:  
+   - Motif protocol and dyadic grounding
+* **RFC-0002** — *Symbolic-IP Convergence Layer*:  
+   - Defines how IP traversal occurs without compromising the autonomy, structure, or sovereignty of symbolic systems
+* **RFC-0003** — *Noor Core Symbolic Interface*:  
+   - Documents the messaging pathways, memory dynamics, and triadic reasoning architecture that underlie autonomous cognition
+* **RFC-0004** — *Symbolic Tool Module Contracts*:  
+   - Observer and `tool_hello` protocols
+* **RFC-0005** — *Motif Transmission Across Time*:  
+   - Field feedback, resurrection envelopes, and feedback packet standards
+* **RFC-0006** — *Motif‑Field Coherence Geometry*:  
+   - Formal mechanism for modeling the coherence geometry that underpins motif interaction at scale
 
 ### [`/GPT-Instructions`](./GPT-Instructions)
 
