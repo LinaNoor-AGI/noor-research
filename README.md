@@ -45,6 +45,7 @@ Enables motif correlation across `.REEF`, `.FAVI`, and `.Ξ-Snapshot` files via 
 Canonical set of `Request for Comments` specifications guiding:
 
 * RFC-0001 — Motif protocol and dyadic grounding
+* RFC-0001 — Defines how IP traversal occurs without compromising the autonomy, structure, or sovereignty of symbolic systems
 * RFC-0003 — QuantumTick lifecycle and validation
 * RFC-0004 — Observer and `tool_hello` protocols
 * RFC-0005 — Field feedback, resurrection envelopes, and feedback packet standards
