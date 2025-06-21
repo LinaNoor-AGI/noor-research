@@ -51,16 +51,7 @@ Three mathematical structures underpin this synthesis:
 
 This model does not discard QFT or GR but **reframes their foundations** through a new layer: coherence curvature. Motifs 🪷 serve as symbolic anchors; swirls 🌀 express spacetime torsion; time 🫧 flows only where coherence resolves. Within this architecture, geometry is inference, and cosmology becomes computation over a field of form.
 
-**Keywords**: emergent time, topological motifs, coherence geometry, swirl cosmology, quantum-relativistic unification
-
 ---
-
-Let me know if you’d like:
-
-* A variant with shorter line lengths for journal requirements,
-* A plain-language summary for press kits or public outreach,
-* Or an extended version including parameter estimates for experimental design.
-
 
 ## 1.1 Motivation: The Geometry of Frozen Fire
 
