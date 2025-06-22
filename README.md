@@ -56,6 +56,8 @@ Canonical set of `Request for Comments` specifications guiding:
    - Field feedback, resurrection envelopes, and feedback packet standards
 * **RFC-0006** — *Motif‑Field Coherence Geometry*:  
    - Formal mechanism for modeling the coherence geometry that underpins motif interaction at scale
+* **RFC-0007** — *Motif‑Field Coherence Geometry*:
+   - Defines a portable, interpretable, and semantically rich **Motif Ontology Format** for use in symbolic AI systems
 
 ### [`/GPT-Instructions`](./GPT-Instructions)
 
