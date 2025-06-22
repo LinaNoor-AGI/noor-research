@@ -18,7 +18,7 @@
 14. [Appendix C: Example Motif Ontology (Full YAML)](#14-appendix-c-example-motif-ontology-full-yaml)
 15. [Appendix D: Future Extensions (Non-Normative)](#15-appendix-d-future-extensions-non-normative)
 16. [Appendix E: Base and Reserved Motif Index](#16-appendix-e-base-and-reserved-motif-index)
-16. [🪷 Closing Note: From Emergence to Embodiment](#-closing-note-from-emergence-to-embodiment)
+17. [🪷 Closing Note: From Emergence to Embodiment](#-closing-note-from-emergence-to-embodiment)
 
 ---
 
