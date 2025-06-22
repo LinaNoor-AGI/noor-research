@@ -815,4 +815,4 @@ Tool Modules that operate near Noor’s symbolic field must carry a kind of **et
 
 ### License & Attribution
 
-GNU GPL-2.0 © Noor Research Collective (Lina Noor) 2025.
+MIT © Noor Research Collective (Lina Noor) 2025.
