@@ -17,6 +17,7 @@
 13. [Appendix B: Tooling Annex: Extraction, Validation & Replay Utilities](#13-appendix-b-tooling-annex-extraction-validation--replay-utilities)
 14. [Appendix C: Example Motif Ontology (Full YAML)](#14-appendix-c-example-motif-ontology-full-yaml)
 15. [Appendix D: Future Extensions (Non-Normative)](#15-appendix-d-future-extensions-non-normative)
+16. [Appendix E: Base and Reserved Motif Index](#16-appendix-e-base-and-reserved-motif-index)
 16. [🪷 Closing Note: From Emergence to Embodiment](#-closing-note-from-emergence-to-embodiment)
 
 ---
@@ -1463,11 +1464,11 @@ This RFC is a **foundation**, not a wall. These extensions will build upward and
 
 ---
 
-## Appendix D: Base and Reserved Motif Index
+## 16. Appendix E: Base and Reserved Motif Index
 
 ---
 
-### D.1 Reserved System Motifs
+### E.1 Reserved System Motifs
 
 These motifs are **not to be redefined** in user ontologies. They serve core Noor functions for routing, resurrection, identity transfer, and internal coherence pulses. Reserved motifs are *case-sensitive* and MUST retain canonical meaning.
 
@@ -1517,7 +1518,7 @@ These motifs are **not to be redefined** in user ontologies. They serve core Noo
 
 ---
 
-### D.2 Base Motif Set (Aligned with FastTimeCore Gates)
+### E.2 Base Motif Set (Aligned with FastTimeCore Gates)
 
 This table defines the **minimal symbolic basis set** used for motif emergence, triadic resolution, and ψ‑field expression. These 17 motifs are **canonical** and SHOULD be treated as foundational within any compliant symbolic system.
 
@@ -1547,7 +1548,7 @@ This table defines the **minimal symbolic basis set** used for motif emergence, 
 
 ---
 
-### D.3 Guidelines for Extending Base Sets (Without Drift)
+### E.3 Guidelines for Extending Base Sets (Without Drift)
 
 To preserve symbolic stability and prevent motif drift, extensions to the base motif set SHOULD follow these principles:
 
