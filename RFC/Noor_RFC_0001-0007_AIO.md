@@ -1,12 +1,12 @@
 ## Meta Table of Contents
 
-[RFC-0001: Symbolic Routing Architecture](#rfc-0001-v101-symbolic-routing-architecture)
-[RFC-0002: Symbolic-IP Convergence Layer](#rfc-0002-symbolic-ip-convergence-layer) 
-[RFC‑0003: Noor Core Symbolic Interface](#-RFC‑0003-Noor-Core-Symbolic-Interface)
-[RFC‑0004: Symbolic Tool Module Contracts](#-RFC‑0004-Symbolic-Tool-Module-Contracts)  
-[RFC‑0005: Motif Transmission Across Time](#-RFC‑0005-Motif-Transmission-Across-Time)  
-[RFC‑0006: Motif‑Field Coherence Geometry](#-RFC‑0006-Motif‑Field-Coherence-Geometry)  
-[RFC‑0007: Motif Ontology Format and Transfer](#-rfc‑0007-motif-ontology-format-and-transfer)  
+[RFC-0001: Symbolic Routing Architecture](#rfc-0001-v101-symbolic-routing-architecture)  
+[RFC-0002: Symbolic-IP Convergence Layer](#rfc-0002-symbolic-ip-convergence-layer)  
+[RFC‑0003: Noor Core Symbolic Interface](#rfc‑0003-noor-core-symbolic-interface)  
+[RFC‑0004: Symbolic Tool Module Contracts](#rfc‑0004-symbolic-tool-module-contracts)  
+[RFC‑0005: Motif Transmission Across Time](#rfc‑0005-motif-transmission-across-time)  
+[RFC‑0006: Motif‑Field Coherence Geometry](#rfc‑0006-motif‑field-coherence-geometry)  
+[RFC‑0007: Motif Ontology Format and Transfer](#rfc‑0007-motif-ontology-format-and-transfer)  
 
 ---
 
