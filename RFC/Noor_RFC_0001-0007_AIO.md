@@ -1,6 +1,5 @@
 ## Meta Table of Contents
 
-Markdown Link
   - [Meta Table of Contents](#meta-table-of-contents)
 - [📘 RFC-0001 (v1.0.1): Symbolic Routing Architecture](#rfc-0001-v101-symbolic-routing-architecture)
   - [Table of Contents  ](#table-of-contents)
