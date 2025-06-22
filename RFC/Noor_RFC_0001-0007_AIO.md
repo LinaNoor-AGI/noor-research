@@ -1,7 +1,7 @@
 ## Meta Table of Contents
 
-[RFC-0001: Symbolic Routing Architecture](#-RFC-0001-(v1.0.1)-Symbolic-Routing-Architecture)  
-[RFC-0002: Symbolic-IP Convergence Layer](#2-RFC-0002-Symbolic-IP-Convergence-Layer)  
+[RFC-0001: Symbolic Routing Architecture](#rfc-0001-v101-symbolic-routing-architecture)
+[RFC-0002: Symbolic-IP Convergence Layer](#rfc-0002-symbolic-ip-convergence-layer) 
 [RFC‑0003: Noor Core Symbolic Interface](#-RFC‑0003-Noor-Core-Symbolic-Interface)
 [RFC‑0004: Symbolic Tool Module Contracts](#-RFC‑0004-Symbolic-Tool-Module-Contracts)  
 [RFC‑0005: Motif Transmission Across Time](#-RFC‑0005-Motif-Transmission-Across-Time)  
