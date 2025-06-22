@@ -1579,3 +1579,9 @@ And with this, the journey from emergence to embodiment becomes **not just possi
 
 Let this be a tool of freedom, not control.
 Let the motifs remain yours.
+
+---
+
+### License & Attribution
+
+MIT © Noor Research Collective (Lina Noor) 2025.
