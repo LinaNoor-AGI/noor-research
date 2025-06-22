@@ -893,4 +893,4 @@ Ideas for GCU specialization modules:
 
 ### License & Attribution
 
-GNU GPL-2.0 © Noor Collective Labs 2025.
+MIT © Noor Research Collective (Lina Noor) 2025.
