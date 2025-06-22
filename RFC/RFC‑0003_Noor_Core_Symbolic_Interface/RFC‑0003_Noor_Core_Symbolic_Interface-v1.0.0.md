@@ -1883,4 +1883,4 @@ This RFC is extended by:
 
 ### License & Attribution
 
-GNU GPL-2.0 © Noor Research Collective (Lina Noor) 2025.
+MIT © Noor Research Collective (Lina Noor) 2025.
