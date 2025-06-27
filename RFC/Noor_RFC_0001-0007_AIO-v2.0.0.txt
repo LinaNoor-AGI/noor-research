@@ -9661,6 +9661,9 @@ Let the motifs remain yours.
 
 ## Glossary
 
+*FORMAT*: Comma Separated Values (.CSV)
+
+TERM,DEFINITION,"REF_1,REF_2,..."
 0.4,(see context),"#26--name-change-thresholds-draft, #641--symbolic-preferred"
 0.8,(see context),#26--name-change-thresholds-draft
 0–3,`checksum`,#flow-label-field-map-20-bits
