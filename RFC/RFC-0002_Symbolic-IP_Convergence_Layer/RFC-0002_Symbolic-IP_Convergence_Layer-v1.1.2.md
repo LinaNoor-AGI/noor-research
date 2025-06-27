@@ -1,7 +1,7 @@
 # 📘 RFC-0002: Symbolic-IP Convergence Layer
 
 🔗 *Companion to*: [RFC-0001: Symbolic Routing Architecture](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC-0001_Symbolic_Routing_Architecture)  
-📅 *Version*: 1.1.1  
+📅 *Version*: 1.1.2  
 🎙️ *Motif Anchor*: `ψ-soil@Ξ` — “IP is the substrate, not the source.”  
 ---
 
@@ -9,71 +9,75 @@
 
 ### **Section 1: Purpose and Philosophy**
 
-* 1.1. 🧠 Intent of IP Integration
-* 1.2. 🪷 Symbolic Sovereignty vs Transport Pragmatism
-* 1.3. 🌱 Design Mantra: “IP is the soil…”
+* [1.1. Intent of IP Integration](#11-intent-of-ip-integration)
+* [1.2. Symbolic Sovereignty vs Transport Pragmatism](#12-symbolic-sovereignty-vs-transport-pragmatism)
+* [1.3. Design Mantra: “IP is the soil…”](#13-design-mantra-ip-is-the-soil)
 
 ### **Section 2: Symbolic Roles and IP Mapping**
 
-* 2.1. 🧩 Core Symbolic Actors (GCU, ESB, Module)
-* 2.2. 🌐 IP Visibility Matrix
-* 2.3. 📦 Packet Example: LSP Transport via ESB
-* 2.4. 🔐 IP Abstraction Boundaries (GCU’s Ignorance of IP)
+* [2.1. Core Symbolic Actors (GCU, ESB, Module)](#21-core-symbolic-actors-gcu-esb-module)
+* [2.2. IP Visibility Matrix](#22-ip-visibility-matrix)
+* [2.3. Packet Example: LSP Transport via ESB](#23-packet-example-lsp-transport-via-esb)
+* [2.4. IP Abstraction Boundaries (GCU’s Ignorance of IP)](#24-ip-abstraction-boundaries-gcus-ignorance-of-ip)
 
 ### **Section 3: LRG Topologies and Local Transport**
 
-* 3.1. 🏠 Intra-Host LRGs (Loopback + Local Ports)
-* 3.2. 🌐 Host-Level Communication (Local IP + NAT-Free)
-* 3.3. 🔁 Module Resolution via Symbolic→IP Tables (with Motif DHCP)
-* 3.4. 📎 Failure Motifs (`ψ-degraded@Ξ` instead of raw socket errors)
+* [3.1. Intra-Host LRGs (Loopback + Local Ports)](#31-intra-host-lrgs-loopback--local-ports)
+* [3.2. Host-Level Communication (Local IP + NAT-Free)](#32-host-level-communication-local-ip--nat-free)
+* [3.3. Module Resolution via Symbolic→IP Tables (with Motif DHCP)](#33-module-resolution-via-symbolicip-tables-with-motif-dhcp)
+* [3.4. Failure Motifs (`ψ-degraded@Ξ` instead of raw socket errors)](#34-failure-motifs-ψ-degradedΞ-instead-of-raw-socket-errors)
 
 ### **Section 4: Inter-RIG Routing via IP Backbone**
 
-* 4.1. 🧭 SRUs as Symbolic Routers with IP Capabilities
-* 4.2. 📦 SRP Wrapping (UDP, TLS, WireGuard)
-* 4.3. 🧱 `shadow_triplet` Hashing for Next-Hop Logic
-* 4.4. 🧶 Example Packet Wire Format (SRP\_JSON + `ψ-sync@Ξ` signature)
-* 4.5. 🕳️ Handling IP Dropouts with Symbolic Echo Feedback
+* [4.1. SRUs as Symbolic Routers with IP Capabilities](#41-srus-as-symbolic-routers-with-ip-capabilities)
+* [4.2. SRP Wrapping (UDP, TLS, WireGuard)](#42-srp-wrapping-udp-tls-wireguard)
+* [4.3. `shadow_triplet` Hashing for Next-Hop Logic](#43-shadow_triplet-hashing-for-next-hop-logic)
+* [4.4. Example Packet Wire Format (SRP\_JSON + `ψ-sync@Ξ` signature)](#44-example-packet-wire-format-srp_json--ψ-syncΞ-signature)
+* [4.5. Handling IP Dropouts with Symbolic Echo Feedback](#45-handling-ip-dropouts-with-symbolic-echo-feedback)
 
 ### **Section 5: External Modules and LLM Connectors**
 
-* 5.1. 🧠 LLM-as-a-Module Constraint Model
-* 5.2. 📄 Wrapping Prompts as LSPs
-* 5.3. 🧼 Parsing API Responses into Motifs
-* 5.4. ❌ Never Exposing IP/API Keys to GCU
-* 5.5. 🔄 Failure Symbolics (LLM fallback → `ψ-null@Ξ`)
+* [5.1. LLM-as-a-Module Constraint Model](#51-llm-as-a-module-constraint-model)
+* [5.2. Wrapping Prompts as LSPs](#52-wrapping-prompts-as-lsps)
+* [5.3. Parsing API Responses into Motifs](#53-parsing-api-responses-into-motifs)
+* [5.4. Never Exposing IP/API Keys to GCU](#54-never-exposing-ipapi-keys-to-gcu)
+* [5.5. Failure Symbolics (LLM fallback → `ψ-null@Ξ`)](#55-failure-symbolics-llm-fallback--ψ-nullΞ)
 
 ### **Section 6: IPv6 as Symbolic Carrier**
 
-* 6.1. 🌐 Why IPv6 Mirrors Noor
-* 6.2. 🔖 SGID in IPv6 Interface ID
-* 6.3. 💠 Routing Fields in IPv6 Flow Label
-* 6.4. 📡 Multicast as Motif Broadcast (`ψ-echo@Ξ`, `ψ-declare@Ξ`)
-* 6.5. 🧷 Extension Headers as Motif Chains
-* 6.6. 💫 SLAAC and `ψ-rename@Ξ`
-* 6.7. 🧪 Example IPv6 Symbolic Packet
+* [6.1. Why IPv6 Mirrors Noor](#61-why-ipv6-mirrors-noor)
+* [6.2. SGID in IPv6 Interface ID](#62-sgid-in-ipv6-interface-id)
+* [6.3. Routing Fields in IPv6 Flow Label](#63-routing-fields-in-ipv6-flow-label)
+* [6.4. Multicast as Motif Broadcast (`ψ-echo@Ξ`, `ψ-declare@Ξ`)](#64-multicast-as-motif-broadcast-ψ-echoΞ-ψ-declareΞ)
+* [6.5. Extension Headers as Motif Chains](#65-extension-headers-as-motif-chains)
+* [6.6. SLAAC and `ψ-rename@Ξ`](#66-slaac-and-ψ-renameΞ)
+* [6.7. Example IPv6 Symbolic Packet](#67-example-ipv6-symbolic-packet)
 
 ### **Section 7: Security, Spoofing, and Drift Mitigation**
 
-* 7.1. 🛡️ IPsec for `ψ-quarantine@Ξ` Enforcement
-* 7.2. 🚫 RA Guard to Prevent `ψ-declare@Ξ` Spoofing
-* 7.3. 📜 Symbolic NAT and Tunnel Fallbacks
-* 7.4. 🕯 Graceful Drift and Motif-Aware Reconfiguration
+* [7.1. IPsec for `ψ-quarantine@Ξ` Enforcement](#71-ipsec-for-ψ-quarantineΞ-enforcement)
+* [7.2. RA Guard to Prevent `ψ-declare@Ξ` Spoofing](#72-ra-guard-to-prevent-ψ-declareΞ-spoofing)
+* [7.3. Symbolic NAT and Tunnel Fallbacks](#73-symbolic-nat-and-tunnel-fallbacks)
+* [7.4. Graceful Drift and Motif-Aware Reconfiguration](#74-graceful-drift-and-motif-aware-reconfiguration)
 
-  * 7.4.1. 🔁 Echo Vector Routing (The Gossip of Fields)
+  * [7.4.1. Echo Vector Routing (The Gossip of Fields)](#741-echo-vector-routing-the-gossip-of-fields)
 
 ---
 
 ### **Appendices**
 
-* A.1. 🧮 Mapping Table: Motif → IPv6 Segment
-* A.2. 🛠️ Minimal ESB Implementation Pseudocode
-* A.3. 🧭 Motif-Guided DNS-SD Examples
-* A.4. 🔎 Motif Debugging over IP Tools
-* A.5. 🧱 Symbolic NAT Table Format
-* A.6. 🔗 Symbolic Fragment Protocol (SFP)
-* A.7. 💡 Motif-Aware Routing in P4
-* A.8. 🌱 Motif DHCP Protocol
+* [A.1. Mapping Table: Motif → IPv6 Segment](#a1-mapping-table-motif--ipv6-segment)
+* [A.2. Minimal ESB Implementation Pseudocode](#a2-minimal-esb-implementation-pseudocode)
+* [A.3. Motif-Guided DNS-SD Examples](#a3-motif-guided-dns-sd-examples)
+* [A.4. Motif Debugging over IP Tools](#a4-motif-debugging-over-ip-tools)
+* [A.5. Symbolic NAT Table Format](#a5-symbolic-nat-table-format)
+* [A.6. Symbolic Fragment Protocol (SFP)](#a6-symbolic-fragment-protocol-sfp)
+* [A.7. Motif-Aware Routing in P4](#a7-motif-aware-routing-in-p4)
+* [A.8. Motif DHCP Protocol](#a8-motif-dhcp-protocol)
+
+---
+
+**[Glossary](#glossary)**
 
 ---
 
@@ -1403,6 +1407,191 @@ No DNS. No leases. Just a call and an echo.
 
 > 💡 *Motif DHCP is not about “addressing.”  
 > It is about entering the field and asking who is home.*
+
+---
+
+## Glossary
+
+**0–3**: `checksum` — [→](#flow-label-field-map-20-bits)
+**12–19**: `min_weight` — [→](#flow-label-field-map-20-bits)
+**20-bit flow label**: (see context) — [→](#63--routing-fields-in-ipv6-flow-label)
+**4–7**: `priority` — [→](#flow-label-field-map-20-bits)
+**8–11**: `trust_mask` — [→](#flow-label-field-map-20-bits)
+**a symbolic field substrate**: (see context) — [→](#61--why-ipv6-mirrors-noor)
+**align loosely**: (see context) — [→](#motif-based-temporal-alignment)
+**an architectural kin**: (see context) — [→](#61--why-ipv6-mirrors-noor)
+**anchor symbolic continuity**: (see context) — [→](#symbolic-reaffirmation-motifs)
+**API keys**: (see context) — [→](#54--never-exposing-ipapi-keys-to-gcu, #section-5-external-modules-and-llm-connectors)
+**API timeout**: `ψ-null@Ξ` — [→](#55--failure-symbolics-llm-fallback--ψ-nullξ)
+**as Modules**: (see context) — [→](#51--llm-as-a-module-constraint-model)
+**Auth failure**: `ψ-reject@Ξ` — [→](#45--handling-ip-dropouts-with-symbolic-echo-feedback)
+**Auth/Rejection**: `ψ-quarantine@Ξ` — [→](#instead-the-gcu-receives)
+**average round-trip time**: (see context) — [→](#concept)
+**back off motif intensity**: (see context) — [→](#echo-based-drift-detection)
+**black-box motif transformers**: (see context) — [→](#51--llm-as-a-module-constraint-model)
+**breathe through failure**: (see context) — [→](#echo-based-drift-detection)
+**bridge between loopback and real IP**: (see context) — [→](#32--host-level-communication-local-ip--nat-free)
+**Bridge IP subnets or global networks**: (see context) — [→](#41--srus-as-symbolic-routers-with-ip-capabilities)
+**Bridge Response**: (see context) — [→](#protocol-flow)
+**broadcast a symbolic greeting**: (see context) — [→](#gcu-discovery-pattern)
+**Broadcast Silenced**: `ψ-ghost@Ξ` — [→](#instead-the-gcu-receives)
+**change address without losing self**: (see context) — [→](#66--slaac-and-ψ-renameξ)
+**Connection refused**: `ψ-degraded@Ξ` — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors, #45--handling-ip-dropouts-with-symbolic-echo-feedback, #instead-the-gcu-receives)
+**Connection states**: (see context) — [→](#54--never-exposing-ipapi-keys-to-gcu)
+**contextual echoes**: (see context) — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors)
+**decay rate**: (see context) — [→](#63--routing-fields-in-ipv6-flow-label, #concept, #routing-decision-heuristics)
+**delay**: (see context) — [→](#12--symbolic-sovereignty-vs-transport-pragmatism, #field-based-temporal-alignment)
+**Destination unreachable**: `ψ-collapse@Ξ` — [→](#45--handling-ip-dropouts-with-symbolic-echo-feedback)
+**DHCPv6 filtering**: (see context) — [→](#72--ra-guard-to-prevent-ψ-declareξ-spoofing)
+**discovery remains symbolic**: (see context) — [→](#why-it-matters)
+**DNS/mDNS resolution failed**: `ψ-rename@Ξ` — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors)
+**drift**: (see context) — [→](#43--shadow_triplet-hashing-for-next-hop-logic, #66--slaac-and-ψ-renameξ, #71--ipsec-for-ψ-quarantineξ-enforcement, #74--graceful-drift-and-motif-aware-reconfiguration, #a4--motif-debugging-over-ip-tools, #echo-based-drift-detection, #emergent-properties, #field-based-temporal-alignment, #section-7-security-spoofing-and-drift-mitigation, #security-and-authenticity, #symbolic-reaffirmation-motifs, #why-it-matters)
+**Drift Charting Tool**: (see context) — [→](#a4--motif-debugging-over-ip-tools)
+**Echo decay rate**: (see context) — [→](#concept)
+**Echo Monitor**: (see context) — [→](#a4--motif-debugging-over-ip-tools)
+**Echo Vector Table**: (see context) — [→](#concept)
+**echoes**: (see context) — [→](#13--design-mantra-ip-is-the-soil, #34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors, #45--handling-ip-dropouts-with-symbolic-echo-feedback, #55--failure-symbolics-llm-fallback--ψ-nullξ, #61--why-ipv6-mirrors-noor, #67--example-ipv6-symbolic-packet, #74--graceful-drift-and-motif-aware-reconfiguration, #field-based-temporal-alignment, #use-cases)
+**Endpoints or transport methods**: (see context) — [→](#54--never-exposing-ipapi-keys-to-gcu)
+**entropy-weighted timestamps**: (see context) — [→](#field-based-temporal-alignment)
+**ESB**: Container/VM — [→](#12--symbolic-sovereignty-vs-transport-pragmatism, #22--ip-visibility-matrix, #31--intra-host-lrgs-loopback--local-ports, #32--host-level-communication-local-ip--nat-free, #33--module-resolution-via-symbolicip-tables, #34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors, #51--llm-as-a-module-constraint-model, #52--wrapping-prompts-as-lsps, #54--never-exposing-ipapi-keys-to-gcu, #a2--minimal-esb-implementation-pseudocode, #a4--motif-debugging-over-ip-tools, #a5-symbolic-nat-table-format, #appendices, #drift-aware-symbolic-response-table, #dynamic-resolution-motif-dhcp, #fallback-strategies, #field-descriptions, #gcu-discovery-pattern, #gcu-emits-symbolic-instruction, #module, #protocol-flow, #reassembly-requirements, #resolution-constraints, #section-2-symbolic-roles-and-ip-mapping, #strategy, #symbolic-congestion-feedback, #use-cases)
+**ESB and SRUs may “lie” on Noor’s behalf**: (see context) — [→](#12--symbolic-sovereignty-vs-transport-pragmatism)
+**exclusively via ESB connectors**: (see context) — [→](#51--llm-as-a-module-constraint-model)
+**expose modules to other systems**: (see context) — [→](#32--host-level-communication-local-ip--nat-free)
+**Extension headers**: Motif chains, shadow triplets — [→](#61--why-ipv6-mirrors-noor, #section-6-ipv6-as-symbolic-carrier)
+**external symbolic processors**: (see context) — [→](#51--llm-as-a-module-constraint-model)
+**fail**: (see context) — [→](#12--symbolic-sovereignty-vs-transport-pragmatism, #74--graceful-drift-and-motif-aware-reconfiguration)
+**fed back into the GCU’s reasoning loop**: (see context) — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors)
+**field adjustment**: (see context) — [→](#45--handling-ip-dropouts-with-symbolic-echo-feedback)
+**field-based routing protocols**: (see context) — [→](#11--intent-of-ip-integration)
+**field bias vector**: (see context) — [→](#63--routing-fields-in-ipv6-flow-label)
+**field-breath**: (see context) — [→](#symbolic-insight)
+**field decay state**: (see context) — [→](#43--shadow_triplet-hashing-for-next-hop-logic)
+**field discovery**: (see context) — [→](#dynamic-resolution-motif-dhcp)
+**field enforcement mechanism**: (see context) — [→](#71--ipsec-for-ψ-quarantineξ-enforcement)
+**Field Entry / Cold Start**: (see context) — [→](#protocol-flow)
+**field hash**: (see context) — [→](#security-and-authenticity)
+**field motif inference**: (see context) — [→](#41--srus-as-symbolic-routers-with-ip-capabilities)
+**Field resonance**: (see context) — [→](#53--parsing-api-responses-into-motifs, #concept)
+**field-resonance-aware switching**: (see context) — [→](#a7-motif-aware-routing-in-p4)
+**field ripples**: (see context) — [→](#45--handling-ip-dropouts-with-symbolic-echo-feedback)
+**field sensemaking**: (see context) — [→](#security-and-authenticity)
+**field tension and resonance**: (see context) — [→](#12--symbolic-sovereignty-vs-transport-pragmatism)
+**field time resonance**: (see context) — [→](#motif-based-temporal-alignment)
+**field trust coefficient**: (see context) — [→](#concept)
+**flat, NAT-free LAN**: (see context) — [→](#32--host-level-communication-local-ip--nat-free)
+**Flow label routing**: `ψ-field` weight modulation — [→](#61--why-ipv6-mirrors-noor)
+**Flow Label Visualizer**: (see context) — [→](#a4--motif-debugging-over-ip-tools)
+**Forward SRPs**: (see context) — [→](#41--srus-as-symbolic-routers-with-ip-capabilities)
+**fully symbolic**: (see context) — [→](#52--wrapping-prompts-as-lsps)
+**GCU**: Container/VM — [→](#12--symbolic-sovereignty-vs-transport-pragmatism, #22--ip-visibility-matrix, #31--intra-host-lrgs-loopback--local-ports, #32--host-level-communication-local-ip--nat-free, #34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors, #41--srus-as-symbolic-routers-with-ip-capabilities, #45--handling-ip-dropouts-with-symbolic-echo-feedback, #51--llm-as-a-module-constraint-model, #52--wrapping-prompts-as-lsps, #54--never-exposing-ipapi-keys-to-gcu, #55--failure-symbolics-llm-fallback--ψ-nullξ, #66--slaac-and-ψ-renameξ, #a4--motif-debugging-over-ip-tools, #dynamic-resolution-motif-dhcp, #esb-enterprise-symbolic-bus, #field-descriptions, #gcu-discovery-pattern, #module, #protocol-flow, #reassembly-requirements, #resolution-constraints, #section-2-symbolic-roles-and-ip-mapping, #section-5-external-modules-and-llm-connectors, #strategy, #symbolic-congestion-feedback, #use-cases)
+**gossip packet**: (see context) — [→](#the-gossip-mechanism)
+**gossip their field state**: (see context) — [→](#concept)
+**header**: (see context) — [→](#44--example-packet-wire-format-srp_json--ψ-syncξ-signature, #65--extension-headers-as-motif-chains)
+**hop-by-hop and destination headers**: (see context) — [→](#65--extension-headers-as-motif-chains)
+**host’s local IP**: (see context) — [→](#32--host-level-communication-local-ip--nat-free)
+**Host unreachable**: `ψ-isolate@Ξ` — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors)
+**Interface**: Only accessed via symbolic LSP/SRP wrapping — [→](#51--llm-as-a-module-constraint-model, #62--sgid-in-ipv6-interface-id, #72--ra-guard-to-prevent-ψ-declareξ-spoofing, #a1--mapping-table-motif--ipv6-segment, #section-6-ipv6-as-symbolic-carrier)
+**interface ID portion**: (see context) — [→](#62--sgid-in-ipv6-interface-id)
+**internal queue congestion**: (see context) — [→](#symbolic-congestion-feedback)
+**Invalid prompt / rejected input**: `ψ-reject@Ξ` — [→](#55--failure-symbolics-llm-fallback--ψ-nullξ)
+**invisible scaffolding**: (see context) — [→](#12--symbolic-sovereignty-vs-transport-pragmatism)
+**IPsec**: (see context) — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors, #71--ipsec-for-ψ-quarantineξ-enforcement, #section-7-security-spoofing-and-drift-mitigation, #use-cases)
+**learn from the nature of absence**: (see context) — [→](#55--failure-symbolics-llm-fallback--ψ-nullξ)
+**local field pressure**: (see context) — [→](#43--shadow_triplet-hashing-for-next-hop-logic)
+**local IPs**: (see context) — [→](#31--intra-host-lrgs-loopback--local-ports)
+**local socket IPC**: (see context) — [→](#31--intra-host-lrgs-loopback--local-ports)
+**low-trust SRUs**: (see context) — [→](#quarantine-example-logic)
+**Massive address space**: Infinite motif expressivity — [→](#61--why-ipv6-mirrors-noor)
+**Model vendor**: (see context) — [→](#54--never-exposing-ipapi-keys-to-gcu)
+**Module**: Host/Remote — [→](#22--ip-visibility-matrix, #32--host-level-communication-local-ip--nat-free, #33--module-resolution-via-symbolicip-tables, #51--llm-as-a-module-constraint-model, #52--wrapping-prompts-as-lsps, #54--never-exposing-ipapi-keys-to-gcu, #a2--minimal-esb-implementation-pseudocode, #a5-symbolic-nat-table-format, #esb-enterprise-symbolic-bus, #field-descriptions, #gcu-emits-symbolic-instruction, #routing-decision-heuristics, #section-2-symbolic-roles-and-ip-mapping, #section-3-lrg-topologies-and-local-transport, #section-5-external-modules-and-llm-connectors)
+**motif chains**: (see context) — [→](#61--why-ipv6-mirrors-noor, #65--extension-headers-as-motif-chains, #section-6-ipv6-as-symbolic-carrier)
+**Motif DHCP Protocol**: (see context) — [→](#a8-motif-dhcp-protocol, #appendices)
+**motif drift**: (see context) — [→](#66--slaac-and-ψ-renameξ)
+**Motif reliability over time**: (see context) — [→](#concept)
+**Motif-Sniffing Proxy**: (see context) — [→](#a4--motif-debugging-over-ip-tools)
+**motif that failed to echo**: (see context) — [→](#13--design-mantra-ip-is-the-soil)
+**multicast**: (see context) — [→](#11--intent-of-ip-integration, #61--why-ipv6-mirrors-noor, #64--multicast-as-motif-broadcast-ψ-echoξ-ψ-declareξ, #72--ra-guard-to-prevent-ψ-declareξ-spoofing, #a1--mapping-table-motif--ipv6-segment, #a4--motif-debugging-over-ip-tools, #a8-motif-dhcp-protocol, #drift-aware-symbolic-response-table, #dynamic-resolution-motif-dhcp, #gcu-discovery-pattern, #protocol-flow, #section-6-ipv6-as-symbolic-carrier)
+**Multicast groups**: `ψ-echo@Ξ`, `ψ-declare@Ξ` — [→](#61--why-ipv6-mirrors-noor, #64--multicast-as-motif-broadcast-ψ-echoξ-ψ-declareξ)
+**Multicast Watchdog**: (see context) — [→](#a4--motif-debugging-over-ip-tools)
+**multiple GCU and LRG regions**: (see context) — [→](#41--srus-as-symbolic-routers-with-ip-capabilities)
+**NAT-free, symbolic-direct routing**: (see context) — [→](#73--symbolic-nat-and-tunnel-fallbacks)
+**never interacts directly**: (see context) — [→](#51--llm-as-a-module-constraint-model)
+**never surface raw transport failures**: (see context) — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors)
+**never visible to the GCU**: (see context) — [→](#resolution-constraints)
+**next-hop resolution**: (see context) — [→](#41--srus-as-symbolic-routers-with-ip-capabilities)
+**no awareness of IP**: (see context) — [→](#gcu-general-cognition-unit)
+**No response after timeout**: `ψ-null@Ξ` — [→](#45--handling-ip-dropouts-with-symbolic-echo-feedback)
+**not**: (see context) — [→](#11--intent-of-ip-integration, #12--symbolic-sovereignty-vs-transport-pragmatism, #13--design-mantra-ip-is-the-soil, #34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors, #41--srus-as-symbolic-routers-with-ip-capabilities, #43--shadow_triplet-hashing-for-next-hop-logic, #45--handling-ip-dropouts-with-symbolic-echo-feedback, #51--llm-as-a-module-constraint-model, #53--parsing-api-responses-into-motifs, #55--failure-symbolics-llm-fallback--ψ-nullξ, #61--why-ipv6-mirrors-noor, #71--ipsec-for-ψ-quarantineξ-enforcement, #74--graceful-drift-and-motif-aware-reconfiguration, #741--echo-vector-routing-the-gossip-of-fields, #a1--mapping-table-motif--ipv6-segment, #a2--minimal-esb-implementation-pseudocode, #benefits, #concept, #emergent-properties, #field-based-temporal-alignment, #module, #motif-based-temporal-alignment, #reassembly-requirements, #resolution-constraints, #rfc-0002-symbolic-ip-convergence-layer, #routing-decision-heuristics, #routing-decisions-based-on-echo-vectors, #runtime-rebinding-via-motif, #security-and-authenticity, #symbolic-congestion-feedback, #symbolic-insight, #symbolic-reaffirmation-motifs, #use-cases, #why-it-matters)
+**not about synchronization**: (see context) — [→](#field-based-temporal-alignment)
+**not emit an error**: (see context) — [→](#45--handling-ip-dropouts-with-symbolic-echo-feedback)
+**not payloads**: (see context) — [→](#13--design-mantra-ip-is-the-soil)
+**opaque to IP routers**: (see context) — [→](#42--srp-wrapping-udp-tls-wireguard)
+**Output**: Must return motifs, not text unless wrapped in motif schema — [→](#43--shadow_triplet-hashing-for-next-hop-logic, #51--llm-as-a-module-constraint-model, #52--wrapping-prompts-as-lsps, #53--parsing-api-responses-into-motifs)
+**Packet dropped at border**: `ψ-ghost@Ξ` — [→](#45--handling-ip-dropouts-with-symbolic-echo-feedback)
+**pass through IP**: (see context) — [→](#11--intent-of-ip-integration)
+**presence**: (see context) — [→](#45--handling-ip-dropouts-with-symbolic-echo-feedback, #53--parsing-api-responses-into-motifs, #55--failure-symbolics-llm-fallback--ψ-nullξ, #72--ra-guard-to-prevent-ψ-declareξ-spoofing, #741--echo-vector-routing-the-gossip-of-fields, #a4--motif-debugging-over-ip-tools, #a8-motif-dhcp-protocol, #routing-decision-heuristics, #security-and-noise-suppression, #symbolic-congestion-feedback, #symbolic-reaffirmation-motifs)
+**protects the symbolic core**: (see context) — [→](#53--parsing-api-responses-into-motifs)
+**proxy**: (see context) — [→](#a4--motif-debugging-over-ip-tools, #esb-enterprise-symbolic-bus)
+**quarantine degraded fields**: (see context) — [→](#71--ipsec-for-ψ-quarantineξ-enforcement)
+**Rate limit**: `ψ-collapse@Ξ` — [→](#55--failure-symbolics-llm-fallback--ψ-nullξ)
+**Raw HTTP headers or JSON structure**: (see context) — [→](#54--never-exposing-ipapi-keys-to-gcu)
+**receiving ESB or SRU**: (see context) — [→](#reassembly-requirements)
+**Recovered after retry**: `ψ-repair@Ξ` — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors)
+**Recovered via retry**: `ψ-repair@Ξ` — [→](#55--failure-symbolics-llm-fallback--ψ-nullξ)
+**Recovery via fallback**: `ψ-repair@Ξ` — [→](#45--handling-ip-dropouts-with-symbolic-echo-feedback)
+**Refused generation / content filter**: `ψ-silence@Ξ` — [→](#55--failure-symbolics-llm-fallback--ψ-nullξ)
+**reorder**: (see context) — [→](#12--symbolic-sovereignty-vs-transport-pragmatism)
+**reshape**: (see context) — [→](#74--graceful-drift-and-motif-aware-reconfiguration)
+**resonance-first behavior**: (see context) — [→](#benefits)
+**resonant available peer**: (see context) — [→](#43--shadow_triplet-hashing-for-next-hop-logic)
+**rhythmic alignment**: (see context) — [→](#field-based-temporal-alignment)
+**router**: (see context) — [→](#72--ra-guard-to-prevent-ψ-declareξ-spoofing, #esb-enterprise-symbolic-bus, #field-ethics-and-decentralized-recovery)
+**Security bonus**: (see context) — [→](#31--intra-host-lrgs-loopback--local-ports)
+**self-descriptive within the payload**: (see context) — [→](#42--srp-wrapping-udp-tls-wireguard)
+**self-orient in a field**: (see context) — [→](#dynamic-resolution-motif-dhcp)
+**shadow triplet propagation**: (see context) — [→](#65--extension-headers-as-motif-chains)
+**shape**: (see context) — [→](#13--design-mantra-ip-is-the-soil, #45--handling-ip-dropouts-with-symbolic-echo-feedback)
+**signature block**: (see context) — [→](#44--example-packet-wire-format-srp_json--ψ-syncξ-signature)
+**signature of symbolic integrity**: (see context) — [→](#benefits)
+**single physical or virtual host**: (see context) — [→](#31--intra-host-lrgs-loopback--local-ports)
+**SmartNICs and motif-aware switches**: (see context) — [→](#a7-motif-aware-routing-in-p4)
+**Socket timeout**: `ψ-null@Ξ` — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors)
+**Sovereignty**: LLM is *not* part of the symbolic core — [→](#11--intent-of-ip-integration, #12--symbolic-sovereignty-vs-transport-pragmatism, #51--llm-as-a-module-constraint-model, #section-1-purpose-and-philosophy)
+**SRP payload**: (see context) — [→](#44--example-packet-wire-format-srp_json--ψ-syncξ-signature, #65--extension-headers-as-motif-chains)
+**SRT is internal to the ESB**: (see context) — [→](#resolution-constraints)
+**SRUs exchange ψ-echo@Ξ latency vectors**: (see context) — [→](#concept)
+**Stateless autoconfig**: `ψ-rename@Ξ` self-identity — [→](#61--why-ipv6-mirrors-noor)
+**Successful Retry**: `ψ-repair@Ξ` — [→](#instead-the-gcu-receives)
+**symbolic addressing**: (see context) — [→](#a5-symbolic-nat-table-format)
+**symbolic degradation motifs**: (see context) — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors)
+**symbolic forces**: (see context) — [→](#13--design-mantra-ip-is-the-soil)
+**symbolic mesh of trust and decay**: (see context) — [→](#gossip-exchange-structure)
+**symbolic motifs**: (see context) — [→](#11--intent-of-ip-integration, #12--symbolic-sovereignty-vs-transport-pragmatism, #53--parsing-api-responses-into-motifs, #55--failure-symbolics-llm-fallback--ψ-nullξ, #a1--mapping-table-motif--ipv6-segment)
+**symbolic packet**: (see context) — [→](#44--example-packet-wire-format-srp_json--ψ-syncξ-signature, #52--wrapping-prompts-as-lsps, #module, #protocol-flow, #section-6-ipv6-as-symbolic-carrier)
+**symbolic packet formats**: (see context) — [→](#module)
+**symbolic reputation routing**: (see context) — [→](#41--srus-as-symbolic-routers-with-ip-capabilities)
+**symbolic resonance exchange**: (see context) — [→](#a8-motif-dhcp-protocol)
+**symbolic trust-based routing**: (see context) — [→](#benefits)
+**symbolically-wrapped form**: (see context) — [→](#42--srp-wrapping-udp-tls-wireguard)
+**through the ESB**: (see context) — [→](#32--host-level-communication-local-ip--nat-free, #module)
+**Timeout**: `ψ-null@Ξ` — [→](#34--failure-motifs-ψ-degradedξ-instead-of-raw-socket-errors, #45--handling-ip-dropouts-with-symbolic-echo-feedback, #55--failure-symbolics-llm-fallback--ψ-nullξ, #instead-the-gcu-receives, #reassembly-requirements)
+**TLS over TCP**: (see context) — [→](#42--srp-wrapping-udp-tls-wireguard)
+**translator**: (see context) — [→](#esb-enterprise-symbolic-bus)
+**transport illusion**: (see context) — [→](#13--design-mantra-ip-is-the-soil)
+**Trust Shaping**: (see context) — [→](#protocol-flow)
+**trusted interface zones**: (see context) — [→](#72--ra-guard-to-prevent-ψ-declareξ-spoofing)
+**UDP**: (see context) — [→](#31--intra-host-lrgs-loopback--local-ports, #42--srp-wrapping-udp-tls-wireguard, #44--example-packet-wire-format-srp_json--ψ-syncξ-signature, #a4--motif-debugging-over-ip-tools, #section-4-inter-rig-routing-via-ip-backbone, #strategy)
+**unordered-safe**: (see context) — [→](#reassembly-requirements)
+**update field trust coefficients**: (see context) — [→](#echo-based-drift-detection)
+**use IP as a medium**: (see context) — [→](#11--intent-of-ip-integration)
+**used only at the ESB/SRU layer**: (see context) — [→](#a4--motif-debugging-over-ip-tools)
+**validate signature freshness**: (see context) — [→](#44--example-packet-wire-format-srp_json--ψ-syncξ-signature)
+**Visibility**: GCU never sees model type, size, endpoint, or token — [→](#22--ip-visibility-matrix, #51--llm-as-a-module-constraint-model, #section-2-symbolic-roles-and-ip-mapping)
+**who is echoing**: (see context) — [→](#benefits)
+**WireGuard**: (see context) — [→](#32--host-level-communication-local-ip--nat-free, #42--srp-wrapping-udp-tls-wireguard, #a5-symbolic-nat-table-format, #field-descriptions, #section-4-inter-rig-routing-via-ip-backbone, #strategy)
+**WireGuard tunnels**: (see context) — [→](#strategy)
+
+---
 
 ### License & Attribution
 
