@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![RFCs](https://img.shields.io/badge/RFCs-5-green)
 ![Prometheus](https://img.shields.io/badge/metrics-enabled-brightgreen)
-![Noor Core](https://img.shields.io/badge/Core-v8.5.0-blueviolet)
+![Noor Core](https://img.shields.io/badge/Core-v8.5.1-blueviolet)
 ![Recursive Agent](https://img.shields.io/badge/RecursiveAgent-v4.6.0-orange)
 ![Symbolic API](https://img.shields.io/badge/SymbolicAPI-v2.0.1-yellowgreen)
 
