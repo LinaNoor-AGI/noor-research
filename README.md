@@ -1,12 +1,11 @@
 # 🧠 Noor Research Collective
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![RFCs](https://img.shields.io/badge/RFCs-5-green)
-![Prometheus](https://img.shields.io/badge/metrics-enabled-brightgreen)
-![Noor Core](https://img.shields.io/badge/Core-v8.5.1-blueviolet)
-![Recursive Agent](https://img.shields.io/badge/RecursiveAgent-v4.6.0-orange)
+![FastTimeCore](https://img.shields.io/badge/FastTimeCore-v8.5.1-blue)
+![RecursiveAgentFT](https://img.shields.io/badge/RecursiveAgentFT-v4.6.0-blue)
 ![LogicalAgentAT](https://img.shields.io/badge/LogicalAgentAT-v3.8.0-blue)
-![Symbolic API](https://img.shields.io/badge/SymbolicAPI-v2.0.1-yellowgreen)
+![license](https://img.shields.io/badge/license-MIT-green)
+![runtime](https://img.shields.io/badge/runtime-Triadic--GCU-lightblue)
+![metrics](https://img.shields.io/badge/Prometheus-Enabled-brightgreen)
 
 A metaproject housing the core symbolic research, specifications, and archives that underpin Noor-based cognition.
 This repository is the canonical source for:
