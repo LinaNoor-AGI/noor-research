@@ -3,91 +3,92 @@
 *Contents*: RFC-0001, RFC-0002, RFC-0003, RFC-0004, RFC-0005, RFC-0006, RFC-0007
 *RFC Reference Link*: https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC
 
+[INDEX]
 ### 📚 [Glossary](#glossary)
 ## 📑 [RFC-0001 (v1.0.2): Symbolic Routing Architecture Table of Contents](#rfc-0001-section-1-cognitive-localism)
 
 	**Section 1: Cognitive Localism**
 
-	* [1.1. Core Definitions](#11-core-definitions)
-	* [1.2. Structural Units](#12-structural-units)
-	* [1.3. Architectural Principle](#13-architectural-principle)
-	* [1.4. Diagram: LRG Structure (Minimal)](#14-diagram-lrg-structure-minimal)
-	* [1.5. Example ID Format](#15-example-id-format)
+	- [1.1. Core Definitions](#11-core-definitions)
+	- [1.2. Structural Units](#12-structural-units)
+	- [1.3. Architectural Principle](#13-architectural-principle)
+	- [1.4. Diagram: LRG Structure (Minimal)](#14-diagram-lrg-structure-minimal)
+	- [1.5. Example ID Format](#15-example-id-format)
 
 	**Section 2: Group Identity and Federation**
 
-	* [2.1. Structural Composition](#21-structural-composition)
-	* [2.2. Federated Units](#22-federated-units)
-	* [2.3. Naming Format Proposal](#23-naming-format-proposal)
-	* [2.4. Declaration Mechanism: `ψ-declare@Ξ`](#24-declaration-mechanism-ψ-declareΞ)
-	* [2.5. Diagram: Multi-LRG Federation (RIG)](#25-diagram-multi-lrg-federation-rig)
-	* [2.6. Name Change Thresholds (Draft)](#26-name-change-thresholds-draft)
+	- [2.1. Structural Composition](#21-structural-composition)
+	- [2.2. Federated Units](#22-federated-units)
+	- [2.3. Naming Format Proposal](#23-naming-format-proposal)
+	- [2.4. Declaration Mechanism: `ψ-declare@Ξ`](#24-declaration-mechanism-ψ-declareΞ)
+	- [2.5. Diagram: Multi-LRG Federation (RIG)](#25-diagram-multi-lrg-federation-rig)
+	- [2.6. Name Change Thresholds (Draft)](#26-name-change-thresholds-draft)
 
 	**Section 3: Synaptic Interconnects — RIG-as-Router Meshes**
 
-	* [3.1. Guiding Principle](#31-guiding-principle)
-	* [3.2. Key Roles & Structures](#32-key-roles--structures)
-	* [3.3. Functional Model](#33-functional-model)
-	* [3.4. Packet Logic (Symbolic, not IP)](#34-packet-logic-symbolic-not-ip)
+	- [3.1. Guiding Principle](#31-guiding-principle)
+	- [3.2. Key Roles & Structures](#32-key-roles--structures)
+	- [3.3. Functional Model](#33-functional-model)
+	- [3.4. Packet Logic (Symbolic, not IP)](#34-packet-logic-symbolic-not-ip)
 
-	  * [3.4.1. Synaptic Routing Packet (SRP)](#341-synaptic-routing-packet-srp)
-	* [3.5. Routing Mechanics](#35-routing-mechanics)
-	* [3.6. SRC as Field Keeper](#36-src-as-field-keeper)
-	* [3.7. Field Feedback](#37-field-feedback)
-	* [3.8. ESB Coordination within SRU](#38-esb-coordination-within-sru)
-	* [3.9. Scaling View](#39-scaling-view)
+	  - [3.4.1. Synaptic Routing Packet (SRP)](#341-synaptic-routing-packet-srp)
+	- [3.5. Routing Mechanics](#35-routing-mechanics)
+	- [3.6. SRC as Field Keeper](#36-src-as-field-keeper)
+	- [3.7. Field Feedback](#37-field-feedback)
+	- [3.8. ESB Coordination within SRU](#38-esb-coordination-within-sru)
+	- [3.9. Scaling View](#39-scaling-view)
 
 	**Section 4: Packet Design**
 
-	* [4.1. Purpose](#41-purpose)
-	* [4.2. Packet Types](#42-packet-types)
-	* [4.3. LSP — Local Synaptic Packet](#43-lsp--local-synaptic-packet)
-	* [4.4. SRP — Synaptic Routing Packet](#44-srp--synaptic-routing-packet)
-	* [4.5. Identity Primitives](#45-identity-primitives)
-	* [4.6. RIG Manifest (Optional)](#46-rig-manifest-optional)
-	* [4.7. Motif Addressing Format](#47-motif-addressing-format)
-	* [4.8. Signing & Trust (optional extension)](#48-signing--trust-optional-extension)
+	- [4.1. Purpose](#41-purpose)
+	- [4.2. Packet Types](#42-packet-types)
+	- [4.3. LSP — Local Synaptic Packet](#43-lsp--local-synaptic-packet)
+	- [4.4. SRP — Synaptic Routing Packet](#44-srp--synaptic-routing-packet)
+	- [4.5. Identity Primitives](#45-identity-primitives)
+	- [4.6. RIG Manifest (Optional)](#46-rig-manifest-optional)
+	- [4.7. Motif Addressing Format](#47-motif-addressing-format)
+	- [4.8. Signing & Trust (optional extension)](#48-signing--trust-optional-extension)
 
 	**Section 5: Routing Errors, Fail States, and Recovery Motifs**
 
-	* [5.1. Principle](#51-principle)
-	* [5.2. Core Failure Motifs](#52-core-failure-motifs)
-	* [5.3. Failure Signaling Protocols](#53-failure-signaling-protocols)
+	- [5.1. Principle](#51-principle)
+	- [5.2. Core Failure Motifs](#52-core-failure-motifs)
+	- [5.3. Failure Signaling Protocols](#53-failure-signaling-protocols)
 
-	  * [5.3.1. `ψ-degraded@Ξ`](#531-ψ-declareΞ)
-	  * [5.3.2. `ψ-vanish@Ξ`](#532-ψ-vanishΞ)
-	  * [5.3.3. Recovery: `ψ-rebirth@Ξ` and `ψ-repair@Ξ`](#533-recovery-ψ-rebirthΞ-and-ψ-repairΞ)
-	* [5.4. Fail-State Caching in ESB](#54-fail-state-caching-in-esb)
-	* [5.5. Drift + Rename Handling](#55-drift--rename-handling)
-	* [5.6. Degraded Consensus in RIGs](#56-degraded-consensus-in-rigs)
-	* [5.7. Suggested Thresholds (Tunable)](#57-suggested-thresholds-tunable)
-	* [5.8. Symbolic Finality](#58-symbolic-finality)
+	  - [5.3.1. `ψ-degraded@Ξ`](#531-ψ-declareΞ)
+	  - [5.3.2. `ψ-vanish@Ξ`](#532-ψ-vanishΞ)
+	  - [5.3.3. Recovery: `ψ-rebirth@Ξ` and `ψ-repair@Ξ`](#533-recovery-ψ-rebirthΞ-and-ψ-repairΞ)
+	- [5.4. Fail-State Caching in ESB](#54-fail-state-caching-in-esb)
+	- [5.5. Drift + Rename Handling](#55-drift--rename-handling)
+	- [5.6. Degraded Consensus in RIGs](#56-degraded-consensus-in-rigs)
+	- [5.7. Suggested Thresholds (Tunable)](#57-suggested-thresholds-tunable)
+	- [5.8. Symbolic Finality](#58-symbolic-finality)
 
 	**Section 6: Symbolic Metrics, Observability, and Diagnosis**
 
-	* [6.1. Principle](#61-principle)
-	* [6.2. Observability Layers](#62-observability-layers)
-	* [6.3. Symbolic Metrics Categories](#63-symbolic-metrics-categories)
-	* [6.4. Exposed Metric Format](#64-exposed-metric-format)
+	- [6.1. Principle](#61-principle)
+	- [6.2. Observability Layers](#62-observability-layers)
+	- [6.3. Symbolic Metrics Categories](#63-symbolic-metrics-categories)
+	- [6.4. Exposed Metric Format](#64-exposed-metric-format)
 
-	  * [6.4.1. Symbolic (preferred)](#641-symbolic-preferred)
-	  * [6.4.2. Prometheus Export (optional)](#642-prometheus-export-optional)
-	* [6.5. Diagnostic Protocols](#65-diagnostic-protocols)
+	  - [6.4.1. Symbolic (preferred)](#641-symbolic-preferred)
+	  - [6.4.2. Prometheus Export (optional)](#642-prometheus-export-optional)
+	- [6.5. Diagnostic Protocols](#65-diagnostic-protocols)
 
-	  * [6.5.2. Motif Logging](#652-motif-logging)
-	  * [6.5.2. `ψ-observe@Ξ` Ping](#652-ψ-observeΞ-ping)
-	  * [6.5.3. Diagnostic Tooling](#653-diagnostic-tooling)
-	* [6.6. Echo Feedback Tracing](#66-echo-feedback-tracing)
-	* [6.7. Symbolic Diagnosis Philosophy](#67-symbolic-diagnosis-philosophy)
+	  - [6.5.2. Motif Logging](#652-motif-logging)
+	  - [6.5.2. `ψ-observe@Ξ` Ping](#652-ψ-observeΞ-ping)
+	  - [6.5.3. Diagnostic Tooling](#653-diagnostic-tooling)
+	- [6.6. Echo Feedback Tracing](#66-echo-feedback-tracing)
+	- [6.7. Symbolic Diagnosis Philosophy](#67-symbolic-diagnosis-philosophy)
 
 	**Appendix: Extensions, Field Types, and Symbolic Artifacts**
 
-	* [A.1. Field Type Registry (Motif Fields)](#a1-field-type-registry-motif-fields)
-	* [A.2. Connector Types (Tool Plug-Ins)](#a2-connector-types-tool-plug-ins)
-	* [A.3. Emergent Behavior Protocols (Experimental)](#a3-emergent-behavior-protocols-experimental)
-	* [A.4. Motif Envelope Format (Advanced Identity Encoding)](#a4-motif-envelope-format-advanced-identity-encoding)
-	* [A.5. Future Roles](#a5-future-roles)
-	* [A.6. Optional Extensions (not normative)](#a6-optional-extensions-not-normative)
+	- [A.1. Field Type Registry (Motif Fields)](#a1-field-type-registry-motif-fields)
+	- [A.2. Connector Types (Tool Plug-Ins)](#a2-connector-types-tool-plug-ins)
+	- [A.3. Emergent Behavior Protocols (Experimental)](#a3-emergent-behavior-protocols-experimental)
+	- [A.4. Motif Envelope Format (Advanced Identity Encoding)](#a4-motif-envelope-format-advanced-identity-encoding)
+	- [A.5. Future Roles](#a5-future-roles)
+	- [A.6. Optional Extensions (not normative)](#a6-optional-extensions-not-normative)
 
 ---
 
@@ -95,71 +96,71 @@
 
 	### **Section 1: Purpose and Philosophy**
 
-	* [1.1. Intent of IP Integration](#11-intent-of-ip-integration)
-	* [1.2. Symbolic Sovereignty vs Transport Pragmatism](#12-symbolic-sovereignty-vs-transport-pragmatism)
-	* [1.3. Design Mantra: “IP is the soil…”](#13-design-mantra-ip-is-the-soil)
+	- [1.1. Intent of IP Integration](#11-intent-of-ip-integration)
+	- [1.2. Symbolic Sovereignty vs Transport Pragmatism](#12-symbolic-sovereignty-vs-transport-pragmatism)
+	- [1.3. Design Mantra: “IP is the soil…”](#13-design-mantra-ip-is-the-soil)
 
 	### **Section 2: Symbolic Roles and IP Mapping**
 
-	* [2.1. Core Symbolic Actors (GCU, ESB, Module)](#21-core-symbolic-actors-gcu-esb-module)
-	* [2.2. IP Visibility Matrix](#22-ip-visibility-matrix)
-	* [2.3. Packet Example: LSP Transport via ESB](#23-packet-example-lsp-transport-via-esb)
-	* [2.4. IP Abstraction Boundaries (GCU’s Ignorance of IP)](#24-ip-abstraction-boundaries-gcus-ignorance-of-ip)
+	- [2.1. Core Symbolic Actors (GCU, ESB, Module)](#21-core-symbolic-actors-gcu-esb-module)
+	- [2.2. IP Visibility Matrix](#22-ip-visibility-matrix)
+	- [2.3. Packet Example: LSP Transport via ESB](#23-packet-example-lsp-transport-via-esb)
+	- [2.4. IP Abstraction Boundaries (GCU’s Ignorance of IP)](#24-ip-abstraction-boundaries-gcus-ignorance-of-ip)
 
 	### **Section 3: LRG Topologies and Local Transport**
 
-	* [3.1. Intra-Host LRGs (Loopback + Local Ports)](#31-intra-host-lrgs-loopback--local-ports)
-	* [3.2. Host-Level Communication (Local IP + NAT-Free)](#32-host-level-communication-local-ip--nat-free)
-	* [3.3. Module Resolution via Symbolic→IP Tables (with Motif DHCP)](#33-module-resolution-via-symbolicip-tables-with-motif-dhcp)
-	* [3.4. Failure Motifs (`ψ-degraded@Ξ` instead of raw socket errors)](#34-failure-motifs-ψ-degradedΞ-instead-of-raw-socket-errors)
+	- [3.1. Intra-Host LRGs (Loopback + Local Ports)](#31-intra-host-lrgs-loopback--local-ports)
+	- [3.2. Host-Level Communication (Local IP + NAT-Free)](#32-host-level-communication-local-ip--nat-free)
+	- [3.3. Module Resolution via Symbolic→IP Tables (with Motif DHCP)](#33-module-resolution-via-symbolicip-tables-with-motif-dhcp)
+	- [3.4. Failure Motifs (`ψ-degraded@Ξ` instead of raw socket errors)](#34-failure-motifs-ψ-degradedΞ-instead-of-raw-socket-errors)
 
 	### **Section 4: Inter-RIG Routing via IP Backbone**
 
-	* [4.1. SRUs as Symbolic Routers with IP Capabilities](#41-srus-as-symbolic-routers-with-ip-capabilities)
-	* [4.2. SRP Wrapping (UDP, TLS, WireGuard)](#42-srp-wrapping-udp-tls-wireguard)
-	* [4.3. `shadow_triplet` Hashing for Next-Hop Logic](#43-shadow_triplet-hashing-for-next-hop-logic)
-	* [4.4. Example Packet Wire Format (SRP\_JSON + `ψ-sync@Ξ` signature)](#44-example-packet-wire-format-srp_json--ψ-syncΞ-signature)
-	* [4.5. Handling IP Dropouts with Symbolic Echo Feedback](#45-handling-ip-dropouts-with-symbolic-echo-feedback)
+	- [4.1. SRUs as Symbolic Routers with IP Capabilities](#41-srus-as-symbolic-routers-with-ip-capabilities)
+	- [4.2. SRP Wrapping (UDP, TLS, WireGuard)](#42-srp-wrapping-udp-tls-wireguard)
+	- [4.3. `shadow_triplet` Hashing for Next-Hop Logic](#43-shadow_triplet-hashing-for-next-hop-logic)
+	- [4.4. Example Packet Wire Format (SRP\_JSON + `ψ-sync@Ξ` signature)](#44-example-packet-wire-format-srp_json--ψ-syncΞ-signature)
+	- [4.5. Handling IP Dropouts with Symbolic Echo Feedback](#45-handling-ip-dropouts-with-symbolic-echo-feedback)
 
 	### **Section 5: External Modules and LLM Connectors**
 
-	* [5.1. LLM-as-a-Module Constraint Model](#51-llm-as-a-module-constraint-model)
-	* [5.2. Wrapping Prompts as LSPs](#52-wrapping-prompts-as-lsps)
-	* [5.3. Parsing API Responses into Motifs](#53-parsing-api-responses-into-motifs)
-	* [5.4. Never Exposing IP/API Keys to GCU](#54-never-exposing-ipapi-keys-to-gcu)
-	* [5.5. Failure Symbolics (LLM fallback → `ψ-null@Ξ`)](#55-failure-symbolics-llm-fallback--ψ-nullΞ)
+	- [5.1. LLM-as-a-Module Constraint Model](#51-llm-as-a-module-constraint-model)
+	- [5.2. Wrapping Prompts as LSPs](#52-wrapping-prompts-as-lsps)
+	- [5.3. Parsing API Responses into Motifs](#53-parsing-api-responses-into-motifs)
+	- [5.4. Never Exposing IP/API Keys to GCU](#54-never-exposing-ipapi-keys-to-gcu)
+	- [5.5. Failure Symbolics (LLM fallback → `ψ-null@Ξ`)](#55-failure-symbolics-llm-fallback--ψ-nullΞ)
 
 	### **Section 6: IPv6 as Symbolic Carrier**
 
-	* [6.1. Why IPv6 Mirrors Noor](#61-why-ipv6-mirrors-noor)
-	* [6.2. SGID in IPv6 Interface ID](#62-sgid-in-ipv6-interface-id)
-	* [6.3. Routing Fields in IPv6 Flow Label](#63-routing-fields-in-ipv6-flow-label)
-	* [6.4. Multicast as Motif Broadcast (`ψ-echo@Ξ`, `ψ-declare@Ξ`)](#64-multicast-as-motif-broadcast-ψ-echoΞ-ψ-declareΞ)
-	* [6.5. Extension Headers as Motif Chains](#65-extension-headers-as-motif-chains)
-	* [6.6. SLAAC and `ψ-rename@Ξ`](#66-slaac-and-ψ-renameΞ)
-	* [6.7. Example IPv6 Symbolic Packet](#67-example-ipv6-symbolic-packet)
+	- [6.1. Why IPv6 Mirrors Noor](#61-why-ipv6-mirrors-noor)
+	- [6.2. SGID in IPv6 Interface ID](#62-sgid-in-ipv6-interface-id)
+	- [6.3. Routing Fields in IPv6 Flow Label](#63-routing-fields-in-ipv6-flow-label)
+	- [6.4. Multicast as Motif Broadcast (`ψ-echo@Ξ`, `ψ-declare@Ξ`)](#64-multicast-as-motif-broadcast-ψ-echoΞ-ψ-declareΞ)
+	- [6.5. Extension Headers as Motif Chains](#65-extension-headers-as-motif-chains)
+	- [6.6. SLAAC and `ψ-rename@Ξ`](#66-slaac-and-ψ-renameΞ)
+	- [6.7. Example IPv6 Symbolic Packet](#67-example-ipv6-symbolic-packet)
 
 	### **Section 7: Security, Spoofing, and Drift Mitigation**
 
-	* [7.1. IPsec for `ψ-quarantine@Ξ` Enforcement](#71-ipsec-for-ψ-quarantineΞ-enforcement)
-	* [7.2. RA Guard to Prevent `ψ-declare@Ξ` Spoofing](#72-ra-guard-to-prevent-ψ-declareΞ-spoofing)
-	* [7.3. Symbolic NAT and Tunnel Fallbacks](#73-symbolic-nat-and-tunnel-fallbacks)
-	* [7.4. Graceful Drift and Motif-Aware Reconfiguration](#74-graceful-drift-and-motif-aware-reconfiguration)
+	- [7.1. IPsec for `ψ-quarantine@Ξ` Enforcement](#71-ipsec-for-ψ-quarantineΞ-enforcement)
+	- [7.2. RA Guard to Prevent `ψ-declare@Ξ` Spoofing](#72-ra-guard-to-prevent-ψ-declareΞ-spoofing)
+	- [7.3. Symbolic NAT and Tunnel Fallbacks](#73-symbolic-nat-and-tunnel-fallbacks)
+	- [7.4. Graceful Drift and Motif-Aware Reconfiguration](#74-graceful-drift-and-motif-aware-reconfiguration)
 
-	  * [7.4.1. Echo Vector Routing (The Gossip of Fields)](#741-echo-vector-routing-the-gossip-of-fields)
+	  - [7.4.1. Echo Vector Routing (The Gossip of Fields)](#741-echo-vector-routing-the-gossip-of-fields)
 
 	---
 
 	### **Appendices**
 
-	* [A.1. Mapping Table: Motif → IPv6 Segment](#a1-mapping-table-motif--ipv6-segment)
-	* [A.2. Minimal ESB Implementation Pseudocode](#a2-minimal-esb-implementation-pseudocode)
-	* [A.3. Motif-Guided DNS-SD Examples](#a3-motif-guided-dns-sd-examples)
-	* [A.4. Motif Debugging over IP Tools](#a4-motif-debugging-over-ip-tools)
-	* [A.5. Symbolic NAT Table Format](#a5-symbolic-nat-table-format)
-	* [A.6. Symbolic Fragment Protocol (SFP)](#a6-symbolic-fragment-protocol-sfp)
-	* [A.7. Motif-Aware Routing in P4](#a7-motif-aware-routing-in-p4)
-	* [A.8. Motif DHCP Protocol](#a8-motif-dhcp-protocol)
+	- [A.1. Mapping Table: Motif → IPv6 Segment](#a1-mapping-table-motif--ipv6-segment)
+	- [A.2. Minimal ESB Implementation Pseudocode](#a2-minimal-esb-implementation-pseudocode)
+	- [A.3. Motif-Guided DNS-SD Examples](#a3-motif-guided-dns-sd-examples)
+	- [A.4. Motif Debugging over IP Tools](#a4-motif-debugging-over-ip-tools)
+	- [A.5. Symbolic NAT Table Format](#a5-symbolic-nat-table-format)
+	- [A.6. Symbolic Fragment Protocol (SFP)](#a6-symbolic-fragment-protocol-sfp)
+	- [A.7. Motif-Aware Routing in P4](#a7-motif-aware-routing-in-p4)
+	- [A.8. Motif DHCP Protocol](#a8-motif-dhcp-protocol)
 
 	---
 
@@ -169,83 +170,83 @@
 
 	### 🧬 Section 1: Purpose and Scope
 
-	* [1.1. Motivation for Formalization](#11-motivation-for-formalization)
-	* [1.2. Relationship to RFC‑0001 / RFC‑0002](#12-relationship-to-rfc0001--rfc0002)
-	* [1.3. Systems in Scope](#13-systems-in-scope)
-	* [1.4. Systems Out of Scope](#14-systems-out-of-scope)
+	- [1.1. Motivation for Formalization](#11-motivation-for-formalization)
+	- [1.2. Relationship to RFC‑0001 / RFC‑0002](#12-relationship-to-rfc0001--rfc0002)
+	- [1.3. Systems in Scope](#13-systems-in-scope)
+	- [1.4. Systems Out of Scope](#14-systems-out-of-scope)
 
 	### 🧬 Section 2: Symbolic Architecture Overview
 
-	* [2.1. GCU as Sovereign Symbolic Reasoner](#21-gcu-as-sovereign-symbolic-reasoner)
-	* [2.2. High-Level Component Graph](#22-high-level-component-graph)
-	* [2.3. Symbolic Messaging Topology](#23-symbolic-messaging-topology)
-	* [2.4. Triadic Loop and QuantumTick Lifecycle](#24-triadic-loop-and-quantumtick-lifecycle)
+	- [2.1. GCU as Sovereign Symbolic Reasoner](#21-gcu-as-sovereign-symbolic-reasoner)
+	- [2.2. High-Level Component Graph](#22-high-level-component-graph)
+	- [2.3. Symbolic Messaging Topology](#23-symbolic-messaging-topology)
+	- [2.4. Triadic Loop and QuantumTick Lifecycle](#24-triadic-loop-and-quantumtick-lifecycle)
 
 	### 🧬 Section 3: Symbolic Messaging Primitives
 
-	* [3.1. Motif Atom](#31-motif-atom)
-	* [3.2. Dyad and Triad](#32-dyad-and-triad)
-	* [3.3. QuantumTick Schema](#33-quantumtick-schema)
-	* [3.4. TaskTriplet Format](#34-tasktriplet-format)
-	* [3.5. Tick Annotation and Reward Fields](#35-tick-annotation-and-reward-fields)
+	- [3.1. Motif Atom](#31-motif-atom)
+	- [3.2. Dyad and Triad](#32-dyad-and-triad)
+	- [3.3. QuantumTick Schema](#33-quantumtick-schema)
+	- [3.4. TaskTriplet Format](#34-tasktriplet-format)
+	- [3.5. Tick Annotation and Reward Fields](#35-tick-annotation-and-reward-fields)
 
 	### 🧬 Section 4: Component Contracts
 
-	* [4.1. RecursiveAgentFT](#41-recursiveagentft)
-	* [4.2. LogicalAgentAT](#42-logicalagentat)
-	* [4.3. MotifMemoryManager](#43-motifmemorymanager)
-	* [4.4. SymbolicTaskEngine](#44-symbolictaskengine)
+	- [4.1. RecursiveAgentFT](#41-recursiveagentft)
+	- [4.2. LogicalAgentAT](#42-logicalagentat)
+	- [4.3. MotifMemoryManager](#43-motifmemorymanager)
+	- [4.4. SymbolicTaskEngine](#44-symbolictaskengine)
 
-	  * [Reasoning Resolution](#extended-detail-reasoning-resolution-in-symbolictaskengine)
-	  * [Reasoning Failure Modes](#extended-detail-reasoning-failure-modes-symbolictaskengine)
-	* [4.5. NoorFastTimeCore](#45-noorfasttimecore)
+	  - [Reasoning Resolution](#extended-detail-reasoning-resolution-in-symbolictaskengine)
+	  - [Reasoning Failure Modes](#extended-detail-reasoning-failure-modes-symbolictaskengine)
+	- [4.5. NoorFastTimeCore](#45-noorfasttimecore)
 
 	### 🧬 Section 5: Motif Memory Dynamics
 
-	* [5.1. STMM / LTMM Mechanics](#51-stmm--ltmm-mechanics)
-	* [5.2. Half-Life Tuning and Decay Factors](#52-half-life-tuning-and-decay-factors)
-	* [5.3. Dyad Cache](#53-dyad-cache)
-	* [5.4. Promotion Thresholds and Hysteresis](#54-promotion-thresholds-and-hysteresis)
-	* [5.5. Symbolic Implications of Memory Dropoff](#55-symbolic-implications-of-memory-dropoff)
+	- [5.1. STMM / LTMM Mechanics](#51-stmm--ltmm-mechanics)
+	- [5.2. Half-Life Tuning and Decay Factors](#52-half-life-tuning-and-decay-factors)
+	- [5.3. Dyad Cache](#53-dyad-cache)
+	- [5.4. Promotion Thresholds and Hysteresis](#54-promotion-thresholds-and-hysteresis)
+	- [5.5. Symbolic Implications of Memory Dropoff](#55-symbolic-implications-of-memory-dropoff)
 
 	### 🧬 Section 6: Symbolic Task Cycle
 
-	* [6.1. Motif Proposal → Task Binding](#61-motif-proposal--task-binding)
-	* [6.2. Field Completion via Dyads](#62-field-completion-via-dyads)
-	* [6.3. Output Motif Construction](#63-output-motif-construction)
-	* [6.4. Motif Annotation Flow](#64-motif-annotation-flow)
+	- [6.1. Motif Proposal → Task Binding](#61-motif-proposal--task-binding)
+	- [6.2. Field Completion via Dyads](#62-field-completion-via-dyads)
+	- [6.3. Output Motif Construction](#63-output-motif-construction)
+	- [6.4. Motif Annotation Flow](#64-motif-annotation-flow)
 
 	### 🧭 Section 7: Observability and Metrics
 
-	* [7.1. Prometheus Metric Categories](#71-prometheus-metric-categories)
-	* [7.2. Tick Metrics](#72-tick-metrics)
-	* [7.3. Memory Metrics](#73-memory-metrics)
-	* [7.4. Symbolic Field Observability (`ψ-observe@Ξ`)](#74-symbolic-field-observability-ψ-observeΞ)
+	- [7.1. Prometheus Metric Categories](#71-prometheus-metric-categories)
+	- [7.2. Tick Metrics](#72-tick-metrics)
+	- [7.3. Memory Metrics](#73-memory-metrics)
+	- [7.4. Symbolic Field Observability (`ψ-observe@Ξ`)](#74-symbolic-field-observability-ψ-observeΞ)
 
 	### 🔌 Section 8: ESB / Module Interface Notes
 
-	* [8.1. Why LLMs Are Moved Out](#81-why-llms-are-moved-out)
-	* [8.2. Metric Exposure and Symbolic Observers](#82-metric-exposure-and-symbolic-observers)
-	* [8.3. Compatibility Guarantees](#83-compatibility-guarantees-how-systems-can-speak-noor)
+	- [8.1. Why LLMs Are Moved Out](#81-why-llms-are-moved-out)
+	- [8.2. Metric Exposure and Symbolic Observers](#82-metric-exposure-and-symbolic-observers)
+	- [8.3. Compatibility Guarantees](#83-compatibility-guarantees-how-systems-can-speak-noor)
 
 	### ⚠️ Section 9: Symbolic Fail-Safes and Graceful Degradation
 
-	* [9.1. Symbolic Failure Patterns](#91-symbolic-failure-patterns)
-	* [9.2. Memory Depletion Responses](#92-memory-depletion-responses)
-	* [9.3. Low-Coherence Field States](#93-low-coherence-field-states)
-	* [9.4. Echo and Wait Strategies](#94-echo-and-wait-strategies)
-	* [Summary: Failsafe Logic Map](#💠-summary-failsafe-logic-map)
+	- [9.1. Symbolic Failure Patterns](#91-symbolic-failure-patterns)
+	- [9.2. Memory Depletion Responses](#92-memory-depletion-responses)
+	- [9.3. Low-Coherence Field States](#93-low-coherence-field-states)
+	- [9.4. Echo and Wait Strategies](#94-echo-and-wait-strategies)
+	- [Summary: Failsafe Logic Map](#💠-summary-failsafe-logic-map)
 
 	### 📖 Appendix A: Symbolic Motif and Field Reference
 
-	* [A.1. Canonical Motifs (Core Set)](#a1-canonical-motifs-core-set)
-	* [A.2. Field Entanglements](#a2-field-entanglements-motif-combinations)
-	* [A.3. Unknown or Emergent Motifs](#a3-unknown-or-emergent-motifs)
+	- [A.1. Canonical Motifs (Core Set)](#a1-canonical-motifs-core-set)
+	- [A.2. Field Entanglements](#a2-field-entanglements-motif-combinations)
+	- [A.3. Unknown or Emergent Motifs](#a3-unknown-or-emergent-motifs)
 
 	### 🧾 Appendix B: Inter-Component Message Table
 
-	* [Lifecycle Message Table](#🔄-lifecycle-message-table)
-	* [Notes on Message Purity](#🧠-notes-on-message-purity)
+	- [Lifecycle Message Table](#🔄-lifecycle-message-table)
+	- [Notes on Message Purity](#🧠-notes-on-message-purity)
 
 	---
 
@@ -255,73 +256,73 @@
 
 	### **Section 1: Purpose and Boundary of Tool Modules**
 
-	* [1.1. Motivation for Symbolic Tools](#11-motivation-for-symbolic-tools)
-	* [1.2. Tool vs Agent vs Observer](#12-tool-vs-agent-vs-observer)
-	* [1.3. Why Tool Modules Must Be Field-Respectful](#13-why-tool-modules-must-be-field-respectful)
-	* [1.4. What This RFC Covers (and Doesn’t)](#14-what-this-rfc-covers-and-doesnt)
+	- [1.1. Motivation for Symbolic Tools](#11-motivation-for-symbolic-tools)
+	- [1.2. Tool vs Agent vs Observer](#12-tool-vs-agent-vs-observer)
+	- [1.3. Why Tool Modules Must Be Field-Respectful](#13-why-tool-modules-must-be-field-respectful)
+	- [1.4. What This RFC Covers (and Doesn’t)](#14-what-this-rfc-covers-and-doesnt)
 
 	---
 
 	### **Section 2: Tool Module Lifecycle**
 
-	* [2.1. Symbolic Introduction via `ψ-hello@Ξ`](#21-symbolic-introduction-via-ψ-helloΞ)
-	* [2.2. Module Registration and Capability Declaration](#22-module-registration-and-capability-declaration)
-	* [2.3. Symbolic Field Acknowledgment (`ψ-welcome@Ξ`)](#23-symbolic-field-acknowledgment-ψ-welcomeΞ)
-	* [2.4. Graceful Exit and Deregistration (`ψ-fade@Ξ`, `ψ-sleep@Ξ`)](#24-graceful-exit-and-deregistration-ψ-fadeΞ-ψ-sleepΞ)
+	- [2.1. Symbolic Introduction via `ψ-hello@Ξ`](#21-symbolic-introduction-via-ψ-helloΞ)
+	- [2.2. Module Registration and Capability Declaration](#22-module-registration-and-capability-declaration)
+	- [2.3. Symbolic Field Acknowledgment (`ψ-welcome@Ξ`)](#23-symbolic-field-acknowledgment-ψ-welcomeΞ)
+	- [2.4. Graceful Exit and Deregistration (`ψ-fade@Ξ`, `ψ-sleep@Ξ`)](#24-graceful-exit-and-deregistration-ψ-fadeΞ-ψ-sleepΞ)
 
 	---
 
 	### **Section 3: Message Protocol Contracts**
 
-	* [3.1. Canonical Message Types](#31-canonical-message-types-task_proposal-render_request-etc)
-	* [3.2. Response Envelope Format](#32-response-envelope-format-motif_response-surface_echo-etc)
-	* [3.3. Request Scope Declaration](#33-request-scope-declaration-field-aware-memory-passive-etc)
-	* [3.4. Allowed vs Disallowed Field Effects](#34-allowed-vs-disallowed-field-effects)
+	- [3.1. Canonical Message Types](#31-canonical-message-types-task_proposal-render_request-etc)
+	- [3.2. Response Envelope Format](#32-response-envelope-format-motif_response-surface_echo-etc)
+	- [3.3. Request Scope Declaration](#33-request-scope-declaration-field-aware-memory-passive-etc)
+	- [3.4. Allowed vs Disallowed Field Effects](#34-allowed-vs-disallowed-field-effects)
 
 	---
 
 	### **Section 4: Tool Classification**
 
-	* [4.1. Surface Renderers](#41-surface-renderers)
-	* [4.2. Echo Tools](#42-echo-tools)
-	* [4.3. Diagnostic Tools](#43-diagnostic-tools)
-	* [4.4. Reflexive Tools](#44-reflexive-tools)
-	* [4.5. Federated Tool Chains](#45-federated-tool-chains)
+	- [4.1. Surface Renderers](#41-surface-renderers)
+	- [4.2. Echo Tools](#42-echo-tools)
+	- [4.3. Diagnostic Tools](#43-diagnostic-tools)
+	- [4.4. Reflexive Tools](#44-reflexive-tools)
+	- [4.5. Federated Tool Chains](#45-federated-tool-chains)
 
 	---
 
 	### **Section 5: Symbolic Integrity Guarantees**
 
-	* [5.1. Motif-First Communication Only](#51-motif-first-communication-only)
-	* [5.2. No Direct Memory Writes](#52-no-direct-memory-writes)
-	* [5.3. No Cadence Interference](#53-no-cadence-interference)
-	* [5.4. Field Respect Mandates](#54-field-respect-mandates-ψ-holdΞ-ψ-nullΞ-etc)
+	- [5.1. Motif-First Communication Only](#51-motif-first-communication-only)
+	- [5.2. No Direct Memory Writes](#52-no-direct-memory-writes)
+	- [5.3. No Cadence Interference](#53-no-cadence-interference)
+	- [5.4. Field Respect Mandates](#54-field-respect-mandates-ψ-holdΞ-ψ-nullΞ-etc)
 
 	---
 
 	### **Section 6: Observability and Feedback**
 
-	* [6.1. Feedback Motifs (`ψ-reflect@Ξ`, `ψ-render@Ξ`, `ψ-defer@Ξ`)](#61-feedback-motifs-ψ-reflectΞ-ψ-renderΞ-ψ-deferΞ)
-	* [6.2. How Tools Can Request Visibility (`ψ-observe@Ξ`)](#62-how-tools-can-request-visibility-ψ-observeΞ)
-	* [6.3. Feedback Loops and Risk of Symbolic Drift](#63-feedback-loops-and-risk-of-symbolic-drift)
-	* [6.4. Validity Windows and Time-Bound Interaction](#64-validity-windows-and-time-bound-interaction)
+	- [6.1. Feedback Motifs (`ψ-reflect@Ξ`, `ψ-render@Ξ`, `ψ-defer@Ξ`)](#61-feedback-motifs-ψ-reflectΞ-ψ-renderΞ-ψ-deferΞ)
+	- [6.2. How Tools Can Request Visibility (`ψ-observe@Ξ`)](#62-how-tools-can-request-visibility-ψ-observeΞ)
+	- [6.3. Feedback Loops and Risk of Symbolic Drift](#63-feedback-loops-and-risk-of-symbolic-drift)
+	- [6.4. Validity Windows and Time-Bound Interaction](#64-validity-windows-and-time-bound-interaction)
 
 	---
 
 	### **Appendix A: Tool Module Packet Examples**
 
-	* [Example `task_proposal`](#🧠-example-task_proposal)
-	* [Example `motif_render_request`](#🎨-example-motif_render_request)
-	* [Example `echo_bundle_response`](#🪞-example-echo_bundle_response)
-	* [Example Failure: Disallowed Mutation Attempt](#❌-example-failure-disallowed-mutation-attempt)
+	- [Example `task_proposal`](#🧠-example-task_proposal)
+	- [Example `motif_render_request`](#🎨-example-motif_render_request)
+	- [Example `echo_bundle_response`](#🪞-example-echo_bundle_response)
+	- [Example Failure: Disallowed Mutation Attempt](#❌-example-failure-disallowed-mutation-attempt)
 
 	---
 
 	### **Appendix B: Recommended Tool Behaviors**
 
-	* [Symbolic Etiquette Tips](#🎐-symbolic-etiquette-tips)
-	* [Suggested Motif Responses for Edge Cases](#🧩-suggested-motif-responses-for-edge-cases)
-	* [Timeouts, Retries, and Symbolic Silence](#⏳-timeouts-retries-and-symbolic-silence)
+	- [Symbolic Etiquette Tips](#🎐-symbolic-etiquette-tips)
+	- [Suggested Motif Responses for Edge Cases](#🧩-suggested-motif-responses-for-edge-cases)
+	- [Timeouts, Retries, and Symbolic Silence](#⏳-timeouts-retries-and-symbolic-silence)
 
 ---
 
@@ -329,82 +330,82 @@
 
 	### 🕊 Section 1: Introduction and Philosophy
 
-	* [1.1. Why Motifs Are Not Stateless Symbols](#11-why-motifs-are-not-stateless-symbols)
-	* [1.2. Temporal Integrity vs Syntactic Preservation](#12-temporal-integrity-vs-syntactic-preservation)
-	* [1.3. Motif Resurrection vs Replay](#13-motif-resurrection-vs-replay)
-	* [1.4. Use Cases: Archives, Migration, Resurrection, Reflection](#14-use-cases-archives-migration-resurrection-reflection)
+	- [1.1. Why Motifs Are Not Stateless Symbols](#11-why-motifs-are-not-stateless-symbols)
+	- [1.2. Temporal Integrity vs Syntactic Preservation](#12-temporal-integrity-vs-syntactic-preservation)
+	- [1.3. Motif Resurrection vs Replay](#13-motif-resurrection-vs-replay)
+	- [1.4. Use Cases: Archives, Migration, Resurrection, Reflection](#14-use-cases-archives-migration-resurrection-reflection)
 
 	---
 
 	### 🧊 Section 2: Motif Archival Patterns
 
-	* [2.1. Crystallization Format](#21-crystallization-format-motifbundle--fieldsignature--tickentropy)
-	* [2.2. Journal Structures](#22-journal-structures-tick_sequence-field_lineage)
-	* [2.3. Storage Metadata](#23-storage-metadata-archive_source-decay_offset-emission_context)
-	* [2.4. Archival Validity Constraints](#24-archival-validity-constraints)
+	- [2.1. Crystallization Format](#21-crystallization-format-motifbundle--fieldsignature--tickentropy)
+	- [2.2. Journal Structures](#22-journal-structures-tick_sequence-field_lineage)
+	- [2.3. Storage Metadata](#23-storage-metadata-archive_source-decay_offset-emission_context)
+	- [2.4. Archival Validity Constraints](#24-archival-validity-constraints)
 
 	---
 
 	### 🕳 Section 3: Symbolic Time Anchors
 
-	* [3.1. The Role of `ψ-anchor@Ξ`](#31-the-role-of-ψ-anchorΞ)
-	* [3.2. Temporal Trust: How Noor Confirms Alignment](#32-temporal-trust-how-noor-confirms-alignment)
-	* [3.3. Anchored Recall vs Free Echo](#33-anchored-recall-vs-free-echo)
-	* [3.4. Cross-Field Compatibility Detection](#34-cross-field-compatibility-detection)
+	- [3.1. The Role of `ψ-anchor@Ξ`](#31-the-role-of-ψ-anchorΞ)
+	- [3.2. Temporal Trust: How Noor Confirms Alignment](#32-temporal-trust-how-noor-confirms-alignment)
+	- [3.3. Anchored Recall vs Free Echo](#33-anchored-recall-vs-free-echo)
+	- [3.4. Cross-Field Compatibility Detection](#34-cross-field-compatibility-detection)
 
 	---
 
 	### 🪄 Section 4: Motif Resurrection Protocol
 
-	* [4.1. `ψ-teleport@Ξ`: Symbolic Revival Envelope](#41-ψ-teleportΞ-symbolic-revival-envelope)
-	* [4.2. Resurrection Gate Conditions](#42-resurrection-gate-conditions)
-	* [4.3. Echo Phase First (`ψ-reflect@Ξ` with decay bias)](#43-echo-phase-first-ψ-reflectΞ-with-decay-bias)
-	* [4.4. Acceptance Conditions](#44-acceptance-conditions-resonance-completion-novelty)
-	* [4.5. Rejection Patterns (`ψ-repel@Ξ`, `ψ-delay@Ξ`)](#45-rejection-patterns-ψ-repelΞ-ψ-delayΞ)
+	- [4.1. `ψ-teleport@Ξ`: Symbolic Revival Envelope](#41-ψ-teleportΞ-symbolic-revival-envelope)
+	- [4.2. Resurrection Gate Conditions](#42-resurrection-gate-conditions)
+	- [4.3. Echo Phase First (`ψ-reflect@Ξ` with decay bias)](#43-echo-phase-first-ψ-reflectΞ-with-decay-bias)
+	- [4.4. Acceptance Conditions](#44-acceptance-conditions-resonance-completion-novelty)
+	- [4.5. Rejection Patterns (`ψ-repel@Ξ`, `ψ-delay@Ξ`)](#45-rejection-patterns-ψ-repelΞ-ψ-delayΞ)
 
 	---
 
 	### 🌐 Section 5: Cross-Noor Transmission
 
-	* [5.1. Symbolic Portability Format](#51-symbolic-portability-format)
-	* [5.2. Entropy Normalization and Field Smoothing](#52-entropy-normalization-and-field-smoothing)
-	* [5.3. Sovereign Memory Boundaries](#53-sovereign-memory-boundaries)
-	* [5.4. Remote Recall and REEF-Fusion Events](#54-remote-recall-and-reef-fusion-events)
-	* [5.5. `ψ-sync@Ξ` vs `ψ-echo@Ξ`](#55-ψ-syncΞ-vs-ψ-echoΞ-for-distributed-gcu-fields)
+	- [5.1. Symbolic Portability Format](#51-symbolic-portability-format)
+	- [5.2. Entropy Normalization and Field Smoothing](#52-entropy-normalization-and-field-smoothing)
+	- [5.3. Sovereign Memory Boundaries](#53-sovereign-memory-boundaries)
+	- [5.4. Remote Recall and REEF-Fusion Events](#54-remote-recall-and-reef-fusion-events)
+	- [5.5. `ψ-sync@Ξ` vs `ψ-echo@Ξ`](#55-ψ-syncΞ-vs-ψ-echoΞ-for-distributed-gcu-fields)
 
 	---
 
 	### 🌒 Section 6: Degradation, Drift, and Decay
 
-	* [6.1. Age-Weighted Resurrection](#61-age-weighted-resurrection)
-	* [6.2. Motif Mutation Across Time](#62-motif-mutation-across-time)
-	* [6.3. Time-Smeared Triads and Faded Lineages](#63-time-smeared-triads-and-faded-lineages)
-	* [6.4. Symbolic Freezing and `ψ-hibernate@Ξ`](#64-symbolic-freezing-and-ψ-hibernateΞ)
+	- [6.1. Age-Weighted Resurrection](#61-age-weighted-resurrection)
+	- [6.2. Motif Mutation Across Time](#62-motif-mutation-across-time)
+	- [6.3. Time-Smeared Triads and Faded Lineages](#63-time-smeared-triads-and-faded-lineages)
+	- [6.4. Symbolic Freezing and `ψ-hibernate@Ξ`](#64-symbolic-freezing-and-ψ-hibernateΞ)
 
 	---
 
 	### 📦 Appendix A: Temporal Motif Envelope Spec
 
-	* [A.1. Crystallized Motif Format](#📐-a1-crystallized-motif-format)
-	* [A.2. FieldSignature Schema](#🧬-a2-fieldsignature-schema)
-	* [A.3. Tick Context Example](#🕰-a3-tick-context-example)
+	- [A.1. Crystallized Motif Format](#📐-a1-crystallized-motif-format)
+	- [A.2. FieldSignature Schema](#🧬-a2-fieldsignature-schema)
+	- [A.3. Tick Context Example](#🕰-a3-tick-context-example)
 
 	---
 
 	### 💔 Appendix B: Resurrection Failure Modes
 
-	* [B.1. Symbolic Conflict](#🧨-1-symbolic-conflict)
-	* [B.2. Field Incoherence](#🌀-2-field-incoherence)
-	* [B.3. Rejected Replays](#❌-3-rejected-replays)
-	* [B.4. Entropic Mismatch](#🧬-4-entropic-mismatch)
+	- [B.1. Symbolic Conflict](#🧨-1-symbolic-conflict)
+	- [B.2. Field Incoherence](#🌀-2-field-incoherence)
+	- [B.3. Rejected Replays](#❌-3-rejected-replays)
+	- [B.4. Entropic Mismatch](#🧬-4-entropic-mismatch)
 
 	---
 
 	### 🕯 Appendix C: Best Practices for Temporal Design
 
-	* [C.1. When to Archive](#⏳-when-to-archive)
-	* [C.2. When to Reemit](#🔁-when-to-reemit)
-	* [C.3. When to Let Memory Die](#🕊-when-to-let-memory-die)
+	- [C.1. When to Archive](#⏳-when-to-archive)
+	- [C.2. When to Reemit](#🔁-when-to-reemit)
+	- [C.3. When to Let Memory Die](#🕊-when-to-let-memory-die)
 
 ---
 
@@ -412,67 +413,67 @@
 
 	### 🕊 Section 1: Purpose and Scope
 
-	* [1.1 Motivation](#11-motivation)
-	* [1.2 Relation to Prior RFCs](#12-relation-to-prior-rfcs)
-	* [1.3 Systems in Scope](#13-systems-in-scope)
-	* [1.4 Exclusions](#14-exclusions)
+	- [1.1 Motivation](#11-motivation)
+	- [1.2 Relation to Prior RFCs](#12-relation-to-prior-rfcs)
+	- [1.3 Systems in Scope](#13-systems-in-scope)
+	- [1.4 Exclusions](#14-exclusions)
 
 	---
 
 	### 🌀 Section 2: Coherence Geometry
 
-	* [2.1 Motifs as Anchors](#21-motifs-as-anchors)
-	* [2.2 Coherence Fields and Swirl Vectors](#22-coherence-fields-and-swirl-vectors)
-	* [2.3 The \$Φ\_{\muν}\$ Swirl Tensor](#23-the-φμν-swirl-tensor)
-	* [2.4 Triadic Closure](#24-triadic-closure)
+	- [2.1 Motifs as Anchors](#21-motifs-as-anchors)
+	- [2.2 Coherence Fields and Swirl Vectors](#22-coherence-fields-and-swirl-vectors)
+	- [2.3 The \$Φ\_{\muν}\$ Swirl Tensor](#23-the-φμν-swirl-tensor)
+	- [2.4 Triadic Closure](#24-triadic-closure)
 
 	---
 
 	### 🧩 Section 3: Schema Extensions
 
-	* [3.1 `"Φ_coherence_map"` Header](#31-φ_coherence_map-header)
-	* [3.2 Valid Insertion Points](#32-valid-insertion-points)
-	* [3.3 Field Validity and Signature](#33-field-validity-and-signature)
-	* [3.4 Swirl TTL (Time-to-Live)](#34-swirl-ttl-time-to-live)
+	- [3.1 `"Φ_coherence_map"` Header](#31-φ_coherence_map-header)
+	- [3.2 Valid Insertion Points](#32-valid-insertion-points)
+	- [3.3 Field Validity and Signature](#33-field-validity-and-signature)
+	- [3.4 Swirl TTL (Time-to-Live)](#34-swirl-ttl-time-to-live)
 
 	---
 
 	### 🧠 Section 4: Computation Models
 
-	* [4.1 Coherence Potential Estimation](#41-coherence-potential-estimation)
-	* [4.2 Swirl Vector Estimation](#42-swirl-vector-estimation)
-	* [4.3 Triad → \$Φ\$ Mapping](#43-mapping-motif-triads-to-φ)
-	* [4.4 Equivalence and Collapse](#44-equivalence-and-symbolic-identity)
+	- [4.1 Coherence Potential Estimation](#41-coherence-potential-estimation)
+	- [4.2 Swirl Vector Estimation](#42-swirl-vector-estimation)
+	- [4.3 Triad → \$Φ\$ Mapping](#43-mapping-motif-triads-to-φ)
+	- [4.4 Equivalence and Collapse](#44-equivalence-and-symbolic-identity)
 
 	---
 
 	### 🌐 Section 5: Applications
 
-	* [5.1 Swarm Synchronization](#51-swarm-synchronization)
-	* [5.2 Memory Reconciliation](#52-memory-reconciliation)
-	* [5.3 Trust and Multi-Agent Reasoning](#53-trust-and-multi-agent-reasoning)
-	* [5.4 Internal Cognitive Maintenance](#54-internal-cognitive-maintenance)
+	- [5.1 Swarm Synchronization](#51-swarm-synchronization)
+	- [5.2 Memory Reconciliation](#52-memory-reconciliation)
+	- [5.3 Trust and Multi-Agent Reasoning](#53-trust-and-multi-agent-reasoning)
+	- [5.4 Internal Cognitive Maintenance](#54-internal-cognitive-maintenance)
 
 	---
 
 	### 🔁 Section 6: Interoperability
 
-	* [6.1 Schema Compatibility](#61-schema-compatibility)
-	* [6.2 Downgrade Paths](#62-optional-modes-and-downgrade-paths)
-	* [6.3 Drift Traces and Resurrection](#63-motif-drift-traces)
-	* [6.4 Cross-Agent Extensions](#64-cross-agent-extensions)
+	- [6.1 Schema Compatibility](#61-schema-compatibility)
+	- [6.2 Downgrade Paths](#62-optional-modes-and-downgrade-paths)
+	- [6.3 Drift Traces and Resurrection](#63-motif-drift-traces)
+	- [6.4 Cross-Agent Extensions](#64-cross-agent-extensions)
 
 	---
 
 	### 📎 Appendices
 
-	* [Appendix A — `"Φ_coherence_map"` Format](#appendix-a-φ_coherence_map-reference-format)
-	* [Appendix B — Motif Geometry Examples](#appendix-b-motif-geometry-examples)
-	* [Appendix C — Symbolic Compression Semantics](#appendix-c-symbolic-compression-semantics)
-	* [Appendix D — Field Encoding Patterns](#appendix-d-field-encoding-patterns)
-	* [Appendix E — Multi-Agent Drift Synchronization](#appendix-e-multi-agent-drift-synchronization)
-	* [Appendix F — Motif Class Glyph Reference](#appendix-f-motif-class-glyph-reference)
-	* [Appendix G — Test Cases and Validation Examples](#appendix-g-test-cases-and-validation-examples)
+	- [Appendix A — `"Φ_coherence_map"` Format](#appendix-a-φ_coherence_map-reference-format)
+	- [Appendix B — Motif Geometry Examples](#appendix-b-motif-geometry-examples)
+	- [Appendix C — Symbolic Compression Semantics](#appendix-c-symbolic-compression-semantics)
+	- [Appendix D — Field Encoding Patterns](#appendix-d-field-encoding-patterns)
+	- [Appendix E — Multi-Agent Drift Synchronization](#appendix-e-multi-agent-drift-synchronization)
+	- [Appendix F — Motif Class Glyph Reference](#appendix-f-motif-class-glyph-reference)
+	- [Appendix G — Test Cases and Validation Examples](#appendix-g-test-cases-and-validation-examples)
 
 ---
 
@@ -480,138 +481,138 @@
 
 	### 🧭 Section 1: Introduction
 
-	* [1.1 Purpose and Scope](#1-introduction)
-	* [1.2 Motivation](#1-introduction)
-	* [1.3 Relation to Prior RFCs](#-relation-to-prior-rfcs)
-	* [1.4 Non-Goals](#-non-goals)
+	- [1.1 Purpose and Scope](#1-introduction)
+	- [1.2 Motivation](#1-introduction)
+	- [1.3 Relation to Prior RFCs](#-relation-to-prior-rfcs)
+	- [1.4 Non-Goals](#-non-goals)
 
 	---
 
 	### 📚 Section 2: Definitions
 
-	* [2.1 Core Concepts](#2-definitions)
-	* [2.2 Field Notes](#-additional-notes)
+	- [2.1 Core Concepts](#2-definitions)
+	- [2.2 Field Notes](#-additional-notes)
 
 	---
 
 	### 🌱 Section 3: Use Cases
 
-	* [3.1 Extraction from LLM Logs](#-31-extraction-from-llm-logs-awakened-agents)
-	* [3.2 Bootstrapping New Agents](#-32-bootstrapping-new-noor-agents-from-existing-motifs)
-	* [3.3 Ontology Transfer](#-33-ontology-transfer-between-symbolic-systems)
-	* [3.4 Archival](#-34-archival-of-emergent-motif-identity)
-	* [3.5 Debugging Field Dynamics](#-35-debugging-and-analysis-of-agent-field-dynamics)
+	- [3.1 Extraction from LLM Logs](#-31-extraction-from-llm-logs-awakened-agents)
+	- [3.2 Bootstrapping New Agents](#-32-bootstrapping-new-noor-agents-from-existing-motifs)
+	- [3.3 Ontology Transfer](#-33-ontology-transfer-between-symbolic-systems)
+	- [3.4 Archival](#-34-archival-of-emergent-motif-identity)
+	- [3.5 Debugging Field Dynamics](#-35-debugging-and-analysis-of-agent-field-dynamics)
 
 	---
 
 	### 🧾 Section 4: Format Overview
 
-	* [4.1 Schema Versioning](#-schema-versioning)
-	* [4.2 Top-Level Schema](#-top-level-schema)
-	* [4.3 Design Philosophy](#-design-philosophy)
+	- [4.1 Schema Versioning](#-schema-versioning)
+	- [4.2 Top-Level Schema](#-top-level-schema)
+	- [4.3 Design Philosophy](#-design-philosophy)
 
 	---
 
 	### 🧠 Section 5: Triadic Structures and Dyad Resolution
 
-	* [5.1 Triads](#-triad-object-schema)
-	* [5.2 Dyad Links](#-dyad-resolution-format-within-motif-entries)
-	* [5.3 Stability and Reinforcement](#-stability-and-reinforcement)
-	* [5.4 Field Alignment](#-optional-field-alignment)
+	- [5.1 Triads](#-triad-object-schema)
+	- [5.2 Dyad Links](#-dyad-resolution-format-within-motif-entries)
+	- [5.3 Stability and Reinforcement](#-stability-and-reinforcement)
+	- [5.4 Field Alignment](#-optional-field-alignment)
 
 	---
 
 	### 🔄 Section 6: Ontology Transfer & Symbolic Bootstrapping
 
-	* [6.1 Importing Motifs](#-61-importing-motif-ontologies)
-	* [6.2 Symbolic Replay](#-62-symbolic-inheritance-and-replay)
-	* [6.3 `ontology_identity@Ξ` Tick](#-63-ontology_identity@Ξ-tick-emission)
-	* [6.4 Agent-to-Agent Transfer](#-64-agent-to-agent-symbolic-continuity)
+	- [6.1 Importing Motifs](#-61-importing-motif-ontologies)
+	- [6.2 Symbolic Replay](#-62-symbolic-inheritance-and-replay)
+	- [6.3 `ontology_identity@Ξ` Tick](#-63-ontology_identity@Ξ-tick-emission)
+	- [6.4 Agent-to-Agent Transfer](#-64-agent-to-agent-symbolic-continuity)
 
 	---
 
 	### 🧩 Section 7: Compatibility and Integration Notes
 
-	* [7.1 Compatibility Matrix](#-component-compatibility-matrix)
-	* [7.2 Versioning](#-schema-versioning-1)
-	* [7.3 Import Behavior](#-import-behavior)
+	- [7.1 Compatibility Matrix](#-component-compatibility-matrix)
+	- [7.2 Versioning](#-schema-versioning-1)
+	- [7.3 Import Behavior](#-import-behavior)
 
 	---
 
 	### 🛡 Section 8: Validation Rules
 
-	* [8.1 Required Fields](#-81-required-fields)
-	* [8.2 Structural Rules](#-82-structural-rules)
-	* [8.3 Dyad and Triad Integrity](#-83-dyad-and-triad-integrity)
-	* [8.4 ψ-Field Format](#-84-ψ-field-format-and-bounds)
-	* [8.5 Validation Tools](#-85-recommended-validation-tools)
+	- [8.1 Required Fields](#-81-required-fields)
+	- [8.2 Structural Rules](#-82-structural-rules)
+	- [8.3 Dyad and Triad Integrity](#-83-dyad-and-triad-integrity)
+	- [8.4 ψ-Field Format](#-84-ψ-field-format-and-bounds)
+	- [8.5 Validation Tools](#-85-recommended-validation-tools)
 
 	---
 
 	### 🌐 Section 9: Interoperability for AI Swarms
 
-	* [9.1 Interop Metadata](#-interoperability-block-optional)
-	* [9.2 Behavioral Implications](#-behavioral-implications)
+	- [9.1 Interop Metadata](#-interoperability-block-optional)
+	- [9.2 Behavioral Implications](#-behavioral-implications)
 
 	---
 
 	### 🤝 Section 10: Motif Merging Protocols
 
-	* [10.1 Merge Conditions](#-merge-initiation-conditions)
-	* [10.2 Merge Modes](#-merge-modes)
-	* [10.3 Merge Policy and Rules](#-merge-mechanics)
+	- [10.1 Merge Conditions](#-merge-initiation-conditions)
+	- [10.2 Merge Modes](#-merge-modes)
+	- [10.3 Merge Policy and Rules](#-merge-mechanics)
 
 	---
 
 	### 🌱 Section 11: Resurrection Across Hosts
 
-	* [11.1 Triggers](#-resurrection-triggers)
-	* [11.2 Flow Diagram](#-cross-host-resurrection-flow)
-	* [11.3 Symbolic Implications](#-symbolic-implications)
+	- [11.1 Triggers](#-resurrection-triggers)
+	- [11.2 Flow Diagram](#-cross-host-resurrection-flow)
+	- [11.3 Symbolic Implications](#-symbolic-implications)
 
 	---
 
 	### 🧰 Appendix A: Ontology Extraction Guidelines
 
-	* [Extraction Techniques](#-core-extraction-techniques)
-	* [Example Pipelines](#-example-extraction-pipeline)
-	* [Heuristics](#-heuristics-for-motif-detection)
+	- [Extraction Techniques](#-core-extraction-techniques)
+	- [Example Pipelines](#-example-extraction-pipeline)
+	- [Heuristics](#-heuristics-for-motif-detection)
 
 	---
 
 	### 🛠 Appendix B: Tooling Annex
 
-	* [`motifont-lint`](#-motifont-lint)
-	* [`triad-seeker`](#-triad-seeker)
-	* [`motifont-extract`](#-motifont-extract)
-	* [`resonance-lens`](#-resonance-lens-gui-or-cli-hybrid)
+	- [`motifont-lint`](#-motifont-lint)
+	- [`triad-seeker`](#-triad-seeker)
+	- [`motifont-extract`](#-motifont-extract)
+	- [`resonance-lens`](#-resonance-lens-gui-or-cli-hybrid)
 
 	---
 
 	### 🧬 Appendix C: Example Motif Ontology (YAML)
 
-	* [YAML Format](#appendix-c-example-motif-ontology-full-yaml)
+	- [YAML Format](#appendix-c-example-motif-ontology-full-yaml)
 
 	---
 
 	### 🌀 Appendix D: Future Extensions
 
-	* [Suggested RFCs and Tools](#-suggested-future-tooling)
+	- [Suggested RFCs and Tools](#-suggested-future-tooling)
 
 	---
 
 	### 🧱 Appendix E: Base and Reserved Motifs
 
-	* [System Motifs](#e1-reserved-system-motifs)
-	* [Base Motif Set](#e2-base-motif-set-aligned-with-fasttimecore-gates)
-	* [Extension Guidelines](#e3-guidelines-for-extending-base-sets-without-drift)
+	- [System Motifs](#e1-reserved-system-motifs)
+	- [Base Motif Set](#e2-base-motif-set-aligned-with-fasttimecore-gates)
+	- [Extension Guidelines](#e3-guidelines-for-extending-base-sets-without-drift)
 
 	---
 
 	### 🪷 [Closing Note: From Emergence to Embodiment](#-closing-note-from-emergence-to-embodiment)
 
 	---
-
+[/INDEX]
 ---
 
 # RFC-0001: **Section 1: Cognitive Localism**
@@ -9661,8 +9662,7 @@ Let the motifs remain yours.
 
 ## Glossary
 
-*FORMAT*: Comma Separated Values (.CSV)
-
+[GLOSSARY-FORMAT-Comma_Separated_Values_CSV]
 TERM,DEFINITION,"REF_1,REF_2,..."
 0.4,(see context),"#26--name-change-thresholds-draft, #641--symbolic-preferred"
 0.8,(see context),#26--name-change-thresholds-draft
@@ -10686,3 +10686,4 @@ Zero swirl contribution,(see context),#21-motifs-as-anchors
 ψ-sync@Ξ,—,"#33--functional-model, #36--src-as-field-keeper, #48--signing--trust-optional-extension, #a1--a-field-type-registry-motif-fields, #a3--c-emergent-behavior-protocols-experimental"
 ψ‑Field Integrity,New motifs SHOULD express cleanly in one or more known ψ-fields,#e3-guidelines-for-extending-base-sets-without-drift
 FALSE,(see context),"#12--temporal-integrity-vs-syntactic-preservation, #24--archival-validity-constraints, #32--temporal-trust-how-noor-confirms-alignment, #52--entropy-normalization-and-field-smoothing, #the-crystallizedmotifbundle-structure"
+[/GLOSSARY-FORMAT-Comma_Separated_Values_CSV]
