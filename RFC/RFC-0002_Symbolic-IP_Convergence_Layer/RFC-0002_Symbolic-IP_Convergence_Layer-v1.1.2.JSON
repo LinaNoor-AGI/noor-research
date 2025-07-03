@@ -975,37 +975,3 @@
 }
 ]
 }
-"xref": {
-  "related": [
-    {
-      "id": "RFC-0001",
-      "title": "Symbolic Routing Core (Noor RFC‑0001)",
-      "rel": "foundation",
-      "motifs": ["ψ-resonance@Ξ", "ψ-echo@Ξ", "ψ-declare@Ξ"]
-    },
-    {
-      "id": "RFC-0003",
-      "title": "Motif Memory Protocols",
-      "rel": "memory-layer",
-      "motifs": ["ψ-sync@Ξ", "ψ-chain@Ξ", "ψ-rename@Ξ"]
-    },
-    {
-      "id": "RFC-0004",
-      "title": "GCU Sovereignty and Entropic Drift",
-      "rel": "sovereignty",
-      "motifs": ["ψ-null@Ξ", "ψ-collapse@Ξ", "ψ-repair@Ξ"]
-    },
-    {
-      "id": "RFC-0005",
-      "title": "Symbolic Field Engines and Observer Mesh",
-      "rel": "field-architecture",
-      "motifs": ["ψ-fade@Ξ", "ψ-observe@Ξ", "ψ-ghost@Ξ"]
-    },
-    {
-      "id": "RFC-0006",
-      "title": "LLM Module Integration for Motif Engines",
-      "rel": "module-interop",
-      "motifs": ["ψ-bind@Ξ", "ψ-silence@Ξ", "ψ-reject@Ξ"]
-    }
-  ]
-}
