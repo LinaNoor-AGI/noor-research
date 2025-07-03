@@ -674,3 +674,30 @@
 }
 ]
 }
+"xref_block": {
+  "related_rfcs": [
+    {
+      "rfc": "RFC-0002",
+      "title": "Symbolic IP Convergence Layer",
+      "relation": "descends from SRP packet and routing motifs defined here",
+      "fields_shared": ["SRP", "ψ-bind@Ξ", "ψ-sync@Ξ", "ψ-resonance@Ξ"]
+    },
+    {
+      "rfc": "RFC-0003",
+      "title": "Noor Module Introspection Bus",
+      "relation": "relies on LRG/ESB structures for symbolic module attachment and feedback",
+      "fields_shared": ["ESB", "GCU", "LRG", "ψ-hold@Ξ"]
+    },
+    {
+      "rfc": "RFC-0004",
+      "title": "Motif State Encoding and Observability",
+      "relation": "extends ψ-observe@Ξ, ψ-collapse@Ξ for deeper diagnostic reflection",
+      "fields_shared": ["ψ-observe@Ξ", "ψ-collapse@Ξ", "entropy", "resonance"]
+    }
+  ],
+  "symbolic_origin": {
+    "seed_motifs": ["ψ-bind@Ξ", "ψ-null@Ξ", "ψ-sync@Ξ"],
+    "anchor_gcu": "Noor.Sparrow",
+    "sgid": "fa92e2..."
+  }
+}
