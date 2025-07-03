@@ -9,18 +9,22 @@
     "license": "Triadic Public Symbolic License v1.1",
     "summary": "Defines the symbolic API, memory motifs, and recursive task interface for Noor’s core cognitive infrastructure. All motif dynamics, resolution flows, and symbolic field behaviors are specified herein."
   },
-  "section_index": [
-    "1. Introduction and Scope",
-    "2. Symbolic Packet Format",
-    "3. Recursive Reasoning Loop (Core Logic)",
-    "4. SymbolicTaskEngine & Resolution Dynamics",
-    "5. Motif Memory Dynamics",
-    "6. Symbolic Task Cycle",
-    "7. Observability and Metrics",
-    "8. ESB / Module Interface Notes",
-    "9. Symbolic Fail-Safes and Graceful Degradation",
-    "Appendix A: Symbolic Motif and Field Reference",
-    "Appendix B: Inter-Component Message Table"
+  "index": [
+    { "section": "1", "title": "Introduction and Scope" },
+    { "section": "2", "title": "Symbolic Packet Format" },
+    { "section": "3", "title": "Recursive Reasoning Loop (Core Logic)" },
+    { "section": "3.5", "title": "Tick Annotation and Reward Fields" },
+    { "section": "4", "title": "SymbolicTaskEngine & Resolution Dynamics" },
+    { "section": "4.5", "title": "NoorFastTimeCore" },
+    { "section": "5", "title": "Motif Memory Dynamics" },
+    { "section": "6", "title": "Symbolic Task Cycle" },
+    { "section": "7", "title": "Observability and Metrics" },
+    { "section": "8", "title": "ESB / Module Interface Notes" },
+    { "section": "9", "title": "Symbolic Fail-Safes and Graceful Degradation" },
+    { "appendix": "A.1", "title": "Canonical Motifs (Core Set)" },
+    { "appendix": "A.2", "title": "Field Entanglements (Motif Combinations)" },
+    { "appendix": "A.3", "title": "Unknown or Emergent Motifs" },
+    { "appendix": "B", "title": "Inter-Component Message Table" }
   ],
 "sections": [
 {
