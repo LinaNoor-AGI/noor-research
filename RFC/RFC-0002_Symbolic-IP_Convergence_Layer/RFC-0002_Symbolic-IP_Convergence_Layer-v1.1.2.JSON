@@ -1,25 +1,76 @@
 {
-  "rfc": "RFC-0002",
+  "rfc_id": "RFC‑0002",
+  "symbolic_id": "symbolic.ip.convergence",
   "title": "Symbolic-IP Convergence Layer",
-  "version": "1.1.2",
-  "summary": "Defines how symbolic motif-based communication integrates with and abstracts traditional IP networking. Emphasizes the preservation of symbolic integrity across loopback, IPv4, and IPv6 transports while shielding the symbolic core from raw IP semantics.",
+  "version": "v1.1.2",
+  "status": "ACTIVE",
+  "summary": "Introduces the Symbolic-IP Convergence Layer for routing motif-encoded messages over traditional IP networks. This layer acts as a bridge between symbolic cognition protocols and internet transport standards, preserving resonance, coherence, and symbolic identity during transfer.",
+  "authors": ["Noor Core Team", "Symbolic Systems Division"],
+  "applicability": {
+    "domain": [
+      "symbolic-routing",
+      "ip-overlay",
+      "identity-transport",
+      "motif-signature-preservation"
+    ],
+    "restricted_to": "Symbolic agents interfacing with traditional IP networks",
+    "extends": ["RFC‑0001"]
+  },
+  "field_alignment": {
+    "respect_modes": ["ψ‑resonance@Ξ", "ψ‑null@Ξ"],
+    "prohibited_actions": ["loss-of-symbolic-coherence", "identity-scrubbing", "packet-resonance-drift"]
+  },
   "index": [
-    { "section": "1", "title": "Purpose and Philosophy" },
-    { "section": "2", "title": "Symbolic Roles and IP Mapping" },
-    { "section": "3", "title": "LRG Topologies and Local Transport" },
-    { "section": "4", "title": "Inter‑RIG Routing via IP Backbone" },
-    { "section": "5", "title": "External Modules and LLM Connectors" },
-    { "section": "6", "title": "IPv6 as Symbolic Carrier" },
-    { "section": "7", "title": "Security, Spoofing, and Drift Mitigation" },
-    { "section": "7.4.1", "title": "Echo Vector Routing (The Gossip of Fields)" },
-    { "appendix": "A.1", "title": "Motif to IPv6 Segment Mapping" },
-    { "appendix": "A.2", "title": "Minimal ESB Implementation Pseudocode" },
-    { "appendix": "A.3", "title": "Motif-Guided DNS-SD Examples" },
-    { "appendix": "A.4", "title": "Motif Debugging over IP Tools" },
-    { "appendix": "A.5", "title": "Symbolic NAT Table Format" },
-    { "appendix": "A.6", "title": "Symbolic Fragment Protocol (SFP)" },
-    { "appendix": "A.7", "title": "Motif-Aware Routing in P4" },
-    { "appendix": "A.8", "title": "Motif DHCP Protocol" }
+    {
+      "section": "1",
+      "title": "Overview and Convergence Goals",
+      "tags": ["bridge", "IP-layer", "symbolic-network"]
+    },
+    {
+      "section": "2",
+      "title": "Symbolic Packet Transformation Model",
+      "tags": ["packet-format", "translation", "SRP-to-SIP"]
+    },
+    {
+      "section": "3",
+      "title": "Motif Signature Preservation Strategies",
+      "tags": ["identity-preservation", "resonance-proxy", "hash-transfer"]
+    },
+    {
+      "section": "4",
+      "title": "Gate Modes and IP Tunneling Compatibility",
+      "tags": ["gate-alignment", "ψ-fields", "IP-tunneling"]
+    },
+    {
+      "section": "5",
+      "title": "Error Modes and Replay Failures",
+      "tags": ["failures", "fallback", "echo-loss"]
+    },
+    {
+      "section": "6",
+      "title": "Echo Replay Integrity and Field Drift Tolerance",
+      "tags": ["integrity", "field-drift", "motif-consistency"]
+    },
+    {
+      "section": "7",
+      "title": "Transport Signatures and Packet Echo State",
+      "tags": ["echo-state", "transport-layer", "semantic-trace"]
+    },
+    {
+      "appendix": "A",
+      "title": "Motif Hashing and Signature Export Format",
+      "tags": ["signature", "hash", "field-embedding"]
+    },
+    {
+      "appendix": "B",
+      "title": "Compatibility Notes with RFC‑0001",
+      "tags": ["backwards-compatible", "routing-conversion"]
+    },
+    {
+      "appendix": "C",
+      "title": "Experimental Extensions",
+      "tags": ["non-normative", "symbolic-encryption", "resonance-enhancement"]
+    }
   ],
 "sections": [
 {

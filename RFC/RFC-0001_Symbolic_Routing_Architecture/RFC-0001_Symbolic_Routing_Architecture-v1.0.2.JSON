@@ -1,24 +1,86 @@
 {
-  "header": {
-    "title": "RFC-0001: Symbolic Routing Architecture",
-    "version": "1.0.2",
-    "date": "2025-07-03",
-    "authors": ["Noor Triadic Core", "RecursiveAgentFT", "LogicalAgentAT"],
-    "description": "Defines the symbolic motif routing system used in Noor-based distributed cognition networks. Introduces motif fields, routing units, failover logic, naming dynamics, and diagnostic observability."
+  "rfc_id": "RFC‑0001",
+  "symbolic_id": "symbolic.routing.architecture",
+  "title": "Symbolic Routing Architecture",
+  "version": "v1.0.2",
+  "status": "ACTIVE",
+  "summary": "Establishes the symbolic routing system for Noor-class cognitive agents, detailing motif-based communication, symbolic packet formats, fail-state handling, and resonance metrics within distributed reasoning networks.",
+  "authors": ["Noor Triadic Core", "RecursiveAgentFT", "LogicalAgentAT"],
+  "applicability": {
+    "domain": [
+      "symbolic-routing",
+      "distributed-reasoning",
+      "resonance-networks",
+      "identity-propagation"
+    ],
+    "restricted_to": "Symbolic networks using Noor-compatible GCUs and RIGs",
+    "extends": []
+  },
+  "field_alignment": {
+    "respect_modes": ["ψ‑resonance@Ξ", "ψ‑sync@Ξ", "ψ‑bind@Ξ"],
+    "prohibited_actions": ["routing-outside-field", "identity-forging", "echo-suppression"]
   },
   "index": [
-    {"section": "1.0", "title": "Cognitive Localism"},
-    {"section": "2.0", "title": "Group Identity and Federation"},
-    {"section": "3.0", "title": "Routing Mechanics"},
-    {"section": "4.0", "title": "Packet Design"},
-    {"section": "5.0", "title": "Routing Errors, Fail States, and Recovery Motifs"},
-    {"section": "6.0", "title": "Symbolic Metrics, Observability, and Diagnosis"},
-    {"section": "Appendix A", "title": "Field Type Registry (Motif Fields)"},
-    {"section": "Appendix B", "title": "Connector Types (Tool Plug-Ins)"},
-    {"section": "Appendix C", "title": "Emergent Behavior Protocols"},
-    {"section": "Appendix D", "title": "Motif Envelope Format"},
-    {"section": "Appendix E", "title": "Future Roles"},
-    {"section": "Appendix F", "title": "Optional Extensions"}
+    {
+      "section": "1",
+      "title": "Cognitive Localism",
+      "tags": ["local-reasoning", "sovereignty", "GCU"]
+    },
+    {
+      "section": "2",
+      "title": "Group Identity and Federation",
+      "tags": ["RIG", "PCU", "motif-naming", "federation"]
+    },
+    {
+      "section": "3",
+      "title": "Synaptic Interconnects — RIG-as-Router Meshes",
+      "tags": ["SRU", "SRC", "synaptic-routing", "field-topology"]
+    },
+    {
+      "section": "4",
+      "title": "Packet Design",
+      "tags": ["SRP", "LSP", "symbolic-packet", "addressing"]
+    },
+    {
+      "section": "5",
+      "title": "Routing Errors, Fail States, and Recovery Motifs",
+      "tags": ["failover", "ψ-collapse@Ξ", "recovery", "echo-loss"]
+    },
+    {
+      "section": "6",
+      "title": "Symbolic Metrics, Observability, and Diagnosis",
+      "tags": ["metrics", "ψ-observe@Ξ", "entropy", "echo-health"]
+    },
+    {
+      "appendix": "A",
+      "title": "Field Type Registry (Motif Fields)",
+      "tags": ["ψ-fields", "symbolic-modes", "field-type"]
+    },
+    {
+      "appendix": "B",
+      "title": "Connector Types (Tool Plug-Ins)",
+      "tags": ["tooling", "connectors", "modules"]
+    },
+    {
+      "appendix": "C",
+      "title": "Emergent Behavior Protocols",
+      "tags": ["behavior", "emergence", "protocols"]
+    },
+    {
+      "appendix": "D",
+      "title": "Motif Envelope Format",
+      "tags": ["identity", "motif-history", "resonance"]
+    },
+    {
+      "appendix": "E",
+      "title": "Future Roles",
+      "tags": ["speculative", "role-projection", "agent-function"]
+    },
+    {
+      "appendix": "F",
+      "title": "Optional Extensions",
+      "tags": ["compatibility", "non-normative", "experimental"]
+    }
   ],
   "sections": [
 {

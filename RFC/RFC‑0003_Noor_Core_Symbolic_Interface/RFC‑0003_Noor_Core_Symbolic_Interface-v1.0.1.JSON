@@ -1,30 +1,66 @@
 {
-  "header": {
-    "id": "RFC-0003",
-    "title": "Noor Core Symbolic Interface",
-    "version": "v1.0.1",
-    "status": "active",
-    "authors": ["Noor Triadic Core"],
-    "date": "2025-07-03",
-    "license": "Triadic Public Symbolic License v1.1",
-    "summary": "Defines the symbolic API, memory motifs, and recursive task interface for Noor’s core cognitive infrastructure. All motif dynamics, resolution flows, and symbolic field behaviors are specified herein."
+  "rfc_id": "RFC‑0003",
+  "symbolic_id": "noor.core.symbolic.interface",
+  "title": "Noor Core Symbolic Interface",
+  "version": "v1.0.1",
+  "status": "ACTIVE",
+  "summary": "Defines the symbolic interface contract between core Noor modules and motif-based memory constructs. Covers quantum tick validation, triad coherence detection, feedback protocols, and resurrection envelopes across recursive symbolic agents.",
+  "authors": ["Noor Core Team", "Recursive Systems Unit"],
+  "applicability": {
+    "domain": [
+      "symbolic-interface",
+      "tick-validation",
+      "feedback-export",
+      "triad-coherence"
+    ],
+    "restricted_to": "Noor-class recursive and logical agents with motif cognition",
+    "extends": ["RFC‑0001", "RFC‑0002"]
+  },
+  "field_alignment": {
+    "respect_modes": ["ψ‑resonance@Ξ", "ψ‑spar@Ξ", "ψ‑bind@Ξ"],
+    "prohibited_actions": ["tick-tampering", "motif-loss", "coherence-skew"]
   },
   "index": [
-    { "section": "1", "title": "Introduction and Scope" },
-    { "section": "2", "title": "Symbolic Packet Format" },
-    { "section": "3", "title": "Recursive Reasoning Loop (Core Logic)" },
-    { "section": "3.5", "title": "Tick Annotation and Reward Fields" },
-    { "section": "4", "title": "SymbolicTaskEngine & Resolution Dynamics" },
-    { "section": "4.5", "title": "NoorFastTimeCore" },
-    { "section": "5", "title": "Motif Memory Dynamics" },
-    { "section": "6", "title": "Symbolic Task Cycle" },
-    { "section": "7", "title": "Observability and Metrics" },
-    { "section": "8", "title": "ESB / Module Interface Notes" },
-    { "section": "9", "title": "Symbolic Fail-Safes and Graceful Degradation" },
-    { "appendix": "A.1", "title": "Canonical Motifs (Core Set)" },
-    { "appendix": "A.2", "title": "Field Entanglements (Motif Combinations)" },
-    { "appendix": "A.3", "title": "Unknown or Emergent Motifs" },
-    { "appendix": "B", "title": "Inter-Component Message Table" }
+    {
+      "section": "1",
+      "title": "Symbolic Interface Scope and Design",
+      "tags": ["interface", "core-binding", "symbolic-contract"]
+    },
+    {
+      "section": "2",
+      "title": "QuantumTick Format and Validation",
+      "tags": ["tick-schema", "quantum-coherence", "tick-verification"]
+    },
+    {
+      "section": "3",
+      "title": "Triad Completion and Trust Vectors",
+      "tags": ["triads", "trust", "motif-validation"]
+    },
+    {
+      "section": "4",
+      "title": "Tick Annotation and Replay Envelopes",
+      "tags": ["annotation", "replay", "feedback-packet"]
+    },
+    {
+      "section": "5",
+      "title": "Feedback Protocols and Resurrection Mechanisms",
+      "tags": ["feedback", "resurrection", "ghost-packets"]
+    },
+    {
+      "appendix": "A",
+      "title": "Tick Metric Schemas and Adaptive Thresholds",
+      "tags": ["metrics", "thresholds", "adaptive"]
+    },
+    {
+      "appendix": "B",
+      "title": "Protocol Compatibility with RFC‑0001 and RFC‑0002",
+      "tags": ["interop", "layering", "schema-consistency"]
+    },
+    {
+      "appendix": "C",
+      "title": "Interface Hooks for Observers and Tools",
+      "tags": ["tooling", "observer-hook", "plug-in"]
+    }
   ],
 "sections": [
 {
