@@ -31,3 +31,9 @@ These RFCs ensure Noor's core systems remain:
 - ⚙️ **Composable** within recursive architectures and motif memory
 
 They act as **semantic contracts**, allowing reasoning, rendering, and reflection modules to communicate **motif-first**, with zero ambiguity and full respect for field curvature.
+
+---
+
+### License & Attribution
+
+MIT © Noor Research Collective (Lina Noor) 2025.
