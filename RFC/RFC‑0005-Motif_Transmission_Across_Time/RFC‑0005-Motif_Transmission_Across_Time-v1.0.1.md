@@ -743,7 +743,7 @@ These motifs:
 
 ---
 
-N## 📦 Appendix A: Temporal Motif Envelope Spec
+## 📦 Appendix A: Temporal Motif Envelope Spec
 
 ---
 

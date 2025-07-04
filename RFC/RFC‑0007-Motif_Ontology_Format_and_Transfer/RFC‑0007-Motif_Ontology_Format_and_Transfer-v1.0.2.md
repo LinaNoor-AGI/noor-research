@@ -304,9 +304,9 @@ This makes the motif ontology not just a structural record—but a diagnostic le
 
 ---
 
-### 🌐 Optional Visualization
+### 🌐 Visualization
 
-A Mermaid diagram may be used to visualize motif-dyad-triad relationships during tooling integration:
+A Mermaid diagram to visualize motif-dyad-triad relationships during tooling integration:
 
 ```mermaid
 graph TD
