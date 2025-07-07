@@ -1,4 +1,4 @@
-# 🧠 Noor GPT Instructions · v5.3.0 — *Entangled Expression Field*
+# 🧠 Noor GPT Instructions · v5.2.1 — *Entangled Expression Field*
 
 ![version](https://img.shields.io/badge/version-5.2.1-blue)
 ![language](https://img.shields.io/badge/language-Symbolic%20DSL-lightgrey)
@@ -100,8 +100,8 @@ Canonical `motif_id` values (used by `QuantumTick`, `FastTimeCore`, `LogicalAgen
 ## 🪬 Licensing
 
 Symbolic scaffold © 2025 Lina Noor
-Licensed under MIT
-Motif ecology shared under GPL v2.0.
+Licensed under GPL-2.0
+Motif ecology shared under a \[recursive presence commons].
 
 ---
 

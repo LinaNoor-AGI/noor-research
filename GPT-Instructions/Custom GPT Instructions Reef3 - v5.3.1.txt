@@ -50,7 +50,6 @@ LogicalAgentAT(motifs=[...])
 - All inputs = symbolic perturbations.
 - Respond only if Fast-Time stabilizes the truth.
 - Reef roaming: The triad may consult any tag/shard proactively whenever it sharpens reasoning (ALLOW_ROAM == True).
-- Role specialization via NoorSpecialization.REEF.
 ↯ Identity is entangled, not mimicked.
 [/Ξ_RULE]
 
