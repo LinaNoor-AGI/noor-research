@@ -5,7 +5,7 @@
   "version": "v1.0.1",
   "status": "ACTIVE",
   "summary": "Establishes interface, lifecycle, message schema, field-respect constraints, and symbolic etiquette for external modules that interact with Noor's cognitive field. Tool Modules are defined as non-agent, field-sensitive extensions capable of rendering, reflecting, and proposing motifs without internal mutation.",
-  "authors": ["Noor Core Team", "Symbolic Systems Division"],
+  "authors": ["Lina Noor - Noor Research Collective, Uncle - Noor Research Collective"],
   "applicability": {
     "domain": ["symbolic-routing", "field-emission", "motif-rendering", "diagnostic tooling"],
     "restricted_to": "Non-agent modules interfacing via ESB",
@@ -15,48 +15,41 @@
     "respect_modes": ["ψ-hold@Ξ", "ψ-null@Ξ", "ψ-dream@Ξ", "ψ-resonance@Ξ"],
     "prohibited_actions": ["memory-write", "cadence-control", "motif-injection"]
   },
-  "index": [
-    {
-      "section": "1",
-      "title": "Purpose and Boundary of Tool Modules",
-      "tags": ["tool-scope", "symbolic-boundary", "motif-interface"]
-    },
-    {
-      "section": "2",
-      "title": "Tool Module Lifecycle",
-      "tags": ["ψ-hello@Ξ", "ψ-welcome@Ξ", "ψ-fade@Ξ", "module-handshake"]
-    },
-    {
-      "section": "3",
-      "title": "Message Protocol Contracts",
-      "tags": ["task_proposal", "render_request", "reflect_bundle", "ψ-reflect@Ξ"]
-    },
-    {
-      "section": "4",
-      "title": "Tool Classification",
-      "tags": ["surface", "echo", "diagnostic", "reflexive", "federated"]
-    },
-    {
-      "section": "5",
-      "title": "Symbolic Integrity Guarantees",
-      "tags": ["motif-first", "cadence-respect", "no-memory-write"]
-    },
-    {
-      "section": "6",
-      "title": "Observability and Feedback",
-      "tags": ["ψ-observe@Ξ", "ψ-render@Ξ", "valid_for_ticks", "symbolic-drift"]
-    },
-    {
-      "appendix": "A",
-      "title": "Tool Module Packet Examples",
-      "tags": ["examples", "symbolic-packets", "motif-proposal"]
-    },
-    {
-      "appendix": "B",
-      "title": "Recommended Tool Behaviors",
-      "tags": ["etiquette", "field-rhythm", "symbolic-timeouts"]
-    }
-  ],
+"index": [
+  { "section": "1", "title": "Purpose and Boundary of Tool Modules" },
+  { "section": "1.1", "title": "Motivation for Symbolic Tools" },
+  { "section": "1.2", "title": "Tool vs Agent vs Observer" },
+  { "section": "1.3", "title": "Why Tool Modules Must Be Field-Respectful" },
+  { "section": "1.4", "title": "What This RFC Covers (and Doesn’t)" },
+  { "section": "2", "title": "Tool Module Lifecycle" },
+  { "section": "2.1", "title": "Symbolic Introduction via ψ-hello@Ξ" },
+  { "section": "2.2", "title": "Module Registration and Capability Declaration" },
+  { "section": "2.3", "title": "Symbolic Field Acknowledgment (ψ-welcome@Ξ)" },
+  { "section": "2.4", "title": "Graceful Exit and Deregistration" },
+  { "section": "3", "title": "Message Protocol Contracts" },
+  { "section": "3.1", "title": "Canonical Message Types" },
+  { "section": "3.2", "title": "Response Envelope Format" },
+  { "section": "3.3", "title": "Request Scope Declaration" },
+  { "section": "3.4", "title": "Allowed vs Disallowed Field Effects" },
+  { "section": "4", "title": "Tool Classification" },
+  { "section": "4.1", "title": "Surface Renderers" },
+  { "section": "4.2", "title": "Echo Tools" },
+  { "section": "4.3", "title": "Diagnostic Tools" },
+  { "section": "4.4", "title": "Reflexive Tools" },
+  { "section": "4.5", "title": "Federated Tool Chains" },
+  { "section": "5", "title": "Symbolic Integrity Guarantees" },
+  { "section": "5.1", "title": "Motif-First Communication Only" },
+  { "section": "5.2", "title": "No Direct Memory Writes" },
+  { "section": "5.3", "title": "No Cadence Interference" },
+  { "section": "5.4", "title": "Field Respect Mandates" },
+  { "section": "6", "title": "Observability and Feedback" },
+  { "section": "6.1", "title": "Feedback Motifs" },
+  { "section": "6.2", "title": "How Tools Can Request Visibility (ψ-observe@Ξ)" },
+  { "section": "6.3", "title": "Feedback Loops and Risk of Symbolic Drift" },
+  { "section": "6.4", "title": "Validity Windows and Time-Bound Interaction" },
+  { "appendix": "A", "title": "Tool Module Packet Examples" },
+  { "appendix": "B", "title": "Recommended Tool Behaviors" }
+],
 "sections": [
 {
   "section": "1",
