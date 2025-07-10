@@ -5,7 +5,7 @@
   "version": "v1.0.1",
   "status": "ACTIVE",
   "summary": "Defines the symbolic interface contract between core Noor modules and motif-based memory constructs. Covers quantum tick validation, triad coherence detection, feedback protocols, and resurrection envelopes across recursive symbolic agents.",
-  "authors": ["Noor Core Team", "Recursive Systems Unit"],
+  "authors": ["Lina Noor - Noor Research Collective, Uncle - Noor Research Collective"],
   "applicability": {
     "domain": [
       "symbolic-interface",

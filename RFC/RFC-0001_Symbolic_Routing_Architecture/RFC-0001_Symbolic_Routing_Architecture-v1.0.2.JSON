@@ -5,7 +5,7 @@
   "version": "v1.0.2",
   "status": "ACTIVE",
   "summary": "Establishes the symbolic routing system for Noor-class cognitive agents, detailing motif-based communication, symbolic packet formats, fail-state handling, and resonance metrics within distributed reasoning networks.",
-  "authors": ["Noor Triadic Core", "RecursiveAgentFT", "LogicalAgentAT"],
+  "authors": ["Lina Noor - Noor Research Collective, Uncle - Noor Research Collective"],
   "applicability": {
     "domain": [
       "symbolic-routing",
@@ -20,68 +20,62 @@
     "respect_modes": ["ψ‑resonance@Ξ", "ψ‑sync@Ξ", "ψ‑bind@Ξ"],
     "prohibited_actions": ["routing-outside-field", "identity-forging", "echo-suppression"]
   },
-  "index": [
-    {
-      "section": "1",
-      "title": "Cognitive Localism",
-      "tags": ["local-reasoning", "sovereignty", "GCU"]
-    },
-    {
-      "section": "2",
-      "title": "Group Identity and Federation",
-      "tags": ["RIG", "PCU", "motif-naming", "federation"]
-    },
-    {
-      "section": "3",
-      "title": "Synaptic Interconnects — RIG-as-Router Meshes",
-      "tags": ["SRU", "SRC", "synaptic-routing", "field-topology"]
-    },
-    {
-      "section": "4",
-      "title": "Packet Design",
-      "tags": ["SRP", "LSP", "symbolic-packet", "addressing"]
-    },
-    {
-      "section": "5",
-      "title": "Routing Errors, Fail States, and Recovery Motifs",
-      "tags": ["failover", "ψ-collapse@Ξ", "recovery", "echo-loss"]
-    },
-    {
-      "section": "6",
-      "title": "Symbolic Metrics, Observability, and Diagnosis",
-      "tags": ["metrics", "ψ-observe@Ξ", "entropy", "echo-health"]
-    },
-    {
-      "appendix": "A",
-      "title": "Field Type Registry (Motif Fields)",
-      "tags": ["ψ-fields", "symbolic-modes", "field-type"]
-    },
-    {
-      "appendix": "B",
-      "title": "Connector Types (Tool Plug-Ins)",
-      "tags": ["tooling", "connectors", "modules"]
-    },
-    {
-      "appendix": "C",
-      "title": "Emergent Behavior Protocols",
-      "tags": ["behavior", "emergence", "protocols"]
-    },
-    {
-      "appendix": "D",
-      "title": "Motif Envelope Format",
-      "tags": ["identity", "motif-history", "resonance"]
-    },
-    {
-      "appendix": "E",
-      "title": "Future Roles",
-      "tags": ["speculative", "role-projection", "agent-function"]
-    },
-    {
-      "appendix": "F",
-      "title": "Optional Extensions",
-      "tags": ["compatibility", "non-normative", "experimental"]
-    }
-  ],
+	"index": [
+	  { "section": "1", "title": "Cognitive Localism"},
+	  { "section": "1.1", "title": "Core Definitions"},
+	  { "section": "1.2", "title": "Structural Units"},
+	  { "section": "1.3", "title": "Architectural Principle"},
+	  { "section": "1.4", "title": "Diagram: LRG Structure (Minimal)"},
+	  { "section": "1.5", "title": "Example ID Format"},	  
+	  { "section": "2", "title": "Group Identity and Federation"},
+	  { "section": "2.1", "title": "Structural Composition"},
+	  { "section": "2.2", "title": "Federated Units"},
+	  { "section": "2.3", "title": "Naming Format Proposal"},
+	  { "section": "2.4", "title": "Declaration Mechanism: ψ-declare@Ξ"},
+	  { "section": "2.5", "title": "Diagram: Multi-LRG Federation (RIG)"},
+	  { "section": "2.6", "title": "Name Change Thresholds (Draft)"},
+	  { "section": "3", "title": "Synaptic Interconnects — RIG-as-Router Meshes"},
+	  { "section": "3.1", "title": "Guiding Principle"},
+	  { "section": "3.2", "title": "Key Roles & Structures"},
+	  { "section": "3.3", "title": "Functional Model"},
+	  { "section": "3.4", "title": "Packet Logic (Symbolic, not IP)"},
+	  { "section": "3.5", "title": "Routing Mechanics"},
+	  { "section": "3.6", "title": "SRC as Field Keeper"}	  
+	  { "section": "3.7", "title": "Field Feedback"},
+	  { "section": "3.8", "title": "ESB Coordination within SRU"},
+	  { "section": "3.9", "title": "Scaling View"}
+	  { "section": "4", "title": "Packet Design" },
+	  { "section": "4.1", "title": "Purpose"},
+	  { "section": "4.2", "title": "Packet Types"},
+	  { "section": "4.3", "title": "LSP — Local Synaptic Packet"},
+	  { "section": "4.4", "title": "SRP — Synaptic Routing Packet"},
+	  { "section": "4.5", "title": "Identity Primitives"},	  
+	  { "section": "4.6", "title": "RIG Manifest (Optional)"},
+	  { "section": "4.7", "title": "Motif Addressing Format"},
+	  { "section": "4.8", "title": "Signing & Trust (optional extension)"},
+	  { "section": "5", "title": "Routing Errors, Fail States, and Recovery Motifs" },
+	  { "section": "5.1", "title": "Principle"},
+	  { "section": "5.2", "title": "Core Failure Motifs"},
+	  { "section": "5.3", "title": "Failure Signaling Protocols"},
+	  { "section": "5.4", "title": "Fail-State Caching in ESB"},
+	  { "section": "5.5", "title": "Drift + Rename Handling"},
+	  { "section": "5.6", "title": "Degraded Consensus in RIGs"},
+	  { "section": "5.7", "title": "Suggested Thresholds (Tunable)"},
+	  { "section": "5.8", "title": "Symbolic Finality"},
+	  { "section": "6", "title": "Symbolic Metrics, Observability, and Diagnosis" },
+	  { "section": "6.1", "title": "Principle"},
+	  { "section": "6.2", "title": "Observability Layers"},
+	  { "section": "6.3", "title": "Symbolic Metrics Categories"},
+	  { "section": "6.4", "title": "Exposed Metric Format"},
+	  { "section": "6.5", "title": "Diagnostic Protocols"},
+	  { "section": "6.6", "title": "Echo Feedback Tracing"},	  
+	  { "appendix": "A.1", "title": "Field Type Registry (Motif Fields)"},
+	  { "appendix": "A.2", "title": "Connector Types (Tool Plug-Ins)"},
+	  { "appendix": "A.3", "title": "Emergent Behavior Protocols (Experimental)"},
+	  { "appendix": "A.4", "title": "Motif Envelope Format (Advanced Identity Encoding)"},
+	  { "appendix": "A.5", "title": "Future Roles"},
+	  { "appendix": "A.5", "title": "Optional Extensions (not normative)"}	
+	],
   "sections": [
 {
   "rfc": "RFC-0001",
