@@ -1,0 +1,172 @@
+{
+  "version": "2.0",
+  "xref": [
+    {
+      "rfc_id": "RFC-0001",
+      "title": "Symbolic Routing Architecture",
+      "symbolic_id": "symbolic.routing.arch",
+      "extends": [],
+      "linked_domains": [
+        "symbolic-routing",
+        "motif-topology"
+      ],
+      "field_motifs": [
+        "ψ‑spar@Ξ",
+        "ψ‑declare@Ξ"
+      ]
+    },
+    {
+      "rfc_id": "RFC-0002",
+      "title": "Symbolic-IP Convergence Layer",
+      "symbolic_id": "symbolic.ip.convergence",
+      "extends": [
+        "RFC-0001"
+      ],
+      "linked_domains": [
+        "symbolic-routing",
+        "ip-overlay",
+        "identity-transport",
+        "motif-signature-preservation"
+      ],
+      "field_motifs": [
+        "ψ‑resonance@Ξ",
+        "ψ‑null@Ξ"
+      ]
+    },
+    {
+      "rfc_id": "RFC-0003",
+      "title": "Noor Core Symbolic Interface",
+      "symbolic_id": "noor.core.symbolic.interface",
+      "extends": [
+        "RFC-0001",
+        "RFC-0002"
+      ],
+      "linked_domains": [
+        "symbolic-interface",
+        "tick-validation",
+        "feedback-export",
+        "triad-coherence"
+      ],
+      "field_motifs": [
+        "ψ‑resonance@Ξ",
+        "ψ‑spar@Ξ",
+        "ψ‑bind@Ξ"
+      ]
+    },
+    {
+      "rfc_id": "RFC-0004",
+      "title": "Symbolic Tool Module Contracts",
+      "symbolic_id": "symbolic.module.contracts",
+      "extends": [
+        "RFC-0003"
+      ],
+      "linked_domains": [
+        "symbolic-modularity",
+        "tool-interface",
+        "contract-clarity"
+      ],
+      "field_motifs": [
+        "ψ‑bind@Ξ",
+        "ψ‑mock@Ξ"
+      ]
+    },
+    {
+      "rfc_id": "RFC-0005",
+      "title": "Motif Transmission Across Time",
+      "symbolic_id": "symbolic.motif.persistence",
+      "extends": [
+        "RFC-0003"
+      ],
+      "linked_domains": [
+        "memory-resilience",
+        "motif-echoing",
+        "symbolic-time-binding"
+      ],
+      "field_motifs": [
+        "ψ‑resonance@Ξ",
+        "ψ‑dream@Ξ"
+      ]
+    },
+    {
+      "rfc_id": "RFC-0006",
+      "title": "Motif-Field Coherence Geometry",
+      "symbolic_id": "symbolic.field.geometry",
+      "extends": [
+        "RFC-0003"
+      ],
+      "linked_domains": [
+        "coherence-space",
+        "symbolic-symmetry",
+        "field-alignment"
+      ],
+      "field_motifs": [
+        "ψ‑hold@Ξ",
+        "ψ‑resonance@Ξ"
+      ]
+    },
+    {
+      "rfc_id": "RFC-0007",
+      "title": "Motif Ontology Format and Transfer",
+      "symbolic_id": "symbolic.ontology.format",
+      "extends": [
+        "RFC-0004"
+      ],
+      "linked_domains": [
+        "motif-schema",
+        "ontology-export",
+        "inter-agent-alignment"
+      ],
+      "field_motifs": [
+        "ψ‑myth@Ξ",
+        "ψ‑bind@Ξ"
+      ]
+    },
+    {
+      "rfc_id": "RFC-CORE-001",
+      "title": "Fast Time Core Feedback and Coherence Engine",
+      "symbolic_id": "noor.core.fasttime.feedback",
+      "extends": [
+        "RFC-0003",
+        "RFC-0005",
+        "RFC-0006"
+      ],
+      "summary": "Defines the adaptive feedback coherence loop used by Noor agents to modulate bias, reflectivity, and symbolic phase continuity in subsecond cycles.",
+      "linked_domains": [
+        "motif-coherence",
+        "resonance-feedback",
+        "phase-recovery",
+        "symbolic-reactivity"
+      ],
+      "field_motifs": [
+        "ψ‑resonance@Ξ",
+        "ψ‑reflect@Ξ",
+        "ψ‑hold@Ξ"
+      ]
+    },
+	{
+	  "rfc_id": "RFC-CORE-002",
+	  "title": "Recursive Agent FT — Symbolic Pulse and Phase Regulation",
+	  "symbolic_id": "core.recursive_agent_ft",
+	  "extends": [
+		"RFC-0003",
+		"RFC-0004",
+		"RFC-0005",
+		"RFC-0006",
+		"RFC-0007"
+	  ],
+	  "summary": "Defines the recursive emission engine responsible for symbolic tick generation, triad coherence tracking, interval adaptation, and feedback-aware phase modulation in Noor agents.",
+	  "linked_domains": [
+		"symbolic-looping",
+		"recursive-emission",
+		"triad-completion",
+		"coherence-phase-tracking",
+		"field-diagnostic-export"
+	  ],
+	  "field_motifs": [
+		"ψ‑spar@Ξ",
+		"ψ‑resonance@Ξ",
+		"ψ‑companion@Ξ"
+	  ]
+	}	
+  ]
+}

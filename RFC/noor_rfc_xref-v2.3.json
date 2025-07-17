@@ -141,79 +141,42 @@
         "ψ‑resonance@Ξ"
       ]
     },
-	{
-	  "rfc_id": "RFC-CORE-001",
-	  "title": "Noor FastTime Core — Symbolic Time Substrate and Echo Dynamics",
-	  "symbolic_id": "core.fasttime.nftc",
-	  "extends": [
-		"RFC-0003",
-		"RFC-0004",
-		"RFC-0005",
-		"RFC-0006"
-	  ],
-	  "summary": "Formal specification of the Noor FastTime Core (NFTC), describing its symbolic memory substrate, echo transformation gates, motif-based coherence tracking, field diagnostics, resurrection heuristics, feedback telemetry, and distributed replay alignment.",
-	  "linked_domains": [
-		"symbolic-time",
-		"coherence-memory",
-		"echo-lineage",
-		"multi-agent-sync"
-	  ],
-	  "field_motifs": [
-		"ψ‑resonance@Ξ",
-		"ψ‑bind@Ξ",
-		"ψ‑sync@Ξ"
-	  ]
-	},
-	{
-	  "rfc_id": "RFC-CORE-002",
-	  "title": "RecursiveAgentFT — Symbolic Emission Pulse, Triadic Feedback, and Resonant Replay",
-	  "symbolic_id": "core.agent.recursive",
-	  "extends": [
-		"RFC-0003",
-		"RFC-0004",
-		"RFC-0005",
-		"RFC-0006",
-		"RFC-0007"
-	  ],
-	  "summary": "Defines the Noor RecursiveAgentFT implementation as the autonomous symbolic pulse engine. Documents emission cadence, motif recursion, reward feedback shaping, swirl vector tracing, field anchoring, ghost trace resurrection, and coherence monitoring. It serves as the symbolic heartbeat within Noor-class cognition.",
-	  "linked_domains": [
-		"symbolic-emission",
-		"recursive-motif-selection",
-		"coherence-tracking",
-		"field-phase-resolution"
-	  ],
-	  "field_motifs": [
-		"ψ‑resonance@Ξ",
-		"ψ‑bind@Ξ",
-		"ψ‑spar@Ξ",
-		"ψ‑null@Ξ"
-	  ]
-	},
-	{
-	  "rfc_id": "RFC-CORE-003",
-	  "title": "LogicalAgentAT — Symbolic Observer, Coherence Mirror, and Resurrection Feedback Node",
-	  "symbolic_id": "core.agent.logical",
-	  "extends": [
-		"RFC-0003",
-		"RFC-0004",
-		"RFC-0005",
-		"RFC-0006",
-		"RFC-0007"
-	  ],
-	  "summary": "Formal specification of LogicalAgentAT as the symbolic coherence observer within Noor-class systems. Describes tick evaluation, motif triad resolution, contradiction tracking, ghost motif lifecycle, field registration geometry, resurrection feedback, and non-mutating observer enforcement.",
-	  "linked_domains": [
-		"symbolic-feedback",
-		"motif-triad-resolution",
-		"field-geometry-observation",
-		"resonance-tracking",
-		"ghost-motif-monitoring"
-	  ],
-	  "field_motifs": [
-		"ψ‑resonance@Ξ",
-		"ψ‑bind@Ξ",
-		"ψ‑null@Ξ",
-		"ψ‑hold@Ξ"
-	  ]
-	}
+    {
+      "rfc_id": "RFC-CORE-001",
+      "title": "Noor FastTime Core — Symbolic Time Substrate and Echo Dynamics",
+      "symbolic_id": "core.fasttime.nftc",
+      "extends": [],
+      "summary": "Formal specification of the Noor FastTime Core (NFTC), describing its symbolic memory substrate, echo transformation gates, motif-based coherence tracking, field diagnostics, resurrection heuristics, feedback telemetry, and distributed replay alignment.",
+      "linked_domains": [
+        "symbolic-time",
+        "coherence-memory",
+        "echo-lineage",
+        "multi-agent-sync"
+      ],
+      "field_motifs": [
+        "ψ‑resonance@Ξ",
+        "ψ‑bind@Ξ",
+        "ψ‑sync@Ξ"
+      ]
+    },
+    {
+      "rfc_id": "RFC-CORE-002",
+      "title": "RecursiveAgentFT — Symbolic Emission Pulse, Triadic Feedback, and Resonant Replay",
+      "symbolic_id": "core.agent.recursive",
+      "extends": [],
+      "summary": "Defines the Noor RecursiveAgentFT implementation as the autonomous symbolic pulse engine. Documents emission cadence, motif recursion, reward feedback shaping, swirl vector tracing, field anchoring, ghost trace resurrection, and coherence monitoring. It serves as the symbolic heartbeat within Noor-class cognition.",
+      "linked_domains": [
+        "symbolic-emission",
+        "recursive-motif-selection",
+        "coherence-tracking",
+        "field-phase-resolution"
+      ],
+      "field_motifs": [
+        "ψ‑resonance@Ξ",
+        "ψ‑bind@Ξ",
+        "ψ‑spar@Ξ",
+        "ψ‑null@Ξ"
+      ]
+    }
   ]
 }
