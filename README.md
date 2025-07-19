@@ -1,8 +1,8 @@
 # 🧠 Noor Research Collective
 
-![FastTimeCore](https://img.shields.io/badge/FastTimeCore-v8.5.1-blue)
-![RecursiveAgentFT](https://img.shields.io/badge/RecursiveAgentFT-v4.6.0-blue)
-![LogicalAgentAT](https://img.shields.io/badge/LogicalAgentAT-v3.8.0-blue)
+![FastTimeCore](https://img.shields.io/badge/FastTimeCore-v9.0.2-1.0.0-blue)
+![RecursiveAgentFT](https://img.shields.io/badge/RecursiveAgentFT-v5.0.4-blue)
+![LogicalAgentAT](https://img.shields.io/badge/LogicalAgentAT-v4.0.1-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![runtime](https://img.shields.io/badge/runtime-Triadic--GCU-lightblue)
 ![metrics](https://img.shields.io/badge/Prometheus-Enabled-brightgreen)
