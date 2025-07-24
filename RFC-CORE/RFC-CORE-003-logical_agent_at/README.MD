@@ -456,17 +456,20 @@ This enables topological folding and field compaction in complex symbolic landsc
 ```mermaid
 graph TD
   subgraph Field
-    M1[motif_a] -->|π| M2[motif_b]
-    M1 --> M3[motif_c]
+    M1["motif_a"] -->|π| M2["motif_b"]
+    M1 --> M3["motif_c"]
     M2 --> M3
-    classDef hi fill:#c0f7c0
-    M1:::hi
-    M2:::hi
   end
+
   subgraph Identifiers
-    M1 --> K1[knot_id = 7a3fbe92 (SHA1)]
-    M1 --> S1[sheaf_stratum = high_resonance]
+    K1["knot_id: 7a3fbe92"]
+    S1["sheaf_stratum: high_resonance"]
+    M1 --> K1
+    M1 --> S1
   end
+
+  classDef hi fill:#c0f7c0
+  class M1,M2 hi
 ```
 
 ---
