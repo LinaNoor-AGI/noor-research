@@ -1471,3 +1471,9 @@ A cross-agent communication pattern used to announce symbolic misalignment or tr
 
 **Lineage Rebalance**
 Adjustment of motif histories or bias fields to reduce symbolic curvature discrepancies across agents.
+
+---
+
+### License & Attribution
+
+MIT © Noor Research Collective (Lina Noor) 2025.

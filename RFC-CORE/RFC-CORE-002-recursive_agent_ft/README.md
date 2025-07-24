@@ -808,3 +808,9 @@ def build_phase_id():
     phase_id = f"{symbolic_label}-[{tier}]-{swirl_hash}"
     return phase_id
 ```
+
+---
+
+### License & Attribution
+
+MIT © Noor Research Collective (Lina Noor) 2025.

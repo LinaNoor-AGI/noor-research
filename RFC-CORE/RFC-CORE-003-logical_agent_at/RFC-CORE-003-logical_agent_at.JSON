@@ -287,6 +287,7 @@
 			"mermaid": "graph TD\n    subgraph Field\n      M1[motif_a] -->|π| M2[motif_b]\n      M1 --> M3[motif_c]\n      M2 --> M3\n      classDef hi fill:#c0f7c0\n      M1:::hi\n      M2:::hi\n    end\n    subgraph Identifiers\n      M1 --> K1[knot_id = 7a3fbe92 (SHA1)]\n      M1 --> S1[sheaf_stratum = high_resonance]\n    end"
 		  }
 		}
+	}
 },
 {
   "id": "4",
