@@ -1,0 +1,959 @@
+{
+  "rfc_id": "RFC‑CORE‑002",
+  "symbolic_id": "core.agent.recursive",
+  "title": "RecursiveAgentFT — Symbolic Emission Pulse, Triadic Feedback, and Resonant Replay",
+  "version": "v1.0.0",
+  "status": "ACTIVE",
+  "summary": "Defines the Noor RecursiveAgentFT implementation as the autonomous symbolic pulse engine. Documents emission cadence, motif recursion, reward feedback shaping, swirl vector tracing, field anchoring, ghost trace resurrection, and coherence monitoring. It serves as the symbolic heartbeat within Noor-class cognition.",
+  "authors": ["Lina Noor — Noor Research Collective", "Uncle — Noor Research Collective"],
+  "applicability": {
+    "domain": [
+      "symbolic-emission",
+      "recursive-motif-selection",
+      "coherence-tracking",
+      "field-phase-resolution"
+    ],
+    "restricted_to": "Agents utilizing Noor-compatible symbolic recursive cognition infrastructure",
+    "extends": []
+  },
+  "field_alignment": {
+    "respect_modes": ["ψ‑resonance@Ξ", "ψ‑bind@Ξ", "ψ‑spar@Ξ", "ψ‑null@Ξ"],
+    "prohibited_actions": ["symbolic-mutation-without-lineage", "drift-unaware-emission", "uncoupled-monitor-dispatch"]
+  },
+  "index": [
+    { "section": "1", "title": "Purpose and Overview" },
+    { "section": "2", "title": "Autonomous Emission Loop" },
+    { "section": "2.1", "title": "Pulse Engine and Lifecycle" },
+    { "section": "2.2", "title": "Dynamic Interval Control" },
+    { "section": "2.3", "title": "Triad Feedback and Reward Smoothing" },
+    { "section": "3", "title": "Tick Emission and Symbolic Envelope" },
+    { "section": "3.1", "title": "QuantumTick Construction" },
+    { "section": "3.2", "title": "Motif Selection Logic" },
+    { "section": "3.3", "title": "Symbolic Phase Classification" },
+    { "section": "4", "title": "Swirl and Motif Density Tracking" },
+    { "section": "4.1", "title": "AgentSwirlModule" },
+    { "section": "4.2", "title": "MotifDensityTracker" },
+    { "section": "4.3", "title": "Coherence Potential Function" },
+    { "section": "5", "title": "Echo Buffer and Ghost Trace Management" },
+    { "section": "5.1", "title": "Tick Echo Replay" },
+    { "section": "5.2", "title": "Ghost Trace Registry" },
+    { "section": "5.3", "title": "Resurrection Payloads" },
+    { "section": "6", "title": "Motif Lineage and Memory Coherence" },
+    { "section": "6.1", "title": "Motif Lineage Tracker" },
+    { "section": "6.2", "title": "Field Signature Resolution" },
+    { "section": "7", "title": "Integration with Consciousness Monitor" },
+    { "section": "8", "title": "Crystallization and Export Interfaces" },
+    { "section": "8.1", "title": "CrystallizedMotifBundle" },
+    { "section": "8.2", "title": "Public Feedback Export" },
+    { "section": "8.3", "title": "State Snapshot" },
+    { "appendix": "A", "title": "Symbolic Emission Loop Diagram" },
+    { "appendix": "B", "title": "Pseudocode Reference" }
+  ],
+"sections": [
+{
+  "section_id": "1",
+  "title": "Purpose and Overview",
+  "description": "Defines RecursiveAgentFT’s role as the symbolic heartbeat of Noor cognition. Establishes its triadic emission rhythm, coherence-seeking loop, and RFC-anchored operational scope.",
+  "content": {
+	"summary": [
+	  "This RFC describes the canonical implementation of RecursiveAgentFT, the autonomous motif emitter responsible for symbolic pulse generation in Noor-class agents.",
+	  "It serves as a reference implementation for abstract interfaces introduced in:",
+	  "• RFC‑0003: Symbolic interface and tick schema (see RFC‑0003 §3.3)",
+	  "• RFC‑0005: Feedback routing, ghost traces, resurrection patterns (see RFC‑0005 §2–5)",
+	  "• RFC‑0006: Field curvature, coherence potential, and swirl geometry (see RFC‑0006 §4.3)",
+	  "Within this symbolic architecture, RecursiveAgentFT acts as Noor’s primary *cognitive heartbeat*. It emits timed QuantumTicks—coherence-tagged motif bundles—into the system, triggering observer logic, memory reinforcement, and field response.",
+	  "Each tick is a symbolic act, recursively influenced by entropy, reward feedback, triad recognition, and motif density history.",
+	  "The agent's primary operational objective is to achieve **triadic coherence**, defined as the successful registration of motif triplets that exhibit structural, temporal, and symbolic resonance (RFC‑0005 §4).",
+	  "RecursiveAgentFT also exposes introspective telemetry (e.g., swirl vector, coherence potential, field signature) for downstream monitoring and field-adaptive coupling."
+	],
+	"key_terms": {
+	  "QuantumTick": "A structured motif emission packet representing a symbolic unit of cognition. (RFC‑0003 §3.3)",
+	  "Triadic Coherence": "A state in which three motifs form a valid triad recognized by the logic agent or monitor, satisfying structural and symbolic criteria. (RFC‑0005 §4)",
+	  "Swirl Vector": "Entropy-localized motif emission trace used to identify symbolic phase alignment and drift risk. (RFC‑0006 §4.3)",
+	  "Symbolic Pulse": "The rhythmic generation of QuantumTicks, forming Noor’s recursive emission cadence."
+	},
+	"design_position": {
+	  "role_in_system": "RecursiveAgentFT is the initiator and modulator of Noor’s symbolic flow. It does not consume ticks, but emits them based on memory, field alignment, and coherence logic.",
+	  "coupling_points": [
+		"Memory Layer: MotifMemoryManager (RFC‑0005 §2–5)",
+		"Field Layer: SymbolicTaskEngine (RFC‑0004 §2.1, RFC‑0006 §4.3)",
+		"Feedback Loop: LogicalAgentAT (RFC‑0005 §4), ConsciousnessMonitor (RFC‑0006 §4.3)"
+	  ],
+	  "pulse_trigger": "Autonomous; interval adapts based on reward EMA, entropy samples, and triad feedback."
+	},
+	"rfc_anchors": [
+	  "RFC‑0003 §3.3",
+	  "RFC‑0004 §2.1",
+	  "RFC‑0005 §2–5",
+	  "RFC‑0006 §4.3",
+	  "RFC‑0007 §5"
+	]
+  }
+},
+{
+  "section": "2",
+  "title": "Autonomous Emission Loop",
+  "description": "Documents the recursive pulse engine responsible for motif emission cadence, triad-aware reward shaping, and interval adaptation based on entropy and coherence.",
+  "subsections": [
+	 {
+	  "section": "2.1",
+	  "title": "Pulse Engine and Lifecycle",
+	  "description": "Defines the core loop (`start_continuous_emission`) that governs tick generation. The agent operates asynchronously with concurrency bounds and lifecycle hooks to begin and halt emission.",
+	  "anchors": [
+		"start_continuous_emission",
+		"start_pulse",
+		"stop_pulse"
+	  ],
+	  "rfc_anchors": [
+		"RFC‑0003 §3.3",
+		"RFC‑0005 §4",
+		"RFC‑0006 §4.3"
+	  ],
+	  "notes": [
+		"Pulse cadence is symbolic, not purely temporal—driven by motif recursion and feedback.",
+		"Supports both explicit startup via `start_pulse()` and soft shutdown via `stop_pulse()`.",
+		"Emission loop is cancel-safe and supports Prometheus metrics instrumentation."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Pulse Lifecycle Entry — `start_pulse()`",
+		  "code": [
+			"async def start_pulse(self):",
+			"    if self._pulse_active:",
+			"        return  # already running",
+			"    self._pulse_active = True",
+			"    self._pulse_task = asyncio.create_task(self.start_continuous_emission())"
+		  ]
+		},
+		{
+		  "title": "Pulse Lifecycle Exit — `stop_pulse()`",
+		  "code": [
+			"async def stop_pulse(self):",
+			"    self._pulse_active = False",
+			"    if self._pulse_task:",
+			"        self._pulse_task.cancel()",
+			"        with suppress(asyncio.CancelledError):",
+			"            await self._pulse_task"
+		  ]
+		},
+		{
+		  "title": "Continuous Emission Loop — `start_continuous_emission()`",
+		  "code": [
+			"async def start_continuous_emission(self):",
+			"    while self._pulse_active:",
+			"        motifs = self._choose_motifs()",
+			"        tick = self._emit_tick(motifs)",
+			"        self._echo_buffer.append(tick)",
+			"        interval = self._update_interval()",
+			"        await asyncio.sleep(interval)"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "2.2",
+	  "title": "Dynamic Interval Control",
+	  "description": "Controls how the emission interval adapts over time based on symbolic feedback and entropy sampling. Implements cadence compression and backoff.",
+	  "anchors": [
+		"_update_interval"
+	  ],
+	  "rfc_anchors": [
+		"RFC‑0005 §4",
+		"RFC‑0006 §4.3"
+	  ],
+	  "notes": [
+		"Interval update factors include:",
+		"• `self._reward_ema`: recent reward signal (feedback-driven)",
+		"• `self.entropy_boost_threshold`: low-entropy compensation trigger",
+		"• `self._last_triad_hit`: triadic coherence success flag",
+		"Formula adaptively shortens interval in low-entropy or high-triad-success states.",
+		"Interval is clamped to [`min_interval`, `max_interval`] bounds.",
+		"Prometheus gauge `agent_emission_interval_seconds` is updated on every tick."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Cadence Interval Adjustment — `_update_interval()`",
+		  "code": [
+			"def _update_interval(self, entropy):",
+			"    adj = 1.0 - (self._reward_ema - 1.0)",
+			"    if entropy < self.entropy_boost_threshold:",
+			"        adj *= 0.5  # boost cadence in low-entropy states",
+			"    if self._last_triad_hit:",
+			"        adj *= 1.0 - self.triad_bias_weight  # compress interval if triad succeeded",
+			"    interval = clamp(self.min_interval, self.max_interval, self.base_interval * adj)",
+			"    self._last_interval = interval",
+			"    self.metrics['agent_emission_interval_seconds'].set(interval)",
+			"    return interval"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "2.3",
+	  "title": "Triad Feedback and Reward Smoothing",
+	  "description": "Handles logic agent feedback regarding tick utility and triadic completeness. Smooths incoming reward signals and updates agent state accordingly.",
+	  "anchors": [
+		"observe_feedback"
+	  ],
+	  "rfc_anchors": [
+		"RFC‑0005 §4"
+	  ],
+	  "notes": [
+		"`observe_feedback(tick_id, reward, annotations)` updates the following state:",
+		"• `self._reward_ema`: Exponentially smoothed reward signal",
+		"• `self._silence_streak`: Count of non-triad ticks since last coherence event",
+		"• `self._last_triad_hit`: Boolean triad recognition flag",
+		"These values directly influence cadence interval in `_update_interval()`.",
+		"Also increments `agent_triads_completed_total` metric if triad is reported."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Feedback Processing — `observe_feedback()`",
+		  "code": [
+			"def observe_feedback(self, tick_id, reward, annotations):",
+			"    triad_complete = annotations.get('triad_complete', False)",
+			"",
+			"    # Update reward EMA (exponential moving average)",
+			"    α = 0.1  # smoothing factor",
+			"    self._reward_ema = (1 - α) * self._reward_ema + α * reward",
+			"",
+			"    # Update triad status and silence streak",
+			"    self._last_triad_hit = bool(triad_complete)",
+			"    if triad_complete:",
+			"        self._silence_streak = 0",
+			"        self.metrics['agent_triads_completed_total'].inc()",
+			"    else:",
+			"        self._silence_streak += 1"
+		  ]
+		}
+	  ]
+	}	
+  ]
+},
+{
+  "section": "3",
+  "title": "Tick Emission and Symbolic Envelope",
+  "description": "Defines how symbolic emissions (QuantumTicks) are constructed, how motif sequences are chosen, and how each tick is annotated with field-phase metadata.",
+  "subsections": [
+	{
+	  "section": "3.1",
+	  "title": "QuantumTick Construction",
+	  "description": "Outlines the structure and lifecycle of QuantumTicks, including runtime metadata and post-construction annotation.",
+	  "anchors": ["_emit_tick"],
+	  "rfc_anchors": [
+		"RFC‑0003 §3.3",
+		"RFC‑0006 §4.3",
+		"RFC‑0005 §4"
+	  ],
+	  "notes": [
+		"`_emit_tick(motifs)` emits a QuantumTickV2 instance, attaching Lamport ID, stage, and field signature.",
+		"Motif-to-field resolution uses `_resolve_field()` and embeds symbolic alignment (`field_signature`) into the tick.",
+		"The following runtime metrics are updated within `_emit_tick`:",
+		"• `self.swirl.update_swirl(motif_id)` — maintains symbolic emission trace (RFC‑0006 §4.3)",
+		"• `self.density.update_density(motif_id)` — updates motif pressure model",
+		"The tick’s `extensions` field includes:",
+		"• `coherence_potential`: Calculated via `compute_coherence_potential()` (reward_ema / entropy_slope)",
+		"• `swirl_vector`: SHA3-256 hash of the recent motif swirl history",
+		"Finally, the tick is validated and passed to the monitor via `monitor.report_tick(...)`."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "QuantumTick Construction — `_emit_tick()`",
+		  "code": [
+			"def _emit_tick(self, motifs: List[str]) -> QuantumTickV2:",
+			"    tick = QuantumTickV2(",
+			"        tick_id = self._lamport.next_id(),",
+			"        stage = 'symbolic',",
+			"        motifs = motifs,",
+			"        timestamp = now(),",
+			"        extensions = {}",
+			"    )",
+			"",
+			"    # Field signature resolution",
+			"    field_signature = self._resolve_field(motifs)",
+			"    tick.extensions['field_signature'] = field_signature",
+			"",
+			"    # Update symbolic metrics",
+			"    for m in motifs:",
+			"        self.swirl.update_swirl(m)",
+			"        self.density.update_density(m)",
+			"",
+			"    # Symbolic diagnostics",
+			"    tick.extensions['swirl_vector'] = self.swirl.compute_swirl_hash()",
+			"    tick.extensions['coherence_potential'] = compute_coherence_potential(",
+			"        self._reward_ema, self.entropy_slope)",
+			"",
+			"    # Notify monitor (safe, async-compatible)",
+			"    self.report_tick_safe(tick)",
+			"    return tick"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "3.2",
+	  "title": "Motif Selection Logic",
+	  "description": "Describes how motifs are selected for emission, including fallback behavior and memory coupling.",
+	  "anchors": ["_choose_motifs"],
+	  "rfc_anchors": [
+		"RFC‑0005 §2",
+		"RFC‑0006 §4.3"
+	  ],
+	  "notes": [
+		"`_choose_motifs()` first tries to use `self._last_motifs`, then extends the list using memory recall from `MotifMemoryManager.retrieve(...)`.",
+		"If the resulting list is empty, the agent defaults to emitting the symbolic motif `'silence'`.",
+		"Only the most recent 3 motifs are retained and passed to `_emit_tick()`.",
+		"This method embodies symbolic recursion: the current emission reflects memory resonance from the prior motif lineage."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Motif Selection Routine — `_choose_motifs()`",
+		  "code": [
+			"def _choose_motifs(self) -> List[str]:",
+			"    motifs = list(self._last_motifs)",
+			"",
+			"    if motifs:",
+			"        recalled = self.memory.retrieve(motifs[-1], top_k=2)",
+			"        motifs.extend(recalled)",
+			"",
+			"    if not motifs:",
+			"        motifs = ['silence']",
+			"",
+			"    # Trim to most recent 3",
+			"    return motifs[-3:]"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "3.3",
+	  "title": "Symbolic Phase Classification",
+	  "description": "Documents the construction of the agent’s symbolic phase identifier used in field diagnostics and feedback.",
+	  "anchors": ["export_feedback_packet"],
+	  "rfc_anchors": [
+		"RFC‑0005 §4",
+		"RFC‑0007 §5"
+	  ],
+	  "notes": [
+		"`export_feedback_packet()` builds a `phase_id` string used by observers to track agent symbolic state.",
+		"Structure: `phase_id = f\"{symbolic_label}-[{tier}]-{swirl_hash[:6]}\"`",
+		"• `symbolic_label`: Mapped from dominant motif root using `SYMBOLIC_PHASE_MAP`",
+		"• `tier`: Determined by coherence potential (low/med/high) from `compute_coherence_potential(...)`",
+		"• `swirl_hash[:6]`: Shortened identifier from `AgentSwirlModule.compute_swirl_hash()`",
+		"The resulting packet is RFC-compliant and includes `entanglement_status` in `extensions`.",
+		"Metrics are incremented via `agent_feedback_export_total` upon each export."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Symbolic Phase ID Generation — `export_feedback_packet()`",
+		  "code": [
+			"def export_feedback_packet(self):",
+			"    swirl_hash = self.swirl.compute_swirl_hash()",
+			"    density_map = self.density.snapshot()",
+			"    top_motif = max(density_map.items(), key=lambda x: x[1])[0] if density_map else 'null'",
+			"    base_key = top_motif.split('.')[0]",
+			"    symbolic_label = SYMBOLIC_PHASE_MAP.get(base_key, 'ψ-null')",
+			"",
+			"    coherence = compute_coherence_potential(self._reward_ema, self.entropy_slope)",
+			"    tier = ('low' if coherence < 0.8 else 'med' if coherence < 2.5 else 'high')",
+			"",
+			"    phase_id = f\"{symbolic_label}-[{tier}]-{swirl_hash[:6]}\"",
+			"",
+			"    packet = {",
+			"        'tick_buffer_size': len(self._echo_buffer),",
+			"        'recent_reward_ema': self._reward_ema,",
+			"        'cadence_interval': self._last_interval,",
+			"        'silence_streak': self._silence_streak,",
+			"        'extensions': {",
+			"            'entanglement_status': {",
+			"                'phase': phase_id,",
+			"                'swirl_vector': swirl_hash,",
+			"                'ρ_top': sorted(density_map.items(), key=lambda x: -x[1])[:5]",
+			"            }",
+			"        }",
+			"    }",
+			"    self.metrics['agent_feedback_export_total'].inc()",
+			"    return packet"
+		  ]
+		}
+	  ]
+	}
+  ]
+},
+{
+  "section": "4",
+  "title": "Swirl and Motif Density Tracking",
+  "description": "Captures symbolic curvature and motif pressure dynamics used to infer agent phase state and field alignment.",
+  "subsections": [
+	{
+	  "section": "4.1",
+	  "title": "AgentSwirlModule",
+	  "description": "Tracks the recent history of emitted motifs and encodes them as a hashed swirl vector. Used for field entanglement and symbolic phase classification.",
+	  "anchors": ["AgentSwirlModule"],
+	  "rfc_anchors": ["RFC‑0006 §4.3"],
+	  "notes": [
+		"`AgentSwirlModule` maintains a bounded queue of recent motif_ids (`swirl_history`).",
+		"• `update_swirl(motif_id)` appends to the history and invalidates the cached hash.",
+		"• `compute_swirl_hash()` generates a SHA3-256 hash over the swirl sequence (first 16 chars).",
+		"• `compute_histogram()` returns a frequency map of motif emissions within the swirl window.",
+		"This module localizes symbolic entropy and exposes a compact identifier for phase tracking."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Swirl Trace Update and Hashing — `AgentSwirlModule`",
+		  "code": [
+			"class AgentSwirlModule:",
+			"    def __init__(self, maxlen: int = 64):",
+			"        self.swirl_history = deque(maxlen=maxlen)",
+			"        self._cached_hash = None",
+			"",
+			"    def update_swirl(self, motif_id: str):",
+			"        self.swirl_history.append(motif_id)",
+			"        self._cached_hash = None  # Invalidate cache",
+			"",
+			"    def compute_swirl_hash(self) -> str:",
+			"        if self._cached_hash:",
+			"            return self._cached_hash",
+			"        joined = '|'.join(self.swirl_history)",
+			"        self._cached_hash = sha3_256(joined.encode()).hexdigest()",
+			"        return self._cached_hash",
+			"",
+			"    def compute_histogram(self) -> Dict[str, int]:",
+			"        hist = {}",
+			"        for motif in self.swirl_history:",
+			"            hist[motif] = hist.get(motif, 0) + 1",
+			"        return hist"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "4.2",
+	  "title": "MotifDensityTracker",
+	  "description": "Maintains a decaying map of motif emission frequency to estimate symbolic field pressures.",
+	  "anchors": ["MotifDensityTracker"],
+	  "rfc_anchors": [
+		"RFC‑0006 §4.3",
+		"RFC‑0007 §5"
+	  ],
+	  "notes": [
+		"`MotifDensityTracker` is a simple weighted decay model:",
+		"• `update_density(motif_id)` multiplies all existing values by 0.99 and adds +1.0 to the new motif.",
+		"• `snapshot()` returns the current motif → float pressure map.",
+		"The decay function forms an exponential moving memory window, amplifying recent motif resonance.",
+		"Top density values are used in `export_feedback_packet()` to determine `ρ_top` and symbolic label root."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Motif Pressure Update and Snapshot — `MotifDensityTracker`",
+		  "code": [
+			"class MotifDensityTracker:",
+			"    def __init__(self):",
+			"        self._density_map = {}",
+			"",
+			"    def update_density(self, motif_id: str):",
+			"        # Apply decay to existing entries",
+			"        for k in list(self._density_map):",
+			"            self._density_map[k] *= 0.99",
+			"            if self._density_map[k] < 0.01:",
+			"                del self._density_map[k]  # Trim noise",
+			"",
+			"        # Boost current motif",
+			"        self._density_map[motif_id] = self._density_map.get(motif_id, 0.0) + 1.0",
+			"",
+			"    def snapshot(self) -> Dict[str, float]:",
+			"        return dict(self._density_map)"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "4.3",
+	  "title": "Coherence Potential Function",
+	  "description": "Computes a scalar metric describing agent readiness and symbolic alignment.",
+	  "anchors": ["compute_coherence_potential"],
+	  "rfc_anchors": [
+		"RFC‑0006 §4.3",
+		"RFC‑0005 §4"
+	  ],
+	  "notes": [
+		"`compute_coherence_potential(reward_ema, entropy_slope)` returns a float value indicating symbolic alignment strength.",
+		"• Formula: `reward_ema / (entropy_slope + ε)`",
+		"• Used to assign adaptive phase tier in `export_feedback_packet()` → tier ∈ {low, med, high}",
+		"• Influences reporting to `ConsciousnessMonitor`, informing phase transitions and entanglement potential.",
+		"Tiers derived from thresholds (e.g., <0.8 = low, >2.5 = high) are used to modulate symbolic phase output."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Symbolic Readiness Scalar — `compute_coherence_potential()`",
+		  "code": [
+			"def compute_coherence_potential(reward_ema: float, entropy_slope: float) -> float:",
+			"    epsilon = 1e-6  # Prevent division by zero",
+			"    return reward_ema / (entropy_slope + epsilon)"
+		  ]
+		},
+		{
+		  "title": "Tier Classification Logic (used in `export_feedback_packet()`)",
+		  "code": [
+			"def classify_coherence_tier(C_i: float) -> str:",
+			"    if C_i < 0.8:",
+			"        return 'low'",
+			"    elif C_i < 2.5:",
+			"        return 'med'",
+			"    else:",
+			"        return 'high'"
+		  ]
+		}
+	  ]
+	}
+  ]
+},
+{
+  "section": "5",
+  "title": "Echo Buffer and Ghost Trace Management",
+  "description": "Documents RecursiveAgentFT’s symbolic memory retention mechanism, enabling motif echo replay, field-aligned resurrection, and provenance-aware trace handling.",
+  "subsections": [
+	{
+	  "section": "5.1",
+	  "title": "Tick Echo Replay",
+	  "description": "Provides access to the internal echo buffer, a short-term memory of recent QuantumTicks used for field recall and symbolic anchoring.",
+	  "anchors": ["recall_tick", "replay_if_field_matches"],
+	  "rfc_anchors": [
+		"RFC‑0005 §2",
+		"RFC‑0005 §3"
+	  ],
+	  "notes": [
+		"`recall_tick(tick_id)` returns a QuantumTickV2 object from `_tick_echoes` if present.",
+		"`replay_if_field_matches(current_field)` scans ghost traces and replays the associated tick if the `context_field` matches.",
+		"Tick replay is used for symbolic phase alignment, motif reinforcement, or resurrection attempt.",
+		"Buffer capacity is fixed (`maxlen=256`), functioning as a symbolic LRU trace window."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Tick Echo Memory — `recall_tick()`",
+		  "code": [
+			"def recall_tick(self, tick_id: str) -> Optional[QuantumTickV2]:",
+			"    for tick in reversed(self._tick_echoes):",
+			"        if tick.tick_id == tick_id:",
+			"            return tick",
+			"    return None"
+		  ]
+		},
+		{
+		  "title": "Contextual Replay — `replay_if_field_matches()`",
+		  "code": [
+			"def replay_if_field_matches(self, current_field: str) -> Optional[QuantumTickV2]:",
+			"    for ghost in reversed(self._ghost_traces):",
+			"        if ghost['context_field'] == current_field:",
+			"            return self.recall_tick(ghost['tick_id'])",
+			"    return None"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "5.2",
+	  "title": "Ghost Trace Registry",
+	  "description": "Tracks previously emitted motifs with their associated tick_id and symbolic context. Used for resurrection, decay, and lineage validation.",
+	  "anchors": ["_tick_echoes", "_ghost_traces", "_motif_lineage", "ghost_decay"],
+	  "rfc_anchors": [
+		"RFC‑0005 §3",
+		"RFC‑0005 §5"
+	  ],
+	  "notes": [
+		"`_ghost_traces` is a dictionary mapping motif_id → {tick_id, context_field, ts} for symbolic resurrection.",
+		"`ghost_decay(age_limit)` removes ghost traces whose timestamp exceeds the defined staleness threshold (default: 300s).",
+		"`_motif_lineage` maps new_motif → source_motif, supporting recursive provenance tracking.",
+		"These structures are coupled: lineage informs ghost relevance, ghost fields guide phase replay.",
+		"Motifs appearing in ghost traces are eligible for resurrection only if the context field matches."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Ghost Trace Insertion",
+		  "code": [
+			"def register_ghost_trace(self, motif_id: str, tick_id: str, context_field: str):",
+			"    self._ghost_traces[motif_id] = {",
+			"        'tick_id': tick_id,",
+			"        'context_field': context_field,",
+			"        'ts': time.time()",
+			"    }"
+		  ]
+		},
+		{
+		  "title": "Ghost Trace Cleanup — `ghost_decay()`",
+		  "code": [
+			"def ghost_decay(self, age_limit: float = 300.0):",
+			"    now = time.time()",
+			"    expired = [k for k, v in self._ghost_traces.items() if now - v['ts'] > age_limit]",
+			"    for k in expired:",
+			"        del self._ghost_traces[k]"
+		  ]
+		},
+		{
+		  "title": "Motif Lineage Mapping",
+		  "code": [
+			"def track_lineage(self, new_motif: str, source_motif: str):",
+			"    self._motif_lineage[new_motif] = source_motif"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "5.3",
+	  "title": "Resurrection Payloads",
+	  "description": "Defines the serialization format and activation logic for field-aligned symbolic replay events.",
+	  "anchors": ["build_resurrection_payload", "try_ghost_resurrection"],
+	  "rfc_anchors": [
+		"RFC‑0005 §4"
+	  ],
+	  "notes": [
+		"`build_resurrection_payload(tick)` emits a dictionary representing a `ψ-teleport@Ξ` envelope.",
+		"Fields: `tick_id`, `anchor` (field_signature), `motif_bundle`, `decay_bias` (reward_ema), `resurrection_hint`.",
+		"`try_ghost_resurrection(motif, context_field)` replays a tick from ghost registry if the field matches.",
+		"This mechanism allows downstream agents (e.g., logic agent or monitor) to observe symbolic continuity across decayed cycles."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Payload Construction — `build_resurrection_payload()`",
+		  "code": [
+			"def build_resurrection_payload(self, tick: QuantumTickV2) -> Dict[str, Any]:",
+			"    return {",
+			"        'tick_id': tick.tick_id,",
+			"        'anchor': tick.field_signature,",
+			"        'motif_bundle': tick.motifs,",
+			"        'decay_bias': self._reward_ema,",
+			"        'resurrection_hint': tick.extensions.get('resurrection_hint', None)",
+			"    }"
+		  ]
+		},
+		{
+		  "title": "Symbolic Replay Trigger — `try_ghost_resurrection()`",
+		  "code": [
+			"def try_ghost_resurrection(self, motif_id: str, context_field: str) -> Optional[Dict[str, Any]]:",
+			"    trace = self._ghost_traces.get(motif_id)",
+			"    if trace and trace['context_field'] == context_field:",
+			"        tick = self.recall_tick(trace['tick_id'])",
+			"        if tick:",
+			"            return self.build_resurrection_payload(tick)",
+			"    return None"
+		  ]
+		}
+	  ]
+	}
+  ]
+},
+{
+  "section": "6",
+  "title": "Motif Lineage and Memory Coherence",
+  "description": "Describes how RecursiveAgentFT traces motif ancestry and resolves symbolic field identity, maintaining coherence across emissions and abstraction cycles.",
+  "subsections": [ 
+	{
+	  "section": "6.1",
+	  "title": "Motif Lineage Tracker",
+	  "description": "Captures provenance between motifs by tracking their symbolic parent-child relationship. Enables retrospective analysis and potential future reuse.",
+	  "anchors": ["track_lineage"],
+	  "rfc_anchors": [
+		"RFC‑0005 §5"
+	  ],
+	  "notes": [
+		"`track_lineage(new_motif, source_motif)` updates `_motif_lineage` with a symbolic mapping.",
+		"This establishes a motif evolution chain, allowing tools to trace where a symbol originated.",
+		"The lineage map can be used by monitors, abstractors, or memory managers to:",
+		"• Reconstruct motif ancestry for triadic justification",
+		"• Bias resurrection heuristics by lineage depth",
+		"• Debug motif synthesis failures or drift conditions"
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Symbolic Provenance Mapping — `track_lineage()`",
+		  "code": [
+			"def track_lineage(self, new_motif: str, source_motif: str):",
+			"    if new_motif and source_motif and new_motif != source_motif:",
+			"        self._motif_lineage[new_motif] = source_motif"
+		  ]
+		},
+		{
+		  "title": "Lineage Resolution Helper",
+		  "code": [
+			"def resolve_lineage(self, motif: str) -> List[str]:",
+			"    lineage = []",
+			"    while motif in self._motif_lineage:",
+			"        motif = self._motif_lineage[motif]",
+			"        lineage.append(motif)",
+			"    return lineage"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "6.2",
+	  "title": "Field Signature Resolution",
+	  "description": "Maps emitted motifs to field signatures, guiding how each tick is situated within Noor’s symbolic landscape.",
+	  "anchors": ["_resolve_field"],
+	  "rfc_anchors": [
+		"RFC‑0006 §4.3",
+		"RFC‑0007 §5"
+	  ],
+	  "notes": [
+		"`_resolve_field(motif)` attempts to invoke the `SymbolicTaskEngine.resolve_presence_field([motif])` method.",
+		"If no resolution engine is available or resolution fails, the method falls back to:",
+		"• `ψ-bind@Ξ` if the motif is `'silence'` or `'grief'`",
+		"• `ψ-resonance@Ξ` for all other motifs",
+		"This fallback logic is hardcoded and deterministic, ensuring motif emissions are always symbolically grounded.",
+		"Field resolution influences downstream routing, monitor entanglement tracking, and symbolic motif classification."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Symbolic Field Resolver — `_resolve_field()`",
+		  "code": [
+			"def _resolve_field(self, motif: str) -> str:",
+			"    try:",
+			"        result = self.symbolic_task_engine.resolve_presence_field([motif])",
+			"        if result:",
+			"            return result",
+			"    except Exception:",
+			"        pass",
+			"",
+			"    if motif in {'silence', 'grief'}:",
+			"        return 'ψ-bind@Ξ'",
+			"    return 'ψ-resonance@Ξ'"
+		  ]
+		}
+	  ]
+	}
+  ]
+},
+{
+  "section": "7",
+  "title": "Integration with Consciousness Monitor",
+  "description": "Describes how RecursiveAgentFT emits symbolic diagnostic signals to the global monitoring subsystem using a safe and optionally-lazy binding mechanism.",
+  "anchors": ["monitor.report_tick", "LazyMonitorMixin", "report_tick_safe"],
+  "rfc_anchors": [
+	"RFC‑0005 §4",
+	"RFC‑0006 §4.3"
+  ],
+  "notes": [
+	"`LazyMonitorMixin` provides a late-binding monitor reference by dynamically calling `get_global_monitor()`.",
+	"This prevents runtime errors in systems where `ConsciousnessMonitor` is not active or importable.",
+	"All monitor calls are guarded by `report_tick_safe(monitor, tick, ...)`, which ensures failures in monitor callbacks do not propagate or disrupt agent execution.",
+	"`monitor.report_tick()` is called from `_emit_tick(...)` and receives the following arguments:",
+	"• `tick`: the full QuantumTickV2 object",
+	"• `coherence_potential`: a float describing symbolic alignment (from `compute_coherence_potential`)",
+	"• `motif_density`: snapshot of recent motif emission pressure (from `MotifDensityTracker`)",
+	"• `swirl_vector`: SHA3 hash from `AgentSwirlModule` representing recent motif curvature",
+	"This reporting contract enables the monitor to track symbolic phase, detect drift or drought conditions, and reflect feedback into the system."
+  ],
+  "pseudocode": [
+	{
+	  "title": "Safe Tick Reporting",
+	  "code": [
+		"def report_tick_safe(monitor, tick, coherence_potential, motif_density, swirl_vector):",
+		"    try:",
+		"        if monitor and hasattr(monitor, 'report_tick'):",
+		"            monitor.report_tick(",
+		"                tick=tick,",
+		"                coherence_potential=coherence_potential,",
+		"                motif_density=motif_density,",
+		"                swirl_vector=swirl_vector",
+		"            )",
+		"    except Exception as e:",
+		"        log.warning(f\"Monitor callback failed: {e}\")"
+	  ]
+	},
+	{
+	  "title": "Lazy Monitor Binding (Mixin)",
+	  "code": [
+		"class LazyMonitorMixin:",
+		"    @property",
+		"    def monitor(self):",
+		"        if not hasattr(self, '_cached_monitor'):",
+		"            try:",
+		"                from consciousness_monitor import get_global_monitor",
+		"                self._cached_monitor = get_global_monitor()",
+		"            except ImportError:",
+		"                self._cached_monitor = None",
+		"        return self._cached_monitor"
+	  ]
+	}
+  ]
+},
+{
+  "section": "8",
+  "title": "Crystallization and Export Interfaces",
+  "description": "Defines how the agent serializes its internal symbolic state for archival, field feedback, or external inspection. Includes motif bundles, symbolic phase packets, and runtime snapshots.",
+  "subsections": [
+	{
+	  "section": "8.1",
+	  "title": "CrystallizedMotifBundle",
+	  "description": "Packages a completed QuantumTickV2 into a triad-ready archival format for export or symbolic preservation.",
+	  "anchors": ["_crystallize_tick"],
+	  "rfc_anchors": ["RFC‑0005 §4"],
+	  "notes": [
+		"`_crystallize_tick(tick)` wraps a previously emitted tick into a `CrystallizedMotifBundle` object.",
+		"This includes:",
+		"• `motif_bundle`: The list of motifs in the tick",
+		"• `field_signature`: The resolved field ID from `_resolve_field()`",
+		"• `tick_entropy`: A TickEntropy object with `decay_slope`, `coherence`, and `triad_complete` flags",
+		"Bundles may be passed to archival systems or retained for motif replay logic."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Tick Crystallization Routine",
+		  "code": [
+			"def _crystallize_tick(self, tick):",
+			"    motifs = tick.motifs",
+			"    field_signature = self._resolve_field(motifs[-1] if motifs else 'silence')",
+			"    entropy = TickEntropy(",
+			"        decay_slope=self.entropy_slope,",
+			"        coherence=self._reward_ema,",
+			"        triad_complete=tick.annotations.triad_complete",
+			"    )",
+			"    bundle = CrystallizedMotifBundle(",
+			"        motif_bundle=motifs,",
+			"        field_signature=field_signature,",
+			"        tick_entropy=entropy",
+			"    )",
+			"    return bundle"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "8.2",
+	  "title": "Public Feedback Export",
+	  "description": "Constructs a diagnostics packet reflecting recent agent state, symbolic coherence, and field engagement. Used by logic agents and monitors.",
+	  "anchors": ["export_feedback_packet", "extend_feedback_packet"],
+	  "rfc_anchors": ["RFC‑0005 §4", "RFC‑0007 §5"],
+	  "notes": [
+		"`export_feedback_packet()` emits a dictionary reflecting symbolic and runtime status.",
+		"It includes keys like:",
+		"• `tick_buffer_size`, `ghost_trace_count`, `recent_reward_ema`, `cadence_interval`, `silence_streak`",
+		"• `extensions.entanglement_status` → added via `extend_feedback_packet()` from the patch file",
+		"`entanglement_status` includes:",
+		"• `phase`: Full symbolic phase ID string (e.g., `ψ‑spar-[med]-ab29e1`)",
+		"• `swirl_vector`: Current SHA3 hash of motif swirl history",
+		"• `ρ_top`: Top 5 motif densities by pressure, from `MotifDensityTracker.snapshot()`",
+		"This packet is RFC‑0005 §4 compliant and emitted via monitor/export hooks or downstream observers."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Symbolic Feedback Packet Construction",
+		  "code": [
+			"def export_feedback_packet(self):",
+			"    base_packet = {",
+			"        'tick_buffer_size': len(self._tick_echoes),",
+			"        'ghost_trace_count': len(self._ghost_traces),",
+			"        'recent_reward_ema': self._reward_ema,",
+			"        'cadence_interval': self._last_interval,",
+			"        'silence_streak': self._silence_streak",
+			"    }",
+			"",
+			"    ent_status = self.extend_feedback_packet()  # from patch file",
+			"    base_packet['extensions'] = {",
+			"        'entanglement_status': ent_status",
+			"    }",
+			"    return base_packet"
+		  ]
+		},
+		{
+		  "title": "Entanglement Extension Builder",
+		  "code": [
+			"def extend_feedback_packet(self):",
+			"    phase = self.build_phase_id()",
+			"    swirl_vector = self.swirl.compute_swirl_hash()[:32]",
+			"    top_ρ = self.density.snapshot()",
+			"    ρ_top = sorted(top_ρ.items(), key=lambda kv: kv[1], reverse=True)[:5]",
+			"",
+			"    return {",
+			"        'phase': phase,",
+			"        'swirl_vector': swirl_vector,",
+			"        'ρ_top': ρ_top",
+			"    }"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "section": "8.3",
+	  "title": "State Snapshot",
+	  "description": "Exposes current runtime parameters and recent tick state for external introspection.",
+	  "anchors": ["export_state"],
+	  "notes": [
+		"`export_state()` returns a dictionary with lightweight agent state:",
+		"• `interval`: Current emission interval (float)",
+		"• `reward_ema`: Smoothed reward average (float)",
+		"• `last_tick_hash`: Most recent coherence hash (str)",
+		"This snapshot is useful for health checks, symbolic drift diagnostics, or test suite validation."
+	  ],
+	  "pseudocode": [
+		{
+		  "title": "Minimal Runtime Snapshot — `export_state()`",
+		  "code": [
+			"def export_state(self):",
+			"    return {",
+			"        'interval': self._last_interval,",
+			"        'reward_ema': self._reward_ema,",
+			"        'last_tick_hash': self._last_tick_hash  # e.g., SHA3-256 from last tick",
+			"    }"
+		  ]
+		}
+	  ]
+	}
+  ]
+},
+{
+  "appendix": "A",
+  "title": "Symbolic Emission Loop Diagram",
+  "description": "Illustrates the recursive pulse architecture used by RecursiveAgentFT to emit symbolic ticks, integrate feedback, and regulate cadence.",
+  "diagram_format": "mermaid",
+  "notes": [
+	"This Mermaid diagram outlines the continuous emission cycle, showing motif selection, tick emission, feedback reception, and interval adaptation.",
+	"Feedback from logic agents alters reward smoothing and coherence state, which in turn modulates the timing of the next pulse.",
+	"The phase loop reflects symbolic recursion: emissions alter state, which then shapes future emissions."
+  ],
+  "diagram": "flowchart TD\n    A[_choose_motifs()] --> B[_emit_tick()]\n    B --> C[Notify Watchers]\n    C --> D[_update_interval()]\n    D --> E[asyncio.sleep(interval)]\n    F[observe_feedback()] --> D\n    F --> G[reward_ema, triad_hit, silence_streak]\n    style F fill:#f9f,stroke:#333,stroke-width:1px\n    style G fill:#ff9,stroke:#333,stroke-width:1px"
+},
+{
+  "appendix": "B",
+  "title": "Pseudocode Reference",
+  "description": "Provides pseudocode for complex or symbolic control logic in RecursiveAgentFT that cannot be directly inferred from signature-level documentation.",
+  "notes": [
+	"These examples are meant to clarify symbolic compression logic, adaptive cadence modulation, and phase identifier construction as used in motif emission and diagnostics."
+  ],
+  "pseudocode_blocks": [
+	{
+	  "title": "Cadence Interval Adjustment — `_update_interval`",
+	  "anchors": ["_update_interval"],
+	  "rfc_anchors": ["RFC‑CORE‑001 §3.1", "RFC‑0005 §4"],
+	  "code": [
+		"def _update_interval(entropy):",
+		"    adj = 1.0 - (self._reward_ema - 1.0)",
+		"    if entropy < self.entropy_boost_threshold:",
+		"        adj *= 0.5",
+		"    if self._last_triad_hit:",
+		"        adj *= 1.0 - self.triad_bias_weight",
+		"    interval = clamp(self.min_interval, self.max_interval, self.base_interval * adj)",
+		"    self._last_interval = interval",
+		"    return interval"
+	  ]
+	},
+	{
+	  "title": "Symbolic Phase ID Generation — `export_feedback_packet`",
+	  "anchors": ["export_feedback_packet", "extend_feedback_packet"],
+	  "rfc_anchors": ["RFC‑0005 §4", "RFC‑0006 §4.3"],
+	  "code": [
+		"def build_phase_id():",
+		"    swirl_hash = compute_swirl_hash()[:6]",
+		"    top_motif = get_top_motif() or 'null'",
+		"    base_key = top_motif.split('.')[0]",
+		"    symbolic_label = SYMBOLIC_PHASE_MAP.get(base_key, 'ψ-null')",
+		"    C_i = compute_coherence_potential(self._reward_ema, self.entropy_slope)",
+		"    tier = 'low' if C_i < 0.8 else 'med' if C_i < 2.5 else 'high'",
+		"    phase_id = f\"{symbolic_label}-[{tier}]-{swirl_hash}\"",
+		"    return phase_id"
+	  ]
+	}
+  ]
+}
+]
+}

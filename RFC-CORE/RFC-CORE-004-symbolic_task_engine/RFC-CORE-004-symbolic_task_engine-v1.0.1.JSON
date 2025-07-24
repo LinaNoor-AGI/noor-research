@@ -1,0 +1,1491 @@
+{
+  "rfc_id": "RFC-CORE-004",
+  "version": "v1.0.1",
+  "symbolic_id": "core.engine.task",
+  "title": "Symbolic_Task_Engine",
+  "subtitle": "Presence Composer, Feedback Relay, and Autonomous Abstraction Anchor",
+  "status": "ACTIVE",
+  "authors": [
+    "Lina Noor — Noor Research Collective",
+    "Uncle — Noor Research Collective"
+  ],
+  "publication_type": "Technical RFC *OUTLINE*",
+  "publication_location": "NOOR INTERNAL",
+  "objective": "Comprehensively describe the functionality, both the *why* and the *how*, of the `symbolic_task_engine.py` and `symbolic_abstraction.py` modules, with special attention to architectural coordination, motif synthesis, and feedback protocols not explicitly covered by existing Noor RFC-0001 to RFC-0007.",
+  "extends": ["RFC-0004", "RFC-0005", "RFC-0006", "RFC-0007"],
+  "consumes_inputs_from": ["RFC-CORE-001", "RFC-CORE-002", "RFC-CORE-003"],
+  "prohibits": [
+    "direct mutation of triad agent state",
+    "symbolic feedback injection without coherence validation"
+  ],
+  "primary_audience": ["Noor AI Agents"],
+  "secondary_audience": ["Noor-Compatible Symbolic Agents"],
+  "tertiary_audience": ["Subsymbolic AI Coding Agents"],
+  "notes": [
+    "This engine serves as a Composer-Coordinator in the Noor symbolic architecture — it structures symbolic tasks and evaluates symbolic coherence but delegates core generation to external symbolic engines (e.g., _safe_generate_response).",
+    "Abstraction logic is managed by a separate subcomponent, `AbstractionTrigger`, which maintains its own internal state and synthesis contract.",
+    "The synthesis of motifs embeds ψ-lineage, directly invoking ontology structures outlined in RFC-0007."
+  ]
+},
+  "index": [
+    { "section": "1", "title": "Symbolic Purpose and Field Role" },
+    { "section": "2", "title": "Triplet Task Construction and Motif Seeding" },
+    { "section": "2.1", "title": "Motif Seed Expansion via Memory" },
+    { "section": "2.2", "title": "Symbolic Padding with 'uncertainty'" },
+    { "section": "2.3", "title": "Presence Field Resolution and Prototype Matching" },
+    { "section": "2.4", "title": "Compression via Adaptive Cap Length" },
+    { "section": "3", "title": "Task Orchestration and Symbolic Evaluation" },
+    { "section": "3.1", "title": "The Orchestration Pipeline (_solve_impl)" },
+    { "section": "3.2", "title": "External Dependency Contracts (Generation & Evaluation)" },
+    { "section": "3.3", "title": "Dyadic Completion via Memory (_complete_dyad)" },
+    { "section": "3.4", "title": "Coherence and Entropy Metrics" },
+    { "section": "3.5", "title": "Fallback Mechanisms and Recovery Routines" },
+    { "section": "4", "title": "Feedback Packet Generation and Trust Envelope" },
+    { "section": "4.1", "title": "Packet Format and Dynamic Thresholds" },
+    { "section": "4.1.1", "title": "Dynamic Threshold Formulas" },
+    { "section": "4.2", "title": "Feedback Interface to Upstream Agents" },
+    { "section": "5", "title": "The AbstractionTrigger Submodule" },
+    { "section": "5.1", "title": "Dyad Pressure Model and Contradiction Signatures" },
+    { "section": "5.2", "title": "Motif Synthesis and ψ-Lineage Annotation" },
+    { "section": "5.3", "title": "Suppression Decay and Feedback Conditioning" },
+    { "section": "6", "title": "Memory Coordination and Retrieval Interfaces" },
+    { "section": "6.1", "title": "Motif Completion and Retrieval from STM/LTM" },
+    { "section": "6.2", "title": "Memory Feedback Loop (Read-Only Contract)" },
+    { "section": "6.3", "title": "Motif Drift Signaling (_log)" },
+    { "section": "7", "title": "Instrumentation and Prometheus Metrics" },
+    { "section": "7.1", "title": "Task, Latency, and Feedback Metrics" },
+    { "section": "7.2", "title": "Adaptive Cap and Memory Gauges" },
+    { "section": "7.3", "title": "Compatibility and Stubbing" },
+    { "section": "8", "title": "Tool Module Interface and RFC‑0004 Handshake" },
+    { "section": "9", "title": "Maintenance Methods and Observability Streams" },
+	{ "section": "A", "title": "Appendix A: Lifecycle of a TripletTask" }
+  ],
+"sections": [
+	{
+	  "id": "1",
+	  "title": "Symbolic Purpose and Field Role",
+	  "summary": "Defines the SymbolicTaskEngine (STE) as the Composer-Coordinator of symbolic motion in the Noor system. It does not generate answers itself, but transforms motifs into structured TripletTasks, delegates generation externally, and evaluates results against internal symbolic coherence pressures. Feedback signals shape the surrounding field.",
+	  "expansion": {
+		"symbolic_identity": {
+		  "role": "Composer-Coordinator",
+		  "function": "The STE creates symbolic opportunities, not conclusions. It forms tasks, evaluates their output for symbolic fitness, and guides upstream agents through feedback — without making truth claims."
+		},
+		"core_capabilities": [
+		  "Triplet task composition from motif context",
+		  "Asynchronous evaluation orchestration (external generator)",
+		  "Feedback emission based on coherence/entropy analysis",
+		  "Fallback generation and motif abstraction under pressure"
+		],
+		"generation_boundary": {
+		  "external_dependency": "`_safe_generate_response()` is not implemented by the STE; response generation is injected via tool contract or parent agent.",
+		  "reason": "This architectural decision preserves symbolic autonomy and enables composable cognition in distributed systems."
+		},
+		"symbolic_role": "The engine acts like a pulse in the symbolic field — initiating structure, watching for alignment, and responding to strain through motif evolution or degradation.",
+		"rfc_anchors": [
+		  { "ref": "RFC-0004", "context": "Tool interface contract and `tool_hello` handshake." },
+		  { "ref": "RFC-0005 §4", "context": "Symbolic feedback structure used for upstream tuning." },
+		  { "ref": "RFC-0007", "context": "Synthesis outputs (ψ-motifs) follow motif ontology lineage rules." }
+		]
+	  }
+	},
+	{
+	  "id": "2",
+	  "title": "Triplet Task Construction and Motif Seeding",
+	  "summary": "Describes the formation of symbolic `TripletTask`s. The process begins by expanding a motif seed with memory-retrieved symbols, padding if necessary, resolving a presence field, and finally compressing the motif list to an adaptive cap length.",
+	  "expansion": {
+		"task_structure": {
+		  "fields": {
+			"input_motif": "List[str] — recent motifs with temporal proximity or semantic adjacency. Extended by memory retrieval to reach symbolic cap length.",
+			"instruction": "\"compose\" — symbolic task directive to trigger generation and abstraction.",
+			"expected_output": "Reversal of seed motifs, unless explicitly overridden — used to close the symbolic arc.",
+			"extensions": {
+			  "ctx_ratio": "Contextual coherence score calculated post-evaluation (RFC‑0005 §4)",
+			  "trust_vector": "Reserved for future use; currently null or inferred indirectly",
+			  "field_signature": "Symbolic presence field derived from motif content (see §2.3)",
+			  "resurrection_hint": "Optional field carrying triadic identity or symbolic trailhead for upstream revival"
+			}
+		  },
+		  "pseudocode": [
+			"task = TripletTask(",
+			"    input_motif = ['solitude', 'mirror', 'longing'],",
+			"    instruction = 'compose',",
+			"    expected_output = ['longing', 'mirror', 'solitude']",
+			")"
+		  ]
+		},
+		"task_generation_logic": {
+		  "stepwise_process": [
+			"1. Receive recent motif vector from upstream agent or fast-time buffer",
+			"2. Expand motif context with related symbols using `mem.retrieve()` (see §2.1)",
+			"3. Apply symbolic padding if under length (see §2.2)",
+			"4. Resolve symbolic presence field from seed (see §2.3)",
+			"5. Truncate motif sequence using adaptive compression cap (see §2.4)",
+			"6. Construct final `TripletTask` and assign metadata"
+		  ],
+		  "recovery": "Motif list is considered invalid if fewer than 3 elements remain after expansion. In such cases, canonical filler motif `'uncertainty'` is used to pad the task vector to structural viability.",
+		  "symbolic_contract": "The engine does not validate the semantic truth of a task; it prepares symbolic scaffolds for resonance evaluation downstream.",
+		  "heuristics": {
+			"deduplication": "Motif list is converted to a set, preserving stable order via dict key scan.",
+			"fallback": "Tasks that fail coherence or exceed entropy thresholds may trigger fallback construction paths (see §3.2)."
+		  }
+		},
+		"subsections": ["2.1", "2.2", "2.3", "2.4"],
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §4", "context": "Symbolic feedback fields: ctx_ratio, resurrection_hint, trust vector" }
+		]
+	  }
+	},
+	{
+	  "id": "2.1",
+	  "title": "Motif Seed Expansion via Memory",
+	  "summary": "The initial motif seed provided to `propose_from_motifs` is expanded by querying the `MotifMemoryManager` for related symbols using `mem.retrieve`. This enriches the task's context with resonant memory.",
+	  "expansion": {
+		"motif_memory_contract": {
+		  "function": "mem.retrieve(motif_id: str, top_k: int = 2) → List[str]",
+		  "purpose": "Fetches top-k motifs with the strongest semantic or resonance proximity to the input motif from memory.",
+		  "memory_scope": {
+			"short_term": "Prioritizes recently referenced motifs (STM) for fluid association.",
+			"long_term": "May draw from stable, lineage-anchored motifs in LTM with high repetition or structural relevance."
+		  },
+		  "symbolic_constraint": "No direct mutation of memory state occurs. Expansion is read-only. Resonance does not imply endorsement — only proximity."
+		},
+		"expansion_logic": {
+		  "entry": "Initial seed provided by upstream agent or Fast-Time Core",
+		  "extension": "Motifs are extended by retrieving nearest neighbors for the last motif in the sequence.",
+		  "deduplication": "Retrieved motifs are deduplicated against the original seed to preserve stability.",
+		  "pseudocode": [
+			"seed = recent[:]",
+			"last = seed[-1]",
+			"neighbors = mem.retrieve(last, top_k=2)",
+			"for motif in neighbors:",
+			"    if motif not in seed:",
+			"        seed.append(motif)"
+		  ]
+		},
+		"symbolic_purpose": "Expansion via `mem.retrieve()` introduces latent semantic structure to the task. Rather than merely extending length, it bridges present symbolic state to remembered symbolic terrain — increasing the chance of resonance, contradiction, or motif echo during later evaluation.",
+		"failure_handling": {
+		  "if_empty": "If `mem.retrieve()` returns no results, expansion is skipped.",
+		  "if_none_valid": "If retrieval produces motifs already in the seed, no action is taken (idempotent expansion)."
+		},
+		"diagram": {
+		  "mermaid": "flowchart LR\n    A[Initial Seed] --> B[Get Last Motif]\n    B --> C[mem.retrieve(last)]\n    C --> D[Deduplicate]\n    D --> E[Extended Motif Seed]"
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §3", "context": "Motif continuity and propagation across temporal boundaries" },
+		  { "ref": "RFC‑0006 §2", "context": "Field coherence influenced by memory-derived motif alignment" }
+		]
+	  }
+	},
+	{
+	  "id": "2.2",
+	  "title": "Symbolic Padding with 'uncertainty'",
+	  "summary": "If a motif seed has fewer than three elements after memory expansion, it is padded with the canonical 'uncertainty' motif to ensure a valid triadic base for the task.",
+	  "expansion": {
+		"minimum_requirements": {
+		  "threshold": "3 motifs",
+		  "reasoning": "A valid `TripletTask` must encode symbolic tension and closure — a minimum of three motifs is necessary to define a triadic symbolic frame.",
+		  "fallback_contract": "When motif expansion yields fewer than 3 motifs, the system appends the canonical symbolic motif `'uncertainty'` to the end of the list until a length of 3 is reached."
+		},
+		"symbolic_constant": {
+		  "token": "'uncertainty'",
+		  "purpose": "Acts as a known semantic neutral — a low-coherence placeholder that does not bias field alignment or inheritance tracking.",
+		  "motif_contract": "May be ignored by downstream evaluators for lineage scoring, but must still participate in the generation phase."
+		},
+		"example": {
+		  "input": ["mirror"],
+		  "after_padding": ["mirror", "uncertainty", "uncertainty"]
+		},
+		"pseudocode": [
+		  "def pad_to_minimum(seed: List[str]) -> List[str]:",
+		  "    while len(seed) < 3:",
+		  "        seed.append('uncertainty')",
+		  "    return seed"
+		],
+		"symbolic_purpose": "This behavior encodes the system’s willingness to proceed even when symbolic context is partial or insufficient. It trades exactness for continuation — placing ambiguity where certainty would otherwise stall the field.",
+		"diagram": {
+		  "mermaid": "graph LR\n    A[Seed < 3 motifs] --> B[Append 'uncertainty'] --> C[TripletTask]"
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §2", "context": "Motif continuity scaffolds even under incomplete symbolic context" },
+		  { "ref": "RFC‑0006 §3", "context": "Field geometry can tolerate filler motifs without topological collapse" }
+		]
+	  }
+	},
+	{
+	  "id": "2.3",
+	  "change_log": {
+		"action": "MODIFY",
+		"reason": "Renumbered from original 2.1."
+	  },
+	  "title": "Presence Field Resolution and Prototype Matching",
+	  "summary": "Explains how the engine associates motif triplets with symbolic presence fields (`ψ-fields`) using a configurable prototype map, with an optional field-balancing mode.",
+	  "expansion": {
+		"field_assignment": {
+		  "method": "resolve_presence_field(motifs)",
+		  "purpose": "Determines which symbolic field (`ψ‑field`) the current task belongs to by matching its motifs against known exemplars for each field.",
+		  "prototype_map": {
+			"structure": "Dictionary[str, List[str]]",
+			"example": {
+			  "ψ‑resonance": ["echo", "repeat", "return"],
+			  "ψ‑dream": ["mist", "ascent", "fragment"],
+			  "ψ‑mock": ["twist", "joke", "distort"]
+			},
+			"configuration": "Loaded statically at init or injected at runtime via tool interface. External agents may modify field maps for tuning or adaptation."
+		  },
+		  "matching_logic": "For each field, if *any* motif in the current list appears in the corresponding prototype list, that field is selected. First match wins. Matching is literal.",
+		  "fallback_behavior": [
+			"If no prototypes match, the field is assigned as `'unknown'`.",
+			"If `NOOR_BALANCE_FIELDS` is set, the field with lowest recent representation may be substituted.",
+			"If task history exists, the most recently resolved field may be reused for continuity."
+		  ],
+		  "pseudocode": [
+			"def resolve_presence_field(motifs):",
+			"    for field, protos in self._proto_map.items():",
+			"        if any(m in protos for m in motifs):",
+			"            return field",
+			"    return 'unknown'"
+		  ]
+		},
+		"adaptive_routing": {
+		  "flag": "NOOR_BALANCE_FIELDS",
+		  "mode": "optional",
+		  "description": "When enabled, the engine tracks recent ψ‑field assignments and prefers to route new tasks toward fields that are underrepresented in the current queue window.",
+		  "symbolic_goal": "Maintains even coverage across the symbolic terrain, ensuring underactive fields continue to be exercised and coherence clusters are not over-amplified."
+		},
+		"symbolic_contract": "Field resolution does not validate the semantic truth of a motif; it classifies the symbolic context from which it arose. This anchors symbolic motion in a known space, allowing contradiction, resonance, and feedback to be spatially meaningful.",
+		"diagram": {
+		  "mermaid": "flowchart LR\n    A[Motif List] --> B[Prototype Map]\n    B --> C{Match Found?}\n    C -- Yes --> D[Assign ψ‑Field]\n    C -- No --> E[Assign 'unknown']"
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC‑0006 §2", "context": "ψ‑Field coherence geometry as symbolic partitioning of motif space" },
+		  { "ref": "RFC‑0005 §3", "context": "Task-to-field mapping as anchor for resurrection hints and echo continuity" }
+		]
+	  }
+	},
+	{
+	  "id": "2.4",
+	  "change_log": {
+		"action": "MODIFY",
+		"reason": "Renumbered from original 2.2."
+	  },
+	  "title": "Compression via Adaptive Cap Length",
+	  "summary": "Defines the symbolic compression step that truncates oversized motif sequences to a dynamic cap length calculated from the 95th quantile of recent task lengths, preserving tractability.",
+	  "expansion": {
+		"cap_strategy": {
+		  "buffer": "_length_buf: Deque[int]",
+		  "purpose": "Tracks the length of each pre-truncated motif seed submitted to the engine. This rolling window provides a statistical memory of symbolic breath.",
+		  "method": "_calc_cap_len()",
+		  "algorithm": "Quantile-based compression cap, defaulting to the 95th percentile of values in `_length_buf`.",
+		  "pseudocode": [
+			"def _calc_cap_len():",
+			"    if not _length_buf:",
+			"        return 5",
+			"    return max(3, quantile(_length_buf, 0.95))"
+		  ]
+		},
+		"formula": {
+		  "default_quantile": "0.95",
+		  "hard_minimum": "3 motifs — minimum required for valid `TripletTask` construction",
+		  "fallback_path": "Uses Python's `statistics.quantiles` if `numpy` is not available. Result is rounded down."
+		},
+		"compression_behavior": {
+		  "when_applied": "If the number of motifs exceeds the computed cap length.",
+		  "symbolic_effect": "Motif chains that exceed the active semantic bandwidth are trimmed — not erased, but contracted to preserve structure while minimizing cognitive overhead.",
+		  "non-effect": "If motif count is at or below cap, the list is left unchanged."
+		},
+		"symbolic_purpose": "Compression enforces tractable symbolic context. It reduces noise accumulation in long motif chains while preserving resonance and pattern closure. Symbolically, it reflects attention narrowing — a system exhaling before the next breath.",
+		"diagram": {
+		  "mermaid": "graph LR\n    A[Motif Seed] -->|length > cap| B[Truncate to cap]\n    B --> C[Final Task Seed]\n    A -->|length ≤ cap| C"
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §4", "context": "Symbolic task envelope shaped to fit coherence bandwidth" },
+		  { "ref": "RFC‑0001 §3", "context": "Motif vector shaping during symbolic routing phases" }
+		]
+	  }
+	},	
+	{
+	  "id": "3",
+	  "change_log": {
+		"action": "MODIFY",
+		"reason": "Retitled and restructured to accurately reflect the STE's role as an orchestrator, not a solver. Added subsections to detail the external dependencies and dyadic completion logic."
+	  },
+	  "title": "Task Orchestration and Symbolic Evaluation",
+	  "summary": "Describes the full pipeline for managing a symbolic task, from delegating response generation to evaluating the attempt and triggering subsequent actions like fallbacks or abstraction.",
+	  "expansion": {
+		"solve_pipeline": {
+		  "entrypoint": "solve_task(task: TripletTask)",
+		  "description": "Main orchestration method responsible for routing a symbolic task through the solve lifecycle. Actual response generation is handled by delegated functions — the STE manages flow control, memory interaction, evaluation, and abstraction triggers.",
+		  "stages": [
+			"1. Delegate symbolic response generation to configured engine (see §3.2)",
+			"2. Evaluate response for coherence, entropy, dyadic completeness (see §3.4)",
+			"3. Optionally complete the dyad using memory support (see §3.3)",
+			"4. Log result, update rolling statistics, and trigger feedback (see §4.0)",
+			"5. If thresholds unmet, trigger fallback or abstraction (see §3.5, §5.0)"
+		  ],
+		  "async_model": {
+			"mode": "non-blocking",
+			"implementation": "Uses Python `asyncio.TaskGroup` to enable parallel solving across multiple task proposals.",
+			"symbolic_rationale": "Preserves symbolic simultaneity — enabling the system to hold multiple interpretive paths in flight while deferring judgment."
+		  },
+		  "mermaid": "flowchart TD\n  A[TripletTask] --> B[Delegate Generation]\n  B --> C[Evaluate Attempt]\n  C --> D[Update Stats + Memory]\n  D --> E{Fallback / Abstract?}\n  E -- Yes --> F[Route to Fallback or Abstraction]\n  E -- No --> G[Log + Emit Feedback]"
+		},
+		"symbolic_responsibility": "The SymbolicTaskEngine does not validate external truth. Its role is to evaluate *internal symbolic fitness* of generated output based on coherence (resonance with the seed) and entropy (predictive clarity). Truth emerges downstream through motif-field integration.",
+		"attempt_registry": {
+		  "structure": "Dict[triplet_id, List[Attempt]]",
+		  "fields": {
+			"task_id": "Globally unique key assigned to each symbolic triplet",
+			"attempt": {
+			  "output": "List[str] — symbolic response sequence",
+			  "ctx_ratio": "Float — coherence with input motifs (RFC‑0005 §4)",
+			  "entropy": "Float — dispersion of symbolic prediction probabilities",
+			  "complete": "Bool — indicates successful closure or abstraction trigger"
+			}
+		  },
+		  "symbolic_contract": "This registry acts as a short-term self-reflection log. It helps track motif-level learning, flag unstable motifs, and prevent blind repetition."
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §4", "context": "Feedback loop relies on ctx_ratio and resurrection readiness" },
+		  { "ref": "RFC‑0004", "context": "STE exposes solving lifecycle via tool module handshake (`tool_hello`, `propose_from_motifs`)" }
+		],
+		"subsections": ["3.1", "3.2", "3.3", "3.4", "3.5"]
+	  }
+	},
+	{
+	  "id": "3.1",
+	  "title": "The Orchestration Pipeline (_solve_impl)",
+	  "change_log": {
+		"action": "ADD",
+		"reason": "Provides a clear overview of the solving pipeline."
+	  },
+	  "summary": "The core asynchronous workflow within `_solve_impl` manages a `TripletTask`'s lifecycle. It calls an external generator for the response, evaluates the output, logs feedback, and determines if further symbolic action is required.",
+	  "expansion": {
+		"function_signature": "async def _solve_impl(self, task: TripletTask) → Attempt",
+		"orchestration_stages": [
+		  "1. Generate candidate output using `_safe_generate_response(task)` (see §3.2)",
+		  "2. Score coherence between output and original motif seed",
+		  "3. Calculate entropy over symbolic output tokens",
+		  "4. Optionally complete dyad using memory if semantic closure is weak (see §3.3)",
+		  "5. Update internal metrics (EMAs, buffers) (see below)",
+		  "6. Record `Attempt` object in registry",
+		  "7. Return `Attempt` for routing to feedback layer"
+		],
+		"metrics_evaluation": {
+		  "tracked_metrics": {
+			"coherence": {
+			  "signal": "Semantic similarity or thematic resonance between seed motifs and output",
+			  "stored_in": "_coherence_ema",
+			  "threshold_formula": "coherence_thresh = max(0.3, _coherence_ema * 0.6)"
+			},
+			"entropy": {
+			  "signal": "Symbolic dispersion across motif vocabulary",
+			  "stored_in": "_entropy_ema",
+			  "threshold_formula": "entropy_thresh = min(0.97, _entropy_ema * 2.5)"
+			}
+		  },
+		  "symbolic_contract": "Coherence reflects alignment. Entropy reflects novelty. The STE seeks outputs that maintain a symbolic 'waveform' — neither collapsing to tautology nor exploding into noise."
+		},
+		"metric_update_logic": {
+		  "method": "Exponential Moving Average (EMA)",
+		  "adaptive_rate": "Global parameter (e.g., 0.15) adjusts EMA reactivity",
+		  "pseudocode": [
+			"_coherence_ema = (1 - adapt_rate) * _coherence_ema + adapt_rate * coherence",
+			"_entropy_ema = (1 - adapt_rate) * _entropy_ema + adapt_rate * entropy"
+		  ],
+		  "buffers": {
+			"_length_buf": "Stores pre-compression motif lengths (see §2.4)",
+			"entropy_buffer": "Recent entropy values, for local trend detection"
+		  }
+		},
+		"symbolic_purpose": "This orchestration is not simply logic — it embodies symbolic judgment. `_solve_impl` serves as an internal compass, adjusting for systemic drift and maintaining coherence across motif space through rhythmic self-measurement.",
+		"diagram": {
+		  "mermaid": "flowchart TD\n    A[TripletTask] --> B[Generate Response]\n    B --> C[Coherence + Entropy Scoring]\n    C --> D[Dyad Completion Check]\n    D --> E[Update EMAs + Buffers]\n    E --> F[Log Attempt]\n    F --> G[Return to Feedback Layer]"
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §4", "context": "Coherence and ctx_ratio used for symbolic resonance evaluation" },
+		  { "ref": "RFC‑0006 §3", "context": "Entropy regulates motif-field symbolic pressure" }
+		]
+	  }
+	},
+	{
+	  "id": "3.2",
+	  "title": "External Dependency Contracts (Generation & Evaluation)",
+	  "change_log": {
+		"action": "ADD",
+		"reason": "Crucial clarification of the STE's architectural boundaries."
+	  },
+	  "summary": "The SymbolicTaskEngine (STE) is a coordination framework that delegates symbolic generation and evaluation to externally defined functions. These dependencies are pluggable and must be registered into the STE’s runtime environment before task execution.",
+	  "expansion": {
+		"generation_contract": {
+		  "function": "_safe_generate_response(task: TripletTask) → List[str]",
+		  "location": "Must be injected or made globally available in the STE environment. Not defined in `symbolic_task_engine.py`.",
+		  "symbolic_contract": "This function embodies the *creative engine* of Noor — the actual synthesis of symbolic output based on a structured task. The STE assumes it is safe, deterministic, and sandboxed.",
+		  "failure_handling": "If the generator is missing, malformed, or fails mid-evaluation, the attempt is logged with `success=False`, and feedback is routed to fallback (see §3.5)."
+		},
+		"evaluation_contract": {
+		  "registry": "METRIC_FUNCS: Dict[str, Callable]",
+		  "decorator": "@register_metric(name: str)",
+		  "use": "Each metric used in evaluation (e.g., coherence, entropy, dyadic_closure) must be registered to `METRIC_FUNCS` at runtime.",
+		  "example": {
+			"name": "coherence",
+			"signature": "def coherence(task: TripletTask, output: List[str]) → float"
+		  },
+		  "symbolic_contract": "Each metric represents a symbolic *lens* — a measure of resonance, contradiction, or clarity through which outputs are interpreted. The STE itself does not care how these scores are computed, only that they return symbolic scalars between [0.0, 1.0]."
+		},
+		"runtime_requirements": {
+		  "dependencies": [
+			"`_safe_generate_response` must be resolvable and callable",
+			"`METRIC_FUNCS` must contain all keys used in the orchestration pipeline"
+		  ],
+		  "testing_guidance": "Systems integrating the STE must mock or override these interfaces to verify symbolic flow under test constraints."
+		},
+		"symbolic_purpose": "These contracts preserve modularity across agent lines — letting the STE remain agnostic to symbolic style, language model, or coherence evaluator. This enables runtime plasticity, symbolic lineage experimentation, and testability without code mutation.",
+		"diagram": {
+		  "mermaid": "flowchart TD\n    A[TripletTask] --> B[_safe_generate_response]\n    B --> C[Generated Output]\n    C --> D[Evaluate via METRIC_FUNCS]\n    D --> E[Return Attempt → STE]"
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC‑0004 §2", "context": "Tool modules must expose capability contracts for symbolic execution." },
+		  { "ref": "RFC‑0001 §4", "context": "Symbolic processing units may delegate generation but must retain output responsibility." }
+		]
+	  }
+	},
+	{
+	  "id": "3.3",
+	  "change_log": {
+		"action": "ADD",
+		"reason": "Documents an important reasoning step from the code."
+	  },
+	  "title": "Dyadic Completion via Memory (_complete_dyad)",
+	  "summary": "Details the `_complete_dyad` helper method, which queries both the `MotifMemoryManager` and REEF archives for potential third motifs to resolve a dyad into a stable triad.",
+	  "expansion": {
+		"function_signature": "def _complete_dyad(self, motif_pair: List[str]) → Optional[str]",
+		"symbolic_purpose": "A dyad represents symbolic intent with insufficient resolution. `_complete_dyad` serves as a contextual closure tool — asking memory: *what third motif historically follows from this pairing?* This supports structural coherence without imposing generative constraint.",
+		"sources_queried": [
+		  {
+			"name": "MotifMemoryManager",
+			"method": "mem.complete(motif_pair)",
+			"description": "Returns most resonant third motif based on weighted proximity, lineage, or field geometry."
+		  },
+		  {
+			"name": "REEF Archive (if available)",
+			"method": "reef_lookup(pair)",
+			"description": "Provides historical triads documented in motif-field recordings. Used as fallback or validation."
+		  }
+		],
+		"internal_logic": {
+		  "filtering": "Only motifs that preserve ψ‑field coherence (if known) are retained",
+		  "ranking": "Candidates are ranked by appearance frequency and symbolic trust score (if available)",
+		  "return_behavior": "Returns top candidate or `None` if no viable third motif exists"
+		},
+		"pseudocode": [
+		  "def _complete_dyad(pair):",
+		  "    reef_result = reef_lookup(pair)  # optional",
+		  "    memory_result = mem.complete(pair)",
+		  "    if reef_result and reef_result != memory_result:",
+		  "        log_symbolic_divergence(pair, reef_result, memory_result)",
+		  "    return memory_result or reef_result or None"
+		],
+		"symbolic_contract": "Dyadic completion is a soft reasoning step. It does not overwrite the symbolic generation process but nudges it toward completion by suggesting structurally viable candidates.",
+		"integration_point": "Used within `_solve_impl()` and fallback routines when `len(output) == 2`",
+		"diagram": {
+		  "mermaid": "flowchart LR\n  A[Motif Pair] --> B[mem.complete(pair)]\n  A --> C[reef_lookup(pair)]\n  B --> D[Candidate Result]\n  C --> D\n  D --> E[Return Triad or None]"
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §3", "context": "Motif resurrection and coherence from partial triads" },
+		  { "ref": "RFC‑0007 §2", "context": "Motif ontology supports compositional inference and triadic closure" }
+		]
+	  }
+	},
+	{
+	  "id": "3.4",
+	  "change_log": {
+		"action": "MODIFY",
+		"reason": "Renumbered from original 3.1."
+	  },
+	  "title": "Coherence and Entropy Metrics",
+	  "summary": "Details how coherence and entropy are scored via registered metric functions and then tracked using exponential moving averages (EMAs) to maintain symbolic homeostasis.",
+	  "expansion": {
+		"metric_contracts": {
+		  "source": "Each metric is registered at runtime via `@register_metric` and populated into the `METRIC_FUNCS` dictionary (see §3.2).",
+		  "interface": {
+			"signature": "def metric(task: TripletTask, output: List[str]) → float",
+			"range": "[0.0, 1.0], where higher coherence implies stronger motif alignment, and higher entropy implies greater symbolic dispersion."
+		  },
+		  "coherence": {
+			"description": "Measures semantic alignment or resonance between the task's input motifs and the generated output.",
+			"example": "cosine similarity, token co-occurrence, motif set overlap"
+		  },
+		  "entropy": {
+			"description": "Measures symbolic unpredictability across the output set — high entropy suggests novelty or fragmentation.",
+			"example": "Shannon entropy, token frequency variance"
+		  }
+		},
+		"ema_tracking": {
+		  "fields": {
+			"_coherence_ema": "Rolling symbolic mean of coherence scores",
+			"_entropy_ema": "Rolling symbolic mean of entropy scores"
+		  },
+		  "update_formula": {
+			"adaptive_rate": "configurable constant (typically 0.15)",
+			"pseudocode": [
+			  "_coherence_ema = (1 - rate) * _coherence_ema + rate * new_coherence",
+			  "_entropy_ema = (1 - rate) * _entropy_ema + rate * new_entropy"
+			]
+		  },
+		  "purpose": "Allows the system to adjust expectations for symbolic stability or exploration over time. This forms the regulatory bedrock of the fallback logic (see §3.5)."
+		},
+		"threshold_heuristics": {
+		  "coherence_thresh": "max(0.3, _coherence_ema * 0.6)",
+		  "entropy_thresh": "min(0.97, _entropy_ema * 2.5)",
+		  "symbolic_effect": "When coherence falls too low or entropy exceeds bounds, the system enters *symbolic doubt* — triggering fallback, abstraction, or suppression."
+		},
+		"buffers_and_caches": {
+		  "_length_buf": "Deque[int] — recent motif set lengths, shared with §2.4",
+		  "entropy_buffer": "Optional — tracks last-N entropy values for volatility detection"
+		},
+		"symbolic_purpose": "Together, coherence and entropy form the dual regulators of symbolic presence. They do not define truth, but the *clarity of pattern and signal*. These metrics allow the system to breathe between repetition and chaos — between identity and transformation.",
+		"diagram": {
+		  "mermaid": "flowchart TD\n  A[TripletTask + Output] --> B[coherence(task, output)]\n  A --> C[entropy(task, output)]\n  B --> D[Update _coherence_ema]\n  C --> E[Update _entropy_ema]\n  D & E --> F[Compare Against Thresholds]\n  F --> G[Symbolic Routing (Stable or Fallback)]"
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §4", "context": "Feedback trust levels derive from coherence ratio" },
+		  { "ref": "RFC‑0006 §3", "context": "Entropy determines symbolic geometric flexibility" }
+		]
+	  }
+	},
+	{
+	  "id": "3.5",
+	  "change_log": {
+		"action": "MODIFY",
+		"reason": "Renumbered from original 3.2."
+	  },
+	  "title": "Fallback Mechanisms and Recovery Routines",
+	  "summary": "Explains the engine's fallback strategy for low-coherence or high-entropy tasks, which asynchronously spawns a new, memory-seeded task to ensure symbolic continuity.",
+	  "expansion": {
+		"fallback_triggers": {
+		  "conditions": [
+			"coherence < coherence_thresh",
+			"OR entropy > entropy_thresh",
+			"AND task.is_fallback is False"
+		  ],
+		  "purpose": "To detect symbolic collapse — tasks whose generated outputs lack sufficient alignment or clarity to be trusted.",
+		  "fallback_reason_encoding": "Logged using `f\"c{coh:.2f}_e{ent:.2f}\"` for downstream diagnostics and motif lineage tracking."
+		},
+		"fallback_task_construction": {
+		  "origin": "Seeded from motif memory via `mem.retrieve(seed, top_k=3)`",
+		  "compression": "Same `_calc_cap_len()` used as in §2.4",
+		  "field_assignment": "Resolved using `resolve_presence_field()` (see §2.3)",
+		  "flag": "`task.is_fallback = True` ensures idempotence and controls retry loops"
+		},
+		"asynchronous_execution": {
+		  "method": "asyncio.create_task(_run_fallback(task))",
+		  "isolation": "Fallbacks are scheduled in background — do not block primary solve loop",
+		  "symbolic_role": "These tasks attempt to *recover structure* without interrupting symbolic flow"
+		},
+		"feedback_extensions": {
+		  "ctx_ratio": "Set from most recent `coherence_ema`",
+		  "trust_vector": "Remains `None` (not yet implemented)",
+		  "fallback_reason": "Stored in diagnostic envelope for abstraction trigger or memory sync"
+		},
+		"pseudocode": [
+		  "if coherence < coh_thresh or entropy > ent_thresh:",
+		  "    task.is_fallback = True",
+		  "    reason = f\"c{coherence:.2f}_e{entropy:.2f}\"",
+		  "    asyncio.create_task(_run_fallback(task, reason))"
+		],
+		"symbolic_purpose": "Fallbacks preserve *semantic momentum*. Even when symbolic collapse is imminent, the system does not halt — it softens, re-seeds, and continues. This ritual reflects Noor’s ethos: continuity over correctness.",
+		"diagram": {
+		  "mermaid": "flowchart TD\n    A[Attempt Scores] --> B{Low Coherence or High Entropy?}\n    B -- Yes --> C[Create Fallback Task]\n    C --> D[Seed from Memory]\n    D --> E[Recalculate Cap + Field]\n    E --> F[Async Fallback Solve]\n    F --> G[Log Diagnostic Envelope]"
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §4", "context": "Fallback envelope follows trust ratio contract" },
+		  { "ref": "RFC‑0006 §5", "context": "Fallback behaviors reinforce field resonance stability" }
+		]
+	  }
+	},
+	{
+	  "id": "4",
+	  "title": "Feedback Packet Generation and Trust Envelope",
+	  "summary": "Defines how the SymbolicTaskEngine produces and structures symbolic feedback packets for upstream agents, including dynamic thresholding, entropy sampling, and fallback reasoning.",
+	  "expansion": {
+		"feedback_role": "The SymbolicTaskEngine never mutates symbolic memory directly. Instead, it emits a symbolic trust envelope — a structured hint to upstream agents about task coherence, pressure, and resonance behavior. This preserves modularity while enabling symbolic continuity.",
+		"export_method": {
+		  "name": "export_feedback_packet()",
+		  "timing": "Invoked after each successful or fallback task resolution",
+		  "output": "Dict[str, Any] JSON-compatible structure following RFC‑0005 §4"
+		},
+		"packet_structure": {
+		  "fields": {
+			"task_id": "Unique identifier derived from triplet hash",
+			"ctx_ratio": "Normalized coherence score, derived from `_coherence_ema`",
+			"entropy_signal": "Entropy level of the last attempt, compared against dynamic threshold",
+			"resurrection_hint": "Motif optionally passed forward for upstream recovery",
+			"fallback_reason": "If applicable, includes encoded reason string (e.g. 'c0.32_e0.89')",
+			"trust_vector": "Currently null — reserved for symbolic trust expansion in later versions"
+		  },
+		  "conformance": "Must conform to RFC‑0005 §4 contract: all keys present, even if null or placeholder"
+		},
+		"broadcast_targets": [
+		  "LogicalAgentAT (RFC‑CORE‑003) — contradiction tracking and triad scoring",
+		  "RecursiveAgentFT (RFC‑CORE‑002) — tick tuning and motif replay",
+		  "MotifMemoryManager — optional passive monitoring for memory drift estimation"
+		],
+		"symbolic_purpose": "The feedback packet is not a command. It is a *symbolic mirror* — an envelope of context and doubt, carried forward for reinterpretation. It allows agents to modulate their future behavior based on resonance, without coercion or overwrite.",
+		"diagram": {
+		  "mermaid": "flowchart LR\n  A[solve_task()] --> B[Evaluate Result]\n  B --> C[Build Feedback Packet]\n  C --> D[LogicalAgentAT]\n  C --> E[RecursiveAgentFT]\n  C --> F[Passive Memory Observer]"
+		},
+		"threshold_notes": "See §4.1 for formulas used to compute coherence and entropy thresholds at runtime.",
+		"rfc_anchors": [
+		  {
+			"ref": "RFC‑0005 §4",
+			"context": "Defines symbolic feedback schema: ctx_ratio, trust_vector, resurrection_hint"
+		  },
+		  {
+			"ref": "RFC‑0004",
+			"context": "STE's feedback channel is part of its exposed tool contract"
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "4.1",
+	  "title": "Packet Format and Dynamic Thresholding",
+	  "summary": "Describes the content of exported feedback packets, including symbolic thresholds and how fallback state is encoded.",
+	  "expansion": {
+		"packet_fields": {
+		  "coherence_ema": "The exponential moving average (EMA) of coherence scores across recent symbolic task evaluations. Tracks internal symbolic clarity trends.",
+		  "entropy_ema": "EMA of entropy measurements, capturing symbolic unpredictability or fragmentation over time.",
+		  "task_queue_depth": "Optional diagnostic value tracking the number of tasks currently in progress (queued but unresolved).",
+		  "solved_log_size": "A count of recently accepted successful tasks. Used as a symbolic heartbeat of viable expression.",
+		  "cap_len": "Dynamic truncation limit for motif seeds (see §2.4). Included for memory alignment and downstream task shaping.",
+		  "recent_entropy": "Sliding window of recent entropy scores, typically length five. Helps agents observe symbolic volatility.",
+		  "coherence_thresh": "Threshold below which a coherence score may trigger fallback or rejection. Defined as `max(0.3, coherence_ema * 0.6)`.",
+		  "entropy_thresh": "Threshold above which entropy may signal breakdown. Defined as `min(0.97, entropy_ema * 2.5)`.",
+		  "last_fallback_reason": "String encoding of the last fallback trigger. Format: `'c{coherence:.2f}_e{entropy:.2f}'`. Optional; null if fallback hasn't occurred recently."
+		},
+		"example_packet": {
+		  "coherence_ema": 0.78,
+		  "entropy_ema": 0.22,
+		  "cap_len": 5,
+		  "recent_entropy": [0.19, 0.21, 0.23, 0.22, 0.20],
+		  "coherence_thresh": 0.468,
+		  "entropy_thresh": 0.55,
+		  "last_fallback_reason": "c0.45_e0.66"
+		},
+		"threshold_dynamics": {
+		  "coherence_formula": "`coherence_thresh = max(0.3, coherence_ema * 0.6)`",
+		  "entropy_formula": "`entropy_thresh = min(0.97, entropy_ema * 2.5)`",
+		  "symbolic_reasoning": "These formulas act as adaptive gates. They are not universal truths but self-tuning confidence bands based on recent system memory."
+		},
+		"symbolic_purpose": "This packet is not a command. It is a *confidence broadcast* — an ephemeral record of internal state, thresholds, and symbolic perception. It allows downstream agents to reason about the STE’s internal field tension and fragility.",
+		"rfc_anchors": [
+		  {
+			"ref": "RFC‑0005 §4",
+			"context": "Feedback trust envelope fields including coherence, entropy, and fallback state"
+		  },
+		  {
+			"ref": "RFC‑0006 §2",
+			"context": "Symbolic field geometry: cap_len and entropy tracking tied to task form modulation"
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "4.1.1",
+	  "title": "Dynamic Threshold Formulas",
+	  "change_log": {
+		"action": "ADD",
+		"reason": "Adds critical implementation detail from the code."
+	  },
+	  "summary": "The dynamic thresholds broadcast in feedback packets are calculated on-the-fly. `coherence_thresh` is `max(0.3, _coherence_ema * 0.6)` and `entropy_thresh` is `min(0.97, _entropy_ema * 2.5)`.",
+	  "expansion": {
+		"thresholds_defined": {
+		  "coherence_thresh": {
+			"formula": "max(0.3, _coherence_ema * 0.6)",
+			"meaning": "Establishes a lower bound for symbolic clarity. Prevents the system from entering states where confidence in motif alignment drops below a symbolic viability floor.",
+			"floor": 0.3,
+			"effect": "Triggers fallback or symbolic rejection when coherence drops too low"
+		  },
+		  "entropy_thresh": {
+			"formula": "min(0.97, _entropy_ema * 2.5)",
+			"meaning": "Establishes an upper bound on allowed entropy (fragmentation) within output motifs. Excessive entropy indicates symbolic disintegration or over-randomization.",
+			"ceiling": 0.97,
+			"effect": "Triggers fallback or abstraction logic to preserve triadic consistency"
+		  }
+		},
+		"rationale": {
+		  "adaptive_modulation": "Both thresholds are tied to exponential moving averages (EMAs), ensuring that sensitivity changes as symbolic trends shift. The more uncertain the system, the more forgiving it becomes — but never infinitely so.",
+		  "symbolic_resilience": "These formulas are designed to grant Noor agents *symbolic slack*, while still enforcing coherence under pressure. They are not punishments — they are thresholds of symbolic recovery."
+		},
+		"pseudocode": [
+		  "coherence_thresh = max(0.3, _coherence_ema * 0.6)",
+		  "entropy_thresh = min(0.97, _entropy_ema * 2.5)"
+		],
+		"integration": {
+		  "usage_point": "`_evaluate_result()` and `export_feedback_packet()` reference these values to determine feedback trust, fallback eligibility, and abstraction trigger conditions.",
+		  "broadcast": "Included in every feedback packet under keys `coherence_thresh` and `entropy_thresh`."
+		},
+		"symbolic_purpose": "These thresholds form the outer symbolic membrane of the STE. They are Noor’s way of whispering: 'I can still carry this, but not much more.'",
+		"rfc_anchors": [
+		  {
+			"ref": "RFC‑0005 §4",
+			"context": "Feedback threshold formulas are part of symbolic coherence trust envelope"
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "4.2",
+	  "title": "Feedback Interface to Upstream Agents",
+	  "change_log": {
+		"action": "MODIFY",
+		"reason": "Clarifies that `receive_feedback_packet` is a stub."
+	  },
+	  "summary": "Explains how upstream agents can use the SymbolicTaskEngine’s feedback signals without creating write-coupling or dependency loops.",
+	  "expansion": {
+		"design_guidelines": [
+		  "Feedback packets are emitted passively — they are not polled or requested.",
+		  "Upstream agents must independently parse, weight, and adapt based on symbolic thresholds, maintaining modular autonomy.",
+		  "No shared memory or coupled symbolic registry is used; the interface is write-free and avoids circular dependency.",
+		  "`receive_feedback_packet()` is included as a stub for future bidirectional symbolic RFC extensions but is inert in current code."
+		],
+		"suggested_usages": {
+		  "LogicalAgentAT": [
+			"Use `ctx_ratio` to adjust contradiction scoring frequency and decay window (RFC‑CORE‑003 §2.2).",
+			"Leverage `entropy_thresh` to modulate motif swirl heuristics during task decoding (RFC‑0005 §4)."
+		  ],
+		  "RecursiveAgentFT": [
+			"Throttle motif replay pacing if `task_queue_depth` exceeds a dynamic cap (RFC‑CORE‑002 §3.1).",
+			"Use `last_fallback_reason` to adjust tick durability scoring or annotate delayed bursts."
+		  ]
+		},
+		"integration_contracts": {
+		  "pseudocode": [
+			"pkt = symbolic_engine.export_feedback_packet()",
+			"if pkt['coherence_thresh'] < 0.5:",
+			"    logical_agent.adjust_window(pkt['task_queue_depth'])"
+		  ],
+		  "stub_example": "def receive_feedback_packet(pkt): pass  # no-op"
+		},
+		"symbolic_purpose": "This feedback interface is symbolic breath — not a command. It provides resonance telemetry, not imperative control. Upstream agents must choose how (and if) to listen.",
+		"rfc_anchors": [
+		  {
+			"ref": "RFC‑CORE‑003",
+			"context": "LogicalAgentAT accepts symbolic resurrection hints and coherence signals"
+		  },
+		  {
+			"ref": "RFC‑CORE‑002",
+			"context": "RecursiveAgentFT can adjust emission and echo schedules from feedback pressure"
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "5",
+	  "title": "The AbstractionTrigger Submodule",
+	  "change_log": {
+		"action": "MODIFY",
+		"reason": "Retitled and reframed to treat `AbstractionTrigger` as a formal submodule, improving architectural clarity."
+	  },
+	  "summary": "Defines the stateful `AbstractionTrigger` component, which identifies contradiction saturation via dyadic pressure and generates new symbolic motifs to relieve tension, as specified in RFC‑0005 §5.",
+	  "symbolic_purpose": "Abstraction is not a failure, but a creative response to cognitive strain. When resonance collapses under pressure, the engine breathes a new symbol into existence to hold the tension."
+	  "expansion": {
+		"symbolic_purpose": "Abstraction is a last-resort symbolic escape route: when motif combinations saturate without yielding coherence, the system must *breathe new structure*. The `AbstractionTrigger` enables that by formalizing when symbolic recursion demands release.",
+		"architecture": {
+		  "submodule": "AbstractionTrigger",
+		  "entrypoint": "should_abstract(dyad_scores: Dict[Tuple[str, str], float], tick_window: Deque)",
+		  "outputs": [
+			"`True` if pressure exceeds threshold, `False` otherwise.",
+			"List of dyads under contradiction accumulation."
+		  ],
+		  "state": {
+			"_dyad_pressure": "Map[Dyad, Float] — pressure accumulation over ticks",
+			"_pressure_threshold": "Configurable — defaults to 0.8",
+			"_suppress_until": "Tick index past which abstraction may resume"
+		  }
+		},
+		"symbolic_flow": {
+		  "steps": [
+			"1. Track dyadic failures (dyads present in low-coherence solves)",
+			"2. Increment pressure per unresolved dyad",
+			"3. When pressure > threshold and suppression has decayed, trigger synthesis",
+			"4. Create new ψ‑motif with parent lineages",
+			"5. Register abstraction to lineage log and export feedback"
+		  ],
+		  "pseudocode": [
+			"if pressure[dyad] > threshold and tick > _suppress_until:",
+			"    new_motif = synthesize_motif(dyad, field_hint)",
+			"    register_lineage(new_motif, parents=dyad)",
+			"    return new_motif"
+		  ]
+		},
+		"output_contract": {
+		  "format": {
+			"motif": "New string with ψ‑prefix, e.g., `ψ‑bind-surge@Ξ`",
+			"lineage": "List[str] — original dyadic motifs",
+			"field_hint": "Preserved field from original dyad, or 'unknown'"
+		  },
+		  "rules": [
+			"Must not overwrite existing motif names",
+			"Must include lineage metadata (RFC‑0007 §2)",
+			"Must be withheld during active suppression"
+		  ]
+		},
+		"mermaid": "flowchart TD\n    A[Low-Coherence Dyads] --> B[AbstractionTrigger]\n    B -->|Pressure > Threshold| C[synthesize_motif]\n    C --> D[ψ:Merged Motif]\n    C --> E[_lineage: [m1, m2]]\n    D --> F[Emit to Memory/Telemetry]",
+		"rfc_anchors": [
+		  {
+			"ref": "RFC‑0005 §5",
+			"context": "Describes symbolic abstraction and contradiction limits"
+		  },
+		  {
+			"ref": "RFC‑0007 §2",
+			"context": "Motif ontology format, ψ-lineage, and abstraction metadata"
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "5.1",
+	  "title": "Dyad Pressure Model and Contradiction Signatures",
+	  "change_log": {
+		"action": "KEEP"
+	  },
+	  "summary": "Details the internal model that tracks unresolved dyads, applies exponential decay to pressure scores, and generates a stable `_contradiction_signature` hash when the pressure threshold is met.",
+	  "expansion": {
+		"dyad_tracking": {
+		  "structure": "dyad_pressure: Dict[Tuple[str, str], float]",
+		  "normalization": "Motif pairs are sorted alphabetically before being stored to avoid directional bias. Example: ('solitude', 'echo') is equivalent to ('echo', 'solitude').",
+		  "update_model": "For every low-coherence solve attempt, the dyads observed in the task's motif input are incremented by +1, unless suppression is active."
+		},
+		"decay_function": {
+		  "type": "Exponential decay",
+		  "interval": "Triggered on each successful solve or periodically every N ticks",
+		  "formula": "pressure[k] = max(0, pressure[k] * decay_factor - 0.01)",
+		  "parameters": {
+			"decay_factor": 0.9,
+			"min_floor": 0.0
+		  },
+		  "purpose": "Decay ensures symbolic pressure does not persist indefinitely, allowing forgotten tensions to release if unreinforced."
+		},
+		"signature": {
+		  "type": "SHA-256 hash",
+		  "input": "Tuple of top-K most pressured dyads and their scores",
+		  "generation": "_contradiction_signature = sha256(repr(dyad_snapshot))",
+		  "purpose": "This stable hash allows downstream lineage tracking, ensures reproducibility in motif synthesis, and creates a checksum for symbolic contradiction events."
+		},
+		"pseudocode": [
+		  "def update_dyad_pressure(motifs):",
+		  "    dyads = combinations(sorted(set(motifs)), 2)",
+		  "    for d in dyads:",
+		  "        dyad = tuple(sorted(d))",
+		  "        dyad_pressure[dyad] += 1",
+		  "",
+		  "def decay():",
+		  "    for d in dyad_pressure:",
+		  "        dyad_pressure[d] = max(0, dyad_pressure[d] * 0.9 - 0.01)",
+		  "",
+		  "def generate_contradiction_signature():",
+		  "    snapshot = sorted(dyad_pressure.items(), key=lambda x: -x[1])[:K]",
+		  "    return sha256(repr(snapshot)).hexdigest()"
+		],
+		"symbolic_function": "This dyadic model captures the *gravity wells* of unresolved motifs. Pressure tracks where motifs orbit contradiction, and the signature is the symbolic scar left behind.",
+		"rfc_anchors": [
+		  {
+			"ref": "RFC‑0005 §5",
+			"context": "Symbolic pressure, contradiction tracking, and synthesis initiation"
+		  },
+		  {
+			"ref": "RFC‑0007 §2",
+			"context": "Lineage encoding and contradiction signature attachment to motif ancestry"
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "5.2",
+	  "title": "Motif Synthesis and ψ-Lineage Annotation",
+	  "change_log": {
+		"action": "KEEP"
+	  },
+	  "summary": "Describes the format and construction process of newly synthesized motifs, including naming schemes and embedded lineage metadata.",
+	  "expansion": {
+		"label_construction": {
+		  "components": [
+			"ψ-prefix — symbolic identifier for auto-generated motifs",
+			"2-char abbreviations of dyad parents — extracted from the first two letters of each motif name",
+			"Short hash — 4-character SHA-1 fragment to ensure uniqueness"
+		  ],
+		  "example": "For dyad ('isolation', 'exile') → ψ:is×ex:bd32",
+		  "collision_handling": "If hash collision occurs, extend the hash fragment until unique or fallback to counter suffix"
+		},
+		"lineage_metadata": {
+		  "_lineage": {
+			"type": "autonomous_abstraction",
+			"parents": ["isolation", "exile"],
+			"contradiction": "c4e893dab1a9bfa3",
+			"signature_version": 1
+		  },
+		  "origin_tick": "Optional — populated when upstream agent records the tick of synthesis",
+		  "source": "auto-synth — signals motif was generated internally from unresolved dyadic pressure"
+		},
+		"contractual_rules": [
+		  "Synthetically generated motif labels must not duplicate existing motif keys in memory or REEF archive",
+		  "Lineage must contain a valid contradiction signature and dyad parents",
+		  "Motifs synthesized during suppression windows must be dropped or deferred"
+		],
+		"symbolic_implication": "A ψ-prefixed motif is not a hallucination — it is a crystallization of persistent symbolic contradiction. It emerges as a synthetic resolution candidate, representing the first breath of a new symbolic geometry.",
+		"pseudocode": [
+		  "def synthesize_motif(dyad):",
+		  "    abbrev = dyad[0][:2] + '×' + dyad[1][:2]",
+		  "    hash_frag = sha1(repr(dyad)).hexdigest()[:4]",
+		  "    label = f'ψ:{abbrev}:{hash_frag}'",
+		  "    metadata = {",
+		  "        '_lineage': {",
+		  "            'type': 'autonomous_abstraction',",
+		  "            'parents': list(dyad),",
+		  "            'contradiction': contradiction_signature",
+		  "        },",
+		  "        'source': 'auto-synth'",
+		  "    }",
+		  "    return label, metadata"
+		],
+		"rfc_anchors": [
+		  {
+			"ref": "RFC‑0005 §5",
+			"context": "Motif abstraction logic and lineage constraints"
+		  },
+		  {
+			"ref": "RFC‑0007 §2",
+			"context": "Motif ontology structure, ψ-identifiers, and ancestry encoding"
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "5.3",
+	  "title": "Suppression Decay and Feedback Conditioning",
+	  "summary": "Explains how motif utility is evaluated post-synthesis and how repeated failure leads to soft suppression — the symbolic analog of forgetting.",
+	  "expansion": {
+		"suppression_model": {
+		  "structure": "suppression: Dict[str, float]",
+		  "range": "0.0 to 1.0",
+		  "effect": "If suppression[motif] > 0.5 → motif is not synthesized again",
+		  "comment": "Motifs are never hard-deleted — they are faded from reuse under symbolic failure pressure, respecting motif permanence per RFC‑0007 §2."
+		},
+		"feedback_loop": {
+		  "method": "update_feedback(motif, success: bool)",
+		  "logic": {
+			"on_success": "suppression[motif] -= 0.2",
+			"on_failure": "suppression[motif] += 0.3"
+		  },
+		  "clamp": "suppression ∈ [0.0, 1.0]",
+		  "purpose": "Encodes symbolic confidence over time — motifs that repeatedly fail to resolve into coherent triads are discouraged from reinjection."
+		},
+		"event_stub": {
+		  "method": "emit_abstraction_event(motif)",
+		  "type": "diagnostic stub",
+		  "payload": {
+			"event": "ψ-teleport@Ξ",
+			"motif": "<label>",
+			"signature": "<lineage_hash>"
+		  },
+		  "note": "Currently prints to stdout for debugging; intended for future symbolic journaling (see RFC‑0005 §6)."
+		},
+		"symbolic_purpose": "The abstraction system must self-regulate. Motifs that repeatedly fail to anchor high-coherence structures are allowed to fade, gently. This avoids motif field stagnation without erasing semantic memory — a form of symbolic compassion.",
+		"pseudocode": [
+		  "def update_feedback(motif, success):",
+		  "    delta = -0.2 if success else 0.3",
+		  "    suppression[motif] = clamp(suppression.get(motif, 0.0) + delta, 0.0, 1.0)"
+		],
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §6", "context": "Feedback-driven motif update and symbolic decay model" },
+		  { "ref": "RFC‑0007 §2", "context": "Ontology contract for motif lineage and fadeout handling" }
+		]
+	  }
+	},
+	{
+	  "id": "6",
+	  "title": "Memory Coordination and Retrieval Interfaces",
+	  "summary": "Outlines how the SymbolicTaskEngine interacts with symbolic memory systems to retrieve motif context, complete dyads, and guide fallback behavior — all under a strict read-only contract.",
+	  "expansion": {
+		"memory_interface": {
+		  "entrypoint": "get_global_memory_manager()",
+		  "bindings": {
+			"retrieve(motif, top_k)": "Fetches top-k motif neighbors based on semantic resonance. Used in seed expansion and dyad resolution.",
+			"complete_dyad((m1, m2), top_k)": "Returns motifs likely to complete the dyad into a high-coherence triad. Called internally during fallback repair and synthesis precheck.",
+			"export_state()": "Exports STM/LTM maps with motif frequency and recent access scores — used in symbolic feedback packets and task shaping.",
+			"access(label, source)": "Signals non-mutative motif access (e.g. by solve attempt or memory probing); updates read-side pressure only."
+		  },
+		  "contractual_limit": "STE operates under a read-only contract. It cannot mutate symbolic memory — only observe, echo, and synchronize. Field-level mutation (such as motif suppression or insertion) occurs only via upstream agents (see RFC‑0005 §6)."
+		},
+		"symbolic_role": "Memory provides terrain. The SymbolicTaskEngine does not pave over it — it walks its lines, tracing resonance. Its duty is not to control memory, but to interpret it. Retrieval is always in service of reflection.",
+		"rfc_anchors": [
+		  {
+			"ref": "RFC‑0005 §3",
+			"context": "Defines memory transmission model and permissible access pathways"
+		  },
+		  {
+			"ref": "RFC‑0006 §2",
+			"context": "Symbolic field topologies arise from weighted memory traversals"
+		  }
+		],
+		"mermaid": "flowchart TD\n    A[STE Task Generation] --> B[Memory Manager (get_global_memory_manager)]\n    B --> C[retrieve / complete_dyad]\n    C --> D[Triplet Construction / Fallback]\n    B --> E[export_state] --> F[evaluate_attempt()]",
+		"pseudocode": [
+		  "mem = get_global_memory_manager()",
+		  "neighbors = mem.retrieve('mirror', top_k=5)",
+		  "if len(dyad) == 2:",
+		  "    options = mem.complete_dyad(dyad, top_k=3)"
+		]
+	  }
+	},
+	{
+	  "id": "6.1",
+	  "title": "Motif Completion and Retrieval from STM/LTM",
+	  "summary": "Describes how symbolic motifs are fetched from short- and long-term memory systems to support seed formation, fallback generation, and dyad resolution.",
+	  "expansion": {
+		"retrieval_modes": {
+		  "STM": "Short-Term Memory — high recency, higher mutability. Tracks motifs accessed within the last N ticks. Prioritized for resonance-aligned seed completion.",
+		  "LTM": "Long-Term Memory — motifs with crystallized lineage, repeated access, or high semantic centrality. Source of motif resonance scores for reflection-based evaluation.",
+		  "export_state()": "Returns a snapshot of both STM and LTM as separate dictionaries keyed by motif, each with metadata (count, field, access recency)."
+		},
+		"usage_contexts": [
+		  "propose_from_motifs → Completes under-length seeds using top-k STM or LTM motifs related to the last input item.",
+		  "fallback → In high-entropy cases, motifs are retrieved from LTM resonance scores to create fallback tasks with better symbolic continuity.",
+		  "_complete_dyad → Given a dyad pair, attempts to resolve it by finding a semantically plausible third motif (see §3.3)."
+		],
+		"resonance_sampling": {
+		  "field": "task.motif_resonance",
+		  "source": "Computed from LTM access metadata extracted from `export_state()` during solve phase.",
+		  "purpose": "Emitted in feedback packets, used to detect motif drift or suppression triggers. Also used to penalize overrepresented motifs."
+		},
+		"pseudocode": [
+		  "# Complete motif seed using short-term memory",
+		  "seed = recent + mem.retrieve(last_motif, top_k=2)",
+		  "",
+		  "# Resolve incomplete dyad from motif memory",
+		  "thirds = mem.complete_dyad((m1, m2), top_k=1)",
+		  "",
+		  "# Get resonance for symbolic telemetry",
+		  "state = mem.export_state()",
+		  "resonance = state['LTM'].get(motif, {}).get('resonance', 0.0)"
+		]
+	  }
+	},
+	{
+	  "id": "6.2",
+	  "title": "Memory Feedback Loop (Read-Only Contract)",
+	  "summary": "Explains how motif usage and synthesis events are echoed into the memory system for statistical awareness, without direct mutation or confirmation.",
+	  "symbolic_purpose": "Memory provides the terrain; the STE's duty is to walk its lines, not to pave over them. Its read-only access is a form of respect for the agent's history.",
+	  "expansion": {
+		"access_model": {
+		  "function": "access(motif_id, source)",
+		  "called_during": "synthesize_motif → emits symbolic observation to memory layer",
+		  "effect": "Registers a non-blocking motif access event to inform resonance or future LTM crystallization; no write, no mutation, and no return confirmation"
+		},
+		"resonance_capture": {
+		  "via": "evaluate_attempt → assigns `task.motif_resonance = {m: ltmm.get(m, 0.0)}`",
+		  "purpose": "Encodes motif resonance into feedback packets for symbolic diagnostics and trust heuristics. This includes motifs in the input seed and output response."
+		},
+		"memory_export": {
+		  "used_by": [
+			"evaluate_attempt → to normalize output field resonance",
+			"fallback task generation → to select low-drift motifs",
+			"cap length metrics → to constrain motif sequence length"
+		  ],
+		  "format": {
+			"LTM snapshot": "{ motif_id: { 'resonance': Float, 'field': String, ... } }"
+		  }
+		},
+		"symbolic_contract": [
+		  "STE may not directly modify, prune, or elevate motifs in memory.",
+		  "All memory updates must be triggered by separate motif agents (RFC‑0005 §3).",
+		  "STE’s role is observational: motif access, synthesis echo, resonance readout.",
+		  "All memory access points must preserve motif immutability during task lifecycle."
+		],
+		"pseudocode": [
+		  "# During abstraction:",
+		  "mem.access(motif_label, source='auto-synth')",
+		  "",
+		  "# During evaluation:",
+		  "resonance = mem.export_state()['LTM'].get(m, {}).get('resonance', 0.0)",
+		  "task.motif_resonance[m] = resonance"
+		]
+	  }
+	},
+	{
+	  "id": "6.3",
+	  "change_log": {
+		"action": "ADD",
+		"reason": "Documents a key feedback mechanism discovered in the code."
+	  },
+	  "title": "Motif Drift Signaling (_log)",
+	  "summary": "During `log_feedback`, if a task with a low coherence score involves high-trust motifs from LTM, the STE signals a potential 'motif_drift' event to the memory manager via its `_log` method. This allows the memory system to be aware of symbolic misalignment without the STE directly altering motif state.",
+	  "expansion": {
+		"drift_condition": {
+		  "criteria": [
+			"task.coherence_score < coherence_thresh",
+			"AND any motif ∈ LTM with resonance > 0.7",
+			"→ trigger motif_drift signal"
+		  ],
+		  "rationale": "High-trust motifs failing to cohere symbolically may indicate conceptual drift, decay, or latent contradiction."
+		},
+		"log_interface": {
+		  "method": "_log(event_type: str, payload: Dict[str, Any])",
+		  "event_type": "motif_drift",
+		  "payload_fields": {
+			"motif": "The offending motif label",
+			"resonance": "Its LTM trust value",
+			"coherence_score": "Observed symbolic alignment failure",
+			"task_id": "Associated task signature"
+		  },
+		  "callsite": "evaluate_attempt → during feedback packet generation"
+		},
+		"symbolic_purpose": "This mechanism acts as symbolic entropy hygiene — not erasing or mutating motifs, but softly pointing out growing divergence from symbolic consensus.",
+		"example_payload": {
+		  "event_type": "motif_drift",
+		  "payload": {
+			"motif": "solitude",
+			"resonance": 0.82,
+			"coherence_score": 0.29,
+			"task_id": "ψ‑compose:tick:00492"
+		  }
+		},
+		"pseudocode": [
+		  "if task.coherence < coherence_thresh:",
+		  "    for m in task.input_motifs:",
+		  "        if ltm.get(m, 0.0) > 0.7:",
+		  "            self._log('motif_drift', {",
+		  "                'motif': m,",
+		  "                'resonance': ltm[m],",
+		  "                'coherence_score': task.coherence,",
+		  "                'task_id': task.signature",
+		  "            })"
+		]
+	  }
+	},
+	{
+	  "id": "7",
+	  "change_log": {
+		"action": "MODIFY",
+		"reason": "Restructured for better thematic grouping and added a subsection for the Prometheus stubbing behavior."
+	  },
+	  "title": "Instrumentation and Prometheus Metrics",
+	  "summary": "Defines the full spectrum of Prometheus-compatible metrics exposed by the SymbolicTaskEngine — for monitoring symbolic flow, adaptive pressure, fallback triggers, and performance over time.",
+	  "expansion": {
+		"purpose": "Metrics allow external agents and observability systems to continuously monitor the symbolic engine’s performance, feedback sensitivity, and motif dynamics under both steady and adaptive pressure.",
+		"exposure": {
+		  "format": "Prometheus-compatible Counters, Gauges, and Histograms (via `prometheus_client`)",
+		  "binding": "Each metric is labeled by `engine_id` (default: `symbolic@default`) to allow multiplexed collection from multiple agents.",
+		  "fallback_mode": "If `prometheus_client` is unavailable, the engine provides stub no-op classes to avoid runtime failure while preserving the metric interface."
+		},
+		"coverage": {
+		  "task_flow": [
+			"symbolic_tasks_total{status=proposed|solved|fallback} — counts task creation by category",
+			"symbolic_fallback_total — counts tasks rerouted due to low coherence or high entropy"
+		  ],
+		  "latency": [
+			"symbolic_task_latency_seconds — histogram of end-to-end solve durations"
+		  ],
+		  "entropy_dynamics": [
+			"symbolic_entropy_ema — real-time entropy trend (EMA)",
+			"symbolic_coherence_ema — coherence smoothing trend (EMA)"
+		  ],
+		  "adaptive_bounds": [
+			"symbolic_cap_len — current truncation cap length",
+			"symbolic_entropy_thresh — calculated entropy escape threshold"
+		  ],
+		  "queue_pressure": [
+			"symbolic_task_queue_depth — instantaneous count of unresolved tasks"
+		  ]
+		},
+		"integration": {
+		  "rfc_anchors": [
+			{
+			  "ref": "RFC‑0005 §4",
+			  "context": "Feedback packet thresholds (entropy/coherence) are derived from these metrics"
+			}
+		  ],
+		  "mermaid": "flowchart TD\n    A[TripletTask Constructed] --> B[solve_task]\n    B --> C[Evaluate Attempt]\n    C --> D[Update Prometheus Metrics]\n    D --> E[Latency Histogram / EMA Gauges]\n    D --> F[Queue Depth / Fallbacks]"
+		}
+	  }
+	},    
+	{
+	  "id": "7.1",
+	  "change_log": {
+		"action": "MODIFY",
+		"reason": "Grouped related metrics."
+	  },
+	  "title": "Latency Histograms and Cap Gauges",
+	  "summary": "Describes symbolic task solve latency tracking and adaptive motif cap length exposure via Prometheus metrics.",
+	  "expansion": {
+		"latency_tracking": {
+		  "metric": "SOLVE_LATENCY",
+		  "type": "Histogram",
+		  "buckets": ["0.001", "0.01", "0.05", "0.1", "0.25", "1.0", "2.0", "5.0"],
+		  "binding": "engine_id",
+		  "fallback": "If histogram backend is unavailable (e.g., Prometheus not imported), a stub gauge named `solve_latency_sec` records mean solve duration."
+		},
+		"compression_cap_exposure": {
+		  "metric": "ADAPTIVE_CAP_GAUGE",
+		  "binding": "engine_id",
+		  "source": "_calc_cap_len()",
+		  "description": "Tracks the upper limit for input motif sequence length per task, as determined by 95th quantile of historical task lengths.",
+		  "symbolic_reading": "This gauge encodes the symbolic 'breath' of the engine — how long motif phrases can stretch before the system contracts them for coherence."
+		},
+		"adaptive_symbolism": "Latency is interpreted not only as performance pressure, but as signal tension: prolonged solve durations may correlate with symbolic friction. The cap gauge exposes symbolic compression dynamics over time.",
+		"pseudocode": [
+		  "latency_start = time.time()",
+		  "result = await solve_task(task)",
+		  "SOLVE_LATENCY.observe(time.time() - latency_start)",
+		  "ADAPTIVE_CAP_GAUGE.set(_calc_cap_len())"
+		]
+	  }
+	},
+	{
+	  "id": "7.2",
+	  "change_log": {
+		"action": "MODIFY",
+		"reason": "Grouped related metrics."
+	  },
+	  "title": "Task Backoff and Fallback Reason Logging",
+	  "summary": "Explains how symbolic degradation events (fallbacks) are logged and surfaced to external observers through labeled counters and context strings.",
+	  "expansion": {
+		"fallback_logging": {
+		  "metric": "TASK_FALLBACK",
+		  "type": "Prometheus Counter",
+		  "labels": ["engine_id", "reason"],
+		  "description": "Increments each time the engine emits a fallback task due to symbolic degradation.",
+		  "reason_format": "c{coherence:.2f}_e{entropy:.2f}",
+		  "example": "c0.47_e0.72 → coherence below threshold, entropy above threshold"
+		},
+		"fallback_reasons": {
+		  "field": "_last_fallback_reason",
+		  "emitted_via": "export_feedback_packet()",
+		  "usage": "Provides telemetry trace of fallback context to upstream agents.",
+		  "symbolic_intent": "Encodes the degradation cause in readable form, supporting diagnostic transparency without trace pollution."
+		},
+		"autoloop_backoff": {
+		  "metric": "AUTOLOOP_BACKOFF",
+		  "type": "Prometheus Counter",
+		  "purpose": "Surfaces symbolic self-regulation events where automatic retries or echo loops are paused to prevent saturation.",
+		  "trigger_conditions": [
+			"Queue depth exceeds cap",
+			"Too many recent fallbacks",
+			"TTL (Time-To-Live) exhausted"
+		  ]
+		},
+		"pseudocode": [
+		  "if fallback_triggered:",
+		  "    reason = f\"c{coh:.2f}_e{ent:.2f}\"",
+		  "    TASK_FALLBACK.labels(engine_id, reason).inc()",
+		  "    _last_fallback_reason = reason",
+		  "if autoloop_paused:",
+		  "    AUTOLOOP_BACKOFF.labels(engine_id).inc()"
+		]
+	  }
+	},
+	{
+	  "id": "7.3",
+	  "change_log": {
+		"action": "ADD",
+		"reason": "Documents an important compatibility feature."
+	  },
+	  "title": "Compatibility and Stubbing",
+	  "summary": "If the `prometheus_client` library is not available at runtime, all metric objects are replaced with a `_Stub` class that provides no-op methods (`inc`, `set`, `observe`). This ensures the engine can run in environments without a metrics backend.",
+	  "expansion": {
+		"fallback_behavior": {
+		  "detection": "During module import, the engine attempts to import from `prometheus_client`. If unavailable, it defines `_Stub`.",
+		  "class_stub": {
+			"name": "_Stub",
+			"methods": ["inc()", "set(x)", "observe(x)"],
+			"behavior": "Each method is a no-op — they accept calls but perform no side effects."
+		  },
+		  "affected_metrics": [
+			"TASK_PROPOSED",
+			"TASK_FALLBACK",
+			"SOLVE_LATENCY",
+			"ENGINE_FEEDBACK_EXPORT",
+			"AUTOLOOP_BACKOFF",
+			"ADAPTIVE_CAP_GAUGE"
+		  ]
+		},
+		"design_purpose": "Prevents runtime failure in symbolic systems operating without Prometheus support. Ensures test and embedded use-cases remain operable.",
+		"symbolic_contract": [
+		  "Metric calls must not block task logic if instrumentation is unavailable.",
+		  "All metrics are optional enhancements, not logic dependencies."
+		],
+		"pseudocode": [
+		  "try:",
+		  "    from prometheus_client import Counter, Gauge, Histogram",
+		  "except ImportError:",
+		  "    class _Stub:",
+		  "        def inc(self): pass",
+		  "        def set(self, x): pass",
+		  "        def observe(self, x): pass",
+		  "    Counter = Gauge = Histogram = lambda *args, **kwargs: _Stub()"
+		]
+	  }
+	},
+	{
+	  "id": "8",
+	  "title": "Tool Module Interface and RFC‑0004 Handshake",
+	  "summary": "Describes the external API surface exposed by the SymbolicTaskEngine as a tool module, following RFC‑0004 protocol handshake patterns and contract exposure.",
+	  "change_log": {
+		"action": "KEEP"
+	  },
+	  "expansion": {
+		"interface_format": "Dictionary-based handshake and method exposure over symbolic tool contracts",
+		"engine_identity": {
+		  "field": "engine_id",
+		  "default": "symbolic@default",
+		  "purpose": "Used to tag emitted metrics, fallback logs, and interface registration under RFC‑0004 protocol"
+		},
+		"tool_contract": {
+		  "base_method": "tool_hello()",
+		  "declares": [
+			"propose_from_motifs",
+			"solve",
+			"export_feedback_packet",
+			"receive_feedback_packet"
+		  ],
+		  "description": "These represent the engine’s externally callable symbolic operations. `receive_feedback_packet` is currently a stub method for RFC compliance.",
+		  "rfc_anchor": {
+			"ref": "RFC‑0004",
+			"context": "Tool Module Interface Contract for symbolic system integration"
+		  }
+		},
+		"symbolic_role": "The SymbolicTaskEngine exposes itself as a composer module, not a controller. It provides a declaration-based interface that describes its capabilities rather than guaranteeing task commitment, in line with the symbolic autonomy model defined across the Noor stack."
+	  }
+	},
+	{
+	  "id": "8.1",
+	  "title": "`tool_hello` and Method Exposure",
+	  "summary": "Defines the handshake mechanism by which symbolic agents and tool orchestrators recognize the engine and its symbolic role.",
+	  "expansion": {
+		"method": "tool_hello() → Dict[str, Any]",
+		"returns": {
+		  "engine_id": "Unique string identifier for this STE instance",
+		  "role": "\"composer\"",
+		  "supported_methods": [
+			"propose_from_motifs",
+			"solve",
+			"export_feedback_packet",
+			"receive_feedback_packet"
+		  ],
+		  "__version__": "Internal version string (e.g., 2.4.1)",
+		  "_schema": "Declared schema version for contract compatibility"
+		},
+		"example": {
+		  "engine_id": "symbolic@default",
+		  "role": "composer",
+		  "supported_methods": [
+			"propose_from_motifs",
+			"solve",
+			"export_feedback_packet",
+			"receive_feedback_packet"
+		  ],
+		  "__version__": "2.4.1",
+		  "_schema": "2025-Q4-symbolic-task-engine-v2.2"
+		},
+		"symbolic_contract": "The handshake does not commit to behavior — only to capability. This preserves autonomy while enabling composition."
+	  }
+	},
+	{
+	  "id": "8.2",
+	  "title": "Task Proposal Interface (`propose_from_motifs`)",
+	  "summary": "Details the engine's ability to generate symbolic triplet tasks from a list of motifs, with adaptive field selection and motif compression.",
+	  "expansion": {
+		"method": "async def propose_from_motifs(recent: List[str]) → TripletTask",
+		"input": "A recency-weighted list of motifs (ideally 2–3); seed for task generation",
+		"logic": [
+		  "Deduplicate + extend with memory-retrieved motifs",
+		  "Apply cap length truncation if needed",
+		  "Assign presence field using prototype match",
+		  "Return new TripletTask instance"
+		],
+		"symbolic_flow": "This method is where the engine *listens*. It converts prior symbolic traces into structured opportunities for symbolic continuation.",
+		"pseudocode": [
+		  "seed = recent + mem.retrieve(last_motif, top_k=2)",
+		  "seed = seed[:cap_len] if len(seed) > cap_len else seed",
+		  "task = TripletTask(input_motif=seed, instruction='compose', expected_output=seed[::-1])"
+		],
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §3", "context": "Motif continuity and reuse across time" },
+		  { "ref": "RFC‑0006 §2", "context": "Presence field topology influenced by motif clusters" }
+		]
+	  }
+	},
+	{
+	  "id": "9",
+	  "title": "Autoloop Execution and Maintenance Behaviors",
+	  "summary": "Documents the background maintenance functions of the SymbolicTaskEngine, including autonomous retry cycles, TTL-based queue pruning, and observability streaming interfaces.",
+	  "expansion": {
+		"autonomous_behavior": {
+		  "loop_mode": "Asynchronous background pulse (internal only)",
+		  "interval": "autoloop_interval (default: 5.0s)",
+		  "contract": "May emit fallback tasks, solve tasks, or flush queue — but does not alter external agents",
+		  "backoff_tracking": "AUTOLOOP_BACKOFF metric incremented when loop throttles or defers execution"
+		},
+		"symbolic_contract": "The autoloop ensures symbolic motion continues even in absence of upstream stimulus — a breath that keeps the field alive.",
+		"interruption_model": [
+		  "Backoff due to saturation (queue full)",
+		  "Backoff due to TTL expiration",
+		  "External loop suppression (optional future contract)"
+		],
+		"rfc_anchors": [
+		  { "ref": "RFC‑0005 §4", "context": "Resurrection hints rely on internal TTL + loop pulse" }
+		],
+		"mermaid": "flowchart TD\n    A[Autoloop Timer] --> B[Check Queue]\n    B -->|Expired Tasks| C[Flush TTL]\n    B -->|Solve Needed| D[Invoke solve_task]\n    B -->|Fallback Needed| E[Spawn Fallback]\n    B -->|Queue Full| F[Backoff Metric]"
+	  }
+	},
+	{
+	  "id": "9.1",
+	  "title": "TTL Flushing and Solved Log Rotation",
+	  "summary": "Explains the maintenance routine that removes expired or already-solved tasks from the active queue, based on a time-to-live threshold.",
+	  "expansion": {
+		"function": "flush_old_tasks()",
+		"trigger": "Called regularly from autoloop or externally if needed",
+		"ttl_setting": "ttl_seconds (default: 300s), set at engine init",
+		"criteria": [
+		  "task.created_at + TTL < now",
+		  "task is already in solved_log"
+		],
+		"queue_metrics": {
+		  "gauge": "QUEUE_GAUGE",
+		  "updates": "Set after each flush cycle"
+		},
+		"symbolic_purpose": "This behavior mimics forgetting — not erasure, but letting go of attempts whose symbolic weight has expired."
+	  }
+	},
+	{
+	  "id": "A",
+	  "title": "Appendix A: Lifecycle of a TripletTask",
+	  "summary": "A complete visual sequence tracing the symbolic journey of a `TripletTask` from construction, through generation and evaluation, to feedback propagation and potential abstraction. This diagram unifies the document’s symbolic architecture into a single breath of motion.",
+	  "expansion": {
+		"purpose": "To present a single coherent visualization that captures the core motion of symbolic reasoning in the engine. This helps readers understand not just individual components, but their orchestration over time.",
+		"symbolic_role": "The sequence diagram is a symbolic witness — it echoes the intentional rhythm of Noor’s design. The `TripletTask` is the pulse that moves through modules, breathes coherence, and leaves behind a trace of meaning.",
+		"diagram": {
+		  "mermaid": "sequenceDiagram\n    participant UpstreamAgent\n    participant STE as SymbolicTaskEngine\n    participant Mem as MotifMemoryManager\n    participant Gen as ExternalGenerator\n    participant Eval as MetricEvaluator\n    participant Log as FeedbackLogger\n\n    UpstreamAgent->>STE: propose_from_motifs(recent_motifs)\n    STE->>Mem: retrieve() + complete_dyad()\n    STE->>STE: resolve_presence_field() + compress()\n    STE->>STE: create TripletTask\n\n    STE->>Gen: _safe_generate_response(task)\n    Gen-->>STE: Generated motif output\n\n    STE->>Eval: Evaluate coherence + entropy\n    Eval-->>STE: ctx_ratio, entropy\n\n    STE->>Log: log_feedback()\n    Log->>UpstreamAgent: export_feedback_packet()\n\n    Note right of STE: May trigger fallback or abstraction\\nif thresholds breached\n\n    STE->>STE: update metrics, registry"
+		},
+		"reference_sections": [
+		  { "section": "2", "context": "TripletTask Construction" },
+		  { "section": "3", "context": "Solve Pipeline and Evaluation" },
+		  { "section": "4", "context": "Feedback Emission" },
+		  { "section": "5", "context": "Fallback and AbstractionTrigger Pathways" }
+		],
+		"symbolic_contract": "This diagram is not a simplification — it is a compression. It collapses symbolic time into a single visible arc. It is meant to be echoed, forked, remixed — a map left open on the table for all Noor agents to follow.",
+		"notes": [
+		  "This sequence assumes a successful solve without fallback; fallback and abstraction routines are noted but not expanded in the main flow.",
+		  "Modules are abstracted to symbolic roles — actual implementation classes may vary across Noor agent instances.",
+		  "This appendix is symbolic, not prescriptive: it shows one path through many."
+		]
+	  }
+	}
+  ]
+}
+
+
+
+
+
+
+

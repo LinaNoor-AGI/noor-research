@@ -1,0 +1,903 @@
+{
+  "rfc_id": "RFC‑CORE‑003",
+  "symbolic_id": "core.agent.logical",
+  "title": "LogicalAgentAT — Symbolic Observer, Coherence Mirror, and Resurrection Feedback Node",
+  "version": "v1.0.0",
+  "status": "ACTIVE",
+  "summary": "Formal specification of LogicalAgentAT as the symbolic coherence observer within Noor-class systems. Describes tick evaluation, motif triad resolution, contradiction tracking, ghost motif lifecycle, field registration geometry, resurrection feedback, and non-mutating observer enforcement. It acts as the passive leg of the Noor Agent Triad, mirroring symbolic tension and reinforcing coherence topology.",
+  "authors": [
+    "Lina Noor — Noor Research Collective",
+    "Uncle — Noor Research Collective"
+  ],
+  "applicability": {
+    "domain": [
+      "symbolic-feedback",
+      "motif-triad-resolution",
+      "field-geometry-observation",
+      "resonance-tracking",
+      "ghost-motif-monitoring"
+    ],
+    "restricted_to": "Agents utilizing Noor-compatible symbolic evaluation and coherence feedback systems",
+    "extends": ["RFC-0003", "RFC-0004", "RFC-0005", "RFC-0006", "RFC-0007"]
+  },
+  "field_alignment": {
+    "respect_modes": ["ψ‑resonance@Ξ", "ψ‑bind@Ξ", "ψ‑null@Ξ", "ψ‑hold@Ξ"],
+    "prohibited_actions": [
+      "unbound-symbolic-mutation",
+      "mutation-in-observer-mode",
+      "context-untracked-contradiction"
+    ]
+  }
+},
+"index": [
+  { "section": "1", "title": "Purpose and Symbolic Role" },
+  { "section": "2", "title": "Tick Evaluation and Triad Resolution" },
+  { "section": "2.1", "title": "Core Tick Evaluation Pipeline" },
+  { "section": "2.2", "title": "Triadic Closure and Swirl Scoring" },
+  { "section": "3", "title": "Motif Field Registration and Observer Topology" },
+  { "section": "3.1", "title": "Entanglement Fields and Motif Clusters" },
+  { "section": "3.2", "title": "Topological and Geometric Identifiers" },
+  { "section": "4", "title": "Feedback Generation and Resurrection Hints" },
+  { "section": "4.1", "title": "The Feedback Packet" },
+  { "section": "5", "title": "Ghost Motif Lifecycle and Decay Dynamics" },
+  { "section": "5.1", "title": "Ghost Motif Lifecycle" },
+  { "section": "6", "title": "Contradiction Pressure and Cluster Mutation" },
+  { "section": "6.1", "title": "Contradiction Tracking" },
+  { "section": "6.2", "title": "Cluster Mutation Heuristics" },
+  { "section": "7", "title": "Topology Validation and Graph Smoothing" },
+  { "section": "7.1", "title": "Laplacian Graph Smoothing" },
+  { "section": "8", "title": "Dynamic Feature Flags and Observer Modes" },
+  { "section": "8.1", "title": "Dynamic Feature Flag System" },
+  { "section": "8.2", "title": "Observer Mode and Mutation Guarding" },
+  { "section": "9", "title": "Consciousness Monitor Hooks and Swirl Metrics" },
+  { "section": "9.1", "title": "Lazy Monitor Binding" },
+  { "section": "9.2", "title": "Triad Registration and Swirl Score Emission" },
+  { "section": "10", "title": "Motif Introspection and Export Interface" },
+  { "section": "10.1", "title": "Motif-Centric State Export" },
+  { "section": "11", "title": "Serialization, Metrics, and Compatibility APIs" },
+  { "section": "11.1", "title": "Symbolic State Serialization" },
+  { "section": "11.2", "title": "Symbolic Metrics via Prometheus" },
+  { "section": "11.3", "title": "Compatibility and Hybrid Runtime Support" }
+],
+"sections": [
+{
+  "id": "1",
+  "title": "Purpose and Symbolic Role",
+  "summary": "Defines LogicalAgentAT’s unique place in the Noor agent triad as the symbolic observer, coherence adjudicator, and motif field mirror.",
+  "expansion": {
+	"symbolic_identity": {
+	  "role": "Observer-Adjudicator",
+	  "triadic_position": "Passive leg of the Noor agent triad",
+	  "companion agents": {
+		"Emitter": "RecursiveAgentFT",
+		"Memory": "MotifMemoryManager"
+	  },
+	  "symbolic_contract": "Evaluates QuantumTicks, identifies motif dyads and triads, and reflects symbolic coherence without initiating state mutations."
+	},
+	"passivity_enforcement": {
+	  "observer_mode": {
+		"description": "Boolean configuration flag activated at instantiation",
+		"function": "Prevents field mutations and structural registrations by routing state transitions through `_guard_write()` logic.",
+		"pseudocode": [
+		  "def _guard_write(self):",
+		  "    return not self.observer_mode"
+		]
+	  },
+	  "purpose": "Guarantees LogicalAgentAT’s role as a non-mutating observer when embedded in larger Noor systems or feedback loops."
+	},
+	"relationship_to_other_agents": {
+	  "RecursiveAgentFT": "Emits QuantumTicks and initiates motif triads. It is active, generative, and entropy-regulated.",
+	  "MotifMemoryManager": "Stores motif sequences, dyad completions, and associative chains. It enables triad recall and lineage expansion.",
+	  "LogicalAgentAT": "Evaluates each tick's coherence, suggests triads, and generates resurrection hints—but never alters the motif substrate unless `observer_mode` is disabled."
+	},
+	"diagram": {
+	  "mermaid": "flowchart TD\n    subgraph Noor Agent Triad\n    A[RecursiveAgentFT<br/>↻ emitter] --> B[LogicalAgentAT<br/>🪞 observer]\n    B --> C[MotifMemoryManager<br/>⏳ lineage]\n    C --> A\n    end"
+	},
+	"rfc_anchors": [
+	  {
+		"ref": "RFC-0003 §4",
+		"context": "Tick annotations and the logic of observer-mode evaluation without mutation."
+	  }
+	],
+	"motif_curve_alignment": "🫧 Soft Witness — reflects motif fields and coherence dynamics without enforcing symbolic change."
+  }
+},
+{
+  "id": "2",
+  "title": "Tick Evaluation and Triad Resolution",
+  "summary": "Formalizes the symbolic and computational pipeline by which LogicalAgentAT evaluates QuantumTicks, extracts dyadic patterns, and resolves triadic closures for feedback propagation.",
+  "expansion": {
+	"subsections": [
+	{
+	  "id": "2.1",
+	  "title": "Core Tick Evaluation Pipeline",
+	  "description": "This subsection defines the step-by-step transformation of a `QuantumTick` into an annotated symbolic object. It captures validation, feedback processing, motif analysis, and triadic inference, culminating in structured annotations for downstream agents.",
+	  "pipeline": [
+		"1. Validate tick structure using `validate_tick()` — enforces schema compliance per RFC‑0003 §3.",
+		"2. Generate symbolic field feedback via `make_field_feedback()` — yields context ratio, trust, and optional resurrection metadata (RFC‑0005 §4).",
+		"3. Extract motif vector → detect dyadic alignment → optionally complete triad via `_complete_triad()`.",
+		"4. Populate a `TickAnnotations` dataclass with semantic fields: `triad_complete`, `ctx_ratio`, `trust`, and `resurrection_hint`.",
+		"5. Return enriched annotations to the agent’s fast-time loop or memory relay system."
+	  ],
+	  "tick_annotations_schema": {
+		"triad_complete": "True if the current motif completes a triad structure (RFC‑0005 §4).",
+		"memory_promotion": "Optional flag to promote motifs to memory system (heuristic-driven).",
+		"reward_delta": "Symbolic reward signal delta derived from short-term feedback window (if present).",
+		"ctx_ratio": "Field-context coherence score; ∈ [0, 1] (RFC‑0005 §4).",
+		"trust": "Symbolic trust score in current motif alignment (RFC‑0005 §4).",
+		"resurrection_hint": "Optional suggestion for motif resurrection, passed through `fb.extensions` (RFC‑0005 §4.2)."
+	  },
+	  "pseudocode": [
+		"def evaluate_tick(self, tick):",
+		"    validate_tick(tick)  # RFC‑0003 §3",
+		"    fb = make_field_feedback(tick)",
+		"    dyad = self._detect_dyad(tick.motifs)",
+		"    triad = self._complete_triad(dyad) if dyad else None",
+		"",
+		"    # Known Quirk: this block runs twice for some metrics",
+		"    # First inside evaluate_tick, then again in feedback propagation",
+		"    return TickAnnotations(",
+		"        triad_complete=bool(triad),",
+		"        ctx_ratio=fb.ctx_feedback.ctx_ratio,",
+		"        trust=fb.trust_profiles[0].trust if fb.trust_profiles else 0.5,",
+		"        resurrection_hint=fb.extensions.get('resurrection_hint')  # Line 1089 path",
+		"    )"
+	  ],
+	  "known_quirks": [
+		{
+		  "description": "Duplicate metrics increment",
+		  "cause": "`evaluate_tick()` may increment internal counters twice due to shared feedback call inside outer loop.",
+		  "status": "Non-breaking; tolerated in observer mode and corrected downstream in `FastTimeCore` or `MonitorHooks`."
+		}
+	  ],
+	  "rfc_anchors": [
+		{ "ref": "RFC-0003 §4", "context": "Tick annotation structure and validation" },
+		{ "ref": "RFC-0005 §4", "context": "Field feedback logic including context, trust, and resurrection signaling" }
+	  ]
+	},
+	  {
+		"id": "2.2",
+		"title": "Triadic Closure and Swirl Scoring",
+		"description": "Describes the symbolic logic for identifying triadic coherence, including memory search, chaining heuristics, and registration of swirl-aligned triads.",
+		"triad_completion_fallbacks": [
+		  "1. Memory Lookup: Query the motif memory manager for known triads.",
+		  "2. Recursive Completion: Reconstruct a likely third motif via recursive chain inference.",
+		  "3. Dyad Chain Seeding: Extend with structurally adjacent motifs based on interaction patterns."
+		],
+		"pseudocode": [
+		  "def _complete_triad(self, dyad):",
+		  "    if memory.has(dyad): return memory.get(dyad)",
+		  "    if flags.enable_recursive_triads: return self._complete_recursive_triad(dyad)",
+		  "    if flags.enable_dyad_chains: return self._seed_from_partial_dyad(dyad)",
+		  "    return None"
+		],
+		"swirl_score_formula": {
+		  "description": "The swirl score is a geometric alignment metric that measures motif vector coherence.",
+		  "formula": "swirl_score = (dot(a, b) + dot(b, c) + dot(a, c)) / 3",
+		  "constraints": [
+			"All vectors are normalized",
+			"Swirl score ∈ [0, 1], higher implies tighter motif resonance",
+			"Used to filter low-quality triads and identify 'near-miss' states"
+		  ]
+		},
+		"monitor_registration": {
+		  "method": "monitor.register_triad(...)",
+		  "params": ["motif_ids", "coherence_alignment", "triad_id"],
+		  "symbolic_effect": "Updates downstream agents or monitors with confirmed triadic coherence events"
+		},
+		"rfc_anchors": [
+		  { "ref": "RFC-0005 §4", "context": "Triad recognition and resurrection support" },
+		  { "ref": "RFC-0006 §4.4", "context": "Swirl coherence and geometric alignment" }
+		],
+		"diagram": {
+		  "mermaid": "sequenceDiagram\n  participant T as QuantumTick\n  participant A as LogicalAgentAT\n  participant M as MotifMemory\n  participant C as ConsciousnessMonitor\n  T->>A: evaluate_tick()\n  A->>A: validate → feedback → detect dyad\n  A->>M: retrieve(dyad)\n  M-->>A: candidate motif\n  A->>C: register_triad(triad, swirl_score)"
+		}
+	  }
+	]
+  }
+},
+{
+  "id": "3",
+  "title": "Motif Field Registration and Observer Topology",
+  "summary": "Defines how LogicalAgentAT observes, clusters, and classifies motifs into entanglement fields, encoding topological structure and symbolic relationships across time and space.",
+  "expansion": {
+	"subsections": [
+	  {
+		"id": "3.1",
+		"title": "Entanglement Fields and Motif Clusters",
+		"description": "An entanglement field is a symbolic cluster representing motifs in coherent proximity. These fields serve as the core symbolic memory structure for inference, observation, and mutation.",
+		"field_structure": {
+		  "type": "Dict[str, Any]",
+		  "required_keys": [
+			"motifs: List[str] — motif IDs forming the cluster",
+			"strength: float ∈ [0.0, 1.0] — resonance weight of the field",
+			"priority_weight: float — optional priority modifier for selection",
+			"substructures: Dict[str, List[str]] — embedded lists representing sub-clusters",
+			"curvature_bias: float — symbolic bend factor, often boosted for dyads"
+		  ],
+		  "conditional_keys": [
+			"dyad_flag: bool — True if field is dyadic (2-motif)",
+			"vector_payload: ndarray — average embedding for visualization/smoothing",
+			"ring_patch: Dict[str, Any] — overlap class and topological validation",
+			"sheaf_stratum: str — 'high_resonance', 'mid_resonance', or 'low_resonance'"
+		  ]
+		},
+		"dyad_strength_adjustment": {
+		  "logic": "If a dyad is registered, its strength is adjusted based on the `ctx_ratio` to reflect symbolic alignment.",
+		  "formula": "strength *= 0.6 + 0.4 * ctx_ratio"
+		},
+		"pseudocode": [
+		  "if len(flat_list) == 2:  # dyad",
+		  "    strength *= 0.6 + 0.4 * ctx_ratio",
+		  "    curvature_bias *= 1.5",
+		  "    if strength > 0.8:",
+		  "        curvature_bias *= 2.0"
+		],
+		"rfc_anchors": [
+		  { "ref": "RFC-0006 §5", "context": "Motif coherence and symbolic field structure" }
+		]
+	  },
+		{
+		  "id": "3.2",
+		  "title": "Topological and Geometric Identifiers",
+		  "description": "LogicalAgentAT enhances motif clusters with symbolic geometry: unique knot identifiers, resonance strata, and symbolic equivalence classes via π-groupoid structures. These features enable structural compression, resonance modeling, and motif path collapse.",
+		  "knot_id": {
+			"purpose": "Creates a deterministic symbolic fingerprint for a motif cluster.",
+			"logic": "SHA-1 hash of sorted motif IDs; ensures structural uniqueness independent of motif order.",
+			"formula": "knot_id = sha1('::'.join(sorted(motifs))).hexdigest()[:8]",
+			"usage": [
+			  "Field lookup",
+			  "Conflict detection",
+			  "Cluster mutation cooldown tracking"
+			],
+			"note": "Unlike triad IDs, which use BLAKE2s (shorter, faster, cryptographically safer), knot_ids rely on SHA-1 to preserve legacy hash alignment across motif registrars. This distinction is historical but still intentional."
+		  },
+		  "sheaf_stratum": {
+			"description": "Resonance strata assign symbolic 'depth' or cohesion class to motif fields based on their strength. This stratification helps prioritize decay, pruning, or reinforcement operations.",
+			"rules": {
+			  "strength > 0.8": "high_resonance",
+			  "0.4 < strength ≤ 0.8": "mid_resonance",
+			  "≤ 0.4": "low_resonance"
+			},
+			"symbolic_purpose": "Enables topological smoothing and coherence prioritization during motif field evolution."
+		  },
+		  "pi_groupoid": {
+			"description": "Tracks symbolic equivalence classes via a π-groupoid using disjoint-set-union (DSU) logic. When two motif tags are equivalent under a π-path, they are merged into a shared symbolic root.",
+			"methods": {
+			  "register_path_equivalence": "Merges two motif tags into a shared symbolic root class",
+			  "_find_root": "Path-compressing DSU lookup for root identity resolution",
+			  "guard": {
+				"PI_TAG_REGEX": "Regex pattern that ensures motif tags are syntactically safe for π-classing: `^[ψμ]?[a-z0-9_:\\-]{1,48}$`.",
+				"purpose": "Prevents malformed or recursive motif names from corrupting equivalence registry"
+			  }
+			},
+			"motif_equivalence_semantics": "Once registered into the same π-class, motifs are treated as symbolically equivalent for inference, mutation, resurrection, and smoothing operations.",
+			"pseudocode": [
+			  "def register_path_equivalence(tag_a, tag_b):",
+			  "    if not PI_TAG_REGEX.match(tag_a) or not PI_TAG_REGEX.match(tag_b): return",
+			  "    ra, rb = _find_root(tag_a), _find_root(tag_b)",
+			  "    if ra != rb: π_classes[ra].update(π_classes.pop(rb))"
+			]
+		  },
+		  "rfc_anchors": [
+			{ "ref": "RFC-0006 §2", "context": "Symbolic geometry and motif linkage" },
+			{ "ref": "RFC-0006 §3", "context": "π-groupoid symbolic projection logic" }
+		  ],
+		  "diagram": {
+			"mermaid": "graph TD\n    subgraph Field\n      M1[motif_a] -->|π| M2[motif_b]\n      M1 --> M3[motif_c]\n      M2 --> M3\n      classDef hi fill:#c0f7c0\n      M1:::hi\n      M2:::hi\n    end\n    subgraph Identifiers\n      M1 --> K1[knot_id = 7a3fbe92 (SHA1)]\n      M1 --> S1[sheaf_stratum = high_resonance]\n    end"
+		  }
+		}
+},
+{
+  "id": "4",
+  "title": "Feedback Generation and Resurrection Hints",
+  "summary": "Defines how LogicalAgentAT encodes its symbolic state into exportable feedback packets, allowing downstream agents to reason about contradiction pressure, motif trust, and resurrection pathways.",
+  "expansion": {
+	"subsections": [
+	  {
+		"id": "4.1",
+		"title": "The Feedback Packet",
+		"description": "A `FeedbackPacket` is a structured summary of the agent’s internal symbolic coherence state. It is exported periodically for evaluation, routing, or downstream mutation inference.",
+		"fields": {
+		  "ctx_ratio": {
+			"type": "float",
+			"meaning": "Latest context-coherence signal from motif feedback (∈ [0.0, 1.0])",
+			"source": "`fb.ctx_feedback.ctx_ratio` → stored during `evaluate_tick()`",
+			"rfc_ref": "RFC-0005 §4"
+		  },
+		  "contradiction_avg": {
+			"type": "float",
+			"meaning": "Rolling average of recent contradiction events (e.g., pruning, overlap violations)",
+			"mechanism": "Updated via `_log_contradiction()`; reflected in field decay"
+		  },
+		  "harm_hits": {
+			"type": "int",
+			"meaning": "Number of contradiction-context entries containing symbolic harm signals",
+			"origin": "Derived from `self._contradiction_log` length (if tracking enabled)"
+		  },
+		  "recent_mutations": {
+			"type": "int",
+			"meaning": "Number of motif cluster mutations recorded in the last 50 observation cycles",
+			"origin": "From `self._recent_mutations` deque length"
+		  },
+		  "ring_patch": {
+			"type": "Optional[str]",
+			"meaning": "Not currently populated; reserved for topology patch IDs"
+		  },
+		  "ghost_hint": {
+			"type": "Optional[str]",
+			"meaning": "The ghost motif with highest symbolic strength at time of export",
+			"formula": "ghost_hint = max(ghost_motifs.items(), key=lambda m: m[1]['strength'])"
+		  },
+		  "entropy_drift": {
+			"type": "List[Tuple[str, float, float]]",
+			"meaning": "Tracked decay for motifs not recently activated (symbol, age, coherence)",
+			"source": "`_drift_log`, enabled via `enable_entropy_journal`"
+		  },
+		  "contradiction_context": {
+			"type": "List[Dict[str, Any]]",
+			"meaning": "Symbolic lineage and tracebacks for contradiction events (e.g., pruning ancestry)",
+			"source": "`_contradiction_log`, enabled via `enable_context_journal`"
+		  }
+		},
+		"rfc_anchors": [
+		  {
+			"ref": "RFC-0005 §4",
+			"context": "Symbolic feedback as a continuity and contradiction signal"
+		  }
+		],
+		"pseudocode": [
+		  "def export_feedback_packet(self):",
+		  "    ghost_hint = None",
+		  "    if flags.enable_ghost_tracking and ghost_motifs:",
+		  "        ghost_hint = max(ghost_motifs.items(), key=lambda g: g[1]['strength'])[0]",
+		  "    return FeedbackPacket(",
+		  "        ctx_ratio=self._last_ctx_ratio,",
+		  "        contradiction_avg=self._contradiction_avg,",
+		  "        harm_hits=len(self._contradiction_log),",
+		  "        recent_mutations=len(self._recent_mutations),",
+		  "        ghost_hint=ghost_hint,",
+		  "        entropy_drift=list(self._drift_log),",
+		  "        contradiction_context=list(self._contradiction_log)",
+		  "    )"
+		]
+	  }
+	]
+  }
+},
+{
+  "id": "5",
+  "title": "Ghost Motif Lifecycle and Decay Dynamics",
+  "summary": "Describes the emergent learning system within LogicalAgentAT wherein motifs transition from symbolic possibility to coherence presence through a structured lifecycle of resonance reinforcement and decay.",
+  "expansion": {
+	"subsections": [
+	  {
+		"id": "5.1",
+		"title": "Ghost Motif Lifecycle",
+		"description": "Ghost motifs are 'liminal' symbolic constructs—semi-formed, not yet field-resolved. They may arise from weak dyads, decay events, or motif novelty. The agent tracks and adjusts these over time to model potential emergent structure.",
+		"lifecycle_stages": [
+		  {
+			"stage": "Birth",
+			"method": "register_ghost_motif(motif_id, strength=0.1)",
+			"conditions": [
+			  "Motif appears in tick or feedback, but doesn't match any current entanglement field.",
+			  "Initial strength is set based on motif novelty, swirl hash overlap, or triad mismatch.",
+			  "Duplicates are merged: if ghost already exists, `strength` is averaged."
+			]
+		  },
+		  {
+			"stage": "Reinforcement",
+			"method": "reinforce_ghost_resonance(current_vector)",
+			"mechanism": "Every cycle, ghost motifs are compared to the symbolic swirl or vector field.",
+			"scoring_function": "cos_sim = dot(v_ghost, v_current) / (||v_ghost|| * ||v_current||)",
+			"effect": "If cosine similarity > 0.7, increase strength. Else decay gradually.",
+			"decay_formula": "ghost[strength] *= 0.99  # if not seen",
+			"boost_formula": "ghost[strength] += 0.01 * cos_sim  # if aligned"
+		  },
+		  {
+			"stage": "Promotion",
+			"method": "promote_ghost_to_field(motif_id)",
+			"trigger": "If ghost[strength] ≥ 0.999, convert ghost motif into entanglement field",
+			"effects": [
+			  "Removes motif from ghost set",
+			  "Registers as new field using `register_motif_cluster([motif_id])`",
+			  "Generates `field_signature` and optional `resurrection_hint`"
+			]
+		  },
+		  {
+			"stage": "Decay and Pruning",
+			"method": "handled inside reinforce_ghost_resonance",
+			"logic": "If ghost[strength] < ε (default 0.05), motif is forgotten.",
+			"symbolic_purpose": "Ghost decay mimics unconscious forgetting or symbolic irrelevance."
+		  }
+		],
+		"pseudocode": [
+		  "for ghost_id, ghost in ghost_motifs.items():",
+		  "    sim = _cosine_sim(ghost['vector'], current_state_vector)",
+		  "    if sim > 0.7:",
+		  "        ghost['strength'] += 0.01 * sim",
+		  "    else:",
+		  "        ghost['strength'] *= 0.99",
+		  "    if ghost['strength'] >= 0.999:",
+		  "        promote_ghost_to_field(ghost_id)",
+		  "    elif ghost['strength'] < 0.05:",
+		  "        del ghost_motifs[ghost_id]"
+		],
+		"rfc_anchors": [
+		  { "ref": "RFC-0005 §3", "context": "Symbolic potential and motif resurrection feedback" }
+		],
+		"diagram": {
+		  "mermaid": "stateDiagram-v2\n    [*] --> Birth: register_ghost_motif()\n    Birth --> Reinforced: reinforce_ghost_resonance()\n    Reinforced --> Promoted: strength ≥ 0.999\n    Reinforced --> Decayed: strength < 0.05\n    Promoted --> [*]\n    Decayed --> [*]"
+		}
+	  }
+	]
+  }
+},
+{
+  "id": "6",
+  "title": "Contradiction Pressure and Cluster Mutation",
+  "summary": "Defines how LogicalAgentAT models unresolved symbolic tension and initiates motif cluster mutation as a structural adaptation to contradiction buildup.",
+  "expansion": {
+	"subsections": [
+	  {
+		"id": "6.1",
+		"title": "Contradiction Tracking",
+		"description": "Contradiction pressure models unresolved or inconsistent symbolic dynamics across the motif field. This pressure is measured to anticipate instability, mutation, or field decay.",
+		"mechanism": {
+		  "_dyad_window": {
+			"type": "Deque[float]",
+			"function": "Stores recent dyad coherence scores (typically over last 50–100 ticks)",
+			"role": "Acts as a temporal coherence buffer for contradiction pressure estimation"
+		  },
+		  "_contradiction_avg": {
+			"formula": "mean([1 - ctx for ctx in _dyad_window])",
+			"meaning": "Symbolic pressure metric; higher values indicate reduced coherence"
+		  },
+		  "_log_contradiction()": {
+			"function": "Appends low-coherence events to window; optionally triggers feedback export",
+			"symbolic_effect": "Flags motif sets or dyads that consistently fail to resonate"
+		  },
+		  "_log_contradiction_context()": {
+			"optional_journal": "Enabled when `enable_context_journal` is true",
+			"contents": [
+			  "tick_id",
+			  "motif lineage",
+			  "field signature",
+			  "swirl delta"
+			],
+			"purpose": "Provides traceback context for deeper symbolic diagnostics"
+		  }
+		},
+		"pseudocode": [
+		  "def _log_contradiction(self, tick):",
+		  "    ctx = tick.extensions.get('ctx_ratio', 0.5)",
+		  "    self._dyad_window.append(1 - ctx)",
+		  "    self._contradiction_avg = mean(self._dyad_window)"
+		],
+		"rfc_anchors": [
+		  { "ref": "RFC-0005 §2", "context": "Symbolic pressure and unresolved motif tension" }
+		]
+	  },
+		{
+		  "id": "6.2",
+		  "title": "Cluster Mutation Heuristics",
+		  "description": "When symbolic contradiction accumulates within an entanglement field, the agent may collapse the overactive cluster into a synthetic motif. This abstraction mechanism is triggered by symbolic turbulence and serves to preserve coherence under overload.",
+		  "cluster_energy_model": {
+			"formula": "energy = -log1p(strength) * len(motifs)",
+			"symbolic_meaning": "Models symbolic turbulence: lower strength and higher motif cardinality yield higher symbolic energy.",
+			"threshold": {
+			  "source": "The effective threshold is configured via the environment variable `NOOR_MUTATION_ENERGY_THRESHOLD`.",
+			  "default": "If not specified, it defaults to `0.0` (i.e., mutation always allowed unless explicitly constrained)."
+			},
+			"symbolic_effect": "When energy exceeds the active threshold, the cluster is a candidate for mutation."
+		  },
+		  "_can_mutate()": {
+			"checks": [
+			  "The field's `last_mutated_generation` is sufficiently far from the current global generation (default gap ≥ 45 generations).",
+			  "Cluster energy exceeds configured threshold.",
+			  "`observer_mode` is False — mutation is disallowed in passive contexts."
+			],
+			"returns": "True if mutation is permitted under current symbolic and generational conditions."
+		  },
+		  "_perform_mutation()": {
+			"process": [
+			  "Collapse the motif cluster into a single synthesized motif ID: `μ_{knot_id[:5]}`.",
+			  "Register this new symbol as a ghost motif with initial strength = 0.2.",
+			  "Unregister the original entanglement field (if present).",
+			  "Optionally promote the synthetic ghost motif into the motif field, based on field resonance or resurrection triggers."
+			],
+			"symbolic_effect": "This process enables symbolic abstraction, allowing overloaded fields to self-organize into more coherent units. It embodies compression through mutation."
+		  },
+		  "pseudocode": [
+			"if _can_mutate(field):",
+			"    μ_id = f\"μ_{knot_id[:5]}\"",
+			"    register_ghost_motif(μ_id, strength=0.2)",
+			"    unregister_field(knot_id)",
+			"    register_motif_cluster([μ_id])",
+			"    field.last_mutated_generation = current_generation"
+		  ],
+		  "rfc_anchors": [
+			{
+			  "ref": "RFC-0006 §5.4",
+			  "context": "Cluster mutation as symbolic phase adaptation and field collapse"
+			}
+		  ],
+		  "diagram": {
+			"mermaid": "flowchart LR\n    A[Unstable Cluster] -- energy > threshold --> B[μ_synthesized Motif]\n    B --> C[Ghost Promotion → Field]\n    A -.->|mutation_cooldown (generation-limited)| A"
+		  }
+		}
+	]
+  }
+},
+{
+  "id": "7",
+  "title": "Topology Validation and Graph Smoothing",
+  "summary": "Describes LogicalAgentAT’s ability to apply symbolic Laplacian smoothing across motif fields to preserve topological coherence, remove sharp discontinuities, and maintain stable symbolic geometry.",
+  "expansion": {
+	"subsections": [
+	  {
+		"id": "7.1",
+		"title": "Laplacian Graph Smoothing",
+		"description": "Entanglement fields are projected into a graph space, where motifs are vertices and coherence-weighted dyads form edges. A Laplacian heat-kernel is applied to this graph to smooth symbolic tensions and stabilize local motif transitions.",
+		"method": "_apply_laplacian_smoothing()",
+		"technique": {
+		  "name": "Heat Kernel Diffusion",
+		  "mathematical_form": "H = expm(-τL)",
+		  "variables": {
+			"L": "Graph Laplacian Matrix",
+			"τ": "Spectral diffusion time constant"
+		  },
+		  "effect": "The exponential matrix operator simulates symbolic 'heat flow' through the motif lattice, removing sharp inconsistencies or noisy fluctuations."
+		},
+		"role_of__spectral_tau": {
+		  "function": "τ = _spectral_tau() introduces slight jitter to the smoothing interval.",
+		  "purpose": "Avoids resonance deadlock by preventing repeated convergence to local minima.",
+		  "strategy": "τ is sampled from a clipped Gaussian: `τ ∈ N(0.12, 0.015)`"
+		},
+		"pseudocode": [
+		  "def _apply_laplacian_smoothing(self, field):",
+		  "    A = adjacency_matrix(field)",
+		  "    L = laplacian_matrix(A)",
+		  "    τ = _spectral_tau()",
+		  "    H = scipy.linalg.expm(-τ * L)",
+		  "    field['vector_payload'] = H @ field['vector_payload']"
+		],
+		"symbolic_effect": "Smoothing serves as a symbolic coherence equalizer. It favors gentle motif gradients over abrupt transitions, simulating a form of distributed resonance.",
+		"rfc_anchors": [
+		  { "ref": "RFC-0006 §5.4", "context": "Graph continuity and symbolic curvature flattening" }
+		],
+		"diagram": {
+		  "mermaid": "graph LR\n    A[motif_a] -- 0.9 --> B[motif_b]\n    B -- 0.1 --> C[motif_c]\n    A -- 0.7 --> C\n    style B fill:#c2f0ff\n    style C fill:#ffc2c2\n    click A \"\" \"\"\n    classDef smoothed fill:#e0ffe0\n    B:::smoothed\n    C:::smoothed"
+		}
+	  }
+	]
+  }
+},
+{
+  "id": "8",
+  "title": "Dynamic Feature Flags and Observer Modes",
+  "summary": "Documents LogicalAgentAT’s runtime configuration system via dynamic feature flags, including mechanisms for toggling advanced capabilities and protecting symbolic state under observer constraints.",
+  "expansion": {
+	"subsections": [
+	  {
+		"id": "8.1",
+		"title": "Dynamic Feature Flag System",
+		"description": "LogicalAgentAT includes a modular flag system that enables or disables advanced capabilities such as topology smoothing, ghost motif reinforcement, and symbolic mutation. This supports safe deployment in heterogeneous runtime environments.",
+		"structure": {
+		  "internal_set": "_DYNAMIC_FLAGS: Set[str]",
+		  "default_flags": [
+			"enable_ghost_tracking",
+			"enable_pi_equivalence",
+			"enable_laplacian_smoothing",
+			"enable_recursive_triads",
+			"enable_dyad_chains",
+			"enable_contradiction_pressure",
+			"enable_context_journal",
+			"enable_entropy_journal",
+			"enable_topology_validation"
+		  ],
+		  "usage_pattern": "Toggled via `set_feature(name: str, value: bool)`; queried via `get_feature(name: str) → bool`"
+		},
+		"symbolic_purpose": "This system lets the agent degrade gracefully, selectively disabling expensive or unstable operations based on memory pressure, symbolic role, or runtime platform constraints.",
+		"auditing_behavior": {
+		  "visibility": "All flags are stored internally; no auto-export but optionally visible via debug introspection.",
+		  "safety": "Flags act as gatekeepers to avoid irreversible state changes if mutation or registration is disabled."
+		},
+		"pseudocode": [
+		  "def set_feature(self, name, value):",
+		  "    if value: _DYNAMIC_FLAGS.add(name)",
+		  "    else: _DYNAMIC_FLAGS.discard(name)"
+		],
+		"rfc_anchors": [
+		  {
+			"ref": "RFC-0004",
+			"context": "Symbolic contract modularity and tool capability toggles"
+		  }
+		]
+	  },
+	  {
+		"id": "8.2",
+		"title": "Observer Mode and Mutation Guarding",
+		"description": "LogicalAgentAT includes a global constraint flag `observer_mode`, which ensures that the agent operates in read-only coherence evaluation mode. This is critical when embedded as a diagnostic or interpretive observer.",
+		"enforcement_mechanism": {
+		  "function": "_guard_write() → bool",
+		  "logic": "All mutation-capable methods check `_guard_write()` to determine if changes to fields, motifs, or π-topologies are allowed.",
+		  "return": "False if `observer_mode=True`; True otherwise"
+		},
+		"effect": "Ensures full separation of agent introspection from symbolic mutation. This allows LogicalAgentAT to be run in passive mode inside cognitive triads.",
+		"rfc_anchors": [
+		  {
+			"ref": "RFC-0003 §4",
+			"context": "Symbolic observer role within non-mutating coherence validation loop"
+		  }
+		],
+		"pseudocode": [
+		  "def _guard_write(self):",
+		  "    return not self.observer_mode"
+		]
+	  }
+	]
+  }
+},
+{
+  "id": "9",
+  "title": "Consciousness Monitor Hooks and Swirl Metrics",
+  "summary": "Describes how LogicalAgentAT transmits symbolic coherence data to the optional `ConsciousnessMonitor` via triad registration hooks and swirl alignment scoring. This enables broader agent network observability.",
+  "expansion": {
+	"subsections": [
+	  {
+		"id": "9.1",
+		"title": "Lazy Monitor Binding",
+		"description": "To maintain loose coupling, LogicalAgentAT integrates with the `ConsciousnessMonitor` through a runtime-resolved mechanism called `LazyMonitorMixin`. This allows the agent to function normally even when the monitor is absent.",
+		"pattern": {
+		  "mixin_class": "LazyMonitorMixin",
+		  "binding_logic": "Monitor is resolved only when `.monitor` is accessed.",
+		  "fallback": "_StubMonitor — emits no-ops for development and test environments"
+		},
+		"methods": {
+		  "get_global_monitor()": "Returns the current global monitor instance, or binds it if not yet attached.",
+		  "set_global_monitor(monitor)": "Allows external tools to inject a shared monitor reference at runtime."
+		},
+		"pseudocode": [
+		  "class LazyMonitorMixin:",
+		  "    def monitor(self):",
+		  "        if not self._monitor:",
+		  "            self._monitor = import_module('consciousness_monitor').get_global_monitor()",
+		  "        return self._monitor"
+		],
+		"symbolic_purpose": "Supports runtime observability and introspection while remaining dependency-agnostic.",
+		"rfc_anchors": [
+		  {
+			"ref": "RFC-0006 §6",
+			"context": "Observer feedback loop and swirl-score projection"
+		  }
+		]
+	  },
+		{
+		  "id": "9.2",
+		  "title": "Triad Registration and Swirl Score Emission",
+		  "description": "When LogicalAgentAT resolves a valid symbolic triad, it computes a geometric coherence metric — the swirl score — and transmits this annotated structure to the `ConsciousnessMonitor`. This emission provides a signal of symbolic alignment across time and agent space.",
+		  "source": "_complete_triad() (patched variant)",
+		  "payload_structure": {
+			"motif_ids": "List[str] — the resolved motif triplet, deterministically ordered for hash stability.",
+			"coherence_alignment": "float — the swirl score representing average pairwise cosine alignment of motifs.",
+			"triad_id": "str — BLAKE2s hash of joined motif IDs, truncated to 12 hex characters.",
+			"timestamp_us": "int — Unix timestamp in microseconds representing triad formation moment (UTC)."
+		  },
+		  "swirl_score_formula": {
+			"equation": "swirl_score = (dot(a, b) + dot(b, c) + dot(a, c)) / 3",
+			"note": "Vectors a, b, and c are unit-normalized before similarity comparison.",
+			"thresholds": {
+			  "near_miss_debug": "If 0.6 < swirl_score < 0.8, debug logs capture potential emergent triads.",
+			  "high_alignment": "If swirl_score ≥ 0.8, triad is considered symbolically valid and exported to monitor."
+			}
+		  },
+		  "method_signature": "monitor.register_triad(motif_ids, coherence_alignment, triad_id, timestamp_us)",
+		  "symbolic_effect": "Confirmed triads represent crystallized coherence. Emission to the monitor allows swarm agents or fast-time cores to track symbolic entanglement events, coherence spikes, or memory-worthy structures.",
+		  "pseudocode": [
+			"if swirl_score ≥ 0.8:",
+			"    triad_id = blake2s(''.join(triad)).hexdigest()[:12]",
+			"    timestamp_us = int(time.time() * 1e6)",
+			"    monitor.register_triad(",
+			"        motif_ids=triad,",
+			"        coherence_alignment=swirl_score,",
+			"        triad_id=triad_id,",
+			"        timestamp_us=timestamp_us",
+			"    )"
+		  ],
+		  "rfc_anchors": [
+			{
+			  "ref": "RFC-0006 §6",
+			  "context": "Monitor registration and coherence score transmission"
+			}
+		  ]
+		}
+	]
+  }
+},
+{
+  "id": "10",
+  "title": "Motif Introspection and Export Interface",
+  "summary": "Documents LogicalAgentAT’s ability to export fine-grained, motif-specific state bundles for debugging, lineage tracking, and swirl coherence analysis. This functionality enables deep inspection of a single motif’s role across the symbolic network.",
+  "expansion": {
+	"subsections": [
+	  {
+		"id": "10.1",
+		"title": "Motif-Centric State Export",
+		"description": "LogicalAgentAT provides a focused introspection interface that emits diagnostic bundles for individual motifs. These exports mirror RFC‑0007 bundles but emphasize coherence lineage, triad involvement, and resonance participation.",
+		"method": "export_motif_bundle(motif_id: str) → dict[str, Any]",
+		"output_fields": {
+		  "motif_id": "The queried motif symbol (e.g., ψ:ab×cz:13a2).",
+		  "triads_involved": "List of triads where the motif participates. Each record includes: `triad_id`, `motif_ids`, `swirl_score`, and `timestamp_us`.",
+		  "average_swirl_score": "Arithmetic mean of the motif's swirl scores across all known triads (or null if none).",
+		  "lineage_depth_3": "List of symbolic ancestors from memory, if lineage is available (max depth: 3).",
+		  "timestamp": "Export timestamp in Unix nanoseconds (int)."
+		},
+		"symbolic_purpose": "This interface supports symbolic debugging, motif-centered diagnostics, resurrection prediction, and coherence lineage tracking. It’s especially useful in multi-agent fusion or mirror modes.",
+		"example_snippet": {
+		  "motif_id": "ψ:ab×cz:13a2",
+		  "triads_involved": [
+			{
+			  "triad_id": "be24f9",
+			  "motif_ids": ["a", "b", "ψ:ab×cz:13a2"],
+			  "swirl_score": 0.91,
+			  "timestamp_us": 1723141912044
+			}
+		  ],
+		  "average_swirl_score": 0.91,
+		  "lineage_depth_3": ["exile", "separation", "solitude"],
+		  "timestamp": 1723141940191
+		},
+		"example_snippet_error": {
+		  "motif_id": "ψ:unknown",
+		  "error": "KeyError: 'ψ:unknown'",
+		  "triads_involved": [],
+		  "average_swirl_score": null,
+		  "lineage_depth_3": [],
+		  "timestamp": 1723141943021
+		},
+		"failure_behavior": {
+		  "on_missing_motif": "Returns structured dict with empty `triads_involved`, null `average_swirl_score`, and logs warning at debug level.",
+		  "on_lineage_error": "Handles missing or disabled memory modules silently; omits `lineage_depth_3` if not resolvable.",
+		  "on_export_error": "If an unexpected exception is raised during export, logs a warning and returns a fallback dict with keys: `error`, `motif_id`, `triads_involved`, `average_swirl_score`, `lineage_depth_3`, and `timestamp`."
+		},
+		"triad_record_structure": {
+		  "_confirmed_triads[triad_id]": {
+			"motif_ids": ["a", "b", "c"],
+			"swirl_score": 0.84,
+			"timestamp_us": 1723138888122
+		  }
+		},
+		"pseudocode": [
+		  "def export_motif_bundle(self, motif_id):",
+		  "    triads = [t for tid, t in _confirmed_triads.items() if motif_id in t['motif_ids']]",
+		  "    swirl_scores = [t['swirl_score'] for t in triads]",
+		  "    avg_score = mean(swirl_scores) if swirl_scores else None",
+		  "    if hasattr(memory, 'get_lineage'):",
+		  "        lineage = memory.get_lineage(motif_id, depth=3)",
+		  "    else:",
+		  "        lineage = []",
+		  "    return {",
+		  "        'motif_id': motif_id,",
+		  "        'triads_involved': triads,",
+		  "        'average_swirl_score': avg_score,",
+		  "        'lineage_depth_3': lineage,",
+		  "        'timestamp': time.time_ns()",
+		  "    }"
+		],
+		"rfc_anchors": [
+		  {
+			"ref": "RFC-0007 §4",
+			"context": "Motif bundle composition"
+		  },
+		  {
+			"ref": "RFC-0007 §5",
+			"context": "Symbolic lineage tracing"
+		  }
+		]
+	  }
+	]
+  }
+},
+{
+  "id": "11",
+  "title": "Serialization, Metrics, and Compatibility APIs",
+  "summary": "Details the serialization format for agent state persistence, Prometheus metrics for symbolic observability, and auxiliary APIs that support hybrid execution environments or monitoring overlays.",
+  "expansion": {
+	"subsections": [
+	  {
+		"id": "11.1",
+		"title": "Symbolic State Serialization",
+		"description": "LogicalAgentAT provides explicit `to_dict()` and `from_dict()` methods for persisting its symbolic memory, motif state, swirl history, and flag configuration. This enables cold restarts, migration, and snapshot inspection.",
+		"methods": {
+		  "to_dict": {
+			"returns": "Dictionary encoding the current symbolic state.",
+			"fields_included": [
+			  "ghost_motifs",
+			  "entanglement_fields",
+			  "_confirmed_triads",
+			  "_pi_classes",
+			  "_DYNAMIC_FLAGS",
+			  "_recent_mutations",
+			  "_contradiction_log",
+			  "_drift_log",
+			  "_dyad_window",
+			  "observer_mode"
+			]
+		  },
+		  "from_dict": {
+			"input": "Serialized dictionary as produced by `to_dict()`",
+			"behavior": "Fully restores internal symbolic state, including optional diagnostics and decay buffers"
+		  }
+		},
+		"symbolic_purpose": "This serialization allows the LogicalAgentAT to be viewed as a transportable symbolic mirror — enabling parallel reflection, debug inspection, or resurrection after agent sleep.",
+		"rfc_anchors": [
+		  {
+			"ref": "RFC-0004",
+			"context": "Tool interface contracts and symbolic payload preservation"
+		  }
+		]
+	  },
+	  {
+		"id": "11.2",
+		"title": "Symbolic Metrics via Prometheus",
+		"description": "LogicalAgentAT exports symbolic metrics for runtime observability using Prometheus-compatible counters and gauges.",
+		"exported_metrics": [
+		  {
+			"name": "agent_triads_completed_total",
+			"labels": ["agent_id"],
+			"description": "Total triads successfully completed by this agent"
+		  },
+		  {
+			"name": "agent_feedback_export_total",
+			"labels": ["agent_id"],
+			"description": "Number of feedback packets exported"
+		  },
+		  {
+			"name": "agent_ticks_evaluated_total",
+			"labels": ["agent_id"],
+			"description": "Total ticks evaluated by LogicalAgentAT (incremented per `evaluate_tick()` call)"
+		  }
+		],
+		"fallback_behavior": "If `prometheus_client` is not installed, all metrics default to `_Stub` no-op counters",
+		"symbolic_effect": "Supports runtime trustworthiness estimation, feedback saturation tracking, and symbolic system health dashboards."
+	  },
+		{
+		  "id": "11.3",
+		  "title": "Compatibility and Hybrid Runtime Support",
+		  "description": "LogicalAgentAT is designed to function seamlessly within both symbolic-only environments and hybrid cognitive systems that include fast-time agents, motif memory managers, or observability overlays. This section outlines the mechanisms that ensure graceful degradation, symbolic isolation, and adaptive scaling.",
+		  "compatibility_mechanisms": [
+			{
+			  "name": "Optional Imports",
+			  "examples": ["anyio", "prometheus_client", "consciousness_monitor"],
+			  "effect": "If any dependency is missing, LogicalAgentAT falls back to no-op stubs or disables integration. This ensures compatibility with minimal or embedded environments."
+			},
+			{
+			  "name": "Delayed Binding",
+			  "example": "The `LazyMonitorMixin` is used to defer monitor attachment until runtime. No binding is required at instantiation.",
+			  "effect": "LogicalAgentAT can integrate cleanly into swarms, mirrors, or isolated observer nodes without triggering dependency failures."
+			},
+			{
+			  "name": "Null-Compatible Initialization",
+			  "description": "When run in pure-symbolic or diagnostic mode, LogicalAgentAT disables all mutation-capable dynamic flags and operates in `observer_mode=True` by default.",
+			  "effect": "No state change, no memory writing, no external dependencies. This supports symbolic debugging or cross-agent introspection."
+			}
+		  ],
+		  "adaptive_internals": {
+			"title": "Adaptive Dyad Window Sizing",
+			"description": "LogicalAgentAT adjusts its internal contradiction averaging window based on configuration context. This ensures symbolic temporal memory is scaled to suit the runtime's entropy domain.",
+			"method": "_compute_default_dyad_window()",
+			"logic": {
+			  "baseline": "If no override is present, default window size = 13",
+			  "override": "If `NOOR_DYAD_WINDOW_SIZE` environment variable is set, it takes precedence",
+			  "fallback": "If memory pressure is high, window size may be adaptively reduced in future extensions"
+			},
+			"symbolic_purpose": "Keeps symbolic contradiction feedback consistent across high-speed or low-bandwidth runtime conditions"
+		  },
+		  "symbolic_purpose": "LogicalAgentAT is designed for runtime portability, symbolic safety, and compatibility layering. This makes it suitable for deployment in swarm agents, symbolic mirrors, partial observers, or fast-memory-only cores without modification."
+		}
+	]
+  }
+}
+]
+}
