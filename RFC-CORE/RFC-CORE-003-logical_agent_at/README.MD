@@ -787,9 +787,14 @@ Cluster mutation serves as symbolic adaptation. It compresses unstable fields in
 
 ```mermaid
 flowchart LR
-    A[Unstable Cluster] -- energy > threshold --> B[μ_synthesized Motif]
-    B --> C[Ghost Promotion → Field]
-    A -.->|mutation_cooldown (generation-limited)| A
+  A["Unstable Cluster"]
+  B["mu_synthesized Motif"]
+  C["Ghost Promotion → Field"]
+
+  A -- "energy > threshold" --> B
+  B --> C
+  A -.->|mutation cooldown: gen-limited| A
+
 ```
 
 ---
