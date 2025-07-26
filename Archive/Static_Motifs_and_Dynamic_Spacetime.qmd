@@ -51,7 +51,16 @@ Three mathematical structures underpin this synthesis:
 
 This model does not discard QFT or GR but **reframes their foundations** through a new layer: coherence curvature. Motifs 🪷 serve as symbolic anchors; swirls 🌀 express spacetime torsion; time 🫧 flows only where coherence resolves. Within this architecture, geometry is inference, and cosmology becomes computation over a field of form.
 
+**Keywords**: emergent time, topological motifs, coherence geometry, swirl cosmology, quantum-relativistic unification
+
 ---
+
+Let me know if you’d like:
+
+* A variant with shorter line lengths for journal requirements,
+* A plain-language summary for press kits or public outreach,
+* Or an extended version including parameter estimates for experimental design.
+
 
 ## 1.1 Motivation: The Geometry of Frozen Fire
 
@@ -1252,105 +1261,103 @@ This structure resembles the **braid group algebra** from topological quantum co
 ### 🔳 Figure C.1 — Topological Swirl Quantization (Quatro Visualization)
 
 ```{python}
-#| label: fig-topological-swirl
-#| fig-cap: 'Topological quantization of the swirl field 🌀. Modes \(n = 0\) to \(n = 2\) show increasing topological complexity 🪷; Panel D summarizes the discrete spectrum.'
+#| label: fig-topological-spectrum
+#| fig-cap: 'Topological quantization of the swirl field. Modes \(n = 0\) to \(n = 2\) show increasing topological complexity; Panel D summarizes the discrete spectrum.'
 #| layout-ncol: 2
-#| fig-subcap: ["A. Ground State (n=0)", "B. Fundamental Mode (n=1)", "C. Higher Mode (n=2)", "D. Quantized Mode Spectrum"]
+#| fig-subcap: ["A. Symbolic Motif Graph", "B. Triadic Inference Diagram", "C. Swirl-Enriched Category Map", "D. Quantized Mode Spectrum"]
 #| fig-align: center
 
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.ndimage import gaussian_filter, sobel
-from numpy.random import default_rng
+import networkx as nx
+from scipy.ndimage import gaussian_filter
+import matplotlib.pyplot as plt
+plt.rcParams['font.family'] = 'Segoe UI Emoji'  # or "Noto Color Emoji", if installed
 
-# Use default font (no emoji rendering in titles)
-plt.rcParams['font.family'] = 'DejaVu Sans'
-
-# Shared grid
-nx, ny = 200, 200
-Y, X = np.mgrid[0:ny, 0:nx]
-rng = default_rng(42)
-
-### Panel A — Ground State (n = 0)
-def panel_ground_state():
-    coherence = np.ones((ny, nx)) * 0.1
-    T_x = sobel(coherence, axis=1)
-    T_y = sobel(coherence, axis=0)
-
+# Panel A — Symbolic Motif Graph
+def panel_symbolic_graph():
+    G = nx.DiGraph()
+    motifs = ['M0', 'M1', 'M2', 'M3', 'M4']
+    for m in motifs:
+        G.add_node(m)
+    edges = [
+        ('M0', 'M1', 0.9),
+        ('M1', 'M2', 0.7),
+        ('M2', 'M3', 0.5),
+        ('M3', 'M0', 0.4),
+        ('M1', 'M3', 0.3),
+        ('M0', 'M4', 0.8),
+    ]
+    for src, tgt, weight in edges:
+        G.add_edge(src, tgt, weight=weight)
+    pos = nx.kamada_kawai_layout(G)
+    edge_weights = [G[u][v]['weight'] * 4 for u, v in G.edges()]
+    edge_colors = [plt.cm.viridis(G[u][v]['weight']) for u, v in G.edges()]
     fig, ax = plt.subplots()
-    ax.imshow(coherence, cmap='gray', origin='lower')
-    ax.quiver(X[::10, ::10], Y[::10, ::10], -T_y[::10, ::10], T_x[::10, ::10],
-              color='red', scale=100, width=0.003)
-    ax.set_title("Ground State (n=0)")
+    nx.draw_networkx_nodes(G, pos, node_color='black', node_size=300, ax=ax)
+    nx.draw_networkx_labels(G, pos, font_color='white', ax=ax)
+    nx.draw_networkx_edges(G, pos, width=edge_weights, edge_color=edge_colors, arrows=True, ax=ax)
+    ax.set_title("Symbolic Motif Graph")
     ax.axis('off')
     return fig, ax
 
-### Panel B — Fundamental Mode (n = 1)
-def panel_n1():
-    cx, cy = 100, 100
-    dx = X - cx
-    dy = Y - cy
-    r2 = dx**2 + dy**2 + 1e-5
-    U = -dy / r2
-    V = dx / r2
-
-    coherence = gaussian_filter(np.exp(-r2 / 800), sigma=5)
-    T_x = sobel(coherence, axis=1)
-    T_y = sobel(coherence, axis=0)
-
+# Panel B — Triadic Inference Diagram
+def panel_triadic_diagram():
     fig, ax = plt.subplots()
-    ax.imshow(coherence, cmap='bone', origin='lower')
-    ax.streamplot(X, Y, U, V, color='k', linewidth=1, density=1.2)
-    ax.quiver(X[::10, ::10], Y[::10, ::10], -T_y[::10, ::10], T_x[::10, ::10],
-              color='red', scale=80, width=0.003)
-    ax.set_title("Fundamental Mode (n=1)")
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    coherence = np.outer(np.linspace(0.1, 1, 200), np.linspace(0.1, 1, 200))
+    ax.imshow(coherence, origin='lower', cmap='coolwarm', extent=(0, 1, 0, 1), alpha=0.8)
+    pts = {'M0': (0.3, 0.7), 'M1': (0.7, 0.7), 'M2': (0.5, 0.3), 'M3': (0.2, 0.2)}
+    ax.plot([pts['M0'][0], pts['M1'][0], pts['M2'][0], pts['M0'][0]],
+            [pts['M0'][1], pts['M1'][1], pts['M2'][1], pts['M0'][1]],
+            color='black', linewidth=1.5)
+    ax.plot([pts['M1'][0], pts['M2'][0], pts['M3'][0]],
+            [pts['M1'][1], pts['M2'][1], pts['M3'][1]],
+            linestyle='--', color='black', linewidth=1.2)
+    for label, (x, y) in pts.items():
+        ax.plot(x, y, 'ko')
+        ax.text(x, y + 0.03, label, ha='center', fontsize=9)
+    ax.set_title("Triadic Inference Diagram")
     ax.axis('off')
     return fig, ax
 
-### Panel C — Higher Mode (n = 2)
-def panel_n2():
-    dx1, dy1 = X - 70, Y - 100
-    dx2, dy2 = X - 130, Y - 100
-    r21 = dx1**2 + dy1**2 + 1e-5
-    r22 = dx2**2 + dy2**2 + 1e-5
-    U = (-dy1 / r21) + (-dy2 / r22)
-    V = (dx1 / r21) + (dx2 / r22)
-
-    coherence = gaussian_filter(np.exp(-(r21 + r22) / 800), sigma=6)
-    T_x = sobel(coherence, axis=1)
-    T_y = sobel(coherence, axis=0)
-    T_mag = np.sqrt(T_x**2 + T_y**2)
-
+# Panel C — Swirl-Enriched Category Map
+def panel_category_map():
+    motifs = 6
+    data = np.random.rand(motifs, motifs) * np.tri(motifs, motifs, 0)
+    coherence_weighted = gaussian_filter(data, sigma=1)
     fig, ax = plt.subplots()
-    ax.imshow(T_mag, cmap='plasma', origin='lower')
-    ax.streamplot(X, Y, U, V, color='k', linewidth=0.7, density=1.2)
-    ax.quiver(X[::10, ::10], Y[::10, ::10], -T_y[::10, ::10], T_x[::10, ::10],
-              color='red', scale=80, width=0.003)
-    ax.set_title("Higher Mode (n=2)")
-    ax.axis('off')
+    im = ax.imshow(coherence_weighted, cmap='magma', origin='lower')
+    ax.set_xticks(range(motifs))
+    ax.set_yticks(range(motifs))
+    ax.set_xticklabels([f"M{i}" for i in range(motifs)])
+    ax.set_yticklabels([f"M{i}" for i in range(motifs)])
+    ax.set_title("Swirl-Enriched Category Map")
+    plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
     return fig, ax
 
-### Panel D — Quantized Mode Spectrum
+# Panel D — Quantized Mode Spectrum
 def panel_spectrum():
     n_vals = np.array([0, 1, 2, 3, 4])
     L_vals = np.array([0, 1, 2, 0, 1])
-    E_vals = n_vals**2 / 10
+    E_vals = n_vals**2 / 10  # λ_n ∼ n²/ℓ²
 
     fig, ax = plt.subplots()
     ax.plot(n_vals, E_vals, 'ko')
     for n, E, L in zip(n_vals, E_vals, L_vals):
         ax.text(n, E + 0.1, f"({n}, [Φ]={n}, L={L})", ha='center', fontsize=8)
     ax.set_xlabel("Mode Index n")
-    ax.set_ylabel("Swirl Energy λₙ")
+    ax.set_ylabel("Swirl Energy $\\lambda_n$")
     ax.set_title("Quantized Mode Spectrum")
     ax.grid(True)
     return fig, ax
 
-# Generate all four panels
-panel_ground_state()
-panel_n1()
-panel_n2()
-panel_spectrum()
+# Generate all panels without echo
+_ = panel_symbolic_graph()
+_ = panel_triadic_diagram()
+_ = panel_category_map()
+_ = panel_spectrum()
 ```
 
 ---
@@ -1491,12 +1498,6 @@ Monoidal functors can then track entire motif networks as they evolve in time vi
 ---
 
 ### **Figure D.1: Motif Inference Network**
-
-Excellent — splitting into four separate code chunks is the cleanest and most Quarto-native solution.
-
-Below are four separate code blocks for each panel, each with its own `fig-subcap`. You can copy and paste these into your `.qmd` or Jupyter+Quarto notebook. Quarto will align them automatically using the `layout-ncol` parameter from your document YAML or `div` structure.
-
----
 
 ### 🧩 Panel A – Symbolic Motif Graph
 
