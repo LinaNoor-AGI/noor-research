@@ -1023,8 +1023,6 @@ In doing so, we have built a bridge—not between two disconnected theories, but
 
 ---
 
-## 12. **Appendices**
-
 ### **Appendix B: Coherence Bounds and Time Vector Constraints**
 
 *“The gradient of coherence is the architecture of time.”*
