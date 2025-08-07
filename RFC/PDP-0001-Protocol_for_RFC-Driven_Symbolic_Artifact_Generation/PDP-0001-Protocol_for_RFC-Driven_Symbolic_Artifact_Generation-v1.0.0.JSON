@@ -2,7 +2,7 @@
   "protocol_id": "PDP-0001",
   "symbolic_id": "protocol.generation.rfc_driven",
   "title": "Protocol for RFC-Driven Symbolic Artifact Generation",
-  "version": "1.0",
+  "version": "1.0.0",
   "summary": "Defines a structured, multi-stage process for generating high-fidelity code artifacts from a set of canonical RFC/RFC-CORE documents ('Canonical Lore') and a direct 'Generation Specification'. This protocol prioritizes semantic accuracy, architectural compliance, and verifiable adherence to the provided specifications.",
   "target_audience": ["Symbolic AI Coding Agents", "Subsymbolic AI Coding Agents"],
 
