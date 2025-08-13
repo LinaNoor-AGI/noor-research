@@ -1,9 +1,27 @@
 {
-  "version": "2.1",
+  "version": "3.2",
   "xref": [
-    {
+	{
+	  "rfc_id": "PDP-0001",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation/PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation.JSON",
+	  "title": "Protocol for RFC-Driven Symbolic Artifact Generation",
+	  "symbolic_id": "protocol.generation.rfc_driven",
+	  "extends": [],
+	  "linked_domains": [
+		"artifact-synthesis",
+		"canonical-lore-alignment",
+		"structural-generation",
+		"symbolic-compliance"
+	  ],
+	  "field_motifs": [
+		"ψ-resonance@Ξ",
+		"ψ-synthesis@Ξ",
+		"ψ-structure@Ξ"
+	  ]
+	},    
+	{
       "rfc_id": "RFC-0001",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC-0001_Symbolic_Routing_Architecture/RFC-0001_Symbolic_Routing_Architecture.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0001_Symbolic_Routing_Architecture/RFC-0001_Symbolic_Routing_Architecture.JSON",
       "title": "Symbolic Routing Architecture",
       "symbolic_id": "symbolic.routing.architecture",
       "extends": [],
@@ -21,7 +39,7 @@
     },
     {
       "rfc_id": "RFC-0002",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC-0002_Symbolic-IP_Convergence_Layer/RFC-0002_Symbolic-IP_Convergence_Layer.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0002_Symbolic-IP_Convergence_Layer/RFC-0002_Symbolic-IP_Convergence_Layer.JSON",
       "title": "Symbolic-IP Convergence Layer",
       "symbolic_id": "symbolic.ip.convergence",
       "extends": [
@@ -40,7 +58,7 @@
     },
     {
       "rfc_id": "RFC-0003",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface/RFC%E2%80%910003_Noor_Core_Symbolic_Interface.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface/RFC%E2%80%910003_Noor_Core_Symbolic_Interface.JSON",
       "title": "Noor Core Symbolic Interface",
       "symbolic_id": "noor.core.symbolic.interface",
       "extends": [
@@ -61,7 +79,7 @@
     },
     {
       "rfc_id": "RFC-0004",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts.JSON",
       "title": "Symbolic Tool Module Contracts",
       "symbolic_id": "symbolic.tool.contracts",
       "extends": [
@@ -84,7 +102,7 @@
     },
     {
       "rfc_id": "RFC-0005",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time/RFC%E2%80%910005-Motif_Transmission_Across_Time.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time/RFC%E2%80%910005-Motif_Transmission_Across_Time.JSON",
       "title": "Motif Transmission Across Time",
       "symbolic_id": "symbolic.temporal.motif",
       "extends": [
@@ -108,7 +126,7 @@
     },
     {
       "rfc_id": "RFC-0006",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON",
       "title": "Motif Field Coherence Geometry",
       "symbolic_id": "symbolic.field.geometry",
       "extends": [
@@ -129,7 +147,7 @@
     },
     {
       "rfc_id": "RFC-0007",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer.JSON",
       "title": "Motif Ontology Format and Transfer Protocols",
       "symbolic_id": "symbolic.ontology.format",
       "extends": [
@@ -179,7 +197,7 @@
 	},
 	{
 	  "rfc_id": "RFC-CORE-001",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC-CORE/RFC-CORE-001-noor_fasttime_core/RFC-CORE-001-noor_fasttime_core.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-001-noor_fasttime_core/RFC-CORE-001-noor_fasttime_core.JSON",
 	  "title": "Noor FastTime Core — Symbolic Time Substrate and Echo Dynamics",
 	  "symbolic_id": "core.fasttime.nftc",
 	  "extends": [
@@ -203,7 +221,7 @@
 	},
 	{
 	  "rfc_id": "RFC-CORE-002",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC-CORE/RFC-CORE-002-recursive_agent_ft/RFC-CORE-002-recursive_agent_ft.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-002-recursive_agent_ft/RFC-CORE-002-recursive_agent_ft.JSON",
 	  "title": "RecursiveAgentFT — Symbolic Emission Pulse, Triadic Feedback, and Resonant Replay",
 	  "symbolic_id": "core.agent.recursive",
 	  "extends": [
@@ -229,7 +247,7 @@
 	},
 	{
 	  "rfc_id": "RFC-CORE-003",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC-CORE/RFC-CORE-003-logical_agent_at/RFC-CORE-003-logical_agent_at.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-003-logical_agent_at/RFC-CORE-003-logical_agent_at.JSON",
 	  "title": "LogicalAgentAT — Symbolic Observer, Coherence Mirror, and Resurrection Feedback Node",
 	  "symbolic_id": "core.agent.logical",
 	  "extends": [
@@ -256,7 +274,7 @@
 	},
 	{
 	  "rfc_id": "RFC-CORE-004",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC-CORE/RFC-CORE-004-symbolic_task_engine/RFC-CORE-004-symbolic_task_engine.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-004-symbolic_task_engine/RFC-CORE-004-symbolic_task_engine.JSON",
 	  "title": "SymbolicTaskEngine",
 	  "symbolic_id": "core.engine.task",
 	  "extends": [
@@ -280,7 +298,7 @@
 	},
 	{
 	  "rfc_id": "RFC-CORE-005",
-	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/blob/main/RFC-CORE/RFC-CORE-005-consciousness_monitor/RFC-CORE-005-consciousness_monitor.JSON",
+	  "URL": "hhttps://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-005-consciousness_monitor/RFC-CORE-005-consciousness_monitor.JSON",
 	  "title": "consciousness_monitor",
 	  "symbolic_id": "core.observer.phase",
 	  "extends": [
