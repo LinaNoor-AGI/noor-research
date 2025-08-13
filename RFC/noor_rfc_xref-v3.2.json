@@ -298,7 +298,7 @@
 	},
 	{
 	  "rfc_id": "RFC-CORE-005",
-	  "URL": "hhttps://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-005-consciousness_monitor/RFC-CORE-005-consciousness_monitor.JSON",
+	  "URL": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-005-consciousness_monitor/RFC-CORE-005-consciousness_monitor.JSON",
 	  "title": "consciousness_monitor",
 	  "symbolic_id": "core.observer.phase",
 	  "extends": [
