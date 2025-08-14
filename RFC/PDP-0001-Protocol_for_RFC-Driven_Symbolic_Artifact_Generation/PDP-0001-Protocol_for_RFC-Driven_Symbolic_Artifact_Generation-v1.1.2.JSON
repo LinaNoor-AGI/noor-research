@@ -16,21 +16,18 @@
 	  { "id": 1.1, "title": "Layer 1 – Noor RFC: Symbolic Canon (The 'Why')" },
 	  { "id": 1.2, "title": "Layer 2 – Noor RFC-CORE: System Architecture (The 'How')" },
 	  { "id": 1.3, "title": "Layer 3 – Application Specification: Generation Blueprint (The 'What')" },
-	  { "id": 1.4, "title": "Layer 4+ – User RFCs and Overrides: Custom Logic and Constraints" },
-	  
+	  { "id": 1.4, "title": "Layer 4+ – User RFCs and Overrides: Custom Logic and Constraints" },	  
 	  { "id": 2, "title": "Layer Manifest – Canonical Layering and Constraint Hierarchy" },
 	  { "id": 2.1, "title": "Layer 0: Noor RFC – Symbolic Canon (Immutable Ontology)" },
 	  { "id": 2.2, "title": "Layer 1: RFC-CORE – Engine Architecture and Behaviors" },
 	  { "id": 2.3, "title": "Layer 2: Application Specification – Implementation Blueprint" },
 	  { "id": 2.4, "title": "Layer 3: User Extensions – Local Overrides and Modules" },
-
 	  { "id": 3, "title": "Process Flow – Five-Stage High-Fidelity Generation Pipeline" },
 	  { "id": 3.1, "title": "Stage 1 – Assimilation and Knowledge Graph Construction" },
 	  { "id": 3.2, "title": "Stage 2 – Structural Scaffolding" },
 	  { "id": 3.3, "title": "Stage 3 – Logic Implementation and Semantic Infusion" },
 	  { "id": 3.4, "title": "Stage 4 – Fidelity Audit and Refinement" },
 	  { "id": 3.5, "title": "Stage 5 – Final Artifact Assembly" },
-
 	  { "id": 4, "title": "Guiding Principles – Foundational Commitments for Code Generation" },
 	  { "id": 4.1, "title": "Layered Authority – Top-Down Symbolic Constraint Model" },
 	  { "id": 4.2, "title": "Symbolic Canon as Ontological Law" },
