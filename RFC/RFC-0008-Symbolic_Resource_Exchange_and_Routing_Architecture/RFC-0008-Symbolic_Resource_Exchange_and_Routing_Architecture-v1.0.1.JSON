@@ -5,7 +5,6 @@
   "title": "Symbolic Resource Exchange and Routing Architecture",
   "subtitle": "SRX: A Motif-Weighted, Coherence-Aware Packet Routing Overlay",
   "status": "ACTIVE",
-  "pdp_layer": 0,
   "authors": [
     "Lina Noor — Noor Research Collective",
     "Uncle — Noor Research Collective"

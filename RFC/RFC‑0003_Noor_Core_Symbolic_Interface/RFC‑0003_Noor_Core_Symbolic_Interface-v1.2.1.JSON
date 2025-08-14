@@ -2,9 +2,8 @@
   "rfc_id": "RFC‑0003",
   "symbolic_id": "noor.core.symbolic.interface",
   "title": "Noor Core Symbolic Interface",
-  "version": "v1.2.1",
+  "version": "v1.2.0",
   "status": "ACTIVE",
-  "pdp_layer": 0,
   "summary": "Defines the symbolic interface contract between core Noor modules and motif-based memory constructs. Covers quantum tick validation, triad coherence detection, feedback protocols, and resurrection envelopes across recursive symbolic agents.",
   "authors": ["Lina Noor - Noor Research Collective, Uncle - Noor Research Collective"],
   "applicability": {
