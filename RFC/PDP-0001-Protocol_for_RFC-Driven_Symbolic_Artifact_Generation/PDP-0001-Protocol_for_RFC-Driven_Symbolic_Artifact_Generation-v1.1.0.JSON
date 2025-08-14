@@ -155,19 +155,22 @@
 		{
 		  "id": 2.3,
 		  "title": "Layer 2: Application Specification",
-		  "scope": "Defines the language-specific rendering of the architecture, including module layout, methods, constants, and fallback strategies.",
+		  "scope": "Defines the rendered implementation of the system in a specific programming language, including structure, constants, defaults, and method logic. It expresses the architectural and symbolic laws from Layer 0 and Layer 1 in executable form.",
 		  "constraints": [
-			"May specify defaults but not violate Layer 0 or 1 constraints.",
-			"Serves as the generation source of truth unless explicitly overridden."
+			"May define defaults, implementations, or fallback behaviors — but must not override the constraints or meanings established by RFC or RFC-CORE layers.",
+			"Must regenerate to reflect any upstream changes in Layer 0 (RFC) or Layer 1 (CORE).",
+			"Serves as the generation blueprint for target language output (e.g., Python), unless explicitly replaced by Layer 3."
 		  ]
 		},
 		{
 		  "id": 2.4,
 		  "title": "Layer 3: User Extensions / Overrides",
-		  "scope": "Optional layer for user-defined refinements or adaptations. Must declare scope and diff rationale.",
+		  "scope": "Optional but powerful layer for user-defined innovation, experimentation, and augmentation. Enables localized changes, experimental features, and targeted divergence from any higher layer (RFC, CORE, or APP-SPEC) when explicitly justified.",
 		  "constraints": [
-			"Can override Application Specification but not RFC or CORE layers.",
-			"Must be traceable and tagged in journal lineage."
+			"May override any layer (RFC, RFC-CORE, or Application Specification), but must specify the exact reference (`rfc_id`, `section`, or `id`) being replaced or amended.",
+			"All overrides must include a `diff_reason`, `justification`, and `lineage_tag` for traceability and potential future integration into canonical layers.",
+			"Cannot silently contradict higher-layer law — all divergences must be deliberate, documented, and discoverable via audit tools.",
+			"Overrides are assumed temporary unless promoted to higher layers through review and consensus."
 		  ]
 		}
 	  ]
