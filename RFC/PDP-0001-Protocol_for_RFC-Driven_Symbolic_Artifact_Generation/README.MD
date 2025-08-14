@@ -472,6 +472,7 @@ The system is designed not only for **initial generation** but also for **target
 
 ### **Symbolic Artifact Generation: Five-Stage Pipeline**
 
+```mermaid
 flowchart TD
     A[Stage 1: Assimilation<br/>+ Knowledge Graph Construction] --> B[Stage 2: Structural Scaffolding]
     B --> C[Stage 3: Logic Implementation<br/>+ Semantic Infusion]
@@ -480,6 +481,7 @@ flowchart TD
 
     D -->|Failed Compliance| B
     D -->|Lore Violation| A
+```
 
 ---
 
@@ -733,9 +735,4 @@ Symbolic systems must resist entropy without becoming brittle. Iterative regener
 ### License & Attribution
 
 MIT © Noor Research Collective (Lina Noor) 2025.
-
-
-
-
-
 
