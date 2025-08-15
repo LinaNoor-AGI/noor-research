@@ -12,7 +12,7 @@
 
 	  "_symbolic_id": "protocol.generation.rfc_driven",
 	  "_canonical_source": "PDP-0001",
-	  "_version": "1.1.4",
+	  "_version": "1.1.5",
 	  "_title": "Protocol for RFC-Driven Symbolic Artifact Generation",
 	  "_subtitle": "_subtitle": "Traceable Artifact Generation from Layered Symbolic Specifications",
 	  "_publication_type": "Protocol Specification",
@@ -31,7 +31,7 @@
 	  },
 
 	  "_extends": [],
-	  "_rfc_dependencies": [],
+	  "_rfc_dependencies": ["RFC-0007"],
 	  "_consumes_inputs_from": [
 		"Canonical Lore (RFC, RFC-CORE)",
 		"Generation Specification"
@@ -220,7 +220,8 @@
 			"May override any layer (RFC, RFC-CORE, or Application Specification), but must specify the exact reference (`rfc_id`, `section`, or `id`) being replaced or amended.",
 			"All overrides must include a `diff_reason`, `justification`, and `lineage_tag` for traceability and potential future integration into canonical layers.",
 			"Cannot silently contradict higher-layer law — all divergences must be deliberate, documented, and discoverable via audit tools.",
-			"Overrides are assumed temporary unless promoted to higher layers through review and consensus."
+			"Overrides are assumed temporary unless promoted to higher layers through review and consensus.",
+			"Overrides violating symbolic law must trigger ψ-null@Ξ quarantine and LogicalAgentAT audit."
 		  ]
 		}
 	  ]
@@ -270,7 +271,8 @@
           "Translate the `logic_flow` from the Generation Specification into Python code for each method body.",
           "For every RFC anchor in the specification, consult the referenced RFC section to ensure the implementation is semantically and architecturally compliant.",
           "Write docstrings and comments that explain the 'why' using terminology from the Canonical Lore.",
-          "Embed RFC anchor references directly into comments or docstrings to maintain traceability from the code back to the source of truth."
+          "Embed RFC anchor references directly into comments or docstrings to maintain traceability from the code back to the source of truth.",
+		  "Validate all motif references against RFC-0007’s ψ-SHA3 ontology hashes"  
         ]
       },
       {
@@ -296,6 +298,7 @@
         "primary_inputs": ["Refined Code"],
         "actions": [
           "Add the file header, including license, authors, AI Platform/Model Name (eg. `Google Gemini Pro 2.4`), and module description.",
+		  "Embed a `_regeneration_token` combining RFC-CORE version + spec hash + timestamp.",
 		  "End the file with the comment `End_of_file`",
           "Compose the final response to the user, summarizing the process and highlighting key aspects of the generated artifact (like the fidelity analysis).",
           "Package the code in the requested format."

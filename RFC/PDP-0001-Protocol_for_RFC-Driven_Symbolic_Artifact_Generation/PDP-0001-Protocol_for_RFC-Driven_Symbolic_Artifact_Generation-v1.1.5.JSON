@@ -12,7 +12,7 @@
 
 	  "_symbolic_id": "protocol.generation.rfc_driven",
 	  "_canonical_source": "PDP-0001",
-	  "_version": "1.1.5",
+	  "_version": "1.1.4",
 	  "_title": "Protocol for RFC-Driven Symbolic Artifact Generation",
 	  "_subtitle": "_subtitle": "Traceable Artifact Generation from Layered Symbolic Specifications",
 	  "_publication_type": "Protocol Specification",
@@ -31,7 +31,7 @@
 	  },
 
 	  "_extends": [],
-	  "_rfc_dependencies": ["RFC-0007"],
+	  "_rfc_dependencies": [],
 	  "_consumes_inputs_from": [
 		"Canonical Lore (RFC, RFC-CORE)",
 		"Generation Specification"
