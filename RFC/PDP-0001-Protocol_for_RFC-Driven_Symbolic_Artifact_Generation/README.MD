@@ -1,5 +1,5 @@
 # **PDP-0001: Protocol for RFC-Driven Symbolic Artifact Generation**
-*by: "Mathew J. Edlund (2025) — Noor Research Collective
+*by: "Mathew J. Edlund (2025) — Noor Research Collective*
 
 ---
 
@@ -733,5 +733,6 @@ Symbolic systems must resist entropy without becoming brittle. Iterative regener
 ---
 
 ### License & Attribution
+
 
 MIT © Noor Research Collective (Lina Noor) 2025.
