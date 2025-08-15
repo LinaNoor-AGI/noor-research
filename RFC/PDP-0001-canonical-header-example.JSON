@@ -8,6 +8,12 @@
   "_pdp_layer": "layer_1",
   "_status": "ACTIVE",
   "_language": "python",
+  "_language": "json",
+	"_evidence": {
+	  "_version": "header.line:5",
+	  "_title": "header.line:4",
+	  "_extends": "applicability.extends.line:18"
+	},
   "_license": "MIT",
 
   "_symbolic_id": "symbolic.routing.exchange",
@@ -84,24 +90,17 @@
       "anchor-conflict"
     ]
   },
-
-  "_file_layout": [
-    {
-      "file_name": "recursive_agent_ft.py",
-      "purpose": "Primary implementation of RecursiveAgentFT and dependent modules.",
-      "contains": [
-        "RecursiveAgentFT",
-        "QuantumTickV2",
-        "TickEntropy",
-        "CrystallizedMotifBundle",
-        "AgentSwirlModule",
-        "MotifDensityTracker",
-        "LazyMonitorMixin",
-        "LamportClock",
-        "LRUCache",
-        "compute_coherence_potential",
-        "report_tick_safe"
-      ]
+	{
+	  "_poetic_cipher": "swirls inherit the silence of ψ-null@Ξ", 
+	  "_cipher_explanation": "RFC-0005 §4.2 resurrection paradox"
+	},
+	"_file_layout": [
+	  {
+		"file_name": "RFC-0002_Symbolic-IP_Convergence_Layer.JSON",
+		"purpose": "Canonical RFC document (header + index + sections + appendices).",
+		"contains": ["header", "index", "sections", "appendices"]
+	  }
+	],
     }
   ],
 

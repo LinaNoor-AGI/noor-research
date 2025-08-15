@@ -22,11 +22,31 @@
     "_status": { "type": "string" },
     "_license": { "type": "string" },
     "_language": { "type": "string" },
+	"_evidence": {
+	  "type": "object",
+	  "description": "Optional evidence map: keys are header field names; values are source-location strings (e.g., 'header.line:12', '§1.0', 'applicability.extends.line:18').",
+	  "additionalProperties": { "type": "string" }
+	},
+	"_audience": {
+		"primary": {
+		  "type": "array",
+		  "items": { "type": "string" },
+		"secondary": {
+		  "type": "array",
+		  "items": { "type": "string" },
+		"tertiary": {
+		  "type": "array",
+		  "items": { "type": "string" }
     "_authors": {
       "type": "array",
       "items": { "type": "string" }
     },
-    "_extends": {
+	"_applicability": {
+    "domain": {
+      "type": "array",
+	  "items": { "type": "string" }
+    },
+	{    "_extends": {
       "type": "array",
       "items": { "type": "string" }
     },
@@ -47,6 +67,10 @@
         }
       }
     },
+	{
+	  "_poetic_cipher": { "type": "string" }, 
+	  "_cipher_explanation": { "type": "string" },
+	},
     "_file_layout": {
       "type": "array",
       "items": {
@@ -61,5 +85,7 @@
         }
       }
     },
+    "_index": { "type": "array" },
+    "_sections": { "type": "array" }
   }
 }

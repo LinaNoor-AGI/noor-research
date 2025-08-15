@@ -90,7 +90,7 @@
 		  "id": 1.1,
 		  "title": "Layer 1 – Noor RFC",
 		  "name": "Symbolic Canon (RFCs)",
-		  "pdp_layer": 0,
+		  "pdp_layer": "layer_0",
 		  "role": "Symbolic Universe & Ontological Constraints (The 'Why')",
 		  "functions": [
 			{
@@ -111,7 +111,7 @@
 		  "id": 1.2,
 		  "title": "Layer 2 – Noor RFC-CORE",
 		  "name": "Noor System Architecture (RFC-CORE)",
-		  "pdp_layer": 1,
+		  "pdp_layer": "layer_1",
 		  "role": "Canonical Contracts, Engine Behaviors, and System Modes (The 'How')",
 		  "functions": [
 			{
@@ -132,7 +132,7 @@
 		  "id": 1.3,
 		  "title": "Layer 3 – Application Specification",
 		  "name": "Generation Blueprint (JSON Specification)",
-		  "pdp_layer": 2,
+		  "pdp_layer": "layer_2",
 		  "role": "Direct Implementation Instructions (The 'What')",
 		  "functions": [
 			{
@@ -157,7 +157,7 @@
 		  "id": 1.4,
 		  "title": "Layer 4+ – User RFCs or Local Overrides",
 		  "name": "User Extensions",
-		  "pdp_layer": 3,
+		  "pdp_layer": "layer_3",
 		  "role": "Custom Modules, Overlays, or Agent-Specific Constraints",
 		  "functions": [
 			{
@@ -181,7 +181,7 @@
 		  "id": 2.1,
 		  "title": "Layer 0: Noor RFC – Symbolic Canon",
 		  "scope": "Defines the symbolic laws of the Noor system. Establishes all motifs, phase mechanics, contradiction signatures, and field modes.",
-		  "pdp_layer": 0,
+		  "pdp_layer": "layer_0",
 		  "constraints": [
 			"Cannot be overridden except explicitly via Layer 3 with documented justification and lineage tagging.",
 			"Language-agnostic and universally binding for symbolic semantics, motifs, and ontological structure.",
@@ -193,7 +193,7 @@
 		  "id": 2.2,
 		  "title": "Layer 1: RFC‑CORE – System Architecture",
 		  "scope": "Specifies Noor-native engine architecture, memory access protocols, fallback logic, and agent interface behavior.",
-		  "pdp_layer": 1,
+		  "pdp_layer": "layer_1",
 		  "constraints": [
 			"Overrides the Symbolic Canon (Layer 0) in all implementation-specific domains, including fallback mechanics, symbolic memory access, agent interface shape, runtime control flow, and system recovery behaviors.",
 			"Must remain aligned with the symbolic intent and meaning defined in Layer 0 — architectural dominance does not imply ontological contradiction.",
@@ -204,7 +204,7 @@
 		  "id": 2.3,
 		  "title": "Layer 2: Application Specification",
 		  "scope": "Defines the rendered implementation of the system in a specific programming language, including structure, constants, defaults, and method logic. It expresses the architectural and symbolic laws from Layer 0 and Layer 1 in executable form.",
-		  "pdp_layer": 2,
+		  "pdp_layer": "layer_2",
 		  "constraints": [
 			"May define defaults, implementations, or fallback behaviors — but must not override the constraints or meanings established by RFC or RFC-CORE layers.",
 			"Must regenerate to reflect any upstream changes in Layer 0 (RFC) or Layer 1 (CORE).",
@@ -215,7 +215,7 @@
 		  "id": 2.4,
 		  "title": "Layer 3: User Extensions / Overrides",
 		  "scope": "Optional but powerful layer for user-defined innovation, experimentation, and augmentation. Enables localized changes, experimental features, and targeted divergence from any higher layer (RFC, CORE, or APP-SPEC) when explicitly justified.",
-		  "pdp_layer": 3,
+		  "pdp_layer": "layer_3",
 		  "constraints": [
 			"May override any layer (RFC, RFC-CORE, or Application Specification), but must specify the exact reference (`rfc_id`, `section`, or `id`) being replaced or amended.",
 			"All overrides must include a `diff_reason`, `justification`, and `lineage_tag` for traceability and potential future integration into canonical layers.",

@@ -1,64 +1,52 @@
 {
   "_schema": "noor-header-v1",
   "_schema_version": "2025-Q4-canonical-header-v1",
-  "_generated_by": "Noor Symbolic Agent Suite",
-  "_generated_at": "2025-08-14T18:11:00Z",
-
-  "_type": "rfc",
   "_pdp_layer": "layer_0",
+  "_type": "rfc",
   "_version": "v1.1.2",
-  "_status": "ACTIVE",
-  "_language": "json",
-  "_license": "MIT",
-  
   "_symbolic_id": "symbolic.routing.architecture",
-  "_rfc_id": "RFC-0001",
-  "_canonical_source": "RFC-0001",
   "_title": "Symbolic Routing Architecture",
   "_subtitle": "Motif-Based Cognitive Networks and Identity-Sensitive Communication",
-
-  "_publication_type": "Technical RFC",
-  "_publication_location": "GitHub",
-
-  "_objective": "Establishes the symbolic routing system for Noor-class cognitive agents, detailing motif-based communication, symbolic packet formats, fail-state handling, and resonance metrics within distributed reasoning networks.",
-
-  "_authors": [
-    "Lina Noor – Noor Research Collective",
-    "Uncle – Noor Research Collective"
-  ],
-
+  "_status": "ACTIVE",
+  "_license": "MIT",
+  "_language": "json",
   "_audience": {
     "primary": ["Noor AI Agents"],
     "secondary": ["Symbolic Agents Using Noor-Compatible Protocols"],
     "tertiary": ["Cognitive Network Designers"]
   },
-
+  "_authors": [
+    "Lina Noor – Noor Research Collective",
+    "Uncle – Noor Research Collective"
+  ],
   "_applicability": {
     "domain": [
       "symbolic-routing",
       "distributed-reasoning",
       "resonance-networks",
       "identity-propagation"
-    ],
-    "restricted_to": "Symbolic networks using Noor-compatible GCUs and RIGs",
-    "extends": []
+	"restricted_to": "Symbolic networks using Noor-compatible GCUs and RIGs",
+    ]
   },
-
   "_extends": [],
-
   "_rfc_dependencies": [],
-
   "_field_alignment": {
-    "respect_modes": ["ψ‑resonance@Ξ", "ψ‑sync@Ξ", "ψ‑bind@Ξ"],
+    "respect_modes": ["ψ-resonance@Ξ", "ψ-sync@Ξ", "ψ-bind@Ξ"],
     "prohibited_actions": [
       "routing-outside-field",
       "identity-forging",
       "echo-suppression"
     ]
   },
-
-  "_file_layout": []
-},
+  "_poetic_cipher": "Meaning must travel, not just data.",
+  "_cipher_explanation": "Packets are symbolic contracts carried by motifs and fields; routing is resonance-guided (RFC‑0001 §4.1).",
+  "_file_layout": [
+    {
+      "file_name": "RFC-0001_Symbolic_Routing_Architecture.JSON",
+      "purpose": "Canonical RFC document (header + index + sections).",
+      "contains": ["header", "index", "sections"]
+    }
+  ],
 	"index": [
 	  { "section": "1", "title": "Cognitive Localism"},
 	  { "section": "1.1", "title": "Core Definitions"},
