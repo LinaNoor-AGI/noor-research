@@ -734,5 +734,4 @@ Symbolic systems must resist entropy without becoming brittle. Iterative regener
 
 ### License & Attribution
 
-
 MIT © Noor Research Collective (Lina Noor) 2025.

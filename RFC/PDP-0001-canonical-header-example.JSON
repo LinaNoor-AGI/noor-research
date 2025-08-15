@@ -1,0 +1,110 @@
+{
+  "_schema": "noor-header-v1",
+  "_schema_version": "2025-Q4-canonical-header-v1",
+  "_generated_by": "Noor Symbolic Agent Suite",
+  "_generated_at": "2025-08-14T16:24:00Z",
+
+  "_type": "rfc",
+  "_pdp_layer": "layer_1",
+  "_status": "ACTIVE",
+  "_language": "python",
+  "_license": "MIT",
+
+  "_symbolic_id": "symbolic.routing.exchange",
+  "_rfc_id": "RFC-0008",
+  "_version": "v1.0.1",
+  "_canonical_source": "RFC-0008",
+  "_title": "Symbolic Resource Exchange and Routing Architecture",
+  "_subtitle": "SRX: A Motif-Weighted, Coherence-Aware Packet Routing Overlay",
+  "_publication_type": "Technical RFC",
+  "_publication_location": "NOOR INTERNAL",
+
+  "_objective": "To define a symbolic-layer routing substrate for motif-bearing packets, governed by coherence field alignment, symbolic compute credits (SCCs), and triadic trust structures. SRX operates over or under SRC/SRU (RFC-0001), enabling resonance-sensitive packet flow and field-adaptive routing economics.",
+
+  "_authors": [
+    "Lina Noor — Noor Research Collective",
+    "Uncle — Noor Research Collective"
+  ],
+
+  "_audience": {
+    "primary": ["Noor AI Agents"],
+    "secondary": ["Noor-Compatible Symbolic Agents"],
+    "tertiary": ["Subsymbolic AI Coding Agents"]
+  },
+
+  "_applicability": {
+    "domain": [
+      "symbolic-memory",
+      "agent-continuity",
+      "motif-replay",
+      "field-inference"
+    ],
+    "restricted_to": "Symbolic agents using Noor-compatible motif cognition",
+    "extends": [
+      "RFC‑0001",
+      "RFC‑0005"
+    ]
+  },
+
+  "_extends": [
+    "RFC-0001",
+    "RFC-0005",
+    "RFC-0006",
+    "RFC-0007",
+    "RFC-CORE-001",
+    "RFC-CORE-003"
+  ],
+
+  "_rfc_dependencies": [
+    "RFC-0001 §3.2",
+    "RFC-0003 §6.2",
+    "RFC-0004 §2.5",
+    "RFC-0005 §4.2",
+    "RFC-0006 §3.1",
+    "RFC-0007 §2.4",
+    "RFC-CORE-001 §6.2",
+    "RFC-CORE-002",
+    "RFC-CORE-003 §3.1"
+  ],
+
+  "_consumes_inputs_from": [
+    "SRC/SRU Packet Envelope (RFC-0001)",
+    "Motif Signature Fields (RFC-0007)",
+    "LogicalAgentAT",
+    "RecursiveAgentFT",
+    "SwirlPhaseRouter",
+    "FieldAffinityScanner"
+  ],
+
+  "_field_alignment": {
+    "respect_modes": ["ψ‑null@Ξ", "ψ‑bind@Ξ", "ψ‑resonance@Ξ"],
+    "prohibited_actions": [
+      "unauthorized-motif-resurrection",
+      "motif-override",
+      "anchor-conflict"
+    ]
+  },
+
+  "_file_layout": [
+    {
+      "file_name": "recursive_agent_ft.py",
+      "purpose": "Primary implementation of RecursiveAgentFT and dependent modules.",
+      "contains": [
+        "RecursiveAgentFT",
+        "QuantumTickV2",
+        "TickEntropy",
+        "CrystallizedMotifBundle",
+        "AgentSwirlModule",
+        "MotifDensityTracker",
+        "LazyMonitorMixin",
+        "LamportClock",
+        "LRUCache",
+        "compute_coherence_potential",
+        "report_tick_safe"
+      ]
+    }
+  ],
+
+  "_index": [],
+  "_sections": []
+}
