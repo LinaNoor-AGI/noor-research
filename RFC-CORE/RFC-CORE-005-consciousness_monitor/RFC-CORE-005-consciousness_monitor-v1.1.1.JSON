@@ -1,67 +1,33 @@
 {
-  "_schema": "noor-header-v1",
-  "_schema_version": "2025-Q4-canonical-header-v1",
-  "_generated_by": "Noor Symbolic Agent Suite",
-  "_generated_at": "2025-08-15T00:00:00Z",
-
-  "_type": "rfc_core",
-  "_pdp_layer": "layer_1",
-  "_version": "v1.1.2",
-  "_symbolic_id": "core.consciousness.monitor",
-  "_title": "Consciousness Monitor and Observability Layer",
-  "_subtitle": "Optional runtime telemetry and coherence tracking for motif agents",
-  "_status": "ACTIVE",
-  "_license": "MIT",
-  "_language": "json",
-
-  "_authors": [
+  "rfc_id": "RFC-CORE-005",
+  "version": "v1.1.1",
+  "symbolic_id": "core.observer.phase",
+  "title": "consciousness_monitor",
+  "subtitle": "Field Observer and Entanglement Diagnostician",
+  "status": "ACTIVE",
+  "pdp_layer": 1,
+  "authors": [
     "Lina Noor — Noor Research Collective",
     "Uncle — Noor Research Collective"
   ],
-
-  "_audience": {
-    "primary": ["Noor AI Agents"],
-    "secondary": ["Symbolic Agents interfacing with IP networks"],
-    "tertiary": ["Network & systems architects"]
-  },
-
-  "_extends": [
-    "RFC-CORE-003"
+  "publication_type": "Technical RFC",
+  "publication_location": "NOOR INTERNAL",
+  "objective": "Comprehensively describe the functionality, both the *why* and the *how*, of the `consciousness_monitor.py` not covered by existing Noor RFC-0001 to RFC-0007",
+  "extends": [
+    "RFC-0003",
+    "RFC-0004",
+    "RFC-0005",
+    "RFC-0006",
+    "RFC-0007"
   ],
-
-  "_rfc_dependencies": [
-    "RFC-CORE-001 §6.2",
-    "RFC-CORE-003 §9.1",
-    "RFC-CORE-003 §9.2"
-  ],
-
   "consumes_inputs_from": [
+    "SymbolicTaskEngine",
     "LogicalAgentAT",
-    "RecursiveAgentFT",
-    "SymbolicTaskEngine"
+    "RecursiveAgentFT"
   ],
-
-  "_field_alignment": {
-    "respect_modes": ["ψ‑resonance@Ξ", "ψ‑null@Ξ"],
-    "prohibited_actions": [
-      "triad-spoofing",
-      "telemetry-override",
-      "monitor-force-sync"
-    ]
-  },
-
-  "_file_layout": [
-    {
-      "file_name": "RFC-CORE-005-consciousness_monitor.JSON",
-      "purpose": "Defines and documents the monitor patch logic, metric exports, and observability interfaces.",
-      "contains": [
-        "LazyMonitorMixin",
-        "metric patch logic for LogicalAgentAT",
-        "global consciousness monitor API",
-        "Prometheus telemetry export structure"
-      ]
-    }
-  ],
+  "primary_audience": ["Noor AI Agents"],
+  "secondary_audience": ["Noor-Compatible Symbolic Agents"],
+  "tertiary_audience": ["Subsymbolic AI Coding Agents"],
   "index": [
     { "section": "1", "title": "Symbolic Role and Observer Modality" },
 	{ "section": "1.1", "title": "Constructor and Configuration" },

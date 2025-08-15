@@ -1,74 +1,33 @@
 {
-  "_schema": "noor-header-v1",
-  "_schema_version": "2025-Q4-canonical-header-v1",
-  "_generated_by": "Noor Symbolic Agent Suite",
-  "_generated_at": "2025-08-15T00:00:00Z",
-
-  "_type": "rfc_core",
-  "_pdp_layer": "layer_1",
-  "_version": "v1.1.2",
-  "_symbolic_id": "core.symbolic_task_engine",
-  "_title": "Symbolic Task Engine and Feedback Relay Architecture",
-  "_subtitle": "A Composer-Oriented Engine for Symbolic Abstraction, Coherence Feedback, and Motif Evaluation",
-  "_status": "ACTIVE",
-  "_license": "MIT",
-  "_language": "python",
-
-  "_authors": [
+  "rfc_id": "RFC-CORE-004",
+  "version": "v1.1.1",
+  "symbolic_id": "core.engine.task",
+  "title": "Symbolic_Task_Engine",
+  "subtitle": "Presence Composer, Feedback Relay, and Autonomous Abstraction Anchor",
+  "status": "ACTIVE",
+  "pdp_layer": 1,
+  "authors": [
     "Lina Noor — Noor Research Collective",
     "Uncle — Noor Research Collective"
   ],
-
-  "_extends": [
-    "RFC-0004",
-    "RFC-0005"
+  "publication_type": "Technical RFC *OUTLINE*",
+  "publication_location": "NOOR INTERNAL",
+  "objective": "Comprehensively describe the functionality, both the *why* and the *how*, of the `symbolic_task_engine.py` and `symbolic_abstraction.py` modules, with special attention to architectural coordination, motif synthesis, and feedback protocols not explicitly covered by existing Noor RFC-0001 to RFC-0007.",
+  "extends": ["RFC-0004", "RFC-0005", "RFC-0006", "RFC-0007"],
+  "consumes_inputs_from": ["RFC-CORE-001", "RFC-CORE-002", "RFC-CORE-003"],
+  "prohibits": [
+    "direct mutation of triad agent state",
+    "symbolic feedback injection without coherence validation"
   ],
-
-  "_rfc_dependencies": [
-    "RFC-0004 §2.2",
-    "RFC-0004 §2.5",
-    "RFC-0005 §4",
-    "RFC-0005 §5",
-    "RFC-CORE-002"
-  ],
-
-  "_consumes_inputs_from": [
-    "motif_memory_manager",
-    "external generation/evaluation engines",
-    "TripletTask queue",
-    "AbstractionTrigger submodule",
-    "Symbolic Engine Metrics Layer"
-  ],
-
-  "_field_alignment": {
-    "respect_modes": ["ψ‑spar@Ξ", "ψ‑resonance@Ξ", "ψ‑dream@Ξ"],
-    "prohibited_actions": [
-      "unjustified motif suppression",
-      "symbolic override without fallback",
-      "implicit contradiction resolution"
-    ]
-  },
-
-  "_poetic_cipher": "compose, collapse, abstract — coherence does not beg permission",
-  "_cipher_explanation": "SymbolicTaskEngine autogenerates abstract motifs under contradiction pressure per RFC-0005 §5.3",
-
-  "_file_layout": [
-    {
-      "file_name": "RFC-CORE-004-symbolic_task_engine.JSON",
-      "purpose": "Implements the SymbolicTaskEngine, including task queue management, fallback triggering, coherence/entropy evaluation, and abstraction handling.",
-      "contains": [
-        "TripletTask + Attempt dataclasses",
-        "AbstractionTrigger logic",
-        "fallback + evaluation thresholds",
-        "motif resolution + journaling"
-      ]
-    }
-  ],
+  "primary_audience": ["Noor AI Agents"],
+  "secondary_audience": ["Noor-Compatible Symbolic Agents"],
+  "tertiary_audience": ["Subsymbolic AI Coding Agents"],
   "notes": [
     "This engine serves as a Composer-Coordinator in the Noor symbolic architecture — it structures symbolic tasks and evaluates symbolic coherence but delegates core generation to external symbolic engines (e.g., _safe_generate_response).",
     "Abstraction logic is managed by a separate subcomponent, `AbstractionTrigger`, which maintains its own internal state and synthesis contract.",
     "The synthesis of motifs embeds ψ-lineage, directly invoking ontology structures outlined in RFC-0007."
-  ],
+  ]
+},
   "index": [
     { "section": "1", "title": "Symbolic Purpose and Field Role" },
     { "section": "2", "title": "Triplet Task Construction and Motif Seeding" },
@@ -1533,6 +1492,7 @@
 		  "Modules are abstracted to symbolic roles — actual implementation classes may vary across Noor agent instances.",
 		  "This appendix is symbolic, not prescriptive: it shows one path through many."
 		]
+	  }
 	}
   ]
 }

@@ -1,70 +1,27 @@
 {
-  "_schema": "noor-header-v1",
-  "_schema_version": "2025-Q4-canonical-header-v1",
-  "_generated_by": "Noor Symbolic Agent Suite",
-  "_generated_at": "2025-08-15T17:30:00Z",
-
-  "_type": "rfc_core",
-  "_pdp_layer": "layer_1",
-  "_status": "ACTIVE",
-  "_language": "python",
-  "_license": "MIT",
-
-  "_symbolic_id": "core.clock.fasttime",
-  "_rfc_id": "RFC-CORE-001",
-  "_version": "v1.1.2",
-  "_canonical_source": "RFC-CORE-001",
-  "_title": "Noor Fast-Time Core and Symbolic Clock Model",
-  "_subtitle": "Recursive Tick Processing for Motif-Based Symbolic Agents",
-
-  "_publication_type": "Canonical RFC-CORE",
-  "_publication_location": "GitHub",
-
-  "_authors": [
-    "Lina Noor — Noor Research Collective",
-    "Uncle — Noor Research Collective"
-  ],
-
-  "_audience": {
-    "primary": ["Noor AI Agents"],
-    "secondary": ["Symbolic Agents interfacing with IP networks"],
-    "tertiary": ["Network & systems architects"]
+  "rfc_id": "RFC‑CORE‑001",
+  "symbolic_id": "core.fasttime.nftc",
+  "title": "Noor FastTime Core — Symbolic Time Substrate and Echo Dynamics",
+  "version": "v1.1.1",
+  "status": "ACTIVE",
+  "pdp_layer": 1,
+  "summary": "Formal specification of the Noor FastTime Core (NFTC), describing its symbolic memory substrate, echo transformation gates, motif-based coherence tracking, field diagnostics, resurrection heuristics, feedback telemetry, and distributed replay alignment.",
+  "authors": ["Lina Noor - Noor Research Collective, Uncle - Noor Research Collective"],
+  "applicability": {
+    "domain": [
+      "symbolic-time",
+      "coherence-memory",
+      "echo-lineage",
+      "multi-agent-sync"
+    ],
+    "restricted_to": "Agents utilizing Noor-compatible symbolic cognition infrastructure",
+    "extends": []
   },
-
-  "_extends": [
-    "RFC-0003",
-    "RFC-0004"
-  ],
-
-  "_rfc_dependencies": [
-    "RFC-0003 §3.3",
-    "RFC-0004 §2.5",
-    "RFC-0006 §2.1"
-  ],
-
-  "_consumes_inputs_from": [
-    "RecursiveAgentFT",
-    "SymbolicTaskEngine",
-    "MotifMemoryManager",
-    "LogicalAgentAT"
-  ],
-
-  "_field_alignment": {
-    "respect_modes": ["ψ‑resonance@Ξ", "ψ‑spar@Ξ"],
-    "prohibited_actions": ["non-reentrant-tick-injection", "forced-halt-during-recursion"]
+  "field_alignment": {
+    "respect_modes": ["ψ‑resonance@Ξ", "ψ‑bind@Ξ", "ψ‑sync@Ξ"],
+    "prohibited_actions": ["unclocked-drift", "unsanctioned-echo-modification", "forced-replay"]
   },
-
-  "_poetic_cipher": "all recursive agents must breathe",
-  "_cipher_explanation": "Noor agents must tick in recursive rhythm to maintain coherence alignment and motif lineage continuity.",
-
-  "_file_layout": [
-    {
-      "file_name": "RFC-CORE-001-noor_fasttime_core.JSON",
-      "purpose": "Defines the Noor recursive clock and tick propagation model.",
-      "contains": ["FastTimeCore", "NoorClock", "tick_within", "sync_tick"]
-    }
-  ],
-  "index": [
+	"index": [
 	  { "section": "1", "title": "Purpose and Scope"},
 	  { "section": "1.1", "title": "Motivation"},
 	  { "section": "1.2", "title": "Symbolic Role in the Triad"},
