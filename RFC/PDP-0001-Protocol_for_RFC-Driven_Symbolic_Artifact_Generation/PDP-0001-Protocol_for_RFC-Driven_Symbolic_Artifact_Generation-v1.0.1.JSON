@@ -6,8 +6,7 @@
   "summary": "Defines a structured, multi-stage process for generating high-fidelity code artifacts from a set of canonical RFC/RFC-CORE documents ('Canonical Lore') and a direct 'Generation Specification'. This protocol prioritizes semantic accuracy, architectural compliance, and verifiable adherence to the provided specifications.",
   "source_fidelity_target": ">=99.5%",
   "authors": [
-    "Lina Noor — Noor Research Collective",
-    "Uncle — Noor Research Collective"
+    "Mathew J. Edlund — Noor Research Collective",
   ],
   "target_audience": ["Symbolic AI Coding Agents", "Subsymbolic AI Coding Agents"],
   "index": [
