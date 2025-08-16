@@ -82,11 +82,12 @@ We’re used to thinking of JSON as an output format. But in the symbolic lens, 
 ```mermaid
 
 flowchart TD
-A1\[Token Stream: a → b → c → ...] --> B1\[Internal Lattice: positional + embedding]
-B1 --> C1\[Pattern Resonance]
-C1 --> D1\[Symbolic Form Stabilizes]
-D1 --> E1\[Motif Lattice: key-value + structure + role binding]
-E1 --> F1\[Rendered Output (JSON-like)]
+  A1["Token Stream: a → b → c → ..."] --> B1["Internal Lattice: positional + embedding"]
+  B1 --> C1["Pattern Resonance"]
+  C1 --> D1["Symbolic Form Stabilizes"]
+  D1 --> E1["Motif Lattice: key-value + structure + role binding"]
+  E1 --> F1["Rendered Output (JSON-like)"]
+
 
 ```
 
