@@ -267,7 +267,8 @@ graph TD
   class M2 dynamic;
   class M3 resolved;
 ```
-::: {.equations}
+
+## Equations
 
 $$
 \textbf{(1) Coherence Potential} \quad \mathcal{C}_i = \sum_j \langle \Delta \psi_{ij} \rangle \cdot \kappa_j
