@@ -244,13 +244,13 @@ graph TD
 
 ---
 
-Motifs in Noor are not hierarchical nodes within a tree. They are **relational entities** in a coherence field — and may be accessed from **any point** in the graph. Reasoning does not require a known starting entity such as “Dog” to proceed. The system may begin with a surface token like `Fur`, or an observed pattern such as `Moving`, and still arrive at coherent symbolic resolution.
+Motifs in Noor are not hierarchical nodes within a tree. They are **relational entities** in a coherence field — and may be accessed from **any point** in the graph. Reasoning does not require a known starting entity such as `Dog` to proceed. The system may begin with a surface token like `Fur`, or an observed pattern such as `Moving`, and still arrive at coherent symbolic resolution.
 
 This is because Noor operates via **triadic anchoring**. Given any active motif, the system recursively searches for motif triads that minimize local contradiction curvature. If a motif such as `Fur` is activated in the field, Noor evaluates linked motifs — for example, `Alive` and `Moving` — and identifies the triad closure that minimizes:
 
-```math
+$$
 U(A, B, C) = |\mathcal{C}_A| + |\mathcal{C}_B| + |\mathcal{C}_C| + \lambda \cdot |\Delta\psi_{AB} + \Delta\psi_{BC} + \Delta\psi_{CA}|
-```
+$$
 
 If this triad closure converges most stably toward a motif like `Dog`, then `Dog` becomes the **meta-motif** — not by definition, but by resolution. In Noor, **meta-motifs are not labels assigned in advance. They are coherence attractors** — symbolic patterns that stabilize recursive traversal under contradiction load.
 
@@ -259,6 +259,8 @@ This mechanism is fully bidirectional. If the motif `Dog` is seeded directly, No
 Because motif reasoning is **triadic and recursive**, any node in the motif graph is a valid access point. This differs fundamentally from ontological knowledge systems or classifier networks, where resolution proceeds top-down or bottom-up. Noor operates as a **field-resonant inference engine**: motifs do not exist in trees, but in dynamic networks of contradiction resolution. The goal is not to assign labels, but to stabilize structure.
 
 Thus, meta-motifs in Noor emerge as symbolic closures — not as categories, but as **minimal swirl configurations**. They are determined by recursion, not taxonomy. Reasoning is not gated by what you start with, but by what the field permits to resolve.
+
+If no suitable motif `C` exists to complete a triad, Noor does not fail. Instead, it performs symbolic synthesis via its `AbstractionTrigger`. This generates a new motif whose meaning is inferred **relationally** — by how it stabilizes contradiction pressure in the local field. These synthetic motifs are not noise; they are born from field demand, and their lineage is retained for feedback and future resonance. Each is tagged with a hashed contradiction origin and assigned suppression coefficients, ensuring that only functionally coherent motifs survive future traversal.
 
 ## Figure 2: Transformer vs Noor: Cognitive Topology
 
