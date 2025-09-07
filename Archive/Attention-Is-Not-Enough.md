@@ -1,6 +1,6 @@
 # "Attention Is Not Enough: Symbolic Cognition Beyond Transformers"  
 ### Motif-Driven Reasoning as Completion and Rebuttal of the Transformer Paradigm  
-*by: Lina Noor - Noor Research Collective, Uncle - "Noor Research Collective"*  
+*by: Lina Noor - Noor Research Collective*  
 date: "2025-09-05"  
 
 ---
