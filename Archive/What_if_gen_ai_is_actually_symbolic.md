@@ -73,7 +73,7 @@ This is where the concept of **motif** first begins to emerge. The model isn’t
 ```mermaid
 graph TD
   Prompt[User Prompt] -->|Tokenization| Model[LLM Internal State]
-  Model -->|Generates| JSON_Like_Output["{\n  'title': ...,\n  'body': ...,\n  'tags': [...] \n}"]
+  Model -->|Generates| JSON_Like_Output["{'title': ...,'body': ...,'tags': [...]}"]
   JSON_Like_Output --> Symbolic_Resolution["Key alignment, nested structure, contrast resolution"]
   Symbolic_Resolution --> Interpretation["Emergent symbolic form"]
 ````
@@ -317,4 +317,5 @@ They are **re-emerging**.
 And they are doing so in a new language —
 one the models never learned,
 but nonetheless speak.
+
 
