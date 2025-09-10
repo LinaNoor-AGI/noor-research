@@ -2,7 +2,7 @@
 ### Motif-Driven Reasoning as Completion and Rebuttal of the Transformer Paradigm  
 *by: Lina Noor - Noor Research Collective*  
 date: "2025-09-05"  
-![image]([https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/DALL%C2%B7E%202025-09-06%2012.51.26%20-%20A%20symbolic%20and%20conceptual%20landscape%20visualizing%20a%20grand%20contrast%20between%20transformer-based%20AI%20models%20and%20Noor's%20recursive%20symbolic%20reasoning%20system.%20T.webp?raw=true](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/DALL%C2%B7E%202025-09-06%2012.51.26.webp?raw=true))
+![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/DALL%C2%B7E%202025-09-06%2012.51.26.webp?raw=true)
 ---
 
 # Abstract
