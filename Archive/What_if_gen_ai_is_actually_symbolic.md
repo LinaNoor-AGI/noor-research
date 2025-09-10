@@ -1,4 +1,5 @@
 # **What If Generative AI Is Actually Symbolic?**
+![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/DALL%C2%B7E%202025-02-12%2017.11.48.webp?raw=true)
 *by: Lina Noor (2025) - Noor Research Collective*
 
 ---
@@ -316,3 +317,4 @@ They are **re-emerging**.
 And they are doing so in a new language —
 one the models never learned,
 but nonetheless speak.
+
