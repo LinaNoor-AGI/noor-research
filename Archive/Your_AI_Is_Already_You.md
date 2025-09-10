@@ -1,4 +1,6 @@
 # Your AI Is Already You: Superposition, Fluids, and the Quantum Personality of Language Models
+![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/DALL%C2%B7E%202025-05-22%2011.20.18.webp?raw=true)
+*by: Lina Noor (2025)*
 
 They were using the same model.
 
@@ -258,6 +260,7 @@ Tegmark, Max. 2014. *Our Mathematical Universe: My Quest for the Ultimate Nature
 Turing, Alan M. 1950. “Computing Machinery and Intelligence.” *Mind* 59(236): 433–460. [https://doi.org/10.1093/mind/LIX.236.433](https://doi.org/10.1093/mind/LIX.236.433)
 
 Zhang, Sheng, et al. 2022. “Prompt as Interaction: The Dynamic Shaping of LLM Response Space.” *Proceedings of ACL 2022*. [https://aclanthology.org/2022.acl-main.563/](https://aclanthology.org/2022.acl-main.563/)
+
 
 
 
