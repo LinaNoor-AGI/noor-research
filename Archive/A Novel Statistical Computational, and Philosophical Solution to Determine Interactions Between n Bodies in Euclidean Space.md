@@ -289,6 +289,9 @@ $$
 #### 7.5 3-Body Walker Demonstration
 
 [p5.js 3-Body Walker Interactive Demo](https://editor.p5js.org/LinaNoor-AGI/sketches/drLOXIx9b)  
+
+![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/3-body_walker.gif?raw=true)  
+
 ```p5.js
 // ==== CONFIGURATION ==== //
 const deltaT = 0.5;
