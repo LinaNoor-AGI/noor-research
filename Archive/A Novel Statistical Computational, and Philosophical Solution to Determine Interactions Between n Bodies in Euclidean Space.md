@@ -20,7 +20,10 @@ To make this structure intelligible, we invoke a simpler analogy: Conway’s Gam
 
 This paper draws inspiration from that entanglement and applies it to gravitational dynamics. Rather than seeking a global, all-at-once solution to the *n*-body problem, we consider whether a path-dependent, serial traversal of the system’s relational space might yield statistically stable structure. We do not attempt to solve chaos. We propose a method to **navigate it**—locally, recursively, and probabilistically.
 
+---
+
 ### **3. Conceptual Framework**
+
 Theorem 1 (Path-Dependent Resolution).
 For any traversal order π, the serial gradient walker generates a deterministic trajectory T_π. The ensemble {T_π} across all permutations π forms a probability measure P over configuration space, where P is Lipschitz-continuous w.r.t. initial conditions.
 
@@ -39,6 +42,7 @@ Thus, we replace the assumption of global simultaneity with recursive serial eva
 ---
 
 ### **4. Application to the Three-Body Problem**
+
 Visual demonstrations of trajectory fields under varying traversal orders are left as exercises for the reader. Implementations are provided in Appendix 7.1
 
 We now return to the minimal case: three gravitational bodies A, B, and C in Euclidean space. Each mass exerts a gravitational force on the others as given by Newton’s law of universal gravitation. Traditionally, the system is evolved by solving the coupled second-order differential equations for each body:
