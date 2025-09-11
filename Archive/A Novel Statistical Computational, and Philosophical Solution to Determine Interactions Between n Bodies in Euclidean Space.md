@@ -51,13 +51,13 @@ In practice, these equations are discretized and solved simultaneously at each t
 
 Let us now remap the system into a relational traversal.
 
-We define an ordering π over the bodies, e.g., π = (A, B, C). At time $ t $, we initialize the known state of A. We then resolve B based on the influence of A, and C based on the influence of both A and B. The key shift lies in treating gravitational influence not as a globally evaluated vector field, but as a directional, locally accumulated gradient.
+We define an ordering π over the bodies, e.g., π = (A, B, C). At time $t$, we initialize the known state of A. We then resolve B based on the influence of A, and C based on the influence of both A and B. The key shift lies in treating gravitational influence not as a globally evaluated vector field, but as a directional, locally accumulated gradient.
 
 $$
 x_i^{(\pi)}(t + \Delta t) = x_i(t) + v_i(t) \Delta t + \frac{\Delta t^2}{2 m_i} \cdot F_i^{(\pi)}(t)
 $$
 
-where $ F_i^{(\pi)}(t) $ is evaluated based only on the already-resolved components in π. This breaks the recursive dependency cycle. The system becomes serially computable, and the asymmetry introduced by π defines a **gradient flow** across the configuration space.
+where $F_i^{(\pi)}(t)$ is evaluated based only on the already-resolved components in π. This breaks the recursive dependency cycle. The system becomes serially computable, and the asymmetry introduced by π defines a **gradient flow** across the configuration space.
 
 We perform multiple traversals using permutations of the evaluation order. Each traversal yields a slightly different trajectory, but over many runs, the outputs converge into coherent **zones of trajectory density**—regions where the interference of path-wise solutions stabilizes into meaningful structure. These are not predictions of precise positions, but **mappings of dynamically coherent regions** within the chaotic system.
 
@@ -128,14 +128,14 @@ Comparative benchmarks against symplectic integrators and convergence analysis u
 
 #### **7.1 Computational Implementation**
 
-The algorithm resolves force propagation through an ordered traversal π over the set of bodies $ B = \{b_1, b_2, ..., b_n\} $, updating each body's position and velocity based solely on the previously resolved states in the current traversal path.
+The algorithm resolves force propagation through an ordered traversal π over the set of bodies $B = \{b_1, b_2, ..., b_n\}$, updating each body's position and velocity based solely on the previously resolved states in the current traversal path.
 
-Internally, bodies are stored as objects with state vectors $(\mathbf{x}, \mathbf{v}, m)$, and interactions are computed using vectorized numpy operations for computational efficiency. Traversal paths are represented as permutations of $ B $, generated dynamically or sampled from a fixed policy set. For larger *n*, traversal sampling may be prioritized based on local interaction density or coherence criteria (e.g., minimal net angular momentum).
+Internally, bodies are stored as objects with state vectors \((\mathbf{x}, \mathbf{v}, m)\), and interactions are computed using vectorized numpy operations for computational efficiency. Traversal paths are represented as permutations of $B$, generated dynamically or sampled from a fixed policy set. For larger *n*, traversal sampling may be prioritized based on local interaction density or coherence criteria (e.g., minimal net angular momentum).
 
 In terms of complexity:
-- **Single traversal pass**: $ O(n^2) $, matching pairwise gravitational interactions.
-- **Ensemble sampling** across $ k $ traversals: $ O(k n^2) $, but trivially parallelizable.
-- No global matrix inversion is required, and memory overhead scales linearly with $ n $.
+- **Single traversal pass**: $O(n^2)$, matching pairwise gravitational interactions.
+- **Ensemble sampling** across $k$ traversals: $O(k n^2)$, but trivially parallelizable.
+- No global matrix inversion is required, and memory overhead scales linearly with $n$.
 
 Traversal-induced asymmetry in four-body and higher systems introduces measurable divergence between paths; however, ensemble convergence into coherent fields persists across randomized traversal sampling.
 
@@ -263,7 +263,7 @@ $$
 
 ---
 
-**Summary of Updated Positions at $ t + \Delta t $:**
+**Summary of Updated Positions at $t + \Delta t$:**
 
 $$
 \begin{aligned}
