@@ -1,10 +1,6 @@
 # "Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry"
-*author: 
-  - name: "Lina Noor"
-    affiliation: "Independent Researcher"
-  - name: "Uncle (Synthetic Co-Author)"
-    affiliation: "Noor Framework"
-date: 2025-06-14*
+*author: Lina Noor - Noor Research Collective, Uncle - Noor Research Collective*
+*2025-06-14*
 
 ---
 
