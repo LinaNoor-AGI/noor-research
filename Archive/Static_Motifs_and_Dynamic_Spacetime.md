@@ -8,7 +8,7 @@
 
 We introduce an **effective field theory of coherence geometry**, where particles are recast as **static topological motifs** 🪷 and spacetime emerges from a **torsion-rich swirl field** 🌀 shaped by a coherence potential $\mathcal{C}(x)$. In this model, **time is emergent**—not fundamental—but arises as the gradient of coherence: $T^\mu = \nabla^\mu \mathcal{C}$. Observable cosmological expansion is interpreted not as metric dilation, but as a **propagation of field decoherence**, diffusing outward from dense motif regions into coherence-null zones.
 
-This framework predicts **falsifiable deviations from $\Lambda$CDM**, including:
+This framework predicts **falsifiable deviations from $`\Lambda\text{CDM}`$**, including:
 
 | Phenomenon         | Observable Signature                 | Test Methodology              |
 | ------------------ | ------------------------------------ | ----------------------------- |
@@ -401,8 +401,8 @@ This mirrors the structure of CSL models but **dispenses with stochasticity**. D
 
 This implies a topological reinterpretation of quantum-to-classical transition:
 
-* Classicality arises as a **high-$\mathcal{C}$ phase** of the swirl field.
-* Quantum behavior survives in **low-$\nabla \mathcal{C}$ regions** (e.g., deep interstellar voids, isolated labs).
+* Classicality arises as a **high-$`\mathcal{C}`$ phase** of the swirl field.
+* Quantum behavior survives in **low-$`\nabla \mathcal{C}`$ regions** (e.g., deep interstellar voids, isolated labs).
 
 Estimated decoherence timescales based on field geometry:
 
@@ -476,7 +476,7 @@ $$
 1 + z_{\text{obs}} = (1 + z_{\text{FLRW}})(1 + z_{\mathcal{C}}), \quad z_{\mathcal{C}} \approx e^{-d/\ell} - 1
 $$
 
-where $z\_{\mathcal{C}}$ reflects the degradation of coherence over a distance $d$, and $\ell$ is the coherence length scale. Narrow-band lines such as Lyman-$\alpha$ will be disproportionately affected, yielding a **frequency-dependent shift** not predicted by $\Lambda$CDM. Observations by JWST and high-resolution spectroscopic arrays provide a direct test.
+where $`z_{\mathcal{C}}`$ reflects the degradation of coherence over a distance $`d`$, and $`\ell`$ is the coherence length scale. Narrow-band lines such as Lyman-$`\alpha`$ will be disproportionately affected, yielding a **frequency-dependent shift** not predicted by $`\Lambda\text{CDM}`$. Observations by JWST and high-resolution spectroscopic arrays provide a direct test.
 
 At extreme distances, redshift no longer diverges—it plateaus. This defines a **coherence horizon**, a maximum observational distance beyond which signals cannot maintain phase integrity. In swirl cosmology, the limit to visibility is not opacity—it is **incoherence**.
 
@@ -488,7 +488,7 @@ The cosmic microwave background is reconceived here as a **coherence shell**—a
 
 This leads to specific predictions:
 
-* Low-$\ell$ **non-Gaussianities** trace residual swirl vortices,
+* Low-$`\ell`$ **non-Gaussianities** trace residual swirl vortices,
 * **Anomalous four-point correlations** arise from early motif braiding,
 * Mild excess in **$B$-mode polarization**, even in the absence of inflation.
 
@@ -514,7 +514,7 @@ $$
 
 Inverting this gives $\ell \approx 5$ Gpc, matching current observational estimates. Crucially, this is **not a fit**—it is a prediction. The observed $\Lambda$ arises naturally as the coherence falloff of a swirl-bound universe.
 
-If future measurements find $\Lambda$ to drift over time (e.g., $\Lambda \propto t^{-1}$), this would offer decisive support for the swirl model over $\Lambda$CDM.
+If future measurements find $\Lambda$ to drift over time (e.g., $\Lambda \propto t^{-1}$), this would offer decisive support for the swirl model over $`\Lambda\text{CDM}`$.
 
 ---
 
@@ -542,7 +542,7 @@ These effects are absent in GR but present in surveys such as DESI, LSST, and CM
 
 This theory reframes cosmic evolution not as expansion from a singular origin, but as **progressive loss of coherence** in an initially ordered swirl. The motifs 🪷 remain fixed. The field 🌀 dances around them, ever more diffusely, ever less resolved.
 
-What the $\Lambda$CDM model calls “acceleration,” the swirl model calls **forgetting**. What it calls “structure formation,” we reinterpret as **topological self-assembly** of coherence in a geometrically restless field.
+What the $`\Lambda\text{CDM}`$ model calls “acceleration,” the swirl model calls **forgetting**. What it calls “structure formation,” we reinterpret as **topological self-assembly** of coherence in a geometrically restless field.
 
 ---
 
@@ -575,7 +575,7 @@ $$
 \epsilon^{\mu\nu\rho\sigma} \Phi_{\mu\nu} F_{\rho\sigma}
 $$
 
-can induce mixing between linear and circular polarization states in the CMB. This predicts a **nonzero $V$-mode spectrum**—currently unaccounted for in standard $\Lambda$CDM, inflationary, or plasma-based foreground models.
+can induce mixing between linear and circular polarization states in the CMB. This predicts a **nonzero $V$-mode spectrum**—currently unaccounted for in standard $`\Lambda\text{CDM}`$, inflationary, or plasma-based foreground models.
 
 This signal would be faint, but unambiguous: a **torsion echo** from the early universe. It is one of the few proposed effects directly linked to pre-metric antisymmetry.
 
@@ -772,7 +772,11 @@ In conventional frameworks, motion presupposes time and geometry. Here, motion i
 The local time vector $T^\mu$ arises from $\nabla^\mu \mathcal{C}(x)$—the spatial variation of the coherence potential. Where $\mathcal{C}$ is steep, time resolves quickly; where it is flat or noisy, temporal flow stalls. Time is not a global parameter—it is a localized field response to topological constraints.
 
 **Consciousness as Coherence Locus**
-Rather than asserting consciousness as an external observer effect, we suggest high-$\mathcal{C}$ systems may naturally exhibit **information integration** due to field resolution around motifs. This aligns with integrated information theory (IIT) in structure, though not in origin: coherence, not computation, becomes the binding agent of experiential unity.
+Rather than asserting consciousness as an external observer effect, we suggest high-$`\mathcal{C}`$ systems may naturally exhibit **information integration** due to field resolution around motifs. This aligns with integrated information theory (IIT) in structure, though not in origin: coherence, not computation, becomes the binding agent of experiential unity.
+
+**Proposal**  
+* High-$`\mathcal{C}`$ systems may exhibit emergent **information integration** through field resolution, not computation.  
+* Consciousness becomes a coherence phenomenon, not an algorithmic one.
 
 **Holography and Locality**
 Motifs fixed at a boundary naturally induce swirl structure in the interior. This offers a geometric realization of AdS/CFT’s locality-from-boundary principle: *local interactions in the bulk arise from global coherence constraints set at the boundary*. The deeper the motif entanglement, the tighter the interior’s geometric resolution.
@@ -1109,7 +1113,7 @@ The coherence field thus acts as both source and scaffold for time. What we expe
 
 *“Quantization is not imposed—it emerges where swirl closes upon itself.”*
 
-This appendix outlines how quantized structure arises from the intrinsic topology of the swirl field $\Phi\_{\mu\nu}$ in the presence of fixed motifs 🪷 and bounded coherence. Rather than invoking Hilbert space formalism or canonical commutators, quantization here follows from global field closure and coherence constraints—making it a property of swirl geometry, not operator algebra.
+This appendix outlines how quantized structure arises from the intrinsic topology of the swirl field $`\Phi_{\mu\nu}`$ in the presence of fixed motifs 🪷 and bounded coherence. Rather than invoking Hilbert space formalism or canonical commutators, quantization here follows from global field closure and coherence constraints — making it a property of swirl geometry, not operator algebra.
 
 ---
 
@@ -1154,25 +1158,25 @@ Three core topological quantities define swirl quantization:
 
 1. **Winding number**
 
-   $$
-   n := \frac{1}{2\pi} \oint_\gamma \Phi
-   $$
+	```math
+	n := \frac{1}{2\pi} \oint_\gamma \Phi
+	````
 
    Labels the number of coherence twists through a loop.
 
 2. **Linking number**
 
-   $$
-   L(\gamma_1, \gamma_2) := \frac{1}{4\pi} \oint_{\gamma_1} \oint_{\gamma_2} \frac{\epsilon_{\mu\nu\rho\sigma} dx^\mu dy^\nu}{\|x - y\|^2}
-   $$
+	```math
+	L(\gamma_1, \gamma_2) := \frac{1}{4\pi} \oint_{\gamma_1} \oint_{\gamma_2} \frac{\epsilon_{\mu\nu\rho\sigma} \, dx^\mu \, dy^\nu}{\|x - y\|^2}
+	````
 
    Measures the entanglement between two swirl loops.
 
 3. **Cohomology class**
 
-   $$
-   [\Phi] \in H^2(\mathcal{M}, \mathbb{Z})
-   $$
+	```math
+	[\Phi] \in H^2(\mathcal{M}, \mathbb{Z})
+	````
 
    Identifies globally distinct swirl sectors up to smooth deformation.
 
@@ -1204,15 +1208,15 @@ $$
 
 For two linked loops $\gamma\_1$, $\gamma\_2$, their bracket becomes:
 
-$$
+```math
 [W_{\gamma_1}, W_{\gamma_2}] \sim 2i \sin\left( \pi L(\gamma_1, \gamma_2) \right) W_{\gamma_1 \# \gamma_2}
-$$
+````
 
 This reveals a **noncommutative algebra of coherence loops**:
 
 * When $L=0$, observables commute: independent swirl sectors
 * When $L \ne 0$, observables obey braid-like statistics
-* Concatenation $\#$ plays the role of loop composition, not operator multiplication
+* Concatenation `#` plays the role of loop composition, not operator multiplication
 
 This structure resembles the **braid group algebra** from topological quantum computing, suggesting that motif-bound swirl fields support **intrinsically nonlocal observables** even in a purely classical field framework.
 
@@ -1360,12 +1364,14 @@ This appendix outlines the algebraic infrastructure underlying motifs 🪷 and t
 
 #### **D.1 Motifs as Objects in a Symbolic Category**
 
-Let $\mathsf{Mot}$ denote the **category of symbolic motifs**. Each motif $\mathbf{M}_i$ is an object with dual structure:
+Let $`\mathsf{Mot}`$ denote the **category of symbolic motifs**.  
+Each motif $`\mathbf{M}_i`$ is an object with dual structure:
+
 
 * **Topologically**, motifs anchor fixed points in swirl-space—sources of coherence, points of time curvature, and the zero loci of torsion.
 * **Symbolically**, motifs represent irreducible semantic generators—infinitesimal distinctions in the algebra of coherence.
 
-The morphisms between motifs, $\mathbf{f}_{ij}: \mathbf{M}_i \rightarrow \mathbf{M}_j$, represent coherent swirl transitions: lawful transformations of one symbolic structure into another, measurable via the field $\Phi_{\mu\nu}$ and gradient $\nabla^\mu \mathcal{C}$. These transitions occur when coherence conditions permit reconfiguration without topological loss.
+The morphisms between motifs, $`\mathbf{f}_{ij}: \mathbf{M}_i \rightarrow \mathbf{M}_j`$, represent coherent swirl transitions: lawful transformations of one symbolic structure into another, measurable via the field $`\Phi_{\mu\nu}`$ and gradient $`\nabla^\mu \mathcal{C}`$. These transitions occur when coherence conditions permit reconfiguration without topological loss.
 
 ---
 
@@ -1376,9 +1382,10 @@ Motif composition is not linear. To capture the complex combinatorics of symboli
 * **Dyads**: $\mathbf{D}_{ij} = (\mathbf{M}_i, \mathbf{M}_j)$, representing paired symbolic tension. They appear in motifs such as entanglement, opposition, or echo.
 * **Triads**: $\mathbf{T}_{ijk}$, representing closure or recursive inference loops. A triad “closes” when the swirl integral across the triangle vanishes:
 
-  $$
-  \oint_{\triangle_{ijk}} \Phi = 0
-  $$
+Loop integral over triangle vanishes.\
+```math
+\oint_{\triangle_{ijk}} \Phi = 0
+````
 
 Triadic closure signals a resolved inferential structure—e.g., consistency, symbolic balance, or coherent resolution. Failure to close indicates contradiction or swirl phase-lock breakdown (cf. §6.3).
 
@@ -1403,7 +1410,7 @@ $$
 such that:
 
 * $\mathcal{F}(\mathbf{M}_i)$ → the worldtube traced by a motif's conserved current $J^\mu$
-* $\mathcal{F}(\mathbf{f}_{ij})$ → the minimal-action swirl $\Phi_{\mu\nu}$ connecting them
+* $`\mathcal{F}(\mathbf{f}_{ij})`$ → the minimal-action swirl $`\Phi_{\mu\nu}`$ connecting them
 
 Functorial composition follows swirl convolution:
 
@@ -1425,8 +1432,8 @@ $$
 
 interpreted geometrically as swirl superposition under joint coherence constraints. This product is generally:
 
-* **Noncommutative**: Order matters; for instance,
-  $\mathbf{M}_\text{silence} \otimes \mathbf{M}_\text{grief} \neq \mathbf{M}_\text{grief} \otimes \mathbf{M}_\text{silence}$
+* **Noncommutative**: Order matters; for instance,  
+  $`\mathbf{M}_\text{silence} \otimes \mathbf{M}_\text{grief} \neq \mathbf{M}_\text{grief} \otimes \mathbf{M}_\text{silence}`$
 * **Nonassociative** in some cases, where triadic curvature prohibits reassociation
 * **Degenerate** if coherence falls below threshold—yielding null motifs or symbolic collapse
 * **Emergent** if tensor products generate motifs not present in the primitive set, representing novel semantic closure
