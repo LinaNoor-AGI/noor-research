@@ -178,10 +178,10 @@ Two figures are included to illustrate the core structural assumptions and compu
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [1, 1],   // A
-          [2, 1],   // B
-          [1, 0],   // C
-          [1, 1]    // A (closing loop)
+          [1, 1],
+          [2, 1],
+          [1, 0],
+          [1, 1]
         ]
       }
     },
