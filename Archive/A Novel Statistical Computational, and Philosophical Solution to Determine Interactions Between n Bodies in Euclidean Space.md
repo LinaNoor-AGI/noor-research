@@ -275,6 +275,243 @@ $$
 
 ---
 
+#### 7.5 3-Body Walker Demonstration
+
+```p5.js
+// ==== CONFIGURATION ==== //
+const deltaT = 0.5;
+const G = 1.0;
+const trailLimit = 3000;
+const fieldRes = 6;
+const zoomFactor = 3.0;
+const fieldFadeRate = 0.996;
+const lowThreshold = 0.2;
+
+const initialConditions = {
+  A: { x: 250, y: 270, vx: Math.random() * 0.02 - 0.01, vy: Math.random() * 0.02 - 0.01, mass: 1, color: '#D7263D' },
+  B: { x: 300, y: 300, vx: Math.random() * 0.02 - 0.01, vy: Math.random() * 0.02 - 0.01, mass: 1.1, color: '#CDDC39' },
+  C: { x: 250, y: 320, vx: Math.random() * 0.02 - 0.01, vy: Math.random() * 0.02 - 0.01, mass: 0.9, color: '#00BCD4' }
+};
+// ======================== //
+
+let bodies;
+let trails = {};
+let orders = [];
+let currentOrderIndex = 0;
+let traversalMode = 'cycle';
+let fieldDensity;
+
+let fadeCheckbox;
+let showPositiveCheckbox;
+let showNegativeCheckbox;
+let showPositiveHeatmap = true;
+let showNegativeHeatmap = false;
+let isFading = true;
+let isPaused = false;
+let stepOnce = false;
+
+function setup() {
+  createCanvas(600, 600);
+  colorMode(HSL, 360, 100, 100, 100);
+  frameRate(30);
+
+  initBodies();
+  generatePermutations(Object.keys(initialConditions));
+  fieldDensity = Array(width / fieldRes).fill().map(() => Array(height / fieldRes).fill(0));
+
+  createButton('Fixed Traversal').mousePressed(() => {
+    traversalMode = 'fixed';
+    currentOrderIndex = 0;
+  }).position(10, height + 10);
+
+  createButton('Cycle Traversals').mousePressed(() => {
+    traversalMode = 'cycle';
+    currentOrderIndex = 0;
+  }).position(130, height + 10);
+
+  fadeCheckbox = createCheckbox('Fade Field', true);
+  fadeCheckbox.position(10, height + 40);
+  fadeCheckbox.changed(() => isFading = fadeCheckbox.checked());
+
+  showPositiveCheckbox = createCheckbox('Show Positive Heatmap', true);
+  showPositiveCheckbox.position(130, height + 40);
+  showPositiveCheckbox.changed(() => showPositiveHeatmap = showPositiveCheckbox.checked());
+
+  showNegativeCheckbox = createCheckbox('Show Negative Heatmap', false);
+  showNegativeCheckbox.position(330, height + 40);
+  showNegativeCheckbox.changed(() => showNegativeHeatmap = showNegativeCheckbox.checked());
+
+  createButton('⏸ Pause').mousePressed(() => isPaused = true).position(10, height + 70);
+  createButton('▶ Resume').mousePressed(() => isPaused = false).position(80, height + 70);
+  createButton('⏭ Step').mousePressed(() => { stepOnce = true; }).position(170, height + 70);
+
+  createButton('📸 Save Frame').mousePressed(() => {
+    saveCanvas('traversal_field', 'png');
+  }).position(250, height + 70);
+}
+
+function draw() {
+  if (isPaused && !stepOnce) return;
+  stepOnce = false;
+
+  background(0, 0, 100); // white background
+
+  push();
+  scale(zoomFactor);
+  translate(-(width * (1 - 1 / zoomFactor)) / 2, -(height * (1 - 1 / zoomFactor)) / 2);
+
+  if (isFading) fadeField();
+  drawFieldOverlay();
+
+  let order = traversalMode === 'cycle' ? orders[currentOrderIndex] : Object.keys(initialConditions);
+  if (traversalMode === 'cycle') {
+    currentOrderIndex = (currentOrderIndex + 1) % orders.length;
+  }
+
+  let newStates = {};
+
+  for (let i = 0; i < order.length; i++) {
+    let current = order[i];
+    let netForce = createVector(0, 0);
+    for (let j = 0; j < i; j++) {
+      let influencer = order[j];
+      let r = p5.Vector.sub(bodies[influencer].pos, bodies[current].pos);
+      let distance = max(r.mag(), 10);
+      let forceMag = (G * bodies[current].mass * bodies[influencer].mass) / (distance * distance);
+      r.normalize().mult(forceMag);
+      netForce.add(r);
+    }
+
+    let acc = p5.Vector.div(netForce, bodies[current].mass);
+    bodies[current].vel.add(p5.Vector.mult(acc, deltaT));
+    let newPos = p5.Vector.add(bodies[current].pos, p5.Vector.mult(bodies[current].vel, deltaT));
+    newStates[current] = { pos: newPos, vel: bodies[current].vel };
+  }
+
+  for (let key in newStates) {
+    bodies[key].pos = newStates[key].pos;
+
+    let gridX = Math.floor(bodies[key].pos.x / fieldRes);
+    let gridY = Math.floor(bodies[key].pos.y / fieldRes);
+    if (gridX >= 0 && gridX < width / fieldRes && gridY >= 0 && gridY < height / fieldRes) {
+      fieldDensity[gridX][gridY]++;
+    }
+
+    trails[key].push(bodies[key].pos.copy());
+    if (trails[key].length > trailLimit) trails[key].shift();
+  }
+
+  for (let key in trails) {
+    strokeWeight(2.2);
+    stroke(bodies[key].color + 'BB');
+    noFill();
+    beginShape();
+    for (let p of trails[key]) vertex(p.x, p.y);
+    endShape();
+
+    fill(bodies[key].color);
+    noStroke();
+    circle(bodies[key].pos.x, bodies[key].pos.y, 10);
+  }
+
+  pop();
+  drawLabels();
+}
+
+function fadeField() {
+  for (let x = 0; x < fieldDensity.length; x++) {
+    for (let y = 0; y < fieldDensity[0].length; y++) {
+      fieldDensity[x][y] *= fieldFadeRate;
+    }
+  }
+}
+
+function drawFieldOverlay() {
+  noStroke();
+  let maxVal = 0;
+
+  for (let x = 0; x < fieldDensity.length; x++) {
+    for (let y = 0; y < fieldDensity[0].length; y++) {
+      maxVal = max(maxVal, fieldDensity[x][y]);
+    }
+  }
+
+  for (let x = 0; x < fieldDensity.length; x++) {
+    for (let y = 0; y < fieldDensity[0].length; y++) {
+      let density = fieldDensity[x][y];
+      let norm = maxVal > 0 ? constrain(density / maxVal, 0, 1) : 0;
+
+      // 🔵 Positive heatmap
+      if (showPositiveHeatmap && norm >= lowThreshold) {
+        let hue = map(norm, 0, 1, 340, 210, true);      // purple → blue
+        let lightness = map(norm, 0, 1, 85, 45, true);  // slightly darker
+        let alpha = map(norm, 0, 1, 30, 150, true);     // more visible
+        fill(hue, 80, lightness, alpha);
+        rect(x * fieldRes, y * fieldRes, fieldRes, fieldRes);
+      }
+
+      // 🔴 Negative heatmap
+      if (showNegativeHeatmap && norm < lowThreshold) {
+        let hue = 0;
+        let lightness = map(norm, 0, lowThreshold, 95, 55, true);
+        let alpha = map(norm, 0, lowThreshold, 40, 120, true); // stronger alpha
+        fill(hue, 90, lightness, alpha);
+        rect(x * fieldRes, y * fieldRes, fieldRes, fieldRes);
+      }
+    }
+  }
+}
+
+function drawLabels() {
+  noStroke();
+  textSize(12);
+  fill(30);
+  text(`Fade Rate: ${fieldFadeRate}`, 10, height + 105);
+
+  let legendY = height + 130;
+  text("Bodies:", 10, legendY);
+  let offset = 60;
+  for (let key in initialConditions) {
+    fill(initialConditions[key].color);
+    circle(10 + offset, legendY - 3, 10);
+    fill(30);
+    text(key, 20 + offset, legendY);
+    offset += 50;
+  }
+}
+
+function initBodies() {
+  bodies = {};
+  trails = {};
+  for (let key in initialConditions) {
+    let ic = initialConditions[key];
+    bodies[key] = {
+      pos: createVector(ic.x, ic.y),
+      vel: createVector(ic.vx, ic.vy),
+      mass: ic.mass,
+      color: ic.color
+    };
+    trails[key] = [];
+  }
+}
+
+function generatePermutations(arr) {
+  function permute(a, l, r) {
+    if (l === r) {
+      orders.push([...a]);
+    } else {
+      for (let i = l; i <= r; i++) {
+        [a[l], a[i]] = [a[i], a[l]];
+        permute(a, l + 1, r);
+        [a[l], a[i]] = [a[i], a[l]];
+      }
+    }
+  }
+  orders = [];
+  permute(arr, 0, arr.length - 1);
+}
+```
+
 This example demonstrates how serial traversal yields well-defined evolution in an entangled, non-simultaneous setting. Extension to multiple traversals would yield a field of trajectory variation suitable for gradient accumulation and coherence mapping.
 
 ### References
