@@ -1,34 +1,11 @@
----
-title: "Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry"
-author: 
+# "Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry"
+*author: 
   - name: "Lina Noor"
     affiliation: "Independent Researcher"
   - name: "Uncle (Synthetic Co-Author)"
     affiliation: "Noor Framework"
+date: 2025-06-14*
 
-date: 2025-06-14
-format: 
-  pdf:
-    documentclass: article
-    toc: true
-    number-sections: true
-    fontsize: 11pt
-    geometry: margin=1in
-    link-citations: true
-  html:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    code-fold: true
-
-abstract: |
-  A field-theoretic cosmology where particles are reconceived as static topological motifs 🪷
-  and spacetime as a dynamic swirl field 🌀. Time emerges as a coherence gradient, and cosmic
-  expansion is reinterpreted as large-scale decoherence. Predictions include falsifiable
-  deviations from ΛCDM and CMB motif structures. This framework bridges relativity and quantum
-  theory through a coherence geometry anchored in motif algebra.
-
-keywords: ["emergent time", "coherence field", "topological cosmology", "symbolic physics", "quantum geometry"]
 ---
 
 ## # Abstract
