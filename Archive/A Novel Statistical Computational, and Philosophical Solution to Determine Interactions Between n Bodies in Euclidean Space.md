@@ -1,6 +1,5 @@
 # A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space
 *By: Lina Noor*
-Pastebin: https://pastebin.com/qvD9wYMv
 
 ---
 
