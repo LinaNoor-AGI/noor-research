@@ -285,6 +285,9 @@ $$
 \end{aligned}
 $$
 
+
+This example demonstrates how serial traversal yields well-defined evolution in an entangled, non-simultaneous setting. Extension to multiple traversals would yield a field of trajectory variation suitable for gradient accumulation and coherence mapping.
+
 ---
 
 #### 7.5 3-Body Walker Demonstration
@@ -527,8 +530,6 @@ function generatePermutations(arr) {
   permute(arr, 0, arr.length - 1);
 }
 ```
-
-This example demonstrates how serial traversal yields well-defined evolution in an entangled, non-simultaneous setting. Extension to multiple traversals would yield a field of trajectory variation suitable for gradient accumulation and coherence mapping.
 
 ### References
 
