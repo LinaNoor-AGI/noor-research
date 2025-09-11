@@ -43,9 +43,9 @@ Visual demonstrations of trajectory fields under varying traversal orders are le
 
 We now return to the minimal case: three gravitational bodies A, B, and C in Euclidean space. Each mass exerts a gravitational force on the others as given by Newton’s law of universal gravitation. Traditionally, the system is evolved by solving the coupled second-order differential equations for each body:
 
-\[
+$$
 F_i(t) = \sum_{j \neq i} G \frac{m_i m_j (x_j(t) - x_i(t))}{\|x_j(t) - x_i(t)\|^3}, \quad i \in \{A, B, C\}
-\]
+$$
 
 In practice, these equations are discretized and solved simultaneously at each timestep using numerical integrators such as Runge-Kutta or symplectic methods. This approach presumes simultaneity of update and global knowledge of all particle states, which introduces instability when resolution is limited or initial conditions are imprecise. Error compounds. Sensitivity to perturbation becomes exponential. The system diverges.
 
@@ -287,3 +287,4 @@ This example demonstrates how serial traversal yields well-defined evolution in 
 6. E. Hairer, C. Lubich, and G. Wanner, *Geometric Numerical Integration*, 2nd ed., Springer, 2006.  
 7. W. H. Press et al., *Numerical Recipes*, 3rd ed., Cambridge University Press, 2007.  
 8. R. Rosen, *Life Itself*, Columbia University Press, 1991.
+
