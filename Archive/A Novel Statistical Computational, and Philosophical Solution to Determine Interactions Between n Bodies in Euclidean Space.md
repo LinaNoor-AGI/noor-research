@@ -156,7 +156,10 @@ Two figures are included to illustrate the core structural assumptions and compu
 ```mermaid
 graph TD
 
-%% Nodes
+%% Central Node
+A((A)):::main
+
+%% Moore Neighborhood
 N00((N1)) --> A
 N10((N2)) --> A
 N20((N3)) --> A
@@ -166,24 +169,13 @@ N02((N6)) --> A
 N12((N7)) --> A
 N22((N8)) --> A
 
-%% Central Node
-A((A))
-
 %% Triangle Path A → B → C → A
-A --> B((B))
-B --> C((C))
+A --> B((B)):::main
+B --> C((C)):::main
 C --> A
 
-%% Positioning (to simulate a grid layout)
-N00 --- N10 --- N20
- |       |       |
-N01 --- A   --- N21
- |       |       |
-N02 --- N12 --- N22
-
 %% Styling
-classDef main fill:#fdd;
-class A,B,C main;
+classDef main fill:#fdd,stroke:#f66,stroke-width:2px;
 ```
 
 **Figure 1** depicts entangled locality on a 3×3 computational grid. The central node A is influenced by its Moore neighborhood—eight surrounding nodes whose states recursively define its own. The diagram emphasizes the non-isolability of local state under relational dependency, laying the foundation for the paradox of recursive resolution. A closed triangle path A → B → C → A illustrates the computational deadlock when mutual influence is assumed to resolve simultaneously.
