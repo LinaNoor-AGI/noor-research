@@ -152,59 +152,38 @@ The implementation supports toggling between fixed and adaptive traversal polici
 Two figures are included to illustrate the core structural assumptions and computational behavior of the proposed method.  
 
 ##### 7.2.1 Figure 1.
-![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/n-body_image_1.png?raw=true)  
 
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    // Grid nodes (3x3)
-    {"type": "Feature", "properties": {"label": "A", "role": "center"}, "geometry": {"type": "Point", "coordinates": [1, 1]}},
-    {"type": "Feature", "properties": {"label": "N1"}, "geometry": {"type": "Point", "coordinates": [0, 0]}},
-    {"type": "Feature", "properties": {"label": "N2"}, "geometry": {"type": "Point", "coordinates": [1, 0]}},
-    {"type": "Feature", "properties": {"label": "N3"}, "geometry": {"type": "Point", "coordinates": [2, 0]}},
-    {"type": "Feature", "properties": {"label": "N4"}, "geometry": {"type": "Point", "coordinates": [0, 1]}},
-    {"type": "Feature", "properties": {"label": "N5"}, "geometry": {"type": "Point", "coordinates": [2, 1]}},
-    {"type": "Feature", "properties": {"label": "N6"}, "geometry": {"type": "Point", "coordinates": [0, 2]}},
-    {"type": "Feature", "properties": {"label": "N7"}, "geometry": {"type": "Point", "coordinates": [1, 2]}},
-    {"type": "Feature", "properties": {"label": "N8"}, "geometry": {"type": "Point", "coordinates": [2, 2]}},
+```mermaid
+graph TD
 
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Triangle Loop",
-        "description": "A → B → C → A"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [1, 1],
-          [2, 1],
-          [1, 0],
-          [1, 1]
-        ]
-      }
-    },
+%% Nodes
+N00((N1)) --> A
+N10((N2)) --> A
+N20((N3)) --> A
+N01((N4)) --> A
+N21((N5)) --> A
+N02((N6)) --> A
+N12((N7)) --> A
+N22((N8)) --> A
 
-    {
-      "type": "Feature",
-      "properties": {"influence": "Moore neighborhood"},
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [[0, 0], [1, 1]],
-          [[1, 0], [1, 1]],
-          [[2, 0], [1, 1]],
-          [[0, 1], [1, 1]],
-          [[2, 1], [1, 1]],
-          [[0, 2], [1, 1]],
-          [[1, 2], [1, 1]],
-          [[2, 2], [1, 1]]
-        ]
-      }
-    }
-  ]
-}
+%% Central Node
+A((A))
+
+%% Triangle Path A → B → C → A
+A --> B((B))
+B --> C((C))
+C --> A
+
+%% Positioning (to simulate a grid layout)
+N00 --- N10 --- N20
+ |       |       |
+N01 --- A   --- N21
+ |       |       |
+N02 --- N12 --- N22
+
+%% Styling
+classDef main fill:#fdd;
+class A,B,C main;
 ```
 
 **Figure 1** depicts entangled locality on a 3×3 computational grid. The central node A is influenced by its Moore neighborhood—eight surrounding nodes whose states recursively define its own. The diagram emphasizes the non-isolability of local state under relational dependency, laying the foundation for the paradox of recursive resolution. A closed triangle path A → B → C → A illustrates the computational deadlock when mutual influence is assumed to resolve simultaneously.
