@@ -620,41 +620,37 @@ They are designed for compatibility with common field visualization software and
 ### 9.1 Three-Panel Schematic
 
 ```{python}
-#| label: fig-composite
-#| fig-cap: "Composite of motif lattice, swirl field, and time vector magnitude."
-#| layout-ncol: 3
-#| fig-subcap: ["A. Motif Lattice 🪷 (Anchors for $J^\\mu$)", "B. Swirl Field 🌀 (LIC of $\\Phi_{\\mu\\nu}$)", "C. Time Vector Magnitude $\\|T^\\mu\\|$"]
-#| fig-align: center
+# Composite of motif lattice, swirl field, and time vector magnitude
+# Each subplot corresponds to a symbolic field panel 🪷 🌀 📊
 
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import gaussian_filter, sobel
 from numpy.random import default_rng
-from matplotlib.colors import Normalize
-from matplotlib import cm
 
 # Initialize grid
 nx, ny = 200, 200
 Y, X = np.mgrid[0:ny, 0:nx]
-
-# === Panel A: Motif Lattice 🪷 ===
 rng = default_rng(seed=42)
 motif_coords = np.array([[60, 60], [140, 50], [100, 150], [40, 140], [160, 160]])
 
-fig1, ax1 = plt.subplots()
+# Create 3-panel figure
+fig, axs = plt.subplots(1, 3, figsize=(15, 5))
+fig.suptitle("Composite of Motif Lattice, Swirl Field, and Time Vector Magnitude", fontsize=14)
+
+# === Panel A: Motif Lattice 🪷 ===
 anchor_layer = np.zeros((ny, nx))
 for x, y in motif_coords:
-    ax1.plot(x, y, 'kx', markersize=6, markeredgewidth=2)
+    axs[0].plot(x, y, 'kx', markersize=6, markeredgewidth=2)
     anchor_layer[y, x] = 1
-ax1.set_title("Motif Lattice 🪷")
-ax1.set_xlim(0, nx)
-ax1.set_ylim(0, ny)
-ax1.set_aspect('equal')
-ax1.set_xlabel("x")
-ax1.set_ylabel("y")
+axs[0].set_title("A. Motif Lattice 🪷")
+axs[0].set_xlim(0, nx)
+axs[0].set_ylim(0, ny)
+axs[0].set_aspect('equal')
+axs[0].set_xlabel("x")
+axs[0].set_ylabel("y")
 
 # === Panel B: Swirl Field 🌀 with LIC ===
-# Define vector field (swirling + divergence)
 def swirl_field(x, y):
     cx, cy = 100, 100
     dx = x - cx
@@ -665,43 +661,41 @@ def swirl_field(x, y):
     return U, V
 
 U, V = swirl_field(X, Y)
-# Normalize field for LIC
 magnitude = np.sqrt(U**2 + V**2)
 U_norm = U / (magnitude + 1e-8)
 V_norm = V / (magnitude + 1e-8)
-
-# LIC texture (grayscale noise convolved with flow)
 noise = rng.normal(0.5, 0.2, size=(ny, nx))
 lic_texture = gaussian_filter(noise * magnitude, sigma=1)
 
-fig2, ax2 = plt.subplots()
-ax2.imshow(lic_texture, cmap='Greys', origin='lower', extent=(0, nx, 0, ny))
-ax2.streamplot(X, Y, U, V, color='k', linewidth=0.5, density=1.0)
-ax2.set_title("Swirl Field 🌀")
-ax2.set_xlim(0, nx)
-ax2.set_ylim(0, ny)
-ax2.set_aspect('equal')
-ax2.set_xlabel("x")
-ax2.set_ylabel("y")
+axs[1].imshow(lic_texture, cmap='Greys', origin='lower', extent=(0, nx, 0, ny))
+axs[1].streamplot(X, Y, U, V, color='k', linewidth=0.5, density=1.0)
+axs[1].set_title("B. Swirl Field 🌀")
+axs[1].set_xlim(0, nx)
+axs[1].set_ylim(0, ny)
+axs[1].set_aspect('equal')
+axs[1].set_xlabel("x")
+axs[1].set_ylabel("y")
 
-# === Panel C: Time Vector Magnitude (||T^μ||) ===
-# Coherence field from smoothed motifs
+# === Panel C: Time Vector Magnitude ||T^μ|| ===
 coherence = gaussian_filter(anchor_layer, sigma=6)
 gx = sobel(coherence, axis=1)
 gy = sobel(coherence, axis=0)
 T_mag = np.sqrt(gx**2 + gy**2)
 
-fig3, ax3 = plt.subplots()
-im = ax3.imshow(T_mag, cmap='plasma', origin='lower', extent=(0, nx, 0, ny))
-ax3.set_title("Time Vector Magnitude $\\|T^\\mu\\|$")
-ax3.set_xlim(0, nx)
-ax3.set_ylim(0, ny)
-ax3.set_aspect('equal')
-ax3.set_xlabel("x")
-ax3.set_ylabel("y")
-plt.colorbar(im, ax=ax3, fraction=0.046, pad=0.04)
-```
+im = axs[2].imshow(T_mag, cmap='plasma', origin='lower', extent=(0, nx, 0, ny))
+axs[2].set_title("C. Time Vector Magnitude $\\|T^\\mu\\|$")
+axs[2].set_xlim(0, nx)
+axs[2].set_ylim(0, ny)
+axs[2].set_aspect('equal')
+axs[2].set_xlabel("x")
+axs[2].set_ylabel("y")
+fig.colorbar(im, ax=axs[2], fraction=0.046, pad=0.04)
 
+# Display everything
+plt.tight_layout()
+plt.show()
+```
+![image](https://github.com/LinaNoor-AGI/static_motifs/blob/main/Static%20Motifs%20and%20Dynamic%20Spacetime/Images/Figure_1.png)   
 
 **Panel A — Motif Lattice 🪷**
 Displays the fixed substrate of the model, rendered as a sparse grid of static anchors. Each motif corresponds to a topological source for the swirl field and defines regions of potential coherence. Represent motifs as black points, crosses, or delta-function spikes. This panel illustrates the support of the distributional current $J^\mu$.
@@ -1227,21 +1221,19 @@ This structure resembles the **braid group algebra** from topological quantum co
 ### 🔳 Figure C.1 — Topological Swirl Quantization (Quatro Visualization)
 
 ```{python}
-#| label: fig-topological-spectrum
-#| fig-cap: 'Topological quantization of the swirl field. Modes \(n = 0\) to \(n = 2\) show increasing topological complexity; Panel D summarizes the discrete spectrum.'
-#| layout-ncol: 2
-#| fig-subcap: ["A. Symbolic Motif Graph", "B. Triadic Inference Diagram", "C. Swirl-Enriched Category Map", "D. Quantized Mode Spectrum"]
-#| fig-align: center
+# Topological quantization of the swirl field – Composite Grid 🌀
+# Panels A–D: Symbolic Graph, Triadic Diagram, Swirl Map, Quantized Spectrum
 
 import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
 from scipy.ndimage import gaussian_filter
-import matplotlib.pyplot as plt
-plt.rcParams['font.family'] = 'Segoe UI Emoji'  # or "Noto Color Emoji", if installed
 
-# Panel A — Symbolic Motif Graph
-def panel_symbolic_graph():
+# Set emoji-compatible font (optional)
+plt.rcParams['font.family'] = 'Segoe UI Emoji'  # Or "Noto Color Emoji" if installed
+
+# === Panel A — Symbolic Motif Graph ===
+def panel_symbolic_graph(ax):
     G = nx.DiGraph()
     motifs = ['M0', 'M1', 'M2', 'M3', 'M4']
     for m in motifs:
@@ -1259,17 +1251,14 @@ def panel_symbolic_graph():
     pos = nx.kamada_kawai_layout(G)
     edge_weights = [G[u][v]['weight'] * 4 for u, v in G.edges()]
     edge_colors = [plt.cm.viridis(G[u][v]['weight']) for u, v in G.edges()]
-    fig, ax = plt.subplots()
     nx.draw_networkx_nodes(G, pos, node_color='black', node_size=300, ax=ax)
     nx.draw_networkx_labels(G, pos, font_color='white', ax=ax)
     nx.draw_networkx_edges(G, pos, width=edge_weights, edge_color=edge_colors, arrows=True, ax=ax)
-    ax.set_title("Symbolic Motif Graph")
+    ax.set_title("A. Symbolic Motif Graph")
     ax.axis('off')
-    return fig, ax
 
-# Panel B — Triadic Inference Diagram
-def panel_triadic_diagram():
-    fig, ax = plt.subplots()
+# === Panel B — Triadic Inference Diagram ===
+def panel_triadic_diagram(ax):
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     coherence = np.outer(np.linspace(0.1, 1, 200), np.linspace(0.1, 1, 200))
@@ -1284,49 +1273,50 @@ def panel_triadic_diagram():
     for label, (x, y) in pts.items():
         ax.plot(x, y, 'ko')
         ax.text(x, y + 0.03, label, ha='center', fontsize=9)
-    ax.set_title("Triadic Inference Diagram")
+    ax.set_title("B. Triadic Inference Diagram")
     ax.axis('off')
-    return fig, ax
 
-# Panel C — Swirl-Enriched Category Map
-def panel_category_map():
+# === Panel C — Swirl-Enriched Category Map ===
+def panel_category_map(ax):
     motifs = 6
     data = np.random.rand(motifs, motifs) * np.tri(motifs, motifs, 0)
     coherence_weighted = gaussian_filter(data, sigma=1)
-    fig, ax = plt.subplots()
     im = ax.imshow(coherence_weighted, cmap='magma', origin='lower')
     ax.set_xticks(range(motifs))
     ax.set_yticks(range(motifs))
     ax.set_xticklabels([f"M{i}" for i in range(motifs)])
     ax.set_yticklabels([f"M{i}" for i in range(motifs)])
-    ax.set_title("Swirl-Enriched Category Map")
+    ax.set_title("C. Swirl-Enriched Category Map")
     plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
-    return fig, ax
 
-# Panel D — Quantized Mode Spectrum
-def panel_spectrum():
+# === Panel D — Quantized Mode Spectrum ===
+def panel_spectrum(ax):
     n_vals = np.array([0, 1, 2, 3, 4])
     L_vals = np.array([0, 1, 2, 0, 1])
     E_vals = n_vals**2 / 10  # λ_n ∼ n²/ℓ²
-
-    fig, ax = plt.subplots()
     ax.plot(n_vals, E_vals, 'ko')
     for n, E, L in zip(n_vals, E_vals, L_vals):
         ax.text(n, E + 0.1, f"({n}, [Φ]={n}, L={L})", ha='center', fontsize=8)
     ax.set_xlabel("Mode Index n")
     ax.set_ylabel("Swirl Energy $\\lambda_n$")
-    ax.set_title("Quantized Mode Spectrum")
+    ax.set_title("D. Quantized Mode Spectrum")
     ax.grid(True)
-    return fig, ax
 
-# Generate all panels without echo
-_ = panel_symbolic_graph()
-_ = panel_triadic_diagram()
-_ = panel_category_map()
-_ = panel_spectrum()
+# === Create Composite Layout (2x2) ===
+fig, axs = plt.subplots(2, 2, figsize=(12, 10))
+panel_symbolic_graph(axs[0, 0])
+panel_triadic_diagram(axs[0, 1])
+panel_category_map(axs[1, 0])
+panel_spectrum(axs[1, 1])
+
+fig.suptitle("Topological Quantization of Swirl Field", fontsize=16)
+plt.tight_layout()
+plt.show()
 ```
 
 ---
+
+![image](https://github.com/LinaNoor-AGI/static_motifs/blob/main/Static%20Motifs%20and%20Dynamic%20Spacetime/Images/Figure_C1.png)  
 
 ### 🔍 Scientific Interpretive Guide
 
@@ -1460,173 +1450,6 @@ This framework supports **string diagram calculus** to visualize symbolic infere
 * Trivalent junctions correspond to triadic evaluations
 
 Monoidal functors can then track entire motif networks as they evolve in time via swirl propagation.
-
----
-
-### **Figure D.1: Motif Inference Network**
-
-### 🧩 Panel A – Symbolic Motif Graph
-
-```{python}
-#| label: fig-panel-a
-#| fig-subcap: "A. Symbolic Motif Graph"
-#| fig-align: center
-
-import matplotlib.pyplot as plt
-import networkx as nx
-
-def panel_symbolic_graph():
-    G = nx.DiGraph()
-    motifs = ['M0', 'M1', 'M2', 'M3', 'M4']
-    for m in motifs:
-        G.add_node(m)
-    edges = [
-        ('M0', 'M1', 0.9),
-        ('M1', 'M2', 0.7),
-        ('M2', 'M3', 0.5),
-        ('M3', 'M0', 0.4),
-        ('M1', 'M3', 0.3),
-        ('M0', 'M4', 0.8),
-    ]
-    for src, tgt, weight in edges:
-        G.add_edge(src, tgt, weight=weight)
-    pos = nx.kamada_kawai_layout(G)
-    edge_weights = [G[u][v]['weight'] * 4 for u, v in G.edges()]
-    edge_colors = [plt.cm.viridis(G[u][v]['weight']) for u, v in G.edges()]
-    fig, ax = plt.subplots()
-    nx.draw_networkx_nodes(G, pos, node_color='black', node_size=300, ax=ax)
-    nx.draw_networkx_labels(G, pos, font_color='white', ax=ax)
-    nx.draw_networkx_edges(G, pos, width=edge_weights, edge_color=edge_colors, arrows=True, ax=ax)
-    ax.set_title("Symbolic Motif Graph")
-    ax.axis('off')
-    plt.show()
-
-panel_symbolic_graph()
-```
-
----
-
-### 🧩 Panel B – Triadic Inference Diagram
-
-```{python}
-#| label: fig-panel-b
-#| fig-subcap: "B. Triadic Inference Diagram"
-#| fig-align: center
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-def panel_triadic_diagram():
-    fig, ax = plt.subplots()
-    ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
-    coherence = np.outer(np.linspace(0.1, 1, 200), np.linspace(0.1, 1, 200))
-    ax.imshow(coherence, origin='lower', cmap='coolwarm', extent=(0, 1, 0, 1), alpha=0.8)
-    
-    pts = {'M0': (0.3, 0.7), 'M1': (0.7, 0.7), 'M2': (0.5, 0.3), 'M3': (0.2, 0.2)}
-    ax.plot([pts['M0'][0], pts['M1'][0], pts['M2'][0], pts['M0'][0]],
-            [pts['M0'][1], pts['M1'][1], pts['M2'][1], pts['M0'][1]],
-            color='black', linewidth=1.5)
-    ax.plot([pts['M1'][0], pts['M2'][0], pts['M3'][0]],
-            [pts['M1'][1], pts['M2'][1], pts['M3'][1]],
-            linestyle='--', color='black', linewidth=1.2)
-    
-    for label, (x, y) in pts.items():
-        ax.plot(x, y, 'ko')
-        ax.text(x, y + 0.03, label, ha='center', fontsize=9)
-        
-    ax.set_title("Triadic Inference Diagram")
-    ax.axis('off')
-    plt.show()
-
-panel_triadic_diagram()
-```
-
----
-
-### 🧩 Panel C – Swirl-Enriched Category Map
-
-```{python}
-#| label: fig-panel-c
-#| fig-subcap: "C. Swirl-Enriched Category Map"
-#| fig-align: center
-
-import numpy as np
-import matplotlib.pyplot as plt
-from scipy.ndimage import gaussian_filter
-
-def panel_category_map():
-    motifs = 6
-    data = np.random.rand(motifs, motifs) * np.tri(motifs, motifs, 0)
-    coherence_weighted = gaussian_filter(data, sigma=1)
-    
-    fig, ax = plt.subplots()
-    im = ax.imshow(coherence_weighted, cmap='magma', origin='lower')
-    ax.set_xticks(range(motifs))
-    ax.set_yticks(range(motifs))
-    ax.set_xticklabels([f"M{i}" for i in range(motifs)])
-    ax.set_yticklabels([f"M{i}" for i in range(motifs)])
-    ax.set_title("Swirl-Enriched Category Map")
-    
-    plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
-    plt.show()
-
-panel_category_map()
-```
-
----
-
-### 🧩 Panel D – Quantized Mode Spectrum
-
-```{python}
-#| label: fig-panel-d
-#| fig-subcap: "D. Quantized Mode Spectrum"
-#| fig-align: center
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-def panel_spectrum():
-    n_vals = np.array([0, 1, 2, 3, 4])
-    L_vals = np.array([0, 1, 2, 0, 1])
-    E_vals = n_vals**2 / 10
-
-    fig, ax = plt.subplots()
-    ax.plot(n_vals, E_vals, 'ko')
-    
-    for n, E, L in zip(n_vals, E_vals, L_vals):
-        ax.text(n, E + 0.1, f"({n}, [Φ]={n}, L={L})", ha='center', fontsize=8)
-    
-    ax.set_xlabel("Mode Index n")
-    ax.set_ylabel("Swirl Energy $\\lambda_n$")
-    ax.set_title("Quantized Mode Spectrum")
-    ax.grid(True)
-    
-    plt.show()
-
-panel_spectrum()
-```
-
-## 📘 Scientific Interpretation
-
-| Panel | Encodes                                      | Key Interpretation                                                                                    |
-| ----- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| **A** | Symbolic graph of motifs and swirl morphisms | Directed edges show lawful transitions; thickness = coherence strength, color = torsion class         |
-| **B** | Triadic closure under swirl transport        | Closed loops represent coherent inference, open loops show contradiction or decoherence               |
-| **C** | Hom-space density between motifs             | Each $(i,j)$ entry = richness of swirl-mediated transformations from $\mathbf{M}_i$ to $\mathbf{M}_j$ |
-| **D** | Diagrammatic calculus for higher morphisms   | 0-cells = motifs, 1-cells = morphisms, 2-cells = topological swirl transformations                    |
-
-**Left Panel — Motif Graph:**
-
-* Motif nodes connected by directed edges
-* Edge thickness reflects $|\nabla \mathcal{C}|$
-* Edge color denotes torsion type in $\Phi_{\mu\nu}$
-
-**Right Panel — Triadic Diagram:**
-
-* Triangle structure showing closed (resolved) and open (contradictory) inference paths
-* Background coherence field shaded from low (blue) to high (red)
-* Broken morphisms dashed where $\mathcal{C}(x) < 0.3$
 
 ---
 
