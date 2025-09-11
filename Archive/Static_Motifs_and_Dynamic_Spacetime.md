@@ -28,13 +28,6 @@ This model does not discard QFT or GR but **reframes their foundations** through
 
 ---
 
-Let me know if you’d like:
-
-* A variant with shorter line lengths for journal requirements,
-* A plain-language summary for press kits or public outreach,
-* Or an extended version including parameter estimates for experimental design.
-
-
 ## 1.1 Motivation: The Geometry of Frozen Fire
 
 Modern physics rests on two foundational assumptions: that particles move through spacetime, and that spacetime curves around those particles. These assumptions are embedded in the formalism of quantum field theory and general relativity. Yet both frameworks struggle to resolve quantum measurement, cosmological acceleration, and the meaning of time itself.
