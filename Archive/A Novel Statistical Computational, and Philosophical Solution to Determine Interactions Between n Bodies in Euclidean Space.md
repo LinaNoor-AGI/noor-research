@@ -154,6 +154,61 @@ Two figures are included to illustrate the core structural assumptions and compu
 ##### 7.2.1 Figure 1.
 ![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/n-body_image_1.png?raw=true)  
 
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    // Grid nodes (3x3)
+    {"type": "Feature", "properties": {"label": "A", "role": "center"}, "geometry": {"type": "Point", "coordinates": [1, 1]}},
+    {"type": "Feature", "properties": {"label": "N1"}, "geometry": {"type": "Point", "coordinates": [0, 0]}},
+    {"type": "Feature", "properties": {"label": "N2"}, "geometry": {"type": "Point", "coordinates": [1, 0]}},
+    {"type": "Feature", "properties": {"label": "N3"}, "geometry": {"type": "Point", "coordinates": [2, 0]}},
+    {"type": "Feature", "properties": {"label": "N4"}, "geometry": {"type": "Point", "coordinates": [0, 1]}},
+    {"type": "Feature", "properties": {"label": "N5"}, "geometry": {"type": "Point", "coordinates": [2, 1]}},
+    {"type": "Feature", "properties": {"label": "N6"}, "geometry": {"type": "Point", "coordinates": [0, 2]}},
+    {"type": "Feature", "properties": {"label": "N7"}, "geometry": {"type": "Point", "coordinates": [1, 2]}},
+    {"type": "Feature", "properties": {"label": "N8"}, "geometry": {"type": "Point", "coordinates": [2, 2]}},
+
+    // Triangle path: A → B → C → A
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Triangle Loop",
+        "description": "A → B → C → A"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [1, 1],   // A
+          [2, 1],   // B
+          [1, 0],   // C
+          [1, 1]    // A (closing loop)
+        ]
+      }
+    },
+
+    // Influence arrows: neighbors → A
+    {
+      "type": "Feature",
+      "properties": {"influence": "Moore neighborhood"},
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [[0, 0], [1, 1]],
+          [[1, 0], [1, 1]],
+          [[2, 0], [1, 1]],
+          [[0, 1], [1, 1]],
+          [[2, 1], [1, 1]],
+          [[0, 2], [1, 1]],
+          [[1, 2], [1, 1]],
+          [[2, 2], [1, 1]]
+        ]
+      }
+    }
+  ]
+}
+```
+
 **Figure 1** depicts entangled locality on a 3×3 computational grid. The central node A is influenced by its Moore neighborhood—eight surrounding nodes whose states recursively define its own. The diagram emphasizes the non-isolability of local state under relational dependency, laying the foundation for the paradox of recursive resolution. A closed triangle path A → B → C → A illustrates the computational deadlock when mutual influence is assumed to resolve simultaneously.
 
 ##### 7.2.2 Figure 2.
