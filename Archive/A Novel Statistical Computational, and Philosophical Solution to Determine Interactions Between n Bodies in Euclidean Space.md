@@ -169,7 +169,6 @@ Two figures are included to illustrate the core structural assumptions and compu
     {"type": "Feature", "properties": {"label": "N7"}, "geometry": {"type": "Point", "coordinates": [1, 2]}},
     {"type": "Feature", "properties": {"label": "N8"}, "geometry": {"type": "Point", "coordinates": [2, 2]}},
 
-    // Triangle path: A → B → C → A
     {
       "type": "Feature",
       "properties": {
@@ -187,7 +186,6 @@ Two figures are included to illustrate the core structural assumptions and compu
       }
     },
 
-    // Influence arrows: neighbors → A
     {
       "type": "Feature",
       "properties": {"influence": "Moore neighborhood"},
