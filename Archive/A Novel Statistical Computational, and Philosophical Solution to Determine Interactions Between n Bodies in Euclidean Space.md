@@ -153,30 +153,50 @@ Two figures are included to illustrate the core structural assumptions and compu
 
 ##### 7.2.1 Figure 1.
 
+![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/n-body_image_1.png?raw=true) 
+
 ```mermaid
 graph TD
 
-%% Central Node
-A((A)):::main
+%% Top row
+subgraph Row1 [ ]
+  N00((N1))
+  N10((N2))
+  N20((N3))
+end
 
-%% Moore Neighborhood
-N00((N1)) --> A
-N10((N2)) --> A
-N20((N3)) --> A
-N01((N4)) --> A
-N21((N5)) --> A
-N02((N6)) --> A
-N12((N7)) --> A
-N22((N8)) --> A
+%% Middle row
+subgraph Row2 [ ]
+  N01((N4))
+  A((A)):::main
+  N21((N5))
+end
 
-%% Triangle Path A → B → C → A
+%% Bottom row
+subgraph Row3 [ ]
+  N02((N6))
+  N12((N7))
+  N22((N8))
+end
+
+%% Moore neighborhood arrows
+N00 --> A
+N10 --> A
+N20 --> A
+N01 --> A
+N21 --> A
+N02 --> A
+N12 --> A
+N22 --> A
+
+%% Triangle loop
 A --> B((B)):::main
 B --> C((C)):::main
 C --> A
 
 %% Styling
 classDef main fill:#fdd,stroke:#f66,stroke-width:2px;
-```
+``` 
 
 **Figure 1** depicts entangled locality on a 3×3 computational grid. The central node A is influenced by its Moore neighborhood—eight surrounding nodes whose states recursively define its own. The diagram emphasizes the non-isolability of local state under relational dependency, laying the foundation for the paradox of recursive resolution. A closed triangle path A → B → C → A illustrates the computational deadlock when mutual influence is assumed to resolve simultaneously.
 
