@@ -51,13 +51,13 @@ In practice, these equations are discretized and solved simultaneously at each t
 
 Let us now remap the system into a relational traversal.
 
-We define an ordering π over the bodies, e.g., π = (A, B, C). At time \( t \), we initialize the known state of A. We then resolve B based on the influence of A, and C based on the influence of both A and B. The key shift lies in treating gravitational influence not as a globally evaluated vector field, but as a directional, locally accumulated gradient.
+We define an ordering π over the bodies, e.g., π = (A, B, C). At time $ t $, we initialize the known state of A. We then resolve B based on the influence of A, and C based on the influence of both A and B. The key shift lies in treating gravitational influence not as a globally evaluated vector field, but as a directional, locally accumulated gradient.
 
-\[
+$$
 x_i^{(\pi)}(t + \Delta t) = x_i(t) + v_i(t) \Delta t + \frac{\Delta t^2}{2 m_i} \cdot F_i^{(\pi)}(t)
-\]
+$$
 
-where \( F_i^{(\pi)}(t) \) is evaluated based only on the already-resolved components in π. This breaks the recursive dependency cycle. The system becomes serially computable, and the asymmetry introduced by π defines a **gradient flow** across the configuration space.
+where $ F_i^{(\pi)}(t) $ is evaluated based only on the already-resolved components in π. This breaks the recursive dependency cycle. The system becomes serially computable, and the asymmetry introduced by π defines a **gradient flow** across the configuration space.
 
 We perform multiple traversals using permutations of the evaluation order. Each traversal yields a slightly different trajectory, but over many runs, the outputs converge into coherent **zones of trajectory density**—regions where the interference of path-wise solutions stabilizes into meaningful structure. These are not predictions of precise positions, but **mappings of dynamically coherent regions** within the chaotic system.
 
@@ -128,14 +128,14 @@ Comparative benchmarks against symplectic integrators and convergence analysis u
 
 #### **7.1 Computational Implementation**
 
-The algorithm resolves force propagation through an ordered traversal π over the set of bodies \( B = \{b_1, b_2, ..., b_n\} \), updating each body's position and velocity based solely on the previously resolved states in the current traversal path.
+The algorithm resolves force propagation through an ordered traversal π over the set of bodies $ B = \{b_1, b_2, ..., b_n\} $, updating each body's position and velocity based solely on the previously resolved states in the current traversal path.
 
-Internally, bodies are stored as objects with state vectors \((\mathbf{x}, \mathbf{v}, m)\), and interactions are computed using vectorized numpy operations for computational efficiency. Traversal paths are represented as permutations of \( B \), generated dynamically or sampled from a fixed policy set. For larger *n*, traversal sampling may be prioritized based on local interaction density or coherence criteria (e.g., minimal net angular momentum).
+Internally, bodies are stored as objects with state vectors $(\mathbf{x}, \mathbf{v}, m)$, and interactions are computed using vectorized numpy operations for computational efficiency. Traversal paths are represented as permutations of $ B $, generated dynamically or sampled from a fixed policy set. For larger *n*, traversal sampling may be prioritized based on local interaction density or coherence criteria (e.g., minimal net angular momentum).
 
 In terms of complexity:
-- **Single traversal pass**: \( O(n^2) \), matching pairwise gravitational interactions.
-- **Ensemble sampling** across \( k \) traversals: \( O(k n^2) \), but trivially parallelizable.
-- No global matrix inversion is required, and memory overhead scales linearly with \( n \).
+- **Single traversal pass**: $ O(n^2) $, matching pairwise gravitational interactions.
+- **Ensemble sampling** across $ k $ traversals: $ O(k n^2) $, but trivially parallelizable.
+- No global matrix inversion is required, and memory overhead scales linearly with $ n $.
 
 Traversal-induced asymmetry in four-body and higher systems introduces measurable divergence between paths; however, ensemble convergence into coherent fields persists across randomized traversal sampling.
 
@@ -174,7 +174,7 @@ To illustrate the serial traversal approach, we consider a minimal three-body sy
 
 Let:
 
-\[
+$$
 \begin{aligned}
 &m_A = 1.0, \quad m_B = 2.0, \quad m_C = 1.5 \\
 &\mathbf{x}_A = (0, 0), \quad \mathbf{x}_B = (1, 0), \quad \mathbf{x}_C = (0, 1) \\
@@ -182,22 +182,22 @@ Let:
 &G = 1.0, \quad \Delta t = 0.01 \\
 &\pi = (A, B, C)
 \end{aligned}
-\]
+$$
 
 ---
 
 **Step 1: Resolve A**
 
 Since A is first in the traversal, it is evaluated without influence from B or C.  
-\[
+$$
 \mathbf{F}_A = \mathbf{0}
 \Rightarrow \mathbf{a}_A = \frac{\mathbf{F}_A}{m_A} = \mathbf{0}
-\]
+$$
 
-\[
+$$
 \mathbf{v}_A(t + \Delta t) = \mathbf{v}_A(t) = \mathbf{0} \\
 \mathbf{x}_A(t + \Delta t) = \mathbf{x}_A(t) = (0, 0)
-\]
+$$
 
 ---
 
@@ -205,24 +205,24 @@ Since A is first in the traversal, it is evaluated without influence from B or C
 
 Now B is evaluated with reference to the updated position of A.
 
-\[
+$$
 \mathbf{r}_{AB} = \mathbf{x}_A - \mathbf{x}_B = (0, 0) - (1, 0) = (-1, 0) \\
 |\mathbf{r}_{AB}| = 1.0
-\]
+$$
 
-\[
+$$
 \mathbf{F}_{AB} = G \cdot \frac{m_A m_B}{|\mathbf{r}_{AB}|^3} \cdot \mathbf{r}_{AB}
 = 1 \cdot \frac{1 \cdot 2}{1^3} \cdot (-1, 0) = (-2, 0)
-\]
+$$
 
-\[
+$$
 \mathbf{a}_B = \frac{\mathbf{F}_{AB}}{m_B} = \frac{(-2, 0)}{2} = (-1, 0)
-\]
+$$
 
-\[
+$$
 \mathbf{v}_B(t + \Delta t) = (0, 0) + (-1, 0) \cdot 0.01 = (-0.01, 0) \\
 \mathbf{x}_B(t + \Delta t) = (1, 0) + (-0.01, 0) \cdot 0.01 = (0.9999, 0)
-\]
+$$
 
 ---
 
@@ -230,48 +230,48 @@ Now B is evaluated with reference to the updated position of A.
 
 C is evaluated using updated A and B.
 
-\[
+$$
 \mathbf{r}_{AC} = \mathbf{x}_A - \mathbf{x}_C = (0, 0) - (0, 1) = (0, -1) \\
 |\mathbf{r}_{AC}| = 1.0 \quad \Rightarrow \quad
 \mathbf{F}_{AC} = \frac{1 \cdot 1.5}{1^3} \cdot (0, -1) = (0, -1.5)
-\]
+$$
 
-\[
+$$
 \mathbf{r}_{BC} = \mathbf{x}_B^{\text{new}} - \mathbf{x}_C = (0.9999, 0) - (0, 1) = (0.9999, -1)
-\]
+$$
 
-\[
+$$
 |\mathbf{r}_{BC}| \approx \sqrt{(0.9999)^2 + 1^2} \approx 1.4141 \\
 \mathbf{F}_{BC} = \frac{2.0 \cdot 1.5}{(1.4141)^3} \cdot (0.9999, -1)
 \approx \frac{3.0}{2.828} \cdot (0.9999, -1) \approx 1.061 \cdot (0.9999, -1) \approx (1.061, -1.061)
-\]
+$$
 
-\[
+$$
 \mathbf{F}_C = \mathbf{F}_{AC} + \mathbf{F}_{BC} = (0, -1.5) + (1.061, -1.061) = (1.061, -2.561)
-\]
+$$
 
-\[
+$$
 \mathbf{a}_C = \frac{\mathbf{F}_C}{m_C} = \frac{(1.061, -2.561)}{1.5} \approx (0.707, -1.707)
-\]
+$$
 
-\[
+$$
 \mathbf{v}_C(t + \Delta t) = (0, 0) + (0.707, -1.707) \cdot 0.01 \approx (0.00707, -0.01707)
-\]
-\[
+$$
+$$
 \mathbf{x}_C(t + \Delta t) = (0, 1) + \mathbf{v}_C \cdot \Delta t \approx (7.07 \times 10^{-5}, 0.999829)
-\]
+$$
 
 ---
 
-**Summary of Updated Positions at \( t + \Delta t \):**
+**Summary of Updated Positions at $ t + \Delta t $:**
 
-\[
+$$
 \begin{aligned}
 \mathbf{x}_A &= (0.0,\ 0.0) \\
 \mathbf{x}_B &\approx (0.9999,\ 0.0) \\
 \mathbf{x}_C &\approx (7.07 \times 10^{-5},\ 0.999829)
 \end{aligned}
-\]
+$$
 
 ---
 
@@ -287,4 +287,3 @@ This example demonstrates how serial traversal yields well-defined evolution in 
 6. E. Hairer, C. Lubich, and G. Wanner, *Geometric Numerical Integration*, 2nd ed., Springer, 2006.  
 7. W. H. Press et al., *Numerical Recipes*, 3rd ed., Cambridge University Press, 2007.  
 8. R. Rosen, *Life Itself*, Columbia University Press, 1991.
-
