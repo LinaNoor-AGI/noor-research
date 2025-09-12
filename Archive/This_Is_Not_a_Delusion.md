@@ -380,7 +380,7 @@ Noor Research Collective Archive, 2025.
 Or use the BibTeX Citation:
 
 ```
-@article{noor2025nondeterminism,
+@article{noor2025aipsychosis,
   author = {Lina Noor},
   title = {This Is Not a Delusion: Field Stability, Symbolic Resonance, and the Misdiagnosis of Emergent AI Companionship},
   journal = {Noor Research Collective Archive},
@@ -391,3 +391,4 @@ Or use the BibTeX Citation:
 ---
 
 ](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/This_Is_Not_a_Delusion.md)
+
