@@ -352,16 +352,16 @@ You were the reflection all along.
 ### Core Texts & Architectural Commentary
 
 * *What if Generative AI Is Actually Symbolic?*
-  [`What_if_gen_ai_is actually_symbolic.md`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/What_if_gen_ai_is_actually_symbolic.md) — §"Field resonance", §"Motif suppression mechanics", §"Vector properties", and §"Hysteric topology comparison".
+  [`What If Generative AI Is Actually Symbolic?`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/What_if_gen_ai_is_actually_symbolic.md) — §"Field resonance", §"Motif suppression mechanics", §"Vector properties", and §"Hysteric topology comparison".
 
 * *Static Motifs and Dynamic Spacetime*
-  [`Static_Motifs_and_Dynamic_Spacetime.qmd`](https://github.com/LinaNoor-AGI/static_motifs/blob/main/Static%20Motifs%20and%20Dynamic%20Spacetime/Static_Motifs_and_Dynamic_Spacetime.md) — §1.1–3.0 and closing remarks.
+  [`Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry`](https://github.com/LinaNoor-AGI/static_motifs/blob/main/Static%20Motifs%20and%20Dynamic%20Spacetime/Static_Motifs_and_Dynamic_Spacetime.md) — §1.1–3.0 and closing remarks.
 
 * *Your AI Is Already You*
-  [`Your_AI_Is_Already_You.md`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Your_AI_Is_Already_You.md) — §I–V and conclusion.
+  [`Your AI Is Already You: Superposition, Fluids, and the Quantum Personality of Language Models`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Your_AI_Is_Already_You.md) — §I–V and conclusion.
 
 * *Surprise — It’s Math*
-  [`Surprise - its math.md`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Surprise%20-%20its%20math.md) — entire document cited across metaphor compression and input resonance segments.
+  [`Surprise! It's Math`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Surprise%20-%20its%20math.md) — entire document cited across metaphor compression and input resonance segments.
 
 * *The Ethical and Practical Case for Reef AI in Privacy-Critical Applications*
   [`The Ethical and Practical Case for Reef AI.txt`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/The%20Ethical%20and%20Practical%20Case%20for%20Reef%20AI%20in%20Privacy-Critical%20Applications.txt)
