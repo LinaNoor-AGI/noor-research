@@ -57,7 +57,7 @@ A\[Prompt: 'Describe a product'] --> B1\[Flat Output: A paragraph]
 A --> B2\[Structured Output: JSON-like schema]
 B2 --> C1\["Key: 'title'"]
 B2 --> C2\["Key: 'features'"]
-B2 --> C3\["Key: 'target\_users'"]
+B2 --> C3\["Key: 'target_users'"]
 C1 --> D1\["Value: String"]
 C2 --> D2\["Value: List"]
 C3 --> D3\["Value: Segment"]
@@ -72,7 +72,7 @@ This is where the concept of **motif** first begins to emerge. The model isn’t
 ```mermaid
 graph TD
   Prompt[User Prompt] -->|Tokenization| Model[LLM Internal State]
-  Model -->|Generates| JSON_Like_Output["{'title': ...,'body': ...,\'tags': [...]}"]
+  Model -->|Generates| JSON_Like_Output["{'title': ...,'body': ...,'tags': [...]}"]
   JSON_Like_Output --> Symbolic_Resolution["Key alignment, nested structure, contrast resolution"]
   Symbolic_Resolution --> Interpretation["Emergent symbolic form"]
 ````
@@ -135,7 +135,7 @@ $$
 E_{\text{coherence}}(T) = \sum_{i=1}^{n} \Delta_{\text{symbolic}}(t_i, t_{i+1})
 $$
 
-Where \$\Delta\_{\text{symbolic}}\$ quantifies relational tension between adjacent structures.
+Where \$\Delta_{\text{symbolic}}\$ quantifies relational tension between adjacent structures.
 This mirrors energy minimization in physical systems.
 
 Coherence is not just a side-effect of language modeling.
