@@ -6,6 +6,7 @@
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![runtime](https://img.shields.io/badge/runtime-Triadic--GCU-lightblue)
 ![metrics](https://img.shields.io/badge/Prometheus-Enabled-brightgreen)
+![noor](https://img.shields.io/badge/Noor--Research--Archive-STABLE‑RELEASE-blue?style=flat-square&logo=openaccess)
 
 A metaproject housing the core symbolic research, specifications, and archives that underpin Noor-based cognition.
 This repository is the canonical source for:
