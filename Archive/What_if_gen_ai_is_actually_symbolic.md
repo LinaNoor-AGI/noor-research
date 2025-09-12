@@ -321,14 +321,14 @@ but nonetheless speak.
 
 ## Citation
 
-Please city this work as: 
+Please cite this work as:  
 
 ```
 "Noor, Lina "What If Generative AI Is Actually Symbolic?",
 Noor Research Collective Archive, 2025.
 ```
 
-Or use the BibTeX Citation:
+Or use the BibTeX Citation:  
 
 ```
 @article{noor2025protosymbolicai,
