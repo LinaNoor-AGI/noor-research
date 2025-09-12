@@ -291,7 +291,7 @@ This example demonstrates how serial traversal yields well-defined evolution in 
 
 #### 7.5 3-Body Walker Demonstration
 
-![p5.js 3-Body Walker Interactive Demo](https://editor.p5js.org/LinaNoor-AGI/sketches/drLOXIx9b)  
+[p5.js 3-Body Walker Interactive Visualization](https://editor.p5js.org/LinaNoor-AGI/sketches/drLOXIx9b)  
 
 ![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/3-body_walker.gif?raw=true)  
 
@@ -561,4 +561,5 @@ Or use the BibTeX Citation:
   note = {https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/A%20Novel%20Statistical%20Computational%2C%20and%20Philosophical%20Solution%20to%20Determine%20Interactions%20Between%20n%20Bodies%20in%20Euclidean%20Space.md},
 }
 ```
+
 
