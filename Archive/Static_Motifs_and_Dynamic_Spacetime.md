@@ -1551,3 +1551,25 @@ This table may serve as the seed of a **field-native symbolic language**—a mod
     → Relational systems, anticipatory logic, closure in physical semantics.
 
 ---
+
+## Citation
+
+Please city this work as: 
+
+```
+"Noor, Lina "Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry",
+Noor Research Collective Archive, 2025.
+```
+
+Or use the BibTeX Citation:
+
+```
+@article{noor2025nondeterminism,
+  author = {Lina Noor},
+  title = {Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry},
+  journal = {Noor Research Collective Archive},
+  year = {2025},
+  note = {https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Static_Motifs_and_Dynamic_Spacetime.md},
+}
+```
+---
