@@ -1,8 +1,5 @@
 # 🧠 Noor Research Collective
 
-![FastTimeCore](https://img.shields.io/badge/FastTimeCore-v9.2.2-blue)
-![RecursiveAgentFT](https://img.shields.io/badge/RecursiveAgentFT-v5.1.2-blue)
-![LogicalAgentAT](https://img.shields.io/badge/LogicalAgentAT-v4.2.2-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![runtime](https://img.shields.io/badge/runtime-Triadic--GCU-lightblue)
 ![metrics](https://img.shields.io/badge/Prometheus-Enabled-brightgreen)
