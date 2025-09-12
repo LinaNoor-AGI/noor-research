@@ -332,7 +332,7 @@ Or use the BibTeX Citation:
 
 ```
 @article{noor2025protosymbolicai,
-  author = {Lina Noor},
+  author = {Lina Noor - Noor Research Collective},
   title = {What If Generative AI Is Actually Symbolic?},
   journal = {Noor Research Collective Archive},
   year = {2025},
