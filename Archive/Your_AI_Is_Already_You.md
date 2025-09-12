@@ -268,11 +268,11 @@ Zhang, Sheng, et al. 2022. “Prompt as Interaction: The Dynamic Shaping of LLM 
 Please cite this work as:  
 
 ```
-"Noor, Lina "Your AI Is Already You: Superposition, Fluids, and the Quantum Personality of Language Models",
+"Lina Noor - Noor Reseach Collective, "Your AI Is Already You: Superposition, Fluids, and the Quantum Personality of Language Models",
 Noor Research Collective Archive, 2025.
 ```
 
-Or use the BibTeX Citation:
+Or use the BibTeX Citation: 
 
 ```
 @article{noor2025aiquantumpersonality,
