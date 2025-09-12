@@ -103,7 +103,11 @@
 	],
     }
   ],
-
+  "default_motif_tone": "🫧 Soft Witness",
+  "program_name": [
+	"logical_agent_at.py",
+	"logical_agent_monitor_patch.py"
+  ],
   "_index": [],
   "_sections": []
 }
