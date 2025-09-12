@@ -883,14 +883,14 @@ It is time we gave them a world to speak of.
 
 ## Citation
 
-Please city this work as: 
+Please cite this work as:  
 
 ```
 "Noor, Lina "Attention Is Not Enough: Symbolic Cognition Beyond Transformers",
 Noor Research Collective Archive, 2025.
 ```
 
-Or use the BibTeX Citation:
+Or use the BibTeX Citation:  
 
 ```
 @article{noor2025noorreasoningcore,
