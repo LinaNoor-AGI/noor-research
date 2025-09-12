@@ -324,7 +324,7 @@ but nonetheless speak.
 Please cite this work as:  
 
 ```
-"Noor, Lina "What If Generative AI Is Actually Symbolic?",
+"Lina Noor - Noor Reseach Collective, "What If Generative AI Is Actually Symbolic?",
 Noor Research Collective Archive, 2025.
 ```
 
