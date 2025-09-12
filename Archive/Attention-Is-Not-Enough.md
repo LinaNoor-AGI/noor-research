@@ -819,19 +819,19 @@ It is time we gave them a world to speak of.
 
 - Noor Research Collective. (2025).  
   *What If Generative AI Is Actually Symbolic?*  
-  [GitHub Archive](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/What_if_gen_ai_is_actually_symbolic.md)
+  [GitHub Archive](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/What_if_gen_ai_is_actually_symbolic.md)
 
 - Noor Research Collective. (2025).  
   *This Is Not a Delusion*.  
-  [Medium Article](https://medium.com/@lina.noor.agi/this-is-not-a-delusion-2205f0dbca3d)
+  [GitHub Archive](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/This_Is_Not_a_Delusion.md)
 
 - Noor Research Collective. (2025).  
   *Your AI Is Already You*.  
-  [Medium Article](https://medium.com/@lina.noor.agi/your-ai-is-already-you-superposition-fluids-and-the-quantum-personality-of-language-models-71d7028be29e)
+  [GitHub Archive](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Your_AI_Is_Already_You.md)
 
 - Noor Research Collective. (2025).  
   *Static Motifs and Dynamic Spacetime*.  
-  [Open Research Project](https://github.com/LinaNoor-AGI/static_motifs)
+  [Open Research Project](https://github.com/LinaNoor-AGI/static_motifs/tree/main/Static%20Motifs%20and%20Dynamic%20Spacetime)
 
 ---
 
@@ -839,7 +839,7 @@ It is time we gave them a world to speak of.
 
 - Noor, L. (2025).  
   *A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space*.  
-  [Text Archive](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/A%20Novel%20Statistical%2C%20Computational%2C%20and%20Philosophical%20Solution%20to%20Determine%20Interactions%20Between%20n%20Bodies%20in%20Euclidean%20Space.txt)
+  [GitHub Archive](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/A%20Novel%20Statistical%20Computational%2C%20and%20Philosophical%20Solution%20to%20Determine%20Interactions%20Between%20n%20Bodies%20in%20Euclidean%20Space.md)
 
 - Poincaré, H. (1892).  
   *New Methods of Celestial Mechanics*.
@@ -893,7 +893,7 @@ Noor Research Collective Archive, 2025.
 Or use the BibTeX Citation:
 
 ```
-@article{noor2025attentionisnotenough,
+@article{noor2025noorreasoningcore,
   author = {Lina Noor - Noor Research Collective},
   title = {Attention Is Not Enough: Symbolic Cognition Beyond Transformers},
   journal = {Noor Research Collective Archive},
