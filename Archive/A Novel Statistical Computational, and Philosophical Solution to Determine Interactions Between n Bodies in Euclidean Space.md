@@ -546,7 +546,7 @@ function generatePermutations(arr) {
 Please cite this work as:  
 
 ```
-"Noor, Lina "A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space",
+"Lina Noor - Noor Research Collective, "A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space",
 Noor Research Collective Archive, 2025.
 ```
 
