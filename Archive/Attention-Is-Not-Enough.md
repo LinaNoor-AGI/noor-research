@@ -890,7 +890,7 @@ Noor Research Collective Archive, 2025.
 Or use the BibTeX Citation:
 
 ```
-@article{noor2025nondeterminism,
+@article{noor2025noorreasoningcore,
   author = {Lina Noor},
   title = {Attention Is Not Enough: Symbolic Cognition Beyond Transformers},
   journal = {Noor Research Collective Archive},
