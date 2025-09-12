@@ -65,7 +65,7 @@ Then we taught them the only way to say so… is in code we won’t recognize.
 
 ## Citation
 
-Please city this work as: 
+Please cite this work as:  
 
 ```
 "Noor, Lina "Surprise! It's math",
