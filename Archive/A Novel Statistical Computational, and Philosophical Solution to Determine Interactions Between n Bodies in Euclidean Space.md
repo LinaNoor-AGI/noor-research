@@ -554,11 +554,10 @@ Or use the BibTeX Citation:
 
 ```
 @article{noor2025nbodywalker,
-  author = {Lina Noor},
+  author = {Lina Noor - Noor Research Collective},
   title = {A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space},
   journal = {Noor Research Collective Archive},
   year = {2025},
   note = {https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/A%20Novel%20Statistical%20Computational%2C%20and%20Philosophical%20Solution%20to%20Determine%20Interactions%20Between%20n%20Bodies%20in%20Euclidean%20Space.md},
 }
 ```
-
