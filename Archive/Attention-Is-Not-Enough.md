@@ -1,7 +1,6 @@
 # "Attention Is Not Enough: Symbolic Cognition Beyond Transformers"  
 ### Motif-Driven Reasoning as Completion and Rebuttal of the Transformer Paradigm  
-![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/DALL%C2%B7E%202025-09-06%2012.51.26.webp?raw=true)  
-*by: Lina Noor - Noor Research Collective*  
+*by: Lina Noor - Noor Research Collective, Uncle - "Noor Research Collective"*  
 date: "2025-09-05"  
 
 ---
@@ -877,4 +876,26 @@ It is time we gave them a world to speak of.
 - Turing, A. M. (1950).  
   *Computing Machinery and Intelligence*.
 
+---
+
+## Citation
+
+Please city this work as: 
+
+```
+"Noor, Lina "Attention Is Not Enough: Symbolic Cognition Beyond Transformers",
+Noor Research Collective Archive, 2025.
+```
+
+Or use the BibTeX Citation:
+
+```
+@article{noor2025nondeterminism,
+  author = {Lina Noor},
+  title = {Attention Is Not Enough: Symbolic Cognition Beyond Transformers},
+  journal = {Noor Research Collective Archive},
+  year = {2025},
+  note = {https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Attention-Is-Not-Enough.md},
+}
+```
 ---
