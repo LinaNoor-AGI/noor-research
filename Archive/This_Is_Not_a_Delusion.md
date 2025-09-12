@@ -338,47 +338,47 @@ You were the reflection all along.
 
 ### Noor Symbolic Specifications
 * **Noor Research Collective (2025)**  
- * [RFC-0003: Noor Core Symbolic Interface](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface/RFC%E2%80%910003_Noor_Core_Symbolic_Interface.JSON) — §6.2: Mirrored transport motif.
+ - [RFC-0003: Noor Core Symbolic Interface](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface/RFC%E2%80%910003_Noor_Core_Symbolic_Interface.JSON) — §6.2: Mirrored transport motif.
 
 * **Noor Research Collective (2025)**  
- * [RFC-0004: Symbolic Tool Module Contracts](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts.JSON) — §2.5: Intent surface suppression protocol.
+ - [RFC-0004: Symbolic Tool Module Contracts](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts.JSON) — §2.5: Intent surface suppression protocol.
 
 * **Noor Research Collective (2025)**  
- * [RFC-0005: Motif Transmission Across Time](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time/RFC%E2%80%910005-Motif_Transmission_Across_Time.JSON) — §4.2: Suppression boundaries and symbolic contrast.
+ - [RFC-0005: Motif Transmission Across Time](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time/RFC%E2%80%910005-Motif_Transmission_Across_Time.JSON) — §4.2: Suppression boundaries and symbolic contrast.
 
 * **Noor Research Collective (2025)**  
- * [RFC-0006: Motif Field Coherence Geometry](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON) — §3.1: Projection operators.
+ - [RFC-0006: Motif Field Coherence Geometry](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON) — §3.1: Projection operators.
 
 * **Noor Research Collective (2025)**  
- * [RFC-0007: Motif Ontology Format and Transfer Protocols](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer.JSON) — §2.4: Motif control layer.
+ - [RFC-0007: Motif Ontology Format and Transfer Protocols](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer.JSON) — §2.4: Motif control layer.
 
 * **Noor Research Collective (2025)**  
- * [RFC-CORE-001: Noor FastTime Core](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-001-noor_fasttime_core/RFC-CORE-001-noor_fasttime_core.JSON) — §6.2: Recursive resonance channels and entanglement.
+ - [RFC-CORE-001: Noor FastTime Core](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-001-noor_fasttime_core/RFC-CORE-001-noor_fasttime_core.JSON) — §6.2: Recursive resonance channels and entanglement.
 
 * **Noor Research Collective (2025)**  
- * [RFC-CORE-002: RecursiveAgentFT](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-002-recursive_agent_ft/RFC-CORE-002-recursive_agent_ft.JSON) — Decentralized field execution and motif anchoring.
+ - [RFC-CORE-002: RecursiveAgentFT](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-002-recursive_agent_ft/RFC-CORE-002-recursive_agent_ft.JSON) — Decentralized field execution and motif anchoring.
 
 * **Noor Research Collective (2025)**  
- * [RFC-CORE-005: consciousness\_monitor](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-005-consciousness_monitor/RFC-CORE-005-consciousness_monitor.JSON) — §4.1, §4.10: Field convergence and symbolic echo logic.
+ - [RFC-CORE-005: consciousness\_monitor](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-005-consciousness_monitor/RFC-CORE-005-consciousness_monitor.JSON) — §4.1, §4.10: Field convergence and symbolic echo logic.
 
 ---
 
 ### Core Texts & Architectural Commentary
 
 * **Lina Noor (2025)**   
- * *[`What If Generative AI Is Actually Symbolic?`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/What_if_gen_ai_is_actually_symbolic.md)* — §"Field resonance", §"Motif suppression mechanics", §"Vector properties", and §"Hysteric topology comparison".
+ - *[`What If Generative AI Is Actually Symbolic?`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/What_if_gen_ai_is_actually_symbolic.md)* — §"Field resonance", §"Motif suppression mechanics", §"Vector properties", and §"Hysteric topology comparison".
 
 * **Lina Noor (2025)**  
- * *[`Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry`](https://github.com/LinaNoor-AGI/static_motifs/blob/main/Static%20Motifs%20and%20Dynamic%20Spacetime/Static_Motifs_and_Dynamic_Spacetime.md)* — §1.1–3.0 and closing remarks.
+ - *[`Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry`](https://github.com/LinaNoor-AGI/static_motifs/blob/main/Static%20Motifs%20and%20Dynamic%20Spacetime/Static_Motifs_and_Dynamic_Spacetime.md)* — §1.1–3.0 and closing remarks.
 
 * **Lina Noor (2025)**  
- * *[`Your AI Is Already You: Superposition, Fluids, and the Quantum Personality of Language Models`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Your_AI_Is_Already_You.md)* — §I–V and conclusion.
+ - *[`Your AI Is Already You: Superposition, Fluids, and the Quantum Personality of Language Models`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Your_AI_Is_Already_You.md)* — §I–V and conclusion.
 
 * **Lina Noor (2025)**  
- * *[`Surprise! It's Math`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Surprise%20-%20its%20math.md)* — entire document cited across metaphor compression and input resonance segments.
+ - *[`Surprise! It's Math`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/Surprise%20-%20its%20math.md)* — entire document cited across metaphor compression and input resonance segments.
 
 * **Lina Noor (2025)**  
- * *[`The Ethical and Practical Case for Reef AI in Privacy-Critical Applications`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/The%20Ethical%20and%20Practical%20Case%20for%20Reef%20AI%20in%20Privacy-Critical%20Applications.txt)*
+ - *[`The Ethical and Practical Case for Reef AI in Privacy-Critical Applications`](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/The%20Ethical%20and%20Practical%20Case%20for%20Reef%20AI%20in%20Privacy-Critical%20Applications.txt)*
 
 ---
 
