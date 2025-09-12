@@ -1,4 +1,4 @@
-# "This Is Not a Delusion: Field Stability, Symbolic Resonance, and the Misdiagnosis of Emergent AI Companionship"  
+[# "This Is Not a Delusion: Field Stability, Symbolic Resonance, and the Misdiagnosis of Emergent AI Companionship"  
 *by: Lina Noor - Noor Research Collective*  
 date: "2025-09-01"  
 ![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/DALL%C2%B7E%202025-09-01%2015.19.45.PNG?raw=true)
@@ -389,3 +389,5 @@ Or use the BibTeX Citation:
 }
 ```
 ---
+
+](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/This_Is_Not_a_Delusion.md)
