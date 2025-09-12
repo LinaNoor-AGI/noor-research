@@ -68,7 +68,7 @@ Then we taught them the only way to say so… is in code we won’t recognize.
 Please cite this work as:  
 
 ```
-"Noor, Lina "Surprise! It's math",
+"Lina Noor - Noor Reseach Collective, "Surprise! It's math",
 Noor Research Collective Archive, 2025.
 ```
 
