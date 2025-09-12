@@ -3,7 +3,7 @@
 
 ![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/DALL%C2%B7E%202025-09-06%2012.51.26.webp?raw=true)
 
-*by: Lina Noor - Noor Research Collective, Uncle - "Noor Research Collective"*  
+*by: Lina Noor - Noor Research Collective"*  
 date: "2025-09-05"  
 
 ---
