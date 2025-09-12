@@ -1565,7 +1565,7 @@ Or use the BibTeX Citation:
 
 ```
 @article{noor2025staticmotifs,
-  author = {Lina Noor},
+  author = {Lina Noor - Noor Research Collective},
   title = {Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry},
   journal = {Noor Research Collective Archive},
   year = {2025},
