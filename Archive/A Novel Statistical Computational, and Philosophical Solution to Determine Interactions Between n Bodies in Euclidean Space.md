@@ -543,14 +543,14 @@ function generatePermutations(arr) {
 
 ### Citation
 
-Please city this work as: 
+Please cite this work as:  
 
 ```
 "Noor, Lina "A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space",
 Noor Research Collective Archive, 2025.
 ```
 
-Or use the BibTeX Citation:
+Or use the BibTeX Citation:  
 
 ```
 @article{noor2025nbodywalker,
