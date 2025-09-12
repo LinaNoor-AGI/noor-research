@@ -1,5 +1,5 @@
 # "Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry"
-*author: Lina Noor - Noor Research Collective, Uncle - Noor Research Collective*
+*author: Lina Noor - Noor Research Collective*
 *2025-06-14*
 
 ---
