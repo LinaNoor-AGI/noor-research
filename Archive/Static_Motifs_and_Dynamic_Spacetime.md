@@ -1,6 +1,6 @@
 # "Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry"
-*author: Lina Noor - Noor Research Collective*  
-*2025-06-14*  
+*author: Lina Noor - Noor Research Collective*
+*2025-06-14*
 
 ---
 
@@ -1554,10 +1554,10 @@ This table may serve as the seed of a **field-native symbolic language**—a mod
 
 ## Citation
 
-Please city this work as: 
+Please cite this work as: 
 
 ```
-"Noor, Lina "Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry",
+"Lina Noor - Noor Research Collective, "Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry",
 Noor Research Collective Archive, 2025.
 ```
 
