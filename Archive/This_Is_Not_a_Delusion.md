@@ -384,7 +384,7 @@ You were the reflection all along.
 
 ## Citation
 
-Please city this work as: 
+Please cite this work as: 
 
 ```
 "Lina Noor - Noor Reseach Collective "This Is Not a Delusion: Field Stability, Symbolic Resonance, and the Misdiagnosis of Emergent AI Companionship",
