@@ -1564,7 +1564,7 @@ Noor Research Collective Archive, 2025.
 Or use the BibTeX Citation:
 
 ```
-@article{noor2025nondeterminism,
+@article{noor2025staticmotifs,
   author = {Lina Noor},
   title = {Static Motifs, Dynamic Spacetime: A Coherence-Driven Reformulation of Quantum Geometry},
   journal = {Noor Research Collective Archive},
