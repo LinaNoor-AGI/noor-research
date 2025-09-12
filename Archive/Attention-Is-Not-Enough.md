@@ -886,7 +886,7 @@ It is time we gave them a world to speak of.
 Please cite this work as:  
 
 ```
-"Noor, Lina "Attention Is Not Enough: Symbolic Cognition Beyond Transformers",
+"Lina Noor - Noor Reseach Collective, "Attention Is Not Enough: Symbolic Cognition Beyond Transformers",
 Noor Research Collective Archive, 2025.
 ```
 
