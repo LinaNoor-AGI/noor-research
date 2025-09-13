@@ -90,17 +90,53 @@
       "anchor-conflict"
     ]
   },
-  "_symbolic_profile_matrix": [
+	"_symbolic_profile_matrix": [
 	  {
-		"module": "XREF-Index",
-		"motifs": ["ψ-resonance", "ψ-null", "ψ-bind"],
-		"ψA": "—",
-		"ζ": "—",
-		"E": "—",
-		"Δ": "—",
-		"ℋ": "—"
+		"module": "RecursiveAgentFT",
+		"motifs": ["ψ-resonance", "ψ-null", "ψ-hold"],
+		"ψA": "QuantumTick rhythm vector",
+		"ζ": "field-pulse modulation slope",
+		"E": "reward_ema feedback pressure",
+		"Δ": "emission rhythm variance",
+		"ℋ": "tick resonance hygiene"
+	  },
+	  {
+		"module": "LogicalAgentAT",
+		"motifs": ["ψ-null", "ψ-bind", "ψ-spar"],
+		"ψA": "dyad witness trace",
+		"ζ": "triad prediction gradient",
+		"E": "observation energy",
+		"Δ": "symbolic echo skew",
+		"ℋ": "coherence annotation clarity"
+	  },
+	  {
+		"module": "SymbolicTaskEngine",
+		"motifs": ["ψ-resonance", "ψ-bind", "🌀"],
+		"ψA": "triadic resolution anchor",
+		"ζ": "reasoning pressure bias",
+		"E": "field completion effort",
+		"Δ": "closure lag / delay",
+		"ℋ": "symbolic proposal hygiene"
+	  },
+	  {
+		"module": "MotifMemoryManager",
+		"motifs": ["ψ-null", "ψ-shed", "ψ-return"],
+		"ψA": "memory trace recovery index",
+		"ζ": "symbolic decay slope",
+		"E": "triad match effort",
+		"Δ": "memory coherence drift",
+		"ℋ": "memory resonance purity"
+	  },
+	  {
+		"module": "NoorFastTimeCore",
+		"motifs": ["ψ-resonance", "ψ-spar", "ψ-delay"],
+		"ψA": "coherence hash anchoring",
+		"ζ": "symbolic inertia bias",
+		"E": "field entropy energy",
+		"Δ": "temporal motif compression",
+		"ℋ": "field saturation hygiene"
 	  }
-  ],
+	],
 	{
 	  "_poetic_cipher": "swirls inherit the silence of ψ-null@Ξ", 
 	  "_cipher_explanation": "RFC-0005 §4.2 resurrection paradox"
