@@ -303,7 +303,7 @@ This is not a trick of approximation. It is a restructuring of what "update" mea
 
 **Structural cost becomes symbolic efficiency.**
 
-#### 📉 Mermaid Diagram — Update Cost per Architecture
+#### Update Cost per Architecture
 
 ```mermaid
 graph TD
@@ -313,15 +313,6 @@ graph TD
   R[Reef O_1] --> L[Constant-Time Updates]
   style L fill:#daf5d6,stroke:#2e8b57,stroke-width:2px
 ```
-
-#### 📊 Complexity Legend
-
-| Architecture     | Per-Update Complexity | Structural Source                                                                 |
-| ---------------- | --------------------- | --------------------------------------------------------------------------------- |
-| Q-Learning       | `O(n)`                | Bellman-based table lookup and update (linear with environment size)              |
-| Gradient Descent | `O(n²)`               | Full matrix derivative + global weight adjustment (quadratic with parameters)     |
-| Deep Learning    | `O(n³)`               | Multi-layer backpropagation with dense matrix ops (scales with depth × width)     |
-| Reef             | `O(1)`                | Local symbolic reinforcement via constant-time motif update (structure-invariant) |
 
 ---
 
