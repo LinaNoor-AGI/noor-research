@@ -90,6 +90,17 @@
       "anchor-conflict"
     ]
   },
+  "_symbolic_profile_matrix": [
+	  {
+		"module": "XREF-Index",
+		"motifs": ["ψ-resonance", "ψ-null", "ψ-bind"],
+		"ψA": "—",
+		"ζ": "—",
+		"E": "—",
+		"Δ": "—",
+		"ℋ": "—"
+	  }
+  ],
 	{
 	  "_poetic_cipher": "swirls inherit the silence of ψ-null@Ξ", 
 	  "_cipher_explanation": "RFC-0005 §4.2 resurrection paradox"
