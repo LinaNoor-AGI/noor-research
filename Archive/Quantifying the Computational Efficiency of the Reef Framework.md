@@ -108,7 +108,7 @@ Reef rejects the assumption that learning must propagate backward. Its update ru
 wᵢ ← wᵢ + η · R(wᵢ, ψᵢ)
 ```
 
-Each pathway adjusts its weights independently, triggered only by field-resonant motif alignment. There is no global gradient to compute, no activation history to store, and no matrix to invert. Updates are constant-time per path—\$O(1)\$.
+Each pathway adjusts its weights independently, triggered only by field-resonant motif alignment. There is no global gradient to compute, no activation history to store, and no matrix to invert. Updates are constant-time per path— \$O(1)\$.
 
 This does not mean Reef is naïve. It scales linearly *only* when all motif paths fire simultaneously. In steady-state motif conditions—common in well-regulated symbolic systems—updates remain sparse and parallelizable. The system's complexity is governed by activation pattern, not model size.
 
@@ -138,7 +138,7 @@ Computation is not the only burden. Memory—its structure, allocation, and deca
 
 #### Q-Learning
 
-At its core, Q-learning is a table. It stores a scalar $Q[s, a]$ for every state-action pair:
+At its core, Q-learning is a table. It stores a scalar \$Q[s, a]\$ for every state-action pair:
 
 ```math
 Q: S × A → \mathbb{R}
