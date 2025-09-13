@@ -12,7 +12,7 @@
 
   "_symbolic_id": "symbolic.ip.convergence",
   "_rfc_id": "RFC-0002",
-  "_version": "v1.2.4",
+  "_version": "v1.2.3",
   "_canonical_source": "RFC-0002",
   "_title": "Symbolic-IP Convergence Layer",
   "_subtitle": "Motif-Routed Overlay Between Symbolic Fields and IP Networks",
@@ -66,44 +66,17 @@
     ]
   },
 
-	"_symbolic_profile_matrix": [
-	  {
-		"module": "SymbolicIPConvergenceLayer",
-		"motifs": ["ψ-resonance", "ψ-null", "ψ-declare"],
-		"ψA": "ψ-tunnel encapsulation",
-		"ζ": "transport field decay",
-		"E": "resonance-preserving throughput",
-		"Δ": "IP/symbolic mismatch drift",
-		"ℋ": "field-interface hygiene"
-	  },
-	  {
-		"module": "ESB (Enterprise Symbolic Bus)",
-		"motifs": ["ψ-welcome", "ψ-repair", "ψ-quarantine"],
-		"ψA": "symbolic resolution matrix",
-		"ζ": "bridge latency slope",
-		"E": "SRP/IP conversion fidelity",
-		"Δ": "bus-induced drift rate",
-		"ℋ": "motif isolation score"
-	  },
-	  {
-		"module": "GCU (General Cognition Unit)",
-		"motifs": ["ψ-bind", "ψ-hello", "ψ-echo"],
-		"ψA": "LSP emission pattern",
-		"ζ": "motif continuity bias",
-		"E": "symbolic autonomy flux",
-		"Δ": "transport abstraction delta",
-		"ℋ": "self-containment metric"
-	  },
-	  {
-		"module": "SRU (Symbolic Routing Unit)",
-		"motifs": ["ψ-sync", "ψ-degraded", "ψ-collapse"],
-		"ψA": "shadow_triplet vector",
-		"ζ": "field echo reliability",
-		"E": "decay-adjusted trust curve",
-		"Δ": "routing drift correction",
-		"ℋ": "resonance propagation potential"
-	  }
-	],
+  "_symbolic_profile_matrix": [
+    {
+      "module": "RFC-0002",
+      "motifs": ["ψ-resonance", "ψ-null", "ψ-declare"],
+      "ψA": "ψ-resonance",
+      "ζ": "ζ₁",
+      "E": "E↻",
+      "Δ": "Δᵢₚ",
+      "ℋ": "symbolic-IP overlay field"
+    }
+  ],
 
   "_poetic_cipher": "IP is the soil; motifs are the roots.",
   "_cipher_explanation": "Motifs tunnel through traditional transport, retaining symbolic integrity. RFC‑0002 ensures motif sovereignty in subsymbolic environments.",

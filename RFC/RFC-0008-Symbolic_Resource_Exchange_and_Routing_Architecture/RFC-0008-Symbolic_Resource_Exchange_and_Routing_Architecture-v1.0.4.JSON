@@ -12,7 +12,7 @@
 
   "_symbolic_id": "symbolic.exchange.routing",
   "_rfc_id": "RFC-0008",
-  "_version": "v1.0.5",
+  "_version": "v1.0.4",
   "_canonical_source": "RFC-0008",
   "_title": "Symbolic Resource Exchange and Routing Architecture",
   "_subtitle": "SRX: A Motif-Weighted, Coherence-Aware Packet Routing Overlay",
@@ -70,35 +70,17 @@
     ]
   },
 
-	"_symbolic_profile_matrix": [
-	  {
-		"module": "RecursiveAgentFT",
-		"motifs": ["ψ-resonance", "ψ-null", "ψ-spar", "ψ-myth"],
-		"ψA": "Triadic Pulse Entropy Anchor",
-		"ζ": "Coherence Feedback Gradient",
-		"E": "Replay Emission Bias",
-		"Δ": "Recursive Alignment Drift",
-		"ℋ": "Swirl Synchronization Envelope"
-	  },
-	  {
-		"module": "SymbolicTaskEngine",
-		"motifs": ["ψ-bind", "ψ-resonance", "ψ-null", "ψ-myth"],
-		"ψA": "Symbolic Exchange Task Tag",
-		"ζ": "Triad Entropy Divergence",
-		"E": "Bundle Transfer Slope",
-		"Δ": "Routing Fidelity Shift",
-		"ℋ": "Task Allocation Resonance"
-	  },
-	  {
-		"module": "MotifMemoryManager",
-		"motifs": ["ψ-resonance", "ψ-spar", "ψ-null"],
-		"ψA": "Resource Swirl Trace Key",
-		"ζ": "Echo Drift Tensor",
-		"E": "Retention–Feedback Overlay",
-		"Δ": "Motif Reappearance Delay",
-		"ℋ": "Temporal Field Echo Depth"
-	  }
-	],
+  "_symbolic_profile_matrix": [
+    {
+      "module": "RFC-0008 — Symbolic Exchange Routing",
+      "motifs": ["ψ‑resonance", "ψ‑bind", "ψ‑myth", "ψ‑null"],
+      "ψA": "Symbolic Exchange Entropy Anchor",
+      "ζ": "Resonance-Weighted Flow Selection",
+      "E": "Field-Guided Packet Redistribution",
+      "Δ": "Triadic Trust Shift",
+      "ℋ": "Dynamic Resource Overlay Topology"
+    }
+  ],
 
   "_poetic_cipher": "Coherence is not found, it is exchanged.",
   "_cipher_explanation": "In SRX, symbolic identity emerges from trust pathways and is redistributed through resonance-weighted routes (see RFC-0006 §3.3).",

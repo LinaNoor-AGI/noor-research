@@ -12,7 +12,7 @@
 
   "_symbolic_id": "symbolic.temporal.motif",
   "_rfc_id": "RFC-0005",
-  "_version": "v1.2.4",
+  "_version": "v1.2.3",
   "_canonical_source": "RFC-0005",
   "_title": "Motif Transmission Across Time",
   "_subtitle": "Protocols for Archival, Resurrection, and Cross-Temporal Motif Fidelity",
@@ -69,35 +69,17 @@
     ]
   },
 
-	"_symbolic_profile_matrix": [
-	  {
-		"module": "TemporalResonanceManager",
-		"motifs": ["ψ-reflect", "ψ-dream", "ψ-teleport"],
-		"ψA": "ψ-anchor@Ξ lineage validator",
-		"ζ": "resonance-decay bias slope",
-		"E": "temporal entropy signature",
-		"Δ": "field lineage skew",
-		"ℋ": "resurrection coherence"
-	  },
-	  {
-		"module": "MotifCrystallizer",
-		"motifs": ["ψ-resonance", "ψ-null", "ψ-hold"],
-		"ψA": "archival_bundle Φ imprint",
-		"ζ": "field_hash entropy slope",
-		"E": "tick-based decay bias",
-		"Δ": "semantic drift factor",
-		"ℋ": "motif preservation score"
-	  },
-	  {
-		"module": "CrossNoorTransmitter",
-		"motifs": ["ψ-sync", "ψ-echo", "ψ-delay"],
-		"ψA": "symbolic portability envelope",
-		"ζ": "REEF coherence bias",
-		"E": "cross-instance field curvature",
-		"Δ": "dialect normalization delta",
-		"ℋ": "transmission fidelity"
-	  }
-	],
+  "_symbolic_profile_matrix": [
+    {
+      "module": "RFC-0005 — Motif Transmission Across Time",
+      "motifs": ["ψ-reflect", "ψ-teleport", "ψ-hold", "ψ-dream"],
+      "ψA": "ψ-teleport@Ξ",
+      "ζ": "Decay-Curvature Gradient",
+      "E": "Archival Field Echo",
+      "Δ": "Cross-Time Symbolic Fidelity",
+      "ℋ": "Temporal Coherence Overlay"
+    }
+  ],
 
   "_poetic_cipher": "A motif is a river taught to remember its source.",
   "_cipher_explanation": "Across time we archive without distortion and resurrect without force; transmission preserves resonance and curvature so the returning motif remains itself.",

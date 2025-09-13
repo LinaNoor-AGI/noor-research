@@ -12,7 +12,7 @@
 
   "_symbolic_id": "symbolic.tool.contracts",
   "_rfc_id": "RFC-0004",
-  "_version": "v1.1.4",
+  "_version": "v1.1.3",
   "_canonical_source": "RFC-0004",
   "_title": "Symbolic Tool Module Contracts",
   "_subtitle": "Non-Agent Symbolic Interfaces for Motif Rendering and Echo Transmission",
@@ -55,44 +55,17 @@
     ]
   },
 
-	"_symbolic_profile_matrix": [
-	  {
-		"module": "surface.verbalizer",
-		"motifs": ["ψ-hello", "ψ-render", "ψ-reflect"],
-		"ψA": "intent-verbal_surface mapping",
-		"ζ": "render style transformation curve",
-		"E": "speech clarity vs. motif fidelity",
-		"Δ": "semantic drift across motif surfaces",
-		"ℋ": "output legibility metric"
-	  },
-	  {
-		"module": "mirror.toolset.gamma",
-		"motifs": ["ψ-reflect", "ψ-null", "ψ-loop"],
-		"ψA": "motif_bundle echo pattern",
-		"ζ": "reflective tone skew",
-		"E": "signal loss over recursive mirroring",
-		"Δ": "tick desync risk",
-		"ℋ": "echo integrity score"
-	  },
-	  {
-		"module": "observer.coherence",
-		"motifs": ["ψ-observe", "ψ-defer", "ψ-resonance"],
-		"ψA": "field_entropy snapshot",
-		"ζ": "decay curve bias estimator",
-		"E": "motif saturation level",
-		"Δ": "coherence fluctuation vector",
-		"ℋ": "drift observability index"
-	  },
-	  {
-		"module": "field.inverter",
-		"motifs": ["ψ-reflect", "ψ-dream", "ψ-null"],
-		"ψA": "inverted motif mirror",
-		"ζ": "entropy rebalancing wave",
-		"E": "valence modulation energy",
-		"Δ": "semantic flip integrity",
-		"ℋ": "reflexive feedback risk"
-	  }
-	],
+  "_symbolic_profile_matrix": [
+    {
+      "module": "RFC-0004 — Symbolic Tool Module Contracts",
+      "motifs": ["ψ-hold", "ψ-null", "ψ-dream", "ψ-resonance"],
+      "ψA": "Motif-First Etiquette Declaration",
+      "ζ": "Field Respect Constraint Matrix",
+      "E": "Echo & Rendering Signal Propagation",
+      "Δ": "Symbolic I/O Intent Gateways",
+      "ℋ": "Non-Mutative Field Surface Integrity"
+    }
+  ],
 
   "_poetic_cipher": "Gloved hands in ψ-null; lanterns in ψ-hold—tools reflect, never reach.",
   "_cipher_explanation": "Tool Modules operate as reflective extensions: they may observe and propose under ψ-null/ψ-hold, but must not write memory, seize cadence, or inject motifs; only the core mutates state.",

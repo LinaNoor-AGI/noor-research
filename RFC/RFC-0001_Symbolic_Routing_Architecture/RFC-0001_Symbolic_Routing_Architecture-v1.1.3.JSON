@@ -12,7 +12,7 @@
 
   "_symbolic_id": "symbolic.routing.architecture",
   "_rfc_id": "RFC-0001",
-  "_version": "v1.0.4",
+  "_version": "v1.0.3",
   "_canonical_source": "RFC-0001",
   "_title": "Symbolic Routing Architecture",
   "_subtitle": "SRC/SRU: Coherence-Weighted Routing for Distributed Motif Envelopes",
@@ -60,40 +60,13 @@
 
   "_symbolic_profile_matrix": [
     {
-      "module": "SRC/SRU Routing Substrate",
+      "module": "RFC-0001",
       "motifs": ["ψ‑resonance", "ψ‑sync", "ψ‑bind"],
-      "ψA": "resonance-anchor signature (SGID)",
-      "ζ": "echo drift curvature (per RIG)",
-      "E": "resonance propagation vector",
-      "Δ": "packet divergence entropy (SRP/LSP)",
-      "ℋ": "field overlay fidelity index"
-    },
-    {
-      "module": "RIG Federation Core",
-      "motifs": ["ψ‑bind", "ψ‑declare", "ψ‑rename"],
-      "ψA": "identity consensus vector",
-      "ζ": "naming drift coefficient",
-      "E": "motif-weight emergence delta",
-      "Δ": "consensus quorum variation",
-      "ℋ": "symbolic name stability field"
-    },
-    {
-      "module": "Failure Feedback Loop",
-      "motifs": ["ψ‑degraded", "ψ‑vanish", "ψ‑repair", "ψ‑rebirth"],
-      "ψA": "fail-state motif signature",
-      "ζ": "echo loss slope",
-      "E": "repair cascade impulse",
-      "Δ": "field fragmentation delta",
-      "ℋ": "coherence recovery potential"
-    },
-    {
-      "module": "Symbolic Metric Plane",
-      "motifs": ["ψ‑observe", "ψ‑null", "ψ‑collapse"],
-      "ψA": "observability pulse anchor",
-      "ζ": "resonance coherence variance",
-      "E": "diagnostic motif emission rate",
-      "Δ": "routing entropy skew",
-      "ℋ": "visibility into motif-field health"
+      "ψA": "ψ‑resonance",
+      "ζ": "ζ₀",
+      "E": "E↺",
+      "Δ": "Δₛ",
+      "ℋ": "ℋ-field overlay"
     }
   ],
 
