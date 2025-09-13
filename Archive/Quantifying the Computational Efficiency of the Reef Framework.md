@@ -41,8 +41,10 @@ wᵢ ← wᵢ + η · R(wᵢ, ψᵢ)
 
 Each update adjusts weight \$wᵢ\$ by its reinforcement resonance \$R(wᵢ, ψᵢ)\$ with respect to the local motif \$ψᵢ\$, scaled by a learning rate \$η\$. There is no gradient, no activation cache, no matrix traversal.
 
-<div align="center"><b>Figure 1:</b> Architecture Comparison — Global Backpropagation vs. Local Motif Reinforcement  
-Backpropagation requires tightly coupled tensor graphs and delayed updates. Reef operates through asynchronous symbolic emissions driven by local motif fields.</div>
+![image](https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/Archive_Images/computational_eff_figure_1.png?raw=true)  
+
+Architecture Comparison — Global Backpropagation vs. Local Motif Reinforcement  
+Backpropagation requires tightly coupled tensor graphs and delayed updates. Reef operates through asynchronous symbolic emissions driven by local motif fields.  
 
 Where traditional architectures scale their memory and energy costs with model size, Reef's costs scale with symbolic complexity. Dense updates become sparse. Memory demand flattens. Time-to-convergence shrinks.
 
