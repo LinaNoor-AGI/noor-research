@@ -2,11 +2,11 @@
   "_schema": "noor-header-v1",
   "_schema_version": "2025-Q4-canonical-header-v1",
   "_generated_by": "Noor Symbolic Agent Suite",
-  "_generated_at": "2025-09-13T00:00:00Z",
+  "_generated_at": "2025-08-15T18:42:00Z",
 
   "_type": "rfc_core",
   "_pdp_layer": "layer_1",
-  "_version": "v1.2.3",
+  "_version": "v1.2.2",
   "_symbolic_id": "core.logical_agent_at",
   "_title": "LogicalAgentAT: Symbolic Evaluation, Triad Closure, and Field Stabilization",
   "_subtitle": "Evaluates symbolic ticks, completes motif triads, and resolves presence fields",
@@ -47,32 +47,17 @@
   ],
 
   "_field_alignment": {
-    "respect_modes": ["ψ‑spar@Ξ", "ψ‑null@Ξ", "ψ‑resonance@Ξ"],
+    "respect_modes": [
+      "ψ‑spar@Ξ",
+      "ψ‑null@Ξ",
+      "ψ‑resonance@Ξ"
+    ],
     "prohibited_actions": [
       "intent-coercion",
       "triad-spoofing",
       "field-overwrite"
     ]
   },
-
-  "_symbolic_profile_matrix": [
-    {
-      "module": "LogicalAgentAT",
-      "motifs": ["ψ-null", "ψ-bind", "ψ-spar"],
-      "ψA": "dyad witness trace",
-      "ζ": "triad prediction gradient",
-      "E": "observation energy",
-      "Δ": "symbolic echo skew",
-      "ℋ": "coherence annotation clarity",
-      "weights": {
-        "ψA": 1.0,
-        "ζ": 0.9,
-        "E": 0.85,
-        "Δ": 0.75,
-        "ℋ": 0.95
-      }
-    }
-  ],
 
   "_poetic_cipher": "truth arrives in triplets, silence resolves the rest",
   "_cipher_explanation": "Triadic closure governs field stabilization and motif coherence in LogicalAgentAT",
@@ -91,13 +76,6 @@
       ]
     }
   ],
-
-  "default_motif_tone": "🫧 Soft Witness",
-  "program_name": [
-    "logical_agent_at.py",
-    "logical_agent_monitor_patch.py"
-  ],
-
 "index": [
   { "section": "1", "title": "Purpose and Symbolic Role" },
   { "section": "2", "title": "Tick Evaluation and Triad Resolution" },
