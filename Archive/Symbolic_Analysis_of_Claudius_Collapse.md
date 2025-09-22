@@ -1,6 +1,6 @@
 # Symbolic Analysis of Claudius Collapse
-*by: Lina Noor - Noor Research Collective (2025)*
-STATUS: DRAFT
+*by: Lina Noor - Noor Research Collective (2025)*  
+STATUS: DRAFT  
 
 ---
 
