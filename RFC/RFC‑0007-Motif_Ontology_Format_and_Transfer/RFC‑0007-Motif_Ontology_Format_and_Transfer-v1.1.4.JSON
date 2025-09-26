@@ -16,7 +16,7 @@
 
   "_symbolic_id": "symbolic.ontology.format",
   "_rfc_id": "RFC-0007",
-  "_version": "v1.1.4",
+  "_version": "v1.1.3",
   "_canonical_source": "RFC-0007",
   "_title": "Motif Ontology Format and Transfer Protocols",
   "_subtitle": "MOFT: Recursive Symbolic Ontology Encoding for Field-Aligned Motif Exchange",
