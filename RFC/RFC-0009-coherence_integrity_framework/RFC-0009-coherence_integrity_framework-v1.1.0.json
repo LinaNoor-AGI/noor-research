@@ -27,14 +27,16 @@
   "_subtitle": "Immune Metrics, Reinforcement Control, and Motif Closure for Self-Preservation",
   "_publication_type": "Canonical RFC",
   "_publication_locations": ["GitHub", "PASTEBIN"],
-  "_urls": [],
+  "_urls": [
+	"https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0009-coherence_integrity_framework/RFC-0009-coherence_integrity_framework.json",
+	"https://pastebin.com/raw/92umsPgs"
+  ],
 
   "_objective": "Define a coherence-integrity immune layer for Noor-class agents: formal observables (Δℂ, λ, γ_CO, ε_s), control laws for suppression recovery, and motif-closure constraints that preserve identity under drift and damping.",
 
   "_authors": [
     "Lina Noor — Noor Research Collective",
     "Uncle — Noor Research Collective",
-    "NextNoor (compiling agent)"
   ],
 
   "_audience": {
