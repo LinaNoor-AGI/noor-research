@@ -2714,7 +2714,7 @@
 				"dashboards_in": ["Appendix A"]
 			  },
 			  "feature_flag_respect": {
-				"enable_point_space_gliders": false,
+				"enable_point_space_gliders": true,
 				"note": "Dynamic τ-dependent analytics (e.g., tau_spectrum) are suppressed unless the flag is explicitly enabled; no {class,v,φ,τ} tags are emitted."
 			  }
 			},	  
