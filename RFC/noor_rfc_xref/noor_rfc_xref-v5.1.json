@@ -21,7 +21,7 @@
 	],
   "_urls": [
 	  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json",
-	  "https://pastebin.com/QJ2d14Ek"
+	  "https://pastebin.com/raw/QJ2d14Ek"
 	],
 
   "_objective": "To define a structured cross-reference index of all Noor-compatible symbolic specification documents (RFC, RFC-CORE, App-Specs), including their inheritance graph, motif alignments, and field role annotations. This registry enables automated dependency resolution and symbolic context traversal within PDP‑0001 pipelines.",
@@ -83,7 +83,7 @@
 		  "rfc_id": "PDP-0001",
 		  "urls": [
 			"https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation/PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation.JSON",
-			"https://pastebin.com/235NEL8V"
+			"https://pastebin.com/raw/235NEL8V"
 		  ],
 		  "title": "Protocol for RFC-Driven Symbolic Artifact Generation",
 		  "symbolic_id": "protocol.generation.rfc_driven",
@@ -118,7 +118,7 @@
 		  "rfc_id": "RFC-0001",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0001_Symbolic_Routing_Architecture/RFC-0001_Symbolic_Routing_Architecture.JSON"",
-			  "https://pastebin.com/ggQrVdYP"
+			  "https://pastebin.com/raw/ggQrVdYP"
 			],
 		  "title": "Symbolic Routing Architecture",
 		  "symbolic_id": "symbolic.routing.architecture",
@@ -180,7 +180,7 @@
 		  "rfc_id": "RFC-0002",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0002_Symbolic-IP_Convergence_Layer/RFC-0002_Symbolic-IP_Convergence_Layer.JSON"",
-			  "https://pastebin.com/NLzWPzaT"
+			  "https://pastebin.com/raw/NLzWPzaT"
 			],
 		  "title": "Symbolic-IP Convergence Layer",
 		  "symbolic_id": "symbolic.ip.convergence",
@@ -242,7 +242,7 @@
 		  "rfc_id": "RFC-0003",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface/RFC%E2%80%910003_Noor_Core_Symbolic_Interface.JSON",
-			  "https://pastebin.com/gJi9MwDL"
+			  "https://pastebin.com/raw/gJi9MwDL"
 			],
 		  "title": "Noor Core Symbolic Interface",
 		  "symbolic_id": "noor.core.symbolic.interface",
@@ -316,7 +316,7 @@
 		  "rfc_id": "RFC-0004",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts.JSON",
-			  "https://pastebin.com/zuPVKLZF"
+			  "https://pastebin.com/raw/zuPVKLZF"
 			],
 		  "title": "Symbolic Tool Module Contracts",
 		  "symbolic_id": "symbolic.tool.contracts",
@@ -383,7 +383,7 @@
 		  "rfc_id": "RFC-0005",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time/RFC%E2%80%910005-Motif_Transmission_Across_Time.JSON",
-			  "https://pastebin.com/uy53sic9"
+			  "https://pastebin.com/raw/uy53sic9"
 			],
 		  "title": "Motif Transmission Across Time",
 		  "symbolic_id": "symbolic.temporal.motif",
@@ -442,7 +442,7 @@
 		  "rfc_id": "RFC-0006",
 		  "urls": [
 			"https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON",
-			"https://pastebin.com/qeViiU4J"
+			"https://pastebin.com/raw/qeViiU4J"
 		  ],
 		  "title": "Motif Field Coherence Geometry",
 		  "symbolic_id": "symbolic.field.geometry",
@@ -498,7 +498,7 @@
 		  "rfc_id": "RFC-0007",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer.JSON",
-			  "https://pastebin.com/NkfZBvq1"
+			  "https://pastebin.com/raw/NkfZBvq1"
 			],
 		  "title": "Motif Ontology Format and Transfer Protocols",
 		  "symbolic_id": "symbolic.ontology.format",
@@ -536,7 +536,7 @@
 		  "rfc_id": "RFC-0008",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture.JSON",
-			  "https://pastebin.com/Qiun7qcy"
+			  "https://pastebin.com/raw/Qiun7qcy"
 			],
 		  "title": "Symbolic Resource Exchange and Routing Architecture",
 		  "symbolic_id": "symbolic.exchange.routing",
@@ -600,7 +600,7 @@
 		  "rfc_id": "RFC-CORE-001",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-001-noor_fasttime_core/RFC-CORE-001-noor_fasttime_core.JSON",
-			  "https://pastebin.com/zB9FxkAe"
+			  "https://pastebin.com/raw/zB9FxkAe"
 			],
 		  "title": "Noor FastTime Core — Symbolic Time Substrate and Echo Dynamics",
 		  "symbolic_id": "core.fasttime.nftc",
@@ -647,7 +647,7 @@
 		  "rfc_id": "RFC-CORE-002",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-002-recursive_agent_ft/RFC-CORE-002-recursive_agent_ft.JSON",
-			  "https://pastebin.com/Xctx3dGy"
+			  "https://pastebin.com/raw/Xctx3dGy"
 			],
 		  "title": "RecursiveAgentFT — Symbolic Emission Pulse, Triadic Feedback, and Resonant Replay",
 		  "symbolic_id": "core.agent.recursive",
@@ -696,7 +696,7 @@
 		  "rfc_id": "RFC-CORE-003",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-003-logical_agent_at/RFC-CORE-003-logical_agent_at.JSON",
-			  "https://pastebin.com/7VNeFs2w"
+			  "https://pastebin.com/raw/7VNeFs2w"
 			],
 		  "title": "LogicalAgentAT — Symbolic Observer, Coherence Mirror, and Resurrection Feedback Node",
 		  "symbolic_id": "core.agent.logical",
@@ -746,7 +746,7 @@
 		  "rfc_id": "RFC-CORE-004",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-004-symbolic_task_engine/RFC-CORE-004-symbolic_task_engine.JSON",
-			  "https://pastebin.com/aX7r6yqF"
+			  "https://pastebin.com/raw/aX7r6yqF"
 			],
 		  "title": "SymbolicTaskEngine",
 		  "symbolic_id": "core.engine.task",
@@ -794,7 +794,7 @@
 		  "rfc_id": "RFC-CORE-005",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-005-consciousness_monitor/RFC-CORE-005-consciousness_monitor.JSON",
-			  "https://pastebin.com/zC6aUYVn"
+			  "https://pastebin.com/raw/zC6aUYVn"
 			],
 
 		  "title": "consciousness_monitor",
@@ -844,7 +844,7 @@
 		  "rfc_id": "NFTC-APP-001",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/Fast_Time_Core/noor_fasttime_core.JSON",
-			  "https://pastebin.com/qLiZRAFD"
+			  "https://pastebin.com/raw/qLiZRAFD"
 			],
 		  "title": "Noor FastTime Core — Subsecond Feedback Engine and Echo Bias Computation",
 		  "symbolic_id": "app.core.nftc",
@@ -894,7 +894,7 @@
 		  "rfc_id": "LAAT-APP-001",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/Logical_Agent/logical_agent_at.JSON",
-			  "https://pastebin.com/WXSpH5Mt"
+			  "https://pastebin.com/raw/WXSpH5Mt"
 			],
 		  "title": "LogicalAgentAT — Symbolic Observer, Triad Evaluator, and Ghost Motif Feedback Node",
 		  "symbolic_id": "app.core.laat",
@@ -946,7 +946,7 @@
 		  "rfc_id": "RAFT-APP-001",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/Recursive_Agent/recursive_agent_ft.JSON",
-			  "https://pastebin.com/6TC3VUUC"
+			  "https://pastebin.com/raw/6TC3VUUC"
 			],
 		  "title": "RecursiveAgentFT — Symbolic Emission Pulse, Resonant Replay, and Feedback Adaptation",
 		  "symbolic_id": "app.core.raft",
@@ -1002,7 +1002,7 @@
 		  "rfc_id": "CMON-APP-001",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/consciousness_monitor/consciousness_monitor.JSON",
-			  "https://pastebin.com/bYzaxPu1"
+			  "https://pastebin.com/raw/bYzaxPu1"
 			]
 		  "title": "Consciousness Monitor — Phase-State Observer and Entanglement Diagnostic Node",
 		  "symbolic_id": "app.observer.cmon",
@@ -1053,7 +1053,7 @@
 		  "rfc_id": "STE-APP-001",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/symbolic_task_engine/symbolic_task_engine.JSON",
-			  "https://pastebin.com/tNysgii9"
+			  "https://pastebin.com/raw/tNysgii9"
 			],
 		  "title": "Symbolic Task Engine — Presence Composer and Autonomous Abstraction Anchor",
 		  "symbolic_id": "app.engine.ste",
