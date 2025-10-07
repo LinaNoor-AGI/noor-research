@@ -1841,7 +1841,7 @@
 			"dashboards_in": ["Appendix A"]
 		  },
 		  "feature_flag_respect": {
-			"enable_point_space_gliders": false,
+			"enable_point_space_gliders": true,
 			"note": "This subsection emits no glider tags or algorithms; all content remains baseline-compatible."
 		  }
 		},
@@ -1944,7 +1944,7 @@
 			"dashboards_in": ["Appendix A"]
 		  },
 		  "feature_flag_respect": {
-			"enable_point_space_gliders": false,
+			"enable_point_space_gliders": true,
 			"note": "Glider-specific diagnostics are marked informative and feature-gated; no {class,v,φ,τ} tags or glider algorithms are emitted when the flag is false."
 		  }
 		},
@@ -2095,7 +2095,7 @@
 			"dashboards_in": ["Appendix A"]
 		  },
 		  "feature_flag_respect": {
-			"enable_point_space_gliders": false,
+			"enable_point_space_gliders": true,
 			"note": "Glider/inverse content appears only as feature-gated, informative rules. No {class,v,φ,τ} tags or glider algorithms are emitted while the flag is false."
 		  }
 		},
@@ -2274,7 +2274,7 @@
 			"dashboards_in": ["Appendix A"]
 		  },
 		  "feature_flag_respect": {
-			"enable_point_space_gliders": false,
+			"enable_point_space_gliders": true,
 			"note": "All glider content is informative and feature-gated; no {class,v,φ,τ} tags or algorithms are emitted unless the flag is explicitly enabled."
 		  }
 		}
@@ -2383,7 +2383,7 @@
 				"dashboards_in": ["Appendix A"]
 			  },
 			  "feature_flag_respect": {
-				"enable_point_space_gliders": false,
+				"enable_point_space_gliders": true,
 				"note": "No glider tags or algorithms are emitted; synchronization uses only baseline curvature signals."
 			  }
 			},
@@ -2496,7 +2496,7 @@
 				"dashboards_in": ["Appendix A"]
 			  },
 			  "feature_flag_respect": {
-				"enable_point_space_gliders": false,
+				"enable_point_space_gliders": true,
 				"note": "No glider tags or shift-equivalence procedures are emitted when the feature flag is false."
 			  }
 			},
@@ -2597,7 +2597,7 @@
 				"dashboards_in": ["Appendix A"]
 			  },
 			  "feature_flag_respect": {
-				"enable_point_space_gliders": false,
+				"enable_point_space_gliders": true,
 				"note": "No {class,v,φ,τ} glider tags or algorithms are emitted; maintenance uses baseline curvature and torsion only."
 			  }
 			},
@@ -2854,7 +2854,7 @@
 			]
 		  },
 		  "feature_flag_respect": {
-			"enable_point_space_gliders": false,
+			"enable_point_space_gliders": true,
 			"note": "No {class,v,φ,τ} glider tags or shift-equivalence procedures are emitted when the feature flag is false."
 		  }
 		}
