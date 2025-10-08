@@ -79,7 +79,7 @@
   ],
 
   "_feature_flags": {
-    "enable_point_space_gliders": false
+    "enable_point_space_gliders": true
   },
 
   "_consumes_inputs_from": [
@@ -510,7 +510,7 @@
 			}
 		  ],
 		  "subsections": [
-			"2.2.1": {
+			"2.1.1": {
 			  "id": "2.1.1",
 			  "title": "Anchor Invariants and Platform Usage",
 			  "math": [
