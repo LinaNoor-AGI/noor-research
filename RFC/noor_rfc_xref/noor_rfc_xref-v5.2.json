@@ -21,7 +21,7 @@
 	],
   "_urls": [
 	  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json",
-	  "https://pastebin.com/raw/E9ZJEsu3"
+	  "https://pastebin.com/raw/FsR4buDT"
 	],
 
   "_objective": "To define a structured cross-reference index of all Noor-compatible symbolic specification documents (RFC, RFC-CORE, App-Specs), including their inheritance graph, motif alignments, and field role annotations. This registry enables automated dependency resolution and symbolic context traversal within PDP‑0001 pipelines.",
@@ -104,7 +104,7 @@
     { "section": "3.4", "title": "CMON-APP-001: Consciousness Monitor — Phase-State Observer and Entanglement Diagnostic Node" },
     { "section": "3.5", "title": "STE-APP-001: Symbolic Task Engine — Presence Composer and Autonomous Abstraction Anchor" }
   ],
-  "sections": [
+  "_sections": [
 	"PDP-0001": {
 	  "id": 0,
 	  "rfc_id": "PDP-0001",
@@ -822,8 +822,6 @@
 			"RFC-0007"
 		  ],
 		  "summary": "Formal specification of LogicalAgentAT as the symbolic coherence observer within Noor-class systems. Describes tick evaluation, motif triad resolution, contradiction tracking, ghost motif lifecycle, field registration geometry, resurrection feedback, and non-mutating observer enforcement.",
-		  "poetic_cipher": "truth arrives in triplets, silence resolves the rest",
-		  "cipher_explanation": "Triadic closure governs field stabilization and motif coherence in LogicalAgentAT",
 		  "linked_domains": [
 			"symbolic-feedback",
 			"motif-triad-resolution",
