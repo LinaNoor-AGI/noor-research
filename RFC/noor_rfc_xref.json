@@ -1050,8 +1050,8 @@
 	],
 
 	"layer_2": [
-		"id": 3.1,
 		"NFTC-APP-001": {
+		  "id": 3.1,
 		  "rfc_id": "NFTC-APP-001",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/Fast_Time_Core/noor_fasttime_core.JSON",
