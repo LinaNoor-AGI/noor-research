@@ -21,7 +21,7 @@
 	],
   "_urls": [
 	  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json",
-	  "https://pastebin.com/raw/V73LrDJ1"
+	  "https://pastebin.com/raw/3QP7dw1j"
 	],
 
   "_objective": "To define a structured cross-reference index of all Noor-compatible symbolic specification documents (RFC, RFC-CORE, App-Specs), including their inheritance graph, motif alignments, and field role annotations. This registry enables automated dependency resolution and symbolic context traversal within PDP‑0001 pipelines.",
@@ -995,7 +995,7 @@
 		  "rfc_id": "RFC-CORE-005",
 		  "urls": [
 			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-005-consciousness_monitor/RFC-CORE-005-consciousness_monitor.JSON",
-			  "https://pastebin.com/raw/zC6aUYVn"
+			  "https://pastebin.com/raw/P7XNb70Q"
 			],
 
 		  "title": "consciousness_monitor",
