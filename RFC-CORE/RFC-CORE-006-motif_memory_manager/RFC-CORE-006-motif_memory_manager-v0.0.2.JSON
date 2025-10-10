@@ -521,9 +521,9 @@
       }
     },
 
-    "6": {
-      "6.1": {
-        "id": "6.1",
+    "appendix": {
+      "a": {
+        "id": "a.1",
         "title": "Appendix A — Mathematical Supplement",
         "content": [
           "Full derivation of dℂ/dt = λ − γ_CO + ε from RFC-0009 immune synthesis equations.",
@@ -531,8 +531,8 @@
           "Analytic expression for τ_decay = 1/ζ and ζ→λ mapping under stable EMA-64 coherence bands."
         ]
       },
-      "6.2": {
-        "id": "6.2",
+      "b": {
+        "id": "b.1",
         "title": "Appendix B — Implementation Skeleton",
         "includes": [
           "MotifMemoryManager class stubs",
