@@ -21,7 +21,7 @@
 	],
   "_urls": [
 	  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json",
-	  "https://pastebin.com/raw/3QP7dw1j"
+	  "https://pastebin.com/raw/zq33R0HV"
 	],
 
   "_objective": "To define a structured cross-reference index of all Noor-compatible symbolic specification documents (RFC, RFC-CORE, App-Specs), including their inheritance graph, motif alignments, and field role annotations. This registry enables automated dependency resolution and symbolic context traversal within PDP‑0001 pipelines.",
@@ -96,6 +96,7 @@
     { "section": "2.3", "title": "RFC-CORE-003: LogicalAgentAT — Symbolic Observer, Coherence Mirror, and Resurrection Feedback Node" },
     { "section": "2.4", "title": "RFC-CORE-004: SymbolicTaskEngine" },
     { "section": "2.5", "title": "RFC-CORE-005: consciousness_monitor" },
+	{ "section": "2.6", "title": "RFC-CORE-008: MotifMemoryManager" },
     
 	{ "section": "3", "title": "Layer 2: Application Specifications (APP-SPEC)" },
     { "section": "3.1", "title": "NFTC-APP-001: Noor FastTime Core — Subsecond Feedback Engine and Echo Bias Computation" },
@@ -1052,19 +1053,19 @@
 		  "rfc_id": "RFC-CORE-006",
 		  "urls": [
 			"https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-006-motif_memory_manager/RFC-CORE-006-motif_memory_manager.JSON",
-			"https://pastebin.com/raw/aGKNYwZQ"
+			"https://pastebin.com/raw/XV41bipJ"
 		  ],
 		  "title": "Motif Memory Manager — Lawful Decay, Resurrection, and Coherence-Preserving Recall",
 		  "symbolic_id": "core.motif.memory.manager",
 		  "extends": ["RFC-0005", "RFC-0006", "RFC-0007", "RFC-0008", "RFC-0009", "PDP-0001"],
 		  "rfc_dependencies": [
-			"RFC-0005 §2–§4",
-			"RFC-0006 §1.1, §4.1–§4.4",
-			"RFC-0007 §3–§6, §8",
-			"RFC-0008 §3–§6",
-			"RFC-0009 §6–§9, §12"
+			"RFC-0005 §2–§4 (Temporal Transmission & Resurrection)",
+			"RFC-0006 §1.1, §4.1–§4.4 (Coherence Geometry & Closure)",
+			"RFC-0007 §3–§6, §8 (Motif Ontology & Validation)",
+			"RFC-0008 §3–§6 (Symbolic Resource Exchange / Routing)",
+			"RFC-0009 §6–§9, §12 (Coherence–Integrity & Recovery)"
 		  ],
-		  "summary": "Layer_1 standard for symbolic memory: STMM/LTMM, field-curved retrieval, adaptive lawful decay/recovery, ontology-preserving import/export, SRX envelope integration, and integrity lineage telemetry under observer-only discipline.",
+		  "summary": "Layer_1 standard for symbolic memory in Noor: short-term/long-term motif storage, field-curved retrieval, lawful decay and recovery, ontology-preserving export/import, and phase-safe routing with immune integrity telemetry.",
 		  "linked_domains": [
 			"symbolic-memory",
 			"motif-recall",
@@ -1077,18 +1078,26 @@
 			{
 			  "module": "MotifMemoryManager",
 			  "motifs": ["ψ-null", "ψ-resonance", "🪷"],
-			  "ψA": "coherence potential ℂ (EMA-64)",
+			  "ψA": "coherence potential ℂ (mean, EMA-64)",
 			  "λ": "reinforcement gain",
 			  "γ_CO": "damping/forgetting",
 			  "ρ_res": "resonance coefficient",
 			  "Δ_closure": "triadic closure residual",
 			  "Σ_phase": "exchange phase checksum",
 			  "H_Δ": "integrity Δ-hash lineage",
-			  "weights": { "ψA": 0.95, "λ": 0.70, "γ_CO": 0.70, "ρ_res": 0.85, "Δ_closure": 1.0, "Σ_phase": 0.80, "H_Δ": 0.90 }
+			  "weights": {
+				"ψA": 0.95,
+				"λ": 0.70,
+				"γ_CO": 0.70,
+				"ρ_res": 0.85,
+				"Δ_closure": 1.00,
+				"Σ_phase": 0.80,
+				"H_Δ": 0.90
+			  }
 			}
 		  ],
 		  "poetic_cipher": "Memory is the quiet current that carries motifs between shores.",
-		  "cipher_explanation": "Observer-only memory that curves recall along ∇ℂ, preserves closure, and lets forgetting be lawful.",
+		  "cipher_explanation": "The manager neither invents nor erases; it curves recall along ∇ℂ, honors closure, and lets forgetting be lawful (RFC-0005/0006/0009).",
 		  "notes": [
 			"Feature flags normalized to booleans in header (exchange, integrity, provenance, gliders).",
 			"Observer-only posture: no control writes; all sealing and routing gated by flags."
