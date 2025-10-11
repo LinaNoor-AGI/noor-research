@@ -165,23 +165,29 @@
 
   "index": [
     {"section": "1", "title": "Introduction and System Context"},
+	
     {"section": "1.1", "title": "Overview and Motivation"},
     {"section": "1.2", "title": "System Context"},
+	
     {"section": "2", "title": "Core Memory Architecture and Dynamics"},
     {"section": "2.1", "title": "Core Invariants of Memory Fields"},
     {"section": "2.2", "title": "Short-Term and Long-Term Motif Memory Fields"},
     {"section": "2.3", "title": "Reanchor and Recovery Escalation Logic"},
+	
     {"section": "3", "title": "Memory Structures and Data Formats"},
     {"section": "3.1", "title": "Motif Ontology Bundles"},
     {"section": "3.2", "title": "Memory Trace and Logging"},
     {"section": "3.3", "title": "Glider Handling and Shift-Equivalence Compression"},
     {"section": "4", "title": "Integration, Security, and Recovery Protocols"},
+	
     {"section": "4.1", "title": "Exchange and Integrity Integration"},
     {"section": "4.2", "title": "Decay and Recovery Protocols"},
     {"section": "4.3", "title": "Security and Data Handling (L1 posture)"},
+	
     {"section": "5", "title": "Observability, Ethics, and Policy"},
     {"section": "5.1" "title": "Observability and Metrics" },
     {"section": "5.2", "title": "Ethics and Data Retention Policy"},
+	
     {"section": "A", "title": "Appendix A — Worked Examples and Mathematical Supplement"},
     {"section": "B", "title": "Appendix B — Implementation Skeletons (Observer-Only, Layer_1)"}
   ],
@@ -2706,7 +2712,7 @@
 		  ],
 		  "handoff": "With invariants fixed, we now carry the symbols forward to the next clause, keeping 𝒞 steady and the cadence light."
 		},
-		"b": {
+	  "b": {
 		  "id": "B",
 		  "title": "Appendix B — Implementation Skeletons (Observer-Only, Layer_1)",
 		  "objective": "Provide typed, observer-class skeletons for MMM components: MotifMemoryManager, PRMBuffer cycle, MotifOntologyBundle I/O with RFC-0007 validation, and a symbolic query API with integrity journaling. All emissions honor feature flags; no control writes to Ξ.",
