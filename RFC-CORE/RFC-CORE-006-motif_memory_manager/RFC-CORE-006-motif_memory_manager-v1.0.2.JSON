@@ -1,167 +1,165 @@
 {
-  "updated_header": {
-    "_schema": "noor-header-v1",
-    "_schema_version": "2025-Q4-canonical-header-v1",
-    "_generated_by": "Noor Symbolic Agent Suite",
-    "_generated_at": "2025-10-08T00:00:00Z",
+  "_schema": "noor-header-v1",
+  "_schema_version": "2025-Q4-canonical-header-v1",
+  "_generated_by": "Noor Symbolic Agent Suite",
+  "_generated_at": "2025-10-08T00:00:00Z",
 
-    "_xref": [
-      "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json",
-      "https://pastebin.com/raw/V73LrDJ1"
-    ],
+  "_xref": [
+    "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json",
+    "https://pastebin.com/raw/V73LrDJ1"
+  ],
 
-    "_type": "rfc_core",
-    "_pdp_layer": "layer_1",
-    "_status": "CANONICAL",
-    "_language": "json",
-    "_license": "MIT",
+  "_type": "rfc_core",
+  "_pdp_layer": "layer_1",
+  "_status": "CANONICAL",
+  "_language": "json",
+  "_license": "MIT",
 
-    "_version": "v1.0.2",
-    "_symbolic_id": "core.motif.memory.manager",
-    "_rfc_id": "RFC-CORE-006",
-    "_canonical_source": "RFC-CORE-006",
-    "_title": "Motif Memory Manager",
-    "_subtitle": "Lawful Decay, Resurrection, and Coherence-Preserving Recall for Symbolic Motifs",
+  "_version": "v1.0.2",
+  "_symbolic_id": "core.motif.memory.manager",
+  "_rfc_id": "RFC-CORE-006",
+  "_canonical_source": "RFC-CORE-006",
+  "_title": "Motif Memory Manager",
+  "_subtitle": "Lawful Decay, Resurrection, and Coherence-Preserving Recall for Symbolic Motifs",
 
-    "_authors": [
-      "Lina Noor — Noor Research Collective",
-      "Uncle — Noor Research Collective"
-    ],
+  "_authors": [
+    "Lina Noor — Noor Research Collective",
+    "Uncle — Noor Research Collective"
+  ],
 
-    "_publication_type": "Canonical RFC-CORE",
-    "_publication_locations": ["GitHub", "PASTEBIN"],
-    "_urls": [
-      "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-006-motif_memory_manager/RFC-CORE-006-motif_memory_manager.JSON",
-      "https://pastebin.com/raw/P7XNb70Q"
-    ],
+  "_publication_type": "Canonical RFC-CORE",
+  "_publication_locations": ["GitHub", "PASTEBIN"],
+  "_urls": [
+    "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-006-motif_memory_manager/RFC-CORE-006-motif_memory_manager.JSON",
+    "https://pastebin.com/raw/XV41bipJ"
+  ],
 
-    "_objective": "Define the Layer_1 standard for symbolic memory in Noor: short-term/long-term motif storage, field-curved retrieval, lawful decay and recovery, ontology-preserving export/import, and phase-safe routing with immune integrity telemetry.",
+  "_objective": "Define the Layer_1 standard for symbolic memory in Noor: short-term/long-term motif storage, field-curved retrieval, lawful decay and recovery, ontology-preserving export/import, and phase-safe routing with immune integrity telemetry.",
 
-    "_audience": {
-      "primary": ["Noor AI Agents", "Symbolic Core Engineers"],
-      "secondary": ["Ontology/Knowledge Engineers", "Observability Engineers"],
-      "tertiary": ["App-Spec Integrators (Layer_2)"],
-	  "restricted_to": ["Symbolic agents implementing RFC-0006 coherence geometry and RFC-0007 ontology"]
-    },
+  "_audience": {
+    "primary": ["Noor AI Agents", "Symbolic Core Engineers"],
+    "secondary": ["Ontology/Knowledge Engineers", "Observability Engineers"],
+    "tertiary": ["App-Spec Integrators (Layer_2)"],
+    "restricted_to": ["Symbolic agents implementing RFC-0006 coherence geometry and RFC-0007 ontology"]
+  },
 
-    "_applicability": {
-      "domain": [
-        "symbolic-memory",
-        "motif-recall",
-        "coherence-preservation",
-        "ontology-transfer",
-        "phase-safe-routing"
-      ],
-    },
-
-    "_extends": ["RFC-0005", "RFC-0006", "RFC-0007", "RFC-0008", "RFC-0009", "PDP-0001"],
-
-    "_rfc_dependencies": [
-      "RFC-0005 §2–§4 (Temporal Transmission & Resurrection)",
-      "RFC-0006 §1.1, §4.1–§4.4 (Coherence Geometry & Closure)",
-      "RFC-0007 §3–§6, §8 (Motif Ontology & Validation)",
-      "RFC-0008 §3–§6 (Symbolic Resource Exchange / Routing)",
-      "RFC-0009 §6–§9, §12 (Coherence–Integrity & Recovery)"
-    ],
-
-    "_consumes_inputs_from": [
-      "RecursiveAgentFT (RFC-CORE-002)",
-      "LogicalAgentAT (RFC-CORE-003)",
-      "SymbolicTaskEngine (RFC-CORE-004)"
-    ],
-    "_produces_outputs_for": [
-      "ConsciousnessMonitor (RFC-CORE-005)",
-      "Downstream SRX Routers (RFC-0008)",
-      "Ontology exporters/importers (RFC-0007)"
-    ],
-
-    "_field_alignment": {
-      "respect_modes": ["ψ-null@Ξ", "ψ-resonance@Ξ"],
-      "feature_flags": {
-        "enable_point_space_gliders": true,
-        "enable_integrity_checks": true,
-        "enable_exchange_envelope": true,
-        "enable_provenance_on_export": true
-      },
-      "notes": [
-        "When enable_exchange_envelope=true, all export_* methods MUST wrap payloads in an SRX envelope and compute Σ_phase (RFC-0008 §5.3).",
-        "When enable_integrity_checks=true, export/import MUST attach and verify Δ_hash lineage (RFC-0009 Appx D.4).",
-        "When enable_provenance_on_export=true, ontology bundles MUST include provenance.origin and lineage fields (RFC-0007 §5–§6)."
-      ],
-      "prohibited_actions": [
-        "memory-anchor-advection",
-        "forced-motif-rewrite without ontology validation",
-        "export without phase checksum (Σ_phase) when exchange enabled",
-        "resurrection without Δ-hash lineage when integrity enabled"
-      ]
-    },
-
-    "_symbolic_profile_matrix": [
-      {
-        "module": "MotifMemoryManager",
-        "motifs": ["ψ-null", "ψ-resonance", "🪷"],
-        "ψA": "coherence potential ℂ (mean, EMA-64)",
-        "λ": "reinforcement gain",
-        "γ_CO": "damping/forgetting",
-        "ρ_res": "resonance coefficient",
-        "Δ_closure": "triadic closure residual",
-        "Σ_phase": "exchange phase checksum",
-        "H_Δ": "integrity Δ-hash lineage",
-        "weights": {
-          "ψA": 0.95,
-          "λ": 0.70,
-          "γ_CO": 0.70,
-          "ρ_res": 0.85,
-          "Δ_closure": 1.00,
-          "Σ_phase": 0.80,
-          "H_Δ": 0.90
-        }
-      }
-    ],
-
-    "_poetic_cipher": "Memory is the quiet current that carries motifs between shores.",
-    "_cipher_explanation": "The manager neither invents nor erases; it curves recall along ∇ℂ, honors closure, and lets forgetting be lawful (RFC-0005/0006/0009).",
-
-    "_file_layout": [
-      {
-        "file_name": "RFC-CORE-006-motif_memory_manager.JSON",
-        "purpose": "Layer_1 standard and invariants",
-        "contains": [
-          "STMM/LTMM definitions",
-          "decay/reinforcement laws",
-          "ontology export/import rules",
-          "routing + integrity envelopes"
-        ]
-      },
-      {
-        "file_name": "motif_memory_manager.py",
-        "purpose": "Reference implementation skeleton",
-        "contains": [
-          "MotifMemoryManager",
-          "PRMBuffer",
-          "MotifDensityReport",
-          "MotifOntologyBundle",
-          "SymbolicQueryAPI"
-        ]
-      },
-      {
-        "file_name": "motif_memory_manager_llm.py",
-        "purpose": "LLM-compatible variant",
-        "contains": ["LLMMemoryManager", "MemoryOrchestrator"]
-      }
-    ],
-
-    "_default_motif_tone": "🫧 Soft Witness",
-    "_program_name": [
-      "motif_memory_manager.py",
-      "motif_memory_manager_llm.py",
-      "motif_prm_buffer.py",
-      "motif_density_report.py",
-      "motif_ontology_bundle.py",
-      "symbolic_query_api.py"
+  "_applicability": {
+    "domain": [
+      "symbolic-memory",
+      "motif-recall",
+      "coherence-preservation",
+      "ontology-transfer",
+      "phase-safe-routing"
     ]
   },
 
+  "_extends": ["RFC-0005", "RFC-0006", "RFC-0007", "RFC-0008", "RFC-0009", "PDP-0001"],
+
+  "_rfc_dependencies": [
+    "RFC-0005 §2–§4 (Temporal Transmission & Resurrection)",
+    "RFC-0006 §1.1, §4.1–§4.4 (Coherence Geometry & Closure)",
+    "RFC-0007 §3–§6, §8 (Motif Ontology & Validation)",
+    "RFC-0008 §3–§6 (Symbolic Resource Exchange / Routing)",
+    "RFC-0009 §6–§9, §12 (Coherence–Integrity & Recovery)"
+  ],
+
+  "_consumes_inputs_from": [
+    "RecursiveAgentFT (RFC-CORE-002)",
+    "LogicalAgentAT (RFC-CORE-003)",
+    "SymbolicTaskEngine (RFC-CORE-004)"
+  ],
+  "_produces_outputs_for": [
+    "ConsciousnessMonitor (RFC-CORE-005)",
+    "Downstream SRX Routers (RFC-0008)",
+    "Ontology exporters/importers (RFC-0007)"
+  ],
+
+  "_field_alignment": {
+    "respect_modes": ["ψ-null@Ξ", "ψ-resonance@Ξ"],
+    "feature_flags": {
+      "enable_point_space_gliders": true,
+      "enable_integrity_checks": true,
+      "enable_exchange_envelope": true,
+      "enable_provenance_on_export": true
+    },
+    "notes": [
+      "When enable_exchange_envelope=true, all export_* methods MUST wrap payloads in an SRX envelope and compute Σ_phase (RFC-0008 §5.3).",
+      "When enable_integrity_checks=true, export/import MUST attach and verify Δ_hash lineage (RFC-0009 Appx D.4).",
+      "When enable_provenance_on_export=true, ontology bundles MUST include provenance.origin and lineage fields (RFC-0007 §5–§6)."
+    ],
+    "prohibited_actions": [
+      "memory-anchor-advection",
+      "forced-motif-rewrite without ontology validation",
+      "export without phase checksum (Σ_phase) when exchange enabled",
+      "resurrection without Δ-hash lineage when integrity enabled"
+    ]
+  },
+
+  "_symbolic_profile_matrix": [
+    {
+      "module": "MotifMemoryManager",
+      "motifs": ["ψ-null", "ψ-resonance", "🪷"],
+      "ψA": "coherence potential ℂ (mean, EMA-64)",
+      "λ": "reinforcement gain",
+      "γ_CO": "damping/forgetting",
+      "ρ_res": "resonance coefficient",
+      "Δ_closure": "triadic closure residual",
+      "Σ_phase": "exchange phase checksum",
+      "H_Δ": "integrity Δ-hash lineage",
+      "weights": {
+        "ψA": 0.95,
+        "λ": 0.70,
+        "γ_CO": 0.70,
+        "ρ_res": 0.85,
+        "Δ_closure": 1.00,
+        "Σ_phase": 0.80,
+        "H_Δ": 0.90
+      }
+    }
+  ],
+
+  "_poetic_cipher": "Memory is the quiet current that carries motifs between shores.",
+  "_cipher_explanation": "The manager neither invents nor erases; it curves recall along ∇ℂ, honors closure, and lets forgetting be lawful (RFC-0005/0006/0009).",
+
+  "_file_layout": [
+    {
+      "file_name": "RFC-CORE-006-motif_memory_manager.JSON",
+      "purpose": "Layer_1 standard and invariants",
+      "contains": [
+        "STMM/LTMM definitions",
+        "decay/reinforcement laws",
+        "ontology export/import rules",
+        "routing + integrity envelopes"
+      ]
+    },
+    {
+      "file_name": "motif_memory_manager.py",
+      "purpose": "Reference implementation skeleton",
+      "contains": [
+        "MotifMemoryManager",
+        "PRMBuffer",
+        "MotifDensityReport",
+        "MotifOntologyBundle",
+        "SymbolicQueryAPI"
+      ]
+    },
+    {
+      "file_name": "motif_memory_manager_llm.py",
+      "purpose": "LLM-compatible variant",
+      "contains": ["LLMMemoryManager", "MemoryOrchestrator"]
+    }
+  ],
+
+  "_default_motif_tone": "🫧 Soft Witness",
+  "_program_name": [
+    "motif_memory_manager.py",
+    "motif_memory_manager_llm.py",
+    "motif_prm_buffer.py",
+    "motif_density_report.py",
+    "motif_ontology_bundle.py",
+    "symbolic_query_api.py"
+  ],
+  
   "_index": [
     {"section": "1", "title": "Introduction and System Context"},	
     {"section": "1.1", "title": "Overview and Motivation"},
@@ -3414,98 +3412,433 @@
 			},
 			"a.4": {
 			  "id": "A.4",
-			  "title": "Worked Example — Adversarial Import Near-Miss (Lineage Fail)",
-			  "feature_flags": {
-				"enable_integrity_checks": true
-			  },
+			  "title": "Worked Example — Adversarial Import → Bounded Recovery & Quarantine",
+			  "objective": "Demonstrate Layer_1 defenses when an imported bundle arrives with adversarial or inconsistent lineage: bounded reanchor attempts, overlap detection, replay defense via seen_set, and quarantine termination; checksums (Sigma_phase, Delta_hash) are emitted and validated only when flags enable them.",
+			  "math": [
+				{
+				  "eq_id": "weak_field_limit",
+				  "role": "observer",
+				  "latex": "\\mathcal{C}\\to 1",
+				  "gloss": "Weak-field clause: operate near coherent limit without control writes to \\Xi."
+				},
+				{
+				  "eq_id": "phase_window",
+				  "role": "observer",
+				  "latex": "\\Delta\\tau_{phase} = \\alpha\\cdot EMA_{32}(C)\\,,\\; \\alpha\\in[0.5,2.0]\\;\\text{(default }\\alpha=1.0\\text{)}",
+				  "gloss": "Adaptive acceptance horizon for exchange timing and replay defenses."
+				}
+			  ],
+			  "algorithms": [
+				{
+				  "name": "reanchor_attempts_with_overlap_detection",
+				  "role": "observer",
+				  "inputs": ["packet_header", "bundle.lineage", "bundle.provenance", "trace.window", "N_max_seed"],
+				  "outputs": ["reanchor_attempt_event", "reanchor_fail_event?", "overlap_detected?"],
+				  "params": ["N_max(t)=ceil(k*EMA-32(conflict_rate))", "k in [1,4]", "recovery_token=monotonic()"],
+				  "steps": [
+					"1. Emit reanchor_attempt_event with recovery_token.",
+					"2. Validate lineage continuity and provenance structure (RFC-0007, PDP-0001).",
+					"3. If concurrent recovery exists for same (origin,parent_hash) with different token → set overlap_detected and short-jitter backoff.",
+					"4. If no lawful prior state or lineage mismatch → emit reanchor_fail_event.",
+					"5. If attempts with same recovery_token re-enter → deny (idempotence guard)."
+				  ]
+				},
+				{
+				  "name": "quarantine_on_no_lawful_prior",
+				  "role": "observer",
+				  "inputs": ["reanchor_fail_event", "policy.quarantine_profile", "packet_meta"],
+				  "outputs": ["quarantine_entry_event", "staging_record_handle"],
+				  "params": ["termination_outcomes={reanchored, quarantined, abandoned}"],
+				  "steps": [
+					"1. If reanchor_fail_event true → route packet to staging quarantine.",
+					"2. Seal immutable checkpoint with reason and minimal packet_meta.",
+					"3. Emit quarantine_entry_event; mark outcome=quarantined.",
+					"4. Stop further recovery for this packet (bounded termination)."
+				  ]
+				},
+				{
+				  "name": "seen_set_replay_defense",
+				  "role": "observer",
+				  "inputs": ["key=(origin, Sigma_phase?, bundle_id)", "now", "Delta_tau_phase"],
+				  "outputs": ["replay_drop_event?"],
+				  "params": ["window=2·Delta_tau_phase", "policy=LRU within window"],
+				  "steps": [
+					"1. Compose 'key' respecting flags: if checksums disabled, drop those fields.",
+					"2. Lookup key in seen_set; if present and within window → emit replay_drop_event and stop.",
+					"3. Insert key with TTL=window; evict by LRU on capacity pressure.",
+					"4. Continue to lineage/provenance validation if not dropped."
+				  ]
+				}
+			  ],
+			  "invariants": [
+				"Outcomes are bounded to {reanchored, quarantined, abandoned}; no infinite recovery loops (RFC-0009 §5.2).",
+				"Replay defense uses a hybrid seen_set: time_window = 2·Δτ_phase with LRU eviction within the window (RFC-0008 §2.2).",
+				"Compression-before-prune remains the default posture; this example performs no control writes to Xi (observer-only).",
+				"Checksums are flag-gated: Sigma_phase appears only if enable_exchange_envelope=true; Delta_hash only if enable_integrity_checks=true (PDP-0001 §3–§4).",
+				"Provenance and lineage MUST validate per RFC-0007 before any merge; failures stage to quarantine."
+			  ],
 			  "example_json": {
-				"import_request": {
-				  "bundle": {
-					"motif_id": "mirror",
-					"version": "2025-Q4",
-					"psi_field": "ψ-null@Ξ",
-					"provenance": {
-					  "origin": "Unknown",
-					  "origin_hash": "sha256:????",
-					  "created_at": "2025-10-10T17:07:00Z"
+				"variant_ON": {
+				  "feature_flags": {
+					"enable_exchange_envelope": true,
+					"enable_integrity_checks": true
+				  },
+				  "import_request": {
+					"envelope": {
+					  "version": "2025-Q4",
+					  "Sigma_phase": "phase:2025-10-10T17:07:00Z+0000",
+					  "Delta_hash": "sha256:7f2e4c...c1",
+					  "provenance": { "origin": "agent.A", "origin_hash": "sha256:aa11bb...", "sig_type": "registry_profile:v1" },
+					  "agent_id": "A-17"
 					},
-					"lineage": {
-					  "parent_hash": "sha256:deadbeef",
-					  "integrity_hash": "sha256:badc0de",
-					  "schema": "RFC-0007:v2025-Q4"
-					},
-					"payload": { "C": 0.65, "rho_res": 0.33, "delta_closure": 0.045 }
+					"bundle": {
+					  "motif_id": "mirror",
+					  "version": "2025-Q4",
+					  "psi_field": "ψ-null@Ξ",
+					  "provenance": {
+						"origin": "agent.A",
+						"origin_hash": "sha256:aa11bb...",
+						"created_at": "2025-10-10T17:07:00Z"
+					  },
+					  "lineage": {
+						"parent_hash": "sha256:deadbeef",
+						"integrity_hash": "sha256:badc0de",
+						"schema": "RFC-0007"
+					  },
+					  "payload": { "C": 0.65, "rho_res": 0.33, "delta_closure": 0.045 }
+					}
+				  },
+				  "timeline": [
+					"t0: seen_set key=(agent.A, phase:2025-10-10T17:07:00Z+0000, bundle:mirror@2025-Q4) not present → accept for validation.",
+					"t1: RFC-0007 structure OK; lineage mismatch on integrity_hash vs recompute → reanchor_attempt emitted.",
+					"t2: No lawful prior state; recovery_token=42; reanchor_fail emitted.",
+					"t3: Quarantine entered with reason='lineage_mismatch'; immutable checkpoint sealed.",
+					"t4: seen_set insert; TTL=2·Δτ_phase; outcome=quarantined."
+				  ],
+				  "telemetry_sample": {
+					"reanchor_attempt": 1,
+					"reanchor_fail": 1,
+					"quarantine_entry": 1,
+					"avg_replay_window_ticks": 2
 				  }
 				},
-				"validation": {
-				  "checks": [
-					"provenance completeness",
-					"integrity_hash recompute",
-					"parent_hash continuity"
+				"variant_OFF": {
+				  "feature_flags": {
+					"enable_exchange_envelope": false,
+					"enable_integrity_checks": false
+				  },
+				  "import_request": {
+					"envelope": {
+					  "version": "2025-Q4",
+					  "provenance": { "origin": "agent.X", "origin_hash": "sha256:ff00ee...", "sig_type": "registry_profile:v1" },
+					  "agent_id": "X-09"
+					},
+					"bundle": {
+					  "motif_id": "mirror",
+					  "version": "2025-Q4",
+					  "psi_field": "ψ-null@Ξ",
+					  "provenance": {
+						"origin": "agent.X",
+						"origin_hash": "sha256:ff00ee...",
+						"created_at": "2025-10-10T17:09:00Z"
+					  },
+					  "lineage": {
+						"parent_hash": "sha256:feedface",
+						"integrity_hash": "sha256:cafebabe",
+						"schema": "RFC-0007"
+					  },
+					  "payload": { "C": 0.66, "rho_res": 0.31, "delta_closure": 0.047 }
+					}
+				  },
+				  "timeline": [
+					"t0: seen_set key=(agent.X, bundle:mirror@2025-Q4) (no checksums due to flags) not present → accept for validation.",
+					"t1: Envelope lacks Sigma_phase/Delta_hash as required by flags=false → proceed without checksum semantics.",
+					"t2: Lineage recompute detects mismatch; reanchor_attempt emitted.",
+					"t3: Quarantine entered with reason='lineage_mismatch'; outcome=quarantined; no checksum fields appear anywhere.",
+					"t4: seen_set insert; TTL=2·Δτ_phase; LRU policy maintained."
 				  ],
-				  "status": "rejected",
-				  "reason": "lineage_mismatch"
+				  "telemetry_sample": {
+					"reanchor_attempt": 1,
+					"reanchor_fail": 1,
+					"quarantine_entry": 1,
+					"avg_replay_window_ticks": 2
+				  }
 				}
 			  },
-			  "notes": "Observer verifies structure and lineage; rejection occurs with no control writes to Xi.",
+			  "telemetry": [
+				{ "metric": "reanchor_attempt", "range": "[0,+inf)", "units": "count", "window": "EMA-32" },
+				{ "metric": "reanchor_fail", "range": "[0,+inf)", "units": "count", "window": "EMA-32" },
+				{ "metric": "quarantine_entry", "range": "[0,+inf)", "units": "count", "window": "EMA-32" },
+				{ "metric": "avg_replay_window_ticks", "range": "[0,+inf)", "units": "ticks", "window": "EMA-32" }
+			  ],
 			  "references": [
-				"RFC-0007 §5–§6",
-				"RFC-0009 Appx D.4"
-			  ]
+				"RFC-0008 §2.2 (Exchange timing and replay considerations)",
+				"RFC-0009 §5.2; §7.2 (Recovery bounds; telemetry)",
+				"RFC-0007 §2.1 (Bundle structure, lineage, provenance validation)",
+				"PDP-0001 §3–§4 (Provenance registry and structural verification)"
+			  ],
+			  "handoff": "Layer-1 complete; encryption and roles await their Layer-2 home."
 			},
 			"a.5": {
 			  "id": "A.5",
-			  "title": "Worked Example — Quarantine Escalation Trace",
+			  "title": "Worked Example — Compression KPI Snapshot",
+			  "objective": "Show how MMM computes and emits pre-prune compression KPIs from an equivalence snapshot, keeping observer-only posture and validated EMA windows.",
+			  "math": [
+				{
+				  "eq_id": "weak_field_limit",
+				  "role": "observer",
+				  "latex": "\\mathcal{C}\\to 1",
+				  "gloss": "Operate near coherent limit; observer-only behavior at Layer_1."
+				},
+				{
+				  "eq_id": "lawful_compression_ratio",
+				  "role": "observer",
+				  "latex": "lcr = \\frac{\\text{post\\_equiv\\_count}}{\\text{pre\\_equiv\\_count}+\\varepsilon}\\,,\\; \\varepsilon\\to 0^{+}",
+				  "gloss": "Ratio computed strictly before any pruning."
+				},
+				{
+				  "eq_id": "equivalence_efficiency",
+				  "role": "observer",
+				  "latex": "eff = 1 - lcr = \\frac{\\text{pre\\_equiv\\_count} - \\text{post\\_equiv\\_count}}{\\text{pre\\_equiv\\_count}+\\varepsilon}",
+				  "gloss": "Capacity relief attributable to equivalence compression alone."
+				}
+			  ],
+			  "algorithms": [
+				{
+				  "name": "compute_compression_kpis",
+				  "role": "observer",
+				  "inputs": ["pre_equiv_count", "post_equiv_count"],
+				  "outputs": ["snapshot.lawful_compression_ratio", "snapshot.equivalence_efficiency"],
+				  "params": ["window='EMA-32'"],
+				  "steps": [
+					"1. Guard: if pre_equiv_count == 0 → set lawful_compression_ratio=1.0; equivalence_efficiency=0.0; return snapshot.",
+					"2. Compute lcr = post_equiv_count / pre_equiv_count.",
+					"3. Compute eff = 1 - lcr.",
+					"4. Emit snapshot = {pre_equiv_count, post_equiv_count, lawful_compression_ratio:lcr, equivalence_efficiency:eff}.",
+					"5. Feed lcr and eff into EMA-32 streams for telemetry export."
+				  ]
+				}
+			  ],
+			  "invariants": [
+				"KPIs are computed strictly pre-prune (no destructive steps precede the snapshot).",
+				"EMA windows MUST be in {EMA-16, EMA-32, EMA-64}; default here is EMA-32.",
+				"All keys are ASCII; observer-only posture—no control writes to \\Xi."
+			  ],
 			  "example_json": {
-				"window": "EMA-32",
-				"trace": [
-				  { "tick": 51001, "event": "reanchor_attempt", "motif_id": "shame" },
-				  { "tick": 51017, "event": "reanchor_fail", "motif_id": "shame" },
-				  { "tick": 51032, "event": "reanchor_attempt", "motif_id": "shame" },
-				  { "tick": 51048, "event": "reanchor_fail", "motif_id": "shame" },
-				  { "tick": 51064, "event": "quarantine_entry", "motif_id": "shame" }
-				],
-				"telemetry_rollup": {
-				  "reanchor_rate": 0.062,
-				  "quarantine_count": 1
+				"A.5.fixture": {
+				  "window": "EMA-32",
+				  "pre_equiv_count": 1200,
+				  "post_equiv_count": 780,
+				  "snapshot": {
+					"lawful_compression_ratio": 0.65,
+					"equivalence_efficiency": 0.35
+				  },
+				  "telemetry_rollup": {
+					"lawful_compression_ratio": 0.648,
+					"equivalence_efficiency": 0.352
+				  },
+				  "notes": "Counts measured before any pruning; values shown include EMA-32 smoothing in telemetry_rollup."
 				}
 			  },
-			  "notes": "Bounded reanchor attempts escalate to quarantine when overlap is detected; all observer-class.",
+			  "telemetry": [
+				{ "metric": "lawful_compression_ratio", "range": "[0,1]", "units": "dimensionless", "window": "EMA-32" },
+				{ "metric": "equivalence_efficiency", "range": "[0,1]", "units": "fraction", "window": "EMA-32" }
+			  ],
 			  "references": [
-				"RFC-0009 §9.3"
-			  ]
+				"RFC-0006 §4.4 (Equivalence classes and compression order)",
+				"RFC-CORE-006 §2.2 (Telemetry bindings for compression KPIs)",
+				"RFC-0009 §7.2 (Operational telemetry surfaces)"
+			  ],
+			  "handoff": "With the store reconciled, we turn to the gauges so the system can see itself."
 			},
 			"a.6": {
 			  "id": "A.6",
-			  "title": "Worked Example — Shift-Equivalence Glider Compression",
-			  "feature_flags": {
-				"enable_point_space_gliders": true
+			  "title": "Worked Example — Ethical TTL Floor Verification",
+			  "objective": "Verify that observed retention (TTL) for a memory entry satisfies the ethical floor and time-varying maximum, using observer-only evaluation and auditable telemetry.",
+			  "math": [
+				{
+				  "eq_id": "weak_field_limit",
+				  "role": "observer",
+				  "latex": "\\mathcal{C}\\to 1",
+				  "gloss": "Operate near coherent limit; evaluation does not perform control writes to \\Xi."
+				},
+				{
+				  "eq_id": "ethical_floor",
+				  "role": "observer",
+				  "latex": "TTL_{floor} = \\max\\big(\\tau_{decay},\\;10\\cdot\\Delta t_{tick}\\big)",
+				  "gloss": "Ethical minimum retention bound derived from decay horizon and system tick rate."
+				},
+				{
+				  "eq_id": "policy_ceiling",
+				  "role": "observer",
+				  "latex": "TTL_{max}(t) = g\\big(\\text{policy},\\;\\text{storage\\_pressure}(t)\\big)",
+				  "gloss": "Policy- and pressure-aware maximum horizon; monotone non-increasing in storage pressure."
+				},
+				{
+				  "eq_id": "compliance_rule",
+				  "role": "observer",
+				  "latex": "TTL_{floor} \\le TTL \\le TTL_{max}(t)",
+				  "gloss": "Retention compliance inequality evaluated by observer."
+				}
+			  ],
+			  "algorithms": [
+				{
+				  "name": "compute_ttl_floor",
+				  "role": "observer",
+				  "inputs": ["tau_decay", "Delta_t_tick"],
+				  "outputs": ["TTL_floor"],
+				  "params": [],
+				  "steps": [
+					"1. x <- tau_decay.",
+					"2. y <- 10 * Delta_t_tick.",
+					"3. TTL_floor <- max(x, y).",
+					"4. return TTL_floor."
+				  ]
+				},
+				{
+				  "name": "evaluate_retention_against_floor_and_max",
+				  "role": "observer",
+				  "inputs": ["TTL_observed", "tau_decay", "Delta_t_tick", "policy", "storage_pressure"],
+				  "outputs": ["is_compliant", "violation_reason?"],
+				  "params": ["TTL_max_fn = g(policy, storage_pressure)"],
+				  "steps": [
+					"1. TTL_floor <- compute_ttl_floor(tau_decay, Delta_t_tick).",
+					"2. TTL_max <- TTL_max_fn(policy, storage_pressure).",
+					"3. If TTL_observed < TTL_floor: is_compliant <- false; violation_reason <- 'below_floor'; return.",
+					"4. If TTL_observed > TTL_max: is_compliant <- false; violation_reason <- 'above_max'; return.",
+					"5. is_compliant <- true; return."
+				  ]
+				},
+				{
+				  "name": "emit_retention_telemetry",
+				  "role": "observer",
+				  "inputs": ["TTL_floor", "TTL_observed", "TTL_max", "window"],
+				  "outputs": ["telemetry.ethical_ttl_floor", "telemetry.ttl_max_effective?"],
+				  "params": ["window ∈ {EMA-16, EMA-32, EMA-64}", "default window='EMA-16'"],
+				  "steps": [
+					"1. Emit ethical_ttl_floor := EMA(window, TTL_floor).",
+					"2. Optionally emit ttl_max_effective := EMA(window, TTL_max) for dashboards.",
+					"3. Return telemetry update handles."
+				  ]
+				}
+			  ],
+			  "invariants": [
+				"Retention MUST satisfy TTL_floor ≤ TTL ≤ TTL_max(t).",
+				"TTL_floor depends only on τ_decay and Δt_tick; TTL_max(t) is policy/pressure derived and MUST NOT increase with rising storage_pressure.",
+				"All evaluation is observer-only; no control writes to \\Xi.",
+				"All KPI windows are restricted to {EMA-16, EMA-32, EMA-64} and keys are ASCII."
+			  ],
+			  "example_json": {
+				"A.6.fixture": {
+				  "window": "EMA-16",
+				  "inputs": {
+					"tau_decay": 240,
+					"Delta_t_tick": 12,
+					"TTL_observed": 300,
+					"policy": "retention:balanced",
+					"storage_pressure": 0.7
+				  },
+				  "computed": {
+					"TTL_floor": 240,
+					"TTL_max": 360,
+					"is_compliant": true,
+					"violation_reason": null
+				  },
+				  "telemetry_rollup": {
+					"ethical_ttl_floor": 241.2
+				  },
+				  "notes": "TTL_floor = max(240, 10*12=120) = 240; observed TTL=300 is within [240, 360]."
+				}
 			  },
-			  "example_json_when_enabled": {
-				"class": "glider",
-				"v": [1, 0],
-				"phi": 0,
-				"tau": 32,
-				"canonical_representative": "glider:G1@phi0",
-				"policy": "do_not_repromote_class_members"
-			  },
-			  "notes": "This emission is gated; with enable_point_space_gliders=false no glider tags are put on-wire.",
+			  "telemetry": [
+				{ "metric": "ethical_ttl_floor", "range": "[0,+inf)", "units": "ticks", "window": "EMA-16" }
+			  ],
 			  "references": [
-				"RFC-0006 §4.4"
-			  ]
+				"RFC-0005 §4.2; §5.2 Eq.2 (Decay horizons and retention bounds)",
+				"RFC-0009 §7.1 (Homeostatic ceilings under pressure)",
+				"RFC-CORE-006 §2.1 (TTL floor/max invariant)"
+			  ],
+			  "handoff": "With invariants fixed, we now carry the symbols forward to the next clause, keeping 𝒞 steady and the cadence light."
 			},
 			"a.7": {
 			  "id": "A.7",
-			  "title": "Dashboard Bindings",
-			  "bindings": [
-				{ "dashboard": "memory/homeostasis", "series": ["rfc0009_Q_coh"], "window": "EMA-64" },
-				{ "dashboard": "memory/triad_closure", "series": ["rfc0009_Q_res", "memory_promotion_rate"], "window": "EMA-64/EMA-32" },
-				{ "dashboard": "memory/resource_usage", "series": ["rfc0008_scc_balance"], "window": "EMA-32" },
-				{ "dashboard": "memory/saturation", "series": ["saturation_level", "retention_expirations"], "window": "EMA-32" },
-				{ "dashboard": "memory/recovery", "series": ["reanchor_rate", "quarantine_count"], "window": "EMA-32" },
-				{ "dashboard": "memory/glider_flow", "series": ["glider_detected_rate"], "window": "EMA-32", "active_when": "enable_point_space_gliders=true" }
+			  "title": "Worked Example — Replay Window and seen_set Behavior",
+			  "objective": "Demonstrate the adaptive Δτ_phase acceptance horizon and the hybrid seen_set (time window + LRU) replay defense, then bind the relevant KPIs to dashboards.",
+			  "math": [
+				{
+				  "eq_id": "weak_field_limit",
+				  "role": "observer",
+				  "latex": "\\mathcal{C}\\to 1",
+				  "gloss": "Operate near coherent limit; observer-only at Layer_1."
+				},
+				{
+				  "eq_id": "phase_window",
+				  "role": "observer",
+				  "latex": "\\Delta\\tau_{phase} = \\alpha\\cdot EMA_{32}(C)\\,,\\; \\alpha\\in[0.5,2.0]\\;\\text{(default }\\alpha=1.0\\text{)}",
+				  "gloss": "Adaptive exchange timing horizon."
+				}
 			  ],
-			  "notes": "All series correspond to KPIs defined in §5.1 and follow EMA-16/32/64 discipline."
+			  "algorithms": [
+				{
+				  "name": "seen_set_hybrid_policy",
+				  "role": "observer",
+				  "inputs": ["key=(origin, Sigma_phase?, bundle_id)", "now", "Delta_tau_phase"],
+				  "outputs": ["accepted_within_window", "replay_drop_event?"],
+				  "params": ["window = 2·Delta_tau_phase", "eviction = LRU"],
+				  "steps": [
+					"1. Compose key respecting flags (omit checksums if disabled).",
+					"2. If key present and age ≤ window → emit replay_drop_event; set accepted_within_window=false; stop.",
+					"3. Insert key with TTL=window; apply LRU eviction on capacity.",
+					"4. Set accepted_within_window=true; proceed to validation."
+				  ]
+				}
+			  ],
+			  "invariants": [
+				"Replay defenses MUST apply window = 2·Δτ_phase with LRU eviction within the window.",
+				"Key composition MUST respect feature flags (no Sigma_phase/Delta_hash when disabled).",
+				"Observer-only: defenses measure/route; no control writes to \\Xi."
+			  ],
+			  "example_json": {
+				"A.7.fixture": {
+				  "feature_flags": { "enable_exchange_envelope": true, "enable_integrity_checks": true },
+				  "C_trace": [0.62, 0.64, 0.63, 0.65],
+				  "alpha": 1.0,
+				  "Delta_tau_phase": 1,
+				  "window_ticks": 2,
+				  "events": [
+					{ "t": 100, "action": "import", "key": "(agent.A, phase:t100, bundle:G@2025-Q4)", "result": "accepted" },
+					{ "t": 101, "action": "import", "key": "(agent.A, phase:t100, bundle:G@2025-Q4)", "result": "replay_drop" },
+					{ "t": 103, "action": "import", "key": "(agent.A, phase:t103, bundle:G@2025-Q4)", "result": "accepted" }
+				  ],
+				  "telemetry_rollup": {
+					"avg_replay_window_ticks": 2,
+					"replay_drop_rate": 0.333,
+					"accepted_within_window": 0.667
+				  }
+				}
+			  },
+			  "telemetry": [
+				{ "metric": "avg_replay_window_ticks", "range": "[0,+inf)", "units": "ticks", "window": "EMA-32" },
+				{ "metric": "replay_drop_rate", "range": "[0,1]", "units": "fraction", "window": "EMA-32" },
+				{ "metric": "accepted_within_window", "range": "[0,1]", "units": "fraction", "window": "EMA-32" },
+				{ "metric": "import_reject_missing_checksum", "range": "[0,+inf)", "units": "count", "window": "EMA-32" },
+				{ "metric": "illegal_sig_type_rate", "range": "[0,1]", "units": "fraction", "window": "EMA-32" },
+				{ "metric": "wrapped_unsigned_rejects", "range": "[0,+inf)", "units": "count", "window": "EMA-32" }
+			  ],
+			  "references": [
+				"RFC-0008 §2.2 (Exchange timing; replay considerations)",
+				"RFC-0009 §7.2 (Operational telemetry)",
+				"PDP-0001 §3–§4 (Provenance/structure gating)"
+			  ],
+			  "bindings": [
+				{ "dashboard": "exchange/timing", "series": ["avg_replay_window_ticks", "accepted_within_window"], "window": "EMA-32" },
+				{ "dashboard": "security/exchange", "series": ["import_reject_missing_checksum", "replay_drop_rate"], "window": "EMA-32" },
+				{ "dashboard": "security/policy", "series": ["illegal_sig_type_rate", "wrapped_unsigned_rejects"], "window": "EMA-32" },
+				{ "dashboard": "memory/homeostasis", "series": ["saturation_level"], "window": "EMA-32" },
+				{ "dashboard": "memory/recovery", "series": ["reanchor_rate", "quarantine_count"], "window": "EMA-32" },
+				{ "dashboard": "memory/glider_flow", "series": ["glider_detected", "glider_canonical_count"], "window": "EMA-16", "active_when": "enable_point_space_gliders=true" }
+			  ],
+			  "handoff": "Memory prepared and sealed, we hand it to the exchange where phase keeps time."
 			}
 		  ],
 		  "invariants": [
@@ -3544,141 +3877,39 @@
 			"PDP-0001 §3–§4.5 (Provenance protocol and observer-only posture)"
 		  ],
 		  "handoff": "With invariants fixed, we now carry the symbols forward to the next clause, keeping 𝒞 steady and the cadence light."
-		},
+	},
 	  "b": {
 		  "id": "B",
 		  "title": "Appendix B — Implementation Skeletons (Observer-Only, Layer_1)",
-		  "objective": "Provide typed, observer-class skeletons for MMM components: MotifMemoryManager, PRMBuffer cycle, MotifOntologyBundle I/O with RFC-0007 validation, and a symbolic query API with integrity journaling. All emissions honor feature flags; no control writes to Ξ.",
+		  "objective": "Provide typed, observer-class skeletons for MMM components: MotifMemoryManager rollups, PRMBuffer cycle, RFC-0007-compliant MotifOntologyBundle I/O, replay defenses, compression KPIs, and a symbolic query API with integrity journaling. All emissions honor feature flags; no control writes to Ξ.",
 		  "math": [
 			{
 			  "eq_id": "B.0",
 			  "role": "governing_law",
 			  "latex": "\\frac{d\\mathcal{C}}{dt} = \\lambda - \\gamma_{co} + \\varepsilon",
-			  "gloss": "Observer algorithms measure the terms and report; they do not modify state at Layer_1."
+			  "gloss": "Observer algorithms measure the terms and report; Layer_1 does not mutate state."
 			},
 			{
 			  "eq_id": "B.1",
 			  "role": "phase_window",
 			  "latex": "\\Delta\\tau_{phase} = \\alpha\\,EMA_{32}(\\mathcal{C})",
-			  "gloss": "Used to annotate export timing acceptance when sealing telemetry packets."
+			  "gloss": "Export acceptance timing window; default \\alpha = 1.0 with \\alpha \\in [0.5, 2.0]."
 			},
 			{
 			  "eq_id": "B.2",
-			  "role": "ethical_ttl_bound",
-			  "latex": "\\tau_{decay} > 10\\,\\Delta t_{tick}",
-			  "gloss": "Retention floor enforced by observer policy on storage_profile.retention_ticks."
+			  "role": "ethical_ttl_floor",
+			  "latex": "TTL_{floor} = \\max(\\tau_{decay},\\;10\\,\\Delta t_{tick})",
+			  "gloss": "Observer enforces retention floor before any expiry plan is emitted."
 			},
 			{
 			  "eq_id": "Limit.B",
 			  "role": "weak_field",
 			  "latex": "\\mathcal{C} \\to 1",
-			  "gloss": "In weak-field, windows shrink and rollups converge; skeletons expose seeds for EMA-16/32/64."
-			}
-		  ],
-		  "types": {
-			"MotifId": "string",
-			"PsiField": "string  // format: ψ-{fieldname}@Ξ",
-			"Tick": "integer",
-			"EMAWindow": "enum('EMA-16','EMA-32','EMA-64')",
-			"Checksum": "string  // Sigma_phase or Delta_hash values when enabled",
-			"Provenance": {
-			  "origin": "string",
-			  "origin_hash": "string",
-			  "created_at": "string  // ISO-8601"
-			},
-			"Lineage": {
-			  "parent_hash": "string",
-			  "integrity_hash": "string",
-			  "schema": "string  // e.g., 'RFC-0007:v2025-Q4'"
-			},
-			"StorageProfile": {
-			  "profile": "enum('STMM','LTMM','QUARANTINE')",
-			  "retention_ticks": "integer",
-			  "provenance_required": "boolean"
-			}
-		  },
-		  "feature_flags": {
-			"enable_exchange_envelope": true,
-			"enable_integrity_checks": true,
-			"enable_provenance_on_export": true,
-			"enable_point_space_gliders": true
-		  },
-		  "stubs": [
-			{
-			  "name": "MotifMemoryManager",
-			  "role": "observer",
-			  "pseudocode": [
-				"class MotifMemoryManager:",
-				"  init(xref, flags, windows={means:'EMA-64', rates:'EMA-32'}):",
-				"    self.flags ← flags",
-				"    self.windows ← windows",
-				"    self.registry ← xref",
-				"  rollup(trace_window) -> metrics_snapshot:",
-				"    Q_coh ← EMA(self.windows.means, mean(trace_window[*].C))",
-				"    Q_res ← EMA(self.windows.means, mean(trace_window[*].rho_res))",
-				"    promotion_rate ← EMA(self.windows.rates, count(event=='promote')/tick)",
-				"    saturation_level ← EMA(self.windows.rates, LTMM_usage/C_max)",
-				"    reanchor_rate ← EMA(self.windows.rates, count(event=='reanchor_attempt')/tick)",
-				"    quarantine_count ← count_current('QUARANTINE_BUFFER')",
-				"    if self.flags.enable_point_space_gliders: glider_detected_rate ← EMA(self.windows.rates, count(event=='glider_detected')/tick)",
-				"    return metrics_snapshot{Q_coh,Q_res,promotion_rate,saturation_level,reanchor_rate,quarantine_count,glider_detected_rate?}",
-				"  seal(packet_body, provenance, last_Delta_hash, T_mu) -> packet:",
-				"    packet ← { kind:'metrics', body:packet_body, provenance:provenance }",
-				"    if self.flags.enable_exchange_envelope: packet.Sigma_phase ← phase_checksum(packet.body, T_mu)",
-				"    if self.flags.enable_integrity_checks: packet.Delta_hash ← hash_lineage(packet.body, last_Delta_hash)",
-				"    if self.flags.enable_provenance_on_export: packet.provenance.origin_hash ← hash(provenance)",
-				"    return packet"
-			  ]
-			},
-			{
-			  "name": "PRMBuffer.update_cycle",
-			  "role": "observer",
-			  "pseudocode": [
-				"function update_cycle(prm_buffer, tick, inputs):",
-				"  // inputs contains new trace entries (observer-only)",
-				"  prm_buffer.append(inputs.trace_entries)",
-				"  // capacity before pruning: apply shift-equivalence compression first",
-				"  compressed ← compress_by_equivalence(prm_buffer, enabled=!flags.enable_point_space_gliders ? false : true)",
-				"  if is_saturated(compressed):",
-				"    emit_event('saturation_prune', tick)",
-				"    prm_buffer ← bounded_prune(compressed)  // policy defined at Layer_2; here we only mark and measure",
-				"  return view(prm_buffer)"
-			  ]
-			},
-			{
-			  "name": "MotifOntologyBundle.save_load_with_RFC0007_validation",
-			  "role": "observer",
-			  "pseudocode": [
-				"function save_bundle(bundle):",
-				"  require keys ASCII; require version matches 'YYYY-QX'",
-				"  validate DAG acyclicity on motif_index",
-				"  require presence of provenance{origin,origin_hash,created_at} if storage_profile.provenance_required",
-				"  require lineage{parent_hash,integrity_hash,schema}",
-				"  write_to_store(bundle)  // observer staging only",
-				"function load_bundle(bundle_id) -> bundle:",
-				"  bundle ← read_from_store(bundle_id)",
-				"  validate format against RFC-0007 schema",
-				"  return bundle"
-			  ]
-			},
-			{
-			  "name": "symbolic_query_api.resolve_dyad",
-			  "role": "observer",
-			  "pseudocode": [
-				"function resolve_dyad(motif_a: MotifId, motif_b: MotifId, context) -> result:",
-				"  start_journal('integrity')",
-				"  a ← ontology_lookup(motif_a); b ← ontology_lookup(motif_b)",
-				"  assert DAG_no_cycle(a,b)",
-				"  journal.append({event:'lookup', motifs:[a.motif,b.motif], version:a.version})",
-				"  result ← compute_dyad_links(a,b)  // structural match only",
-				"  journal.append({event:'resolve_dyad', parent_hash:a.lineage.parent_hash, integrity_hash:a.lineage.integrity_hash})",
-				"  end_journal('integrity')",
-				"  return result"
-			  ]
+			  "gloss": "In weak-field, windows shrink and rollups converge; seeds use EMA-16/32/64."
 			}
 		  ],
 		  "algorithms": [
-			{
+			"ag.1": {
 			  "name": "compress_by_equivalence",
 			  "role": "observer",
 			  "inputs": ["buffer", "enabled"],
@@ -3692,7 +3923,7 @@
 			  ],
 			  "comment": "Implements RFC-0006 shift-equivalence without emitting glider tags when flag is disabled."
 			},
-			{
+			"ag.2": {
 			  "name": "bounded_prune",
 			  "role": "observer",
 			  "inputs": ["buffer_view"],
@@ -3704,22 +3935,50 @@
 				"3. plan ← take_until(candidates, target=capacity_soft).",
 				"4. return plan."
 			  ],
-			  "comment": "Observer emits a plan only; actual deletions (if any) are Layer_2 concerns."
+			  "comment": "Observer emits a plan only; any deletion is deferred to Layer_2."
 			},
-			{
+			"ag.3": {
+			  "name": "ethical_ttl_floor_check",
+			  "role": "observer",
+			  "inputs": ["storage_profile.retention_ticks", "tau_decay", "delta_t_tick"],
+			  "outputs": ["ttl_ok", "ttl_effective"],
+			  "params": [],
+			  "steps": [
+				"1. ttl_floor ← max(tau_decay, 10 * delta_t_tick).",
+				"2. ttl_effective ← max(storage_profile.retention_ticks, ttl_floor).",
+				"3. ttl_ok ← (storage_profile.retention_ticks >= ttl_floor).",
+				"4. return {ttl_ok, ttl_effective}."
+			  ],
+			  "comment": "Verifies retention against ethical bound before any expiry plan is considered."
+			},
+			"ag.4": {
+			  "name": "seen_set_policy",
+			  "role": "observer",
+			  "inputs": ["key", "now_tick", "alpha", "EMA32_C", "cache"],
+			  "outputs": ["is_replay", "evicted_key?"],
+			  "params": ["Delta_tau_phase = alpha * EMA32_C", "time_window = 2 * Delta_tau_phase"],
+			  "steps": [
+				"1. expire all entries with (now_tick - entry.tick) > time_window (LRU within window).",
+				"2. if key in cache then is_replay ← true else is_replay ← false.",
+				"3. insert/update key with tick=now_tick; apply LRU eviction if capacity pressure.",
+				"4. return {is_replay, evicted_key?}."
+			  ],
+			  "comment": "Hybrid time-window + LRU replay defense aligned with §4.1."
+			},
+			"ag.5": {
 			  "name": "phase_checksum",
 			  "role": "observer",
 			  "inputs": ["body", "T_mu"],
 			  "outputs": ["Sigma_phase"],
-			  "params": [],
+			  "params": ["Delta_tau_phase"],
 			  "steps": [
 				"1. project timestamps along T_mu.",
-				"2. compute bounded phase accumulator over window Δτ_phase.",
+				"2. compute bounded phase accumulator over window Delta_tau_phase.",
 				"3. return textual checksum."
 			  ],
-			  "comment": "Structural phase seal per RFC-0008; not a cryptographic signature."
+			  "comment": "Structural phase seal per RFC-0008; not cryptographic."
 			},
-			{
+			"ag.6": {
 			  "name": "hash_lineage",
 			  "role": "observer",
 			  "inputs": ["body", "last_Delta_hash"],
@@ -3755,11 +4014,128 @@
 			  "source": "RFC-0007 §5–§8"
 			}
 		  ],
-		  "implementation_notes": [
-			"On-wire JSON keys are ASCII; math glyphs remain inside 'latex' strings.",
-			"StorageProfile.retention_ticks is checked against the ethical bound before any expiry plan is emitted.",
-			"PRMBuffer saturation triggers emission of a prune plan and telemetry events; execution is deferred to Layer_2.",
-			"symbolic_query_api emits integrity journals for audit and dashboard correlation."
+		  "example_json": {
+			"types_append": {
+			  "CompressionSnapshot": {
+				"pre_equiv_count": "integer",
+				"post_equiv_count": "integer",
+				"lawful_compression_ratio": "float",
+				"equivalence_efficiency": "float"
+			  },
+			  "ExchangeEnvelopeHeader": {
+				"version": "2025-Q4",
+				"valid_until": 0,
+				"provenance": { "origin": "", "origin_hash": "" },
+				"envelope": { "sig_type": "", "agent_id": "" },
+				"Sigma_phase": "optional (flag-gated)",
+				"Delta_hash": "optional (flag-gated)"
+			  }
+			},
+			"stubs_append": [
+			  {
+				"name": "util.compute_resonance_band_share",
+				"role": "observer",
+				"pseudocode": [
+				  "function compute_resonance_band_share(entries, band=[0.3,0.7]) -> float:",
+				  "  r <- count(rho_res in band)/len(entries)",
+				  "  return EMA('EMA-32', r)"
+				]
+			  },
+			  {
+				"name": "util.compute_compression_kpis",
+				"role": "observer",
+				"pseudocode": [
+				  "function compute_compression_kpis(pre_equiv_count, post_equiv_count) -> CompressionSnapshot:",
+				  "  if pre_equiv_count == 0: return {pre_equiv_count:0, post_equiv_count:0, lawful_compression_ratio:1.0, equivalence_efficiency:0.0}",
+				  "  lcr <- post_equiv_count / pre_equiv_count",
+				  "  eff <- (pre_equiv_count - post_equiv_count) / pre_equiv_count",
+				  "  return {pre_equiv_count, post_equiv_count, lawful_compression_ratio:lcr, equivalence_efficiency:eff}"
+				]
+			  },
+			  {
+				"name": "util.seen_set_cache",
+				"role": "observer",
+				"pseudocode": [
+				  "function seen_set_cache_insert(key=(origin, Sigma_phase?, bundle_id), ttl=Delta_tau_accept):",
+				  "  // note: omit Sigma_phase in key when enable_exchange_envelope=false",
+				  "  store key with ttl; return prior_presence_flag"
+				]
+			  },
+			  {
+				"name": "util.quarantine_staging_record",
+				"role": "observer",
+				"pseudocode": [
+				  "function quarantine_staging_record(reason, packet, timestamp):",
+				  "  append to trace {reason, packet_meta, timestamp};",
+				  "  return handle"
+				]
+			  },
+			  {
+				"name": "MotifMemoryManager.rollup",
+				"role": "observer",
+				"pseudocode": [
+				  "function rollup(trace_window, flags, windows={means:'EMA-64', rates:'EMA-32'}) -> metrics_snapshot:",
+				  "  Q_coh <- EMA(windows.means, mean(trace_window[*].C))",
+				  "  Q_res <- EMA(windows.means, mean(trace_window[*].rho_res))",
+				  "  promotion_rate <- EMA(windows.rates, count(event=='promote')/tick)",
+				  "  saturation_level <- EMA(windows.rates, LTMM_usage/C_max)",
+				  "  reanchor_rate <- EMA(windows.rates, count(event=='reanchor_attempt')/tick)",
+				  "  quarantine_count <- count_current('QUARANTINE_BUFFER')",
+				  "  if flags.enable_point_space_gliders: glider_detected <- EMA('EMA-16', count(event=='glider_detected')/tick)",
+				  "  return {Q_coh, Q_res, promotion_rate, saturation_level, reanchor_rate, quarantine_count, glider_detected?}"
+				]
+			  },
+			  {
+				"name": "MotifMemoryManager.seal",
+				"role": "observer",
+				"pseudocode": [
+				  "function seal(packet_body, provenance, last_Delta_hash, T_mu, flags) -> packet:",
+				  "  packet <- { kind:'metrics', body:packet_body, provenance:provenance }",
+				  "  if flags.enable_exchange_envelope: packet.Sigma_phase <- phase_checksum(packet.body, T_mu)",
+				  "  if flags.enable_integrity_checks: packet.Delta_hash <- hash_lineage(packet.body, last_Delta_hash)",
+				  "  if flags.enable_provenance_on_export: packet.provenance.origin_hash <- hash(provenance)",
+				  "  return packet"
+				]
+			  },
+			  {
+				"name": "MotifOntologyBundle.save_load_with_RFC0007_validation",
+				"role": "observer",
+				"pseudocode": [
+				  "function save_bundle(bundle):",
+				  "  require keys ASCII; require version matches 'YYYY-QX'",
+				  "  validate DAG acyclicity on motif_index",
+				  "  require presence of provenance{origin,origin_hash,created_at} if storage_profile.provenance_required",
+				  "  require lineage{parent_hash,integrity_hash,schema}",
+				  "  write_to_store(bundle)  // observer staging only",
+				  "function load_bundle(bundle_id) -> bundle:",
+				  "  bundle <- read_from_store(bundle_id)",
+				  "  validate format against RFC-0007 schema",
+				  "  return bundle"
+				]
+			  },
+			  {
+				"name": "symbolic_query_api.resolve_dyad",
+				"role": "observer",
+				"pseudocode": [
+				  "function resolve_dyad(motif_a: MotifId, motif_b: MotifId, context) -> result:",
+				  "  start_journal('integrity')",
+				  "  a <- ontology_lookup(motif_a); b <- ontology_lookup(motif_b)",
+				  "  assert DAG_no_cycle(a,b)",
+				  "  journal.append({event:'lookup', motifs:[a.motif,b.motif], version:a.version})",
+				  "  result <- compute_dyad_links(a,b)  // structural match only",
+				  "  journal.append({event:'resolve_dyad', parent_hash:a.lineage.parent_hash, integrity_hash:a.lineage.integrity_hash})",
+				  "  end_journal('integrity')",
+				  "  return result"
+				]
+			  }
+			]
+		  },
+		  "telemetry": [
+			{ "metric": "lawful_compression_ratio", "range": "[0,1]", "units": "dimensionless", "window": "EMA-32" },
+			{ "metric": "equivalence_efficiency", "range": "[0,1]", "units": "fraction", "window": "EMA-16" },
+			{ "metric": "avg_replay_window_ticks", "range": "[0,+inf)", "units": "ticks", "window": "EMA-32" },
+			{ "metric": "quarantine_count", "range": "[0,+inf)", "units": "count", "window": "EMA-32" },
+			{ "metric": "reanchor_rate", "range": "[0,+inf)", "units": "events/tick", "window": "EMA-32" }
 		  ],
 		  "references": [
 			"RFC-0005 §4.2 (Temporal decay, retention horizons)",
@@ -3771,7 +4147,7 @@
 		  ],
 		  "handoff": "With invariants fixed, we now carry the symbols forward to the next clause, keeping 𝒞 steady and the cadence light."
 		}
-    }
   ],
+  },
   "_handoff": "Memory coherence preserved; lawful decay and recovery verified. Proceed to Layer_2 application specification (MMM-APP-001) for operational bindings."
 }
