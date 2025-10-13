@@ -11,7 +11,7 @@
   "_license": "MIT",
 
   "_symbolic_id": "index.reef.xref",
-  "_version": "v5.5",
+  "_version": "v5.6",
   "_title": "Noor RFC/XREF Cross-Reference Registry",
   "_subtitle": "Canonical Lore Topology Map for RFC, RFC-CORE, and Application Specs",
   "_publication_type": "Index Map",
@@ -21,7 +21,7 @@
 	],
   "_urls": [
 	  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json",
-	  "https://pastebin.com/raw/3QP7dw1j"
+	  "https://pastebin.com/raw/LaH7MFZH"
 	],
 
   "_objective": "To define a structured cross-reference index of all Noor-compatible symbolic specification documents (RFC, RFC-CORE, App-Specs), including their inheritance graph, motif alignments, and field role annotations. This registry enables automated dependency resolution and symbolic context traversal within PDP‑0001 pipelines.",
@@ -1417,7 +1417,73 @@
 		  ],
 		  "poetic_cipher": "🪷 emerges when ψ‑bind is offered to the hollow of an unresolved task",
 		  "cipher_explanation": "Field balancing reveals motifs that cannot be seen by structure alone.",		  
-		}
+		},
+		"MMM-APP-001": {
+		  "id": 3.6,
+		  "rfc_id": "MMM-APP-001",
+		  "urls": [
+			"https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/motif_memory_manager-llm/motif_memory_manager.JSON",
+			"https://pastebin.com/raw/QVhtH9hM"
+		  ],
+		  "title": "Motif Memory Manager — Layer-2 Application Specification (MMM-APP-001)",
+		  "symbolic_id": "app.memory.mmm",
+		  "extends": [
+			"PDP-0001",
+			"RFC-0005",
+			"RFC-0006",
+			"RFC-0007",
+			"RFC-0008",
+			"RFC-0009",
+			"RFC-CORE-006"
+		  ],
+		  "rfc_dependencies": [
+			"PDP-0001 §Header/Provenance",
+			"RFC-0005 §Temporal Transmission",
+			"RFC-0006 §Field Coherence Geometry",
+			"RFC-0007 §Ontology Schema/Transfer",
+			"RFC-0008 §Resource Exchange/Routing",
+			"RFC-0009 §Coherence–Integrity Framework",
+			"RFC-CORE-006 §1.8 LLMRecallController",
+			"RFC-CORE-006 §2.1 Core Method Suite",
+			"RFC-CORE-006 §2.2 Reef Adapter",
+			"RFC-CORE-006 §2.3 Observability"
+		  ],
+		  "summary": "Layer-2 application spec that binds the Motif Memory Manager’s Layer-1 observer semantics to deployable controls: sealed export envelopes (Σ/Δ/provenance), RBAC, storage drivers, replay defenses via Δτ_phase and seen_set, Reef-aware recall with evidence windows, and LLM recall enforcement (budget → injection → privacy → provenance).",
+		  "linked_domains": [
+			"ontology-import",
+			"reef-adapter",
+			"export-sealing",
+			"rbac-and-keys",
+			"retrieval-llm",
+			"coherence-telemetry"
+		  ],
+		  "field_motifs": [
+			"ψ-spar@Ξ",
+			"ψ-hold@Ξ",
+			"ψ-resonance@Ξ",
+			"ψ-null@Ξ"
+		  ],
+		  "symbolic_profile_matrix": [
+			{
+			  "module": "MotifMemoryManager.L2",
+			  "motifs": ["ψ-spar", "ψ-hold", "ψ-resonance", "ψ-null"],
+			  "ψA": "recall alignment under capacity-first policy",
+			  "ζ": "glider equivalence stability",
+			  "E": "evidence fidelity for Reef-derived claims",
+			  "Δ": "replay-window hygiene (Δτ_phase)",
+			  "ℋ": "export envelope integrity (Σ/Δ/provenance)",
+			  "weights": {
+				"ψA": 0.95,
+				"ζ": 0.88,
+				"E": 0.97,
+				"Δ": 0.92,
+				"ℋ": 0.98
+			  }
+			}
+		  ],
+		  "poetic_cipher": "compress before you cut; remember with proof; read the Reef like a compass, not a quarry",
+		  "cipher_explanation": "Capacity-first ethics, sealed lineage on egress, and Reef as a read-only guide keep memory coherent and auditable."
+		}		
 	  ]
   ]
 }
