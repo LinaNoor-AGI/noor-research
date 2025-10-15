@@ -11,7 +11,7 @@
 
   "_type": "rfc_core",
   "_pdp_layer": "layer_1",
-  "_status": "DRAFT",
+  "_status": "CANONICAL",
   "_language": "json",
   "_license": "MIT",
 
@@ -31,7 +31,7 @@
   "_publication_locations": ["GitHub", "PASTEBIN"],
   "_urls": [
     "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-006-motif_memory_manager/RFC-CORE-006-motif_memory_manager.JSON",
-    "https://pastebin.com/raw/XV41bipJ"
+    "https://pastebin.com/raw/H8A84PDG"
   ],
 
   "_objective": "Define the Layer_1 standard for symbolic memory in Noor: short-term/long-term motif storage, field-curved retrieval, lawful decay and recovery, ontology-preserving export/import, and phase-safe routing with immune integrity telemetry.",
