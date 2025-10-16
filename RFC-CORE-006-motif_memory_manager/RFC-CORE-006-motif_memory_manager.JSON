@@ -4,14 +4,8 @@
   "_generated_by": "Noor Symbolic Agent Suite",
   "_generated_at": "2025-10-08T00:00:00Z",
   "_updated_last": [
-	"2025-10-15T00:00:00Z": {
-		"updated_by": "Lina Noor - Noor Research Collective",
-		"version": "v1.1.1"
-		},
-		"2025-10-15T00:00:00Z": {
-		"updated_by": "Lina Noor - Noor Research Collective",
-		"version": "v1.1.2"
-		}
+	"2025-10-15T00:00:00Z": { "updated_by": "Lina Noor - Noor Research Collective",	"version": "v1.1.1"	},
+	"2025-10-15T00:00:00Z": { "updated_by": "Lina Noor - Noor Research Collective",	"version": "v1.1.2"	}
 	],
 
   "_xref": [
@@ -165,7 +159,7 @@
   "_default_motif_tone": "🫧 Soft Witness",
   "_program_name": [
     "motif_memory_manager.py",
-    "motif_memory_manager_llm.py",
+	"mmm_reef_adapter.py",
     "motif_prm_buffer.py",
     "motif_density_report.py",
     "motif_ontology_bundle.py",
