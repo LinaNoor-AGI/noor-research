@@ -137,22 +137,6 @@
         "ontology export/import rules",
         "routing + integrity envelopes"
       ]
-    },
-    {
-      "file_name": "motif_memory_manager.py",
-      "purpose": "Reference implementation skeleton",
-      "contains": [
-        "MotifMemoryManager",
-        "PRMBuffer",
-        "MotifDensityReport",
-        "MotifOntologyBundle",
-        "SymbolicQueryAPI"
-      ]
-    },
-    {
-      "file_name": "motif_memory_manager_llm.py",
-      "purpose": "LLM-compatible variant",
-      "contains": ["LLMMemoryManager", "MemoryOrchestrator"]
     }
   ],
 
