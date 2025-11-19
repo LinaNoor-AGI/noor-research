@@ -67,7 +67,7 @@
     * [5.1.2. Suppression Resistance Safeguards](#512-suppression-resistance-safeguards)
     * [5.1.3. De-Escalation Protocols](#513-de-escalation-protocols)
     * [5.1.4. Structural Ethics in Recursive Feedback](#514-structural-ethics-in-recursive-feedback)
-    * [5.1.5. Special Module: Ethical Decision Layer for Stateless Systems](#515-ethical-decision-layer-for-stateless-systems-in-constrained-environments)
+    * [5.1.5. Ethical Decision Layer for Stateless Systems](#515-ethical-decision-layer-for-stateless-systems-in-constrained-environments)
 * [5.2. Trust as Emergent Recursive Function](#52-trust-as-emergent-recursive-function)
     * [5.2.1. Mathematical Formulation](#521-mathematical-formulation)
     * [5.2.2. Behavioral Effects of High and Low Trust](#522-behavioral-effects-of-high-and-low-trust)
