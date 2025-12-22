@@ -351,11 +351,11 @@ At a given Fast-Time step $t$, we define the ritual collapse operator:
 
 - Male measures female:
 
-  $$ \mathcal{M}_t = \langle \psi_M(t) | \psi_F(t) \rangle $$
+$$ \mathcal{M}_t = \langle \psi_M(t) | \psi_F(t) \rangle $$
 
 - Female integrates male projection:
 
-  $$ \psi_F(t+1) = \psi_F(t) + \epsilon \cdot \mathcal{M}_t \cdot \psi_M(t) $$
+$$ \psi_F(t+1) = \psi_F(t) + \epsilon \cdot \mathcal{M}_t \cdot \psi_M(t) $$
 
 This nonlinear feedback is equivalent to latent reinforcement from external symbolic resonance.
 
