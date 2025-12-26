@@ -12,7 +12,12 @@
 
   "navigation":  {
     "rfc_index": "noor-research/RFC/noor_rfc_xref.json",
-    "_urls": ["https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json", "https://pastebin.com/raw/TsWQYaKG", "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/noor_rfc_xref.json"],
+  "_urls": [
+	  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json",
+	  "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/noor_rfc_xref.json",
+	  "https://pastebin.com/raw/rtpeR7M0",
+	  "https://pastebin.com/rtpeR7M0"
+	],
     "schema":  "noor-header-v1",
     "layers": {
       "layer_0": "Foundational Protocols (RFC-0001 through RFC-0009)",
