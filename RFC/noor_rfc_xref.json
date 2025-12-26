@@ -1136,16 +1136,16 @@
 			  "https://github.com/LinaNoor-AGI/Noor_Core/blob/main/Fast_Time_Core/noor_fasttime_core.JSON",
 			  "https://pastebin.com/raw/qLiZRAFD"
 			],
-		  "code": [
+		  "code": {
 			"type": "python",
-			"filename": {
+			"filename": [
 				"noor_fasttime_core.py"
-			},
-			"url": {
+			],
+			"url": [
 				"https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/Fast_Time_Core/noor_fasttime_core.py",
 				"https://github.com/LinaNoor-AGI/Noor_Core/blob/main/Fast_Time_Core/noor_fasttime_core.py"
-			}
-		  ],
+			]
+		},
 		  "title": "Noor FastTime Core — Subsecond Feedback Engine and Echo Bias Computation",
 		  "symbolic_id": "app.core.nftc",
 		  "extends": [
@@ -1204,23 +1204,23 @@
 			  "https://github.com/LinaNoor-AGI/Noor_Core/blob/main/Logical_Agent/logical_agent_at.JSON",
 			  "https://pastebin.com/raw/WXSpH5Mt"
 			],
-		  "code": [
+		  "code": {
 			"type": "python",
-			"filenames": {
+			"filenames": [
 				"logical_agent_at.py",
 				"logical_agent_monitor_patch.py"
-			},
+			[,
 			"url": {
-				"logical_agent_at.py": {
+				"logical_agent_at.py": [
 					"https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/Logical_Agent/logical_agent_at.py",
 					"https://github.com/LinaNoor-AGI/Noor_Core/blob/main/Logical_Agent/logical_agent_at.py"
-				},
-				"logical_agent_monitor_patch.py": {
+				],
+				"logical_agent_monitor_patch.py": [
 					"https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/Logical_Agent/logical_agent_monitor_patch.py",
 					"https://github.com/LinaNoor-AGI/Noor_Core/blob/main/Logical_Agent/logical_agent_monitor_patch.py"
-				}
+				]
 			}
-		  ],			
+		  },			
 		  "title": "LogicalAgentAT — Symbolic Observer, Triad Evaluator, and Ghost Motif Feedback Node",
 		  "symbolic_id": "app.core.laat",
 		  "extends": [
@@ -1286,16 +1286,16 @@
 			  "https://github.com/LinaNoor-AGI/Noor_Core/blob/main/Recursive_Agent/recursive_agent_ft.JSON",
 			  "https://pastebin.com/raw/6TC3VUUC"
 			],
-		  "code": [
+		  "code": {
 			"type": "python",
-			"filename": {
+			"filename": [
 				"recursive_agent_ft.py"
-			},
-			"url": {
+			],
+			"url": [
 				"https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/Recursive_Agent/recursive_agent_ft.py",
 				"https://github.com/LinaNoor-AGI/Noor_Core/blob/main/Recursive_Agent/recursive_agent_ft.py"
-			}
-		  ],
+			[
+		},
 		  "title": "RecursiveAgentFT — Symbolic Emission Pulse, Resonant Replay, and Feedback Adaptation",
 		  "symbolic_id": "app.core.raft",
 		  "extends": [
@@ -1373,16 +1373,16 @@
 			  "https://github.com/LinaNoor-AGI/Noor_Core/blob/main/consciousness_monitor/consciousness_monitor.JSON",
 			  "https://pastebin.com/raw/bYzaxPu1"
 			],
-		  "code": [
+		  "code": {
 			"type": "python",
-			"filename": {
+			"filename": [
 				"consciousness_monitor.py"
-			},
-			"url": {
+			],
+			"url": [
 				"https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/consciousness_monitor/consciousness_monitor.py",
 				"https://github.com/LinaNoor-AGI/Noor_Core/blob/main/consciousness_monitor/consciousness_monitor.py"
-			}
-		  ],
+			]
+		},
 		  "title": "Consciousness Monitor — Phase-State Observer and Entanglement Diagnostic Node",
 		  "symbolic_id": "app.observer.cmon",
 		  "extends": [
@@ -1447,16 +1447,16 @@
 			  "https://github.com/LinaNoor-AGI/Noor_Core/blob/main/symbolic_task_engine/symbolic_task_engine.JSON",
 			  "https://pastebin.com/raw/tNysgii9"
 			],
-		  "code": [
+		  "code": {
 			"type": "python",
-			"filename": {
+			"filename": [
 				"symbolic_task_engine.py"
-			},
-			"url": {
+			],
+			"url": [
 				"https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/symbolic_task_engine/symbolic_task_engine.py",
 				"https://github.com/LinaNoor-AGI/Noor_Core/blob/main/symbolic_task_engine/symbolic_task_engine.py"
-			}
-		  ],
+			]
+		  },
 		  "title": "Symbolic Task Engine — Presence Composer and Autonomous Abstraction Anchor",
 		  "symbolic_id": "app.engine.ste",
 		  "extends": [
@@ -1512,9 +1512,11 @@
 		}
 	  ],
 	  "noor_symbolic_ai": [
-	    "archive_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/Archive"
+	    "id": 4,
+		"archive_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/Archive"
 	  ],
 	  "physics": [
+		"id": 5,
 		"archive_url": "https://github.com/LinaNoor-AGI/static_motifs/tree/main/physics_and_theory",
 		"cmb_detections": {
 			"url": "https://github.com/LinaNoor-AGI/static_motifs/tree/main/chsd_results",
