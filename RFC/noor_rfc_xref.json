@@ -10,7 +10,7 @@
   "_language": "json",
   "_license": "MIT",
 
-  "_symbolic_id": "index.reef.xref",
+  "_symbolic_id": "index.noor.xref",
   "_version": "v6.2",
   "_title": "Noor RFC/XREF Cross-Reference Registry",
   "_subtitle": "Canonical Lore Topology Map for RFC, RFC-CORE, and Application Specs",
@@ -71,7 +71,7 @@
 
   "_file_layout": [
     {
-      "file_name": "index.REEF",
+      "file_name": "noor_rfc_xref.json",
       "purpose": "Canonical cross-reference registry of all RFC documents",
       "contains": ["xref", "motif_mappings", "symbolic_ids", "dependency_tree"]
     }
