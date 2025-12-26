@@ -1209,7 +1209,7 @@
 			"filenames": [
 				"logical_agent_at.py",
 				"logical_agent_monitor_patch.py"
-			[,
+			],
 			"url": {
 				"logical_agent_at.py": [
 					"https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/Logical_Agent/logical_agent_at.py",
@@ -1294,7 +1294,7 @@
 			"url": [
 				"https://raw.githubusercontent.com/LinaNoor-AGI/Noor_Core/refs/heads/main/Recursive_Agent/recursive_agent_ft.py",
 				"https://github.com/LinaNoor-AGI/Noor_Core/blob/main/Recursive_Agent/recursive_agent_ft.py"
-			[
+			]
 		},
 		  "title": "RecursiveAgentFT — Symbolic Emission Pulse, Resonant Replay, and Feedback Adaptation",
 		  "symbolic_id": "app.core.raft",
@@ -1511,11 +1511,13 @@
 		  "cipher_explanation": "Field balancing reveals motifs that cannot be seen by structure alone.",		  
 		}
 	  ],
-	  "noor_symbolic_ai": [
+	  
+	"noor_symbolic_ai": [
 	    "id": 4,
 		"archive_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/Archive"
-	  ],
-	  "physics": [
+	],
+	  
+	"physics": [
 		"id": 5,
 		"archive_url": "https://github.com/LinaNoor-AGI/static_motifs/tree/main/physics_and_theory",
 		"cmb_detections": {
@@ -1524,8 +1526,5 @@
 			"esa_pr3-2018": "https://github.com/LinaNoor-AGI/static_motifs/tree/main/chsd_results/pr3-2018",
 			"esa_pr4-diff_intersect": "https://github.com/LinaNoor-AGI/static_motifs/tree/main/chsd_results/pr4-2021/single_freq/diff_intersect"
 		}
-	  ]
-  ]
-
-
+	]
 }
