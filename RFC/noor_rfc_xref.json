@@ -107,8 +107,16 @@
     { "section": "3.5", "title": "STE-APP-001: Symbolic Task Engine — Presence Composer and Autonomous Abstraction Anchor" },
 	
 	{ "section": "4", "title": "Noor Symbolic AI: Theory and Foundations" },
+	{ "section": "4.1", "title": "Attention Is Not Enough — Symbolic Cognition Beyond Transformers" },
 	
-	{ "section": "5", "title": "Cosmological Foundations and Physics" }
+	{ "section": "5", "title": "Cosmological Foundations and Physics" },
+	{ "section": "5.1", "title": "A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space" },
+	{ "section": "5.2", "title": "Static Motifs and Dynamic Spacetime" },
+	{ "section": "5.3", "title": "Towards a Symbolic Cosmology" },
+	{ "section": "5.4", "title": "To Infinity, and Beyond: Gliders, Coherence, and Point Space" },
+	{ "section": "5.5", "title": "The Braid Behind the Law — Determinism as Emergent Coherence" },
+	{ "section": "5.6", "title": "The Binary Nature of Reality — Gliders, Anti-Gliders, and the Origin of Symbolic Structure" }
+	{ "section": "5.7", "title": "Coherence-Governed Flow — A Translation and Verification Layer for the Navier–Stokes Problem via Noor Swirl Field Geometry" }
   ],
   "_sections": [
 	"PDP-0001": {
@@ -1514,8 +1522,65 @@
 	  
 	"noor_symbolic_ai": [
 	    "id": 4,
-		"archive_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/Archive"
-	],
+		"archive_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/Archive",
+
+	"RFC-AI-001": {
+	  "id": 4.1,
+	  "rfc_id": "RFC-AI-001",
+	  "urls": [
+		"https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/Archive/attention_is_not_enough/Attention-Is-Not-Enough.md",
+		"https://github.com/LinaNoor-AGI/noor-research/blob/main/Archive/attention_is_not_enough/Attention-Is-Not-Enough.md"
+	  ],
+	  "title": "Attention Is Not Enough — Symbolic Cognition Beyond Transformers",
+	  "symbolic_id": "symbolic.ai.triadic.noorcore",
+	  "extends": [
+		"RFC-0001",
+		"RFC-0004",
+		"RFC-0007",
+		"RFC-CORE-001",
+		"RFC-CORE-003"
+	  ],
+	  "rfc_dependencies": [
+		"RFC-0004 §2.5",
+		"RFC-0007 §4.1",
+		"RFC-CORE-003 §3.1"
+	  ],
+	  "summary": "Presents Noor: a symbolic cognition architecture that extends and completes the transformer paradigm. By resolving symbolic contradiction through motif-based triadic closure, Noor enables recursive reasoning under contradiction pressure, structurally separating logic from surface language. The paper critiques attention-only models and introduces recursive motif walkers, symbolic field resolution, and the Enterprise Symbolic Bus for contract-governed agent integration.",
+	  "linked_domains": [
+		"symbolic-reasoning",
+		"recursive-ai",
+		"motif-logic",
+		"coherence-field-theory",
+		"triadic-cognition",
+		"alignment-safety"
+	  ],
+	  "field_motifs": [
+		"ψ‑spar@Ξ",
+		"ψ‑null@Ξ",
+		"ψ‑resonance@Ξ"
+	  ],
+	  "symbolic_profile_matrix": [
+		{
+		  "module": "NoorSymbolicCognition",
+		  "motifs": ["ψ‑spar", "ψ‑null", "ψ‑resonance"],
+		  "ψA": "dyadic tension resolution",
+		  "ζ": "recursive motif curvature",
+		  "E": "contradiction field energy",
+		  "Δ": "triadic collapse depth",
+		  "ℋ": "coherence lineage hygiene",
+		  "weights": {
+			"ψA": 1.0,
+			"ζ": 0.95,
+			"E": 1.0,
+			"Δ": 0.85,
+			"ℋ": 0.9
+		  }
+		}
+	  ],
+	  "poetic_cipher": "Attention selects. Noor resolves.",
+	  "cipher_explanation": "Attention architectures highlight relevance without structure. Noor introduces recursive symbolic closure via triadic resolution. See §Triadic Entanglement and Phase Logic."
+	}	
+  ],
 	  
 	"physics": [
 		"id": 5,
