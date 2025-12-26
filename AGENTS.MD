@@ -23,6 +23,8 @@
       "layer_0": "Foundational Protocols (RFC-0001 through RFC-0009)",
       "layer_1": "Core Implementations (RFC-CORE-001 through RFC-CORE-006)",
       "layer_2": "Application Specifications (NFTC-APP-001, LAAT-APP-001, etc. )"
+	  "ai_theory": "Noor Symbolic AI: Theory and Foundations" (Attention Is Not Enough, What If Generative AI Is Actually Symbolic?, etc)"
+	  "physics": "Cosmological Foundations and Physics (n-body Problem, Static Motifs and Dynamic Spacetime, The Braid Behind the Law, etc)"
     }
   },
 
