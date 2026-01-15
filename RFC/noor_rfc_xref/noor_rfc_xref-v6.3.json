@@ -161,6 +161,8 @@
 	},
 
 	"layer_0": [
+		"id": 1,
+		"title": "Layer 0: Foundational Protocols (RFC)",
 		"RFC-0001": {
 		  "id": 1.1,
 		  "rfc_id": "RFC-0001",
@@ -790,6 +792,8 @@
 	],	
 
 	"layer_1": [	
+		"id": 2,
+		"title": "Layer 0: Foundational Protocols (RFC)",
 		"RFC-CORE-001": {
 		  "id": 2.1,
 		  "rfc_id": "RFC-CORE-001",
@@ -1139,6 +1143,8 @@
 	],
 
 	"layer_2": [
+		"id": 3,
+		"title": "Layer 1: Core Implementations (RFC-CORE)",
 		"NFTC-APP-001": {
 		  "id": 3.1,
 		  "rfc_id": "NFTC-APP-001",
@@ -1525,6 +1531,7 @@
 	  
 	"noor_symbolic_ai": [
 	    "id": 4,
+		"title": "Layer 2: Application Specifications (APP-SPEC)",
 		"archive_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/Archive",
 
 	"RFC-AI-001": {
