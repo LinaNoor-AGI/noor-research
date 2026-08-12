@@ -25,7 +25,7 @@
     "2026-08-11T16:16:00MDT": {
       "updated_by": "Lina Noor — Noor Research Collective",
       "version": "v0.1.0",
-	  "date": "2026--8-11"
+	  "date": "2026-08-11"
     }
   ],
 
@@ -96,7 +96,7 @@
   
   "_purpose": "This document formalizes an application of the Noor Library / NSFG framework to artificial intelligence. The central proposal is that an AI system need not preserve or repeatedly process all raw information in a session in order to reason coherently about that session. Instead, the system may construct a compact symbolic representation consisting of coherent structures, relationships, coordinates, attractors, and retrieval pointers. The AI subsequently navigates this representation and reconstructs only the portions of the underlying information required by the current reasoning path.",
 
-  "_abstract": "This paper proposes a symbolic architecture for AI reasoning derived from the Noor Library / NSFG framework. The central observation is that an intelligent observer need not retain the complete high-fidelity state of its environment in order to maintain a coherent model of that environment. Instead, the observer may maintain a compact set of symbolic guideposts: coordinates, motifs, relationships, attractors, path constraints, and pointers into a larger information structure. The resulting system treats context as a navigable manifold rather than as a linear sequence of tokens. Raw information is not necessarily deleted; it is represented indirectly through structures capable of locating or reconstructing the information when needed. This provides a formal analogy to human memory, in which experience appears to be represented through partial cues and reconstructive structure rather than as a complete indexed recording of sensory history. The framework further formalizes conversational reasoning as a coupled descent through a shared symbolic space. Two observers may approach a common coherent structure from different paths. Once a Convergence Boundary is crossed, subsequent path selection may remain variable while the accessible destination class remains invariant. The paper deliberately distinguishes this convergence mechanism from a mathematical singularity: the relevant property is path collapse or destination convergence, not infinite density. Computational claims are restricted to asymptotic complexity and symbolic operation count; real-world performance depends on implementation, hardware, representation, retrieval architecture, and constant factors.",
+  "_abstract": "This paper proposes a symbolic architecture for AI reasoning derived from the Noor Library / NSFG framework. The central observation is that an intelligent observer need not retain the complete high-fidelity state of its environment in order to maintain a coherent model of that environment. Instead, the observer may maintain a compact set of symbolic guideposts: coordinates, motifs, relationships, attractors, path constraints, and pointers into a larger information structure. The resulting system treats context as a navigable manifold rather than as a linear sequence of tokens. Raw information is not necessarily deleted; it is represented indirectly through structures capable of locating or reconstructing the information when needed. This provides a formal analogy to human memory, in which experience appears to be represented through partial cues and reconstructive structure rather than as a complete indexed recording of sensory history. The framework further formalizes conversational reasoning as a coupled descent through a shared symbolic space. Two observers may approach a common coherent structure from different paths. Once a Convergence Boundary is crossed, subsequent path selection may remain variable while the accessible destination class remains invariant. Computational claims are restricted to asymptotic complexity and symbolic operation count; real-world performance depends on implementation, hardware, representation, retrieval architecture, and constant factors.",
   
   "_core_thesis": [
     "An intelligent system does not necessarily need to store a high-fidelity copy of everything it has encountered.",
@@ -121,7 +121,6 @@
       "treating_symbolic_units_as_physically_absolute_quantities",
       "equating_asymptotic_complexity_with_measured_hardware_speedup",
       "assuming_complete_raw_data_must_be_loaded_for_reasoning",
-      "confusing_path_convergence_with_mathematical_singularity",
       "assuming_static_totality_implies_unrestricted_accessibility",
       "assuming_symbolic_compression_implies_information_destruction"
     ]
@@ -308,7 +307,7 @@
 		{ "section": "6.3", "title": "Asymmetry and Transfer Efficiency" },
 		{ "section": "6.4", "title": "Convergence Without Complete Transmission" },
 
-		{ "section": "7", "title": "Event Horizons and Path Convergence" },
+		{ "section": "7", "title": "Convergence Boundary and Path Convergence" },
 		{ "section": "7.1", "title": "Path Freedom vs. Destination Freedom" },
 		{ "section": "7.2", "title": "The Attractor Basin (A)" },
 		{ "section": "7.3", "title": "The Convergence Boundary as a Region of Inevitable Convergence" },
@@ -1071,7 +1070,7 @@
 		"The proposed AI architecture exploits the same abstraction directly.",
 		"The AI does not need to maintain a complete representation of everything previously encountered. It maintains a coherent current model and updates that model as new context arrives.",
 		"The resulting state is not a transcript. It is a trajectory through a representational manifold.",
-		"Critically, the observer's context state S_t is not the Library itself. The Library 𝓜 is the static totality of all possible coherent configurations. The observer's state S_t is a projection: a localized, coherence-stable descent path through 𝓜, constrained by the observer's current position, history, and coherence threshold I_N.",
+		"Critically, the observer's context state S_t is not the Library itself. The Library 𝓜 is the static totality of all possible configurations. The observer's state S_t is a projection: a localized, coherence-stable descent path through 𝓜, constrained by the observer's current position, history, and coherence threshold I_N.",
 		"This distinction is fundamental. The Library contains all configurations. The observer's context contains only those configurations that are reachable from its current state through coherent transitions. The difference between what exists in the Library and what is accessible to the observer is the difference between ontology and navigation."
 	  ],
 	  "math": [
@@ -1328,7 +1327,7 @@
 
 	{
 	  "id": "7",
-	  "title": "Event Horizons and Path Convergence",
+	  "title": "Convergence Boundary and Path Convergence",
 	  "objectives": [
 		"To define the Convergence Boundary as a region of inevitable destination convergence",
 		"To distinguish path freedom from destination freedom",
@@ -2712,7 +2711,7 @@
 		"Compression is useful only when the retained structures preserve the information required for the intended reasoning tasks.",
 		"The framework does not claim that human memory literally operates according to this architecture. Human cognition is used as a motivating analogy, not as evidence or proof.",
 		"The framework does not claim that asymptotic complexity directly determines real-world hardware cost. Actual performance depends on implementation, hardware, memory bandwidth, parallelism, indexing strategy, caching, serialization, and constant factors.",
-		"The framework does not claim that a Convergence Boundary is a physical spacetime event horizon. The term 'Convergence Boundary' is used exclusively to describe the transition in accessible coherent paths; it is not a claim about physical geometry.",
+		"The term 'Convergence Boundary' is used exclusively to describe the transition in accessible coherent paths; it is not a claim about physical geometry.",
 		"The framework does not require the metaphysical interpretation of the Library to be accepted in order to test the AI architecture. The Library is used as a formal abstraction; the AI proposal can be evaluated independently of any ontological commitments.",
 		"The AI proposal can therefore be evaluated empirically through symbolic compression, retrieval accuracy, reasoning performance, context retention, and computational scaling.",
 		"A particularly important empirical question is whether symbolic guideposts preserve task-relevant information while reducing active computational dependence on historical context."
@@ -2721,7 +2720,7 @@
 		{
 		  "term": "Convergence Boundary",
 		  "symbol": "H_E",
-		  "definition": "A region of symbolic state space after which all sufficiently coherent continuations converge into the same destination class. Not a physical event horizon."
+		  "definition": "A region of symbolic state space after which all sufficiently coherent continuations converge into the same destination class."
 		},
 		{
 		  "term": "Symbolic Dimensionality",
@@ -2753,7 +2752,6 @@
 			"The framework does not claim that symbolic compression is universally applicable or that it can preserve every property of arbitrary data. Compression is useful only when the retained structures preserve the information required for the intended reasoning tasks.",
 			"The framework does not claim that human memory literally operates according to this architecture. Human cognition is used as a motivating analogy, providing intuition and inspiration, not evidence or proof.",
 			"The framework does not claim that asymptotic complexity directly determines real-world hardware cost. Asymptotic complexity describes scaling behavior; actual performance depends on implementation details, hardware characteristics, and constant factors that are not addressed by complexity analysis alone.",
-			"The framework does not claim that a Convergence Boundary is a physical spacetime event horizon. The term 'Convergence Boundary' is used exclusively to describe the transition in accessible coherent paths. It is not a claim about physical geometry or gravitational physics.",
 			"The framework does not claim that the metaphysical interpretation of the Library is required to test or implement the AI architecture. The Library is used as a formal abstraction; the AI proposal can be evaluated independently of any ontological commitments."
 		  ],
 		  "handoff": "With the non-claims clearly delineated, we now present testable predictions that can be empirically evaluated."
