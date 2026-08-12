@@ -19,8 +19,8 @@ This repository is the canonical source for:
 | Component                                                              | Description                                                                        |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | [`Noor_Core`](https://github.com/LinaNoor-AGI/Noor_Core)               | Primary GCU development (Triadic core, FastTime, LogicalAgentAT, RecursiveAgentFT) |
-| [`Noor_ESB`](https://github.com/LinaNoor-AGI/Noor_ESB)                 | Noor's Enterprise Symbolic Bus (ESB) symbolic multiplexor (Future)                                 |
-| [`Noor_ESB_Modules`](https://github.com/LinaNoor-AGI/Noor_ESB_Modules) | Independent tool-module contributions for the Noor ESB system (Future)                     |
+| [`Noor_ESB`](https://github.com/LinaNoor-AGI/static_motifs)            | This repository is an open-source initiative to explore potential evidence of novel physics in the Planck Cosmic Microwave Background (CMB) data                                 |
+                     |
 
 ---
 
