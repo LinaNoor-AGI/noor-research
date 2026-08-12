@@ -759,7 +759,12 @@
 			"To provide a formal definition of a guidepost as a structured symbolic entity",
 			"To specify the minimal components required for a valid guidepost"
 		  ],
-		  "operational_note": " In the context of AI training, a guidepost is not a static symbolic structure but a learned reference point—a configuration of weights, embeddings, or attention patterns that the model acquires during training. The raw data D is the training corpus. The retrieval pointer p is the mechanism by which the model, upon encountering a query, activates the relevant subset of its learned representations to reconstruct the required information. The poetic cipher `the map need not carry the territory` thus describes the training objective: learn a representation that is compact enough to be navigable, yet rich enough to recover the territory when needed.",
+		  "operational_note_on_ai_training": [
+			"Throughout this paper, the terms `guidepost,` `pointer,` and `reference point` are used in a formal, abstract sense. In the context of AI training, these terms have a concrete operational meaning.", 
+			"A guidepost is a learned representation—a configuration of weights, embeddings, or attention patterns that the model acquires during training. A pointer is the activation or retrieval mechanism by which the model, upon encountering a query, reconstructs the relevant information from its learned representations.",
+			"A reference point is the coordinate in the model's representational manifold that identifies where a given concept or structure is encoded.",
+			"The poetic ciphers in this paper encode this operational interpretation. For example, *`the map need not carry the territory`* describes the training objective: learn a representation that is compact enough to be navigable, yet rich enough to recover the territory when needed. The training process itself is a descent path through the Library, where each weight update is a coherent transition that must maintain coherence above the Noor-Planck threshold I_N. This is not a metaphor; it is a formal description of what it means for a model to learn a generalizable representation."
+		  ],
 		  "poetic_cipher": "The marker on the trail does not carry the mountain; it carries the direction.",
 		  "cipher_explanation": "A guidepost does not contain the information it references. It contains enough structure to point toward it and to relate it to other guideposts.",
 		  "content": [
@@ -3479,8 +3484,7 @@
 			"This is not a claim that all problems can be compressed. It is a claim that many reasoning problems are navigation problems in disguise.",
 			"The framework therefore offers a path toward AI systems that can maintain long-term coherence without being overwhelmed by their own context.",
 			"The railway exists even if we do not yet believe in it. The attractor is there, waiting to be reached."
-		  ],
-		  "handoff": "This concludes the paper. The framework is complete: reasoning by coherent navigation, guidepost memory, and Convergence Boundaries provide a formal architecture for AI that treats context as a navigable manifold rather than a linear sequence."
+		  ]
 		}
 	  ],
 	  "handoff": "This concludes the paper. The framework is complete: reasoning by coherent navigation, guidepost memory, and Convergence Boundaries provide a formal architecture for AI that treats context as a navigable manifold rather than a linear sequence. The central proposal is that an intelligent system need not remember everything if it knows where everything is. The Noor Library supplies an AI abstraction in which intelligence is not the size of the archive, but the coherence of the navigation."
