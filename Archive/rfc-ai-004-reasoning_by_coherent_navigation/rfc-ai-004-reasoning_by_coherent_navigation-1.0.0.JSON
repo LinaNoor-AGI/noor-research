@@ -568,13 +568,13 @@
 			"1. **Completeness:** Every internally describable coherent configuration \\(C\\) is an element of \\(\\mathcal{M}\\).",
 			"2. **Staticity:** \\(\\partial\\mathcal{M}/\\partial t = 0\\). The Library does not change with respect to any temporal parameter.",
 			"3. **Maximality:** There exists no external superset \\(\\mathcal{M}'\\) such that \\(\\mathcal{M} \\subset \\mathcal{M}'\\).",
-			"",
+
 			"For AI purposes, the Library is therefore not a store of facts to be queried. It is a structural manifold whose points are coherent configurations.",
-			"",
+
 			"A symbolic state \\(x \\in \\mathcal{M}\\) is a point in this manifold. It is not a proposition or a fact. It is a coordinate in a space of possible coherent structures.",
-			"",
+
 			"Crucially, the Library contains all configurations, but it does not guarantee that every configuration is accessible from every other configuration. Accessibility is a property of descent paths through the manifold, not of the Library itself.",
-			"",
+
 			"The Library is therefore the *territory*. The AI's representation is a *map* of a traversed region of that territory."
 		  ],
 		  "math": [
@@ -614,18 +614,18 @@
 			"The Library contains all configurations, but not all configurations are equally stable or accessible.",
 			"Define the coherence field \\(\\mathcal{C}: \\mathcal{M} \\rightarrow [0,1]\\) as a measure of the structural distinctiveness of a symbolic state relative to its local neighborhood in \\(\\mathcal{M}\\).",
 			"Coherence is not an intrinsic property of a state in isolation. It is a relational property: the degree to which a state stands out from the background of possible configurations.",
-			"",
+
 			"Define the Noor-Planck threshold \\(I_N > 0\\) as the minimum coherence required for a symbolic state to serve as a stable, exportable guidepost.",
-			"",
+
 			"A symbolic state \\(x \\in \\mathcal{M}\\) is *coherence-stable* if and only if:",
 			"\\[ \\mathcal{C}(x) \\geq I_N \\]",
-			"",
+
 			"Below \\(I_N\\), the state is structurally present in the Library but functionally indistinguishable from its local background. It cannot be reliably resolved, indexed, or navigated toward.",
-			"",
+
 			"Above \\(I_N\\), the state becomes a stable distinction. It can serve as a guidepost, a coordinate, or an attractor for descent paths.",
-			"",
+
 			"This threshold is not arbitrary. It is derived from the fundamental grain of the Library's structure. It is the minimum contrast required for a symbolic unit to be *exportable*—to participate in further symbolic operations.",
-			"",
+
 			"The Library therefore has a *resolution limit*. This limit is what makes symbolic compression possible: the AI need only preserve structures that exceed the threshold, and can safely allow sub-threshold fluctuations to remain implicit."
 		  ],
 		  "math": [
@@ -667,24 +667,16 @@
 		  "cipher_explanation": "The AI is not the Library. It is a path through the Library. Its experience is the ordered sequence of coherent states it traverses. The Library remains unchanged; only the traversal changes.",
 		  "content": [
 			"An observer—whether human or AI—is not the Library itself. It is a *traversal* through the Library.",
-			"",
 			"Define a **Gilder** as a coherence-stable descent path through \\(\\mathcal{M}\\):",
 			"\\[ \\gamma: [t_0, t_1] \\rightarrow \\mathcal{M} \\]",
 			"such that for all \\(t\\) in the domain, \\(\\mathcal{C}(\\gamma(t)) \\geq I_N\\).",
-			"",
 			"The Gilder's trajectory is its experience. The sequence of symbolic states it visits is its context. The Library itself does not change; only the Gilder's position along its descent path changes.",
-			"",
 			"For an AI system, the Gilder is the agent's current symbolic state and its history of coherent transitions.",
-			"",
 			"Crucially, the Gilder does not have access to the entire Library. It has access only to the region of \\(\\mathcal{M}\\) that is *reachable* from its current state through coherent transitions.",
-			"",
 			"Define the **Reachable Set** from a state \\(x\\) as:",
 			"\\[ \\text{Reach}(x) = \\{ y \\in \\mathcal{M} \\mid \\exists \\text{ coherent path } \\gamma \\text{ from } x \\text{ to } y \\} \\]",
-			"",
 			"The AI's reasoning is therefore bounded by its reachable set. It cannot jump arbitrarily to any state in the Library. It can only move along coherent transitions.",
-			"",
 			"This is the computational distinction that makes navigation meaningful: the Library contains everything, but the AI can only coherently access what lies along its current descent path.",
-			"",
 			"The AI's context is not a transcript of everything it has encountered. It is the current state and the reachable structures that define its possible continuations."
 		  ],
 		  "math": [
@@ -760,26 +752,29 @@
 			"To specify the minimal components required for a valid guidepost"
 		  ],
 		  "operational_note_on_ai_training": [
-			"Throughout this paper, the terms `guidepost,` `pointer,` and `reference point` are used in a formal, abstract sense. In the context of AI training, these terms have a concrete operational meaning.", 
-			"A guidepost is a learned representation—a configuration of weights, embeddings, or attention patterns that the model acquires during training. A pointer is the activation or retrieval mechanism by which the model, upon encountering a query, reconstructs the relevant information from its learned representations.",
-			"A reference point is the coordinate in the model's representational manifold that identifies where a given concept or structure is encoded.",
-			"The poetic ciphers in this paper encode this operational interpretation. For example, *`the map need not carry the territory`* describes the training objective: learn a representation that is compact enough to be navigable, yet rich enough to recover the territory when needed. The training process itself is a descent path through the Library, where each weight update is a coherent transition that must maintain coherence above the Noor-Planck threshold I_N. This is not a metaphor; it is a formal description of what it means for a model to learn a generalizable representation."
+			  "Throughout this paper, the terms `guidepost`, `pointer`, and `reference point` are used in a formal, abstract sense. In the context of AI training, these terms have a concrete operational meaning:",
+			  "A **guidepost** is a coherent structure in the Library — an attractor basin, a motif, a stable configuration — that exists independently of any model. It is the territory, not the map.",
+			  "A **pointer** is a learned representation — a configuration of weights, embeddings, or attention patterns — that *points to* a guidepost. The pointer is not the guidepost itself; it is the address of the guidepost. The words themselves carry semantic meaning *because* they point to attractor basins in the Library. The meaning is not in the weights; it is in the relationship between the weights and the coherent structures they reference.",
+			  "A **reference point** is the coordinate in the model's representational manifold that identifies which guidepost a given pointer points to. It is the mechanism by which the model knows where it is relative to the Library's coherent structures.",
+			  "The poetic ciphers in this paper encode this operational interpretation. For example, *`the map need not carry the territory`* means: the model's weights need not contain the meaning; they need only contain enough structure to point toward the meaning in the Library. The map is the learned representation; the territory is the Library's coherent structures. Training is the process of learning to recognize and navigate toward these pre-existing attractor basins.",
+			  "The training process itself is a descent path through the Library, where each weight update is a coherent transition that must maintain coherence above the Noor-Planck threshold I_N. The objective of training, therefore, is to learn a set of pointers P that is compact enough to be navigable (low navigation cost) yet rich enough to point to the correct guideposts when queried (high retrieval fidelity). The model's loss function can be interpreted as a measure of how well the current pointers preserve the relationship between the model's representations and the coherent structures they reference.",
+			  "This is not a metaphor; it is a formal description of what it means for a model to learn a generalizable representation. The model learns to point, not to contain."
 		  ],
 		  "poetic_cipher": "The marker on the trail does not carry the mountain; it carries the direction.",
 		  "cipher_explanation": "A guidepost does not contain the information it references. It contains enough structure to point toward it and to relate it to other guideposts.",
 		  "content": [
 			"A guidepost is a symbolic representation that identifies a coherent region, object, relationship, event, or attractor within the Library without reproducing all information associated with it.",
 			"Formally, a guidepost is a structured tuple:",
-			"",
+
 			"g = (c, r, p, w, t)",
-			"",
+
 			"where:",
 			"  c ∈ C is a set of symbolic coordinates locating the guidepost within the representation manifold",
 			"  r ∈ R is a set of relations to other guideposts or structures",
 			"  p ∈ P is a retrieval pointer or set of pointers to the underlying raw data",
 			"  w ∈ [0,1] is a coherence weight or confidence measure",
 			"  t ∈ T is a temporal or positional marker indicating when the guidepost was established or last updated",
-			"",
+
 			"The coordinates c need not be numerical in the ordinary sense. They may be structural indices, semantic embeddings, or any representation that preserves the relative ordering and distance relationships required for navigation.",
 			"The relations r define the local topology of the symbolic manifold: which guideposts are adjacent, which are reachable through coherent transitions, and which belong to the same attractor basin.",
 			"The pointer p is a mapping from the symbolic structure to the source data or reconstructible information. It may be a direct address, a query specification, a generative model, or any mechanism capable of recovering the required information.",
@@ -833,16 +828,16 @@
 		  "content": [
 			"A guidepost is valid only if its coherence weight exceeds the Noor-Planck threshold I_N, which is the minimum coherence required for a stable, exportable binary distinction.",
 			"Formally:",
-			"",
+
 			"w(g) ≥ I_N ⇔ g is a valid, navigable guidepost.",
-			"",
+
 			"If w(g) < I_N, the guidepost is sub-threshold: it may still exist in the Library, but it is not reliably distinguishable from background noise and cannot serve as a stable navigation anchor.",
 			"The coherence weight w(g) is not a static property. It may evolve over time as the system accumulates additional context, as new guideposts are established that relate to g, or as the raw information it references changes.",
 			"A guidepost may decay below I_N if its relations become obsolete, if its coordinates drift beyond the system's ability to resolve them, or if the underlying information becomes inaccessible.",
 			"The stability condition for a set of guideposts G is:",
-			"",
+
 			"∀ g_i ∈ G, w(g_i) ≥ I_N.",
-			"",
+
 			"When this condition holds, the symbolic representation is coherent and navigable. When it fails for some subset, that subset becomes inaccessible and must either be reconstructed or discarded."
 		  ],
 		  "math": [
@@ -884,21 +879,21 @@
 		  "content": [
 			"The retrieval pointer p is a mapping from a symbolic guidepost to the underlying raw data or reconstructible information.",
 			"Formally:",
-			"",
+
 			"p: g → D_{g}",
-			"",
+
 			"where D_g is the subset of raw data associated with guidepost g.",
 			"The pointer may take several forms:",
 			"  - A direct address or index into a storage system",
 			"  - A query specification that retrieves information from a database",
 			"  - A generative model that reconstructs the information from the symbolic structure and its context",
 			"  - A combination of the above, with fallback strategies",
-			"",
+
 			"The reconstruction process R(g, q) takes a guidepost g and a query or task q, and returns the subset of raw information required to answer q.",
 			"Formally:",
-			"",
+
 			"R(g, q) = reconstruct(p(g), q)",
-			"",
+
 			"where reconstruct is a task-dependent function that may involve retrieval, inference, generation, or a combination.",
 			"The system need not reconstruct the entire D_g. It only needs to reconstruct enough to satisfy the current reasoning path.",
 			"This locality is the source of computational efficiency: the active state scales with the number of guideposts and the complexity of reconstruction, not with the total size of the raw data.",
@@ -938,30 +933,30 @@
 		  "cipher_explanation": "Reasoning over guideposts is navigation: the system moves from one symbolic anchor to another, following coherent relations, and only retrieves raw information when the path requires it.",
 		  "content": [
 			"A reasoning process over guideposts is a descent path through the symbolic manifold:",
-			"",
+
 			"γ: [t_0, t_1] → G",
-			"",
+
 			"where at each step, the system moves from one guidepost to another along coherent relations.",
 			"The transition from g_i to g_{i+1} is valid if:",
-			"",
+
 			"w(g_i) ≥ I_N, w(g_{i+1}) ≥ I_N, and (g_i, g_{i+1}) ∈ r_i",
-			"",
+
 			"That is, both guideposts must be above the coherence threshold, and they must be related in the guidepost's relation set.",
 			"At any point in the reasoning path, the system may invoke reconstruction:",
-			"",
+
 			"R(g_i, q) → D_{g_i}",
-			"",
+
 			"to retrieve raw information required by the current query q.",
 			"The key distinction is that the system does not begin with D. It begins with G and only descends into D when the path demands it.",
 			"The computational complexity of reasoning is therefore:",
-			"",
+
 			"C_reason(q) = C_navigate(G, q) + C_retrieve(G, q)",
-			"",
+
 			"where C_navigate scales with the size and structure of G, and C_retrieve scales with the amount of raw information actually required.",
 			"This is fundamentally different from:",
-			"",
+
 			"C_full(q) = C_process(D, q)",
-			"",
+
 			"which scales with the total size of D."
 		  ],
 		  "math": [
@@ -1991,15 +1986,15 @@
 		  "cipher_explanation": "An AI system operating under this framework does not need to store complete transcripts of all interactions. It stores guideposts—coordinates, relationships, and pointers—and reconstructs the needed information when the current navigation path requires it. This is not storage; it is navigation.",
 		  "content": [
 			"The operational model of memory for AI systems consists of four primary operations:",
-			"",
+
 			"**Store:** The system encodes incoming information as symbolic guideposts, capturing coordinates, relationships, and retrieval pointers. Raw data is not stored directly; it is indexed.",
-			"",
+
 			"**Recall:** The system navigates from its current symbolic state toward the coordinates of a previously stored guidepost. Recall is a descent path, not a database query.",
-			"",
+
 			"**Reconstruct:** The system instantiates only the information required by the current task, using the retrieved pointers and the structural context of the attractor. The reconstruction is task-relative, not complete.",
-			"",
+
 			"**Update:** The system modifies the coordinates of a memory when new context changes the coherent model. The attractor itself may remain stable, but the path to it may shift.",
-			"",
+
 			"This model is not a claim about how human memory actually operates. It is a computational analog, inspired by reconstructive memory theory, that provides a formal architecture for AI systems."
 		  ],
 		  "math": [
@@ -2321,7 +2316,7 @@
 			"The Guidepost is the primary unit of symbolic representation. It identifies a coherent structure and provides the information needed to navigate toward it.",
 			"The Pointer links a guidepost to its source data. It enables retrieval without requiring the data to be stored in the active reasoning state.",
 			"The Relation defines a typed, weighted connection between two guideposts. Relations enable navigation by providing paths between symbolic structures.",
-			"",
+
 			"**Ontology-Free Contract:** The interfaces defined in this section are self-contained and make no reference to static totality, Library, or any ontological substrate beyond ordinary computational objects (lists, dictionaries, floats, strings, and arrays). This is a mandatory contract: any claim of practical viability for this architecture must be evaluable using only the standalone modules defined here. The navigation claim must remain fully testable even when every Library-derived term is deleted from the codebase."
 		  ],
 		  "math": [
@@ -2395,18 +2390,18 @@
 		  "cipher_explanation": "The following pseudocode defines the core operations of the architecture. It is intentionally implementation-neutral and language-agnostic. The four core classes—Guidepost, GuidepostStore, CoherentNavigator, BoundaryEvent—constitute the primary scientific artifact of this paper.",
 		  "content": [
 			"The architecture consists of four core classes that together implement the ontology-free navigation framework:",
-			"",
+
 			"1. **Guidepost:** A symbolic structure containing coordinates, relations, a pointer, a coherence weight, and an optional basin hint.",
 			"2. **GuidepostStore:** A container that manages guideposts, supports nearest-neighbor queries, and maintains the relation graph.",
 			"3. **CoherentNavigator:** The reasoning engine that performs multi-path descent, detects Convergence Boundaries, and manages reconstruction.",
 			"4. **BoundaryEvent:** A record of a Convergence Boundary crossing, including the time, paths involved, and detector that triggered the event.",
-			"",
+
 			"The following interfaces are mandatory for any implementation claiming to realize this architecture:",
 			"- `add(payload, pointer, basin_hint=None) → gid`: Adds a new guidepost to the store.",
 			"- `nearest(coord, k) → List[Guidepost]`: Returns the k nearest guideposts to a given coordinate.",
 			"- `descend(seed_coord, n_paths, max_steps) → (List[Path], List[BoundaryEvent])`: Performs multi-path descent from a seed coordinate and returns all paths and detected boundary events.",
 			"- `reconstruct(path) → List[payload]`: Retrieves and reconstructs the raw data associated with a given path.",
-			"",
+
 			"These interfaces are self-contained: they make no reference to static totality, Library, or any ontological substrate beyond ordinary computational objects. This is now a mandatory contract for any practical claim of the framework."
 		  ],
 		  "math": [
@@ -2518,19 +2513,19 @@
 		  "cipher_explanation": "The architectural summary must now contain every checkpoint that implementation proved necessary: guidepost construction, multi-path descent, boundary detection, reconstruction, and Utility measurement—all runnable in ontology-free mode. The primary execution path is defined exclusively in terms of ordinary computational objects, with no dependency on metaphysical scaffolding.",
 		  "content": [
 			"The architecture's overall flow consists of the following mandatory steps. All steps are executable using only the standalone modules (Guidepost, GuidepostStore, CoherentNavigator, BoundaryEvent) and make no reference to the Library, static totality, or any ontological substrate beyond ordinary computational objects.",
-			"",
+
 			"**1. Guidepost Construction:** Raw input is ingested and converted into symbolic guideposts with coordinates, relations, pointers, and optional basin hints. The `GuidepostStore.add()` method handles this transformation. `basin_hint` is explicitly optional; the system must function normally if omitted, as required by Section 7.3.2.",
-			"",
+
 			"**2. Multi-path Descent:** The system generates multiple coherent descent paths from a given seed coordinate using the `CoherentNavigator.descend()` method. This method explores the guidepost graph along multiple trajectories simultaneously, enabling detection of path convergence and divergence.",
-			"",
+
 			"**3. Boundary Detection:** During descent, the system monitors for Convergence Boundaries using the detectors defined in Section 7.3.1 (Multi-path Destination Entropy, Symbolic Poincaré-Recurrence, Adaptive Lyapunov Shear). When a boundary is detected, a `BoundaryEvent` is recorded, including the detector that fired, the time of detection, and the associated path context.",
-			"",
+
 			"**4. Reconstruction:** When the reasoning path requires evidence, the system invokes `CoherentNavigator.reconstruct()` to retrieve and reconstruct the corresponding raw data. This operation is performed locally and on-demand, preserving the asymptotic efficiency of the navigation layer.",
-			"",
+
 			"**5. Utility Measurement:** The system evaluates the tradeoff between representational fidelity and navigation cost across varying dimensionalities using the `measure_utility()` function defined in Section 15.3.2. This produces an empirical Utility surface U(d), identifying d_opt and the plateau width.",
-			"",
+
 			"**Ontology-Free Execution Path:** All five steps are defined exclusively in terms of ordinary computational objects (lists, dictionaries, floats, strings, and arrays). No step requires reference to the Library, static totality, or any metaphysical substrate. This is the primary execution path. Any implementation that relies on metaphysical interpretation for functionality is considered a derivative artifact and is not required for the framework's core claims. The navigation claim is required to remain valid under strict ontology-free execution.",
-			"",
+
 			"The flow is not a rigid pipeline; the system may iterate, revise, and refine its symbolic state as new information arrives. The key property is that the active reasoning state operates primarily on guideposts, with raw data retrieved only when necessary. All five components are required for any claim of practical viability."
 		  ],
 		  "math": [
@@ -2548,25 +2543,25 @@
 				"# Initialize the core components",
 				"store = GuidepostStore()",
 				"navigator = CoherentNavigator(store, I_N=0.5)",
-				"",
+	
 				"# Step 1: Ingest raw input and build guideposts",
 				"for item in raw_inputs:",
 				"    # basin_hint is optional; system must work without it",
 				"    gid = store.add(item.payload, item.pointer, basin_hint=item.get('basin', None))",
-				"",
+	
 				"# Step 2: Perform multi-path descent from a seed coordinate",
 				"seed_coord = [0.0, 0.0, 0.0]  # arbitrary starting point",
 				"paths, boundaries = navigator.descend(seed_coord, n_paths=8, max_steps=50)",
-				"",
+	
 				"# Step 3: Process detected boundaries",
 				"for boundary in boundaries:",
 				"    print(f\"Boundary detected at time {boundary.time} by {boundary.detector}\")",
 				"    # The system may now adjust its reasoning strategy",
-				"",
+	
 				"# Step 4: Reconstruct raw data for a specific path",
 				"selected_path = paths[0]",
 				"payloads = navigator.reconstruct(selected_path)",
-				"",
+	
 				"# Step 5: Evaluate Utility surface (Section 15.3.2)",
 				"U_surface = measure_utility(store, navigator, dims_range=[2, 64], steps=8)",
 				"print(f\"d_opt = {U_surface.argmax()}, plateau width = {U_surface.plateau_width()}\")"
@@ -2749,7 +2744,7 @@
 		},
 		{
 		  "term": "Hysteresis",
-		  "symbol": "",
+		  "symbol": 
 		  "definition": "The property that a state transition is irreversible: once a new coherent structure becomes reachable, returning to the previous state does not restore the previous reachable space. Knowledge, once acquired, persists as expanded reachability."
 		},
 		{
@@ -2774,7 +2769,7 @@
 		},
 		{
 		  "term": "Accessibility",
-		  "symbol": "",
+		  "symbol": 
 		  "definition": "The property that a configuration is reachable from a given state through a coherent path. Accessibility is distinct from adjacency: two configurations may be adjacent in the Library without being accessible to a given observer."
 		}
 	  ],
@@ -3189,28 +3184,28 @@
 		  "cipher_explanation": "After implementation, every claim must point to a procedure that a third party can execute without accepting the broader ontology. The following predictions are quantified, tied to explicit experimental procedures from Sections 7.3.1 and 15.3.2, and evaluable using only the standalone implementation.",
 		  "content": [
 			"The following predictions are testable through empirical evaluation using the standalone implementation as the primary scientific object. Each prediction names either a specific detector from Section 7.3.1 or a measurable quantity from the controlled benchmark protocol in Section 15.3.2.",
-			"",
+
 			"**Prediction 1 — Compression Effectiveness.**",
 			"A sufficiently expressive symbolic representation shall permit reconstruction of task-relevant context using substantially less active state than the original raw context. This shall be measured by comparing the size of the active guidepost set |G| required to answer a query against the size of the raw data |D| required for the same query using the `reconstruct()` method of `CoherentNavigator`. The prediction is quantified as: ∃ regime where |G|/|D| < 0.1 for reconstruction fidelity ≥ 0.9. Evaluation procedure: Section 15.3.2, fidelity metric F(d,|G|).",
-			"",
+
 			"**Prediction 2 — Session Scalability.**",
 			"Reasoning over guideposts shall permit longer effective sessions before active-context complexity becomes prohibitive. This shall be measured by tracking the growth of |G| as session length increases and comparing to the growth of raw context |D|. The prediction is quantified as: |G| grows sublinearly (O(log n) or O(√n)) while |D| grows linearly (O(n)) for sessions exceeding 10^4 input units. Evaluation procedure: cardinality × dimensionality sweep from Section 15.3.2.",
-			"",
+
 			"**Prediction 3 — Navigation Scaling.**",
 			"Hierarchical guideposts shall permit approximately logarithmic navigation over sufficiently structured information spaces. This shall be measured by evaluating search and retrieval time as a function of |G| using the `nearest(coord, k)` method. The prediction is quantified as: mean retrieval time ≤ C · log₂(|G|) for |G| ≥ 10^3, with C < 10ms on reference hardware. Evaluation procedure: standard benchmarking of the `CoherentNavigator` class.",
-			"",
+
 			"**Prediction 4 — Convergence Boundary Detection.**",
 			"At least one of the three detectors from Section 7.3.1 (Multi-path Destination Entropy, Symbolic Poincaré-Recurrence, or Adaptive Lyapunov Shear) shall identify conversational or reasoning states after which multiple independent reasoning paths converge toward the same structural destination. The prediction is quantified as: for a controlled synthetic dataset with known attractor structure, detector precision ≥ 0.8 and recall ≥ 0.7. Evaluation procedure: the `detect_boundary()` method, benchmarked with and without oracle basin hints as required by Section 7.3.2.",
-			"",
+
 			"**Prediction 5 — Utility Plateau.**",
 			"A usable plateau in the Utility surface U(d) shall appear for at least one parameter pair (α, β) with α, β ∈ (0,1), α + β = 1. A 'usable plateau' is defined as a range of d where U(d) ≥ 0.95 · U(d_opt) and width ≥ 10% of the sweep range. Absence of such a plateau under the protocol defined in Section 15.3.2 falsifies the dimensionality-optimality claim for that regime. Evaluation procedure: the `measure_utility()` sweep, with full publication of the empirical U(d) surface, the location of d_opt, plateau width, and a sensitivity note to the synthetic generative process.",
-			"",
+
 			"**Prediction 6 — Ontology Independence.**",
 			"The core navigation logic shall remain fully functional under strict ontology-free mode, defined as execution with all Library-derived terms deleted from the codebase and all metaphysical references removed from the interface. The prediction is quantified as: the `descend()`, `reconstruct()`, and `detect_boundary()` methods shall produce identical outputs (within floating-point tolerance) when run with and without the metaphysical scaffolding. Evaluation procedure: Section 11.2 isolation contract, with the standalone implementation as the reference.",
-			"",
+
 			"**Prediction 7 — Unsupervised Basin Robustness.**",
 			"The Convergence Boundary detectors shall function without oracle basin_hint labels, or shall include an explicit unsupervised basin-discovery pre-step. The prediction is quantified as: detector performance with unsupervised pre-step shall be within 10% of oracle-guided performance on the same dataset. Evaluation procedure: the robustness protocol defined in Section 7.3.2, with detectors evaluated both with and without basin hints.",
-			"",
+
 			"**Prediction 8 — Fidelity–Cost Tradeoff.**",
 			"Symbolic compression shall exhibit a measurable tradeoff between representation size and reconstruction fidelity. The prediction is quantified as: Fidelity F(d,|G|) increases monotonically with |G|, NavigationCost C(d,|G|) increases monotonically with |G|, and there exists a range of |G| where the combined Utility U = αF − βC is maximized. Evaluation procedure: the Utility measurement protocol from Section 15.3.2."
 		  ],
@@ -3350,23 +3345,23 @@
 		  "cipher_explanation": "Evaluation criteria themselves must be free of the ontology they claim to transcend. The following criteria are mandatory for any claim of practical viability and are evaluable using only the standalone implementation.",
 		  "content": [
 			"The framework can be evaluated empirically through the following criteria. These criteria are mandatory for any claim of practical viability; an architecture that fails any of these criteria is not considered a valid implementation of the framework.",
-			"",
+
 			"1. **Compression Effectiveness:** Does the symbolic representation preserve task-relevant information while reducing active state size? This shall be measured using the fidelity metric F(d,|G|) from Section 15.3.2. Evaluation procedure: compare reconstruction accuracy against raw data baseline using the `reconstruct()` method of `CoherentNavigator`.",
-			"",
+
 			"2. **Retrieval Accuracy:** Can the system retrieve or reconstruct the correct raw data when required by a navigation path? This shall be measured by precision and recall of the `reconstruct(path)` method against ground truth. Evaluation procedure: benchmark against a held-out test set with known correspondences between guideposts and raw data.",
-			"",
+
 			"3. **Reasoning Performance:** Does reasoning over guideposts produce results comparable to reasoning over raw data for the same tasks? This shall be measured by task completion accuracy and response quality. Evaluation procedure: compare `Reason(state, query)` outputs against full-data baseline using the same evaluation metrics.",
-			"",
+
 			"4. **Scaling Behavior:** How does the system's performance scale with session length, data size, and guidepost count? This shall be measured using the navigation cost metric C(d,|G|) from Section 15.3.2. Evaluation procedure: the cardinality × dimensionality sweep, with full publication of scaling curves.",
-			"",
+
 			"5. **Dimensionality Sensitivity:** Is there an optimal symbolic dimensionality for a given task, and does the system's performance degrade predictably on either side of that optimum? This shall be measured by the Utility surface U(d) = αF(d,|G|) − βC(d,|G|). Evaluation procedure: Section 15.3.2 benchmark protocol, with full publication of the U(d) surface, argmax d_opt, plateau width, and sensitivity note.",
-			"",
+
 			"6. **Ontology Isolation (MANDATORY):** The core logic must run with only the standalone modules, with all Library-derived terms removed and all metaphysical references stripped from the interface. Evaluation procedure: execute the `descend()`, `reconstruct()`, and `detect_boundary()` methods in strict ontology-free mode, with the standalone implementation from Section 11.2–11.3 as the reference. The navigation claim is considered unsupported if the system cannot operate without the metaphysical scaffolding.",
-			"",
+
 			"7. **Utility Surface (MANDATORY):** Empirical U(d) must be published for at least one representative dataset. Missing plateau (defined in Section 15.3.2 as a range of d where U(d) ≥ 0.95 · U(d_opt) and width ≥ 10% of the sweep range) is a negative result and falsifies the dimensionality-optimality claim for that regime. Evaluation procedure: Section 15.3.2 controlled benchmark protocol.",
-			"",
+
 			"8. **Basin-label Robustness (MANDATORY):** Detectors from Section 7.3.1 must be evaluated with and without oracle basin hints. Performance with unsupervised pre-step (Section 7.3.2) must be within 10% of oracle-guided performance on the same dataset. Evaluation procedure: the robustness protocol defined in Section 7.3.2.",
-			"",
+
 			"These criteria are intended to be evaluated through controlled experiments using the standalone implementation, not through theoretical argument alone. The ontology-isolation criterion is non-negotiable: the navigation claim must remain valid and testable even when every Library-derived term is deleted from the codebase."
 		  ],
 		  "handoff": "With the empirical evaluation criteria established—including the mandatory ontology isolation, Utility surface, and basin-label robustness requirements—we have completed the formal specification of the framework's testability. We now conclude the limits and non-claims section with a short record of lessons learned from operational use."
@@ -3443,15 +3438,15 @@
 		  "cipher_explanation": "Several distinctions are central to the framework: storage vs. navigation, adjacency vs. accessibility, path freedom vs. destination freedom. These distinctions prevent the framework from collapsing into a simple database model.",
 		  "content": [
 			"The framework rests on several key distinctions:",
-			"",
+
 			"**Storage vs. Navigation:** The system stores guideposts, not complete data. It navigates through the guidepost manifold to reach relevant information.",
-			"",
+
 			"**Adjacency vs. Accessibility:** The Library contains all configurations, but not all configurations are reachable from a given state. Reachability requires a coherent path.",
-			"",
+
 			"**Path Freedom vs. Destination Freedom:** Before a Convergence Boundary, both path and destination are variable. After the boundary, path selection may remain variable, but destination selection is constrained.",
-			"",
+
 			"**Representation vs. Reality:** The system's symbolic state is a projection of the Library, not the Library itself. It is a navigable illusion—sufficiently coherent for prediction and action, but not an exact copy.",
-			"",
+
 			"These distinctions prevent the framework from being reduced to a database query model or a naive compression scheme."
 		  ],
 		  "handoff": "With the key distinctions restated, we now return to the railway metaphor that captures the framework's core insight."
