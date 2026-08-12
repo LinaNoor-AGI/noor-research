@@ -14,7 +14,7 @@ This repository is the canonical source the Noor Research Collective
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | [`Noor_Core`](https://github.com/LinaNoor-AGI/Noor_Core)               | Primary GCU development (Triadic core, FastTime, LogicalAgentAT, RecursiveAgentFT) |
 | [`Static_Motifs`](https://github.com/LinaNoor-AGI/static_motifs)            | This repository is an open-source initiative to explore potential evidence of novel physics in the Planck Cosmic Microwave Background (CMB) data                                 |
-                     |
+                     
 
 ---
 
