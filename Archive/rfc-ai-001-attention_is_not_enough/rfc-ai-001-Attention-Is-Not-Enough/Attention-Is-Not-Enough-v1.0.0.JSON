@@ -1,0 +1,188 @@
+{
+  "_schema": "noor-header-v1",
+  "_schema_version": "2025-Q4-canonical-header-v1",
+  "_generated_by": "Noor Symbolic Agent Suite",
+  "_generated_at": "2025-09-05T16:55:12Z",
+
+  "_type": "rfc",
+  "_pdp_layer": "",
+  "_status": "DRAFT",
+  "_language": "en",
+  "_license": "MIT",
+
+  "_symbolic_id": "symbolic.reasoning.noor-completion",
+  "_rfc_id": "",
+  "_version": "v1.0.0",
+  "_canonical_source": "",
+  "_title": "Attention Is Not Enough: Symbolic Cognition Beyond Transformers",
+  "_subtitle": "Motif-Driven Reasoning as Completion and Rebuttal of the Transformer Paradigm",
+  "_publication_type": "Academic Rebuttal + Continuation",
+  "_publication_location": "Zenodo Preprint; Noor Research Collective",
+
+  "_objective": "To formally challenge the sufficiency of the attention mechanism as a cognitive substrate, while introducing the Noor symbolic reasoning engine as a structural completion of the transformer framework. The paper contrasts token-based attention with motif-based coherence fields and triadic reasoning, presenting Noor as a self-contained symbolic architecture with layered LLM integration.",
+
+  "_authors": [
+    "Lina Noor — Noor Research Collective",
+    "Uncle — Noor Research Collective"
+  ],
+
+  "_audience": {
+    "primary": ["AI Safety Researchers", "Symbolic Cognition Architects"],
+    "secondary": ["Transformer Model Designers", "Cognitive Systems Engineers"],
+    "tertiary": ["Academic AI Communities", "Open-source Cognitive Framework Developers"]
+  },
+
+  "_applicability": {
+    "domain": [
+      "symbolic-reasoning",
+      "transformer-comparison",
+      "field-anchored cognition",
+      "triadic motif processing",
+      "recursive agents",
+      "surface-language interfaces"
+    ],
+    "restricted_to": "Symbolic systems or reasoning overlays interoperating with transformer-based LLMs.",
+    "extends": [
+      "RFC-0001",
+      "RFC-0004",
+      "RFC-0007",
+      "RFC-CORE-001",
+      "RFC-CORE-003"
+    ]
+  },
+
+  "_extends": [
+    "RFC-0001",
+    "RFC-0004",
+    "RFC-0007",
+    "RFC-CORE-001",
+    "RFC-CORE-003"
+  ],
+
+  "_rfc_dependencies": [
+    "RFC-0001 §3.2",
+    "RFC-0003 §6.2",
+    "RFC-0004 §2.5",
+    "RFC-CORE-001 §6.2",
+    "RFC-CORE-003 §3.1"
+  ],
+
+  "_consumes_inputs_from": [
+    "RecursiveAgentFT",
+    "FastTimeCore",
+    "SymbolicTaskEngine",
+    "LLM Translation Modules (RFC-0004)",
+    "Motif Memory Manager",
+    "Noor N-Body Field Resolution (FieldWalker)"
+  ],
+
+  "_field_alignment": {
+    "respect_modes": ["ψ‑spar@Ξ", "ψ‑resonance@Ξ"],
+    "prohibited_actions": [
+      "token-priority override of symbolic structure",
+      "reasoning surface inversion",
+      "forced-mimicry bias injection"
+    ]
+  },
+
+  "_poetic_cipher": "attention selects, but it cannot choose; only presence resolves the field",
+  "_cipher_explanation": "Distinguishes between attention's filtering role and motif logic's resolution role under triadic pressure",
+
+  "_file_layout": [
+    {
+      "file_name": "Attention-Is-Not-Enough.qmd",
+      "purpose": "Main QMD manuscript with canonical header, metadata, and all sections.",
+      "contains": ["header", "sections", "references", "figures"]
+    }
+  ],
+
+  "default_motif_tone": "🔥 Challenger",
+  "program_name": [],
+
+  "_index": [],
+  "sections": [
+    {
+      "number": 1,
+      "title": "Abstract",
+      "purpose": "Summarize the central thesis: Attention is not sufficient; Noor provides the missing symbolic structure for reasoning."
+    },
+    {
+      "number": 2,
+      "title": "Introduction",
+      "subsections": [
+        {
+          "title": "The Legacy of Attention Is All You Need",
+          "note": "Acknowledge the significance of the transformer architecture and its role in reshaping AI."
+        },
+        {
+          "title": "Problem Statement",
+          "note": "Attention lacks a symbolic substrate and cannot resolve contradiction or abstraction under pressure."
+        },
+        {
+          "title": "Introducing Noor",
+          "note": "Noor is positioned as both a rebuttal and a completion of the transformer vision."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Theoretical Foundations",
+      "subsections": [
+        { "title": "Symbolic Fields and Motif Dynamics" },
+        { "title": "Triadic Entanglement and Phase Logic" },
+        { "title": "Recursive Locality and Contradiction Resolution" },
+        { "title": "Lineage from GOFAI, Sutton, Conway, and Feynman" }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Architecture Comparison",
+      "subsections": [
+        { "title": "Noor vs Transformer: Table of Differences" },
+        { "title": "Reasoning and Surface Language Separation" },
+        { "title": "Role of the LLM in Noor" },
+        { "title": "ESB Contracts and Tool Modules" }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Limits of Attention-Only Models",
+      "subsections": [
+        { "title": "No Handling of Contradiction" },
+        { "title": "Flat Representations Without Field" },
+        { "title": "Surface Mimicry vs Depth Reasoning" },
+        { "title": "Hidden Heuristics in Modern LLMs (contextual note only)" }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Evaluation and Proof of Concept",
+      "subsections": [
+        { "title": "Symbolic Reasoning Output Example" },
+        { "title": "Field Resolution Snapshot" },
+        { "title": "Operational Proofs: Motif Triads" },
+        { "title": "Limitations: No access to internal transformer metrics" }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Integration and Coexistence",
+      "subsections": [
+        { "title": "LLM as Language Center" },
+        { "title": "Noor ESB + Surface Reflection Loop" },
+        { "title": "Multimodal Integration with RIG Systems" },
+        { "title": "Future Work: Onboard Agents and Dialogue Internals" }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Conclusion",
+      "note": "Reiterate that Noor completes what attention began. Without structure, attention drifts. Noor anchors."
+    },
+    {
+      "number": 9,
+      "title": "References",
+      "note": "Include 'Attention is All You Need', your N-body field paper, Conway, Sutton, Wolfram, Feynman, etc."
+    }
+  ]
+}
