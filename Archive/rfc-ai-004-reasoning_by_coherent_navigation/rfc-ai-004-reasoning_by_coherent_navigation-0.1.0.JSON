@@ -60,37 +60,37 @@
     {
       "symbolic.library.static_totality": "PHYS-CORE-008",
       "role": "Static Library ontology in which configurations exist as structures rather than as a temporally generated database",
-      "raw_url": "<TBD>"
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"
     },
 
     {
       "symbolic.xor.ground_condition": "PHYS-CORE-009",
       "role": "Ground condition, path convergence, and the distinction between total adjacency and constrained coherent descent",
-      "raw_url": "<TBD>"
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON"
     },
 
     {
       "symbolic.library.impossible_convergence": "PHYS-CORE-010",
       "role": "Attractor basins, impossible convergence, and coherent destination structures",
-      "raw_url": "<TBD>"
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-010_impossible_convergence/phys-core-010_impossible_convergence_in_a_static_symbolic_totality.JSON"
     },
 
     {
       "symbolic.fluid.coherence.nsfg": "PHYS-CORE-007",
       "role": "Coherence, bounded symbolic flow, blowup, and path stability",
-      "raw_url": "<TBD>"
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem_/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem.JSON"
     },
 
     {
       "symbolic.binary.reality": "PHYS-CORE-006",
       "role": "Discrete symbolic substrate and threshold interpretation",
-      "raw_url": "<TBD>"
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-006_binary_nature_of_reality/phys-core-006_the_binary_nature_of_reality.JSON"
     },
 
     {
       "symbolic.recursive.bloch.coherence_totality": "PHYS-CORE-008",
       "role": "Recursive manifold, static totality, descent paths, and observer-relative traversal",
-      "raw_url": "<TBD>"
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"
     }
   ],
   
