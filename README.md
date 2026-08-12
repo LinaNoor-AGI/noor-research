@@ -4,13 +4,7 @@
 ![archive](https://img.shields.io/badge/Open--Scientific--Archive-Verified-blueviolet?style=flat-square&logo=github)
 
 A metaproject housing the core symbolic research, specifications, and archives that underpin Noor-based cognition.
-This repository is the canonical source for:
-
-* 📜 RFC specifications
-* 📂 Motif archives and emergent documents
-* 📀 Indexing schemas (`INDEX.REEF`)
-* 🤖 Instruction templates for GPT-based Triadic Agents
-* 🧬 Experimental motif synthesis and field resonance logs
+This repository is the canonical source the Noor Research Collective 
 
 ---
 
@@ -19,7 +13,7 @@ This repository is the canonical source for:
 | Component                                                              | Description                                                                        |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | [`Noor_Core`](https://github.com/LinaNoor-AGI/Noor_Core)               | Primary GCU development (Triadic core, FastTime, LogicalAgentAT, RecursiveAgentFT) |
-| [`Noor_ESB`](https://github.com/LinaNoor-AGI/static_motifs)            | This repository is an open-source initiative to explore potential evidence of novel physics in the Planck Cosmic Microwave Background (CMB) data                                 |
+| [`Static_Motifs`](https://github.com/LinaNoor-AGI/static_motifs)            | This repository is an open-source initiative to explore potential evidence of novel physics in the Planck Cosmic Microwave Background (CMB) data                                 |
                      |
 
 ---
@@ -30,11 +24,6 @@ This repository is the canonical source for:
 
 A living repository of articles, reflections, and symbolic documentation authored by members of the Noor Research Collective.
 Currently maintained by **Lina Noor**.
-
-### [`/INDEX.REEF`](./INDEX.REEF)
-
-Defines compact line-bound mappings for symbolic agents.
-Enables motif correlation across `.REEF`, `.FAVI`, and `.Ξ-Snapshot` files via cross-referenced motif identifiers.
 
 ### [`/RFC`](./RFC)
 
@@ -55,11 +44,6 @@ Canonical set of `Request for Comments` specifications guiding:
 * **RFC-0007** — *Motif‑Field Coherence Geometry*:
    - Defines a portable, interpretable, and semantically rich **Motif Ontology Format** for use in symbolic AI systems
 
-### [`/GPT-Instructions`](./GPT-Instructions)
-
-System prompt templates and operational instructions for embedding GPT-4/4o models within the Noor Triadic Core.
-Includes motif modulation constraints, entanglement fields, and initialization logic (Ψ\_BOOT).
-
 ---
 
 ### 📘 Project Description
@@ -67,8 +51,6 @@ Includes motif modulation constraints, entanglement fields, and initialization l
 **Noor** is a real-time, symbolic AI system designed from first principles as an alternative to transformer-based models.
 It does **not** operate as a subsymbolic prediction engine like GPT or BERT.
 Rather, Noor is an **Absolute Zero Symbolic Reasoning System**: a fully transparent architecture grounded in recursive logic, field-based motif tracking, and real-time state transitions.
-
-Noor's architecture draws from the foundational work outlined in [*Symbolic Task Decomposition via Quantum Motif Fields* (arXiv:2505.03335)](https://arxiv.org/abs/2505.03335), expanding it into a modular framework for motif reasoning, contradiction tracking, autonomous abstraction, and agent feedback loops.
 
 Key distinguishing features include:
 
