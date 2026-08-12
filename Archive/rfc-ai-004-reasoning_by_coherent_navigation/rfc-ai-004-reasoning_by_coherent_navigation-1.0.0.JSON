@@ -759,6 +759,7 @@
 			"To provide a formal definition of a guidepost as a structured symbolic entity",
 			"To specify the minimal components required for a valid guidepost"
 		  ],
+		  "operational_note": " In the context of AI training, a guidepost is not a static symbolic structure but a learned reference point—a configuration of weights, embeddings, or attention patterns that the model acquires during training. The raw data D is the training corpus. The retrieval pointer p is the mechanism by which the model, upon encountering a query, activates the relevant subset of its learned representations to reconstruct the required information. The poetic cipher `the map need not carry the territory` thus describes the training objective: learn a representation that is compact enough to be navigable, yet rich enough to recover the territory when needed.",
 		  "poetic_cipher": "The marker on the trail does not carry the mountain; it carries the direction.",
 		  "cipher_explanation": "A guidepost does not contain the information it references. It contains enough structure to point toward it and to relate it to other guideposts.",
 		  "content": [
