@@ -3,8 +3,8 @@
   "_schema_version": "2.0.0",
   "_pdp_layer": "layer_2",
   "_type": "rfc_core",
-  "_version": "0.1.0",
-  "_status": "DRAFT",
+  "_version": "1.0.0",
+  "_status": "ACTIVE",
 
   "_symbolic_id": "symbolic.library.ai_reasoning_by_coherent_navigation",
 
@@ -24,7 +24,7 @@
   "_updated_last": [
     "2026-08-11T16:16:00MDT": {
       "updated_by": "Lina Noor — Noor Research Collective",
-      "version": "v0.1.0",
+      "version": ["v0.1.0", "v1.0.0"],
 	  "date": "2026-08-11"
     }
   ],
@@ -94,10 +94,10 @@
     }
   ],
   
-  "_purpose": "This document formalizes an application of the Noor Library / NSFG framework to artificial intelligence. The central proposal is that an AI system need not preserve or repeatedly process all raw information in a session in order to reason coherently about that session. Instead, the system may construct a compact symbolic representation consisting of coherent structures, relationships, coordinates, attractors, and retrieval pointers. The AI subsequently navigates this representation and reconstructs only the portions of the underlying information required by the current reasoning path.",
+  "_purpose": "This document formalizes an application of the Noor Library / NSFG framework to artificial intelligence. The central proposal is that an AI system need not preserve or repeatedly process all raw information in a session in order to reason coherently about that session. Instead, the system may construct a compact symbolic representation consisting of coherent structures, relationships, coordinates, attractors, and retrieval pointers. The AI subsequently navigates this representation and reconstructs only the portions of the underlying information required by the current reasoning path. The architecture is supplied with concrete detection algorithms (Section 7.3.1), an empirical Utility(d) protocol (Section 15.3.2), and an explicit ontology-free contract (Section 11.2–11.3) that together permit independent falsification.",
 
-  "_abstract": "This paper proposes a symbolic architecture for AI reasoning derived from the Noor Library / NSFG framework. The central observation is that an intelligent observer need not retain the complete high-fidelity state of its environment in order to maintain a coherent model of that environment. Instead, the observer may maintain a compact set of symbolic guideposts: coordinates, motifs, relationships, attractors, path constraints, and pointers into a larger information structure. The resulting system treats context as a navigable manifold rather than as a linear sequence of tokens. Raw information is not necessarily deleted; it is represented indirectly through structures capable of locating or reconstructing the information when needed. This provides a formal analogy to human memory, in which experience appears to be represented through partial cues and reconstructive structure rather than as a complete indexed recording of sensory history. The framework further formalizes conversational reasoning as a coupled descent through a shared symbolic space. Two observers may approach a common coherent structure from different paths. Once a Convergence Boundary is crossed, subsequent path selection may remain variable while the accessible destination class remains invariant. Computational claims are restricted to asymptotic complexity and symbolic operation count; real-world performance depends on implementation, hardware, representation, retrieval architecture, and constant factors.",
-  
+  "_abstract": "This paper proposes a symbolic architecture for AI reasoning derived from the Noor Library / NSFG framework. The central observation is that an intelligent observer need not retain the complete high-fidelity state of its environment in order to maintain a coherent model of that environment. Instead, the observer may maintain a compact set of symbolic guideposts: coordinates, motifs, relationships, attractors, path constraints, and pointers into a larger information structure. The resulting system treats context as a navigable manifold rather than as a linear sequence of tokens. Raw information is not necessarily deleted; it is represented indirectly through structures capable of locating or reconstructing the information when needed. This provides a formal analogy to human memory, in which experience appears to be represented through partial cues and reconstructive structure rather than as a complete indexed recording of sensory history. The framework further formalizes conversational reasoning as a coupled descent through a shared symbolic space. Two observers may approach a common coherent structure from different paths. Once a Convergence Boundary is crossed, subsequent path selection may remain variable while the accessible destination class remains invariant. The architecture is supplied with concrete detection algorithms for Convergence Boundary membership (Section 7.3.1), an empirical Utility(d) protocol for measuring the dimensionality tradeoff (Section 15.3.2), and an explicit ontology-free contract (Section 11.2–11.3) that together permit independent replication and falsification. Computational claims are restricted to asymptotic complexity and symbolic operation count; real-world performance depends on implementation, hardware, representation, retrieval architecture, and constant factors.",
+
   "_core_thesis": [
     "An intelligent system does not necessarily need to store a high-fidelity copy of everything it has encountered.",
     "It may instead store coordinates into a structured representational manifold and preserve only the information necessary to navigate that manifold.",
@@ -105,9 +105,59 @@
     "Reasoning therefore becomes a navigation problem rather than a complete-data-retrieval problem.",
     "Context is represented by coherent relationships between symbolic structures rather than by an exhaustive linear transcript.",
     "As traversal continues, the symbolic representation may become less exact but more general, analogous to human memory becoming increasingly schematic while retaining useful structural knowledge.",
-    "A realization, concept convergence, or knowledge transfer may be represented as an event-horizon-like transition in which multiple previously available paths converge into one coherent destination or one equivalence class of destinations.",
-    "The important invariant is therefore not preservation of every representation, but preservation of the relationships necessary to recover the relevant representation when required."
+    "A realization, concept convergence, or knowledge transfer may be represented as a Convergence Boundary transition in which multiple previously available paths converge into one coherent destination or one equivalence class of destinations.",
+    "Convergence Boundary membership is an observable runtime property detectable through the algorithms defined in Section 7.3.1.",
+    "The important invariant is therefore not preservation of every representation, but preservation of the relationships necessary to recover the relevant representation when required.",
+    "The navigation claim is required to remain valid under strict ontology-free execution, as defined by the contract in Section 11.2–11.3."
   ],
+
+  "_formal_summary": {
+    "library": [
+      "\\mathcal{M}=\\Omega",
+      "\\partial\\mathcal{M}/\\partial t=0"
+    ],
+    "representation": [
+      "D=\\text{raw data}",
+      "S=\\text{symbolic state}",
+      "G=\\{g_i\\}=\\text{guideposts}",
+      "P:G\\rightarrow D=\\text{retrieval mapping}"
+    ],
+    "reasoning": [
+      "S_{t+1}=F(S_t,I_{t+1})",
+      "\\gamma:[t_0,t_1]\\rightarrow\\mathcal{M}",
+      "Reason(q,D)\\approx Reason(q,R(S,q))"
+    ],
+    "compression": [
+      "|G|\\ll|D|",
+      "C_{raw}(n)=O(n)",
+      "C_{sym}(m)=O(m)",
+      "C_{lookup}(n)=O(\\log n)"
+    ],
+    "convergence": [
+      "\\mathcal{P}(x)=\\{\\gamma:\\gamma(0)=x,\\gamma\\text{ coherent}\\}",
+      "\\mathcal{H}_E=\\{x:\\operatorname{Reach}(x)\\subseteq A\\}",
+      "x\\in\\mathcal{H}_E\\Rightarrow\\forall\\gamma\\in\\mathcal{P}(x),\\lim\\gamma\\in A",
+      "\\text{Convergence Boundary membership is an observable runtime property.}",
+      "\\text{Detection criterion: crossed } \\Leftrightarrow (\\text{mean_window } H(A) < \\theta_H) \\land (\\text{path_diversity} \\geq \\theta_D),",
+      "\\text{where } H(A) = -\\sum p_i \\log p_i \\text{ is the destination entropy.}"
+    ],
+    "knowledge_transfer": [
+      "\\operatorname{Reach}(S_1)\\supsetneq\\operatorname{Reach}(S_0)",
+      "K:S_0\\rightarrow S_1"
+    ],
+    "coherence": [
+      "\\mathcal{C}(S_t,S_{t+1})\\geq\\mathcal{C}_{min}",
+      "\\Delta(E)<\\Delta_{crit}",
+      "\\Delta(E)\\rightarrow\\infty\\Rightarrow\\text{coherence breakdown}"
+    ],
+    "ontology_independence": [
+      "The navigation claim remains valid and testable when all Library-derived terms are removed.",
+      "The standalone implementation (Guidepost, GuidepostStore, CoherentNavigator, BoundaryEvent) is the primary scientific object.",
+      "All predictions are evaluable using only NumPy and the Python standard library."
+    ]
+  },
+
+  "_ontology_free_contract": "The interfaces defined in Section 11.2–11.3 are self-contained and make no reference to static totality, Library, or any ontological substrate beyond ordinary computational objects. This is a mandatory contract: any implementation claiming to instantiate this framework must be executable without requiring acceptance of the broader Noor Library ontology. The navigation claim is required to remain fully testable even when every Library-derived term is deleted from the codebase.",
 
   "_field_alignment": {
     "respect_modes": [
@@ -2459,30 +2509,35 @@
 		  "section": "11.4",
 		  "title": "Architectural Flow Summary",
 		  "poetic_cipher": "A river that forgets its own banks floods the map.",
-		  "cipher_explanation": "The architectural summary must now contain every checkpoint that implementation proved necessary: guidepost construction, multi-path descent, boundary detection, reconstruction, and Utility measurement—all runnable in ontology-free mode.",
+		  "cipher_explanation": "The architectural summary must now contain every checkpoint that implementation proved necessary: guidepost construction, multi-path descent, boundary detection, reconstruction, and Utility measurement—all runnable in ontology-free mode. The primary execution path is defined exclusively in terms of ordinary computational objects, with no dependency on metaphysical scaffolding.",
 		  "content": [
-			"The architecture's overall flow consists of the following mandatory steps, all of which must be executable using only the standalone modules (Guidepost, GuidepostStore, CoherentNavigator, BoundaryEvent):",
+			"The architecture's overall flow consists of the following mandatory steps. All steps are executable using only the standalone modules (Guidepost, GuidepostStore, CoherentNavigator, BoundaryEvent) and make no reference to the Library, static totality, or any ontological substrate beyond ordinary computational objects.",
 			"",
-			"1. **Guidepost Construction:** Raw input is ingested and converted into symbolic guideposts with coordinates, relations, pointers, and optional basin hints.",
-			"2. **Multi-path Descent:** The system generates multiple coherent descent paths from a given seed coordinate using the CoherentNavigator.descend() method.",
-			"3. **Boundary Detection:** During descent, the system monitors for Convergence Boundaries using the detectors defined in Section 7.3.1. When a boundary is detected, a BoundaryEvent is recorded.",
-			"4. **Reconstruction:** When the reasoning path requires evidence, the system invokes CoherentNavigator.reconstruct() to retrieve and reconstruct the corresponding raw data.",
-			"5. **Utility Measurement:** The system evaluates the tradeoff between representational fidelity and navigation cost across varying dimensionalities (see Section 15.3.2).",
+			"**1. Guidepost Construction:** Raw input is ingested and converted into symbolic guideposts with coordinates, relations, pointers, and optional basin hints. The `GuidepostStore.add()` method handles this transformation. `basin_hint` is explicitly optional; the system must function normally if omitted, as required by Section 7.3.2.",
 			"",
-			"**Ontology-Free Execution Path:** All five steps are defined exclusively in terms of ordinary computational objects (lists, dictionaries, floats, strings, and arrays). No step requires reference to the Library, static totality, or any metaphysical substrate. This is the primary execution path. Any implementation that relies on metaphysical interpretation for functionality is considered a derivative artifact and is not required for the framework's core claims.",
+			"**2. Multi-path Descent:** The system generates multiple coherent descent paths from a given seed coordinate using the `CoherentNavigator.descend()` method. This method explores the guidepost graph along multiple trajectories simultaneously, enabling detection of path convergence and divergence.",
 			"",
-			"The flow is not a rigid pipeline; the system may iterate, revise, and refine its symbolic state as new information arrives. The key property is that the active reasoning state operates primarily on guideposts, with raw data retrieved only when necessary."
+			"**3. Boundary Detection:** During descent, the system monitors for Convergence Boundaries using the detectors defined in Section 7.3.1 (Multi-path Destination Entropy, Symbolic Poincaré-Recurrence, Adaptive Lyapunov Shear). When a boundary is detected, a `BoundaryEvent` is recorded, including the detector that fired, the time of detection, and the associated path context.",
+			"",
+			"**4. Reconstruction:** When the reasoning path requires evidence, the system invokes `CoherentNavigator.reconstruct()` to retrieve and reconstruct the corresponding raw data. This operation is performed locally and on-demand, preserving the asymptotic efficiency of the navigation layer.",
+			"",
+			"**5. Utility Measurement:** The system evaluates the tradeoff between representational fidelity and navigation cost across varying dimensionalities using the `measure_utility()` function defined in Section 15.3.2. This produces an empirical Utility surface U(d), identifying d_opt and the plateau width.",
+			"",
+			"**Ontology-Free Execution Path:** All five steps are defined exclusively in terms of ordinary computational objects (lists, dictionaries, floats, strings, and arrays). No step requires reference to the Library, static totality, or any metaphysical substrate. This is the primary execution path. Any implementation that relies on metaphysical interpretation for functionality is considered a derivative artifact and is not required for the framework's core claims. The navigation claim is required to remain valid under strict ontology-free execution.",
+			"",
+			"The flow is not a rigid pipeline; the system may iterate, revise, and refine its symbolic state as new information arrives. The key property is that the active reasoning state operates primarily on guideposts, with raw data retrieved only when necessary. All five components are required for any claim of practical viability."
 		  ],
 		  "math": [
 			"\\text{Raw Input} \\rightarrow \\text{Guidepost Construction} \\rightarrow \\text{Multi-path Descent}",
 			"\\text{Multi-path Descent} \\rightarrow \\text{Boundary Detection} \\rightarrow \\text{BoundaryEvent}",
 			"\\text{Boundary Detection} \\rightarrow \\text{Reconstruction} \\rightarrow \\text{Local Payloads}",
-			"\\text{All steps} \\rightarrow \\text{Utility Measurement} \\rightarrow U(d)"
+			"\\text{All steps} \\rightarrow \\text{Utility Measurement} \\rightarrow U(d)",
+			"\\text{Ontology-Free Path: All steps defined over } \\mathbb{R}^d \\text{ and ordinary data structures}"
 		  ],
 		  "pseudocode": [
 			{
 			  "name": "Main Flow (Ontology-Free)",
-			  "description": "The primary execution path of the architecture, using only standalone modules.",
+			  "description": "The primary execution path of the architecture, using only standalone modules. No Library terminology appears in the code.",
 			  "code": [
 				"# Initialize the core components",
 				"store = GuidepostStore()",
@@ -2490,6 +2545,7 @@
 				"",
 				"# Step 1: Ingest raw input and build guideposts",
 				"for item in raw_inputs:",
+				"    # basin_hint is optional; system must work without it",
 				"    gid = store.add(item.payload, item.pointer, basin_hint=item.get('basin', None))",
 				"",
 				"# Step 2: Perform multi-path descent from a seed coordinate",
@@ -2512,11 +2568,12 @@
 			  "notes": [
 				"This flow uses only the standalone modules defined in Sections 11.2 and 11.3.",
 				"No reference is made to the Library, static totality, or any metaphysical substrate.",
-				"The measure_utility function is defined in Section 15.3.2."
+				"The `basin_hint` parameter is explicitly optional, supporting unsupervised robustness.",
+				"The `measure_utility` function is defined in Section 15.3.2 and is required for any claim of practical viability."
 			  ]
 			}
 		  ],
-		  "handoff": "This completes the architectural specification. The next section formalizes the definitions introduced throughout the paper, providing a consolidated reference for all key terms and symbols."
+		  "handoff": "This completes the architectural specification. The flow now contains every checkpoint that implementation proved necessary: guidepost construction, multi-path descent, boundary detection, reconstruction, and Utility measurement—all runnable in ontology-free mode. The next section formalizes the definitions introduced throughout the paper, providing a consolidated reference for all key terms and symbols."
 		},
 		{
 		  "id": "11.5",
@@ -3122,18 +3179,36 @@
 		{
 		  "id": "15.2",
 		  "title": "Testable Predictions",
-		  "poetic_cipher": "A hypothesis is a lantern in the dark; it does not claim to illuminate everything, only what is within its reach.",
-		  "cipher_explanation": "The framework generates testable predictions that can be evaluated empirically. These predictions are presented as hypotheses or candidate measures until they are validated through experimentation and analysis.",
+		  "poetic_cipher": "A prediction that cannot be weighed is only a wish.",
+		  "cipher_explanation": "After implementation, every claim must point to a procedure that a third party can execute without accepting the broader ontology. The following predictions are quantified, tied to explicit experimental procedures from Sections 7.3.1 and 15.3.2, and evaluable using only the standalone implementation.",
 		  "content": [
-			"The following predictions are testable through empirical evaluation. They are presented as hypotheses or candidate measures until they are validated through experimentation and analysis.",
-			"A sufficiently expressive symbolic representation should permit reconstruction of task-relevant context from substantially less active state than the original raw context. This can be measured by comparing the amount of active state required to answer a query using raw data versus symbolic guideposts.",
-			"Reasoning over guideposts should permit longer effective sessions before active-context complexity becomes prohibitive. This can be measured by tracking the growth of active state size as session length increases.",
-			"Hierarchical guideposts should permit approximately logarithmic navigation over sufficiently structured information spaces. This can be measured by evaluating search and retrieval time as a function of the size of the guidepost graph.",
-			"Convergence Boundary detection should identify conversational or reasoning states after which multiple independent reasoning paths converge toward the same structural destination. This can be measured by analyzing the divergence and convergence of reasoning trajectories in controlled experiments.",
-			"Symbolic compression should exhibit a tradeoff between representation size and reconstruction fidelity. This can be measured by compressing data to varying degrees and evaluating the accuracy of reconstruction for task-relevant queries.",
-			"The optimal symbolic unit scale should depend on representation and implementation while relational invariants remain comparatively stable. This can be measured by varying the granularity of symbolic encoding and evaluating reasoning performance."
+			"The following predictions are testable through empirical evaluation using the standalone implementation as the primary scientific object. Each prediction names either a specific detector from Section 7.3.1 or a measurable quantity from the controlled benchmark protocol in Section 15.3.2.",
+			"",
+			"**Prediction 1 — Compression Effectiveness.**",
+			"A sufficiently expressive symbolic representation shall permit reconstruction of task-relevant context using substantially less active state than the original raw context. This shall be measured by comparing the size of the active guidepost set |G| required to answer a query against the size of the raw data |D| required for the same query using the `reconstruct()` method of `CoherentNavigator`. The prediction is quantified as: ∃ regime where |G|/|D| < 0.1 for reconstruction fidelity ≥ 0.9. Evaluation procedure: Section 15.3.2, fidelity metric F(d,|G|).",
+			"",
+			"**Prediction 2 — Session Scalability.**",
+			"Reasoning over guideposts shall permit longer effective sessions before active-context complexity becomes prohibitive. This shall be measured by tracking the growth of |G| as session length increases and comparing to the growth of raw context |D|. The prediction is quantified as: |G| grows sublinearly (O(log n) or O(√n)) while |D| grows linearly (O(n)) for sessions exceeding 10^4 input units. Evaluation procedure: cardinality × dimensionality sweep from Section 15.3.2.",
+			"",
+			"**Prediction 3 — Navigation Scaling.**",
+			"Hierarchical guideposts shall permit approximately logarithmic navigation over sufficiently structured information spaces. This shall be measured by evaluating search and retrieval time as a function of |G| using the `nearest(coord, k)` method. The prediction is quantified as: mean retrieval time ≤ C · log₂(|G|) for |G| ≥ 10^3, with C < 10ms on reference hardware. Evaluation procedure: standard benchmarking of the `CoherentNavigator` class.",
+			"",
+			"**Prediction 4 — Convergence Boundary Detection.**",
+			"At least one of the three detectors from Section 7.3.1 (Multi-path Destination Entropy, Symbolic Poincaré-Recurrence, or Adaptive Lyapunov Shear) shall identify conversational or reasoning states after which multiple independent reasoning paths converge toward the same structural destination. The prediction is quantified as: for a controlled synthetic dataset with known attractor structure, detector precision ≥ 0.8 and recall ≥ 0.7. Evaluation procedure: the `detect_boundary()` method, benchmarked with and without oracle basin hints as required by Section 7.3.2.",
+			"",
+			"**Prediction 5 — Utility Plateau.**",
+			"A usable plateau in the Utility surface U(d) shall appear for at least one parameter pair (α, β) with α, β ∈ (0,1), α + β = 1. A 'usable plateau' is defined as a range of d where U(d) ≥ 0.95 · U(d_opt) and width ≥ 10% of the sweep range. Absence of such a plateau under the protocol defined in Section 15.3.2 falsifies the dimensionality-optimality claim for that regime. Evaluation procedure: the `measure_utility()` sweep, with full publication of the empirical U(d) surface, the location of d_opt, plateau width, and a sensitivity note to the synthetic generative process.",
+			"",
+			"**Prediction 6 — Ontology Independence.**",
+			"The core navigation logic shall remain fully functional under strict ontology-free mode, defined as execution with all Library-derived terms deleted from the codebase and all metaphysical references removed from the interface. The prediction is quantified as: the `descend()`, `reconstruct()`, and `detect_boundary()` methods shall produce identical outputs (within floating-point tolerance) when run with and without the metaphysical scaffolding. Evaluation procedure: Section 11.2 isolation contract, with the standalone implementation as the reference.",
+			"",
+			"**Prediction 7 — Unsupervised Basin Robustness.**",
+			"The Convergence Boundary detectors shall function without oracle basin_hint labels, or shall include an explicit unsupervised basin-discovery pre-step. The prediction is quantified as: detector performance with unsupervised pre-step shall be within 10% of oracle-guided performance on the same dataset. Evaluation procedure: the robustness protocol defined in Section 7.3.2, with detectors evaluated both with and without basin hints.",
+			"",
+			"**Prediction 8 — Fidelity–Cost Tradeoff.**",
+			"Symbolic compression shall exhibit a measurable tradeoff between representation size and reconstruction fidelity. The prediction is quantified as: Fidelity F(d,|G|) increases monotonically with |G|, NavigationCost C(d,|G|) increases monotonically with |G|, and there exists a range of |G| where the combined Utility U = αF − βC is maximized. Evaluation procedure: the Utility measurement protocol from Section 15.3.2."
 		  ],
-		  "handoff": "With the general predictions established, we now add a specific prediction concerning the dimensionality tradeoff in symbolic representation."
+		  "handoff": "These predictions are now quantified, tied to explicit experimental procedures, and evaluable using only the standalone implementation. They collectively provide a comprehensive empirical test suite for the framework. With the general predictions established and linked to specific detectors and benchmarks, we now proceed to the controlled benchmark protocol for the dimensionality tradeoff in Section 15.3.2."
 		},
 		{
 		  "id": "15.3",
@@ -3265,22 +3340,31 @@
 		{
 		  "id": "15.4",
 		  "title": "Empirical Evaluation Criteria",
-		  "poetic_cipher": "The proof is not in the argument; it is in the experiment.",
-		  "cipher_explanation": "The framework is presented as a testable hypothesis. Empirical evaluation should focus on measurable outcomes: compression effectiveness, retrieval accuracy, reasoning performance, and scaling behavior.",
+		  "poetic_cipher": "The test that still needs the temple is not yet a test.",
+		  "cipher_explanation": "Evaluation criteria themselves must be free of the ontology they claim to transcend. The following criteria are mandatory for any claim of practical viability and are evaluable using only the standalone implementation.",
 		  "content": [
-			"The framework can be evaluated empirically through the following criteria:",
-			"1. **Compression Effectiveness:** Does the symbolic representation preserve task-relevant information while reducing active state size?",
-			"2. **Retrieval Accuracy:** Can the system retrieve or reconstruct the correct raw data when required by a navigation path?",
-			"3. **Reasoning Performance:** Does reasoning over guideposts produce results comparable to reasoning over raw data for the same tasks?",
-			"4. **Scaling Behavior:** How does the system's performance scale with session length, data size, and guidepost count?",
-			"5. **Dimensionality Sensitivity:** Is there an optimal symbolic dimensionality for a given task, and does the system's performance degrade predictably on either side of that optimum?",
-			"These criteria are intended to be evaluated through controlled experiments, not through theoretical argument alone."
+			"The framework can be evaluated empirically through the following criteria. These criteria are mandatory for any claim of practical viability; an architecture that fails any of these criteria is not considered a valid implementation of the framework.",
+			"",
+			"1. **Compression Effectiveness:** Does the symbolic representation preserve task-relevant information while reducing active state size? This shall be measured using the fidelity metric F(d,|G|) from Section 15.3.2. Evaluation procedure: compare reconstruction accuracy against raw data baseline using the `reconstruct()` method of `CoherentNavigator`.",
+			"",
+			"2. **Retrieval Accuracy:** Can the system retrieve or reconstruct the correct raw data when required by a navigation path? This shall be measured by precision and recall of the `reconstruct(path)` method against ground truth. Evaluation procedure: benchmark against a held-out test set with known correspondences between guideposts and raw data.",
+			"",
+			"3. **Reasoning Performance:** Does reasoning over guideposts produce results comparable to reasoning over raw data for the same tasks? This shall be measured by task completion accuracy and response quality. Evaluation procedure: compare `Reason(state, query)` outputs against full-data baseline using the same evaluation metrics.",
+			"",
+			"4. **Scaling Behavior:** How does the system's performance scale with session length, data size, and guidepost count? This shall be measured using the navigation cost metric C(d,|G|) from Section 15.3.2. Evaluation procedure: the cardinality × dimensionality sweep, with full publication of scaling curves.",
+			"",
+			"5. **Dimensionality Sensitivity:** Is there an optimal symbolic dimensionality for a given task, and does the system's performance degrade predictably on either side of that optimum? This shall be measured by the Utility surface U(d) = αF(d,|G|) − βC(d,|G|). Evaluation procedure: Section 15.3.2 benchmark protocol, with full publication of the U(d) surface, argmax d_opt, plateau width, and sensitivity note.",
+			"",
+			"6. **Ontology Isolation (MANDATORY):** The core logic must run with only the standalone modules, with all Library-derived terms removed and all metaphysical references stripped from the interface. Evaluation procedure: execute the `descend()`, `reconstruct()`, and `detect_boundary()` methods in strict ontology-free mode, with the standalone implementation from Section 11.2–11.3 as the reference. The navigation claim is considered unsupported if the system cannot operate without the metaphysical scaffolding.",
+			"",
+			"7. **Utility Surface (MANDATORY):** Empirical U(d) must be published for at least one representative dataset. Missing plateau (defined in Section 15.3.2 as a range of d where U(d) ≥ 0.95 · U(d_opt) and width ≥ 10% of the sweep range) is a negative result and falsifies the dimensionality-optimality claim for that regime. Evaluation procedure: Section 15.3.2 controlled benchmark protocol.",
+			"",
+			"8. **Basin-label Robustness (MANDATORY):** Detectors from Section 7.3.1 must be evaluated with and without oracle basin hints. Performance with unsupervised pre-step (Section 7.3.2) must be within 10% of oracle-guided performance on the same dataset. Evaluation procedure: the robustness protocol defined in Section 7.3.2.",
+			"",
+			"These criteria are intended to be evaluated through controlled experiments using the standalone implementation, not through theoretical argument alone. The ontology-isolation criterion is non-negotiable: the navigation claim must remain valid and testable even when every Library-derived term is deleted from the codebase."
 		  ],
-		  "handoff": "With the evaluation criteria established, we now conclude the limits and non-claims section."
-		}
-	  ],
-	  "handoff": "We have clearly delineated what the framework does and does not claim. The framework is presented as a useful abstraction, not a complete theory of intelligence or a guaranteed engineering solution. We have provided testable predictions, including a specific tradeoff between symbolic dimensionality, representational fidelity, and navigation cost. The framework can be evaluated empirically through compression effectiveness, retrieval accuracy, reasoning performance, scaling behavior, and dimensionality sensitivity. The AI proposal can be evaluated independently of any ontological commitments to the Library. In the next section, we conclude the paper by summarizing the central proposal and reflecting on its implications."
-	},
+		  "handoff": "With the empirical evaluation criteria established—including the mandatory ontology isolation, Utility surface, and basin-label robustness requirements—we have completed the formal specification of the framework's testability. We now conclude the limits and non-claims section with a short record of lessons learned from operational use."
+		},
 
 	{
 	  "id": "16",

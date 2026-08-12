@@ -1,0 +1,164 @@
+{
+  "revision_manifest": {
+    "paper_id": "rfc-ai-004-reasoning_by_coherent_navigation-0.1.0",
+    "generated_for": "downstream editing AI",
+    "goal": "Operationalize the three critical revisions and incorporate post-implementation lessons: (1) explicit Convergence Boundary detection algorithms, (2) controlled empirical Utility(d) benchmark, (3) fully isolated standalone AI architecture free of Library ontology, plus new requirements for unsupervised basin robustness and mandatory ontology-free contracts.",
+    "guiding_principle": "Every change must turn a formal or asymptotic claim into a falsifiable, implementable, ontology-independent artifact. After actual use of the methodology, the standalone reference implementation is now treated as the primary scientific object.",
+    "global_constraints": [
+      "Do not introduce new metaphysical commitments.",
+      "All new algorithms and data structures must be expressible with only NumPy + Python stdlib (or equivalent).",
+      "Preserve the paper’s existing mathematical notation where possible; extend rather than replace.",
+      "Every new subsection must contain at least one explicit, runnable pseudocode or reference to a concrete interface.",
+      "The navigation claim must remain fully testable even when every Library-derived term is deleted from the codebase."
+    ]
+  },
+
+  "required_updates": [
+    {
+      "section": "7",
+      "subsection": "7.3",
+      "title": "The Convergence Boundary as a Region of Inevitable Convergence",
+      "rationale": "The formal definition is elegant but non-operational. After implementation it became clear that destination-entropy detection is also brittle to the quality of basin labels; unsupervised basin discovery is therefore required for robustness.",
+      "how_to_update": "Insert subsection 7.3.1 'Operational Detection Algorithms' with the three detectors (Multi-path Destination Entropy, Symbolic Poincaré-Recurrence, Adaptive Lyapunov Shear). Add a new 7.3.2 'Unsupervised Basin Robustness' that requires any production detector to function without oracle basin_hint labels, or to include an explicit unsupervised basin-discovery pre-step.",
+      "poetic_cipher": "A boundary drawn in sand disappears when the tide of labels turns.",
+      "cipher_explanation": "Detection that depends on perfect basin labels is only as strong as the labelling process. The methodology must survive noisy or missing labels.",
+      "guideposts_for_editor": {
+        "required_math": [
+          "H(A) = -∑ p_i log p_i",
+          "crossed ⇔ (mean_window H(A) < θ_H) ∧ (path_diversity ≥ θ_D)"
+        ],
+        "required_pseudocode_skeleton": "def detect_boundary(state, n_paths=8, patience=4, unsupervised=True): ...",
+        "reference_code_location": "CoherentNavigator + BoundaryEvent from standalone_coherent_navigation.py",
+        "must_not": "Claim any detector is optimal; present them as falsifiable candidates."
+      },
+      "supporting_references": [
+        "Lyapunov-exponent + Monte-Carlo boundary methods",
+        "Poincaré recurrence algorithms for high-dimensional attractors"
+      ]
+    },
+    {
+      "section": "11",
+      "subsection": "11.2–11.3",
+      "title": "Illustrative Data Structures + Architectural Pseudocode",
+      "rationale": "Ontology leakage into interfaces was observed during implementation. The four core classes must be the primary artifact and must carry an explicit ontology-free contract.",
+      "how_to_update": "Replace/augment with the clean specification of Guidepost, GuidepostStore, CoherentNavigator, BoundaryEvent. Elevate the standalone implementation to primary status. Add an explicit 'Ontology-Free Mode' contract paragraph stating that the navigation claim remains valid and testable when all Library terms are removed.",
+      "poetic_cipher": "The map that still needs the territory is not yet a map.",
+      "cipher_explanation": "If the code cannot run without the metaphysical scaffolding, the architecture has not been isolated.",
+      "guideposts_for_editor": {
+        "must_include_classes": ["Guidepost", "GuidepostStore", "CoherentNavigator", "BoundaryEvent"],
+        "must_expose": [
+          "add(payload, pointer, basin_hint=None) → gid",
+          "nearest(coord, k) → List[Guidepost]",
+          "descend(seed_coord, n_paths, max_steps) → (List[Path], List[BoundaryEvent])",
+          "reconstruct(path) → List[payload]"
+        ],
+        "reference_code": "Exact classes from standalone_coherent_navigation.py (Library comments stripped)",
+        "isolation_statement": "The interfaces are self-contained and make no reference to static totality, Library, or any ontological substrate beyond ordinary computational objects. This is now a mandatory contract."
+      },
+      "supporting_references": []
+    },
+    {
+      "section": "15",
+      "subsection": "15.3",
+      "title": "Dimensionality and Navigation Cost Tradeoff",
+      "rationale": "Asymptotic Utility is insufficient. Implementation revealed that the existence and width of the plateau are highly sensitive to the data-generation process; this sensitivity must be acknowledged and measured.",
+      "how_to_update": "Split into 15.3.1 (formal definition) and 15.3.2 (Controlled Benchmark Protocol). In 15.3.2 require publication of the full empirical U(d) surface, the location of d_opt, plateau width, and an explicit statement of sensitivity to the synthetic generative process.",
+      "poetic_cipher": "A peak that vanishes when the ground shifts was never a mountain.",
+      "cipher_explanation": "The optimal dimensionality is not a universal constant; it is conditioned on the structure of the data. The paper must show the surface, not merely assert a peak.",
+      "guideposts_for_editor": {
+        "required_metrics": ["Fidelity F(d,|G|)", "NavigationCost C(d,|G|)", "U = αF − βC"],
+        "required_output": "Heat-map + argmax + plateau width + sensitivity note",
+        "reference_implementation": "measure_utility() and the cardinality × dimensionality sweep",
+        "falsifiability_clause": "Absence of a usable plateau under the defined protocol falsifies the dimensionality-optimality claim for that regime."
+      },
+      "supporting_references": [
+        "Standard fidelity–cost reporting practice in representation learning"
+      ]
+    },
+    {
+      "section": "15",
+      "subsection": "15.2",
+      "title": "Testable Predictions",
+      "rationale": "Predictions must now be tied to the concrete detectors, the Utility surface, and the ontology-free contract so that independent replication is possible.",
+      "how_to_update": "Rewrite every prediction to name either a detector from 7.3.1 or a measurable quantity from 15.3.2. Add: (a) a usable plateau in U(d) will appear for at least one (α,β) pair; (b) the core navigation logic remains functional under strict ontology-free mode.",
+      "poetic_cipher": "A prediction that cannot be weighed is only a wish.",
+      "cipher_explanation": "After implementation, every claim must point to a procedure that a third party can execute without accepting the broader ontology.",
+      "guideposts_for_editor": {
+        "make_each_prediction": "quantified and tied to an explicit experimental procedure",
+        "remove": "any prediction that cannot be evaluated with the standalone implementation alone"
+      },
+      "supporting_references": []
+    },
+    {
+      "section": "15",
+      "subsection": "15.4",
+      "title": "Empirical Evaluation Criteria",
+      "rationale": "Must now enforce both the Utility surface and the ontology-isolation requirement as first-class evaluation criteria.",
+      "how_to_update": "Add: 6. Ontology Isolation (core logic must run with only the standalone modules); 7. Utility Surface (empirical U(d) must be published; missing plateau is a negative result); 8. Basin-label robustness (detectors must be evaluated with and without oracle basin hints).",
+      "poetic_cipher": "The test that still needs the temple is not yet a test.",
+      "cipher_explanation": "Evaluation criteria themselves must be free of the ontology they claim to transcend.",
+      "guideposts_for_editor": {
+        "required_new_bullets": ["Ontology Isolation", "Utility Surface", "Basin-label robustness"],
+        "cross_reference": "Sections 7.3.1, 11.2–11.3, 15.3.2"
+      },
+      "supporting_references": []
+    },
+    {
+      "section": "11",
+      "subsection": "11.4",
+      "title": "Architectural Flow Summary",
+      "rationale": "The flow must reflect the new mandatory components discovered through use: boundary detection, Utility evaluation, and ontology-free execution path.",
+      "how_to_update": "Insert 'Boundary Detector', 'Utility Evaluator', and an explicit 'Ontology-Free Execution Path' into the flow diagram and prose. State that all three are required for any claim of practical viability.",
+      "poetic_cipher": "A river that forgets its own banks floods the map.",
+      "cipher_explanation": "The architectural summary must now contain every checkpoint that implementation proved necessary.",
+      "guideposts_for_editor": {
+        "flow_order": "Guidepost construction → Multi-path descent → Boundary detection → Reconstruction → Utility measurement (all runnable in ontology-free mode)",
+        "reference": "Main demo block of standalone_coherent_navigation.py"
+      },
+      "supporting_references": []
+    },
+    {
+      "section": "Abstract + Core Thesis + Formal Summary",
+      "subsection": null,
+      "title": "Top-level consistency pass",
+      "rationale": "After implementation experience, the top-level statements must acknowledge that Convergence Boundary membership is an observable runtime property and that the architecture carries an ontology-free contract.",
+      "how_to_update": "In the abstract, replace pure asymptotic language with: 'The architecture is supplied with concrete detection algorithms, an empirical Utility(d) protocol, and an explicit ontology-free contract that together permit independent falsification.' In _core_thesis add: 'Convergence Boundary membership is an observable runtime property' and 'The navigation claim is required to remain valid under strict ontology-free execution.' Update _formal_summary.convergence with the destination-entropy criterion.",
+      "poetic_cipher": "The claim that still hides behind the mountain cannot be climbed.",
+      "cipher_explanation": "Top-level statements must now reflect what was learned by actually walking the path.",
+      "guideposts_for_editor": {
+        "tone": "minimal wording changes; preserve all existing formal statements",
+        "do_not": "expand the philosophical framing"
+      },
+      "supporting_references": []
+    },
+    {
+      "section": "New",
+      "subsection": "Post-Implementation Lessons (recommended new short section or appendix to 15)",
+      "title": "Lessons from Operational Use",
+      "rationale": "Having exercised the methodology revealed three concrete failure modes and corresponding hardening requirements that the original draft could not have known.",
+      "how_to_update": "Add a concise subsection (or appendix) that records: (1) ontology leakage into interfaces, (2) brittleness of destination entropy to basin-label quality, (3) sensitivity of the Utility plateau to data generation. For each, state the mitigation now required.",
+      "poetic_cipher": "The map improves only after the traveler returns with torn boots.",
+      "cipher_explanation": "Experience of use is itself data. The paper should incorporate what broke when the methodology was actually run.",
+      "guideposts_for_editor": {
+        "keep_short": true,
+        "link_to": ["7.3.2", "11.2 isolation contract", "15.3.2 sensitivity note"]
+      },
+      "supporting_references": []
+    }
+  ],
+
+  "delivery_checklist_for_editing_ai": [
+    "The paper must contain a complete, copy-pasteable reference implementation of the four core classes treated as the primary artifact.",
+    "Section 7.3 must contain three named detectors plus an unsupervised-basin robustness requirement.",
+    "Section 15.3 must contain an explicit experimental protocol that produces and publishes a U(d) surface, including plateau-width and sensitivity notes.",
+    "An explicit Ontology-Free Mode contract must appear in the architecture section and be referenced from evaluation criteria.",
+    "No remaining sentence may imply that the navigation claim depends on acceptance of the Library ontology.",
+    "All new code and pseudocode must be executable with only NumPy and the Python standard library.",
+    "A short 'Lessons from Operational Use' record must capture the three failure modes discovered through actual implementation."
+  ],
+
+  "artifacts_to_reuse": {
+    "standalone_implementation": "standalone_coherent_navigation.py (Guidepost, GuidepostStore, CoherentNavigator, BoundaryEvent, measure_utility) — now elevated to primary scientific object",
+    "benchmark_skeleton": "the cardinality × dimensionality sweep and Utility calculation defined earlier"
+  }
+}
