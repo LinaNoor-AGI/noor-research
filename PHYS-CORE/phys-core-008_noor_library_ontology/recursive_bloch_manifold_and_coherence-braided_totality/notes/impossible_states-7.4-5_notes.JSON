@@ -1,0 +1,79 @@
+{
+  "change_summary": {
+    "section_7.4": {
+      "title": "Impossible States: Structurally Present but Coherence-Inaccessible",
+      "core_issue": "Coherence and impossibility are currently defined as absolute properties of Ω, but recursive self-similarity and frame-dependent coherence imply that accessibility must be projection-relative.",
+      "what_needs_to_change": [
+        "Replace global coherence functional C(x) with frame-relative functional C_F(x).",
+        "Introduce a transformation group 𝔊 acting on Ω.",
+        "Define frame operator F ∈ 𝔊.",
+        "Redefine persistence domain as Ω_C^(F) = { x ∈ Ω | C_F(x) ≥ N_P }.",
+        "Redefine impossible state relative to frame F.",
+        "Clarify that structural presence remains frame-invariant, but accessibility is frame-dependent."
+      ],
+      "how_it_needs_to_change": [
+        "Insert formal definition of transformation group 𝔊 acting on Ω.",
+        "Define transformed state x_F := F(x).",
+        "Define frame-relative coherence functional C_F(x) := C(F(x)).",
+        "Replace Ω_C with Ω_C^(F) throughout.",
+        "Modify impossibility condition to: p ∉ closure(Ω_C^(F)).",
+        "Explicitly state that impossibility is projection-relative, not ontologically absolute."
+      ],
+      "rationale": [
+        "Recursive self-similarity implies structural invariance under scale or spectral transforms.",
+        "FFT/rotation example implies basis dependence of coherence measurement.",
+        "Absolute coherence would contradict frame-dependent emergence.",
+        "Projection relativity strengthens the framework by preventing metaphysical branching claims.",
+        "Maintains single totality while allowing multiple observational frames."
+      ],
+      "conceptual_shift": "From absolute coherence ontology to projection-relative coherence geometry.",
+      "references_supporting_change": [
+        "Spectral transform invariance principles in functional analysis.",
+        "Basis dependence in Hilbert space representations.",
+        "Gauge invariance concepts in fiber bundle theory.",
+        "Coordinate dependence of curvature components in differential geometry."
+      ]
+    },
+
+    "section_7.5": {
+      "title": "Total Consequence Summary (Formal)",
+      "core_issue": "The current summary implies absolute ontological selection across a static manifold, but does not incorporate projection/frame relativity.",
+      "what_needs_to_change": [
+        "Clarify that totality Ω is invariant under 𝔊 action.",
+        "State that observers are frame-bound coherence stabilizations.",
+        "Redefine time as glider ordering within chosen frame F.",
+        "Redefine motion as projection-relative curvature.",
+        "Redefine impossibility as frame-relative coherence exclusion.",
+        "Replace 'reality is selective' with 'reality is projection-filtered'."
+      ],
+      "how_it_needs_to_change": [
+        "Introduce statement: Ω is invariant under 𝔊 but coherence structure is not.",
+        "Modify observer definition to: observer = coherence-stabilized fixed point under specific F.",
+        "Add explicit projection language to motion and time statements.",
+        "Replace absolute impossibility claim with frame-relative formulation.",
+        "Clarify that no multiple totalities are implied."
+      ],
+      "rationale": [
+        "Prevents unintended multiverse interpretation.",
+        "Aligns recursive self-similarity with mathematical invariance.",
+        "Maintains internal consistency with modified 7.4.",
+        "Ensures philosophical claims remain mathematically defensible.",
+        "Avoids ontological overreach while preserving structural depth."
+      ],
+      "conceptual_shift": "From absolute ontological selection to projection-relative manifestation within a single invariant totality.",
+      "references_supporting_change": [
+        "Group actions on manifolds.",
+        "Invariant set theory principles.",
+        "Gauge symmetry and fiber bundle projection formalism.",
+        "Spectral decomposition and frame transforms in harmonic analysis."
+      ]
+    },
+
+    "global_note": {
+      "single_totality_preserved": true,
+      "multiple_frames_allowed": true,
+      "multiverse_implication": false,
+      "ontological_status": "Ω invariant; coherence accessibility projection-relative."
+    }
+  }
+}

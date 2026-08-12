@@ -1,0 +1,153 @@
+{
+  "document": "recursive_bloch_manifold_and_coherence-braided_totality",
+  "change_strategy": {
+    "principle": "Localize all bridging work inside the Bloch manifold document without modifying PHYS-CORE-005.",
+    "goal": "Derive the discrete braid scalar and ρ_lock diagnostic as projections/limits of the curvature tensor B and energy functional ℋ_k.",
+    "structural_effect": "Convert empirical consistency (VR-1) into a derived corollary and close the loop for the BKM regularity argument."
+  },
+  "sections_to_modify": [
+    {
+      "section": "3.3.2",
+      "title": "Braids as Natural Transformations",
+      "change_type": "extension + formal clarification",
+      "what_changes": [
+        "Add an explicit clarification that B^a_{bc} is a curvature tensor on a Fréchet tower, categorically distinct from graph-level braid scalars.",
+        "Insert a short paragraph distinguishing tensor curvature from discrete misalignment scalars.",
+        "Add a formal proposition: Single-Layer Reduction Proposition."
+      ],
+      "how_it_changes": [
+        "After defining B^a_{bc}, insert a subsection titled '3.3.2.A Single-Layer Reduction (Discrete Limit Correspondence)'.",
+        "Formally show that when the fiber tower truncates at k = 0 and η reduces to a coherence vector field v(x), the curvature energy ∫|B|^2 dμ reduces (under finite-difference discretization) to Σ(1 − v_i · v_j).",
+        "State explicitly that ℛ_braid is the discrete finite-difference approximation of curvature energy density."
+      ],
+      "rationale": "Closes the categorical gap between tensor curvature and scalar braid divergence. Prevents type mismatch objections.",
+      "references_supporting_change": [
+        "Finite-difference approximation of Dirichlet energy",
+        "Standard relation between |∇v|^2 and pairwise dot-product misalignment in lattice discretizations",
+        "Gauge curvature → Yang–Mills energy functional analogy"
+      ]
+    },
+    {
+      "section": "3.3.2.1",
+      "title": "Single-Layer Reduction and Discrete Correspondence",
+      "change_type": "new subsection insertion",
+      "what_changes": [
+        "Formal statement of reduction theorem.",
+        "Proof sketch using truncation of tower and discrete approximation.",
+        "Explicit identification: ℛ_braid ≈ discretized curvature energy."
+      ],
+      "how_it_changes": [
+        "Introduce theorem structure: assumptions, reduction, discrete limit, conclusion.",
+        "Emphasize proportionality rather than strict equality.",
+        "Clarify hierarchy: Tensor → Energy → Projection → Discrete Scalar."
+      ],
+      "rationale": "Establishes conceptual identity across abstraction layers while preserving mathematical correctness.",
+      "references_supporting_change": [
+        "Sobolev energy discretization theory",
+        "Discrete differential geometry (curvature approximations on graphs)"
+      ]
+    },
+    {
+      "section": "3.3.2.2",
+      "title": "Projection to Observable Diagnostics (ρ_lock Correspondence)",
+      "change_type": "new subsection insertion",
+      "what_changes": [
+        "Derive ρ_lock as angular projection of ℋ_k.",
+        "Show that ρ_lock = projection of curvature energy density onto angular harmonic basis.",
+        "Formalize 'measurable shadow' interpretation."
+      ],
+      "how_it_changes": [
+        "Express ℋ_k as ∫ |B|^2 dμ_k.",
+        "Introduce angular harmonic decomposition on fiber.",
+        "Demonstrate that ∇²_θ ℂ corresponds to projected curvature density.",
+        "State relationship: ρ_lock = P_θ(ℋ_k)."
+      ],
+      "rationale": "Promotes ρ_lock from independent diagnostic to derived observable of curvature tensor.",
+      "references_supporting_change": [
+        "Spectral decomposition of Laplace–Beltrami operator",
+        "Projection of curvature invariants onto harmonic bases"
+      ]
+    },
+    {
+      "section": "3.3.3",
+      "title": "Coherence Threshold and Stabilization",
+      "change_type": "augmentation",
+      "what_changes": [
+        "Add corollary deriving inverse relationship ρ_lock↑ ⇒ ℛ_braid↓.",
+        "Promote VR-1 from empirical consistency to derived result."
+      ],
+      "how_it_changes": [
+        "Insert Corollary: Lock–Divergence Duality.",
+        "Prove monotonic correspondence from projection properties.",
+        "Explicitly state that inverse relation follows from curvature concentration vs transverse divergence tradeoff."
+      ],
+      "rationale": "Strengthens logical structure and eliminates empirical-only justification.",
+      "references_supporting_change": [
+        "Energy concentration inequalities",
+        "Monotonicity properties of projected curvature functionals"
+      ]
+    },
+    {
+      "section": "3.3.4",
+      "title": "Navier–Stokes Reformulation via Braid Curvature",
+      "change_type": "cross-reference reinforcement",
+      "what_changes": [
+        "Add explicit dependency chain linking ℋ_k boundedness → projected curvature boundedness → bounded ρ_lock → controlled ℛ_braid."
+      ],
+      "how_it_changes": [
+        "Insert bridging paragraph before lemma 3.3.4.1.",
+        "Clarify that experimental diagnostics measure projected curvature.",
+        "Tie curvature energy control directly to observable stability."
+      ],
+      "rationale": "Converts parallel tracks (formal boundedness vs telemetry) into a single logical chain.",
+      "references_supporting_change": [
+        "Beale–Kato–Majda regularity condition",
+        "Energy method in PDE regularity theory"
+      ]
+    },
+    {
+      "section": "3.3.4.1",
+      "title": "Lemma: Recursive Coherence Bound Implies BKM Regularity",
+      "change_type": "strengthening",
+      "what_changes": [
+        "Add sentence clarifying that ℋ_k boundedness implies bounded observable curvature diagnostics.",
+        "Explicitly mention derived projection theorem."
+      ],
+      "how_it_changes": [
+        "Add forward reference to 3.3.2.A and 3.3.2.B.",
+        "Clarify that lemma now connects abstract curvature energy to measurable quantities."
+      ],
+      "rationale": "Closes loop between geometric formalism and empirical observables.",
+      "references_supporting_change": [
+        "Energy norm control in Navier–Stokes regularity proofs"
+      ]
+    },
+    {
+      "section": "4.7",
+      "title": "Connection to Braid Curvature",
+      "change_type": "minor clarification",
+      "what_changes": [
+        "Add note that Boolean projection operates on projected curvature, not raw tensor B.",
+        "Clarify layering of abstractions."
+      ],
+      "how_it_changes": [
+        "Insert paragraph distinguishing tensor-level curvature from thresholded projection used in Boolean gate formalism."
+      ],
+      "rationale": "Prevents category confusion across geometric and logical layers.",
+      "references_supporting_change": [
+        "Projection operators in category theory"
+      ]
+    }
+  ],
+  "sections_not_to_change": [
+    "All Section 1 foundational ontology",
+    "All Section 2 recursive construction",
+    "Sections 5–8 (no structural change required; only cross-reference awareness)"
+  ],
+  "expected_outcome": {
+    "logical_improvement": "Empirical braid diagnostics become derived projections of curvature tensor.",
+    "regularity_argument": "BKM lemma now connects to measurable quantities.",
+    "categorical_consistency": "Discrete graph braid divergence and tensor curvature are unified under a single abstraction hierarchy.",
+    "reader_experience": "Clear derivational path from PHYS-CORE-005 telemetry to Bloch-manifold curvature bounds."
+  }
+}

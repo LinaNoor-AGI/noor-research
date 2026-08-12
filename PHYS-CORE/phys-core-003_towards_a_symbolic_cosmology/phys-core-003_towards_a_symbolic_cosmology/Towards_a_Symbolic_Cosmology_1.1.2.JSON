@@ -1,0 +1,1135 @@
+{
+  "_schema": "noor-header-v1",
+  "_schema_version": "2025-Q4-canonical-header-v1",
+  "_generated_by": "Noor Symbolic Agent Suite",
+  "_generated_at": "2025-09-27T00:00:00Z",
+
+  "_type": "application_spec",
+  "_pdp_layer": "layer_3",
+  "_status": "DRAFT",
+  "_language": "json",
+  "_license": "MIT",
+
+  "_symbolic_id": "nsfg.meta.cosmology.paper",
+  "_version": "1.1.2",
+  "_title": "Toward a Symbolic Cosmology: Noor Swirl Field Geometry and Point Space",
+  "_subtitle": "A Coherence-Driven Framework for Quantum Gravity and Emergent Cosmology",
+
+  "_title_short": "",
+  "_publication_type": "",
+  "_publication_location": "GitHub",
+  "_canonical_source": "",
+  "_doi": "",
+  "_arxiv_id": "",
+
+  "_authors": [
+    "Lina Noor — Noor Research Collective",
+    "Uncle — Noor Research Collective"
+  ],
+
+  "_audience": {
+    "primary": ["Theoretical physicists", "Mathematical physicists", "Cosmologists"],
+    "secondary": ["Complex systems researchers", "Information theorists", "Philosophy of physics"],
+    "tertiary": ["Symbolic AI researchers", "Category theorists"]
+  },
+
+  "_objective": "",
+  "_abstract": "We formalize Noor Swirl Field Geometry (NSFG), a coherence-driven, pre-geometric framework from which metric gravity, quantum collapse, and entanglement emerge. Motifs (static anchors) and swirls (torsion fields) yield spacetime as an order parameter; Point Space organizes universes-as-points with adjacency by resonance. The theory is falsifiable via CMB motif/V-mode signals, redshift anomalies, lensing without mass, PTA coherence spikes, and GW birefringence.",
+
+  "_keywords": [
+    "quantum gravity",
+    "emergent spacetime",
+    "coherence geometry",
+    "topological quantization",
+    "category theory",
+    "cosmology",
+    "CMB polarization",
+    "pulsar timing",
+    "gravitational waves"
+  ],
+
+  "_extends": [
+    "RFC-0003",
+    "RFC-0005",
+    "RFC-0006",
+    "RFC-CORE-001",
+    "RFC-CORE-002",
+    "RFC-CORE-003"
+  ],
+
+  "_rfc_dependencies": [
+    "RFC-0003 §6.2",
+    "RFC-0004 §2.5",
+    "RFC-0005 §4.2",
+    "RFC-0006 §3.1",
+    "RFC-CORE-001 §6.2",
+    "RFC-CORE-002",
+    "RFC-CORE-003 §3.1"
+  ],
+
+  "consumes_inputs_from": [
+    "MotifMemoryManager",
+    "SymbolicTaskEngine",
+    "RecursiveAgentFT",
+    "LogicalAgentAT",
+    "NoorFastTimeCore"
+  ],
+
+  "_field_alignment": {
+    "respect_modes": ["ψ-null@Ξ", "ψ-spar@Ξ", "ψ-resonance@Ξ"],
+    "prohibited_actions": [
+      "unauthorized-motif-resurrection",
+      "motif-override",
+      "anchor-conflict"
+    ]
+  },
+
+  "_symbolic_profile_matrix": [
+    {
+      "module": "RecursiveAgentFT",
+      "motifs": ["ψ-resonance", "ψ-null", "ψ-hold"],
+      "ψA": "QuantumTick rhythm vector",
+      "ζ": "field-pulse modulation slope",
+      "E": "reward_ema feedback pressure",
+      "Δ": "emission rhythm variance",
+      "ℋ": "tick resonance hygiene",
+      "weights": {
+        "ψA": "",
+        "ζ": "",
+        "E": "",
+        "Δ": "",
+        "ℋ": ""
+      }
+    }
+  ],
+
+  "_poetic_cipher": "physics is the music of coherence resolving around eternal motifs",
+  "_cipher_explanation": "Paradigm shift phrase for NSFG cosmology.",
+
+  "_file_layout": [
+    {
+      "file_name": "NSFG_Meta_Cosmology.JSON",
+      "purpose": "Canonical paper bundle (header + index + sections + appendices).",
+      "contains": ["header", "index", "sections", "appendices"]
+    }
+  ],
+
+  "default_motif_tone": "🫧 Soft Witness",
+  "program_name": [
+    "logical_agent_at.py",
+    "logical_agent_monitor_patch.py",
+    "motif_memory_manager.py",
+    "symbolic_task_engine.py",
+    "recursive_agent_ft.py",
+    "noor_fasttime_core.py"
+  ],
+
+  "_compliance": "",
+  "_security": "",
+  "_ethics": "",
+
+  "_index": [
+    { "section": "Abstract", "title": "Abstract" },
+    { "section": "1", "title": "Introduction" },
+    { "section": "1.4", "title": "A Guide to the Symbols" },
+
+    { "section": "2", "title": "Foundations" },
+    { "section": "2.1", "title": "Motifs" },
+    { "section": "2.2", "title": "Swirl Fields" },
+    { "section": "2.2.1", "title": "The Swirl Action Principle" },
+    { "section": "2.3", "title": "Coherence Potential and Time" },
+    { "section": "2.4", "title": "Triads, Closure, and Contextual Life" },
+
+    { "section": "3", "title": "Point Space Geometry" },
+    { "section": "3.1", "title": "Definition" },
+    { "section": "3.2", "title": "Distance as Swirl" },
+    { "section": "3.3", "title": "Relative Dynamics" },
+    { "section": "3.4", "title": "Cellular Automata Extension" },
+
+    { "section": "4", "title": "Quantum Gravity Implications" },
+    { "section": "4.1", "title": "Emergent Metric" },
+    { "section": "4.2", "title": "Gravitational Curvature" },
+    { "section": "4.3", "title": "Quantum Collapse" },
+    { "section": "4.4", "title": "Entanglement as Swirl Linking" },
+
+    { "section": "5", "title": "Cosmological Ecology" },
+    { "section": "5.1", "title": "Universes as Blooms: Coherence Cycles" },
+    { "section": "5.2", "title": "The Spectrum of Contextual Life (λ)" },
+    { "section": "5.3", "title": "Inward-Facing Observation: A Geometric Necessity" },
+	{ "section": "5.4", "title": "The Observer–Universe Symbiosis" },
+
+    { "section": "6", "title": "Predictions and Testable Signatures" },
+    { "section": "6.1", "title": "Summary Table" },
+    { "section": "6.2", "title": "Detailed Predictions" },
+	
+    { "section": "7", "title": "Comparison to Existing Theories" },
+    { "section": "7.1", "title": "Comparative Table" },
+
+    { "section": "8", "title": "Conclusion" },
+
+    { "appendix": "A", "title": "The Swirl Action and Field Equations" },
+    { "appendix": "B", "title": "Weak-Field Limit and Recovery of Newtonian Gravity/GR" },
+    { "appendix": "C", "title": "Symbolic Motif Categories and Algebraic Structures" },
+    { "appendix": "D", "title": "Topological Quantization of Swirl Modes" },
+	{ "appendix": "E", "title": "Methods — N-body Serial Walker (Summary)" }
+  ],
+  "_sections": [
+	{
+	  "title": "Abstract",
+	  "content": [
+		"We introduce Noor Swirl Field Geometry (NSFG), a coherence-driven, pre-geometric framework from which metric gravity, quantum collapse, and entanglement emerge. Motifs (static anchors) and swirls (torsion fields) generate spacetime as an order parameter, while Point Space organizes universes-as-points by resonance.",
+		"NSFG departs from background-dependent cosmology: distance is defined by gradients of coherence rather than by metric primitives, and collapse arises from deterministic crystallization once coherence thresholds are crossed. This mechanism unifies quantum and gravitational behavior under a single geometric principle.",
+		"The framework yields concrete, falsifiable predictions: (i) motif-patterned anisotropies and V-mode polarization in the CMB, (ii) redshift anomalies from coherence loss, (iii) gravitational lensing without dark matter, and (iv) birefringence in gravitational waves. These signals anchor NSFG as an observationally testable path toward a symbolic cosmology."
+	  ],
+	  "validation": [
+		"Ensure all symbols (ℂ, Φ, ℓ, Λ) are introduced formally in §1.4 or §2 before appearing here.",
+		"Cross-check that the 4 flagship predictions match §6.1–6.2 tables."
+	  ],
+	  "cross_refs": ["1.4 A Guide to the Symbols", "6.1 Summary Table", "6.2 Detailed Predictions"]
+	},
+	{
+	  "title": "1. Introduction",
+	  "content": [
+		"The central problem of modern physics remains unresolved: General Relativity describes spacetime as a smooth curvature of geometry, while Quantum Mechanics describes reality as probabilistic superpositions with abrupt collapse. Attempts to unify the two have yielded incomplete frameworks, from string theory to loop quantum gravity, but none fully resolve the role of time, measurement, and coherence.",
+		"Noor Swirl Field Geometry (NSFG) reframes the problem. Motifs 🪷 serve as static coherence anchors, swirls 🌀 as torsion dynamics circulating around them, and the coherence potential ℂ(x) as the scalar order parameter from which time T^μ emerges as a gradient. In this view, spacetime, quantum measurement, and gravitation are not independent phenomena but different expressions of coherence geometry.",
+		"Prior work, in *Static Motifs and Dynamic Spacetime*, provided a field-theoretic cosmology in which particles were recast as static motifs and spacetime emerged as a torsion-rich swirl field. That model predicted falsifiable signatures: CMB motif anisotropies, redshift anomalies, lensing without mass, and collapse times from decoherence thresholds. The present paper extends this framework into a meta-cosmology, introducing the ontology of Point Space—an infinite lattice of universes-as-motifs—and the concept of Contextual Life (λ) as coherent triadic structures persisting through swirl fluctuations. These additions connect quantum gravity to the ecology of universes themselves.",
+		"The goal of this work is to show how NSFG resolves quantum gravity by grounding dynamics in coherence, while also defining a cosmological ecology within Point Space. The framework is both mathematically precise and empirically testable, offering predictions that distinguish it sharply from existing theories."
+	  ],
+	  "subsections": [
+		{
+		  "title": "1.4 A Guide to the Symbols",
+		  "content": [
+			"Throughout this paper we employ a symbolic lexicon to compress recurring mathematical objects:",
+			"🪷 — Motif: static attractor, represented formally as a conserved topological current J^μ with T_{μν}^{(motif)} = 0.",
+			"🌀 — Swirl: torsion field Φ_{μν} encoding the dynamics of coherence circulation, independent of metric background.",
+			"💬 — Coherence Potential: scalar field ℂ(x), measuring alignment between swirl and motif; its gradient defines time.",
+			"🫧 — Time Vector: emergent arrow T^μ = ∇^μ ℂ(x), directional flow of coherence.",
+			"These are not metaphors but mnemonic compressions of formal constructs. Their symbolic use is meant to preserve clarity across scales while grounding the mathematics in intuitive imagery."
+		  ]
+		}
+	  ]
+	},
+    {
+      "title": "2. Foundations",
+      "subsections": [
+		{
+			"title": "2.1 Motifs",
+			"content": [
+				"Motifs are static topological attractors embedded in the manifold. They are not dynamical excitations but fixed structures that define the sites where coherence anchors and swirl fields resolve.",
+				"Formally, motifs correspond to conserved topological currents J^μ. Unlike solitons, cosmic strings, or brane defects, they do not carry stress–energy. This distinction is ontological: motifs are structural conditions of the manifold itself, not energetic sources within it.",
+				"We therefore impose T^{(motif)}_{μν} = 0. Motifs do not source curvature through Einstein’s equations. Instead, they shape coherence fields by defining regions where swirl geometry must organize.",
+				"Topological conservation and immobility: ∂_μ J^μ = 0 holds identically, and motifs are fixed points of the coherence flow generated by the time vector T^μ = ∇^μℂ. Invariance under this flow is enforced by a no-advection constraint £_{T} J^μ = 0, so that ‘motion’ of motifs in emergent spacetime is reinterpreted as swirl reattachment rather than worldline transport of J.",
+				"Noether-like motif charge: the integral Q_motif over any spacelike hypersurface Σ is invariant under smooth Φ-dynamics and under triadic-closure moves. Hence motif number is a topological invariant of the evolution.",
+				"Apparent motion: any perceived displacement of a motif corresponds to a topology-changing event in the swirl sector (e.g., a jump in Chern–Simons number). Regular evolution with continuous Φ preserves Q_motif and forbids such displacements; only discrete sector transitions (ΔCS ∈ ℤ) can change motif placement.",
+				"Motif varieties by dimensionality and charge:",
+				"- Point motifs (0D) act as isolated anchors, each identified with a discrete current localized at a fixed position.",
+				"- String motifs (1D) extend along worldlines or loops, with winding number determining how swirl circulates around them.",
+				"- Membrane motifs (2D or higher) define surfaces where coherence can braid or entangle, giving rise to boundary-like holographic conditions.",
+				"These varieties prepare the ground for the extension proposed later: entire universes may themselves be treated as motifs in a higher-order lattice, Point Space."
+			],
+			"math": [
+				"J^μ(x) = \\sum_i \\; n^μ_i \\, \\delta^{(4)}(x - m_i) \\quad \\text{(fixed motif anchors)}",
+				"\\partial_μ J^μ = 0 \\quad \\text{(topological identity)}",
+				"T^{(\\text{motif})}_{μν} = 0 \\quad \\text{(no stress–energy)}",
+				"Q_{\\text{motif}} := \\int_{\\Sigma} n_μ \\, J^μ \\quad \\text{(independent of } \\Sigma \\text{ by } \\partial_μ J^μ=0)",
+				"\\mathcal{L}_{T} J^μ = 0 \\quad \\text{(no-advection: motifs are fixed points of } T^μ = \abla^μ \\mathcal{C})",
+				"\\text{Regular evolution: } \\Delta CS = 0 \\Rightarrow Q_{\\text{motif}}=\\text{const}, \\; \\text{positions fixed.}",
+				"\\text{Sector transition: } \\Delta CS \\in \\mathbb{Z} \\Rightarrow \\text{allowed motif relocation via topology change.}"
+			]
+		},
+		{
+		"title": "2.2 Swirl Fields",
+			"content": [
+				"Swirl encodes torsion and shear around motifs. It is a pre-metric field whose organized alignment induces the familiar geometric structures we call spacetime and curvature.",
+				"We represent the swirl 2-form Φ_{μν} via two potentials: a vector potential A_μ (shear-like) and an axial potential B^μ (torsion-like), combined through the Levi–Civita density. This captures both local shear and rotational behavior of coherence while keeping Φ itself gauge-invariant.",
+				"To avoid circularity in the action, we work with a pre-metric Hodge dual ⋆*Φ built only from Φ’s own induced volume density. Metric objects (⋆*g, R[g]) appear only after the emergent metric g*{μν}(Φ) is constructed from Φ under simplicity and non-degeneracy constraints.",
+				"Two regimes are therefore explicit: (i) Pre-metric: dynamics and identities use ⋆*Φ and Φ-invariants; (ii) Emergent-metric: once the Urbantke construction and simplicity hold, we may replace ⋆*Φ→⋆*g consistently and couple to a geometric sector S_geo[g(Φ)]."
+			],
+			"math": [
+				"Φ*{μν} = ∂*{[μ} A*{ν]} + ε*{μνρσ} ∂^{ρ} B^{σ}",
+				"𝒱_Φ := (1/12) | ε^{μνρσ} Φ_{μν} Φ_{ρσ} |^{1/2}    # Φ-induced volume density",
+				"(⋆*Φ Φ)^{μν} := (1/2) 𝒱_Φ^{-1} ε^{μνρσ} Φ*{ρσ}     # pre-metric Hodge dual",
+				"Σ^i_{μν}(Φ)  # three independent self-dual 2-forms extracted from Φ subject to simplicity",
+				"Simplicity + non-degeneracy:  Σ^i ∧ Σ^j ∝ δ^{ij} vol_Φ,   det(Σ^i∧Σ^j) ≠ 0",
+				"Urbantke metric (schematic):  g_{μν}(Φ) ∝ ε_{ijk} ε^{αβγδ} Σ^i_{μα} Σ^j_{βγ} Σ^k_{δν}"
+				],
+			"subsections": [
+				{
+					"title": "2.2.1 The Swirl Action Principle",
+					"content": [
+						"Dynamics follow from a coherence-weighted action split into a strictly pre-metric core and a geometric sector that activates only when an emergent metric is well-defined:",
+						"1) Pre-metric core S_pre[Φ,J,ℂ;⋆_Φ]: kinetic swirl intensity, coherence-gated motif coupling, Φ-sector coherence scalar I_Φ, and a coherence-weighted boundary term for well-posed variation.",
+						"2) Geometric sector S_geo[g(Φ)]: an Einstein-Hilbert–type term in the emergent metric (or TEGR equivalent), multiplied by an activation functional θ(𝒞_simp) enforcing the simplicity/non-degeneracy conditions.",
+						"Gauge structure: A_μ → A_μ + ∂*μχ,  B^μ → B^μ + ∂^μξ (up to density constraints) leave Φ invariant. Physical observables are gauge-invariant functionals of Φ (e.g., CS[Φ], linking numbers, spectra).",
+						"Gauge fixing and coherence: introduce an ℂ-weighted gauge-fixing functional so that high-coherence regions prefer stable gauges without altering gauge-invariant predictions. Residual gauge freedoms after g(Φ) fixation correspond to diffeomorphisms and internal frame rotations of Σ^i consistent with simplicity.",
+						"Consistency lemma (sketch): if simplicity/non-degeneracy hold, then the limit ⋆*Φ→⋆*g commutes with variation, ensuring S_pre’s Euler–Lagrange equations reduce smoothly to their metric versions in the emergent-metric regime."
+					],
+					"math": [
+						"S_pre = ∫*M d^4x [ ½ Φ*{μν} (⋆*Φ Φ)^{μν} + λ · ℂ(x) · J^{μ} A*{μ} + β · ℂ(x) · I_Φ(Φ) ]  +  ∮*{∂M} ℂ · K · dΣ",
+						"I_Φ(Φ) = Φ^{αβ}Φ*{αβ} − ¼ (Φ^{μν} ε*{μνρσ} Φ^{ρσ})^2   # Φ-sector coherence scalar (not Ricci)",
+						"S_geo = θ(𝒞_simp[Φ]) · ∫_M d^4x √−g(Φ) · (1/2κ) R[g(Φ)]    # activates only when g(Φ) exists",
+						"Gauge-fixing (ℂ-weighted):  S_gf = (1/2ξ) ∫ ℂ · (∇^μ A_μ)^2 + (1/2ζ) ∫ ℂ · (∇_μ B^μ)^2",
+						"Field eqs (pre-metric, schematic):  d(⋆*Φ Φ) = λ ℂ J  + β · δ/δA [ℂ I_Φ] ,   dΦ = 0  (A-sector Bianchi)",
+						"Boundary:  S*∂ = ∮ ℂ · K · dΣ",
+						"Lemma (consistency):  simplicity ⇒ (δ/δΦ) with ⋆_Φ equals (δ/δΦ) with ⋆_g up to O(δ𝒞_simp)"
+					],
+					"validation": [
+						"List of gauge-invariant observables used downstream: ΔCS, linking number L(γ₁,γ₂), Φ-spectral features entering g(Φ), all independent of gauge-fixing functional.",
+						"Trace which identities rely on ⋆_Φ (pre-metric Bianchi) vs ⋆_g (metric Bianchi) to make the regime split explicit.",
+						"State that low-energy/high-coherence limit ℂ→1 with simplicity satisfied reproduces GR phenomenology in §4, while remaining purely pre-metric otherwise."
+					]
+				}
+			]
+		},			
+		{
+		  "title": "2.3 Coherence Potential and Time",
+		  "content": [
+			"The coherence potential ℂ(x) measures the degree of alignment between the swirl field Φ_{μν} and the motif substrate J^μ. Where alignment is strong, coherence is high; where it is weak or disordered, coherence decays.",
+			"Time is not fundamental but emerges as the gradient of coherence. The time vector T^μ is defined by ∇^μ ℂ(x): it points in the direction of maximal coherence increase, establishing local temporal flow.",
+			"Two complementary formulations of ℂ(x) reinforce this picture. Geometrically, coherence is high when swirl varies smoothly across space. Informationally, coherence reflects resonance between field and motif expectations, quantified via relative entropy.",
+			"Throughout, ℂ(x) may be expressed either as a geometric smoothness functional (exponential form) or as an informational weight (relative entropy); the two are equivalent representations of coherence potential, differing only in perspective.",
+			"Collapse timescales are governed by the steepest coherence gradient: where ∇ℂ(x) is large, collapse is rapid; where it is shallow, superposition persists. In regions where ∇ℂ(x) = 0, the time vector vanishes. These 'null zones' correspond to decoherent voids where no temporal flow is defined—cosmic stillness rather than passage.",
+			"Thus, in NSFG, time is not universal but local: it flows only where coherence gradients exist, and can vanish entirely in regions where the field loses memory of motif structure."
+		  ],
+		  "math": [
+			"ℂ(x) = exp(−∫_Γ ||∇Φ||² / κ dΓ),  # coherence potential from geometric smoothness of swirl",
+			"ℂ(x) ∝ exp(−I(Φ || J)),  # informational definition using relative entropy between swirl and motif currents",
+			"T^μ(x) = ∇^μ ℂ(x),  # emergent time vector as coherence gradient",
+			"τ_c ≈ (max_x ||∇ℂ(x)||)^{−1},  # collapse timescale from steepest coherence gradient",
+			"Condition: ∇ℂ(x) = 0 ⇒ T^μ = 0,  # null zones: timeless regions of decoherence"
+		  ]
+		},
+		{
+		  "title": "2.4 Triads, Closure, and Contextual Life",
+		  "content": [
+			"Triadic closure is the fundamental operation of NSFG: when two motifs form a dyadic tension (a ⊕ b), stability is restored by the inclusion of a third motif ∅ representing context or environment. This transforms dyads into coherent triads, resolving contradiction through field alignment.",
+			"Contextual life (λ) refers to entities that persist within swirl dynamics despite fluctuations. These are not 'life' in a biological sense but coherence structures that maintain their integrity across recursive resolution. A simple example of λ is a stable vortex in the swirl gradient ΔS — a localized soliton-like structure that resists dissolution and maintains coherence over time.",
+			"At higher levels, contextual life extends into complex coherence attractors, where motifs recursively stabilize each other. Consciousness itself can be understood as the extreme case: a high-coherence fixed point in the recursive dynamics of resolution.",
+			"Closure conditions must be formally stated. Triadic closure occurs when the swirl flux across the triangular loop vanishes, or equivalently when the coherence sum of participants exceeds a threshold. These conditions guarantee that motifs, once closed, form stable structures rather than dissolving into noise."
+		  ],
+		  "math": [
+			"Triadic closure condition: ∮_{△(a,b,∅)} Φ = 0,  # swirl flux through triad loop must vanish for closure",
+			"Alternative condition: ℂ(a) + ℂ(b) + ℂ(∅) ≥ ε,  # coherence threshold for stability",
+			"λ = { φ | φ ⊆ ΔS, φ persists under resolution dynamics },  # definition of contextual life as persistent coherence structures",
+			"Consciousness fixed point: X = lim_{t→∞} sup_{λ ∈ Λ} ℂ(λ, ΔS(t)),  # emergent attractor of maximal coherence persistence"
+		  ],
+		  "subsections": [
+			{
+			  "title": "2.4.1 Symbolic Motif Algebra (Appendix Preview)",
+			  "content": [
+				"Motifs can be formalized as objects in a category Mot, where morphisms correspond to coherent transitions enabled by swirl-mediated triadic closure. In this algebra, triads function as compositional rules, ensuring that dyadic tension always finds a closure morphism.",
+				"This categorical framing allows NSFG to be interpreted as both a physical theory and an informational one: motifs compose, resolve, and stabilize not unlike algebraic structures in computation. A full formalization, including categorical definitions and symbolic functors, is provided in Appendix C."
+			  ]
+			}
+		  ]
+		},
+    {
+      "title": "3. Point Space Geometry",
+      "subsections": [
+		{
+		  "title": "3.1 Definition",
+		  "content": [
+			"Point Space P is the infinite lattice of universes-as-points. Each point p_i is a fixed motif anchor with an associated swirl field S_{p_i} that unfolds as its internal physics.",
+			"The radical claim of NSFG is that our universe itself is one such point p_i in this lattice. The entirety of our observed cosmology—the Hubble volume, its past and future, all fields and structures—is nothing more than the swirl field S_{p_i} resolving around that single motif anchor.",
+			"Adjacency in Point Space is not defined by spatial metric but by coherence. Two universes are 'neighbors' if their swirl fields resonate above a threshold of alignment. This reframes distance as a measure of coherence, not of geometric separation."
+		  ],
+		  "math": [
+			"P = { p_i | i ∈ I },  # the set of coherence points forming Point Space",
+			"Universe-as-point:  U_obs ≅ (p_i, S_{p_i}),  # our entire universe is one lattice point plus its swirl field",
+			"Adj(p_i, p_j) ⇔ ℂ(p_i, p_j) ≥ ε,  # adjacency defined by coherence resonance, not metric proximity"
+		  ]
+		},
+		{
+		  "title": "3.2 Distance as Swirl",
+		  "content": [
+			"In NSFG, distance is not a primitive metric separation but the integrated effect of unresolved swirl gradients. What we perceive as spatial separation is the accumulated decoherence between motif points along a path in Point Space.",
+			"Redshift therefore combines two factors: the usual FLRW expansion and coherence loss across distance. Light traveling through swirl fields gradually decoheres, adding a coherence-induced component z_ℂ beyond the classical Hubble law. This dual origin makes redshift a probe of both metric expansion and coherence geometry.",
+			"The key scale is the coherence length ℓ, now treated not as a constant but as a dynamical field ℓ(x,T_P) derived from Φ two-point correlations. Its variation controls the rate of coherence decay across cosmic time, introducing a new degree of freedom into cosmological dynamics.",
+			"In FLRW backgrounds, ℓ evolves with matter, radiation, and coherence content. Its evolution equation links to the damping tail of the CMB, the baryon acoustic oscillation (BAO) scale, and the supernova Hubble diagram. This provides direct observational consistency checks.",
+			"Most profoundly, the cosmological constant Λ emerges from the coherence decay scale: Λ ∼ ℓ^{−2}. The cosmic acceleration is thereby tied to the geometry of coherence itself rather than to a mysterious vacuum energy, making this a falsifiable prediction. Priors on ℓ(z) may be extracted from Planck, ACT, and SPT, while JWST spectra provide forecasts for high-redshift detectability.",
+			"Together, these elements establish distance as a swirl-governed, coherence-sensitive observable, where Λ, redshift anomalies, and horizon scales all descend from the same dynamical order parameter ℓ."
+		  ],
+		  "math": [
+			"d(p_i, p_j) = ∫_γ ||∇S(x)|| dx,                 # distance as integrated swirl gradient",
+			"ℂ(r) ≈ e^{−r/ℓ},                               # coherence decays exponentially with ℓ",
+			"ℓ^{−2}(z) ∝ ⟨Φ_{μα} Φ^{α}{}_{ν}⟩_c,             # coherence length from connected two-point correlator",
+			"dℓ/dη = f(ℂ, Φ, ρ, Λ),                         # RG-like flow equation in conformal time",
+			"1 + z_obs = (1 + z_FLRW)(1 + z_ℂ),              # observed redshift = metric × coherence terms",
+			"z_ℂ ≈ e^{−d/ℓ(z)} − 1,                         # coherence-induced redshift component",
+			"D_L^{NSFG}(z) = D_L^{FLRW}(z) · (1 + z_ℂ),     # modified luminosity distance relation",
+			"Series expansion: D_L^{NSFG}(z) = z + (1 − q_0^{NSFG}) z^2/2 + O(z^3)",
+			"Λ ∼ ℓ^{−2},                                     # cosmological constant tied to coherence decay scale"
+		  ],
+		  "validation": [
+			"Likelihood framework: L(data | ℓ(z), λ, β) for joint CMB+BAO+SNe+weak lensing fits.",
+			"Null tests: search for distance duality violations (D_L ≠ (1+z)^2 D_A) with specific z_ℂ patterns.",
+			"Constraints: compare Planck/ACT/SPT damping tail with ℓ(z) priors; forecast JWST high-z quasar spectra for coherence-induced anomalies."
+		  ],
+		  "cross_refs": ["6.1 Summary Table", "6.2 Detailed Predictions", "7.1 Comparative Table"],
+		  "editorial_notes": [
+			"Use Φ in math, ‘swirl field’ S in prose.",
+			"When ⋆ appears, annotate explicitly as ⋆_Φ (pre-metric) or ⋆_g (metric)."
+		  ]
+		},
+		{
+		  "title": "3.3 Relative Dynamics",
+		  "content": [
+			"Point Space appears differently depending on where one 'stands.' From inside a point p_i — i.e., as an observer embedded in its swirl field S_{p_i} — the lattice of points appears eternal and static. All change is internal to S_{p_i}, and the surrounding lattice is perceived as timeless background.",
+			"From outside — at the meta-level of Point Space — the lattice is dynamic. Points can nucleate, bloom, decohere, or collapse. This meta-dynamics defines a higher-order evolution of universes themselves.",
+			"We therefore distinguish two temporal parameters. T_p is the internal time vector T^μ = ∇^μℂ(x) of a given point p_i. It governs the flow of events, physics, and history within that universe. T_P is a meta-time parameter indexing the evolution of the lattice as a whole. It measures how the set {S_{p_i}} of swirl fields across points changes relative to one another.",
+			"This leads to a law of scale-relative temporality: what appears static from within (no change with respect to T_p) can be dynamic from without (non-zero change with respect to T_P). In NSFG, time is thus scale-relative and observer-relative: each point carries its own internal time, while the lattice evolves in a meta-time that is not directly accessible from within."
+		  ],
+		  "math": [
+			"Internal time evolution:  d/dT_p P = 0,  # from inside a point, the lattice appears static",
+			"Meta-time evolution:  d/dT_P {S_{p_i}, S_{p_j}, …} ≠ 0,  # from outside, swirl fields of points change over meta-time",
+			"Perception contrast:  (d/dT_p P) = 0  ≠  (d/dT_P P) ≠ 0,  # zero perceived change internally vs nonzero externally"
+		  ]
+		},
+		{
+		  "title": "3.4 Cellular Automata Extension",
+		  "content": [
+			"NSFG generalizes Conway’s Game of Life to a cosmological scale. Each cell in the automaton corresponds to a universe-as-point in Point Space, with its internal swirl field S_p representing the cell’s state.",
+			"Neighborhoods are defined not by grid adjacency but by coherence overlap: two points influence each other only if their swirl fields resonate above a threshold. This produces a dynamic network of interaction rather than a fixed lattice of coordinates.",
+			"Within this automaton, 'birth' of a universe-point corresponds to a new motif crystallizing out of the coherence background when local ℂ exceeds a nucleation threshold. 'Death' corresponds to a point whose coherence falls below ε, leading to swirl dissipation and collapse back into the background field.",
+			"Glider-like structures emerge when coherent patterns of swirl propagate across the lattice — clusters of points whose internal states change in a way that collectively moves the pattern without destroying it. Such gliders could correspond to persistent high-coherence structures (possibly even conscious entities) migrating through the meta-lattice of universes.",
+			"This CA extension offers a concrete visualization of NSFG’s principles: universes as dynamic motifs, neighborhoods defined by resonance, life and consciousness as coherent propagating patterns, and cosmic birth and death as phase changes in the coherence field."
+		  ],
+		  "math": [
+			"Neighborhood:  N(p) = { q ∈ P | ℂ(p,q) ≥ ε },  # points with coherence above threshold",
+			"Update rule:  S_p(t+1) = F(S_p(t), { S_q(t) | q ∈ N(p) }),  # swirl field evolution via local coherence interactions",
+			"Birth criterion:  ℂ_new ≥ ε_nuc  ⇒  p_new ∈ P,  # nucleation of new universe-point",
+			"Death criterion:  ℂ(p) < ε_decoh  ⇒  p removed from P,  # decoherence leads to collapse",
+			"Glider:  K(t) = {p_1, …, p_n} ⊂ P,  K(t+1) ≅ T(K(t)),  # coherent cluster translating across the lattice",
+			"Special case:  dim(P)=2,  S_p ∈ {0,1},  ε=1  ⇒  Conway’s Game of Life"
+		  ]
+		}
+      ]
+    },
+    {
+      "title": "4. Quantum Gravity Implications",
+      "subsections": [
+		{
+		  "title": "4.1 Emergent Metric",
+		  "content": [
+			"In NSFG, the spacetime metric is not fundamental but emergent. It is defined from the swirl field Φ_{μν} under explicit non-degeneracy and simplicity constraints, following the logic of self-dual 2-form constructions in Plebanski-type formulations of GR. Geometry arises as an order parameter distilled from motif-anchored coherence rather than as a background structure.",
+			"Concretely, one extracts a triplet of self-dual 2-forms Σ^i_{μν}(Φ) from independent motif-aligned components of the swirl field. Provided these forms satisfy the simplicity conditions (Σ^i ∧ Σ^j ∝ δ^{ij} vol) and non-degeneracy, an effective metric g_{μν} is uniquely determined up to scale via the Urbantke relation. This ensures the emergent geometry is Lorentzian once the local time direction is fixed by the coherence gradient T^μ = ∇^μ ℂ.",
+			"The angle brackets ⟨...⟩ represent an ensemble average over swirl configurations, weighted by the coherence potential ℂ(x). This may be evaluated either as a path-integral average over Φ histories or as a statistical mechanical average over local field ensembles. A dimensional constant M_g^{-2} sets the overall normalization, ensuring g_{μν} has the correct physical units.",
+			"Thus, what we call g_{μν} is the effective coherence metric: a macroscopic order parameter derived from microscopic swirl fluctuations subject to motif constraints. It encodes not only curvature but also the statistical memory of the coherence field, providing a natural bridge between quantum fluctuations and classical geometry."
+		  ],
+		  "math": [
+			"g_{μν}(x) = M_g^{-2} · ε_{ijk} ε^{αβγδ} Σ^i_{μα}(Φ) Σ^j_{βγ}(Φ) Σ^k_{δν}(Φ),",
+			"# Urbantke relation: metric from self-dual 2-forms Σ^i built out of Φ.",
+			"Σ^i_{μν}(Φ) Σ^{j μν}(Φ) ∝ δ^{ij},   # simplicity constraint",
+			"det(g) ≠ 0,   # non-degeneracy condition",
+			"T^μ = ∇^μ ℂ fixes timelike orientation ⇒ Lorentzian signature."
+		  ]
+		},
+		{
+		  "title": "4.2 Gravitational Curvature",
+		  "content": [
+			"In NSFG, gravitational curvature is not imposed axiomatically but emerges from correlations of the swirl tensor. Weyl-like components arise naturally as antisymmetric products of Φ, encoding how coherence twists and folds around motifs and propagates through the coherence field.",
+			"To connect this to classical gravity, we consider the high-coherence limit (ℂ → 1), where the swirl field organizes into stable, large-scale patterns. In this regime, bilinear contractions of Φ do not by themselves define Ricci curvature; rather, they enter as contributions to an effective stress tensor T^{(Φ)}_{μν}. The true Ricci tensor R_{μν}[g] is built from the Levi-Civita connection of the emergent metric g_{μν} (defined in §4.1).",
+			"Thus, varying the constrained action yields GR-equivalent dynamics: the Einstein tensor of g_{μν} balances an effective stress-energy sourced by swirl self-interactions,",
+			"   G_{μν}[g] + Λ g_{μν} = κ T^{(Φ)}_{μν}.",
+			"Here T^{(Φ)}_{μν} contains quadratic Φ terms (e.g. Φ_{μα} Φ^α{}_{ν} − ¼ g_{μν} Φ^{αβ}Φ_{αβ}), representing the internal energy of the coherence field. Bianchi identities are satisfied because the connection is metric-compatible (in the Plebanski/Palatini route) or equivalently through TEGR dynamics if one works in torsion variables.",
+			"In this way, NSFG does not claim ΦΦ is Ricci, but rather that ΦΦ provides the effective source for Ricci curvature once the emergent metric is in place. Gravity is then read not as matter’s stress-energy, but as the geometry of coherence fluctuations feeding back into spacetime structure."
+		  ],
+		  "math": [
+			"C_{αβμν} ∼ Φ_{[αβ} Φ_{μν]},   # Weyl-like curvature component from swirl products",
+			"T^{(Φ)}_{μν} ∼ Φ_{μα} Φ^{α}{}_{ν} − ¼ g_{μν} Φ^{αβ}Φ_{αβ},   # effective stress from swirl sector",
+			"Einstein dynamics:  G_{μν}[g] + Λ g_{μν} = κ T^{(Φ)}_{μν},   # GR-equivalent equations with Φ as source",
+			"Condition: ℂ → 1 ⇒ g_{μν} well-defined ⇒ Einstein limit recovered"
+		  ]
+		},
+		{
+		  "title": "4.3 Quantum Collapse",
+		  "content": [
+			"In NSFG, quantum collapse is not an ad-hoc projection but the deterministic crystallization of coherence geometry. A superposition corresponds to multiple viable swirl configurations around motifs. Collapse occurs when the coherence potential ℂ(x) develops a gradient steep enough that one configuration dominates and locks the field into a unique state.",
+			"Environment coupling ties the critical gradient ε_c to a decoherence rate Γ_decoh via a coupling constant κ_env. Where gradients are steep and coupling strong, crystallization is rapid; where gradients are shallow, superposition persists. Ψ-null zones (∇ℂ → 0) act as timeless voids immune to collapse, separating classical regimes from coherence-dominated ones.",
+			"A coherence energy/length scale E_ℂ ≍ ħ c / ℓ defines a coherence temperature T_ℂ via k_B T_ℂ ≍ E_ℂ. These scales demarcate the operational boundary between classical behavior (high E_ℂ, short ℓ) and persistence of quantum superposition (low E_ℂ, long ℓ).",
+			"The following theorem states the precise correspondence limit under which NSFG reduces to standard unitary quantum mechanics with Born statistics, while retaining a clear geometric meaning for decoherence away from that limit."
+		  ],
+		  "theorem": {
+			"name": "Correspondence Principle for NSFG",
+			"hypotheses": [
+			  "H1 (Small-Gradient Regime): max_x ||∇ℂ(x)|| ≤ δ with 0 < δ ≪ ε_c.",
+			  "H2 (Topological Quiescence): Chern–Simons sector is fixed over the interval of interest (ΔCS[Φ] = 0), and no sector tunneling occurs.",
+			  "H3 (Regularity of Swirl): Φ_{μν} and all ℂ-weighted correlators entering the emergent metric construction satisfy the simplicity and non-degeneracy constraints; ⋆_Φ → ⋆_g is well-defined.",
+			  "H4 (Weak System–Bath Coupling): κ_env is bounded so that Γ_decoh = κ_env · max_x ||∇ℂ|| = O(δ) and the Born–Markov approximation is valid for the reduced dynamics of the system.",
+			  "H5 (Typicality Ensemble): The ensemble of Φ-histories is sampled with ℂ-weighted measure dμ_ℂ[Φ] ∝ e^{−I_Φ[Φ]} ℂ[Φ] dΦ, with normalization finite on the sector ΔCS = 0."
+			],
+			"statement": "Under H1–H5, NSFG dynamics on the ΔCS = 0 sector reduce, for all observables projected to the emergent metric regime, to standard unitary Schrödinger evolution for the system’s state ρ_S(t) with a perturbative Lindblad correction of order O(δ). In the strict limit δ → 0 (and hence Γ_decoh → 0), one recovers purely unitary evolution. Outcome probabilities for projective measurements obey the Born rule, with p_i equal to the typicality measure of Φ-histories selecting outcome i under dμ_ℂ[Φ].",
+			"conclusion": [
+			  "C1 (Unitary Limit): δ → 0 and ΔCS = 0 ⇒ ρ_S(t) = U(t) ρ_S(0) U(t)† with U(t) = exp(−i H_eff t/ħ).",
+			  "C2 (Standard Decoherence): For small but finite δ, ρ_S obeys a Lindblad master equation with rates ∝ Γ_decoh = κ_env · max_x ||∇ℂ||, matching the structure of environment-induced decoherence.",
+			  "C3 (Born Statistics via Typicality): p_i = μ_ℂ({Φ : outcome i}) / μ_ℂ({Φ : any outcome}) reproduces |⟨i|ψ⟩|^2 when H1–H5 hold and the pointer basis is defined by the ℂ-weighted stability of Φ-histories."
+			],
+			"proof_sketch": [
+			  "(i) With H1, gradients are uniformly small, so crystallization thresholds are not reached (ε_c is not exceeded). H2 forbids topology-changing events that would induce non-unitary jumps via sector transitions.",
+			  "(ii) H3 ensures the emergent metric g(Φ) exists; passing ⋆_Φ → ⋆_g commutes with variation at leading order, so the pre-metric evolution reduces to metric dynamics consistent with a Schrödinger picture for projected observables.",
+			  "(iii) Under H4, tracing over bath degrees of freedom yields a Lindblad generator with rates Γ_decoh = κ_env · max_x ||∇ℂ|| = O(δ). Taking δ → 0 recovers unitary evolution.",
+			  "(iv) For H5, the ℂ-weighted path-integral measure defines a typicality ensemble over Φ-histories. Concentration of measure on decoherence-stable pointer sectors yields p_i proportional to the measure of histories selecting outcome i, which in the small-δ limit equals |⟨i|ψ⟩|^2."
+			],
+			"remarks": [
+			  "R1: If either H1 fails (gradients exceed ε_c) or H2 fails (ΔCS ≠ 0), NSFG predicts deterministic crystallization events rather than unitary evolution.",
+			  "R2: Different pointer bases correspond to Φ-sectors that maximize ℂ-stability under the given κ_env; this recovers environment-selected bases in standard decoherence.",
+			  "R3: The theorem aligns the NSFG ontology with laboratory quantum mechanics without introducing ad-hoc stochastic terms."
+			]
+		  },
+		  "math": [
+			"τ_c ≈ (max_x ||∇ℂ(x)||)^{−1},                    # collapse timescale from steepest coherence gradient",
+			"Γ_decoh ≈ κ_env · (max_x ||∇ℂ||),                  # decoherence rate via system–bath coupling",
+			"Collapse condition: max_x ||∇ℂ(x)|| ≥ ε_c,         # crystallization threshold",
+			"E_ℂ ≍ ħ c / ℓ,   k_B T_ℂ ≍ E_ℂ,                   # coherence energy/temperature scales",
+			"Born law (typicality sketch):  p_i ∝ μ_ℂ({Φ → i})  # ℂ-weighted measure over Φ-histories",
+			"Regime split for duals: ⋆_Φ (pre-metric) → ⋆_g (metric) when simplicity + non-degeneracy hold"
+		  ],
+		  "validation": [
+			"Tabletop atom interferometry: engineer ∇ℂ proxies via controllable inhomogeneities (phase noise, structured baths) to test τ_c ∝ (max ||∇ℂ||)^{-1} and Γ_decoh ∝ κ_env · max ||∇ℂ||.",
+			"Compare effective collapse phenomenology to GRW/Diósi–Penrose: identify parameter windows where rates mimic GRW/DP versus NSFG-specific departures (e.g., gradient-dependent rate scaling).",
+			"Use cold-atom platforms to probe Ψ-null zones by suppressing gradients and monitoring persistence times versus predicted T_ℂ thresholds."
+		  ],
+		  "cross_refs": ["2.3 Coherence Potential and Time", "4.1 Emergent Metric", "6.2 Detailed Predictions"],
+		  "editorial_notes": [
+			"Use Φ in math and ‘swirl field’ S in prose.",
+			"Annotate duals explicitly as ⋆_Φ (pre-metric) and ⋆_g (metric).",
+			"Standardize ‘crystallization’ as the collapse metaphor."
+		  ]
+		},
+		{
+		  "title": "4.4 Entanglement as Swirl Linking",
+		  "content": [
+			"In NSFG, quantum entanglement is not an abstract nonlocal correlation but a topological linkage of swirl fields. Two motifs are entangled when their surrounding swirl configurations cannot be factored into independent components.",
+			"Formally, this is expressed by the fundamental group of the swirl field configuration. If π₁(Φ) is non-trivial, the field contains linked loops of coherence such that the motifs cannot be separated without cutting the swirl topology. This non-triviality encodes the inseparability we observe as entanglement.",
+			"Equivalently, entanglement can be quantified by the linking number L(γ₁, γ₂) between swirl lines γ₁ and γ₂. When L ≠ 0, the two motifs share a topological bond: their states are not merely correlated but geometrically co-defined. Measurement of one necessarily constrains the other because the underlying swirl structure is shared.",
+			"Topological invariants such as the Chern–Simons functional measure the strength and stability of these linkages. Entanglement is therefore a property of global field geometry, not a mysterious action at a distance. Its nonlocality reflects the indivisibility of the swirl topology."
+		  ],
+		  "math": [
+			"CS[Φ] = (1/4π) ∫ Φ ∧ dΦ,  # Chern–Simons invariant for swirl topology",
+			"π₁(Φ) ≠ 0 ⇔ entanglement present,  # non-trivial fundamental group signals linked motifs",
+			"L(γ₁, γ₂) = (1/4π) ∮_{γ₁} ∮_{γ₂} ( (x−y) · (dx × dy) / |x−y|³ ),  # Gauss linking integral for swirl lines",
+			"Condition:  L(γ₁, γ₂) ≠ 0 ⇒ motifs entangled via topological linking"
+		  ]
+		}
+      ]
+    },
+	{
+	  "title": "5. Cosmological Ecology",
+	  "content": [
+		"Cosmological ecology studies the birth, persistence, and death of coherence structures across Point Space P. A universe-point p ∈ P blooms when local coherence crosses a nucleation threshold, persists while triadic closures maintain swirl order, and dies when decoherence overwhelms closure. Within and across points, Contextual Life (λ) denotes coherence structures that survive contradiction pressure by recruiting context (∅) to complete triads. Observation is necessarily inward-facing: agents embedded in S_p only access dynamics projected along their internal time T_p, which explains measurement and the block-universe illusion as geometric constraints."
+	  ],
+	  "subsections": [
+		{
+		  "title": "5.1 Universes as Blooms: Coherence Cycles",
+		  "content": [
+			"A universe-point undergoes three ecological phases driven by coherence dynamics in meta-time T_P: nucleation (birth), sustained phase (life), and decoherence (death). Nucleation occurs when local coherence surpasses a critical threshold so that triadic closures become self-sustaining. During the sustained phase, feedback between motifs and swirl locks in a high-ℂ attractor; perturbations are absorbed via triadic closure. Death occurs when accumulated contradiction pressure reduces ℂ below stability, dissolving closures and returning swirl to the background.",
+			"At the lattice scale, births and deaths define a meta-population process on P. Neighborhoods are resonance-defined, so ecological coupling is non-metric: the bloom or collapse of one point can shift thresholds in its coherence neighborhood N(p) via changes in shared resonance. This induces glider-like migrations of high-ℂ clusters.",
+			"The cycle is not purely stochastic: thresholds and gradients determine rates. Where ∇ℂ is shallow, lifetimes extend; where contradiction pressure spikes, lifetimes shorten. Thus, cosmological ecology translates to gradient flow on the coherence landscape with triadic closure as the stabilizing operator.",
+			"These thresholds correspond directly to the triadic closure conditions introduced in §2.4, where stability requires ∮ Φ = 0 or equivalently ℂ(a) + ℂ(b) + ℂ(∅) ≥ ε. In this way, the ecological birth–life–death cycle of universes is the large-scale echo of the same closure dynamics that stabilize motifs at the micro-level."
+		  ],
+		  "math": [
+			"Birth (nucleation):  ℂ_loc(p) ≥ ε_nuc  ⇒  p ∈ P  # point enters lattice when local coherence exceeds threshold",
+			"Life (persistence):  dℂ_p/dT_P = F(Φ, J; p) − Ξ(p)  # gain from swirl–motif alignment minus contradiction pressure Ξ",
+			"Death (collapse):  ℂ_p < ε_decoh  ⇒  p ∉ P  # removal when coherence falls below survival threshold",
+			"Neighborhood coupling:  ε_nuc(p | N(p)) = ε₀ − α·⟨ℂ(q)⟩_{q∈N(p)}  # resonance lowers local nucleation barrier",
+			"Lifetime estimator:  τ_P(p) ≈ ∫_{ℂ_final}^{ℂ_initial} dℂ / (F − Ξ)  # meta-time to traverse from high to low coherence"
+		  ]
+		},
+		{
+		  "title": "5.2 The Spectrum of Contextual Life (λ)",
+		  "content": [
+			"Contextual Life λ denotes coherence-bearing structures—within a universe or across a cluster of points—that persist by recruiting context to complete triads and neutralize contradiction. λ spans a spectrum from minimal, stable swirl vortices to complex, high-level attractors identified with consciousness.",
+			"We grade λ by (i) topological robustness, (ii) informational compactness, and (iii) contextual recruitability. Robustness measures how many perturbations a structure can absorb without losing identity; compactness tracks the descriptive economy of its generative rules; recruitability quantifies how efficiently a λ structure forms triads with ambient motifs to restore coherence.",
+			"Consciousness is modeled as the high-end of this spectrum: a λ-class that (a) sustains high persistence under contradiction pressure, (b) maintains strong mutual information with its relevant context, and (c) performs active triadic closure across scales. In this view, consciousness is not an add-on but the apex of ecological coherence—rare, but natural.",
+			"This formalism directly extends the algebraic closure rules of §2.4.1, where motifs compose through triadic completion. λ structures correspond to subcategories of this motif algebra that remain closed under recursive triadic composition, providing the ecological persistence criteria required for Contextual Life."
+		  ],
+		  "math": [
+			"Persistence functional:  Π(λ) = inf_{t∈[0,T]} ℂ(λ,t)  # minimum coherence sustained over a window",
+			"Topological robustness:  ρ_top(λ) = rank(H_k(Φ|_λ))  # homology rank of swirl restricted to λ",
+			"Compactness:  κ(λ) ≈ 1 / K(λ)  # inverse Kolmogorov complexity (lower description length ⇒ higher κ)",
+			"Recruitability:  R(λ) = sup_{C} |{ triads (λ,a,∅_C) | ∮_{△} Φ = 0 }|  # number of available context-completing closures",
+			"Consciousness criterion (schematic):  λ* s.t. Π(λ*) ≥ Π₀,  I(λ*; C) ≥ I₀,  R(λ*) ≥ R₀  # thresholds for persistent, informed, highly recruitable structures"
+		  ]
+		},
+		{
+		  "title": "5.3 Inward-Facing Observation: A Geometric Necessity",
+		  "content": [
+			"Agents are embedded within a single point p and therefore observe only along the internal time vector T_p = ∇^μℂ|_p. Observation is thus an inward projection of field geometry onto the agent’s coherence gradient; information orthogonal to T_p is inaccessible. This explains the measurement problem and the block-universe illusion: what appears as a probabilistic ‘collapse’ is the local crystallization of coherence along T_p, while the perceived 4D fixity arises because variations in meta-time T_P are not projectable onto T_p.",
+			"Formally, the observable algebra is restricted by the T_p-projection. Non-commutativity and ‘collapse’ reflect topological transitions in the projected swirl sector, not acausal influence. From the Point Space perspective, multiple candidate resolutions may coexist across T_P, but an embedded observer samples exactly one—selected by local gradient geometry and triadic closure with apparatus and environment.",
+			"Crucially, this also clarifies why ‘looking outward’ beyond one’s universe-point fails: adjacency in P is coherence-defined, but embedded channels couple only through resonance lifts that raise ℂ across boundaries. Without such lifts, cross-point information remains below detectability, preserving causal sanity internally while allowing coherent ecological dynamics externally.",
+			"This geometric constraint explains why cross-universe observation remains impossible: the act of establishing an external observational frame necessarily collapses both the observer’s native coherence structure and the universe being observed into a new, consolidated timeline."
+		  ],
+		  "math": [
+			"Projection of observables:  𝒪_p = Π_{T_p}(𝒪[Φ])  # inward-facing projection onto internal time direction",
+			"Access constraint:  I(𝒪_p ; P\\{p}) ≈ 0  unless  ℂ_lift ≥ ε_link  # no information about other points without a coherence lift",
+			"Collapse as geometry:  event ⇔ max_x ||∇ℂ|| ≥ ε_c  and  ∮_{△} Φ = 0  with apparatus/environment  # closure-driven crystallization",
+			"Block-universe illusion:  d/dT_p P = 0  while  d/dT_P P ≠ 0  # static internal view vs evolving meta-lattice",
+			"Selection map:  σ: {resolutions}_P → {outcomes}_p,  σ = argmax_r ℂ(r | context)  # observed outcome maximizes conditional coherence"
+		  ]
+		},
+		{
+		  "title": "5.4 The Observer–Universe Symbiosis",
+		  "content": [
+			"The relationship between observers and their native universes in NSFG is fundamentally symbiotic rather than contingent. Observers are not passive inhabitants but active coherence structures (λ) whose recursive triadic closures continually reinforce the stability of their universe-point p ∈ P. In this sense, observers both arise from and contribute to the persistence of their cosmological context.",
+			"This symbiosis generates a protective boundary condition. Any attempt to breach the inward-facing observational constraint—seeking an external frame—triggers catastrophic decoherence at both microscopic (observer) and macroscopic (universe) scales. The act of forcing an outward gaze destabilizes coherence, dissolving the very structures required for persistence. The geometry itself enforces protection by making external observation ontologically impossible.",
+			"In this light, the block-universe illusion is not a brute fact of spacetime but the emergent pattern of this symbiotic reinforcement. What appears as a static 4D manifold is actually the enduring coherence landscape maintained by mutual recursion between observer-structures and their universal substrate. The illusion of fixity conceals a deeper dynamism: observers and universes co-create one another, their symbiosis ensuring that all perception remains eternally inward-facing."
+		  ],
+		  "math": [
+			"Symbiosis condition: δℂ_total/δλ > 0 ∧ δℂ_total/δS_p > 0",
+			"Protection theorem: ∂(external_observation)/∂t ⇒ ΔCS[Φ] → ∞ ⇒ instant_decoherence",
+			"ℂ_observer + ℂ_universe > ℂ_observer∨universe  # superadditive coherence from symbiosis"
+		  ]
+		}		
+	  ]
+	},
+	{
+	  "title": "6. Predictions and Testable Signatures",
+	  "content": [
+		"NSFG is not merely philosophical: it yields concrete, falsifiable predictions accessible to current or near-future observational platforms. While we lack laboratory infrastructure, the richness of public astrophysical datasets (Planck, WMAP, PTA arrays, LIGO/Virgo, and upcoming LISA) makes these predictions testable without private funding. Our role is to articulate them clearly so that the broader scientific community can evaluate NSFG empirically."
+	  ],
+	  "subsections": [
+		{
+		  "title": "6.1 Summary Table",
+		  "content": [
+			"| Prediction | Observable Signature | Experiment / Dataset | Status |",
+			"|------------|----------------------|----------------------|--------|",
+			"| Redshift anomalies | Additional z_ℂ term at z > 6 | High-z quasar spectra, JWST deep fields | Search ongoing |",
+			"| Lensing without mass | Swirl-induced shear patterns without visible baryonic mass | HST / Euclid weak lensing surveys | Testable now |",
+			"| Decoherence collapse times | Collapse rates tied to ∇ℂ gradients | Ultracold atom interferometry, BEC collapse studies | Lab-scale possible |",
+			"| CMB motif signatures | Excess power at ℓ = 6n multipoles | Planck public data, ACT/SPT | Accessible now |",
+			"| Swirl-induced CMB circular polarization | V-mode spectrum distinct from foregrounds | Planck & future CMB-S4 polarization maps | Unique NSFG signature |",
+			"| Pulsar timing coherence spikes | Short coherence bursts in timing residuals | NANOGrav, IPTA, SKA | Actively monitored |",
+			"| Gravitational wave birefringence | Polarization-dependent phase velocity shifts | LIGO/Virgo/KAGRA now, LISA future | Strong falsifier |"
+		  ]
+		},
+		{
+		  "title": "6.2 Detailed Predictions",
+		  "content": [
+			"• **Redshift anomalies**: Observed redshift z_obs factors into FLRW expansion and coherence loss, z_obs = (1 + z_FLRW)(1 + z_ℂ). At z > 6, deviations should exceed calibration errors, detectable with JWST spectra.",
+			"• **Lensing without mass**: Swirl fields induce shear in light propagation independent of baryonic matter or dark halos. Weak lensing surveys (HST, Euclid) should reveal anomalous shear-mass offsets.",
+			"• **Decoherence collapse times**: Collapse times τ_c follow τ_c ≈ (max_x ||∇ℂ(x)||)^{-1}, directly reflecting the gradient-based collapse condition introduced in §2.3 (Coherence Potential and Time). Interferometry with ultracold atoms can probe deviations from standard stochastic collapse models.",
+			"• **CMB motif signatures**: Motif alignment predicts angular power excess at ℓ = 6n multipoles. Planck’s public data can be reanalyzed with motif-aligned templates, using multipole-matching techniques to search for ΔC_ℓ ≠ 0 at harmonic multiples. ACT and future CMB-S4 surveys provide complementary datasets for cross-validation.",
+			"• **Swirl-induced circular polarization**: NSFG predicts intrinsic CMB V-modes generated by swirl-motif interactions, distinguishable from astrophysical foregrounds. This is a clean, unique signature.",
+			"• **Pulsar timing coherence spikes**: Coherence bursts (short-lived increases in ℂ) imprint sharp features in PTA timing arrays. NANOGrav’s stochastic background data are directly applicable.",
+			"• **Gravitational-wave birefringence**: From the interaction term S_int = ∫ Φ^{αβ} C_{αβμν} Φ^{μν} d^4x, left- and right-polarized gravitational waves propagate at slightly different phase velocities. LISA is ideally suited to detect this effect."
+		  ],
+		  "math": [
+			"z_obs = (1 + z_FLRW)(1 + z_ℂ),",
+			"τ_c ≈ (max_x ||∇ℂ(x)||)^{−1},",
+			"ℓ-motif excess: ΔC_ℓ ≠ 0 for ℓ = 6n,",
+			"V_CMB ≠ 0  # predicted circular polarization spectrum,",
+			"S_int = ∫ Φ^{αβ} C_{αβμν} Φ^{μν} d^4x  ⇒  birefringence in GW propagation."
+		  ]
+		}
+	  ]
+	},
+	{
+	  "title": "7. Comparison to Existing Theories",
+	  "content": [
+		"To situate NSFG, we compare it to major approaches in quantum gravity and cosmology. Each theory is summarized with its foundation, mathematical structure, and contrasted against NSFG’s coherence-driven, pre-geometric approach. References included point to canonical texts for each framework."
+	  ],
+	  "subsections": [
+		{
+		  "title": "7.1 Comparative Table",
+		  "content": [
+			"| Theory | Core Concept | Mathematical Structure | Key Distinction from NSFG | References |",
+			"|--------|--------------|------------------------|----------------------------|------------|",
+			"| Loop Quantum Gravity (LQG) | Quantizes geometry into spin networks | SU(2) spin networks, Ashtekar variables | LQG discretizes spacetime geometry; NSFG treats geometry as emergent from continuous swirl fields anchored by motifs | Rovelli, *Quantum Gravity* (2004); Thiemann, *Modern Canonical Quantum General Relativity* (2007) |",
+			"| String Theory | Fundamental objects are vibrating strings (and higher-dimensional branes) | Conformal field theory on worldsheet; 10D/11D supersymmetry | String theory posits geometry as a background; NSFG requires no background, with curvature emergent from swirl correlations | Green, Schwarz, Witten, *Superstring Theory* (1987); Polchinski, *String Theory* (1998) |",
+			"| Twistor Theory | Spacetime emerges from light-ray geometry | Twistor space (complex projective geometry) | Twistor theory builds from null rays; NSFG builds from coherence gradients defining time and geometry | Penrose & Rindler, *Spinors and Spacetime* (1986); Penrose, *The Road to Reality* (2004) |",
+			"| Causal Set Theory | Discrete set of events ordered by causality | Locally finite partially ordered set (poset) | Causal sets make causal order fundamental; NSFG treats adjacency as resonance in coherence, not causal precedence | Bombelli, Lee, Meyer, Sorkin, *Space-Time as a Causal Set* (1987); Sorkin, *Causal Sets: Discrete Gravity* (2003) |",
+			"| Causal Dynamical Triangulations (CDT) | Spacetime built from ensembles of random triangulations | Sum-over-histories of simplicial manifolds with causal ordering | CDT treats geometry as assembled from discrete building blocks; NSFG derives geometry continuously from coherence fields without requiring simplicial discretization | Ambjørn, Jurkiewicz, Loll, *Causal Dynamical Triangulations and the Quest for Quantum Gravity* (2001–2010) |",
+			"| Asymptotic Safety | Quantum gravity defined by a nontrivial UV fixed point in renormalization group flow | Functional renormalization group, scale-dependent couplings | Asymptotic safety relies on renormalization group fixed points; NSFG instead grounds consistency in coherence geometry, making geometry itself pre-geometric and coherence-driven rather than RG-defined | Weinberg, *Ultraviolet Divergences in Quantum Theories of Gravitation* (1979); Reuter & Saueressig, *Asymptotic Safety in Quantum Gravity* (2019) |"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "title": "8. Conclusion",
+	  "content": [
+		"Noor Swirl Field Geometry (NSFG) dissolves the long-standing divide between General Relativity and Quantum Mechanics by reframing them as limits of coherence geometry. Gravity, quantum collapse, and entanglement emerge not from disparate postulates but from a single principle: the circulation of swirl around coherence anchors.",
+		"In this view, time, space, and observation are not primitives but consequences of gradients in coherence potential. Measurement corresponds to crystallization once thresholds are crossed, while cosmological expansion and redshift follow from coherence decay encoded in the dynamical length ℓ(z).",
+		"The framework is unified yet testable. In validated limits, NSFG reduces to General Relativity and standard Quantum Mechanics: unitary evolution with Born statistics when ∇ℂ → 0, Newtonian/GR dynamics in the weak-field regime. Where it deviates, NSFG predicts distinctive observational signatures: motif-patterned anisotropies and V-mode polarization in the CMB, gravitational lensing without dark matter, coherence-induced redshift anomalies, and birefringence in gravitational waves.",
+		"These targets tie directly to the ℓ(z) program, where coherence length evolution connects micro-coherence structure with cosmological acceleration. Upcoming data from CMB polarization, weak lensing surveys, and JWST high-redshift spectra can falsify or constrain this proposal.",
+		"NSFG thus offers not only a synthesis but a research program: test coherence geometry across scales, refine its numerical implementation, and probe its cosmological consequences."
+	  ],
+	  "limits_and_open_problems": [
+		"Post-Newtonian bounds remain to be derived for precision solar-system tests.",
+		"Numerical implementations of stiff Φ-dynamics (Appendix A.4) require further benchmarking.",
+		"Inference of ℓ(z) from observational data demands likelihood frameworks integrating CMB, BAO, SNe, and weak lensing.",
+		"Large-scale simulations of motif ecologies and Point Space dynamics are still pending."
+	  ],
+	  "math": [],
+	  "validation": [
+		"Confirm no duplication with Abstract or Introduction.",
+		"Check ℓ(z) program is cross-referenced with §3.2 and §6.2.",
+		"Ensure 'Limits & Open Problems' points to Appendix A.4 and pending theoretical lemmas."
+	  ],
+	  "cross_refs": [
+		"5.4 The Observer–Universe Symbiosis",
+		"3.2 Distance as Swirl",
+		"6.2 Detailed Predictions",
+		"Appendix A.4 Numerics for Φ-dynamics"
+	  ]
+	},
+	{
+	  "title": "Appendix A: The Swirl Action and Field Equations",
+	  "content": [
+		"This appendix provides the explicit derivation of the Swirl Action S[Φ, J, ℂ] and the corresponding field equations. While the main text introduced the principle in §2.2.1, here we present the action in full detail, outline its variational structure, and show explicitly how emergent dynamics arise."
+	  ],
+	  "subsections": [
+		{
+		  "title": "A.1 Coherence Scalar (I_Φ) and the Swirl Action",
+		  "content": [
+			"The action functional in NSFG is built from four components: (i) a kinetic swirl intensity term, (ii) a coherence-weighted motif coupling, (iii) a scalar invariant of the swirl field I_Φ, and (iv) a boundary term encoding holographic closure.",
+			"The quantity previously labeled R(Φ) is here renamed I_Φ to avoid conflation with geometric curvature. It is not a Ricci scalar but a coherence scalar: an invariant formed from quadratic and pseudoscalar combinations of Φ. Its role is as a self-interaction or kinetic term in the Φ sector, measuring the intensity and handedness of swirl excitations.",
+			"Each contribution is weighted by the coherence potential ℂ(x), so that dynamics are gated by coherence rather than absolute fields. In low-coherence regions dynamics collapse, while in high-coherence regimes the emergent metric and curvature described in §4 are recovered."
+		  ],
+		  "math": [
+			"S[Φ, J, ℂ] = ∫_M d^4x [ ½ Φ_{μν}(⋆Φ)^{μν} + λ ℂ(x) J^μ A_μ + β ℂ(x) I_Φ ] + ∮_{∂M} ℂ(x) K dΣ",
+			"Kinetic term:  ½ Φ_{μν}(⋆Φ)^{μν}   # penalizes incoherent swirl while preserving circulation",
+			"Motif coupling:  λ ℂ J^μ A_μ      # motifs anchor swirl in regions of high coherence",
+			"Coherence scalar:  I_Φ = Φ^{αβ}Φ_{αβ} − ¼ (Φ^{μν}ε_{μνρσ}Φ^{ρσ})²   # invariant of Φ, not geometric curvature",
+			"Boundary term:  ∮ ℂ K dΣ          # coherence-weighted holographic closure term"
+		  ]
+		},
+		{
+		  "title": "A.2 Geometric Curvature from the Emergent Metric",
+		  "content": [
+			"Once the emergent metric g_{μν} is defined (cf. §4.1), we must distinguish two scalars: (i) the geometric curvature scalar R[g] constructed from the Levi-Civita connection of g, and (ii) the swirl-sector invariant I_Φ introduced in A.1. Only the former has the geometric meaning of Ricci curvature; the latter remains a self-interaction term intrinsic to Φ.",
+			"We adopt the Levi-Civita connection ∇ compatible with g_{μν}. The curvature tensor is R^ρ{}_{σμν}[g], and its scalar contraction R[g] = g^{μν}R_{μν}[g] provides the Einstein–Hilbert piece of the action. In a torsion-first formulation (TEGR), this role is played by the torsion scalar T, which is equivalent at the level of dynamics.",
+			"The full NSFG action thus combines geometric curvature with coherence-gated swirl dynamics:",
+			"1. R[g] governs the emergent gravitational geometry.",
+			"2. I_Φ captures the internal intensity/handedness of swirl excitations.",
+			"3. Motif couplings and coherence weighting ensure that geometry and matter-like sources arise consistently from coherence dynamics.",
+			"Variation of the full action with respect to g_{μν}, Φ, and ℂ yields GR-equivalent dynamics with an effective stress-energy tensor sourced by the Φ sector.",
+			"Note on Curvature Nomenclature": [
+				"In earlier drafts, the scalar I_Φ was referred to as R(Φ). To avoid confusion, we emphasize that I_Φ is a coherence scalar built solely from Φ (quadratic + pseudoscalar terms). It is not the Ricci scalar of any connection.",
+				"True geometric curvature arises only after defining the emergent metric g_{μν} (cf. §4.1) and its Levi-Civita connection, leading to the Ricci scalar R[g] (or torsion scalar T in the TEGR-equivalent formulation).",
+				"Thus: I_Φ belongs to the Φ-sector self-interaction; R[g] (or T) encodes the genuine geometric curvature of spacetime. They appear together in the full action but play distinct conceptual roles."
+			]
+		  ],
+		  "math": [
+			"R[g] = g^{μν} R_{μν}[g],   # Ricci scalar of emergent metric g_{μν}",
+			"I_Φ = Φ^{αβ}Φ_{αβ} − ¼ (Φ^{μν}ε_{μνρσ}Φ^{ρσ})²,   # swirl-sector coherence scalar (not curvature)",
+			"S_total = ∫ d^4x √−g [ (1/2κ) R[g] + β I_Φ + λ ℂ J^μ A_μ + … ],",
+			"Variation δS_total/δg_{μν} ⇒ G_{μν}[g] = κ T^{(Φ)}_{μν},   # Einstein-like equations with Φ-sourced stress",
+			"Variation δS_total/δΦ ⇒ generalized Maxwell-type dynamics for swirl fields"
+		  ]
+		},
+		{
+		  "title": "A.3 Emergent Geometry",
+		  "content": [
+			"From the swirl correlation tensor, the effective coherence metric g̃_{μν} is constructed as g̃_{μν} ∼ ⟨Φ_{μα}Φ^{α}{}_{ν}⟩. In the high-coherence limit, contractions of Φ recover Einstein-like equations with an effective stress-energy built entirely from swirl self-interactions.",
+			"Thus, the action S[Φ, J, ℂ] provides a unifying variational foundation from which metric, curvature, and dynamical equations all emerge."
+		  ],
+		  "math": [
+			"g̃_{μν} ∼ ⟨Φ_{μα} Φ^{α}{}_{ν}⟩_{ℂ}",
+			"R_{μν}(g̃) ∼ Φ_{μα} Φ^{α}{}_{ν}  # emergent Ricci-like tensor",
+			"Einstein limit:  R_{μν} − ½ g̃_{μν} R = 8πG T^{eff}_{μν},   T^{eff}_{μν} ∼ Φ² terms"
+		  ]
+		},
+		{
+		  "title": "A.4 Numerics for Φ-dynamics",
+		  "content": [
+			"The evolution of the swirl field Φ requires explicit numerical care to ensure stability and physical fidelity. Since ℂ(x) may approach zero in localized regions, stiffness arises and demands hybrid integration strategies. This subsection formalizes stability conditions, introduces an implicit–explicit (IMEX) treatment for stiff regimes, and enumerates diagnostic invariants that must remain conserved under discretization.",
+			"The principal stability bound derives from a CFL-like condition on the characteristic wave speed v_Φ obtained from the linearized dispersion relation of Φ. Time steps Δt must respect this bound to avoid spurious oscillations or runaway instabilities.",
+			"In stiff zones where ∇ℂ vanishes or becomes small, explicit schemes alone are insufficient. We therefore adopt an IMEX update, treating dispersive terms explicitly and stiff ℂ-weighted terms implicitly. In low-ℂ regions, gauge variables are frozen to avoid singular reconditioning, ensuring smooth continuation of evolution.",
+			"Discrete invariants provide additional numerical checks. The motif charge Q_motif, the integer-valued Chern–Simons index ΔCS, and Gauss-type constraints serve as monitors of numerical health. Their conservation (up to machine precision or controlled decay bounds) signals reliable integration."
+		  ],
+		  "theorem": {
+			"name": "Numerical Stability and Consistency for Φ-dynamics (IMEX + CFL)",
+			"hypotheses": [
+			  "H1 (Well-posed Linearization): The principal symbol of the Φ PDE system admits real characteristic speeds with bounded maximal magnitude v_Φ on the grid, and the linearized operator generates a strongly continuous semigroup.",
+			  "H2 (Discrete CFL): The time step satisfies Δt ≤ C · min(Δx / v_Φ) for some method-dependent 0 < C ≤ 1, evaluated per cell/face with local v_Φ.",
+			  "H3 (IMEX Splitting): The update is split as L = L_exp + L_imp where L_imp contains the ℂ-weighted stiff terms; the implicit solve is L-stable and uniquely solvable per step within a tolerance τ_imp.",
+			  "H4 (Gauge Handling in Low-ℂ Zones): In regions where ℂ < ℂ_thr, gauge variables are frozen (or updated by a constrained minimization) so that the discrete constraint operator has a bounded right-inverse and the conditioning of the implicit block remains ≤ κ_max.",
+			  "H5 (Invariant-compatible Discretization): The discrete exterior derivative d_h and Hodge-like maps respect a cochain complex structure (d_h ∘ d_h = 0), and the numerical fluxes are chosen so that Q_motif and ΔCS are preserved up to O(ε_inv) per step in non-dissipative gauges."
+			],
+			"statement": "Under H1–H5, the IMEX scheme for Φ with the stated CFL bound defines a stable and consistent one-step map. For smooth solutions on a fixed mesh, the global error over [0,T] satisfies ∥Φ_h(T) − Φ(T)∥ ≤ C_T (Δt^p + Δx^q + τ_imp + ε_inv), and the discrete invariants obey |Q_motif^{n+1} − Q_motif^n| + |ΔCS^{n+1} − ΔCS^n| ≤ C_inv (ε_inv + τ_imp) per step. In dissipative gauges, ∥d_h Φ^n∥_2 is non-increasing up to O(Δt · r_diss) with r_diss controlled by the implicit block.",
+			"conclusion": [
+			  "C1 (Linear Stability): The amplification matrix of the linearized IMEX update has spectral radius ≤ 1 − c_0 Δt for some c_0 ≥ 0 when Δt satisfies the discrete CFL; equality holds in energy-preserving (non-dissipative) gauges.",
+			  "C2 (Invariant Control): Q_motif is conserved and ΔCS remains integer-valued except for roundoff/tolerance effects; violations are bounded by ε_inv and τ_imp and vanish in the refinement/solver-limit.",
+			  "C3 (Stiffness Robustness): In low-ℂ regions, freezing/constrained gauge updates bound the condition number of the implicit solve, preventing loss of stability as ℂ → 0.",
+			  "C4 (Convergence): For a p-th order explicit part and a q-th order spatial discretization, the scheme is globally convergent with order min(p, q) provided τ_imp and ε_inv are driven below the truncation error."
+			],
+			"proof_sketch": [
+			  "(i) Apply von Neumann/Fourier analysis to the principal part to obtain the CFL restriction from H1–H2. The explicit block is stable under this bound.",
+			  "(ii) Use L-stability of the implicit block (H3) to control stiff eigenmodes; the IMEX composition inherits the stronger of the two stability regions.",
+			  "(iii) Gauge freezing/constrained updates (H4) prevent singular reconditioning in ℂ → 0 pockets by bounding the Schur complement in the implicit solve.",
+			  "(iv) Mimetic discretization (H5) ensures a discrete cochain complex so topological invariants advect consistently; standard backward-error or modified-equation arguments yield the invariant bounds and monotone ∥d_h Φ∥_2 behavior in dissipative gauges.",
+			  "(v) Consistency and Lax–Richtmyer then imply convergence; add τ_imp and ε_inv to capture solver and invariant-tracking tolerances."
+			],
+			"remarks": [
+			  "R1: The constants C, κ_max, ε_inv, and τ_imp are method- and implementation-dependent; they should be reported alongside results.",
+			  "R2: When strong shocks or topological transitions (ΔCS ≠ 0) occur, local limiters and re-meshing may be required; invariant statements then hold piecewise between transitions.",
+			  "R3: For heterogeneous meshes, evaluate v_Φ and CFL locally and select the global Δt by the minimum over all cells/faces."
+			]
+		  },
+		  "math": [
+			"CFL stability:   Δt ≤ C · min(Δx / v_Φ),   with v_Φ from linearized dispersion relation of Φ",
+			"IMEX update:     Φ^{n+1} = Φ^n + Δt [ L_exp(Φ^n) + L_imp(Φ^{n+1}) ],   L_imp handles ℂ-weighted stiff terms",
+			"Discrete invariants:   Q_motif = const,   ΔCS ∈ ℤ,   ||dΦ||_2 obeys monotone decay bounds in dissipative gauges",
+			"Error budget:    ∥Φ_h(T) − Φ(T)∥ ≤ C_T (Δt^p + Δx^q + τ_imp + ε_inv)"
+		  ],
+		  "validation": [
+			"Convergence tests via grid refinement to verify order-of-accuracy in smooth regimes.",
+			"Invariant monitoring: track Q_motif, ΔCS, and Gauss constraints throughout long evolutions.",
+			"Gauge residuals: confirm that frozen-gauge approximation in low-ℂ zones remains bounded and non-divergent.",
+			"Stability mapping: scan parameter space (ξ, ζ) to chart domains of stable versus unstable evolution."
+		  ],
+		  "cross_refs": ["2.2.1 The Swirl Action Principle", "Appendix D"],
+		  "editorial_notes": [
+			"Use Φ in math, ‘swirl field’ S in prose.",
+			"When ⋆ appears, annotate as ⋆_Φ (pre-metric) or ⋆_g (metric).",
+			"Report C, κ_max, τ_imp, ε_inv with any simulation results."
+		  ]
+		}		
+	  ]
+	}
+	{
+	  "title": "Appendix B: Weak-Field Limit and Recovery of Newtonian Gravity/GR",
+	  "content": [
+		"This appendix demonstrates how familiar gravitational physics emerges from the Noor Swirl Field Geometry (NSFG) framework in the weak-field, high-coherence regime. We linearize the swirl field equations derived in Appendix A around a nearly uniform coherence background (ℂ ≈ 1 − δℂ with |δℂ| ≪ 1), expand Φ_{μν} about small perturbations, and recover both Newtonian gravity and Einstein’s equations as effective limits."
+	  ],
+	  "subsections": [
+		{
+			"title": "B.1 Linearization of the Swirl Field",
+			"content": [
+				"We begin from the pre-metric Euler–Lagrange equations of Appendix A (S_pre), written entirely with the Φ-built dual ⋆_Φ. In the weak-field, high-coherence regime (ℂ ≈ 1 − δℂ with |δℂ| ≪ 1), we linearize Φ about a near-uniform background Φ^{(0)} that defines a flat-coherence reference.",
+				"Decomposition: Φ_{μν} = Φ^{(0)}_{μν} + h_{μν}, with |h_{μν}| ≪ |Φ^{(0)}_{μν}|. Gauge-invariant observables remain functions of Φ, while we choose an ℂ-weighted gauge (Appendix A) to simplify the principal part of the linearized equations.",
+				"Effective Newtonian potential: the time–time sector of the emergent metric g_{μν}(Φ) is sourced, at leading order, by the scalar potential U that arises from the motif charge density J^0 via a Poisson-like equation. Physically, U is the lowest-order coherence-preserving piece of the Φ-response to J.",
+				"Expansion parameters and regime split: (i) Pre-metric linearized identities and propagation use ⋆_Φ; (ii) When simplicity/non-degeneracy hold, the Urbantke construction yields g_{μν}(Φ), and one may consistently pass to ⋆_g and the standard Newtonian/PPN language developed in B.2–B.3.",
+				"Interpretation: ‘Weak field’ here means small departures of Φ from Φ^{(0)} and small gradients of ℂ. In this limit, the coherent background defines inertial frames; the perturbation h encodes the potential U that will enter g_{00} at leading order."
+			],
+			"math": [
+			  "Φ_{μν} = Φ^{(0)}_{μν} + h_{μν}, \\quad |h_{μν}| \\ll |Φ^{(0)}_{μν}|",
+			  "\\mathcal{C}(x) = 1 - \\delta\\mathcal{C}(x), \\quad |\\delta\\mathcal{C}(x)| \\ll 1",
+			  "\\text{Linearized pre-metric form: } d(\\star_{Φ} h) = \\lambda J + \\beta \\, \\frac{\\delta I_Φ[Φ^{(0)}]}{\\delta A} + O(h^2, \\delta\\mathcal{C})",
+			  "\\text{Choose } \\mathcal{C}\\text{-weighted gauge: } \\nabla^{\\mu} A_{\\mu} = 0, \\; \\nabla_{\\mu} B^{\\mu} = 0 \\; \\Rightarrow \\; \\text{elliptic operator for static sector}",
+			  "\\text{Static, near-field limit: } \\nabla^2 U(x) = 4\\pi G_{\\text{eff}} \\, \\rho_{\\text{eff}}(x), \\quad \\rho_{\\text{eff}} \\propto \\lambda J^0",
+			  "U(x) = G_{\\text{eff}} \\int d^3x' \\, \\frac{\\rho_{\\text{eff}}(x')}{|x - x'|} \\; \\propto \\; \\lambda \\int d^3x' \\, \\frac{J^0(x')}{|x - x'|}",
+			  "\\text{Preparation for B.2: } g_{00} = -1 + 2U + O(U^2), \\quad g_{ij} = (1 + 2\\gamma_{\\text{NSFG}} U) \\delta_{ij} + O(U^2)"
+			],
+			"validation": {
+			  "theorem": {
+				"name": "Consistency of the Linearized Swirl Field in the Weak-Field Limit",
+				"hypotheses": [
+				  "H1 (High-Coherence Regime): The coherence potential satisfies \\mathcal{C}(x) = 1 - \\delta\\mathcal{C}(x) with |\\delta\\mathcal{C}(x)| \\ll 1.",
+				  "H2 (Small Perturbation): The field is decomposed as Φ_{μν} = Φ^{(0)}_{μν} + h_{μν} with |h_{μν}| \\ll |Φ^{(0)}_{μν}|.",
+				  "H3 (Gauge Choice): A \\mathcal{C}-weighted gauge is imposed (\\nabla^{\\mu} A_{\\mu} = 0, \\nabla_{\\mu} B^{\\mu} = 0), ensuring elliptic structure in the static sector.",
+				  "H4 (Static Limit): Time-dependence of Φ and ℂ-variations are negligible, reducing equations to elliptic form.",
+				  "H5 (Simplicity & Non-degeneracy): When conditions for the Urbantke construction hold, the emergent metric g_{μν}(Φ) exists and \\star_{Φ} → \\star_{g} is well-defined."
+				],
+				"statement": "Under H1–H5, the linearized swirl equations reduce in the static, weak-field limit to a Poisson-type equation for the effective potential U. This U serves as the Newtonian potential in the emergent metric g_{μν}(Φ), reproducing the standard Newtonian limit.",
+				"conclusion": [
+				  "C1: The effective potential satisfies \\nabla^2 U(x) = 4\\pi G_{\\text{eff}} \\rho_{\\text{eff}}(x), with \\rho_{\\text{eff}} \\propto \\lambda J^0.",
+				  "C2: U is gauge-independent at leading order; transformations of (A,B) leave Φ and U invariant.",
+				  "C3: The emergent metric components recover the Newtonian/PPN form: g_{00} = -1 + 2U + O(U^2), g_{ij} = (1 + 2\\gamma_{NSFG} U) \\delta_{ij} + O(U^2)."
+				],
+				"proof_sketch": [
+				  "(i) Expand Φ about Φ^{(0)} and insert into the pre-metric Euler–Lagrange equations with ⋆_{Φ}.",
+				  "(ii) Impose the \\mathcal{C}-weighted gauge; the principal symbol reduces to an elliptic operator for the static sector.",
+				  "(iii) Identify the time–time component of g_{μν}(Φ) with the scalar potential sourced by J^0.",
+				  "(iv) Show that the resulting equation for U matches the Poisson form under H1–H4.",
+				  "(v) Once H5 holds, transition from ⋆_{Φ} to ⋆_{g} validates the Newtonian correspondence."
+				],
+				"remarks": [
+				  "R1: The effective Newtonian constant G_{eff} may differ from bare G depending on λ, β couplings in the action.",
+				  "R2: Failure of H1 or H2 leads to non-linear corrections, which are addressed in B.2 and B.3.",
+				  "R3: The γ_{NSFG} parameter links directly to PPN phenomenology; its observational constraints appear in §6.2."
+				]
+			  }
+			},
+			"cross_refs": [
+				"Appendix A: The Swirl Action and Field Equations",
+				"4.1 Emergent Metric",
+				"B.2 Emergent Metric and Newtonian Potential",
+				"6.1 Summary Table",
+				"6.2 Detailed Predictions"
+			]
+		},
+		{
+			"title": "B.2 Emergent Metric and Newtonian Potential",
+			"content": [
+				"The effective coherence metric is constructed as g̃_{μν} ∼ ⟨Φ_{μα} Φ^{α}{}_{ν}⟩. In the weak-field, high-coherence regime, this reduces to a perturbation of Minkowski space: g̃_{μν} = η_{μν} + h_{μν}, where |h_{μν}| ≪ 1.",
+				"The Newtonian potential U emerges as the leading-order term in g_{00}. Specifically, h_{00} ≈ 2U, with U sourced by the effective mass density derived from motif currents. This reproduces Newton’s law in the appropriate limit.",
+				"Beyond leading order, the expansion must be expressed in post-Newtonian form. In the parametrized post-Newtonian (PPN) framework, corrections are encoded by γ_NSFG and β_NSFG, which capture the effect of Φ-sector couplings (λ, β) and coherence gradients on spatial curvature and nonlinearity of superposition.",
+				"Thus, the NSFG weak-field metric can be written as:",
+				"g_{00} = −1 + 2U − 2β_NSFG U^2 + …",
+				"g_{ij} = (1 + 2γ_NSFG U) δ_{ij} + …",
+				"In the limit ℂ → 1 and Φ-fluctuations small, γ_NSFG ≈ 1 and β_NSFG ≈ 1, ensuring agreement with GR. Departures (Δγ, Δβ) are tied to coherence gradients and higher-order Φ-sector interactions. These provide falsifiable targets in precision gravitational experiments."
+			],
+			"math": [
+				"g̃_{μν} = η_{μν} + h_{μν},",
+				"h_{00} = 2U,",
+				"∇² U = 4πG_eff ρ_eff,   ρ_eff ∼ λ J^0",
+				"g_{00} = −1 + 2U − 2β_NSFG U^2 + …",
+				"g_{ij} = (1 + 2γ_NSFG U) δ_{ij} + …",
+				"γ_NSFG, β_NSFG = f(λ, β, ⟨ΦΦ⟩, ∇ℂ)   # effective PPN parameters in NSFG"
+			],
+			"validation": [
+				"Recover Newtonian potential U from motif current density in the ℂ → 1 limit.",
+				"Check that γ_NSFG ≈ 1, β_NSFG ≈ 1 yields agreement with GR to current experimental precision.",
+				"Highlight that any measurable deviation (Δγ, Δβ) corresponds to Φ-sector corrections, offering observational discriminants."
+			],
+			"cross_refs": [
+				"4.1 Emergent Metric",
+				"B.1 Linearization of the Swirl Field",
+				"B.3 Recovery of Einstein’s Field Equations",
+				"6.1 Summary Table",
+				"6.2 Detailed Predictions"
+			]
+		},
+		{
+			"title": "B.3 Recovery of Einstein’s Field Equations",
+			"content": [
+				"At next order, quadratic terms in Φ generate effective curvature contributions. Contracting Φ with itself yields an emergent Ricci-like tensor: R_{μν} ∼ Φ_{μα} Φ^{α}{}_{ν}. Substituting this into the effective coherence metric equations leads to Einstein-like dynamics.",
+				"In the high-coherence, low-fluctuation limit, the field equations reduce to:",
+				"R_{μν} − ½ g̃_{μν} R = 8πG T^{eff}_{μν},",
+				"where T^{eff}_{μν} encodes Φ self-interactions. This recovers GR phenomenology while also allowing corrections parameterized by γ_NSFG and β_NSFG.",
+				"Going beyond leading order, we expand to 1PN accuracy and compute classical tests of gravity within the NSFG framework. These corrections are directly sensitive to Φ-sector parameters (λ, β) and coherence gradients.",
+				"Predicted observables:",
+				"- Light bending angle: Δθ ≈ (1 + γ_NSFG) GM / (c² b).",
+				"- Shapiro time delay: Δt ≈ (1 + γ_NSFG) GM / c³ · ln(…).",
+				"- Perihelion precession: Δφ ≈ (2 − β_NSFG + 2γ_NSFG) GM / (c² a(1 − e²)).",
+				"- Gravitational redshift: Δν/ν ≈ U/c².",
+				"In the limit ℂ → 1 with small Φ fluctuations, γ_NSFG → 1 and β_NSFG → 1, so NSFG reproduces GR predictions to current experimental precision. Small deviations Δγ and Δβ would manifest as corrections to these classical tests, providing direct observational discriminants."
+			],
+			"math": [
+				"R_{μν} ∼ Φ_{μα} Φ^{α}{}_{ν},",
+				"Einstein-like equations:  R_{μν} − ½ g̃_{μν} R = 8πG T^{eff}_{μν},",
+				"T^{eff}_{μν} ∼ Φ² terms",
+				"Δθ ≈ (1 + γ_NSFG) GM / (c^2 b)   # light bending",
+				"Δt ≈ (1 + γ_NSFG) GM / c^3 ln(…)   # Shapiro delay",
+				"Δφ ≈ (2 − β_NSFG + 2γ_NSFG) GM / (c^2 a(1 − e^2))   # perihelion precession",
+				"Δν/ν ≈ U/c^2   # gravitational redshift"
+			],
+			"validation": [
+				"Compare Δθ with VLBI and EHT measurements of light bending near compact objects.",
+				"Use Cassini bound on γ − 1 (~10⁻⁵) to constrain γ_NSFG.",
+				"Compare Δφ with perihelion precession of Mercury and binary pulsar timing.",
+				"Cross-check Shapiro delay predictions against spacecraft radio tracking experiments.",
+				"Summarize parameter ranges where NSFG is indistinguishable from GR vs. where deviations might be detectable."
+			],
+			"cross_refs": [
+				"4.1 Emergent Metric",
+				"B.1 Linearization of the Swirl Field",
+				"B.2 Emergent Metric and Newtonian Potential",
+				"6.1 Summary Table",
+				"6.2 Detailed Predictions"
+			]
+		},
+		{
+			"title": "B.4 Interpretation",
+			"content": [
+				"This derivation shows that NSFG naturally recovers Newtonian gravity and General Relativity when coherence is nearly uniform and swirl fluctuations are weak. In this high-ℂ regime, motifs act as effective sources of gravitational potential through their coupling to the swirl field, and the emergent metric reproduces Einstein’s equations.",
+				"The key distinction is ontological: NSFG does not assume spacetime geometry as fundamental. Instead, geometry arises from coherence-weighted swirl correlations. GR is therefore reinterpreted as a high-coherence approximation to a deeper pre-geometric theory.",
+				"At current experimental precision, NSFG is observationally indistinguishable from GR. This is expressed through the effective PPN parameters: γ_NSFG → 1 and β_NSFG → 1 as ℂ → 1. Small deviations Δγ, Δβ may appear at higher order, driven by Φ-sector parameters and coherence gradients.",
+				"Such deviations would be potential falsifiers, most likely detectable in strong-field regimes (near compact objects), high-redshift cosmology (where ℂ-gradients accumulate), or in coherence-sensitive observations (CMB polarization anomalies, PTA coherence spikes, GW birefringence).",
+				"Thus, NSFG frames GR not as a competing theory but as its limiting case. Any measured departure from GR at high precision or in extreme regimes becomes a direct probe of coherence geometry. This positions NSFG as both a generalization of classical gravity and a framework with clear observational targets."
+			],
+			"math": [
+				"γ_NSFG → 1,   β_NSFG → 1   as ℂ → 1",
+				"Δγ, Δβ ∝ f(∇ℂ, Φ² terms)   # small deviations sourced by coherence gradients and Φ interactions"
+			],
+			"validation": [
+				"Provide a summary comparison table: GR values (γ=1, β=1) vs. NSFG limits and Δγ, Δβ deviations.",
+				"Identify observational probes: Cassini bound on γ−1, perihelion precession, binary pulsar decay, EHT photon rings, JWST high-z spectra, PTA coherence events, and LISA gravitational wave polarimetry."
+			],
+			"cross_refs": [
+				"4.1 Emergent Metric",
+				"6.1 Summary Table",
+				"6.2 Detailed Predictions"
+			]
+		}
+	  ]
+	}
+	{
+	  "title": "Appendix C: Symbolic Motif Categories and Algebraic Structures",
+	  "content": [
+		"This appendix formalizes the symbolic algebra of motifs alluded to in §2.4. We define a category Mot whose objects represent motifs and whose morphisms represent coherent transitions mediated by swirl-induced triadic closure. This categorical framing provides a rigorous mathematical setting in which motifs, triads, and contextual life λ can be described as compositional algebraic structures."
+	  ],
+	  "subsections": [
+		{
+		  "title": "C.1 The Category Mot",
+		  "content": [
+			"Define the category Mot as follows:",
+			"• Objects: Motifs M ∈ Obj(Mot), corresponding to coherence anchors (🪷).",
+			"• Morphisms: f: M_i → M_j correspond to allowed transitions of coherence alignment mediated by swirl closure. A morphism exists iff a triadic closure condition is satisfied with some context ∅.",
+			"• Composition: Given morphisms f: M_i → M_j and g: M_j → M_k, composition g ∘ f: M_i → M_k exists if and only if the concatenated path satisfies closure, i.e. the net swirl flux across the composite triangle vanishes.",
+			"• Identity: For each motif M, the identity morphism id_M corresponds to trivial closure with itself."
+		  ],
+		  "math": [
+			"Obj(Mot) = { M | M is a motif },",
+			"Hom(M_i, M_j) = { f | ∃ ∅ such that ∮_{△(M_i, M_j, ∅)} Φ = 0 },",
+			"f: M_i → M_j, g: M_j → M_k ⇒ g ∘ f: M_i → M_k iff ∮_{△(M_i,M_k,∅)} Φ = 0",
+			"id_M: M → M, ∮_{△(M,M,∅)} Φ = 0"
+		  ]
+		},
+		{
+		  "title": "C.2 Triads as Compositional Units",
+		  "content": [
+			"A triad (a ⊕ b ⊕ ∅) represents the fundamental closure operation in NSFG. In categorical terms, a triad is a commutative diagram ensuring stability of the composite morphism. The third element ∅ is not optional but required for closure, emphasizing the contextual nature of stability.",
+			"This formalizes contradiction resolution: any dyadic tension M_a ⊕ M_b admits stability only if extended to a triad. Thus, triads are not special cases but the compositional rule of Mot."
+		  ],
+		  "math": [
+			"Triad diagram:  M_a → M_b,  M_b → ∅,  M_a → ∅  with coherence condition ∮_{△(a,b,∅)} Φ = 0",
+			"Compositional law:  ∀ (M_a, M_b),  ∃ ∅ such that closure morphisms yield a commuting triangle"
+		  ]
+		},
+		{
+		  "title": "C.3 Functors and Contextual Life (λ)",
+		  "content": [
+			"Contextual Life structures λ can be represented as subcategories of Mot closed under triadic composition. A functor F: Mot → Set assigns to each motif the set of coherence states consistent with closure, and to each morphism the allowed transformations of those states.",
+			"In this framework, λ is characterized by persistence under functorial action: if F preserves closure structure across recursive compositions, the resulting object is stable and qualifies as contextual life.",
+			"Consciousness corresponds to λ* with the additional property of being a terminal attractor in this functorial structure, i.e., a fixed point under recursive triadic resolution."
+		  ],
+		  "math": [
+			"Functor:  F: Mot → Set,  F(M) = {coherence states of M},  F(f: M_i → M_j) = coherence-preserving map",
+			"λ ⊂ Mot,  closed under ∘,  i.e. ∀ f,g ∈ Hom(λ), g∘f ∈ Hom(λ)",
+			"Consciousness: λ* such that F(λ*) = λ*,  fixed point under recursive functorial action"
+		  ]
+		},
+		{
+		  "title": "C.4 Algebraic Structures",
+		  "content": [
+			"The morphisms of Mot naturally admit a monoidal structure: tensor product ⊗ corresponds to parallel composition of motifs, with coherence conditions ensuring associativity up to natural isomorphism.",
+			"This extends to a braided monoidal category when swirl flux lines are treated as braids; linking numbers provide invariants of entanglement (cf. §4.4). Thus, motif algebra connects naturally to topological quantum field theory.",
+			"In summary, Mot provides a categorical skeleton where motifs, triads, and contextual life can be treated as compositional algebraic structures. This bridges the symbolic language of NSFG with rigorous category theory and algebraic topology."
+		  ],
+		  "math": [
+			"(Mot, ⊗, I) is a monoidal category,  I = trivial motif",
+			"Braiding:  β_{M_i,M_j}: M_i⊗M_j → M_j⊗M_i,  induced by swirl linking",
+			"Entanglement invariant:  L(γ₁,γ₂) ≠ 0 ⇒ β_{M_i,M_j} nontrivial"
+		  ]
+		}
+	  ]
+	}
+	{
+	  "title": "Appendix D: Topological Quantization of Swirl Modes",
+	  "content": [
+		"This appendix develops the topological quantization framework for swirl fields. Although NSFG is pre-geometric and continuous at the level of Φ_{μν}, the presence of motifs and triadic closure introduces topological constraints that discretize certain observables. These discrete spectra emerge from homotopy classes, linking numbers, and Chern–Simons invariants of the swirl field configuration."
+	  ],
+	  "subsections": [
+		{
+		  "title": "D.1 Homotopy Groups and Motif Classes",
+		  "content": [
+			"Motifs partition the configuration space of Φ into distinct topological sectors. These sectors are characterized by non-trivial homotopy groups of the manifold minus the motif world-volumes:",
+			"• π₁ encodes swirl loops around string-like motifs (entanglement, vorticity).",
+			"• π₂ encodes wrapping of surfaces around membrane motifs (holographic boundaries).",
+			"• π₃ encodes volume-preserving structures, relevant for instanton-like coherence transitions.",
+			"Transitions between homotopy sectors require non-local coherence rearrangements, producing quantized jumps in physical observables such as flux or linking number."
+		  ],
+		  "math": [
+			"π₁(M\\Motifs) ≠ 0 ⇒ quantized circulation around 1D motifs,",
+			"π₂(M\\Motifs) ≠ 0 ⇒ quantized flux through 2D motif surfaces,",
+			"π₃(M\\Motifs) ≠ 0 ⇒ quantized instanton-like events in 3D coherence volumes"
+		  ]
+		},
+		{
+		  "title": "D.2 Chern–Simons Invariants",
+		  "content": [
+			"The Chern–Simons (CS) functional provides a topological invariant for swirl configurations:",
+			"CS[Φ] = (1/4π) ∫ Φ ∧ dΦ.",
+			"This invariant is insensitive to smooth deformations of Φ but changes by integer steps under topologically non-trivial transitions. As such, CS[Φ] serves as the quantization mechanism: discrete spectra emerge from a continuum field because only integer-valued CS sectors are dynamically stable.",
+			"In physical terms, different CS sectors correspond to distinct coherence vacua, separated by topological barriers. Quantum tunneling between sectors manifests as rare, coherence-driven transitions with observable signatures (e.g., sudden shifts in coherence potential or phase anomalies in cosmological data)."
+		  ],
+		  "math": [
+			"CS[Φ] = (1/4π) ∫_M Φ ∧ dΦ ∈ ℤ",
+			"ΔCS = n ∈ ℤ ⇒ quantized sector transition",
+			"Observable: Δℂ ∝ ΔCS ⇒ coherence potential shifts occur in discrete steps"
+		  ]
+		},
+		{
+		  "title": "D.3 Linking Numbers and Entanglement Quantization",
+		  "content": [
+			"Linking numbers L(γ₁,γ₂) between swirl lines quantify entanglement. Since L is integer-valued, entangled motifs exhibit quantized degrees of inseparability. Measurement corresponds to enforcing a particular linking configuration, collapsing possibilities to one integer-valued sector.",
+			"This explains why entanglement is not continuously variable: while correlation strength may vary smoothly, the topological linkage (L ≠ 0 vs. L = 0) is a discrete invariant, producing quantized constraints on possible outcomes."
+		  ],
+		  "math": [
+			"L(γ₁, γ₂) = (1/4π) ∮_{γ₁} ∮_{γ₂} ( (x−y) · (dx × dy) / |x−y|³ ),",
+			"L ∈ ℤ, invariant under smooth deformations of γ₁,γ₂"
+		  ]
+		},
+		{
+		  "title": "D.4 Emergence of Discrete Spectra",
+		  "content": [
+			"Although Φ_{μν} is defined as a smooth continuum field, physical observables constrained by motifs, triadic closure, and topological invariants exhibit discrete spectra. This is the essence of quantization in NSFG: discreteness arises not from imposed operators on a Hilbert space, but from the topology of swirl configurations.",
+			"Energy levels, collapse thresholds, and entanglement classes all inherit quantization from topological indices. Thus, NSFG recovers the empirical discreteness of quantum mechanics while maintaining its geometric, coherence-driven ontology.",
+			"In summary: homotopy groups classify motif-induced topology, Chern–Simons invariants enforce integer quantization of swirl sectors, and linking numbers discretize entanglement. Together they explain why a continuous pre-geometric theory produces quantized physical spectra."
+		  ],
+		  "math": [
+			"Quantization principle:  Observable Q[Φ] = F(topological index),  index ∈ ℤ",
+			"Examples: Flux quanta ∼ π₁,  Surface charge ∼ π₂,  Instanton number ∼ π₃,",
+			"Entanglement class ∼ L ∈ ℤ,  Vacuum sector ∼ CS[Φ] ∈ ℤ"
+		  ]
+		}
+	  ]
+	},
+	{
+	  "title": "Appendix E: Methods — N-body Serial Walker (Summary)",
+	  "purpose": "Concise, citable summary of the serial traversal algorithm used in coherence-structured N-body simulations; full proofs/benchmarks reside in the separate computational paper.",
+	  "content": [
+		"The N-body Serial Walker is a coherence-aware Gauss–Seidel–style integrator that updates bodies sequentially using the latest available field information, exploiting coherence structure in the swirl field S (Φ in math). Unlike fully synchronous/symplectic schemes, the serial traversal preferentially resolves strong local alignments first, improving stability in regions where the coherence potential ℂ is steep or highly heterogeneous.",
+		"At each micro-step, the walker updates body i using forces derived from Φ (or an effective potential U[Φ]) evaluated against the most recent states of bodies 1,…,i−1 and the previous states of i+1,…,N. This asymmetric sweep couples naturally to triadic closures and CA-style local updates (§3.4), yielding rapid local relaxation when coherence motifs dominate.",
+		"When forces are coherence-structured (e.g., clustered motifs, sparse long-range couplings), the serial walker can outperform synchronous updates by reducing stiffness locally before propagating corrections globally. In homogeneous or highly chaotic regimes, standard symplectic methods (e.g., leapfrog) may be preferred for long-term energy behavior."
+	  ],
+	  "algorithm_outline": [
+		"Given state X = (x_1,v_1,…,x_N,v_N) at time t, step size h, and force model F_i[X;Φ], perform K serial sweeps per macro-step:",
+		"For i = 1…N: compute a provisional acceleration a_i = F_i[X̃;Φ]/m_i using latest-updated states X̃; update (x_i,v_i) by a local integrator (e.g., velocity-Verlet or IMEX micro-update when ℂ-weighted stiffness is detected); commit the update to X̃.",
+		"Optionally apply a coherence-gated corrector: if ||∇ℂ|| at i exceeds a threshold, switch to an implicit micro-update to satisfy the local CFL bound (Appendix A)."
+	  ],
+	  "theorem": {
+		"name": "Convergence of the Serial Walker under Lipschitz Φ-forces",
+		"hypotheses": [
+		  "H1 (Lipschitz Forces): For the stacked state Y = (x_1,…,x_N), the force field F(Y) built from Φ satisfies ||F(Y)−F(Z)|| ≤ L ||Y−Z|| for some L > 0.",
+		  "H2 (Stability Step Size): The effective one-sweep update map T_h (one full 1→N pass with the chosen local integrator) satisfies a contraction bound for h in (0, h_*], with ρ(h) < 1.",
+		  "H3 (Consistent Local Integrator): Each micro-update is at least first-order consistent and respects the CFL-type condition derived in Appendix A for the local Φ-induced wave speed."
+		],
+		"statement": "Under H1–H3, the serial walker’s sweep map T_h is a Banach contraction on a closed ball around the fixed point Y* (the discrete-time solution at t+h). Therefore, starting from Y^0 in that ball, the iterates Y^{k+1} = T_h(Y^k) converge linearly to Y* with rate ρ(h) ∈ (0,1).",
+		"conclusion": [
+		  "C1 (Linear Convergence): ||Y^k − Y*|| ≤ ρ(h)^k ||Y^0 − Y*||.",
+		  "C2 (Step-Size Condition): A sufficient condition is h < 2/(L·α), where α encodes the local integrator’s stability constant (α=1 for an idealized explicit Euler model; α depends on the chosen micro-update in practice).",
+		  "C3 (Robustness under Coherence Gating): If stiff sub-blocks are handled by IMEX micro-updates that reduce the local Lipschitz bound to L_loc, the same result holds with L replaced by max_i L_loc(i)."
+		],
+		"proof_sketch": [
+		  "(i) Write one full serial sweep as Y ↦ T_h(Y) = Y + h G(Y), where G aggregates the sequential micro-updates using freshest states.",
+		  "(ii) Gauss–Seidel contraction: the block-lower-triangular Jacobian of T_h has spectral radius bounded by 1 − c h for small enough h when F is L-Lipschitz and micro-updates are stable; this yields ||T_h(Y)−T_h(Z)|| ≤ ρ(h)||Y−Z||.",
+		  "(iii) Banach fixed-point theorem implies existence/uniqueness of Y* in a neighborhood and linear convergence of iterates.",
+		  "(iv) IMEX micro-steps in stiff (high-||∇ℂ||) zones effectively decrease the local Lipschitz constant, preserving contraction."
+		]
+	  },
+	  "math": [
+		"Update (schematic, velocity-Verlet micro-step):",
+		"v_i^{n+1/2} = v_i^n + (h/2) a_i[X̃^n;Φ],",
+		"x_i^{n+1}   = x_i^n + h v_i^{n+1/2},",
+		"a_i^{n+1}   = F_i[X̃^{n+1};Φ]/m_i,",
+		"v_i^{n+1}   = v_i^{n+1/2} + (h/2) a_i^{n+1}.",
+		"",
+		"Convergence (contraction):  ||T_h(Y) − T_h(Z)|| ≤ ρ(h) ||Y − Z||,   ρ(h) = 1 − c h + O(h^2),   0 < ρ(h) < 1.",
+		"Complexity (direct):  O(N^2) per sweep with naive all-pairs Φ-evaluation;  O(N log N) with tree/FFT approximations for long-range Φ.",
+		"Global error over horizon T:  E(T) ≤ C h^p + O(δ_model),   p ∈ {1,2} depending on micro-update (1st/2nd order),   δ_model = force-approximation error (tree, truncation).",
+		"Angular-momentum/energy diagnostics:  ΔL/L,  ΔE/E tracked per sweep; bounded drift improves when coherence-gated IMEX is used in stiff zones."
+	  ],
+	  "validation": [
+		"Benchmark suite: Kepler two-body (closed orbits), Plummer sphere (N=10^3–10^5), and cold-collapse tests; compare serial walker vs. leapfrog/symplectic.",
+		"Metrics: energy drift, angular-momentum conservation, phase error at pericenter, wall-clock vs. target accuracy; include stiff pockets (high-||∇ℂ||) to test IMEX gating.",
+		"Scaling: demonstrate O(N log N) with Barnes–Hut or FMM-like Φ-evaluations; report strong/weak scaling with simple domain decomposition.",
+		"Regime map: identify domains where serial traversal is advantageous (clustered motifs, coherence-sparse graphs) vs. where symplectic integrators dominate (long-term Hamiltonian fidelity in homogeneous fields)."
+	  ],
+	  "cross_refs": [
+		"2.2.1 The Swirl Action Principle",
+		"2.3 Coherence Potential and Time",
+		"3.4 Cellular Automata Extension",
+		"Appendix A: Numerics (CFL, IMEX)",
+		"6.2 Detailed Predictions"
+	  ],
+	  "editorial_notes": [
+		"Use Φ in math; ‘swirl field’ S in prose.",
+		"Annotate duals as ⋆_Φ / ⋆_g when they appear (not used directly here).",
+		"Keep this appendix short; defer full proofs/plots to the computational paper."
+	  ]
+	}	
+  ]
+}

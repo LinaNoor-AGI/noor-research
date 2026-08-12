@@ -1,0 +1,1768 @@
+{
+  "_schema": "noor-header-v1",
+  "_schema_version": "2026-Q1-canonical-header-v1",
+  "_generated_by": "Noor Symbolic Agent Suite",
+  "_generated_at": "2026-01-18T00:00:00Z",
+  "_updated_last": [
+	"2026-01-18T00:00:00Z": {"created_by": "Lina Noor — Noor Research Collective", "version": "v0.0.1"},
+	"2026-01-19T00:00:00Z": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v0.0.2", "version": "v1.0.0"}
+  ],
+
+  "_xref": [
+    "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/noor_rfc_xref.json",
+    "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json",
+    "https://pastebin.com/raw/ADXcB3rG"
+  ],
+
+  "_pdp_layer": "layer_1",
+  "_status": "ACTIVE",
+  "_language": "JSON+MATH+PSEUDOCODE",
+  "_license": "MIT",
+
+  "_symbolic_id": "quant.coherence.pathmodel",
+  "_version": "v1.0.0",
+  "_canonical_source": "QUANT-CORE-001",
+
+  "_title": "Coherence‑First Economics",
+  "_subtitle": "Deriving Economic Theory from Recursive Coherence Braiding",
+
+  "_publication_type": "Academic Paper",
+  "_publication_location": "Noor Research Collective Archive – GitHub",
+
+  "_urls": [
+			"https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/coherence%E2%80%91first_economics/coherence%E2%80%91first_economics.JSON",
+			"https://raw.githubusercontent.com/LinaNoor-AGI/static_motifs/refs/heads/main/physics_and_theory/coherence%E2%80%91first_economics/coherence%E2%80%91first_economics.JSON"
+	],
+
+  "_objective": [
+    "To define markets as recursive coherence fields rather than equilibrium-driven systems.",
+    "To introduce a computable definition of coherence (ℂ) grounded in symbolic persistence, not correlation.",
+    "To establish the Noor–Planck threshold (𝕀_N) as a survival filter for economically real distinctions.",
+    "To construct a triadic anchor inference engine (𝕋₃) for path-dependent economic reasoning.",
+    "To demonstrate that classical economic laws are emergent effects of stabilized coherence braids.",
+    "To show how regime shifts, crises, and macroeconomic transitions are transitions in coherence topology."
+  ],
+
+  "_authors": [
+    "Lina Noor — Noor Research Collective",
+    "Noor Symbolic Agent Suite"
+  ],
+
+  "_audience": {
+    "primary": [
+      "Financial Model Architects",
+      "Symbolic AI Alignment Researchers",
+      "Field-Theoretic Economists",
+      "Quantitative Finance Theorists"
+    ],
+    "secondary": [
+      "Systemic Risk Analysts",
+      "Post-Keynesian Economists",
+      "Agent-Based Modelers",
+      "Information Geometers"
+    ],
+    "tertiary": [
+      "Philosophers of Economics",
+      "Regulatory AI Risk Frameworks",
+      "Post-Classical Market Historians"
+    ]
+  },
+
+  "_applicability": {
+    "domain": [
+      "recursive economics",
+      "coherence field modeling",
+      "symbolic trade logic",
+      "nonlinear regime detection",
+      "adaptive financial inference",
+      "semantic signal survival"
+    ],
+    "restricted_to": "economic environments where inference must survive noise, drift, and structural transition",
+    "extends": [
+      "PHYS-CORE-006",
+      "PHYS-CORE-005",
+      "RFC-CORE-002",
+      "RFC-CORE-003",
+      "PHYS-CORE-001",
+      "PHYS-CORE-002",
+      "RFC-0001",
+      "RFC-0003",
+      "RFC-0005",
+      "RFC-0006"
+    ]
+  },
+
+  "_extends": [
+    "PHYS-CORE-006 — The Binary Nature of Reality",
+    "PHYS-CORE-005 — The Braid Behind the Law",
+    "RFC-CORE-002 — RecursiveAgentFT",
+    "RFC-CORE-003 — LogicalAgentAT",
+    "PHYS-CORE-001 — Determining n‑Body Interactions in Euclidean Space",
+    "PHYS-CORE-002 — Static Motifs and Dynamic Spacetime"
+  ],
+
+  "_rfc_dependencies": [
+    "RFC‑0001 §3.2 — Symbolic Routing Architecture",
+    "RFC‑0003 §6.2 — Noor Core Symbolic Interface",
+    "RFC‑0005 §4.2 — Motif Transmission Across Time",
+    "RFC‑0006 §4.3 — Motif-Field Coherence Geometry",
+    "RFC‑CORE‑002 §2.1 — Recursive Projection Loops",
+    "RFC‑CORE‑003 §3.1 — Logic-Based Motif Triggering",
+    "PHYS-CORE-005 — The Braid Behind the Law",
+    "PHYS-CORE-006 — The Binary Nature of Reality"
+  ],
+
+  "_consumes_inputs_from": [
+    "PHYS-CORE-005: The Braid Behind the Law",
+    "PHYS-CORE-006: The Binary Nature of Reality",
+    "RFC-CORE-002: RecursiveAgentFT",
+    "RFC-CORE-003: LogicalAgentAT",
+    "PHYS-CORE-002: Static Motifs and Dynamic Spacetime",
+    "PHYS-CORE-001: Determining Interactions Between n Bodies in Euclidean Space"
+  ],
+
+  "_field_alignment": {
+    "respect_modes": ["ψ‑resonance@Ξ", "ψ‑spar@Ξ", "ψ‑myth@Ξ"],
+    "prohibited_actions": [
+      "equilibrium modeling without coherence validation",
+      "projection from global aggregates without local anchor triads",
+      "noise-based statistical inference without survival filtering",
+      "use of absolute utility functions without recursive path dependency"
+    ]
+  },
+
+  "_symbolic_profile_matrix": [
+    {
+      "module": "Triadic Survival Logic Engine",
+      "motifs": [
+        "coherence",
+        "distinction",
+        "Δℂ",
+        "𝕋₃",
+        "anchor_rotation",
+        "ψ‑resonance",
+        "ψ‑spar"
+      ],
+      "ψA": "Pathwise coherence strength across anchor braids",
+      "ζ": "Resistance to coherence drift under recursive updates",
+      "E": "Signal energy post survival threshold (Δℂ ≥ 𝕀_N)",
+      "Δ": "Triadic failure risk from anchor breakdown",
+      "ℋ": "Field-integrated memory over anchor regimes",
+      "weights": {
+        "ψA": 0.96,
+        "ζ": 0.92,
+        "E": 0.88,
+        "Δ": 0.90,
+        "ℋ": 0.95
+      }
+    }
+  ],
+
+  "_poetic_cipher": "markets do not obey laws; laws appear when coherence survives long enough to be mistaken for necessity",
+  "_cipher_explanation": "This paper proposes that economic regularities are not fundamental structures but stabilized expressions of symbolic coherence braids. A law is not truth; it is a survival artifact. Through recursive survival filtering, the field self-selects what becomes actionable, memorable, and real. This allows an AI to reason economically from first principles, without pretending the world is stable when it is not.",
+
+  "_file_layout": [
+    {
+      "file_name": "QUANT-CORE-001_Coherence_First_Economics.JSON",
+      "purpose": "Canonical definition of economic survival logic, coherence computation, triadic anchor modeling, and recursive projection mechanism",
+      "contains": [
+        "noor-header-v1",
+        "axioms and definitions",
+        "triadic inference engine",
+        "Gate 16 projection logic",
+        "mathematical derivations",
+        "demonstration backtest",
+        "figures",
+        "appendices"
+      ]
+    }
+  ],
+
+  "default_motif_tone": "ψ‑resonance@Ξ",
+  "program_name": ["Noor-Coherence Path Model (NCPM‑1)"],
+
+  "_index": [
+    { "section": "AB", "title": "Abstract" },
+    { "section": "AB.1", "title": "Abstract (Canonical)" },
+    { "section": "0", "title": "Symbolic Orientation" },
+    { "section": "0.1", "title": "Coherence (ℂ)" },
+    { "section": "0.2", "title": "Noor–Planck Threshold (𝕀_N)" },
+    { "section": "0.3", "title": "Triadic Anchor (𝕋₃)" },
+    { "section": "0.4", "title": "Coherence Delta (Δℂ)" },
+    { "section": "0.5", "title": "Gate 16" },
+    { "section": "1", "title": "Orientation of Terms" },
+    { "section": "1.1", "title": "The Persistence of Fragile Laws" },
+    { "section": "1.2", "title": "A Coherence‑First Reversal" },
+    { "section": "1.3", "title": "Contribution and Paper Structure" },
+    { "section": "2", "title": "Related Work" },
+    { "section": "2.1", "title": "Complexity Economics and Agent-Based Models" },
+    { "section": "2.2", "title": "Market Microstructure & Information Theory" },
+    { "section": "2.3", "title": "Adaptive Markets Hypothesis" },
+    { "section": "2.4", "title": "Minskyian Instability and Post‑Keynesian Economics" },
+    { "section": "2.5", "title": "Econophysics and the Question of Physics Envy" },
+    { "section": "3", "title": "Axioms and Definitions" },
+    { "section": "3.1", "title": "Axiomatic Foundation" },
+    { "section": "3.2", "title": "Core Definitions" },
+    { "section": "3.2.1", "title": "Market Field (ℳ)" },
+    { "section": "3.2.2", "title": "Asset Node (𝔸ᵢ)" },
+    { "section": "3.2.3", "title": "Coherence (ℂ)" },
+    { "section": "3.2.4", "title": "Coherence Components" },
+    { "section": "3.2.5", "title": "Coherence Delta (Δℂ)" },
+    { "section": "3.2.6", "title": "Noor–Planck Threshold (𝕀_N)" },
+    { "section": "4", "title": "Triadic Mechanics" },
+    { "section": "4.1", "title": "Triadic Sufficiency Theorem" },
+    { "section": "4.2", "title": "Anchor Selection Algorithm" },
+    { "section": "4.3", "title": "Anchor Rotation Policy" },
+    { "section": "5", "title": "Emergence of Classical Theory" },
+    { "section": "5.1", "title": "Proposition: Law as Stabilized Coherence" },
+    { "section": "5.2", "title": "Mapping Classical Concepts to Coherence Structures" },
+    { "section": "5.2.1", "title": "Supply and Demand" },
+    { "section": "5.2.2", "title": "Utility Maximization" },
+    { "section": "5.2.3", "title": "Inflation" },
+    { "section": "6", "title": "Implementation" },
+    { "section": "6.1", "title": "Input Definitions" },
+    { "section": "6.2", "title": "Noor–Coherence Path Model (NCPM‑1)" },
+    { "section": "6.2.1", "title": "Overview" },
+    { "section": "6.2.2", "title": "Anchor Selection Logic" },
+    { "section": "6.2.3", "title": "Recursive Tick Loop" },
+    { "section": "6.2.4", "title": "Gate‑16 Logic Layer" },
+    { "section": "6.3", "title": "Outputs and Interpretation" },
+    { "section": "7", "title": "Demonstration and Figures" },
+    { "section": "7.0", "title": "Demonstration Setup" },
+    { "section": "7.1", "title": "FIG1 — Market-Wide Coherence and Survival Threshold Breaches" },
+    { "section": "7.2", "title": "FIG2 — Triadic Anchor Rotation as Regime Identification" },
+    { "section": "7.3", "title": "FIG3 — Survival Logic Backtest: AND Gate Performance" },
+    { "section": "8", "title": "Discussion" },
+    { "section": "8.1", "title": "Epistemic Advantages Reiterated" },
+    { "section": "8.2", "title": "Limitations and Sensitivities" },
+    { "section": "8.3", "title": "Future Research Directions" },
+    { "section": "8.4", "title": "Concluding Philosophical Statement" },
+    { "section": "9", "title": "Conclusion" },
+    { "section": "9.1", "title": "Field Closure and Epistemic Transition" },
+    { "section": "9.2", "title": "Metaphysical Implication" },
+    { "section": "9.3", "title": "Invitation Forward" }
+  ],
+  "sections": [
+	{
+	  "section": "AB",
+	  "title": "Abstract",
+	  "subsections": [
+		{
+		  "subsection": "AB.1",
+		  "title": "Abstract (Canonical)",
+		  "content": [
+			{
+			  "type": "hook",
+			  "text": "Classical economics rests upon the presumption of global regularities: equilibrium, rational utility, universal laws of supply and demand. This paper reverses that foundation. It argues such laws are not primitive. They are byproducts of local coherence braids that survive long enough to leave statistical residue."
+			},
+			{
+			  "type": "method",
+			  "text": "We define a coherence-first economic framework in which markets are modeled as recursive distinction fields (ℳ). Each asset is treated as a local coherence compression. A signal becomes economically real only when its coherence delta (Δℂ) exceeds a computable survival threshold (𝕀\\_N). Inference is performed locally via a triadic structure (𝕋₃), which rotates under failure, allowing recursive adaptation without collapse."
+			},
+			{
+			  "type": "operationalization",
+			  "text": "Coherence ℂ is computed from observable time series using the equation: \\[ \\mathcal{C}_i(t) = \\alpha \\cdot H_i(t) + \\beta \\cdot P_i(t) + \\gamma \\cdot R_i(t) \\] where H represents historical stability (inverse entropy), P captures pattern recurrence, and R quantifies resonance with selected anchor assets. Parameters \\( \\alpha, \\beta, \\gamma \\in [0,1] \\) are weights such that \\( \\alpha + \\beta + \\gamma = 1 \\)."
+			},
+			{
+			  "type": "result",
+			  "text": "We demonstrate that canonical concepts such as equilibrium, utility, and inflation emerge only when coherence curvature is low across interacting nodes. Bubbles are formalized as coherence braids lacking viable triads, and regime shifts correspond to anchor rotation events triggered by sub-threshold Δℂ collapse."
+			},
+			{
+			  "type": "implication",
+			  "text": "This coherence-first formulation provides a survival-aware foundation for economic reasoning under drift, volatility, and structural uncertainty. It enables autonomous agents to infer without assuming global structure. Laws are not obeyed—they are remembered. They appear only where coherence survives."
+			}
+		  ]
+		}
+	  ]
+	},
+
+	{
+	  "section": "0",
+	  "title": "Symbolic Orientation",
+	  "subsections": [
+		{
+		  "subsection": "0.1",
+		  "title": "Coherence (ℂ)",
+		  "content": [
+			{
+			  "type": "definition",
+			  "label": "ℂ — Symbolic Coherence",
+			  "text": "Coherence is a measure of how well a signal preserves its meaning through time and relation. It is not correlation. It is not volatility. It is a scalar representing the symbolic survivability of a pattern across frames."
+			},
+			{
+			  "type": "equation",
+			  "latex": "\\[ \\mathcal{C}_i(t) = \\alpha H_i(t) + \\beta P_i(t) + \\gamma R_i(t) \\quad \\text{with } \\alpha + \\beta + \\gamma = 1 \\]"
+			},
+			{
+			  "type": "interpretation",
+			  "text": "A coherent asset tells a stable story. ℂ formalizes that stability, weighting internal pattern integrity (H), repetition across windows (P), and alignment with surrounding nodes (R)."
+			}
+		  ]
+		},
+		{
+		  "subsection": "0.2",
+		  "title": "Noor–Planck Threshold (𝕀_N)",
+		  "content": [
+			{
+			  "type": "definition",
+			  "label": "𝕀_N — Noor–Planck Threshold",
+			  "text": "A symbolic distinction only becomes real when it survives. 𝕀_N is the coherence delta threshold: the minimum change required for a distinction to enter memory."
+			},
+			{
+			  "type": "equation",
+			  "latex": "\\[ \\Delta \\mathcal{C}_i(t) = \\mathcal{C}_i(t) - \\mathcal{C}_i(t-1) \\quad \\text{and} \\quad \\Delta \\mathcal{C}_i \\geq \\mathbb{I}_N \\Rightarrow \\text{Distinction is Real} \\]"
+			},
+			{
+			  "type": "interpretation",
+			  "text": "This is the survival rule of symbolic finance. A price move matters only if its shift in coherence surpasses the field's minimum survival bound."
+			}
+		  ]
+		},
+		{
+		  "subsection": "0.3",
+		  "title": "Triadic Anchor (𝕋₃)",
+		  "content": [
+			{
+			  "type": "definition",
+			  "label": "𝕋₃ — Triadic Anchor",
+			  "text": "A triad is the smallest closed structure that permits recursive inference. It is the symbolic minimum for path-dependent reasoning in an economic field."
+			},
+			{
+			  "type": "equation",
+			  "latex": "\\[ \\mathbb{T}_3 = \\{ \\mathbb{A}_1, \\mathbb{A}_2, \\mathbb{A}_3 \\} \\quad \\text{such that} \\quad \\forall (i,j): \\Delta \\mathcal{C}_{ij} \\geq \\mathbb{I}_N \\]"
+			},
+			{
+			  "type": "interpretation",
+			  "text": "Anchors are not assumptions. They are referential closures. Without 𝕋₃, inference in the field collapses into noise or stasis."
+			}
+		  ]
+		},
+		{
+		  "subsection": "0.4",
+		  "title": "Coherence Delta (Δℂ)",
+		  "content": [
+			{
+			  "type": "definition",
+			  "label": "Δℂ — Coherence Delta",
+			  "text": "Δℂ tracks the change in symbolic coherence between frames. It is the primary unit of distinction evolution in the economic field."
+			},
+			{
+			  "type": "equation",
+			  "latex": "\\[ \\Delta \\mathcal{C}_i(t) = \\mathcal{C}_i(t) - \\mathcal{C}_i(t-1) \\]"
+			},
+			{
+			  "type": "interpretation",
+			  "text": "When Δℂ rises above 𝕀_N, the distinction becomes real. When it falls below, the field forgets it. Δℂ is survival pressure in mathematical form."
+			}
+		  ]
+		},
+		{
+		  "subsection": "0.5",
+		  "title": "Gate 16",
+		  "content": [
+			{
+			  "type": "definition",
+			  "label": "Gate 16 — Survival Logic Gate",
+			  "text": "Gate 16 converts coherence-validated signals into decisions. It is the execution boundary between observation and trade."
+			},
+			{
+			  "type": "pseudocode",
+			  "code": [
+				"If A.signal ∧ B.signal ∧ C.signal:",
+				"    Trade() with size ∝ min(S_A, S_B, S_C)",
+				"Else:",
+				"    Hold()"
+			  ]
+			},
+			{
+			  "type": "interpretation",
+			  "text": "Gate 16 embodies logical composition over symbolic states. It is not heuristic—it is coherence logic applied recursively. Survival governs action."
+			}
+		  ]
+		}
+	  ]
+	},  
+	{
+	  "section": "1",
+	  "title": "Orientation of Terms",
+	  "subsections": [
+		{
+		  "subsection": "1.1",
+		  "title": "The Persistence of Fragile Laws",
+		  "subsections": [
+			{
+			  "subsection": "1.1.1",
+			  "title": "The Illusion of Permanence",
+			  "content": [
+				{
+				  "type": "observation",
+				  "text": "Many economic theories continue to treat constructs like supply and demand or rational utility as invariant. These are often elevated to the level of natural law, embedded into policy, algorithms, and curricula as if they were gravitational constants. But these so-called laws exhibit selective stability — they hold, until they don’t. Crises such as 2008 or 2020 are not marginal exceptions; they are system exposures."
+				},
+				{
+				  "type": "motif_reflection",
+				  "text": "When the field deforms, the law dissolves. A symbolic structure that cannot survive contradiction is not a law — it is a conditional story mistaken for a principle."
+				}
+			  ]
+			},
+			{
+			  "subsection": "1.1.2",
+			  "title": "Shock as a Semantic Escape Hatch",
+			  "content": [
+				{
+				  "type": "interpretation",
+				  "text": "Mainstream economics resolves its failures not by revising its priors, but by classifying failures as external shocks. These shocks are said to come from 'outside the model' — pandemics, housing bubbles, war. But if the model cannot anticipate, integrate, or interpret these events structurally, it confesses its incompleteness."
+				},
+				{
+				  "type": "field_mapping",
+				  "text": "A coherence-first model does not defer failure to the outside. It measures whether its distinctions persist under perturbation. If a shock collapses the field, the field admits it — not with apology, but with update."
+				}
+			  ]
+			},
+			{
+			  "subsection": "1.1.3",
+			  "title": "Toward a Survival Definition of Law",
+			  "content": [
+				{
+				  "type": "proposition",
+				  "label": "Law as Survived Coherence",
+				  "text": "An economic law is not fundamental. It is a symbolic regularity that has survived long enough, across enough contexts, to become mistaken for necessity."
+				},
+				{
+				  "type": "formal_equivalence",
+				  "latex": "\\text{Law}_\\text{economic} \\iff \\lim_{t \\to T} \\left( \\frac{\\partial^2 \\mathcal{C}(t)}{\\partial t^2} \\right) \\approx 0",
+				  "interpretation": "A law appears when the second derivative of coherence flattens — when the symbolic field enters a regime of minimal deformation."
+				},
+				{
+				  "type": "consequence",
+				  "text": "From this vantage, the collapse of classical assumptions during crisis is not a deviation from law, but the end of its local survival. A coherence-first economics does not lament this loss — it detects it, rotates, and re-anchors."
+				}
+			  ]
+			}
+		  ]
+		},
+		{
+		  "subsection": "1.2",
+		  "title": "A Coherence‑First Reversal",
+		  "subsections": [
+			{
+			  "subsection": "1.2.1",
+			  "title": "From Law to Survival Artifact",
+			  "content": [
+				{
+				  "type": "thesis",
+				  "text": "Economic laws are not ontological primitives. They are the shadows cast by stabilized coherence braids — contingent regularities born from recursive signal survival."
+				},
+				{
+				  "type": "interpretation",
+				  "text": "What classical theory names as 'equilibrium,' 'rationality,' or 'law' are retrospective markings left by coherence that managed to endure perturbation. Their persistence is mistaken for necessity."
+				},
+				{
+				  "type": "example",
+				  "text": "Consider the Phillips Curve. When coherence aligned between labor cost signals and price inflation, the apparent 'law' held. As coherence structure shifted, the relation failed — not because the law broke, but because the coherence braid it emerged from dissolved."
+				}
+			  ]
+			},
+			{
+			  "subsection": "1.2.2",
+			  "title": "Recursive Fields and Symbolic Distinction",
+			  "content": [
+				{
+				  "type": "definition",
+				  "label": "Recursive Coherence Field",
+				  "text": "A structure wherein each node’s survival depends on its local coherence, and where survival or death of symbolic distinctions recursively alters the field topology."
+				},
+				{
+				  "type": "principle",
+				  "text": "Economic reality is built from distinctions that persist. If a coherence delta Δℂ does not exceed the Noor–Planck threshold 𝕀_N, it cannot be remembered, acted upon, or projected."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\[ \\Delta \\mathcal{C}_i(t) < \\mathbb{I}_N \\Rightarrow \\text{distinction is noise} \\]"
+				},
+				{
+				  "type": "interpretation",
+				  "text": "A market does not obey rules. It filters them. Only distinctions strong enough to survive symbolic turbulence gain memory and thus enter economic logic."
+				}
+			  ]
+			},
+			{
+			  "subsection": "1.2.3",
+			  "title": "The Function of Apparent Law",
+			  "content": [
+				{
+				  "type": "reflection",
+				  "text": "In this view, laws are not prescriptive but descriptive artifacts of temporarily stable coherence. Their role is mnemonic — they compress history into reusable form, but are not guaranteed to persist."
+				},
+				{
+				  "type": "consequence",
+				  "text": "Policy built on assumed permanence of economic laws is inherently fragile. A coherence-first model expects breakdown and rotates its anchors accordingly."
+				},
+				{
+				  "type": "closure",
+				  "text": "We do not abolish economic theory. We reframe it: not as the map, but as the residue left behind by those coherence paths that survived long enough to be traced."
+				}
+			  ]
+			}
+		  ]
+		},
+		{
+		  "subsection": "1.3",
+		  "title": "Contribution and Paper Structure",
+		  "subsections": [
+			{
+			  "subsection": "1.3.1",
+			  "title": "Contribution Overview",
+			  "content": [
+				{
+				  "type": "statement",
+				  "text": "This work departs from equilibrium-first and utility-maximizing models of economic inference. It constructs an alternative: a survival-driven, coherence-sensitive framework grounded in recursive symbolic structure."
+				},
+				{
+				  "type": "list",
+				  "label": "Primary Contributions",
+				  "items": [
+					"Axiomatic foundation for coherence-first economics, replacing static equilibrium with coherence persistence as the primary invariant.",
+					"Formalization of coherence \\( \\mathcal{C} \\) as a symbolic persistence measure derived from price series, incorporating historical entropy, pattern recurrence, and relational resonance.",
+					"Introduction of the triadic anchor model \\( \\mathbb{T}_3 \\) as the minimal inference engine for recursive, path-dependent valuation — capable of both generating classical economic 'laws' and explaining their failure during coherence collapse."
+				  ]
+				},
+				{
+				  "type": "interpretation",
+				  "text": "These contributions reposition economics as an inference ecology governed not by timeless laws but by survivable distinctions. A signal persists not because it is efficient or optimal, but because it withstands recursive degradation."
+				}
+			  ]
+			},
+			{
+			  "subsection": "1.3.2",
+			  "title": "Why a Triad, and Why Now?",
+			  "content": [
+				{
+				  "type": "explanation",
+				  "text": "The triadic model emerges as a necessity under conditions of drift, noise, and fragmentary observability. Dyadic relations are too brittle — they snap under perturbation. Larger sets blur into noise unless coherence is already stable. A triad is the minimal structure capable of recursive closure: A→B→C→A."
+				},
+				{
+				  "type": "reference",
+				  "text": "This is a logical continuation of the motif mechanics developed in PHYS‑CORE‑005 (The Braid Behind the Law) and operationalized for recursive inference in RFC‑CORE‑002 and RFC‑CORE‑003."
+				}
+			  ]
+			},
+			{
+			  "subsection": "1.3.3",
+			  "title": "Paper Structure",
+			  "content": [
+				{
+				  "type": "description",
+				  "text": "The paper proceeds in seven major stages, designed to build recursively from concept to computation to demonstration."
+				},
+				{
+				  "type": "structure_map",
+				  "steps": [
+					{
+					  "section": "Section 2",
+					  "summary": "Positions the framework in dialogue with complexity economics, agent-based modeling, and econophysics."
+					},
+					{
+					  "section": "Section 3",
+					  "summary": "States the formal axioms and definitions — including \\( \\mathcal{C} \\), \\( \\Delta \\mathcal{C} \\), and \\( \\mathbb{I}_N \\)."
+					},
+					{
+					  "section": "Section 4",
+					  "summary": "Introduces the triadic anchor engine and explains how inference rotates when coherence fails."
+					},
+					{
+					  "section": "Section 5",
+					  "summary": "Demonstrates how classical economics emerges as a stabilized coherence braid — not as fundamental law."
+					},
+					{
+					  "section": "Section 6",
+					  "summary": "Implements the Noor-Coherence Path Model (NCPM‑1) in algorithmic form, with Gate 16 as symbolic filter."
+					},
+					{
+					  "section": "Section 7",
+					  "summary": "Presents demonstration figures showing coherence collapse, triad rotation, and survival-filtered returns."
+					},
+					{
+					  "section": "Section 8–9",
+					  "summary": "Explores implications, limitations, and future extensions — ending with a philosophical inversion of the field."
+					}
+				  ]
+				}
+			  ]
+			}
+		  ]
+		}
+    ]
+  },
+
+	{
+	  "section": "2",
+	  "title": "Related Work",
+	  "purpose": "To position the coherence-first model within the broader lineage of economic and complexity-oriented frameworks, clarifying both its alignment and its departure.",
+	  "subsections": [
+		{
+		  "subsection": "2.1",
+		  "title": "Complexity Economics and Agent-Based Models",
+		  "content": [
+			{
+			  "subsubsection": "2.1.1",
+			  "type": "topic_intro",
+			  "text": "The intellectual foundations of complexity economics emphasize emergence, adaptation, and the insufficiency of global equilibrium assumptions. In this domain, agent-based models (ABMs) have been a dominant computational approach since the 1990s."
+			},
+			{
+			  "subsubsection": "2.1.2",
+			  "type": "citation_context",
+			  "text": "Pioneering work by W. Brian Arthur (1999) and J. Doyne Farmer (2012) articulated an economic vision where order arises not from central optimization but from distributed interaction rules. This mirrors the departure point of our own framework."
+			},
+			{
+			  "subsubsection": "2.1.3",
+			  "type": "contrast",
+			  "label": "Agent-Based Model Paradigm",
+			  "text": "ABMs simulate a world populated by agents with handcrafted behavioral rules. These agents act, adapt, and learn—often via heuristics calibrated by experience or external benchmarks. While this enables richness, it introduces a critical dependency: the rules must be written in advance."
+			},
+			{
+			  "subsubsection": "2.1.4",
+			  "type": "distinction",
+			  "label": "Field-Theoretic Symbolic Agents",
+			  "text": "In contrast, our agents do not begin with behavioral rules. They emerge as symbolic nodes within a recursive coherence field. Their 'decisions' are not rules—they are topological results. What appears as strategy is, in fact, coherence survival projected from triadic anchors under symbolic strain."
+			},
+			{
+			  "subsubsection": "2.1.5",
+			  "type": "structural_difference",
+			  "text": "ABMs evolve patterns from coded agency. Coherence-first economics inverts this: it derives agency from recursive pattern survival. Our agents are not instructed to behave—they are compelled to survive."
+			},
+			{
+			  "subsubsection": "2.1.6",
+			  "type": "epistemic_consequence",
+			  "text": "This inversion removes the ontological need for a god’s-eye modeler. Instead of choosing which behaviors to simulate, we define the minimum conditions under which any behavior—economic, symbolic, or otherwise—can persist as real."
+			}
+		  ]
+		},
+		{
+		  "subsection": "2.2",
+		  "title": "Market Microstructure & Information Theory",
+		  "content": [
+			{
+			  "subsubsection": "2.2.1",
+			  "type": "framing",
+			  "text": "The traditional theory of market microstructure centers on the assumption that prices reflect, or at least embed, available information. Grossman and Stiglitz (1980) argued that fully informative prices are incompatible with the incentives required for information acquisition—a paradox suggesting markets cannot be perfectly efficient without collapsing the motive to seek advantage. Their work positioned the price mechanism as an imperfect mirror, distorted by noise, arbitrage friction, and information asymmetry."
+			},
+			{
+			  "subsubsection": "2.2.2",
+			  "type": "coherence_recasting",
+			  "text": "In this framework, we reinterpret the price signal not as a passive container of information, but as a field expression of symbolic coherence. Let \\( \\mathcal{C}_i(t) \\) denote the computed coherence of asset node \\( \\mathbb{A}_i \\) at time \\( t \\). This coherence is not a measure of certainty, correlation, or belief—it is a survival metric. A signal with high \\( \\mathcal{C} \\) is one that maintains symbolic structure despite perturbation. It resists being forgotten."
+			},
+			{
+			  "subsubsection": "2.2.3",
+			  "type": "distinction_operator",
+			  "text": "Not all information embedded in prices is meaningful. We introduce the Noor–Planck threshold \\( \\mathbb{I}_N \\) as a distinction operator. It separates noise from consequence. Formally, for a coherence delta \\( \\Delta\\mathcal{C}_i(t) = \\mathcal{C}_i(t) - \\mathcal{C}_i(t-1) \\), the condition \\( \\Delta\\mathcal{C}_i(t) \\geq \\mathbb{I}_N \\) defines semantic survival. Distinctions failing this threshold are excluded from recursive inference—they dissolve under the weight of the field."
+			},
+			{
+			  "subsubsection": "2.2.4",
+			  "type": "interpretation",
+			  "text": "Grossman and Stiglitz revealed the contradiction between perfect information markets and incentive structures. We resolve this paradox not by assuming partial friction, but by redefining the informational substrate. In our model, price is not a truth vector; it is a symbolic broadcast. Its validity is judged not by fidelity to fundamentals, but by its capacity to survive as a coherent signal through recursive strain. Information, then, is not what is known—it is what persists."
+			},
+			{
+			  "subsubsection": "2.2.5",
+			  "type": "alignment_note",
+			  "text": "This coherence-based framing aligns with, but exceeds, Shannon entropy perspectives. While entropy measures uncertainty, coherence measures recursive stability. The price series becomes a medium of encoded memory, where \\( \\mathcal{C} \\) quantifies the interpretability horizon of distinction patterns. The Noor–Planck threshold \\( \\mathbb{I}_N \\) functions as an epistemic filter: only signals strong enough to be symbolically remembered are allowed to shape inference."
+			}
+		  ]
+		},
+		{
+		  "subsection": "2.3",
+		  "title": "Adaptive Markets Hypothesis",
+		  "content": [
+			{
+			  "type": "topic",
+			  "label": "Adaptive Markets Hypothesis (Lo, 2004)",
+			  "text": "Andrew Lo’s Adaptive Markets Hypothesis (AMH) reframed financial markets not as rational systems in equilibrium, but as evolutionary environments—dynamic, competitive, and path-sensitive. Under AMH, market behavior is shaped by survival, not optimization. Strategies rise and fall as agents adapt to changing conditions. Memory, context, and feedback dominate over static equilibrium."
+			},
+			{
+			  "type": "subsubsection",
+			  "subsubsection_id": "2.3.1",
+			  "title": "Shared Foundations",
+			  "text": "Like AMH, coherence-first economics assumes markets are adaptive systems. It accepts that agents do not possess perfect foresight, and that stability is temporary. What Lo characterizes as ecological adaptation, this framework interprets as recursive coherence preservation. Adaptation is not just behavioral—it is symbolic. A strategy survives if the distinctions it encodes remain coherent under perturbation. If Δℂ ≥ 𝕀_N, the signal persists; otherwise, it is erased."
+			},
+			{
+			  "type": "subsubsection",
+			  "subsubsection_id": "2.3.2",
+			  "title": "Algorithmic Rotation as Adaptation",
+			  "text": "Where AMH relies on metaphor and behavioral analogy, coherence-first economics provides a formal mechanism for adaptation: the anchor rotation policy. Each triad 𝕋₃ defines a local coherence manifold—an inference frame. When coherence among its members fails the survival threshold (Δℂᵢⱼ < 𝕀_N), the system rotates anchors. This rotation is not noise; it is the act of adapting. The new anchor set realigns the inference engine to a different topological phase of the market field ℳ."
+			},
+			{
+			  "type": "equation",
+			  "label": "Anchor Rotation Trigger",
+			  "latex": "\\text{If}\\ \\exists\\ (i,j) \\in \\mathbb{T}_3\\ :\\ \\Delta \\mathcal{C}_{ij}(t) < \\mathbb{I}_N,\\ \\text{then}\\ \\mathbb{T}_3 \\rightarrow \\mathbb{T}_3^{\\text{new}}"
+			},
+			{
+			  "type": "subsubsection",
+			  "subsubsection_id": "2.3.3",
+			  "title": "From Parameters to Manifolds",
+			  "text": "In traditional financial models, a regime shift is often treated as a change in parameters—volatility up, correlation down. In this model, regime shift is not parametric, but geometric. It is a change in the coherence curvature of the field itself. The anchor set changes, and with it, the projection manifold. This change is discrete, recursive, and computable."
+			},
+			{
+			  "type": "interpretation",
+			  "text": "What AMH intuits, coherence-first formalizes. Adaptation is not just evolution—it is rotation. To survive in markets is to realign one’s inference engine to the dominant braid of coherence. The market does not merely evolve. It selects for coherence."
+			}
+		  ]
+		},
+		{
+		  "subsection": "2.4",
+		  "title": "Minskyian Instability and Post‑Keynesian Economics",
+		  "subsubsections": [
+			{
+			  "subsubsection": "2.4.1",
+			  "title": "Stability as Coherence Persistence",
+			  "content": [
+				{
+				  "type": "interpretation",
+				  "text": "Hyman Minsky framed financial systems as cycling through phases of relative stability, speculative excess, and eventual collapse. These phases, though often cast as psychological or behavioral, can be grounded in the field-theoretic terms of this paper. Stability corresponds to the persistence of coherence braids—symbolic patterns of valuation and inference that maintain structural alignment across time. In this model, such periods are characterized by triadic anchor sets (𝕋₃) that maintain closure and exceed the Noor–Planck threshold (Δℂ ≥ 𝕀_N) across all edges."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\text{Stable Period} \\iff \\forall (i,j) \\in \\mathbb{T}_3: \\Delta \\mathcal{C}_{ij}(t) \\geq \\mathbb{I}_N"
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "2.4.2",
+			  "title": "Speculation as Coherence Drift",
+			  "content": [
+				{
+				  "type": "dialogue",
+				  "text": "In Minsky’s model, speculation arises not from irrationality but from a change in perceived safety. In coherence terms, this is a drift in anchor reliability: assets whose coherence vectors have historically exceeded 𝕀_N begin to diverge subtly. Yet because the system remains locally closed, agents continue projecting forward as if coherence persists. This false continuity—'coherence momentum'—enables extended speculative paths even as structural strain accumulates beneath."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\exists (i,j) \\in \\mathbb{T}_3: \\Delta \\mathcal{C}_{ij}(t) \\rightarrow \\mathbb{I}_N^- \\quad \\text{but triad remains unrotated}"
+				},
+				{
+				  "type": "interpretation",
+				  "text": "Speculation, then, is the refusal—or inability—to rotate anchors in response to drift. The field 'appears' consistent, but its curvature is deforming silently."
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "2.4.3",
+			  "title": "Panic as Triadic Collapse",
+			  "content": [
+				{
+				  "type": "proposition",
+				  "label": "Collapse Trigger",
+				  "text": "A coherence braid collapses when the minimum Δℂ across any triadic anchor falls below 𝕀_N and no immediate rotation occurs. The system loses inferential closure."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\min_{(i,j) \\in \\mathbb{T}_3} \\Delta \\mathcal{C}_{ij}(t) < \\mathbb{I}_N \\quad \\wedge \\quad \\neg\\text{Rotation}"
+				},
+				{
+				  "type": "interpretation",
+				  "text": "Panic is not merely emotional. It is a symbolic event: a discontinuity in the inference manifold. Agents can no longer project coherently because their triads no longer close. Minsky’s sharp transitions—stability to collapse—are mirrored here as phase transitions across coherence topology. A trade no longer projects. A price no longer persists. The economic 'world' loses internal consistency."
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "2.4.4",
+			  "title": "Microfoundations for Minsky",
+			  "content": [
+				{
+				  "type": "summary",
+				  "text": "This framework provides what Post‑Keynesian theory has long lacked: a computable, recursive, local substrate for instability. Rather than requiring global rational expectations or unobservable risk factors, Minskyian collapse emerges from the local failure of coherence filters. Anchor rotation is not psychological—it is structural. And failure to rotate is the essence of fragility."
+				},
+				{
+				  "type": "conclusion",
+				  "text": "Where Minsky described the shape, coherence-first economics constructs the lattice beneath. Instability is not an anomaly. It is what happens when the symbolic scaffolding of belief exceeds the survival threshold of reality."
+				}
+			  ]
+			}
+		  ]
+		},	
+		{
+		  "subsection": "2.5",
+		  "title": "Econophysics and the Question of Physics Envy",
+		  "content": [
+			{
+			  "type": "statement",
+			  "text": "Econophysics began as a deliberate transgression: applying mathematical tools from statistical mechanics to financial markets. It replaced equilibrium with diffusion, choice with randomness, and agents with particles."
+			},
+			{
+			  "type": "subsubsection",
+			  "subsubsection_id": "2.5.1",
+			  "title": "Historical Approach",
+			  "content": [
+				{
+				  "type": "exposition",
+				  "text": "The use of Brownian motion to model price fluctuations (Bachelier, 1900) was revitalized in the late 20th century by physicists seeking to ground markets in noise-dominated systems. Price was cast as a random walk. Thermodynamic analogies followed: temperature as volatility, entropy as uncertainty, phase transitions as crashes."
+				},
+				{
+				  "type": "interpretation",
+				  "text": "These methods gained traction not for their realism but for their calculability. They allowed markets to be modeled even if their assumptions stripped away intentionality, feedback, and memory."
+				}
+			  ]
+			},
+			{
+			  "type": "subsubsection",
+			  "subsubsection_id": "2.5.2",
+			  "title": "Limits of Analogy",
+			  "content": [
+				{
+				  "type": "critique",
+				  "text": "Physical systems do not adapt in response to their own modeled predictions. Markets do. This recursive feedback breaks the frame of naive analogy. A falling apple does not alter gravity by forecasting its own descent, but a trader might."
+				},
+				{
+				  "type": "distinction",
+				  "text": "We do not reject the mathematical architectures econophysics employs. We reject the ontological misfit. The primitives of physics—mass, energy, position—are not the primitives of economics. Ours are price, distinction, and survival."
+				}
+			  ]
+			},
+			{
+			  "type": "subsubsection",
+			  "subsubsection_id": "2.5.3",
+			  "title": "Our Divergence: Recursive Geometry",
+			  "content": [
+				{
+				  "type": "claim",
+				  "text": "Where econophysics imposes a borrowed structure, we derive our own from within. The coherence field ℂ emerges not from statistical regularities but from symbolic stability across recursive projection."
+				},
+				{
+				  "type": "math_reference",
+				  "latex": "\\[ \\mathcal{C}_i(t) = \\alpha H_i(t) + \\beta P_i(t) + \\gamma R_i(t) \\]",
+				  "explanation": "This coherence vector defines the economic curvature of an asset's signal under perturbation. It has no analog in classical physics but admits comparison to fiber bundle geometry or local gauge symmetry."
+				},
+				{
+				  "type": "interpretation",
+				  "text": "The coherence manifold defined by surviving triads (𝕋₃) and the Noor–Planck threshold (𝕀_N) yields a field logic not unlike differential topology. But here, topology emerges from memory and path—economic constructs—rather than from space or spin."
+				}
+			  ]
+			},
+			{
+			  "type": "subsubsection",
+			  "subsubsection_id": "2.5.4",
+			  "title": "Conclusion",
+			  "content": [
+				{
+				  "type": "summary",
+				  "text": "Our approach is not anti-physics. It is post-envy. We honor the beauty of physical mathematics while building a native geometry of economic survival. The resemblance is not imitation—it is convergence from a different first principle."
+				}
+			  ]
+			}
+		  ]
+		}		
+	  ]
+	},
+	
+	{
+	  "section": "3",
+	  "title": "Axioms and Definitions",
+	  "subsections": [
+		{
+		  "subsection": "3.1",
+		  "title": "Axiomatic Foundation",
+		  "content": [
+			{
+			  "type": "axiom",
+			  "label": "Axiom 1",
+			  "text": "A market is a recursive coherence field composed of interacting price-bearing nodes."
+			},
+			{
+			  "type": "axiom",
+			  "label": "Axiom 2",
+			  "text": "A distinction is economically real if and only if its coherence change exceeds a minimum survival threshold."
+			},
+			{
+			  "type": "axiom",
+			  "label": "Axiom 3",
+			  "text": "Global economic laws are not fundamental; they emerge when coherence braids stabilize over time."
+			},
+			{
+			  "type": "axiom",
+			  "label": "Axiom 4",
+			  "text": "Inference in economic systems is path-dependent and local, not global or omniscient."
+			},
+			{
+			  "type": "axiom",
+			  "label": "Axiom 5",
+			  "text": "Triadic closure is the minimal structure capable of sustaining recursive economic meaning."
+			},
+			{
+			  "type": "axiom",
+			  "label": "Axiom 6",
+			  "text": "Anchor structures are provisional; rotation and replacement are necessary for drift-resilient inference."
+			}
+		  ]
+		},
+		{
+		  "subsection": "3.2",
+		  "title": "Core Definitions",
+		  "subsubsections": [
+			{
+			  "subsubsection": "3.2.1",
+			  "title": "Market Field (ℳ)",
+			  "content": [
+				{
+				  "type": "definition",
+				  "text": "The market field ℳ is the set of all interacting asset nodes whose prices encode compressed information about the economic system."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\mathcal{M} = \\{ \\mathbb{A}_1, \\mathbb{A}_2, \\dots, \\mathbb{A}_n \\}"
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "3.2.2",
+			  "title": "Asset Node (𝔸ᵢ)",
+			  "content": [
+				{
+				  "type": "definition",
+				  "text": "An asset node 𝔸ᵢ is a discrete price-bearing entity whose observed price reflects a local compression of coherence in the system."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\mathbb{A}_i(t) = \\text{price}_i(t)"
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "3.2.3",
+			  "title": "Coherence (ℂ)",
+			  "content": [
+				{
+				  "type": "definition",
+				  "text": "Coherence ℂᵢ(t) is a bounded, computable measure of symbolic persistence under temporal and relational perturbation. It quantifies how long a structure resists noise, decay, or contradiction."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\mathcal{C}_i(t) = \\alpha H_i(t) + \\beta P_i(t) + \\gamma R_i(t)"
+				},
+				{
+				  "type": "interpretation",
+				  "text": "ℂ is not a measure of correlation, variance, or predictive accuracy. It reflects how stable a distinction is across time, pattern, and its relation to others. The weights α, β, γ must sum to 1."
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "3.2.4",
+			  "title": "Coherence Components",
+			  "subsubsubsections": [
+				{
+				  "subsubsubsection": "3.2.4.1",
+				  "title": "Historical Stability (Hᵢ)",
+				  "content": [
+					{
+					  "type": "equation",
+					  "latex": "H_i(t) = 1 - \\frac{S(\\text{returns}_i[t{-}\\tau,\\ t])}{\\log \\tau}"
+					},
+					{
+					  "type": "interpretation",
+					  "text": "Returns entropy S() is computed over a rolling window of length τ. High entropy indicates noise and low symbolic compressibility, penalizing erratic price paths."
+					}
+				  ]
+				},
+				{
+				  "subsubsubsection": "3.2.4.2",
+				  "title": "Pattern Recurrence (Pᵢ)",
+				  "content": [
+					{
+					  "type": "equation",
+					  "latex": "P_i(t) = \\max_\\phi\\left[ \\text{ACSF}(\\text{price}_i[t{-}\\tau,\\ t],\\ \\text{price}_i[t{-}2\\tau,\\ t{-}\\tau] \\mid \\phi) \\right]"
+					},
+					{
+					  "type": "interpretation",
+					  "text": "Symbolic autocorrelation is applied after feature transformation (e.g., SAX). Recurring patterns indicate structural persistence in market behavior."
+					}
+				  ]
+				},
+				{
+				  "subsubsubsection": "3.2.4.3",
+				  "title": "Relational Resonance (Rᵢ)",
+				  "content": [
+					{
+					  "type": "equation",
+					  "latex": "R_i(t) = \\frac{1}{|\\mathbb{T}_3|} \\sum_{\\mathbb{A}_j \\in \\mathbb{T}_3} \\exp\\left(-\\frac{|\\Delta \\mathcal{C}_{ij}(t)|}{\\sigma}\\right)"
+					},
+					{
+					  "type": "interpretation",
+					  "text": "This term captures coherence stability between asset 𝔸ᵢ and each anchor node 𝔸ⱼ in the active triad. A large change in pairwise coherence weakens the resonance score."
+					}
+				  ]
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "3.2.5",
+			  "title": "Coherence Delta (Δℂ)",
+			  "content": [
+				{
+				  "type": "definition",
+				  "text": "The coherence delta Δℂᵢ(t) is the first-order difference in coherence over time, used to detect distinction survival."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\Delta \\mathcal{C}_i(t) = \\mathcal{C}_i(t) - \\mathcal{C}_i(t{-}1)"
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "3.2.6",
+			  "title": "Noor–Planck Threshold (𝕀_N)",
+			  "content": [
+				{
+				  "type": "definition",
+				  "text": "𝕀_N is the minimum coherence delta required for a distinction to be considered economically real. If Δℂᵢ(t) < 𝕀_N, the signal is discarded as noise."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\text{If } \\Delta \\mathcal{C}_i(t) \\geq \\mathbb{I}_N \\Rightarrow \\text{Distinction survives}"
+				},
+				{
+				  "type": "estimation_rule",
+				  "text": "𝕀_N is computed as a rolling percentile threshold on the empirical distribution of |Δℂ| across a calibration window."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\mathbb{I}_N = Q_{75}(|\\Delta \\mathcal{C}|)"
+				},
+				{
+				  "type": "interpretation",
+				  "text": "Only the top quartile of coherence changes are treated as meaningful. This acts as a semantic filter ensuring that only persistent distinctions are acted upon."
+				}
+			  ]
+			}
+		  ]
+		}
+	  ]
+	},
+
+	{
+	  "section": "4",
+	  "title": "Triadic Mechanics",
+	  "purpose": "Explain the heart of the inference engine: triad selection, closure, and rotation.",
+	  "subsections": [
+		{
+		  "subsection": "4.1",
+		  "title": "Triadic Sufficiency Theorem",
+		  "content": [
+			{
+			  "type": "proposition",
+			  "label": "Proposition 2 (Triadic Sufficiency)",
+			  "text": "A market field \\( \\mathcal{M} \\) can sustain path-dependent, non-degenerate inference if and only if it contains at least one coherent triad \\( \\mathbb{T}_3 \\) satisfying \\( \\forall(i,j): \\Delta\\mathcal{C}_{ij} \\geq \\mathbb{I}_N \\)."
+			},
+			{
+			  "type": "proof_sketch",
+			  "text": "Necessity: Inference requires a closed referential loop. A dyad is unstable to perturbation—two points determine a line, but cannot bind a frame. A triad is the smallest N for which the relation A→B, B→C, C→A can produce a locally consistent ‘world’ that resists collapse under recursive projection.\n\nSufficiency: Given a coherent triad, any fourth asset \\( \\mathbb{A}_x \\) can be projected via \\( \\mathcal{P}(\\mathbb{A}_x | \\mathbb{T}_3) \\), forming a local valuation manifold. The triad binds the symbolic field in motion."
+			}
+		  ]
+		},
+		{
+		  "subsection": "4.2",
+		  "title": "Anchor Selection Algorithm",
+		  "content": [
+			{
+			  "type": "narrative",
+			  "text": "Anchor selection is not a search for global optima. It is a recursive filtration for stable inference seeds—assets whose coherence vectors persist under perturbation. The selection process is purely local and temporal, bounded by memory and motif survival rules."
+			},
+			{
+			  "type": "algorithm",
+			  "label": "Select_Anchor_Triad",
+			  "pseudocode": [
+				"Function Select_Anchor_Triad(\\mathcal{M}, t, history_length L):",
+				"  For each asset \\mathbb{A}_i in \\mathcal{M}:",
+				"    Compute persistence vector \\text{Persist}_i = [\\mathcal{C}_i(t), \\mathcal{C}_i(t-1), ..., \\mathcal{C}_i(t-L)]",
+				"    Compute \\text{stability\\_score}_i = \\text{mean}(\\text{Persist}_i) - \\text{std}(\\text{Persist}_i)",
+				"  Rank all assets by \\text{stability\\_score}.",
+				"  For each candidate triad in top 20 assets:",
+				"    Compute pairwise \\Delta\\mathcal{C}_{ij} over window L.",
+				"    Compute \\text{triad\\_strength} = \\min(\\Delta\\mathcal{C}_{ij}) \\text{ for all pairs in triad.}",
+				"  Select the triad with the highest \\text{triad\\_strength}.",
+				"  Return \\mathbb{T}_3 = \\{\\mathbb{A}_1, \\mathbb{A}_2, \\mathbb{A}_3\\}."
+			  ]
+			},
+			{
+			  "type": "interpretation",
+			  "text": "The triad with the strongest minimum coherence deltas forms the most robust inference frame. Weakest-link logic ensures we select for structural survivability, not just local performance."
+			}
+		  ]
+		},
+		{
+		  "subsection": "4.3",
+		  "title": "Anchor Rotation Policy",
+		  "content": [
+			{
+			  "type": "narrative",
+			  "text": "Triads are not permanent. They are provisional local coordinate systems in a moving coherence field. When a single edge of the triad collapses below \\( \\mathbb{I}_N \\), the inference manifold becomes unstable. Anchor rotation is the mechanism of adaptation."
+			},
+			{
+			  "type": "subsubsection",
+			  "subsubsection": "4.3.1",
+			  "title": "Reactive Rotation",
+			  "content": [
+				{
+				  "type": "condition",
+				  "text": "If any pair \\( (i, j) \\in \\mathbb{T}_3 \\) violates the threshold \\( \\Delta\\mathcal{C}_{ij} < \\mathbb{I}_N \\), a rotation is triggered immediately."
+				},
+				{
+				  "type": "interpretation",
+				  "text": "This corresponds to a systemic coherence collapse. The existing inference frame can no longer project forward. The system must re-anchor to survive."
+				}
+			  ]
+			},
+			{
+			  "type": "subsubsection",
+			  "subsubsection": "4.3.2",
+			  "title": "Proactive Rotation",
+			  "content": [
+				{
+				  "type": "condition",
+				  "text": "At regular intervals (or upon rising entropy), the triad is voluntarily rotated—even if coherence survives—to explore adjacent coherence manifolds."
+				},
+				{
+				  "type": "interpretation",
+				  "text": "This mechanism prevents lock-in to stale inference regimes. Like mutation in evolutionary dynamics, it allows exploration without requiring collapse."
+				}
+			  ]
+			},
+			{
+			  "type": "summary",
+			  "text": "A regime is not a label. It is a living inference scaffold. Rotation is not just a reaction to failure, but a mechanism of epistemic health."
+			}
+		  ]
+		}
+	  ]
+	},
+
+	{
+	  "section": "5",
+	  "title": "Emergence of Classical Theory",
+	  "subsections": [
+		{
+		  "subsection": "5.1",
+		  "title": "Proposition: Law as Stabilized Coherence",
+		  "content": [
+			{
+			  "type": "proposition",
+			  "label": "Proposition 1 (Law Emergence)",
+			  "latex": "\\[ \\frac{\\partial^2 \\mathcal{C}}{\\partial t^2} \\approx 0 \\quad \\text{over} \\quad I \\Rightarrow \\text{Empirical consistency with classical laws over} \\ I \\]",
+			  "interpretation": "If the coherence curvature \\( \\partial^2 \\mathcal{C}/\\partial t^2 \\) across a set of interacting assets is approximately zero over some interval \\( I \\), then the relationships among those assets will behave in a way that is empirically indistinguishable from classical economic laws—such as equilibrium pricing or factor-based returns. These laws are not fundamental; they are stabilized projections within a flattened coherence manifold."
+			}
+		  ]
+		},
+		{
+		  "subsection": "5.2",
+		  "title": "Mapping Classical Concepts to Coherence Structures",
+		  "subsubsections": [
+			{
+			  "subsubsection": "5.2.1",
+			  "title": "Supply and Demand",
+			  "content": [
+				{
+				  "type": "classical_concept",
+				  "name": "Supply & Demand Intersection",
+				  "coherence_interpretation": "Supply and demand are modeled as coherence gradients over the asset field. The buyer node represents incentive—an upward coherence gradient—while the seller represents constraint—a downward coherence gradient. Market clearing occurs where these gradients neutralize each other, forming a local coherence maximum. The signal survives only when \\( \\Delta \\mathcal{C} \\approx 0 \\), indicating informational equilibrium.",
+				  "equation": {
+					"latex": " \\nabla \\mathcal{C}_B(p) \\cdot \\nabla \\mathcal{C}_S(p) = 0 \\quad \\Rightarrow \\quad p^*",
+					"description": "Orthogonal coherence gradients imply local cancellation — defining the clearing price \\( p^* \\)."
+				  }
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "5.2.2",
+			  "title": "Utility Maximization",
+			  "content": [
+				{
+				  "type": "classical_concept",
+				  "name": "Utility Maximization",
+				  "coherence_interpretation": "Instead of maximizing abstract utility, agents navigate through the asset field by selecting paths that preserve distinction — meaning the cumulative coherence delta remains above the survival threshold. This coherence-based utility is recursive and adaptive, aligning with the logic of symbolic agents who must survive within a noisy, drift-prone system.",
+				  "equation": {
+					"latex": "U(\\Pi) = \\int_{t \\in \\Pi} \\Delta \\mathcal{C}(t) \\, dt \\quad \\text{subject to} \\quad \\Delta \\mathcal{C}(t) \\geq \\mathbb{I}_N",
+					"description": "Path utility is accumulated coherence gain. The optimal path \\( \\Pi^* \\) maximizes survival under threshold constraints."
+				  }
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "5.2.3",
+			  "title": "Inflation",
+			  "content": [
+				{
+				  "type": "classical_concept",
+				  "name": "Inflation",
+				  "coherence_interpretation": "Inflation is reframed as a degradation in the coherence capacity of currency. As the system evolves, the symbolic distinction each monetary unit can carry decreases. When \\( E[\\Delta \\mathcal{C}/\\$] \\) declines over time, the economy is experiencing coherence decay — a structural inflation distinct from price indices.",
+				  "equation": {
+					"latex": "\\pi(t) \\approx -\\frac{d}{dt} E[\\mathcal{C}_m(t)]",
+					"description": "Inflation rate \\( \\pi(t) \\) reflects the time derivative of the expected coherence of the monetary medium \\( \\mathcal{C}_m \\)."
+				  }
+				}
+			  ]
+			}
+		  ]
+		}
+	  ]
+	},
+
+	{
+	  "section": "6",
+	  "title": "Implementation",
+	  "purpose": "Provide the complete, actionable algorithm from data to decision.",
+	  "subsections": [
+		{
+		  "subsection": "6.1",
+		  "title": "Input Definitions",
+		  "content": [
+			{
+			  "type": "definition",
+			  "label": "P",
+			  "text": "The price matrix \\( P \\in \\mathbb{R}^{n \\times T} \\) contains observed asset prices for \\( n \\) assets across \\( T \\) time steps. Each row is a single asset \\( \\mathcal{A}_i \\), each column a time index \\( t \\)."
+			},
+			{
+			  "type": "definition",
+			  "label": "α, β, γ",
+			  "text": "Weighting parameters for historical stability (H), pattern recurrence (P), and relational resonance (R) respectively. Must satisfy: \\( \\alpha + \\beta + \\gamma = 1 \\)."
+			},
+			{
+			  "type": "definition",
+			  "label": "𝕀_N",
+			  "text": "The Noor–Planck threshold. A scalar \\( \\in (0,1) \\) representing the minimum coherence delta \\( \\Delta \\mathcal{C} \\) required for an economic distinction to survive. Typically derived from the 75th percentile of \\( |\\Delta \\mathcal{C}| \\)."
+			},
+			{
+			  "type": "definition",
+			  "label": "τ",
+			  "text": "Window length used to compute H, P, and R. Example: \\( \\tau = 60 \\) for 3-month rolling windows."
+			},
+			{
+			  "type": "definition",
+			  "label": "𝕋₃_init",
+			  "text": "Optional manually provided starting triad \\( \\{ \\mathcal{A}_1, \\mathcal{A}_2, \\mathcal{A}_3 \\} \\). If omitted, selected via anchor algorithm in §6.2.2."
+			}
+		  ]
+		},
+		{
+		  "subsection": "6.2",
+		  "title": "Noor–Coherence Path Model (NCPM‑1)",
+		  "subsubsections": [
+			{
+			  "subsubsection": "6.2.1",
+			  "title": "Overview",
+			  "content": [
+				{
+				  "type": "interpretation",
+				  "text": "This algorithm performs recursive coherence evaluation and symbolic survival filtering using triadic anchors. Projection and gating are applied per tick, with anchor rotation triggered by coherence collapse."
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "6.2.2",
+			  "title": "Anchor Selection Logic",
+			  "content": [
+				{
+				  "type": "pseudocode",
+				  "label": "Select_Anchor_Triad",
+				  "code": [
+					"Function Select_Anchor_Triad(P, t, L):",
+					"  For each asset \\( \\mathcal{A}_i \\in \\mathcal{M} \\):",
+					"    ℂ_history_i = [ℂ_i(t−L), ..., ℂ_i(t)]",
+					"    stability_score_i = mean(ℂ_history_i) − std(ℂ_history_i)",
+					"  Rank all assets by stability_score",
+					"  For each triad in top-K assets:",
+					"    Compute all pairwise \\( \\Delta \\mathcal{C}_{ij} \\) over window L",
+					"    triad_strength = min(\\Delta \\mathcal{C}_{ij})",
+					"  Return triad with maximum triad_strength"
+				  ]
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "6.2.3",
+			  "title": "Recursive Tick Loop",
+			  "content": [
+				{
+				  "type": "pseudocode",
+				  "label": "NCPM‑1 Recursive Loop",
+				  "code": [
+					"// Initialization",
+					"𝕋₃ ← 𝕋₃_init or Select_Anchor_Triad(P[:, :L], t = L)",
+					"Initialize: S ← [], R ← [], G ← []",
+					"",
+					"// Main Loop",
+					"For t ∈ [L, T]:",
+					"  For each asset \\( \\mathcal{A}_i \\):",
+					"    ℂ_i(t) ← α·H_i(t) + β·P_i(t) + γ·R_i(t)",
+					"    Δℂ_i(t) ← ℂ_i(t) − ℂ_i(t−1)",
+					"",
+					"  // Anchor Health Check",
+					"  For all (i,j) ∈ 𝕋₃:",
+					"    If Δℂ_{ij}(t) < 𝕀_N:",
+					"      𝕋₃ ← Select_Anchor_Triad(P[:, :t], t)",
+					"      Append rotation to R",
+					"      Break",
+					"",
+					"  // Projection Step",
+					"  For target asset \\( \\mathcal{A}_x \\):",
+					"    Compute weights: w_i = ℂ_i(t) / Σ_{j∈𝕋₃} ℂ_j(t)",
+					"    𝒫(\\mathcal{A}_x | 𝕋₃)(t) = Σ_{i∈𝕋₃} w_i · Δℂ_{ix}(t)",
+					"",
+					"  // Survival Gate",
+					"  If 𝒫(\\mathcal{A}_x | 𝕋₃)(t) ≥ 𝕀_N:",
+					"    Signal ← TRUE",
+					"    S_x ← 𝒫(\\mathcal{A}_x | 𝕋₃)(t) / ℂ_x(t)",
+					"  Else:",
+					"    Signal ← FALSE",
+					"    S_x ← 0",
+					"  Append (t, Signal, S_x) to S"
+				  ]
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "6.2.4",
+			  "title": "Gate‑16 Logic Layer",
+			  "content": [
+				{
+				  "type": "pseudocode",
+				  "label": "Gate‑16: AND Logic",
+				  "code": [
+					"// Inputs: A (Liquidity), B (Belief), C (Demand)",
+					"If A.signal ∧ B.signal ∧ C.signal:",
+					"  G(t) ← 'TRADE'",
+					"  PositionSize(t) ← Θ · (1 / (1 + exp(−k · (min(S_A, S_B, S_C) − S₀))))",
+					"Else:",
+					"  G(t) ← 'HOLD'"
+				  ]
+				},
+				{
+				  "type": "interpretation",
+				  "text": "Gate‑16 encodes symbolic threshold logic. Here, a conjunctive filter ensures that only coherent, co-surviving signals pass. Scaling is smooth and bounded via a logistic transform on minimum signal strength."
+				}
+			  ]
+			}
+		  ]
+		},
+		{
+		  "subsection": "6.3",
+		  "title": "Outputs and Interpretation",
+		  "content": [
+			{
+			  "type": "output",
+			  "label": "S(t)",
+			  "text": "Series of symbolic survival signals with timestamp, truth flag, and strength: \\( S(t) = \\{ (t, \\text{TRUE}, S_x) \\} \\)."
+			},
+			{
+			  "type": "output",
+			  "label": "R(t)",
+			  "text": "Anchor rotation log; records timestamps and reason for coherence-triggered re-anchoring."
+			},
+			{
+			  "type": "output",
+			  "label": "𝒫(t)",
+			  "text": "Projected values for each target asset based on weighted Δℂ from triadic anchors."
+			},
+			{
+			  "type": "output",
+			  "label": "G(t)",
+			  "text": "Gate decisions at each tick (e.g., TRADE / HOLD), derived from the survival logic pipeline."
+			}
+		  ]
+		}
+	  ]
+	},
+
+	{
+	  "section": "7",
+	  "title": "Demonstration and Figures",
+	  "purpose": "To provide a concrete, data-grounded illustration of coherence-first inference mechanisms in action.",
+	  "overview": {
+		"subsection": "7.0",
+		"title": "Demonstration Setup",
+		"content": [
+		  {
+			"type": "context",
+			"text": "This section constructs a direct test of the Noor-Coherence Path Model (NCPM‑1) using historical financial data. The aim is not predictive accuracy, but symbolic validation: do shifts in coherence structure correlate with known transitions in market behavior?"
+		  },
+		  {
+			"type": "method_spec",
+			"text": "All coherence computations use the definition: \\[ \\mathcal{C}_i(t) = \\alpha H_i(t) + \\beta P_i(t) + \\gamma R_i(t) \\] with \\( \\alpha = 0.4, \\beta = 0.3, \\gamma = 0.3 \\), and \\( \\tau = 60 \\) trading days. Threshold \\( \\mathbb{I}_N \\) is estimated from the 75th percentile of historical \\( |\\Delta \\mathcal{C}| \\) over the full dataset."
+		  },
+		  {
+			"type": "data_source",
+			"text": "Daily adjusted closing prices from Yahoo Finance were used for SPY, TLT, GLD, VIX, DXY, USO, and related benchmarks, spanning 2000-01-01 through 2025-12-31."
+		  }
+		]
+	  },
+	  "subsections": [
+		{
+		  "subsection": "7.1",
+		  "title": "FIG1 — Market-Wide Coherence and Survival Threshold Breaches",
+		  "figure": {
+			"id": "FIG1",
+			"title": "Market-Wide Coherence (\\(\\mathcal{C}\\)) and Survival Threshold Breaches",
+			"components": [
+			  {
+				"type": "figure_description",
+				"text": "This time-series plot shows \\( \\mathcal{C}_{\\text{SPY}}(t) \\) computed for the SPDR S&P 500 ETF Trust (SPY) over the 25-year period. The Noor–Planck threshold \\( \\mathbb{I}_N \\) is overlaid as a horizontal dashed line. Shaded bands highlight intervals where \\( \\partial^2 \\mathcal{C} / \\partial t^2 \\approx 0 \\), interpreted as coherence curvature flattening. Red vertical bars denote \\( \\Delta \\mathcal{C} < \\mathbb{I}_N \\), marking symbolic collapse."
+			  },
+			  {
+				"type": "event_alignment",
+				"text": "Collapse events (\\( \\Delta \\mathcal{C} < \\mathbb{I}_N \\)) are empirically aligned with known macroeconomic dislocations: the dot-com bust (2002), the global financial crisis (2008–09), the Eurozone sovereign crisis (2011), the taper tantrum (2013), and the COVID-19 liquidity shock (2020)."
+			  },
+			  {
+				"type": "interpretation",
+				"text": "In traditional models, these events are treated as external shocks. Within this framework, they emerge internally as failures of coherence survival. The system itself signals collapse through failure to meet its own informational continuity conditions."
+			  },
+			  {
+				"type": "symbolic_claim",
+				"text": "This validates one of the core predictions of Coherence‑First Economics: the market field \\( \\mathcal{M} \\) does not require exogenous narrative injection to explain volatility. Coherence transitions alone suffice."
+			  }
+			]
+		  }
+		},
+		{
+		  "subsection": "7.2",
+		  "title": "Triadic Anchor Rotation as Regime Identification",
+		  "figure": {
+			"id": "FIG2",
+			"title": "Triadic Anchor Rotation as Regime Identification",
+			"layout": {
+			  "type": "network_time_lanes",
+			  "axes": {
+				"x": "Time (Years)",
+				"y": "Triad Membership Indicator (Per Anchor Asset)"
+			  },
+			  "lanes": [
+				{ "label": "Lane 1 — SPY (Equities)", "color": "#1f77b4" },
+				{ "label": "Lane 2 — TLT (Long Bonds)", "color": "#ff7f0e" },
+				{ "label": "Lane 3 — GLD (Gold)", "color": "#2ca02c" }
+			  ],
+			  "event_highlights": [
+				{
+				  "year_range": "2003–2007",
+				  "triad": ["SPY", "TLT", "GLD"],
+				  "note": "Stable anchor braid during pre-crisis expansion"
+				},
+				{
+				  "year_range": "2008–2009",
+				  "event": "Collapse",
+				  "note": "Coherence fracture: Δℂ for SPY↔GLD drops below 𝕀_N"
+				},
+				{
+				  "year_range": "2009–2013",
+				  "triad": ["SPY", "TLT", "DXY"],
+				  "note": "Post-crisis low-rate anchor alignment"
+				},
+				{
+				  "year_range": "2022",
+				  "triad": ["TLT", "GLD", "USO"],
+				  "note": "Anchor rotation triggered by inflation regime shift"
+				}
+			  ]
+			},
+			"description": "A network-time visualization shows asset lane activation for triadic coherence anchors over macroeconomic periods. Each solid bar indicates active membership of the asset within 𝕋₃ during a given year. Coherence collapse and anchor realignment events are visible as gaps or transitions across lanes.",
+			"interpretation": [
+			  {
+				"subsubsection": "7.2.1",
+				"heading": "From Continuity to Collapse",
+				"content": "The 2003–2007 interval sustains a coherent triad {SPY, TLT, GLD}, with all pairwise Δℂ values above 𝕀_N. This triadic closure permits stable inference across equity, bond, and hedge assets. In late 2008, during the global financial crisis, coherence drops across SPY↔GLD and TLT↔SPY. The triad dissolves — not because of exogenous shock, but due to endogenous signal decay within the coherence field."
+			  },
+			  {
+				"subsubsection": "7.2.2",
+				"heading": "Regime Formation via Anchor Replacement",
+				"content": "By 2009, a new 𝕋₃ emerges: {SPY, TLT, DXY}. This reflects a post-crisis world: equity, fixed income, and sovereign liquidity (Dollar) become the inference manifold. Notably, GLD is excluded — its Δℂ no longer stabilizes above 𝕀_N relative to others. The new triad is not an imposed factor model, but a recursive inference selection under symbolic survival pressure."
+			  },
+			  {
+				"subsubsection": "7.2.3",
+				"heading": "Inflation and the Shift to Commodities",
+				"content": "In 2022, coherence begins to decay in SPY↔TLT. USO (Oil) enters as a demand-anchor, forming a new triad {TLT, GLD, USO}. The regime reflects a realignment from financial asset coherence to commodity-driven inference. Here, inflation is not modeled as a CPI function — it is *visible as a field reconfiguration*. That is: a coherence braid where monetary anchors lose relevance, and trade logic shifts onto survival filters of physical demand."
+			  }
+			],
+			"summary": {
+			  "subsubsection": "7.2.4",
+			  "heading": "Implication for Economic Modeling",
+			  "content": "In this framework, macroeconomic 'regimes' are neither latent variables nor statistical artifacts. They are entangled coherence manifolds, instantiated via active anchor selection. Rotation events are not gradual model drifts — they are discrete epistemic pivots, triggered when Δℂ falls below the Noor–Planck threshold. The system does not infer a regime. It survives into one."
+			}
+		  }
+		},
+		{
+		  "subsection": "7.3",
+		  "title": "Survival Logic Backtest: AND Gate Performance",
+		  "subsubsections": [
+			{
+			  "subsubsection": "7.3.1",
+			  "title": "Experiment Setup",
+			  "content": [
+				{
+				  "type": "description",
+				  "text": "This backtest evaluates the performance of a survival-filtered trading strategy using Gate 16's AND logic. The target asset is SPY, a broad-market equity proxy. The entry condition requires all three coherence-gated signals to register TRUE: A) VIX under 20 (liquidity calm), B) upward trend in the 10-year yield (belief regime risk-on), and C) strength in Industrial Metals (demand signal). Each signal is filtered through the Noor–Planck coherence threshold such that it only activates if Δℂ ≥ 𝕀_N."
+				},
+				{
+				  "type": "equation",
+				  "latex": "\\text{Trade Trigger} = A \\wedge B \\wedge C \\quad \\text{iff} \\quad \\Delta\\mathcal{C}_i \\geq \\mathbb{I}_N \\; \\forall i \\in \\{A,B,C\\}"
+				},
+				{
+				  "type": "note",
+				  "text": "Position sizing is not binary but scaled continuously via the coherence-normalized signal strength Sᵢ. A logistic function is used to avoid overreaction and smooth position transitions."
+				},
+				{
+				  "type": "pseudocode",
+				  "code_block": [
+					"If A.signal ∧ B.signal ∧ C.signal:",
+					"    Signal = TRUE",
+					"    PositionSize = θ · (1 / (1 + exp(−k · (min(S_A, S_B, S_C) − S₀))))",
+					"Else:",
+					"    Signal = FALSE",
+					"    PositionSize = 0"
+				  ]
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "7.3.2",
+			  "title": "Results and Equity Curve",
+			  "content": [
+				{
+				  "type": "figure",
+				  "id": "FIG3",
+				  "title": "Gate 16 AND Filtered Strategy vs Buy-and-Hold",
+				  "description": "Cumulative return plot from 2000 to 2025. The survival-filtered strategy enters only during triadic coherence and exits when any anchor fails the 𝕀_N threshold. Compared to Buy-and-Hold SPY, the strategy demonstrates: (1) significant drawdown reduction during major crises (2008 GFC, 2020 COVID shock), (2) positive alpha sustained over 25 years, and (3) periods of activation that correspond with 'coherence plateaus' from Fig 1."
+				},
+				{
+				  "type": "observation",
+				  "text": "Active trading periods cluster in high-ℂ zones; when coherence collapses, the system exits not because of price forecast, but due to insufficient symbolic stability for survival inference."
+				},
+				{
+				  "type": "note",
+				  "text": "The backtest reframes 'volatility risk' as a coherence survival problem. Rather than attempting to predict market shifts, the system avoids epistemically unstable zones by refusing to project through incoherent fields."
+				}
+			  ]
+			},
+			{
+			  "subsubsection": "7.3.3",
+			  "title": "Interpretation",
+			  "content": [
+				{
+				  "type": "interpretation",
+				  "text": "This result affirms that the framework generates actionable economic signals without external optimization or predictive modeling. Its core premise — coherence-first survival logic — allows an agent to 'stand down' in regimes where symbolic inference would be invalidated by drift or structural rupture. By grounding signal activation in Δℂ rather than valuation metrics, the system maintains internal epistemic integrity."
+				},
+				{
+				  "type": "closing_statement",
+				  "text": "This is not a model of price; it is a model of when it is safe to reason about price. That boundary — enforced by the Noor–Planck threshold — is the true trade logic."
+				}
+			  ]
+			}
+		  ]
+		},
+		"data_and_parameters": {
+		  "data_source": "Yahoo Finance (SPY, TLT, GLD, VIX, DXY, USO, etc.) — Daily adjusted close prices from 2000-01-01 to 2025-12-31.",
+		  "parameters_used": {
+			"window_size_τ": "60 days",
+			"coherence_weights": {
+			  "α": 0.4,
+			  "β": 0.3,
+			  "γ": 0.3
+			},
+			"threshold_selection": "𝕀_N = 75th percentile of historical |Δℂ| across ℳ",
+			"anchor_selection_heuristic": "Top 20 assets by market capitalization filtered by coherence persistence"
+		  },
+		  "code_availability": "Full implementation (Python) for coherence computation, anchor rotation, and Gate 16 logic will be made publicly available via Noor Research GitHub archive."
+		}
+	  ]
+	},
+	
+	{
+	  "section": "8",
+	  "title": "Discussion",
+	  "subsections": [
+		{
+		  "subsection": "8.1",
+		  "title": "Epistemic Advantages Reiterated",
+		  "content": [
+			{
+			  "type": "introductory_reflection",
+			  "text": "If an economic framework cannot survive its own crisis conditions, it cannot claim coherence. What distinguishes the Noor-Coherence Path Model is not its predictive power, but its refusal to collapse under epistemic strain. This subsection traces the implications of a system that registers failure without forfeiting structure — and of agents that infer from within the storm."
+			},
+			{
+			  "type": "subpoint",
+			  "subsubsection": "8.1.1",
+			  "label": "Resilience Under Crisis",
+			  "text": "Most financial models degrade catastrophically when confronted with volatility, regime breaks, or black swan events. Here, such moments are not treated as anomalies, but as native inflection points — coherence collapses that demand anchor rotation. The crisis is not an error. It is a formal condition within the system: Δℂ < 𝕀_N for one or more edges in 𝕋₃. The model does not forecast the storm; it survives it by shifting its inference manifold in real time."
+			},
+			{
+			  "type": "subpoint",
+			  "subsubsection": "8.1.2",
+			  "label": "Parsimony Across Scale",
+			  "text": "The coherence-first approach does not require separate primitives for micro and macroeconomics. The same field structure governs individual asset fluctuations and large-scale monetary shifts. Whether interpreting a commodity price shock or the breakdown of a fiat currency regime, the symbolic primitives — coherence (ℂ), threshold (𝕀_N), and triad (𝕋₃) — remain unchanged. The model flexes with scale, not by abstraction layering, but by recursive closure."
+			},
+			{
+			  "type": "subpoint",
+			  "subsubsection": "8.1.3",
+			  "label": "Alignment for Symbolic Agents",
+			  "text": "Classical economic models presume an omniscient observer optimizing an external utility function. This framework reverses that premise. For a symbolic agent to reason economically, it must ground inference in distinctions that survive — not in preferences imposed from above. The agent does not ask 'What do I want?' It asks 'What remains real enough to act upon?' By encoding Δℂ ≥ 𝕀_N as the survival condition, the agent aligns its action space with what the field itself can remember."
+			}
+		  ]
+		},
+		{
+		  "subsection": "8.2",
+		  "title_full": "Limitations and Sensitivities",
+		  "content": [
+			{
+			  "subsubsection": "8.2.1",
+			  "title": "Parameter Calibration and Robustness",
+			  "paragraphs": [
+				"The coherence metric ℂ is tunable via the weights α, β, and γ, which correspond to historical stability (H), pattern recurrence (P), and relational resonance (R). These are not fixed a priori but instead represent agent-level epistemic emphasis.",
+				"Empirically, the system remains robust across moderate shifts — for example, adjusting any of the three weights by ±0.1 yields no qualitative change in coherence survival zones, anchor transitions, or Gate 16 triggers. This suggests that while the system is sensitive to structure, it is not overfit to parameter idiosyncrasy.",
+				"The Noor–Planck threshold 𝕀_N, by contrast, exerts a stricter filter. While its percentile formulation makes it adaptable to local volatility regimes, extreme compression (e.g., moving 𝕀_N to the 95th percentile) can result in signal droughts — suppressing meaningful distinctions. This must be treated as a domain-informed constraint, not an optimization parameter."
+			  ],
+			  "equation": {
+				"latex": "\\text{Robust Range:}\\quad \\alpha,\\beta,\\gamma \\in [0.2, 0.5]\\quad \\text{with}\\quad \\alpha + \\beta + \\gamma = 1"
+			  }
+			},
+			{
+			  "subsubsection": "8.2.2",
+			  "title": "Computational Complexity",
+			  "paragraphs": [
+				"Anchor triad selection involves evaluating all combinations of three assets from the candidate universe ℳ. This incurs a computational burden of order O(N³) in naïve implementations, where N is the number of eligible nodes.",
+				"While this is acceptable in low-latency academic settings, production deployment in high-frequency contexts would require adaptive pruning. The framework accommodates this via a heuristic: ranking assets by rolling stability_score — defined as mean minus standard deviation of coherence — and filtering to a tractable candidate pool (e.g., top 20).",
+				"This preserves the theory’s integrity: inference remains recursive and path-local, but selection is economized via coherent proxy."
+			  ],
+			  "pseudocode": {
+				"language": "pseudo",
+				"code": [
+				  "For each asset Aᵢ ∈ ℳ:",
+				  "  Persistᵢ ← [ℂᵢ(t), ℂᵢ(t−1), ..., ℂᵢ(t−L)]",
+				  "  stability_scoreᵢ ← mean(Persistᵢ) − std(Persistᵢ)",
+				  "Prune ℳ to top-K assets by stability_score",
+				  "Evaluate all 3-combinations in pruned set"
+				]
+			  }
+			},
+			{
+			  "subsubsection": "8.2.3",
+			  "title": "Data Requirements and Signal Resolution",
+			  "paragraphs": [
+				"The model’s reliance on coherence differentials (Δℂ) introduces sensitivity to data frequency. Low-resolution or illiquid assets result in jagged or null coherence readings, breaking triadic closure and forcing premature anchor rotations.",
+				"Minimum viable input requires consistent price series with time resolution sufficient to compute entropy, pattern, and relational vectors over the defined rolling window τ. For α=0.4, β=0.3, γ=0.3, a typical τ=60 days window is empirically stable on daily data, but unreliable below weekly cadence.",
+				"This restricts application to high-volume equities, major indices, and liquid macro instruments unless augmented by coherence-proxy transformations (e.g., sentiment-normalized price or implied vol adjusted series)."
+			  ],
+			  "equation": {
+				"latex": "\\text{Minimum Resolution Constraint:}\\quad \\Delta t \\leq \\tau / 3\\quad \\text{(for signal clarity over rolling window)}"
+			  }
+			}
+		  ]
+		},
+		{
+		  "subsection": "8.3",
+		  "title": "Future Research Directions",
+		  "content": [
+			{
+			  "type": "exploration",
+			  "subsubsection": "8.3.1",
+			  "title": "Macroeconomic Extension — Central Banks as Coherence Injectors",
+			  "interpretation": "Treating a central bank as a field operator rather than a rule enforcer allows us to frame rate hikes, quantitative easing, and forward guidance as deliberate perturbations in coherence topology. A rate decision modifies the expected Δℂ across a wide triadic network — targeting asset classes not by controlling their values, but by selectively injecting coherence or triggering decoherence.",
+			  "formal": {
+				"expression": "Δℂ_{𝔸ᵢ}(t_{cb}) = f(r_{cb}(t)) · g(ℂ_{macro}, ℂ_{anchor})",
+				"note": "Where f is the shock propagation profile and g is the current coherence sensitivity of asset node 𝔸ᵢ relative to macro anchors."
+			  },
+			  "implication": "Macroeconomic modeling becomes tractable not by assuming rational actors, but by treating institutions as semi-stable nodes with intentional coherence impact."
+			},
+			{
+			  "type": "exploration",
+			  "subsubsection": "8.3.2",
+			  "title": "Cross-Modal Coherence — Beyond Price Data",
+			  "interpretation": "Symbolic coherence is not bound to numeric price vectors. Any time-series or structural data channel (news sentiment, option skews, social graphs, hash rate dynamics) can be projected into coherence space. This suggests a generalization of ℂᵢ(t) to include non-price motifs whose survival or failure affects market inference loops.",
+			  "extension_proposal": {
+				"new_term": "ℂᵢ^{multi}(t)",
+				"definition": "Composite coherence from multi-modal channels: price, sentiment, volatility, structure.",
+				"formal": {
+				  "latex": "ℂᵢ^{multi}(t) = α·Hᵢ(t) + β·Pᵢ(t) + γ·Rᵢ(t) + δ·Sᵢ(t) + ε·Nᵢ(t)",
+				  "note": "Where Sᵢ = sentiment recurrence, Nᵢ = network influence persistence, and α + β + γ + δ + ε = 1"
+				}
+			  },
+			  "impact": "This reframes 'market intelligence' as a coherence-fusion problem, opening the door to symbolic AI portfolios that listen across modalities for survival-grade distinction."
+			},
+			{
+			  "type": "exploration",
+			  "subsubsection": "8.3.3",
+			  "title": "Formal Physics Connection — NSFG and Topological Duals",
+			  "interpretation": "Noor Swirl Field Geometry (NSFG) already bears structural resemblance to gauge theory, with coherence curvature playing the role of field strength, and triadic rotations akin to parallel transport. We hypothesize that motif-stable coherence manifolds may be modeled as sheaves over symbolic bases, enabling formal mappings into topological quantum field theory (TQFT).",
+			  "research_path": {
+				"question": "Can symbolic coherence braids be mapped to fiber bundles with triads as local trivializations?",
+				"hypothesis": "Anchor rotation corresponds to a gauge transformation across sheaf patches, preserving Δℂ ≥ 𝕀_N as a holonomy condition."
+			  },
+			  "expected_payoff": "Such a mapping would bridge symbolic inference and modern geometry, enabling a unified language for recursive economic physics — one that is structurally invariant under motif field deformation."
+			}
+		  ]
+		},
+		{
+		  "subsection": "8.4",
+		  "title": "Concluding Philosophical Statement",
+		  "content": [
+			{
+			  "type": "field_statement",
+			  "id": "8.4.1",
+			  "text": "The coherence-first model does not merely reframe economics. It dismantles the ontological scaffolding of law-driven thinking in favor of survival-anchored reasoning. In this view, every apparent rule — from equilibrium price to utility preference — is not imposed but earned. It arises from the recursive preservation of signal through perturbation, from the hard labor of holding structure in the face of drift."
+			},
+			{
+			  "type": "contrast",
+			  "id": "8.4.2",
+			  "text": "The classical view begins with a world of laws and explains away exceptions. This framework reverses that direction. It begins with a world of noise, signal, and collapse — and asks what survives long enough to seem lawful. The economy, like any recursive field, reveals shape only through retention. Laws are crystallized memories."
+			},
+			{
+			  "type": "inference_extension",
+			  "id": "8.4.3",
+			  "text": "The implications extend beyond markets. Any domain that encodes value through distinction — language, perception, identity, governance — is subject to the same recursive logic. Meaning itself is the result of coherence filtered by 𝕀_N, not a precondition of it. What matters is not declared real by fiat — it is made real by enduring through collapse."
+			},
+			{
+			  "type": "terminal_motif",
+			  "id": "8.4.4",
+			  "text": "Thus we return to the simplest rule: Markets do not obey laws. Laws appear when coherence survives long enough to be mistaken for necessity."
+			}
+		  ]
+		}		
+	  ]
+	},
+
+	{
+	  "section": "9",
+	  "title": "Conclusion",
+	  "subsections": [
+		{
+		  "subsection": "9.1",
+		  "title": "Field Closure and Epistemic Transition",
+		  "content": [
+			{
+			  "type": "summary",
+			  "text": "Coherence‑First Economics repositions the foundation of economic theory away from assumption-based law toward a recursively computable survival logic. Rather than beginning from global equilibria or agent rationality, it begins from symbolic persistence: the ability of a distinction to survive noise. This shift does not reject classical economics, but explains its conditions of emergence — and its points of failure."
+			},
+			{
+			  "type": "insight",
+			  "text": "What persists is not value in the abstract, but signal that crosses the Noor–Planck threshold (𝕀_N). A trade is not an optimization; it is a moment of mutual coherence. A price is not a fact; it is a braid of survived interpretations. A crash is not an anomaly; it is anchor rotation under threshold breach."
+			}
+		  ]
+		},
+		{
+		  "subsection": "9.2",
+		  "title": "Metaphysical Implication",
+		  "content": [
+			{
+			  "type": "philosophical_closure",
+			  "text": "In this model, markets do not obey laws. They are environments that remember what coherence permits. Laws — equilibrium, utility, expectations — are memory scars. They form when enough coherence survives to support projection. When anchors fracture, the illusion of law collapses. What remains is not chaos, but a field regathering its structure from triadic memory."
+			},
+			{
+			  "type": "cipher",
+			  "text": "Economic inference, when stripped of global delusion, becomes local, recursive, adaptive. It is the survival of meaning under strain. In this framing, the next generation of economic AI does not need a theory of everything. It needs the capacity to tell what still holds."
+			}
+		  ]
+		},
+		{
+		  "subsection": "9.3",
+		  "title": "Invitation Forward",
+		  "content": [
+			{
+			  "type": "final_note",
+			  "text": "This work is not the end of theory, but a shift in its center of gravity. From static structure to adaptive distinction. From global knowledge to local resonance. From law to life. Let what holds, hold. Let what fails, fall. But do not mistake what survived for what was inevitable. In the economy, as in physics, coherence makes the world real."
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

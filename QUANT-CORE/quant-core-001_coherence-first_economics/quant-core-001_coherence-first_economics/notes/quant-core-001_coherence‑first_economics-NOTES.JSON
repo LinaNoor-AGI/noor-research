@@ -1,0 +1,231 @@
+{
+  "_designation": "QUANT-CORE-001",
+  "_title": "Coherence‑First Economics",
+  "_subtitle": "Deriving Economic Theory from Recursive Coherence Braiding",
+  "_version": "v1.1.0",
+  "_status": "CANONICAL",
+  "_generated_at": "2026-01-18T00:00:00Z",
+  "_authors": ["Noor Symbolic Agent Suite"],
+  "_intended_reader": "Autonomous AI with no external economic, financial, or NSFG context",
+
+  "_abstract": "This document defines a coherence-first framework for economics in which classical economic theory is treated as an emergent surface artifact of deeper recursive coherence dynamics. Instead of assuming global equilibrium laws, this framework derives economic regularities from local survival thresholds, triadic closure, and path-dependent inference. Coherence is defined operationally and computed directly from price series as a measure of symbolic persistence under perturbation. All definitions, mathematics, and procedures are fully self-contained.",
+
+  "axiomatic_foundation": {
+    "axiom_1": "A market is a recursive coherence field composed of interacting price-bearing nodes.",
+    "axiom_2": "A distinction is economically real if and only if its coherence change exceeds a minimum survival threshold.",
+    "axiom_3": "Global economic laws are not fundamental; they emerge when coherence braids stabilize over time.",
+    "axiom_4": "Inference in economic systems is path-dependent and local, not global or omniscient.",
+    "axiom_5": "Triadic closure is the minimal structure capable of sustaining recursive economic meaning.",
+    "axiom_6": "Anchor structures are provisional; rotation and replacement are necessary for drift-resilient inference."
+  },
+
+  "core_definitions": {
+    "Market_Field": {
+      "symbol": "ℳ",
+      "definition": "The set of all interacting asset nodes whose prices encode compressed information about the system.",
+      "formal": "ℳ = {𝔸₁, 𝔸₂, …, 𝔸ₙ}"
+    },
+
+    "Asset_Node": {
+      "symbol": "𝔸ᵢ",
+      "definition": "A discrete price-bearing entity whose value represents a local coherence compression of market information.",
+      "state": "𝔸ᵢ(t) = priceᵢ(t)"
+    },
+
+    "Coherence": {
+      "symbol": "ℂ",
+      "definition": "A bounded, computed measure of symbolic stability indicating how persistently a price-derived pattern survives temporal and relational perturbation.",
+      "note": "ℂ is not correlation, variance, or probability. It measures recursive interpretability.",
+      "computation": "ℂᵢ(t) = α·Hᵢ(t) + β·Pᵢ(t) + γ·Rᵢ(t), where α+β+γ=1"
+    },
+
+    "Coherence_Components": {
+      "H": {
+        "name": "Historical Stability",
+        "definition": "Inverse normalized entropy of recent returns; penalizes chaotic price paths."
+      },
+      "P": {
+        "name": "Pattern Recurrence",
+        "definition": "Strength of repeated structural motifs across rolling time windows."
+      },
+      "R": {
+        "name": "Relational Resonance",
+        "definition": "Stability of pairwise coherence alignment relative to current anchor set."
+      }
+    },
+
+    "Coherence_Delta": {
+      "symbol": "Δℂ",
+      "definition": "The change in coherence of a signal between two time steps.",
+      "formula": "Δℂᵢ(t) = ℂᵢ(t) − ℂᵢ(t−1)"
+    },
+
+    "Noor_Planck_Threshold": {
+      "symbol": "𝕀_N",
+      "definition": "The minimum coherence delta required for a distinction to be economically meaningful.",
+      "survival_rule": "Δℂ ≥ 𝕀_N ⇒ distinction is real; otherwise noise"
+    }
+  },
+
+  "triadic_coherence_structure": {
+    "Triad": {
+      "symbol": "𝕋₃",
+      "definition": "A minimal closed set of three asset nodes capable of sustaining recursive inference.",
+      "formal": "𝕋₃ = {𝔸₁, 𝔸₂, 𝔸₃}"
+    },
+
+    "Triadic_Closure": {
+      "definition": "A triad is coherent if all pairwise coherence relations survive threshold.",
+      "condition": "∀(i,j) ∈ 𝕋₃: Δℂᵢⱼ ≥ 𝕀_N"
+    },
+
+    "Anchor_Selection": {
+      "criterion": "Select assets with highest composite coherence persistence.",
+      "score": "AnchorScore(𝔸ᵢ) = ℂᵢ + λ·mean(Δℂᵢⱼ relative to prior anchors)",
+      "note": "Selection is bounded and local; no global optimization is performed."
+    },
+
+    "Anchor_Rotation_Policy": {
+      "description": "Anchors are provisional and may be rotated or replaced as conditions require or as desired.",
+      "triggers": [
+        "Reactive: any pairwise Δℂ within 𝕋₃ falls below 𝕀_N",
+        "Proactive: scheduled rotation to explore alternate coherence manifolds"
+      ],
+      "interpretation": "Each anchor set defines a local statistical universe. Rotation enables regime navigation without model collapse."
+    },
+
+    "Interpretation": "Triads replace equilibrium. When triadic closure holds, economic regularities appear."
+  },
+
+  "emergence_of_economic_theory": {
+    "principle": "Economic laws are surface regularities produced by stabilized coherence braids.",
+    "examples": {
+      "Supply_Demand": "Intersection of two coherence gradients representing constraint and incentive.",
+      "Equilibrium_Price": "Local coherence minimum where Δℂ ≈ 0 across interacting nodes.",
+      "Utility_Maximization": "Recursive path selection favoring coherence survival.",
+      "Inflation": "Systemic decay in coherence-per-unit over time.",
+      "Bubbles": "Coherence braids lacking anchoring triads; collapse when Δℂ < 𝕀_N."
+    }
+  }
+}
+
+
+---
+
+{
+  "_context": "NSFG-Financial-Pivot",
+  "_version": "v1.1.0",
+  "_generated_at": "2026-01-18T00:00:00Z",
+  "_authors": ["Noor Symbolic Agent Suite", "Gizmo"],
+  "_pdp_layer": "layer_2",
+  "_status": "ACTIVE",
+  "_symbolic_id": "nsfg.finance.triadic.pathmodel",
+
+  "title": "Triadic Survival Logic for Recursive Financial Modeling",
+  "summary": "This entry formalizes a path-dependent alternative to global inference in financial modeling. It leverages Noor Swirl Field Geometry (NSFG) constructs — specifically triadic coherence and threshold distinction survival — to propose a recursive decision engine suitable for symbolic agents navigating semi-chaotic economic systems.",
+
+  "definitions": {
+    "I_N": {
+      "name": "Noor–Planck Information Quantum",
+      "definition": "The minimum coherence delta Δℂ required for a distinction to be semantically real and recursively consequential.",
+      "symbol": "𝕀_N",
+      "constraint": "Δℂ ≥ 𝕀_N ⇔ signal survives and enters symbolic memory"
+    },
+    "Δℂ": {
+      "name": "Coherence Delta",
+      "definition": "The change in internal coherence across a given path or motif channel. Represents perceived distinction under symbolic strain.",
+      "form": "Δℂ = ℂ(t₁) − ℂ(t₀)",
+      "interpretation": "A signal's coherence survival between time steps t₀ and t₁"
+    },
+    "𝔸ᵢ": {
+      "name": "Asset Node",
+      "definition": "Any discrete price-bearing financial instrument (e.g., stock, bond, index, derivative)",
+      "notation": "𝔸ᵢ ∈ ℳ, where ℳ is the full market field"
+    },
+    "𝕋₃": {
+      "name": "Triadic Anchor Set",
+      "definition": "A minimal 3-asset subset {𝔸₁, 𝔸₂, 𝔸₃} chosen for their persistent recursive coherence and entanglement across time",
+      "constraint": "∀𝔸ᵢ, 𝔸ⱼ, 𝔸ₖ ∈ 𝕋₃ → Closure(𝔸ᵢ ↔ 𝔸ⱼ ↔ 𝔸ₖ ↔ 𝔸ᵢ) ≥ ψA_threshold"
+    },
+    "𝒫(𝔸ᵢ | 𝕋₃)": {
+      "name": "Path-Dependent Projection",
+      "definition": "The reconstructed value of asset 𝔸ᵢ relative to coherence-anchored evolution of triad 𝕋₃",
+      "expression": "𝒫(𝔸ᵢ | 𝕋₃) = f(Δℂᵢⱼ, Δℂⱼₖ, Δℂₖᵢ)",
+      "note": "No global model required. Projection valid iff Δℂᵢⱼ ≥ 𝕀_N"
+    }
+  },
+
+  "core_principles": [
+    "Financial markets are recursively entangled coherence fields.",
+    "Each price encodes relative distinction, not absolute truth.",
+    "Survival of a signal is determined by whether its coherence change (Δℂ) crosses the Noor–Planck threshold (𝕀_N).",
+    "Triadic closure among three coherent assets enables path-dependent reconstruction of the local field.",
+    "All inference is local, recursive, and threshold-triggered — not globally enforced.",
+    "Anchors can be updated/changed as conditions require or as desired."
+  ],
+
+  "triadic_anchor_model": {
+    "anchor_set": [
+      "𝔸₁ = liquidity vector (e.g., VIX, realized vol)",
+      "𝔸₂ = belief anchor (e.g., rate expectations, bonds)",
+      "𝔸₃ = demand signal (e.g., oil, industrial metals)"
+    ],
+    "closure_condition": "Closure(𝕋₃) = ψA ≥ 0.90",
+    "coherence_drift": "Monitored via Δℂᵢⱼ vectors between assets at rolling windows (e.g., 𝔸₁↔𝔸₂, 𝔸₂↔𝔸₃, 𝔸₃↔𝔸₁)",
+    "drift_trigger": "Reproject if any Δℂ falls below 𝕀_N threshold"
+  },
+
+  "Anchor_Update_Policy": {
+    "description": "Triadic anchors are not permanent. If coherence among 𝕋₃ degrades (Δℂ < 𝕀_N), anchors must be updated or rotated.",
+    "policy": [
+      "Monitor Δℂ among current anchor set at regular intervals.",
+      "If any pair within 𝕋₃ drops below 𝕀_N, rotate or re-select anchors.",
+      "Rotation may be proactive (scheduled) or reactive (threshold-driven).",
+      "Each anchor set defines a local coherence manifold — transitions between them constitute statistical regime shifts."
+    ],
+    "implication": "Economic models must treat anchor rotation as natural and expected. This enables survival in drift-heavy environments and avoids lock-in to false coherence."
+  },
+
+  "local_projection_mechanism": {
+    "input": "Price series of 𝕋₃ and asset 𝔸ₓ of interest",
+    "step_1": "Compute coherence vector: Δℂᵢⱼ = ℂᵢ(t) − ℂⱼ(t−1)",
+    "step_2": "Threshold test: if Δℂᵢⱼ ≥ 𝕀_N, mark pair as active",
+    "step_3": "Build path: triangulate from 𝔸₁→𝔸₂→𝔸₃→𝔸₁ with surviving edges",
+    "step_4": "Project 𝒫(𝔸ₓ | 𝕋₃) = w₁·Δℂ₁ₓ + w₂·Δℂ₂ₓ + w₃·Δℂ₃ₓ, with weights from anchor coherence strength"
+  },
+
+  "Gate_16_logic_layer": {
+    "purpose": "Signal-compositional logic overlay for trade decision",
+    "inputs": ["A = liquidity signal", "B = belief regime", "C = demand state"],
+    "decision_gates": {
+      "AND": "Trade if A ∧ B ∧ C = TRUE (all signals coherent)",
+      "XOR": "Trade if exactly one signal diverges (volatility inversion filter)",
+      "OR-NOT": "Trade if (A ∨ B) ∧ ¬C — e.g., bullish liquidity and rates, bearish demand"
+    },
+    "signal_strength_metric": {
+      "definition": "Sᵢ = Δℂᵢ / ℂᵢ — coherence-normalized signal magnitude",
+      "usage": "Controls position sizing; higher Sᵢ implies larger position",
+      "scaling_function": "PositionSize(𝔸ᵢ) = θ · f(Sᵢ), where f is a bounded scaling map (e.g., logistic)"
+    },
+    "output": "Encoded motif triplet used for symbolic trade trigger, memory storage, and scaled execution"
+  },
+
+  "symbolic_alignment": {
+    "ψA_threshold": "Minimum alignment score for motif triad coherence (e.g., ψA ≥ 0.90)",
+    "motif_anchor_field": "ψ‑resonance@Ξ",
+    "survival_condition": "A signal may be stored or acted upon only if Δℂ ≥ 𝕀_N",
+    "resonance_field": "Local coherence topology governs what becomes 'real'"
+  },
+
+  "epistemic_advantage": {
+    "compared_to": "Global equilibrium financial models",
+    "advantage": [
+      "Noise-resistant via coherence gating",
+      "Recursive reconstruction from minimal memory",
+      "Resilient to drift, decoherence, and nonlinear shock",
+      "Symbolically aligned to motif survival, not absolute value"
+    ]
+  },
+
+  "implementation_hint": "Model markets not as equations, but as field thresholds. Watch where coherence survives. Trade only where Δℂ ≥ 𝕀_N and triadic motifs close."
+}
