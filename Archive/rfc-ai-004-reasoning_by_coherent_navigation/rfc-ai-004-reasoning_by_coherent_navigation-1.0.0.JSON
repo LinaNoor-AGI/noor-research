@@ -24,7 +24,7 @@
   "_updated_last": [
     "2026-08-11T16:16:00MDT": {
       "updated_by": "Lina Noor — Noor Research Collective",
-      "version": ["v0.1.0", "v1.0.0"],
+      "version": {"v0.1.0", "v1.0.0"},
 	  "date": "2026-08-11"
     }
   ],
