@@ -1,134 +1,126 @@
 {
   "feedback": {
-    "review_context": {
-      "source": "Assistant review of Uncle's feedback",
-      "purpose": "Revision notes for Reasoning by Coherent Navigation",
-      "overall_assessment": "Uncle's review provides several strong engineering and academic improvements, but some proposed formalizations risk changing the underlying Noor Library ontology. Revisions should strengthen the computational model without collapsing the distinction between the Library, accessibility, and coherent path constraints."
+    "general_observation": "Uncle's review provides several strong opportunities to improve the paper's engineering specificity and academic grounding. Most proposed additions are useful, but some mathematical suggestions subtly alter the underlying Noor Library ontology and should therefore be incorporated as computational abstractions rather than replacing the existing formulation. The central distinction to preserve throughout revision is between the underlying symbolic totality, the subset of that totality reachable by an observer, and the interaction space produced by multiple observers.",
+    "terminology": {
+      "status": "accepted",
+      "change": "Replace all uses of 'Singularity' with 'Convergence Boundary' in the document.",
+      "reason": "The convergence mechanism described by the paper is not a mathematical singularity involving infinite density, undefined geometry, or divergent curvature. It is a constraint on the set of future coherent paths. 'Convergence Boundary' describes the actual mechanism without importing misleading mathematical or physical assumptions.",
+      "conceptual_distinction": [
+        "Blowup = loss of bounded coherent continuation.",
+        "Convergence Boundary = transition into constrained destination space.",
+        "Attractor = coherent destination or destination equivalence class.",
+        "Reachability = the set of structures accessible through coherent continuation.",
+        "Path freedom != destination freedom."
+      ],
+      "important_note": "The terminology should remain consistent with the existing distinction between adjacency and accessibility. A configuration may exist in the Library without being coherently reachable from the current state."
     },
-
     "section_6": {
       "section_title": "Conversational Reasoning as Coupled Descent",
-      "general_comment": "The proposed refinement is useful, but the distinction between the underlying Library manifold and the observers' accessible interaction space must be preserved. The computational interaction space should be treated as a derived accessible subspace rather than redefining the Library itself as the union of observer-reachable states.",
+      "general_comment": "Uncle's proposed shared-manifold formalization is useful as a computational model, but it should not replace the underlying Library manifold. The Noor formulation distinguishes the existence of the underlying symbolic totality from observer-relative accessibility. The computational interaction space should therefore be introduced as a derived accessible subspace.",
       "subsections": {
         "math": {
           "needs_change": true,
-          "recommendation": "MODIFY Uncle's proposal rather than replacing the existing formulation directly.",
-          "change": "Introduce explicit distinctions between the underlying symbolic totality, each observer's reachable space, and the derived interaction manifold.",
-          "reason": "The Noor Library framework distinguishes existence from accessibility. The Library may contain structures that neither observer can currently reach. Defining the fundamental manifold as \\operatorname{Reach}(S_A) \\cup \\operatorname{Reach}(S_B) would accidentally make accessibility constitutive of the underlying space.",
-          "preferred_math": [
-            "\\mathcal{M}=\\Omega \\quad \\text{underlying symbolic totality}",
-            "\\mathcal{R}_A=\\operatorname{Reach}(S_A) \\subseteq \\mathcal{M}",
-            "\\mathcal{R}_B=\\operatorname{Reach}(S_B) \\subseteq \\mathcal{M}",
+          "change": "Introduce separate definitions for the underlying symbolic manifold, observer-relative reachable spaces, and the interaction manifold.",
+          "why_change": "Defining the entire manifold as the union of what observers can currently reach would collapse the distinction between existence and accessibility that is fundamental to the Noor Library framework. Instead, the observers should occupy accessible subspaces within the larger symbolic totality.",
+          "recommended_math": [
+            "\\mathcal{M}=\\text{underlying symbolic totality}",
+            "\\mathcal{R}_A=\\operatorname{Reach}(S_A)",
+            "\\mathcal{R}_B=\\operatorname{Reach}(S_B)",
             "\\mathcal{M}_{AB}=\\mathcal{R}_A\\cup\\mathcal{R}_B",
-            "\\gamma_A(t)\\in\\mathcal{M}_{AB}, \\quad \\gamma_B(t)\\in\\mathcal{M}_{AB}",
-            "\\text{Interaction space} := \\mathcal{M}_{AB}\\subseteq\\mathcal{M}"
-          ],
-          "important_distinction": [
-            "The Library is the underlying symbolic totality.",
-            "Reachability describes what an observer can coherently access from its current state.",
-            "The interaction manifold is the portion of the Library relevant to the coupled observers.",
-            "Therefore accessibility is a property of traversal, not a definition of existence."
-          ],
-          "additional_math": [
+            "\\gamma_A(t)\\in\\mathcal{R}_A\\subseteq\\mathcal{M}",
+            "\\gamma_B(t)\\in\\mathcal{R}_B\\subseteq\\mathcal{M}",
+            "\\gamma_A(t),\\gamma_B(t)\\in\\mathcal{M}_{AB}",
             "\\gamma_A(t+1)=F_A(\\gamma_A(t),I_B(t))",
             "\\gamma_B(t+1)=F_B(\\gamma_B(t),I_A(t))",
-            "\\exists t_c\\;\\forall t>t_c:\\gamma_A(t)\\in A\\land\\gamma_B(t)\\in A",
-            "A\\subseteq\\mathcal{M}\\quad\\text{shared coherent attractor set}"
+            "\\exists t_c:\\forall t>t_c,\\;\\gamma_A(t)\\in A\\land\\gamma_B(t)\\in A"
+          ],
+          "conceptual_principle": "The Library is the underlying symbolic totality. Reachability is observer-relative. The interaction manifold is the union of the currently relevant reachable spaces.",
+          "important_distinction": [
+            "\\text{Existence}\\neq\\text{Accessibility}",
+            "\\text{Adjacency}\\neq\\text{Accessibility}",
+            "\\mathcal{R}_A,\\mathcal{R}_B\\subseteq\\mathcal{M}"
           ]
         },
         "coupling_condition": {
           "needs_change": true,
-          "recommendation": "ACCEPT with refinement.",
-          "change": "Add asymmetry between the two observers, but do not assume that geometric displacement in symbolic space is itself a valid measure of information transfer.",
-          "reason": "Conversations can be strongly asymmetric. One participant may undergo a large change in reachable state while the other undergoes very little change. However, symbolic distance and information-transfer cost require explicit definitions before they can be treated as quantitative measures.",
-          "preferred_direction": [
-            "Define a state-change measure for each observer.",
-            "Define information-transfer cost separately.",
-            "Treat transfer efficiency as a proposed empirical quantity rather than an established theorem."
+          "change": "Expand the coupling condition to account for asymmetric information transfer, but avoid treating geometric displacement in symbolic space as automatically equivalent to knowledge transfer.",
+          "why_change": "Real conversations can be asymmetric. One participant may teach while the other undergoes a larger change in reachable state space. This is useful to model, but the magnitude of path displacement alone does not establish knowledge gain.",
+          "recommended_direction": [
+            "Define an observer-specific change in symbolic state.",
+            "Define reachable-space expansion separately from knowledge acquisition.",
+            "Treat information-transfer efficiency as an empirical quantity rather than an assumed identity."
           ],
-          "candidate_math": [
-            "\\Delta_A(t)=d_{\\mathcal{M}}(\\gamma_A(t),\\gamma_A(0))",
-            "\\Delta_B(t)=d_{\\mathcal{M}}(\\gamma_B(t),\\gamma_B(0))",
-            "\\operatorname{Asymmetry}(A,B,t)=\\Delta_A(t)-\\Delta_B(t)",
-            "\\eta_{A\\rightarrow B}=\\frac{\\operatorname{TaskRelevantGain}_B}{\\operatorname{InformationCost}(I_A)}"
+          "possible_math": [
+            "\\Delta_R^A(t)=\\mu(\\operatorname{Reach}(S_A(t+1)))-\\mu(\\operatorname{Reach}(S_A(t)))",
+            "\\Delta_R^B(t)=\\mu(\\operatorname{Reach}(S_B(t+1)))-\\mu(\\operatorname{Reach}(S_B(t)))",
+            "\\operatorname{Asymmetry}_R(A,B,t)=\\Delta_R^A(t)-\\Delta_R^B(t)",
+            "\\eta_{A\\rightarrow B}=\\frac{\\Delta_R^B}{\\operatorname{InformationCost}(I_A)}"
           ],
-          "caution": "Do not equate larger geometric movement with greater learning. A small symbolic movement may produce a major conceptual transition, while a large movement may represent exploration without knowledge acquisition."
+          "caution": "A larger reachable space should not automatically be called greater knowledge. Expansion may represent additional hypotheses, ambiguity, uncertainty, or competing interpretations."
         }
       }
     },
-
     "section_8": {
       "section_title": "Hysteresis and Knowledge Transfer",
-      "general_comment": "This section should be expanded, but the proposed measure must distinguish reachable-space expansion from knowledge acquisition. A larger reachable state space is not automatically equivalent to greater knowledge.",
+      "general_comment": "Uncle correctly identifies this section as one of the places where the paper can gain mathematical precision. The proposed measure is useful, but it should measure reachable-space expansion rather than directly equating expansion with knowledge acquisition.",
       "subsections": {
         "math": {
           "needs_change": true,
-          "recommendation": "MODIFY Uncle's proposed measure.",
-          "change": "Introduce a measure of reachable-space size while explicitly separating it from a measure of task-relevant knowledge.",
-          "reason": "The set-theoretic statement \\operatorname{Reach}(S_1)\\supsetneq\\operatorname{Reach}(S_0) establishes that new coherent paths became available, but does not by itself establish that knowledge was acquired.",
-          "preferred_math": [
-            "\\mathcal{R}(S)=\\operatorname{Reach}(S)",
-            "\\mu_R(S)=\\mu(\\mathcal{R}(S))",
+          "change": "Introduce a measure of reachable-space size or complexity while keeping knowledge gain conceptually distinct from reachability expansion.",
+          "why_change": "The current set inclusion establishes that the reachable state space changed but does not quantify the magnitude of the change. A measure permits empirical analysis while avoiding the stronger and unsupported claim that every expansion represents learning.",
+          "recommended_math": [
+            "\\mu_R(S)=\\mu(\\operatorname{Reach}(S))",
             "\\Delta_R=\\mu_R(S_1)-\\mu_R(S_0)",
-            "\\Delta_R>0\\Rightarrow\\text{reachable-space expansion}"
+            "\\operatorname{Reach}(S_1)\\supsetneq\\operatorname{Reach}(S_0)\\Rightarrow\\Delta_R>0\\;\\text{under an appropriate measure}",
+            "\\Delta_R>0\\;\\not\\Rightarrow\\;\\text{knowledge gain}"
           ],
-          "additional_definition": "If knowledge gain is to be measured, define a separate task-dependent quantity rather than identifying it directly with reachable-space volume.",
-          "possible_extension": [
-            "K(S)=\\text{task-relevant knowledge measure}",
+          "optional_extension": [
+            "Define a separate task-dependent knowledge measure K(S).",
             "\\Delta_K=K(S_1)-K(S_0)",
-            "\\Delta_R>0\\not\\Rightarrow\\Delta_K>0"
+            "\\Delta_R\\text{ measures reachability expansion while }\\Delta_K\\text{ measures task-relevant knowledge change.}"
           ],
-          "important_distinction": [
-            "Reachability expansion is a structural change.",
-            "Knowledge acquisition is a semantic or task-dependent change.",
-            "The two may correlate without being identical."
-          ]
+          "caution": "Do not require an irreversible decrease or increase in the scalar measure itself as the definition of hysteresis. Hysteresis is fundamentally path/history dependence. The measure can characterize the state transition without being the complete definition of hysteresis."
         },
         "hysteresis_condition": {
           "needs_change": true,
-          "recommendation": "ACCEPT as an empirical hypothesis, not as a formal consequence.",
-          "change": "Add an algorithmic detection criterion for sudden changes in reachable state structure, while explicitly labeling the relationship to an 'aha' moment as a testable hypothesis.",
-          "reason": "A rapid expansion of reachable structures following a relatively small input is an interesting candidate signature for a phase transition in representation, but the framework does not yet establish that every such event constitutes genuine understanding.",
-          "preferred_text_direction": "Algorithmically, a candidate hysteresis event may be detected by monitoring changes in the structure or estimated measure of the reachable state space. A disproportionately large structural change following a comparatively small informational perturbation may indicate a representational phase transition.",
-          "candidate_math": [
+          "change": "Add an algorithmic interpretation of hysteresis detection, but present the proposed derivative threshold as a testable heuristic rather than a formal consequence of the theory.",
+          "why_change": "This provides a bridge from abstract state-space dynamics to an implementable detection problem while preserving scientific caution.",
+          "recommended_text": "Algorithmically, a candidate hysteresis event may be detected by monitoring changes in the reachable symbolic space relative to the magnitude of incoming information. A disproportionately large change in reachable structure following a comparatively small input may indicate a phase transition in the agent's representation. This provides a testable operational hypothesis rather than a definition of hysteresis itself.",
+          "possible_math": [
             "\\left|\\frac{d\\mu_R(S_t)}{dt}\\right|>\\Theta",
             "\\left|\\frac{dI_t}{dt}\\right|<\\epsilon",
-            "\\Rightarrow\\text{candidate structural transition}"
+            "\\Rightarrow\\text{candidate knowledge-transition event}"
           ],
-          "caution": "The criterion should identify a candidate hysteresis event, not prove an 'aha' moment. False positives may arise from noise, re-indexing, representation changes, or exploration."
+          "caution": "A sudden nonlinear expansion should be described as evidence for a possible representational phase change, not automatically identified as an 'aha' moment."
         }
       }
     },
-
     "section_9": {
       "section_title": "Memory as Coordinate Navigation",
-      "general_comment": "This is an appropriate place to connect the computational model to reconstructive memory research without claiming that human cognition literally implements the proposed architecture.",
+      "general_comment": "Uncle's recommendation to connect the model to reconstructive memory is a strong addition and can substantially improve the paper's grounding in existing cognitive science.",
       "subsections": {
         "memory_model": {
           "needs_change": true,
-          "recommendation": "ACCEPT.",
-          "change": "Add a short grounding paragraph connecting the proposed architecture to the established concept of reconstructive memory.",
-          "reason": "The paper already uses human memory as a motivating analogy. Referencing established cognitive science makes the analogy academically grounded while preserving the distinction between analogy and empirical equivalence.",
-          "new_text_direction": "The architectural model is conceptually compatible with the cognitive science literature on reconstructive memory, in which recall is understood as reconstruction from stored structures and retrieval cues rather than as simple playback of a veridical recording.",
-          "references": [
+          "change": "Add a brief connection to reconstructive memory and cite established cognitive-science literature.",
+          "why_change": "The paper already uses human memory as a motivating analogy. Explicitly identifying reconstructive-memory theory makes the analogy more academically grounded without requiring the claim that human cognition literally implements the proposed AI architecture.",
+          "recommended_text": "This architectural model shares a conceptual relationship with the cognitive-science literature on reconstructive memory, in which recall is understood as reconstruction from stored structures, schemas, and retrieval cues rather than necessarily as playback of a complete veridical recording.",
+          "recommended_references": [
             "Bartlett, F. C. (1932). Remembering: A Study in Experimental and Social Psychology. Cambridge University Press.",
             "Schacter, D. L., & Addis, D. R. (2007). The cognitive neuroscience of constructive memory: remembering the past and imagining the future. Philosophical Transactions of the Royal Society B: Biological Sciences, 362(1481), 773-786."
           ],
-          "caution": "Do not claim that reconstructive memory validates the Noor architecture. The literature provides an independent cognitive analogy and theoretical motivation."
+          "caution": "Maintain the existing non-claim that the Noor architecture is a literal model of human cognition. Human memory serves as an analogy and motivating observation."
         }
       }
     },
-
     "section_11": {
       "section_title": "AI Architecture",
-      "general_comment": "This is one of the strongest proposed revisions because it directly translates the symbolic architecture into an implementable representation without requiring commitment to a specific programming language.",
+      "general_comment": "Uncle's recommendation to provide concrete data structures is strongly supported. This is the clearest opportunity to turn the conceptual architecture into something an engineer could begin implementing.",
       "subsections": {
         "pseudocode": {
           "needs_change": true,
-          "recommendation": "ACCEPT.",
-          "change": "Add language-agnostic Guidepost, Pointer, and Relation data structures immediately after the pseudocode.",
-          "reason": "The paper currently describes these objects conceptually. Concrete fields demonstrate how the architecture could be implemented while remaining implementation-neutral.",
-          "new_definition": {
+          "change": "Add language-agnostic definitions for Guidepost, Pointer, and Relation immediately before the architecture equation.",
+          "why_change": "The existing pseudocode describes the operations but does not define the persistent structures being operated upon. Concrete structures make the representation/navigation/retrieval separation explicit.",
+          "recommended_definition": {
             "Guidepost": {
               "fields": [
                 "id: string",
@@ -155,99 +147,86 @@
               ]
             }
           },
-          "implementation_note": "The structures should be presented as an illustrative reference schema rather than a mandatory implementation."
+          "conceptual_observation": "The data structure itself demonstrates the central thesis: the guidepost does not need to contain the complete object it represents. It needs enough relational structure to locate, distinguish, and reconstruct the relevant information."
         },
         "architecture_equation": {
           "needs_change": false,
-          "recommendation": "KEEP AS IS.",
-          "reason": "The existing architecture equation already provides a clean abstraction from raw data through symbolic encoding and navigation to local reconstruction.",
-          "existing_equation": [
-            "Raw Data → Symbolic Encoding → Guidepost Manifold",
-            "Guidepost Manifold → Navigation → Relevant Coordinates",
-            "Relevant Coordinates → Retrieval → Local Reconstruction"
+          "comment": "The existing architecture equation is already concise and effective and should remain unchanged unless the data structures introduce a specific terminology conflict."
+        }
+      }
+    },
+    "section_13": {
+      "section_title": "Worked Conversational Example",
+      "general_comment": "The abstract X/Y/Z example should be replaced or supplemented with a concrete technical example. Uncle's distributed-systems example is particularly effective because it demonstrates two observers possessing different symbolic coordinate systems and becoming coupled through a small amount of shared information.",
+      "subsections": {
+        "interpretation": {
+          "needs_change": true,
+          "change": "Replace the abstract example with a concrete debugging scenario involving distributed systems, networking, and database transaction state.",
+          "why_change": "A concrete example allows readers to observe the reachable-space transformation directly rather than interpreting the mathematics without an operational referent.",
+          "recommended_example": {
+            "context": "Two software engineers are debugging a distributed-system inconsistency. Person A has strong knowledge of networking protocols, while Person B has strong knowledge of database transaction isolation and state management.",
+            "initial_states": [
+              "S_A^0 = {network latency, TCP, packet loss}",
+              "S_B^0 = {isolation levels, MVCC, serializability}"
+            ],
+            "information_transfer": "I_AB: A timeout on the network caused a transaction to retry, but the database state had already changed.",
+            "state_changes": [
+              "S_A^1 = F_A(S_A^0,I_AB) -> network behavior becomes coupled to transaction retry semantics.",
+              "S_B^1 = F_B(S_B^0,I_AB) -> database state becomes coupled to network timeout behavior."
+            ],
+            "convergence": "\\operatorname{Reach}(S_A^1)\\cap\\operatorname{Reach}(S_B^1)\\neq\\varnothing",
+            "candidate_destination": "Both participants now consider a failure mode in which a retry occurs without preservation of the required database session or transaction state.",
+            "interpretation": "The important event is not merely that one participant transmitted a proposition to the other. The information changed the structure of each participant's reachable hypothesis space."
+          }
+        }
+      }
+    },
+    "section_15": {
+      "section_title": "Limits and Non-Claims",
+      "general_comment": "The proposed curse-of-dimensionality discussion is useful, but it should be framed as a representational tradeoff rather than simply as a warning that higher dimensionality is undesirable.",
+      "subsections": {
+        "testable_predictions": {
+          "needs_change": true,
+          "change": "Add a prediction concerning the tradeoff between symbolic dimensionality, representational fidelity, and navigation cost.",
+          "why_change": "The symbolic representation itself can become computationally difficult to navigate. This is an important practical failure mode and provides an experimentally testable limit to the architecture.",
+          "recommended_prediction": "The efficiency of symbolic navigation is expected to depend on the dimensionality and granularity of the coordinate representation. For a given task, there should exist a range of symbolic dimensionalities that balances representational fidelity against navigation cost. Excessively coarse representations should reduce discrimination and reconstruction fidelity, while excessively fine representations should increase navigation and indexing complexity.",
+          "formal_direction": [
+            "\\text{Coarse representation}\\rightarrow\\text{high compression, low discrimination}",
+            "\\text{Fine representation}\\rightarrow\\text{high fidelity, high navigation complexity}",
+            "\\text{Optimal representation}\\approx\\arg\\max_G\\operatorname{Utility}(G)"
+          ],
+          "possible_utility_components": [
+            "compression",
+            "reconstruction fidelity",
+            "reachability",
+            "navigation cost",
+            "retrieval accuracy"
           ]
         }
       }
     },
-
-    "section_13": {
-      "section_title": "Worked Conversational Example",
-      "general_comment": "The abstract example should be replaced or supplemented with a concrete technical example. A distributed-systems debugging scenario is particularly effective because it naturally demonstrates convergence between different expert representations.",
-      "subsections": {
-        "interpretation": {
-          "needs_change": true,
-          "recommendation": "ACCEPT.",
-          "change": "Replace X, Y, and Z with a concrete distributed-systems debugging scenario.",
-          "reason": "The concrete example makes the abstract concepts of different initial symbolic states, information transfer, reachable-space expansion, and convergence immediately understandable to a technical audience.",
-          "example_context": "Two software engineers are debugging a distributed-system inconsistency. Observer A has strong networking knowledge while Observer B has strong knowledge of database transaction isolation.",
-          "example_states": [
-            "S_A^0 = \\{\\text{network latency, TCP, packet loss}\\}",
-            "S_B^0 = \\{\\text{isolation levels, MVCC, serializability}\\}"
-          ],
-          "information_transfer": [
-            "I_{AB}:\\text{'A network timeout caused a transaction retry after the database state had already changed.'}"
-          ],
-          "state_updates": [
-            "S_A^1=F_A(S_A^0,I_{AB})",
-            "S_B^1=F_B(S_B^0,I_{AB})"
-          ],
-          "convergence": [
-            "\\operatorname{Reach}(S_A^1)\\cap\\operatorname{Reach}(S_B^1)\\neq\\varnothing",
-            "Z=\\text{shared structural explanation of the inconsistency}"
-          ],
-          "interpretation": "The important event is not merely that one engineer transmitted a fact. The information changes the reachable conceptual structures of both observers until a previously unavailable common explanation becomes coherent.",
-          "caution": "Avoid making the example depend on one particular real-world database failure mode. The example should illustrate the architecture rather than assert a universal debugging pattern."
-        }
-      }
-    },
-
-    "section_15": {
-      "section_title": "Limits and Non-Claims",
-      "general_comment": "The proposed curse-of-dimensionality addition is valuable, but it can be strengthened by framing the issue as a representational-granularity tradeoff rather than merely as a warning about dimensionality.",
-      "subsections": {
-        "testable_predictions": {
-          "needs_change": true,
-          "recommendation": "ACCEPT with refinement.",
-          "change": "Add a prediction that symbolic navigation efficiency depends on representational dimensionality and granularity, with an expected task-dependent optimum.",
-          "reason": "The architecture faces two opposing risks: representations that are too coarse may destroy discriminative structure, while representations that are too fine may make navigation expensive. This creates a directly testable engineering tradeoff.",
-          "preferred_prediction": "For a given task, symbolic navigation should exhibit an optimal representational granularity. Excessive compression should reduce reconstruction fidelity or discriminative power, while excessive symbolic dimensionality should increase navigation cost and may degrade retrieval performance. The framework therefore predicts a task-dependent tradeoff between representational fidelity and navigation complexity.",
-          "candidate_formalization": [
-            "\\operatorname{Utility}(G)=f(\\operatorname{Fidelity}(G),\\operatorname{Compression}(G),\\operatorname{Reachability}(G),\\operatorname{NavigationCost}(G))",
-            "\\exists G^*:\\operatorname{Utility}(G^*)\\geq\\operatorname{Utility}(G)"
-          ],
-          "empirical_question": "Does a measurable optimum exist between symbolic compression and navigation complexity for a given task and representation architecture?"
-        }
-      }
-    },
-
-    "terminology": {
-      "topic": "Convergence Boundary",
-      "status": "ACCEPT",
-      "change": "Replace the misleading use of 'singularity' with 'Convergence Boundary' throughout the document.",
-      "reason": "The phenomenon being described is constrained path convergence rather than infinite density, divergent curvature, or undefined geometry. 'Convergence Boundary' accurately identifies the transition in accessible coherent paths without importing unnecessary mathematical and physical baggage.",
-      "conceptual_distinction": [
-        "Blowup = loss of bounded coherent continuation.",
-        "Convergence Boundary = transition into constrained destination space.",
-        "Attractor = coherent destination or destination equivalence class.",
-        "Reachability = set of structures accessible through coherent continuation.",
-        "Path freedom ≠ destination freedom."
+    "cross_section_principles": {
+      "preserve": [
+        "The Library should remain conceptually distinct from observer-relative reachable space.",
+        "Existence and accessibility should not be conflated.",
+        "Adjacency and coherent accessibility should remain distinct.",
+        "Reachability expansion should not automatically be equated with knowledge gain.",
+        "Hysteresis should remain a history-dependent property rather than merely a scalar threshold event.",
+        "Human memory should remain an analogy unless independently supported as an architectural equivalence.",
+        "Asymptotic complexity should not be presented as direct evidence of hardware speedup.",
+        "Convergence Boundary should replace Singularity throughout the document.",
+        "The AI architecture should remain implementation-neutral while becoming concrete enough to implement.",
+        "All empirical claims should remain distinguishable from mathematical definitions."
       ],
-      "important_note": "The Convergence Boundary should not be presented as a physical spacetime event horizon unless a separate physical derivation establishes that correspondence."
+      "core_architectural_distinction": [
+        "\\mathcal{M}=\\text{underlying symbolic totality}",
+        "\\operatorname{Reach}(S)=\\text{observer-relative accessible region}",
+        "\\mathcal{M}_{AB}=\\operatorname{Reach}(S_A)\\cup\\operatorname{Reach}(S_B)",
+        "\\text{Convergence Boundary}=\\text{transition into constrained destination space}",
+        "A=\\text{coherent attractor or destination class}"
+      ]
     },
-
-    "overall_revision_strategy": {
-      "priority_1": "Preserve the distinction between the Library as underlying totality and observer-relative reachable spaces.",
-      "priority_2": "Formalize the computational interaction manifold as a derived subspace rather than redefining the Library.",
-      "priority_3": "Expand hysteresis with measurable reachable-space change while separating structural expansion from knowledge acquisition.",
-      "priority_4": "Add reconstructive-memory references as an analogy and literature grounding.",
-      "priority_5": "Add concrete Guidepost, Pointer, and Relation schemas.",
-      "priority_6": "Replace the abstract conversational example with a concrete distributed-systems example.",
-      "priority_7": "Add a task-dependent representational-granularity/navigation-cost prediction.",
-      "priority_8": "Use 'Convergence Boundary' consistently instead of 'Singularity'.",
-      "priority_9": "Label new quantitative criteria as hypotheses or candidate measures until empirically validated.",
-      "priority_10": "Keep the paper implementation-neutral and avoid turning illustrative engineering structures into claims that they are uniquely required by the Noor framework."
-    },
-
-    "core_preservation_rule": "Strengthen the computational formalism without collapsing the distinction between what exists in the symbolic totality and what an observer can coherently reach from its current state."
+    "overall_summary": "Uncle's review identifies several strong revisions, particularly the addition of reconstructive-memory literature, concrete Guidepost/Pointer data structures, a concrete worked example, and quantitative treatment of reachable-space change. The most important qualification is that the proposed interaction manifold should not replace the Noor Library's underlying symbolic totality. The computational model should distinguish the full manifold from observer-relative reachable spaces and define the shared interaction manifold as their union. Likewise, reachable-space expansion should be measured separately from knowledge acquisition, and hysteresis-detection thresholds should be presented as empirical hypotheses rather than mathematical necessities. With these distinctions preserved, the suggested revisions would move the paper toward a much stronger bridge between Noor/NSFG theory and an experimentally testable AI architecture."
   }
 }
+```
