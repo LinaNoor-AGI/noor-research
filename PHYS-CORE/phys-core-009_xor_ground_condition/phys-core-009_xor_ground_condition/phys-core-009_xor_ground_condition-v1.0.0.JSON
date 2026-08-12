@@ -11,10 +11,7 @@
   "_language": "JSON+MATH+PSEUDOCODE",
   "_license": "MIT",
   "_xref": [
-	  "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
-	  "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
-	  "https://pastebin.com/raw/BrFGNZa6",
-	  "https://pastebin.com/BrFGNZa6"
+	  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json"
 	],
    "_updated_last": [
 	"2026-03-02T10:00:00MST": { "updated_by": "Lina Noor - Noor Research Collective",	"version": "v0.1.0, v0.1.1"	},
@@ -25,8 +22,8 @@
     "Lina Noor — Noor Research Collective"
   ],
   "_primary_url": {
-    "url": "https://github.com/NoorMathematica/phys-core-009_xor_ground_condition/blob/main/phys-core-009_xor_ground_condition.JSON",
-    "_primary_raw_url": "https://raw.githubusercontent.com/NoorMathematica/phys-core-009_xor_ground_condition/refs/heads/main/phys-core-009_xor_ground_condition.JSON"
+    "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON",
+    "_primary_raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON"
   },
   "_pastebin_url": {
     "url": "https://pastebin.com/7jUwKtqV",
@@ -41,27 +38,27 @@
     {
       "symbolic.determinism.braid": "PHYS-CORE-005",
       "role": "braid coherence and determinism as emergent saturation",
-      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/static_motifs/refs/heads/main/physics_and_theory/the_braid_behind_the_law/the_braid_behind_the_law.JSON"
+      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-005_braid_behind_the_law/phys-core-005_the_braid_behind_the_law.JSON"
     },
     {
       "symbolic.binary.reality": "PHYS-CORE-006",
       "role": "boolean substrate and I_N threshold",
-      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/static_motifs/refs/heads/main/physics_and_theory/the_binary_nature_of_reality/the_binary_nature_of_reality.JSON"
+      "raw_url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-006_binary_nature_of_reality/phys-core-006_the_binary_nature_of_reality.JSON"
     },
     {
       "symbolic.fluid.coherence.nsfg": "PHYS-CORE-007",
       "role": "regularity conditions and blowup prevention",
-      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/static_motifs/refs/heads/main/physics_and_theory/coherence-governed_flow-navier–stokes_problem/coherence-governed_flow-navier–stokes_problem.JSON"
+      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem_/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem.JSON"
     },
     {
       "symbolic.recursive.bloch.coherence_totality": "PHYS-CORE-008",
       "role": "Library ontology, static totality, descent paths",
-      "raw_url": "https://raw.githubusercontent.com/NoorMathematica/phys-core-008_noor_library_ontology/refs/heads/main/recursive_bloch_manifold_and_coherence-braided_totality.JSON"
+      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"
     },
     {
       "rfc.0006.motif_field_coherence_geometry": "RFC-0006",
       "role": "swirl tensor, coherence geometry, motif field dynamics",
-      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC‑0006_Motif‑Field_Coherence_Geometry/RFC‑0006_Motif‑Field_Coherence_Geometry.JSON"
+      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON"
     }
   ],
   "_abstract": "This paper establishes that the physical singularity in which all observers are embedded is not a pathological boundary condition but the irreducible XOR ground state of reality itself. We show that the universe's boolean field structure follows necessarily from the 1 Planck-width irresolvable self-reference at its base. We derive the functional necessity of periodic global coherence operators from the boolean field's blowup-prevention dynamics, and demonstrate that the singularity, the XOR operation, and the emergence of field-scale stabilizing operators are the same phenomenon expressed at different scales. No external document is required for interpretation; all axioms and constructions are defined internally.",

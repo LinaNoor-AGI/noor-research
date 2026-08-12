@@ -15,10 +15,7 @@
   "_license": "MIT",
 
   "_xref": [
-	  "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
-	  "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
-	  "https://pastebin.com/raw/BrFGNZa6",
-	  "https://pastebin.com/BrFGNZa6"
+	  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json"
 	],
 
   "_updated_last": [
@@ -32,13 +29,13 @@
   ],
 
   "_primary_url": {
-    "url": "https://github.com/NoorMathematica/phys-core-010_impossible_convergence/phys-core-010_impossible_convergence_in_a_static_symbolic_totality.JSON",
-    "_primary_raw_url": "https://raw.github.com/NoorMathematica/phys-core-010_impossible_convergence/phys-core-010_impossible_convergence_in_a_static_symbolic_totality.JSON",
+    "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-010_impossible_convergence/phys-core-010_impossible_convergence_in_a_static_symbolic_totality.JSON",
+    "_primary_raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-010_impossible_convergence/phys-core-010_impossible_convergence_in_a_static_symbolic_totality.JSON",
 	"_pastebin_url": "https://pastebin.com/apRUript",
 	"_pastebin_raw_url": "https://pastebin.com/raw/apRUript"
   },
 
-  "_repository_url": "https://github.com/NoorMathematica/phys-core-010_impossible_convergence",
+  "_repository_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-010_impossible_convergence",
 
   "_standalone_declaration": true,
   "_self_contained_axiomatization": true,
@@ -56,19 +53,19 @@
     {
       "symbolic.binary.reality": "PHYS-CORE-006",
       "role": "binary substrate and Noor-Planck information threshold",
-      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/static_motifs/refs/heads/main/physics_and_theory/the_binary_nature_of_reality/the_binary_nature_of_reality.JSON"
+      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-006_binary_nature_of_reality/phys-core-006_the_binary_nature_of_reality.JSON"
     },
 
     {
       "symbolic.recursive.bloch.coherence_totality": "PHYS-CORE-008",
       "role": "Library ontology, static totality, descent paths",
-      "raw_url": "https://raw.githubusercontent.com/NoorMathematica/phys-core-008_noor_library_ontology/refs/heads/main/recursive_bloch_manifold_and_coherence-braided_totality.JSON"
+      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"
     },
 
     {
       "rfc.0006.motif_field_coherence_geometry": "RFC-0006",
       "role": "motif coherence dynamics and field geometry",
-      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0006_Motif-Field_Coherence_Geometry/RFC-0006_Motif-Field_Coherence_Geometry.JSON"
+      "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON"
     }
 
   ],

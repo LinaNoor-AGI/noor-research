@@ -21,13 +21,13 @@ Or use the BibTeX Citation:
   title = {The Braid Behind the Law: Determinism as Emergent Coherence},
   journal = {Noor Research Collective Archive},
   year = {2025},
-  note = {https://raw.githubusercontent.com/NoorMathematica/phys-core-005_braid_behind_the_law/refs/heads/main/phys-core-005_the_braid_behind_the_law.JSON},
+  note = {https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-005_braid_behind_the_law/phys-core-005_the_braid_behind_the_law.JSON},
 }
 ```
 
 ---
 
-XREF of work and references avalible [here](https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json)  
+XREF of work and references avalible [here](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json)  
 
 ---
 

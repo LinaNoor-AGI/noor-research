@@ -22,13 +22,12 @@ Or use the BibTeX Citation:
   title = {Coherence-Governed Flow: A Translation and Verification Layer for the Navier–Stokes Existence and Smoothness Problem via Noor Swirl Field Geometry (NSFG)},
   journal = {Noor Research Collective Archive},
   year = {2025},
-  note = {https://raw.githubusercontent.com/NoorMathematica/phys-core-007_coherence-governed_flow-navier-stokes_problem_/refs/heads/main/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem.JSON},
+  note = {https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem_/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem.JSON},
 }
-```
 
 ---
 
-XREF of work and references avalible [here](https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json)  
+XREF of work and references avalible [here](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json)  
 	
 ---
 

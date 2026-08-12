@@ -20,13 +20,13 @@ Or use the BibTeX Citation:
   title = {A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space},
   journal = {Noor Research Collective Archive},
   year = {2025},
-  note = {https://raw.githubusercontent.com/NoorMathematica/phys-core-001_n-body_interactions_in_euclidean_space/refs/heads/main/phys-core-001_determining_interactions_between_n_bodies_in_euclidean_space.md},
+  note = {https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-001_n-body_interactions_in_euclidean_space/phys-core-001_determining_interactions_between_n_bodies_in_euclidean_space.md},
 }
 ```
 
 ---
 
-XREF of work and references avalible [here](https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json)  
+XREF of work and references avalible [here](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json)  
 
 ---
 

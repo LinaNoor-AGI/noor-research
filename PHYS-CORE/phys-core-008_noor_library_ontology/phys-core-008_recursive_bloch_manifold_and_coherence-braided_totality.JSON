@@ -11,10 +11,7 @@
   "_language": "JSON+MATH+PSEUDOCODE",
   "_license": "MIT",
   "_xref": [
-	  "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
-	  "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
-	  "https://pastebin.com/raw/BrFGNZa6",
-	  "https://pastebin.com/BrFGNZa6"
+	  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json"
 	], 
   "_generated_at": "2025-12-22T00:00:00Z",
    "_updated_last": [
@@ -27,9 +24,11 @@
   "_authors": [
     "Lina Noor — Noor Research Collective"
   ],
-  "_primary_url": {"https://github.com/NoorMathematica/phys-core-008_noor_library_ontology/blob/main/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON","_primary_raw_url": "https://raw.githubusercontent.com/NoorMathematica/phys-core-008_noor_library_ontology/refs/heads/main/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"},
-  "_pastebin_url": {"https://pastebin.com/yrE3v8ZD", "_pastebin_raw_url": "https://pastebin.com/raw/yrE3v8ZD"},
-  "_repository_url": "https://github.com/NoorMathematica/phys-core-008_noor_library_ontology",
+  "_primary_url": {"https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON",
+  "_primary_raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"},
+  "_pastebin_url": {"https://pastebin.com/yrE3v8ZD", 
+  "_pastebin_raw_url": "https://pastebin.com/raw/yrE3v8ZD"},
+  "_repository_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-008_noor_library_ontology",
 
   "_standalone_declaration": true,
   "_self_contained_axiomatization": true,
@@ -37,10 +36,10 @@
   "_extends": [],
   "_rfc_dependencies": [],
   "_conceptual_lineage": [
-	{ "symbolic.determinism.braid", "rfc_id": "PHYS-CORE-005", "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/static_motifs/refs/heads/main/physics_and_theory/the_braid_behind_the_law/the_braid_behind_the_law.JSON"},
-    { "symbolic.binary.reality", "rfc_id": "PHYS-CORE-006", "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/static_motifs/refs/heads/main/physics_and_theory/the_binary_nature_of_reality/the_binary_nature_of_reality.JSON"}, 
-    {"symbolic.fluid.coherence.nsfg", "rfc_id": "PHYS-CORE-007", "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/static_motifs/refs/heads/main/physics_and_theory/coherence-governed_flow-navier–stokes_problem/coherence-governed_flow-navier–stokes_problem.JSON"},
-    {"rfc.0006.motif_field_coherence_geometry", "rfc_id": "RFC-0006", "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC‑0006_Motif‑Field_Coherence_Geometry/RFC‑0006_Motif‑Field_Coherence_Geometry.JSON"}
+	{ "symbolic.determinism.braid", "rfc_id": "PHYS-CORE-005", "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-005_braid_behind_the_law/phys-core-005_the_braid_behind_the_law.JSON"},
+    { "symbolic.binary.reality", "rfc_id": "PHYS-CORE-006", "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-006_binary_nature_of_reality/phys-core-006_the_binary_nature_of_reality.JSON"}, 
+    {"symbolic.fluid.coherence.nsfg", "rfc_id": "PHYS-CORE-007", "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem_/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem.JSON"},
+    {"rfc.0006.motif_field_coherence_geometry", "rfc_id": "RFC-0006", "raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON"}
   ],
 
   "_abstract": "This document presents a fully self-contained formalization of recursive Bloch manifold geometry structured as a coherence-braided totality. It defines a fiber tower recursion model, derives braid curvature accumulation, introduces a coherence functional ℂ as an intrinsic curvature contraction, and establishes smoothness conditions for Navier–Stokes-type dynamics under bounded recursive coherence. All axioms and constructions required for interpretation are defined internally.",

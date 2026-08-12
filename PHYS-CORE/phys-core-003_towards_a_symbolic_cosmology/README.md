@@ -19,7 +19,7 @@ Or use the BibTeX Citation:
   title = {Toward a Symbolic Cosmology: Noor Swirl Field Geometry and Point Space},
   journal = {Noor Research Collective Archive},
   year = {2025},
-  note = {https://raw.githubusercontent.com/NoorMathematica/phys-core-003_towards_a_symbolic_cosmology/refs/heads/main/phys-core-003_Towards_a_Symbolic_Cosmology.JSON},
+  note = {https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-003_towards_a_symbolic_cosmology/phys-core-003_Towards_a_Symbolic_Cosmology.JSON},
 }
 ```
 

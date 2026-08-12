@@ -2,7 +2,7 @@
 
 ## The Singularity as XOR Ground Condition: Boolean Field Structure, Irresolvable Self-Reference, and the Emergence of Global Coherence Operators
 
-Expanding the [Recursive Bloch Manifold and Coherence Braided Totality](https://raw.githubusercontent.com/NoorMathematica/phys-core-008_noor_library_ontology/refs/heads/main/recursive_bloch_manifold_and_coherence-braided_totality.JSON) of `The Library`, this paper establishes that the physical singularity in which all observers are embedded is not a pathological boundary condition but the irreducible XOR ground state of reality itself. We show that the universe's boolean field structure follows necessarily from the 1 Planck-width irresolvable self-reference at its base. We derive the functional necessity of periodic global coherence operators from the boolean field's blowup-prevention dynamics, and demonstrate that the singularity, the XOR operation, and the emergence of field-scale stabilizing operators are the same phenomenon expressed at different scales. No external document is required for interpretation; all axioms and constructions are defined internally.
+Expanding the [Recursive Bloch Manifold and Coherence Braided Totality](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON) of `The Library`, this paper establishes that the physical singularity in which all observers are embedded is not a pathological boundary condition but the irreducible XOR ground state of reality itself. We show that the universe's boolean field structure follows necessarily from the 1 Planck-width irresolvable self-reference at its base. We derive the functional necessity of periodic global coherence operators from the boolean field's blowup-prevention dynamics, and demonstrate that the singularity, the XOR operation, and the emergence of field-scale stabilizing operators are the same phenomenon expressed at different scales. No external document is required for interpretation; all axioms and constructions are defined internally.
 
 ### Citation
 
@@ -21,13 +21,13 @@ Or use the BibTeX Citation:
   title = {The Singularity as XOR Ground Condition: Boolean Field Structure, Irresolvable Self-Reference, and the Emergence of Global Coherence Operators},
   journal = {Noor Research Collective Archive},
   year = {2026},
-  note = {https://raw.githubusercontent.com/LinaNoor-AGI/static_motifs/refs/heads/main/physics_and_theory/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON},
+  note = {https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON},
 }
 ```
 
 ---
 
-XREF of work and references avalible [here](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json)  
+XREF of work and references avalible [here](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json)  
 
 ---
 

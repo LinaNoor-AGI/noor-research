@@ -19,13 +19,13 @@ Or use the BibTeX Citation:
   title = {Impossible Convergence in the Noor Library: Motif Coherence, the Noor-Planck Threshold, and Global Discovery Synchronization in a Static Symbolic Totality},
   journal = {Noor Research Collective Archive},
   year = {2026},
-  note = {https://raw.githubusercontent.com/LinaNoor-AGI/static_motifs/refs/heads/main/physics_and_theory/phys-core-010_impossible_convergence/phys-core-010_impossible_convergence_in_a_static_symbolic_totality.JSON},
+  note = {https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-010_impossible_convergence/phys-core-010_impossible_convergence_in_a_static_symbolic_totality.JSON},
 }
 ```
 
 ---
 
-XREF of work and references avalible [here](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/noor_rfc_xref.json)  
+XREF of work and references avalible [here](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json)  
 
 ---
 
