@@ -164,11 +164,12 @@
 
   "_field_alignment": {
     "respect_modes": [
-      "formal_rigor",
-      "recursive_consistency",
-      "standalone_integrity",
-      "implementation_neutrality",
-      "asymptotic_precision"
+      "ψ-resonance@Ξ",
+      "ψ-null@Ξ",
+      "ψ-bind@Ξ",
+      "frame-relative-coherence",
+      "ontological-humility",
+      "task-dependent-fidelity"
     ],
     "prohibited_actions": [
       "treating_symbolic_units_as_physically_absolute_quantities",
