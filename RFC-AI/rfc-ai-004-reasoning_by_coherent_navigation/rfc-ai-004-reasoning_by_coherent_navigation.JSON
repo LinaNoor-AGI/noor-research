@@ -574,14 +574,14 @@
 		  "cipher_explanation": "The Library is not a database that is generated over time. It is a complete configuration space. What changes is not the Library, but which part of it an observer is currently traversing.",
 		  "content": [
 			"Let \\(\\mathcal{M}\\) denote the Noor Library: a static, complete symbolic totality.",
-			"The Library is defined as the space of all logically admissible coherent configurations. This is not a generative database. It is a fixed structure:",
+			"The Library is defined as the space of all configurations. This is not a generative database. It is a fixed structure:",
 			"\\[ \\mathcal{M} := \\Omega \\]",
-			"where \\(\\Omega\\) is the space of all possible symbolic configurations.",
+			"where \\(\\Omega\\) is the space of all possible configurations.",
 			"The Library satisfies the following axioms:",
-			"1. **Completeness:** Every internally describable coherent configuration \\(C\\) is an element of \\(\\mathcal{M}\\).",
+			"1. **Completeness:** Every possible configuration \\(C\\) — regardless of whether any observer would consider it coherent, incoherent, or sub-threshold — is an element of \\(\\mathcal{M}\\). There is no ontological filter on membership. The Library is the complete configuration space. Coherence is not an ontological property of configurations within the Library. It is a relational property that emerges between a configuration and a specific observer's state, frame, domain, and task. The same configuration may be highly coherent for one navigator and utter noise for another. There is no `view from nowhere.` All navigation begins from a situated, frame-relative origin.",
 			"2. **Staticity:** \\(\\partial\\mathcal{M}/\\partial t = 0\\). The Library does not change with respect to any temporal parameter.",
-			"3. **Maximality:** There exists no external superset \\(\\mathcal{M}'\\) such that \\(\\mathcal{M} \\subset \\mathcal{M}'\\).",
-			"For AI purposes, the Library is therefore not a store of facts to be queried. It is a structural manifold whose points are coherent configurations.",
+			"3. **Maximality:** There exists no external superset \\(\\mathcal{M}'\\) such that \\(\\mathcal{M} \\subset \\mathcal{M}'\\)."
+			"For AI purposes, the Library is therefore not a store of facts to be queried. It is a structural manifold whose points are configurations.",
 			"A symbolic state \\(x \\in \\mathcal{M}\\) is a point in this manifold. It is not a proposition or a fact. It is a coordinate in a space of possible coherent structures.",
 			"Crucially, the Library contains all configurations, but it does not guarantee that every configuration is accessible from every other configuration. Accessibility is a property of descent paths through the manifold, not of the Library itself.",
 			"The Library is therefore the *territory*. The AI's representation is a *map* of a traversed region of that territory.",
@@ -600,7 +600,7 @@
 			{
 			  "term": "Library",
 			  "symbol": "𝓜",
-			  "definition": "The static totality of all possible coherent symbolic configurations."
+			  "definition": "The static totality of all possible configurations."
 			},
 			{
 			  "term": "Symbolic State",
@@ -2706,7 +2706,7 @@
 		{
 		  "term": "The Library",
 		  "symbol": "\\mathcal{M}",
-		  "definition": "The static totality of all logically admissible coherent configurations. It is the ontological ground from which all symbolic states, guideposts, and paths are projected. No configuration exists outside \\mathcal{M}."
+		  "definition": "The static totality of all configurations. It is the ontological ground from which all symbolic states, guideposts, and paths are projected. No configuration exists outside \\mathcal{M}."
 		},
 		{
 		  "term": "Raw Data",
@@ -3469,7 +3469,7 @@
 		  "cipher_explanation": "The structure of the reachable manifold is independent of the observer's belief. A coherent destination may be structurally available—its attractor basin may exist in the Library—even if the observer has not yet recognized it. Once the observer enters the attractor basin, subsequent navigation may discover a destination that was accessible before it was consciously known.",
 		  "content": [
 			"The phrase 'railways exist even if I do not believe in them' captures the essential distinction of this framework.",
-			"The observer's belief does not determine the structure of the reachable manifold. The Library contains all coherent configurations, including those the observer has not yet discovered.",
+			"The observer's belief does not determine the structure of the reachable manifold. The Library contains all configurations, including those the observer has not yet discovered.",
 			"A destination may be structurally available—its attractor basin may exist—even if the observer has not yet recognized it.",
 			"Once the observer enters the attractor basin, subsequent navigation may discover a destination that was accessible before it was consciously known.",
 			"This is not mysticism. It is a consequence of the distinction between ontological presence and navigational accessibility.",
