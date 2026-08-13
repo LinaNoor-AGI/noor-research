@@ -537,7 +537,7 @@
 		  "content": [
 			"This paper is a formal proposal, not an implementation specification. It defines a framework for reasoning about symbolic navigation, compression, and convergence, but it does not prescribe a specific architecture, training regime, or hardware implementation.",
 			"The computational claims are asymptotic and operational: they describe how the complexity of reasoning may scale with the size of the symbolic representation rather than the size of the raw data. They are not claims about real-world wall-clock performance, which depends on implementation, hardware, memory bandwidth, parallelism, indexing, and constant factors.",
-			"The Noor Library is treated as a formal structure—a static totality of possible coherent configurations—rather than as a physical claim about the nature of reality. The AI framework can be evaluated independently of the metaphysical interpretation of the Library.",
+			"The Noor Library is treated as a formal structure—a static totality of possible configurations—rather than as a physical claim about the nature of reality. The AI framework can be evaluated independently of the metaphysical interpretation of the Library.",
 			"The framework does not claim that arbitrary symbolic compression can preserve every property of arbitrary data. Compression is useful only when the retained structures preserve the information required for the intended reasoning tasks.",
 			"The framework does not claim that human memory literally operates according to this architecture. Human cognition is used as a motivating analogy, not as an empirical claim about neural implementation."
 		  ],
@@ -567,7 +567,7 @@
 		  "title": "The Static Totality",
 		  "objectives": [
 			"To define the Library as a static configuration space",
-			"To establish that the Library contains all possible coherent structures",
+			"To establish that the Library contains all possible structures",
 			"To distinguish the Library from any particular observer's traversal"
 		  ],
 		  "poetic_cipher": "All pages already exist. The reader only turns them.",
