@@ -2706,7 +2706,7 @@
 		{
 		  "term": "The Library",
 		  "symbol": "\\mathcal{M}",
-		  "definition": "The static totality of all possible configurations. The Library contains every configuration — coherent, incoherent, and sub-threshold — without any ontological filter on membership. Coherence is not a property of configurations within the Library itself; it is a relational property that emerges between a configuration and a specific observer's state, frame, domain, and task. The same configuration may be highly coherent for one navigator and utter noise for another. There is no privileged frame. The Library is the complete configuration space; coherence is a navigational judgment, not an ontological filter. No configuration exists outside \\mathcal{M}."
+		  "definition": "The static totality of all configurations. The Library contains every configuration — coherent, incoherent, and sub-threshold — without any ontological filter on membership. Coherence is not a property of configurations within the Library itself; it is a relational property that emerges between a configuration and a specific observer's state, frame, domain, and task. The same configuration may be highly coherent for one navigator and utter noise for another. There is no privileged frame. The Library is the complete configuration space; coherence is a navigational judgment, not an ontological filter. No configuration exists outside \\mathcal{M}."
 		},
 		{
 		  "term": "Raw Data",
