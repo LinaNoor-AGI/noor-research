@@ -175,7 +175,10 @@
       "equating_asymptotic_complexity_with_measured_hardware_speedup",
       "assuming_complete_raw_data_must_be_loaded_for_reasoning",
       "assuming_static_totality_implies_unrestricted_accessibility",
-      "assuming_symbolic_compression_implies_information_destruction"
+      "assuming_symbolic_compression_implies_information_destruction",
+	  "claiming_a_privileged_frame_over_any_other",
+	  "reifying_guideposts_as_objects_rather_than_relationships",
+      "confusing_ontological_adjacency_with_navigational_accessibility"
     ]
   },
 
