@@ -3497,44 +3497,6 @@
 	}
   ],
 
-  "_formal_summary": {
-    "library": [
-      "\\mathcal{M}=\\Omega",
-      "\\partial\\mathcal{M}/\\partial t=0"
-    ],
-    "representation": [
-      "D=\\text{raw data}",
-      "S=\\text{symbolic state}",
-      "G=\\{g_i\\}=\\text{guideposts}",
-      "P:G\\rightarrow D=\\text{retrieval mapping}"
-    ],
-    "reasoning": [
-      "S_{t+1}=F(S_t,I_{t+1})",
-      "\\gamma:[t_0,t_1]\\rightarrow\\mathcal{M}",
-      "Reason(q,D)\\approx Reason(q,R(S,q))"
-    ],
-    "compression": [
-      "|G|\\ll|D|",
-      "C_{raw}(n)=O(n)",
-      "C_{sym}(m)=O(m)",
-      "C_{lookup}(n)=O(\\log n)"
-    ],
-    "convergence": [
-      "\\mathcal{P}(x)=\\{\\gamma:\\gamma(0)=x,\\gamma\\text{ coherent}\\}",
-      "\\mathcal{H}_E=\\{x:\\operatorname{Reach}(x)\\subseteq A\\}",
-      "x\\in\\mathcal{H}_E\\Rightarrow\\forall\\gamma\\in\\mathcal{P}(x),\\lim\\gamma\\in A"
-    ],
-    "knowledge_transfer": [
-      "\\operatorname{Reach}(S_1)\\supsetneq\\operatorname{Reach}(S_0)",
-      "K:S_0\\rightarrow S_1"
-    ],
-    "coherence": [
-      "\\mathcal{C}(S_t,S_{t+1})\\geq\\mathcal{C}_{min}",
-      "\\Delta(E)<\\Delta_{crit}",
-      "\\Delta(E)\\rightarrow\\infty\\Rightarrow\\text{blowup}"
-    ]
-  },
-
   "_pseudocode_reference": {
     "symbolic_context_loop": [
       "state = EMPTY_SYMBOLIC_STATE()",
