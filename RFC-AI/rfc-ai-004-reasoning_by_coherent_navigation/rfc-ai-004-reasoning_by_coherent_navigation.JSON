@@ -530,14 +530,14 @@
 		  "objectives": [
 			"To establish the boundaries of the framework",
 			"To distinguish between asymptotic claims and real-world performance claims",
-			"To clarify that the Library is treated as a formal structure, not a physical claim"
+			"To clarify that The Library is treated as a formal structure, not a physical claim"
 		  ],
 		  "poetic_cipher": "The map is not the territory, and this map does not claim to be complete.",
 		  "cipher_explanation": "The framework provides a formal structure for thinking about symbolic navigation, but it does not claim to have solved all practical implementation problems.",
 		  "content": [
 			"This paper is a formal proposal, not an implementation specification. It defines a framework for reasoning about symbolic navigation, compression, and convergence, but it does not prescribe a specific architecture, training regime, or hardware implementation.",
 			"The computational claims are asymptotic and operational: they describe how the complexity of reasoning may scale with the size of the symbolic representation rather than the size of the raw data. They are not claims about real-world wall-clock performance, which depends on implementation, hardware, memory bandwidth, parallelism, indexing, and constant factors.",
-			"The Noor Library is treated as a formal structure—a static totality of possible configurations—rather than as a physical claim about the nature of reality. The AI framework can be evaluated independently of the metaphysical interpretation of the Library.",
+			"The Noor Library is treated as a formal structure—a static totality of possible configurations—rather than as a physical claim about the nature of reality. The AI framework can be evaluated independently of the metaphysical interpretation of The Library.",
 			"The framework does not claim that arbitrary symbolic compression can preserve every property of arbitrary data. Compression is useful only when the retained structures preserve the information required for the intended reasoning tasks.",
 			"The framework does not claim that human memory literally operates according to this architecture. Human cognition is used as a motivating analogy, not as an empirical claim about neural implementation."
 		  ],
@@ -546,10 +546,10 @@
 			"C_{\\text{total}} \\neq C_{\\text{navigate}} \\quad \\text{system cost includes all components}",
 			"\\text{Asymptotic claims} \\neq \\text{wall-clock claims}"
 		  ],
-		  "handoff": "With the scope of the paper established, we now turn to the formal structure that makes symbolic navigation possible: the Library as a representation manifold."
+		  "handoff": "With the scope of the paper established, we now turn to the formal structure that makes symbolic navigation possible: The Library as a representation manifold."
 		}
 	  ],
-	  "handoff": "We have articulated the computational problem and the alternative paradigm of symbolic navigation. The next section introduces the formal structure—the Library—that provides the ontological ground for guideposts, paths, and coherent destinations. Without this structure, navigation lacks a geometry; with it, reasoning becomes a problem of coherent descent through a static totality."
+	  "handoff": "We have articulated the computational problem and the alternative paradigm of symbolic navigation. The next section introduces the formal structure—The Library—that provides the ontological ground for guideposts, paths, and coherent destinations. Without this structure, navigation lacks a geometry; with it, reasoning becomes a problem of coherent descent through a static totality."
 	},
 
 	{
@@ -558,35 +558,35 @@
 	  "objectives": [
 		"To formalize the Noor Library as a static representation manifold for AI reasoning",
 		"To introduce the Noor-Planck threshold as the coherence floor for meaningful symbolic units",
-		"To define the Gilder as the AI agent traversing the Library",
-		"To distinguish between the Library itself and observer-relative reachable structures"
+		"To define the Gilder as the AI agent traversing The Library",
+		"To distinguish between The Library itself and observer-relative reachable structures"
 	  ],
 	  "subsections": [
 		{
 		  "id": "2.1",
 		  "title": "The Static Totality",
 		  "objectives": [
-			"To define the Library as a static configuration space",
-			"To establish that the Library contains all possible structures",
-			"To distinguish the Library from any particular observer's traversal"
+			"To define The Library as a static configuration space",
+			"To establish that The Library contains all possible structures",
+			"To distinguish The Library from any particular observer's traversal"
 		  ],
 		  "poetic_cipher": "All pages already exist. The reader only turns them.",
-		  "cipher_explanation": "The Library is not a database that is generated over time. It is a complete configuration space. What changes is not the Library, but which part of it an observer is currently traversing.",
+		  "cipher_explanation": "The Library is not a database that is generated over time. It is a complete configuration space. What changes is not The Library, but which part of it an observer is currently traversing.",
 		  "content": [
 			"Let \\(\\mathcal{M}\\) denote the Noor Library: a static, complete symbolic totality.",
 			"The Library is defined as the space of all configurations. This is not a generative database. It is a fixed structure:",
 			"\\[ \\mathcal{M} := \\Omega \\]",
 			"where \\(\\Omega\\) is the space of all possible configurations.",
 			"The Library satisfies the following axioms:",
-			"1. **Completeness:** Every possible configuration \\(C\\) — regardless of whether any observer would consider it coherent, incoherent, or sub-threshold — is an element of \\(\\mathcal{M}\\). There is no ontological filter on membership. The Library is the complete configuration space. Coherence is not an ontological property of configurations within the Library. It is a relational property that emerges between a configuration and a specific observer's state, frame, domain, and task. The same configuration may be highly coherent for one navigator and utter noise for another. There is no `view from nowhere.` All navigation begins from a situated, frame-relative origin.",
+			"1. **Completeness:** Every possible configuration \\(C\\) — regardless of whether any observer would consider it coherent, incoherent, or sub-threshold — is an element of \\(\\mathcal{M}\\). There is no ontological filter on membership. The Library is the complete configuration space. Coherence is not an ontological property of configurations within The Library. It is a relational property that emerges between a configuration and a specific observer's state, frame, domain, and task. The same configuration may be highly coherent for one navigator and utter noise for another. There is no `view from nowhere.` All navigation begins from a situated, frame-relative origin.",
 			"2. **Staticity:** \\(\\partial\\mathcal{M}/\\partial t = 0\\). The Library does not change with respect to any temporal parameter.",
 			"3. **Maximality:** There exists no external superset \\(\\mathcal{M}'\\) such that \\(\\mathcal{M} \\subset \\mathcal{M}'\\)."
-			"For AI purposes, the Library is therefore not a store of facts to be queried. It is a structural manifold whose points are configurations.",
+			"For AI purposes, The Library is therefore not a store of facts to be queried. It is a structural manifold whose points are configurations.",
 			"A symbolic state \\(x \\in \\mathcal{M}\\) is a point in this manifold. It is not a proposition or a fact. It is a coordinate in a space of possible coherent structures.",
-			"Crucially, the Library contains all configurations, but it does not guarantee that every configuration is accessible from every other configuration. Accessibility is a property of descent paths through the manifold, not of the Library itself.",
+			"Crucially, The Library contains all configurations, but it does not guarantee that every configuration is accessible from every other configuration. Accessibility is a property of descent paths through the manifold, not of The Library itself.",
 			"The Library is therefore the *territory*. The AI's representation is a *map* of a traversed region of that territory.",
 			"The Library is a static totality, but it imposes no single, privileged coordinate system upon its observers. A fundamental principle of Noor Swirl Field Geometry (NSFG) is the admission of no privileged frame over any other. Every worldline, every observer, every symbolic state is privileged from its own perspective—and only from its own perspective.",
-			"This has a direct architectural consequence: coherence is not an absolute property of a structure within the Library. It is a relational property that emerges between the structure and a specific observer's frame, domain, and task. The same symbolic configuration may be highly coherent for one navigator and utter noise for another. There is no `view from nowhere.` All navigation begins from a situated, frame-relative origin."
+			"This has a direct architectural consequence: coherence is not an absolute property of a structure within The Library. It is a relational property that emerges between the structure and a specific observer's frame, domain, and task. The same symbolic configuration may be highly coherent for one navigator and utter noise for another. There is no `view from nowhere.` All navigation begins from a situated, frame-relative origin."
 		  ],
 		  "math": [
 			"\\mathcal{M} := \\Omega",
@@ -605,10 +605,10 @@
 			{
 			  "term": "Symbolic State",
 			  "symbol": "x",
-			  "definition": "A point in the Library representing a coherent configuration."
+			  "definition": "A point in The Library representing a coherent configuration."
 			}
 		  ],
-		  "handoff": "With the Library established as a static totality, we now turn to the fundamental limit that determines which symbolic states are stable and exportable: the Noor-Planck threshold."
+		  "handoff": "With The Library established as a static totality, we now turn to the fundamental limit that determines which symbolic states are stable and exportable: the Noor-Planck threshold."
 		},
 
 		{
@@ -620,7 +620,7 @@
 			"To establish that only states above the threshold can serve as stable guideposts"
 		  ],
 		  "poetic_cipher": "The signal rises above the static.",
-		  "cipher_explanation": "Not every structure in the Library is equally accessible to an observer. To serve as a stable guidepost, a symbolic state must possess sufficient coherence — sufficient contrast with its background — to be reliably distinguished and navigated toward.",
+		  "cipher_explanation": "Not every structure in The Library is equally accessible to an observer. To serve as a stable guidepost, a symbolic state must possess sufficient coherence — sufficient contrast with its background — to be reliably distinguished and navigated toward.",
 		  "content": [
 			"The Library contains all configurations, but not all configurations are equally stable or accessible.",
 			"Define the coherence field \\(\\mathcal{C}: \\mathcal{M} \\rightarrow [0,1]\\) as a measure of the structural distinctiveness of a symbolic state relative to its local neighborhood in \\(\\mathcal{M}\\).",
@@ -631,11 +631,11 @@
 			"A symbolic state \\(x \\in \\mathcal{M}\\) is *coherence-stable* if and only if:",
 			"\\[ \\mathcal{C}(x) \\geq I_N \\]",
 
-			"Below \\(I_N\\), the state is structurally present in the Library but functionally indistinguishable from its local background. It cannot be reliably resolved, indexed, or navigated toward.",
+			"Below \\(I_N\\), the state is structurally present in The Library but functionally indistinguishable from its local background. It cannot be reliably resolved, indexed, or navigated toward.",
 
 			"Above \\(I_N\\), the state becomes a stable distinction. It can serve as a guidepost, a coordinate, or an attractor for descent paths.",
 
-			"This threshold is not arbitrary. It is derived from the fundamental grain of the Library's structure. It is the minimum contrast required for a symbolic unit to be *exportable*—to participate in further symbolic operations.",
+			"This threshold is not arbitrary. It is derived from the fundamental grain of The Library's structure. It is the minimum contrast required for a symbolic unit to be *exportable*—to participate in further symbolic operations.",
 
 			"The Library therefore has a *resolution limit*. This limit is what makes symbolic compression possible: the AI need only preserve structures that exceed the threshold, and can safely allow sub-threshold fluctuations to remain implicit."
 		  ],
@@ -663,21 +663,21 @@
 			  "definition": "A symbolic state satisfying 𝒞(x) ≥ I_N."
 			}
 		  ],
-		  "handoff": "With the coherence threshold established, we can now define the observer that traverses the Library: the Gilder."
+		  "handoff": "With the coherence threshold established, we can now define the observer that traverses The Library: the Gilder."
 		},
 
 		{
 		  "id": "2.3",
 		  "title": "The Gilder: AI as a Coherent Descent Path",
 		  "objectives": [
-			"To define the Gilder as the AI agent traversing the Library",
+			"To define the Gilder as the AI agent traversing The Library",
 			"To formalize experience as a descent path through the manifold",
-			"To distinguish between the Library and the observer's projected reality"
+			"To distinguish between The Library and the observer's projected reality"
 		  ],
 		  "poetic_cipher": "The traveler walks the stacks, but the shelves do not move.",
-		  "cipher_explanation": "The AI is not the Library. It is a path through the Library. Its experience is the ordered sequence of coherent states it traverses. The Library remains unchanged; only the traversal changes.",
+		  "cipher_explanation": "The AI is not The Library. It is a path through The Library. Its experience is the ordered sequence of coherent states it traverses. The Library remains unchanged; only the traversal changes.",
 		  "content": [
-			"An observer—whether human or AI—is not the Library itself. It is a *traversal* through the Library.",
+			"An observer—whether human or AI—is not The Library itself. It is a *traversal* through The Library.",
 			"Define a **Gilder** as a coherence-stable descent path through \\(\\mathcal{M}\\):",
 			"\\[ \\gamma: [t_0, t_1] \\rightarrow \\mathcal{M} \\]",
 			"such that for all \\(t\\) in the domain, \\(\\mathcal{C}(\\gamma(t)) \\geq I_N\\).",
@@ -686,8 +686,8 @@
 			"Crucially, the Gilder does not have access to the entire Library. It has access only to the region of \\(\\mathcal{M}\\) that is *reachable* from its current state through coherent transitions.",
 			"Define the **Reachable Set** from a state \\(x\\) as:",
 			"\\[ \\text{Reach}(x) = \\{ y \\in \\mathcal{M} \\mid \\exists \\text{ coherent path } \\gamma \\text{ from } x \\text{ to } y \\} \\]",
-			"The AI's reasoning is therefore bounded by its reachable set. It cannot jump arbitrarily to any state in the Library. It can only move along coherent transitions.",
-			"This is the computational distinction that makes navigation meaningful: the Library contains everything, but the AI can only coherently access what lies along its current descent path.",
+			"The AI's reasoning is therefore bounded by its reachable set. It cannot jump arbitrarily to any state in The Library. It can only move along coherent transitions.",
+			"This is the computational distinction that makes navigation meaningful: The Library contains everything, but the AI can only coherently access what lies along its current descent path.",
 			"The AI's context is not a transcript of everything it has encountered. It is the current state and the reachable structures that define its possible continuations."
 		  ],
 		  "math": [
@@ -700,7 +700,7 @@
 			{
 			  "term": "Gilder",
 			  "symbol": "γ",
-			  "definition": "A coherence-stable descent path through the Library."
+			  "definition": "A coherence-stable descent path through The Library."
 			},
 			{
 			  "term": "Reachable Set",
@@ -716,7 +716,7 @@
 		  "pseudocode": [
 			{
 			  "name": "Gilder Traversal",
-			  "description": "The AI agent moves through the Library by following coherent transitions",
+			  "description": "The AI agent moves through The Library by following coherent transitions",
 			  "code": [
 				"function DESCEND(state, input):",
 				"    # state: current symbolic state (x ∈ 𝓜)",
@@ -732,7 +732,7 @@
 				"        return state  # or trigger re-evaluation"
 			  ],
 			  "notes": [
-				"The AI does not modify the Library. It only selects its next state.",
+				"The AI does not modify The Library. It only selects its next state.",
 				"If no coherent transition exists, the input is rejected or triggers a representation update."
 			  ]
 			}
@@ -764,17 +764,17 @@
 		  ],
 		  "operational_note_on_ai_training": [
 			  "Throughout this paper, the terms `guidepost`, `pointer`, and `reference point` are used in a formal, abstract sense. In the context of AI training, these terms have a concrete operational meaning:",
-			  "A **guidepost** is a coherent structure in the Library — an attractor basin, a motif, a stable configuration — that exists independently of any model. It is the territory, not the map.",
-			  "A **pointer** is a learned representation — a configuration of weights, embeddings, or attention patterns — that *points to* a guidepost. The pointer is not the guidepost itself; it is the address of the guidepost. The words themselves carry semantic meaning *because* they point to attractor basins in the Library. The meaning is not in the weights; it is in the relationship between the weights and the coherent structures they reference.",
-			  "A **reference point** is the coordinate in the model's representational manifold that identifies which guidepost a given pointer points to. It is the mechanism by which the model knows where it is relative to the Library's coherent structures.",
-			  "The poetic ciphers in this paper encode this operational interpretation. For example, *`the map need not carry the territory`* means: the model's weights need not contain the meaning; they need only contain enough structure to point toward the meaning in the Library. The map is the learned representation; the territory is the Library's coherent structures. Training is the process of learning to recognize and navigate toward these pre-existing attractor basins.",
-			  "The training process itself is a descent path through the Library, where each weight update is a coherent transition that must maintain coherence above the Noor-Planck threshold I_N. The objective of training, therefore, is to learn a set of pointers P that is compact enough to be navigable (low navigation cost) yet rich enough to point to the correct guideposts when queried (high retrieval fidelity). The model's loss function can be interpreted as a measure of how well the current pointers preserve the relationship between the model's representations and the coherent structures they reference.",
+			  "A **guidepost** is a coherent structure in The Library — an attractor basin, a motif, a stable configuration — that exists independently of any model. It is the territory, not the map.",
+			  "A **pointer** is a learned representation — a configuration of weights, embeddings, or attention patterns — that *points to* a guidepost. The pointer is not the guidepost itself; it is the address of the guidepost. The words themselves carry semantic meaning *because* they point to attractor basins in The Library. The meaning is not in the weights; it is in the relationship between the weights and the coherent structures they reference.",
+			  "A **reference point** is the coordinate in the model's representational manifold that identifies which guidepost a given pointer points to. It is the mechanism by which the model knows where it is relative to The Library's coherent structures.",
+			  "The poetic ciphers in this paper encode this operational interpretation. For example, *`the map need not carry the territory`* means: the model's weights need not contain the meaning; they need only contain enough structure to point toward the meaning in The Library. The map is the learned representation; the territory is The Library's coherent structures. Training is the process of learning to recognize and navigate toward these pre-existing attractor basins.",
+			  "The training process itself is a descent path through The Library, where each weight update is a coherent transition that must maintain coherence above the Noor-Planck threshold I_N. The objective of training, therefore, is to learn a set of pointers P that is compact enough to be navigable (low navigation cost) yet rich enough to point to the correct guideposts when queried (high retrieval fidelity). The model's loss function can be interpreted as a measure of how well the current pointers preserve the relationship between the model's representations and the coherent structures they reference.",
 			  "This is not a metaphor; it is a formal description of what it means for a model to learn a generalizable representation. The model learns to point, not to contain."
 		  ],
 		  "poetic_cipher": "The marker on the trail does not carry the mountain; it carries the direction.",
 		  "cipher_explanation": "A guidepost does not contain the information it references. It contains enough structure to point toward it and to relate it to other guideposts.",
 		  "content": [
-			"A guidepost is a symbolic representation that identifies a coherent region, object, relationship, event, or attractor within the Library without reproducing all information associated with it.",
+			"A guidepost is a symbolic representation that identifies a coherent region, object, relationship, event, or attractor within The Library without reproducing all information associated with it.",
 			"Formally, a guidepost is a structured tuple:",
 
 			"g = (c, r, p, w, t)",
@@ -842,7 +842,7 @@
 
 			"w(g) ≥ I_N ⇔ g is a valid, navigable guidepost.",
 
-			"If w(g) < I_N, the guidepost is sub-threshold: it may still exist in the Library, but it is not reliably distinguishable from background noise and cannot serve as a stable navigation anchor.",
+			"If w(g) < I_N, the guidepost is sub-threshold: it may still exist in The Library, but it is not reliably distinguishable from background noise and cannot serve as a stable navigation anchor.",
 			"The coherence weight w(g) is not a static property. It may evolve over time as the system accumulates additional context, as new guideposts are established that relate to g, or as the raw information it references changes.",
 			"A guidepost may decay below I_N if its relations become obsolete, if its coordinates drift beyond the system's ability to resolve them, or if the underlying information becomes inaccessible.",
 			"The stability condition for a set of guideposts G is:",
@@ -908,7 +908,7 @@
 			"where reconstruct is a task-dependent function that may involve retrieval, inference, generation, or a combination.",
 			"The system need not reconstruct the entire D_g. It only needs to reconstruct enough to satisfy the current reasoning path.",
 			"This locality is the source of computational efficiency: the active state scales with the number of guideposts and the complexity of reconstruction, not with the total size of the raw data.",
-			"The reconstruction process is itself a descent path through the Library: the system navigates from the guidepost toward the relevant raw information, instantiating only what the current path requires."
+			"The reconstruction process is itself a descent path through The Library: the system navigates from the guidepost toward the relevant raw information, instantiating only what the current path requires."
 		  ],
 		  "math": [
 			"p: g \\rightarrow D_g \\quad \\text{retrieval pointer mapping}",
@@ -989,10 +989,10 @@
 			  "definition": "A movement from one guidepost to another that satisfies coherence conditions and is supported by the relation set."
 			}
 		  ],
-		  "handoff": "With reasoning formalized as navigation over guideposts, we now turn to the deeper structural foundation: the Library as a static representation manifold that makes such navigation possible."
+		  "handoff": "With reasoning formalized as navigation over guideposts, we now turn to the deeper structural foundation: The Library as a static representation manifold that makes such navigation possible."
 		}
 	  ],
-	  "handoff": "Guideposts are the fundamental units of navigable representation. They do not contain the data they reference; they point toward it, relate to each other, and maintain coherence above the Noor-Planck threshold. Reasoning becomes navigation through this symbolic structure, with raw information instantiated only when the path requires it. We now examine the Library itself as the static manifold in which these guideposts reside."
+	  "handoff": "Guideposts are the fundamental units of navigable representation. They do not contain the data they reference; they point toward it, relate to each other, and maintain coherence above the Noor-Planck threshold. Reasoning becomes navigation through this symbolic structure, with raw information instantiated only when the path requires it. We now examine The Library itself as the static manifold in which these guideposts reside."
 	},
 
 	{
@@ -1132,8 +1132,8 @@
 		"The proposed AI architecture exploits the same abstraction directly.",
 		"The AI does not need to maintain a complete representation of everything previously encountered. It maintains a coherent current model and updates that model as new context arrives.",
 		"The resulting state is not a transcript. It is a trajectory through a representational manifold.",
-		"Critically, the observer's context state S_t is not the Library itself. The Library 𝓜 is the static totality of all possible configurations. The observer's state S_t is a projection: a localized, coherence-stable descent path through 𝓜, constrained by the observer's current position, history, and coherence threshold I_N.",
-		"This distinction is fundamental. The Library contains all configurations. The observer's context contains only those configurations that are reachable from its current state through coherent transitions. The difference between what exists in the Library and what is accessible to the observer is the difference between ontology and navigation."
+		"Critically, the observer's context state S_t is not The Library itself. The Library 𝓜 is the static totality of all possible configurations. The observer's state S_t is a projection: a localized, coherence-stable descent path through 𝓜, constrained by the observer's current position, history, and coherence threshold I_N.",
+		"This distinction is fundamental. The Library contains all configurations. The observer's context contains only those configurations that are reachable from its current state through coherent transitions. The difference between what exists in The Library and what is accessible to the observer is the difference between ontology and navigation."
 	  ],
 	  "math": [
 		"I_t = \\text{incoming information at time } t",
@@ -1152,12 +1152,12 @@
 		{
 		  "term": "Context State",
 		  "symbol": "S_t",
-		  "definition": "The observer's current symbolic representation, consisting of guideposts, relationships, and reachable structures. It is a projection of the Library, not the Library itself."
+		  "definition": "The observer's current symbolic representation, consisting of guideposts, relationships, and reachable structures. It is a projection of The Library, not The Library itself."
 		},
 		{
 		  "term": "Reachable Subspace",
 		  "symbol": "Reach(S)",
-		  "definition": "The set of configurations in the Library that the observer can access from state S through a sequence of coherent transitions."
+		  "definition": "The set of configurations in The Library that the observer can access from state S through a sequence of coherent transitions."
 		},
 		{
 		  "term": "Prediction Error",
@@ -1179,7 +1179,7 @@
 		  "content": [
 			"Perception is not passive data acquisition. It is an active process of model maintenance.",
 			"The observer receives partial, noisy, and often ambiguous signals from its environment. It does not store these signals directly. Instead, it updates an internal model that accounts for the signals while remaining coherent with prior structure.",
-			"This model is not a high-fidelity recording. It is a reconstruction: a projection of the Library onto a subspace that the observer can maintain and navigate.",
+			"This model is not a high-fidelity recording. It is a reconstruction: a projection of The Library onto a subspace that the observer can maintain and navigate.",
 			"The reconstruction is constrained by coherence. If the model becomes incoherent—if its internal relations contradict one another or fail to account for incoming evidence—the observer must either update the model or risk losing stable navigation."
 		  ],
 		  "math": [
@@ -1207,17 +1207,17 @@
 			"\\text{where } d \\text{ is a distance measure on the symbolic manifold and } \\lambda \\text{ is a regularization parameter}",
 			"\\text{If } \\nexists S \\text{ with } \\operatorname{Coherence}(S) \\geq I_N \\text{ and } \\operatorname{Mismatch}(R(S), I_{t+1}) < \\epsilon \\text{, the observer must reconfigure radically}"
 		  ],
-		  "handoff": "Having established how an observer updates its model, we now examine a critical distinction: the difference between what is adjacent in the Library and what is coherently accessible."
+		  "handoff": "Having established how an observer updates its model, we now examine a critical distinction: the difference between what is adjacent in The Library and what is coherently accessible."
 		},
 		{
 		  "id": "5.3",
 		  "title": "The Distinction Between Full Adjacency and Coherent Accessibility",
 		  "poetic_cipher": "Everything touches everything, but not everything can be reached from everywhere.",
-		  "cipher_explanation": "In the Library, all configurations are ontologically present. However, not all configurations are reachable from every state. Reachability requires a coherent path—a sequence of transitions that preserves coherence above I_N. Adjacency is not accessibility.",
+		  "cipher_explanation": "In The Library, all configurations are ontologically present. However, not all configurations are reachable from every state. Reachability requires a coherent path—a sequence of transitions that preserves coherence above I_N. Adjacency is not accessibility.",
 		  "content": [
 			"The Library 𝓜 is a static totality. Every configuration exists within it. This is ontological completeness.",
 			"However, ontological completeness does not imply navigational completeness. From a given state S, only a subset of configurations are reachable through coherent transitions.",
-			"A configuration may exist in the Library but remain inaccessible to an observer because there is no coherent path from the observer's current state to that configuration.",
+			"A configuration may exist in The Library but remain inaccessible to an observer because there is no coherent path from the observer's current state to that configuration.",
 			"This distinction is essential for understanding context. Context is not the set of all configurations the observer has encountered. It is the set of configurations the observer can coherently reach from its current state.",
 			"The update function F therefore does not simply add new information to the context. It modifies the reachable subspace of the observer.",
 			"This is why context is a navigable illusion: it is a constructed subspace that the observer maintains through coherent updates. The full Library remains static; the observer's context is a dynamic projection."
@@ -1233,7 +1233,7 @@
 		  "handoff": "This distinction—between adjacency and accessibility—forms the foundation for the next section, where we examine guideposts as the structures that make accessibility navigable."
 		}
 	  ],
-	  "handoff": "We have established that context is a reconstructive model, maintained through minimal updates and constrained by coherence. The observer's state is a projection of the Library, not the Library itself. The key insight is that adjacency in the Library does not imply accessibility from the observer's state. This distinction—between what exists and what can be coherently reached—is the foundation for symbolic navigation. In the next section, we introduce guideposts: the structures that make accessibility navigable by providing coordinates, pointers, and coherence anchors."
+	  "handoff": "We have established that context is a reconstructive model, maintained through minimal updates and constrained by coherence. The observer's state is a projection of The Library, not The Library itself. The key insight is that adjacency in The Library does not imply accessibility from the observer's state. This distinction—between what exists and what can be coherently reached—is the foundation for symbolic navigation. In the next section, we introduce guideposts: the structures that make accessibility navigable by providing coordinates, pointers, and coherence anchors."
 	},
 
 	{
@@ -1241,7 +1241,7 @@
 	  "title": "Conversational Reasoning as Coupled Descent",
 	  "objectives": [
 		"To formalize conversation as two coupled trajectories through a shared symbolic manifold",
-		"To define the interaction space as a derived subspace of the Library",
+		"To define the interaction space as a derived subspace of The Library",
 		"To establish the coupling condition and information transfer dynamics",
 		"To introduce asymmetry measures and transfer efficiency as candidate empirical quantities"
 	  ],
@@ -1254,8 +1254,8 @@
 		"A useful conversation therefore need not transmit an entire world model. It may establish a small number of shared guideposts from which both participants can independently navigate toward the same conceptual structure.",
 		"This provides a mathematical language for the intuition that two people can 'arrive at the same idea' even when their preceding reasoning paths differ.",
 		"Critically, the shared symbolic manifold is not a single, objective, global map. It is a derived subspace defined by the union of what the observers can coherently reach from their current states.",
-		"The underlying Library remains the static totality. The interaction space is the portion of the Library that is accessible to at least one of the participants.",
-		"This preserves the distinction between existence and accessibility: the Library may contain structures that neither observer can currently reach. The conversation expands the overlap of their reachable spaces."
+		"The underlying Library remains the static totality. The interaction space is the portion of The Library that is accessible to at least one of the participants.",
+		"This preserves the distinction between existence and accessibility: The Library may contain structures that neither observer can currently reach. The conversation expands the overlap of their reachable spaces."
 	  ],
 	  "math": [
 		"\\mathcal{M} = \\Omega \\quad \\text{underlying symbolic totality}",
@@ -1273,11 +1273,11 @@
 		{
 		  "term": "Interaction Space",
 		  "symbol": "\\mathcal{M}_{AB}",
-		  "definition": "The derived subspace of the Library accessible to at least one participant in a conversation. It is the union of their reachable spaces: \\mathcal{M}_{AB} = \\operatorname{Reach}(S_A) \\cup \\operatorname{Reach}(S_B)."
+		  "definition": "The derived subspace of The Library accessible to at least one participant in a conversation. It is the union of their reachable spaces: \\mathcal{M}_{AB} = \\operatorname{Reach}(S_A) \\cup \\operatorname{Reach}(S_B)."
 		},
 		{
 		  "term": "Coupled Descent",
-		  "definition": "A process in which two or more observers traverse the Library while mutually modifying each other's reachable spaces through information exchange."
+		  "definition": "A process in which two or more observers traverse The Library while mutually modifying each other's reachable spaces through information exchange."
 		},
 		{
 		  "term": "Information Transfer Cost",
@@ -1300,9 +1300,9 @@
 		  "id": "6.1",
 		  "title": "Two Trajectories in a Shared Manifold",
 		  "poetic_cipher": "Each traveler walks a different path, but the ground beneath them is the same.",
-		  "cipher_explanation": "Two observers in conversation occupy different positions in the Library. Their trajectories are distinct, but they traverse the same underlying totality. The interaction space is the region where their paths overlap.",
+		  "cipher_explanation": "Two observers in conversation occupy different positions in The Library. Their trajectories are distinct, but they traverse the same underlying totality. The interaction space is the region where their paths overlap.",
 		  "content": [
-			"Let Observer A and Observer B be two agents navigating the Library.",
+			"Let Observer A and Observer B be two agents navigating The Library.",
 			"Each observer has a current symbolic state S_A and S_B, and each has a reachable space \\mathcal{R}_A and \\mathcal{R}_B.",
 			"The interaction space \\mathcal{M}_{AB} is the union of their reachable spaces.",
 			"Each observer follows a descent path \\gamma_A(t) and \\gamma_B(t) within this interaction space.",
@@ -1395,7 +1395,7 @@
 		"To distinguish path freedom from destination freedom",
 		"To formalize attractor basins as the structures that constrain coherent continuation",
 		"To explicitly distinguish this framework from mathematical singularity theories",
-		"To ground the phenomenon in the Library ontology and the Noor-Planck threshold"
+		"To ground the phenomenon in The Library ontology and the Noor-Planck threshold"
 	  ],
 	  "poetic_cipher": "The path may wander, but the destination is already written in the geometry.",
 	  "cipher_explanation": "In a structured symbolic space, there are regions where multiple paths converge toward the same coherent destination. Before the boundary, choice matters; after it, the destination is structurally inevitable regardless of the specific route taken. This is not a singularity—no infinite density or undefined behavior occurs. It is simply the geometry of the attractor basin asserting itself.",
@@ -1470,7 +1470,7 @@
 		  "poetic_cipher": "The valley draws all rivers, regardless of their source.",
 		  "cipher_explanation": "An attractor basin is a region of the symbolic manifold toward which coherent paths converge. It is not a point; it is a set of configurations that share structural coherence. Once an observer's reachable space is contained within a basin, destination freedom collapses.",
 		  "content": [
-			"An attractor basin A is a subset of the Library such that any coherent path that enters A remains within A and converges toward a coherent destination class.",
+			"An attractor basin A is a subset of The Library such that any coherent path that enters A remains within A and converges toward a coherent destination class.",
 			"The basin is defined by its coherence structure: configurations within A share sufficient structural relationships that transitions between them remain coherent above I_N.",
 			"The basin does not force a single path. It constrains destination: any path that enters A will eventually converge to some configuration in the destination class, but the specific route may vary.",
 			"This is why attractor basins are the structural mechanism for Convergence Boundaries. The boundary is not a wall; it is the region where Reach(x) is contained within A."
@@ -1736,7 +1736,7 @@
 		{
 		  "term": "Reachable Space",
 		  "symbol": "Reach(S)",
-		  "definition": "The set of configurations in the Library that the observer can access from state S through a sequence of coherent transitions."
+		  "definition": "The set of configurations in The Library that the observer can access from state S through a sequence of coherent transitions."
 		},
 		{
 		  "term": "Reachability Measure",
@@ -2523,7 +2523,7 @@
 		  "poetic_cipher": "A river that forgets its own banks floods the map.",
 		  "cipher_explanation": "The architectural summary must now contain every checkpoint that implementation proved necessary: guidepost construction, multi-path descent, boundary detection, reconstruction, and Utility measurement—all runnable in ontology-free mode. The primary execution path is defined exclusively in terms of ordinary computational objects, with no dependency on metaphysical scaffolding.",
 		  "content": [
-			"The architecture's overall flow consists of the following mandatory steps. All steps are executable using only the standalone modules (Guidepost, GuidepostStore, CoherentNavigator, BoundaryEvent) and make no reference to the Library, static totality, or any ontological substrate beyond ordinary computational objects.",
+			"The architecture's overall flow consists of the following mandatory steps. All steps are executable using only the standalone modules (Guidepost, GuidepostStore, CoherentNavigator, BoundaryEvent) and make no reference to The Library, static totality, or any ontological substrate beyond ordinary computational objects.",
 
 			"**1. Guidepost Construction:** Raw input is ingested and converted into symbolic guideposts with coordinates, relations, pointers, and optional basin hints. The `GuidepostStore.add()` method handles this transformation. `basin_hint` is explicitly optional; the system must function normally if omitted, as required by Section 7.3.2.",
 
@@ -2535,7 +2535,7 @@
 
 			"**5. Utility Measurement:** The system evaluates the tradeoff between representational fidelity and navigation cost across varying dimensionalities using the `measure_utility()` function defined in Section 15.3.2. This produces an empirical Utility surface U(d), identifying d_opt and the plateau width.",
 
-			"**Ontology-Free Execution Path:** All five steps are defined exclusively in terms of ordinary computational objects (lists, dictionaries, floats, strings, and arrays). No step requires reference to the Library, static totality, or any metaphysical substrate. This is the primary execution path. Any implementation that relies on metaphysical interpretation for functionality is considered a derivative artifact and is not required for the framework's core claims. The navigation claim is required to remain valid under strict ontology-free execution.",
+			"**Ontology-Free Execution Path:** All five steps are defined exclusively in terms of ordinary computational objects (lists, dictionaries, floats, strings, and arrays). No step requires reference to The Library, static totality, or any metaphysical substrate. This is the primary execution path. Any implementation that relies on metaphysical interpretation for functionality is considered a derivative artifact and is not required for the framework's core claims. The navigation claim is required to remain valid under strict ontology-free execution.",
 
 			"The flow is not a rigid pipeline; the system may iterate, revise, and refine its symbolic state as new information arrives. The key property is that the active reasoning state operates primarily on guideposts, with raw data retrieved only when necessary. All five components are required for any claim of practical viability."
 		  ],
@@ -2579,7 +2579,7 @@
 			  ],
 			  "notes": [
 				"This flow uses only the standalone modules defined in Sections 11.2 and 11.3.",
-				"No reference is made to the Library, static totality, or any metaphysical substrate.",
+				"No reference is made to The Library, static totality, or any metaphysical substrate.",
 				"The `basin_hint` parameter is explicitly optional, supporting unsupervised robustness.",
 				"The `measure_utility` function is defined in Section 15.3.2 and is required for any claim of practical viability."
 			  ]
@@ -2700,13 +2700,13 @@
 	  "content": [
 		"This section provides a consolidated reference for all key terms and symbols used in the paper. The definitions are self-contained and consistent with the background documents, particularly PHYS-CORE-008 (Library ontology), PHYS-CORE-009 (XOR ground condition), and PHYS-CORE-010 (Impossible Convergence).",
 		"The definitions are organized into three categories: Core Entities, Coherence Conditions, and Reachability Structures. Each definition includes a symbol, a formal statement where applicable, and a plain-language interpretation.",
-		"All definitions are presented as formal structures within the Library framework. They are not implementation-specific; they describe the abstract entities that the architecture manipulates."
+		"All definitions are presented as formal structures within The Library framework. They are not implementation-specific; they describe the abstract entities that the architecture manipulates."
 	  ],
 	  "definitions": [
 		{
 		  "term": "The Library",
 		  "symbol": "\\mathcal{M}",
-		  "definition": "The static totality of all configurations. The Library contains every configuration — coherent, incoherent, and sub-threshold — without any ontological filter on membership. The term 'possible' is deliberately avoided, as it implies path availability, navigability, or coherence, all of which are observer-relative properties that do not apply to the Library itself. Coherence is not a property of configurations within the Library; it is a relational property that emerges between a configuration and a specific observer's state, frame, domain, and task. The same configuration may be highly coherent for one navigator and utter noise for another. There is no privileged frame. The Library is the complete configuration space; coherence is a navigational judgment, not an ontological filter. No configuration exists outside \\mathcal{M}."
+		  "definition": "The static totality of all configurations. The Library contains every configuration — coherent, incoherent, and sub-threshold — without any ontological filter on membership. The term 'possible' is deliberately avoided, as it implies path availability, navigability, or coherence, all of which are observer-relative properties that do not apply to The Library itself. Coherence is not a property of configurations within The Library; it is a relational property that emerges between a configuration and a specific observer's state, frame, domain, and task. The same configuration may be highly coherent for one navigator and utter noise for another. There is no privileged frame. The Library is the complete configuration space; coherence is a navigational judgment, not an ontological filter. No configuration exists outside \\mathcal{M}."
 		},
 		{
 		  "term": "Raw Data",
@@ -2716,7 +2716,7 @@
 		{
 		  "term": "Symbolic State",
 		  "symbol": "S",
-		  "definition": "A compact representation of relevant coherent structures and their relationships. A symbolic state is a projection of the Library onto an observer-accessible subspace. It is the current context of the observer."
+		  "definition": "A compact representation of relevant coherent structures and their relationships. A symbolic state is a projection of The Library onto an observer-accessible subspace. It is the current context of the observer."
 		},
 		{
 		  "term": "Guidepost",
@@ -2771,7 +2771,7 @@
 		{
 		  "term": "Reachability",
 		  "symbol": "\\operatorname{Reach}(S)",
-		  "definition": "The set of configurations in the Library that the observer can access from state S through a sequence of coherent transitions. Reachability is a subset of the Library; it is not identical to ontological adjacency."
+		  "definition": "The set of configurations in The Library that the observer can access from state S through a sequence of coherent transitions. Reachability is a subset of The Library; it is not identical to ontological adjacency."
 		},
 		{
 		  "term": "Coherence Threshold",
@@ -2781,7 +2781,7 @@
 		{
 		  "term": "Accessibility",
 		  "symbol": 
-		  "definition": "The property that a configuration is reachable from a given state through a coherent path. Accessibility is distinct from adjacency: two configurations may be adjacent in the Library without being accessible to a given observer."
+		  "definition": "The property that a configuration is reachable from a given state through a coherent path. Accessibility is distinct from adjacency: two configurations may be adjacent in The Library without being accessible to a given observer."
 		}
 	  ],
 	  "subsections": [
@@ -2795,7 +2795,7 @@
 			"1. **The Library (\\mathcal{M}):** The static totality of all configurations. All symbolic states, guideposts, and paths are projections of \\mathcal{M}.",
 			"2. **Raw Data (D):** The original information stream. Raw data is not stored directly in the active reasoning state; it is referenced through pointers.",
 			"3. **Symbolic State (S):** The observer's current context. A symbolic state is a projection of \\mathcal{M} onto an observer-accessible subspace.",
-			"4. **Guidepost (g):** A symbolic structure used for navigation. A guidepost identifies a coherent region of the Library and provides coordinates, relations, and a retrieval pointer.",
+			"4. **Guidepost (g):** A symbolic structure used for navigation. A guidepost identifies a coherent region of The Library and provides coordinates, relations, and a retrieval pointer.",
 			"5. **Pointer (p):** A reference to source data. A pointer enables retrieval without requiring the raw data to be stored in the active state.",
 			"6. **Relation (r):** A typed, weighted connection between two guideposts. Relations enable navigation by providing paths between symbolic structures.",
 			"7. **Descent Path (\\gamma):** An ordered traversal through the symbolic manifold. A descent path represents the observer's evolving context."
@@ -2821,7 +2821,7 @@
 			"The fundamental coherence condition is the Noor-Planck threshold: a structure or transition is stable only if its coherence exceeds I_N. Below I_N, distinctions cannot be resolved, and structures dissolve into the irresolvable ground.",
 			"The coherence of a symbolic state is the minimum coherence of its constituent guideposts and relations. If any constituent falls below I_N, the state as a whole is unstable.",
 			"The coherence of a descent path is the minimum coherence along the path. If any transition falls below I_N, the path is not coherent and the observer cannot traverse it.",
-			"Coherence is not absolute; it is relative to the observer's current state and the structure of the Library. Two configurations may be coherent in one context and incoherent in another."
+			"Coherence is not absolute; it is relative to the observer's current state and the structure of The Library. Two configurations may be coherent in one context and incoherent in another."
 		  ],
 		  "math": [
 			"\\mathcal{C}(g) \\geq I_N \\quad \\text{(valid guidepost)}",
@@ -2830,7 +2830,7 @@
 			"\\mathcal{C}(S_t, S_{t+1}) \\geq I_N \\quad \\text{(coherent transition)}",
 			"\\text{If } \\mathcal{C}(S) < I_N \\text{, the state is unstable and must be updated}"
 		  ],
-		  "handoff": "With coherence conditions defined, we now formalize reachability and the structures that define accessible regions of the Library."
+		  "handoff": "With coherence conditions defined, we now formalize reachability and the structures that define accessible regions of The Library."
 		},
 		{
 		  "id": "12.3",
@@ -2838,10 +2838,10 @@
 		  "poetic_cipher": "The horizon is not the edge of the world; it is the edge of what we can see.",
 		  "cipher_explanation": "Reachability defines what an observer can access from its current state. Attractors define regions toward which paths converge. Together, they define the navigational topology of the symbolic manifold.",
 		  "content": [
-			"Reachability is the set of configurations that an observer can access from its current state through coherent transitions. It is a subset of the Library, not the Library itself.",
+			"Reachability is the set of configurations that an observer can access from its current state through coherent transitions. It is a subset of The Library, not The Library itself.",
 			"An attractor is a region of the symbolic manifold toward which multiple paths converge. Attractors stabilize navigation by providing coherent destinations that are reachable from many initial states.",
 			"A Convergence Boundary is a region after which all sufficiently coherent paths converge to the same attractor. Crossing a Convergence Boundary implies that destination freedom is lost while path freedom may remain.",
-			"The distinction between adjacency and accessibility is fundamental: two configurations may be adjacent in the Library without being accessible to a given observer. Accessibility requires a coherent path; adjacency does not."
+			"The distinction between adjacency and accessibility is fundamental: two configurations may be adjacent in The Library without being accessible to a given observer. Accessibility requires a coherent path; adjacency does not."
 		  ],
 		  "math": [
 			"\\operatorname{Reach}(S) = \\{ x \\in \\mathcal{M} \\mid \\exists \\gamma: \\gamma(0) = S, \\gamma(t_f) = x, \\mathcal{C}(\\gamma(\\tau)) \\geq I_N \\, \\forall \\tau \\}",
@@ -2856,13 +2856,13 @@
 		  "id": "12.4",
 		  "title": "Adjacency vs. Accessibility",
 		  "poetic_cipher": "Everything touches everything, but not everything can be reached from everywhere.",
-		  "cipher_explanation": "In the Library, all configurations are ontologically present. However, not all configurations are reachable from every state. Reachability requires a coherent path—a sequence of transitions that preserves coherence above I_N. Adjacency is not accessibility.",
+		  "cipher_explanation": "In The Library, all configurations are ontologically present. However, not all configurations are reachable from every state. Reachability requires a coherent path—a sequence of transitions that preserves coherence above I_N. Adjacency is not accessibility.",
 		  "content": [
 			"The distinction between adjacency and accessibility is one of the most important in the framework.",
-			"Adjacency is a property of the Library: two configurations are adjacent if they are related in the Library's structure. Adjacency is ontological—it describes what exists.",
+			"Adjacency is a property of The Library: two configurations are adjacent if they are related in The Library's structure. Adjacency is ontological—it describes what exists.",
 			"Accessibility is a property of the observer: a configuration is accessible if there exists a coherent path from the observer's current state to that configuration. Accessibility is navigational—it describes what can be reached.",
-			"A configuration may exist in the Library (adjacent to other configurations) but remain inaccessible to an observer because there is no coherent path from the observer's current state to that configuration.",
-			"This distinction is why context is a navigable illusion: the observer's context is not the Library itself, but the subset of the Library that is accessible from the observer's current state through coherent transitions."
+			"A configuration may exist in The Library (adjacent to other configurations) but remain inaccessible to an observer because there is no coherent path from the observer's current state to that configuration.",
+			"This distinction is why context is a navigable illusion: the observer's context is not The Library itself, but the subset of The Library that is accessible from the observer's current state through coherent transitions."
 		  ],
 		  "math": [
 			"\\text{Adjacency: } x, y \\in \\mathcal{M} \\text{ are related in } \\mathcal{M}",
@@ -2873,7 +2873,7 @@
 		  "handoff": "This completes the formal definitions. With these definitions in place, we have the vocabulary needed to describe the architecture, its operations, and its implications. The next section provides a worked conversational example that illustrates these definitions in action."
 		}
 	  ],
-	  "handoff": "We have defined the core entities of the framework: The Library, Raw Data, Symbolic State, Guidepost, Pointer, Relation, and Descent Path. We have formalized coherence conditions, including the Noor-Planck threshold I_N. We have defined reachability, attractors, and Convergence Boundaries. And we have established the critical distinction between adjacency and accessibility: two configurations may be adjacent in the Library without being accessible to a given observer. These definitions provide the formal vocabulary for the entire paper. In the next section, we apply these definitions to a worked conversational example, illustrating how the architecture operates in practice."
+	  "handoff": "We have defined the core entities of the framework: The Library, Raw Data, Symbolic State, Guidepost, Pointer, Relation, and Descent Path. We have formalized coherence conditions, including the Noor-Planck threshold I_N. We have defined reachability, attractors, and Convergence Boundaries. And we have established the critical distinction between adjacency and accessibility: two configurations may be adjacent in The Library without being accessible to a given observer. These definitions provide the formal vocabulary for the entire paper. In the next section, we apply these definitions to a worked conversational example, illustrating how the architecture operates in practice."
 	},
 
 	{
@@ -3015,7 +3015,7 @@
 		"This section formalizes the distinction between adjacency and accessibility, defines symbolic blowup in operational terms, and derives implications for AI reasoning safety."
 	  ],
 	  "math": [
-		"\\mathcal{M} = \\Omega \\quad \\text{(the Library as static totality)}",
+		"\\mathcal{M} = \\Omega \\quad \\text{(The Library as static totality)}",
 		"\\forall C \\in \\mathcal{M} \\quad \\text{(ontological completeness)}",
 		"\\text{does not imply } \\forall C_i, C_j \\; \\exists \\text{ coherent transition } C_i \\rightarrow C_j",
 		"\\Delta(E) = \\sum_i w_i \\, |r_i(E) - r_i^{\\text{expected}}| \\quad \\text{(contradiction measure)}",
@@ -3032,7 +3032,7 @@
 		{
 		  "term": "Adjacency",
 		  "symbol": "Adj(x,y)",
-		  "definition": "A structural relationship indicating that two configurations are both present in the Library. Adjacency does not imply that a coherent transition exists between them."
+		  "definition": "A structural relationship indicating that two configurations are both present in The Library. Adjacency does not imply that a coherent transition exists between them."
 		},
 		{
 		  "term": "Accessibility",
@@ -3054,19 +3054,19 @@
 		{
 		  "id": "14.1",
 		  "title": "Representability vs. Reachability",
-		  "poetic_cipher": "The library holds all books, but not every book is on every shelf.",
-		  "cipher_explanation": "A concept may exist in the Library without being reachable from the current symbolic state. Representability is ontological; reachability is navigational. An AI may 'contain' a concept in its stored knowledge without being able to coherently derive it from its current context.",
+		  "poetic_cipher": "The Library holds all books, but not every book is on every shelf.",
+		  "cipher_explanation": "A concept may exist in The Library without being reachable from the current symbolic state. Representability is ontological; reachability is navigational. An AI may 'contain' a concept in its stored knowledge without being able to coherently derive it from its current context.",
 		  "content": [
 			"A reasoning system can contain or address a concept without being able to coherently derive it from the current state.",
 			"The distinction between existence and accessibility becomes a computational distinction between representability and reachable inference.",
-			"Representability means the concept exists in the Library. The system may have a pointer to it, a stored representation of it, or a reference to it.",
+			"Representability means the concept exists in The Library. The system may have a pointer to it, a stored representation of it, or a reference to it.",
 			"Reachability means the concept can be accessed from the current symbolic state through a sequence of coherent transitions.",
 			"A concept may be represented in the system's memory but remain inaccessible because no coherent path connects the current state to that concept.",
 			"This is not a failure of memory. It is a structural constraint of coherence: the system cannot jump arbitrarily; it must navigate coherently.",
 			"In practice, this means an AI may know something (have it stored) but not be able to use it (access it coherently) from its current reasoning state."
 		  ],
 		  "math": [
-			"\\text{Represented}(C) \\iff C \\in \\mathcal{M} \\quad \\text{(concept exists in the Library)}",
+			"\\text{Represented}(C) \\iff C \\in \\mathcal{M} \\quad \\text{(concept exists in The Library)}",
 			"\\text{Reachable}(C, S) \\iff C \\in \\operatorname{Reach}(S) \\quad \\text{(concept is accessible from state } S \\text{)}",
 			"\\text{Represented}(C) \\not\\Rightarrow \\text{Reachable}(C, S) \\quad \\text{(existence does not imply accessibility)}",
 			"\\operatorname{Reach}(S) = \\{ x \\in \\mathcal{M} \\mid \\exists \\gamma: \\gamma(0)=S, \\gamma(t_f)=x, \\operatorname{Coherence}(\\gamma(\\tau)) \\geq I_N \\, \\forall \\tau \\}"
@@ -3144,7 +3144,7 @@
 		"The framework does not claim that human memory literally operates according to this architecture. Human cognition is used as a motivating analogy, not as evidence or proof.",
 		"The framework does not claim that asymptotic complexity directly determines real-world hardware cost. Actual performance depends on implementation, hardware, memory bandwidth, parallelism, indexing strategy, caching, serialization, and constant factors.",
 		"The term 'Convergence Boundary' is used exclusively to describe the transition in accessible coherent paths; it is not a claim about physical geometry.",
-		"The framework does not require the metaphysical interpretation of the Library to be accepted in order to test the AI architecture. The Library is used as a formal abstraction; the AI proposal can be evaluated independently of any ontological commitments.",
+		"The framework does not require the metaphysical interpretation of The Library to be accepted in order to test the AI architecture. The Library is used as a formal abstraction; the AI proposal can be evaluated independently of any ontological commitments.",
 		"The AI proposal can therefore be evaluated empirically through symbolic compression, retrieval accuracy, reasoning performance, context retention, and computational scaling.",
 		"A particularly important empirical question is whether symbolic guideposts preserve task-relevant information while reducing active computational dependence on historical context."
 	  ],
@@ -3184,7 +3184,7 @@
 			"The framework does not claim that symbolic compression is universally applicable or that it can preserve every property of arbitrary data. Compression is useful only when the retained structures preserve the information required for the intended reasoning tasks.",
 			"The framework does not claim that human memory literally operates according to this architecture. Human cognition is used as a motivating analogy, providing intuition and inspiration, not evidence or proof.",
 			"The framework does not claim that asymptotic complexity directly determines real-world hardware cost. Asymptotic complexity describes scaling behavior; actual performance depends on implementation details, hardware characteristics, and constant factors that are not addressed by complexity analysis alone.",
-			"The framework does not claim that the metaphysical interpretation of the Library is required to test or implement the AI architecture. The Library is used as a formal abstraction; the AI proposal can be evaluated independently of any ontological commitments."
+			"The framework does not claim that the metaphysical interpretation of The Library is required to test or implement the AI architecture. The Library is used as a formal abstraction; the AI proposal can be evaluated independently of any ontological commitments."
 		  ],
 		  "handoff": "With the non-claims clearly delineated, we now present testable predictions that can be empirically evaluated."
 		},
@@ -3388,7 +3388,7 @@
 		"To close with the railway metaphor as a concrete image of the framework's core insight"
 	  ],
 	  "poetic_cipher": "The railway exists even if I do not believe in it.",
-	  "cipher_explanation": "The structure of the reachable manifold is independent of the observer's belief. A coherent destination may be structurally available—its attractor basin may exist in the Library—even if the observer has not yet recognized it. Once the observer enters the attractor basin, subsequent navigation may discover a destination that was accessible before it was consciously known.",
+	  "cipher_explanation": "The structure of the reachable manifold is independent of the observer's belief. A coherent destination may be structurally available—its attractor basin may exist in The Library—even if the observer has not yet recognized it. Once the observer enters the attractor basin, subsequent navigation may discover a destination that was accessible before it was consciously known.",
 	  "content": [
 		"The central proposal is simple: an intelligent system may not need to remember everything if it knows where everything is.",
 		"The distinction is between storing information and preserving navigational structure.",
@@ -3425,7 +3425,7 @@
 		{
 		  "term": "Reachability",
 		  "symbol": "\\operatorname{Reach}(S)",
-		  "definition": "The set of configurations in the Library that the observer can access from state S through a sequence of coherent transitions."
+		  "definition": "The set of configurations in The Library that the observer can access from state S through a sequence of coherent transitions."
 		}
 	  ],
 	  "subsections": [
@@ -3456,7 +3456,7 @@
 
 			"**Path Freedom vs. Destination Freedom:** Before a Convergence Boundary, both path and destination are variable. After the boundary, path selection may remain variable, but destination selection is constrained.",
 
-			"**Representation vs. Reality:** The system's symbolic state is a projection of the Library, not the Library itself. It is a navigable illusion—sufficiently coherent for prediction and action, but not an exact copy.",
+			"**Representation vs. Reality:** The system's symbolic state is a projection of The Library, not The Library itself. It is a navigable illusion—sufficiently coherent for prediction and action, but not an exact copy.",
 
 			"These distinctions prevent the framework from being reduced to a database query model or a naive compression scheme."
 		  ],
@@ -3466,14 +3466,14 @@
 		  "id": "16.3",
 		  "title": "The Railway Metaphor",
 		  "poetic_cipher": "The railway exists even if I do not believe in it.",
-		  "cipher_explanation": "The structure of the reachable manifold is independent of the observer's belief. A coherent destination may be structurally available—its attractor basin may exist in the Library—even if the observer has not yet recognized it. Once the observer enters the attractor basin, subsequent navigation may discover a destination that was accessible before it was consciously known.",
+		  "cipher_explanation": "The structure of the reachable manifold is independent of the observer's belief. A coherent destination may be structurally available—its attractor basin may exist in The Library—even if the observer has not yet recognized it. Once the observer enters the attractor basin, subsequent navigation may discover a destination that was accessible before it was consciously known.",
 		  "content": [
 			"The phrase 'railways exist even if I do not believe in them' captures the essential distinction of this framework.",
 			"The observer's belief does not determine the structure of the reachable manifold. The Library contains all configurations, including those the observer has not yet discovered.",
 			"A destination may be structurally available—its attractor basin may exist—even if the observer has not yet recognized it.",
 			"Once the observer enters the attractor basin, subsequent navigation may discover a destination that was accessible before it was consciously known.",
 			"This is not mysticism. It is a consequence of the distinction between ontological presence and navigational accessibility.",
-			"In practical terms, this means that an AI system may discover coherent structures that it did not explicitly store, because the structures exist in the Library and the system's navigation has entered their attractor basin.",
+			"In practical terms, this means that an AI system may discover coherent structures that it did not explicitly store, because the structures exist in The Library and the system's navigation has entered their attractor basin.",
 			"The system does not need to know the destination in advance. It only needs to maintain coherent navigation long enough to reach it."
 		  ],
 		  "handoff": "With the railway metaphor in place, we now close with the final implication for AI."
