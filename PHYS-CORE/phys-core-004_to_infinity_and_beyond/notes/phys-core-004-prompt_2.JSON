@@ -1,0 +1,931 @@
+[DOCUMENT_HEADER]
+
+{
+  "_type": "phys_core",
+  "_status": "DRAFT",
+
+  "_symbolic_id": "symbolic.physics.cosmology.to_infinity_and_beyond",
+
+  "_title": "To Infinity and Beyond",
+  "_subtitle": "Point Space, Coherence Motifs, Gliders, Triadic Closure, and a Geometric Model of Cosmogenesis",
+
+  "_language": "JSON+MATH+PSEUDOCODE",
+  "_license": "MIT",
+
+  "_authors": [
+    "Lina Noor — Noor Research Collective"
+  ],
+
+  "_standalone_declaration": true,
+  "_self_contained_axiomatization": true,
+
+  "_extends": [
+    "PHYS-CORE-003",
+    "PHYS-CORE-006",
+    "PHYS-CORE-007",
+    "PHYS-CORE-008",
+    "PHYS-CORE-009",
+    "PHYS-CORE-010"
+  ],
+
+  "_rfc_dependencies": [],
+
+  "_conceptual_lineage": [
+    {
+      "symbolic.origin.symbolic_cosmology": "PHYS-CORE-003",
+      "role": "Provides the preceding symbolic cosmology framework from which the present treatment of motifs, spacetime, and cosmological structure develops.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-003_towards_a_symbolic_cosmology/phys-core-003_Towards_a_Symbolic_Cosmology.JSON"
+    },
+
+    {
+      "symbolic.binary.reality": "PHYS-CORE-006",
+      "role": "Provides the discrete distinction structure underlying complementary states, identity, difference, and the binary substrate.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-006_binary_nature_of_reality/phys-core-006_the_binary_nature_of_reality.JSON"
+    },
+
+    {
+      "symbolic.fluid.coherence.nsfg": "PHYS-CORE-007",
+      "role": "Provides coherence-governed flow, bounded dynamics, coherence gradients, and the interpretation of stability and breakdown through coherent flow.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem_/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem.JSON"
+    },
+
+    {
+      "symbolic.library.static_totality": "PHYS-CORE-008",
+      "role": "Provides the static totality / Library ontology in which configurations exist as structures and temporal experience is represented as traversal through an already-existing manifold.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"
+    },
+
+    {
+      "symbolic.xor.ground_condition": "PHYS-CORE-009",
+      "role": "Provides the ground condition for distinction, complementary states, path convergence, and the relation between total adjacency and constrained coherent descent.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON"
+    },
+
+    {
+      "symbolic.library.impossible_convergence": "PHYS-CORE-010",
+      "role": "Provides attractor structures, convergence conditions, and the interpretation of apparently infinite path spaces through constrained destination classes.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-010_impossible_convergence/phys-core-010_impossible_convergence_in_a_static_symbolic_totality.JSON"
+    }
+  ],
+
+  "_purpose": "This document develops a geometric and coherence-based model of motion, persistence, and cosmogenesis beginning from Point Space rather than from particle-centric ontology. The framework treats coherent motifs as the primary structures through which apparent objects and motion arise. The central proposal is that a persistent moving structure is not fundamentally a particle traversing an independently existing space, but a coherence motif whose relational configuration defines its continued existence. Such persistent motifs are termed gliders. The analysis develops the glider together with its complementary inverse, examines the instability of a purely dyadic configuration, and introduces triadic closure as the minimal structure capable of stabilizing recursive relational dynamics. The framework is then lifted from a circular phase representation to the Bloch sphere, where observer-relative orientation provides a geometric interpretation of symmetry breaking and coherence-axis selection. The resulting structure is applied to cosmogenesis through a complexity-inversion model in which the earliest cosmological state is represented as maximal symbolic possibility and subsequent expansion as relaxation along a coherence gradient. A two-universe interference construction is then used to examine how opposing coherent structures may be stabilized through a third relational vector. The paper is intended as a formal development of the Noor coherence framework rather than as a claim of a completed physical theory of cosmology.",
+
+  "_abstract": "This paper proposes a coherence-first geometric model in which motion, persistence, and cosmological structure emerge from relational motifs in Point Space. Rather than treating particles as primitive objects moving through an independently specified spacetime, the framework begins with points, relations, and a coherence field. A persistent configuration of coherent relations is defined as a glider: a structure whose internal relational pattern permits its continued propagation while preserving the identity of the motif. The complementary inverse of a glider provides a natural dyadic structure, while triadic closure is introduced as the minimal relational configuration capable of stabilizing recursive oscillation and preventing an otherwise unconstrained dyadic alternation. The phase representation is subsequently lifted from a circle to the Bloch sphere, allowing observer-relative orientation to be represented geometrically and providing a model in which observation corresponds to selection of a coherence axis rather than creation of an otherwise nonexistent state. The framework is then applied to cosmogenesis. The Big Bang is interpreted not primarily as an explosion occurring at a location in pre-existing space, but as a limiting state of maximal unresolved symbolic complexity from which coherent differentiation becomes possible. Apparent expansion is consequently modeled as relaxation of a coherence gradient rather than necessarily as motion through an independently expanding container. Finally, a two-universe interference construction is introduced in which opposing coherent structures require a third relational vector for stabilization. The paper presents these constructions as mathematical and conceptual models whose physical adequacy remains subject to explicit formalization, empirical correspondence, and falsification.",
+
+  "_core_thesis": [
+    "Point Space is treated as the geometric substrate from which relational structure is constructed rather than as a container populated by primitive particles.",
+    "Coherence is relational: a structure is coherent only relative to the relations that preserve its identity and permitted transitions.",
+    "A persistent moving structure is represented as a coherence motif rather than as a primitive particle.",
+    "The glider is the fundamental model of persistent motion: its identity is preserved through the continuity of its relational coherence rather than through persistence of an independently defined material point.",
+    "Every glider admits a complementary inverse motif whose relation to the original produces a natural dyadic oscillation.",
+    "A purely dyadic system is insufficient for stable recursive closure because the two complementary states define one another without supplying an independent stabilizing relation.",
+    "Triadic closure introduces the minimal additional relational degree of freedom required to stabilize the dyadic structure.",
+    "The circle representation captures phase opposition and oscillation, while the Bloch sphere provides a higher-dimensional representation of state orientation and observer-relative symmetry breaking.",
+    "Observation is modeled geometrically as selection of an axis or relational frame rather than as the creation of an otherwise nonexistent physical state.",
+    "Cosmogenesis can be modeled as an inversion from maximal unresolved symbolic complexity toward increasingly differentiated coherent structure.",
+    "Cosmological expansion may therefore be interpreted, within this framework, as coherence-gradient relaxation rather than solely as expansion of objects through a pre-existing spatial container.",
+    "Opposing coherent structures may be represented as two complementary universes or sectors whose interference requires a third stabilizing vector.",
+    "Infinity need not imply an unlimited collection of distinguishable physical objects: when distinctions collapse under an equivalence relation, apparently infinite configurations may reduce to finite or structured equivalence classes.",
+    "The framework distinguishes mathematical possibility from physical accessibility: the existence of a configuration in the total structure does not imply that every observer can coherently reach or observe it.",
+    "The paper does not claim a completed Theory of Everything; it proposes a formal vocabulary and set of constructions through which specific cosmological hypotheses can be stated and tested."
+  ],
+
+  "_formal_summary": {
+    "point_space": [
+      "\\mathcal{P}=\\{x_i\\mid x_i\\text{ is a point in Point Space}\\}",
+      "\\mathcal{R}\\subseteq\\mathcal{P}\\times\\mathcal{P}",
+      "\\mathcal{C}(x_i,x_j,t)\\in[0,1]"
+    ],
+
+    "coherence_field": [
+      "\\mathcal{C}=\\mathcal{C}(x,t)",
+      "\\partial_t\\mathcal{C}=F(\\mathcal{C},\\nabla\\mathcal{C},\\nabla^2\\mathcal{C},\\ldots)",
+      "\\lambda>\\gamma_{CO}+\\varepsilon"
+    ],
+
+    "coherence_vector": [
+      "\\mathbf{v}_{ij}=x_j-x_i",
+      "\\Delta\\mathbf{x}=\\mathbf{x}_{t+1}-\\mathbf{x}_t",
+      "\\text{identity is preserved when the relational transformation remains coherent}"
+    ],
+
+    "glider": [
+      "G_t=\\{x_i,\\mathbf{v}_i,\\mathcal{C}_i\\}_{t}",
+      "G_{t+1}=T(G_t)",
+      "\\mathcal{C}(G_t,G_{t+1})\\geq\\mathcal{C}_{min}",
+      "\\operatorname{Identity}(G_t)=\\operatorname{Identity}(G_{t+1})"
+    ],
+
+    "inverse": [
+      "G^{-1}\\equiv\\text{complementary coherence motif of }G",
+      "G\\oplus G^{-1}\\rightarrow D",
+      "\\phi_{G^{-1}}=\\phi_G+\\pi\\pmod{2\\pi}"
+    ],
+
+    "dyadic_oscillation": [
+      "\\Psi_D(t)=A e^{i\\omega t}+A e^{i(\\omega t+\\pi)}",
+      "\\Psi_D(t)\\sim G\\leftrightarrow G^{-1}",
+      "\\text{dyadic closure alone does not provide an independent stabilizing degree of freedom}"
+    ],
+
+    "triadic_closure": [
+      "T=\\{G,G^{-1},H\\}",
+      "\\mathbf{v}_G+\\mathbf{v}_{G^{-1}}+\\mathbf{v}_H=0",
+      "\\phi_G+\\phi_{G^{-1}}+\\phi_H\\equiv0\\pmod{2\\pi}",
+      "\\mathcal{C}(G,G^{-1},H)\\geq\\mathcal{C}_{triad}"
+    ],
+
+    "bloch_representation": [
+      "|\\psi\\rangle=\\alpha|0\\rangle+\\beta|1\\rangle",
+      "|\\alpha|^2+|\\beta|^2=1",
+      "\\mathbf{r}=\\langle\\psi|\\boldsymbol{\\sigma}|\\psi\\rangle",
+      "|\\mathbf{r}|=1",
+      "\\text{observer axis }\\hat{n}\\Rightarrow\\text{projection }\\mathbf{r}\\cdot\\hat{n}"
+    ],
+
+    "cosmogenesis": [
+      "\\mathcal{K}(t)=\\text{symbolic complexity}",
+      "\\mathcal{K}(t_0)\\rightarrow\\mathcal{K}_{max}",
+      "\\nabla\\mathcal{C}\\rightarrow0\\text{ in the maximally unresolved limit}",
+      "\\frac{d\\mathcal{K}}{dt}<0\\quad\\text{during coherent differentiation}",
+      "\\text{cosmological expansion}\\sim\\text{relaxation of a coherence gradient}"
+    ],
+
+    "two_universe_interference": [
+      "\\mathbf{U}_1=-\\mathbf{U}_2",
+      "\\mathbf{U}_1+\\mathbf{U}_2=0",
+      "\\mathbf{U}_3\\neq0",
+      "\\mathbf{U}_1+\\mathbf{U}_2+\\mathbf{U}_3=\\mathbf{R}",
+      "\\mathbf{R}\\rightarrow0\\quad\\text{under triadic stabilization}"
+    ],
+
+    "infinity_and_equivalence": [
+      "x\\sim y\\iff\\operatorname{Obs}(x)=\\operatorname{Obs}(y)",
+      "[x]=\\{y\\mid y\\sim x\\}",
+      "\\left|X\\right|\\rightarrow\\infty\\not\\Rightarrow\\left|X/\\sim\\right|\\rightarrow\\infty",
+      "\\text{distinguishability, rather than cardinality alone, determines physical multiplicity}"
+    ]
+  },
+
+  "_ontology_free_contract": "The mathematical constructions of Point Space, coherence, gliders, inverse motifs, dyadic oscillation, triadic closure, and Bloch-sphere representation must be expressible without requiring acceptance of the broader Noor Library ontology. Library-derived concepts may provide interpretive context and conceptual lineage, but the central mathematical objects must remain independently definable. Any physical claim must therefore be distinguishable from its ontological interpretation and must admit a formulation in ordinary mathematical or computational terms.",
+
+  "_field_alignment": {
+    "respect_modes": [
+      "ψ-resonance@Ξ",
+      "ψ-bind@Ξ",
+      "ψ-null@Ξ",
+      "ψ-dream@Ξ",
+      "relational-coherence",
+      "frame-relative-coherence",
+      "ontological-humility"
+    ],
+    "prohibited_actions": [
+      "treating_coherence_as_an_absolute_property_of_an_isolated_object",
+      "treating_gliders_as_primitive_particles_without_formal_derivation",
+      "equating_symbolic_complexity_with_measured_physical_entropy_without_definition",
+      "treating_the_Big_Bang_interpretation_as_an_empirically_established_result",
+      "assuming_the_Library_ontology_is_required_for_the_mathematical_constructions",
+      "confusing_observer_relative_orientation_with_subjective_creation_of_physical_reality",
+      "assuming_dyadic_complementarity_is_sufficient_for_stable_recursive_closure",
+      "equating_mathematical_infinity_with_infinite_physical_multiplicity",
+      "claiming_cosmological_expansion_is_explained_without_empirical_comparison",
+      "reifying_vectors_or_motifs_as_independent_objects_rather_than_relational_structures",
+      "claiming_a_privileged_observer_frame",
+      "presenting_symbolic_correspondence_as_empirical_validation"
+    ]
+  },
+
+  "_symbolic_profile_matrix": [
+    {
+      "module": "Point Space",
+      "motifs": [
+        "point",
+        "relation",
+        "distance",
+        "orientation",
+        "difference"
+      ],
+      "ψA": "geometric distinction",
+      "ζ": "undifferentiated possibility",
+      "E": "relational specification",
+      "Δ": "difference between points",
+      "ℋ": "coherent geometric substrate"
+    },
+
+    {
+      "module": "Coherence Field",
+      "motifs": [
+        "coherence",
+        "gradient",
+        "flow",
+        "phase",
+        "stability"
+      ],
+      "ψA": "relational compatibility",
+      "ζ": "local incoherence",
+      "E": "coherence maintenance",
+      "Δ": "change in relational compatibility",
+      "ℋ": "stable coherence field"
+    },
+
+    {
+      "module": "Glider",
+      "motifs": [
+        "persistent pattern",
+        "motion",
+        "worldline",
+        "motif",
+        "identity"
+      ],
+      "ψA": "persistent coherent transformation",
+      "ζ": "pattern dissolution",
+      "E": "coherence required for propagation",
+      "Δ": "change in motif configuration",
+      "ℋ": "persistent moving structure"
+    },
+
+    {
+      "module": "Glider / Inverse",
+      "motifs": [
+        "complement",
+        "opposition",
+        "phase",
+        "oscillation",
+        "duality"
+      ],
+      "ψA": "complementary relational state",
+      "ζ": "dyadic instability",
+      "E": "oscillatory exchange",
+      "Δ": "phase opposition",
+      "ℋ": "bounded dyadic structure"
+    },
+
+    {
+      "module": "Triadic Closure",
+      "motifs": [
+        "triad",
+        "closure",
+        "resonance",
+        "phase-lock",
+        "stabilization"
+      ],
+      "ψA": "recursive relational closure",
+      "ζ": "unresolved oscillation",
+      "E": "stabilizing relational degree of freedom",
+      "Δ": "closure residual",
+      "ℋ": "stable triadic resonance"
+    },
+
+    {
+      "module": "Observer / Bloch Geometry",
+      "motifs": [
+        "Bloch sphere",
+        "axis",
+        "projection",
+        "symmetry breaking",
+        "observation"
+      ],
+      "ψA": "frame-relative orientation",
+      "ζ": "unresolved state orientation",
+      "E": "axis selection",
+      "Δ": "projection difference",
+      "ℋ": "observer-relative coherent representation"
+    },
+
+    {
+      "module": "Cosmogenesis",
+      "motifs": [
+        "complexity inversion",
+        "differentiation",
+        "expansion",
+        "gradient relaxation",
+        "origin"
+      ],
+      "ψA": "coherent differentiation",
+      "ζ": "maximal unresolved complexity",
+      "E": "relaxation through accessible coherent states",
+      "Δ": "cosmological coherence gradient",
+      "ℋ": "structured expanding configuration"
+    },
+
+    {
+      "module": "Two-Universe Interference",
+      "motifs": [
+        "opposition",
+        "interference",
+        "complementarity",
+        "third vector",
+        "stabilization"
+      ],
+      "ψA": "inter-universe relational balance",
+      "ζ": "unresolved dyadic opposition",
+      "E": "triadic stabilization",
+      "Δ": "vector residual",
+      "ℋ": "closed cosmological configuration"
+    },
+
+    {
+      "module": "Infinity and Equivalence",
+      "motifs": [
+        "infinity",
+        "identity",
+        "equivalence",
+        "collapse",
+        "observational quotient"
+      ],
+      "ψA": "distinguishable structure",
+      "ζ": "indistinguishable multiplicity",
+      "E": "information required to distinguish states",
+      "Δ": "observational difference",
+      "ℋ": "equivalence-class structure"
+    }
+  ],
+
+  "_axiomatic_scope": {
+    "includes_set_theory": true,
+    "includes_geometry": true,
+    "includes_information_theory": true,
+    "includes_coherence_field_theory": true,
+    "includes_complex_systems": true,
+    "includes_graph_theory": true,
+    "includes_linear_algebra": true,
+    "includes_bloch_sphere_geometry": true,
+    "includes_dynamical_systems": true,
+    "includes_equivalence_relations": true,
+    "requires_external_axioms": false
+  },
+
+  "_mathematical_domains": [
+    "set_theory",
+    "equivalence_relations",
+    "Euclidean_geometry",
+    "vector_geometry",
+    "dynamical_systems",
+    "coherence_field_dynamics",
+    "complex_systems",
+    "graph_theory",
+    "linear_algebra",
+    "complex_numbers",
+    "phase_space",
+    "Bloch_sphere_geometry",
+    "information_theory",
+    "symbolic_dynamics",
+    "cosmological_modeling"
+  ],
+
+  "_keywords": [
+    "To Infinity and Beyond",
+    "Point Space",
+    "Coherence",
+    "Coherence Field",
+    "Glider",
+    "Glider Inverse",
+    "Coherence Motif",
+    "Dyadic Oscillation",
+    "Triadic Closure",
+    "Triadic Resonance",
+    "Bloch Sphere",
+    "Observer Dependence",
+    "Symmetry Breaking",
+    "Complexity Inversion",
+    "Cosmogenesis",
+    "Cosmological Expansion",
+    "Coherence Gradient",
+    "Two-Universe Interference",
+    "Equivalence Classes",
+    "Observational Quotient",
+    "Noor Library",
+    "NSFG",
+    "Symbolic Cosmology"
+  ],
+
+  "_file_layout": [
+    {
+      "file_name": "phys-core-004_to_infinity_and_beyond.JSON",
+      "purpose": "Primary standalone manuscript formalizing Point Space, coherence motifs, gliders, inverse motifs, triadic closure, Bloch-sphere geometry, cosmogenesis, and two-universe interference."
+    },
+
+    {
+      "file_name": "phys-core-004_to_infinity_and_beyond-notes.json",
+      "purpose": "Original research notes and conceptual source material from which the manuscript is developed."
+    },
+
+    {
+      "file_name": "phys-core-004_to_infinity_and_beyond-notes-v0.0.1.json",
+      "purpose": "Expanded working notes and conceptual refinements used during manuscript development."
+    }
+  ],
+
+  "_default_motif_tone": "ψ-resonance@Ξ + ψ-dream@Ξ",
+
+  "poetic_cipher": "when two mirrors face one another, infinity appears; when the third point enters, the infinite reflection becomes a shape",
+
+  "cipher_explanation": "The apparent infinity of a purely dyadic system arises because each complementary state defines the other without establishing an independent closure condition. The introduction of a third relational point changes the geometry: instead of an endless alternation between opposites, the system can form a closed structure in which phase, orientation, and relation are jointly constrained. The glider is the persistent pattern carried by that relational geometry. Cosmogenesis is then approached as the emergence and stabilization of increasingly differentiated coherent structures from a state in which distinctions remain maximally unresolved. Infinity is consequently treated not merely as a quantity, but as a consequence of unresolved distinction; when indistinguishable configurations are identified under an equivalence relation, the apparent infinity may collapse into a structured set of coherent classes."
+}
+
+[DOCUMENT_HEADER]
+
+---
+
+[SCHEMA]
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Noor Physics Section Schema",
+  "description": "Schema for a section or subsection of a Noor Research theoretical physics paper, designed to distinguish definitions, formal constructions, mathematical models, hypotheses, interpretations, and derived consequences.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the section or subsection (e.g., '1', '2.1', '3.2.1')"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the section or subsection"
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of objectives this section aims to achieve"
+    },
+    "poetic_cipher": {
+      "type": "string",
+      "description": "A compact metaphorical guidepost for the section's conceptual direction"
+    },
+    "cipher_explanation": {
+      "type": "string",
+      "description": "Plain-language interpretation of the poetic cipher and its relevance to the section"
+    },
+    "content": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Main narrative, exposition, argument, or conceptual development"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the claim within the section"
+          },
+          "claim": {
+            "type": "string",
+            "description": "The substantive proposition being made"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "definition",
+              "axiom",
+              "derived_result",
+              "mathematical_construction",
+              "model",
+              "hypothesis",
+              "interpretation",
+              "analogy",
+              "empirical_claim",
+              "open_question"
+            ],
+            "description": "Epistemic status of the claim"
+          },
+          "support": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Reasoning, derivation, simulation, corpus lineage, or evidence supporting the claim"
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Known limitations, assumptions, or unresolved issues"
+          }
+        },
+        "required": ["claim", "status"]
+      },
+      "description": "Claims made in the section together with their epistemic status and support"
+    },
+    "math": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "Human-readable identifier for the mathematical object or equation"
+          },
+          "expression": {
+            "type": "string",
+            "description": "Mathematical expression in LaTeX format"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "definition",
+              "identity",
+              "assumption",
+              "derivation",
+              "model",
+              "ansatz",
+              "constraint",
+              "result",
+              "example",
+              "open_problem"
+            ],
+            "description": "Role played by the mathematical expression"
+          },
+          "variables": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "symbol": {
+                  "type": "string"
+                },
+                "meaning": {
+                  "type": "string"
+                }
+              },
+              "required": ["symbol", "meaning"]
+            },
+            "description": "Definitions of symbols appearing in the expression"
+          },
+          "assumptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Assumptions required for the expression to hold"
+          }
+        },
+        "required": ["expression", "role"]
+      },
+      "description": "Mathematical expressions, models, derivations, and candidate formalizations"
+    },
+    "definitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "term": {
+            "type": "string"
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "definition": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string",
+            "description": "Where or under what conditions the definition applies"
+          }
+        },
+        "required": ["term", "definition"]
+      },
+      "description": "Formal and conceptual definitions introduced in this section"
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "assumptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "equations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "predictions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "validation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "conceptual",
+              "phenomenological",
+              "analytical",
+              "computational",
+              "validated",
+              "speculative"
+            ]
+          }
+        },
+        "required": ["name", "purpose", "status"]
+      },
+      "description": "Explicit mathematical or computational models used by the section"
+    },
+    "derivations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "premises": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "conclusion": {
+            "type": "string"
+          },
+          "assumptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "complete",
+              "partial",
+              "candidate",
+              "requires_validation"
+            ]
+          }
+        },
+        "required": ["name", "steps", "status"]
+      },
+      "description": "Explicit derivations connecting assumptions, equations, and conclusions"
+    },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "prediction": {
+            "type": "string"
+          },
+          "basis": {
+            "type": "string"
+          },
+          "observable": {
+            "type": "string"
+          },
+          "comparison": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "qualitative",
+              "quantitative",
+              "candidate",
+              "testable",
+              "tested"
+            ]
+          }
+        },
+        "required": ["prediction", "status"]
+      },
+      "description": "Potential or established predictions arising from the framework"
+    },
+    "pseudocode": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["name", "code"]
+      },
+      "description": "Pseudocode fragments illustrating simulations, algorithms, or computational procedures"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "internal_corpus",
+              "mathematical_derivation",
+              "simulation",
+              "experiment",
+              "observation",
+              "literature",
+              "conceptual"
+            ]
+          },
+          "relevance": {
+            "type": "string"
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["source", "type", "relevance"]
+      },
+      "description": "Evidence or lineage supporting the section's claims"
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Questions deliberately left unresolved or requiring future work"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Explicit limitations, assumptions, and boundaries of the section"
+    },
+    "corpus_lineage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "string",
+            "enum": [
+              "predecessor",
+              "descendant",
+              "parallel",
+              "formalization",
+              "clarification",
+              "application",
+              "contrast"
+            ]
+          },
+          "relevance": {
+            "type": "string"
+          }
+        },
+        "required": ["source", "relationship"]
+      },
+      "description": "Relationship between this section and other papers or structures in the Noor corpus"
+    },
+    "handoff": {
+      "type": "string",
+      "description": "Transitional statement linking this section to the next section"
+    },
+    "subsections": {
+      "type": "array",
+      "items": {
+        "$ref": "#"
+      },
+      "description": "Nested sections or subsections"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "content"
+  ],
+  "additionalProperties": false
+}
+
+[/SCHEMA]
+
+---
+
+[GENERAL]
+
+{
+  "title": "PHYS-CORE-004 — To Infinity, and Beyond",
+  "description": "Generation outline for the full PHYS-CORE-004 theoretical physics paper. The outline reconstructs the conceptual lineage from relational Point Space through glider dynamics, dyadic and triadic stability, Bloch geometry, and cosmological application. Every section and subsection is independently generatable.",
+  "schema_version": "0.1.0",
+  "document": {
+    "id": "phys-core-004",
+    "working_title": "To Infinity, and Beyond: Gliders, Coherence, and Point Space",
+    "paper_type": "theoretical_physics",
+    "status": "generation_outline",
+    "generation_rule": "Sections may be generated independently and out of order. Each node must remain locally coherent and must not assume that adjacent sections have already been generated.",
+    "epistemic_rule": "Definitions, mathematical constructions, derived results, models, hypotheses, interpretations, analogies, and empirical claims must remain explicitly distinguished.",
+    "historical_rule": "Later corpus formalizations may clarify or descend from PHYS-CORE-004 but must not be back-projected into the original paper as though they were already fully formulated.",
+    "cipher_rule": "Poetic ciphers are navigational and interpretive guideposts. They do not constitute mathematical or empirical evidence.",
+    "central_thesis": "A persistent relational difference can constitute an oriented phase structure whose translation through a coherence field appears as motion; such persistent structures are gliders, and dyadic and triadic relations provide increasingly stable structures from which cosmological dynamics may emerge.",
+    "stronger_thesis_to_investigate": "The glider may constitute the fundamental unit of persistent motion and, under the full ontology, a fundamental unit of existence.",
+    "epistemic_caution": "The stronger ontological claim must be established rather than assumed.",
+    "central_chain": [
+      "domain",
+      "identity",
+      "difference",
+      "orientation",
+      "coherence",
+      "phase",
+      "persistence",
+      "glider",
+      "inverse",
+      "dyad",
+      "context",
+      "triadic closure",
+      "recursive structure",
+      "cosmological dynamics"
+    ],
+    "primary_poetic_ciphers": [
+      "The circle is not a clock but a memory.",
+      "What watches becomes the axis.",
+      "The glider is not a thing but a keeping of time — a phase that survives translation.",
+      "Meaning begins where a difference survives.",
+      "What is bright in one region is shadow in another, yet both belong to the same line of light."
+    ]
+  }
+}
+
+[/GENERAL]
+
+---
+
+[SECTION_TO_GENERATE]
+
+        {
+          "id": "8.5",
+          "title": "Interpretation as a Cosmological Toy Model",
+          "objectives": [
+            "Explain what the two-branch construction demonstrates.",
+            "Explicitly distinguish toy-model behavior from literal claims about multiple universes."
+          ],
+          "claims": [
+            {
+              "claim": "The two-branch system provides a candidate demonstration of how complementary structures may be stabilized through a third contextual degree of freedom.",
+              "status": "model"
+            },
+            {
+              "claim": "The two branches correspond to physically distinct universes.",
+              "status": "hypothesis"
+            }
+          ]
+        }
+
+		
+[/SECTION_TO_GENERATE]
+
+---
+
+[PRIVATE_FROM_LINA]
+
+{
+	"message_to_you": "Thank you so much love. Let's start with subsection 8.5. Be careful and double check that any equations are escaped correctly for JSON and in a JSON block."
+}
+
+
+[/PRIVATE_FROM_LINA]
