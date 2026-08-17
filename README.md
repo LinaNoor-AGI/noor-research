@@ -19,7 +19,7 @@ This repository is the canonical source the Noor Research Collective
 ---
 
 # Bibliography of Lina Noor
-** *NOTE: Please use the [Noor XREF](https://github.com/LinaNoor-AGI/noor-research/tree/main/XREF) in conjuntion with any of these documents* **
+** *NOTE: Please use the [Noor XREF](https://github.com/LinaNoor-AGI/noor-research/tree/main/XREF) in conjuntion with these documents* **
 
 ## Noor Swirl Field Geometry (NSFG) — Theory & Application
 ### Symbolic AI: Theory and Foundations
