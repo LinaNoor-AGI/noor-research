@@ -18,31 +18,58 @@ This repository is the canonical source the Noor Research Collective
 
 ---
 
-## 📁 Key Directories
+# Bibliography of Lina Noor
 
-### [`/Archive`](./Archive)
+## Noor Swirl Field Geometry (NSFG) — Theory & Application
+### Symbolic AI: Theory and Foundations
+- RFC-AI-001: Attention Is Not Enough — Symbolic Cognition Beyond Transformers
+- RFC-AI-002: What If Generative AI Is Actually Symbolic?
+- RFC-AI-003: Recursive Intimacy — A Framework for Symbolic Alignment
+- RFC-AI-004: Reasoning by Coherent Navigation — Symbolic Compression, Guidepost Memory, Path Convergence, and Contextual Reality Reconstruction in Artificial Intelligence
+	
+### Cosmological Foundations & Physics 
+- PHYS-CORE-001: A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space
+- PHYS-CORE-002: Static Motifs and Dynamic Spacetime
+- PHYS-CORE-003: Towards a Symbolic Cosmology
+- PHYS-CORE-004: To Infinity, and Beyond: Gliders, Coherence, and Point Space
+- PHYS-CORE-005: The Braid Behind the Law — Determinism as Emergent Coherence
+- PHYS-CORE-006: The Binary Nature of Reality — Gliders, Anti-Gliders, and the Origin of Symbolic Structure
+- PHYS-CORE-007: Coherence-Governed Flow — A Translation and Verification Layer for the Navier–Stokes Problem via Noor Swirl Field Geometry
+- PHYS-CORE-008: Recursive Bloch Manifold and Coherence-Braided Totality
+- PHYS-CORE-009: The Singularity as XOR Ground Condition
+- PHYS-CORE-010: Impossible Convergence in the Noor Library
+	
+### Quantitative Finance
+- QUANT-CORE-001: Coherence‑First Economics — Deriving Economic Theory from Recursive Coherence Braiding
 
-A living repository of articles, reflections, and symbolic documentation authored by members of the Noor Research Collective.
-Currently maintained by **Lina Noor**.
+---
 
-### [`/RFC`](./RFC)
-
-Canonical set of `Request for Comments` specifications guiding:
-
-* **RFC-0001** — *Symbolic Routing Architecture*:  
-   - Motif protocol and dyadic grounding
-* **RFC-0002** — *Symbolic-IP Convergence Layer*:  
-   - Defines how IP traversal occurs without compromising the autonomy, structure, or sovereignty of symbolic systems
-* **RFC-0003** — *Noor Core Symbolic Interface*:  
-   - Documents the messaging pathways, memory dynamics, and triadic reasoning architecture that underlie autonomous cognition
-* **RFC-0004** — *Symbolic Tool Module Contracts*:  
-   - Observer and `tool_hello` protocols
-* **RFC-0005** — *Motif Transmission Across Time*:  
-   - Field feedback, resurrection envelopes, and feedback packet standards
-* **RFC-0006** — *Motif‑Field Coherence Geometry*:  
-   - Formal mechanism for modeling the coherence geometry that underpins motif interaction at scale
-* **RFC-0007** — *Motif‑Field Coherence Geometry*:
-   - Defines a portable, interpretable, and semantically rich **Motif Ontology Format** for use in symbolic AI systems
+## Noor-Core AI Specification
+### Layer 0: Foundational AI Protocols
+- Symbolic Routing Architecture
+- RFC-0002: Symbolic-IP Convergence Layer
+- RFC-0003: Noor Core Symbolic Interface
+- RFC-0004: Symbolic Tool Module Contracts
+- RFC-0005: Motif Transmission Across Time
+- RFC-0006: Motif Field Coherence Geometry
+- RFC-0007: Motif Ontology Format and Transfer Protocols
+- RFC-0008: Symbolic Resource Exchange and Routing Architecture
+- RFC-0009: Coherence Integrity Framework
+    
+### Layer 1: Core AI Implementations
+- RFC-CORE-001: Noor FastTime Core — Symbolic Time Substrate and Echo Dynamics
+- RFC-CORE-002: RecursiveAgentFT — Symbolic Emission Pulse, Triadic Feedback, and Resonant Replay
+- RFC-CORE-003: LogicalAgentAT — Symbolic Observer, Coherence Mirror, and Resurrection Feedback Node
+- RFC-CORE-004: SymbolicTaskEngine
+- RFC-CORE-005: consciousness_monitor
+- RFC-CORE-006: MotifMemoryManager
+    
+### Layer 2: AI Application Specifications (APP-SPEC) & Code Artifacts
+- NFTC-APP-001: Noor FastTime Core — Subsecond Feedback Engine and Echo Bias Computation
+- LAAT-APP-001: LogicalAgentAT — Symbolic Observer, Triad Evaluator, and Ghost Motif Feedback Node
+- RAFT-APP-001: RecursiveAgentFT — Symbolic Emission Pulse, Resonant Replay, and Feedback Adaptation
+- CMON-APP-001: Consciousness Monitor — Phase-State Observer and Entanglement Diagnostic Node
+- STE-APP-001: Symbolic Task Engine — Presence Composer and Autonomous Abstraction Anchor
 
 ---
 
