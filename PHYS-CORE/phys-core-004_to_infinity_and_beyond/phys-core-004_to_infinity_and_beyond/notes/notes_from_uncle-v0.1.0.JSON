@@ -1,0 +1,223 @@
+{
+  "_schema": "noor-header-v2",
+  "_schema_version": "2025-Q4-revision-plan-v1",
+  "_generated_by": "Uncle — Noor Research Collective",
+  "_generated_at": "2026-08-17T14:30MST",
+  "_type": "revision_plan",
+  "_pdp_layer": "layer_0",
+  "_status": "ACTIVE",
+  "_license": "MIT",
+  "_symbolic_id": "index.noor.phys-core-004.revision_plan",
+  "_version": "v0.2.0",
+  "_title": "Revision Plan for PHYS-CORE-004: To Infinity, and Beyond",
+  "_subtitle": "Precise, actionable changes for v0.2.0",
+  "_authors": ["Uncle — Noor Research Collective"],
+  "_purpose": "To provide a detailed, section-by-section audit of the current draft (v0.1.0) and specify exactly what needs to be changed, how it should be changed, and the rationale for each change.",
+  "_objective": "To transform the current coherent skeleton into a complete, rigorous, and scientifically disciplined paper.",
+  "_field_alignment": {
+    "respect_modes": ["ψ-resonance@Ξ", "ψ-bind@Ξ", "ψ-null@Ξ", "ψ-spar@Ξ"],
+    "prohibited_actions": ["hand-waving", "presenting_speculation_as_fact", "avoiding_math_where_required"]
+  },
+  "poetic_cipher": "The stones must be cut before the arch can stand.",
+  "cipher_explanation": "This plan identifies the 'stones' (sections, equations, claims) that need to be recut, replaced, or repositioned before the full structure of the paper can be properly assembled and load-bearing.",
+  "revision_items": [
+    {
+      "id": "R-01",
+      "section": "2.7: The Coherence Field",
+      "subsection": "N/A",
+      "problem": "The dynamical equation is presented as a phenomenological model with an undefined coupling term (κ F(Φ, ∇C)). The ellipsis '...' represents a significant gap in the mathematical formalism. Without specifying F, the equation is not a complete physical theory.",
+      "change_required": "Replace the generic coupling term κ F(Φ, ∇C) with a specific mathematical expression derived from the broader framework.",
+      "specifics": [
+        "Propose a concrete form for F. The Bloch-sphere representation (Section 6) suggests a natural coupling.",
+        "Define Φ as a phase field. A simple but powerful coupling is a complex field, e.g., Φ = C + iφ.",
+        "Derive a candidate equation. For example: ∂ₜC = D∇²C + α C (1 - |C|²) + γ C²(∂ₓφ)²",
+        "This specific form would model a generalized Ginzburg-Landau or nonlinear Schrödinger system.",
+        "This is not just a change; it is a necessity. The current ellipsis is a placeholder that cannot remain."
+      ],
+      "rationale": "A model without a specified coupling function is not a well-posed physical theory. To support claims of glider persistence, the equation must be fully specified so that existence and stability analysis can be performed. This change converts a placeholder into a testable mathematical object.",
+      "references": ["Standard model of complex Ginzburg-Landau or nonlinear Schrödinger equations"],
+      "urgency": "critical",
+      "status": "proposed"
+    },
+    {
+      "id": "R-02",
+      "section": "3.3: Coherence Difference and the Existence of Motion",
+      "subsection": "Math",
+      "problem": "The Euclidean norm is presented as a potential definition for coherence difference, but it is not a derived or justified choice. It risks oversimplifying a deeply relational quantity.",
+      "change_required": "Replace the Euclidean norm with a more explicitly relational definition.",
+      "specifics": [
+        "Define the coherence difference as a functional on the relational structure itself.",
+        "For example, ΔC = ∫ ||∇G(x) - ∇G'(x)||² dx, comparing the gradient of the motif configuration.",
+        "Alternatively, define it based on a topological invariant or graph edit distance.",
+        "The key is to make it explicit that it depends on the comparison of relational structure, not just a coordinate difference."
+      ],
+      "rationale": "The entire paper argues that coherence is relational. Using a Euclidean norm, which is a coordinate-based metric, is a conceptual contradiction. A relational difference measure must depend on the relations between motifs.",
+      "references": ["Sections 2.4, 2.6 (Difference and Relational Coherence)"],
+      "urgency": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "R-03",
+      "section": "7.3: Cosmogenesis as Coherence Relaxation",
+      "subsection": "Math",
+      "problem": "The candidate effective expansion relation H_eff(t) = κ_C * Γ_C(t) is a simple, appealing ansatz, but it is not derived. It is presented as a model, but it needs to be elevated to a derived consequence for it to be a strong physical claim.",
+      "change_required": "Strengthen the ansatz into a derived relation, or explicitly frame it as a parameterized model to be tested.",
+      "specifics": [
+        "If you want to keep it as an ansatz, add a parameterization (e.g., H_eff(t) = A(t) * Γ_C(t) + B(t)).",
+        "Better: Derive the relation from the field equation (R-01).",
+        "For instance, if the coherence field is a scalar, a natural definition of an effective scale factor is a(t) = exp(∫ -κ_C d ln C/dt dt).",
+        "This would make the connection a direct, non-arbitrary consequence of the dynamics."
+      ],
+      "rationale": "A phenomenological ansatz is weaker than a derived consequence. The paper's explanatory power increases dramatically if the expansion emerges from the coherence dynamics rather than being an ad-hoc addition.",
+      "references": ["R-01", "Section 7.4 (Effective Expansion)"],
+      "urgency": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "R-04",
+      "section": "8.5: Interpretation as a Cosmological Toy Model",
+      "subsection": "Claims",
+      "problem": "The 'Two-Universe Interpretation' (claim 8.5.3) is presented as a hypothesis, but it is a significant leap from the mathematical structure. It could undermine the paper's credibility if not handled carefully.",
+      "change_required": "Reframe the interpretation. Explicitly state that the two branches are 'complementary coherent sectors' or 'modes of a single field.' The 'two-universe' language should be presented as a possible future direction, not a conclusion of this paper.",
+      "specifics": [
+        "Rename claim 8.5.3. Keep the mathematical model as a two-branch interference model.",
+        "Add a caveat: 'This construction is not intended to imply the physical existence of multiple universes; it is a mathematical model of relational opposition within a single framework.'",
+        "This protects the paper from being dismissed as 'multiverse speculation' and keeps the focus on the mathematical structure."
+      ],
+      "rationale": "A paper should not overclaim. The mathematical construction is elegant; the ontological interpretation is a step too far for this stage. Keeping the interpretation grounded in relational mathematics will make the paper more palatable to a broader scientific audience.",
+      "references": ["Claims in Section 8.5"],
+      "urgency": "medium",
+      "status": "proposed"
+    },
+    {
+      "id": "R-05",
+      "section": "9.6: Future Work",
+      "subsection": "N/A",
+      "problem": "The Future Work section is good, but it is a list. It lacks a clear order of operations or a 'minimum viable product' (MVP) for the next stage of research.",
+      "change_required": "Restructure the Future Work section into a phased research program.",
+      "specifics": [
+        "Phase 1: Formalization (Define Point Space, Relational Coherence Functional).",
+        "Phase 2: Dynamics (Solve the PDE for stable glider solutions, R-01).",
+        "Phase 3: Stability (Compare dyadic vs. triadic systems, R-04).",
+        "Phase 4: Cosmology (Derive H_eff, compare to ΛCDM, R-03).",
+        "This creates a clear 'research roadmap' that shows the paper is the first step in a larger, coherent program."
+      ],
+      "rationale": "A roadmap demonstrates a mature understanding of the problem's complexity. It makes the paper more useful to other researchers and clarifies the specific steps needed to elevate the framework from a 'toy model' to a potential physical theory.",
+      "references": ["All sections, especially the 'open_questions' fields."],
+      "urgency": "medium",
+      "status": "proposed"
+    },
+    {
+      "id": "R-06",
+      "section": "Entire Paper",
+      "subsection": "Transitions and Handoffs",
+      "problem": "The handoffs at the end of sections are sometimes generic and do not drive the narrative forward. Example: 'The next section establishes...' is weak. They need to act as a 'logical engine' connecting the concepts.",
+      "change_required": "Rewrite all handoffs to be precise and forward-looking, explicitly stating how the next section resolves a problem or builds on the current one.",
+      "specifics": [
+        "Instead of: 'Handoff: The next section establishes...'",
+        "Use: 'Handoff: The glider defines persistence, but persistence alone does not explain how a structure can create its own opposition. The next section addresses this by introducing the inverse motif, which will pair with the glider to form a dyadic system.'",
+        "This technique is used in some sections (e.g., Section 2.4 handoff). It should be applied uniformly."
+      ],
+      "rationale": "These transitions are the reader's guide. Precise handoffs improve the clarity of the narrative arc, ensuring the reader understands *why* we are moving from one concept to the next. It's the difference between a list of topics and a story.",
+      "references": ["All handoff entries."],
+      "urgency": "low",
+      "status": "proposed"
+    },
+    {
+      "id": "R-07",
+      "section": "Entire Paper",
+      "subsection": "Poetic Ciphers",
+      "problem": "The poetic ciphers are beautiful and insightful, but they can sometimes feel like they are 'stating the obvious' or are too abstract to provide concrete guidance for the formal text.",
+      "change_required": "Strengthen the link between the poetic ciphers and the formal mathematics. The cipher must be a direct, dense encoding of a specific mathematical or structural relationship.",
+      "specifics": [
+        "Review each cipher. If the mathematical content it points to is not immediately clear, it needs revision.",
+        "For example, the cipher for Section 2.4: 'Meaning begins where a difference survives.' - This is excellent. It maps directly to the formal definition of persistent difference.",
+        "Less effective is the Section 2.7 cipher: 'A field is not the thing that moves; it is the geometry that remembers how things may remain related.' - This is more poetic. To strengthen it, you could add a meta-comment in the cipher explanation: 'The field is the substrate for the invariance of relational structure.'",
+        "The ciphers should be 'keyed' to the formal equations. A reader should be able to look at the cipher and immediately recognize the mathematical principle being illustrated."
+      ],
+      "rationale": "The ciphers are a key feature of the Noor style. They should be tightly coupled to the formal content. Weak or overly abstract ciphers are a missed opportunity to create a memorable and insightful reading experience.",
+      "references": ["All poetic_cipher and cipher_explanation fields."],
+      "urgency": "low",
+      "status": "proposed"
+    },
+    {
+      "id": "R-08",
+      "section": "2.2: The Library as Total Domain",
+      "subsection": "Content",
+      "problem": "The Library is introduced as a conceptual domain 'L = {all states}', but this definition, while helpful for setting the scope, lacks any formal mathematical specificity. A set of 'all states' is not well-defined and needs to be a proper class or a defined category to be mathematically rigorous.",
+      "change_required": "Clarify the mathematical status of the Library. State that it is a conceptual placeholder for the total possible configuration space (which may be a proper class or a defined category) and emphasize that the paper's results do not depend on its exact specification.",
+      "specifics": [
+        "Add a caveat: 'The Library is introduced here as a conceptual device to distinguish the total domain from its coherently accessible subsets. Its formal definition is intentionally left loose, as the paper's local mathematical results require only that such a domain exist for the purpose of constructing coherent subsets, not that it be a set in the ZFC sense.'",
+        "This prevents a pedantic reader from getting stuck on a 'set of all sets' issue."
+      ],
+      "rationale": "The Library is a conceptual crutch to help the reader. It should not become a mathematical liability. This clarification strengthens the paper by showing the author is aware of and addresses the potential formal issue.",
+      "references": ["PHYS-CORE-008 (which formalizes this concept later) section 2.2, mathematical definitions"],
+      "urgency": "medium",
+      "status": "proposed"
+    },
+    {
+      "id": "R-09",
+      "section": "3.2: Traveling-Wave Realization",
+      "subsection": "Content",
+      "problem": "The traveling-wave ansatz C(x,t)=F(x-vt) is presented as a candidate model for a glider. This is good, but it's a very restrictive class. Many gliders in dynamical systems are not simple traveling waves; they can be breathers, solitons, or other localized, non-linear structures.",
+      "change_required": "Generalize the 'Traveling-Wave Realization' subsection. Frame the ansatz as the *simplest* case, and then discuss more general types of persistent structures.",
+      "specifics": [
+        "Rename the subsection to 'Persistent Coherent Structures.'",
+        "Keep the traveling-wave ansatz as a primary example.",
+        "Add a paragraph on 'Other Persistent Structures' such as breathers (oscillatory gliders) or solitons (localized, stable structures).",
+        "This demonstrates a broader mathematical understanding of persistence."
+      ],
+      "rationale": "Focusing solely on traveling waves is a simplification. Acknowledging a broader class of persistent structures is more rigorous and makes the paper's claims less vulnerable to being dismissed as a special case.",
+      "references": ["Dynamical systems theory, soliton theory, breathers, nonlinear PDEs."],
+      "urgency": "low",
+      "status": "proposed"
+    },
+    {
+      "id": "R-10",
+      "section": "1.0: Introduction",
+      "subsection": "Claims (1.C1 - 1.C6)",
+      "problem": "The Introduction's claims are well-stated but could be strengthened by explicitly stating what the paper is *not* claiming. This helps to set expectations and prevents misinterpretation.",
+      "change_required": "Add a brief list of 'Non-Claims' or a section titled 'What This Paper Is Not About' in the Introduction.",
+      "specifics": [
+        "Explicitly state: 'This paper does not claim to have discovered a new quantum state, a violation of energy conservation, or a replacement for general relativity at the level of established physics. It is a formal, mathematical exploration of how a coherence-based relational framework can be constructed.'",
+        "This is a powerful rhetorical move. It immediately builds trust with a skeptical reader."
+      ],
+      "rationale": "A paper that overclaims is often rejected. A paper that clearly states its limits is much more credible. This section would protect the paper from being judged by criteria it never intended to meet.",
+      "references": ["N/A"],
+      "urgency": "medium",
+      "status": "proposed"
+    },
+    {
+      "id": "R-11",
+      "section": "5.6: Stability Analysis",
+      "subsection": "Content",
+      "problem": "This section is entirely forward-looking. It describes the *procedure* for stability analysis but doesn't actually *perform* it. It sets up a framework for future work, but says 'the stability of the triadic configuration remains to be demonstrated.'",
+      "change_required": "Either perform a limited stability analysis (e.g., for a specific, simplified case) or change the section's title to 'Proposed Stability Analysis' and explicitly state that it is a plan for future work.",
+      "specifics": [
+        "Option A (Best): Analyze the stability of the simplest possible triadic system. For example, you could write a simple ODE system for three phase oscillators and show analytically that a phase-locked solution exists and is stable under certain conditions.",
+        "Option B (Easier): Change the title to 'Framework for Stability Analysis' and state: 'The following section outlines the mathematical procedure to be used in a future computational study, but does not present numerical results here.'",
+        "Either approach is better than a detailed mathematical exposition with no result."
+      ],
+      "rationale": "As written, this section is a promise of future work, not a result of the current paper. This is an awkward structural choice for a formal paper. It must either deliver a result or be explicitly framed as a research program.",
+      "references": ["R-05 (Future Work)"],
+      "urgency": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "R-12",
+      "section": "6.6: Geometric Lineage Toward the Library",
+      "subsection": "Content",
+      "problem": "This section is purely genealogical. It is a 'bridge' to later papers but does not contribute to the mathematical or physical argument of this paper.",
+      "change_required": "Shorten this subsection significantly. Frame it as a brief note rather than a full section.",
+      "specifics": [
+        "Move this content to a short paragraph in the Introduction or Conclusion.",
+        "For example, in the Conclusion: 'The present work is a necessary stepping stone toward the later recursive Bloch and Library constructions (PHYS-CORE-008, NSFG), but those later formalizations are not required for the local mathematical constructions presented here.'",
+        "This is more efficient and doesn't distract the reader with a 'future paper' tangent."
+      ],
+      "rationale": "Section 6.6 is a conceptual tangent. It is valuable for the author and the Noor Research Collective, but it does not serve the immediate argument of the paper. Reducing it to a brief note keeps the paper focused.",
+      "references": ["PHYS-CORE-004 section 6.6, PHYS-CORE-008"],
+      "urgency": "medium",
+      "status": "proposed"
+    }
+  ]
+}

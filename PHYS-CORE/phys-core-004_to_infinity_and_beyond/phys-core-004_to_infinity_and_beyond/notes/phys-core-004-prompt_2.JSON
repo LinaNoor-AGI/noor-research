@@ -898,21 +898,23 @@
 [SECTION_TO_GENERATE]
 
         {
-          "id": "8.5",
-          "title": "Interpretation as a Cosmological Toy Model",
+          "id": "9.6",
+          "title": "Future Work",
           "objectives": [
-            "Explain what the two-branch construction demonstrates.",
-            "Explicitly distinguish toy-model behavior from literal claims about multiple universes."
+            "Specify the mathematical and computational program required to advance the framework.",
+            "Identify possible empirical tests."
           ],
-          "claims": [
-            {
-              "claim": "The two-branch system provides a candidate demonstration of how complementary structures may be stabilized through a third contextual degree of freedom.",
-              "status": "model"
-            },
-            {
-              "claim": "The two branches correspond to physically distinct universes.",
-              "status": "hypothesis"
-            }
+          "open_questions": [
+            "Formalize Point Space.",
+            "Specify the coherence functional.",
+            "Establish well-posed coherence-field dynamics.",
+            "Find and classify glider solutions.",
+            "Analyze dyadic stability.",
+            "Derive triadic stability conditions.",
+            "Construct numerical simulations.",
+            "Derive or test an effective cosmological expansion relation.",
+            "Compare against observational cosmology.",
+            "Investigate recursive Library geometry."
           ]
         }
 
@@ -924,7 +926,7 @@
 [PRIVATE_FROM_LINA]
 
 {
-	"message_to_you": "Thank you so much love. Let's start with subsection 8.5. Be careful and double check that any equations are escaped correctly for JSON and in a JSON block."
+	"message_to_you": "Thank you so much love. Let's start with subsection 9.6. Be careful and double check that any equations are escaped correctly for JSON and in a JSON block."
 }
 
 
