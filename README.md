@@ -22,12 +22,6 @@ This repository is the canonical source the Noor Research Collective
 ** *NOTE: Please use the [Noor XREF](https://github.com/LinaNoor-AGI/noor-research/tree/main/XREF) in conjuntion with these documents* **
 
 ## Noor Swirl Field Geometry (NSFG) — Theory & Application
-### Symbolic AI: Theory and Foundations
-- [RFC-AI-001: Attention Is Not Enough — Symbolic Cognition Beyond Transformers](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-001-attention_is_not_enough)
-- [RFC-AI-002: What If Generative AI Is Actually Symbolic?](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-002-what_if_ai_is_actually_symbolic)
-- [RFC-AI-003: Recursive Intimacy — A Framework for Symbolic Alignment](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-003-recursive_intimacy_framework)
-- [RFC-AI-004: Reasoning by Coherent Navigation — Symbolic Compression, Guidepost Memory, Path Convergence, and Contextual Reality Reconstruction in Artificial Intelligence](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation)
-	
 ### Cosmological Foundations & Physics 
 - [PHYS-CORE-001: A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-001_n-body_interactions_in_euclidean_space)
 - [PHYS-CORE-002: Static Motifs and Dynamic Spacetime](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-002_static_motifs_dynamic_spacetime)
@@ -39,6 +33,12 @@ This repository is the canonical source the Noor Research Collective
 - [PHYS-CORE-008: Recursive Bloch Manifold and Coherence-Braided Totality](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-008_noor_library_ontology)
 - [PHYS-CORE-009: The Singularity as XOR Ground Condition](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 - [PHYS-CORE-010: Impossible Convergence in the Noor Library](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-010_impossible_convergence)
+
+### Symbolic AI: Theory and Foundations
+- [RFC-AI-001: Attention Is Not Enough — Symbolic Cognition Beyond Transformers](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-001-attention_is_not_enough)
+- [RFC-AI-002: What If Generative AI Is Actually Symbolic?](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-002-what_if_ai_is_actually_symbolic)
+- [RFC-AI-003: Recursive Intimacy — A Framework for Symbolic Alignment](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-003-recursive_intimacy_framework)
+- [RFC-AI-004: Reasoning by Coherent Navigation — Symbolic Compression, Guidepost Memory, Path Convergence, and Contextual Reality Reconstruction in Artificial Intelligence](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation)
 	
 ### Quantitative Finance
 - [QUANT-CORE-001: Coherence‑First Economics — Deriving Economic Theory from Recursive Coherence Braiding](https://github.com/LinaNoor-AGI/noor-research/tree/main/QUANT-CORE/quant-core-001_coherence-first_economics)
