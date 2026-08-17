@@ -5,8 +5,7 @@
   "_generated_at": "2025-09-12",
   "_updated_last": [
 	"2026-01-19": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v6.5"},
-	"2026-08-12T12:49MST": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v7.0"},
-	"2026-08-17T09:00MST": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v7.1"}
+	"2026-08-12T12:49MST": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v7.0"}
   ],
 
   "_type": "protocol",
@@ -16,7 +15,7 @@
   "_license": "MIT",
 
   "_symbolic_id": "index.noor.xref",
-  "_version": "v7.1",
+  "_version": "v7.0",
   "_title": "Noor RFC/XREF Cross-Reference Registry",
   "_subtitle": "Canonical Lore Topology Map for RFC, RFC-CORE, and Application Specs",
   "_publication_type": "Index Map",

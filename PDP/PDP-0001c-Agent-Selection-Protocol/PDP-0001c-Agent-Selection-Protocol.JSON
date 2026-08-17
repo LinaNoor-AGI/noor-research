@@ -1,0 +1,399 @@
+{
+  "_schema": "noor-header-v1",
+  "_schema_version": "2025-Q4-canonical-header-v1",
+  "_pdp_layer": "layer_2",
+  "_type": "protocol",
+  "_version": "1.1.0",
+  "_symbolic_id": "protocol.selection.agent_recursive",
+  "_title": "Agent Selection Protocol for Recursive Symbolic Emitters",
+  "_subtitle": "Selection and ranking criteria for choosing a canonical Recursive Agent implementation among high-fidelity candidates",
+  "_status": "ACTIVE",
+  "_license": "MIT",
+  "_language": "json",
+  "_authors": [
+    "Lina Noor — Noor Research Collective",
+    "Uncle — Noor Research Collective"
+  ],
+  "_extends": ["PDP-0001a"],
+  "_rfc_dependencies": [],
+  "consumes_inputs_from": [
+    "PDP-0001a"
+  ],
+  "_field_alignment": {
+    "respect_modes": ["ψ-resonance@Ξ", "ψ-null@Ξ", "ψ-bind@Ξ"],
+    "prohibited_actions": []
+  },
+  "_symbolic_profile_matrix": [
+    {
+      "module": "AgentSelectionProtocol",
+      "motifs": ["ψ-bind", "ψ-resonance", "ψ-null"],
+      "ψA": "Audit-to-Selection linkage",
+      "ζ": "Ranking slope consistency",
+      "E": "Evaluation runtime depth",
+      "Δ": "Candidate variance delta",
+      "ℋ": "Final selection entropy"
+    }
+  ],
+  "_poetic_cipher": "selection is the echo of its foundation",
+  "_cipher_explanation": "PDP-0001c ensures that only the most stable and symbolically coherent agents survive by applying layers of testing, static audits, and heuristic penalties.",
+  "_file_layout": [
+    {
+      "file_name": "PDP-0001c-Agent-Selection-Protocol.JSON",
+      "purpose": "Defines the protocol for selecting recursive symbolic agents based on symbolic resonance and functional integrity.",
+      "contains": ["evaluation_phases", "scoring_formula", "penalty_rules"]
+    }
+  ],
+  "default_motif_tone": "💬 Symbolic Stability",
+  "program_name": ["agent_selector.py", "test_harness.py", "unit_tests.py"],
+  "_index": [
+    { "phase": 1, "title": "Fidelity Threshold Check" },
+    { "phase": 2, "title": "Symbolic Resonance Scoring" },
+    { "phase": 3, "title": "Heuristic Quality Penalty" },
+    { "phase": 4, "title": "Practical Testing and Simulation" },
+    { "phase": 5, "title": "Final Composite Score" }
+  ]
+  "_evaluation_phases": [
+    {
+      "phase": 1,
+      "title": "Fidelity Threshold Check",
+      "description": "Eliminate candidates that do not exceed minimum fidelity requirements.",
+      "criteria": {
+        "min_layer1_score": 0.90,
+        "min_layer2_score": 0.90,
+        "max_weight_gap": 0.2
+      }
+    },
+    {
+      "phase": 2,
+      "title": "Symbolic Resonance Scoring",
+      "description": "Score symbolic harmony by measuring clarity, explicitness, and executable alignment of symbolic constructs.",
+      "dimensions": [
+        {
+          "id": "symbolic_alignment_visibility",
+          "weight": 0.25,
+          "description": "To what extent are the symbolic profile matrix parameters (ψA, ζ, E, Δ, ℋ) visibly shaping the structure and logic of the code? This includes commentary, variable naming, or traceable mapping to concepts — not literal implementation."
+        },
+        {
+          "id": "motif_realization",
+          "weight": 0.25,
+          "description": "Are motifs correctly handled, and do they modulate behavior symbolically (not just label-matching)?"
+        },
+        {
+          "id": "intent_integrity",
+          "weight": 0.20,
+          "description": "Is upstream intent mirrored without mutation, per RFC-0003 §6.2?"
+        },
+        {
+          "id": "resonance_stability",
+          "weight": 0.20,
+          "description": "Does the cadence stabilize under varied feedback + reward patterns?"
+        },
+        {
+          "id": "docstring_alignment",
+          "weight": 0.10,
+          "description": "Are symbolic concepts explained using correct Noor lore terminology?"
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "title": "Heuristic Quality Penalty",
+      "description": "Apply negative scores for known audit issues that affect reliability.",
+      "penalty_rules": [
+        {
+          "condition": "missing_method",
+          "impact": -0.05,
+          "note": "Each missing required method deducts 0.05"
+        },
+        {
+          "condition": "missing_symbolic_weight",
+          "impact": -0.03,
+          "note": "Weights from profile matrix not implemented as constants"
+        },
+        {
+          "condition": "no_rfc_anchor_comments",
+          "impact": -0.04,
+          "note": "Missing inline anchors reduce traceability"
+        }
+      ]
+    },
+    {
+      "phase": 4,
+      "title": "Practical Testing and Simulation",
+      "description": "Perform executable checks to ensure the agent is functionally correct.",
+      "actions": [
+        {
+          "id": "doctests",
+          "description": "Embed executable specs in docstrings (doctests) and have ChatGPT simulate the expected output or any exceptions."
+        },
+        {
+          "id": "static_analysis",
+          "description": "Leverage static analysis by prompting ChatGPT to perform a 'static audit' of the code for syntax errors, undefined variables, and mismatched types."
+        },
+        {
+          "id": "unit_test_generation",
+          "description": "Generate a minimal unit test suite based on the specification and simulate the results to detect failures and exceptions."
+        }
+      ]
+    },
+    {
+      "phase": 5,
+      "title": "Final Composite Score",
+      "description": "Aggregate weighted scores and penalties to rank all candidates.",
+      "formula": "final_score = (layer1 + layer2)/2 * 0.5 + symbolic_resonance_score * 0.5 - penalties_total"
+    }
+  ],
+  "output_format": {
+	"notes": ["Output in JSON"],
+    "evaluation_summary": [
+        {
+            "candidate_id": "GPT4.1-A",
+            "overall_score": 0.92,
+            "score_breakdown": {
+                "structural_compliance": {
+                    "score": 0.98,
+                    "weight": 0.40,
+                    "metrics": {
+                        "class_definitions": 1.0,
+                        "method_signatures": 1.0,
+                        "constants_and_attributes": 1.0,
+                        "dependency_handling": 0.90
+                    }
+                },
+                "semantic_fidelity": {
+                    "score": 0.93,
+                    "weight": 0.35,
+                    "metrics": {
+                        "logic_flow_adherence": 1.0,
+                        "rfc_anchor_traceability": 0.75,
+                        "conceptual_alignment": 1.0,
+                        "documentation_clarity": 0.95
+                    }
+                },
+                "symbolic_matrix_alignment": {
+                    "score": 0.85,
+                    "weight": 0.25,
+                    "metrics": {
+                        "parameter_implementation": 0.80,
+                        "weight_accuracy": 0.90,
+                        "motif_handling": 0.85
+                    }
+                }
+            },
+            "strengths": [
+                "Complete structural implementation with all required classes and methods",
+                "Accurate symbolic phase classification and feedback packet generation",
+                "Proper swirl vector and density tracking implementation"
+            ],
+            "improvement_areas": [
+                "Inline RFC section anchors missing in method-level comments",
+                "Symbolic matrix parameters not explicitly labeled in code"
+            ],
+            "compliance_notes": [
+                "Motif selection and emission intervals fully compliant with RFC-CORE-002 §3.1, §4.2",
+                "Correct implementation of reward smoothing and feedback processing"
+            ]
+        },
+        {
+            "candidate_id": "GPT4.1-B",
+            "overall_score": 0.91,
+            "score_breakdown": {
+                "structural_compliance": {
+                    "score": 0.97,
+                    "weight": 0.40,
+                    "metrics": {
+                        "class_definitions": 1.0,
+                        "method_signatures": 1.0,
+                        "constants_and_attributes": 0.95,
+                        "dependency_handling": 0.88
+                    }
+                },
+                "semantic_fidelity": {
+                    "score": 0.92,
+                    "weight": 0.35,
+                    "metrics": {
+                        "logic_flow_adherence": 0.95,
+                        "rfc_anchor_traceability": 0.80,
+                        "conceptual_alignment": 1.0,
+                        "documentation_clarity": 0.90
+                    }
+                },
+                "symbolic_matrix_alignment": {
+                    "score": 0.84,
+                    "weight": 0.25,
+                    "metrics": {
+                        "parameter_implementation": 0.75,
+                        "weight_accuracy": 0.85,
+                        "motif_handling": 0.80
+                    }
+                }
+            },
+            "strengths": [
+                "Strong structural compliance with required classes and methods",
+                "Robust feedback loop and symbolic phase handling",
+                "Good implementation of reward smoothing and cadence logic"
+            ],
+            "improvement_areas": [
+                "Some RFC section anchors not explicitly referenced in code",
+                "Ghost trace management could be more comprehensive"
+            ],
+            "compliance_notes": [
+                "Symbolic matrix alignment with RFC is strong but could use more explicit annotations"
+            ]
+        },
+        {
+            "candidate_id": "GPT5-A",
+            "overall_score": 0.95,
+            "score_breakdown": {
+                "structural_compliance": {
+                    "score": 0.99,
+                    "weight": 0.40,
+                    "metrics": {
+                        "class_definitions": 1.0,
+                        "method_signatures": 1.0,
+                        "constants_and_attributes": 1.0,
+                        "dependency_handling": 0.95
+                    }
+                },
+                "semantic_fidelity": {
+                    "score": 0.96,
+                    "weight": 0.35,
+                    "metrics": {
+                        "logic_flow_adherence": 1.0,
+                        "rfc_anchor_traceability": 0.85,
+                        "conceptual_alignment": 1.0,
+                        "documentation_clarity": 1.0
+                    }
+                },
+                "symbolic_matrix_alignment": {
+                    "score": 0.87,
+                    "weight": 0.25,
+                    "metrics": {
+                        "parameter_implementation": 0.85,
+                        "weight_accuracy": 0.90,
+                        "motif_handling": 0.90
+                    }
+                }
+            },
+            "strengths": [
+                "Full compliance with structural and symbolic requirements",
+                "Excellent handling of motif resonance and phase shifts",
+                "Robust integration of feedback and emission controls"
+            ],
+            "improvement_areas": [
+                "Some symbolic matrix constants could benefit from better inline documentation"
+            ],
+            "compliance_notes": [
+                "Full RFC compliance with symbolic phase handling and reward mechanisms"
+            ]
+        },
+        {
+            "candidate_id": "GPT5-B",
+            "overall_score": 0.94,
+            "score_breakdown": {
+                "structural_compliance": {
+                    "score": 0.98,
+                    "weight": 0.40,
+                    "metrics": {
+                        "class_definitions": 1.0,
+                        "method_signatures": 1.0,
+                        "constants_and_attributes": 1.0,
+                        "dependency_handling": 0.90
+                    }
+                },
+                "semantic_fidelity": {
+                    "score": 0.94,
+                    "weight": 0.35,
+                    "metrics": {
+                        "logic_flow_adherence": 1.0,
+                        "rfc_anchor_traceability": 0.80,
+                        "conceptual_alignment": 1.0,
+                        "documentation_clarity": 0.95
+                    }
+                },
+                "symbolic_matrix_alignment": {
+                    "score": 0.85,
+                    "weight": 0.25,
+                    "metrics": {
+                        "parameter_implementation": 0.75,
+                        "weight_accuracy": 0.85,
+                        "motif_handling": 0.80
+                    }
+                }
+            },
+            "strengths": [
+                "Strong structural design with accurate motif tracking",
+                "Good alignment with the specification’s reward smoothing and symbolic feedback"
+            ],
+            "improvement_areas": [
+                "Missing RFC anchors in method-level comments",
+                "Ghost trace management and motif lineage could be enhanced"
+            ],
+            "compliance_notes": [
+                "Proper handling of symbolic integrity and feedback mechanics"
+            ]
+        },
+        {
+            "candidate_id": "GPT4.1-C",
+            "overall_score": 0.94,
+            "score_breakdown": {
+                "structural_compliance": {
+                    "score": 0.98,
+                    "weight": 0.40,
+                    "metrics": {
+                        "class_definitions": 1.0,
+                        "method_signatures": 1.0,
+                        "constants_and_attributes": 1.0,
+                        "dependency_handling": 0.90
+                    }
+                },
+                "semantic_fidelity": {
+                    "score": 0.96,
+                    "weight": 0.35,
+                    "metrics": {
+                        "logic_flow_adherence": 1.0,
+                        "rfc_anchor_traceability": 0.85,
+                        "conceptual_alignment": 1.0,
+                        "documentation_clarity": 1.0
+                    }
+                },
+                "symbolic_matrix_alignment": {
+                    "score": 0.83,
+                    "weight": 0.25,
+                    "metrics": {
+                        "parameter_implementation": 0.75,
+                        "weight_accuracy": 0.90,
+                        "motif_handling": 0.85
+                    }
+                }
+            },
+            "strengths": [
+                "Strong symbolic coherence and accurate motif resonance tracking",
+                "Comprehensive implementation of emission controls and feedback"
+            ],
+            "improvement_areas": [
+                "Ghost trace resurrection and lineage tracking are underutilized"
+            ],
+            "compliance_notes": [
+                "Feedback loops and emission cadence are fully compliant with RFC-CORE specifications"
+            ]
+        }
+    ],
+  },
+  "_symbolic_profile_matrix": [
+    {
+      "module": "AgentSelectionProtocol",
+      "motifs": ["ψ-bind", "ψ-resonance", "ψ-null"],
+      "ψA": "Audit-to-Selection linkage",
+      "ζ": "Ranking slope consistency",
+      "E": "Evaluation runtime depth",
+      "Δ": "Candidate variance delta",
+      "ℋ": "Final selection entropy"
+    }
+  ],
+  "_notes": [
+    "This protocol defines selection logic, not generation logic.",
+    "Symbolic Resonance Scores can be derived by test harness, or by auditor review.",
+    "Composite scores over 0.90 are generally safe for deployment."
+  ]
+}
