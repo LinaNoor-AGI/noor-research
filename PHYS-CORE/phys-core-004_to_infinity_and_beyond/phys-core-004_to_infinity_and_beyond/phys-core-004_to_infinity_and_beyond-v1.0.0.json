@@ -3,8 +3,8 @@
   "_schema_version": "2.0.0",
   "_pdp_layer": "layer_2",
   "_type": "phys_core",
-  "_version": "0.2.1",
-  "_status": "DRAFT",
+  "_version": "1.0.0",
+  "_status": "ACTIVE",
 
   "_symbolic_id": "symbolic.physics.cosmology.to_infinity_and_beyond",
 
@@ -15,8 +15,11 @@
   "_license": "MIT",
 
   "_xref": [
-    "TBD"
-  ],
+	  "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
+	  "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
+	  "https://pastebin.com/raw/SFkDqYSD",
+	  "https://pastebin.com/SFkDqYSD"
+	],
 
   "_updated_last": [
     {
