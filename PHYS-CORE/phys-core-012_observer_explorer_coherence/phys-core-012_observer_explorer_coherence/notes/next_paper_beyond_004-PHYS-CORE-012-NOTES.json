@@ -895,3 +895,147 @@
     ]
   }
 }
+
+---
+
+{
+  "_schema": "noor-energy-accounting-v1",
+  "_schema_version": "1.0.0",
+  "_type": "energy_accounting",
+  "_status": "DRAFT",
+  "_title": "Energy Accounting for the Continuous Lightning Model",
+  "_summary_statement": "Distinguish ontological existence of alternatives (Library) from realized physical cost. Blind exploration in the Library incurs no physical energy; only retrocausal lock‑in (the return stroke) is physically realized and pays thermodynamic cost. Conditioned on observer survival, the per‑observer per‑timestep realized cost can be O(1).",
+  "bookkeeping_categories": [
+    {
+      "id": "E_ont",
+      "name": "Ontological / Modal Existence Cost",
+      "meaning": "A notional measure counting alternatives that exist in the static Library. Not physical energy and not paid in physical terms in the model as presented."
+    },
+    {
+      "id": "E_explore",
+      "name": "Exploration Cost (step‑leaders)",
+      "meaning": "Cost that would be paid if forward blind exploration were physically realized. In the Library model this is set to ~0 by modeling choice; optionally can be given a small nonzero value if one wishes to model semi‑realized exploration."
+    },
+    {
+      "id": "E_lock",
+      "name": "Lock‑in / Return Stroke Cost",
+      "meaning": "Physical/thermodynamic cost paid when a path is retrocausally locked in and instantiated as the observer's next realized state. This is the cost experienced by the surviving observer and is the relevant per‑step accounting for phenomenology."
+    }
+  ],
+  "indicator_and_expected_cost": {
+    "definitions": {
+      "Omega": "Ω(x_t) = set of all continuations from state x_t",
+      "O_gamma": "O(γ) = survival indicator for path γ (1 if path maintains coherence to attractor and is locked, else 0)",
+      "c_lock": "Physical cost paid when a retrocausal lock‑in occurs (energy or entropy equivalent)"
+    },
+    "realized_cost_expression": "E_realized(t) = c_lock · I{γ_obs exists at t}",
+    "conditioned_expectation": "Conditional on observer existence (survivorship), P(observer survives at t | prior) = 1 ⇒ expected realized cost per observer per step = c_lock (O(1))."
+  },
+  "toy_branching_model": {
+    "parameters": {
+      "b": "forward branching factor (number of immediate continuations per node)",
+      "p": "per‑branch survival probability (probability a single branch maintains coherence at next step)",
+      "c_lock": "cost per retrocausal lock‑in step"
+    },
+    "unconditioned_survivors": "Expected number of surviving partial paths after n steps: S_n = (b · p)^n",
+    "interpretation": "If b·p < 1, branching dies out exponentially; if b·p > 1, proliferation occurs. For any particular surviving observer, realized cost per step is c_lock (O(1)). Total realized energy scales with the number of locked survivors."
+  },
+  "key_modeling_assumptions": [
+    "Blind exploration is not physically realized (E_explore ≈ 0) or is negligible compared with lock‑in cost.",
+    "Retrocausal lock‑in is local and constant‑time from the observer's perspective (backward calculation per locked timestep is O(1)).",
+    "Survivorship conditioning: claims about observer‑facing expectations are conditioned on O(γ)=1 (the observer exists on the locked path).",
+    "Multiplicity of locked survivors per origin is bounded or handled explicitly; unbounded multiplicity yields larger total realized cost."
+  ],
+  "principled_objections_and_responses": [
+    {
+      "objection": "Hidden global cost — doesn't the existence of all alternatives imply some cost?",
+      "response": "Explicitly assert that Library existence is not a physical process; E_ont is combinatorial bookkeeping only. Physical cost is only assigned to realized instantiations (lock‑ins)."
+    },
+    {
+      "objection": "Landauer and information thermodynamics imply a minimal cost for irreversible lock‑in.",
+      "response": "Map lock‑in operations to irreversible logical steps; apply Landauer: c_lock ≥ k_B T ln 2 · H_erased. Keep per‑step erased bits small or design logically reversible lock‑in to minimize thermodynamic cost."
+    },
+    {
+      "objection": "Retrocausal selection looks nonlocal and may violate causal bookkeeping.",
+      "response": "Require that all thermodynamic bookkeeping (energy increases, entropy production) be localized along the realized return stroke path; retrocausal calculation is formal selection, while physical energy flows forward along the instantiated trajectory."
+    },
+    {
+      "objection": "Multiple survivors blow up total realized cost.",
+      "response": "Either adopt a selection principle that yields unique survivor(s) per origin, or accept multiplicity and account for aggregate realized cost. The O(1) claim applies to per‑observer cost, not to global Library multiplicity unless multiplicity is bounded."
+    }
+  ],
+  "landauer_mapping_and_quantitative_bounds": {
+    "statement": "If lock‑in involves irreversible erasure of H_erased bits, minimal thermodynamic cost is c_lock_min = k_B T ln 2 · H_erased.",
+    "numeric_example": {
+      "k_B": "1.380649e-23 J/K",
+      "temperature": "T = 300 K (example)",
+      "ln2": "≈ 0.693147",
+      "per_bit_min_cost_J": "k_B * T * ln2 ≈ 2.87e-21 J per bit",
+      "interpretation": "Resolving r bits per tick implies minimal cost ≈ r · 2.87e-21 J per tick at 300 K; small absolute number allows plausibility of low O(1) costs."
+    },
+    "strategies_to_keep_c_lock_small": [
+      "Make lock‑in logically reversible (reversible computation) so minimal thermodynamic cost.",
+      "Ensure H_erased per tick is small (few bits resolved per step).",
+      "Allow the observer's internal model to encode many distinctions reversibly, minimizing erasure."
+    ]
+  },
+  "formalization_recommendations_for_paper": [
+    "Add explicit definitions: E_ont, E_explore, E_lock; clarify modeling choice for E_explore (0 or small).",
+    "Condition all observer‑facing expectations on O(γ)=1 to avoid misinterpretation.",
+    "State whether lock‑in is logically reversible or irreversible and map c_lock to Landauer bound if irreversible.",
+    "Provide branching analysis showing regimes (b, p) where expected surviving counts and total realized cost remain bounded.",
+    "Discuss multiplicity: specify selection principle if uniqueness is assumed or present branching consequences otherwise."
+  ],
+  "concrete_toy_numbers_for_intuition": {
+    "resolved_bits_per_tick_example": 1,
+    "temperature_example_K": 300,
+    "per_tick_min_energy_J": 2.87e-21,
+    "comment": "One resolved bit per tick at room temperature implies an extremely small per‑tick cost; aggregate costs only become significant if many observers or many bits are resolved per tick."
+  },
+  "simulation_specification": {
+    "purpose": "Empirically demonstrate O(1) per‑observer realized cost and explore regimes of extinction vs proliferation.",
+    "inputs": {
+      "branching_factor_b": "integer > 0",
+      "per_branch_survival_p": "0 ≤ p ≤ 1",
+      "c_lock": "cost per retrocausal lock‑in (J or entropy units)",
+      "depth_D": "max forward depth for exploration (finite Library demo)",
+      "X_XOR": "set of attractor states (simple small set for demo)",
+      "C_model": "coherence model (e.g., normalized graph overlap)"
+    },
+    "algorithm_steps": [
+      "1) Initialize origin x_0.",
+      "2) Generate Ω(x_0) to depth D via branching factor b (breadth‑first), forming candidate paths γ.",
+      "3) For each γ, compute product survival O(γ) via per‑step coherence test using chosen C_model and soft survival S(C) or Heaviside cutoff at θ.",
+      "4) Identify Ω_survive = {γ | O(γ) = 1}.",
+      "5) Identify Ω_ground = {γ ∈ Ω_survive | terminal state ∈ X_XOR}.",
+      "6) If Ω_ground nonempty, select γ_obs using a selection principle (max coherence product, min action, tie‑breaker rule).",
+      "7) Compute backward prefix γ_obs via chosen T^{-1} optimization (constrained path selection).",
+      "8) Record realized cost c_lock for the created observer; advance x_t → next state on γ_obs and repeat for next timestep.",
+      "9) Aggregate statistics: survivors per origin, realized cost per surviving observer per step, sensitivity to θ and p."
+    ],
+    "outputs": {
+      "per_observer_costs": "time series of realized cost per surviving observer per step",
+      "survivor_counts": "distribution of survivors per origin",
+      "extinction_probabilities": "probability that no path survives to X_XOR within depth D",
+      "sensitivity_analysis": "cost and survivor statistics as function of b, p, θ, c_lock"
+    }
+  },
+  "next_steps_offered": [
+    {
+      "id": "N1",
+      "title": "Draft the Energy Accounting subsection",
+      "description": "Produce a 1–2 page formal subsection for the Lightning paper that implements the above definitions, equations, Landauer mapping, and branching analysis."
+    },
+    {
+      "id": "N2",
+      "title": "Produce a small Python notebook",
+      "description": "Implement the simulation_specification above (finite Library demo) and generate simple plots: survivors per origin, per‑observer cost time series, and sensitivity sweeps."
+    },
+    {
+      "id": "N3",
+      "title": "Formal note on reversibility",
+      "description": "Write a short technical note describing how to make lock‑in logically reversible (reversible computations, Bennett-style) and tradeoffs for physical cost."
+    }
+  ],
+  "_notes": "All formulas and numerical values are illustrative. The modeling choice that blind exploration is costless is explicit and optional — alternative choices are possible and should be explored for physical realism."
+}
