@@ -1039,3 +1039,14 @@
   ],
   "_notes": "All formulas and numerical values are illustrative. The modeling choice that blind exploration is costless is explicit and optional — alternative choices are possible and should be explored for physical realism."
 }
+
+---
+
+{
+  "realized_cost_expression": {
+    "E_realized(t)": "c_lock(C_min) · I{γ_obs exists at t}",
+    "c_lock(C_min)": "k_B T ln 2 · H_erased(C_min)",
+    "H_erased(C_min)": "-log2(C_min)",
+    "interpretation": "The cost of retrocausal lock-in scales with the coherence threshold. Higher coherence thresholds require more bits to be erased/locked in, increasing the thermodynamic cost."
+  }
+}
