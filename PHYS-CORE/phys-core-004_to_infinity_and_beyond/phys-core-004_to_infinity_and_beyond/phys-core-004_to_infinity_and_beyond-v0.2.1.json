@@ -6266,7 +6266,8 @@
 			"This construction does not yet require the stronger claim that the persistent pattern is ontologically fundamental. It establishes only the weaker mathematical and conceptual claim that persistence of relational structure can provide a sufficient representation of motion. The glider, introduced subsequently, will be the specialized coherence motif constructed from this principle.",
 			"The transformation viewpoint also separates two questions that are often conflated. The first is whether coordinates change. The second is whether the configuration remains identifiable as the same structure after that change. The first is kinematic; the second is relational. Within the present framework, the second is the condition that makes the first interpretable as persistent motion.",
 			"Accordingly, a worldline may be understood not merely as the trajectory of a primitive particle, but as the ordered sequence of configurations related by transformations that preserve the relevant identity conditions. This reframes the worldline as a history of structural persistence rather than as evidence that an immutable object must occupy every intermediate coordinate.",
-			"The resulting construction provides the conceptual foundation for the glider. If a configuration can repeatedly undergo transformations while maintaining sufficient relational coherence to preserve its identity, then the sequence of transformed configurations forms a persistent moving motif."
+			"The resulting construction provides the conceptual foundation for the glider. If a configuration can repeatedly undergo transformations while maintaining sufficient relational coherence to preserve its identity, then the sequence of transformed configurations forms a persistent moving motif.",
+			"The computational consequence is profound. The persistence of motion, represented as a sequence of coherent transformations, is a local, O(1) operation. The system does not need to recalculate its entire history to determine its next state. T_1 is dropped; T_1 + T_2 is never calculated again. The state encodes its own history relationally. This is the computational engine of the framework."
 		  ],
 		  "claims": [
 			{
@@ -26083,7 +26084,17 @@
 				"B.15"
 			  ],
 			  "caveat": "This relation is speculative and requires dimensional analysis, derivation from the field dynamics, and comparison with observational cosmology."
-			}
+			},
+			{
+			  "id": "B.17",
+			  "label": "O(1) Computational Core",
+			  "expression": "T_{n+1} = f(T_n, T_{n-1})",
+			  "status": "derived_result",
+			  "role": "Defines the constant-time, local evolution of the system.",
+			  "interpretation": "The universe executes a single, local, O(1) operation at each tick. No global sum or recalculation is required. The state encodes its own history relationally.",
+			  "dependencies": ["B.6 (Coherence Field)"],
+			  "caveat": "This is a derived property of the relational coherence framework, not an additional assumption."
+			}			
 		  ],
 		  "dependency_graph": [
 			{
