@@ -181,6 +181,13 @@
       "\\mathbf{R}\\rightarrow0\\quad\\text{under triadic stabilization}"
     ],
 
+	"complexity_cost": [
+	  "The universe is an O(1) system.",
+	  "Complexity does not increase the cost per tick.",
+	  "The cost per tick is constant.",
+	  "Complexity is free."
+	],
+
     "infinity_and_equivalence": [
       "x\\sim y\\iff\\operatorname{Obs}(x)=\\operatorname{Obs}(y)",
       "[x]=\\{y\\mid y\\sim x\\}",
@@ -18496,6 +18503,21 @@
 				  "limitations": [
 					"Real-time is defined relative to the internal tick rate.",
 					"It does not address external time or measurement."
+				  ]
+				},
+				{
+				  "id": "7.3.5-C4",
+				  "claim": "Complexity is free in the Noor framework.",
+				  "status": "derived_result",
+				  "support": [
+					"The universe executes a single, local, O(1) operation at each tick.",
+					"No global sum or recalculation of history is required.",
+					"The state encodes its own history relationally.",
+					"The cost per tick is constant, regardless of the system's complexity."
+				  ],
+				  "limitations": [
+					"The claim applies to the relational coherence model.",
+					"It does not imply that complexity has no physical consequences."
 				  ]
 				}
 			  ],
