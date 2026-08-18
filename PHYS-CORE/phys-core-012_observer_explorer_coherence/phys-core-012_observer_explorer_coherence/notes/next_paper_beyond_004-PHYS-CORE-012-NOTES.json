@@ -1045,9 +1045,32 @@
 {
   "realized_cost_expression": {
     "E_realized(t)": "c_lock · I{γ_obs exists at t}",
-    "c_lock": "k_B T ln 2 · H_erased",
-    "H_erased": "Constant number of bits erased per lock-in step",
-    "interpretation": "The cost of retrocausal lock-in is constant per timestep. The observer pays a fixed thermodynamic cost to instantiate the next state. The coherence threshold C_min determines which paths are admissible, but it does not affect the cost of locking in the survivor."
+    "c_lock": "Constant thermodynamic cost paid by the observer to instantiate the next state along its worldline.",
+    "interpretation": "The cost of retrocausal lock-in is constant per timestep. The observer pays a fixed thermodynamic cost to instantiate the next state. Alternatives are not erased; they simply become inaccessible to the observer because the observer is now on a different path. The Library remains static and complete. No information is destroyed."
+  },
+  "key_distinctions": {
+    "erased": "Information is destroyed. Landauer cost applies. NOT what happens in the Lightning Model.",
+    "inaccessible": "Information still exists in the Library but is no longer part of the observer's worldline. No cost. This IS what happens in the Lightning Model.",
+    "instantiated": "Information becomes part of the observer's realized worldline. O(1) cost to realize the next state. This IS what happens in the Lightning Model."
+  },
+  "caveats": [
+    {
+      "id": "C1",
+      "text": "The Landauer bound does not apply because no information is erased. The cost is for instantiation, not erasure."
+    },
+    {
+      "id": "C2",
+      "text": "Alternatives become inaccessible to the observer, but they are not destroyed. They continue to exist in the Library."
+    },
+    {
+      "id": "C3",
+      "text": "The cost c_lock is constant per timestep, independent of the number of alternatives explored or the coherence threshold."
+    },
+    {
+      "id": "C4",
+      "text": "The O(1) per-observer per-timestep claim refers to the cost of instantiation. Aggregate realized energy scales with the number of instantiated survivors."
+    }
+  ],
 	"caveats": [
 	  "realized_cost_expression": {
 		"E_realized(t)": "c_lock · I{γ_obs exists at t}",
