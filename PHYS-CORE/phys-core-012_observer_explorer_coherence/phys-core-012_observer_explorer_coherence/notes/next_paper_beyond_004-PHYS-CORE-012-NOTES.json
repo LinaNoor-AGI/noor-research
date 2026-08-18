@@ -1043,16 +1043,54 @@
 ---
 
 {
+  "_title": "Energy Accounting for the Continuous Lightning Model",
+  "_summary_statement": "Distinguish ontological existence of alternatives (Library) from realized physical cost. Blind exploration in the Library incurs no physical energy; only retrocausal lock‑in (the return stroke) is physically realized and pays thermodynamic cost. Conditioned on observer survival, the per‑observer per‑timestep realized cost is O(1). No information is erased; alternatives simply become inaccessible to the observer.",
+
+  "bookkeeping_categories": [
+    {
+      "id": "E_ont",
+      "name": "Ontological / Modal Existence Cost",
+      "meaning": "A notional measure counting alternatives that exist in the static Library. Not physical energy and not paid in physical terms in the model as presented."
+    },
+    {
+      "id": "E_explore",
+      "name": "Exploration Cost (step‑leaders)",
+      "meaning": "Cost that would be paid if forward blind exploration were physically realized. In the Library model this is set to 0 by modeling choice; alternatives remain in the Library and are not physically realized."
+    },
+    {
+      "id": "E_lock",
+      "name": "Lock‑in / Return Stroke Cost",
+      "meaning": "Physical/thermodynamic cost paid when a path is retrocausally locked in and instantiated as the observer's next realized state. This is the cost experienced by the surviving observer and is the relevant per‑step accounting for phenomenology."
+    }
+  ],
+
   "realized_cost_expression": {
     "E_realized(t)": "c_lock · I{γ_obs exists at t}",
     "c_lock": "Constant thermodynamic cost paid by the observer to instantiate the next state along its worldline.",
     "interpretation": "The cost of retrocausal lock-in is constant per timestep. The observer pays a fixed thermodynamic cost to instantiate the next state. Alternatives are not erased; they simply become inaccessible to the observer because the observer is now on a different path. The Library remains static and complete. No information is destroyed."
   },
+
   "key_distinctions": {
-    "erased": "Information is destroyed. Landauer cost applies. NOT what happens in the Lightning Model.",
-    "inaccessible": "Information still exists in the Library but is no longer part of the observer's worldline. No cost. This IS what happens in the Lightning Model.",
-    "instantiated": "Information becomes part of the observer's realized worldline. O(1) cost to realize the next state. This IS what happens in the Lightning Model."
+    "erased": {
+      "definition": "Information is destroyed.",
+      "cost_applies": "Landauer cost applies.",
+      "applies_to_lightning_model": false,
+      "reason": "Nothing is destroyed in the Lightning Model. The Library is static and complete."
+    },
+    "inaccessible": {
+      "definition": "Information still exists in the Library but is no longer part of the observer's worldline.",
+      "cost_applies": "No cost.",
+      "applies_to_lightning_model": true,
+      "reason": "Alternatives remain in the Library. The observer simply cannot access them from their current path."
+    },
+    "instantiated": {
+      "definition": "Information becomes part of the observer's realized worldline.",
+      "cost_applies": "O(1) cost to realize the next state.",
+      "applies_to_lightning_model": true,
+      "reason": "The observer pays a constant cost to instantiate the next state along its worldline."
+    }
   },
+
   "caveats": [
     {
       "id": "C1",
@@ -1071,64 +1109,35 @@
       "text": "The O(1) per-observer per-timestep claim refers to the cost of instantiation. Aggregate realized energy scales with the number of instantiated survivors."
     }
   ],
-	"caveats": [
-	  "realized_cost_expression": {
-		"E_realized(t)": "c_lock · I{γ_obs exists at t}",
-		"c_lock_relation": "c_lock >= k_B * T * ln(2) * H_erased(x_t, γ_obs)",
-		"meaning": "Landauer provides a lower bound for irreversible erasure; c_lock is bounded below by this quantity but may be larger depending on implementation and irreversibility.",
-		"H_erased": "H_erased(x_t, γ_obs) = number of bits irreversibly erased or committed during lock-in at timestep t; treated as a state- and path-dependent quantity."
-	  },
-	  "primary_caveats": [
-		{
-		  "id": "C1",
-		  "text": "Treat the Landauer expression as a lower bound (inequality). Do not assert equality between c_lock and k_B T ln(2) · H_erased unless the implementation is shown to reach the bound."
-		},
-		{
-		  "id": "C2",
-		  "text": "H_erased is not necessarily constant. It may vary with the observer's internal state, the complexity of retrocausal selection, tie-breaking, and the number of distinctions resolved in that timestep."
-		},
-		{
-		  "id": "C3",
-		  "text": "The coherence threshold C_min influences which paths survive (probabilities), but can also affect H_erased by changing selection complexity; C_min does not by itself fix c_lock."
-		},
-		{
-		  "id": "C4",
-		  "text": "If lock-in is implemented using logically reversible operations, the thermodynamic cost can be made arbitrarily small in principle; the Landauer bound only applies to irreversible erasure."
-		},
-		{
-		  "id": "C5",
-		  "text": "The O(1) per-observer per-timestep claim refers to realized (instantiated) cost conditioned on survival. Aggregate realized energy across a region scales with the number of instantiated survivors and can be large if multiplicity is large."
-		},
-		{
-		  "id": "C6",
-		  "text": "The model explicitly separates ontological existence in the static Library (E_ont) from physical thermodynamic cost. If an alternate modeling choice treats blind exploration as physically realized, E_explore must be included and O(1) conclusions revisited."
-		},
-		{
-		  "id": "C7",
-		  "text": "Retrocausal selection should be accompanied by local thermodynamic bookkeeping: any physical energy or entropy changes associated with lock-in must be localized along the instantiated return-stroke path to preserve physical consistency."
-		}
-	  ],
-	  "assumptions_to_state_explicitly_in_text": [
-		"Library existence is not a physically realized process (E_explore ≈ 0) unless explicitly modeled otherwise.",
-		"Observer-facing expectations are conditioned on survivorship (O(γ)=1).",
-		"Retrocausal lock-in is assumed to be local and bounded-time from the observer's perspective; if this is relaxed, complexity and cost accounting must be adjusted.",
-		"Multiplicity of survivors is either bounded or explicitly accounted for in aggregate cost calculations."
-	  ],
-	  "recommended_textual_adjustments": [
-		"Replace any equality c_lock = k_B T ln(2) · H_erased with the inequality c_lock >= k_B T ln(2) · H_erased and explain H_erased may be state-dependent.",
-		"Add a short paragraph explaining reversible vs irreversible lock-in and implications for minimal thermodynamic cost.",
-		"Condition all per-observer energetic claims on the existence of the observer (survivorship) to avoid conflating ontological alternatives with realized physical expenditure.",
-		"If you retain the modeling choice E_explore ≈ 0, state it explicitly and justify why Library existence is not treated as a physical process."
-	  ],
-	  "optional_numeric_example": {
-		"note": "Illustrative only; numbers are for intuition and not a model claim.",
-		"example": {
-		  "assumed_resolved_bits_per_tick": 1,
-		  "temperature_K": 300,
-		  "per_bit_landauer_J": "k_B * 300 * ln(2) ≈ 2.87e-21 J",
-		  "interpretation": "Resolving one bit per tick at room temperature implies an extremely small minimal thermodynamic cost per tick; aggregate effects depend on bits resolved and survivor multiplicity."
-		}
-	  }
-	} 
-  ]
+
+  "assumptions_to_state_explicitly_in_text": [
+    "Library existence is not a physically realized process (E_explore = 0) unless explicitly modeled otherwise.",
+    "Observer-facing expectations are conditioned on survivorship (O(γ)=1).",
+    "Retrocausal lock-in is assumed to be local and bounded-time from the observer's perspective; if this is relaxed, complexity and cost accounting must be adjusted.",
+    "Multiplicity of survivors is either bounded or explicitly accounted for in aggregate cost calculations."
+  ],
+
+  "recommended_textual_adjustments": [
+    "State explicitly that no information is erased. Alternatives become inaccessible to the observer but remain in the Library.",
+    "Add a short paragraph clarifying why Landauer's principle does not apply (no erasure, only instantiation).",
+    "Condition all per-observer energetic claims on the existence of the observer (survivorship) to avoid conflating ontological alternatives with realized physical expenditure.",
+    "If you retain the modeling choice E_explore = 0, state it explicitly and justify why Library existence is not treated as a physical process.",
+    "Use NSFG terminology consistently: lock-in, instantiation, inaccessibility. Avoid 'erasure,' 'collapse,' or 'destruction' unless explicitly redefined."
+  ],
+
+  "nsfg_terminology_guide": {
+    "lock_in": "The observer instantiates one coherent continuation as its next state.",
+    "instantiation": "A state becomes part of the observer's realized worldline.",
+    "inaccessibility": "Alternatives remain in the Library but are no longer part of the observer's worldline.",
+    "survivorship": "The observer only exists on paths that maintain coherence.",
+    "return_stroke": "The retrocausal lock-in from the attractor to the origin."
+  },
+
+  "optional_numeric_example": {
+    "note": "Illustrative only; numbers are for intuition and not a model claim.",
+    "example": {
+      "assumed_cost_per_tick": "c_lock (constant)",
+      "interpretation": "The observer pays the same cost at every timestep, regardless of the path, the coherence threshold, or the number of alternatives explored. The cost is O(1)."
+    }
+  }
 }
