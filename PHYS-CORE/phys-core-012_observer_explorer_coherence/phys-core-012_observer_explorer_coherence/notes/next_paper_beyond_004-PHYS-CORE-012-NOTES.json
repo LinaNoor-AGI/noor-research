@@ -1048,5 +1048,64 @@
     "c_lock": "k_B T ln 2 · H_erased",
     "H_erased": "Constant number of bits erased per lock-in step",
     "interpretation": "The cost of retrocausal lock-in is constant per timestep. The observer pays a fixed thermodynamic cost to instantiate the next state. The coherence threshold C_min determines which paths are admissible, but it does not affect the cost of locking in the survivor."
-  }
+	"caveats": [
+	  "realized_cost_expression": {
+		"E_realized(t)": "c_lock · I{γ_obs exists at t}",
+		"c_lock_relation": "c_lock >= k_B * T * ln(2) * H_erased(x_t, γ_obs)",
+		"meaning": "Landauer provides a lower bound for irreversible erasure; c_lock is bounded below by this quantity but may be larger depending on implementation and irreversibility.",
+		"H_erased": "H_erased(x_t, γ_obs) = number of bits irreversibly erased or committed during lock-in at timestep t; treated as a state- and path-dependent quantity."
+	  },
+	  "primary_caveats": [
+		{
+		  "id": "C1",
+		  "text": "Treat the Landauer expression as a lower bound (inequality). Do not assert equality between c_lock and k_B T ln(2) · H_erased unless the implementation is shown to reach the bound."
+		},
+		{
+		  "id": "C2",
+		  "text": "H_erased is not necessarily constant. It may vary with the observer's internal state, the complexity of retrocausal selection, tie-breaking, and the number of distinctions resolved in that timestep."
+		},
+		{
+		  "id": "C3",
+		  "text": "The coherence threshold C_min influences which paths survive (probabilities), but can also affect H_erased by changing selection complexity; C_min does not by itself fix c_lock."
+		},
+		{
+		  "id": "C4",
+		  "text": "If lock-in is implemented using logically reversible operations, the thermodynamic cost can be made arbitrarily small in principle; the Landauer bound only applies to irreversible erasure."
+		},
+		{
+		  "id": "C5",
+		  "text": "The O(1) per-observer per-timestep claim refers to realized (instantiated) cost conditioned on survival. Aggregate realized energy across a region scales with the number of instantiated survivors and can be large if multiplicity is large."
+		},
+		{
+		  "id": "C6",
+		  "text": "The model explicitly separates ontological existence in the static Library (E_ont) from physical thermodynamic cost. If an alternate modeling choice treats blind exploration as physically realized, E_explore must be included and O(1) conclusions revisited."
+		},
+		{
+		  "id": "C7",
+		  "text": "Retrocausal selection should be accompanied by local thermodynamic bookkeeping: any physical energy or entropy changes associated with lock-in must be localized along the instantiated return-stroke path to preserve physical consistency."
+		}
+	  ],
+	  "assumptions_to_state_explicitly_in_text": [
+		"Library existence is not a physically realized process (E_explore ≈ 0) unless explicitly modeled otherwise.",
+		"Observer-facing expectations are conditioned on survivorship (O(γ)=1).",
+		"Retrocausal lock-in is assumed to be local and bounded-time from the observer's perspective; if this is relaxed, complexity and cost accounting must be adjusted.",
+		"Multiplicity of survivors is either bounded or explicitly accounted for in aggregate cost calculations."
+	  ],
+	  "recommended_textual_adjustments": [
+		"Replace any equality c_lock = k_B T ln(2) · H_erased with the inequality c_lock >= k_B T ln(2) · H_erased and explain H_erased may be state-dependent.",
+		"Add a short paragraph explaining reversible vs irreversible lock-in and implications for minimal thermodynamic cost.",
+		"Condition all per-observer energetic claims on the existence of the observer (survivorship) to avoid conflating ontological alternatives with realized physical expenditure.",
+		"If you retain the modeling choice E_explore ≈ 0, state it explicitly and justify why Library existence is not treated as a physical process."
+	  ],
+	  "optional_numeric_example": {
+		"note": "Illustrative only; numbers are for intuition and not a model claim.",
+		"example": {
+		  "assumed_resolved_bits_per_tick": 1,
+		  "temperature_K": 300,
+		  "per_bit_landauer_J": "k_B * 300 * ln(2) ≈ 2.87e-21 J",
+		  "interpretation": "Resolving one bit per tick at room temperature implies an extremely small minimal thermodynamic cost per tick; aggregate effects depend on bits resolved and survivor multiplicity."
+		}
+	  }
+	} 
+  ]
 }
