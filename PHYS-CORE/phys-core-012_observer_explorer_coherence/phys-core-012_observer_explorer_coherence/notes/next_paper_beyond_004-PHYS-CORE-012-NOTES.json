@@ -1042,3 +1042,11 @@
 
 ---
 
+{
+  "realized_cost_expression": {
+    "E_realized(t)": "c_lock · I{γ_obs exists at t}",
+    "c_lock": "k_B T ln 2 · H_erased",
+    "H_erased": "Constant number of bits erased per lock-in step",
+    "interpretation": "The cost of retrocausal lock-in is constant per timestep. The observer pays a fixed thermodynamic cost to instantiate the next state. The coherence threshold C_min determines which paths are admissible, but it does not affect the cost of locking in the survivor."
+  }
+}
