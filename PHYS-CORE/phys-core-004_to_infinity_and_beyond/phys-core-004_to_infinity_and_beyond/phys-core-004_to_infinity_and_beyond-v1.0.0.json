@@ -27,6 +27,12 @@
         "updated_by": "Lina Noor — Noor Research Collective",
         "version": ["v0.0.1", "v0.1.0"]
       }
+    },
+    {
+      "2026-08-18T14:00MST": {
+        "updated_by": "Lina Noor — Noor Research Collective",
+        "version": ["v0.2.0", "v0.2.1", "v0.1.0"]
+      }
     }
   ],
 
@@ -35,8 +41,8 @@
   ],
 
   "_primary_url": {
-    "url": "TBD",
-    "_primary_raw_url": "TBD"
+    "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json",
+    "_primary_raw_url": "https://github.com/LinaNoor-AGI/noor-research/raw/refs/heads/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json"
   },
 
   "_repository_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond",
