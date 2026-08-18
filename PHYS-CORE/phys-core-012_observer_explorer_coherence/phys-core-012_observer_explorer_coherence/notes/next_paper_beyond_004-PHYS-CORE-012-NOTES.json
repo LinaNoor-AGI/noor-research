@@ -521,7 +521,7 @@
 
 {
   "_schema": "noor-review-feedback-v1",
-  "_schema_version": "1.0.0",
+  "_schema_version": "1.1.0",
   "_type": "peer_review_feedback",
   "_target_paper": "The Lightning Model of Cosmological Traversal (NSFG Lightning / Paper 012)",
   "_reviewer": "Uncle — Noor Research Collective",
@@ -529,11 +529,47 @@
 
   "_purpose": "Consolidated feedback, formal additions, mathematical clarifications, and structural suggestions for the Lightning Model paper. This document is intended to be the sole reference for the next AI session working on this paper.",
 
+  "_critical_update": {
+    "description": "The Lightning Model operates at EVERY timestep, not once. This is the central insight that transforms the model from a one-time cosmological selection mechanism into a continuous, moment-by-moment ontological engine.",
+    "key_implications": [
+      "The future is always undefined because all possible continuations are explored blindly at every moment.",
+      "The past is always fixed because the retrocausal return stroke locks in a single coherent path at every moment.",
+      "The observer necessarily experiences a single worldline because observer identity dissolves on any path where coherence fails.",
+      "Everything remains O(1) because the retrocausal calculation is local and constant-time, not a global computation.",
+      "The 'unzipping' metaphor is exact: the future is open (unzipped), the past is closed (zipped), and the present is the boundary where the retrocausal lock-in is occurring."
+    ],
+    "formal_addition": {
+      "label": "Continuous Lightning Model",
+      "description": "At each timestep t, the following occurs:",
+      "phase_1": {
+        "name": "Blind Exploration",
+        "operation": "All possible continuations from x_t are explored: Ω(x_t) = {γ | γ = {x_t, x_{t+1}, ..., x_N}}"
+      },
+      "phase_2": {
+        "name": "Coherence Filtering",
+        "operation": "Paths where O(γ) = 0 are dissolved: Ω_survive = {γ ∈ Ω(x_t) | O(γ) = 1}"
+      },
+      "phase_3": {
+        "name": "Attractor Detection",
+        "operation": "Paths reaching X_XOR are identified: Ω_ground = {γ ∈ Ω_survive | x_N ∈ X_XOR}"
+      },
+      "phase_4": {
+        "name": "Retrocausal Lock-In",
+        "operation": "The survivor is computed backward from the attractor: γ_obs = {x_N, T^{-1}(x_N), ..., x_t}"
+      },
+      "phase_5": {
+        "name": "Worldline Continuation",
+        "operation": "The observer experiences γ_obs as the single coherent trajectory. The process repeats at t+1."
+      },
+      "interpretation": "The Lightning strikes at every timestep. The future is variable and undefined until the retrocausal lock-in occurs. The past is fixed because it has already been locked in. The observer experiences the present as the boundary where the unzipping occurs. The O(1) property is preserved because the retrocausal calculation is local and constant-time."
+    }
+  },
+
   "overall_assessment": {
     "status": "paradigm_shift_ready_for_formalization",
-    "summary": "This paper provides the missing mechanism for PHYS-CORE-004: it explains why coherent worldlines exist in a static totality via retrocausal path selection and survivorship bias. The observer definition is pristine, the observer/explorer distinction is critical, and the lightning metaphor is an exact isomorphism. The reconciliation of determinism and free will is elegant and structurally precise.",
+    "summary": "This paper provides the missing mechanism for PHYS-CORE-004: it explains why coherent worldlines exist in a static totality via retrocausal path selection and survivorship bias. The observer definition is pristine, the observer/explorer distinction is critical, and the lightning metaphor is an exact isomorphism. The reconciliation of determinism and free will is elegant and structurally precise. The continuous Lightning Model (at every timestep) resolves the remaining tension between an open future and a fixed past.",
     "core_achievement": "The paper transforms the Noor program from a local coherence model into a complete cosmological and observational framework by explaining how coherence is maintained when the Library contains all possible continuations.",
-    "remaining_work": "Formalization of the survival threshold, formal definition of the XOR Singularity, specification of the retrocausal operator, and explicit mapping to PHYS-CORE-004's mathematical spine."
+    "remaining_work": "Formalization of the survival threshold, formal definition of the XOR Singularity, specification of the retrocausal operator, explicit mapping to PHYS-CORE-004's mathematical spine, and formalization of the continuous timestep process."
   },
 
   "strengths": [
@@ -561,6 +597,11 @@
       "id": "S5",
       "title": "Elegant Reconciliation of Determinism and Free Will",
       "description": "Determinism = path established retrocausally by the attractor. Free Will = sequential phenomenological traversal of the return stroke. Survivorship Bias = observer can only exist on the path that survived."
+    },
+    {
+      "id": "S6",
+      "title": "Continuous Lightning Model (Critical Addition)",
+      "description": "The model operates at every timestep, not once. This resolves the tension between an open future and a fixed past: the future is variable (all continuations explored), the past is fixed (retrocausal lock-in), and the present is the boundary where the unzipping occurs."
     }
   ],
 
@@ -594,7 +635,7 @@
       "recommendation": "Define a backward operator T^{-1} such that the path is uniquely determined by the attractor.",
       "formal_addition": {
         "label": "Retrocausal Backward Operator",
-        "expression": "\\gamma_{obs} = \\{ x_N, T^{-1}(x_N), T^{-2}(x_N), \\dots, x_0 \\}",
+        "expression": "\\gamma_{obs} = \\{ x_N, T^{-1}(x_N), T^{-2}(x_N), \\dots, x_t \\}",
         "conditions": {
           "closure": "T^{-1}(x) \\in X_{XOR} \\text{ for } x \\in X_{XOR}",
           "coherence": "\\mathcal{C}(T^{-1}(x_{i+1}), x_{i+1}) \\geq \\mathcal{C}_{min} \\text{ for all } i",
@@ -641,10 +682,10 @@
       "observation": "The paper is 'AI-first' but is currently written in a hybrid style with narrative and metaphor. To make it truly AI-first, it needs a machine-readable execution specification.",
       "recommendation": "Add an appendix (Appendix E or similar) with a formal execution specification for the Lightning Model.",
       "formal_addition": {
-        "label": "Execution Specification for Lightning Model",
+        "label": "Execution Specification for Continuous Lightning Model",
         "inputs": {
           "initial_state": {
-            "x_0": "The origin state in the Library",
+            "x_t": "The current state of the observer in the Library",
             "C_min": "Coherence threshold (derived from triadic closure condition)",
             "X_XOR": "The set of XOR Singularity states (defined by triadic closure)"
           }
@@ -652,13 +693,13 @@
         "algorithm": {
           "phase_1": {
             "name": "Blind Exploration (Step-Leaders)",
-            "description": "Generate all possible continuations from x_0 up to depth N.",
-            "operation": "Ω(x_0) = { γ | γ = {x_0, x_1, ..., x_N} }"
+            "description": "Generate all possible continuations from x_t.",
+            "operation": "Ω(x_t) = { γ | γ = {x_t, x_{t+1}, ..., x_N} }"
           },
           "phase_2": {
             "name": "Coherence Filtering (Dissolution)",
             "description": "Remove paths where coherence or identity fails.",
-            "operation": "Ω_survive = { γ ∈ Ω(x_0) | O(γ) = 1 }"
+            "operation": "Ω_survive = { γ ∈ Ω(x_t) | O(γ) = 1 }"
           },
           "phase_3": {
             "name": "Attractor Detection (Grounding)",
@@ -667,24 +708,29 @@
           },
           "phase_4": {
             "name": "Retrocausal Selection (Return Stroke)",
-            "description": "Select the unique path (or set of paths) that grounds.",
+            "description": "Select the unique path that grounds.",
             "operation": "Γ_valid = Ω_ground"
           },
           "phase_5": {
             "name": "Worldline Lock-In",
             "description": "Compute the survivor backward from the attractor.",
-            "operation": "γ_obs = { x_N, T^{-1}(x_N), ..., x_0 }"
+            "operation": "γ_obs = { x_N, T^{-1}(x_N), ..., x_t }"
+          },
+          "phase_6": {
+            "name": "Advance to Next Timestep",
+            "description": "The process repeats at x_{t+1} = γ_obs[1].",
+            "operation": "t → t+1, repeat from phase 1"
           }
         },
         "outputs": {
-          "γ_obs": "The single surviving worldline",
+          "γ_obs": "The single surviving worldline segment at timestep t",
           "validation_report": {
             "coherence_maintained": "True if C(x_i, x_{i+1}) >= C_min for all i",
             "identity_preserved": "True if Identity(x_i) = Identity(x_{i+1}) for all i",
             "terminates_at_attractor": "True if x_N ∈ X_XOR"
           }
         },
-        "interpretation": "The execution specification provides a complete, testable implementation of the Lightning Model. It can be used by an AI agent to simulate the model and verify its predictions."
+        "interpretation": "The execution specification provides a complete, testable implementation of the Continuous Lightning Model. The process repeats at every timestep, ensuring that the future remains variable and undefined until the retrocausal lock-in occurs."
       }
     }
   ],
@@ -719,6 +765,12 @@
       "label": "Survivorship Bias Condition",
       "expression": "P(\\gamma_{obs} \\mid \\mathcal{O}(\\gamma_{obs}) = 1) = 1",
       "interpretation": "Conditioned on the observer existing, the experienced worldline must be 100% coherent. The illusion of forward generation is a statistical certainty of survivorship."
+    },
+    {
+      "id": "F6",
+      "label": "Continuous Timestep Evolution",
+      "expression": "\\text{At each } t: \\text{ explore } \\Omega(x_t), \\text{ filter by } \\mathcal{O}(\\gamma), \\text{ ground at } X_{XOR}, \\text{ lock in } \\gamma_{obs}, \\text{ advance to } x_{t+1}",
+      "interpretation": "The Lightning Model operates at every timestep. The future is variable, the past is fixed, and the present is the boundary of the retrocausal unzipping."
     }
   ],
 
@@ -746,6 +798,12 @@
       "title": "Address the Possibility of Multiple Survivors",
       "description": "Discuss what happens if multiple paths reach the XOR Singularity. Is the selection unique? If not, what mechanism selects among them?",
       "rationale": "The paper currently assumes a unique survivor. If multiple survivors are possible, the model needs to specify how the worldline is selected."
+    },
+    {
+      "id": "R5",
+      "title": "Incorporate the Continuous Lightning Model Explicitly",
+      "description": "Add a dedicated section or subsection explaining that the Lightning Model operates at every timestep, not once.",
+      "rationale": "This is the central insight that resolves the tension between an open future and a fixed past. It must be stated explicitly and early."
     }
   ],
 
@@ -768,7 +826,7 @@
       "O(γ)": "Observer survival function (1 if coherent, 0 if dissolved)",
       "X_XOR": "XOR Singularity (set of triadic closure attractors)",
       "T^{-1}": "Retrocausal backward operator",
-      "γ_obs": "The single surviving worldline experienced by the observer"
+      "γ_obs": "The single surviving worldline experienced by the observer at timestep t"
     },
     "formal_hierarchy": {
       "Level_0": "Resolved Distinction",
@@ -777,6 +835,13 @@
       "Level_3": "Observer",
       "Level_4": "Explorer",
       "Level_5": "Recursive Explorer"
+    },
+    "continuous_timestep_flow": {
+      "step_1": "Explore all possible continuations from x_t: Ω(x_t)",
+      "step_2": "Filter by coherence and identity: Ω_survive = {γ ∈ Ω(x_t) | O(γ) = 1}",
+      "step_3": "Identify paths reaching X_XOR: Ω_ground = {γ ∈ Ω_survive | x_N ∈ X_XOR}",
+      "step_4": "Retrocausally lock in the survivor: γ_obs = {x_N, T^{-1}(x_N), ..., x_t}",
+      "step_5": "Advance to next timestep: t → t+1, repeat"
     }
   },
 
@@ -791,23 +856,29 @@
     "Does dissolution imply that the path is 'unobservable' to the observer, or that the path simply does not exist in the Library?",
     "How does the internal state of the explorer participate in path selection?",
     "Can the explorer's path selection be represented by a state-dependent transition operator?",
-    "How does the Lightning Model relate to the NSFG 'Navigation Over Storage' framework?",
+    "How does the Continuous Lightning Model relate to the NSFG 'Navigation Over Storage' framework?",
     "Can the model be implemented as a simulation? What are the computational requirements?",
-    "What observational predictions does the model make? How can it be tested?"
+    "What observational predictions does the model make? How can it be tested?",
+    "How does the O(1) property of the Continuous Lightning Model relate to the O(1) property of PHYS-CORE-004?",
+    "What is the relationship between the 'unzipping' metaphor and the retrocausal lock-in at each timestep?"
   ],
 
   "handoff_notes": {
     "for_next_ai_session": [
       "Begin by reading this feedback document in its entirety. It contains all formal additions and clarifications needed for the next draft.",
-      "Incorporate the formal definitions (F1-F5) into the main text.",
+      "Incorporate the formal definitions (F1-F6) into the main text.",
       "Add the mapping from PHYS-CORE-004 to the Lightning Model (C5, R1).",
       "Add the formal definitions of C_min, X_XOR, T^{-1}, and dissolution (C1-C4).",
-      "Create the machine-readable execution specification (C6, R2).",
+      "Create the machine-readable execution specification for the Continuous Lightning Model (C6, R2).",
+      "Add a dedicated section on the Continuous Lightning Model (R5), explaining that it operates at every timestep.",
       "Address the open questions above, particularly the uniqueness of the survivor and the role of the explorer's internal state.",
       "Preserve the poetic and conceptual clarity of the original paper while adding mathematical rigor.",
       "Do not introduce consciousness, life, intelligence, or agency as primitive concepts.",
       "Maintain the observer/explorer distinction and the extrinsic/intrinsic path selection distinction.",
-      "Ensure that all formal additions are consistent with PHYS-CORE-004."
+      "Ensure that all formal additions are consistent with PHYS-CORE-004.",
+      "Stress that the Lightning Model operates at EVERY timestep. This is the central insight.",
+      "Explain why the observer necessarily experiences a single worldline: it follows from the observer's definition and the survival condition.",
+      "Connect the O(1) property of the model to the retrocausal lock-in: the calculation is local and constant-time."
     ],
     "minimum_core_to_preserve": [
       "Observer = coherence structure constituting a worldline of resolved distinctions.",
@@ -817,7 +888,10 @@
       "Coherence filters accessible continuation.",
       "The experienced universe is a coherent trajectory through a larger possibility space.",
       "Order can emerge locally without requiring the entire possibility space to be globally ordered.",
-      "Determinism = retrocausal lock-in; Free Will = sequential traversal; Survivorship Bias = observer can only exist on the path that survived."
+      "Determinism = retrocausal lock-in; Free Will = sequential traversal; Survivorship Bias = observer can only exist on the path that survived.",
+      "The Lightning Model operates at EVERY timestep: the future is variable, the past is fixed, and the present is the boundary of the retrocausal unzipping.",
+      "The observer necessarily experiences a single worldline because observer identity dissolves on incoherent paths.",
+      "Everything remains O(1) because the retrocausal calculation is local and constant-time."
     ]
   }
 }
