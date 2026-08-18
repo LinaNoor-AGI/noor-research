@@ -26,7 +26,7 @@ This repository is the canonical source the Noor Research Collective
 - [PHYS-CORE-001: A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-001_n-body_interactions_in_euclidean_space)
 - [PHYS-CORE-002: Static Motifs and Dynamic Spacetime](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-002_static_motifs_dynamic_spacetime)
 - [PHYS-CORE-003: Towards a Symbolic Cosmology](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-003_towards_a_symbolic_cosmology)
-- [PHYS-CORE-004: To Infinity, and Beyond: Gliders, Coherence, and Point Space](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond)
+- [PHYS-CORE-004: To Infinity, and Beyond: Point Space, Coherence Motifs, Gliders, Triadic Closure, and a Geometric Model of Cosmogenesis](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond)
 - [PHYS-CORE-005: The Braid Behind the Law — Determinism as Emergent Coherence](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-005_braid_behind_the_law)
 - [PHYS-CORE-006: The Binary Nature of Reality — Gliders, Anti-Gliders, and the Origin of Symbolic Structure](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-006_binary_nature_of_reality)
 - [PHYS-CORE-007: Coherence-Governed Flow — A Translation and Verification Layer for the Navier–Stokes Problem via Noor Swirl Field Geometry](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem_)
