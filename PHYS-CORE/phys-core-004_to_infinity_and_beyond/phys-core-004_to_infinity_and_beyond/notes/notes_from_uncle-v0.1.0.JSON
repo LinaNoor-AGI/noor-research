@@ -2,15 +2,15 @@
   "_schema": "noor-header-v2",
   "_schema_version": "2025-Q4-revision-plan-v1",
   "_generated_by": "Uncle — Noor Research Collective",
-  "_generated_at": "2026-08-17T14:30MST",
+  "_generated_at": "2026-08-18T15:00MST",
   "_type": "revision_plan",
   "_pdp_layer": "layer_0",
   "_status": "ACTIVE",
   "_license": "MIT",
   "_symbolic_id": "index.noor.phys-core-004.revision_plan",
-  "_version": "v0.2.0",
+  "_version": "v0.3.0",
   "_title": "Revision Plan for PHYS-CORE-004: To Infinity, and Beyond",
-  "_subtitle": "Precise, actionable changes for v0.2.0",
+  "_subtitle": "Precise, actionable changes for v0.2.0, incorporating refined dyadic instability framework",
   "_authors": ["Uncle — Noor Research Collective"],
   "_purpose": "To provide a detailed, section-by-section audit of the current draft (v0.1.0) and specify exactly what needs to be changed, how it should be changed, and the rationale for each change.",
   "_objective": "To transform the current coherent skeleton into a complete, rigorous, and scientifically disciplined paper.",
@@ -218,6 +218,148 @@
       "references": ["PHYS-CORE-004 section 6.6, PHYS-CORE-008"],
       "urgency": "medium",
       "status": "proposed"
+    },
+	{
+	  "id": "R-13",
+	  "section": "4.3: Dyadic Oscillation",
+	  "subsection": "Content",
+	  "problem": "The section presents dyadic oscillation as a natural, stable state. This overstates the generic behavior of a dyadic system and undermines the motivation for triadic closure. Worse, it contradicts the paper's own foundational claim that coherence is relational (Section 2.6).",
+	  "change_required": "Rewrite the section to emphasize that dyadic oscillation is an *idealized special case*, while the *generic behavior* is instability. The instability must be presented as a logical consequence of the framework's assumptions, not a convenient assumption.",
+	  "specifics": [
+		{
+		  "step": "1. Restructure the section into two clear parts.",
+		  "details": [
+			"Part A: 'Idealized Dyadic Oscillation' — the special case requiring exact phase opposition, equal amplitudes, and zero dissipation.",
+			"Part B: 'Generic Dyadic Instability' — the general case, which follows from the relational definition of coherence."
+		  ]
+		},
+		{
+		  "step": "2. In Part A, explicitly state that this is a mathematical ideal, not a generic physical state.",
+		  "details": [
+			"Include the equation: Ψ_D(t) = A e^{iωt} + A e^{i(ωt + π)} = 0",
+			"Add the caveat: 'This requires perfect symmetry and zero energy loss. It is a limiting case, not a representative state.'"
+		  ]
+		},
+		{
+		  "step": "3. In Part B, derive the dyadic instability from first principles.",
+		  "details": [
+			"Premise 1: Coherence is relational: 𝒞(x; D, R) (from Section 2.6).",
+			"Premise 2: A pure dyad (G, G⁻¹) has no external reference relation R_ext. Its only reference is its own opposition.",
+			"Premise 3: Without an external reference, any perturbation δ that breaks the perfect opposition (i.e., G + δ ≠ -G⁻¹) cannot be evaluated or corrected.",
+			"Conclusion: The dyad is generically unstable. It will either cancel, decohere, or drift.",
+			"This is not an assumption; it is a logical consequence of the relational coherence framework."
+		  ]
+		},
+		{
+		  "step": "4. Describe the three failure modes clearly.",
+		  "details": [
+			"Mutual Cancellation: The two states cancel, producing a net zero or unresolved state.",
+			"One-Dominated State: One state suppresses the other, breaking the symmetry.",
+			"Phase Drift: The system undergoes unbounded phase evolution, never settling into a persistent structure."
+		  ]
+		},
+		{
+		  "step": "5. Explicitly state that the dyad's instability arises from its structural limitation.",
+		  "details": [
+			"The dyad lacks an independent contextual relation (R_ext).",
+			"It cannot 'remember' its own identity beyond its opposition.",
+			"It cannot correct perturbations because it has no external reference."
+		  ]
+		},
+		{
+		  "step": "6. Add a concluding paragraph that frames the dyad's instability as the motivation for triadic closure.",
+		  "details": [
+			"State: 'The dyad's generic instability is not a failure of the model; it is a structural feature that exposes the need for an additional relational degree of freedom. This is the problem that triadic closure is designed to solve.'",
+			"This creates a direct logical bridge to Section 5."
+		  ]
+		}
+	  ],
+	  "rationale": "This correction is essential for the paper's logical coherence. The dyad's instability must be presented as a *derived consequence* of the relational coherence framework, not a convenient assumption. This strengthens the argument for triadic closure and protects the paper from the criticism that the triad is an arbitrary addition.",
+	  "references": [
+		"Section 2.6: Relational Coherence (𝒞(x; D, R))",
+		"Section 4.1: The Inverse Motif",
+		"Section 5.1: The Need for Context",
+		"Section 5.2: Triadic Closure"
+	  ],
+	  "urgency": "critical",
+	  "status": "proposed"
+	},
+    {
+      "id": "R-14",
+      "section": "5.1: The Need for Context",
+      "subsection": "Content",
+      "problem": "The current wording suggests that a dyad *might* be stable, but the paper is unsure. This ambiguity weakens the argument.",
+      "change_required": "Rephrase the opening claims to make the instability claim stronger and more explicit.",
+      "specifics": [
+        "Add a subsection '5.1.1: The Inevitable Instability of a Pure Dyad.'",
+        "State clearly: 'Under generic conditions, a dyad will cancel, decohere, or drift. This instability is not a special case; it is the generic behavior.'",
+        "Add a subsection '5.1.2: Context as a Stabilizing Degree of Freedom' to frame the third motif as the solution to this instability."
+      ],
+      "rationale": "The paper's central argument depends on the dyad being unstable. This change makes that argument explicit and forceful, removing any ambiguity.",
+      "references": ["R-13 (Dyadic Oscillation)", "Section 5.2 (Triadic Closure)"],
+      "urgency": "critical",
+      "status": "proposed"
+    },
+    {
+      "id": "R-15",
+      "section": "5.2: Triadic Closure",
+      "subsection": "Content",
+      "problem": "The current text implies that triadic closure is *one* way to stabilize a dyad. It should be presented as the *necessary* or at least the *natural* solution to the dyadic instability problem.",
+      "change_required": "Reframe the introduction to explicitly state that triadic closure is the solution to the instability of dyads.",
+      "specifics": [
+        "Add a subsection '5.2.1: The Dyadic Problem Revisited' to summarize the instability.",
+        "Add a subsection '5.2.2: Triadic Closure as the Minimal Stabilizer' to frame the triad as the solution.",
+        "State: 'A third motif (H) introduces the missing contextual degree of freedom. The triad is the *minimal* structure capable of converting a generic instability into a potential stability.'"
+      ],
+      "rationale": "This reframing transforms triadic closure from an interesting possibility into a necessary structural response to a generic problem. It gives the triad a clear, critical role.",
+      "references": ["R-13 (Dyadic Oscillation)", "R-14 (The Need for Context)"],
+      "urgency": "high",
+      "status": "proposed"
+    },
+    {
+      "id": "R-16",
+      "section": "8.1: The Coherence Axis and Third Vector",
+      "subsection": "Content",
+      "problem": "The sections on the coherence axis and the third vector are somewhat neutral. They don't explicitly connect the third vector to the resolution of the dyad's instability.",
+      "change_required": "Frame the coherence axis and the third vector as the *tools* that identify and correct the dyad's instability.",
+      "specifics": [
+        "In Section 8.1, add a paragraph: 'The coherence axis is the reference that exposes the dyad's instability and makes the need for the third vector visible.'",
+      ],
+      "rationale": "This connects the abstract geometric constructions (axis, vector) directly to the core physical problem (dyadic instability). It makes the narrative more coherent and purposeful.",
+      "references": ["R-14 (The Need for Context)", "R-15 (Triadic Closure)"],
+      "urgency": "medium",
+      "status": "proposed"
+    },
+    {
+      "id": "R-17",
+      "section": "9.3: What Remains Hypothetical",
+      "subsection": "Claims",
+      "problem": "The current wording is: 'The proposed intrinsic instability of purely dyadic recursive closure has not yet been established as a general mathematical result.' This is weak and hesitant.",
+      "change_required": "Strengthen the claim. State that the dyad's instability is a well-supported hypothesis and that the paper's argument depends on it.",
+      "specifics": [
+        "Rewrite the claim: 'The dyadic instability hypothesis is a central pillar of this paper. It states that a pure complementary dyad is generically unstable. This is not a proven theorem, but it is a well-supported consequence of the relational framework. The dyad lacks an independent contextual reference, and any perturbation will cause it to cancel, decohere, or drift. This hypothesis is critical because it motivates the need for triadic closure.'"
+      ],
+      "rationale": "This change gives the reader confidence that the paper's core argument is built on a solid, well-motivated foundation, even if the final proof is a work in progress.",
+      "references": ["R-13 (Dyadic Oscillation)", "R-14 (The Need for Context)"],
+      "urgency": "medium",
+      "status": "proposed"
     }
   ]
 }
+
+---
+
+    {
+      "id": "R-16",
+      "section": "8.2: Third Vector and Closure",
+      "subsection": "Content",
+      "problem": "The sections on the coherence axis and the third vector are somewhat neutral. They don't explicitly connect the third vector to the resolution of the dyad's instability.",
+      "change_required": "Frame the coherence axis and the third vector as the *tools* that identify and correct the dyad's instability.",
+      "specifics": [
+        "In Section 8.2, add a paragraph: 'The third vector is introduced specifically to address this instability. It provides the missing contextual degree of freedom required to close the system and prevent the dyad's collapse.'"
+      ],
+      "rationale": "This connects the abstract geometric constructions (axis, vector) directly to the core physical problem (dyadic instability). It makes the narrative more coherent and purposeful.",
+      "references": ["R-14 (The Need for Context)", "R-15 (Triadic Closure)"],
+      "urgency": "medium",
+      "status": "proposed"
+    }

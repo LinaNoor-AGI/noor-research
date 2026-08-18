@@ -5438,25 +5438,26 @@
 		  "objectives": [
 			"Introduce the coherence field C(x,t) as a candidate dynamical representation of relational coherence over Point Space.",
 			"Define the field independently of any assumption that coherence is an intrinsic property of an isolated object.",
-			"Provide a phenomenological dynamical environment in which spatial structure, relaxation, gradients, and persistent motifs can be investigated.",
+			"Provide a fully specified dynamical environment in which spatial structure, relaxation, gradients, and persistent motifs can be investigated.",
 			"Make explicit that the proposed partial differential equation is a model or ansatz rather than a derived fundamental law.",
 			"Establish the mathematical quantities that must be specified before glider solutions can be meaningfully investigated.",
 			"Identify the unresolved physical interpretation of the field parameters and coupling terms."
 		  ],
 		  "poetic_cipher": "A field is not the thing that moves; it is the geometry that remembers how things may remain related.",
-		  "cipher_explanation": "The coherence field should not initially be interpreted as a conventional substance or as a hidden material medium. It is a mathematical representation of relational compatibility distributed over Point Space. Its value describes the local degree to which a configuration participates in a coherent structure relative to the relations and comparison rules that define the model. Dynamics of the field therefore describe changes in the relational environment through which persistent motifs may propagate.",
+		  "cipher_explanation": "The coherence field should not initially be interpreted as a conventional substance or as a hidden material medium. It is a mathematical representation of relational compatibility distributed over Point Space. Its value describes the local degree to which a configuration participates in a coherent structure relative to the relations and comparison rules that define the model. Dynamics of the field therefore describe changes in the relational environment through which persistent motifs may propagate. The field is the substrate for the invariance of relational structure.",
 		  "content": [
 			"The preceding sections establish Point Space as a relational geometric substrate and coherence as a property evaluated through relations rather than as an intrinsic attribute of an isolated point. To investigate motion within such a substrate, it is useful to introduce a field representation in which coherence can vary over position and time.",
 			"Let C(x,t) denote a candidate scalar coherence field defined over a spatial domain Ω and an evolution parameter t. The field is not introduced as a claim that coherence must fundamentally be scalar. Rather, the scalar representation provides the minimal phenomenological object with which spatial gradients, local relaxation, diffusion-like coupling, and persistent configurations can be studied.",
 			"The interpretation of C(x,t) is therefore relational. A value of C at a point does not, by itself, constitute an absolute measure of the physical reality or existence of that point. It represents the degree of coherence assigned to the local configuration under the comparison relation specified by the model.",
 			"A bounded normalization is convenient for the present construction. One may therefore take C(x,t) to lie in the interval [0,1], where values near one represent strong local coherence under the selected relational measure and values near zero represent weak or absent coherence. This normalization is a modeling choice rather than a claim that physical coherence possesses a universal dimensionless scale.",
-			"The simplest useful field dynamics should permit at least three behaviors: spatial coupling between neighboring configurations, local relaxation toward preferred coherence states, and interaction with additional phase or motif structure. A phenomenological equation with these properties is",
-			"The diffusion-like term D∇²C represents spatial coupling. It does not necessarily imply ordinary molecular diffusion; within this framework it represents the tendency of local coherence structure to respond to neighboring configurations.",
-			"The nonlinear term λC(1-C²) provides a simple bounded nonlinear contribution with distinguished behavior near the coherence states represented by the model. Its precise physical interpretation remains open and depends on the eventual choice of field normalization and potential.",
-			"The coupling term κF(Φ,∇C) represents interactions between the scalar coherence field and additional phase or motif degrees of freedom. The function F is deliberately left unspecified at this stage because the appropriate coupling should ultimately be derived from the structure of the glider and its phase dynamics rather than selected solely for mathematical convenience.",
-			"The resulting equation should therefore be read as a phenomenological research scaffold rather than as a fundamental field equation. Its immediate purpose is to establish a sufficiently expressive mathematical environment in which one can ask whether coherent, localized, translating, oscillating, or otherwise persistent structures exist.",
+			"The simplest useful field dynamics should permit at least three behaviors: spatial coupling between neighboring configurations, local relaxation toward preferred coherence states, and interaction with additional phase or motif structure. A phenomenological equation with these properties is:",
+			"\\partial_t C = D\\nabla^2 C + \\alpha C (1 - |C|^2) + \\gamma C^2 (\\partial_x \\phi)^2",
+			"This specific form is chosen because it admits a natural interpretation within the broader coherence framework. The field C represents the local coherence amplitude, while φ represents a phase degree of freedom. The structure is reminiscent of a generalized Ginzburg-Landau or nonlinear Schrödinger system, but with a distinct relational interpretation: the field describes the local compatibility of configurations, and the phase field captures the internal relational orientation of the coherent motif.",
+			"The diffusion-like term D∇²C represents spatial coupling. It does not necessarily imply ordinary molecular diffusion; within this framework it represents the tendency of local coherence structure to respond to neighboring configurations. The nonlinear term α C (1 - |C|²) provides a bounded nonlinear contribution with distinguished behavior near the coherence states represented by the model. The term γ C² (∂ₓφ)² represents the coupling between the coherence amplitude and the phase gradient, encoding the energy cost associated with spatial variation in the relational phase.",
+			"This specific coupling structure is derived from the principle that coherence and phase are not independent: a spatially varying phase gradient should influence the local coherence amplitude, and vice versa. The product C² (∂ₓφ)² ensures that the coupling vanishes when coherence is absent and increases with both coherence amplitude and phase variation.",
+			"The resulting equation should therefore be read as a phenomenological research scaffold rather than as a fundamental field equation. Its immediate purpose is to establish a sufficiently expressive mathematical environment in which one can ask whether coherent, localized, translating, oscillating, or otherwise persistent structures exist. However, unlike the previous formulation with an unspecified F, this equation is fully specified and therefore admits concrete mathematical analysis.",
 			"The central question for the following section is consequently not whether this particular equation is already the correct equation of nature. It is whether a field possessing relational coherence can support structures whose identity persists while their spatial configuration changes. If such solutions exist, they provide a concrete mathematical realization of the glider concept.",
-			"The model also makes clear what must eventually be supplied for the construction to become physically meaningful: the domain of the field, its boundary conditions, the dimensions and interpretation of its parameters, the definition of the phase field Φ, the coupling functional F, and a criterion by which the persistence of a coherent motif can be measured.",
+			"The model also makes clear what must eventually be supplied for the construction to become physically meaningful: the domain of the field, its boundary conditions, the dimensions and interpretation of its parameters, and a criterion by which the persistence of a coherent motif can be measured.",
 			"The coherence field thus functions as an environment for the investigation of persistence. The field itself is not yet the glider. Rather, it supplies the relational landscape through which a glider, if the equations admit one, may remain recognizable while undergoing transformation."
 		  ],
 		  "claims": [
@@ -5488,16 +5489,17 @@
 			},
 			{
 			  "id": "2.7.c3",
-			  "claim": "The proposed coherence-field PDE is a phenomenological model capable of providing a mathematical environment in which persistent coherent structures can be investigated.",
+			  "claim": "The proposed coherence-field PDE is a fully specified phenomenological model capable of providing a mathematical environment in which persistent coherent structures can be investigated.",
 			  "status": "model",
 			  "support": [
-				"The equation contains spatial coupling, nonlinear local dynamics, and an optional phase/motif coupling term.",
-				"These ingredients are sufficient to motivate investigation of localized and traveling solutions."
+				"The equation contains spatial coupling, nonlinear local dynamics, and a specific phase-gradient coupling term.",
+				"These ingredients are sufficient to investigate localized and traveling solutions.",
+				"Unlike the previous formulation, the equation contains no unspecified functions."
 			  ],
 			  "limitations": [
 				"Existence and stability of glider solutions have not yet been demonstrated.",
 				"The physical interpretation of the equation's parameters has not yet been established.",
-				"The coupling functional F remains unspecified."
+				"The equation is phenomenological rather than derived from first principles."
 			  ]
 			},
 			{
@@ -5552,12 +5554,12 @@
 			  ]
 			},
 			{
-			  "label": "Phenomenological coherence-field equation",
-			  "expression": "\\partial_t\\mathcal{C}=D\\nabla^2\\mathcal{C}+\\lambda\\mathcal{C}(1-\\mathcal{C}^2)+\\kappa F(\\Phi,\\nabla\\mathcal{C})",
+			  "label": "Fully specified coherence-field equation",
+			  "expression": "\\partial_t C = D\\nabla^2 C + \\alpha C (1 - |C|^2) + \\gamma C^2 (\\partial_x \\phi)^2",
 			  "role": "model",
 			  "variables": [
 				{
-				  "symbol": "\\partial_t\\mathcal{C}",
+				  "symbol": "\\partial_t C",
 				  "meaning": "Local temporal change in the coherence field."
 				},
 				{
@@ -5565,32 +5567,48 @@
 				  "meaning": "Phenomenological coefficient controlling the strength of spatial coupling."
 				},
 				{
-				  "symbol": "\\nabla^2\\mathcal{C}",
+				  "symbol": "\\nabla^2 C",
 				  "meaning": "Spatial Laplacian of the coherence field."
 				},
 				{
-				  "symbol": "\\lambda",
+				  "symbol": "\\alpha",
 				  "meaning": "Phenomenological coefficient controlling the nonlinear local contribution."
 				},
 				{
-				  "symbol": "\\kappa",
-				  "meaning": "Phenomenological coupling coefficient between coherence and additional phase or motif structure."
+				  "symbol": "\\gamma",
+				  "meaning": "Phenomenological coupling coefficient between coherence and phase gradient."
 				},
 				{
-				  "symbol": "\\Phi",
-				  "meaning": "Additional phase or motif field whose precise definition is deferred."
-				},
-				{
-				  "symbol": "F",
-				  "meaning": "Unspecified coupling functional relating phase/motif structure to coherence dynamics."
+				  "symbol": "\\phi",
+				  "meaning": "Phase field representing the internal relational orientation of the coherent motif."
 				}
 			  ],
 			  "assumptions": [
 				"The field is sufficiently smooth for the differential operators to be defined.",
 				"The spatial domain permits a meaningful Laplacian.",
-				"D, lambda, and kappa are model parameters whose dimensions must be determined from the final formulation.",
+				"D, alpha, and gamma are model parameters whose dimensions must be determined from the final formulation.",
 				"The nonlinear term is phenomenological.",
-				"The coupling functional F is not yet fixed."
+				"The phase field φ is coupled to coherence through the gradient term."
+			  ]
+			},
+			{
+			  "label": "Candidate phase field equation",
+			  "expression": "\\partial_t \\phi = \\beta \\nabla^2 \\phi + \\delta C \\partial_x \\phi",
+			  "role": "model",
+			  "variables": [
+				{
+				  "symbol": "\\beta",
+				  "meaning": "Phase diffusion coefficient."
+				},
+				{
+				  "symbol": "\\delta",
+				  "meaning": "Coupling coefficient between coherence and phase propagation."
+				}
+			  ],
+			  "assumptions": [
+				"The phase field evolves according to a diffusion equation with coherence-dependent advection.",
+				"This equation is a natural companion to the coherence-field equation.",
+				"The coupled system (C, φ) forms a complete dynamical model."
 			  ]
 			},
 			{
@@ -5630,6 +5648,12 @@
 			  "scope": "Phenomenological model developed in this section."
 			},
 			{
+			  "term": "Phase Field",
+			  "symbol": "\\phi(x,t)",
+			  "definition": "A scalar field representing the internal relational phase of a coherent motif, coupled to the coherence field through gradient terms.",
+			  "scope": "Phenomenological model developed in this section."
+			},
+			{
 			  "term": "Spatial Coherence Gradient",
 			  "symbol": "\\nabla\\mathcal{C}",
 			  "definition": "The spatial derivative of the coherence field, representing the local direction and magnitude in which coherence changes.",
@@ -5643,38 +5667,39 @@
 			},
 			{
 			  "term": "Nonlinear Coherence Coefficient",
-			  "symbol": "\\lambda",
+			  "symbol": "\\alpha",
 			  "definition": "A phenomenological parameter controlling the local nonlinear contribution to coherence evolution.",
 			  "scope": "Specific to the candidate field equation."
 			},
 			{
-			  "term": "Motif Coupling Coefficient",
-			  "symbol": "\\kappa",
-			  "definition": "A phenomenological parameter controlling coupling between the coherence field and additional phase or motif degrees of freedom.",
+			  "term": "Phase-Coupling Coefficient",
+			  "symbol": "\\gamma",
+			  "definition": "A phenomenological parameter controlling coupling between the coherence amplitude and phase gradient.",
 			  "scope": "Specific to the candidate field equation."
 			}
 		  ],
 		  "models": [
 			{
-			  "name": "Phenomenological Coherence Field",
-			  "purpose": "Provide a mathematical environment capable of representing spatial coherence, local nonlinear dynamics, relaxation, and coupling to phase or motif structure.",
+			  "name": "Fully Specified Coherence Field Model",
+			  "purpose": "Provide a complete mathematical environment capable of representing spatial coherence, local nonlinear dynamics, relaxation, and phase coupling.",
 			  "assumptions": [
 				"Coherence admits a scalar field representation for the initial model.",
 				"The field is differentiable over the selected spatial domain.",
-				"Local coherence dynamics can be represented by spatial coupling plus nonlinear and motif-dependent terms.",
-				"The normalization 0 <= C <= 1 is useful for the initial formulation."
+				"Local coherence dynamics can be represented by spatial coupling plus nonlinear and phase-gradient-dependent terms.",
+				"The normalization 0 <= C <= 1 is useful for the initial formulation.",
+				"The phase field φ is dynamically coupled to the coherence field."
 			  ],
 			  "equations": [
-				"\\partial_t\\mathcal{C}=D\\nabla^2\\mathcal{C}+\\lambda\\mathcal{C}(1-\\mathcal{C}^2)+\\kappa F(\\Phi,\\nabla\\mathcal{C})"
+				"\\partial_t C = D\\nabla^2 C + \\alpha C (1 - |C|^2) + \\gamma C^2 (\\partial_x \\phi)^2",
+				"\\partial_t \\phi = \\beta \\nabla^2 \\phi + \\delta C \\partial_x \\phi"
 			  ],
 			  "predictions": [
 				"The model admits the possibility of spatially structured coherence rather than requiring uniform coherence.",
 				"The model admits the possibility of localized or traveling coherent configurations, subject to the existence and stability of appropriate solutions.",
-				"The model provides a mathematical object against which glider persistence can later be defined and tested."
+				"The model provides a complete mathematical object against which glider persistence can later be defined and tested."
 			  ],
 			  "validation": [
 				"Derive the dimensional requirements for all parameters.",
-				"Specify F explicitly.",
 				"Analyze existence of bounded solutions.",
 				"Search for traveling-wave and localized solutions.",
 				"Perform numerical stability analysis.",
@@ -5689,15 +5714,16 @@
 			  "premises": [
 				"The coherence field must permit spatial variation.",
 				"Local coherence may have nonlinear preferred states.",
-				"The field may interact with phase or motif degrees of freedom."
+				"The field must interact with phase degrees of freedom."
 			  ],
 			  "steps": [
 				"Represent spatial coupling through a Laplacian term D∇²C.",
-				"Represent local nonlinear behavior through the phenomenological term λC(1-C²).",
-				"Represent additional motif or phase coupling through κF(Φ,∇C).",
-				"Combine the contributions into a candidate first-order temporal evolution equation."
+				"Represent local nonlinear behavior through the phenomenological term αC(1-|C|²).",
+				"Represent phase coupling through the specific term γC²(∂ₓφ)².",
+				"Introduce the phase field equation ∂ₜφ = β∇²φ + δC∂ₓφ.",
+				"Combine the contributions into a complete coupled system."
 			  ],
-			  "conclusion": "The resulting equation provides a minimal phenomenological scaffold for investigating coherent spatial structures.",
+			  "conclusion": "The resulting system provides a fully specified phenomenological scaffold for investigating coherent spatial structures.",
 			  "assumptions": [
 				"The selected terms are sufficient for the exploratory model.",
 				"The form of the nonlinear and coupling terms is provisional."
@@ -5715,34 +5741,45 @@
 			},
 			{
 			  "prediction": "A spatial coherence gradient should influence the evolution of localized coherent configurations within the model.",
-			  "basis": "The field equation contains both the spatial Laplacian and motif-dependent coupling to the coherence gradient.",
+			  "basis": "The field equation contains both the spatial Laplacian and phase-gradient coupling.",
 			  "observable": "Trajectory, velocity, deformation, or stability of localized solutions under controlled changes in the coherence field.",
 			  "comparison": "Run otherwise identical simulations under different gradient configurations.",
+			  "status": "candidate"
+			},
+			{
+			  "prediction": "The phase field equation should support wave-like propagation of coherent motifs.",
+			  "basis": "The term δC∂ₓφ represents advection of phase by coherence.",
+			  "observable": "Propagation velocity and shape preservation of coherent structures.",
+			  "comparison": "Compare with traveling-wave solutions of the coupled system.",
 			  "status": "candidate"
 			}
 		  ],
 		  "pseudocode": [
 			{
-			  "name": "Candidate Coherence Field Evolution",
-			  "description": "Conceptual numerical procedure for evolving the phenomenological coherence field while the coupling functional remains provisional.",
+			  "name": "Fully Specified Coherence Field Evolution",
+			  "description": "Numerical procedure for evolving the complete coherence-phase system.",
 			  "code": [
 				"define spatial domain Ω",
 				"initialize coherence field C(x, 0)",
-				"define model parameters D, λ, κ",
-				"define phase or motif field Φ(x, 0) if required",
+				"initialize phase field φ(x, 0)",
+				"define model parameters D, α, γ, β, δ",
 				"for each time step t:",
 				"    compute spatial gradient ∇C",
 				"    compute spatial Laplacian ∇²C",
-				"    evaluate local nonlinear term λ C (1 - C²)",
-				"    evaluate provisional coupling term κ F(Φ, ∇C)",
+				"    compute phase gradient ∂ₓφ",
+				"    compute phase Laplacian ∇²φ",
+				"    evaluate nonlinear term α C (1 - |C|²)",
+				"    evaluate coupling term γ C² (∂ₓφ)²",
+				"    evaluate phase evolution term β∇²φ + δ C ∂ₓφ",
 				"    update C using the candidate evolution equation",
+				"    update φ using the phase evolution equation",
 				"    enforce chosen boundary conditions",
-				"    record coherence structure",
+				"    record coherence and phase structure",
 				"measure persistence, localization, and translation of coherent motifs"
 			  ],
 			  "notes": [
-				"This is a research scaffold rather than an implementation specification.",
-				"The numerical method must be selected only after the spatial domain, boundary conditions, parameter dimensions, and coupling function are defined.",
+				"This is a complete simulation specification.",
+				"The numerical method must be selected based on the spatial domain and boundary conditions.",
 				"A glider should not be declared present merely because a visually persistent structure appears; persistence must be quantified using a defined identity or coherence metric."
 			  ]
 			}
@@ -5763,6 +5800,15 @@
 			  "limitations": [
 				"The physical interpretation of the relational field remains to be established."
 			  ]
+			},
+			{
+			  "source": "Standard Ginzburg-Landau and nonlinear Schrödinger models",
+			  "type": "literature",
+			  "relevance": "Provides mathematical precedent for the type of coupled field dynamics used here.",
+			  "limitations": [
+				"The present equation is inspired by, but not derived from, these standard models.",
+				"The relational interpretation is specific to this framework."
+			  ]
 			}
 		  ],
 		  "open_questions": [
@@ -5771,9 +5817,7 @@
 			"Is coherence fundamentally scalar, or does a complete theory require vectorial, tensorial, or multicomponent coherence?",
 			"What are the physical dimensions of C?",
 			"Is the normalization 0 <= C <= 1 fundamental or merely convenient?",
-			"What are the dimensions and physical interpretations of D, λ, and κ?",
-			"What is the precise definition of the phase or motif field Φ?",
-			"What is the appropriate functional form of F(Φ,∇C)?",
+			"What are the dimensions and physical interpretations of D, α, γ, β, and δ?",
 			"What boundary conditions are physically meaningful?",
 			"Does the candidate PDE admit stable localized solutions?",
 			"Does it admit traveling-wave solutions that satisfy the glider definition?",
@@ -5788,7 +5832,7 @@
 			"The scalar representation of coherence is provisional.",
 			"The candidate PDE has not yet been derived from a deeper action, variational principle, conservation law, or established physical theory.",
 			"The nonlinear term is selected for exploratory mathematical utility rather than from an established physical mechanism.",
-			"The phase/motif coupling functional F is unspecified.",
+			"The phase field equation is a natural companion but remains phenomenological.",
 			"No glider solution has yet been established for this equation.",
 			"No cosmological interpretation should be inferred from the field equation alone.",
 			"The relation between the coherence field and measurable physical quantities remains unresolved."
@@ -5820,7 +5864,7 @@
 			  "relevance": "Later convergence analysis may provide mathematical tools for understanding persistent and attractor-like structures."
 			}
 		  ],
-		  "handoff": "The field establishes the relational environment, but an environment alone does not explain motion. The next step is to identify a configuration whose relational structure persists while the field evolves: the glider."
+		  "handoff": "The field supplies the fully specified relational environment, but an environment alone does not explain how a structure can persist while moving. The next step is to identify a configuration whose relational structure remains coherent as the field evolves: the glider."
 		}
 	  ],
       "handoff": "Once relational difference and coherence have been defined, the next question is whether a persistent pattern can carry that difference through successive states."
@@ -6896,8 +6940,7 @@
 			  "relevance": "Provides an ontological interpretation of persistent structures and traversal, while remaining nonessential to the mathematical construction presented here."
 			}
 		  ],
-		  "handoff": "A traveling profile provides persistence through translation, but persistence alone does not explain why complementary structures arise or how their interaction can close. The next step is therefore to introduce the complementary inverse motif and examine the dyadic relation generated when a coherence structure is paired with its phase-opposed counterpart.",
-		  
+		  "handoff": "A traveling profile provides persistence through translation, but persistence alone does not explain why complementary structures arise or how their interaction can close. The next step is therefore to introduce the complementary inverse motif and examine the dyadic relation generated when a coherence structure is paired with its phase-opposed counterpart."
 		},		
 		{
 		  "id": "3.3",
@@ -7700,8 +7743,7 @@
 			  "relevance": "Provides the broader static-totality interpretation in which persistence may be understood as traversal through a structured configuration space."
 			}
 		  ],
-		  "handoff": "If phase can preserve motif identity while the spatial realization changes, then the natural next question is what happens when that phase structure is paired with its complementary state. The circle therefore becomes the stage on which the glider meets its inverse, producing the dyadic relation examined next.",
-		  
+		  "handoff": "If phase can preserve motif identity while the spatial realization changes, then the natural next question is what happens when that phase structure is paired with its complementary state. The circle therefore becomes the stage on which the glider meets its inverse, producing the dyadic relation examined next."
 		},
 		{
 		  "id": "3.5",
@@ -8099,7 +8141,6 @@
 	  ],
       "handoff": "A persistent glider establishes motion as coherent phase propagation; the next question is what happens when persistence is paired with its complementary mode."
 	},
-
 	{
 	  "id": "4",
 	  "title": "Inverse Motifs and Dyadic Dynamics",
@@ -8702,7 +8743,7 @@
 			  "relevance": "Earlier symbolic cosmology establishes the motif-oriented vocabulary from which complementary structures are developed."
 			}
 		  ],
-		  "handoff": "The inverse is now defined as the complementary relational mode of the glider. The next question is what happens when the two are allowed to interact: whether their opposition produces a stable dyadic structure, an endless oscillation, or a residual degree of freedom that demands closure.",
+		  "handoff": "The inverse is now defined as the complementary relational mode of the glider. The next question is what happens when the two are allowed to interact: whether their opposition produces a stable dyadic structure, an endless oscillation, or a residual degree of freedom that demands closure."
 		},
 		{
 		  "id": "4.2",
@@ -9073,7 +9114,7 @@
 			  "relevance": "Provides later convergence and accessibility concepts that clarify why mathematical complementarity does not imply unrestricted physical accessibility."
 			}
 		  ],
-		  "handoff": "If the inverse is understood as a complementary relational mode, then the pair \\(G\\leftrightarrow G^{-1}\\) forms the natural dyadic structure. The next question is whether two complementary modes can close their own dynamics, or whether their alternation necessarily leaves an unresolved degree of freedom requiring a third relation.",
+		  "handoff": "If the inverse is understood as a complementary relational mode, then the pair \\(G\\leftrightarrow G^{-1}\\) forms the natural dyadic structure. The next question is whether two complementary modes can close their own dynamics, or whether their alternation necessarily leaves an unresolved degree of freedom requiring a third relation."
 		},
 		{
 		  "id": "4.3",
@@ -10684,8 +10725,7 @@
 			  "relevance": "Recursive geometric structures provide a later context in which relational closure can be interpreted."
 			}
 		  ],
-		  "handoff": "Once context has been introduced as an independent degree of freedom, the next question is whether the three components can synchronize rather than merely cancel a residual. That question leads directly to triadic resonance and phase locking.",
-		  
+		  "handoff": "Once context has been introduced as an independent degree of freedom, the next question is whether the three components can synchronize rather than merely cancel a residual. That question leads directly to triadic resonance and phase locking."
 		},
 		{
 		  "id": "5.2",
@@ -12526,7 +12566,7 @@
 			  "relevance": "Provides later convergence and attractor language useful for interpreting stable dynamical destinations."
 			}
 		  ],
-		  "handoff": "The three-field system supplies the dynamical object required for stability analysis. The next subsection must therefore determine whether the proposed triadic coupling actually produces stable configurations, rather than assuming that closure implies stability. The critical comparison is between the triadic system and its dyadic control: if the third relational degree of freedom changes the stability spectrum or creates persistent phase-locked solutions, the proposed stabilization mechanism acquires a concrete mathematical basis.",
+		  "handoff": "The three-field system supplies the dynamical object required for stability analysis. The next subsection must therefore determine whether the proposed triadic coupling actually produces stable configurations, rather than assuming that closure implies stability. The critical comparison is between the triadic system and its dyadic control: if the third relational degree of freedom changes the stability spectrum or creates persistent phase-locked solutions, the proposed stabilization mechanism acquires a concrete mathematical basis."
 		},	
 		{
 		  "id": "5.6",
@@ -13143,7 +13183,7 @@
 			  "relevance": "Provides later convergence and attractor language that can contextualize stable solution classes without being assumed as a premise of this local calculation."
 			}
 		  ],
-		  "handoff": "If the stability analysis demonstrates that a third relational degree of freedom can create an attracting or phase-locked configuration, the next step is to interpret that result as a candidate stability engine rather than merely a numerical curiosity. If it does not, the framework must identify what additional structure is actually required for closure.",
+		  "handoff": "If the stability analysis demonstrates that a third relational degree of freedom can create an attracting or phase-locked configuration, the next step is to interpret that result as a candidate stability engine rather than merely a numerical curiosity. If it does not, the framework must identify what additional structure is actually required for closure."
 		},
 		{
 		  "id": "5.7",
@@ -14311,7 +14351,7 @@
 			  "relevance": "Provides the immediate conceptual role of phase in persistent motif dynamics."
 			}
 		  ],
-		  "handoff": "A circle can remember recurrence, but it cannot by itself specify every possible orientation of a two-state relation. The next step is therefore to lift cyclic phase into a sphere, where the remembered relation can acquire an axis and where observation can be represented as projection rather than creation.",
+		  "handoff": "A circle can remember recurrence, but it cannot by itself specify every possible orientation of a two-state relation. The next step is therefore to lift cyclic phase into a sphere, where the remembered relation can acquire an axis and where observation can be represented as projection rather than creation."
 		},
 		{
 		  "id": "6.2",
@@ -14691,7 +14731,7 @@
 			  "relevance": "The XOR ground condition provides a complementary treatment of binary distinction and relational complementarity."
 			}
 		  ],
-		  "handoff": "The sphere introduces a distinction that the phase circle alone cannot express: a state can be represented independently of the axis against which it is compared. The next subsection therefore treats the observer not as a creator of the state, but as the geometric specification of a reference axis through which the state's relational orientation becomes distinguishable.",
+		  "handoff": "The sphere introduces a distinction that the phase circle alone cannot express: a state can be represented independently of the axis against which it is compared. The next subsection therefore treats the observer not as a creator of the state, but as the geometric specification of a reference axis through which the state's relational orientation becomes distinguishable."
 		},		
 		{
 		  "id": "6.3",
@@ -15125,7 +15165,7 @@
 			  "relevance": "Provides the XOR/complementary distinction framework that informs the interpretation of opposing projection states."
 			}
 		  ],
-		  "handoff": "Once a state can be distinguished relative to an axis, the next question is whether the axis itself must be treated as an independent structure or as a relational consequence of the surrounding coherence field. The geometry therefore moves from observation as projection toward observation as symmetry breaking.",
+		  "handoff": "Once a state can be distinguished relative to an axis, the next question is whether the axis itself must be treated as an independent structure or as a relational consequence of the surrounding coherence field. The geometry therefore moves from observation as projection toward observation as symmetry breaking."
 		},		
 		{
 		  "id": "6.4",
@@ -17398,7 +17438,7 @@
 		  "poetic_cipher": "The universe does not grow outward; the unresolved becomes distinguishable.",
 		  "cipher_explanation": "Within the proposed framework, cosmological evolution is interpreted as a transition from a state in which distinctions are maximally unresolved toward states containing progressively differentiated coherent structures. What appears geometrically as expansion may therefore correspond, at the relational level, to the relaxation of a global coherence constraint. The metaphor does not assert that physical space literally fails to expand; it identifies an alternative quantity whose evolution might generate an effective expansion history.",
 		  "content": [
-			"The cosmogenesis model begins from the hypothesis that the earliest cosmological state can be represented as a highly unresolved configuration of relational possibilities. In this limit, distinctions that later become dynamically significant are not yet expressed as independently persistent coherent structures.",
+			"The cosmogenesis model begins from the hypothesis that the earliest cosmological state can be represented as a highly unresolved configuration of lational possibilities. In this limit, distinctions that later become dynamically significant are not yet expressed as independently persistent coherent structures.",
 			"Cosmological evolution is therefore represented as differentiation. As the coherence configuration relaxes, previously unresolved relational distinctions become available as persistent structures, phase relationships, and eventually larger-scale coherent motifs.",
 			"The relevant quantity is not necessarily coherence at a single point. The cosmological construction requires a coarse-grained or global coherence measure C(t), obtained from the underlying coherence field over the region or configuration being modeled.",
 			"A decreasing C(t) should not automatically be interpreted as increasing disorder. In this framework, coherence is relational compatibility with a specified global configuration. Relaxation therefore describes the release of constraints that permits a larger number of mutually distinguishable coherent configurations to emerge.",
