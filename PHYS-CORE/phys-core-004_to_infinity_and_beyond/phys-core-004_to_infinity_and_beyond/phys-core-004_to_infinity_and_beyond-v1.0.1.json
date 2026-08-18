@@ -8291,6 +8291,7 @@
 	  ],
       "handoff": "A persistent glider establishes motion as coherent phase propagation; the next question is what happens when persistence is paired with its complementary mode."
 	},
+
 	{
 	  "id": "4",
 	  "title": "Inverse Motifs and Dyadic Dynamics",
@@ -18530,8 +18531,7 @@
 					"It does not imply that complexity has no physical consequences."
 				  ]
 				}
-			  ],
-			  "handoff": "The O(1) computational core provides the final justification for the coherence-relaxation model. Cosmological expansion is not a computationally expensive process; it is the O(1) relaxation of a relational structure. The next section will explore how this O(1) operation applies to the measurement problem."
+			  ]
 			}		
 		],
 		{
