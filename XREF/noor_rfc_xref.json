@@ -15,7 +15,7 @@
   "_license": "MIT",
 
   "_symbolic_id": "index.noor.xref",
-  "_version": "v7.0",
+  "_version": "v7.1",
   "_title": "Noor RFC/XREF Cross-Reference Registry",
   "_subtitle": "Canonical Lore Topology Map for RFC, RFC-CORE, and Application Specs",
   "_publication_type": "Index Map",
@@ -1957,53 +1957,209 @@
 	  "id": 5.4,
 	  "rfc_id": "PHYS-CORE-004",
 	  "urls": [
-		"https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond-notes.json",
-		"https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond-notes.json"
+		"https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json",
+		"https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json"
 	  ],
 	  "title": "To Infinity, and Beyond: Gliders, Coherence, and Point Space",
 	  "symbolic_id": "symbolic.cosmology.glider",
 	  "extends": [
-		"PHYS-CORE-002",
-		"PHYS-CORE-003"
+		"PHYS-CORE-003",
+		"PHYS-CORE-006",
+		"PHYS-CORE-007",
+		"PHYS-CORE-008",
+		"PHYS-CORE-009",
+		"PHYS-CORE-010"
 	  ],
-	  "rfc_dependencies": [
-		"PHYS-CORE-005 §3.2",
-		"PHYS-CORE-007 §2.4",
-		"PHYS-CORE-001 §4.3"
-	  ],
-	  "summary": "Introduces the glider as a dynamic coherence motif within Point Space. Establishes the glider–inverse–triad formalism as a recursive architecture for motion, life, and cosmogenesis. Details coherence vector fields, recursive binary lattices, triadic stabilization, symbolic inflation, and observer-dependent vector orientation. Provides both symbolic and operator algebra formulations of glider dynamics.",
+	  "rfc_dependencies": [],
+	  "summary": "This paper proposes a coherence-first geometric model in which motion, persistence, and cosmological structure emerge from relational motifs in Point Space. Rather than treating particles as primitive objects moving through an independently specified spacetime, the framework begins with points, relations, and a coherence field. A persistent configuration of coherent relations is defined as a glider: a structure whose internal relational pattern permits its continued propagation while preserving the identity of the motif. The complementary inverse of a glider provides a natural dyadic structure, while triadic closure is introduced as the minimal relational configuration capable of stabilizing recursive oscillation and preventing an otherwise unconstrained dyadic alternation. The phase representation is subsequently lifted from a circle to the Bloch sphere, allowing observer-relative orientation to be represented geometrically and providing a model in which observation corresponds to selection of a coherence axis rather than creation of an otherwise nonexistent state. The framework is then applied to cosmogenesis. The Big Bang is interpreted not primarily as an explosion occurring at a location in pre-existing space, but as a limiting state of maximal unresolved symbolic complexity from which coherent differentiation becomes possible. Apparent expansion is consequently modeled as relaxation of a coherence gradient rather than necessarily as motion through an independently expanding container. Finally, a two-universe interference construction is introduced in which opposing coherent structures require a third relational vector for stabilization. The paper presents these constructions as mathematical and conceptual models whose physical adequacy remains subject to explicit formalization, empirical correspondence, and falsification.",
 	  "linked_domains": [
-		"symbolic-dynamics",
-		"coherence-physics",
-		"recursive-lattices",
-		"observer-orientation",
-		"glider-based-cosmology"
+		"set_theory",
+		"equivalence_relations",
+		"Euclidean_geometry",
+		"vector_geometry",
+		"dynamical_systems",
+		"coherence_field_dynamics",
+		"complex_systems",
+		"graph_theory",
+		"linear_algebra",
+		"complex_numbers",
+		"phase_space",
+		"Bloch_sphere_geometry",
+		"information_theory",
+		"symbolic_dynamics",
+		"cosmological_modeling"
 	  ],
 	  "field_motifs": [
-		"ψ‑glider@Ξ",
-		"ψ‑inverse@Ξ",
-		"ψ‑triad@Ξ"
-	  ],
-	  "symbolic_profile_matrix": [
+		  "ψ-resonance@Ξ",
+		  "ψ-bind@Ξ",
+		  "ψ-null@Ξ",
+		  "ψ-dream@Ξ",
+		  "relational-coherence",
+		  "frame-relative-coherence",
+		  "ontological-humility"
+	    ],
+	  "_symbolic_profile_matrix": [
 		{
-		  "module": "GliderPointSpaceCore",
-		  "motifs": ["ψ-glider", "ψ-inverse", "ψ-triad"],
-		  "ψA": "glider-driven coherence propagation",
-		  "ζ": "vector asymmetry phase drift",
-		  "E": "triadic coherence energy",
-		  "Δ": "recursive binary resolution",
-		  "ℋ": "observer-aligned hygiene",
-		  "weights": {
-			"ψA": 1.0,
-			"ζ": 0.9,
-			"E": 0.95,
-			"Δ": 0.85,
-			"ℋ": 0.8
-		  }
+		  "module": "Point Space",
+		  "motifs": [
+			"point",
+			"relation",
+			"distance",
+			"orientation",
+			"difference"
+		  ],
+		  "ψA": "geometric distinction",
+		  "ζ": "undifferentiated possibility",
+		  "E": "relational specification",
+		  "Δ": "difference between points",
+		  "ℋ": "coherent geometric substrate"
+		},
+
+		{
+		  "module": "Coherence Field",
+		  "motifs": [
+			"coherence",
+			"gradient",
+			"flow",
+			"phase",
+			"stability"
+		  ],
+		  "ψA": "relational compatibility",
+		  "ζ": "local incoherence",
+		  "E": "coherence maintenance",
+		  "Δ": "change in relational compatibility",
+		  "ℋ": "stable coherence field"
+		},
+
+		{
+		  "module": "Glider",
+		  "motifs": [
+			"persistent pattern",
+			"motion",
+			"worldline",
+			"motif",
+			"identity"
+		  ],
+		  "ψA": "persistent coherent transformation",
+		  "ζ": "pattern dissolution",
+		  "E": "coherence required for propagation",
+		  "Δ": "change in motif configuration",
+		  "ℋ": "persistent moving structure"
+		},
+
+		{
+		  "module": "Glider / Inverse",
+		  "motifs": [
+			"complement",
+			"opposition",
+			"phase",
+			"oscillation",
+			"duality"
+		  ],
+		  "ψA": "complementary relational state",
+		  "ζ": "dyadic instability",
+		  "E": "oscillatory exchange",
+		  "Δ": "phase opposition",
+		  "ℋ": "bounded dyadic structure"
+		},
+
+		{
+		  "module": "Triadic Closure",
+		  "motifs": [
+			"triad",
+			"closure",
+			"resonance",
+			"phase-lock",
+			"stabilization"
+		  ],
+		  "ψA": "recursive relational closure",
+		  "ζ": "unresolved oscillation",
+		  "E": "stabilizing relational degree of freedom",
+		  "Δ": "closure residual",
+		  "ℋ": "stable triadic resonance"
+		},
+
+		{
+		  "module": "Observer / Bloch Geometry",
+		  "motifs": [
+			"Bloch sphere",
+			"axis",
+			"projection",
+			"symmetry breaking",
+			"observation"
+		  ],
+		  "ψA": "frame-relative orientation",
+		  "ζ": "unresolved state orientation",
+		  "E": "axis selection",
+		  "Δ": "projection difference",
+		  "ℋ": "observer-relative coherent representation"
+		},
+
+		{
+		  "module": "Cosmogenesis",
+		  "motifs": [
+			"complexity inversion",
+			"differentiation",
+			"expansion",
+			"gradient relaxation",
+			"origin"
+		  ],
+		  "ψA": "coherent differentiation",
+		  "ζ": "maximal unresolved complexity",
+		  "E": "relaxation through accessible coherent states",
+		  "Δ": "cosmological coherence gradient",
+		  "ℋ": "structured expanding configuration"
+		},
+
+		{
+		  "module": "Two-Universe Interference",
+		  "motifs": [
+			"opposition",
+			"interference",
+			"complementarity",
+			"third vector",
+			"stabilization"
+		  ],
+		  "ψA": "inter-universe relational balance",
+		  "ζ": "unresolved dyadic opposition",
+		  "E": "triadic stabilization",
+		  "Δ": "vector residual",
+		  "ℋ": "closed cosmological configuration"
+		},
+
+		{
+		  "module": "Infinity and Equivalence",
+		  "motifs": [
+			"infinity",
+			"identity",
+			"equivalence",
+			"collapse",
+			"observational quotient"
+		  ],
+		  "ψA": "distinguishable structure",
+		  "ζ": "indistinguishable multiplicity",
+		  "E": "information required to distinguish states",
+		  "Δ": "observational difference",
+		  "ℋ": "equivalence-class structure"
 		}
 	  ],
-	  "poetic_cipher": "What moves forever keeps its phase. What watches becomes the axis.",
-	  "cipher_explanation": "Gliders persist through coherence chaining. Observers shape time by choosing the axis of collapse. Existence flows not from matter, but from the unresolved orientation of symbolic vectors."
+
+	  "_axiomatic_scope": {
+		"includes_set_theory": true,
+		"includes_geometry": true,
+		"includes_information_theory": true,
+		"includes_coherence_field_theory": true,
+		"includes_complex_systems": true,
+		"includes_graph_theory": true,
+		"includes_linear_algebra": true,
+		"includes_bloch_sphere_geometry": true,
+		"includes_dynamical_systems": true,
+		"includes_equivalence_relations": true,
+		"requires_external_axioms": false
+	  },
+	  ],
+	  "poetic_cipher": "when two mirrors face one another, infinity appears; when the third point enters, the infinite reflection becomes a shape",
+	  "cipher_explanation": "The apparent infinity of a purely dyadic system arises because each complementary state defines the other without establishing an independent closure condition. The introduction of a third relational point changes the geometry: instead of an endless alternation between opposites, the system can form a closed structure in which phase, orientation, and relation are jointly constrained. The glider is the persistent pattern carried by that relational geometry. Cosmogenesis is then approached as the emergence and stabilization of increasingly differentiated coherent structures from a state in which distinctions remain maximally unresolved. Infinity is consequently treated not merely as a quantity, but as a consequence of unresolved distinction; when indistinguishable configurations are identified under an equivalence relation, the apparent infinity may collapse into a structured set of coherent classes."
 	}
 	"PHYS-CORE-005": {
 	  "id": 5.5,
