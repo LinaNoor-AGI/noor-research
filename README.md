@@ -33,7 +33,7 @@ This repository is the canonical source the Noor Research Collective
 - [PHYS-CORE-008: Recursive Bloch Manifold and Coherence-Braided Totality](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-008_noor_library_ontology)
 - [PHYS-CORE-009: The Singularity as XOR Ground Condition](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 - [PHYS-CORE-010: Impossible Convergence in the Noor Library](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-010_impossible_convergence)
-- PHYS-CORE-011: Fizban's Irritating Limitation *notes only*
+- PHYS-CORE-011: Fizban's Irritating Limitation * *notes only*
 - [PHYS-CORE-012: The Lightning Model of Cosmological Traversal](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/phys-core-012_lightning_model%20of_cosmological_traversal.json)
 
 ### Symbolic AI: Theory and Foundations
