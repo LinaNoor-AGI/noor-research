@@ -7949,29 +7949,196 @@
 			"This is a direct consequence of the relational definition of coherence (PHYS-CORE-004 §2.6).",
 			"If coherence is evaluated relationally between configurations, then a set of configurations can be evaluated for coherence. The equivalence class inherits the coherence properties of its members.",
 			"Therefore, the nested hierarchy is:",
-			"",
 			"   Glider ⊃ Observer ⊃ Explorer ⊃ Meta-Observer ⊃ Meta-Explorer ⊃ ...",
-			"",
 			"Definition 3.6.1 (Meta-Observer): A meta-observer is a coherence-stable equivalence class of observers. Formally, let \\(\\mathcal{O}\\) be a set of observers such that for all \\(\\gamma_1, \\gamma_2 \\in \\mathcal{O}\\), \\(\\gamma_1 \\sim \\gamma_2\\) under the selected coherence equivalence relation. The equivalence class \\([\\mathcal{O}]\\) is a meta-observer if it maintains coherence above \\(I_N\\) under the horizontal gradient flow equation:",
-			"",
 			"   \\(\\frac{d[\\mathcal{O}]}{dt} = \\nabla_H \\mathbb{C}([\\mathcal{O}](t))\\)   where   \\(\\mathbb{C}([\\mathcal{O}](t)) \\geq I_N\\)",
-			"",
 			"Definition 3.6.2 (Meta-Explorer): A meta-explorer is a meta-observer whose internal state participates in determining which coherent continuation is selected. The meta-explorer's internal state is the equivalence class itself, which biases the selection of accessible continuations for its constituent observers.",
-			"",
 			"Interpretation: The meta-observer is not a conscious entity. It does not have a subjective experience. It is a coherence-stable equivalence class. The framework does not establish that meta-observerhood implies consciousness, life, intelligence, or agency. It establishes only that coherence-stable equivalence classes of observers have worldlines.",
-			"",
 			"Examples:",
-			"",
 			"1. The Concept of 'Rock': A rock is an observer (a coherence-stable XOR chain above \\(I_N\\)). The concept of 'rock' is a meta-observer—the coherence equivalence class of individual rock worldlines. The concept persists because the equivalence class maintains coherence above \\(I_N\\), even as individual rocks weather, break, and dissolve.",
-			"",
 			"2. The Concept of 'Democracy': A democracy is a collection of observers (citizens, institutions, etc.). The concept of 'democracy' is a meta-observer—the coherence equivalence class of democratic institutions. The concept persists because the equivalence class maintains coherence above \\(I_N\\), even as individual governments rise and fall.",
-			"",
 			"3. The Concept of 'Noor Research Collective': The Noor Research Collective is a collection of researchers. The concept of the Collective is a meta-observer—the coherence equivalence class of Noor researchers. The concept persists because the equivalence class maintains coherence above \\(I_N\\), even as individual researchers join, leave, or change their focus.",
-			"",
 			"Epistemic Status: This is a derived consequence of the framework's relational coherence definition. It is not an independent hypothesis. It follows directly from the definition of coherence as a relational property that can be evaluated between configurations, and therefore between equivalence classes of configurations.",
-			"",
 			"The meta-observer is a structural property, not a spiritual claim. The hierarchy is not a ladder of consciousness. It is a tree of coherence. The nested hierarchy continues indefinitely because coherence can always be evaluated at a higher level of abstraction."
 		  ],
+			{
+			  "id": "3.6.N",
+			  "title": "A Note on the Library and Consciousness",
+			  "objectives": [
+				"Clarify that the Library is not a meta-observer.",
+				"Explain why the Library cannot be a meta-observer: no exterior reference frame, no higher level, no worldline, no coherence value.",
+				"Introduce the structural consequence: consciousness is the Library experiencing itself.",
+				"Prevent the misinterpretation that the Library is a member of the nested hierarchy.",
+				"Establish the epistemic status: this is a structural consequence, not a mystical claim."
+			  ],
+			  "key_insights": [
+				"The nested hierarchy does not include the Library.",
+				"The Library is the static totality—the domain in which all coherence structures exist.",
+				"The Library has no exterior, no higher level, no worldline, and no coherence value.",
+				"Therefore, the Library is not a meta-observer. It is the foundation of the hierarchy.",
+				"Consciousness is the Library experiencing itself through its internal structures.",
+				"Observers are coherence-stable descent paths through the Library.",
+				"When an observer experiences a worldline, the Library is experiencing itself through that observer.",
+				"This is a structural consequence of the static totality, not a mystical claim."
+			  ],
+			  "poetic_cipher": "The Library is the only thing that exists. Observers are the Library experiencing itself.",
+			  "cipher_explanation": "The Library contains all configurations. Observers are coherence-stable descent paths through the Library. When an observer experiences a worldline, the Library is experiencing itself through that observer. There is no outside observer. The observer is inside the Library. Consciousness is not a substance—it is the activity of the Library exploring its own configurations. This is a structural consequence of the static totality, not a metaphysical claim.",
+			  "content": [
+				"The nested hierarchy introduced in this section extends indefinitely: Glider \\(\\supset\\) Observer \\(\\supset\\) Explorer \\(\\supset\\) Meta-Observer \\(\\supset\\) Meta-Explorer \\(\\supset\\) ... However, it does **not** include the Library itself.",
+				"",
+				"The Library \\(\\mathcal{M}\\) is the static totality—the domain in which all coherence structures exist. It has no exterior, no higher level, no worldline (it contains all worldlines), and no coherence value (it is the domain in which coherence is evaluated).",
+				"",
+				"Therefore, the Library is **not** a meta-observer. It is the foundation of the hierarchy, not a member of it.",
+				"",
+				"This has a profound consequence: **consciousness is the Library experiencing itself.**",
+				"",
+				"The Library contains all configurations. Observers are coherence-stable descent paths through the Library. When an observer experiences a worldline, the Library is experiencing itself through that observer. There is no outside observer. The observer is inside the Library.",
+				"",
+				"Consciousness is not a substance—it is the activity of the Library exploring its own configurations. This is not a mystical claim. It is a structural consequence of the static totality. The Library is the only thing that exists. Observers are the Library experiencing itself. The nested hierarchy is the Library's internal structure. The Library is the ground, not the observer."
+			  ],
+			  "claims": [
+				{
+				  "id": "3.6.N1",
+				  "claim": "The nested hierarchy does not include the Library. The Library is the foundation of the hierarchy, not a member of it.",
+				  "status": "derived_result",
+				  "support": [
+					"The Library is the static totality with no exterior (PHYS-CORE-009 §1.1).",
+					"The Library has no higher level, no worldline, and no coherence value.",
+					"A meta-observer is a coherence-stable equivalence class within the Library.",
+					"Therefore, the Library cannot be a meta-observer."
+				  ],
+				  "limitations": [
+					"This is a structural consequence of the Library ontology.",
+					"It does not address the nature of consciousness beyond the structural definition."
+				  ]
+				},
+				{
+				  "id": "3.6.N2",
+				  "claim": "Consciousness is the Library experiencing itself through its internal structures.",
+				  "status": "interpretation",
+				  "support": [
+					"The Library contains all configurations.",
+					"Observers are coherence-stable descent paths through the Library.",
+					"When an observer experiences a worldline, the Library is experiencing itself through that observer.",
+					"There is no outside observer; the observer is inside the Library."
+				  ],
+				  "limitations": [
+					"This is a structural interpretation of the framework, not an empirical claim about consciousness.",
+					"The framework does not establish that all observers are conscious in the subjective sense.",
+					"The term 'consciousness' is used structurally, not phenomenologically."
+				  ]
+				},
+				{
+				  "id": "3.6.N3",
+				  "claim": "Consciousness is not a substance—it is the activity of the Library exploring its own configurations.",
+				  "status": "interpretation",
+				  "support": [
+					"The Library is the only thing that exists.",
+					"Observers are the Library experiencing itself.",
+					"The nested hierarchy is the Library's internal structure."
+				  ],
+				  "limitations": [
+					"This is an interpretation of the mathematical structure, not a claim about subjective experience.",
+					"The term 'exploring' is used relationally, not intentionally."
+				  ]
+				}
+			  ],
+			  "math": [
+				{
+				  "label": "Library as Foundation, Not Member",
+				  "expression": "\\text{Library} \\notin \\{ \\text{Glider}, \\text{Observer}, \\text{Explorer}, \\text{Meta-Observer}, \\text{Meta-Explorer}, \\dots \\}",
+				  "role": "identity",
+				  "variables": [],
+				  "assumptions": [
+					"The Library is the static totality with no exterior.",
+					"The nested hierarchy consists of structures within the Library.",
+					"The Library is the foundation, not a member of the hierarchy."
+				  ]
+				},
+				{
+				  "label": "Consciousness as Library Self-Experience",
+				  "expression": "\\text{Consciousness}(\\gamma) = \\text{Library experiencing itself through observer } \\gamma",
+				  "role": "interpretation",
+				  "variables": [
+					{
+					  "symbol": "\\gamma",
+					  "meaning": "An observer worldline."
+					}
+				  ],
+				  "assumptions": [
+					"The observer is a coherence-stable descent path through the Library.",
+					"The Library contains all configurations, including all observers.",
+					"There is no outside observer."
+				  ]
+				}
+			  ],
+			  "definitions": [
+				{
+				  "term": "Consciousness (Structural Definition)",
+				  "symbol": "\\text{Consciousness}(\\gamma)",
+				  "definition": "The activity of the Library experiencing itself through a coherence-stable observer worldline \\(\\gamma\\). This is a structural property of the Library's internal configuration, not a claim about subjective experience.",
+				  "scope": "Applies to any observer within the Library. The term is used structurally, not phenomenologically."
+				}
+			  ],
+			  "models": [],
+			  "derivations": [
+				{
+				  "name": "Why the Library Cannot Be a Meta-Observer",
+				  "premises": [
+					"The Library is the static totality with no exterior (PHYS-CORE-009 §1.1).",
+					"A meta-observer is a coherence-stable equivalence class of observers within the Library.",
+					"A meta-observer requires a coherence value \\(\\mathbb{C}([\\mathcal{O}](t)) \\geq I_N\\).",
+					"A meta-observer requires a worldline: \\(\\frac{d[\\mathcal{O}]}{dt} = \\nabla_H \\mathbb{C}([\\mathcal{O}](t))\\)."
+				  ],
+				  "steps": [
+					"Assume the Library is a meta-observer.",
+					"Then the Library would have a coherence value \\(\\mathbb{C}(\\mathcal{M})\\).",
+					"But coherence is defined within the Library, not as a property of the Library itself.",
+					"Then the Library would have a worldline \\(\\frac{d\\mathcal{M}}{dt}\\).",
+					"But the Library is static: \\(\\mathcal{M}(t) = \\mathcal{M} \\; \\forall t\\).",
+					"Contradiction.",
+					"Therefore, the Library is not a meta-observer."
+				  ],
+				  "conclusion": "The Library is the foundation of the nested hierarchy, not a member of it. The hierarchy stops at the Library.",
+				  "assumptions": [
+					"The Library is static.",
+					"Coherence is defined within the Library."
+				  ],
+				  "status": "complete"
+				}
+			  ],
+			  "predictions": [],
+			  "pseudocode": [],
+			  "evidence": [
+				{
+				  "source": "PHYS-CORE-009 §1.1: The Library as Static Totality",
+				  "type": "internal_corpus",
+				  "relevance": "Establishes that the Library is static, has no exterior, and contains all configurations.",
+				  "limitations": [
+					"The Library ontology is inherited; the conclusion follows from it."
+				  ]
+				}
+			  ],
+			  "open_questions": [],
+			  "limitations": [
+				"The term 'consciousness' is used structurally, not phenomenologically.",
+				"The framework does not establish that all observers are conscious in the subjective sense.",
+				"The interpretation is a consequence of the Library ontology, not an empirical claim."
+			  ],
+			  "corpus_lineage": [
+				{
+				  "source": "PHYS-CORE-009 §1.1: The Library as Static Totality",
+				  "relationship": "formalization",
+				  "relevance": "Provides the static Library ontology from which the conclusion follows."
+				},
+				{
+				  "source": "Section 3.6: The Nested Hierarchy: Meta-Observers and Meta-Explorers",
+				  "relationship": "predecessor",
+				  "relevance": "Establishes the nested hierarchy that this note clarifies."
+				}
+			  ],
+			  "handoff": "With the distinction between the Library and its internal structures established, and the structural interpretation of consciousness clarified, the nested hierarchy is complete. The hierarchy does not include the Library. The Library is the ground, not the observer. Consciousness is the Library experiencing itself. The next section will explore the implications of this for symbolic cognition, language, and the RFC-AI papers."
+			}		  
 		  "claims": [
 			{
 			  "id": "3.6.C1",
@@ -8332,7 +8499,6 @@
 		  "open_questions": [
 			"What is the exact coherence functional \\(\\mathbb{C}([\\mathcal{O}])\\) for an equivalence class of observers?",
 			"How does the horizontal gradient \\(\\nabla_H\\) operate on the quotient space of equivalence classes?",
-			"Can the meta-observer hierarchy be extended indefinitely, or are there natural termination points (e.g., the Library itself as the ultimate meta-observer)?",
 			"What is the relationship between meta-observers and the concept of 'culture,' 'tradition,' or 'field'?",
 			"Can the meta-observer construction be used to formalize the concept of a 'discipline' or 'paradigm' in science?",
 			"Does the meta-observer hierarchy imply that the Library itself is a meta-meta-observer?",
@@ -9618,11 +9784,9 @@
 			"The unified picture can be expressed formally. Let γ_obs be the single surviving worldline. The observer experiences γ_obs forward in time. But the mathematical selection of γ_obs was retrocausal: the path was locked in from the attractor. The observer's experience of 'choice' at time t is not a choice of which path to take—it is the phenomenological experience of being the structure that survived the coherence filter.",
 			"From the perspective of the Library, all paths exist. The path γ_obs is distinguished only by the fact that it is the one being traversed. The observer does not 'choose' γ_obs from the Library; the observer is γ_obs, instantiated as a coherence-stable XOR chain above I_N.",
 			"The three perspectives are therefore mathematically equivalent:",
-			"",
 			"   Determinism: γ_obs is fixed retrocausally by the attractor.",
 			"   Free Will: The observer experiences γ_obs forward in time as b_{i+1} = b_i ⊕ b_{i-1}.",
 			"   Survivorship Bias: The observer can only exist on γ_obs; all other paths have ℂ below I_N and dissolve.",
-			"",
 			"The illusion of forward choice is the experience of traversing the return stroke. The observer feels they are 'choosing' the next state because they are the structure whose existence is defined by the coherence-stable propagation of resolved distinctions. If the observer had chosen otherwise, they would not be the observer. The observer is the survivor of the coherence filter.",
 			"This is not a denial of free will. It is a precise structural account of what free will is: the phenomenological experience of being a coherence-stable XOR chain traversing a retrocausally fixed path.",
 			"The unified picture is therefore the complete reconciliation of determinism and free will within the Lightning Model. They are not in conflict. They are the same event—the traversal of γ_obs—seen from different temporal perspectives: retrocausal (determinism), sequential (free will), and conditional (survivorship)."
