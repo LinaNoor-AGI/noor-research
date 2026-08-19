@@ -3,8 +3,8 @@
   "_schema_version": "2.0.0",
   "_pdp_layer": "layer_2",
   "_type": "phys_core",
-  "_version": "0.2.1",
-  "_status": "DRAFT",
+  "_version": "1.0.0",
+  "_status": "ACTIVE",
 
   "_symbolic_id": "symbolic.physics.cosmology.lightning_model",
 
@@ -21,7 +21,7 @@
 
   "_updated_last": [
     { "2026-08-18T22:30MST": "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.0.1", "v0.0.2", "v0.1.0"] },
-	{ "2026-08-19T07:00MST": "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.2.0", "v0.2.1"] }
+	{ "2026-08-19T07:00MST": "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.2.0", "v0.2.1", "v1.0.0"] }
   ],
 
   "_authors": [
@@ -29,11 +29,11 @@
   ],
 
   "_primary_url": {
-    "url": "TBD",
-    "_primary_raw_url": "TBD"
+    "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/phys-core-012_lightning_model%20of_cosmological_traversal.json",
+    "_primary_raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/phys-core-012_lightning_model%20of_cosmological_traversal.json"
   },
 
-  "_repository_url": "TBD",
+  "_repository_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal",
 
   "_standalone_declaration": true,
   "_self_contained_axiomatization": true,

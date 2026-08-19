@@ -6,6 +6,7 @@
   "_updated_last": [
 	"2026-01-19": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v6.5"},
 	"2026-08-12T12:49MST": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v7.0"}
+	"2026-08-19T10:30MST": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v7.2"}
   ],
 
   "_type": "protocol",
@@ -26,8 +27,8 @@
   "_urls": [
 	  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json",
 	  "https://github.com/LinaNoor-AGI/noor-research/blob/main/XREF/noor_rfc_xref.json",
-	  "https://pastebin.com/raw/FSQjyN3Z",
-	  "https://pastebin.com/FSQjyN3Z"
+	  "https://pastebin.com/raw/ycQBsagv",
+	  "https://pastebin.com/ycQBsagv"
 	],
 
   "_objective": "To define a structured cross-reference index of all Noor-compatible symbolic specification documents (RFC, RFC-CORE, App-Specs), including their inheritance graph, motif alignments, and field role annotations. This registry enables automated dependency resolution and symbolic context traversal within PDP‑0001 pipelines.",
