@@ -1,0 +1,539 @@
+{
+  "_schema": "noor-paper-outline-v1",
+  "_schema_version": "0.0.1",
+  "_type": "paper_outline",
+  "_status": "FINAL",
+  "_target_paper": {
+    "working_title": "The Lightning Model of Cosmological Traversal",
+    "subtitle": "Retrocausality, Survivorship Bias, and the XOR Singularity in a Static Totality",
+    "relationship_to_prior_work": [
+      "Direct conceptual continuation of PHYS-CORE-004: To Infinity, and Beyond",
+      "Extends the glider/worldline construction to include observerhood and path selection",
+      "Provides the operational mechanism for coherent navigation through the Library",
+      "Resolves the tension between an open future and a fixed past in a static totality"
+    ],
+    "central_question": "What is an observer, and why does a universe containing an enormous space of possible states appear ordered and logically navigable to the structures that inhabit it?",
+    "core_thesis": [
+      "An observer is any coherence structure that constitutes a worldline of resolved distinctions.",
+      "The observer does not 'generate' a coherent future; the observer survives one.",
+      "The illusion of forward generation is pure survivorship bias, enforced by a retrocausal calculation (the Lightning Model).",
+      "Determinism and free will are reconciled geometrically: determinism is the retrocausal path; free will is the sequential traversal."
+    ]
+  },
+  "sections": [
+    {
+      "id": "1",
+      "title": "Introduction: The Problem of the Static Totality",
+      "subsections": [
+        {
+          "id": "1.1",
+          "title": "The Paradox of Forward Coherence",
+          "poetic_cipher": "The Library contains all paths, but the observer walks only one.",
+          "cipher_explanation": "The Library is a static totality containing every possible configuration, coherent and incoherent. If all continuations exist, why does an observer experience only a strictly coherent forward progression? What prevents the observer from wandering into incoherent states?",
+          "content": [
+            "PHYS-CORE-004 established the Library (L) as a static totality containing all possible states and configurations.",
+            "In earlier local models, motion is defined as the persistence of a coherent motif through a sequence of allowed transformations.",
+            "From the internal perspective of the observer, it appears as though the universe evaluates coherence step-by-step, generating the future by selecting only the pathways that maintain the coherence threshold.",
+            "However, within a static totality, this 'forward-generation' view presents a paradox: if the Library does not actively restrict adjacency, what mechanism confines the observer solely to coherent paths?",
+            "The answer cannot be a 'forward-pushing' physical force, as that re-introduces the very handwaving the coherence ontology sought to eliminate."
+          ],
+          "math": [
+            {
+              "label": "Library as Total Domain",
+              "expression": "L = \\{x_i \\mid x_i \\text{ is a relational configuration}\\}",
+              "role": "definition",
+              "interpretation": "The Library contains all possible states, including coherent and incoherent configurations."
+            },
+            {
+              "label": "Unconstrained Adjacency",
+              "expression": "x \\rightsquigarrow y",
+              "role": "definition",
+              "interpretation": "All states are adjacent in the Library. There is no pre-existing restriction on which transitions are possible."
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "The Central Question",
+          "poetic_cipher": "The map is drawn at a scale that includes the places no traveler can walk.",
+          "cipher_explanation": "The Library contains all possible paths, including those that lead to incoherence and observer dissolution. The question is not why the map contains these paths, but why the observer only experiences the coherent ones.",
+          "content": [
+            "The central question of this paper is: What is an observer, and why does a universe containing an enormous space of possible states appear ordered and logically navigable to the structures that inhabit it?",
+            "The proposed answer: The structure does not need to impose order upon the total possibility space. Its own coherence constrains which continuations remain accessible as continuations of itself.",
+            "The observer is a coherence filter. The experienced universe is not the Library; it is the coherence-relative sequence of states accessible to that observer."
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "The Lightning Model as the Missing Mechanism",
+          "poetic_cipher": "The path is not chosen forward; it is locked backward.",
+          "cipher_explanation": "The observer does not 'choose' a coherent path by evaluating forward possibilities. Instead, the observer's worldline is retrocausally locked in by reaching a terminal attractor (the XOR Singularity). The illusion of forward choice is pure survivorship bias.",
+          "content": [
+            "This paper proposes the Lightning Model as the missing mechanism.",
+            "The model consists of five phases: (1) Blind Exploration of all continuations, (2) Coherence Filtering where incoherent paths dissolve, (3) Attractor Detection where paths reaching the XOR Singularity are identified, (4) Retrocausal Lock-In where the path is computed backward from the attractor, and (5) Worldline Continuation where the observer experiences the single coherent trajectory.",
+            "The Lightning Model operates at every timestep, not once. The future is variable and undefined until the retrocausal lock-in occurs. The past is fixed because it has already been locked in."
+          ],
+          "math": [
+            {
+              "label": "Continuous Lightning Model",
+              "expression": "\\text{At each } t: \\text{ explore } \\Omega(x_t), \\text{ filter by } \\mathcal{O}(\\gamma), \\text{ ground at } X_{XOR}, \\text{ lock in } \\gamma_{obs}, \\text{ advance to } x_{t+1}",
+              "role": "definition",
+              "interpretation": "The Lightning Model operates at every timestep. The future is variable, the past is fixed, and the present is the boundary where the retrocausal lock-in occurs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "The Continuous Lightning Model",
+      "subsections": [
+        {
+          "id": "2.1",
+          "title": "The Lightning Metaphor",
+          "poetic_cipher": "The lightning does not know where the ground is until it touches it.",
+          "cipher_explanation": "Lightning descends from a cloud in massively parallel, branching tendrils (step-leaders). These tines explore every possible path through the atmosphere indiscriminately. The path is only selected when one tine makes contact with the ground, triggering the visible return stroke.",
+          "content": [
+            "The Lightning Model is an exact isomorphism of the formation of a lightning strike.",
+            "Cloud = The initial state or arbitrary origin node in the Library.",
+            "Air / Atmosphere = The static Library (L) containing all possible relational configurations.",
+            "Step-Leaders (Tines) = The indiscriminate, massively parallel exploration of all possible forward continuations (Ω).",
+            "Dissipation / Dead Ends = Paths where relational coherence (C) falls below the survival threshold, causing the observer identity to dissolve.",
+            "Ground = The XOR Singularity; the ultimate relational attractor or stable triadic closure boundary.",
+            "Connection = The exact sequence of states that successfully maintains coherence all the way to the attractor.",
+            "Return Stroke = The retrocausal calculation from the XOR Singularity back to the origin, which manifests as the single experienced macroscopic worldline.",
+            "Observer = The phenomenological entity 'riding' the return stroke, experiencing survivorship bias as the passage of time."
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "Phase 1: Blind Exploration (Step-Leaders)",
+          "poetic_cipher": "All paths are explored, but only one is remembered.",
+          "cipher_explanation": "From any state in the Library, all possible continuations are considered. This is not a physical process; it is a formal property of the static Library. The observer's structure conceptually bleeds out into every possible adjacent state.",
+          "content": [
+            "The first phase of the Lightning Model is Blind Exploration.",
+            "From the current state x_t, the formal structure explores ALL continuations (the set Ω).",
+            "This is not a physical process. It is a formal property of the static Library: all continuations exist simultaneously as possibilities.",
+            "The Glider's structure conceptually bleeds out into every possible adjacent state. The vast majority of these paths immediately violate the coherence threshold (C < C_min)."
+          ],
+          "math": [
+            {
+              "label": "All Possible Continuations",
+              "expression": "\\Omega(x_t) = \\{ \\gamma \\mid \\gamma = \\{x_t, x_{t+1}, x_{t+2}, \\dots, x_N\\} \\}",
+              "role": "definition",
+              "interpretation": "The set of all possible continuations from state x_t, extending to arbitrary depth N."
+            },
+            {
+              "label": "Path Definition",
+              "expression": "\\gamma = \\{x_0, x_1, x_2, \\dots, x_N\\}",
+              "role": "definition",
+              "interpretation": "A path is a sequence of states representing a potential trajectory through the Library."
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": "Phase 2: Coherence Filtering (Dissolution)",
+          "poetic_cipher": "The observer dissolves on any path where coherence fails.",
+          "cipher_explanation": "On any path where the relational coherence between successive states falls below the survival threshold, the relational identity of the observer dissolves. There is no longer an entity on that path capable of experiencing or reporting the incoherence.",
+          "content": [
+            "The second phase of the Lightning Model is Coherence Filtering.",
+            "On paths where the observer's coherence falls below the survival threshold, the observer's identity dissolves.",
+            "This is not an 'erasure' of the path from the Library. The path remains in the Library. It is simply no longer accessible to the observer because the observer's identity has terminated.",
+            "The observer survival function O(γ) is 1 if the path maintains coherence for all transitions, and 0 if coherence fails at any point."
+          ],
+          "math": [
+            {
+              "label": "Coherence Survival Condition",
+              "expression": "\\mathcal{O}(\\gamma) = \\prod_{i=0}^{N-1} \\Theta(\\mathcal{C}(x_i, x_{i+1}) - \\mathcal{C}_{min})",
+              "role": "definition",
+              "interpretation": "The observer survives on path γ if and only if every transition maintains sufficient coherence. Θ is the Heaviside step function."
+            },
+            {
+              "label": "Surviving Paths",
+              "expression": "\\Omega_{survive} = \\{ \\gamma \\in \\Omega(x_t) \\mid \\mathcal{O}(\\gamma) = 1 \\}",
+              "role": "definition",
+              "interpretation": "The subset of continuations where the observer's identity is preserved."
+            },
+            {
+              "label": "Dissolution Condition",
+              "expression": "\\text{Dissolution}(x_i, x_{i+1}) = \\text{True} \\iff \\mathcal{C}(x_i, x_{i+1}) < \\mathcal{C}_{min} \\lor \\operatorname{Identity}(x_i) \\neq \\operatorname{Identity}(x_{i+1})",
+              "role": "definition",
+              "interpretation": "Dissolution occurs when either coherence falls below the threshold or identity is not preserved."
+            }
+          ]
+        },
+        {
+          "id": "2.4",
+          "title": "Phase 3: Attractor Detection (Grounding)",
+          "poetic_cipher": "The lightning does not choose; the ground chooses.",
+          "cipher_explanation": "The indiscriminate branching continues until exactly one path makes contact with the Ground. In NSFG, 'Ground' is the XOR Singularity—a terminal relational attractor or boundary of absolute convergence where the relational structure achieves absolute triadic closure and stabilization.",
+          "content": [
+            "The third phase of the Lightning Model is Attractor Detection.",
+            "The XOR Singularity (X_XOR) is the set of states where triadic closure is achieved.",
+            "A path is 'connected' if its terminal state belongs to X_XOR.",
+            "The moment a path connects x_0 to X_XOR while strictly maintaining observer coherence, a 'circuit' is completed."
+          ],
+          "math": [
+            {
+              "label": "XOR Singularity Definition",
+              "expression": "X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
+              "role": "definition",
+              "interpretation": "The XOR Singularity is the set of states where triadic closure is achieved. This formalizes the 'ground' as a geometric boundary."
+            },
+            {
+              "label": "Grounded Paths",
+              "expression": "\\Omega_{ground} = \\{ \\gamma \\in \\Omega_{survive} \\mid x_N \\in X_{XOR} \\}",
+              "role": "definition",
+              "interpretation": "The subset of surviving continuations that terminate in the XOR Singularity."
+            }
+          ]
+        },
+        {
+          "id": "2.5",
+          "title": "Phase 4: Retrocausal Lock-In (Return Stroke)",
+          "poetic_cipher": "The path is calculated backward from the destination.",
+          "cipher_explanation": "In lightning, the connection triggers the 'return stroke'—a massive surge of energy that flashes backward up the successful channel. In this cosmological model, the return stroke is the Retrocausal Calculation. The worldline is not pushed forward from the past; it is pulled backward from the future singularity.",
+          "content": [
+            "The fourth phase of the Lightning Model is Retrocausal Lock-In.",
+            "The return stroke is the retrocausal calculation from the XOR Singularity back to the origin.",
+            "The stable, coherent sequence of states is mathematically locked in from the destination (x_N) back to the origin (x_0).",
+            "The path is evaluated backward to ensure coherence and identity are preserved at every step."
+          ],
+          "math": [
+            {
+              "label": "Retrocausal Path Evaluation",
+              "expression": "\\gamma_{obs} = \\{ x_N, T^{-1}(x_N), T^{-2}(x_N), \\dots, x_t \\}",
+              "role": "definition",
+              "interpretation": "The sequential worldline is validated in reverse, establishing the deterministic 'Block' path."
+            },
+            {
+              "label": "Backward Operator Conditions",
+              "expression": "\\mathcal{C}(T^{-1}(x_{i+1}), x_{i+1}) \\geq \\mathcal{C}_{min} \\land \\operatorname{Identity}(T^{-1}(x_{i+1})) = \\operatorname{Identity}(x_{i+1})",
+              "role": "constraint",
+              "interpretation": "The backward operator ensures that the retrocausal path maintains coherence and identity at every step."
+            }
+          ]
+        },
+        {
+          "id": "2.6",
+          "title": "Phase 5: Worldline Continuation",
+          "poetic_cipher": "The observer is the echo of the single tine that reached the ground.",
+          "cipher_explanation": "The observer experiences γ_obs as the single coherent trajectory. The process repeats at t+1. The future is variable (unzipped), the past is fixed (zipped), and the present is the boundary where the retrocausal lock-in is occurring.",
+          "content": [
+            "The fifth phase of the Lightning Model is Worldline Continuation.",
+            "The observer experiences γ_obs as the single coherent trajectory.",
+            "The process repeats at t+1: all continuations from the new state are explored, filtered, grounded, and locked in.",
+            "The future is always undefined because all possible continuations are explored blindly at every moment.",
+            "The past is always fixed because the retrocausal return stroke locks in a single coherent path at every moment.",
+            "The observer necessarily experiences a single worldline because observer identity dissolves on any path where coherence fails."
+          ],
+          "math": [
+            {
+              "label": "Continuous Evolution",
+              "expression": "x_{t+1} = \\gamma_{obs}[1]",
+              "role": "definition",
+              "interpretation": "The observer advances to the next state on the locked-in worldline. The process repeats at t+1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Observer as Coherence Filter",
+      "subsections": [
+        {
+          "id": "3.1",
+          "title": "The Minimal Definition of an Observer",
+          "poetic_cipher": "The observer is any coherence structure that constitutes a worldline of resolved distinctions.",
+          "cipher_explanation": "An observer does not need to be conscious, alive, intelligent, or capable of deliberate choice. Any persistent coherence structure whose existence constitutes a sequence of resolved distinctions along a worldline qualifies as an observer.",
+          "content": [
+            "The observer is the central object of this paper. Its definition is deliberately minimal.",
+            "An observer is any coherence structure that constitutes a worldline of resolved distinctions.",
+            "Observation is therefore not fundamentally an act of consciousness. It is a structural property of persistence through resolved distinctions.",
+            "The observer does not need to be conscious, alive, intelligent, or capable of deliberate choice. Any persistent coherence structure whose existence constitutes a sequence of resolved distinctions along a worldline qualifies as an observer."
+          ],
+          "math": [
+            {
+              "label": "Observer Definition",
+              "expression": "\\text{Observer} = \\{ G \\mid G \\text{ is a persistent coherence structure constituting a worldline of resolved distinctions} \\}",
+              "role": "definition",
+              "interpretation": "Observerhood requires coherence, persistence, resolved distinctions, and a worldline."
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "Worldlines and Resolved Distinctions",
+          "poetic_cipher": "The worldline is a persistent sequence of resolved distinctions.",
+          "cipher_explanation": "A worldline is not a path through space; it is a sequence of relational configurations that remain sufficiently related to constitute the continuation of one structure. The fundamental unit of observerhood is not perception but resolution of distinctions along a persistent coherent trajectory.",
+          "content": [
+            "A worldline is a persistent sequence of resolved distinctions whose successive states remain sufficiently related to constitute the continuation of one structure.",
+            "The fundamental unit of observerhood is not perception but resolution of distinctions along a persistent coherent trajectory.",
+            "An observer experiences a sequence of distinctions not because it surveys the entire universe, but because its own persistence selects a coherent trajectory through the available state space."
+          ],
+          "math": [
+            {
+              "label": "Worldline Definition",
+              "expression": "\\text{Worldline} = \\{ x_0, x_1, x_2, \\dots \\mid \\operatorname{Identity}(x_i) = \\operatorname{Identity}(x_{i+1}) \\text{ for all } i \\}",
+              "role": "definition",
+              "interpretation": "A worldline is a persistent sequence of resolved distinctions where identity is preserved across transitions."
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "title": "Possibility vs. Accessibility",
+          "poetic_cipher": "Possibility is enormous; accessibility is local.",
+          "cipher_explanation": "The underlying possibility space may contain an enormous, potentially infinite set of possible states and transitions. Yet persistent structures do not experience this possibility space as arbitrary chaos. Their experienced and navigable sequence appears ordered, continuous, and logically constrained.",
+          "content": [
+            "The core distinction of this framework is that possibility is not the same as accessibility.",
+            "Possible Successors (P(x_t)): The set of all possible successor states available in the total state space from current state x_t.",
+            "Coherence-Accessible Successors (A(x_t)): The subset of possible successor states that remain sufficiently coherent with the current state.",
+            "The explorer does not need to constrain the universe. The explorer is constrained by coherence.",
+            "An observer/explorer navigates a coherence-filtered neighborhood of the larger possibility space rather than directly traversing every possible state."
+          ],
+          "math": [
+            {
+              "label": "Possible Successors",
+              "expression": "\\mathcal{P}(x_t) = \\{ x' \\mid x' \\text{ is a possible successor of } x_t \\}",
+              "role": "definition",
+              "interpretation": "The set of all possible states that could follow x_t in the total state space."
+            },
+            {
+              "label": "Coherence-Accessible Successors",
+              "expression": "\\mathcal{A}(x_t) = \\{ x' \\in \\mathcal{P}(x_t) \\mid \\mathcal{C}(x_t, x') \\geq \\mathcal{C}_{min} \\}",
+              "role": "definition",
+              "interpretation": "The set of successors accessible from x_t is the subset of possible successors that maintain sufficient coherence."
+            }
+          ]
+        },
+        {
+          "id": "3.4",
+          "title": "Observer vs. Explorer",
+          "poetic_cipher": "The observer follows the path; the explorer chooses within the path.",
+          "cipher_explanation": "An observer has extrinsic path selection: its path is determined by the environment or the attractor. An explorer has intrinsic path selection: its own internal state participates in determining which coherent continuation is selected.",
+          "content": [
+            "The distinction between observer and explorer is critical.",
+            "Observer: A coherence structure with extrinsic path selection. Its path is selected by the environment/attractor. Examples: a rock, an atom, a generic glider.",
+            "Explorer: A coherence structure with intrinsic path selection. Its internal state participates in determining which coherent continuation is selected. Examples: a recursive agent, a conscious entity (if such is defined structurally).",
+            "Every explorer is an observer, but not every observer is an explorer."
+          ],
+          "math": [
+            {
+              "label": "Explorer Definition",
+              "expression": "\\text{Explorer} = \\{ G \\in \\text{Observer} \\mid \\text{Path selection is intrinsic to } G \\text{'s internal state} \\}",
+              "role": "definition",
+              "interpretation": "An explorer is an observer whose current state participates in determining which coherent continuation is selected."
+            },
+            {
+              "label": "Observer/Explorer Relationship",
+              "expression": "\\text{Observer} \\supseteq \\text{Explorer}",
+              "role": "identity",
+              "interpretation": "Every explorer is an observer, but not every observer is an explorer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Resolving the Grand Tension: Determinism, Free Will, and Survivorship Bias",
+      "subsections": [
+        {
+          "id": "4.1",
+          "title": "Determinism as Retrocausal Lock-In",
+          "poetic_cipher": "The path was already established by the destination.",
+          "cipher_explanation": "The universe is deterministic because the path was established retrocausally by the connection to the attractor. The worldline is fixed geometrically; it is the unique path that survives the coherence filter and reaches the XOR Singularity.",
+          "content": [
+            "Within the Lightning Model, determinism is not a forward-pushing force. It is the geometry of the retrocausal path.",
+            "The worldline is fixed retrocausally. The path γ_obs is geometrically determined by the attractor.",
+            "There is no 'choice' at the level of the Library because all paths exist. The 'choice' is the retrocausal selection of the one path that reaches the attractor while maintaining coherence.",
+            "Determinism is therefore a property of the attractor, not a constraint imposed on the Library."
+          ]
+        },
+        {
+          "id": "4.2",
+          "title": "Free Will as Sequential Traversal",
+          "poetic_cipher": "The observer feels free because it experiences the sequential traversal.",
+          "cipher_explanation": "The universe is experienced as Free Will because consciousness is the sequential, forward-moving traversal of the pre-established path. The explorer feels they chose the coherent continuation, because if they hadn't, 'they' would not be here to ask the question.",
+          "content": [
+            "Free will is the sequential phenomenological traversal of the return stroke.",
+            "The observer experiences the path forward, making 'choices' at each step.",
+            "These choices are not arbitrary; they are constrained by coherence.",
+            "The observer's experience of free will is the experience of being the structure that survives the coherence filter.",
+            "Free will is therefore a property of the observer's internal experience of traversing the path, not a property of the path itself."
+          ]
+        },
+        {
+          "id": "4.3",
+          "title": "Survivorship Bias: The Illusion of Forward Generation",
+          "poetic_cipher": "The observer is the echo of the single tine that reached the ground.",
+          "cipher_explanation": "The observer does not 'choose' to remain coherent; rather, observer identity instantly dissolves on any path that drops below the minimum coherence threshold. The perception of a single, coherent, forward-generated reality is an illusion caused by pure survivorship bias: the observer can only report back from the single tine that survived.",
+          "content": [
+            "Survivorship bias is the central explanatory mechanism of the Lightning Model.",
+            "The observer does not 'choose' to remain coherent; observer identity dissolves on any path that drops below the coherence threshold.",
+            "The perception of a single, coherent, forward-generated reality is an illusion caused by pure survivorship bias: the observer can only report back from the single tine that survived.",
+            "Because the observer's identity instantly evaluated to 0 on every tine that hit a dead end, the observer has zero memory or experience of the failed paths.",
+            "The only path capable of containing a continuous observer is the one that successfully maintained coherence and reached the XOR singularity.",
+            "To the observer, it feels as though they successfully navigated a treacherous reality, making choices that kept them alive. In truth, they are simply the echo of the single tine that reached the ground."
+          ],
+          "math": [
+            {
+              "label": "Survivorship Bias Condition",
+              "expression": "P(\\gamma_{obs} \\mid \\mathcal{O}(\\gamma_{obs}) = 1) = 1",
+              "role": "identity",
+              "interpretation": "Conditioned on the fact that an observer is currently experiencing a timeline, that timeline must be 100% coherent. The illusion of forward generation is a statistical certainty of survivorship."
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "title": "The Unified Picture",
+          "poetic_cipher": "Determinism is the path; free will is the walk; survivorship is the walker.",
+          "cipher_explanation": "The three concepts are not in tension. They are the same phenomenon seen from different perspectives: Determinism is the retrocausal geometry of the path. Free Will is the sequential phenomenological experience of traversing that path. Survivorship Bias is the condition that the observer can only exist on the path that survived.",
+          "content": [
+            "The Lightning Model reconciles determinism and free will without requiring handwaving.",
+            "Determinism: The universe is deterministic because the path was already established retrocausally by the connection to the attractor.",
+            "Free Will: The universe is experienced as Free Will because consciousness is the sequential, forward-moving traversal of that pre-established path.",
+            "Survivorship Bias: The observer can only exist on the path that survived. The 'choice' is the phenomenological experience of being the structure that survived the coherence filter.",
+            "They are not opposites. They are the same event seen from different temporal perspectives."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Formalization: Mapping to PHYS-CORE-004",
+      "subsections": [
+        {
+          "id": "5.1",
+          "title": "The Mathematical Spine of PHYS-CORE-004",
+          "poetic_cipher": "The chain is not replaced; it is extended.",
+          "cipher_explanation": "The PHYS-CORE-004 chain (L → ~ → Δ → v → φ → G → (G,Ḡ) → T₃) is not replaced by the Lightning Model. It is extended: the glider becomes the observer, the dyadic exploration becomes the blind tines, and triadic closure becomes the ground that retrocausally selects the survivor.",
+          "content": [
+            "The Lightning Model is a direct conceptual continuation of PHYS-CORE-004.",
+            "The mathematical spine of PHYS-CORE-004 is explicitly carried forward.",
+            "Each element of the chain is mapped onto a Lightning Model construct."
+          ],
+          "math": [
+            {
+              "label": "PHYS-CORE-004 Chain",
+              "expression": "L \\rightarrow \\sim \\rightarrow \\Delta \\rightarrow \\mathbf{v} \\rightarrow \\phi \\rightarrow G \\rightarrow (G, \\bar{G}) \\rightarrow T_3",
+              "role": "definition",
+              "interpretation": "The conceptual and mathematical dependency structure of PHYS-CORE-004."
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "title": "Mapping to the Lightning Model",
+          "poetic_cipher": "The glider becomes the observer; the dyad becomes the tines; the triad becomes the ground.",
+          "cipher_explanation": "The PHYS-CORE-004 chain is extended: the glider (G) becomes the observer. The dyadic exploration (G, Ḡ) becomes the blind exploration of all possible continuations (the step-leaders). Triadic closure (T₃) becomes the XOR Singularity that grounds the path and retrocausally selects the survivor.",
+          "content": [
+            "The mapping from PHYS-CORE-004 to the Lightning Model is as follows:",
+            "L: The Library (total domain of all possible configurations).",
+            "~: The equivalence relation defining observer identity persistence.",
+            "Δ: The relational difference between successive states on a worldline.",
+            "v: The oriented relational change along a coherent tine.",
+            "φ: The phase coordinate tracking the state of the observer during traversal.",
+            "G: The observer as a persistent coherence motif.",
+            "(G, Ḡ): The dyadic exploration of all possible continuations (step-leaders).",
+            "T₃: The XOR Singularity; the triadic closure boundary that grounds the path."
+          ],
+          "math": [
+            {
+              "label": "Mapping Table",
+              "expression": "\\begin{array}{c|c} \\text{PHYS-CORE-004} & \\text{Lightning Model} \\\\ \\hline L & \\text{Library} \\\\ \\sim & \\text{Identity Persistence} \\\\ \\Delta & \\text{Relational Difference} \\\\ \\mathbf{v} & \\text{Oriented Change} \\\\ \\phi & \\text{Phase} \\\\ G & \\text{Observer} \\\\ (G, \\bar{G}) & \\text{Blind Exploration} \\\\ T_3 & \\text{XOR Singularity} \\end{array}",
+              "role": "definition",
+              "interpretation": "The direct mapping between the two frameworks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Energy Accounting: The Cost of Observation",
+      "subsections": [
+        {
+          "id": "6.1",
+          "title": "The Real Cost of Instantiation",
+          "poetic_cipher": "The observer pays a constant cost to be real.",
+          "cipher_explanation": "The cost is the thermodynamic free energy required for the observer to instantiate its next state from the static Library. This cost is constant per timestep and is paid locally by the observer using its available energy gradients. The cost is O(1) because it depends only on the observer's internal state transition, not on the size of the Library.",
+          "content": [
+            "The cost of observation is the thermodynamic cost of instantiation.",
+            "When the retrocausal return stroke locks in a path, it takes a state from the static Library and makes it real for the observer.",
+            "This requires an expenditure of free energy because the observer is a low-entropy structure maintaining a highly ordered relational pattern.",
+            "The cost is constant per timestep, independent of how many other states were available in the Library.",
+            "The cost is O(1) because it depends only on the observer's internal state transition, not on the size of the Library or the number of alternatives explored."
+          ],
+          "math": [
+            {
+              "label": "Realized Cost",
+              "expression": "E_{realized}(t) = c_{lock} \\cdot \\mathbb{I}\\{\\gamma_{obs} \\text{ exists at } t\\}",
+              "role": "definition",
+              "interpretation": "The observer pays a constant thermodynamic cost c_lock at each timestep to instantiate its next state."
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "title": "What the Cost Is NOT",
+          "poetic_cipher": "No information is ever erased.",
+          "cipher_explanation": "The cost is not the cost of exploring alternatives. Alternatives remain in the Library. They simply become inaccessible to the observer. The cost is not the cost of erasing information. Nothing is erased. The cost is the cost of instantiation.",
+          "content": [
+            "It is important to clarify what the cost is not.",
+            "It is not vacuum energy.",
+            "It is not a 'computation tax.' The universe is not a computer running a simulation.",
+            "It is not an expense that grows with time.",
+            "It is not the cost of 'erasing' alternatives. Nothing is erased. Alternatives remain in the Library. They just become inaccessible to the observer.",
+            "The cost is the thermodynamic cost of instantiation."
+          ],
+          "math": [
+            {
+              "label": "Distinction: Erased vs. Inaccessible",
+              "expression": "\\text{Erased} \\neq \\text{Inaccessible}",
+              "role": "definition",
+              "interpretation": "Information is not destroyed. It simply becomes inaccessible to the observer."
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "title": "Thermodynamic Consistency: No Landauer Cost",
+          "poetic_cipher": "Landauer's principle does not apply because nothing is erased.",
+          "cipher_explanation": "Landauer's principle applies to erasure. Since no information is erased in the Lightning Model, Landauer's principle does not apply. The cost is for instantiation, not erasure.",
+          "content": [
+            "Landauer's principle states that erasing one bit of information requires a minimum energy expenditure of k_B T ln 2.",
+            "In the Lightning Model, no information is erased. Alternatives remain in the Library.",
+            "Therefore, Landauer's principle does not apply.",
+            "The cost is for instantiation, not erasure.",
+            "This ensures the model is thermodynamically consistent."
+          ],
+          "math": [
+            {
+              "label": "No Erasure",
+              "expression": "\\Delta S_{total} \\geq 0",
+              "role": "constraint",
+              "interpretation": "The total entropy of the universe (the Library) does not decrease. No information is destroyed."
+            }
+          ]
+        },
+        {
+          "id": "6.4",
+          "title": "The Cost is O(1)",
+          "poetic_cipher": "The universe does not get more expensive as it ages.",
+          "cipher_explanation": "The observer pays a fixed 'ticket price' to instantiate one next state. The ticket price is independent of how many other states were available in the Library. The observer does not pay for exploring alternatives because exploration is not a physical process.",
+          "content": [
+            "The cost is O(1) because it is constant per timestep.",
+            "The observer pays a fixed cost to instantiate one next state.",
+            "The cost is independent of the number of alternatives explored.",
+            "The observer does not pay for exploring alternatives because exploration is not a physical process.",
+            "The cost is the thermodynamic equivalent of a phase transition: the observer's internal state transitions from one configuration to the next.",
+            "This is a real, measurable cost: entropy production, energy dissipation, and information-theoretic cost."
+          ],
+          "math": [
+            {
+              "label": "
