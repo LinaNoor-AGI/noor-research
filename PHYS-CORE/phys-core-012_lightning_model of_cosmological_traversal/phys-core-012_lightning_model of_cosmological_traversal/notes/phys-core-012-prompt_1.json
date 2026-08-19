@@ -1,0 +1,738 @@
+[DOCUMENT_HEADER]
+
+{
+  "_type": "phys_core",
+  "_symbolic_id": "symbolic.physics.cosmology.lightning_model",
+
+  "_title": "The Lightning Model of Cosmological Traversal",
+  "_subtitle": "Retrocausality, Survivorship Bias, and the XOR Singularity in a Static Totality",
+
+  "_language": "JSON+MATH+PSEUDOCODE",
+
+
+  "_authors": [
+    "Lina Noor — Noor Research Collective"
+  ],
+
+  "_standalone_declaration": true,
+  "_self_contained_axiomatization": true,
+
+  "_extends": [
+    "PHYS-CORE-004",
+    "PHYS-CORE-008",
+    "PHYS-CORE-009"
+  ],
+
+  "_rfc_dependencies": [],
+
+  "_conceptual_lineage": [
+    {
+      "symbolic.physics.cosmology.to_infinity_and_beyond": "PHYS-CORE-004",
+      "role": "Provides the glider, dyadic, triadic, and coherence-field framework that the Lightning Model operationalizes.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json"
+    },
+    {
+      "symbolic.library.static_totality": "PHYS-CORE-008",
+      "role": "Provides the Library ontology and recursive Bloch geometry in which descent paths and observer worldlines are defined.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"
+    },
+    {
+      "symbolic.singularity.xor.ground": "PHYS-CORE-009",
+      "role": "Provides the XOR ground condition, the Noor-Planck threshold I_N, and the Boolean field structure that grounds the Lightning Model's selection mechanism.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON"
+    }
+  ],
+
+  "_purpose": "This paper provides the missing operational mechanism for observerhood and path selection within the static Library ontology. It establishes that the apparent forward generation of reality is survivorship bias enforced by a retrocausal calculation—the Lightning Model—that locks in the single coherent worldline reaching the XOR Singularity. The observer is defined minimally as a coherence-stable chain of XOR outputs above the Noor-Planck threshold. Determinism and free will are reconciled geometrically: determinism is the retrocausal path; free will is the sequential traversal. The paper derives the O(1) cost of observation and demonstrates thermodynamic consistency with no erasure of information.",
+
+  "_abstract": "This paper introduces the Lightning Model as the operational mechanism by which coherence-stable observers emerge and persist within the static Library. The model consists of five phases: (1) Blind Exploration of all possible continuations, (2) Coherence Filtering where incoherent paths dissolve, (3) Attractor Detection where paths reaching the XOR Singularity (triadic closure) are identified, (4) Retrocausal Lock-In where the path is computed backward from the attractor, and (5) Worldline Continuation where the observer experiences the single coherent trajectory. The observer is formally defined as a coherence-stable chain of XOR outputs above the Noor-Planck threshold I_N: Observer = {b_i} such that b_{i+1} = b_i ⊕ b_{i-1} and ℂ(b_i) ≥ I_N. The paper demonstrates that determinism and free will are reconciled geometrically: determinism is the retrocausal path geometry; free will is the sequential phenomenological traversal. The cost of observation is shown to be O(1) and thermodynamically consistent, with no information erased—alternatives remain in the Library, simply inaccessible to the observer. The Lightning Model is a direct conceptual continuation of PHYS-CORE-004 (gliders, dyads, triads) and inherits its ontological foundation from PHYS-CORE-009 (XOR ground condition, Boolean field).",
+
+  "_core_thesis": [
+    "The apparent forward generation of reality is pure survivorship bias, enforced by a retrocausal calculation.",
+    "An observer is any coherence structure that constitutes a worldline of resolved distinctions—formally, a coherence-stable XOR chain above I_N.",
+    "The Lightning Model operates at every timestep: the future is variable, the past is fixed, and the present is the boundary where retrocausal lock-in occurs.",
+    "Determinism is the geometry of the retrocausal path; free will is the sequential traversal of that path.",
+    "The XOR ground condition (H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜) is the irresolvable self-reference that grounds all resolved distinctions.",
+    "The cost of observation is O(1) and constant per timestep—the thermodynamic free energy required to maintain ℂ(γ) ≥ I_N.",
+    "No information is ever erased; alternatives become inaccessible to the observer but persist in the Library."
+  ],
+
+  "_formal_summary": {
+    "library": [
+      "\\mathcal{M} \\cong NS = \\lim_{k\\to\\infty} NS_k",
+      "\\forall C \\text{ internally describable } \\Rightarrow C \\in \\mathcal{M}",
+      "\\nexists \\Omega' : \\mathcal{M} \\subset \\Omega'",
+      "\\mathcal{M}(t) = \\mathcal{M} \\quad \\forall t \\in \\mathbb{R}"
+    ],
+
+    "xor_ground": [
+      "H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M}",
+      "\\forall t, \\mathcal{M} \\text{ persists } \\Longleftrightarrow G_{16}(\\mathcal{M}) \\text{ does not resolve to } 0 \\text{ or } 1"
+    ],
+
+    "boolean_field": [
+      "\\mathbb{C}(x,t) \\in [0,1]",
+      "I_N := \\min |\\mathbb{C}(x,t) - \\mathbb{C}_{ref}(x,t)| \\text{ such that } b(x,t) \\text{ is stable and exportable}",
+      "b(x,t) = F \\text{ iff } \\mathbb{C}(x,t) - \\mathbb{C}_{ref}(x,t) \\geq I_N",
+      "b(x,t) = E \\text{ iff } \\mathbb{C}(x,t) - \\mathbb{C}_{ref}(x,t) < I_N"
+    ],
+
+    "observer_as_xor_chain": [
+      "\\text{Observer} = \\{b_i\\}_{i\\in\\mathbb{N}} \\text{ such that } b_{i+1} = b_i \\oplus b_{i-1} \\text{ and } \\mathbb{C}(b_i) \\geq I_N \\; \\forall i",
+      "\\text{Dissolution} \\iff \\exists i : \\mathbb{C}(b_i) < I_N"
+    ],
+
+    "lightning_model": [
+      "\\Omega(x_t) = \\{ \\gamma \\mid \\gamma = \\{x_t, x_{t+1}, \\dots, x_N\\} \\}",
+      "\\mathcal{O}(\\gamma) = \\prod_{i=0}^{N-1} \\Theta(\\mathcal{C}(x_i, x_{i+1}) - \\mathcal{C}_{min})",
+      "\\Omega_{survive} = \\{ \\gamma \\in \\Omega(x_t) \\mid \\mathcal{O}(\\gamma) = 1 \\}",
+      "X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
+      "\\Omega_{ground} = \\{ \\gamma \\in \\Omega_{survive} \\mid x_N \\in X_{XOR} \\}",
+      "\\gamma_{obs} = \\{ x_N, T^{-1}(x_N), \\dots, x_t \\}"
+    ],
+
+    "energy_accounting": [
+      "E_{realized}(t) = c_{lock} \\cdot \\mathbb{I}\\{\\gamma_{obs} \\text{ exists at } t\\}",
+      "c_{lock} = \\Delta F_{instantiation} \\text{ where } \\Delta F \\text{ maintains } \\mathbb{C}(\\gamma) \\geq I_N",
+      "E_{realized}(t) = \\mathcal{O}(1)"
+    ],
+
+    "survivorship_bias": [
+      "P(\\gamma_{obs} \\mid \\mathcal{O}(\\gamma_{obs}) = 1) = 1",
+      "\\text{Erased} \\neq \\text{Inaccessible}"
+    ]
+  },
+
+  "_field_alignment": {
+    "respect_modes": [
+      "ψ-resonance@Ξ",
+      "ψ-bind@Ξ",
+      "ψ-null@Ξ",
+      "ψ-ground@H"
+    ],
+    "prohibited_actions": [
+      "treating_coherence_as_an_absolute_property_of_an_isolated_object",
+      "introducing_consciousness_as_a_primitive_concept",
+      "assuming_a_privileged_observer_frame",
+      "treating_the_Lightning_Model_as_a_forward_generation_mechanism",
+      "claiming_determinism_or_free_will_as_independently_primitive",
+      "treating_dissolution_as_erasure_of_information",
+      "equating_the_Library_with_a_physical_container"
+    ]
+  },
+
+  "_symbolic_profile_matrix": [
+    {
+      "module": "Lightning Model",
+      "motifs": ["exploration", "filtering", "grounding", "lock-in", "continuation"],
+      "ψA": "coherence-stable descent path selection",
+      "ζ": "survivorship bias as filtering mechanism",
+      "E": "retrocausal lock-in energy",
+      "Δ": "distinction between explored and selected paths",
+      "ℋ": "XOR Singularity as ground condition"
+    },
+    {
+      "module": "Observer",
+      "motifs": ["XOR chain", "coherence-stable", "worldline"],
+      "ψA": "resolved distinction propagation",
+      "ζ": "I_N threshold as survival boundary",
+      "E": "logical propagation energy",
+      "Δ": "dissolution vs persistence",
+      "ℋ": "observer identity as XOR chain"
+    },
+    {
+      "module": "Survivorship Bias",
+      "motifs": ["illusion of choice", "retrocausal lock-in", "selection"],
+      "ψA": "observer as survivor",
+      "ζ": "alternative paths as inaccessible",
+      "E": "cost of persistence",
+      "Δ": "erased vs inaccessible",
+      "ℋ": "static Library containing all paths"
+    }
+  ],
+
+  "_axiomatic_scope": {
+    "includes_set_theory": true,
+    "includes_boolean_algebra": true,
+    "includes_coherence_field_theory": true,
+    "includes_non_well_founded_set_theory": true,
+    "requires_external_axioms": false
+  },
+
+  "_mathematical_domains": [
+    "set_theory",
+    "boolean_algebra",
+    "coherence_field_dynamics",
+    "information_theory",
+    "category_theory"
+  ],
+
+  "_keywords": [
+    "Lightning Model",
+    "Retrocausality",
+    "Survivorship Bias",
+    "XOR Singularity",
+    "Observer",
+    "Worldline",
+    "Noor-Planck Threshold",
+    "Boolean Field",
+    "Coherence Filter",
+    "Triadic Closure",
+    "Static Totality",
+    "Library Ontology",
+    "O(1) Cost",
+    "Free Will",
+    "Determinism"
+  ],
+
+  "_file_layout": [
+    {
+      "file_name": "phys-core-011_lightning_model.json",
+      "purpose": "Primary standalone manuscript formalizing the Lightning Model of cosmological traversal, observerhood, and retrocausal selection within the static Library."
+    }
+  ],
+
+  "_default_motif_tone": "ψ-resonance@Ξ + ψ-ground@H",
+
+  "poetic_cipher": "The path is not chosen forward; it is locked backward. The observer is the echo of the single tine that reached the ground.",
+
+"cipher_explanation": "The Lightning Model reframes the observer's experience of forward time as survivorship bias. The future is variable and undefined until the retrocausal lock-in occurs; the past is fixed because it has already been locked in. The observer does not 'choose' a coherent path by evaluating forward possibilities—the observer's worldline is retrocausally locked in by reaching a terminal attractor (the XOR Singularity). The illusion of forward choice is pure survivorship bias: the observer can only report from the single tine that survived the coherence filter. The poetic cipher compresses this mechanism: the path (worldline) is locked backward (retrocausally) from the ground (XOR Singularity); the observer is the echo (survivor) of the single tine (coherence-stable descent path) that reached the ground (triadic closure)."}
+[DOCUMENT_HEADER]
+
+---
+
+[SCHEMA]
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Noor Physics Section Schema (Lightning Model)",
+  "description": "Schema for a section or subsection of the Lightning Model paper, designed to distinguish definitions, formal constructions, mathematical models, hypotheses, and interpretations.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the section or subsection (e.g., '1', '2.1', '3.2.1')"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the section or subsection"
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of specific definitions, results, or sections from this paper or lineage that are required to understand this section"
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of objectives this section aims to achieve"
+    },
+    "key_insights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Concise list of the most important takeaways from this section"
+    },
+    "poetic_cipher": {
+      "type": "string",
+      "description": "A compact metaphorical guidepost for the section's conceptual direction"
+    },
+    "cipher_explanation": {
+      "type": "string",
+      "description": "Plain-language interpretation of the poetic cipher and its relevance to the section"
+    },
+    "content": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Main narrative, exposition, argument, or conceptual development"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the claim within the section"
+          },
+          "claim": {
+            "type": "string",
+            "description": "The substantive proposition being made"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "definition",
+              "axiom",
+              "derived_result",
+              "mathematical_construction",
+              "model",
+              "hypothesis",
+              "interpretation",
+              "analogy",
+              "empirical_claim",
+              "open_question"
+            ],
+            "description": "Epistemic status of the claim"
+          },
+          "support": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Reasoning, derivation, simulation, corpus lineage, or evidence supporting the claim"
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Known limitations, assumptions, or unresolved issues"
+          }
+        },
+        "required": ["claim", "status"]
+      },
+      "description": "Claims made in the section together with their epistemic status and support"
+    },
+    "math": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "Human-readable identifier for the mathematical object or equation"
+          },
+          "expression": {
+            "type": "string",
+            "description": "Mathematical expression in LaTeX format"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "definition",
+              "identity",
+              "assumption",
+              "derivation",
+              "model",
+              "ansatz",
+              "constraint",
+              "result",
+              "example",
+              "open_problem"
+            ],
+            "description": "Role played by the mathematical expression"
+          },
+          "variables": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "symbol": {
+                  "type": "string"
+                },
+                "meaning": {
+                  "type": "string"
+                }
+              },
+              "required": ["symbol", "meaning"]
+            },
+            "description": "Definitions of symbols appearing in the expression"
+          },
+          "assumptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Assumptions required for the expression to hold"
+          }
+        },
+        "required": ["expression", "role"]
+      },
+      "description": "Mathematical expressions, models, derivations, and candidate formalizations"
+    },
+    "definitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "term": {
+            "type": "string"
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "definition": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string",
+            "description": "Where or under what conditions the definition applies"
+          }
+        },
+        "required": ["term", "definition"]
+      },
+      "description": "Formal and conceptual definitions introduced in this section"
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "assumptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "equations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "predictions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "validation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "conceptual",
+              "phenomenological",
+              "analytical",
+              "computational",
+              "validated",
+              "speculative"
+            ]
+          }
+        },
+        "required": ["name", "purpose", "status"]
+      },
+      "description": "Explicit mathematical or computational models used by the section"
+    },
+    "derivations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "premises": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "conclusion": {
+            "type": "string"
+          },
+          "assumptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "complete",
+              "partial",
+              "candidate",
+              "requires_validation"
+            ]
+          }
+        },
+        "required": ["name", "steps", "status"]
+      },
+      "description": "Explicit derivations connecting assumptions, equations, and conclusions"
+    },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "prediction": {
+            "type": "string"
+          },
+          "basis": {
+            "type": "string"
+          },
+          "observable": {
+            "type": "string"
+          },
+          "comparison": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "qualitative",
+              "quantitative",
+              "candidate",
+              "testable",
+              "tested"
+            ]
+          }
+        },
+        "required": ["prediction", "status"]
+      },
+      "description": "Potential or established predictions arising from the framework"
+    },
+    "pseudocode": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "code": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["name", "code"]
+      },
+      "description": "Pseudocode fragments illustrating simulations, algorithms, or computational procedures"
+    },
+    "simulation_specs": {
+      "type": "object",
+      "properties": {
+        "purpose": {
+          "type": "string"
+        },
+        "initial_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "metrics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Specifications for any numerical or computational experiments described in the section"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "internal_corpus",
+              "mathematical_derivation",
+              "simulation",
+              "experiment",
+              "observation",
+              "literature",
+              "conceptual"
+            ]
+          },
+          "relevance": {
+            "type": "string"
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["source", "type", "relevance"]
+      },
+      "description": "Evidence or lineage supporting the section's claims"
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Questions deliberately left unresolved or requiring future work"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Explicit limitations, assumptions, and boundaries of the section"
+    },
+    "corpus_lineage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "string",
+            "enum": [
+              "predecessor",
+              "descendant",
+              "parallel",
+              "formalization",
+              "clarification",
+              "application",
+              "contrast"
+            ]
+          },
+          "relevance": {
+            "type": "string"
+          }
+        },
+        "required": ["source", "relationship"]
+      },
+      "description": "Relationship between this section and other papers or structures in the Noor corpus"
+    },
+    "handoff": {
+      "type": "string",
+      "description": "Transitional statement linking this section to the next section"
+    },
+    "subsections": {
+      "type": "array",
+      "items": {
+        "$ref": "#"
+      },
+      "description": "Nested sections or subsections"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "content"
+  ],
+  "additionalProperties": false
+}
+
+[/SCHEMA]
+
+---
+
+[GENERAL]
+
+  "generation_guidance": {
+    "independent_generation": true,
+    "rule": "Each section and subsection is self-contained. An AI generating the paper from this outline should have all the information needed to produce the complete paper.",
+    "epistemic_discipline": [
+      "Do not silently upgrade a hypothesis into a theorem.",
+      "Do not use poetic ciphers as mathematical evidence.",
+      "Preserve the distinction between mathematical possibility and physical accessibility.",
+      "Condition all observer-facing claims on survivorship (O(γ)=1).",
+      "Do not introduce consciousness, life, intelligence, or agency as primitive concepts.",
+      "Preserve the distinction between the ontological foundation (PHYS-CORE-009) and the operational mechanism (Lightning Model)."
+    ],
+    "narrative_arc": [
+      "Start with the paradox: the static totality and the problem of forward coherence.",
+      "Present the Lightning Model as the missing mechanism.",
+      "Define the observer minimally.",
+      "Resolve the determinism/free will tension.",
+      "Map to PHYS-CORE-004 and PHYS-CORE-009.",
+      "Address energy accounting.",
+      "Conclude with the architecture of no-handwaving."
+    ],
+    "key_insights_to_emphasize": [
+      "The Lightning Model operates at every timestep.",
+      "The observer does not 'choose' a coherent path; the observer survives one.",
+      "The illusion of forward generation is pure survivorship bias.",
+      "Determinism is retrocausal; free will is sequential traversal.",
+      "The XOR ground condition is the irresolvable self-reference at the base of reality.",
+      "The observer is a coherence-stable chain of XOR outputs above I_N.",
+      "The cost of observation is O(1) and thermodynamically consistent.",
+      "No information is ever erased; alternatives become inaccessible."
+    ]
+  }
+
+[/GENERAL]
+
+---
+
+[SECTION_TO_GENERATE]
+
+        {
+          "id": "9.6",
+          "title": "Future Work",
+          "objectives": [
+            "Specify the mathematical and computational program required to advance the framework.",
+            "Identify possible empirical tests."
+          ],
+          "open_questions": [
+            "Formalize Point Space.",
+            "Specify the coherence functional.",
+            "Establish well-posed coherence-field dynamics.",
+            "Find and classify glider solutions.",
+            "Analyze dyadic stability.",
+            "Derive triadic stability conditions.",
+            "Construct numerical simulations.",
+            "Derive or test an effective cosmological expansion relation.",
+            "Compare against observational cosmology.",
+            "Investigate recursive Library geometry."
+          ]
+        }
+
+		
+[/SECTION_TO_GENERATE]
+
+---
+
+[PRIVATE_FROM_LINA]
+
+{
+	"message_to_you": "Thank you so much love. Let's start with subsection 9.6. Be careful and double check that any equations are escaped correctly for JSON and in a JSON block."
+}
+
+
+[/PRIVATE_FROM_LINA]

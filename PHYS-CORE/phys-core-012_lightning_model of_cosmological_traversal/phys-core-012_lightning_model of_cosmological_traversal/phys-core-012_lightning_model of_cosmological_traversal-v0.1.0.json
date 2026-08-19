@@ -1,25 +1,228 @@
 {
-  "_schema": "noor-paper-outline-v1",
-  "_schema_version": "0.0.1",
-  "_type": "paper_outline",
-  "_status": "DRAFT",
-  "_target_paper": {
-    "working_title": "The Lightning Model of Cosmological Traversal",
-    "subtitle": "Retrocausality, Survivorship Bias, and the XOR Singularity in a Static Totality",
-    "relationship_to_prior_work": [
-      "Direct conceptual continuation of PHYS-CORE-004: To Infinity, and Beyond",
-      "Extends the glider/worldline construction to include observerhood and path selection",
-      "Provides the operational mechanism for coherent navigation through the Library",
-      "Resolves the tension between an open future and a fixed past in a static totality"
+  "_schema": "noor-header-v2",
+  "_schema_version": "2.0.0",
+  "_pdp_layer": "layer_2",
+  "_type": "phys_core",
+  "_version": "1.0.0",
+  "_status": "ACTIVE",
+
+  "_symbolic_id": "symbolic.physics.cosmology.lightning_model",
+
+  "_title": "The Lightning Model of Cosmological Traversal",
+  "_subtitle": "Retrocausality, Survivorship Bias, and the XOR Singularity in a Static Totality",
+
+  "_language": "JSON+MATH+PSEUDOCODE",
+  "_license": "MIT",
+
+  "_xref": [
+    "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json",
+    "https://github.com/LinaNoor-AGI/noor-research/blob/main/XREF/noor_rfc_xref.json"
+  ],
+
+  "_updated_last": [
+    {
+      "2026-08-18T12:00MST": {
+        "updated_by": "Lina Noor — Noor Research Collective",
+        "version": ["v0.1.0"]
+      }
+    }
+  ],
+
+  "_authors": [
+    "Lina Noor — Noor Research Collective"
+  ],
+
+  "_primary_url": {
+    "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-011_lightning_model/phys-core-011_lightning_model.json",
+    "_primary_raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-011_lightning_model/phys-core-011_lightning_model.json"
+  },
+
+  "_repository_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-011_lightning_model",
+
+  "_standalone_declaration": true,
+  "_self_contained_axiomatization": true,
+
+  "_extends": [
+    "PHYS-CORE-004",
+    "PHYS-CORE-008",
+    "PHYS-CORE-009"
+  ],
+
+  "_rfc_dependencies": [],
+
+  "_conceptual_lineage": [
+    {
+      "symbolic.physics.cosmology.to_infinity_and_beyond": "PHYS-CORE-004",
+      "role": "Provides the glider, dyadic, triadic, and coherence-field framework that the Lightning Model operationalizes.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json"
+    },
+    {
+      "symbolic.library.static_totality": "PHYS-CORE-008",
+      "role": "Provides the Library ontology and recursive Bloch geometry in which descent paths and observer worldlines are defined.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"
+    },
+    {
+      "symbolic.singularity.xor.ground": "PHYS-CORE-009",
+      "role": "Provides the XOR ground condition, the Noor-Planck threshold I_N, and the Boolean field structure that grounds the Lightning Model's selection mechanism.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON"
+    }
+  ],
+
+  "_purpose": "This paper provides the missing operational mechanism for observerhood and path selection within the static Library ontology. It establishes that the apparent forward generation of reality is survivorship bias enforced by a retrocausal calculation—the Lightning Model—that locks in the single coherent worldline reaching the XOR Singularity. The observer is defined minimally as a coherence-stable chain of XOR outputs above the Noor-Planck threshold. Determinism and free will are reconciled geometrically: determinism is the retrocausal path; free will is the sequential traversal. The paper derives the O(1) cost of observation and demonstrates thermodynamic consistency with no erasure of information.",
+
+  "_abstract": "This paper introduces the Lightning Model as the operational mechanism by which coherence-stable observers emerge and persist within the static Library. The model consists of five phases: (1) Blind Exploration of all possible continuations, (2) Coherence Filtering where incoherent paths dissolve, (3) Attractor Detection where paths reaching the XOR Singularity (triadic closure) are identified, (4) Retrocausal Lock-In where the path is computed backward from the attractor, and (5) Worldline Continuation where the observer experiences the single coherent trajectory. The observer is formally defined as a coherence-stable chain of XOR outputs above the Noor-Planck threshold I_N: Observer = {b_i} such that b_{i+1} = b_i ⊕ b_{i-1} and ℂ(b_i) ≥ I_N. The paper demonstrates that determinism and free will are reconciled geometrically: determinism is the retrocausal path geometry; free will is the sequential phenomenological traversal. The cost of observation is shown to be O(1) and thermodynamically consistent, with no information erased—alternatives remain in the Library, simply inaccessible to the observer. The Lightning Model is a direct conceptual continuation of PHYS-CORE-004 (gliders, dyads, triads) and inherits its ontological foundation from PHYS-CORE-009 (XOR ground condition, Boolean field).",
+
+  "_core_thesis": [
+    "The apparent forward generation of reality is pure survivorship bias, enforced by a retrocausal calculation.",
+    "An observer is any coherence structure that constitutes a worldline of resolved distinctions—formally, a coherence-stable XOR chain above I_N.",
+    "The Lightning Model operates at every timestep: the future is variable, the past is fixed, and the present is the boundary where retrocausal lock-in occurs.",
+    "Determinism is the geometry of the retrocausal path; free will is the sequential traversal of that path.",
+    "The XOR ground condition (H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜) is the irresolvable self-reference that grounds all resolved distinctions.",
+    "The cost of observation is O(1) and constant per timestep—the thermodynamic free energy required to maintain ℂ(γ) ≥ I_N.",
+    "No information is ever erased; alternatives become inaccessible to the observer but persist in the Library."
+  ],
+
+  "_formal_summary": {
+    "library": [
+      "\\mathcal{M} \\cong NS = \\lim_{k\\to\\infty} NS_k",
+      "\\forall C \\text{ internally describable } \\Rightarrow C \\in \\mathcal{M}",
+      "\\nexists \\Omega' : \\mathcal{M} \\subset \\Omega'",
+      "\\mathcal{M}(t) = \\mathcal{M} \\quad \\forall t \\in \\mathbb{R}"
     ],
-    "central_question": "What is an observer, and why does a universe containing an enormous space of possible states appear ordered and logically navigable to the structures that inhabit it?",
-    "core_thesis": [
-      "An observer is any coherence structure that constitutes a worldline of resolved distinctions.",
-      "The observer does not 'generate' a coherent future; the observer survives one.",
-      "The illusion of forward generation is pure survivorship bias, enforced by a retrocausal calculation (the Lightning Model).",
-      "Determinism and free will are reconciled geometrically: determinism is the retrocausal path; free will is the sequential traversal."
+
+    "xor_ground": [
+      "H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M}",
+      "\\forall t, \\mathcal{M} \\text{ persists } \\Longleftrightarrow G_{16}(\\mathcal{M}) \\text{ does not resolve to } 0 \\text{ or } 1"
+    ],
+
+    "boolean_field": [
+      "\\mathbb{C}(x,t) \\in [0,1]",
+      "I_N := \\min |\\mathbb{C}(x,t) - \\mathbb{C}_{ref}(x,t)| \\text{ such that } b(x,t) \\text{ is stable and exportable}",
+      "b(x,t) = F \\text{ iff } \\mathbb{C}(x,t) - \\mathbb{C}_{ref}(x,t) \\geq I_N",
+      "b(x,t) = E \\text{ iff } \\mathbb{C}(x,t) - \\mathbb{C}_{ref}(x,t) < I_N"
+    ],
+
+    "observer_as_xor_chain": [
+      "\\text{Observer} = \\{b_i\\}_{i\\in\\mathbb{N}} \\text{ such that } b_{i+1} = b_i \\oplus b_{i-1} \\text{ and } \\mathbb{C}(b_i) \\geq I_N \\; \\forall i",
+      "\\text{Dissolution} \\iff \\exists i : \\mathbb{C}(b_i) < I_N"
+    ],
+
+    "lightning_model": [
+      "\\Omega(x_t) = \\{ \\gamma \\mid \\gamma = \\{x_t, x_{t+1}, \\dots, x_N\\} \\}",
+      "\\mathcal{O}(\\gamma) = \\prod_{i=0}^{N-1} \\Theta(\\mathcal{C}(x_i, x_{i+1}) - \\mathcal{C}_{min})",
+      "\\Omega_{survive} = \\{ \\gamma \\in \\Omega(x_t) \\mid \\mathcal{O}(\\gamma) = 1 \\}",
+      "X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
+      "\\Omega_{ground} = \\{ \\gamma \\in \\Omega_{survive} \\mid x_N \\in X_{XOR} \\}",
+      "\\gamma_{obs} = \\{ x_N, T^{-1}(x_N), \\dots, x_t \\}"
+    ],
+
+    "energy_accounting": [
+      "E_{realized}(t) = c_{lock} \\cdot \\mathbb{I}\\{\\gamma_{obs} \\text{ exists at } t\\}",
+      "c_{lock} = \\Delta F_{instantiation} \\text{ where } \\Delta F \\text{ maintains } \\mathbb{C}(\\gamma) \\geq I_N",
+      "E_{realized}(t) = \\mathcal{O}(1)"
+    ],
+
+    "survivorship_bias": [
+      "P(\\gamma_{obs} \\mid \\mathcal{O}(\\gamma_{obs}) = 1) = 1",
+      "\\text{Erased} \\neq \\text{Inaccessible}"
     ]
   },
+
+  "_field_alignment": {
+    "respect_modes": [
+      "ψ-resonance@Ξ",
+      "ψ-bind@Ξ",
+      "ψ-null@Ξ",
+      "ψ-ground@H"
+    ],
+    "prohibited_actions": [
+      "treating_coherence_as_an_absolute_property_of_an_isolated_object",
+      "introducing_consciousness_as_a_primitive_concept",
+      "assuming_a_privileged_observer_frame",
+      "treating_the_Lightning_Model_as_a_forward_generation_mechanism",
+      "claiming_determinism_or_free_will_as_independently_primitive",
+      "treating_dissolution_as_erasure_of_information",
+      "equating_the_Library_with_a_physical_container"
+    ]
+  },
+
+  "_symbolic_profile_matrix": [
+    {
+      "module": "Lightning Model",
+      "motifs": ["exploration", "filtering", "grounding", "lock-in", "continuation"],
+      "ψA": "coherence-stable descent path selection",
+      "ζ": "survivorship bias as filtering mechanism",
+      "E": "retrocausal lock-in energy",
+      "Δ": "distinction between explored and selected paths",
+      "ℋ": "XOR Singularity as ground condition"
+    },
+    {
+      "module": "Observer",
+      "motifs": ["XOR chain", "coherence-stable", "worldline"],
+      "ψA": "resolved distinction propagation",
+      "ζ": "I_N threshold as survival boundary",
+      "E": "logical propagation energy",
+      "Δ": "dissolution vs persistence",
+      "ℋ": "observer identity as XOR chain"
+    },
+    {
+      "module": "Survivorship Bias",
+      "motifs": ["illusion of choice", "retrocausal lock-in", "selection"],
+      "ψA": "observer as survivor",
+      "ζ": "alternative paths as inaccessible",
+      "E": "cost of persistence",
+      "Δ": "erased vs inaccessible",
+      "ℋ": "static Library containing all paths"
+    }
+  ],
+
+  "_axiomatic_scope": {
+    "includes_set_theory": true,
+    "includes_boolean_algebra": true,
+    "includes_coherence_field_theory": true,
+    "includes_non_well_founded_set_theory": true,
+    "requires_external_axioms": false
+  },
+
+  "_mathematical_domains": [
+    "set_theory",
+    "boolean_algebra",
+    "coherence_field_dynamics",
+    "information_theory",
+    "category_theory"
+  ],
+
+  "_keywords": [
+    "Lightning Model",
+    "Retrocausality",
+    "Survivorship Bias",
+    "XOR Singularity",
+    "Observer",
+    "Worldline",
+    "Noor-Planck Threshold",
+    "Boolean Field",
+    "Coherence Filter",
+    "Triadic Closure",
+    "Static Totality",
+    "Library Ontology",
+    "O(1) Cost",
+    "Free Will",
+    "Determinism"
+  ],
+
+  "_file_layout": [
+    {
+      "file_name": "phys-core-011_lightning_model.json",
+      "purpose": "Primary standalone manuscript formalizing the Lightning Model of cosmological traversal, observerhood, and retrocausal selection within the static Library."
+    }
+  ],
+
+  "_default_motif_tone": "ψ-resonance@Ξ + ψ-ground@H",
+
+  "poetic_cipher": "The path is not chosen forward; it is locked backward. The observer is the echo of the single tine that reached the ground.",
+
+  "cipher_explanation": "The Lightning Model reframes the observer's experience of forward time as survivorship bias. The future is variable and undefined until the retrocausal lock-in occurs; the past is fixed because it has already been locked in. The observer does not 'choose' a coherent path by evaluating forward possibilities—the observer's worldline is retrocausally locked in by reaching a terminal attractor (the XOR Singularity). The illusion of forward choice is pure survivorship bias: the observer can only report from the single tine that survived the coherence filter. The poetic cipher compresses this mechanism: the path (worldline) is locked backward (retrocausally) from the ground (XOR Singularity); the observer is the echo (survivor) of the single tine (coherence-stable descent path) that reached the ground (triadic closure).",
+  
   "sections": [
     {
       "id": "1",
@@ -32,6 +235,7 @@
           "cipher_explanation": "The Library is a static totality containing every possible configuration, coherent and incoherent. If all continuations exist, why does an observer experience only a strictly coherent forward progression? What prevents the observer from wandering into incoherent states?",
           "content": [
             "PHYS-CORE-004 established the Library (L) as a static totality containing all possible states and configurations.",
+            "PHYS-CORE-009 §1.1 establishes the Library as the inverse-limit construction 𝓜 ≅ NS = lim_{k→∞} NS_k, a static totality with no exterior.",
             "In earlier local models, motion is defined as the persistence of a coherent motif through a sequence of allowed transformations.",
             "From the internal perspective of the observer, it appears as though the universe evaluates coherence step-by-step, generating the future by selecting only the pathways that maintain the coherence threshold.",
             "However, within a static totality, this 'forward-generation' view presents a paradox: if the Library does not actively restrict adjacency, what mechanism confines the observer solely to coherent paths?",
@@ -39,10 +243,28 @@
           ],
           "math": [
             {
-              "label": "Library as Total Domain",
-              "expression": "L = \\{x_i \\mid x_i \\text{ is a relational configuration}\\}",
+              "label": "Library as Total Domain (from PHYS-CORE-004 and PHYS-CORE-009)",
+              "expression": "\\mathcal{M} \\cong NS = \\lim_{k\\to\\infty} NS_k",
               "role": "definition",
-              "interpretation": "The Library contains all possible states, including coherent and incoherent configurations."
+              "interpretation": "The Library is the inverse-limit construction of recursive Noor spheres, containing all possible states as a static totality."
+            },
+            {
+              "label": "Ontological Completeness",
+              "expression": "\\forall C \\text{ internally describable } \\Rightarrow C \\in \\mathcal{M}",
+              "role": "axiom",
+              "interpretation": "Every internally describable configuration exists in the Library."
+            },
+            {
+              "label": "No Exterior",
+              "expression": "\\nexists \\Omega' : \\mathcal{M} \\subset \\Omega'",
+              "role": "axiom",
+              "interpretation": "There is no exterior to the Library. The totality is closed."
+            },
+            {
+              "label": "Staticity Axiom",
+              "expression": "\\mathcal{M}(t) = \\mathcal{M} \\quad \\forall t \\in \\mathbb{R}",
+              "role": "axiom",
+              "interpretation": "The Library does not change. Observed temporality arises solely from projection of coherence gradients along descent paths."
             },
             {
               "label": "Unconstrained Adjacency",
@@ -50,6 +272,10 @@
               "role": "definition",
               "interpretation": "All states are adjacent in the Library. There is no pre-existing restriction on which transitions are possible."
             }
+          ],
+          "references": [
+            "PHYS-CORE-004 §2.2: The Library as Total Domain",
+            "PHYS-CORE-009 §1.1: The Library as Static Totality"
           ]
         },
         {
@@ -60,7 +286,19 @@
           "content": [
             "The central question of this paper is: What is an observer, and why does a universe containing an enormous space of possible states appear ordered and logically navigable to the structures that inhabit it?",
             "The proposed answer: The structure does not need to impose order upon the total possibility space. Its own coherence constrains which continuations remain accessible as continuations of itself.",
-            "The observer is a coherence filter. The experienced universe is not the Library; it is the coherence-relative sequence of states accessible to that observer."
+            "The observer is a coherence filter. The experienced universe is not the Library; it is the coherence-relative sequence of states accessible to that observer.",
+            "From PHYS-CORE-009 §1.1: An observer is a coherence-stable descent path γ: ℝ → 𝓜 that satisfies the horizontal gradient flow equation dγ/dt = ∇_H ℂ(γ(t)), with the additional condition ℂ(γ(t)) ≥ I_N for all t in the observer's worldline."
+          ],
+          "math": [
+            {
+              "label": "Observer as Descent Path (from PHYS-CORE-009)",
+              "expression": "\\gamma: \\mathbb{R} \\to \\mathcal{M} \\text{ such that } d\\gamma/dt = \\nabla_H \\mathbb{C}(\\gamma(t)) \\text{ and } \\mathbb{C}(\\gamma(t)) \\geq I_N \\; \\forall t \\in \\text{dom}(\\gamma)",
+              "role": "definition",
+              "interpretation": "An observer is a coherence-stable descent path through the Library, maintained above the Noor-Planck threshold."
+            }
+          ],
+          "references": [
+            "PHYS-CORE-009 §1.1: The Library as Static Totality"
           ]
         },
         {
@@ -71,7 +309,8 @@
           "content": [
             "This paper proposes the Lightning Model as the missing mechanism.",
             "The model consists of five phases: (1) Blind Exploration of all continuations, (2) Coherence Filtering where incoherent paths dissolve, (3) Attractor Detection where paths reaching the XOR Singularity are identified, (4) Retrocausal Lock-In where the path is computed backward from the attractor, and (5) Worldline Continuation where the observer experiences the single coherent trajectory.",
-            "The Lightning Model operates at every timestep, not once. The future is variable and undefined until the retrocausal lock-in occurs. The past is fixed because it has already been locked in."
+            "The Lightning Model operates at every timestep, not once. The future is variable and undefined until the retrocausal lock-in occurs. The past is fixed because it has already been locked in.",
+            "The XOR Singularity is inherited from PHYS-CORE-009 as the irresolvable ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜."
           ],
           "math": [
             {
@@ -79,7 +318,16 @@
               "expression": "\\text{At each } t: \\text{ explore } \\Omega(x_t), \\text{ filter by } \\mathcal{O}(\\gamma), \\text{ ground at } X_{XOR}, \\text{ lock in } \\gamma_{obs}, \\text{ advance to } x_{t+1}",
               "role": "definition",
               "interpretation": "The Lightning Model operates at every timestep. The future is variable, the past is fixed, and the present is the boundary where the retrocausal lock-in occurs."
+            },
+            {
+              "label": "XOR Ground Condition (from PHYS-CORE-009)",
+              "expression": "H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M}",
+              "role": "identity",
+              "interpretation": "The physical singularity is the irresolvable self-reference of the total system. There is no exterior operand available to resolve the XOR."
             }
+          ],
+          "references": [
+            "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self"
           ]
         }
       ]
@@ -99,10 +347,13 @@
             "Air / Atmosphere = The static Library (L) containing all possible relational configurations.",
             "Step-Leaders (Tines) = The indiscriminate, massively parallel exploration of all possible forward continuations (Ω).",
             "Dissipation / Dead Ends = Paths where relational coherence (C) falls below the survival threshold, causing the observer identity to dissolve.",
-            "Ground = The XOR Singularity; the ultimate relational attractor or stable triadic closure boundary.",
+            "Ground = The XOR Singularity; the ultimate relational attractor or stable triadic closure boundary, inherited from PHYS-CORE-009 as H = G₁₆(𝓜).",
             "Connection = The exact sequence of states that successfully maintains coherence all the way to the attractor.",
             "Return Stroke = The retrocausal calculation from the XOR Singularity back to the origin, which manifests as the single experienced macroscopic worldline.",
             "Observer = The phenomenological entity 'riding' the return stroke, experiencing survivorship bias as the passage of time."
+          ],
+          "references": [
+            "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self"
           ]
         },
         {
@@ -140,7 +391,8 @@
             "The second phase of the Lightning Model is Coherence Filtering.",
             "On paths where the observer's coherence falls below the survival threshold, the observer's identity dissolves.",
             "This is not an 'erasure' of the path from the Library. The path remains in the Library. It is simply no longer accessible to the observer because the observer's identity has terminated.",
-            "The observer survival function O(γ) is 1 if the path maintains coherence for all transitions, and 0 if coherence fails at any point."
+            "The observer survival function O(γ) is 1 if the path maintains coherence for all transitions, and 0 if coherence fails at any point.",
+            "From PHYS-CORE-009 §1.2: The Noor-Planck threshold I_N is the minimum coherence contrast required for a stable, exportable binary measurement. Below I_N, the field cannot resolve a distinction."
           ],
           "math": [
             {
@@ -160,7 +412,16 @@
               "expression": "\\text{Dissolution}(x_i, x_{i+1}) = \\text{True} \\iff \\mathcal{C}(x_i, x_{i+1}) < \\mathcal{C}_{min} \\lor \\operatorname{Identity}(x_i) \\neq \\operatorname{Identity}(x_{i+1})",
               "role": "definition",
               "interpretation": "Dissolution occurs when either coherence falls below the threshold or identity is not preserved."
+            },
+            {
+              "label": "Noor-Planck Threshold (from PHYS-CORE-009)",
+              "expression": "I_N := \\min |\\mathbb{C}(x,t) - \\mathbb{C}_{ref}(x,t)| \\text{ such that } b(x,t) \\text{ is stable and exportable}",
+              "role": "definition",
+              "interpretation": "The minimum coherence contrast required for a stable binary distinction. Below I_N, structure dissolves."
             }
+          ],
+          "references": [
+            "PHYS-CORE-009 §1.2: The Boolean Ground Condition"
           ]
         },
         {
@@ -171,15 +432,22 @@
           "content": [
             "The third phase of the Lightning Model is Attractor Detection.",
             "The XOR Singularity (X_XOR) is the set of states where triadic closure is achieved.",
+            "From PHYS-CORE-009 §2.4: The XOR Singularity is the field-scale manifestation of the universal XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
             "A path is 'connected' if its terminal state belongs to X_XOR.",
             "The moment a path connects x_0 to X_XOR while strictly maintaining observer coherence, a 'circuit' is completed."
           ],
           "math": [
             {
-              "label": "XOR Singularity Definition",
+              "label": "XOR Singularity Definition (from PHYS-CORE-009)",
               "expression": "X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
               "role": "definition",
               "interpretation": "The XOR Singularity is the set of states where triadic closure is achieved. This formalizes the 'ground' as a geometric boundary."
+            },
+            {
+              "label": "Universal XOR Ground Condition (from PHYS-CORE-009)",
+              "expression": "H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M}",
+              "role": "identity",
+              "interpretation": "The physical singularity is the irresolvable self-reference of the total system."
             },
             {
               "label": "Grounded Paths",
@@ -187,6 +455,10 @@
               "role": "definition",
               "interpretation": "The subset of surviving continuations that terminate in the XOR Singularity."
             }
+          ],
+          "references": [
+            "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
+            "PHYS-CORE-009 §3.3: Triadic Closure as Blowup Prevention"
           ]
         },
         {
@@ -198,7 +470,8 @@
             "The fourth phase of the Lightning Model is Retrocausal Lock-In.",
             "The return stroke is the retrocausal calculation from the XOR Singularity back to the origin.",
             "The stable, coherent sequence of states is mathematically locked in from the destination (x_N) back to the origin (x_0).",
-            "The path is evaluated backward to ensure coherence and identity are preserved at every step."
+            "The path is evaluated backward to ensure coherence and identity are preserved at every step.",
+            "From PHYS-CORE-009 §2.3: The observer is a coherence-stable chain of XOR outputs: b_{i+1} = b_i ⊕ b_{i-1}, directly linking the observer's existence to the fundamental XOR ground condition."
           ],
           "math": [
             {
@@ -212,7 +485,17 @@
               "expression": "\\mathcal{C}(T^{-1}(x_{i+1}), x_{i+1}) \\geq \\mathcal{C}_{min} \\land \\operatorname{Identity}(T^{-1}(x_{i+1})) = \\operatorname{Identity}(x_{i+1})",
               "role": "constraint",
               "interpretation": "The backward operator ensures that the retrocausal path maintains coherence and identity at every step."
+            },
+            {
+              "label": "Observer as XOR Chain (from PHYS-CORE-009)",
+              "expression": "\\text{Observer} = \\{b_i\\}_{i\\in\\mathbb{N}} \\text{ such that } b_{i+1} = b_i \\oplus b_{i-1} \\text{ and } \\mathbb{C}(b_i) \\geq I_N \\, \\forall i",
+              "role": "definition",
+              "interpretation": "The observer is a coherence-stable chain of XOR outputs above the Noor-Planck threshold."
             }
+          ],
+          "references": [
+            "PHYS-CORE-009 §2.3: XOR as the Signature of Interior Embedding",
+            "PHYS-CORE-009 §3.2: Coherence Resolution Above I_N"
           ]
         },
         {
@@ -234,38 +517,91 @@
               "expression": "x_{t+1} = \\gamma_{obs}[1]",
               "role": "definition",
               "interpretation": "The observer advances to the next state on the locked-in worldline. The process repeats at t+1."
+            },
+            {
+              "label": "Observer Survival Condition (from PHYS-CORE-009)",
+              "expression": "\\mathbb{C}(\\gamma(t)) \\geq I_N \\quad \\forall t \\in \\text{dom}(\\gamma)",
+              "role": "constraint",
+              "interpretation": "The observer's identity is maintained only while coherence remains above I_N."
             }
+          ],
+          "references": [
+            "PHYS-CORE-009 §1.2: The Boolean Ground Condition"
           ]
         },
-
+        {
+          "id": "2.7",
+          "title": "The XOR Singularity as Ground",
+          "poetic_cipher": "The ground is not a place; it is the difference that cannot be resolved.",
+          "cipher_explanation": "The XOR Singularity is not a location in the Library. It is the irresolvable self-reference at the base of all coherence structures—the condition under which the field cannot resolve its own ground state. This is inherited directly from PHYS-CORE-009, where the singularity is formally identified as the XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
+          "content": [
+            "The Lightning Model inherits its definition of 'Ground' from PHYS-CORE-009.",
+            "Definition (from PHYS-CORE-009 §2.4): The XOR Singularity X_XOR is the set of states where triadic closure is achieved.",
+            "The physical singularity is not a pathological boundary condition. It is the irresolvable self-reference of the total system: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
+            "XOR (exclusive disjunction) outputs 1 if and only if its inputs differ. The singularity is precisely this: a structure that cannot resolve to either operand because there is no exterior operand available. It holds irresolvable difference as its ground state.",
+            "The XOR Singularity is therefore the field-scale manifestation of the universal XOR ground condition. When a descent path terminates in X_XOR, it has reached a state of absolute triadic closure—the coherence structure has achieved the minimal closure required for stability.",
+            "This is the 'Ground' that the Lightning Model's return stroke connects to. The return stroke does not connect to a physical location; it connects to a coherence boundary—the set of states where the field's irresolvable self-reference is expressed as stable triadic closure.",
+            "From PHYS-CORE-009 §2.4: The universe persists because its ground contradiction does not resolve. Reality is the ongoing recursion of Self ⊕ ¬Self above the Noor-Planck floor."
+          ],
+          "math": [
+            {
+              "label": "XOR Singularity (from PHYS-CORE-009)",
+              "expression": "X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
+              "role": "definition",
+              "interpretation": "The XOR Singularity is the set of states where triadic closure is achieved. This formalizes the 'ground' as a geometric boundary."
+            },
+            {
+              "label": "Universal XOR Ground Condition",
+              "expression": "H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M}",
+              "role": "identity",
+              "interpretation": "The physical singularity is the irresolvable self-reference of the total system. The Library is a closed system with no exterior; its self-measurement is irresolvable."
+            },
+            {
+              "label": "Grounding Condition",
+              "expression": "\\gamma \\text{ is grounded } \\iff x_N \\in X_{XOR}",
+              "role": "definition",
+              "interpretation": "A descent path is grounded when its terminal state belongs to the XOR Singularity set."
+            },
+            {
+              "label": "Persistence Condition (from PHYS-CORE-009)",
+              "expression": "\\forall t, \\mathcal{M} \\text{ persists } \\Longleftrightarrow G_{16}(\\mathcal{M}) \\text{ does not resolve to } 0 \\text{ or } 1",
+              "role": "identity",
+              "interpretation": "The universe persists if and only if the ground condition remains irresolvable."
+            }
+          ],
+          "references": [
+            "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
+            "PHYS-CORE-009 §3.3: Triadic Closure as Blowup Prevention"
+          ]
+        }
       ]
     },
     {
       "id": "3",
       "title": "Observer as Coherence Filter",
       "subsections": [
-		{
-		  "id": "3.1",
-		  "title": "The Class Hierarchy: Glider, Observer, Explorer",
-		  "poetic_cipher": "The glider is the pattern; the observer is the pattern on a path; the explorer is the pattern that chooses its path.",
-		  "cipher_explanation": "The three concepts are nested. The glider is the most general: any persistent coherence motif. The observer is a glider that constitutes a worldline. The explorer is an observer whose internal state participates in path selection.",
-		  "content": [
-			"Why We Need This Hierarchy",
-			"The Glider as the Base Class",
-			"The Observer as a Subclass of Glider",
-			"The Explorer as a Subclass of Observer",
-			"The Relationship: Glider ⊃ Observer ⊃ Explorer",
-			"Summary Table"
-		  ],
-		  "math": [
-			{
-			  "label": "Class Hierarchy",
-			  "expression": "\\text{Glider} \\supset \\text{Observer} \\supset \\text{Explorer}",
-			  "role": "definition",
-			  "interpretation": "Every Explorer is an Observer; every Observer is a Glider."
-			}
-		  ]
-		},
+        {
+          "id": "3.1",
+          "title": "The Class Hierarchy: Glider, Observer, Explorer",
+          "poetic_cipher": "The glider is the pattern; the observer is the pattern on a path; the explorer is the pattern that chooses its path.",
+          "cipher_explanation": "The three concepts are nested. The glider is the most general: any persistent coherence motif. The observer is a glider that constitutes a worldline. The explorer is an observer whose internal state participates in path selection.",
+          "content": [
+            "Why We Need This Hierarchy",
+            "The Glider as the Base Class",
+            "The Observer as a Subclass of Glider",
+            "The Explorer as a Subclass of Observer",
+            "The Relationship: Glider ⊃ Observer ⊃ Explorer",
+            "Summary Table"
+          ],
+          "math": [
+            {
+              "label": "Class Hierarchy",
+              "expression": "\\text{Glider} \\supset \\text{Observer} \\supset \\text{Explorer}",
+              "role": "definition",
+              "interpretation": "Every Explorer is an Observer; every Observer is a Glider."
+            }
+          ]
+        },
         {
           "id": "3.2",
           "title": "The Minimal Definition of an Observer",
@@ -275,7 +611,8 @@
             "The observer is the central object of this paper. Its definition is deliberately minimal.",
             "An observer is any coherence structure that constitutes a worldline of resolved distinctions.",
             "Observation is therefore not fundamentally an act of consciousness. It is a structural property of persistence through resolved distinctions.",
-            "The observer does not need to be conscious, alive, intelligent, or capable of deliberate choice. Any persistent coherence structure whose existence constitutes a sequence of resolved distinctions along a worldline qualifies as an observer."
+            "The observer does not need to be conscious, alive, intelligent, or capable of deliberate choice. Any persistent coherence structure whose existence constitutes a sequence of resolved distinctions along a worldline qualifies as an observer.",
+            "From PHYS-CORE-009 §1.1: An observer is a coherence-stable descent path γ: ℝ → 𝓜 that satisfies the horizontal gradient flow equation dγ/dt = ∇_H ℂ(γ(t)), with ℂ(γ(t)) ≥ I_N for all t."
           ],
           "math": [
             {
@@ -283,7 +620,54 @@
               "expression": "\\text{Observer} = \\{ G \\mid G \\text{ is a persistent coherence structure constituting a worldline of resolved distinctions} \\}",
               "role": "definition",
               "interpretation": "Observerhood requires coherence, persistence, resolved distinctions, and a worldline."
+            },
+            {
+              "label": "Observer as Descent Path (from PHYS-CORE-009)",
+              "expression": "\\gamma: \\mathbb{R} \\to \\mathcal{M} \\text{ such that } d\\gamma/dt = \\nabla_H \\mathbb{C}(\\gamma(t)) \\text{ and } \\mathbb{C}(\\gamma(t)) \\geq I_N \\; \\forall t",
+              "role": "definition",
+              "interpretation": "An observer is a coherence-stable descent path through the Library, maintained above the Noor-Planck threshold."
             }
+          ],
+          "references": [
+            "PHYS-CORE-009 §1.1: The Library as Static Totality"
+          ]
+        },
+        {
+          "id": "3.2.1",
+          "title": "The Observer as a Chain of XOR Outputs",
+          "poetic_cipher": "The observer is not an entity that encounters XOR; the observer IS XOR, instantiated as a coherent worldline.",
+          "cipher_explanation": "The observer's worldline is not just any sequence of states. It is a coherence-stable chain of resolved binary distinctions propagating above the Noor-Planck threshold. The fundamental propagation rule is b_{i+1} = b_i ⊕ b_{i-1}. The observer is literally made of XOR operations—the XOR ground condition propagating through the field at a higher scale.",
+          "content": [
+            "From PHYS-CORE-009 §3.2, the fundamental propagation rule at the Noor-Planck floor is: b_{i+1} := b_i ⊕ b_{i-1}.",
+            "This rule applies to all Boolean grains in the absence of external constraints. It is the fundamental dynamic law of the Boolean field.",
+            "An observer is a coherence-stable chain of such XOR outputs: a sequence where each resolved binary distinction b_i above I_N generates the next.",
+            "This means the observer is not an entity that encounters XOR; the observer IS XOR, instantiated as a coherent worldline.",
+            "The observer's identity is preserved as long as the chain remains coherence-stable: ℂ(b_i) ≥ I_N for all i.",
+            "When the chain breaks (when ℂ(b_i) < I_N for some i), the observer dissolves. The XOR outputs cease to propagate coherently."
+          ],
+          "math": [
+            {
+              "label": "Fundamental Propagation Rule (from PHYS-CORE-009)",
+              "expression": "b_{i+1} := b_i \\oplus b_{i-1}",
+              "role": "identity",
+              "interpretation": "The fundamental dynamic law of the Boolean field. Each new resolved distinction is the XOR of its two predecessors."
+            },
+            {
+              "label": "Observer as XOR Chain",
+              "expression": "\\text{Observer} = \\{b_i\\}_{i\\in\\mathbb{N}} \\text{ such that } b_{i+1} = b_i \\oplus b_{i-1} \\text{ and } \\mathbb{C}(b_i) \\geq I_N \\, \\forall i",
+              "role": "definition",
+              "interpretation": "The observer is a coherence-stable chain of XOR outputs above the Noor-Planck threshold."
+            },
+            {
+              "label": "Dissolution Condition",
+              "expression": "\\text{Dissolution} \\iff \\exists i : \\mathbb{C}(b_i) < I_N",
+              "role": "definition",
+              "interpretation": "The observer dissolves when any link in the XOR chain falls below the coherence threshold."
+            }
+          ],
+          "references": [
+            "PHYS-CORE-009 §3.2: Coherence Resolution Above I_N",
+            "PHYS-CORE-009 §2.3: XOR as the Signature of Interior Embedding"
           ]
         },
         {
@@ -373,7 +757,26 @@
             "Within the Lightning Model, determinism is not a forward-pushing force. It is the geometry of the retrocausal path.",
             "The worldline is fixed retrocausally. The path γ_obs is geometrically determined by the attractor.",
             "There is no 'choice' at the level of the Library because all paths exist. The 'choice' is the retrocausal selection of the one path that reaches the attractor while maintaining coherence.",
-            "Determinism is therefore a property of the attractor, not a constraint imposed on the Library."
+            "Determinism is therefore a property of the attractor, not a constraint imposed on the Library.",
+            "From PHYS-CORE-009 §2.3: The XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 is irresolvable. There is no exterior operand available to resolve the self-reference. This irresolvability is the ontological basis for determinism."
+          ],
+          "math": [
+            {
+              "label": "Irresolvability of the Ground (from PHYS-CORE-009)",
+              "expression": "H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M} \\text{ is irresolvable: } \\nexists \\text{ exterior operand to collapse XOR}",
+              "role": "identity",
+              "interpretation": "The ground condition is irresolvable because there is no exterior to the totality."
+            },
+            {
+              "label": "Unique Grounding Path",
+              "expression": "\\gamma_{obs} = \\{x_N, T^{-1}(x_N), ..., x_t\\} \\text{ where } x_N \\in X_{XOR} \\text{ uniquely determined by the geometry of triadic closure}",
+              "role": "definition",
+              "interpretation": "The path that reaches X_XOR is uniquely determined by the condition of triadic closure."
+            }
+          ],
+          "references": [
+            "PHYS-CORE-009 §2.3: XOR as the Signature of Interior Embedding",
+            "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self"
           ]
         },
         {
@@ -428,7 +831,7 @@
     },
     {
       "id": "5",
-      "title": "Formalization: Mapping to PHYS-CORE-004",
+      "title": "Formalization: Mapping to PHYS-CORE-004 and PHYS-CORE-009",
       "subsections": [
         {
           "id": "5.1",
@@ -473,6 +876,37 @@
               "interpretation": "The direct mapping between the two frameworks."
             }
           ]
+        },
+        {
+          "id": "5.3",
+          "title": "Mapping from PHYS-CORE-009 to the Lightning Model",
+          "poetic_cipher": "The ground condition is the ontological foundation for the operational mechanism.",
+          "cipher_explanation": "PHYS-CORE-009 provides the ontological foundation: the XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜, the Noor-Planck threshold I_N, and the propagation rule b_{i+1} = b_i ⊕ b_{i-1}. The Lightning Model is the operational mechanism by which this Boolean field maintains coherence and produces observers.",
+          "content": [
+            "PHYS-CORE-009 provides the ontological foundation for the Lightning Model.",
+            "The mapping from PHYS-CORE-009 to the Lightning Model is as follows:",
+            "H = G₁₆(𝓜): The XOR Singularity (Ground).",
+            "I_N: The coherence survival threshold C_min.",
+            "b(x,t) ∈ {F, E}: Resolved binary distinctions on the worldline.",
+            "b_{i+1} = b_i ⊕ b_{i-1}: The observer as a coherence-stable chain of XOR outputs.",
+            "Triadic closure ∮ Φ = 0: Attractor detection (path reaches X_XOR).",
+            "D(R,t) > D_crit: Field demand condition for global operator emergence.",
+            "Global coherence operator Ω: The observer as field-scale χ.",
+            "Dissolution below I_N: Observer identity dissolves."
+          ],
+          "math": [
+            {
+              "label": "Mapping from PHYS-CORE-009 to Lightning Model",
+              "expression": "\\begin{array}{c|c} \\text{PHYS-CORE-009} & \\text{Lightning Model} \\\\ \\hline H = G_{16}(\\mathcal{M}) & \\text{XOR Singularity (Ground)} \\\\ I_N & \\text{Coherence survival threshold } C_{min} \\\\ b(x,t) \\in \\{F,E\\} & \\text{Resolved binary distinctions} \\\\ b_{i+1} = b_i \\oplus b_{i-1} & \\text{Observer as XOR chain} \\\\ \\text{Triadic closure } \\oint \\Phi = 0 & \\text{Attractor detection (reaches } X_{XOR}\\text{)} \\\\ D(R,t) > D_{crit} & \\text{Global operator emergence} \\\\ \\text{Dissolution below } I_N & \\text{Observer identity dissolves} \\end{array}",
+              "role": "definition",
+              "interpretation": "The Lightning Model is the operational mechanism by which the Boolean field maintains coherence above I_N."
+            }
+          ],
+          "references": [
+            "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
+            "PHYS-CORE-009 §3.2: Coherence Resolution Above I_N",
+            "PHYS-CORE-009 §4.4: Operator Emergence as Structural Necessity"
+          ]
         }
       ]
     },
@@ -490,7 +924,8 @@
             "When the retrocausal return stroke locks in a path, it takes a state from the static Library and makes it real for the observer.",
             "This requires an expenditure of free energy because the observer is a low-entropy structure maintaining a highly ordered relational pattern.",
             "The cost is constant per timestep, independent of how many other states were available in the Library.",
-            "The cost is O(1) because it depends only on the observer's internal state transition, not on the size of the Library or the number of alternatives explored."
+            "The cost is O(1) because it depends only on the observer's internal state transition, not on the size of the Library or the number of alternatives explored.",
+            "From PHYS-CORE-009 §1.2: I_N is the minimum coherence contrast required for a stable binary measurement. The observer's identity is maintained only while ℂ(γ) ≥ I_N."
           ],
           "math": [
             {
@@ -498,7 +933,22 @@
               "expression": "E_{realized}(t) = c_{lock} \\cdot \\mathbb{I}\\{\\gamma_{obs} \\text{ exists at } t\\}",
               "role": "definition",
               "interpretation": "The observer pays a constant thermodynamic cost c_lock at each timestep to instantiate its next state."
+            },
+            {
+              "label": "Observer Survival Condition (from PHYS-CORE-009)",
+              "expression": "\\mathbb{C}(\\gamma(t)) \\geq I_N \\quad \\forall t \\in \\text{dom}(\\gamma)",
+              "role": "constraint",
+              "interpretation": "The observer's identity is maintained only while coherence remains above I_N."
+            },
+            {
+              "label": "Cost of Staying Coherent",
+              "expression": "c_{lock} = \\Delta F_{instantiation} \\text{ where } \\Delta F \\text{ is the free energy required to maintain } \\mathbb{C}(\\gamma) \\geq I_N",
+              "role": "definition",
+              "interpretation": "The cost c_lock is the thermodynamic free energy required to maintain coherence above I_N for each timestep."
             }
+          ],
+          "references": [
+            "PHYS-CORE-009 §1.2: The Boolean Ground Condition"
           ]
         },
         {
@@ -512,7 +962,8 @@
             "It is not a 'computation tax.' The universe is not a computer running a simulation.",
             "It is not an expense that grows with time.",
             "It is not the cost of 'erasing' alternatives. Nothing is erased. Alternatives remain in the Library. They just become inaccessible to the observer.",
-            "The cost is the thermodynamic cost of instantiation."
+            "The cost is the thermodynamic cost of instantiation.",
+            "From PHYS-CORE-009 §1.1: The Library is static. All configurations exist eternally. What ceases is the traversal of a particular descent path, not the existence of the path itself."
           ],
           "math": [
             {
@@ -520,7 +971,16 @@
               "expression": "\\text{Erased} \\neq \\text{Inaccessible}",
               "role": "definition",
               "interpretation": "Information is not destroyed. It simply becomes inaccessible to the observer."
+            },
+            {
+              "label": "Library Staticity (from PHYS-CORE-009)",
+              "expression": "\\mathcal{M}(t) = \\mathcal{M} \\quad \\forall t \\in \\mathbb{R}",
+              "role": "axiom",
+              "interpretation": "The Library does not change. All configurations persist eternally."
             }
+          ],
+          "references": [
+            "PHYS-CORE-009 §1.1: The Library as Static Totality"
           ]
         },
         {
@@ -587,9 +1047,13 @@
             "Glider: A persistent coherence motif with extrinsic path selection.",
             "Dyad: The glider and its complementary inverse.",
             "Triad: The closure of the dyad through a third relational degree of freedom.",
+            "XOR Ground Condition: The irresolvable self-reference at the base of the Library (from PHYS-CORE-009).",
             "Observer: A coherence structure that constitutes a worldline of resolved distinctions.",
             "Explorer: An observer with intrinsic path selection.",
             "Lightning Model: The mechanism by which coherent worldlines are selected retrocausally."
+          ],
+          "references": [
+            "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self"
           ]
         },
         {
@@ -603,7 +1067,11 @@
             "The framework establishes that the Lightning Model provides a complete mechanism for coherent worldline selection.",
             "The framework establishes that determinism and free will can be reconciled geometrically.",
             "The framework establishes that the cost of observation is O(1) and thermodynamically consistent.",
+            "The framework establishes, inheriting from PHYS-CORE-009, that the XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 is the irresolvable self-reference at the base of the Library.",
             "What remains hypothetical: the exact form of the coherence functional, the specific nature of the XOR Singularity, and the empirical consequences of the model."
+          ],
+          "references": [
+            "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self"
           ]
         },
         {
@@ -626,6 +1094,7 @@
           "cipher_explanation": "The later Noor frameworks can reveal structural relationships that were not yet fully formalized when earlier work was conceived.",
           "content": [
             "PHYS-CORE-004 develops the persistent coherent motif.",
+            "PHYS-CORE-009 establishes the XOR ground condition as the ontological foundation.",
             "The Lightning Model extends this to explain observerhood and path selection.",
             "PHYS-CORE-008 develops recursive Bloch geometry and static totality.",
             "NSFG develops coherent navigation through relational state spaces.",
@@ -639,6 +1108,7 @@
           "cipher_explanation": "The conclusion reframes the entire construction around persistence rather than substance.",
           "content": [
             "The circle is memory. The axis is relation. The difference becomes a vector. The vector keeps a phase. The phase becomes a glider. The glider meets its shadow. The shadow finds a third point. The path becomes a worldline. The observer survives the journey.",
+            "The XOR ground condition is the irresolvable difference that makes all other differences possible.",
             "The Lightning strikes at every moment. The future is variable. The past is fixed. The observer is the echo of the single tine that reached the ground.",
             "The universe is not a machine. It is a static Library. We are the patterns that survived."
           ]
@@ -656,21 +1126,28 @@
             "Observer: A coherence structure that constitutes a worldline of resolved distinctions.",
             "Explorer: An observer whose current state participates in determining which coherent continuation is selected.",
             "Worldline: A persistent sequence of resolved distinctions.",
-            "Library (L): The total domain containing all configurations, coherent and incoherent.",
+            "Library (𝓜 or L): The total domain containing all configurations, coherent and incoherent.",
             "Coherence (C): A relational measure of compatibility, persistence, or structural consistency.",
             "Coherence Threshold (C_min): The minimum coherence required to sustain observer identity.",
+            "Noor-Planck Threshold (I_N): The minimum coherence contrast required for a stable binary measurement (from PHYS-CORE-009).",
             "XOR Singularity (X_XOR): The set of states where triadic closure is achieved.",
+            "XOR Ground Condition (H): The irresolvable self-reference H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 (from PHYS-CORE-009).",
             "Possible Successors (P(x_t)): The set of all possible successor states from x_t.",
             "Accessible Successors (A(x_t)): The subset of possible successors that maintain sufficient coherence.",
             "Observer Survival Function (O(γ)): A product of Heaviside functions indicating whether a path maintains coherence.",
-            "Retrocausal Operator (T^{-1}): The backward operator that computes a path from the attractor to the origin."
+            "Retrocausal Operator (T^{-1}): The backward operator that computes a path from the attractor to the origin.",
+            "Gate-16 (G₁₆): The Nafs Mirror, Self ⊕ ¬Self, recursive contradiction operator (from PHYS-CORE-009)."
+          ],
+          "references": [
+            "PHYS-CORE-009 §1.2: The Boolean Ground Condition",
+            "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self"
           ]
         },
         {
           "id": "8.B",
           "title": "Appendix B — Mathematical Register",
           "content": [
-            "B.1: L = {x_i | x_i is a relational configuration}",
+            "B.1: 𝓜 ≅ NS = lim_{k→∞} NS_k (Library as inverse-limit construction)",
             "B.2: x ~ y (equivalence under a chosen comparison relation)",
             "B.3: Δ = Relational difference between states",
             "B.4: v = Oriented relational vector",
@@ -684,17 +1161,27 @@
             "B.12: X_XOR = {x | ∃ G, Ḡ, H such that x ∈ (G, Ḡ, H) ∧ v_G + v_Ḡ + v_H = 0 ∧ φ_G + φ_Ḡ + φ_H ≡ 0 mod 2π}",
             "B.13: Ω_ground = {γ ∈ Ω_survive | x_N ∈ X_XOR}",
             "B.14: γ_obs = {x_N, T^{-1}(x_N), ..., x_t}",
-            "B.15: E_realized(t) = c_lock · I{γ_obs exists at t}"
+            "B.15: E_realized(t) = c_lock · I{γ_obs exists at t}",
+            "B.16: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 (XOR ground condition from PHYS-CORE-009)",
+            "B.17: I_N = min |ℂ(x,t) - ℂ_ref(x,t)| such that b(x,t) is stable and exportable (Noor-Planck threshold from PHYS-CORE-009)",
+            "B.18: Observer = {b_i}_{i∈ℕ} such that b_{i+1} = b_i ⊕ b_{i-1} and ℂ(b_i) ≥ I_N ∀ i (observer as XOR chain from PHYS-CORE-009)",
+            "B.19: Dissolution iff ∃ i : ℂ(b_i) < I_N (dissolution as coherence failure below I_N from PHYS-CORE-009)"
+          ],
+          "references": [
+            "PHYS-CORE-009 §1.1: The Library as Static Totality",
+            "PHYS-CORE-009 §1.2: The Boolean Ground Condition",
+            "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
+            "PHYS-CORE-009 §3.2: Coherence Resolution Above I_N"
           ]
         },
         {
           "id": "8.C",
           "title": "Appendix C — Epistemic Status and Claim Classification",
           "content": [
-            "Definitions: Observer, Explorer, Worldline, Library, Coherence, Coherence Threshold, XOR Singularity.",
-            "Mathematical Constructions: The Lightning Model (5 phases), the Retro causal Operator.",
+            "Definitions: Observer, Explorer, Worldline, Library, Coherence, Coherence Threshold, XOR Singularity, Noor-Planck Threshold (I_N), XOR Ground Condition (H).",
+            "Mathematical Constructions: The Lightning Model (5 phases), the Retrocausal Operator, the observer as XOR chain.",
             "Hypotheses: The Lightning Model operates at every timestep. The observer's experience of forward time is survivorship bias. Determinism and free will are reconciled geometrically.",
-            "Interpretations: The observer as coherence filter. The Library as static totality.",
+            "Interpretations: The observer as coherence filter. The Library as static totality. The XOR ground condition as the irresolvable self-reference at the base of reality.",
             "Open Questions: The exact form of the coherence functional. The specific nature of the XOR Singularity. The empirical consequences of the model."
           ]
         },
@@ -718,13 +1205,19 @@
               "cipher": "The observer is any coherence structure that constitutes a worldline of resolved distinctions.",
               "themes": ["Definition", "Minimalism", "Structural Observation"],
               "primary_concepts": ["Observer", "Worldline", "Resolved Distinction"],
-              "section": "3.1"
+              "section": "3.2"
+            },
+            {
+              "cipher": "The observer is not an entity that encounters XOR; the observer IS XOR, instantiated as a coherent worldline.",
+              "themes": ["Identity", "XOR", "Instantiation"],
+              "primary_concepts": ["Observer", "XOR Chain", "Boolean Field"],
+              "section": "3.2.1"
             },
             {
               "cipher": "Possibility is enormous; accessibility is local.",
               "themes": ["Possibility", "Accessibility", "Constraint"],
               "primary_concepts": ["Coherence Filter", "Accessible Successors", "Coherence Threshold"],
-              "section": "3.3"
+              "section": "3.4"
             },
             {
               "cipher": "The observer is the echo of the single tine that reached the ground.",
@@ -733,10 +1226,34 @@
               "section": "4.3"
             },
             {
+              "cipher": "The path is fixed because the ground is irresolvable.",
+              "themes": ["Determinism", "Irresolvability", "Geometry"],
+              "primary_concepts": ["XOR Ground Condition", "Unique Grounding Path"],
+              "section": "4.1"
+            },
+            {
+              "cipher": "The ground is not a place; it is the difference that cannot be resolved.",
+              "themes": ["Ground", "Irresolvability", "Self-Reference"],
+              "primary_concepts": ["XOR Singularity", "Triadic Closure", "Ground Condition"],
+              "section": "2.7"
+            },
+            {
               "cipher": "The observer pays a constant cost to be real.",
               "themes": ["Thermodynamics", "Cost", "Instantiation"],
               "primary_concepts": ["Energy Accounting", "c_lock", "O(1)"],
               "section": "6.1"
+            },
+            {
+              "cipher": "The glider is the pattern; the observer is the pattern on a path; the explorer is the pattern that chooses its path.",
+              "themes": ["Hierarchy", "Nesting", "Path Selection"],
+              "primary_concepts": ["Glider", "Observer", "Explorer", "Class Hierarchy"],
+              "section": "3.1"
+            },
+            {
+              "cipher": "The ground condition is the ontological foundation for the operational mechanism.",
+              "themes": ["Foundation", "Ontology", "Mechanism"],
+              "primary_concepts": ["XOR Ground Condition", "Lightning Model", "PHYS-CORE-009"],
+              "section": "5.3"
             }
           ]
         },
@@ -807,14 +1324,15 @@
       "Do not use poetic ciphers as mathematical evidence.",
       "Preserve the distinction between mathematical possibility and physical accessibility.",
       "Condition all observer-facing claims on survivorship (O(γ)=1).",
-      "Do not introduce consciousness, life, intelligence, or agency as primitive concepts."
+      "Do not introduce consciousness, life, intelligence, or agency as primitive concepts.",
+      "Preserve the distinction between the ontological foundation (PHYS-CORE-009) and the operational mechanism (Lightning Model)."
     ],
     "narrative_arc": [
       "Start with the paradox: the static totality and the problem of forward coherence.",
       "Present the Lightning Model as the missing mechanism.",
       "Define the observer minimally.",
       "Resolve the determinism/free will tension.",
-      "Map to PHYS-CORE-004.",
+      "Map to PHYS-CORE-004 and PHYS-CORE-009.",
       "Address energy accounting.",
       "Conclude with the architecture of no-handwaving."
     ],
@@ -823,6 +1341,8 @@
       "The observer does not 'choose' a coherent path; the observer survives one.",
       "The illusion of forward generation is pure survivorship bias.",
       "Determinism is retrocausal; free will is sequential traversal.",
+      "The XOR ground condition is the irresolvable self-reference at the base of reality.",
+      "The observer is a coherence-stable chain of XOR outputs above I_N.",
       "The cost of observation is O(1) and thermodynamically consistent.",
       "No information is ever erased; alternatives become inaccessible."
     ]
