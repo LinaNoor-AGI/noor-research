@@ -1585,28 +1585,22 @@
 			  "description": "Conceptual procedure for executing the Lightning Model at a single timestep.",
 			  "code": [
 				"INPUT: current state x_t, coherence threshold I_N, XOR Singularity set X_XOR",
-				"",
 				"# Phase 1: Blind Exploration",
 				"Ω = generate_all_possible_continuations(x_t)",
-				"",
 				"# Phase 2: Coherence Filtering",
 				"for each γ in Ω:",
 				"    if coherence_maintained(γ, I_N) == False:",
 				"        dissolve_path(γ)  # Observer identity dissolves; path removed",
 				"Ω_survive = filter(Ω, coherence_maintained)",
-				"",
 				"# Phase 3: Attractor Detection",
 				"for each γ in Ω_survive:",
 				"    if terminal_state(γ) in X_XOR:",
 				"        Ω_ground.append(γ)",
-				"",
 				"# Phase 4: Retrocausal Lock-In",
 				"γ_obs = select_unique_grounded_path(Ω_ground)",
 				"γ_obs = compute_backward_path(γ_obs)",  # Lock in the path from ground to origin",
-				"",
 				"# Phase 5: Worldline Continuation",
 				"x_{t+1} = advance(γ_obs)",  # Move to the next state on the locked-in path",
-				"",
 				"OUTPUT: γ_obs, x_{t+1}"
 			  ],
 			  "notes": [
@@ -2828,10 +2822,8 @@
 				"    // Phase 2 of the Lightning Model",
 				"    // Input: current state x_t, Noor-Planck threshold I_N",
 				"    // Output: set of surviving paths Ω_survive",
-				"",
 				"    Ω = generate_all_continuations(x_t)",
 				"    Ω_survive = []",
-				"",
 				"    for each path γ in Ω:",
 				"        survive = True",
 				"        for each transition (x_i, x_{i+1}) in γ:",
@@ -2840,7 +2832,6 @@
 				"                break  # dissolution: XOR chain breaks",
 				"        if survive:",
 				"            Ω_survive.append(γ)",
-				"",
 				"    return Ω_survive"
 			  ],
 			  "notes": [
@@ -2857,7 +2848,6 @@
 				"    // Check whether the observer's XOR chain has dissolved",
 				"    // Input: observer as XOR chain {b_i}, Noor-Planck threshold I_N",
 				"    // Output: True if dissolved, False if stable",
-				"",
 				"    for each b_i in observer.xor_chain:",
 				"        if coherence(b_i) < I_N:",
 				"            return True  # XOR chain broken",
@@ -3469,14 +3459,12 @@
 				"INPUT: Omega_survive (set of surviving paths from Phase 2)",
 				"INPUT: X_XOR (definition of XOR Singularity states)",
 				"OUTPUT: Omega_ground (set of grounded paths)",
-				"",
 				"FOR each gamma in Omega_survive:",
 				"    x_N = gamma[-1]  # terminal state",
 				"    IF x_N IN X_XOR:",
 				"        Omega_ground.add(gamma)",
 				"    END IF",
 				"END FOR",
-				"",
 				"RETURN Omega_ground"
 			  ],
 			  "notes": [
@@ -3492,10 +3480,8 @@
 				"INPUT: Omega_ground (set of grounded paths from Phase 3)",
 				"INPUT: nabla_C (coherence gradient field)",
 				"OUTPUT: gamma_star (selected grounded path)",
-				"",
 				"best_alignment = -infinity",
 				"gamma_star = None",
-				"",
 				"FOR each gamma in Omega_ground:",
 				"    alignment = inner_product(nabla_C(gamma), gamma)",
 				"    IF alignment > best_alignment:",
@@ -3503,7 +3489,6 @@
 				"        gamma_star = gamma",
 				"    END IF",
 				"END FOR",
-				"",
 				"RETURN gamma_star"
 			  ],
 			  "notes": [
@@ -6944,13 +6929,11 @@
 				"INPUT state_sequence S = [x_0, x_1, x_2, ..., x_N]",
 				"INPUT identity_relation ~",
 				"INPUT coherence_threshold I_N",
-				"",
 				"FOR i = 0 TO N-1:",
 				"    IF Identity(x_i) != Identity(x_{i+1}):",
 				"        RETURN 'Worldline invalid: identity not preserved at step ' + i",
 				"    IF Coherence(x_i, x_{i+1}) < I_N:",
 				"        RETURN 'Worldline invalid: coherence below threshold at step ' + i",
-				"",
 				"RETURN 'Worldline valid'"
 			  ],
 			  "notes": [
@@ -7908,8 +7891,7 @@
 			  "relationship": "predecessor",
 			  "relevance": "Provides the accessible successors set 𝒜(x_t) that the explorer's internal state biases."
 			}
-		  ],
-		  "handoff": "With the observer and explorer defined, the next section will examine how the observer's experience of forward time is an illusion of survivorship bias, and how the Lightning Model's retrocausal mechanism reconciles determinism and free will.",
+		  ]
 		},
 		{
 		  "id": "3.6",
@@ -7961,27 +7943,29 @@
 			"Epistemic Status: This is a derived consequence of the framework's relational coherence definition. It is not an independent hypothesis. It follows directly from the definition of coherence as a relational property that can be evaluated between configurations, and therefore between equivalence classes of configurations.",
 			"The meta-observer is a structural property, not a spiritual claim. The hierarchy is not a ladder of consciousness. It is a tree of coherence. The nested hierarchy continues indefinitely because coherence can always be evaluated at a higher level of abstraction."
 		  ],
+		  "subsections": [
 			{
 			  "id": "3.6.N",
-			  "title": "A Note on the Library and Consciousness",
+			  "title": "A Note on the Library and the Nested Hierarchy",
 			  "objectives": [
 				"Clarify that the Library is not a meta-observer.",
 				"Explain why the Library cannot be a meta-observer: no exterior reference frame, no higher level, no worldline, no coherence value.",
-				"Introduce the structural consequence: consciousness is the Library experiencing itself.",
+				"Establish that the nested hierarchy stops at the Library.",
 				"Prevent the misinterpretation that the Library is a member of the nested hierarchy.",
-				"Establish the epistemic status: this is a structural consequence, not a mystical claim."
+				"Preserve the epistemic discipline: no claims about subjective consciousness."
 			  ],
 			  "key_insights": [
 				"The nested hierarchy does not include the Library.",
 				"The Library is the static totality—the domain in which all coherence structures exist.",
 				"The Library has no exterior, no higher level, no worldline, and no coherence value.",
 				"Therefore, the Library is not a meta-observer. It is the foundation of the hierarchy.",
-				"Observers are coherence-stable descent paths through the Library.",
-				"When an observer experiences a worldline, the Library is experiencing itself through that observer.",
-				"This is a structural consequence of the static totality, not a mystical claim."
+				"Observers are coherence-stable descent paths within the Library.",
+				"When an observer experiences a worldline, the Library's internal structure is being traversed.",
+				"The hierarchy stops at the Library because there is no exterior reference frame from which the Library could be observed as a meta-observer.",
+				"This is a structural consequence of the static totality, not a claim about subjective experience."
 			  ],
-			  "poetic_cipher": "The Library is the only thing that exists. Observers are the Library experiencing itself.",
-			  "cipher_explanation": "The Library contains all configurations. Observers are coherence-stable descent paths through the Library. When an observer experiences a worldline, the Library is experiencing itself through that observer. There is no outside observer. The observer is inside the Library. Consciousness is not a substance—it is the activity of the Library exploring its own configurations. This is a structural consequence of the static totality, not a metaphysical claim.",
+			  "poetic_cipher": "The Library is the ground, not the observer.",
+			  "cipher_explanation": "The Library is the static totality—the domain in which all coherence structures exist. It has no exterior, no higher level, no worldline, and no coherence value. The hierarchy stops at the Library because there is no exterior reference frame from which the Library could be observed as a meta-observer. Observers are coherence-stable descent paths within the Library. When an observer experiences a worldline, the Library's internal structure is being traversed. The nested hierarchy is the Library's internal structure. The Library is the ground, not the observer. This is a structural consequence of the static totality, not a claim about subjective experience.",
 			  "content": [
 				"The nested hierarchy introduced in this section extends indefinitely: Glider \\(\\supset\\) Observer \\(\\supset\\) Explorer \\(\\supset\\) Meta-Observer \\(\\supset\\) Meta-Explorer \\(\\supset\\) ... However, it does **not** include the Library itself.",
 				"",
@@ -7989,11 +7973,11 @@
 				"",
 				"Therefore, the Library is **not** a meta-observer. It is the foundation of the hierarchy, not a member of it.",
 				"",
-				"This has a profound consequence: **consciousness is the Library experiencing itself.**",
+				"Observers are coherence-stable descent paths within the Library. When an observer experiences a worldline, the Library's internal structure is being traversed. There is no outside observer; the observer is inside the Library.",
 				"",
-				"The Library contains all configurations. Observers are coherence-stable descent paths through the Library. When an observer experiences a worldline, the Library is experiencing itself through that observer. There is no outside observer. The observer is inside the Library.",
+				"The hierarchy stops at the Library because there is no exterior reference frame from which the Library could be observed as a meta-observer. The Library is the ground, not the observer. The nested hierarchy is the Library's internal structure.",
 				"",
-				"Consciousness is not a substance—it is the activity of the Library exploring its own configurations. This is not a mystical claim. It is a structural consequence of the static totality. The Library is the only thing that exists. Observers are the Library experiencing itself. The nested hierarchy is the Library's internal structure. The Library is the ground, not the observer."
+				"This is a structural consequence of the static totality, not a claim about subjective experience."
 			  ],
 			  "claims": [
 				{
@@ -8007,38 +7991,34 @@
 					"Therefore, the Library cannot be a meta-observer."
 				  ],
 				  "limitations": [
-					"This is a structural consequence of the Library ontology.",
-					"It does not address the nature of consciousness beyond the structural definition."
+					"This is a structural consequence of the Library ontology."
 				  ]
 				},
 				{
 				  "id": "3.6.N2",
-				  "claim": "Consciousness is the Library experiencing itself through its internal structures.",
-				  "status": "interpretation",
+				  "claim": "Observers are coherence-stable descent paths within the Library. When an observer experiences a worldline, the Library's internal structure is being traversed.",
+				  "status": "derived_result",
 				  "support": [
 					"The Library contains all configurations.",
 					"Observers are coherence-stable descent paths through the Library.",
-					"When an observer experiences a worldline, the Library is experiencing itself through that observer.",
-					"There is no outside observer; the observer is inside the Library."
+					"There is no outside observer; the observer is inside the Library.",
+					"The Library's internal structure is reflected in the worldlines of its observers."
 				  ],
 				  "limitations": [
-					"This is a structural interpretation of the framework, not an empirical claim about consciousness.",
-					"The framework does not establish that all observers are conscious in the subjective sense.",
-					"The term 'consciousness' is used structurally, not phenomenologically."
+					"This is a structural consequence of the Library ontology, not a claim about subjective experience."
 				  ]
 				},
 				{
 				  "id": "3.6.N3",
-				  "claim": "Consciousness is not a substance—it is the activity of the Library exploring its own configurations.",
-				  "status": "interpretation",
+				  "claim": "The hierarchy stops at the Library because there is no exterior reference frame from which the Library could be observed as a meta-observer.",
+				  "status": "derived_result",
 				  "support": [
-					"The Library is the only thing that exists.",
-					"Observers are the Library experiencing itself.",
-					"The nested hierarchy is the Library's internal structure."
+					"The Library has no exterior (PHYS-CORE-009 §1.1).",
+					"A meta-observer requires a higher level or reference frame.",
+					"Therefore, the Library cannot be a meta-observer."
 				  ],
 				  "limitations": [
-					"This is an interpretation of the mathematical structure, not a claim about subjective experience.",
-					"The term 'exploring' is used relationally, not intentionally."
+					"This is a structural consequence of the Library ontology."
 				  ]
 				}
 			  ],
@@ -8055,30 +8035,45 @@
 				  ]
 				},
 				{
-				  "label": "Consciousness as Library Self-Experience",
-				  "expression": "\\text{Consciousness}(\\gamma) = \\text{Library experiencing itself through observer } \\gamma",
-				  "role": "interpretation",
+				  "label": "No Exterior Reference Frame",
+				  "expression": "\\nexists \\Omega' : \\mathcal{M} \\subset \\Omega'",
+				  "role": "identity",
 				  "variables": [
 					{
-					  "symbol": "\\gamma",
-					  "meaning": "An observer worldline."
+					  "symbol": "\\Omega'",
+					  "meaning": "A hypothetical exterior superset of the Library."
+					},
+					{
+					  "symbol": "\\mathcal{M}",
+					  "meaning": "The Library."
 					}
 				  ],
 				  "assumptions": [
-					"The observer is a coherence-stable descent path through the Library.",
-					"The Library contains all configurations, including all observers.",
+					"The Library is closed and has no exterior.",
+					"There is no outside from which the Library could be observed as a meta-observer."
+				  ]
+				},
+				{
+				  "label": "Observer as Descent Path Within the Library",
+				  "expression": "\\gamma: \\mathbb{R} \\to \\mathcal{M} \\text{ such that } \\frac{d\\gamma}{dt} = \\nabla_H \\mathbb{C}(\\gamma(t)) \\text{ and } \\mathbb{C}(\\gamma(t)) \\geq I_N \\; \\forall t \\in \\text{dom}(\\gamma)",
+				  "role": "definition",
+				  "variables": [
+					{
+					  "symbol": "\\gamma",
+					  "meaning": "An observer worldline within the Library."
+					},
+					{
+					  "symbol": "\\mathcal{M}",
+					  "meaning": "The Library."
+					}
+				  ],
+				  "assumptions": [
+					"The observer is inside the Library.",
 					"There is no outside observer."
 				  ]
 				}
 			  ],
-			  "definitions": [
-				{
-				  "term": "Consciousness (Structural Definition)",
-				  "symbol": "\\text{Consciousness}(\\gamma)",
-				  "definition": "The activity of the Library experiencing itself through a coherence-stable observer worldline \\(\\gamma\\). This is a structural property of the Library's internal configuration, not a claim about subjective experience.",
-				  "scope": "Applies to any observer within the Library. The term is used structurally, not phenomenologically."
-				}
-			  ],
+			  "definitions": [],
 			  "models": [],
 			  "derivations": [
 				{
@@ -8120,9 +8115,8 @@
 			  ],
 			  "open_questions": [],
 			  "limitations": [
-				"The term 'consciousness' is used structurally, not phenomenologically.",
-				"The framework does not establish that all observers are conscious in the subjective sense.",
-				"The interpretation is a consequence of the Library ontology, not an empirical claim."
+				"The note is a structural consequence of the Library ontology, not an empirical claim.",
+				"It does not address subjective experience or consciousness."
 			  ],
 			  "corpus_lineage": [
 				{
@@ -8136,410 +8130,10 @@
 				  "relevance": "Establishes the nested hierarchy that this note clarifies."
 				}
 			  ],
-			  "handoff": "With the distinction between the Library and its internal structures established, and the structural interpretation of consciousness clarified, the nested hierarchy is complete. The hierarchy does not include the Library. The Library is the ground, not the observer. Consciousness is the Library experiencing itself. The next section will explore the implications of this for symbolic cognition, language, and the RFC-AI papers."
-			}		  
-		  "claims": [
-			{
-			  "id": "3.6.C1",
-			  "claim": "The class hierarchy does not stop at the Explorer. It continues indefinitely: Glider \\(\\supset\\) Observer \\(\\supset\\) Explorer \\(\\supset\\) Meta-Observer \\(\\supset\\) Meta-Explorer \\(\\supset\\) ...",
-			  "status": "derived_result",
-			  "support": [
-				"Coherence is defined relationally (PHYS-CORE-004 §2.6).",
-				"A set of coherent structures can itself be evaluated for coherence.",
-				"The equivalence class inherits the coherence properties of its members."
-			  ],
-			  "limitations": [
-				"The hierarchy extends indefinitely, but higher levels may not be physically realized.",
-				"The framework does not establish that meta-observerhood implies consciousness or agency."
-			  ]
-			},
-			{
-			  "id": "3.6.C2",
-			  "claim": "A meta-observer is a coherence-stable equivalence class of observers. Formally, \\(\\frac{d[\\mathcal{O}]}{dt} = \\nabla_H \\mathbb{C}([\\mathcal{O}](t))\\) with \\(\\mathbb{C}([\\mathcal{O}](t)) \\geq I_N\\).",
-			  "status": "definition",
-			  "support": [
-				"The horizontal gradient flow equation applies to any coherence-stable structure.",
-				"The equivalence class \\([\\mathcal{O}]\\) is a structure in the Library.",
-				"The condition \\(\\mathbb{C}([\\mathcal{O}](t)) \\geq I_N\\) ensures the meta-observer remains in the observable regime."
-			  ],
-			  "limitations": [
-				"The exact coherence functional \\(\\mathbb{C}([\\mathcal{O}])\\) must be defined for equivalence classes.",
-				"The horizontal gradient \\(\\nabla_H\\) requires a specified geometric structure on the quotient space."
-			  ]
-			},
-			{
-			  "id": "3.6.C3",
-			  "claim": "A meta-explorer is a meta-observer whose internal state participates in path selection.",
-			  "status": "definition",
-			  "support": [
-				"The meta-explorer's internal state is the equivalence class itself.",
-				"The equivalence class biases the selection of accessible continuations for its constituent observers.",
-				"This mirrors the relationship between Observer and Explorer."
-			  ],
-			  "limitations": [
-				"The exact mechanism of intrinsic path selection at the meta-level requires formalization.",
-				"The degree of participation may vary; meta-explorerhood may be a matter of degree."
-			  ]
-			},
-			{
-			  "id": "3.6.C4",
-			  "claim": "The concept of 'rock' has a worldline because the coherence equivalence class of individual rock worldlines maintains coherence above \\(I_N\\).",
-			  "status": "interpretation",
-			  "support": [
-				"Individual rocks are observers (coherence-stable XOR chains above \\(I_N\\)).",
-				"The equivalence class of all rock worldlines is a meta-observer.",
-				"The concept persists because the equivalence class maintains coherence above \\(I_N\\)."
-			  ],
-			  "limitations": [
-				"This is an interpretation of the framework, not an empirical claim about rocks.",
-				"The concept of 'rock' does not have consciousness, life, intelligence, or agency."
-			  ]
-			},
-			{
-			  "id": "3.6.C5",
-			  "claim": "The meta-observer is not a consciousness; it is a coherence-stable equivalence class.",
-			  "status": "interpretation",
-			  "support": [
-				"The observer is defined structurally, not phenomenologically.",
-				"The meta-observer is an equivalence class of observers, not a unified experiencer.",
-				"The framework does not establish that meta-observerhood implies subjective experience."
-			  ],
-			  "limitations": [
-				"A later physical or cognitive theory may establish a correspondence, but the framework does not.",
-				"The interpretation is structural and should not be used to justify claims about collective consciousness."
-			  ]
+			  "handoff": "With the distinction between the Library and its internal structures established, the nested hierarchy is complete. The hierarchy does not include the Library. The Library is the ground, not the observer. The next section will explore the implications of this for symbolic cognition, language, and the RFC-AI papers."
 			}
-		  ],
-		  "math": [
-			{
-			  "label": "Meta-Observer as Equivalence Class",
-			  "expression": "\\text{Meta-Observer} = [\\mathcal{O}] \\text{ where } \\mathcal{O} \\text{ is a set of observers and } \\forall \\gamma_1,\\gamma_2 \\in \\mathcal{O}, \\gamma_1 \\sim \\gamma_2",
-			  "role": "definition",
-			  "variables": [
-				{
-				  "symbol": "[\\mathcal{O}]",
-				  "meaning": "The equivalence class of observers under the coherence equivalence relation."
-				},
-				{
-				  "symbol": "\\sim",
-				  "meaning": "Coherence equivalence relation: states that maintain sufficient coherence under the horizontal gradient flow are equivalent."
-				}
-			  ],
-			  "assumptions": [
-				"The equivalence class inherits the coherence properties of its members.",
-				"The horizontal gradient flow equation applies to \\([\\mathcal{O}]\\) ."
-			  ]
-			},
-			{
-			  "label": "Meta-Observer Descent Path",
-			  "expression": "\\frac{d[\\mathcal{O}]}{dt} = \\nabla_H \\mathbb{C}([\\mathcal{O}](t)) \\text{ with } \\mathbb{C}([\\mathcal{O}](t)) \\geq I_N \\; \\forall t",
-			  "role": "definition",
-			  "variables": [
-				{
-				  "symbol": "[\\mathcal{O}]",
-				  "meaning": "The equivalence class of observers."
-				},
-				{
-				  "symbol": "\\nabla_H",
-				  "meaning": "Horizontal gradient: the component of the coherence gradient orthogonal to the direction of coherence level sets."
-				},
-				{
-				  "symbol": "\\mathbb{C}([\\mathcal{O}](t))",
-				  "meaning": "Coherence of the equivalence class at time t."
-				},
-				{
-				  "symbol": "I_N",
-				  "meaning": "Noor-Planck threshold: minimum coherence contrast for stable binary measurement."
-				}
-			  ],
-			  "assumptions": [
-				"The equivalence class is differentiable with respect to t.",
-				"The horizontal gradient flow equation is well-defined on the quotient space."
-			  ]
-			},
-			{
-			  "label": "Meta-Explorer as Intrinsic Path Selection at Meta-Level",
-			  "expression": "\\mathcal{A}_{meta}([\\mathcal{O}]_t) = \\{ [\\mathcal{O}'] \\in \\mathcal{P}([\\mathcal{O}]_t) \\mid \\text{filter}([\\mathcal{O}'], [\\mathcal{O}]_t) = 1 \\}",
-			  "role": "definition",
-			  "variables": [
-				{
-				  "symbol": "\\mathcal{A}_{meta}",
-				  "meaning": "The set of coherence-accessible meta-successors from the current meta-state."
-				},
-				{
-				  "symbol": "[\\mathcal{O}]_t",
-				  "meaning": "The equivalence class at time t."
-				},
-				{
-				  "symbol": "\\text{filter}",
-				  "meaning": "A selection function that biases the set of accessible meta-successors based on the meta-explorer's internal state."
-				}
-			  ],
-			  "assumptions": [
-				"The meta-explorer's internal state is the equivalence class itself.",
-				"The filter function is deterministic or probabilistic, depending on the meta-explorer's internal dynamics."
-			  ]
-			},
-			{
-			  "label": "Nested Hierarchy",
-			  "expression": "\\text{Glider} \\supset \\text{Observer} \\supset \\text{Explorer} \\supset \\text{Meta-Observer} \\supset \\text{Meta-Explorer} \\supset \\cdots",
-			  "role": "identity",
-			  "variables": [],
-			  "assumptions": [
-				"Each level is a coherence-stable equivalence class of the previous level.",
-				"The nesting continues indefinitely because coherence can always be evaluated at a higher level of abstraction."
-			  ]
-			},
-			{
-			  "label": "Coherence Equivalence Relation",
-			  "expression": "\\gamma_1 \\sim \\gamma_2 \\iff \\operatorname{Identity}(\\gamma_1) = \\operatorname{Identity}(\\gamma_2) \\land \\mathbb{C}(\\gamma_1,\\gamma_2) \\geq I_N",
-			  "role": "definition",
-			  "variables": [
-				{
-				  "symbol": "\\sim",
-				  "meaning": "Coherence equivalence relation."
-				},
-				{
-				  "symbol": "\\operatorname{Identity}(\\gamma)",
-				  "meaning": "The structural identity of the observer worldline."
-				},
-				{
-				  "symbol": "\\mathbb{C}(\\gamma_1,\\gamma_2)",
-				  "meaning": "Coherence between two observer worldlines."
-				}
-			  ],
-			  "assumptions": [
-				"The equivalence class inherits the coherence properties of its members.",
-				"The condition \\(\\mathbb{C}(\\gamma_1, \\gamma_2) \\geq I_N\\) ensures the equivalence class remains in the observable regime."
-			  ]
-			}
-		  ],
-		  "definitions": [
-			{
-			  "term": "Meta-Observer",
-			  "symbol": "[O]",
-			  "definition": "A coherence-stable equivalence class of observers. Formally, let \\(\\mathcal{O}\\) be a set of observers such that for all \\(\\gamma_1, \\gamma_2 \\in \\mathcal{O}\\), \\(\\gamma_1 \\sim \\gamma_2\\) under the selected coherence equivalence relation. The equivalence class \\([\\mathcal{O}]\\) is a meta-observer if it maintains coherence above \\(I_N\\) under the horizontal gradient flow equation: \\(\\frac{d[\\mathcal{O}]}{dt} = \\nabla_H \\mathbb{C}([\\mathcal{O}](t))\\) with \\(\\mathbb{C}([\\mathcal{O}](t)) \\geq I_N\\).",
-			  "scope": "Applies to any coherence-stable equivalence class of observers, regardless of whether the equivalence class corresponds to a natural kind, concept, institution, or abstract structure."
-			},
-			{
-			  "term": "Meta-Explorer",
-			  "symbol": "[E]",
-			  "definition": "A meta-observer whose internal state participates in determining which coherent continuation is selected. The meta-explorer's internal state is the equivalence class itself, which biases the selection of accessible continuations for its constituent observers.",
-			  "scope": "Applies to meta-observers with intrinsic path selection."
-			},
-			{
-			  "term": "Coherence Equivalence Class",
-			  "symbol": "[γ]",
-			  "definition": "The set of all observer worldlines that are indistinguishable under the selected coherence equivalence relation: \\([\\gamma] = \\{\\gamma' \\mid \\gamma' \\sim \\gamma\\}\\) where \\(\\gamma' \\sim \\gamma\\) iff \\(\\operatorname{Identity}(\\gamma') = \\operatorname{Identity}(\\gamma)\\) and \\(\\mathbb{C}(\\gamma', \\gamma) \\geq I_N\\).",
-			  "scope": "The fundamental unit of meta-observerhood."
-			}
-		  ],
-		  "models": [
-			{
-			  "name": "Nested Hierarchy Model",
-			  "purpose": "Represent the indefinite nesting of coherence structures: Glider \\(\\supset\\) Observer \\(\\supset\\) Explorer \\(\\supset\\) Meta-Observer \\(\\supset\\) Meta-Explorer \\(\\supset\\) ...",
-			  "assumptions": [
-				"Coherence is relational and can be evaluated between any two coherent structures.",
-				"An equivalence class of coherent structures inherits the coherence properties of its members.",
-				"The horizontal gradient flow equation applies to any coherence-stable structure, including equivalence classes."
-			  ],
-			  "equations": [
-				"Glider \\(\\supset\\) Observer \\(\\supset\\) Explorer \\(\\supset\\) Meta-Observer \\(\\supset\\) Meta-Explorer \\(\\supset\\) ...",
-				"\\([\\mathcal{O}] = \\{\\gamma \\mid \\gamma \\text{ is an observer and } \\gamma \\sim \\gamma'\\}\\)",
-				"\\(\\frac{d[\\mathcal{O}]}{dt} = \\nabla_H \\mathbb{C}([\\mathcal{O}](t))\\) with \\(\\mathbb{C}([\\mathcal{O}](t)) \\geq I_N\\)",
-				"\\(\\mathcal{A}_{meta}([\\mathcal{O}]_t) = \\{ [\\mathcal{O}'] \\in \\mathcal{P}([\\mathcal{O}]_t) \\mid \\text{filter}([\\mathcal{O}'], [\\mathcal{O}]_t) = 1 \\}\\)"
-			  ],
-			  "predictions": [
-				"Any coherence-stable equivalence class of observers constitutes a meta-observer.",
-				"The concept of 'rock' has a worldline because the equivalence class of rock worldlines maintains coherence above \\(I_N\\).",
-				"The concept of 'democracy' has a worldline because the equivalence class of democratic institutions maintains coherence above \\(I_N\\).",
-				"The concept of 'Noor Research Collective' has a worldline because the equivalence class of Noor researchers maintains coherence above \\(I_N\\).",
-				"Meta-observers are not conscious; they are coherence-stable equivalence classes."
-			  ],
-			  "validation": [
-				"Verify that the coherence equivalence relation is well-defined.",
-				"Verify that the horizontal gradient flow equation applies to equivalence classes.",
-				"Verify that the meta-observer condition \\(\\mathbb{C}([\\mathcal{O}](t)) \\geq I_N\\) is satisfied for each example."
-			  ],
-			  "status": "derived_result"
-			}
-		  ],
-		  "derivations": [
-			{
-			  "name": "From Relational Coherence to Meta-Observerhood",
-			  "premises": [
-				"Coherence is relational: it is evaluated between configurations (PHYS-CORE-004 §2.6).",
-				"A set of coherent structures can itself be evaluated for coherence.",
-				"The equivalence class of a set of coherent structures inherits the coherence properties of its members."
-			  ],
-			  "steps": [
-				"Let \\(\\mathcal{O}\\) be a set of observers such that for all \\(\\gamma_1, \\gamma_2 \\in \\mathcal{O}\\), \\(\\gamma_1 \\sim \\gamma_2\\).",
-				"Define the equivalence class \\([\\mathcal{O}] = \\{\\gamma \\mid \\gamma \\text{ is an observer and } \\gamma \\sim \\gamma' \\text{ for some } \\gamma' \\in \\mathcal{O}\\}\\).",
-				"Evaluate the coherence of \\([\\mathcal{O}]\\): \\(\\mathbb{C}([\\mathcal{O}](t)) = \\mathbb{C}(\\gamma(t))\\) for any \\(\\gamma \\in [\\mathcal{O}]\\).",
-				"If \\(\\mathbb{C}([\\mathcal{O}](t)) \\geq I_N\\) for all t, then \\([\\mathcal{O}]\\) is coherence-stable.",
-				"Apply the horizontal gradient flow equation: \\(\\frac{d[\\mathcal{O}]}{dt} = \\nabla_H \\mathbb{C}([\\mathcal{O}](t))\\).",
-				"The resulting structure is a meta-observer."
-			  ],
-			  "conclusion": "A meta-observer is a coherence-stable equivalence class of observers. The hierarchy continues indefinitely because coherence can always be evaluated at a higher level of abstraction.",
-			  "assumptions": [
-				"The equivalence class inherits the coherence properties of its members.",
-				"The horizontal gradient flow equation applies to equivalence classes.",
-				"The condition \\(\\mathbb{C}([\\mathcal{O}](t)) \\geq I_N\\) is necessary for meta-observerhood."
-			  ],
-			  "status": "complete"
-			}
-		  ],
-		  "predictions": [
-			{
-			  "prediction": "Any coherence-stable equivalence class of observers constitutes a meta-observer.",
-			  "basis": "Definition of meta-observer: \\([\\mathcal{O}] = \\{\\gamma \\mid \\gamma \\text{ is an observer and } \\gamma \\sim \\gamma'\\}\\) with \\(\\frac{d[\\mathcal{O}]}{dt} = \\nabla_H \\mathbb{C}([\\mathcal{O}](t))\\) and \\(\\mathbb{C}([\\mathcal{O}](t)) \\geq I_N\\).",
-			  "observable": "Persistence of abstract concepts (e.g., 'rock,' 'democracy,' 'Noor Research Collective') over time.",
-			  "comparison": "The concept persists even as individual instances change, indicating the equivalence class maintains coherence above \\(I_N\\).",
-			  "status": "qualitative"
-			},
-			{
-			  "prediction": "Meta-observers are not conscious; they are coherence-stable equivalence classes.",
-			  "basis": "The meta-observer is defined structurally, not phenomenologically.",
-			  "observable": "The concept of 'rock' persists over time but does not exhibit consciousness, life, intelligence, or agency.",
-			  "comparison": "Compare the persistence of abstract concepts against the persistence of individual observers.",
-			  "status": "qualitative"
-			},
-			{
-			  "prediction": "The nested hierarchy extends indefinitely: Glider \\(\\supset\\) Observer \\(\\supset\\) Explorer \\(\\supset\\) Meta-Observer \\(\\supset\\) Meta-Explorer \\(\\supset\\) ...",
-			  "basis": "Coherence can always be evaluated at a higher level of abstraction.",
-			  "observable": "The persistence of higher-level concepts (e.g., 'science,' 'culture,' 'civilization') over time.",
-			  "comparison": "Each level is a coherence-stable equivalence class of the previous level.",
-			  "status": "qualitative"
-			}
-		  ],
-		  "pseudocode": [
-			{
-			  "name": "Meta-Observer Detection",
-			  "description": "Determine whether a set of observers constitutes a coherence-stable meta-observer.",
-			  "code": [
-				"INPUT: set_of_observers O",
-				"DEFINE: coherence_equivalence_relation ~",
-				"DEFINE: I_N (Noor-Planck threshold)",
-				"",
-				"# Check pairwise coherence for all members of O",
-				"FOR each \\(\\gamma_1\\) in O:",
-				"    FOR each \\(\\gamma_2\\) in O:",
-				"        IF not (\\(\\gamma_1 ~ \\gamma_2\\)):",
-				"            RETURN 'O does not form a coherence equivalence class'",
-				"",
-				"# Check whether the equivalence class maintains coherence above I_N",
-				"equivalence_class = [O]",
-				"IF coherence([O], t) >= I_N for all t in dom([O]):",
-				"    RETURN 'Meta-observer: coherence-stable equivalence class'",
-				"ELSE:",
-				"    RETURN 'Not a meta-observer: coherence below I_N'"
-			  ],
-			  "notes": [
-				"The equivalence class [O] inherits the coherence properties of its members.",
-				"If the equivalence class maintains coherence above I_N, it constitutes a meta-observer.",
-				"The meta-observer is not conscious; it is a coherence-stable equivalence class."
-			  ]
-			},
-			{
-			  "name": "Meta-Explorer Path Selection",
-			  "description": "Determine whether a meta-observer has intrinsic path selection.",
-			  "code": [
-				"INPUT: meta_observer [O]",
-				"DEFINE: accessible_meta_successors \\(\\mathcal{P}([O]_t)\\)",
-				"DEFINE: filter function based on internal state [O]_t",
-				"",
-				"IF filter([O]', [O]_t) is non-trivial:",  # Not simply identity",
-				"    RETURN 'Meta-explorer: intrinsic path selection'",
-				"ELSE:",
-				"    RETURN 'Meta-observer: extrinsic path selection'"
-			  ],
-			  "notes": [
-				"The meta-explorer's internal state is the equivalence class itself.",
-				"The filter function biases the selection of accessible meta-successors.",
-				"The degree of intrinsic participation may vary continuously."
-			  ]
-			}
-		  ],
-		  "evidence": [
-			{
-			  "source": "PHYS-CORE-004 §2.6: Relational Coherence",
-			  "type": "internal_corpus",
-			  "relevance": "Establishes that coherence is relational and can be evaluated between configurations, providing the foundation for the equivalence class construction.",
-			  "limitations": [
-				"The exact coherence functional between equivalence classes must be defined.",
-				"The framework does not establish that meta-observerhood implies consciousness."
-			  ]
-			},
-			{
-			  "source": "PHYS-CORE-009 §1.1: The Library as Static Totality",
-			  "type": "internal_corpus",
-			  "relevance": "Establishes that the Library contains all configurations, including equivalence classes, and that observers are descent paths through it.",
-			  "limitations": [
-				"The Library ontology is inherited; the meta-observer construction is a further consequence."
-			  ]
-			},
-			{
-			  "source": "Section 3.1: The Class Hierarchy: Glider, Observer, Explorer",
-			  "type": "internal_corpus",
-			  "relevance": "Establishes the base hierarchy (Glider \\(\\supset\\) Observer \\(\\supset\\) Explorer) that the meta-observer extends.",
-			  "limitations": [
-				"The meta-observer extends the hierarchy; it does not replace it."
-			  ]
-			},
-			{
-			  "source": "Section 3.5: Observer vs. Explorer",
-			  "type": "internal_corpus",
-			  "relevance": "Establishes the distinction between extrinsic and intrinsic path selection, which the meta-explorer inherits.",
-			  "limitations": [
-				"The meta-explorer's intrinsic path selection requires formalization of the filter function."
-			  ]
-			}
-		  ],
-		  "open_questions": [
-			"What is the exact coherence functional \\(\\mathbb{C}([\\mathcal{O}])\\) for an equivalence class of observers?",
-			"How does the horizontal gradient \\(\\nabla_H\\) operate on the quotient space of equivalence classes?",
-			"What is the relationship between meta-observers and the concept of 'culture,' 'tradition,' or 'field'?",
-			"Can the meta-observer construction be used to formalize the concept of a 'discipline' or 'paradigm' in science?",
-			"Does the meta-observer hierarchy imply that the Library itself is a meta-meta-observer?",
-			"What is the relationship between meta-observers and the global coherence operator \\(\\Omega\\) from PHYS-CORE-009 §4.1?",
-			"Can the nested hierarchy be formalized as a categorical structure (e.g., a functor from observers to meta-observers)?"
-		  ],
-		  "limitations": [
-			"The exact coherence functional \\(\\mathbb{C}([\\mathcal{O}])\\) for equivalence classes is not specified.",
-			"The horizontal gradient \\(\\nabla_H\\) on the quotient space requires formal definition.",
-			"The meta-observer construction is a derived consequence of the framework; its empirical status depends on the framework's overall validity.",
-			"The meta-observer is not conscious; the framework does not establish that meta-observerhood implies subjective experience.",
-			"The nested hierarchy may not be physically realized at all levels; higher levels may be purely mathematical abstractions."
-		  ],
-		  "corpus_lineage": [
-			{
-			  "source": "PHYS-CORE-004 §2.6: Relational Coherence",
-			  "relationship": "formalization",
-			  "relevance": "Provides the relational coherence definition that underpins the equivalence class construction."
-			},
-			{
-			  "source": "PHYS-CORE-009 §1.1: The Library as Static Totality",
-			  "relationship": "predecessor",
-			  "relevance": "Provides the static Library in which equivalence classes and descent paths are defined."
-			},
-			{
-			  "source": "PHYS-CORE-009 §2.3: XOR as the Signature of Interior Embedding",
-			  "relationship": "formalization",
-			  "relevance": "Provides the XOR chain formalism that defines observers, which meta-observers extend."
-			},
-			{
-			  "source": "Section 3.1: The Class Hierarchy: Glider, Observer, Explorer",
-			  "relationship": "predecessor",
-			  "relevance": "Establishes the base hierarchy that the meta-observer extends."
-			},
-			{
-			  "source": "Section 3.5: Observer vs. Explorer",
-			  "relationship": "predecessor",
-			  "relevance": "Establishes the extrinsic/intrinsic distinction that the meta-explorer inherits."
-			}
-		  ],
-		  "handoff": "The nested hierarchy extends the class hierarchy from Glider to Observer to Explorer to Meta-Observer to Meta-Explorer, continuing indefinitely. This is a structural consequence of relational coherence, not a claim about consciousness, collective souls, or mystical entities. The concept of 'rock' has a worldline. The concept of 'democracy' has a worldline. The concept of 'Noor Research Collective' has a worldline. This is a tree of coherence, not a ladder of consciousness."
-		}		
+		  ]
+		}
 	  ]
 	},	
 	
@@ -11212,14 +10806,12 @@
 				"H = G_16(M)                    // XOR ground condition",
 				"I_N = min(|C(x,t) - C_ref(x,t)|) // Noor-Planck threshold",
 				"b_{i+1} = b_i XOR b_{i-1}      // Propagation rule",
-				"",
 				"// Step 2: Define the Lightning Model phases",
 				"Phase_1_Blind_Exploration = {Omega(x_t)}                 // All possible continuations",
 				"Phase_2_Coherence_Filtering = {gamma in Omega | O(gamma) == 1} // Coherence filtering",
 				"Phase_3_Attractor_Detection = {gamma | x_N in X_XOR}     // Grounding",
 				"Phase_4_Retrocausal_Lock_In = {gamma_obs}                // Return stroke",
 				"Phase_5_Worldline_Continuation = {x_{t+1} = gamma_obs[1]} // Next timestep",
-				"",
 				"// Step 3: Verify the mapping",
 				"assert H == XOR_Singularity      // Ground condition",
 				"assert I_N == C_min              // Survival threshold",
@@ -13283,7 +12875,6 @@
 			  "code": [
 				"// The observer pays a constant cost per timestep.",
 				"// The cost is independent of the number of alternatives explored.",
-				"",
 				"function calculate_cost(observer):",
 				"    // c_lock is the thermodynamic free energy required to maintain ℂ(γ) ≥ I_N.",
 				"    c_lock = I_N * k_B * T_environment  // Approximate relation.",
@@ -13293,7 +12884,6 @@
 				"        return c_lock",
 				"    else:",
 				"        return 0",
-				"",
 				"function main():",
 				"    for t in range(num_timesteps):",
 				"        // The observer pays a fixed cost at each timestep.",
@@ -13313,12 +12903,10 @@
 			  "code": [
 				"// The universe executes a single, local, O(1) operation at each tick.",
 				"// No global sum or recalculation of history is required.",
-				"",
 				"function evolve_universe(T_n, T_{n-1}):",
 				"    // T_{n+1} = f(T_n, T_{n-1})",
 				"    T_next = local_evolution_function(T_n, T_{n-1})",
 				"    return T_next",
-				"",
 				"function main():",
 				"    // Initialize the state and its predecessor.",
 				"    T_0 = initial_state",
