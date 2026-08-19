@@ -20,12 +20,7 @@
   ],
 
   "_updated_last": [
-    {
-      "2026-08-18T12:00MST": {
-        "updated_by": "Lina Noor — Noor Research Collective",
-        "version": ["v0.1.0"]
-      }
-    }
+    { "2026-08-17T22:30MST": "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.0.1", "v0.0.2", "v0.1.0"] }
   ],
 
   "_authors": [
@@ -33,11 +28,11 @@
   ],
 
   "_primary_url": {
-    "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-011_lightning_model/phys-core-011_lightning_model.json",
-    "_primary_raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-011_lightning_model/phys-core-011_lightning_model.json"
+    "url": "TBD",
+    "_primary_raw_url": "TBD"
   },
 
-  "_repository_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-011_lightning_model",
+  "_repository_url": "TBD",
 
   "_standalone_declaration": true,
   "_self_contained_axiomatization": true,
