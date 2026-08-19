@@ -22,18 +22,8 @@
 	],
 
   "_updated_last": [
-    {
-      "2026-08-17T17:00MST": {
-        "updated_by": "Lina Noor — Noor Research Collective",
-        "version": ["v0.0.1", "v0.1.0"]
-      }
-    },
-    {
-      "2026-08-18T14:00MST": {
-        "updated_by": "Lina Noor — Noor Research Collective",
-        "version": ["v0.2.0", "v0.2.1", "v0.1.0"]
-      }
-    }
+    { "2026-08-17T17:00MST": "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.0.1", "v0.1.0"] },
+    { "2026-08-18T14:00MST": "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.2.0", "v0.2.1", "v1.0.0", "v1.0.1"]}
   ],
 
   "_authors": [

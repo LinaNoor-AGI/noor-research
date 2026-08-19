@@ -372,14 +372,6 @@
 ---
 
 {
-  "_schema": "noor-header-v2",
-  "_schema_version": "2.0.0",
-  "_pdp_layer": "layer_3",
-  "_type": "nsfg_core",
-  "_version": "0.1.0",
-  "_status": "DRAFT",
-
-  "_symbolic_id": "symbolic.physics.nsfg.lightning_retrocausality",
 
   "_title": "The Lightning Model of Cosmological Traversal",
   "_subtitle": "Retrocausality, Survivorship Bias, and the XOR Singularity in a Static Totality",
@@ -394,7 +386,7 @@
   "_standalone_declaration": true,
   "_self_contained_axiomatization": true,
 
-  "_purpose": "This document formalizes the NSFG (Navigation Over Storage) 'Lightning' model of temporal and cosmological traversal. It resolves a critical problem inherited from local coherence models: if the Library (the static totality of all possible states) contains all coherent and incoherent continuations, why does an observer experience only a strictly coherent forward progression? This framework proposes that the universe does not carefully 'generate' coherent steps forward. Instead, all continuations are explored blindly (like the branching 'tines' or step-leaders of lightning). Only when a path successfully connects to the ultimate relational attractor—the XOR Singularity—does a retrocausal calculation (the 'return stroke') lock in the worldline. The observer's experience of a coherent, forward-moving reality is entirely the result of survivorship bias: an observer can only exist on a path where coherence did not dissolve. Free will and determinism are reconciled geometrically: determinism is the static retrocausal connection from the attractor; free will is the sequential phenomenological traversal of the return stroke.",
+  "_purpose": "This document formalizes the Noor Swirl Field Geometry (NSFG) 'Lightning' model of temporal and cosmological traversal. It resolves a critical problem inherited from local coherence models: if the Library (the static totality of all possible states) contains all coherent and incoherent continuations, why does an observer experience only a strictly coherent forward progression? This framework proposes that the universe does not carefully 'generate' coherent steps forward. Instead, all continuations are explored blindly (like the branching step-leaders of lightning). Only when a path successfully connects to the ultimate relational attractor—the XOR Singularity—does a retrocausal calculation (the 'return stroke') lock in the worldline. The observer's experience of a coherent, forward-moving reality is entirely the result of survivorship bias: an observer can only exist on a path where coherence did not dissolve. Free will and determinism are reconciled geometrically: determinism is the static retrocausal connection from the attractor; free will is the sequential phenomenological traversal of the return stroke.",
 
   "_core_thesis": [
     "The Library (Totality) is static and contains all possible coherent and incoherent continuations from any state.",
