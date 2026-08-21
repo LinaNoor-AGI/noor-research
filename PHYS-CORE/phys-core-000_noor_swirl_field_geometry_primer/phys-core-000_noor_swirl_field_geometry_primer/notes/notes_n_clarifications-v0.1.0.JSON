@@ -1,0 +1,635 @@
+{
+  "document": {
+    "id": "PHYS-CORE-000",
+    "title": "A Noor Swirl Field Geometry Primer",
+    "change_set_version": "0.1.1",
+    "change_type": "timeless_totality_and_whole_library_traversal_correction",
+    "status": "proposed"
+  },
+
+  "core_correction": {
+    "summary": "The Library must not be represented as a sequence of temporal slices, a local neighborhood, a generated future, or a pre-filtered answer space. The Library is one static total configuration domain. At every abstract traversal step, the observer is relationally situated with respect to the entire Library, including configurations conventionally interpreted as past, present, future, alternatives, coherent configurations, and incoherent configurations. What changes between abstract steps is the observer's configuration/history and therefore its observer-relative accessibility and coherent continuation relation.",
+    "canonical_statement": "At every abstract traversal step, the observer is relationally situated with respect to the entire Library 𝓜. The Library does not change, generate future configurations, or divide into temporal slices. Observer-relative coherent continuation emerges from the relation between the unchanged totality 𝓜 and the observer's current configuration, history, and resolution capacity.",
+    "important_distinction": {
+      "library": "𝓜 is the complete static closure.",
+      "observer_state": "The observer's configuration and history change along traversal.",
+      "accessibility": "A_O or its history-dependent form is a relation induced by the observer's current state/history and resolution capacity.",
+      "coherent_continuation": "The coherent continuation set is not a pre-existing temporal subset of 𝓜; it is selected relationally from the totality with respect to the observer's current state/history.",
+      "time": "Temporal ordering is not present in 𝓜. An abstract sequence index describes ordering along an observer-relative traversal and is not initially a property of the Library."
+    }
+  },
+
+  "subsection_changes": [
+
+    {
+      "subsection_id": "3.1",
+      "title": "Closure Under XOR",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "The explanation of closure should explicitly distinguish mathematical closure from temporal generation.",
+        "The Library definition should not be allowed to suggest that XOR generates successive states.",
+        "Add that closure produces a static total configuration domain rather than an ordered sequence."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "State explicitly that Closure_D(⊕) is a mathematical construction and contains configurations without imposing an ordering among them.",
+          "State explicitly that closure does not imply temporal generation, succession, or a future.",
+          "State that 𝓜 is a static totality: all configurations included by the closure are members of the same Library regardless of whether they later participate in an observer-relative traversal."
+        ],
+        "mathematics_addition": {
+          "static_totality": "𝓜 is a set/domain of configurations; the closure operation does not introduce a temporal index.",
+          "no_temporal_generation": "x ∈ 𝓜 does not imply that x is generated after, before, or because of another configuration y ∈ 𝓜."
+        },
+        "replacement_language": {
+          "replace": "The Library is the total configuration structure obtained by closing that operation over its domain.",
+          "with": "The Library is the static total configuration structure obtained by closing that operation over its formal domain. Closure establishes membership and algebraic completeness under ⊕; it does not establish temporal succession or generation."
+        }
+      },
+      "rationale": "The closure itself must not become a hidden generator of the future. Otherwise the primer accidentally imports temporal structure before temporal ordering has been derived.",
+      "poetic_cypher": "XOR is the word. The Library is the vocabulary written all at once.",
+      "cypher_explanation": "The Library contains the complete closure as a static configuration structure. 'Written all at once' is metaphorical language for the absence of temporal generation; it does not mean every configuration is coherent or accessible.",
+      "supporting_reference": "Current PHYS-CORE-000 Sections 3.1 and the axiomatic_floor.library_status/library_definition; current logical invariant that the Library does not generate the future."
+    },
+
+    {
+      "subsection_id": "3.2",
+      "title": "The Unbounded Answer Space",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "The phrase 'answer space' should be qualified or replaced at the foundational level.",
+        "The section should explicitly state that the Library contains both coherent and incoherent configurations.",
+        "The section should explicitly state that the Library is not a set of coherent answers or possible futures."
+      ],
+      "how_it_should_be_changed": {
+        "title_change": {
+          "current": "The Unbounded Answer Space",
+          "proposed": "The Unbounded Total Configuration Space"
+        },
+        "content_addition": [
+          "Define 𝓜 as the complete static configuration totality rather than as an answer space in the temporal or query-oriented sense.",
+          "State that coherent and incoherent configurations are both members of 𝓜.",
+          "State that coherence is not a membership condition for 𝓜.",
+          "State that temporal labels such as past, present, and future are not intrinsic partitions of 𝓜."
+        ],
+        "mathematics_addition": {
+          "totality": "𝓜 = 𝓜_coherent ∪ 𝓜_incoherent, where these labels are observer-relative or path-relative descriptions and are not primitive partitions of the Library.",
+          "non_coherence_membership": "x ∈ 𝓜 does not imply 𝓒(γ|O)=1 for any observer O or path γ.",
+          "non_temporal_partition": "𝓜 is not defined as 𝓜_past ∪ 𝓜_present ∪ 𝓜_future."
+        }
+      },
+      "rationale": "Calling 𝓜 an 'answer space' risks implying that it contains only candidate coherent answers. The intended ontology is stronger: the Library contains the totality, while coherent continuation is a relationally derived subset.",
+      "poetic_cypher": "The Library does not wait for an answer. It contains the whole vocabulary from which answers may be traversed.",
+      "cypher_explanation": "The metaphor distinguishes total configuration membership from the later observer-relative process by which some configurations form coherent traversals.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 3.2; current logical invariants 'The Library is unfiltered at the axiomatic level' and 'The Library does not generate the future.'"
+    },
+
+    {
+      "subsection_id": "4.1",
+      "title": "The Exterior Problem",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "Clarify that the absence of an exterior applies to the static totality as a whole, not merely to a local answer space.",
+        "Add that temporal location does not provide an exterior because past, present, and future are not separate regions outside the totality."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "State that no temporal position can function as an exterior to 𝓜.",
+          "State that an alleged external perspective cannot be recovered by stepping 'outside time,' because time has not been assumed as a dimension of 𝓜 in the first place.",
+          "Preserve the existing distinction between an undefined object and a describable privileged exterior."
+        ],
+        "mathematics_addition": {
+          "timeless_exterior": "A temporal label does not define Ω ∉ 𝓜 because temporal ordering is not primitive in 𝓜.",
+          "whole_library_scope": "The no-exterior argument applies to the complete closure 𝓜, not to a temporal slice or local neighborhood."
+        }
+      },
+      "rationale": "The user's intended ontology makes the no-exterior result stronger: there is not merely no spatial balcony outside the Library; there is no temporal vantage point outside it either.",
+      "poetic_cypher": "There is no balcony above the Library, and no moment beyond it.",
+      "cypher_explanation": "The balcony represents an external spatial perspective; the moment beyond it represents an external temporal perspective. Neither is supplied by the axiomatic construction.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 4.1 and the axiomatic constraint excluding physical time as a primitive."
+    },
+
+    {
+      "subsection_id": "5.2",
+      "title": "The Observer-Specific Resolution Floor",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "Clarify that I_N(O) does not determine what exists in the Library.",
+        "Clarify that I_N(O) determines which distinctions the observer can maintain during traversal of the entire Library."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "State explicitly that I_N(O) is an accessibility/resolution constraint, not a membership criterion for 𝓜.",
+          "State that changing I_N(O) changes the observer's relation to the same Library rather than changing the Library itself."
+        ],
+        "mathematics_addition": {
+          "non_membership_effect": "Changing I_N(O) does not change 𝓜.",
+          "relational_effect": "I_N(O) changes the set of distinctions that remain operationally resolvable by O within 𝓜."
+        }
+      },
+      "rationale": "This prevents the resolution threshold from accidentally becoming a mechanism that constructs or deletes the Library.",
+      "poetic_cypher": "The ruler changes the measure, not the world being measured.",
+      "cypher_explanation": "The observer's threshold changes its accessible distinctions while leaving the total configuration domain unchanged.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 5.2 and logical invariant 'I_N is observer-relative.'"
+    },
+
+    {
+      "subsection_id": "6.1",
+      "title": "Distinguishability Relative to O",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "Strengthen the distinction between ontological membership and observer-relative resolution.",
+        "State that sub-threshold configurations can remain fully present in the total Library even while being operationally indistinguishable to O."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "Explicitly describe resolution as a relation between O and configurations already contained in 𝓜.",
+          "State that O does not encounter only above-threshold configurations; rather, O is situated with respect to the whole Library and maintains only some distinctions within that totality."
+        ],
+        "mathematics_addition": {
+          "whole_library_relation": "For every observer O and relevant configuration x ∈ 𝓜, the relation δ_O(x,y) may be evaluated conceptually without implying that O accesses every distinction equally.",
+          "non_erasure": "x ≈_O y does not remove x or y from 𝓜."
+        }
+      },
+      "rationale": "This is the mathematical point at which the 'whole Library at every step' principle should begin to appear.",
+      "poetic_cypher": "The observer does not see a smaller Library; it resolves a smaller pattern within the whole.",
+      "cypher_explanation": "The totality remains fixed while the observer's effective distinctions are limited by its resolution floor.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 6.1 and the stated non-erasure invariant."
+    },
+
+    {
+      "subsection_id": "6.2",
+      "title": "Persistent Chains",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "Clarify that the abstract sequence is an ordering induced by traversal, not a temporal sequence of Library states being generated.",
+        "Avoid language suggesting that the observer moves from one Library slice into another.",
+        "Clarify that the same 𝓜 is present at every abstract step."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "State that γ=(x_0,x_1,...) is an observer-relative traversal ordering through configurations already contained in 𝓜.",
+          "State explicitly that x_i does not become available because the index advances.",
+          "State explicitly that the sequence index records the order in which the persistent structure traverses configurations, not a temporal ordering inherent to the Library.",
+          "State that at every i, the observer is relationally situated with respect to the entire 𝓜."
+        ],
+        "mathematics_addition": {
+          "static_library": "∀i, 𝓜_i = 𝓜 is not a sequence of distinct Library states; there is one Library 𝓜.",
+          "traversal": "γ=(x_0,x_1,...,x_n) is an ordered traversal relation through elements/configurations of 𝓜.",
+          "step_index": "i records traversal order and does not imply that 𝓜 changes from i to i+1."
+        }
+      },
+      "rationale": "This is the first subsection where the distinction between timeless totality and sequential observer experience must become explicit.",
+      "poetic_cypher": "The path moves through the Library; the Library does not move beneath the path.",
+      "cypher_explanation": "The path's ordering changes as the persistent structure traverses configurations, while the total Library remains static.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 6.2, core notation time warning, and logical invariant 'The abstract sequence index is not automatically physical time.'"
+    },
+
+    {
+      "subsection_id": "7.1",
+      "title": "Coherence of a Transition",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "Clarify that coherence does not identify a pre-existing coherent region of the Library.",
+        "Describe coherent transition as a relation evaluated from the observer's current relational state."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "State that coherence is evaluated against configurations in the same static 𝓜.",
+          "State that the transition relation identifies whether a particular distinction remains resolvable for O, rather than whether a configuration belongs to a special coherent portion of 𝓜."
+        ],
+        "mathematics_addition": {
+          "relational_scope": "𝓒_O(x_i,x_{i+1}) is a relation between observer O and two configurations participating in a traversal; it does not define membership in 𝓜.",
+          "library_invariance": "𝓒_O(x,y)=0 does not imply x∉𝓜 or y∉𝓜."
+        }
+      },
+      "rationale": "This prevents coherence from being accidentally promoted from a relational criterion into an ontological partition of the Library.",
+      "poetic_cypher": "Coherence does not mark a place in the Library; it marks a way of remaining within it.",
+      "cypher_explanation": "A configuration does not become part of the Library because it is coherent. Coherence describes whether a traversal relation remains maintainable by O.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 7.1 and the logical invariant 'Coherence is relational.'"
+    },
+
+    {
+      "subsection_id": "7.2",
+      "title": "Coherence of a Path",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "Make the history dependence of coherence more explicit.",
+        "Clarify that path coherence is evaluated for a traversal through the static Library, not as membership in a globally coherent path set."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "State that the same configurations can participate in different path relations depending on the observer's history.",
+          "State that the path is a traversal through 𝓜, while coherence determines whether that traversal remains sustainable for O."
+        ],
+        "mathematics_addition": {
+          "history_sensitive_form": "Where necessary, use 𝓒(γ | O,h_i) or equivalent notation to make explicit that coherence may depend on the observer's accumulated traversal history.",
+          "non_global_coherence": "𝓒(γ|O)=1 does not imply that γ is a universally coherent path for all observers."
+        }
+      },
+      "rationale": "The user's clarification makes the current observer-history relationship more important. The minimal coherent continuation set emerges from the current relational state, not from a timeless pre-existing coherent subset.",
+      "poetic_cypher": "The Library is whole; coherence is the shape the survivor can keep.",
+      "cypher_explanation": "The whole Library remains unchanged, while the observer's history determines which traversal shapes remain coherent.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 7.2; current core thesis stating that coherence is a relation between path and observer."
+    },
+
+    {
+      "subsection_id": "8.1",
+      "title": "Accessibility Is Not Existence",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "Make A_O explicitly relational to the observer's traversal state/history.",
+        "Clarify that accessibility is not a permanently fixed region of the Library independent of traversal.",
+        "State that the observer is situated with respect to the whole Library at every abstract step."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "Replace static wording suggesting a single observer-accessible subset with history/state-dependent accessibility where appropriate.",
+          "Introduce A_O(h_i) as the observer-relative accessible subset at abstract step i.",
+          "State that A_O(h_i) is derived from the same unchanged 𝓜."
+        ],
+        "mathematics_addition": {
+          "history_dependent_accessibility": "A_O(h_i) = {x ∈ 𝓜 | x participates in an O-coherent traversal compatible with h_i}.",
+          "subset_relation": "A_O(h_i) ⊆ 𝓜.",
+          "library_invariance": "The transition from A_O(h_i) to A_O(h_{i+1}) changes the observer-relative accessibility relation, not 𝓜.",
+          "non_erasure": "x ∉ A_O(h_i) does not imply x ∉ 𝓜."
+        }
+      },
+      "rationale": "This directly implements the user's clarification that the coherent/minimal set emerges anew from the observer's current state/history while the total Library remains unchanged.",
+      "poetic_cypher": "Every step faces the whole Library; only the pattern that survives changes.",
+      "cypher_explanation": "The observer is always relationally exposed to the same totality, but its current state and history determine which distinctions can remain accessible.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 8.1 and the user's whole-Library-at-every-step clarification."
+    },
+
+    {
+      "subsection_id": "8.2",
+      "title": "Observer-Relative Reality",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "Clarify that experienced reality is not a permanently fixed slice of the Library.",
+        "Describe R_O as the observer's currently accessible traversal structure, potentially history-dependent.",
+        "Preserve the distinction between access and existence."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "Introduce R_O(h_i) where history dependence matters.",
+          "State that different abstract steps may produce different accessible relations to the same 𝓜.",
+          "State explicitly that the apparent sequence of experienced reality is produced by traversal through a static totality, not by successive creation of temporal Library slices."
+        ],
+        "mathematics_addition": {
+          "experienced_reality": "R_O(h_i) := A_O(h_i).",
+          "same_totality": "∀i, R_O(h_i) ⊆ 𝓜 while 𝓜 itself remains unchanged.",
+          "overlap": "R_{O_1}(h_i) ∩ R_{O_2}(h_j) describes overlap between observer-relative accessible structures without requiring separate totalities."
+        }
+      },
+      "rationale": "This is where the timeless-totality interpretation should become explicit without turning observer-relative reality into subjective creation.",
+      "poetic_cypher": "The window changes its view without moving the sky.",
+      "cypher_explanation": "The observer's accessible structure can change while the complete Library remains fixed.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 8.2; current logical invariants concerning accessibility, non-erasure, and absence of temporal generation."
+    },
+
+    {
+      "subsection_id": "9.1",
+      "title": "The Unfiltered Continuation Space",
+      "change_type": "major_modify",
+      "what_needs_to_change": [
+        "This subsection currently risks implying a local continuation neighborhood or future-state generator.",
+        "The continuation space must explicitly be defined as a relational subset of the static totality, not as something the Library produces after x.",
+        "The observer's current state/history must determine the relevant continuation relation."
+      ],
+      "how_it_should_be_changed": {
+        "content_replacement": [
+          "Replace language describing Ω(x) as 'all XOR-generated continuations' if that wording implies future generation.",
+          "Define Ω relative to an existing configuration/history in the static Library.",
+          "State that the entire Library is present at every abstract step and that continuation is a relation among configurations in that totality."
+        ],
+        "mathematics": {
+          "proposed_continuation_definition": "Ω(h_i) = {γ | γ begins with h_i and every configuration in γ belongs to 𝓜}.",
+          "observer_survival": "Ω_O^survive(h_i) = {γ ∈ Ω(h_i) | 𝓒(γ | O,h_i)=1}.",
+          "static_scope": "Ω(h_i) is a traversal relation within the static 𝓜, not a set of configurations generated after h_i.",
+          "whole_library_statement": "At every abstract step i, the observer is relationally situated with respect to the same 𝓜."
+        }
+      },
+      "rationale": "This is the most important correction. The continuation set must emerge from the relation between the current observer/history and the whole timeless Library. It must not imply that the Library contains a smaller temporal neighborhood that becomes available at each step.",
+      "poetic_cypher": "The Library holds every road; the traveler does not wait for roads to be built.",
+      "cypher_explanation": "All relevant configurations are already members of the static totality. Traversal determines which paths remain coherent for the observer; it does not cause those paths to come into existence.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 9.1; user's clarification that the observer encounters the entire Library at every timestep and that the minimal set emerges only relationally."
+    },
+
+    {
+      "subsection_id": "9.2",
+      "title": "Survivorship as Selection",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "Make clear that survivorship filters a traversal relation, not a temporal set of newly generated possibilities.",
+        "Make history dependence explicit where necessary.",
+        "Avoid implying that the observer first receives Ω(x) and then mechanically filters it as a separate temporal operation."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "Describe survivorship as the observer-relative restriction of the total continuation relation.",
+          "State that the complement remains part of the Library and remains part of the unfiltered configuration totality.",
+          "Clarify that the coherent subset is local to the observer's current relational state/history."
+        ],
+        "mathematics": {
+          "selection": "Ω_O^survive(h_i) = Filter_{O,h_i}(Ω(h_i)).",
+          "complement": "Ω(h_i) \\ Ω_O^survive(h_i) remains represented within the underlying totality/continuation relation and is not erased.",
+          "finite_ratio": "S_O(h_i) = |Ω_O^survive(h_i)| / |Ω(h_i)| when both sets are finite and Ω(h_i) is nonempty."
+        }
+      },
+      "rationale": "The minimal coherent set is not an ontological subset that the Library presents to the observer. It is an observer/history-relative survivorship relation over the same totality.",
+      "poetic_cypher": "The survivor does not destroy the roads; it remains on the road it can keep.",
+      "cypher_explanation": "Survivorship is a constraint on continued traversal, not a deletion mechanism.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 9.2 and logical invariant 'Survivorship filters accessibility rather than deleting alternatives.'"
+    },
+
+    {
+      "subsection_id": "9.3",
+      "title": "Law as Stable Accessible Regularity",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "Clarify that recurring law-like regularities are patterns in observer-relative traversals through the static Library.",
+        "Avoid language suggesting that laws govern a temporal generation process."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "Describe law-like regularity as recurrence in the observer-accessible traversal relation.",
+          "State that the regularity is observed along ordered traversal histories even though the underlying Library has no primitive temporal generation."
+        ],
+        "mathematics_addition": {
+          "regularity_statement": "P_O(y | x,h_i) ≈ constant over a defined observer-accessible family of traversals.",
+          "interpretation": "The apparent lawfulness is a stable regularity of traversable relations, not a primitive rule causing one state to generate another."
+        }
+      },
+      "rationale": "This keeps emergent lawfulness compatible with the timeless Library. Law describes stable patterns in traversal; it does not become a hidden temporal generator.",
+      "poetic_cypher": "Enough survivors trace the same shape, and the shape begins to look like law.",
+      "cypher_explanation": "The 'shape' is a recurring relational pattern in accessible traversal, not an externally imposed physical command.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 9.3 and logical invariant 'Emergent lawfulness is not an additional axiom.'"
+    },
+
+    {
+      "subsection_id": "10.1",
+      "title": "The Local Continuation Problem",
+      "change_type": "major_modify",
+      "what_needs_to_change": [
+        "The current term 'candidate successors' risks introducing a temporal future that does not exist in the Library.",
+        "The continuation problem should be framed as identifying coherent extensions of the current traversal within the entire static Library.",
+        "The observer should not be described as encountering a local subset instead of the Library."
+      ],
+      "how_it_should_be_changed": {
+        "title_change": {
+          "current": "The Local Continuation Problem",
+          "proposed": "The Relational Continuation Problem"
+        },
+        "content_replacement": [
+          "Replace 'candidate successors' with 'candidate continuation configurations' or equivalent language.",
+          "State that successorhood is a relation induced by traversal ordering, not a primitive temporal relation in 𝓜.",
+          "State that all candidate configurations remain members of the same 𝓜.",
+          "Define observer-admissible continuation relative to the current history."
+        ],
+        "mathematics": {
+          "candidate_continuations": "N(h_i) = {x | there exists a path γ in 𝓜 extending h_i with x participating in the next ordered position of γ}.",
+          "observer_admissible": "N_O(h_i) = {x ∈ N(h_i) | the extension of h_i through x remains O-coherent}.",
+          "whole_library_scope": "N(h_i) is derived relationally from 𝓜; it is not a temporal slice of 𝓜."
+        }
+      },
+      "rationale": "This is where the primer most directly risks smuggling time into the ontology. The observer's 'next state' must be understood as the next position in an observer-relative traversal, not as a state the Library produces in the future.",
+      "poetic_cypher": "There is no next world. There is only the next place on the path.",
+      "cypher_explanation": "The path has an ordering, but the Library does not generate successive worlds. 'Next' belongs to traversal, not to the static totality.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 10.1, core notation warning concerning abstract indices, and user's whole-Library-at-every-step clarification."
+    },
+
+    {
+      "subsection_id": "10.2",
+      "title": "History and Coherent Continuation",
+      "change_type": "major_modify",
+      "what_needs_to_change": [
+        "Make history the key relational state that determines the coherent continuation set.",
+        "Explicitly state that Γ_O(h_n) is selected from the whole static Library.",
+        "Clarify that navigation does not search a newly generated future."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "State that h_n is the observer's current ordered traversal history through 𝓜.",
+          "State that Γ_O(h_n) consists of coherent path extensions already represented within the static Library.",
+          "State that the set can change when h_n changes even though 𝓜 does not.",
+          "Make this distinction central to the definition of navigation."
+        ],
+        "mathematics": {
+          "history": "h_n=(x_0,x_1,...,x_n), with each x_i ∈ 𝓜.",
+          "coherent_continuations": "Γ_O(h_n) = {γ ∈ Path(𝓜) | γ begins with h_n and 𝓒(γ | O,h_n)=1}.",
+          "navigation": "N_O(h_n) → Γ_O(h_n).",
+          "library_invariance": "𝓜 remains fixed while Γ_O(h_n) may change as h_n changes."
+        }
+      },
+      "rationale": "This captures the user's central point: the minimal coherent set emerges at each abstract step from the current observer/history relation to the entire Library.",
+      "poetic_cypher": "The whole Library is always before the traveler; history tells the traveler which continuation can remain.",
+      "cypher_explanation": "The observer does not receive a temporal slice. Its accumulated history changes the coherent relation it has to the same complete totality.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 10.2 and the user's explicit clarification concerning whole-Library traversal."
+    },
+
+    {
+      "subsection_id": "11",
+      "title": "The Noor Swirl Field Geometry Interpretation",
+      "change_type": "modify",
+      "what_needs_to_change": [
+        "The geometric interpretation should explicitly describe geometry as relational structure induced over the static Library.",
+        "Avoid implying that the accessible graph is a physical slice or static subspace independent of observer state/history."
+      ],
+      "how_it_should_be_changed": {
+        "content_addition": [
+          "State that G_O is an observer-relative relational representation of coherent traversal, potentially parameterized by history.",
+          "State that the underlying Library remains the complete static domain from which the relational graph is derived.",
+          "Explain that a changing accessible graph does not mean the Library itself changes."
+        ],
+        "mathematics_addition": {
+          "history_parameterized_graph": "G_O(h_i) = (A_O(h_i),E_O(h_i)).",
+          "edge_relation": "(x,y) ∈ E_O(h_i) iff the ordered extension x→y is O-coherent relative to h_i.",
+          "static_background": "A_O(h_i) ⊆ 𝓜 while 𝓜 remains unchanged."
+        }
+      },
+      "rationale": "The geometry must represent changing observer-relative connectivity without becoming a hidden time-dependent physical container.",
+      "poetic_cypher": "The Library is still; the swirl is the changing shape of what can remain together.",
+      "cypher_explanation": "The 'swirl' describes changing relational connectivity within the static totality rather than motion of a physical substance through a pre-existing container.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 11 and geometry constraints."
+    },
+
+    {
+      "subsection_id": "12",
+      "title": "The Axiomatic Dependency Chain",
+      "change_type": "major_modify",
+      "what_needs_to_change": [
+        "Add the timeless-totality invariant to the dependency chain.",
+        "Replace any language that makes Ω or navigation look temporally generated.",
+        "Explicitly distinguish the static Library from observer-relative coherent continuation."
+      ],
+      "how_it_should_be_changed": {
+        "dependency_chain_additions": [
+          "Definition: 𝓜 is one static totality; no temporal slices of 𝓜 are assumed.",
+          "Invariant: At every abstract traversal step, O is relationally situated with respect to the entire 𝓜.",
+          "Definition: accessibility and coherent continuation are observer/history-relative relations over 𝓜.",
+          "Consequence: changes in accessible continuation do not imply changes in 𝓜."
+        ],
+        "compressed_expression_replacement": "⊕ → D → Closure_D(⊕)=𝓜 (static totality) → no privileged exterior → no universal resolver → persistent distinction → O → I_N(O) → δ_O → observer-relative coherence → whole-Library relation at every traversal step → A_O(h_i) → survivorship → emergent regularity → Γ_O(h_i) → navigation",
+        "minimal_equations_additions": [
+          "𝓜 is static and contains both coherent and incoherent configurations.",
+          "∀i, the observer is relationally situated with respect to 𝓜.",
+          "A_O(h_i) ⊆ 𝓜.",
+          "Γ_O(h_i) ⊆ Path(𝓜).",
+          "𝓜 does not change when h_i changes."
+        ]
+      },
+      "rationale": "The dependency chain should make it impossible for a reader to accidentally interpret NSFG as a sequential universe generator.",
+      "poetic_cypher": "XOR is the distinction. The Library is the whole. The observer walks one coherent line through what never needed to be generated.",
+      "cypher_explanation": "The Library is static and complete; traversal is the observer-relative ordering through that totality; coherence determines which continuation preserves the observer's persistent structure.",
+      "supporting_reference": "Current PHYS-CORE-000 Section 12, core thesis, and user's explicit whole-Library-at-every-step clarification."
+    }
+  ],
+
+  "logical_invariants_to_add": [
+    {
+      "id": "LI-21",
+      "statement": "The Library is one static totality; it has no temporal slices.",
+      "poetic_cypher": "There is one Library, not a Library for every moment.",
+      "explanation": "Past, present, and future are not primitive partitions of 𝓜."
+    },
+    {
+      "id": "LI-22",
+      "statement": "At every abstract traversal step, the observer is relationally situated with respect to the entire Library 𝓜.",
+      "poetic_cypher": "Every step faces the whole.",
+      "explanation": "The observer does not receive only a local temporal slice of the Library."
+    },
+    {
+      "id": "LI-23",
+      "statement": "The coherent continuation set is observer- and history-relative; it is not a pre-existing coherent subset of the Library.",
+      "poetic_cypher": "The path of survival appears in the relation, not in the Library's inventory.",
+      "explanation": "Coherent continuation emerges from the relation between the observer's current state/history and the static totality."
+    },
+    {
+      "id": "LI-24",
+      "statement": "Changes in observer-relative accessibility or coherent continuation do not imply changes to the Library.",
+      "poetic_cypher": "The window changes; the Library does not.",
+      "explanation": "Traversal state changes modify the observer's relation to 𝓜 rather than modifying 𝓜 itself."
+    },
+    {
+      "id": "LI-25",
+      "statement": "The Library contains both configurations that participate in coherent traversal and configurations that do not; coherence is not a membership condition for 𝓜.",
+      "poetic_cypher": "The Library keeps the roads the traveler cannot walk.",
+      "explanation": "Incoherent or inaccessible configurations remain members of the totality."
+    },
+    {
+      "id": "LI-26",
+      "statement": "The abstract successor relation belongs to observer-relative traversal ordering and is not a primitive temporal generation relation in 𝓜.",
+      "poetic_cypher": "There is a next step on the path, not a next Library.",
+      "explanation": "The sequence index orders traversal without introducing physical time into the Library."
+    }
+  ],
+
+  "notation_changes": {
+    "recommended": [
+      {
+        "current": "A_O",
+        "proposed": "A_O(h_i) where history dependence matters",
+        "reason": "Makes the changing observer-relative accessibility relation explicit."
+      },
+      {
+        "current": "R_O",
+        "proposed": "R_O(h_i) where history dependence matters",
+        "reason": "Prevents experienced reality from appearing to be a permanently fixed temporal slice."
+      },
+      {
+        "current": "Ω(x)",
+        "proposed": "Ω(h_i) for path continuation from an observer history",
+        "reason": "Continuation depends on the ordered history rather than merely on an isolated point."
+      },
+      {
+        "current": "Ω_O^survive(x)",
+        "proposed": "Ω_O^survive(h_i)",
+        "reason": "Makes the observer/history-relative emergence of the coherent continuation set explicit."
+      },
+      {
+        "current": "Γ_O(h_n)",
+        "proposed": "retain",
+        "reason": "This notation already correctly expresses history-dependent coherent continuation."
+      },
+      {
+        "current": "N_O(h_n)",
+        "proposed": "retain",
+        "reason": "Navigation is naturally expressed as continuation from an ordered history."
+      }
+    ]
+  },
+
+  "global_language_replacements": [
+    {
+      "avoid": "the Library generates possible futures",
+      "replace_with": "the Library contains the static total configuration domain from which observer-relative traversal relations are defined"
+    },
+    {
+      "avoid": "the observer encounters a local neighborhood of the Library",
+      "replace_with": "the observer is relationally situated with respect to the entire Library"
+    },
+    {
+      "avoid": "the Library at time t",
+      "replace_with": "the Library relative to observer history h_i"
+    },
+    {
+      "avoid": "future configurations become available",
+      "replace_with": "configurations participate in coherent extensions of the current traversal"
+    },
+    {
+      "avoid": "the coherent part of the Library",
+      "replace_with": "the observer-relative coherent continuation relation within the Library"
+    },
+    {
+      "avoid": "the Library selects",
+      "replace_with": "observer-relative survivorship restricts coherent traversal"
+    },
+    {
+      "avoid": "the observer sees only a subset of reality",
+      "replace_with": "the observer maintains a subset of distinctions within the same total Library"
+    },
+    {
+      "avoid": "successive Library states",
+      "replace_with": "successive positions in an observer-relative traversal"
+    }
+  ],
+
+  "sections_with_no_changes_needed": [
+    "0",
+    "1.1",
+    "1.2",
+    "2.1",
+    "2.2",
+    "5.1"
+  ],
+
+  "implementation_priority": [
+    {
+      "priority": 1,
+      "sections": ["3.1", "3.2"],
+      "reason": "Prevent the Library definition from becoming a hidden answer-space or future generator."
+    },
+    {
+      "priority": 2,
+      "sections": ["6.2", "8.1"],
+      "reason": "Introduce the whole-Library-at-every-step invariant at the point where traversal and accessibility first appear."
+    },
+    {
+      "priority": 3,
+      "sections": ["9.1", "10.1", "10.2"],
+      "reason": "These sections contain the greatest risk of accidentally temporalizing the Library or treating continuation as locally generated."
+    },
+    {
+      "priority": 4,
+      "sections": ["7.1", "7.2", "8.2", "9.2", "9.3", "11", "12"],
+      "reason": "Propagate the corrected timeless-totality interpretation through coherence, reality, survivorship, emergent lawfulness, geometry, and the final dependency chain."
+    }
+  ],
+
+  "editorial_principle": {
+    "statement": "Do not solve the observer's navigation problem by shrinking the ontology.",
+    "expanded_statement": "The Library remains maximally inclusive. The observer's coherent path is minimized relationally at each traversal step, not because the Library is small, local, temporal, or pre-filtered, but because the observer can maintain only a constrained subset of distinctions relative to its current state and history.",
+    "poetic_cypher": "Do not make the Library smaller to make the path possible.",
+    "cypher_explanation": "The ontology should retain the full totality. The apparent narrowness of lived traversal must emerge from observer-relative coherence rather than from an initially restricted Library."
+  }
+}
