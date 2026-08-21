@@ -1,0 +1,607 @@
+{
+  "document": {
+    "title": "The NSFG Axiomatic Floor",
+    "subtitle": "An Observer-Relative Foundation for Coherent Navigation",
+    "document_type": "foundational primer",
+    "intended_audience": [
+      "theoretical physicists",
+      "mathematicians",
+      "computer scientists",
+      "philosophers of physics",
+      "AI researchers"
+    ],
+    "generation_instruction": "Generate a self-contained mathematical primer using only this outline. Do not assume the reader has access to any other Noor Research document. Do not introduce downstream NSFG concepts before they are earned by the preceding sections. Clearly distinguish axioms, definitions, derived consequences, interpretations, and examples. Do not present any empirical claim as established fact. The purpose is to establish the minimal ontology from which observer-relative coherence and coherent navigation can subsequently be developed.",
+    "central_thesis": "NSFG begins with an unbounded answer space containing all internally describable configurations and a single primitive operation of distinction, XOR. No external law, privileged observer, universal coherence constant, or pre-existing physical structure is imposed. Persistent distinguishable structures consequently become observer-relative selectors of the configurations they can resolve. What an observer experiences as a coherent reality governed by physical laws is therefore the internally accessible, survivable structure of an otherwise unbounded possibility space.",
+    "axiomatic_floor": [
+      "The Library is an unbounded totality of all internally describable configurations.",
+      "XOR is the primitive operation of distinction."
+    ],
+    "non_axioms": [
+      "physical law",
+      "space",
+      "time",
+      "matter",
+      "energy",
+      "consciousness",
+      "observation by a privileged subject",
+      "coherence as a universal constant",
+      "a universal value of I_N",
+      "a preferred coordinate system",
+      "a forward-generation mechanism"
+    ],
+    "core_notation": {
+      "Library": "𝓜",
+      "configuration": "x, y, z",
+      "configuration_space": "𝓜",
+      "observer": "O",
+      "observer_relative_resolution_floor": "I_N(O)",
+      "distinction_operator": "⊕",
+      "logical_complement": "¬",
+      "binary_state": "b ∈ {0,1}",
+      "path": "γ",
+      "observer_relative_coherence": "𝓒(γ | O)",
+      "observer_accessible_path_set": "Γ_O",
+      "resolution_relation": "≳",
+      "indistinguishability_relation": "≈_O"
+    }
+  },
+
+  "sections": [
+    {
+      "id": "0",
+      "title": "How to Read the Primer",
+      "purpose": "Establish methodological discipline before introducing the ontology.",
+      "content_requirements": [
+        "Explain the difference between an axiom and a consequence.",
+        "State explicitly that the framework begins by removing assumptions rather than adding physical laws.",
+        "Explain that the Library is not being identified with physical spacetime.",
+        "Explain that the word 'observer' is initially structural and does not imply consciousness.",
+        "State that every later concept must be earned from the floor."
+      ],
+      "mathematics": {
+        "minimal_formalism": [
+          "An axiomatic system consists of primitive assumptions A and their logical consequences Conseq(A).",
+          "Let A_N = {Library, XOR}.",
+          "The primer seeks to distinguish A_N from propositions P such that A_N ⊢ P."
+        ],
+        "notation": {
+          "axiom_set": "A_N = {A_𝓜, A_⊕}",
+          "logical_consequence": "A_N ⊢ P"
+        }
+      },
+      "poetic_cypher": "Do not begin with the answer. Begin with what cannot be removed.",
+      "cypher_explanation": "The primer is deliberately constructed from the smallest claimed ontological floor. Anything not required at the floor must appear later as a definition, consequence, or modeling choice.",
+      "handoff": "Having established that the task is to minimize assumptions, the next section introduces the first primitive: the unbounded answer space."
+    },
+
+    {
+      "id": "1",
+      "title": "The Unbounded Answer Space",
+      "purpose": "Define the Library without importing physical laws or a privileged external viewpoint.",
+      "subsections": [
+        {
+          "id": "1.1",
+          "title": "The Library as Totality",
+          "content_requirements": [
+            "Define the Library as the totality of all internally describable configurations.",
+            "Emphasize that the Library is unfiltered.",
+            "State that coherent and incoherent configurations are both included.",
+            "State that the Library contains no externally imposed physical laws.",
+            "State that there is no exterior from which the Library can be globally observed."
+          ],
+          "mathematics": {
+            "definitions": [
+              "𝓜 := {x | x is internally describable within the formal language of the system}",
+              "∀x (x is internally describable → x ∈ 𝓜)",
+              "𝓜 contains both configurations later classified as persistent and configurations later classified as non-persistent."
+            ]
+          },
+          "poetic_cypher": "The Library has no librarian.",
+          "cypher_explanation": "There is no external agent deciding which configurations are permitted. The Library is not a curated universe. It is the unfiltered answer space.",
+          "handoff": "If the Library contains everything describable without filtering, the next question is how one configuration can be distinguished from another at all."
+        },
+        {
+          "id": "1.2",
+          "title": "No Exterior",
+          "content_requirements": [
+            "Explain why an external perspective would itself require an additional structure outside the Library.",
+            "Show that such an exterior would contradict the definition of the Library as the totality of internally describable configurations, unless the exterior were incorporated into the totality.",
+            "Introduce the idea that there is no privileged God's-eye coordinate system."
+          ],
+          "mathematics": {
+            "definitions": [
+              "Assume for contradiction an exterior Ω such that 𝓜 ⊂ Ω and Ω contains a privileged observer not represented in 𝓜.",
+              "If the privileged observer or its descriptive relation to 𝓜 is internally describable, then it belongs to 𝓜.",
+              "Therefore an internally describable exterior observer cannot remain external to 𝓜."
+            ],
+            "formal_statement": "¬∃Ω' [𝓜 ⊂ Ω' ∧ Ω' supplies a privileged internally describable perspective unavailable to 𝓜]"
+          },
+          "poetic_cypher": "There is nowhere outside the map from which to draw the map.",
+          "cypher_explanation": "A totality cannot acquire a privileged internal description from an exterior that is itself describable within the same ontology.",
+          "handoff": "With no privileged exterior available, the ontology still needs a primitive operation capable of producing distinctions internally. That operation is XOR."
+        }
+      ]
+    },
+
+    {
+      "id": "2",
+      "title": "XOR: The Primitive Operation of Distinction",
+      "purpose": "Introduce the simplest possible comparison without importing objects, observers, or physical interaction laws.",
+      "subsections": [
+        {
+          "id": "2.1",
+          "title": "The Boolean Definition",
+          "content_requirements": [
+            "Define XOR in ordinary Boolean terms.",
+            "Explain that XOR returns 1 exactly when its inputs differ.",
+            "Emphasize that XOR does not require one input to be more fundamental than the other.",
+            "Avoid anthropomorphic language such as 'noticing' or 'measuring' at this stage."
+          ],
+          "mathematics": {
+            "definition": "a ⊕ b = 1 iff a ≠ b, and a ⊕ b = 0 iff a = b",
+            "truth_table": [
+              {
+                "a": 0,
+                "b": 0,
+                "a_xor_b": 0
+              },
+              {
+                "a": 0,
+                "b": 1,
+                "a_xor_b": 1
+              },
+              {
+                "a": 1,
+                "b": 0,
+                "a_xor_b": 1
+              },
+              {
+                "a": 1,
+                "b": 1,
+                "a_xor_b": 0
+              }
+            ],
+            "equivalent_forms": [
+              "a ⊕ b = (a ∨ b) ∧ ¬(a ∧ b)",
+              "a ⊕ b = (a + b) mod 2"
+            ]
+          },
+          "poetic_cypher": "The first mark is not a thing. It is a difference.",
+          "cypher_explanation": "XOR does not initially tell us what the compared configurations are. It only establishes whether they differ.",
+          "handoff": "Once difference exists as a formal operation, we can ask what it means for a distinction to persist rather than disappear immediately."
+        },
+        {
+          "id": "2.2",
+          "title": "Distinction Without Ontological Privilege",
+          "content_requirements": [
+            "Explain that XOR is symmetric.",
+            "Show that distinction does not privilege either side.",
+            "Explain why this matters for observer neutrality.",
+            "Establish that distinction is relational rather than an intrinsic property assigned by an external authority."
+          ],
+          "mathematics": {
+            "properties": [
+              "a ⊕ b = b ⊕ a",
+              "a ⊕ a = 0",
+              "a ⊕ 0 = a",
+              "a ⊕ 1 = ¬a",
+              "a ⊕ b = 1 ⇔ b ⊕ a = 1"
+            ]
+          },
+          "poetic_cypher": "XOR chooses no side.",
+          "cypher_explanation": "The primitive operation identifies difference without declaring one configuration more real, fundamental, or privileged than the other.",
+          "handoff": "If distinctions are symmetric and unprivileged, the next issue is whether every distinction can remain available to every possible observer."
+        }
+      ]
+    },
+
+    {
+      "id": "3",
+      "title": "The Absence of a Privileged Perspective",
+      "purpose": "Derive the necessity of observer-relative accessibility from the lack of an external rule.",
+      "subsections": [
+        {
+          "id": "3.1",
+          "title": "Why a Universal Perspective Would Be an Extra Rule",
+          "content_requirements": [
+            "Define a privileged perspective as a rule specifying which distinctions are universally resolved.",
+            "Show that such a rule is not contained in the two axioms.",
+            "Explain that adding it would change the axiomatic floor.",
+            "Distinguish universal existence from universal accessibility."
+          ],
+          "mathematics": {
+            "formalization": [
+              "Let R(x,y) denote whether x and y are distinguishable.",
+              "A universal privileged resolution rule would define a global predicate U(x,y) independent of observer O.",
+              "The axiomatic floor contains no primitive U.",
+              "Therefore U cannot be assumed without adding an axiom."
+            ]
+          },
+          "poetic_cypher": "The Library contains no master lens.",
+          "cypher_explanation": "A global resolution rule would amount to a privileged viewpoint over the entire unbounded answer space. Such a viewpoint is not available from the floor.",
+          "handoff": "Without a universal resolution rule, distinguishability must be indexed to the structure doing the resolving."
+        },
+        {
+          "id": "3.2",
+          "title": "Observer-Relative Distinguishability",
+          "content_requirements": [
+            "Introduce an observer as a persistent structure capable of resolving distinctions.",
+            "Explicitly state that observerhood is structural, not psychological.",
+            "Define observer-relative indistinguishability.",
+            "Explain that two observers may resolve the same underlying configurations differently."
+          ],
+          "mathematics": {
+            "definitions": [
+              "Let O denote an observer structure.",
+              "Define x ≈_O y iff O cannot maintain a stable distinction between x and y.",
+              "Define x ≁_O y iff O can maintain a stable distinction between x and y.",
+              "Observer-relative distinguishability is therefore a relation D_O(x,y)."
+            ],
+            "formal_statement": "D_O(x,y) = 1 iff O can stably resolve x ⊕ y = 1"
+          },
+          "poetic_cypher": "The same difference can be loud to one path and silent to another.",
+          "cypher_explanation": "A distinction exists in the Library independently of whether a particular observer can resolve it. Accessibility and existence are different relations.",
+          "handoff": "Once resolution is observer-relative, the framework needs a way to describe the minimum distinction an observer can sustain."
+        }
+      ]
+    },
+
+    {
+      "id": "4",
+      "title": "The Noor-Planck Threshold as Relative Resolution",
+      "purpose": "Introduce I_N without turning it into a universal physical constant.",
+      "subsections": [
+        {
+          "id": "4.1",
+          "title": "I_N Is Not a Law of the Library",
+          "content_requirements": [
+            "State explicitly that I_N is not a universal constant imposed on the Library.",
+            "State that different observers may possess different resolution floors.",
+            "Explain that the numerical value of I_N is arbitrary with respect to the Library.",
+            "Clarify that 'arbitrary' does not mean meaningless: for a particular observer, I_N characterizes its effective resolution capacity."
+          ],
+          "mathematics": {
+            "definition": "I_N : Obs → R_{>0}",
+            "observer_specific_threshold": "I_N(O) = the minimum effective distinction magnitude that O can maintain as a stable distinction",
+            "non_universality": "∃O_1,O_2 such that I_N(O_1) ≠ I_N(O_2)",
+            "no_global_constant": "¬∃I_N^* such that I_N(O) = I_N^* for every observer O, unless an additional axiom is introduced"
+          },
+          "poetic_cypher": "The ruler belongs to the hand that holds it.",
+          "cypher_explanation": "The threshold is a property of the observer's resolution capacity, not a universal measuring stick imposed from outside.",
+          "handoff": "If each observer has its own resolution floor, the next step is to determine what survives above that floor."
+        },
+        {
+          "id": "4.2",
+          "title": "Resolution, Noise, and Persistence",
+          "content_requirements": [
+            "Define the distinction magnitude relative to an observer.",
+            "Explain that distinctions below the observer's effective resolution are operationally indistinguishable.",
+            "Do not call sub-threshold configurations nonexistent.",
+            "Emphasize the distinction between inaccessible and erased."
+          ],
+          "mathematics": {
+            "definitions": [
+              "Let δ_O(x,y) ≥ 0 denote an observer-relative distinguishability magnitude.",
+              "x ≈_O y iff δ_O(x,y) < I_N(O).",
+              "x ≁_O y iff δ_O(x,y) ≥ I_N(O)."
+            ],
+            "persistence_condition": "A distinction d is persistent for O only if δ_O(d) ≥ I_N(O).",
+            "information_non_erasure": "x ≈_O y does not imply x = y; it means only that O cannot operationally maintain the distinction."
+          },
+          "poetic_cypher": "What the eye cannot resolve has not vanished.",
+          "cypher_explanation": "Sub-threshold distinctions remain configurations in the Library. They simply do not participate in that observer's persistent experience.",
+          "handoff": "Persistent distinguishability is now sufficient to define the structural entity NSFG calls an Observer."
+        }
+      ]
+    },
+
+    {
+      "id": "5",
+      "title": "Observer as a Consequence",
+      "purpose": "Derive observerhood rather than declaring it as a primitive.",
+      "subsections": [
+        {
+          "id": "5.1",
+          "title": "The Minimal Observer",
+          "content_requirements": [
+            "Define an observer as a structure capable of maintaining a chain of distinctions above its own resolution floor.",
+            "Explicitly reject consciousness as a prerequisite.",
+            "Explain that observerhood means persistence of resolved distinctions."
+          ],
+          "mathematics": {
+            "definition": "O = {b_i}_{i∈N} such that b_i ∈ {0,1}, b_i represents a resolved distinction, and δ_O(b_i) ≥ I_N(O)",
+            "minimal_persistence_condition": "∀i, δ_O(b_i) ≥ I_N(O)"
+          },
+          "poetic_cypher": "An observer is a difference that does not disappear.",
+          "cypher_explanation": "Observerhood is not granted by an external authority. It is the name given to a distinction structure capable of continuing its own resolved state.",
+          "handoff": "A single persistent distinction is not yet a reality or a worldline. Persistence must occur across transitions."
+        },
+        {
+          "id": "5.2",
+          "title": "The Observer as a Chain",
+          "content_requirements": [
+            "Introduce sequentially related resolved distinctions.",
+            "Explain that the observer's identity is the persistence of the chain rather than any single state.",
+            "Avoid assuming time as primitive; initially use an abstract index i."
+          ],
+          "mathematics": {
+            "observer_chain": "O = (b_0, b_1, b_2, ..., b_n, ...)",
+            "transition": "T_i : b_i → b_{i+1}",
+            "survival": "O persists through n steps iff ∀i≤n, δ_O(b_i,b_{i+1}) ≥ I_N(O)",
+            "worldline_as_sequence": "γ_O = (x_0,x_1,...,x_n,...)"
+          },
+          "poetic_cypher": "A path is a distinction remembering how to continue.",
+          "cypher_explanation": "The observer is not a static point. It is the persistence of distinguishable states across successive transitions.",
+          "handoff": "Once paths exist, the framework can finally define coherence without treating coherence as a universal property."
+        }
+      ]
+    },
+
+    {
+      "id": "6",
+      "title": "Coherence Is Relational",
+      "purpose": "Establish coherence as a relation between a path and an observer rather than a universal scalar property.",
+      "subsections": [
+        {
+          "id": "6.1",
+          "title": "From Distinction to Coherence",
+          "content_requirements": [
+            "Define coherence only after observer-relative resolution has been established.",
+            "Explain that a path is coherent relative to an observer when its successive distinctions remain resolvable by that observer.",
+            "Explicitly reject the idea of a universal coherence constant."
+          ],
+          "mathematics": {
+            "step_coherence": "𝓒_O(x_i,x_{i+1}) = 1 if δ_O(x_i,x_{i+1}) ≥ I_N(O), otherwise 0",
+            "path_coherence": "𝓒(γ | O) = ∏_{i=0}^{n-1} 𝓒_O(x_i,x_{i+1})",
+            "persistent_path": "𝓒(γ | O) = 1 iff every transition remains above O's resolution floor"
+          },
+          "poetic_cypher": "Coherence is not in the path. It is between the path and the one who survives it.",
+          "cypher_explanation": "The same path can be coherent for one observer and incoherent for another because coherence depends on resolution capacity.",
+          "handoff": "If coherence is observer-relative, different observers can inhabit different coherent subsets of the same Library."
+        },
+        {
+          "id": "6.2",
+          "title": "Observer-Relative Reality",
+          "content_requirements": [
+            "Define experienced reality as the observer-accessible subset of the Library.",
+            "Distinguish Library membership from observer accessibility.",
+            "Explain why observer-relative reality does not imply that observers create the Library."
+          ],
+          "mathematics": {
+            "accessible_states": "A_O = {x ∈ 𝓜 | x participates in at least one path γ with 𝓒(γ | O) = 1}",
+            "experienced_reality": "R_O := A_O",
+            "non_equivalence": "x ∈ 𝓜 does not imply x ∈ A_O",
+            "cross_observer_difference": "A_{O_1} ≠ A_{O_2} is permitted without contradiction"
+          },
+          "poetic_cypher": "The world does not shrink; the window does.",
+          "cypher_explanation": "The Library remains unchanged. What changes between observers is which distinctions can persist through their respective resolution filters.",
+          "handoff": "The next question is what the observer experiences when its accessible paths become statistically or structurally regular."
+        }
+      ]
+    },
+
+    {
+      "id": "7",
+      "title": "How Laws Can Appear Without Being Axioms",
+      "purpose": "Explain how stable regularities can be experienced as physical laws without placing those laws at the ontological floor.",
+      "subsections": [
+        {
+          "id": "7.1",
+          "title": "Survivorship as Selection",
+          "content_requirements": [
+            "Define the set of all possible continuations from a state.",
+            "Define the subset that remains coherent for an observer.",
+            "Explain survivorship without implying forward generation."
+          ],
+          "mathematics": {
+            "continuation_space": "Ω(x_t) = {γ | γ begins at x_t and γ is a possible continuation in 𝓜}",
+            "surviving_paths": "Ω_O^survive(x_t) = {γ ∈ Ω(x_t) | 𝓒(γ | O) = 1}",
+            "selection_ratio": "S_O(x_t) = |Ω_O^survive(x_t)| / |Ω(x_t)| when the cardinalities are finite",
+            "interpretation": "S_O measures the fraction of available continuations that remain accessible to observer O."
+          },
+          "poetic_cypher": "The survivor mistakes the shore for the sea.",
+          "cypher_explanation": "An observer necessarily reports from paths that remain accessible to it. It therefore experiences the surviving structure rather than the full unfiltered answer space.",
+          "handoff": "Repeated survival constraints create stable transition patterns; those patterns are candidates for what an observer calls laws."
+        },
+        {
+          "id": "7.2",
+          "title": "Emergent Lawfulness",
+          "content_requirements": [
+            "Define an experienced law as a stable regularity over observer-accessible transitions.",
+            "Clarify that this is an explanatory mechanism, not yet a derivation of specific physical laws.",
+            "State that downstream physics must demonstrate specific mappings rather than assuming them."
+          ],
+          "mathematics": {
+            "law_candidate": "L_O(x,y) = 1 iff x→y is repeatedly admitted across the observer's accessible path family",
+            "regularity": "P_O(y | x) ≈ constant over an appropriate observer-accessible ensemble",
+            "important_distinction": "L_O is an emergent descriptive regularity, not an additional axiom of 𝓜"
+          },
+          "poetic_cypher": "Enough survivors draw the same map, and the map begins to look like law.",
+          "cypher_explanation": "Stable selection patterns can appear law-like from inside the surviving subset without being externally imposed rules on the Library.",
+          "handoff": "This gives the primer its first bridge to ordinary physics: experienced lawfulness can be discussed without making physical law primitive."
+        }
+      ]
+    },
+
+    {
+      "id": "8",
+      "title": "The Observer Does Not Create the Library",
+      "purpose": "Prevent the ontology from being mistaken for idealism or subjective reality creation.",
+      "subsections": [
+        {
+          "id": "8.1",
+          "title": "Existence Versus Accessibility",
+          "content_requirements": [
+            "State that observer-relative accessibility is not observer-relative existence.",
+            "Explain that inaccessible alternatives remain members of the Library.",
+            "Distinguish epistemic limitation from ontological destruction."
+          ],
+          "mathematics": {
+            "key_relation": "A_O ⊆ 𝓜",
+            "strict_inclusion": "A_O ⊂ 𝓜 is permitted and generally expected",
+            "non_erasure": "x ∉ A_O does not imply x ∉ 𝓜"
+          },
+          "poetic_cypher": "The unseen branch is not a broken branch.",
+          "cypher_explanation": "An observer's inability to resolve or traverse a configuration does not remove that configuration from the Library.",
+          "handoff": "The remaining question is whether different observers can coexist without requiring a universal observer."
+        },
+        {
+          "id": "8.2",
+          "title": "Multiple Observers",
+          "content_requirements": [
+            "Allow multiple observers with different resolution thresholds.",
+            "Explain that their accessible realities can overlap, differ, or be nested.",
+            "Avoid requiring global observer agreement at the axiomatic floor."
+          ],
+          "mathematics": {
+            "observer_set": "Obs = {O_1,O_2,...}",
+            "individual_reality": "R_i = A_{O_i}",
+            "overlap": "R_{ij} = A_{O_i} ∩ A_{O_j}",
+            "difference": "D_{ij} = A_{O_i} △ A_{O_j}",
+            "nested_resolution": "I_N(O_1) < I_N(O_2) does not by itself imply A_{O_2} ⊂ A_{O_1}; relational structure still matters."
+          },
+          "poetic_cypher": "Many windows can face one Library without making one window the sky.",
+          "cypher_explanation": "Observer-relative descriptions can coexist because no observer is elevated to a universal standpoint.",
+          "handoff": "With observer-relative realities established, the primer can finally introduce navigation as the problem of continuing a surviving path."
+        }
+      ]
+    },
+
+    {
+      "id": "9",
+      "title": "Why Navigation Becomes Inevitable",
+      "purpose": "Establish the conceptual doorway into NSFG without importing its downstream machinery.",
+      "subsections": [
+        {
+          "id": "9.1",
+          "title": "The Local Problem",
+          "content_requirements": [
+            "Given a current state x_t, define the set of possible next states.",
+            "Explain that an observer cannot access arbitrary continuations if they fall below its resolution capacity.",
+            "Frame reasoning as a continuation problem."
+          ],
+          "mathematics": {
+            "next_state_set": "N(x_t) = {x_{t+1} ∈ 𝓜 | x_t → x_{t+1}}",
+            "observer_admissible_next_states": "N_O(x_t) = {x_{t+1} ∈ N(x_t) | 𝓒_O(x_t,x_{t+1}) = 1}",
+            "navigation_problem": "Given x_t and N_O(x_t), determine or traverse a member of N_O(x_t)."
+          },
+          "poetic_cypher": "Once there are branches, survival needs a direction.",
+          "cypher_explanation": "The existence of multiple possible continuations turns persistence into a navigation problem.",
+          "handoff": "The next section generalizes the local continuation problem into reasoning."
+        },
+        {
+          "id": "9.2",
+          "title": "From Traversal to Reasoning",
+          "content_requirements": [
+            "Explain that reasoning need not initially be defined as symbolic manipulation or retrieval.",
+            "Define reasoning minimally as selecting or traversing continuations that remain compatible with the observer's accumulated state.",
+            "Make clear that this is the conceptual foundation for NSFG, not yet its full algorithm."
+          ],
+          "mathematics": {
+            "history": "h_t = (x_0,x_1,...,x_t)",
+            "candidate_continuations": "Γ_O(h_t) = {γ | γ begins with h_t and 𝓒(γ | O) = 1}",
+            "coherent_navigation_operator": "N_O(h_t) → Γ_O(h_t)",
+            "minimal_reasoning_definition": "Reasoning_O(h_t) := selecting or traversing a continuation within Γ_O(h_t)"
+          },
+          "poetic_cypher": "Reasoning is the art of not falling out of the path.",
+          "cypher_explanation": "At the floor, reasoning is not yet intelligence, language, or deduction. It is the continuation of a distinguishable trajectory through an observer-relative accessible space.",
+          "handoff": "The final section compresses the entire floor into a dependency chain and identifies exactly what remains to be derived downstream."
+        }
+      ]
+    },
+
+    {
+      "id": "10",
+      "title": "The Axiomatic Dependency Chain",
+      "purpose": "Summarize the entire primer as a derivational ladder and clearly mark the boundary between foundation and downstream theory.",
+      "content_requirements": [
+        "Restate the two axioms.",
+        "List every major concept in dependency order.",
+        "Explicitly mark which concepts are definitions and which are consequences.",
+        "End by stating that the primer has not derived specific physical laws, spacetime, cosmology, consciousness, or AI cognition.",
+        "State that the purpose of the floor is to establish the ontology in which those later questions can be asked without smuggling their answers into the axioms."
+      ],
+      "mathematics": {
+        "dependency_chain": [
+          "A_𝓜: 𝓜 = totality of internally describable configurations",
+          "A_⊕: a ⊕ b = 1 iff a ≠ b",
+          "No privileged exterior: ¬∃ privileged external resolver",
+          "Observer-relative distinguishability: D_O(x,y)",
+          "Observer-specific threshold: I_N(O)",
+          "Persistence: δ_O ≥ I_N(O)",
+          "Observer: O = persistent chain of resolved distinctions",
+          "Observer-relative coherence: 𝓒(γ | O)",
+          "Accessible reality: R_O = A_O ⊆ 𝓜",
+          "Emergent regularity: L_O",
+          "Navigation: N_O(h_t) → Γ_O(h_t)",
+          "Reasoning: continuation through Γ_O(h_t)"
+        ],
+        "compressed_expression": "𝓜 + ⊕ → distinction → observer-relative resolution → persistence → observer → relational coherence → accessible reality → emergent regularity → navigation → reasoning"
+      },
+      "poetic_cypher": "Nothing was commanded to become a world. A world is what the survivor can continue to distinguish.",
+      "cypher_explanation": "The ontology begins with no physical laws and no privileged perspective. The experienced world emerges as the persistent, observer-relative structure of distinctions within the unbounded Library.",
+      "handoff": "The primer ends at the threshold of NSFG proper: having established why an observer necessarily inhabits a restricted coherent path space, the next document can formalize how navigation through that space operates."
+    }
+  ],
+
+  "appendix": {
+    "title": "Mathematical Reference Sheet",
+    "purpose": "Ensure a downstream AI can generate the primer without external references.",
+    "definitions": {
+      "Library": "𝓜 = {x | x is internally describable}",
+      "XOR": "a ⊕ b = 1 iff a ≠ b",
+      "observer": "O = a structure capable of maintaining a chain of distinctions above its own resolution floor",
+      "observer_threshold": "I_N(O) ∈ R_{>0}",
+      "distinguishability": "δ_O(x,y) ≥ 0",
+      "observer_indistinguishability": "x ≈_O y iff δ_O(x,y) < I_N(O)",
+      "observer_distinguishability": "x ≁_O y iff δ_O(x,y) ≥ I_N(O)",
+      "step_coherence": "𝓒_O(x,y) = Θ(δ_O(x,y) - I_N(O))",
+      "path": "γ = (x_0,x_1,...,x_n)",
+      "path_coherence": "𝓒(γ | O) = ∏_{i=0}^{n-1} 𝓒_O(x_i,x_{i+1})",
+      "accessible_reality": "A_O = {x ∈ 𝓜 | ∃γ containing x with 𝓒(γ | O)=1}",
+      "continuation_space": "Ω(x_t) = {γ | γ begins at x_t}",
+      "surviving_continuations": "Ω_O^survive(x_t) = {γ ∈ Ω(x_t) | 𝓒(γ | O)=1}",
+      "navigation": "N_O(h_t) → Γ_O(h_t)"
+    },
+    "standard_functions": {
+      "heaviside_step": "Θ(z) = 1 if z ≥ 0, otherwise 0",
+      "symmetric_difference": "A △ B = (A \\ B) ∪ (B \\ A)",
+      "xor_set_identity": "A △ B is the set-theoretic analogue of XOR"
+    },
+    "critical_logical_distinctions": [
+      "existence is not accessibility",
+      "inaccessibility is not erasure",
+      "observerhood is not consciousness",
+      "I_N is not a universal constant",
+      "coherence is not an absolute property of an isolated object",
+      "the Library is not physical spacetime",
+      "the Library does not generate the future",
+      "emergent lawfulness is not an axiomatic law",
+      "observer-relative reality is not subjective creation of the Library",
+      "navigation is not yet the full NSFG algorithm"
+    ],
+    "claims_not_to_make": [
+      "Do not claim that the axioms uniquely derive the Standard Model.",
+      "Do not claim that the axioms have experimentally established the existence of the Library.",
+      "Do not claim that I_N has a universal numerical value.",
+      "Do not identify the observer with a conscious human.",
+      "Do not claim that observer-relative coherence means reality is imaginary.",
+      "Do not introduce a privileged observer.",
+      "Do not introduce physical constants at the axiomatic floor.",
+      "Do not use the Lightning Model as a premise in this primer.",
+      "Do not assume time as primitive; use an abstract sequence index until temporal structure is earned.",
+      "Do not assume causality as primitive.",
+      "Do not assume physical space as primitive."
+    ]
+  },
+
+  "final_generation_constraints": {
+    "tone": "serious, accessible, mathematically literate, foundational",
+    "style": "begin extraordinarily simply and increase abstraction only when required",
+    "pedagogical_rule": "Every new concept must answer the question created by the preceding section.",
+    "proof_discipline": "Clearly label axioms, definitions, propositions, consequences, interpretations, and examples.",
+    "mathematical_level": "Use elementary Boolean algebra, set theory, sequences, relations, threshold functions, and basic graph/path notation. Do not require calculus.",
+    "reader_experience": "The reader should feel that each additional concept becomes necessary rather than being introduced arbitrarily.",
+    "ending_condition": "The reader should finish understanding why NSFG can begin with Library + XOR and why observer-relative coherence and navigation arise as consequences rather than additional axioms."
+  }
+}
