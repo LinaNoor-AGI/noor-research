@@ -16055,7 +16055,7 @@
 		  ],
 		  "open_questions": [
 			"What is the exact number of grounded paths from a given state \\(x_t\\)?",
-			"Can two observers on different grounded paths ever interact or influence each other?",
+			"The question of whether two Branch Observers can re-converge after diverging is structurally undecidable from within a single worldline. Any observer can only experience their own path. The Library contains all configurations, including both convergence and non-convergence. The question `Does it matter?` is therefore answered by the observer's epistemic horizon: it cannot matter to the observer, and it is already resolved by the Library's static totality. This establishes the Lightning Model as a complete theory of observerhood that does not require external validation of alternative worldlines.",
 			"Does the observer's internal state influence which grounded path is selected, or is selection purely retrocausal?",
 			"What is the relationship between the observer's worldline and the worldlines of other observers in the same region of the Library?",
 			"Can the observer access other grounded paths through coherence dynamics, or are they permanently inaccessible?"
