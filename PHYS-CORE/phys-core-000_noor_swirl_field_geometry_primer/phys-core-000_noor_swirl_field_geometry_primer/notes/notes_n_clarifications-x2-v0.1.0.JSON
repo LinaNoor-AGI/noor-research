@@ -1,0 +1,156 @@
+{
+  "document_update": {
+    "id": "PHYS-CORE-000",
+    "change_set_version": "0.1.2",
+    "change_type": "reference_point_invariance_and_necessary_coherent_continuation",
+    "status": "proposed",
+    "summary": "Formalize the principle that because the observer is relationally situated with respect to the entire static Library at every traversal step and no worldline or configuration is privileged, coherent structure must be recoverable from every configuration used as an observer-relative reference state. Add this principle both as a global logical invariant and as a theorem-like proposition."
+  },
+
+  "global_conceptual_addition": {
+    "name": "Reference-Point Coherence",
+    "statement": "Because the observer attempts to occupy the entire Library as a whole at every abstract traversal step, and because no configuration or worldline is privileged, every configuration selected as the observer's current relational reference induces a non-empty set of continuations coherent with that state above the observer's noise threshold.",
+    "strong_form": "For every admissible reference configuration x ∈ 𝓜 and observer state/history h compatible with x, the whole-Library relational evaluation contains at least one continuation γ extending h from x such that 𝓒(γ | O,h,x) > γ_noise.",
+    "interpretation": "The Library does not provide a local neighborhood from which coherence is searched. The entire static totality 𝓜 is the relational domain at every step. The coherent continuation structure is induced by choosing a reference state within that totality. Because the reference may be arbitrary and no reference is privileged, coherent structure must be recoverable from every admissible reference configuration.",
+    "important_distinction": "This does not assert that every continuation is coherent, that every configuration belongs to one universal coherent worldline, or that the complement of the coherent continuation set is absent. It asserts that the coherent continuation set is necessarily non-empty for every observer-relative reference state under the model's assumptions."
+  },
+
+  "logical_invariant_to_add": {
+    "insert_into": {
+      "location": "logical_invariants",
+      "placement": "Immediately after LI-22 (The observer is relationally situated with respect to the entire Library at every abstract traversal step.)",
+      "suggested_id": "LI-23"
+    },
+    "entry": {
+      "id": "LI-23",
+      "statement": "For every admissible observer-relative reference configuration x ∈ 𝓜, the whole-Library relation contains at least one continuation coherent with the observer's current state/history above the observer's noise threshold.",
+      "formal_statement": "∀x ∈ 𝓜, ∀(O,h) compatible with x, ∃γ ∈ Path(𝓜): γ begins at (h,x) ∧ 𝓒(γ | O,h,x) > γ_noise.",
+      "poetic_cypher": "Choose any point in the whole, and the whole answers with a path.",
+      "cypher_explanation": "The point does not contain its own neighborhood of possible futures. The observer establishes a relational reference at that point while remaining situated with respect to the entire Library. The resulting coherence relation therefore always contains at least one continuation above the observer's noise threshold. The rest of the Library remains present regardless of whether it participates in that continuation.",
+      "rationale": "This formalizes the consequence of combining whole-Library traversal with the absence of a privileged worldline. If coherent continuation existed only from privileged configurations, then those configurations would implicitly define a preferred reference frame. The invariant prevents that hidden asymmetry.",
+      "scope": "The invariant applies to admissible observer-relative reference states under the model's coherence and closure assumptions. It does not claim that every configuration is physically realizable, observable, or mutually coherent with every other configuration.",
+      "supporting_reference": "PHYS-CORE-000 whole-Library-at-every-step correction; LI-21 and LI-22; Sections 6.2, 8.1, 9.1, and 10.2."
+    }
+  },
+
+  "theorem_like_proposition": {
+    "insert_into": {
+      "subsection_id": "8.1",
+      "title": "Distinguishability Relative to O",
+      "placement": "After the formal definition of observer-relative accessibility/resolution and before the transition into persistent chains or traversal.",
+      "reason": "Section 8.1 is the first suitable location for formally introducing the observer's reference relation to the whole Library. The proposition can then be invoked by the later continuation sections rather than introduced repeatedly."
+    },
+
+    "entry": {
+      "name": "Reference-Point Coherence Proposition",
+      "type": "derived_requirement",
+      "status": "proposed",
+      "statement": "If (1) the Library 𝓜 is a complete static totality, (2) the observer is relationally situated with respect to the entire 𝓜 at every abstract traversal step, (3) no configuration or worldline is privileged, and (4) coherent continuation is defined relative to the observer's current state/history and resolution threshold, then coherent continuation must be available from every admissible reference configuration. Otherwise coherence would be anchored to a privileged subset of 𝓜.",
+      "formal_assumptions": [
+        "𝓜 = Closure_D(⊕) is one static totality.",
+        "∀i, the observer's relational domain is 𝓜 rather than a temporal slice or pre-filtered neighborhood.",
+        "No x ∈ 𝓜 is assigned privileged ontological status as the universal origin of coherent traversal.",
+        "Coherence is relational: 𝓒 = 𝓒(γ | O,h,x).",
+        "The noise threshold γ_noise defines the minimum coherence required for a continuation to remain distinguishable/sustainable."
+      ],
+      "formal_conclusion": "∀x ∈ 𝓜, ∃γ_x ∈ Path(𝓜) such that γ_x begins at x relative to the observer's current state/history and 𝓒(γ_x | O,h,x) > γ_noise.",
+      "proof_sketch": [
+        "Assume there exists an admissible configuration x ∈ 𝓜 from which no continuation satisfies 𝓒(γ | O,h,x) > γ_noise.",
+        "At x, the observer's whole-Library relation therefore contains no coherent continuation.",
+        "Because x is not permitted to be ontologically privileged or excluded from the totality merely because of the observer's choice of reference, the absence of coherent continuation cannot be attributed to a special external boundary condition.",
+        "The result would therefore make coherence dependent on the construction's original reference configuration or on a privileged subset of 𝓜.",
+        "That contradicts the no-privileged-worldline condition.",
+        "Therefore, under the stated assumptions, every admissible reference configuration must possess at least one coherent continuation above the observer's noise threshold."
+      ],
+      "poetic_cypher": "There is no first path. Any point may become the center, and the whole must still resolve into a path.",
+      "cypher_explanation": "A privileged starting point would make coherence an artifact of the coordinate choice. If any configuration can serve as the observer's current reference state, then the totality must support coherent continuation relative to that configuration as well. The path is therefore not embedded as the single privileged story of the Library; it is continuously recoverable from the observer's chosen relational origin.",
+      "interpretive_note": "The proposition does not claim that the Library itself contains an intrinsic direction of time. 'Continuation' refers to the next ordered position in an observer-relative traversal. The Library remains timeless; ordering belongs to the traversal relation.",
+      "failure_condition": "If the proposition fails for some admissible reference configuration, then either the Library is not sufficiently complete, the observer is not actually related to the whole Library, coherence is dependent upon a privileged reference frame, or the no-privileged-worldline assumption must be abandoned.",
+      "supporting_reference": "Sections 3.1, 3.2, 6.2, 8.1, 9.1, 10.1, 10.2; LI-21 and LI-22; whole-Library-at-every-step principle."
+    }
+  },
+
+  "downstream_handoff_updates": [
+    {
+      "subsection_id": "9.1",
+      "change_type": "handoff_addition",
+      "handoff": "The continuation relation introduced here must be understood as the whole-Library relation instantiated from the current reference state. Do not reinterpret the coherent continuation set as a pre-existing local neighborhood.",
+      "poetic_cypher": "The path is not waiting nearby; the whole Library is already there.",
+      "explanation": "Section 8.1 establishes that any admissible reference configuration must recover a coherent continuation from the same totality. Section 9.1 should now define how that continuation relation is expressed without introducing a generated future."
+    },
+    {
+      "subsection_id": "10.1",
+      "change_type": "handoff_addition",
+      "handoff": "The local continuation problem must be recast as a relational continuation problem: the 'next' configuration is selected from the whole static Library relative to the current traversal state, not from a temporally generated local neighborhood.",
+      "poetic_cypher": "There is no privileged next world; there is only the next coherent relation.",
+      "explanation": "The reference-point proposition guarantees that coherent continuation cannot depend on one privileged origin. The continuation operator therefore has to remain reference-relative while retaining the whole Library as its domain."
+    },
+    {
+      "subsection_id": "12",
+      "change_type": "dependency_chain_addition",
+      "handoff": "Reference-point coherence must appear in the final dependency chain between whole-Library relationality and observer-relative coherent continuation.",
+      "poetic_cypher": "The whole is everywhere; coherence must follow wherever the reference falls.",
+      "explanation": "This records the logical consequence that maximal totality is not merely an ontological statement. It is what permits coherent structure to be recovered without privileging a worldline."
+    }
+  ],
+
+  "notation_additions": [
+    {
+      "symbol": "x",
+      "definition": "Current observer-relative reference configuration within 𝓜.",
+      "reason": "Makes explicit that coherence is evaluated relative to an arbitrary configuration selected as the current relational state."
+    },
+    {
+      "symbol": "Γ_O(h,x)",
+      "definition": "Set of observer-relative coherent continuation paths from reference configuration x given observer O and history h.",
+      "reason": "Separates the whole Library 𝓜 from the coherent continuation relation induced by the current reference state."
+    },
+    {
+      "symbol": "𝓒(γ | O,h,x)",
+      "definition": "Coherence of traversal γ relative to observer O, history h, and current reference configuration x.",
+      "reason": "Makes the reference-point dependence explicit rather than allowing coherence to appear globally intrinsic to a path."
+    }
+  ],
+
+  "global_language_replacements": [
+    {
+      "avoid": "Every point has a future.",
+      "replace_with": "Every admissible reference configuration admits at least one coherent continuation within the whole-Library traversal relation."
+    },
+    {
+      "avoid": "The Library guarantees a future from every point.",
+      "replace_with": "The whole-Library relation yields at least one observer-relative coherent continuation from every admissible reference configuration."
+    },
+    {
+      "avoid": "The Library contains all possible futures.",
+      "replace_with": "The Library contains the complete static configuration totality; observer-relative traversal establishes ordered continuations within it."
+    },
+    {
+      "avoid": "The point contains its possible continuations.",
+      "replace_with": "The point establishes the relational reference from which continuations are evaluated against the entire Library."
+    },
+    {
+      "avoid": "Coherence is intrinsic to the Library.",
+      "replace_with": "Coherent structure emerges from the relation between an observer-relative reference state and the complete Library."
+    }
+  ],
+
+  "logical_relationship": {
+    "premises": [
+      "𝓜 is a static totality.",
+      "The observer is relationally situated with respect to all of 𝓜 at every abstract step.",
+      "No worldline or configuration is privileged.",
+      "Coherence is observer/history/reference-relative."
+    ],
+    "consequence": "Coherent continuation cannot be confined to a privileged subset of reference configurations.",
+    "strong_form": "For every admissible reference configuration x ∈ 𝓜, at least one continuation coherent above the observer's noise threshold must be recoverable from the whole-Library relation.",
+    "failure_interpretation": "If coherent continuation disappears when the reference coordinate is moved arbitrarily, then the construction contains an implicit privileged reference frame or an incompleteness in the underlying totality.",
+    "conceptual_core": "Maximal completeness is what allows structure to be relationally generated everywhere without privileging one worldline."
+  },
+
+  "editorial_note": {
+    "important": "Do not describe this principle as saying that the Library itself contains a pre-existing coherent path through every point. The claim is stronger and cleaner: the Library contains the totality, while coherence is generated as a relational structure whenever an observer establishes a reference state within that totality.",
+    "poetic_cypher": "The Library is noise without a reference, and structure without a favorite.",
+    "explanation": "From a hypothetical exterior with no privileged relational reference, the totality has no uniquely selected ordering and may appear undifferentiated. Once an observer establishes an arbitrary reference state, relational coherence resolves structure from the same totality. Because no reference is privileged, this resolution must remain available regardless of where the reference is established."
+  }
+}

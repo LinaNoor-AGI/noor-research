@@ -24,6 +24,32 @@
 
   "subsection_changes": [
 
+	{
+	  "subsection_id": "0",
+	  "title": "Axiomatic Floor / Library Definition",
+	  "change_type": "modify",
+	  "what_needs_to_change": [
+		"Clarify that XOR closure defines the static configuration totality but does not imply temporal generation or a sequence of states.",
+		"Clarify that the Library is not synonymous with the coherent continuation space.",
+		"Clarify that closure establishes mathematical membership in the totality, while coherence and accessibility are introduced only relationally through the observer.",
+		"Remove any possible implication that configurations outside a coherent traversal are outside the Library."
+	  ],
+	  "how_it_should_be_changed": {
+		"library": {
+		  "statement": "The Library is the static total configuration domain defined by XOR closure.",
+		  "formal_statement": "\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)",
+		  "explanation": "The Library is introduced from a minimal formal domain D by taking its closure under the operation \\oplus. This closure defines one complete static configuration totality. It establishes which configurations belong to \\mathcal{M}; it does not impose temporal ordering, generate successive states, define a future, or pre-filter the totality according to coherence or observability. The Library therefore contains the complete configuration domain, including configurations that may later participate in coherent traversal and configurations that do not.",
+		  "boundary": "At this stage, membership in \\mathcal{M} does not imply persistence, coherence, physicality, observability, accessibility, temporal position, or participation in any particular traversal.",
+		  "invariant": "There is one Library \\mathcal{M}, not a sequence of Libraries indexed by time or traversal step."
+		}
+	  },
+	  "rationale": "Section 0 establishes the ontological status of the Library, so the timeless-totality distinction should be present here rather than appearing only as a later correction. The phrase 'smallest subset' is mathematically meaningful for closure, but without qualification it can be read as saying that the Library itself is a minimal answer-space. The intended construction is instead that closure establishes the complete static totality relative to the specified formal domain, while coherent continuation is a later observer-relative relation over that totality. This prevents XOR closure from silently becoming a future generator or an implicit coherence filter.",
+	  "poetic_cypher": "XOR closes the alphabet; it does not write the story.",
+	  "cypher_explanation": "The closure operation establishes the complete formal vocabulary of configurations available to the ontology. It does not decide which configurations form a coherent narrative, which configurations are traversed, or which configurations appear as past, present, or future. Those distinctions arise only through the observer's relation to the already-complete Library.",
+	  "supporting_reference": "The existing Section 0 library definition, together with the revised invariants LI-21 through LI-26 concerning static totality, whole-Library relationality, observer-relative coherence, and non-erasure."
+	  "keep": "formal_statement": "\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)"
+	}
+
     {
       "subsection_id": "3.1",
       "title": "Closure Under XOR",
