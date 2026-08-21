@@ -1,0 +1,174 @@
+{
+  "general_update": {
+    "id": "NSFG-GENERAL-UPDATE-002",
+    "title": "Maximal Totality, Internal Reference, and Ubiquitous Coherent Continuation",
+    "status": "proposed",
+    "purpose": "Establish why maximal Library completeness is not merely an ontological choice but a structural requirement if coherence is to remain observer-relative and no privileged reference frame is permitted.",
+    "recommended_role": "formal_invariant_with_derived_consequence",
+    "reason_for_role": "The claim should function first as an invariant of the construction, with the existence of coherent continuation from arbitrary Library configurations presented as a consequence of that invariant plus the relational definition of coherence. This avoids prematurely presenting an empirical or independently proven theorem.",
+    
+    "core_claim": {
+      "statement": "If there is no privileged external reference frame, and the Library is the complete static configuration totality, then coherence must be defined internally and relationally. For every configuration selected as an observer-relative reference point, coherent continuation is determined relative to that configuration and its history rather than relative to a privileged origin of the Library.",
+      "compressed_statement": "Maximal totality removes the privileged origin required to localize coherence.",
+      "strong_form": "For every x ∈ 𝓜 that can serve as an observer-relative reference configuration, the coherence relation is evaluated relative to x (or its associated history h), without requiring x to occupy any privileged location in the construction of 𝓜."
+    },
+
+    "axiomatic_invariants": [
+      {
+        "id": "LI-27",
+        "name": "Maximal Totality",
+        "statement": "𝓜 is not restricted to configurations classified in advance as possible, generated, coherent, observable, or accessible. Membership in 𝓜 is determined by the formal construction of the totality, while these classifications arise only relationally.",
+        "poetic_cypher": "The Library is not the shelf of possible books. It is the room, the books, the air, the trees outside the window, and everything that does not belong to the language of the books.",
+        "cypher_explanation": "The metaphor prevents 'possible' from becoming an unnoticed membership criterion. A configuration can be incoherent relative to an observer or even unrelated to the observer's current traversal and nevertheless remain part of the totality. The Library is therefore not equivalent to the observer's answer space."
+      },
+      {
+        "id": "LI-28",
+        "name": "Internal Reference",
+        "statement": "No external reference configuration is required to define coherence. Coherence is induced by relations among configurations within 𝓜 and by the observer's current configuration/history.",
+        "poetic_cypher": "The Library needs no reader standing outside the room to tell it which words belong together.",
+        "cypher_explanation": "An external perspective cannot supply a privileged coherence relation without violating the no-exterior premise. Coherence must therefore arise from internal relational structure."
+      },
+      {
+        "id": "LI-29",
+        "name": "Reference-Frame Neutrality",
+        "statement": "No configuration x ∈ 𝓜 is privileged merely because the formal construction, description, or traversal is expressed relative to x. Relocating the observer-relative reference point does not alter the definition of 𝓜.",
+        "poetic_cypher": "Move the lamp; the room does not rearrange itself.",
+        "cypher_explanation": "Changing the reference configuration changes the observer-relative coherence relation but does not change the underlying totality."
+      },
+      {
+        "id": "LI-30",
+        "name": "Whole-Library Relationality",
+        "statement": "At every abstract traversal step, the observer is relationally situated with respect to the entire static Library 𝓜, not a temporal slice, locally generated neighborhood, or pre-filtered answer space.",
+        "poetic_cypher": "Every step faces the whole.",
+        "cypher_explanation": "The observer's effective continuation set may be small, but the ontology against which that relation is evaluated is never correspondingly reduced."
+      },
+      {
+        "id": "LI-31",
+        "name": "Internal Coherence Requirement",
+        "statement": "If coherence is to be observer-relative and no privileged reference frame exists, then coherent continuation must be evaluated from the observer's current relational configuration/history rather than from an externally imposed origin.",
+        "poetic_cypher": "The point gives the path its question; the Library gives it the room to answer.",
+        "cypher_explanation": "The current configuration provides the reference from which coherence is evaluated. The total Library supplies the complete domain within which compatible continuations can be found."
+      }
+    ],
+
+    "derived_consequences": [
+      {
+        "id": "DC-01",
+        "name": "Arbitrary Reference Configuration",
+        "derivation": [
+          "𝓜 is maximally inclusive.",
+          "No configuration in 𝓜 is privileged as the universal origin.",
+          "The observer may therefore be represented relative to an arbitrary x ∈ 𝓜.",
+          "Coherence is evaluated relative to x and/or its history h.",
+          "Therefore the mechanism for determining coherent continuation cannot depend on the special status of an initial configuration."
+        ],
+        "formal_expression": "∀x ∈ 𝓜, Coherence(· | x,h) is defined relationally without requiring x to be the origin of 𝓜.",
+        "poetic_cypher": "Begin anywhere. The rule must still be the rule.",
+        "cypher_explanation": "If the construction only works from one privileged starting point, then that starting point is functioning as an external selection rule. The intended construction instead requires reference-frame neutrality."
+      },
+      {
+        "id": "DC-02",
+        "name": "Existence of Observer-Relative Continuation Structure",
+        "derivation": [
+          "The observer is situated within 𝓜.",
+          "The observer attempts to occupy the totality relationally rather than receiving a pre-filtered temporal neighborhood.",
+          "Coherence is evaluated relative to the observer's current configuration/history.",
+          "Therefore the coherent continuation set is derived from the relation between the current state and the totality."
+        ],
+        "formal_expression": "Γ_O(h) := {γ ∈ Path(𝓜) | γ begins with h and 𝓒(γ | O,h) satisfies the required coherence condition}.",
+        "poetic_cypher": "The path is not waiting in a drawer. The relation reveals which line can continue.",
+        "cypher_explanation": "The coherent continuation set is not an independently privileged region of the Library. It is the result of evaluating possible traversal relations from the current observer/history."
+      },
+      {
+        "id": "DC-03",
+        "name": "Why 'Always' Is the Correct Quantifier",
+        "derivation": [
+          "The Library is static and maximally complete.",
+          "The observer is always represented as a configuration/history within that same totality.",
+          "No step creates a new Library or changes its membership.",
+          "Therefore the observer's relation to the totality is evaluated at every traversal step.",
+          "The coherent continuation relation is consequently regenerated relationally from each current state/history, not inherited from a privileged initial neighborhood."
+        ],
+        "formal_expression": "∀i, 𝓜_i = 𝓜 and Γ_O(h_i) ⊆ Path(𝓜).",
+        "poetic_cypher": "Always the whole. Always a new relation.",
+        "cypher_explanation": "The Library never becomes smaller as traversal proceeds. What changes is the observer's current relational position and therefore the coherent structure that can be maintained from that position."
+      },
+      {
+        "id": "DC-04",
+        "name": "Failure of a Restricted Library",
+        "derivation": [
+          "Suppose 𝓜 is restricted to configurations deemed possible or generated from a privileged origin.",
+          "Then membership in 𝓜 depends on the construction history or selection rule.",
+          "Relocating the observer arbitrarily can place it near configurations for which the restricted construction provides insufficient coherent continuations.",
+          "Coherence therefore becomes dependent on the privileged frame used to define the Library.",
+          "This violates reference-frame neutrality."
+        ],
+        "formal_expression": "Restricted generation rule → privileged origin/selection criterion → frame-dependent continuation structure.",
+        "poetic_cypher": "If the map ends when you move the pin, the map chose the journey.",
+        "cypher_explanation": "A Library whose boundaries are inherited from a privileged generation process cannot provide a genuinely reference-neutral coherence mechanism."
+      },
+      {
+        "id": "DC-05",
+        "name": "Maximal Completeness as Structural Necessity",
+        "derivation": [
+          "No external selection rule is available.",
+          "No internal configuration is privileged as the universal origin.",
+          "The observer may be relationally situated at arbitrary configurations.",
+          "Coherent continuation must therefore be available through the totality itself rather than through a privileged construction history.",
+          "Maximal completeness becomes the mechanism that removes dependence on an external or privileged origin."
+        ],
+        "formal_expression": "No privileged exterior + no privileged origin + whole-Library traversal ⇒ maximal totality required for frame-neutral relational coherence.",
+        "poetic_cypher": "The Library must contain the room, not merely the roads that began at the door.",
+        "cypher_explanation": "If the ontology contained only paths generated from one special starting point, the door would secretly be privileged. Including the complete totality removes that hidden asymmetry."
+      }
+    ],
+
+    "important_qualification": {
+      "statement": "The existence of a nonempty coherent continuation from every x ∈ 𝓜 should not be asserted as a theorem of set-theoretic maximality alone.",
+      "recommended_form": "Treat ubiquitous nontrivial coherent continuation as a required structural condition of the NSFG model, derived from maximal totality together with the model's coherence assumptions.",
+      "reason": "A maximally inclusive set can still contain isolated or mutually incompatible elements under an arbitrary relation. Therefore the statement ∀x ∈ 𝓜, Γ_x^coh ≠ ∅ requires either a sufficiently strong definition of the Library/closure or an explicit coherence axiom/invariant.",
+      "poetic_cypher": "A full Library is not yet a readable Library.",
+      "cypher_explanation": "Completeness supplies the total domain. The NSFG coherence structure must additionally specify why every observer-relative reference configuration admits at least one sustainable continuation."
+    },
+
+    "external_observer_result": {
+      "status": "conceptual_consequence",
+      "statement": "A hypothetical perspective external to 𝓜 would not provide a privileged coherence structure for 𝓜. If such a perspective has no internally specified relation to configurations within 𝓜, the totality would lack the relational distinctions that constitute internal observer-relative structure and would therefore be representable only as undifferentiated complexity/noise from that perspective.",
+      "important_wording": "Use 'undifferentiated with respect to the model's internal coherence relation' rather than claiming literal physical randomness.",
+      "poetic_cypher": "Outside the Library there is no word by which the Library can be read.",
+      "cypher_explanation": "The absence of an external coherence relation does not make the Library nonexistent. It means only that the external perspective contributes no privileged internal organization to it."
+    },
+
+    "canonical_formulation": {
+      "short": "The Library is maximally complete because no privileged reference frame exists. The observer therefore evaluates coherence from within the totality, and at every traversal step the entire Library remains the relational domain. The coherent continuation set is not a pre-existing temporal neighborhood; it emerges from the observer's current configuration/history in relation to the same unchanged totality.",
+      "formal": "𝓜 = static totality; ∀i, O(h_i) ⊂ relation(𝓜); Γ_O(h_i) = {γ ∈ Path(𝓜) | γ extends h_i and satisfies 𝓒(γ | O,h_i)}.",
+      "stronger_structural_statement": "No privileged origin + no exterior + whole-Library traversal + relational coherence ⇒ coherent continuation must be defined internally and reference-frame neutrally.",
+      "poetic_cypher": "The whole is always there. The point is where coherence begins.",
+      "cypher_explanation": "The Library supplies the complete domain; the observer's current configuration supplies the relational origin from which coherent structure is determined. Neither the Library nor the observer needs an external reference frame."
+    },
+
+    "recommended_placement": {
+      "general_notes": "Insert this entire update under [general], alongside the existing logical invariants and global language replacements.",
+      "highest_priority_subsections_for_application": [
+        "0.library",
+        "3.1",
+        "3.2",
+        "4.1",
+        "6.2",
+        "8.1",
+        "9.1",
+        "9.2",
+        "10.1",
+        "10.2",
+        "12"
+      ],
+      "handoff_instruction": "When regenerating any affected subsection, preserve the distinction between (1) the static maximally complete Library, (2) the observer's current configuration/history, and (3) the observer-relative coherent continuation relation. Never collapse these three layers into a temporal generation mechanism."
+    },
+
+    "global_editorial_rule": {
+      "statement": "Do not use maximality merely to make the answer space large enough. Use maximality to eliminate hidden reference-frame dependence.",
+      "poetic_cypher": "Do not enlarge the Library to fit the path. Make the Library complete so no path owns it.",
+      "explanation": "The purpose of maximal totality is not abundance. It is symmetry: no initial configuration, generation history, temporal slice, or external observer is permitted to become the privileged source of coherence."
+    }
+  }
+}
