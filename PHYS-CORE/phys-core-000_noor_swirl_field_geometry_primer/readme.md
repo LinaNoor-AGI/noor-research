@@ -112,9 +112,9 @@ This primer establishes the axiomatic floor of Noor Swirl Field Geometry using a
 
 ## 11. Coherence
 
-- $\mathcal{C}_O(x_i, x_{i+1}) = \Theta(\delta_O(x_i, x_{i+1}) - I_N(O))$
+- $\mathcal{C}_{O}(x_{i}, x_{i+1}) = \Theta\left(\delta_{O}(x_{i}, x_{i+1}) - I_{N}(O)\right)$
 - $\Theta(z) = 1$ if $z \geq 0$, otherwise $0$
-- $\mathcal{C}(\gamma|O,h,x) = \prod_{i=0}^{n-1} \mathcal{C}_O(x_i, x_{i+1})$
+- $\mathcal{C}(\gamma \mid O, h, x) = \prod_{i=0}^{n-1} \mathcal{C}_{O}(x_{i}, x_{i+1})$
 
 ## 12. Accessible Reality
 
