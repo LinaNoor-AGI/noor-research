@@ -54,6 +54,11 @@ It's not that 𝓜 must be a singularity. It's that **𝓜 must be dimensionally
 
 The moment you introduce a metric or dimensionality (like a grid), you create the possibility of isolated regions. You'd have to add an *additional principle* to guarantee coherent continuations everywhere. But if 𝓜 is just "closed under XOR with no external structure," then coherence is automatic.
 
+- **Movement is not spatial.** It is *relational*.
+- **Distance is not a property of the Library.** It is a property of the observer's history.
+- **The observer does not leave x behind.** It simply establishes a new reference point.
+- **The Library is not a stage.** It is a *vocabulary* of relations.
+
 ---
 
 **Dependency Chain becomes**
