@@ -89,19 +89,24 @@
 	  "We may describe 𝓜 as the closure of the formal domain only provided closure is understood as a property, not a process: 𝓜 does not result from ⊕, 𝓜 is the totality that has the closure property.",
 	  "𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, or distance. It is a complete relational graph, not a grid and not a singularity.",
 	  "𝓜 is a single static, eternally maximally complete totality: ∀i, 𝓜_i = 𝓜.",
-	  "No configuration or worldline is privileged as the universal origin of traversal.",
+	  "There exists a unique singleton termination class 𝒵 := {z ∈ D | z⊕z = z} = {0} ⊂ 𝓜, such that ∀x ∈ 𝓜, x⊕x ∈ 𝒵 and 0⊕x = x. 𝒵 is where XOR completes.",
+	  "𝒵 is complementary as termination vs generation, not as exterior: it is the substance where recursive bounce (x⊕y)⊕y = x degenerates because y = 0, and where self-application does not generate a distinct third point.",
+	  "𝒵 is a single equivalence class under x∼y ⇔ x⊕y = 0: all completions land in the same class because indistinguishability has no internal structure to differentiate.",
+	  "No configuration or worldline is privileged as the universal origin of traversal, including 0: 0 is topologically distinguished as the only self-looping node, but not privileged as origin.",
 	  "From any x ∈ 𝓜, the set of candidate continuations is always nonempty because closure holds everywhere; observer threshold I_N(O) filters coherence, not existence.",
 	  "x ∈ 𝓜 does not imply x is persistent, coherent, physical, observable, or accessible.",
-	  "Library membership is not determined by observer resolution, accessibility, survivorship, or coherence; inaccessibility is not erasure."
+	  "Library membership is not determined by observer resolution, accessibility, survivorship, or coherence; inaccessibility is not erasure, and reaching 𝒵 is collapse of distinguishability, not erasure from 𝓜."
 	],
 
-
-    "no_privileged_exterior": [
-      "Ω ∉ 𝓜 may be proposed as an external candidate.",
-      "If Ω is internally describable using the same formal machinery, then Ω ∈ D.",
-      "If Ω is XOR-generable from D, then Ω ∈ Closure_D(⊕) = 𝓜.",
-      "Therefore a describable privileged exterior cannot remain external to 𝓜."
-    ],
+	"no_privileged_exterior": [
+	  "Ω ∉ 𝓜 may be proposed as an external candidate.",
+	  "If Ω is internally describable using the same formal machinery, then Ω ∈ D.",
+	  "If Ω is XOR-generable from D, then Ω ∈ 𝓜 by closure property: 𝓜 is the unique totality with ∀x,y∈𝓜, x⊕y∈𝓜 and no definable exterior.",
+	  "The unique singleton termination class 𝒵 := {z | z⊕z = z} = {0} ⊂ 𝓜 satisfies ∀x∈𝓜, x⊕x ∈ 𝒵 and 0⊕x = x. 𝒵 is where XOR completes and recursive bounce (x⊕y)⊕y = x degenerates because y = 0.",
+	  "𝒵 is a single equivalence class under x∼y ⇔ x⊕y = 0 and is complementary as termination vs generation, not as exterior. It is interior to 𝓜, not a privileged exterior.",
+	  "Therefore a describable privileged exterior cannot remain external to 𝓜. Any candidate definable using ⊕ and elements of 𝓜 over D is already in 𝓜, including 𝒵.",
+	  "The no-exterior argument concerns the absence of a privileged internal coherence relation supplied by an external God's-eye reference; it does not assert that literal physical exteriority is independently impossible."
+	],
 
     "observer": [
       "O ∈ 𝓜",
