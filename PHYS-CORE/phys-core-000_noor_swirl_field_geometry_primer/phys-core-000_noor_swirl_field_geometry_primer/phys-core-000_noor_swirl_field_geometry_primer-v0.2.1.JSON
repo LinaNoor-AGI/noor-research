@@ -64,7 +64,7 @@
   "_core_thesis": [
     "XOR, ⊕, is the sole primitive operation of the NSFG axiomatic floor.",
     "The formal domain D exists only as the minimal substrate required for the primitive operation to have operands; D is not a physical space.",
-    "The Library is formally characterized by XOR closure, 𝓜 := Closure_D(⊕), but closure is a mathematical closure relation and not a temporal generation process.",
+    "The Library is formally characterized by XOR closure: 𝓜 is the unique unbounded totality such that ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜, and there is no element outside 𝓜 definable, but closure is a mathematical closure relation and not a temporal generation process.",
     "The Library is a single static, eternally maximally complete totality: ∀i, 𝓜_i = 𝓜.",
     "Maximality is structurally required by the absence of a privileged configuration or worldline. No admissible reference configuration is ontologically favored as the universal origin of coherent traversal.",
     "The observer is relationally situated with respect to the whole Library at every abstract traversal step rather than being ontologically confined to a temporally generated local neighborhood.",
@@ -2728,10 +2728,20 @@
 
 		"library": {
 		  "symbol": "𝓜",
-		  "definition": "The XOR closure of the generating configurations G within the formal domain D.",
-		  "equation": "𝓜 := Closure_D(⊕,G)",
+		  "definition": "The unique unbounded totality satisfying closure under XOR and self-containment with no definable exterior. Dimensionally undifferentiated complete relational totality, not a grid and not a singularity.",
+		  "formal_characterization": {
+			"closure_property": "∀x,y ∈ 𝓜, x⊕y ∈ 𝓜",
+			"self_containment": "¬∃ z ∉ 𝓜 such that z is definable within the system using only ⊕ and elements of 𝓜 over D",
+			"equivalence": "Closed under XOR with no external elements definable in the system"
+		  },
+		  "equation": "𝓜 is defined by property, not by construction: 𝓜 := the unique totality where ∀x,y∈𝓜, x⊕y∈𝓜 and no exterior is definable in L={⊕}∪𝓜 over D. May be described as Closure_D as property, not process.",
 		  "membership_condition": "x ∈ 𝓜",
 		  "closure_condition": "∀x,y ∈ 𝓜, x ⊕ y ∈ 𝓜",
+		  "self_containment_condition": "No element outside 𝓜 is definable within the system",
+		  "structure_type": "complete_graph_relational",
+		  "dimensionality": "none_intrinsic",
+		  "closure_interpretation": "property_not_process",
+		  "generating_set_note": "G is not a primitive that builds 𝓜. Any G ⊆ 𝓜 whose closure has the closure+self-containment property characterizes the same 𝓜. G is observer-relative addressability, not construction.",
 		  "unfiltered_at_floor": true,
 		  "membership_does_not_imply": [
 			"persistence",
@@ -2743,6 +2753,7 @@
 			"causal participation"
 		  ],
 		  "non_erasure_rule": "x ∉ A_O does not imply x ∉ 𝓜.",
+		  "coherent_continuation_note": "From any x ∈ 𝓜, candidate continuations are always nonempty because closure holds everywhere. I_N(O) filters coherence, not existence.",
 		  "physical_container": false,
 		  "future_generation_mechanism": false,
 		  "status": "DERIVED_DEFINITION"
