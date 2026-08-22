@@ -109,18 +109,47 @@
     ],
 
 	"library": [
-	  "𝓜 is the unique unbounded totality such that ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜, and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D.",
-	  "This is equivalent to saying 𝓜 is closed under XOR with no describable exterior: closure plus self-containment.",
+	  "𝓜 is the maximally complete unbounded totality such that ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜, and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D.",
+	  
+	  "This is equivalent to saying 𝓜 is closed under XOR with no describable privileged exterior: closure plus self-containment.",
+	  
 	  "We may describe 𝓜 as the closure of the formal domain only provided closure is understood as a property, not a process: 𝓜 does not result from ⊕, 𝓜 is the totality that has the closure property.",
-	  "𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, or distance. It is a complete relational graph, not a grid and not a singularity.",
-	  "𝓜 is a single static, eternally maximally complete totality: ∀i, 𝓜_i = 𝓜.",
-	  "There exists a unique singleton termination class 𝒵 := {z ∈ D | z⊕z = z} = {0} ⊂ 𝓜, such that ∀x ∈ 𝓜, x⊕x ∈ 𝒵 and 0⊕x = x. 𝒵 is where XOR completes.",
-	  "𝒵 is complementary as termination vs generation, not as exterior: it is the substance where recursive bounce (x⊕y)⊕y = x degenerates because y = 0, and where self-application does not generate a distinct third point.",
-	  "𝒵 is a single equivalence class under x∼y ⇔ x⊕y = 0: all completions land in the same class because indistinguishability has no internal structure to differentiate.",
-	  "No configuration or worldline is privileged as the universal origin of traversal, including 0: 0 is topologically distinguished as the only self-looping node, but not privileged as origin.",
-	  "From any x ∈ 𝓜, the set of candidate continuations is always nonempty because closure holds everywhere; observer threshold I_N(O) filters coherence, not existence.",
-	  "x ∈ 𝓜 does not imply x is persistent, coherent, physical, observable, or accessible.",
-	  "Library membership is not determined by observer resolution, accessibility, survivorship, or coherence; inaccessibility is not erasure, and reaching 𝒵 is collapse of distinguishability, not erasure from 𝓜."
+	  
+	  "𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, distance, temporal ordering, or privileged coordinate system. It is a complete relational totality, not a grid, container, temporal sequence, or singularity.",
+	  
+	  "𝓜 is one static, maximally complete totality: there are no temporal slices of 𝓜 and ∀i, 𝓜_i = 𝓜. Observer history changes the observer's relation to 𝓜, not 𝓜 itself.",
+	  
+	  "At every abstract traversal step, the observer is relationally situated with respect to the entire 𝓜: past, present, future, coherent configurations, and incoherent configurations are all contained within the same totality. The observer does not first receive a local neighborhood or temporal slice.",
+	  
+	  "There is no privileged configuration, coordinate, history, or worldline from which coherence is universally defined. Any x ∈ 𝓜 may serve as the relational origin of an observer's current state without becoming the ontological origin or generator of 𝓜.",
+	  
+	  "The combination of maximal completeness, unboundedness, and absence of a privileged perspective requires coherence to be relocatable: no arbitrary x ∈ 𝓜 may function as a coherence boundary merely because of its location. Otherwise the supposedly unbounded totality would contain an observer-independent bound or coherence would be locked to a privileged reference frame.",
+	  
+	  "From any arbitrary x ∈ 𝓜, XOR closure guarantees that the algebraic continuation domain does not terminate by leaving 𝓜. The stronger requirement that a nonempty observer-relative coherent continuation exists above the operative coherence threshold follows from the whole-Library relation together with unboundedness and absence of a privileged reference frame.",
+	  
+	  "Formally, for an observer O whose state admits continuation, the intended invariant is ∀x ∈ 𝓜, ∃γ ∈ Path(𝓜) beginning at x such that 𝓒(γ | O,x) > γ_CO + ε. The existence of such a continuation is relational, not a claim that every configuration is intrinsically coherent.",
+	  
+	  "The coherent continuation set is not a pre-existing coherent region of 𝓜 and is not generated after x. It emerges from the relation between the observer's current configuration, history, resolution capacity, and the entire static Library.",
+	  
+	  "Observer relocation does not alter 𝓜. Moving the relational origin from x to y changes the observer-relative coherence and accessibility relations while leaving the underlying totality invariant.",
+	  
+	  "There exists a unique singleton termination class 𝒵 := {z ∈ D | z⊕z = z} = {0} ⊂ 𝓜, such that ∀x ∈ 𝓜, x⊕x ∈ 𝒵 and 0⊕x = x. 𝒵 is where XOR distinction completes.",
+	  
+	  "𝒵 is complementary as termination versus non-degenerate distinction, not as exterior: it is the interior class where recursive bounce (x⊕y)⊕y = x degenerates because y = 0, and where self-application does not generate a distinct third point.",
+	  
+	  "𝒵 is a single equivalence class under x∼y ⇔ x⊕y = 0: all XOR completions land in the same class because completed distinction contains no remaining internal distinction under that relation.",
+	  
+	  "No configuration or worldline is privileged as the universal origin of traversal, including 0: 0 is algebraically distinguished as the unique self-looping termination element, but it is not a privileged ontological origin.",
+	  
+	  "𝓜 contains both configurations that participate in observer-relative coherent traversal and configurations that do not. Coherence is not a membership condition for 𝓜.",
+	  
+	  "I_N(O) filters distinguishability and observer-relative coherence; it does not create, delete, generate, or bound the Library. Changes in I_N(O) alter the observer's relation to the same 𝓜.",
+	  
+	  "x ∈ 𝓜 does not imply x is persistent, coherent, physical, observable, accessible, conscious, or causally participating.",
+	  
+	  "Library membership is not determined by observer resolution, accessibility, survivorship, or coherence. Inaccessibility is not erasure, and reaching 𝒵 is collapse of distinguishability, not erasure from 𝓜.",
+	  
+	  "A hypothetical perspective external to 𝓜 cannot supply the missing structure without becoming a privileged reference frame. From such a perspective the internally coherent organization need not appear as structure at all; the Library's operative structure is relationally self-contained rather than imposed by a God's-eye ordering."
 	],
 
 	"no_privileged_exterior": [
@@ -2737,19 +2766,51 @@
 
 		"library": {
 		  "symbol": "𝓜",
-		  "definition": "The unique unbounded totality satisfying closure under XOR and self-containment with no definable exterior. Dimensionally undifferentiated complete relational totality, not a grid and not a singularity.",
+
+		  "definition": "The maximally complete unbounded totality satisfying closure under XOR and self-containment with no definable privileged exterior. 𝓜 is a dimensionally undifferentiated complete relational totality, not a grid, container, temporal sequence, or singularity.",
+
 		  "formal_characterization": {
 			"closure_property": "∀x,y ∈ 𝓜, x⊕y ∈ 𝓜",
-			"self_containment": "¬∃ z ∉ 𝓜 such that z is definable within the system using only ⊕ and elements of 𝓜 over D",
-			"equivalence": "Closed under XOR with no external elements definable in the system"
+			"self_containment": "¬∃ z ∉ 𝓜 such that z is definable within the system using only ⊕ and elements of 𝓜 over D as a privileged exterior",
+			"equivalence": "𝓜 is closed under XOR, self-contained with respect to its formal resources, and contains no privileged definable exterior"
 		  },
-		  "equation": "𝓜 is defined by property, not by construction: 𝓜 := the unique totality where ∀x,y∈𝓜, x⊕y∈𝓜 and no exterior is definable in L={⊕}∪𝓜 over D. May be described as Closure_D as property, not process.",
+
+		  "equation": "𝓜 is defined by property, not by construction: 𝓜 is the maximally complete unbounded totality satisfying XOR closure together with self-containment and absence of a privileged definable exterior. Closure_D describes a property of 𝓜, not a temporal or generative process.",
+
 		  "membership_condition": "x ∈ 𝓜",
+
 		  "closure_condition": "∀x,y ∈ 𝓜, x ⊕ y ∈ 𝓜",
-		  "self_containment_condition": "No element outside 𝓜 is definable within the system",
+
+		  "self_containment_condition": "No element outside 𝓜 is definable within the system as a privileged exterior using the formal resources of the system.",
+
+		  "whole_library_invariant": "At every abstract traversal step, the observer is relationally situated with respect to the entire static Library 𝓜. The observer does not encounter a temporal slice, local neighborhood, generated future, or pre-filtered coherent subset.",
+
+		  "static_totality_condition": "𝓜 does not change as observer history changes. Changes in observer state, accessibility, distinguishability, or coherent continuation alter the observer's relation to 𝓜, not 𝓜 itself.",
+
+		  "coherence_membership_separation": "Membership in 𝓜 is prior to and independent of observer-relative coherence. Coherence determines whether a traversal relation can be maintained by an observer; it does not determine Library membership.",
+
+		  "unboundedness_condition": "𝓜 has no privileged boundary, terminal region, or excluded coordinate whose status would determine where coherent traversal is permitted. If an arbitrary x ∈ 𝓜 could function as a coherence boundary merely because of its location in 𝓜, then the totality would possess an observer-independent bound or privileged reference condition inconsistent with its unbounded self-contained definition.",
+
+		  "no_privileged_origin_condition": "No x ∈ 𝓜 is privileged as an ontological origin, reference frame, or starting state. Any x ∈ 𝓜 may serve as the relational origin from which observer-relative coherence is evaluated without becoming the origin or generator of 𝓜.",
+
+		  "arbitrary_origin_coherence_invariant": "For an observer O situated at any arbitrary x ∈ 𝓜, the coherent continuation relation must remain nonempty above the observer's operative coherence threshold. The guarantee is not supplied by x being special, but by the combination of maximal completeness, unboundedness, whole-Library relation, and absence of a privileged exterior reference frame.",
+
+		  "arbitrary_origin_coherence_formalization": "∀x ∈ 𝓜, ∀O with a defined resolution floor I_N(O), ∃γ ∈ Path(𝓜) such that γ begins at x and 𝓒(γ | O, x) > γ_CO + ε, provided the observer's state admits continuation. No x is excluded from coherent traversal merely by its coordinate within 𝓜.",
+
+		  "why_arbitrary_origin_is_required": "If some x ∈ 𝓜 admitted no coherent continuation solely because of its location, then x would function as a boundary of the unbounded totality or coherence would depend upon a privileged reference frame. Either result would introduce structure external to the relational totality. The absence of a privileged perspective therefore requires coherence to be relocatable: the same relational mechanism must apply from any arbitrary point.",
+
+		  "whole_library_relation": "The observer does not first receive a local subset of 𝓜 and then navigate that subset. At every abstract step the observer is relationally situated with respect to the whole 𝓜. The minimal coherent continuation set emerges only from the relation between that whole totality and the observer's current state, history, and resolution capacity.",
+
+		  "coherent_continuation_note": "For any x ∈ 𝓜, XOR closure ensures that relational operations remain within the Library rather than terminating at an external configuration. The stronger requirement of a nonempty coherent continuation follows from whole-Library traversal together with unboundedness and absence of a privileged reference frame. I_N(O) filters distinguishability and coherence; it does not create, delete, or bound 𝓜.",
+
+		  "continuation_not_generation": "A coherent continuation is not a configuration generated into existence after x. It is an observer-relative traversal relation among configurations already contained in the static totality 𝓜.",
+
 		  "structure_type": "complete_graph_relational",
+
 		  "dimensionality": "none_intrinsic",
+
 		  "closure_interpretation": "property_not_process",
+
 		  "termination_singleton": {
 			"symbol": "𝒵",
 			"definition": "Unique singleton where XOR completes and recursive bounce degenerates",
@@ -2761,10 +2822,13 @@
 			  "Single equivalence class under x∼y ⇔ x⊕y = 0",
 			  "Where distinction completes, no new relation is generated"
 			],
-			"relation_to_library": "𝒵 ⊂ 𝓜, interior termination, not exterior. Complementary as termination vs generation: 𝓜\\𝒵 generates, 𝒵 terminates."
+			"relation_to_library": "𝒵 ⊂ 𝓜, interior termination, not exterior. Complementary as termination versus non-degenerate distinction: 𝓜\\𝒵 represents configurations participating in non-degenerate relational distinction, while 𝒵 represents completed distinction."
 		  },
-		  "generating_set_note": "G is not a primitive that builds 𝓜. Any G ⊆ 𝓜 whose closure has the closure+self-containment property characterizes the same 𝓜. G is observer-relative addressability, not construction.",
+
+		  "generating_set_note": "G is not a primitive that builds 𝓜. Any G ⊆ 𝓜 may serve as an addressable generating description of portions of the closure, but G is not an ontological origin of 𝓜. Generation language here describes algebraic addressability, not temporal construction.",
+
 		  "unfiltered_at_floor": true,
+
 		  "membership_does_not_imply": [
 			"persistence",
 			"coherence",
@@ -2774,10 +2838,19 @@
 			"consciousness",
 			"causal participation"
 		  ],
-		  "non_erasure_rule": "x ∉ A_O does not imply x ∉ 𝓜. Reaching 𝒵 is collapse of distinguishability, not erasure.",
-		  "coherent_continuation_note": "From any x ∈ 𝓜, candidate continuations are always nonempty because closure holds everywhere. I_N(O) filters coherence, not existence.",
-		  "physical_container": false,
+
+		  "non_erasure_rule": "x ∉ A_O does not imply x ∉ 𝓜. Failure of observer-relative accessibility, coherence, or distinguishability does not erase a configuration from the totality. Reaching 𝒵 is collapse of distinguishability, not erasure.",
+
+		  "observer_relocation_invariant": "Relocating the observer's relational origin from x to any arbitrary y ∈ 𝓜 does not change the underlying Library or invoke a new external reference frame. Only the observer-relative coherence relation changes.",
+
+		  "reference_frame_independence": "There is no privileged coordinate, state, history, or world line from which coherence is intrinsically defined. Coherence is determined relative to the current observer configuration and history, wherever that observer is situated within 𝓜.",
+
+		  "noise_without_internal_relation": "Viewed from a hypothetical perspective external to 𝓜, the totality need not exhibit the observer-relative structure that appears internally. Such a perspective supplies no useful privileged ordering because the Library's structure is relationally self-contained. The observer-relative coherent world line is therefore not imposed by an external ordering; it emerges from the relation of an observer to the totality itself.",
+
 		  "future_generation_mechanism": false,
+
+		  "physical_container": false,
+
 		  "status": "DERIVED_DEFINITION"
 		},
 
