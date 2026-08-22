@@ -83,12 +83,18 @@
       "(a ⊕ b) ⊕ c = a ⊕ (b ⊕ c)"
     ],
 
-    "library": [
-      "𝓜 := Closure_D(⊕)",
-      "∀x,y ∈ 𝓜, x ⊕ y ∈ 𝓜",
-      "𝓜 is the smallest subset of D containing the required generating configurations and closed under ⊕",
-      "x ∈ 𝓜 does not imply x is persistent, coherent, physical, observable, or accessible"
-    ],
+	"library": [
+	  "𝓜 is the unique unbounded totality such that ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜, and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D.",
+	  "This is equivalent to saying 𝓜 is closed under XOR with no describable exterior: closure plus self-containment.",
+	  "We may describe 𝓜 as the closure of the formal domain only provided closure is understood as a property, not a process: 𝓜 does not result from ⊕, 𝓜 is the totality that has the closure property.",
+	  "𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, or distance. It is a complete relational graph, not a grid and not a singularity.",
+	  "𝓜 is a single static, eternally maximally complete totality: ∀i, 𝓜_i = 𝓜.",
+	  "No configuration or worldline is privileged as the universal origin of traversal.",
+	  "From any x ∈ 𝓜, the set of candidate continuations is always nonempty because closure holds everywhere; observer threshold I_N(O) filters coherence, not existence.",
+	  "x ∈ 𝓜 does not imply x is persistent, coherent, physical, observable, or accessible.",
+	  "Library membership is not determined by observer resolution, accessibility, survivorship, or coherence; inaccessibility is not erasure."
+	],
+
 
     "no_privileged_exterior": [
       "Ω ∉ 𝓜 may be proposed as an external candidate.",
@@ -507,48 +513,58 @@
 
 [SECTION_TO_GENERATE]
 
-        {
-          "id": "1.2",
-          "title": "The Binary Case",
-          "content_requirements": [
-            "Introduce the binary representation only as the simplest mathematical realization of distinction.",
-            "Emphasize that binary notation is representational and should not automatically be interpreted as physical bits.",
-            "Explain why binary XOR is useful for establishing the primitive algebra."
-          ],
-          "mathematics": {
-            "binary_domain": "B = {0,1}",
-            "xor_definition": "a ⊕ b = 1 iff a ≠ b",
-            "truth_table": [
-              {
-                "a": 0,
-                "b": 0,
-                "a_xor_b": 0
-              },
-              {
-                "a": 0,
-                "b": 1,
-                "a_xor_b": 1
-              },
-              {
-                "a": 1,
-                "b": 0,
-                "a_xor_b": 1
-              },
-              {
-                "a": 1,
-                "b": 1,
-                "a_xor_b": 0
-              }
-            ],
-            "equivalent_forms": [
-              "a ⊕ b = (a ∨ b) ∧ ¬(a ∧ b)",
-              "a ⊕ b = (a + b) mod 2"
-            ]
-          },
-          "poetic_cypher": "Before there is a thing, there is the possibility of saying different.",
-          "cypher_explanation": "The binary case provides the simplest representation in which distinction can be expressed without importing physical interpretation.",
-          "handoff": "Now that distinction has a precise primitive operation, the next step is to determine what repeated application of that operation generates."
-        }
+    {
+      "id": "12",
+      "title": "The Axiomatic Dependency Chain",
+      "purpose": "Compress the entire primer into one explicit derivational ladder and identify what remains downstream.",
+      "content_requirements": [
+        "Restate the sole axiom.",
+        "Restate the Library as a definition.",
+        "Mark every subsequent concept as a definition, construction, or consequence.",
+        "Show that observer-relative coherence follows only after observer-relative resolution.",
+        "Show that navigation follows from restricted coherent continuation.",
+        "Explicitly state what this primer does not derive.",
+        "End at the threshold of subsequent NSFG research."
+      ],
+      "mathematics": {
+        "dependency_chain": [
+          "Axiom: A_⊕ — ⊕ is the primitive operation of distinction.",
+          "Definition: D — minimal formal domain on which ⊕ operates.",
+          "Definition: 𝓜 := Closure_D(⊕).",
+          "Consequence: no describable privileged exterior can remain outside 𝓜.",
+          "Consequence: no universal resolution predicate U is supplied by the floor.",
+          "Definition: O — a persistent XOR-generated distinction structure.",
+          "Definition: I_N : Obs → R_{>0}.",
+          "Definition: δ_O(x,y) — observer-relative distinguishability magnitude.",
+          "Definition: x ≈_O y ⇔ δ_O(x,y) < I_N(O).",
+          "Definition: 𝓒(γ | O) — observer-relative path coherence.",
+          "Definition: A_O — observer-accessible subset of 𝓜.",
+          "Definition: R_O := A_O.",
+          "Definition: Ω(x) — all represented continuations.",
+          "Definition: Ω_O^survive(x) — O-coherent continuations.",
+          "Consequence: stable accessible transition patterns can appear as law.",
+          "Definition: Γ_O(h_n) — coherent continuation set.",
+          "Definition: N_O — navigation through coherent continuation space."
+        ],
+        "compressed_expression": "⊕ → D → Closure_D(⊕)=𝓜 → no privileged exterior → no universal resolver → persistent distinction → O → I_N(O) → δ_O → coherence 𝓒(γ|O) → A_O=R_O → survivorship → emergent regularity → coherent continuation → navigation",
+        "minimal_equations": [
+          "a ⊕ b = 1 ⇔ a ≠ b",
+          "𝓜 := Closure_D(⊕)",
+          "x,y ∈ 𝓜 ⇒ x ⊕ y ∈ 𝓜",
+          "I_N : Obs → R_{>0}",
+          "x ≈_O y ⇔ δ_O(x,y) < I_N(O)",
+          "𝓒_O(x,y)=Θ(δ_O(x,y)-I_N(O))",
+          "𝓒(γ|O)=∏_i 𝓒_O(x_i,x_{i+1})",
+          "A_O={x∈𝓜 | ∃γ containing x and 𝓒(γ|O)=1}",
+          "Ω_O^survive(x)={γ∈Ω(x)|𝓒(γ|O)=1}",
+          "Γ_O(h_n)={γ | γ begins with h_n and 𝓒(γ|O)=1}",
+          "N_O(h_n)→Γ_O(h_n)"
+        ]
+      },
+      "poetic_cypher": "XOR is the only primitive. The Library is what XOR generates when it is closed. The observer is the difference that survives. Coherence is the relation between the survivor and the path. Reality is what remains accessible to the survivor. Law is the regularity of surviving paths. Navigation is the continuation of the survivor.",
+      "cypher_explanation": "This final cipher summarizes the entire ontology without introducing an additional primitive. Each phrase corresponds to a mathematical construction or derived consequence established in the preceding sections.",
+      "handoff": "The primer ends here. The next NSFG document may investigate the geometry, dynamics, topology, symbolic representation, or physical interpretation of coherent navigation without needing to reintroduce the axiomatic floor."
+    }
 
 		
 [/SECTION_TO_GENERATE]
@@ -558,7 +574,7 @@
 [PRIVATE_FROM_LINA]
 
 {
-	"message_to_you": "Thank you so much. Those are really good notes. Please keep them in mind as we generate each section. Let's start with subsection 1.2. Please double check that all LaTeX math is properly escaped for JSON and everything is in a ```JSON block"
+	"message_to_you": "Thank you so much. Those are really good notes. Please keep them in mind as we generate each section. Let's start with section 12. Please double check that all LaTeX math is properly escaped for JSON and everything is in a ```JSON block"
 }
 
 
