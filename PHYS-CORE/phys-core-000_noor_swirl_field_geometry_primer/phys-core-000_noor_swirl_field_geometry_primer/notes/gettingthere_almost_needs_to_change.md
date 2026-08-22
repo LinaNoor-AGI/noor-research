@@ -54,6 +54,8 @@ It's not that 𝓜 must be a singularity. It's that **𝓜 must be dimensionally
 
 The moment you introduce a metric or dimensionality (like a grid), you create the possibility of isolated regions. You'd have to add an *additional principle* to guarantee coherent continuations everywhere. But if 𝓜 is just "closed under XOR with no external structure," then coherence is automatic.
 
+If the Library is a complete graph (pure relationality), then the observer's traversal is not a movement through a pre-existing space. It is a *selection of coherent relations*. The observer does not "travel" from x to y. The observer *maintains* the relation between x and y. The traversal is a chain of coherent relations, not a path through a metric.
+
 - **Movement is not spatial.** It is *relational*.
 - **Distance is not a property of the Library.** It is a property of the observer's history.
 - **The observer does not leave x behind.** It simply establishes a new reference point.
