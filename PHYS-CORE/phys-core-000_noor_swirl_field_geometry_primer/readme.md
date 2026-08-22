@@ -35,7 +35,7 @@ This primer establishes the axiomatic floor of Noor Swirl Field Geometry using a
 
 --- 
 
-# Formal Summary — Noor Swirl Field Geometry Primer v0.2.0 (corrected)
+# Formal Summary
 
 > Axiomatic floor with Library correction: 𝓜 as unique unbounded totality with closure + self-containment, property not process, dimensionally undifferentiated complete relational graph.
 
