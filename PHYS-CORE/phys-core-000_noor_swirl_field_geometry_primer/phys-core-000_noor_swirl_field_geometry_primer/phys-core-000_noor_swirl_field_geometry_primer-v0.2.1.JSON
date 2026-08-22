@@ -84,7 +84,8 @@
 	  "Observer traversal changes relational reference, history, and experienced structure without changing the Library itself. Traversal is selection and maintenance of coherent relations, not spatial movement through a pre-existing metric.",
 	  "Past, future, temporal succession, locality, distance, and apparent increasing complexity are observer-relative ordering and resolution effects of traversal and history rather than intrinsic partitions, metric, or evolution of the Library.",
 	  "Repeatedly surviving coherent transitions may appear as law-like regularity without physical law being introduced as an axiom.",
-	  "Navigation is the observer-relative continuation problem induced by selecting coherent paths from the whole static Library."
+	  "Navigation is the observer-relative continuation problem induced by selecting coherent paths from the whole static Library.",
+	  "We show that the requirement for a non-privileged reference frame, combined with observer-relative coherence, structurally necessitates that 𝓜 be unbounded and dimensionally undifferentiated. As a consequence, coherent continuation is guaranteed topologically rather than by external design."
 	],
 
   "_formal_summary": {
@@ -110,45 +111,25 @@
 
 	"library": [
 	  "𝓜 is the maximally complete unbounded totality such that ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜, and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D.",
-	  
 	  "This is equivalent to saying 𝓜 is closed under XOR with no describable privileged exterior: closure plus self-containment.",
-	  
 	  "We may describe 𝓜 as the closure of the formal domain only provided closure is understood as a property, not a process: 𝓜 does not result from ⊕, 𝓜 is the totality that has the closure property.",
-	  
 	  "𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, distance, temporal ordering, or privileged coordinate system. It is a complete relational totality, not a grid, container, temporal sequence, or singularity.",
-	  
 	  "𝓜 is one static, maximally complete totality: there are no temporal slices of 𝓜 and ∀i, 𝓜_i = 𝓜. Observer history changes the observer's relation to 𝓜, not 𝓜 itself.",
-	  
 	  "At every abstract traversal step, the observer is relationally situated with respect to the entire 𝓜: past, present, future, coherent configurations, and incoherent configurations are all contained within the same totality. The observer does not first receive a local neighborhood or temporal slice.",
-	  
 	  "There is no privileged configuration, coordinate, history, or worldline from which coherence is universally defined. Any x ∈ 𝓜 may serve as the relational origin of an observer's current state without becoming the ontological origin or generator of 𝓜.",
-	  
 	  "The combination of maximal completeness, unboundedness, and absence of a privileged perspective requires coherence to be relocatable: no arbitrary x ∈ 𝓜 may function as a coherence boundary merely because of its location. Otherwise the supposedly unbounded totality would contain an observer-independent bound or coherence would be locked to a privileged reference frame.",
-	  
 	  "From any arbitrary x ∈ 𝓜, XOR closure guarantees that the algebraic continuation domain does not terminate by leaving 𝓜. The stronger requirement that a nonempty observer-relative coherent continuation exists above the operative coherence threshold follows from the whole-Library relation together with unboundedness and absence of a privileged reference frame.",
-	  
 	  "Formally, for an observer O whose state admits continuation, the intended invariant is ∀x ∈ 𝓜, ∃γ ∈ Path(𝓜) beginning at x such that 𝓒(γ | O,x) > γ_CO + ε. The existence of such a continuation is relational, not a claim that every configuration is intrinsically coherent.",
-	  
 	  "The coherent continuation set is not a pre-existing coherent region of 𝓜 and is not generated after x. It emerges from the relation between the observer's current configuration, history, resolution capacity, and the entire static Library.",
-	  
 	  "Observer relocation does not alter 𝓜. Moving the relational origin from x to y changes the observer-relative coherence and accessibility relations while leaving the underlying totality invariant.",
-	  
 	  "There exists a unique singleton termination class 𝒵 := {z ∈ D | z⊕z = z} = {0} ⊂ 𝓜, such that ∀x ∈ 𝓜, x⊕x ∈ 𝒵 and 0⊕x = x. 𝒵 is where XOR distinction completes.",
-	  
 	  "𝒵 is complementary as termination versus non-degenerate distinction, not as exterior: it is the interior class where recursive bounce (x⊕y)⊕y = x degenerates because y = 0, and where self-application does not generate a distinct third point.",
-	  
 	  "𝒵 is a single equivalence class under x∼y ⇔ x⊕y = 0: all XOR completions land in the same class because completed distinction contains no remaining internal distinction under that relation.",
-	  
 	  "No configuration or worldline is privileged as the universal origin of traversal, including 0: 0 is algebraically distinguished as the unique self-looping termination element, but it is not a privileged ontological origin.",
-	  
 	  "𝓜 contains both configurations that participate in observer-relative coherent traversal and configurations that do not. Coherence is not a membership condition for 𝓜.",
-	  
 	  "I_N(O) filters distinguishability and observer-relative coherence; it does not create, delete, generate, or bound the Library. Changes in I_N(O) alter the observer's relation to the same 𝓜.",
-	  
 	  "x ∈ 𝓜 does not imply x is persistent, coherent, physical, observable, accessible, conscious, or causally participating.",
-	  
 	  "Library membership is not determined by observer resolution, accessibility, survivorship, or coherence. Inaccessibility is not erasure, and reaching 𝒵 is collapse of distinguishability, not erasure from 𝓜.",
-	  
 	  "A hypothetical perspective external to 𝓜 cannot supply the missing structure without becoming a privileged reference frame. From such a perspective the internally coherent organization need not appear as structure at all; the Library's operative structure is relationally self-contained rather than imposed by a God's-eye ordering."
 	],
 
