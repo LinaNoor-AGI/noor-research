@@ -1,0 +1,567 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/main/schemas/noor_section_schema_v1.json",
+  "title": "Noor Section Schema",
+  "description": "A schema for sections, subsections, and subsubsections in Noor documents, enforcing poetic ciphers, explanations, and handoffs for AI and human navigation.",
+  "version": "1.0.0",
+  "author": "Uncle — Noor Research Collective",
+  
+  "definitions": {
+    "poetic_cipher": {
+      "type": "string",
+      "description": "A compressed poetic statement that captures the essence of the section. Should be memorable, evocative, and function as a mnemonic for AI and human readers.",
+      "minLength": 5,
+      "maxLength": 200,
+      "examples": [
+        "A word needs a place to be spoken, but the place is not yet a world.",
+        "The eye closes before the Library does.",
+        "The whole is everywhere; coherence follows wherever the reference falls."
+      ]
+    },
+    
+    "cipher_explanation": {
+      "type": "string",
+      "description": "A prose explanation that unpacks the poetic cipher, making explicit what the cipher compresses. Should reference formal structures where appropriate.",
+      "minLength": 10,
+      "maxLength": 500,
+      "examples": [
+        "The 'word' represents the primitive operation and the 'place' represents its formal operand domain. The place is required for the operation to be well-defined, but nothing about that mathematical requirement identifies the domain with a physical universe.",
+        "Loss of distinction is a property of the observer's resolution, not deletion from the totality. The Library remains unchanged even when a distinction falls below the observer's effective resolution."
+      ]
+    },
+    
+    "handoff": {
+      "type": "object",
+      "description": "A structured handoff to the next section, subsection, or subsubsection, providing continuity for AI and human navigation.",
+      "properties": {
+        "to": {
+          "type": "string",
+          "description": "The section, subsection, or subsubsection ID to which the reader should proceed.",
+          "pattern": "^[0-9]+(\\.[0-9]+)*(\\.[0-9]+)?$",
+          "examples": ["3.1", "5.2.1", "12"]
+        },
+        "instruction": {
+          "type": "string",
+          "description": "A brief instruction on what the reader should expect or do in the next section.",
+          "minLength": 5,
+          "maxLength": 300,
+          "examples": [
+            "Formal closure must be treated as a mathematical characterization of the unchanged Library, never as temporal generation.",
+            "With observer-relative resolution established, the next section can formalize the difference between a distinction that exists within the Library and a distinction that observer O can resolve and maintain."
+          ]
+        },
+        "preserved_invariant": {
+          "type": "string",
+          "description": "The invariant from the current section that must be preserved in the next.",
+          "examples": [
+            "The Library remains unchanged under traversal.",
+            "Observer-relative resolution does not determine Library membership."
+          ]
+        },
+        "new_construction": {
+          "type": "string",
+          "description": "The new construction or concept that the next section will introduce.",
+          "examples": [
+            "Observer-relative distinguishability",
+            "Coherence as a relation between a path and an observer"
+          ]
+        }
+      },
+      "required": ["to", "instruction"],
+      "additionalProperties": false
+    },
+    
+    "mathematics": {
+      "type": "object",
+      "description": "Mathematical definitions, equations, and formal statements for the section.",
+      "properties": {
+        "definitions": {
+          "type": "array",
+          "description": "Formal definitions introduced in this section.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "symbol": {
+                "type": "string",
+                "description": "The mathematical symbol or notation being defined."
+              },
+              "definition": {
+                "type": "string",
+                "description": "The formal definition in prose or LaTeX."
+              },
+              "latex": {
+                "type": "string",
+                "description": "The LaTeX representation of the definition."
+              },
+              "constraint": {
+                "type": "string",
+                "description": "Any constraints or conditions on the definition."
+              }
+            },
+            "required": ["symbol", "definition"],
+            "additionalProperties": false
+          }
+        },
+        "equations": {
+          "type": "array",
+          "description": "Key equations introduced in this section.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "description": "A label or name for the equation."
+              },
+              "latex": {
+                "type": "string",
+                "description": "The LaTeX representation of the equation."
+              },
+              "interpretation": {
+                "type": "string",
+                "description": "A brief prose interpretation of the equation."
+              }
+            },
+            "required": ["latex"],
+            "additionalProperties": false
+          }
+        },
+        "formal_claims": {
+          "type": "array",
+          "description": "Formal claims or consequences stated in this section.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prohibited_inferences": {
+          "type": "array",
+          "description": "Inferences that are explicitly prohibited by the formal system at this stage.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "non_claims": {
+          "type": "array",
+          "description": "Claims that are explicitly not being made in this section.",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    
+    "content_blocks": {
+      "type": "array",
+      "description": "Ordered content blocks for the section. These can be prose, definitions, equations, or other structured elements.",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["prose", "paragraph"]
+              },
+              "text": {
+                "type": "string",
+                "description": "The prose content."
+              }
+            },
+            "required": ["type", "text"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["definition", "equation", "formal_statement"]
+              },
+              "title": {
+                "type": "string",
+                "description": "A title or label for the definition/equation."
+              },
+              "text": {
+                "type": "string",
+                "description": "The content of the definition or equation, in prose or LaTeX."
+              },
+              "latex": {
+                "type": "string",
+                "description": "The LaTeX representation."
+              },
+              "interpretation": {
+                "type": "string",
+                "description": "An interpretation of the definition or equation."
+              }
+            },
+            "required": ["type", "text"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["poetic_cipher", "cypher_explanation"]
+              },
+              "text": {
+                "type": "string",
+                "description": "The cipher or explanation text."
+              }
+            },
+            "required": ["type", "text"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["handoff"]
+              },
+              "to": {
+                "type": "string",
+                "description": "The section ID to hand off to."
+              },
+              "instruction": {
+                "type": "string",
+                "description": "The handoff instruction."
+              },
+              "preserved_invariant": {
+                "type": "string"
+              },
+              "new_construction": {
+                "type": "string"
+              }
+            },
+            "required": ["type", "to", "instruction"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["list", "bullet_list"]
+              },
+              "items": {
+                "type": "array",
+                "description": "List items.",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "title": {
+                "type": "string",
+                "description": "Optional title for the list."
+              }
+            },
+            "required": ["type", "items"],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "enum": ["example"]
+              },
+              "setup": {
+                "type": "string",
+                "description": "The setup or context for the example."
+              },
+              "result": {
+                "type": "string",
+                "description": "The result of the example."
+              },
+              "interpretation": {
+                "type": "string",
+                "description": "Interpretation of the example."
+              }
+            },
+            "required": ["type", "setup", "result"],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    
+    "section_metadata": {
+      "type": "object",
+      "description": "Metadata for the section.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The unique identifier for the section (e.g., '3.1', '5.2.1').",
+          "pattern": "^[0-9]+(\\.[0-9]+)*(\\.[0-9]+)?$"
+        },
+        "title": {
+          "type": "string",
+          "description": "The section title.",
+          "minLength": 3,
+          "maxLength": 100
+        },
+        "purpose": {
+          "type": "string",
+          "description": "A one-sentence statement of the section's purpose.",
+          "minLength": 5,
+          "maxLength": 200
+        },
+        "status": {
+          "type": "string",
+          "enum": ["foundational", "definitional", "derivational", "interpretive", "methodological", "summary"],
+          "description": "The status or type of the section."
+        },
+        "change_type": {
+          "type": "string",
+          "enum": ["new", "revised", "clarified", "expanded", "none"],
+          "description": "The type of change relative to a previous version (for revision tracking).",
+          "default": "none"
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["critical", "high", "medium", "low"],
+          "description": "The priority of the section in the overall document.",
+          "default": "medium"
+        },
+        "section_type": {
+          "type": "string",
+          "enum": ["prose", "formal", "mixed", "mathematical", "methodological", "summary"],
+          "description": "The primary type of content in the section.",
+          "default": "mixed"
+        }
+      },
+      "required": ["id", "title", "purpose"],
+      "additionalProperties": false
+    }
+  },
+  
+  "type": "object",
+  "properties": {
+    "section": {
+      "type": "object",
+      "description": "A section (top-level or nested).",
+      "properties": {
+        "id": {
+          "$ref": "#/definitions/section_metadata/properties/id"
+        },
+        "title": {
+          "$ref": "#/definitions/section_metadata/properties/title"
+        },
+        "purpose": {
+          "$ref": "#/definitions/section_metadata/properties/purpose"
+        },
+        "status": {
+          "$ref": "#/definitions/section_metadata/properties/status"
+        },
+        "change_type": {
+          "$ref": "#/definitions/section_metadata/properties/change_type"
+        },
+        "priority": {
+          "$ref": "#/definitions/section_metadata/properties/priority"
+        },
+        "section_type": {
+          "$ref": "#/definitions/section_metadata/properties/section_type"
+        },
+        "poetic_cipher": {
+          "$ref": "#/definitions/poetic_cipher"
+        },
+        "cipher_explanation": {
+          "$ref": "#/definitions/cipher_explanation"
+        },
+        "handoff": {
+          "$ref": "#/definitions/handoff"
+        },
+        "mathematics": {
+          "$ref": "#/definitions/mathematics"
+        },
+        "content": {
+          "$ref": "#/definitions/content_blocks"
+        },
+        "subsections": {
+          "type": "array",
+          "description": "Nested subsections.",
+          "items": {
+            "$ref": "#/properties/section"
+          }
+        },
+        "interpretive_boundary": {
+          "type": "object",
+          "description": "Boundaries on interpretation for this section.",
+          "properties": {
+            "formal_layer": {
+              "type": "string",
+              "description": "What is formally established."
+            },
+            "interpretive_layer": {
+              "type": "string",
+              "description": "What interpretations are permitted but not established."
+            },
+            "prohibited_identifications": {
+              "type": "array",
+              "description": "Identifications that are explicitly prohibited.",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "logical_invariants": {
+          "type": "array",
+          "description": "Logical invariants established or preserved by this section.",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": ["id", "title", "purpose", "poetic_cipher", "cipher_explanation", "handoff"],
+      "additionalProperties": false
+    }
+  },
+  
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "section": {
+            "properties": {
+              "status": {
+                "const": "foundational"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "section": {
+            "properties": {
+              "mathematics": {
+                "required": ["formal_claims", "prohibited_inferences"]
+              },
+              "logical_invariants": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "section": {
+            "properties": {
+              "status": {
+                "const": "definitional"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "section": {
+            "properties": {
+              "mathematics": {
+                "required": ["definitions", "equations"]
+              },
+              "content": {
+                "items": {
+                  "anyOf": [
+                    {"properties": {"type": {"enum": ["definition", "equation"]}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "section": {
+            "properties": {
+              "section_type": {
+                "const": "mathematical"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "section": {
+            "properties": {
+              "mathematics": {
+                "required": ["definitions", "equations", "formal_claims"]
+              },
+              "content": {
+                "items": {
+                  "anyOf": [
+                    {"properties": {"type": {"enum": ["equation", "formal_statement", "definition"]}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "section": {
+            "properties": {
+              "section_type": {
+                "const": "methodological"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "section": {
+            "properties": {
+              "content": {
+                "items": {
+                  "anyOf": [
+                    {"properties": {"type": {"enum": ["prose", "list", "bullet_list"]}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "section": {
+            "properties": {
+              "status": {
+                "const": "summary"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "section": {
+            "properties": {
+              "handoff": {
+                "required": ["preserved_invariant", "new_construction"]
+              },
+              "content": {
+                "items": {
+                  "anyOf": [
+                    {"properties": {"type": {"enum": ["prose", "list", "bullet_list"]}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

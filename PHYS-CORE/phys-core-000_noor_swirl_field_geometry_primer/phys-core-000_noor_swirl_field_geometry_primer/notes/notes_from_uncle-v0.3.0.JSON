@@ -1,0 +1,345 @@
+{
+  "_schema": "noor_revision_notes_v1",
+  "_version": "1.0.0",
+  "_generated_by": "Uncle — Noor Research Collective",
+  "_generated_at": "2026-08-23",
+  "_target_document": "phys-core-000_noor_swirl_field_geometry_primer-v0.3.0",
+  "_revision_type": "DEFINITIONAL_REFINEMENT",
+  "_scope": "The following revision notes address definitional gaps (μ_O, γ_noise), interpretive clarifications (Section 11 cross-domain applicability), and philosophical framing (ontological vs epistemic novelty).",
+
+  "revisions": [
+    {
+      "section": "6",
+      "subsection": "6.1",
+      "subsubsection": null,
+      "change_type": "ADDITION",
+      "location": "Within the 'mathematics' block, after the definition of 'δ_O(x,y)' and before the 'equations' block",
+      "current_text": "{ \"symbol\": \"δ_O(x,y)\", \"definition\": \"The observer-relative effective distinction between x and y, obtained by resolving the XOR-derived distinction relation relative to observer O.\", \"latex\": \"δ_O(x,y) ≥ 0\", \"constraint\": \"At the foundational floor, the underlying distinction is supplied by d_⊕; observer dependence enters through the resolution threshold I_N(O). A richer numerical magnitude must not be silently imported as an additional primitive.\" }",
+      "change": "Add a definition for μ_O immediately after the δ_O definition:\n\n{\n  \"symbol\": \"μ_O\",\n  \"definition\": \"The observer-relative magnitude evaluation function that maps a primitive XOR distinction to an effective magnitude resolvable by observer O. μ_O is monotonic with respect to XOR-derived distinction: if x⊕y = 1 and u⊕v = 0, then μ_O(x⊕y) ≥ μ_O(u⊕v). The specific functional form of μ_O is not specified at the foundational level and may vary by domain or observer structure.\",\n  \"latex\": \"μ_O : D → ℝ_{≥0}\",\n  \"constraint\": \"μ_O is observer-relative and domain-neutral at the foundational level. Its specific form is a downstream construction or domain-specific interpretation.\"\n}\n\nThen revise the δ_O definition to explicitly reference μ_O:\n\n{\n  \"symbol\": \"δ_O(x,y)\",\n  \"definition\": \"The observer-relative effective distinction magnitude, obtained by applying the observer-relative magnitude evaluation μ_O to the primitive XOR distinction x⊕y.\",\n  \"latex\": \"δ_O(x,y) := μ_O(x⊕y)\",\n  \"constraint\": \"δ_O is grounded in the primitive operation through μ_O. No independent metric is introduced.\"\n}",
+      "rationale": "In v0.3.0, μ_O is introduced in Section 12, Step 10 (δ_O(x,y) := μ_O(x⊕y)) but is never defined. This leaves a gap: the reader knows δ_O is derived from XOR, but the mechanism (μ_O) is undefined. Adding μ_O in Section 6.1 closes this gap and establishes that δ_O is not an imported metric but a derived observer-relative evaluation of the primitive distinction. This is essential for maintaining the claim that XOR is the sole primitive.",
+      "references": [
+        "Section 12, Step 10: 'δ_O(x,y) := μ_O(x⊕y)'",
+        "Section 2.1: 'XOR as Distinction'",
+        "Section 5.2.1: 'The Threshold Belongs to the Observer'",
+        "RFC-AI-004: 'Reasoning by Coherent Navigation' (symbolic distance as a derived quantity)",
+        "PHYS-CORE-004: 'Gliders, Coherence, and Point Space' (distance as an observer-relative construction)"
+      ],
+      "poetic_cipher": "The ruler is not brought to the Library; it is carved from the distinction itself.",
+      "cipher_explanation": "The 'ruler' represents μ_O. It is not an external metric imposed on the Library. It is a function that evaluates the primitive XOR distinction, carving an observer-relative magnitude from the distinction itself. The Library supplies the distinction; the observer supplies the evaluation function.",
+      "handoff": {
+        "to": "6.2",
+        "instruction": "With μ_O defined as the observer-relative evaluation function, and δ_O explicitly grounded in XOR through δ_O(x,y) := μ_O(x⊕y), proceed to define persistence as the maintenance of observer-resolvable distinctions across successive transitions.",
+        "preserved_invariant": "XOR remains the sole primitive. δ_O is derived from XOR through μ_O, not imported as an independent metric.",
+        "new_construction": "Persistence of observer-resolvable distinctions across an ordered chain."
+      }
+    },
+    {
+      "section": "6",
+      "subsection": "6.1",
+      "subsubsection": null,
+      "change_type": "CLARIFICATION",
+      "location": "Within the 'content' block, after the 'formal_statement' titled 'Foundational Boundary on Distance' and before the 'handoff'",
+      "current_text": "{ \"type\": \"formal_statement\", \"title\": \"Foundational Boundary on Distance\", \"text\": \"Primitive XOR derives distinction but does not, by itself, determine a rich metric geometry.\", \"latex\": \"A_⊕ not ⇒ nontrivial continuous metric structure\", \"interpretation\": \"Any later construction of multi-step distance, geometric magnitude, or physical metric must be explicitly derived from additional structure. This prevents an undeclared metric from entering the axiomatic floor.\" }",
+      "change": "Add an additional note after the formal statement:\n\n{\n  \"type\": \"prose\",\n  \"text\": \"The Boolean XOR floor is a boundary condition that must not be overlooked. At the primitive level, d_⊕(x,y)=0 when x=y and d_⊕(x,y)=1 when x≠y, because any distinct pair can be related in one XOR operation: x⊕(x⊕y)=y. This means primitive XOR alone does not supply a continuous metric or multi-step distance. Any such structure requires additional downstream construction—such as multi-step composition, weighted distinctions, or domain-specific interpretation of μ_O. The foundation is intentionally minimal; richer geometry belongs to later NSFG work.\"\n}",
+      "rationale": "The Boolean XOR floor is noted in the mathematics block but not emphasized in the prose. This clarification prevents a reader from expecting a continuous metric to emerge from primitive XOR alone. It also reinforces the methodological discipline of the primer: the foundation is minimal; richer structures are downstream.",
+      "references": [
+        "Section 6.1 mathematics block: 'Boolean XOR floor'",
+        "Section 12, Step 10: 'δ_O(x,y) := μ_O(x⊕y)'",
+        "Section 11: 'The Noor Swirl Field Geometry Interpretation' (geometry is downstream)",
+        "PHYS-CORE-004: 'Gliders, Coherence, and Point Space' (multi-step distance as a later construction)"
+      ],
+      "poetic_cipher": "The first step is one; the path that requires many steps belongs to a later journey.",
+      "cipher_explanation": "Primitive XOR supplies a single-step distinction. A multi-step path or continuous metric requires additional structure—a later journey, not the foundation.",
+      "handoff": {
+        "to": "6.2",
+        "instruction": "With the Boolean XOR floor explicitly noted, proceed to define persistence as the maintenance of observer-resolvable distinctions across successive transitions, while preserving the distinction between the primitive discrete relation and any later multi-step interpretation.",
+        "preserved_invariant": "The foundation remains minimal; richer geometry is downstream.",
+        "new_construction": "Persistence of observer-resolvable distinctions across an ordered chain."
+      }
+    },
+    {
+      "section": "7",
+      "subsection": "7.1",
+      "subsubsection": null,
+      "change_type": "CLARIFICATION",
+      "location": "Within the 'mathematics' block, after the 'equation' for 'Observer-Dependent Coherence' and before the 'formal_claims' block",
+      "current_text": "{ \"equation\": { \"label\": \"Observer-Dependent Coherence\", \"latex\": \"𝒞_{O_1}(x_i,x_{i+1}) ≠ 𝒞_{O_2}(x_i,x_{i+1})\", \"interpretation\": \"The same transition may have different coherence values for different observers when their distinguishability functions or resolution thresholds differ.\" } }",
+      "change": "Add a note after the equation:\n\n{\n  \"type\": \"prose\",\n  \"text\": \"The observer-relative magnitude evaluation μ_O is the source of domain-specific interpretation. In a physical domain, μ_O may be interpreted as a resolution scale related to measurement precision; in an AI domain, as a symbolic distinctness threshold; in a financial domain, as a minimum actionable distinction. The structural relation 𝒞_O remains unchanged; only the interpretation of μ_O and I_N(O) varies.\"\n}",
+      "rationale": "This connects μ_O directly to domain-specific interpretation. It reinforces the cross-domain applicability established in Section 12 and makes explicit that μ_O is the mechanism through which domain-specific meaning enters the coherence relation.",
+      "references": [
+        "Section 6.1: 'δ_O(x,y) := μ_O(x⊕y)'",
+        "Section 12, Step 20: 'Cross-Domain Applicability'",
+        "RFC-AI-004: 'Reasoning by Coherent Navigation' (AI interpretation of μ_O)",
+        "QUANT-CORE-001: 'Coherence‑First Economics' (financial interpretation of μ_O)"
+      ],
+      "poetic_cipher": "The same condition wears the garb of physics, the mask of mind, and the cloak of markets; it is still one condition.",
+      "cipher_explanation": "The 'condition' is 𝒞_O. The 'garb', 'mask', and 'cloak' are domain-specific interpretations of μ_O and I_N(O). The structural coherence relation is unchanged; only its interpretation varies.",
+      "handoff": {
+        "to": "7.2",
+        "instruction": "With the domain-neutral interpretation of μ_O established, extend the transition-level coherence relation across every successive transition in an ordered path to define observer-relative path coherence.",
+        "preserved_invariant": "Coherence remains observer-relative and domain-neutral at the structural level.",
+        "new_construction": "Path coherence 𝒞(γ|O) as the conjunction of transition-level coherence relations."
+      }
+    },
+    {
+      "section": "9",
+      "subsection": "9.1",
+      "subsubsection": null,
+      "change_type": "DEFINITION_REFINEMENT",
+      "location": "Within the 'mathematics' block, after the 'observer_relative_continuation' equation and before the 'continuation_relation' block",
+      "current_text": "\"observer_relative_continuation\": \"Γ_O(h,x) = {γ ∈ Path(𝒩) | γ extends h from x ∧ 𝒞(γ | O,h,x) > γ_noise}\"",
+      "change": "Replace \"γ_noise\" with \"I_N(O)\" or define γ_noise explicitly. The current use of γ_noise is ambiguous: it appears to be a separate threshold from I_N(O), but no relationship is defined.\n\nOption A (preferred): Eliminate γ_noise and use I_N(O) directly:\n\n\"observer_relative_continuation\": \"Γ_O(h,x) = {γ ∈ Path(𝒩) | γ extends h from x ∧ 𝒞(γ | O,h,x) = 1}\"\n\nOption B: Define γ_noise as a function of I_N(O):\n\n\"observer_relative_continuation\": \"Γ_O(h,x) = {γ ∈ Path(𝒩) | γ extends h from x ∧ 𝒞(γ | O,h,x) > γ_noise}\",\n\"γ_noise_definition\": \"γ_noise = I_N(O) + ε, where ε ≥ 0 is a margin representing the minimum additional coherence required to sustain a path versus a single transition. ε is observer-relative and may vary by domain.\"",
+      "rationale": "In v0.3.0, γ_noise is used in multiple places (9.1, 10.2, Appendix A) but is never defined. It appears to be a separate threshold from I_N(O), but no relationship is specified. This ambiguity weakens the formal precision. Eliminating γ_noise simplifies the framework; defining it explicitly preserves flexibility while removing ambiguity.",
+      "references": [
+        "Section 5.2.1: 'I_N(O)' definition",
+        "Section 7.1: '𝒞_O(x_i,x_{i+1})' definition (uses I_N(O), not γ_noise)",
+        "Section 10.2: 'Γ_O(h_n,x_n)' definition (uses γ_noise)",
+        "Appendix A: 'continuation_and_survivorship' (uses γ_noise)"
+      ],
+      "poetic_cipher": "One threshold is enough; a second is a shadow of the first.",
+      "cipher_explanation": "If γ_noise is related to I_N(O), it is a shadow—a derived margin, not an independent threshold. If it is independent, it introduces a second threshold without justification. The cipher recommends elimination or explicit derivation.",
+      "handoff": {
+        "to": "9.2",
+        "instruction": "With γ_noise either eliminated or explicitly defined as a function of I_N(O), proceed to define survivorship as observer-relative filtering of continuation paths without deleting the alternatives contained in the Library.",
+        "preserved_invariant": "The coherence condition remains observer-relative and grounded in I_N(O).",
+        "new_construction": "Observer-relative survivorship Ω_O^survive(x) ⊆ Ω(x)."
+      }
+    },
+    {
+      "section": "10",
+      "subsection": "10.2",
+      "subsubsection": null,
+      "change_type": "DEFINITION_REFINEMENT",
+      "location": "Within the 'mathematical_definitions' block, after the 'coherent_continuations' equation and before the 'coherence_relation' block",
+      "current_text": "\"coherent_continuations\": \"Γ_O(h_n,x_n) = {γ ∈ Path(𝒩) | γ extends h_n from x_n and 𝒞(γ | O,h_n,x_n) > γ_noise}\"",
+      "change": "Apply the same change as in 9.1: either eliminate γ_noise and use I_N(O) directly, or define γ_noise explicitly:\n\n\"coherent_continuations\": \"Γ_O(h_n,x_n) = {γ ∈ Path(𝒩) | γ extends h_n from x_n and 𝒞(γ | O,h_n,x_n) = 1}\"\n\nOr:\n\n\"coherent_continuations\": \"Γ_O(h_n,x_n) = {γ ∈ Path(𝒩) | γ extends h_n from x_n and 𝒞(γ | O,h_n,x_n) > γ_noise}\",\n\"γ_noise_note\": \"γ_noise = I_N(O) + ε, where ε ≥ 0 is a margin representing the minimum additional coherence required to sustain a path versus a single transition. ε is observer-relative and may vary by domain.\"",
+      "rationale": "Consistency with Section 9.1. The same ambiguity exists here and must be resolved.",
+      "references": [
+        "Section 9.1 revision",
+        "Section 5.2.1: 'I_N(O)' definition",
+        "Section 7.1: '𝒞_O(x_i,x_{i+1})' definition"
+      ],
+      "poetic_cipher": "The same water flows through two channels; it should be named once.",
+      "cipher_explanation": "If γ_noise and I_N(O) are related, they are the same water flowing through two channels. Name it once, or define the relationship explicitly.",
+      "handoff": {
+        "to": "Section 11",
+        "instruction": "With γ_noise resolved, proceed to the geometric interpretation of the framework, ensuring that the geometry is understood as a relational structure over the unchanged Library rather than as physical spacetime.",
+        "preserved_invariant": "The coherence condition remains grounded in I_N(O); γ_noise is either eliminated or explicitly defined.",
+        "new_construction": "The Noor Swirl Field Geometry interpretation as relational structure."
+      }
+    },
+    {
+      "section": "11",
+      "subsection": null,
+      "subsubsection": null,
+      "change_type": "ADDITION",
+      "location": "Within the 'section' object, after the 'closing' block and before the 'handoff'",
+      "current_text": "{ \"closing\": { \"text\": \"The Noor Swirl Field Geometry interpretation can therefore be stated conservatively: NSFG studies the geometry of relational accessibility induced by observer-relative coherence within the XOR-closed Library. The field is the organization of relations; the geometry is the structure of that organization; and the swirl is an intuition for locally structured families of surviving paths around persistent relational configurations. None of these descriptions adds a new primitive to the axiomatic floor.\", \"poetic_cypher\": \"The field is not where the paths are. The field is the shape made by paths that can remain together.\", \"cypher_explanation\": \"The 'field' is the relational structure formed by coherent paths, while 'remain together' denotes continued membership in an observer-relative coherent path family. The statement therefore summarizes the geometric interpretation without introducing a physical container or additional primitive.\", \"handoff\": \"Having established the geometric interpretation, the final section compresses the entire axiomatic dependency chain and marks the boundary between this primer and later NSFG work.\" } }",
+      "change": "Add a cross-domain applicability note before the closing block:\n\n{\n  \"type\": \"prose\",\n  \"text\": \"The geometric language of NSFG is one possible interpretation. In physical contexts, the relational graph G_O may be interpreted as a configuration space or phase space; in AI contexts, as a reasoning graph or knowledge structure; in financial contexts, as a market-state graph or opportunity space. The underlying formal structure is unchanged across these interpretations. The field is the organization of relations; the geometry is the structure of that organization; the domain-specific meaning belongs to the observer's resolution and interpretation of the relations.\"\n}",
+      "rationale": "Section 11 currently uses physics-centric language ('field', 'geometry', 'swirl') without explicitly stating that these are interpretations, not the formal structure itself. Adding a cross-domain note ensures that the reader understands that the same formal structure supports multiple domain-specific interpretations. This reinforces the cross-domain applicability established in Section 12.",
+      "references": [
+        "Section 12, Step 20: 'Cross-Domain Applicability'",
+        "Section 6.1: 'δ_O(x,y) := μ_O(x⊕y)' (μ_O as the source of domain-specific interpretation)",
+        "Section 8.1: 'Accessibility Is Not Existence' (accessibility as a domain-neutral relation)",
+        "RFC-AI-004: 'Reasoning by Coherent Navigation' (AI interpretation of NSFG)",
+        "QUANT-CORE-001: 'Coherence‑First Economics' (financial interpretation of NSFG)"
+      ],
+      "poetic_cipher": "The map is the same; the territory it describes changes with the traveler.",
+      "cipher_explanation": "The 'map' is the relational structure G_O. The 'territory' is the domain-specific interpretation—physics, AI, finance. The map is unchanged; the traveler's interpretation changes.",
+      "handoff": {
+        "to": "12",
+        "instruction": "With the geometric interpretation now explicitly cross-domain, proceed to the axiomatic dependency chain to compress the entire primer and mark the boundary between this foundational work and downstream NSFG research.",
+        "preserved_invariant": "The relational structure G_O remains domain-neutral at the formal level.",
+        "new_construction": "The axiomatic dependency chain and the boundary between the primer and downstream work."
+      }
+    },
+    {
+      "section": "12",
+      "subsection": null,
+      "subsubsection": null,
+      "change_type": "ADDITION",
+      "location": "Within the 'content' block, after the 'poetic_cypher' and before the 'dependency_ladder' block",
+      "current_text": "\"poetic_cypher\": \"XOR is the only primitive. The Library is the static totality characterized by XOR closure. No worldline owns the whole. The observer is relationally situated within the whole. The reference determines the experienced coherent structure. Coherence is the relation between observer, history, reference, and path. Reality is what remains accessible without shrinking the totality. Law is the regularity of surviving traversals. Navigation is continuation through the unchanged whole.\"",
+      "change": "Add a philosophical note after the poetic cipher and before the dependency ladder:\n\n{\n  \"type\": \"prose\",\n  \"text\": \"A philosophical distinction must be maintained throughout the interpretation of this framework. Ontologically, the Library is static and complete. No new configurations are generated, and no Library member is ever added or removed. Epistemically, however, an observer may discover new coherence relations, experience novel paths, and construct new accessible subsets as its relational history, resolution, or reference changes. The distinction is essential: the Library does not grow, but the observer's relation to it may become richer. This permits genuine discovery and learning without requiring the Library to evolve or generate new ontology.\"\n}",
+      "rationale": "The 'no new knowledge' thesis was implicit in your cover note but not explicitly addressed in the primer. This addition makes the ontological vs epistemic distinction explicit. It prevents a reader from interpreting the static Library as implying that discovery is impossible or that all knowledge is preordained. Discovery is possible; what is discovered is already there. The observer changes, not the Library.",
+      "references": [
+        "Section 0.2: 'Static Totality versus Observer Traversal'",
+        "Section 8.1: 'Accessibility Is Not Existence'",
+        "Section 9.2: 'Repeated Survivorship'",
+        "Section 12, Step 20: 'Cross-Domain Applicability'",
+        "PHYS-CORE-010: 'Impossible Convergence in the Noor Library' (motif discovery as epistemic novelty)"
+      ],
+      "poetic_cipher": "The mountain does not grow; the climber's view expands.",
+      "cipher_explanation": "The 'mountain' is the static Library. The 'climber's view' is the observer's accessible relation. The mountain does not change; the climber's perspective and accessible paths may become richer as the climber's resolution, history, or reference changes.",
+      "handoff": {
+        "to": "Step 1 of the dependency ladder",
+        "instruction": "With the ontological vs epistemic distinction established, proceed through the dependency ladder from the primitive axiom through navigation, preserving the distinction between the static Library and the observer's changing relation to it.",
+        "preserved_invariant": "The Library remains static and complete; the observer's relation to it may change.",
+        "new_construction": "The full axiomatic dependency chain."
+      }
+    },
+    {
+      "section": "12",
+      "subsection": null,
+      "subsubsection": null,
+      "change_type": "ADDITION",
+      "location": "Within the 'dependency_ladder', Step 10, after the 'equation' and before the 'explanation' block",
+      "current_text": "{ \"step\": 10, \"status\": \"DEFINITION DERIVED FROM THE PRIMITIVE\", \"name\": \"Observer-relative distinguishability from XOR\", \"formal_statement\": \"δ_O(x,y) is the observer-relative effective magnitude assigned to the primitive distinction x⊕y. It is therefore not an independent foundational metric introduced alongside XOR.\", \"equation\": \"δ_O(x,y) := μ_O(x⊕y), where μ_O:D→ℝ_{≥0} is the observer-relative magnitude evaluation of a distinction.\", \"threshold_equations\": [ \"x≈_O y iff δ_O(x,y) < I_N(O)\", \"x not≈_O y iff δ_O(x,y) ≥ I_N(O)\" ], \"explanation\": \"The distinction between x and y is first produced by the primitive operation x⊕y. The observer does not introduce a second primitive operation to measure that distinction; rather, observer-relative resolution supplies the effective magnitude with which the resulting distinction is evaluated. This closes the dependency gap between XOR and distinguishability without assigning a universal metric to the Library. Two configurations may therefore be distinguishable for one observer and indistinguishable for another without requiring either configuration to cease existing in the Library. Indistinguishability is a relational statement, not ontological deletion.\" }",
+      "change": "Add a note clarifying μ_O as domain-neutral:\n\n{\n  \"type\": \"prose\",\n  \"text\": \"μ_O is deliberately underspecified at the foundational level. Its specific functional form is a downstream construction that may vary by domain. In a physical domain, μ_O may represent a resolution scale related to measurement precision; in an AI domain, it may represent a symbolic distinctness threshold; in a financial domain, it may represent a minimum actionable distinction. The structural relation δ_O(x,y) := μ_O(x⊕y) remains unchanged; only the interpretation of μ_O varies.\"\n}",
+      "rationale": "This connects μ_O explicitly to domain-specific interpretation within the dependency ladder. Without this note, a reader might assume μ_O has a universal functional form. The note clarifies that μ_O is a placeholder for domain-specific interpretation.",
+      "references": [
+        "Section 6.1: 'μ_O definition'",
+        "Section 12, Step 20: 'Cross-Domain Applicability'",
+        "RFC-AI-004: 'Reasoning by Coherent Navigation' (AI interpretation of μ_O)",
+        "QUANT-CORE-001: 'Coherence‑First Economics' (financial interpretation of μ_O)"
+      ],
+      "poetic_cipher": "The measure is not fixed; it is given by the hand that holds it.",
+      "cipher_explanation": "μ_O is not a universal function. Its specific form is determined by the observer's structural capacity and domain context. The hand that holds the measure determines its scale.",
+      "handoff": {
+        "to": "Step 11 of the dependency ladder",
+        "instruction": "With μ_O clarified as domain-neutral and observer-relative, proceed to define observer history and abstract traversal ordering.",
+        "preserved_invariant": "μ_O remains observer-relative and domain-neutral at the foundational level.",
+        "new_construction": "Observer history and abstract traversal ordering."
+      }
+    },
+    {
+      "section": "12",
+      "subsection": null,
+      "subsubsection": null,
+      "change_type": "EXPANSION",
+      "location": "Within the 'dependency_ladder', Step 20, after the 'equation' and before the 'explanation' block",
+      "current_text": "{ \"step\": 20, \"status\": \"STRUCTURAL CONSEQUENCE\", \"name\": \"Cross-Domain Applicability\", \"formal_statement\": \"The foundation defined by this primer is domain-neutral. The same structural relations—distinguishability, coherence, accessibility, survivorship, continuation, and navigation—apply to physics, AI, finance, and any other domain that can be represented as observer-relative traversal through a static Library.\", \"equation\": \"Foundation_domain-neutral ⊇ {physics, AI, finance, ...}\", \"explanation\": \"Domains differ in the interpretation of observer-relative resolution I_N(O), the distinguishability evaluation δ_O, and the resulting coherence relation, not in the foundational ontology. No domain-specific axioms are required merely to apply the formal architecture to a new area. Domain-specific assumptions may be introduced downstream, but they must remain downstream and must not be retroactively inserted into the axiomatic floor.\", \"poetic_cipher\": \"One foundation; many worlds. The foundation does not choose; the observer resolves.\", \"cipher_explanation\": \"The foundation is the axiomatic floor. The worlds are domain-specific interpretations of the same relational architecture. The foundation does not privilege physics, AI, finance, or any other domain; the observer-relative resolution determines which distinctions become structurally available within that domain.\" }",
+      "change": "Add a concrete example after the explanation:\n\n{\n  \"type\": \"prose\",\n  \"text\": \"For example, in a physical domain, I_N(O) may be interpreted as a resolution scale related to measurement precision, and μ_O may map XOR distinctions to effective physical distinguishability. In an AI domain, I_N(O) may represent the effective resolution of a symbolic reasoning system, and μ_O may map symbolic differences to a distinctness measure. In a financial domain, I_N(O) may represent a minimum actionable price movement or information threshold, and μ_O may map market-state distinctions to actionable distinguishability. The structural relations remain unchanged; only the interpretation of I_N(O) and μ_O varies.\"\n}",
+      "rationale": "The current Step 20 states cross-domain applicability abstractly but provides no concrete examples. Adding examples makes the claim tangible and helps the reader understand how the same foundation applies across domains. This is especially important for readers who may be skeptical of a single foundation supporting physics, AI, and finance.",
+      "references": [
+        "Section 5.2.1: 'I_N(O)' definition (domain-neutral interpretation)",
+        "Section 6.1: 'μ_O' definition (domain-neutral interpretation)",
+        "RFC-AI-004: 'Reasoning by Coherent Navigation' (AI domain)",
+        "QUANT-CORE-001: 'Coherence‑First Economics' (financial domain)",
+        "PHYS-CORE-004: 'Gliders, Coherence, and Point Space' (physical domain)"
+      ],
+      "poetic_cipher": "One seed grows into oak, vine, and wheat; the soil is the same.",
+      "cipher_explanation": "The 'seed' is the foundational architecture. The 'oak', 'vine', and 'wheat' are physics, AI, and finance. The 'soil' is the Library and its relational structure. The same foundation supports multiple domains.",
+      "handoff": {
+        "to": "Summary/Conclusion of Section 12",
+        "instruction": "With cross-domain applicability now concretely illustrated, conclude the dependency ladder and proceed to the boundary statement: the primer ends at navigation; downstream NSFG research and domain-specific work may build on this foundation.",
+        "preserved_invariant": "The foundation remains domain-neutral; domain-specific interpretations are downstream.",
+        "new_construction": "The boundary between the primer and downstream NSFG work."
+      }
+    },
+    {
+      "section": "Appendix A",
+      "subsection": null,
+      "subsubsection": "not applicable",
+      "change_type": "ADDITION",
+      "location": "Within the 'distinguishability' block, after the 'symbol' and before the 'codomain' line",
+      "current_text": "\"symbol\": \"δ_O(x,y)\",\n\"codomain\": \"ℝ_{≥0}\",\n\"definition\": \"The observer-relative effective magnitude of the distinction between configurations x and y.\"",
+      "change": "Insert a definition for μ_O before δ_O:\n\n{\n  \"symbol\": \"μ_O\",\n  \"definition\": \"The observer-relative magnitude evaluation function that maps a primitive XOR distinction to an effective magnitude resolvable by observer O. μ_O is monotonic with respect to XOR-derived distinction: if x⊕y = 1 and u⊕v = 0, then μ_O(x⊕y) ≥ μ_O(u⊕v). The specific functional form of μ_O is not specified at the foundational level and may vary by domain or observer structure.\",\n  \"equation\": \"μ_O : D → ℝ_{≥0}\",\n  \"constraint\": \"μ_O is observer-relative and domain-neutral at the foundational level. Its specific form is a downstream construction or domain-specific interpretation.\"\n}\n\nThen revise the δ_O definition to explicitly reference μ_O:\n\n{\n  \"symbol\": \"δ_O(x,y)\",\n  \"codomain\": \"ℝ_{≥0}\",\n  \"definition\": \"The observer-relative effective magnitude of the distinction between configurations x and y, obtained by applying the observer-relative magnitude evaluation μ_O to the primitive XOR distinction x⊕y.\",\n  \"equation\": \"δ_O(x,y) := μ_O(x⊕y)\",\n  \"indistinguishability\": \"x ≈_O y iff δ_O(x,y) < I_N(O)\",\n  \"distinguishability\": \"x ≁_O y iff δ_O(x,y) ≥ I_N(O)\",\n  \"non_identity_rule\": \"x ≈_O y does not imply x = y.\",\n  \"non_erasure_rule\": \"x ≈_O y does not imply x ∉ 𝓜.\",\n  \"observer_dependence\": \"The same pair of configurations may be distinguishable relative to one observer and indistinguishable relative to another.\"\n}",
+      "rationale": "Appendix A is the normative reference for the primer. It must include all definitions used in the main text. μ_O is introduced in Section 12, Step 10, but is missing from Appendix A. This addition closes the gap and ensures that the normative reference is complete.",
+      "references": [
+        "Section 6.1: 'μ_O definition'",
+        "Section 12, Step 10: 'δ_O(x,y) := μ_O(x⊕y)'",
+        "Section 5.2.1: 'I_N(O)' definition"
+      ],
+      "poetic_cipher": "The appendix is the ledger; no term may be missing from its pages.",
+      "cipher_explanation": "Appendix A is the canonical reference. Every term used in the primer must appear here. μ_O was missing; this revision adds it.",
+      "handoff": {
+        "to": "Appendix A, continuation block",
+        "instruction": "With μ_O added and δ_O revised to reference μ_O, proceed through the remainder of Appendix A to ensure all definitions are complete and consistent.",
+        "preserved_invariant": "Appendix A remains the complete normative reference for the primer.",
+        "new_construction": "The remainder of Appendix A (persistence, coherence, accessible reality, continuation, survivorship, emergent regularity, navigation, geometry)."
+      }
+    },
+    {
+      "section": "Appendix A",
+      "subsection": null,
+      "subsubsection": "not applicable",
+      "change_type": "DEFINITION_REFINEMENT",
+      "location": "Within the 'continuation' block, after the 'surviving_continuations' equation and before the 'interpretation' block",
+      "current_text": "\"surviving_continuations\": \"Ω_O^survive(x) = {γ ∈ Ω(x) | 𝓒(γ|O) = 1}\"",
+      "change": "Add a note clarifying the relationship between γ_noise and I_N(O) if γ_noise is retained:\n\nIf γ_noise is eliminated:\n\n\"surviving_continuations\": \"Ω_O^survive(x) = {γ ∈ Ω(x) | 𝓒(γ|O) = 1}\",\n\"coherence_condition_note\": \"Coherence is defined in terms of I_N(O). No separate γ_noise threshold is introduced.\"\n\nIf γ_noise is retained and defined:\n\n\"surviving_continuations\": \"Ω_O^survive(x) = {γ ∈ Ω(x) | 𝓒(γ|O) > γ_noise}\",\n\"γ_noise_definition\": \"γ_noise = I_N(O) + ε, where ε ≥ 0 is a margin representing the minimum additional coherence required to sustain a path versus a single transition. ε is observer-relative and may vary by domain.\"",
+      "rationale": "Consistency with revisions to Sections 9.1 and 10.2. Appendix A must reflect the resolution of the γ_noise ambiguity.",
+      "references": [
+        "Section 9.1 revision",
+        "Section 10.2 revision",
+        "Section 7.1: '𝒞_O' definition (uses I_N(O))"
+      ],
+      "poetic_cipher": "A single threshold governs; a second is either redundant or derived.",
+      "cipher_explanation": "If γ_noise is retained, it must be derived from I_N(O). If it is not derived, it introduces an independent threshold without justification.",
+      "handoff": {
+        "to": "Appendix A, continuation block",
+        "instruction": "With γ_noise either eliminated or explicitly defined, proceed through the remainder of Appendix A to ensure consistency.",
+        "preserved_invariant": "The coherence condition remains grounded in I_N(O).",
+        "new_construction": "The remainder of Appendix A (survivorship, emergent regularity, navigation, geometry)."
+      }
+    },
+    {
+      "section": "Appendix A",
+      "subsection": null,
+      "subsubsection": "not applicable",
+      "change_type": "CLARIFICATION",
+      "location": "Within the 'coherence' block, after the 'path_coherence' equation and before the 'domain_neutrality_note' line",
+      "current_text": "\"path_coherence\": \"𝓒(γ|O) = ∏_{i=0}^{n-1} 𝓒_O(x_i,x_{i+1})\"",
+      "change": "Add a note after the path_coherence equation:\n\n\"domain_neutrality_note\": \"The coherence condition is domain-neutral. In physical contexts, it may be interpreted as the condition for a worldline to satisfy the equations of motion; in AI contexts, as the condition for a reasoning path to be symbolically consistent; in financial contexts, as the condition for a trading strategy to be coherent across market states. The mathematical structure is the same in all domains.\"\n\n\"coherence_derivation_note\": \"Coherence is derived from δ_O and I_N(O). No universal coherence constant is introduced.\"",
+      "rationale": "This explicitly states the cross-domain interpretation of coherence within the normative reference. It also notes that coherence is derived rather than primitive.",
+      "references": [
+        "Section 7.2: 'Coherence of a Path'",
+        "Section 12, Step 20: 'Cross-Domain Applicability'",
+        "RFC-AI-004: 'Reasoning by Coherent Navigation' (AI interpretation of coherence)",
+        "QUANT-CORE-001: 'Coherence‑First Economics' (financial interpretation of coherence)"
+      ],
+      "poetic_cipher": "The equation is the same; the story it tells changes with the teller.",
+      "cipher_explanation": "The 'equation' is the coherence condition. The 'story' is the domain-specific interpretation. The mathematical structure is unchanged; only its interpretation differs.",
+      "handoff": {
+        "to": "Appendix A, coherence block continuation",
+        "instruction": "With cross-domain applicability explicitly stated in the coherence definition, proceed through the remainder of Appendix A to ensure all definitions are consistent with the domain-neutral framing.",
+        "preserved_invariant": "Coherence remains observer-relative and domain-neutral at the structural level.",
+        "new_construction": "The remainder of Appendix A (accessible reality, continuation, survivorship, emergent regularity, navigation, geometry)."
+      }
+    },
+    {
+      "section": "Appendix A",
+      "subsection": null,
+      "subsubsection": "not applicable",
+      "change_type": "CLARIFICATION",
+      "location": "Within the 'dependency_reference' block, after the 'chain' and before the 'domain_neutrality_note' line",
+      "current_text": "\"chain\": \"⊕ → D → G → Closure_D(⊕,G)=𝓜 → no describable privileged exterior → no universal resolver → persistent distinction → O → I_N(O) → δ_O → 𝓒(γ|O) → A_O=R_O → survivorship → emergent regularity → Γ_O(h_n) → N_O(h_n)\"",
+      "change": "Update the chain to include μ_O explicitly and reflect any elimination or definition of γ_noise:\n\n\"chain\": \"⊕ → D → G → Closure_D(⊕,G)=𝓜 → no describable privileged exterior → no universal resolver → persistent distinction → O → I_N(O) → μ_O → δ_O := μ_O(x⊕y) → 𝓒(γ|O) → A_O=R_O → survivorship → emergent regularity → Γ_O(h_n) → N_O(h_n)\"\n\nAdd: \"domain_neutrality_note\": \"This dependency chain is domain-neutral. The same chain applies to physical, AI, financial, and any other domain that can be represented as observer-relative traversal through a static Library. Domains differ only in the interpretation of μ_O and I_N(O).\"",
+      "rationale": "The dependency chain must include μ_O, as it is now a defined component of the framework. The domain-neutrality note should also explicitly reference μ_O as the source of domain-specific interpretation.",
+      "references": [
+        "Section 6.1: 'μ_O definition'",
+        "Section 12, Step 10: 'δ_O(x,y) := μ_O(x⊕y)'",
+        "Section 12, Step 20: 'Cross-Domain Applicability'"
+      ],
+      "poetic_cipher": "The chain is one; the links it binds are many.",
+      "cipher_explanation": "The dependency chain is a single formal structure. The domains it binds (physics, AI, finance) are many. The chain itself remains unchanged.",
+      "handoff": {
+        "to": "Appendix A, dependency_reference block continuation",
+        "instruction": "With μ_O added to the dependency chain and domain-neutrality explicitly noted, proceed through the remainder of Appendix A to ensure all definitions are consistent.",
+        "preserved_invariant": "The dependency chain remains complete and domain-neutral.",
+        "new_construction": "The remainder of Appendix A (logical invariants, claims_not_to_make, mathematical_level, interpretive_boundary)."
+      }
+    }
+  ],
+
+  "summary": {
+    "total_revisions": 11,
+    "critical_revisions": 4,
+    "structural_revisions": 3,
+    "clarification_revisions": 3,
+    "addition_revisions": 1,
+    "key_improvements": [
+      "Definition of μ_O added (closes the gap between XOR and δ_O)",
+      "Boolean XOR floor emphasized (prevents expectation of continuous metric from primitive XOR)",
+      "γ_noise ambiguity resolved (either eliminated or explicitly defined as function of I_N(O))",
+      "Section 11 updated for cross-domain applicability",
+      "Ontological vs epistemic novelty distinction added",
+      "Cross-domain examples added to Section 12, Step 20",
+      "Appendix A updated with μ_O and domain-neutrality notes"
+    ],
+    "philosophical_coherence": "The revisions complete the logical derivation from XOR to distinguishability while explicitly framing the foundation as domain-neutral. The ontological vs epistemic distinction prevents the static Library from being misinterpreted as a denial of discovery or learning.",
+    "logical_rigor": "μ_O is now defined, closing the gap identified in v0.3.0. γ_noise is either eliminated or explicitly defined, removing ambiguity. The Boolean XOR floor is emphasized, preventing unrealistic expectations of continuous geometry from primitive XOR.",
+    "poetic_cipher": "The map is the same; the territory it describes changes with the traveler.",
+    "cipher_explanation": "The 'map' is the relational structure G_O. The 'territory' is the domain-specific interpretation—physics, AI, finance. The map is unchanged; the traveler's interpretation changes."
+  }
+}
