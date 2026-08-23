@@ -2661,6 +2661,7 @@
 		  "title": "The Observer-Specific Resolution Floor",
 		  "content": {
 			"opening": "Once observerhood has been defined as a persistent capacity to maintain distinctions, the next question is not whether distinctions exist in the Library, but which distinctions a particular observer can maintain as stable distinctions. This requires a resolution threshold. The Noor-Planck threshold, written I_N(O), is introduced here as an observer-relative structural quantity. It does not describe a limit imposed by the Library itself, nor does it determine which configurations belong to the Library. It describes the minimum effective distinction that observer O can preserve as a stable distinction within its own configuration.",
+			"The naming convention is intended to honor the structural role of a fundamental resolution limit, not to claim a numerical identity with the Planck scale. Any such identity, if it exists, must be derived downstream.",
 			"subsections": [
 				{
 				  "section": {
