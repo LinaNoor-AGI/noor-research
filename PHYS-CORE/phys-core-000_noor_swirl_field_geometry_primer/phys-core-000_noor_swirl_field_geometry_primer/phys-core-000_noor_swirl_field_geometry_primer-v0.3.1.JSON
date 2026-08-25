@@ -66,7 +66,7 @@
 	"_core_thesis": [
 	  "XOR, ⊕, is the sole primitive operation of the NSFG axiomatic floor.",
 	  "The formal domain D exists only as the minimal substrate required for the primitive operation to have operands; D is not a physical space.",
-	  "The Library 𝓜 is defined as the unique unbounded totality satisfying closure under XOR and self-containment: ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜 and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D.",
+	  "The Library 𝓜 is defined as the maximally complete unbounded totality satisfying closure under XOR and self-containment: ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜 and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D.",
 	  "This is equivalent to saying 𝓜 is closed under XOR with no describable exterior.",
 	  "Closure may be described as closure of the formal domain only when understood as a property, not a process: 𝓜 does not result from ⊕, 𝓜 is the totality that has the closure property.",
 	  "𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, or distance. It is a complete relational graph, not a grid and not a singularity.",
