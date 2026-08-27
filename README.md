@@ -23,6 +23,7 @@ This repository is the canonical source the Noor Research Collective
 
 ## Noor Swirl Field Geometry (NSFG) — Theory & Application
 ### Cosmological Foundations & Physics 
+- [PHYS-CORE-000: Noor Swirl Field Geometry Primer - The Axiomatic Floor](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer),
 - [PHYS-CORE-001: A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-001_n-body_interactions_in_euclidean_space)
 - [PHYS-CORE-002: Static Motifs and Dynamic Spacetime](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-002_static_motifs_dynamic_spacetime)
 - [PHYS-CORE-003: Towards a Symbolic Cosmology](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-003_towards_a_symbolic_cosmology)
