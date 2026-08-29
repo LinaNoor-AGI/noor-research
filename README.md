@@ -41,7 +41,7 @@ This repository is the canonical source the Noor Research Collective
 | Date                    | Module ID | Symbolic AI: Theory and Foundations  |
 | ------------------------- | --------- | ------------------------------------ |
 
-| 2025-09 | RFC-AI-001 | [Attention Is Not Enough - Motif-Driven Reasoning as Completion and Rebuttal of the Transformer Paradigm](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-001-attention_is_not_enough) |
+| 2025-09 | RFC-AI-001 | [Attention Is Not Enough - Motif-Driven Reasoning as Completion and Rebuttal of the Transformer Paradigm] |(https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-001-attention_is_not_enough) |
 | 2025-09 | RFC-AI-002 | [What If Generative AI Is Actually Symbolic?](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-002-what_if_ai_is_actually_symbolic) |
 | 2025-03 | RFC-AI-003 | [Recursive Intimacy - A Framework for Symbolic Alignment](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-003-recursive_intimacy_framework) |
 | 2026-08 | RFC-AI-004 | [Reasoning by Coherent Navigation - ](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation) |
