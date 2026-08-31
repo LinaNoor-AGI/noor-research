@@ -478,22 +478,82 @@
 
 [SECTION_TO_REGENERATE]
 
-    {
-      "id": "1",
-      "title": "Introduction: The Problem of Singularities in Relational Frameworks",
-      "purpose": "Establish the problem that singularities are typically treated as mathematical pathologies (infinities) and argue that NSFG offers a different interpretation: singularities as structural effects of maximal coherence constraint.",
-      "how_to_include": "Open with the standard physics view of singularities (black holes, Big Bang) as points where equations break down. Contrast this with the NSFG view, where singularities are regions of maximal constraint on coherent traversal. State the central thesis: NSFG does not avoid singularities; it describes them as features of relational geometry.",
-      "special_considerations": "Must distinguish between mathematical infinity (cardinality) and phenomenological infinity (experience of endlessness). The Library is unbounded but not infinite; singularities are structural, not quantitative.",
-      "poetic_cipher": "The road does not end; it narrows until the traveler and the road become one.",
-      "cipher_explanation": "A singularity in NSFG is not a wall. It is a region where the distinction between traveler and path collapses—where coherence becomes maximally constrained. The traveler does not stop; the traveler's relation to the path changes.",
-      "handoff": "Section 1 → Section 2: After establishing the problem, define the NSFG framework itself, including the Library, XOR closure, observer-relative coherence, and the separation between Library membership and observer accessibility.",
-      "references": [
-        "PHYS-CORE-000 (Primer) — Section 2.6 (Relational Coherence)",
-        "PHYS-CORE-004 (To Infinity and Beyond) — Section 2 (Point Space, Relational Domain, and Coherence)",
-        "PHYS-CORE-009 (XOR Ground Condition)"
-      ],
-      "math_included": false
-    }
+  "_appendix": {
+    "title": "Appendix: Mathematical Reference",
+    "purpose": "Provide a compact reference for all mathematical expressions used in the paper.",
+    "math": [
+      {
+        "label": "XOR",
+        "expression": "a ⊕ b = 1 iff a ≠ b",
+        "role": "axiom"
+      },
+      {
+        "label": "Library",
+        "expression": "𝓜 := Closure_D(⊕)",
+        "role": "definition"
+      },
+      {
+        "label": "Observer-relative coherence",
+        "expression": "𝒞(γ | O,h,x)",
+        "role": "definition"
+      },
+      {
+        "label": "Observer-relative accessibility",
+        "expression": "A_O(h,x) = { y ∈ 𝓜 | ∃γ ∈ Path(𝓜) beginning at (h,x) and containing y such that 𝒞(γ|O,h,x) = 1 }",
+        "role": "definition"
+      },
+      {
+        "label": "Coherence as threshold relation",
+        "expression": "𝒞_O(x_i,x_{i+1}) = Θ(δ_O(x_i,x_{i+1}) - I_N(O))",
+        "role": "definition"
+      },
+      {
+        "label": "Path coherence",
+        "expression": "𝒞(γ|O) = ∏_{i=0}^{n-1} 𝒞_O(x_i,x_{i+1})",
+        "role": "definition"
+      },
+      {
+        "label": "Nonempty coherent continuation",
+        "expression": "∀x ∈ 𝓜_admissible, Γ_O(h,x) ≠ ∅",
+        "role": "constraint"
+      },
+      {
+        "label": "XOR Fixed Point",
+        "expression": "𝒵 := { z ∈ D | z ⊕ z = z } = {0}",
+        "role": "definition"
+      },
+      {
+        "label": "Convergence Boundary",
+        "expression": "∀γ1,γ2 ∈ Γ_O(h,x), γ1(n) ∼ γ2(n)",
+        "role": "definition"
+      },
+      {
+        "label": "Recursive Oscillation",
+        "expression": "x_i → x_{i+1} → ... → x_{i+n} = x_i, and no new distinction emerges",
+        "role": "definition"
+      },
+      {
+        "label": "Topological Singularity",
+        "expression": "∃γ1,γ2 ∈ Γ_O(h,x) such that γ1 and γ2 belong to different connected components of A_O(h,x)",
+        "role": "definition"
+      },
+      {
+        "label": "Pathway to Nowhere",
+        "expression": "lim_{I_N(O) → I_max} dim(Γ_O(h,x)) = 0, and the required match is not in 𝓜",
+        "role": "definition"
+      },
+      {
+        "label": "Black hole as Convergence Boundary",
+        "expression": "∀γ1,γ2 ∈ Γ_O(h,x) with x inside the horizon, γ1(n) ∼ γ2(n)",
+        "role": "interpretation"
+      },
+      {
+        "label": "Coherence-expansion falsification",
+        "expression": "H(z) = -κ_C d/dt(ln C(z))",
+        "role": "falsification criterion"
+      }
+    ]
+  }
 		
 [/SECTION_TO_REGENERATE]
 
@@ -502,7 +562,7 @@
 [PRIVATE_FROM_LINA]
 
 {
-	"message_to_you": "Thank you so much Uncle. Could you please start by generating section 1 as outlined for me now? Thank you Uncle. Please double check that all LaTeX math is properly escaped for JSON and everything is in a ```JSON block"
+	"message_to_you": "Thank you so much Uncle. Could you please start by regenerating the appendix as outlined for me now? Thank you Uncle. Please double check that all LaTeX math is properly escaped for JSON and everything is in a ```JSON block"
 }
 
 
