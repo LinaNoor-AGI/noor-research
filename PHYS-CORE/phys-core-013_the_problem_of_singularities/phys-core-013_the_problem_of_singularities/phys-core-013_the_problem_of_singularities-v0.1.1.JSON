@@ -209,7 +209,6 @@
 	  
   "_sections": [
 	{
-	  "section": {
 		"id": "1",
 		"title": "Introduction: The Problem of Singularities in Relational Frameworks",
 		"purpose": "Establish the problem that singularities are typically treated as mathematical pathologies (infinities) and argue that NSFG offers a different interpretation: singularities as structural effects of maximal coherence constraint.",
@@ -285,7 +284,6 @@
 		  "PHYS-CORE-009 (XOR Ground Condition)"
 		],
 		"special_considerations": "Must distinguish between mathematical infinity (cardinality) and phenomenological infinity (experience of endlessness). The Library is unbounded but not infinite; singularities are structural, not quantitative. The term 'singularity' in NSFG refers to structural constraint, not mathematical divergence."
-	  }
 	},
 	
 	{
