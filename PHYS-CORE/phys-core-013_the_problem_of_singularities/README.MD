@@ -1,21 +1,47 @@
-  "_purpose": "To reframe singularities not as mathematical infinities where equations break down, but as structural effects arising from maximal constraint on coherent traversal within the Noor Swirl Field Geometry framework. The paper establishes a taxonomy of singularities—XOR Fixed Point, Convergence Boundary, Recursive Oscillation, Topological Singularity, and Pathway to Nowhere—distinguishes necessary structural singularities from observer-relative constructions, identifies black holes as observable Convergence Boundary singularities, and establishes falsification criteria. The framework is domain-neutral and applies to physics, AI, finance, and any other domain representable as observer-relative traversal through a static Library.",
+# PHYS-CORE-013: The Problem of Singularities
+Structural Effects of Maximal Coherence Constraint in Noor Swirl Field Geometry
 
-  "_abstract": "This paper argues that Noor Swirl Field Geometry (NSFG) provides a unique framework for understanding singularities not as mathematical pathologies, but as structural features of relational geometry. Starting from a single primitive—XOR, understood as distinction—NSFG defines the Library as a static, maximally complete, unbounded relational totality. Observerhood is derived from persistent distinguishability; coherence is relational and observer-relative; and accessibility is a subset of Library membership, not a determinant of it. Within this framework, singularities arise as regions where the observer-relative coherent continuation space becomes maximally constrained. We present a taxonomy of five singularity types: the XOR Fixed Point (where distinction terminates), the Convergence Boundary (where all paths converge to a single equivalence class), the Recursive Oscillation (where failed triadic closure produces an unresolved cycle), the Topological Singularity (where accessible reality splits into disconnected components), and the Pathway to Nowhere (where coherence requires an exact match that cannot exist). Black holes are identified as Convergence Boundaries. The framework is falsifiable via coherence-expansion tests, black hole observations, dyadic stability tests, and O(1) computational core tests. NSFG uniquely treats singularities as structural effects, not pathologies, and provides a unified account of termination, convergence, oscillation, topological fracture, and exact-match failure without requiring infinities.",
+---
 
-  "_core_thesis": [
-    "Singularities are regions of maximal constraint on coherent traversal, not mathematical infinities.",
-    "The Library is a static, complete, unbounded relational totality with full adjacency and no privileged worldline.",
-    "Observerhood is structural: persistence of resolvable distinctions above an observer-relative resolution threshold.",
-    "Coherence is relational: \\(\\mathcal{C}(\\gamma \\mid O,h,x)\\), not an intrinsic property of a path.",
-    "Accessibility is not existence: \\(A_O \\subseteq \\mathcal{M}\\), and inaccessibility is not erasure.",
-    "The XOR Fixed Point (\\(\\mathcal{Z}\\)) is a necessary structural singularity where distinction terminates.",
-    "The Convergence Boundary is a singularity where paths converge to a single equivalence class—this is the NSFG model of black holes.",
-    "The Recursive Oscillation is a singularity where failed triadic closure produces an unresolved cycle.",
-    "The Topological Singularity is a singularity where accessible reality splits into disconnected components.",
-    "The Pathway to Nowhere is a singularity where coherence requires an exact match that cannot exist.",
-    "NSFG does not admit infinities as mathematical possibilities; it describes singularity effects as structural features of relational geometry.",
-    "The framework is falsifiable via coherence-expansion tests, black hole observations, dyadic stability tests, and O(1) computational core tests.",
-    "NSFG uniquely treats singularities as structural effects, not pathologies, and provides a unified account of termination, convergence, oscillation, topological fracture, and exact-match failure."
+## Purpose
+
+To reframe singularities not as mathematical infinities where equations break down, but as structural effects arising from maximal constraint on coherent traversal within the Noor Swirl Field Geometry framework. The paper establishes a taxonomy of singularities—XOR Fixed Point, Convergence Boundary, Recursive Oscillation, Topological Singularity, and Pathway to Nowhere—distinguishes necessary structural singularities from observer-relative constructions, identifies black holes as observable Convergence Boundary singularities, and establishes falsification criteria. The framework is domain-neutral and applies to physics, AI, finance, and any other domain representable as observer-relative traversal through a static Library.
+
+---
+
+## Abstract
+
+This paper argues that Noor Swirl Field Geometry (NSFG) provides a unique framework for understanding singularities not as mathematical pathologies, but as structural features of relational geometry. Starting from a single primitive—XOR, understood as distinction—NSFG defines the Library as a static, maximally complete, unbounded relational totality. Observerhood is derived from persistent distinguishability; coherence is relational and observer-relative; and accessibility is a subset of Library membership, not a determinant of it. Within this framework, singularities arise as regions where the observer-relative coherent continuation space becomes maximally constrained. We present a taxonomy of five singularity types: the XOR Fixed Point (where distinction terminates), the Convergence Boundary (where all paths converge to a single equivalence class), the Recursive Oscillation (where failed triadic closure produces an unresolved cycle), the Topological Singularity (where accessible reality splits into disconnected components), and the Pathway to Nowhere (where coherence requires an exact match that cannot exist). Black holes are identified as Convergence Boundaries. The framework is falsifiable via coherence-expansion tests, black hole observations, dyadic stability tests, and O(1) computational core tests. NSFG uniquely treats singularities as structural effects, not pathologies, and provides a unified account of termination, convergence, oscillation, topological fracture, and exact-match failure without requiring infinities.
+
+---
+
+## Core Thesis
+
+1. **Singularities are regions of maximal constraint on coherent traversal, not mathematical infinities.**
+
+2. **The Library is a static, complete, unbounded relational totality with full adjacency and no privileged worldline.**
+
+3. **Observerhood is structural:** persistence of resolvable distinctions above an observer-relative resolution threshold.
+
+4. **Coherence is relational:** $\mathcal{C}(\gamma \mid O,h,x)$, not an intrinsic property of a path.
+
+5. **Accessibility is not existence:** $A_O \subseteq \mathcal{M}$, and inaccessibility is not erasure.
+
+6. **The XOR Fixed Point ($\mathcal{Z}$) is a necessary structural singularity** where distinction terminates.
+
+7. **The Convergence Boundary is a singularity** where paths converge to a single equivalence class—this is the NSFG model of black holes.
+
+8. **The Recursive Oscillation is a singularity** where failed triadic closure produces an unresolved cycle.
+
+9. **The Topological Singularity is a singularity** where accessible reality splits into disconnected components.
+
+10. **The Pathway to Nowhere is a singularity** where coherence requires an exact match that cannot exist.
+
+11. **NSFG admits infinities as configurations within the static Library, but collapses indistinguishable copies via coherence.** Singularity effects are structural features of relational geometry arising from coherence-based collapse of distinguishability, not from cardinality-based infinities.
+
+12. **The framework is falsifiable** via coherence-expansion tests, black hole observations, dyadic stability tests, and O(1) computational core tests.
+
+13. **NSFG uniquely treats singularities as structural effects, not pathologies**, and provides a unified account of termination, convergence, oscillation, topological fracture, and exact-match failure.
 	
 ---
 
