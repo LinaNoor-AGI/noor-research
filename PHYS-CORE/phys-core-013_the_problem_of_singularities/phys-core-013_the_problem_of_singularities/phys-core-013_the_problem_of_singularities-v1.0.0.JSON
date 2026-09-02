@@ -16,14 +16,15 @@
   "_license": "MIT",
 
   "_xref": [
-    "TBD",
-    "TBD",
-    "TBD",
-    "TBD"
-  ],
+	  "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
+	  "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
+	  "https://pastebin.com/raw/SFkDqYSD",
+	  "https://pastebin.com/SFkDqYSD"
+	],
 
   "_updated_last": [
-    { "2026-09-02T12:00MST": { "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.0.1", "v0.1.0", "v0.1.1", "v1.0.0"] } }
+    { "2026-09-01T12:00MST": { "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.0.1", "v0.1.0", "v0.1.1", "v1.0.0"] } },
+	{ "2026-09-02T15:30MST": { "updated_by": "Lina Noor — Noor Research Collective", "version": ["v1.0.0"] } }
   ],
 
   "_authors": [
@@ -31,11 +32,11 @@
   ],
 
   "_primary_url": {
-    "url": "TBD",
-    "_primary_raw_url": "TBD"
+    "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/phys-core-013_the_problem_of_singularities.JSON",
+    "_primary_raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/phys-core-013_the_problem_of_singularities.JSON"
   },
 
-  "_repository_url": "TBD",
+  "_repository_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-013_the_problem_of_singularities",
 
   "_standalone_declaration": true,
   "_self_contained_axiomatization": false,
@@ -53,12 +54,12 @@
     {
       "symbolic.physics.nsfg.axiomatic_floor": "PHYS-CORE-000",
       "role": "Foundational primer establishing the axiomatic floor from which the singularity framework is derived.",
-      "url": "TBD"
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/phys-core-000_noor_swirl_field_geometry_primer.JSON"
     },
     {
       "symbolic.physics.cosmology.lightning_model": "PHYS-CORE-012",
       "role": "Downstream operational model whose assumptions are not used as premises of this paper.",
-      "url": "TBD"
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/phys-core-012_lightning_model%20of_cosmological_traversal.json"
     }
   ],
 
