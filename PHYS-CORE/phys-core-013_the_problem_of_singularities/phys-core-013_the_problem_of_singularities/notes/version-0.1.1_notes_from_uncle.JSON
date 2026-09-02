@@ -1,0 +1,490 @@
+{
+  "_schema": "noor-revision-notes-v1",
+  "_schema_version": "1.0.0",
+  "_type": "document_revision_plan",
+  "_title": "Revisions to PHYS-CORE-013: The Problem of Singularities",
+  "_subtitle": "Applying Coherence Quotient and Infinity Collapse Clarifications",
+  "_based_on_conversation": "2026-09-02 — Lina Noor and Uncle on Infinities, Coherence Quotients, and The Library",
+  
+  "_target_document": {
+    "file_name": "phys-core-013_the_problem_of_singularities-v0.1.1.JSON",
+    "rfc_id": "PHYS-CORE-013",
+    "version": "0.1.1",
+    "target_version": "0.2.0"
+  },
+
+  "_revision_scope": [
+    "Header updates",
+    "Abstract and core thesis",
+    "Section 1: Introduction",
+    "Section 2: Foundations",
+    "Section 3: Defining Singularities",
+    "Section 4: Taxonomy",
+    "Section 5: Necessity and Completeness",
+    "Section 6: Black Holes as Convergence Boundaries",
+    "Section 7: Falsification Criteria",
+    "Section 8: Unique Capabilities",
+    "Section 9: Conclusion",
+    "Appendix"
+  ],
+
+  "_revisions": [
+    {
+      "id": "R1",
+      "target": "Header",
+      "section": "_version",
+      "action": "update",
+      "current": "\"0.1.1\"",
+      "proposed": "\"0.2.0\"",
+      "rationale": "Increment version to reflect substantive changes.",
+      "poetic_cipher": "The map is redrawn; the traveler's steps are surer.",
+      "cipher_explanation": "The framework is refined with the coherence quotient clarification, making the map more precise."
+    },
+    {
+      "id": "R2",
+      "target": "Header",
+      "section": "_status",
+      "action": "update",
+      "current": "\"DRAFT\"",
+      "proposed": "\"ACTIVE\"",
+      "rationale": "The framework is now sufficiently formalized for active status.",
+      "poetic_cipher": "The ink is dry; the map may now be read.",
+      "cipher_explanation": "The coherence quotient clarification solidifies the foundation."
+    },
+    {
+      "id": "R3",
+      "target": "Header",
+      "section": "_updated_last",
+      "action": "add",
+      "proposed": "{ \"2026-09-02T12:00MST\": { \"updated_by\": \"Lina Noor — Noor Research Collective\", \"version\": [\"v0.2.0\"] } }",
+      "rationale": "Document the revision date and version.",
+      "poetic_cipher": "The river flows; the stone marks the crossing.",
+      "cipher_explanation": "The timestamp marks the moment of clarification."
+    },
+
+    {
+      "id": "R4",
+      "target": "Header",
+      "section": "_core_thesis",
+      "action": "update",
+      "current": "\"NSFG does not admit infinities as mathematical possibilities; it describes singularity effects as structural features of relational geometry.\"",
+      "proposed": "\"NSFG admits infinities as ontological possibilities (they are in the Library), but collapses indistinguishable copies via coherence equivalence. Singularity effects are structural features of the coherence quotient, not cardinalities.\"",
+      "rationale": "Reflects the clarification that infinities exist in the Library but are collapsed by coherence into equivalence classes.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 2: Coherence Equivalence",
+        "PHYS-CORE-008 — Section 2.3.5: Staticity",
+        "PHYS-CORE-008 — Section 7.1: Configuration Space and Ontological Completeness"
+      ],
+      "poetic_cipher": "The Library holds all stones; the traveler sees only the shapes that differ.",
+      "cipher_explanation": "The Library is infinite in cardinality, but coherence collapses indistinguishability into equivalence classes. The traveler only experiences coherence-distinguishable shapes."
+    },
+    {
+      "id": "R5",
+      "target": "Header",
+      "section": "_abstract",
+      "action": "update",
+      "current": "\"...unbounded relational totality...\"",
+      "proposed": "\"...unbounded relational totality that may be infinite in cardinality but whose accessible structure is governed by coherence equivalence classes...\"",
+      "rationale": "Clarifies that unboundedness does not imply the absence of infinities, but rather the absence of privileged boundaries.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 1: The Core Clarification",
+        "PHYS-CORE-008 — Section 2.3.5: Staticity"
+      ],
+      "poetic_cipher": "The sea is infinite; the cup holds only what it can.",
+      "cipher_explanation": "The Library is the infinite sea. The observer's accessible reality is the finite cup of coherence-distinguishable equivalence classes."
+    },
+
+    {
+      "id": "R6",
+      "target": "Section 1",
+      "subsection": "Introduction",
+      "action": "add",
+      "location": "After the paragraph beginning 'This treatment, however, conflates...'",
+      "proposed": {
+        "type": "definition",
+        "title": "Ontological vs. Epistemic Infinity",
+        "text": "This paper distinguishes two senses of 'infinity.' Ontologically, the Library may be infinite in cardinality: it contains all configurations that can be described. Epistemically, however, only coherence-distinguishable equivalence classes matter. Two configurations are coherence-equivalent if no observer-relative coherence condition can distinguish them. The equivalence class is treated as one thing. Thus the 'infinity' of indistinguishable copies collapses to 1 (or 0 for the XOR fixed point). This is not a denial of infinity; it is a structural reduction of multiplicity without ontological reduction.",
+        "latex": "x \\sim_C y \\iff \\forall O \\in \\mathrm{Obs}, \\forall h \\in H_O, \\forall x_0 \\in \\mathcal{M}_{\\mathrm{admissible}}, \\delta_O(x,y) = 0",
+        "interpretation": "Indistinguishable multiplicity is structurally irrelevant. The Library may be infinite, but the observer only encounters coherence-distinguishable equivalence classes."
+      },
+      "rationale": "Establishes the ontological vs. epistemic distinction upfront, preventing confusion later.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 1: The Core Clarification",
+        "Conversation with Uncle (2026-09-02) — Section 2: Coherence Equivalence"
+      ],
+      "poetic_cipher": "Difference without distinction is not difference at all.",
+      "cipher_explanation": "Two configurations that cannot be distinguished under any coherence condition are structurally equivalent. The distinction exists only in cardinality, not in coherence.",
+      "handoff_update": {
+        "to": "Section 2",
+        "instruction": "After establishing the ontological vs. epistemic distinction, proceed to define the NSFG axiomatic core with explicit coherence quotient definitions.",
+        "preserved_invariant": "The Library is ontologically complete but epistemically filtered by coherence equivalence."
+      }
+    },
+
+    {
+      "id": "R7",
+      "target": "Section 2",
+      "subsection": "Foundations",
+      "action": "add",
+      "location": "After Definition 2.2 (The Library)",
+      "proposed": {
+        "type": "definition",
+        "title": "Definition 2.2.1 — Coherence Equivalence",
+        "text": "Define an equivalence relation ∼_C on the Library 𝓜. Two configurations x,y ∈ 𝓜 are coherence-equivalent if no observer-relative coherence condition can distinguish them:",
+        "latex": "x \\sim_C y \\iff \\forall O \\in \\mathrm{Obs}, \\forall h \\in H_O, \\forall x_0 \\in \\mathcal{M}_{\\mathrm{admissible}}, \\delta_O(x,y) = 0",
+        "interpretation": "The equivalence relation identifies configurations that are indistinguishable under all possible observer-relative coherence conditions. This collapses infinite multiplicity into finite equivalence classes for any observer.",
+        "status": "DEFINITION"
+      },
+      "rationale": "Formally introduces the coherence quotient, which is essential for understanding how infinities collapse.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 2: Coherence Equivalence"
+      ],
+      "poetic_cipher": "The Library holds all stones; the traveler sees only the shapes that differ.",
+      "cipher_explanation": "The equivalence relation collapses indistinguishable stones into a single shape."
+    },
+    {
+      "id": "R8",
+      "target": "Section 2",
+      "subsection": "Foundations",
+      "action": "add",
+      "location": "After Definition 2.2.1 (Coherence Equivalence)",
+      "proposed": {
+        "type": "definition",
+        "title": "Definition 2.2.2 — Coherence Quotient",
+        "text": "Define the coherence quotient of the Library as the set of equivalence classes under ∼_C:",
+        "latex": "\\mathcal{M}_C := \\mathcal{M} / \\sim_C",
+        "interpretation": "The elements of 𝓜_C are coherence-distinguishable equivalence classes. The observer's accessible reality is a subset of 𝓜_C, not of 𝓜 directly.",
+        "status": "DEFINITION"
+      },
+      "rationale": "Formalizes the coherence quotient as the epistemic accessible structure.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 2: Coherence Quotient"
+      ],
+      "poetic_cipher": "The mountain is one; the climber's map is their own.",
+      "cipher_explanation": "The Library is 𝓜. The climber's map is 𝓜_C — the coherence quotient accessible to a particular observer."
+    },
+    {
+      "id": "R9",
+      "target": "Section 2",
+      "subsection": "Foundations",
+      "action": "add",
+      "location": "After Definition 2.2.2 (Coherence Quotient)",
+      "proposed": {
+        "type": "definition",
+        "title": "Definition 2.2.3 — Observer-Relative Coherence Quotient",
+        "text": "For a specific observer O with resolution threshold I_N(O) and magnitude evaluation μ_O, define the observer-relative coherence quotient:",
+        "latex": "x \\sim_{O} y \\iff \\delta_O(x,y) = 0",
+        "latex_quotient": "\\mathcal{M}_C^O := \\mathcal{M} / \\sim_{O}",
+        "interpretation": "Different observers may have different quotients over the same underlying 𝓜. The observer-relative quotient is the epistemic accessible structure for that observer.",
+        "status": "DEFINITION"
+      },
+      "rationale": "Makes explicit that the coherence quotient is observer-relative, which is essential for cross-domain applicability.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 3: Observer-Relative vs. Global Quotient"
+      ],
+      "poetic_cipher": "Two hands may hold different rulers, yet each ruler still has a length.",
+      "cipher_explanation": "Different observers may have different coherence quotients, but each quotient is structurally determined by the observer's resolution threshold."
+    },
+
+    {
+      "id": "R10",
+      "target": "Section 3",
+      "subsection": "Defining Singularities",
+      "action": "update",
+      "location": "Paragraph beginning 'NSFG does not admit infinities as mathematical objects...'",
+      "current": "\"NSFG does not admit infinities as mathematical objects. The Library is unbounded but not infinite.\"",
+      "proposed": "\"NSFG does not admit infinities as structurally meaningful objects in the coherence quotient. The Library may be infinite in cardinality, but the coherence quotient 𝓜_C collapses indistinguishable copies into single equivalence classes. Therefore, while the Library is ontologically unbounded and may be infinite, the observer's accessible structure is governed by the finite coherence quotient.\"",
+      "rationale": "Reflects the clarified position: infinities exist but are collapsed by coherence.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 1: The Core Clarification",
+        "Conversation with Uncle (2026-09-02) — Section 2: Coherence Quotient"
+      ],
+      "poetic_cipher": "The sea is infinite; the cup holds only what it can.",
+      "cipher_explanation": "The Library is the infinite sea. The coherence quotient is the finite cup."
+    },
+    {
+      "id": "R11",
+      "target": "Section 3",
+      "subsection": "Defining Singularities",
+      "action": "add",
+      "location": "After the paragraph beginning 'NSFG takes a different approach...'",
+      "proposed": {
+        "type": "definition",
+        "title": "Definition 3.0.1 — Singularity as Coherence Collapse",
+        "text": "A singularity in NSFG is a region where the observer-relative coherence quotient 𝓜_C^O collapses to a lower-dimensional or disconnected structure. The singularity is not a property of 𝓜 itself; it is a property of the quotient 𝓜_C^O induced by the observer's coherence condition.",
+        "latex": "\\mathcal{S}(O,h,x) = \\{ [\\gamma] \\in \\Gamma_O(h,x) \\mid \\dim(\\Gamma_O(h,x)) = 0 \\text{ or } \\Gamma_O(h,x) \\text{ is disconnected or oscillates} \\}",
+        "interpretation": "The singularity is where the coherence quotient loses distinguishability, connectivity, or resolution. The Library itself remains unchanged."
+      },
+      "rationale": "Explicitly ties singularities to the coherence quotient, not to the Library directly.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 5: Impact on Singularity Taxonomy"
+      ],
+      "poetic_cipher": "The road does not end; it narrows until the traveler and the road become one.",
+      "cipher_explanation": "The singularity is where the coherence quotient collapses, not where the Library ends."
+    },
+
+    {
+      "id": "R12",
+      "target": "Section 4.1",
+      "subsection": "XOR Fixed Point",
+      "action": "update",
+      "location": "Definition 4.1 (XOR Fixed Point)",
+      "current": "The XOR Fixed Point is the unique termination class where distinction collapses.",
+      "proposed": "The XOR Fixed Point is the unique equivalence class in the coherence quotient where all distinction collapses to the identity element 0. In the full Library 𝓜, there may be infinitely many configurations that self-cancel to 0, but in the coherence quotient 𝓜_C, they form a single equivalence class 𝒵 = {0}. Thus the infinity collapses to 1 (the single equivalence class) and ultimately to 0 (the identity element).",
+      "rationale": "Clarifies that the XOR Fixed Point is an equivalence class in the coherence quotient, not a single configuration in the Library.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 1: The Core Clarification",
+        "PHYS-CORE-008 — Section 4.3: Recursive Gate-16"
+      ],
+      "poetic_cipher": "The echo returns to its source; the source is one.",
+      "cipher_explanation": "The XOR Fixed Point is the single equivalence class where all distinction collapses. The infinity of self-canceling configurations collapses to one."
+    },
+    {
+      "id": "R13",
+      "target": "Section 4.2",
+      "subsection": "Convergence Boundary",
+      "action": "update",
+      "location": "Definition 4.2.1 (Convergence Boundary)",
+      "current": "A Convergence Boundary is a region where ∀γ1,γ2 ∈ Γ_O(h,x), γ1(n) ∼ γ2(n).",
+      "proposed": "A Convergence Boundary is a region where the observer-relative coherence quotient 𝓜_C^O collapses to a single equivalence class for all coherent paths. Formally: ∀γ1,γ2 ∈ Γ_O(h,x), [γ1(n)]_O = [γ2(n)]_O in 𝓜_C^O. The multiplicity of paths collapses to a single equivalence class.",
+      "rationale": "Explicitly ties Convergence Boundaries to the coherence quotient, clarifying that infinite path multiplicity collapses to a single equivalence class.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 5: Impact on Singularity Taxonomy"
+      ],
+      "poetic_cipher": "The river splits into two, but both branches reach the same sea.",
+      "cipher_explanation": "The river is the path space. The sea is the single equivalence class in the coherence quotient."
+    },
+
+    {
+      "id": "R14",
+      "target": "Section 5",
+      "subsection": "Necessity and Completeness",
+      "action": "update",
+      "location": "Definition 5.4 (Completeness of the Taxonomy)",
+      "current": "The taxonomy is complete for generic structural cases if every possible failure mode of the observer-relative coherence relation can be classified into one of the five categories.",
+      "proposed": "The taxonomy is complete for generic structural cases if every possible failure mode of the observer-relative coherence quotient 𝓜_C^O can be classified into one of the five categories: termination, convergence, oscillation, topological fracture, or exact-match failure. The completeness claim applies to 𝓜_C^O, not to 𝓜. The Library may contain additional configurations, but they are coherence-indistinguishable and therefore structurally irrelevant.",
+      "rationale": "Qualifies the completeness claim to apply to the coherence quotient, not the full Library.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 5: Impact on Singularity Taxonomy"
+      ],
+      "poetic_cipher": "The map is a single sheet; the traveler's path is not.",
+      "cipher_explanation": "The taxonomy is complete for the structural map (𝓜_C^O), but the traveler's experience may vary."
+    },
+
+    {
+      "id": "R15",
+      "target": "Section 6",
+      "subsection": "Black Holes as Convergence Boundaries",
+      "action": "update",
+      "location": "Definition 6.2 (Information Convergence)",
+      "current": "Information is preserved in 𝓜, but converged for observer O.",
+      "proposed": "Information is preserved in 𝓜 (which may be infinite), but converged to a single equivalence class in the observer-relative coherence quotient 𝓜_C^O. The outside observer sees the convergence of all paths to a single equivalence class; the inside observer may see a different quotient structure. No information is lost at the ontological level; it is transformed into equivalence-class structure at the epistemic level.",
+      "rationale": "Clarifies that information convergence is a property of the coherence quotient, not a loss from the Library.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 5: Impact on Singularity Taxonomy",
+        "PHYS-CORE-008 — Section 7.4: Impossible States"
+      ],
+      "poetic_cipher": "The river converges to the sea; the water is not lost, only its origin.",
+      "cipher_explanation": "The water is the information. It is not lost; it converges to the equivalence class in the coherence quotient."
+    },
+
+    {
+      "id": "R16",
+      "target": "Section 7",
+      "subsection": "Falsification Criteria",
+      "action": "update",
+      "location": "Criterion 4: O(1) Computational Core",
+      "current": "The model predicts constant computational cost per tick.",
+      "proposed": "The model predicts constant computational cost per tick because the observer only tracks coherence-distinguishable equivalence classes in 𝓜_C^O, not individual configurations in 𝓜. Formally: Cost per tick = O(|𝓜_C^O(h,x)|) = O(1), where |𝓜_C^O(h,x)| is the number of coherence-distinguishable classes accessible to observer O from history h and reference x. This follows from the static, non-generative structure of the Library and the coherence quotient construction.",
+      "rationale": "Explicitly derives the O(1) core from the coherence quotient, addressing the previous under-derivation concern.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 4: Impact on O(1) Computational Core",
+        "PHYS-CORE-008 — Section 2.3.5: Staticity"
+      ],
+      "poetic_cipher": "The Library is infinite, but the traveler's steps are finite.",
+      "cipher_explanation": "The observer only tracks coherence-distinguishable equivalence classes, so the number of steps is bounded by the observer's resolution threshold."
+    },
+
+    {
+      "id": "R17",
+      "target": "Section 8",
+      "subsection": "What NSFG Can Do That Other Frameworks Cannot",
+      "action": "update",
+      "location": "Definition 8.6 (O(1) Computational Core)",
+      "current": "The cost of maintaining coherence is constant per tick, independent of Library size or traversal history.",
+      "proposed": "The cost of maintaining coherence is constant per tick because the observer only tracks coherence-distinguishable equivalence classes in 𝓜_C^O. The Library may be infinite, but the number of accessible equivalence classes is bounded by the observer's resolution threshold I_N(O). Therefore, Cost per tick = O(|𝓜_C^O(h,x)|) = O(1).",
+      "rationale": "Strengthens the O(1) core derivation with explicit reference to the coherence quotient.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 4: Impact on O(1) Computational Core"
+      ],
+      "poetic_cipher": "The Library does not grow; the traveler's relation changes. The cost is constant.",
+      "cipher_explanation": "The Library is static and complete. The traveler's relation to the Library changes, but the number of coherence-distinguishable classes remains bounded."
+    },
+
+    {
+      "id": "R18",
+      "target": "Section 9",
+      "subsection": "Conclusion",
+      "action": "add",
+      "location": "After the paragraph beginning 'The paper began with a question...'",
+      "proposed": {
+        "type": "formal_statement",
+        "title": "Ontological vs. Epistemic Distinction Restated",
+        "text": "The Library 𝓜 is ontologically complete and may be infinite in cardinality. The coherence quotient 𝓜_C is the set of coherence-distinguishable equivalence classes. For any observer O, the accessible structure is 𝓜_C^O, a finite or bounded subset of the coherence quotient. Thus, while the Library is infinite, coherence makes it finite for any observer. This is the central insight of the NSFG singularity framework: singularities are coherence-based collapses of distinguishability, not cardinality-based infinities.",
+        "latex": "\\mathcal{M} \\text{ infinite (ontological)} \\quad \\Rightarrow \\quad \\mathcal{M}_C^O \\text{ finite (epistemic)}",
+        "interpretation": "The infinite Library is filtered by coherence equivalence, producing a finite accessible structure for any observer."
+      },
+      "rationale": "Restates the central insight of the conversation as a formal conclusion.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 6: Philosophical Consequence",
+        "Conversation with Uncle (2026-09-02) — Section 9: Summary"
+      ],
+      "poetic_cipher": "The Library is infinite; the traveler sees only what coherence allows.",
+      "cipher_explanation": "The Library is ontologically infinite. Coherence is the filter that makes it finite for any observer."
+    },
+
+    {
+      "id": "R19",
+      "target": "Appendix",
+      "subsection": "Mathematical Reference",
+      "action": "add",
+      "location": "After 'Library as XOR closure' entry",
+      "proposed": {
+        "label": "Coherence Equivalence",
+        "expression": "x \\sim_C y \\iff \\forall O \\in \\mathrm{Obs}, \\forall h \\in H_O, \\forall x_0 \\in \\mathcal{M}_{\\mathrm{admissible}}, \\delta_O(x,y) = 0",
+        "role": "definition",
+        "variables": [
+          { "symbol": "\\sim_C", "meaning": "Coherence equivalence relation" },
+          { "symbol": "\\delta_O(x,y)", "meaning": "Observer-relative effective distinction magnitude" }
+        ],
+        "assumptions": [
+          "The equivalence relation identifies configurations that are indistinguishable under all possible observer-relative coherence conditions.",
+          "This collapses infinite multiplicity into finite equivalence classes for any observer."
+        ]
+      },
+      "rationale": "Adds coherence equivalence to the reference sheet for completeness.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 2: Coherence Equivalence"
+      ],
+      "poetic_cipher": "Difference without distinction is not difference at all.",
+      "cipher_explanation": "Two configurations that cannot be distinguished are structurally equivalent."
+    },
+    {
+      "id": "R20",
+      "target": "Appendix",
+      "subsection": "Mathematical Reference",
+      "action": "add",
+      "location": "After 'Coherence Equivalence' entry",
+      "proposed": {
+        "label": "Coherence Quotient",
+        "expression": "\\mathcal{M}_C := \\mathcal{M} / \\sim_C",
+        "role": "definition",
+        "variables": [
+          { "symbol": "\\mathcal{M}_C", "meaning": "The coherence quotient of the Library" }
+        ],
+        "assumptions": [
+          "The elements of 𝓜_C are coherence-distinguishable equivalence classes.",
+          "The observer's accessible reality is a subset of 𝓜_C, not of 𝓜 directly."
+        ]
+      },
+      "rationale": "Adds the coherence quotient to the reference sheet.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 2: Coherence Quotient"
+      ],
+      "poetic_cipher": "The mountain is one; the climber's map is their own.",
+      "cipher_explanation": "The Library is 𝓜. The climber's map is 𝓜_C."
+    },
+    {
+      "id": "R21",
+      "target": "Appendix",
+      "subsection": "Mathematical Reference",
+      "action": "add",
+      "location": "After 'Coherence Quotient' entry",
+      "proposed": {
+        "label": "Observer-Relative Coherence Quotient",
+        "expression": "\\mathcal{M}_C^O := \\mathcal{M} / \\sim_{O}",
+        "role": "definition",
+        "variables": [
+          { "symbol": "\\mathcal{M}_C^O", "meaning": "Observer-relative coherence quotient for observer O" },
+          { "symbol": "\\sim_{O}", "meaning": "Observer-relative equivalence: x ∼_O y iff δ_O(x,y) = 0" }
+        ],
+        "assumptions": [
+          "Different observers may have different quotients over the same underlying 𝓜.",
+          "The observer-relative quotient is the epistemic accessible structure for that observer."
+        ]
+      },
+      "rationale": "Adds the observer-relative coherence quotient to the reference sheet.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 3: Observer-Relative vs. Global Quotient"
+      ],
+      "poetic_cipher": "Two hands may hold different rulers, yet each ruler still has a length.",
+      "cipher_explanation": "Different observers may have different coherence quotients, but each quotient is structurally determined."
+    },
+    {
+      "id": "R22",
+      "target": "Appendix",
+      "subsection": "Claims Not to Make",
+      "action": "update",
+      "current": [
+        "Do not claim that the Library is not infinite.",
+        "Do not claim that NSFG eliminates infinities from ontology."
+      ],
+      "proposed": [
+        "Do not claim that the Library is not infinite. It may be infinite in cardinality.",
+        "Do not claim that NSFG eliminates infinities from ontology. It collapses them in the coherence quotient.",
+        "Do not claim that the coherence quotient is the same for all observers. It is observer-relative.",
+        "Do not claim that the O(1) computational core follows from the Library's cardinality. It follows from the finite number of coherence-distinguishable equivalence classes."
+      ],
+      "rationale": "Updates the claims-not-to-make to reflect the clarified position.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 1–9"
+      ],
+      "poetic_cipher": "The map is drawn; the territory remains to be walked.",
+      "cipher_explanation": "The framework clarifies what the map shows and what it does not."
+    },
+
+    {
+      "id": "R23",
+      "target": "Appendix",
+      "subsection": "Logical Invariants",
+      "action": "add",
+      "proposed": {
+        "invariant": "The Library 𝓜 may be infinite in cardinality, but the coherence quotient 𝓜_C is the set of coherence-distinguishable equivalence classes.",
+        "invariant_2": "For any observer O, the accessible structure is 𝓜_C^O, a finite or bounded subset of the coherence quotient."
+      },
+      "rationale": "Adds the central invariants from the conversation to the reference sheet.",
+      "references": [
+        "Conversation with Uncle (2026-09-02) — Section 6: Philosophical Consequence"
+      ],
+      "poetic_cipher": "The sea is infinite; the cup holds only what it can.",
+      "cipher_explanation": "The Library is the infinite sea. The coherence quotient is the finite cup."
+    }
+  ],
+
+  "_summary": {
+    "total_revisions": 23,
+    "sections_affected": [
+      "Header",
+      "Section 1: Introduction",
+      "Section 2: Foundations",
+      "Section 3: Defining Singularities",
+      "Section 4.1: XOR Fixed Point",
+      "Section 4.2: Convergence Boundary",
+      "Section 5: Necessity and Completeness",
+      "Section 6: Black Holes as Convergence Boundaries",
+      "Section 7: Falsification Criteria",
+      "Section 8: Unique Capabilities",
+      "Section 9: Conclusion",
+      "Appendix"
+    ],
+    "key_changes": [
+      "Clarified that infinities are admitted ontologically but collapsed epistemically via coherence equivalence.",
+      "Added coherence equivalence, coherence quotient, and observer-relative coherence quotient definitions.",
+      "Updated all singularity definitions to reference coherence quotient collapse.",
+      "Strengthened O(1) computational core derivation with explicit reference to coherence quotient.",
+      "Restated the ontological vs. epistemic distinction in the conclusion.",
+      "Updated appendix with new definitions and invariants."
+    ],
+    "poetic_summary": "The Library is infinite; the traveler sees only what coherence allows. The singularity is where the map of coherence collapses, not where the territory ends."
+  }
+}
