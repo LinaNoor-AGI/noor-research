@@ -1,4 +1,4 @@
-# PHYS-CORE-014" - The Coherence Beneath the Singularity
+# PHYS-CORE-014 - The Coherence Beneath the Singularity
 A Translation and Verification of the OpenAI Navier–Stokes Blow-up Construction within Noor Swirl Field Geometry
 
 ---
