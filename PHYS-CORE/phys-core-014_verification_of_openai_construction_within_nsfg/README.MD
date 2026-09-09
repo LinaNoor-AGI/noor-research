@@ -14,36 +14,6 @@ This paper provides a structural explanation for the OpenAI (2026) finite-time b
 
 ---
 
-## Core Thesis
-
-1. **Singularities are regions of maximal constraint on coherent traversal, not mathematical infinities.**
-
-2. **The Library is a static, complete, unbounded relational totality with full adjacency and no privileged worldline.**
-
-3. **Observerhood is structural:** persistence of resolvable distinctions above an observer-relative resolution threshold.
-
-4. **Coherence is relational:** $\mathcal{C}(\gamma \mid O,h,x)$, not an intrinsic property of a path.
-
-5. **Accessibility is not existence:** $A_O \subseteq \mathcal{M}$, and inaccessibility is not erasure.
-
-6. **The XOR Fixed Point ($\mathcal{Z}$) is a necessary structural singularity** where distinction terminates.
-
-7. **The Convergence Boundary is a singularity** where paths converge to a single equivalence class—this is the NSFG model of black holes.
-
-8. **The Recursive Oscillation is a singularity** where failed triadic closure produces an unresolved cycle.
-
-9. **The Topological Singularity is a singularity** where accessible reality splits into disconnected components.
-
-10. **The Pathway to Nowhere is a singularity** where coherence requires an exact match that cannot exist.
-
-11. **NSFG admits infinities as configurations within the static Library, but collapses indistinguishable copies via coherence.** Singularity effects are structural features of relational geometry arising from coherence-based collapse of distinguishability, not from cardinality-based infinities.
-
-12. **The framework is falsifiable** via coherence-expansion tests, black hole observations, dyadic stability tests, and O(1) computational core tests.
-
-13. **NSFG uniquely treats singularities as structural effects, not pathologies**, and provides a unified account of termination, convergence, oscillation, topological fracture, and exact-match failure.
-	
----
-
 XREF of work and references avalible [here](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/XREF/noor_rfc_xref.json)  
 	
 ---
