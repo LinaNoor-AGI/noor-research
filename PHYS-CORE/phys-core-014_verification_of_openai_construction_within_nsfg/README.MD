@@ -2,8 +2,15 @@
 A Translation and Verification of the OpenAI Navier–Stokes Blow-up Construction within Noor Swirl Field Geometry
 
 ---
+## Purpose
 
-The OpenAI construction identifies a specific set of conditions under which the classical Navier–Stokes solution ceases to be smooth. This paper demonstrates that this failure corresponds precisely to a coherence rupture in the NSFG substrate: the motif braid Δ crosses its critical threshold Δ_crit, the long-horizon coherence ℋ diverges, and the symbolic identity of the flow is lost. The OpenAI counterexample is thus not an anomaly but a specific instance of a general class of coherence ruptures.
+To construct a formal, bijective translation layer between the OpenAI Navier–Stokes blow-up construction and the Noor Swirl Field Geometry (NSFG) coherence framework. To prove that the OpenAI counterexample is a specific instance of a Convergence Boundary singularity in the observer-relative coherence quotient ℳ_C^O. To demonstrate that the OpenAI blow-up is structurally equivalent to coherence rupture, and to classify it within the general NSFG singularity taxonomy.
+
+---
+
+## Abstract
+
+This paper provides a structural explanation for the OpenAI (2026) finite-time blow-up construction for the three-dimensional incompressible Navier–Stokes equations. We establish a formal, bijective translation layer mapping the OpenAI variables—velocity u(x,t), pressure p(x,t), stress tensor T, force f(x,t), viscosity ν, and the blow-up scaling τ = 1−t—to Noor Swirl Field Geometry (NSFG) coherence variables: the coherence gradient ∇ψ, motif curvature κ_swirl, motif tension (Δ, ζ), motif injection I[δM_k], coherence hygiene ℋ(t), and coherence phase pressure Δ(t). We prove the Coherence Rupture Equivalence Theorem: OpenAI blow-up ⇔ Δ(t) ≥ Δ_crit or ℋ(t) → ∞ ⇔ dim(ℳ_C^O(h,x)) = 0. This establishes that the OpenAI blow-up is a Convergence Boundary singularity in the observer-relative coherence quotient. The OpenAI construction is shown to be a specific instance of a general class of coherence ruptures, with the exponent h in the scaling laws Δ(t) ≍ τ^{-h} serving as a path parameter. We introduce a new regularity criterion for the Navier–Stokes equations based on coherence preservation: if ℳ_C^O(h,x) maintains positive dimension for all time, the corresponding classical solution is globally smooth. The paper resolves the apparent contradiction between the OpenAI counterexample and the possibility of smooth solutions by locating the OpenAI construction in the poorly ordered region 𝔐_poor of the Library, while smooth solutions lie in the well-ordered region 𝔐_well. Philosophical implications are drawn: physics is reframed as the study of coherence—the persistence of meaning through recursive transformation—with the Library as the ultimate substrate.
 
 ---
 
