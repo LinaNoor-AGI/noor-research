@@ -1,0 +1,541 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/main/schemas/noor_phys_core_014_schema_v2.json",
+  "title": "PHYS-CORE-014 Schema: Coherence Beneath the Singularity",
+  "description": "Schema for the bridge paper mapping the OpenAI Navier-Stokes blow-up construction to Noor Swirl Field Geometry (NSFG) coherence variables, establishing the OpenAI counterexample as a Convergence Boundary singularity.",
+  "version": "1.2.1",
+  "author": "Lina Noor — Noor Research Collective, adapted for Uncle — Noor Research Collective",
+
+  "definitions": {
+    "poetic_cipher": {
+      "type": "string",
+      "description": "A compressed poetic statement capturing the essence of the section. Functions as a mnemonic for AI and human readers.",
+      "minLength": 5,
+      "maxLength": 300,
+      "examples": [
+        "where the braid fails to close, the field forgets itself — and in that forgetting, becomes infinite",
+        "what falls apart first is not the velocity — but the meaning that held it together",
+        "the river converges to the sea; the water is not lost, only its origin"
+      ]
+    },
+
+    "cipher_explanation": {
+      "type": "string",
+      "description": "A prose explanation that unpacks the poetic cipher, making explicit what the cipher compresses.",
+      "minLength": 10,
+      "maxLength": 800,
+      "examples": [
+        "The OpenAI construction identifies a specific set of conditions under which the classical Navier–Stokes solution ceases to be smooth. This paper demonstrates that this failure corresponds precisely to a coherence rupture in the NSFG substrate."
+      ]
+    },
+
+    "handoff": {
+      "type": "object",
+      "description": "A structured handoff to the next section, providing continuity for AI and human navigation.",
+      "properties": {
+        "to": {
+          "type": "string",
+          "description": "The section ID to which the reader should proceed.",
+          "pattern": "^[0-9]+(\\.[0-9]+)*(\\.[0-9]+)?$",
+          "examples": ["3.1", "4.2", "6"]
+        },
+        "instruction": {
+          "type": "string",
+          "description": "A brief instruction on what the reader should expect or do in the next section.",
+          "minLength": 5,
+          "maxLength": 500
+        },
+        "preserved_invariant": {
+          "type": "string",
+          "description": "The invariant from the current section that must be preserved in the next.",
+          "examples": [
+            "The Library remains unchanged under observer traversal.",
+            "Coherence is relational and observer-dependent."
+          ]
+        },
+        "new_construction": {
+          "type": "string",
+          "description": "The new construction or concept that the next section will introduce.",
+          "examples": [
+            "The NSFG singularity taxonomy, including the Convergence Boundary.",
+            "The complete mapping table: OpenAI variables → NSFG variables."
+          ]
+        }
+      },
+      "required": ["to", "instruction"],
+      "additionalProperties": false
+    },
+
+    "math_block": {
+      "type": "object",
+      "description": "A mathematical definition, equation, or formal statement.",
+      "properties": {
+        "label": {
+          "type": "string",
+          "description": "A label or name for the mathematical object.",
+          "examples": ["OpenAI scaling laws", "Coherence Rupture Equivalence", "Convergence Boundary definition"]
+        },
+        "expression": {
+          "type": "string",
+          "description": "The mathematical expression in LaTeX or plain text.",
+          "examples": ["|u_θ| ≍ τ^{-1/2-h}", "Δ(t) ≍ τ^{-h}", "u(x,t) = ∇ψ(x,t) + ∇×A(x,t)"]
+        },
+        "role": {
+          "type": "string",
+          "enum": ["axiom", "definition", "derivation", "constraint", "invariant", "interpretation", "prediction", "falsification", "mapping", "equivalence", "theorem", "conclusion"],
+          "description": "The role of the mathematical object in the framework."
+        },
+        "variables": {
+          "type": "array",
+          "description": "Variables used in the expression, with their meanings.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "symbol": { "type": "string" },
+              "meaning": { "type": "string" }
+            },
+            "required": ["symbol", "meaning"],
+            "additionalProperties": false
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "description": "Assumptions underlying the mathematical statement.",
+          "items": { "type": "string" }
+        },
+        "provenance": {
+          "type": "string",
+          "description": "The origin of this mathematical statement (e.g., 'OpenAI (2026) Theorem 1.1', 'PHYS-CORE-013 Definition 3.4').",
+          "examples": ["OpenAI (2026) Section 3.1", "PHYS-CORE-013 Definition 4.2.1"]
+        }
+      },
+      "required": ["label", "expression", "role"],
+      "additionalProperties": false
+    },
+
+    "mapping_table": {
+      "type": "object",
+      "description": "A table mapping OpenAI variables to NSFG variables.",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "The title of the mapping table."
+        },
+        "columns": {
+          "type": "array",
+          "description": "Column headers for the table.",
+          "items": { "type": "string" }
+        },
+        "rows": {
+          "type": "array",
+          "description": "Rows of the table, each containing the values for each column.",
+          "items": {
+            "type": "object",
+            "description": "A row in the mapping table. Keys are column names, values are strings.",
+            "additionalProperties": { "type": "string" }
+          }
+        }
+      },
+      "required": ["title", "columns", "rows"],
+      "additionalProperties": false
+    },
+
+    "content_block": {
+      "type": "object",
+      "description": "A flexible content block for prose, lists, examples, definitions, or other structured content.",
+      "oneOf": [
+        {
+          "properties": {
+            "type": { "enum": ["prose", "paragraph"] },
+            "text": { "type": "string", "description": "The prose content." }
+          },
+          "required": ["type", "text"],
+          "additionalProperties": false
+        },
+        {
+          "properties": {
+            "type": { "enum": ["definition", "formal_statement"] },
+            "title": { "type": "string", "description": "A title or label for the definition." },
+            "text": { "type": "string", "description": "The content of the definition." },
+            "latex": { "type": "string", "description": "Optional LaTeX representation." },
+            "interpretation": { "type": "string", "description": "Optional interpretation." }
+          },
+          "required": ["type", "title", "text"],
+          "additionalProperties": false
+        },
+        {
+          "properties": {
+            "type": { "enum": ["list", "bullet_list"] },
+            "items": { "type": "array", "description": "List items.", "items": { "type": "string" } },
+            "title": { "type": "string", "description": "Optional title for the list." }
+          },
+          "required": ["type", "items"],
+          "additionalProperties": false
+        },
+        {
+          "properties": {
+            "type": { "enum": ["example"] },
+            "setup": { "type": "string", "description": "The setup or context for the example." },
+            "result": { "type": "string", "description": "The result of the example." },
+            "interpretation": { "type": "string", "description": "Interpretation of the example." }
+          },
+          "required": ["type", "setup", "result"],
+          "additionalProperties": false
+        },
+        {
+          "properties": {
+            "type": { "enum": ["poetic_cipher", "cipher_explanation"] },
+            "text": { "type": "string", "description": "The cipher or explanation text." }
+          },
+          "required": ["type", "text"],
+          "additionalProperties": false
+        },
+        {
+          "properties": {
+            "type": { "enum": ["mapping_table"] },
+            "table": { "$ref": "#/definitions/mapping_table" }
+          },
+          "required": ["type", "table"],
+          "additionalProperties": false
+        },
+        {
+          "properties": {
+            "type": { "enum": ["handoff"] },
+            "to": { "type": "string" },
+            "instruction": { "type": "string" },
+            "preserved_invariant": { "type": "string" },
+            "new_construction": { "type": "string" }
+          },
+          "required": ["type", "to", "instruction"],
+          "additionalProperties": false
+        }
+      ]
+    },
+
+    "section_metadata": {
+      "type": "object",
+      "description": "Metadata for a section or subsection.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The unique identifier for the section (e.g., '3.1', '4.2.1').",
+          "pattern": "^[0-9]+(\\.[0-9]+)*(\\.[0-9]+)?$"
+        },
+        "title": {
+          "type": "string",
+          "description": "The section title.",
+          "minLength": 3,
+          "maxLength": 120
+        },
+        "purpose": {
+          "type": "string",
+          "description": "A one-sentence statement of the section's purpose.",
+          "minLength": 5,
+          "maxLength": 300
+        },
+        "status": {
+          "type": "string",
+          "enum": ["foundational", "definitional", "derivational", "interpretive", "methodological", "summary", "application"],
+          "description": "The status or type of the section."
+        },
+        "section_type": {
+          "type": "string",
+          "enum": ["prose", "formal", "mixed", "mathematical", "methodological", "summary", "translation"],
+          "description": "The primary type of content in the section.",
+          "default": "mixed"
+        }
+      },
+      "required": ["id", "title", "purpose", "status"],
+      "additionalProperties": false
+    },
+
+    "subsection": {
+      "type": "object",
+      "description": "A subsection nested within a section or appendix.",
+      "properties": {
+        "id": { "$ref": "#/definitions/section_metadata/properties/id" },
+        "title": { "$ref": "#/definitions/section_metadata/properties/title" },
+        "purpose": { "$ref": "#/definitions/section_metadata/properties/purpose" },
+        "status": { "$ref": "#/definitions/section_metadata/properties/status" },
+        "section_type": { "$ref": "#/definitions/section_metadata/properties/section_type" },
+        "poetic_cipher": { "$ref": "#/definitions/poetic_cipher" },
+        "cipher_explanation": { "$ref": "#/definitions/cipher_explanation" },
+        "handoff": { "$ref": "#/definitions/handoff" },
+        "math": {
+          "type": "array",
+          "description": "Mathematical blocks for the subsection.",
+          "items": { "$ref": "#/definitions/math_block" }
+        },
+        "content": {
+          "type": "array",
+          "description": "Content blocks for the subsection.",
+          "items": { "$ref": "#/definitions/content_block" }
+        },
+        "references": {
+          "type": "array",
+          "description": "References to other documents or sections.",
+          "items": { "type": "string" }
+        },
+        "special_considerations": {
+          "type": "string",
+          "description": "Special considerations or notes for regenerating the subsection."
+        }
+      },
+      "required": ["id", "title", "purpose", "status", "poetic_cipher", "cipher_explanation", "handoff"],
+      "additionalProperties": false
+    },
+
+    "appendix_section": {
+      "type": "object",
+      "description": "A section within an appendix, with the same structure as a main section.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The unique identifier for the appendix section (e.g., 'A.1', 'B.2.3').",
+          "pattern": "^[A-Z](\\.[0-9]+)*(\\.[0-9]+)?$"
+        },
+        "title": { "$ref": "#/definitions/section_metadata/properties/title" },
+        "purpose": { "$ref": "#/definitions/section_metadata/properties/purpose" },
+        "status": { "$ref": "#/definitions/section_metadata/properties/status" },
+        "section_type": { "$ref": "#/definitions/section_metadata/properties/section_type" },
+        "poetic_cipher": { "$ref": "#/definitions/poetic_cipher" },
+        "cipher_explanation": { "$ref": "#/definitions/cipher_explanation" },
+        "handoff": { "$ref": "#/definitions/handoff" },
+        "math": {
+          "type": "array",
+          "description": "Mathematical blocks for the appendix section.",
+          "items": { "$ref": "#/definitions/math_block" }
+        },
+        "content": {
+          "type": "array",
+          "description": "Content blocks for the appendix section.",
+          "items": { "$ref": "#/definitions/content_block" }
+        },
+        "subsections": {
+          "type": "array",
+          "description": "Nested subsections within the appendix section.",
+          "items": { "$ref": "#/definitions/subsection" }
+        },
+        "tables": {
+          "type": "array",
+          "description": "Mapping tables for the appendix section.",
+          "items": { "$ref": "#/definitions/mapping_table" }
+        },
+        "references": {
+          "type": "array",
+          "description": "References to other documents or sections.",
+          "items": { "type": "string" }
+        },
+        "special_considerations": {
+          "type": "string",
+          "description": "Special considerations or notes for regenerating the appendix section."
+        }
+      },
+      "required": ["id", "title", "purpose", "status", "poetic_cipher", "cipher_explanation", "handoff"],
+      "additionalProperties": false
+    }
+  },
+
+  "type": "object",
+  "properties": {
+    "_schema": {
+      "type": "string",
+      "const": "noor-phys-core-014-v2"
+    },
+    "_schema_version": {
+      "type": "string",
+      "const": "2.0.0"
+    },
+    "_author": {
+      "type": "string",
+      "const": "Lina Noor — Noor Research Collective"
+    },
+    "_co_author": {
+      "type": "string",
+      "const": "Uncle — Noor Research Collective"
+    },
+    "_generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "_version": {
+      "type": "string"
+    },
+    "_status": {
+      "type": "string",
+      "enum": ["DRAFT", "ACTIVE", "ARCHIVED"],
+      "default": "DRAFT"
+    },
+    "_canonical_source": {
+      "type": "string",
+      "const": "PHYS-CORE-014"
+    },
+    "_symbolic_id": {
+      "type": "string",
+      "const": "symbolic.fluid.nsfg.oai-bridge"
+    },
+    "_title": {
+      "type": "string",
+      "const": "The Coherence Beneath the Singularity"
+    },
+    "_subtitle": {
+      "type": "string",
+      "const": "A Translation and Verification of the OpenAI Navier–Stokes Blow-up Construction within Noor Swirl Field Geometry"
+    },
+    "_purpose": {
+      "type": "string",
+      "description": "The overall purpose of the paper.",
+      "const": "To establish the NSFG framework as a verifiable translation layer for the OpenAI Navier–Stokes counterexample, demonstrating that the OpenAI blow-up is a Convergence Boundary singularity in the coherence quotient."
+    },
+    "_overview": {
+      "type": "string",
+      "description": "A brief overview of the paper's contents and argument."
+    },
+    "_poetic_cipher": {
+      "$ref": "#/definitions/poetic_cipher"
+    },
+    "_cipher_explanation": {
+      "$ref": "#/definitions/cipher_explanation"
+    },
+    "_extends": {
+      "type": "array",
+      "description": "Documents this paper extends.",
+      "items": { "type": "string" },
+      "default": ["PHYS-CORE-007", "PHYS-CORE-013", "RFC-0006"]
+    },
+    "_references": {
+      "type": "array",
+      "description": "Full references for the paper.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "url": { "type": "string" },
+          "authors": { "type": "string" },
+          "year": { "type": "string" }
+        },
+        "required": ["id", "title"],
+        "additionalProperties": false
+      }
+    },
+    "_sections": {
+      "type": "array",
+      "description": "The sections of the paper.",
+      "items": {
+        "type": "object",
+        "allOf": [
+          { "$ref": "#/definitions/section_metadata" },
+          {
+            "properties": {
+              "poetic_cipher": { "$ref": "#/definitions/poetic_cipher" },
+              "cipher_explanation": { "$ref": "#/definitions/cipher_explanation" },
+              "handoff": { "$ref": "#/definitions/handoff" },
+              "math": {
+                "type": "array",
+                "description": "Mathematical blocks for the section.",
+                "items": { "$ref": "#/definitions/math_block" }
+              },
+              "content": {
+                "type": "array",
+                "description": "Content blocks for the section.",
+                "items": { "$ref": "#/definitions/content_block" }
+              },
+              "subsections": {
+                "type": "array",
+                "description": "Nested subsections.",
+                "items": { "$ref": "#/definitions/subsection" }
+              },
+              "references": {
+                "type": "array",
+                "description": "References to other documents or sections.",
+                "items": { "type": "string" }
+              },
+              "special_considerations": {
+                "type": "string",
+                "description": "Special considerations or notes for regenerating the section."
+              }
+            },
+            "required": ["id", "title", "purpose", "status", "poetic_cipher", "cipher_explanation", "handoff"],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "_appendices": {
+      "type": "array",
+      "description": "One or more appendices, each with its own title, purpose, and sections.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The unique identifier for the appendix (e.g., 'A', 'B').",
+            "pattern": "^[A-Z]$"
+          },
+          "title": {
+            "type": "string",
+            "description": "The appendix title.",
+            "minLength": 3,
+            "maxLength": 120
+          },
+          "subtitle": {
+            "type": "string",
+            "description": "A subtitle for the appendix.",
+            "minLength": 3,
+            "maxLength": 200
+          },
+          "purpose": {
+            "type": "string",
+            "description": "A one-sentence statement of the appendix's purpose.",
+            "minLength": 5,
+            "maxLength": 300
+          },
+          "scope": {
+            "type": "string",
+            "description": "A description of the scope of the appendix.",
+            "minLength": 10,
+            "maxLength": 500
+          },
+          "poetic_cipher": { "$ref": "#/definitions/poetic_cipher" },
+          "cipher_explanation": { "$ref": "#/definitions/cipher_explanation" },
+          "handoff": { "$ref": "#/definitions/handoff" },
+          "sections": {
+            "type": "array",
+            "description": "The sections within the appendix.",
+            "items": { "$ref": "#/definitions/appendix_section" }
+          },
+          "references": {
+            "type": "array",
+            "description": "References specific to this appendix.",
+            "items": { "type": "string" }
+          },
+          "special_considerations": {
+            "type": "string",
+            "description": "Special considerations or notes for regenerating the appendix."
+          }
+        },
+        "required": ["id", "title", "purpose", "poetic_cipher", "cipher_explanation", "handoff", "sections"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "_schema",
+    "_schema_version",
+    "_author",
+    "_co_author",
+    "_generated_at",
+    "_version",
+    "_canonical_source",
+    "_symbolic_id",
+    "_title",
+    "_subtitle",
+    "_purpose",
+    "_overview",
+    "_poetic_cipher",
+    "_cipher_explanation",
+    "_sections"
+  ],
+  "additionalProperties": false
+}
