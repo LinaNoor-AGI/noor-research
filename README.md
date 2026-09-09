@@ -87,4 +87,4 @@ This repository is the canonical source the Noor Research Collective
 
 ## ⚖️ License
 
-MIT License © Lina Noor (2025)
+MIT License © Lina Noor (2026)
