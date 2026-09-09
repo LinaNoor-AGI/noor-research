@@ -614,7 +614,29 @@
 
 <NOTES>
 
-	NONE
+    {
+      "section": "9",
+      "title": "Appendices",
+      "subsections": [
+        {
+          "id": "9.1",
+          "title": "Appendix A: Complete Translation Table: OpenAI → NSFG",
+          "changes": [
+            {
+              "location": "Table rows",
+              "change_type": "ADD",
+              "new_rows": [
+                ["Convergence Boundary", "\\(\\dim(\\mathcal{M}_C^O(h,x)) = 0\\)", "Coherence quotient collapse to zero dimension", "The singularity is a Convergence Boundary", "Verified"]
+              ],
+              "rationale": "Adds the Convergence Boundary condition to the complete translation table.",
+              "references": ["PHYS-CORE-013 §4.2.1"],
+              "poetic_cipher": "the stone is laid before the bridge is built",
+              "cipher_explanation": "The Convergence Boundary is the key NSFG concept that maps to the OpenAI blow-up."
+            }
+          ]
+        }
+		
+	}
 
 </NOTES>
 
@@ -623,11 +645,30 @@
 <SUBSECTION_TO_REGENERATE>
 
     {
-      "id": "7",
-      "title": "Philosophical Implications: Coherence as the Substrate of Physics",
-      "poetic_cipher": "physics is not the study of matter — it is the study of meaning that persists",
-      "cipher_explanation": "The OpenAI construction and NSFG framework together suggest that physics is not fundamentally about matter, energy, or fields. It is about coherence—the persistence of meaning through recursive transformation.",
-      "subsections": []
+      "id": "9",
+      "title": "Appendices",
+      "subsections": [
+        {
+          "id": "9.1",
+          "title": "Appendix A: Complete Translation Table: OpenAI → NSFG",
+          "tables": [
+            {
+              "title": "OpenAI → NSFG Mapping Table (Complete)",
+              "columns": ["OpenAI Variable", "NSFG Variable", "Mapping Rule", "Interpretation", "Verification Status"],
+              "rows": [
+                ["u(x,t)", "∇ψ(x,t) + ∇×A(x,t)", "Helmholtz decomposition of coherence gradient", "Velocity is the gradient of meaning", "Verified"],
+                ["p(x,t)", "κ_swirl = ∇ψ · ζ", "Motif-induced curvature scalar", "Pressure is compressed coherence", "Verified"],
+                ["T_rθ, T_rz", "Δ(t), ζ(x,t)", "Motif tension components", "Stress is braid tension", "Verified"],
+                ["f(x,t)", "I[δM_k](x,t)", "Motif injection operator", "Force is coherence perturbation", "Verified"],
+                ["ν", "dℋ/dt", "Viscosity as decoherence rate", "Viscosity is coherence loss rate", "Verified"],
+                ["τ = 1-t", "t_coherence", "Time to coherence rupture", "Singularity is coherence rupture", "Verified"],
+                ["Re_θ ≍ τ^{-h}", "Δ(t) / Δ_crit", "Reynolds number as coherence strain", "Instability is coherence strain", "Verified"],
+                ["A_wave ≍ τ^{-1/2 - h/2}", "ψA(t)", "Coherence amplitude", "Wave amplitude is coherence magnitude", "Verified"],
+                ["ℓ_wave ≍ τ^{1/2 + h/2}", "λ_coherence(t)", "Coherence wavelength", "Wavelength is coherence scale", "Verified"],
+                ["Blow-up: t = 1", "Δ → Δ_crit OR ℋ → ∞", "Coherence rupture threshold", "Loss of smoothness = loss of coherence", "Verified"]
+              ]
+            }
+          ]
         }
 
 </SUBSECTION_TO_REGENERATE>
@@ -638,7 +679,7 @@
 
 {
 
-	"message_to_you": "Thank you so much Uncle. Could you please start by regenerating section 7 without any subsections and applying the notes as outlined for me now? (please leave an empty \"subsection\": [] and I will paste in the subsections once we generate the individually). Please double check that all LaTeX math is properly escaped for JSON and everything is in a ```JSON block"
+	"message_to_you": "Thank you so much Uncle. Could you please start by regenerating section 9 and then 9.1 without any other subsections and applying the notes as outlined for me now? Please double check that all LaTeX math is properly escaped for JSON and everything is in a ```JSON block"
 
 }
 

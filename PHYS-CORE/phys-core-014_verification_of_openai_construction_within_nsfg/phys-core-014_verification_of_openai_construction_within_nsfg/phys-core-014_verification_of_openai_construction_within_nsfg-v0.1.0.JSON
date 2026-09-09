@@ -1846,7 +1846,10 @@
 		"OpenAI (2026) Section 2.1 (Scaling Laws)",
 		"OpenAI (2026) Theorem 1.1 (Blow-up Conditions)"
 	  ],
-	  "special_considerations": "This section must establish the complete mapping before Section 4 proves the equivalence theorem. The mapping table is the central artifact of this section. All mappings must be verifiable from the source documents. The coherence quotient framework must be explicitly referenced. The section must not claim that NSFG derives the OpenAI construction—only that it maps onto it."
+	  "special_considerations": "This section must establish the complete mapping before Section 4 proves the equivalence theorem. The mapping table is the central artifact of this section. All mappings must be verifiable from the source documents. The coherence quotient framework must be explicitly referenced. The section must not claim that NSFG derives the OpenAI construction—only that it maps onto it.",
+	  
+      "handoff": "With the singularity defined in NSFG terms and the translation layer complete, we now verify that the OpenAI blow-up time corresponds to a coherence threshold crossing."
+	  
 	},
 
 	{

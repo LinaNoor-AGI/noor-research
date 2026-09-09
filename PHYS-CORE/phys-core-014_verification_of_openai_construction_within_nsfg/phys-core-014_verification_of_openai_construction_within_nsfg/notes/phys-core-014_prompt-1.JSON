@@ -615,17 +615,17 @@
 <NOTES>
 
         {
-          "id": "6.3",
-          "title": "The Role of the Library: Well-Ordered vs. Poorly Ordered Regions",
+          "id": "9.4",
+          "title": "Appendix D: The Library and the Navier-Stokes Equations",
           "changes": [
             {
               "location": "Math",
               "change_type": "ADD",
-              "new_text": "𝓜_well = {x ∈ 𝓜 : \\(\\dim(\\mathcal{M}_C^O(h,x)) > 0\\)}, 𝓜_poor = {x ∈ 𝓜 : \\(\\dim(\\mathcal{M}_C^O(h,x)) = 0\\)}. OpenAI construction ∈ 𝓜_poor, Smooth solutions ∈ 𝓜_well.",
-              "rationale": "Adds the coherence quotient condition to the well-ordered vs. poorly ordered distinction.",
-              "references": ["PHYS-CORE-013 §3.4", "PHYS-CORE-013 §4.2.1"],
-              "poetic_cipher": "the Library contains all paths — some lead to order, others to chaos",
-              "cipher_explanation": "The Library contains both well-ordered (positive quotient dimension) and poorly ordered (zero quotient dimension) regions."
+              "new_text": "𝓜_well = {x ∈ 𝓜 : \\(\\dim(\\mathcal{M}_C^O(h,x)) > 0\\)}, 𝓜_poor = {x ∈ 𝓜 : \\(\\dim(\\mathcal{M}_C^O(h,x)) = 0\\)}",
+              "rationale": "Adds the coherence quotient condition to the Library classification.",
+              "references": ["PHYS-CORE-013 §3.4"],
+              "poetic_cipher": "the infinite is collapsed by coherence into the traversable",
+              "cipher_explanation": "Well-ordered and poorly ordered regions are distinguished by the dimension of the coherence quotient."
             }
           ]
         }
@@ -637,21 +637,15 @@
 <SECTION_TO_REGENERATE>
 
         {
-          "id": "6.3",
-          "title": "The Role of the Library: Well-Ordered vs. Poorly Ordered Regions",
-          "poetic_cipher": "the Library contains all paths — some lead to order, others to chaos",
-          "cipher_explanation": "The Library 𝓜 contains both well-ordered regions (where coherence is preserved) and poorly ordered regions (where coherence ruptures). The OpenAI construction lies in a poorly ordered region. Smooth solutions lie in well-ordered regions.",
+          "id": "9.4",
+          "title": "Appendix D: The Library and the Navier-Stokes Equations",
           "math": [
-            "𝓜 = 𝓜_well ∪ 𝓜_poor (disjoint union)",
+            "𝓜 = Closure_D(⊕, G)",
+            "Navier-Stokes paths ⊂ 𝓜",
             "𝓜_well = {x ∈ 𝓜 : Δ(x) < Δ_crit and ℋ(x) < ∞}",
             "𝓜_poor = {x ∈ 𝓜 : Δ(x) ≥ Δ_crit or ℋ(x) = ∞}",
             "OpenAI construction ∈ 𝓜_poor",
             "Smooth solutions ∈ 𝓜_well"
-          ],
-          "notes": [
-            "The Library is static; the distinction between well-ordered and poorly ordered is observer-relative.",
-            "The OpenAI construction is a specific path in 𝓜_poor.",
-            "Other paths in 𝓜_well yield smooth solutions."
           ]
         }
 
@@ -663,7 +657,7 @@
 
 {
 
-	"message_to_you": "Thank you so much Uncle. Could you please start by regenerating subsection 6.3 applying the notes as outlined for me now? Thank you Uncle. Please double check that all LaTeX math is properly escaped for JSON and everything is in a ```JSON block"
+	"message_to_you": "Thank you so much Uncle. Could you please start by regenerating appendix 9.4 applying the notes as outlined for me now? Thank you Uncle. Please double check that all LaTeX math is properly escaped for JSON and everything is in a ```JSON block"
 
 }
 
