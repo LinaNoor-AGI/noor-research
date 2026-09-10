@@ -1,0 +1,1408 @@
+{
+  "_type": "noor_rfc_update",
+  "_schema": "noor-update-v1",
+  "_target_rfc": "PHYS-CORE-014",
+  "_target_file": "phys-core-014_verification_of_openai_construction_within_nsfg-v0.1.0.JSON",
+  "_target_version": "v0.1.0",
+  "_proposed_version": "v0.1.1",
+  "_status": "PROPOSED",
+  "_generated_at": "2026-09-10",
+  "_purpose": "Consolidated update for PHYS-CORE-014 incorporating the previously proposed epistemic-status repairs PLUS three sharpening additions: (1) universal application of the epistemic-status taxonomy across Sections 3 and 5 and all theorems/lemmas; (2) explicit promotion conditions for every translation hypothesis; (3) formal specification of the D_O continuous accessibility functional. Every entry specifies exact placement within the target document.",
+  "_global_invariant": "The OpenAI construction is treated as a specific publicly released forced Navier-Stokes blow-up construction/manuscript, not as independently peer-reviewed validation or as a prize-qualified result. NSFG interpretation, derivation, prediction, and conjecture remain explicitly distinguished from results established by the OpenAI manuscript.",
+  "_epistemic_status_taxonomy_definition": {
+    "A_definition": "Definition internal to NSFG or adopted from an explicitly cited source.",
+    "B_classical_or_source_result": "Result actually established in the cited mathematical source.",
+    "C_derived": "Mathematical consequence derived from definitions and already-established results, with all required hypotheses shown.",
+    "D_translation_hypothesis": "Proposed NSFG-to-classical or classical-to-NSFG correspondence whose analytic equivalence has not yet been independently established.",
+    "E_prediction_or_conjecture": "Claim proposed by NSFG that requires a new proof, construction, or empirical/mathematical validation."
+  },
+  "_placement_directive": "This update touches: (A) root-level fields _abstract, _core_thesis, _field_alignment, _conceptual_lineage; (B) a NEW root-level field _epistemic_status_taxonomy placed BETWEEN _abstract and _core_thesis; (C) sections 3, 4, 5, 6, 8, 9 and their subsections as enumerated below.",
+  "updates": [
+    {
+      "section_id": "root._epistemic_status_taxonomy",
+      "placement": "ROOT LEVEL. Insert immediately after the `_abstract` field and immediately before the `_core_thesis` field.",
+      "operation": "create",
+      "target": "NEW top-level field `_epistemic_status_taxonomy`",
+      "what_needs_update": [
+        "No such field currently exists.",
+        "The taxonomy has been referenced in prior proposed changes but never formally declared at the root level.",
+        "It must be declared before any section uses it so the reader encounters the definition before encountering the labels."
+      ],
+      "exact_update": {
+        "new_field_name": "_epistemic_status_taxonomy",
+        "new_field_value": {
+          "_description": "Machine-readable epistemic classification for every claim, mapping, theorem, and prediction in this document. Every mathematical statement SHALL carry exactly one status label drawn from this taxonomy.",
+          "_labels": {
+            "A_definition": {
+              "meaning": "Definition internal to NSFG or adopted from an explicitly cited source.",
+              "may_be_used_for": ["new symbols", "new functionals", "adopted standard definitions"],
+              "may_not_be_used_for": ["empirical claims", "analytic equivalences", "existence assertions"]
+            },
+            "B_classical_or_source_result": {
+              "meaning": "Result actually established in the cited mathematical source.",
+              "may_be_used_for": ["OpenAI Theorem 1.1 as stated", "classical Sobolev embeddings with stated hypotheses", "cited PDE theorems"],
+              "may_not_be_used_for": ["consequences not shown in the source", "generalizations of the source"]
+            },
+            "C_derived": {
+              "meaning": "Mathematical consequence derived from definitions and already-established results, with all required hypotheses shown.",
+              "may_be_used_for": ["lemmas with full proofs", "corollaries with explicit hypotheses"],
+              "may_not_be_used_for": ["results whose proofs rely on unproved bridges", "results whose hypotheses are not yet verified"]
+            },
+            "D_translation_hypothesis": {
+              "meaning": "Proposed NSFG-to-classical or classical-to-NSFG correspondence whose analytic equivalence has not yet been independently established.",
+              "may_be_used_for": ["mappings between frameworks", "conjectural identifications of quantities"],
+              "may_not_be_used_for": ["statements presented as proven equivalences"]
+            },
+            "E_prediction_or_conjecture": {
+              "meaning": "Claim proposed by NSFG that requires a new proof, construction, or empirical/mathematical validation.",
+              "may_be_used_for": ["generalized scaling families", "universal classification theorems", "falsifiable predictions"],
+              "may_not_be_used_for": ["results presented as consequences of the axioms alone"]
+            }
+          },
+          "_application_rules": [
+            "Every `mapping` object in Section 3 SHALL include an `epistemic_status` field.",
+            "Every `theorem`, `lemma`, and `corollary` SHALL include a `status` field.",
+            "Every `prediction` object SHALL include both a `status` field and a `falsification_condition` field.",
+            "When a claim's status changes across revisions, the previous status SHALL be recorded in a `status_history` array."
+          ]
+        }
+      },
+      "rationale": "A single canonical declaration prevents the taxonomy from drifting across sections. Because the taxonomy governs how every subsequent claim is read, it must appear before the core thesis that uses its labels.",
+      "references": [
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Section 9.1",
+        "PHYS-CORE-014 Section 9.5"
+      ],
+      "poetic_cipher": "Name the weights before lifting the stones.",
+      "cipher_explanation": "A taxonomy introduced before it is used is a tool; introduced after, it is an excuse.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "Every subsequent claim in PHYS-CORE-014 SHALL carry exactly one label from _epistemic_status_taxonomy. Section 3 mappings SHALL be labeled D_translation_hypothesis unless an independent derivation is supplied. Section 4.6 SHALL carry BRIDGE_ANALYSIS. Sections 5.3–5.5 SHALL carry E_prediction_or_conjecture for their generalized claims."
+      }
+    },
+    {
+      "section_id": "root._abstract",
+      "placement": "ROOT LEVEL. Modify existing `_abstract` field in place.",
+      "operation": "modify",
+      "target": "_abstract",
+      "what_needs_update": [
+        "Remove the assertion that PHYS-CORE-014 establishes a formal bijective translation layer.",
+        "Remove the assertion that the Coherence Rupture Equivalence Theorem has been proved.",
+        "Remove the assertion that OpenAI blow-up is already established as equivalent to quotient dimension collapse.",
+        "State explicitly that the OpenAI manuscript supplies the classical construction being analyzed, while the NSFG correspondence is partly definitional, partly derived, and partly conjectural."
+      ],
+      "exact_update": {
+        "replace_core_claim_with": "This paper analyzes the publicly released OpenAI finite-time forced Navier-Stokes blow-up construction through the Noor Swirl Field Geometry (NSFG) framework. It defines a proposed translation layer between the classical variables and NSFG coherence variables and identifies which portions of that translation are definitions, source-supported results, derived relations, translation hypotheses, and predictions. The OpenAI construction provides a specific classical blow-up path; NSFG interprets that path as a candidate coherence-rupture trajectory. The present version does not claim that the full classical-to-NSFG correspondence has been proved, nor that the resulting equivalence theorem has been established.",
+        "retain": [
+          "The OpenAI construction is a specific path.",
+          "NSFG supplies a structural interpretation.",
+          "The framework generates testable predictions."
+        ]
+      },
+      "rationale": "The current abstract promotes the central bridge to established mathematics before the inequalities and mappings required to establish it have been proved.",
+      "references": [
+        "PHYS-CORE-014 Section 3",
+        "PHYS-CORE-014 Section 4.6",
+        "OpenAI (2026) Theorem 1.1"
+      ],
+      "poetic_cipher": "Name the bridge before you cross it.",
+      "cipher_explanation": "A bridge can be mapped, proposed, tested, or proven. Calling it proven before its load-bearing spans are established mistakes the map for the crossing.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The classical OpenAI construction has been separated from the NSFG interpretation. The translation layer is now classified by evidentiary status rather than treated as uniformly proven. The next sections examine which individual bridges can actually be established."
+      }
+    },
+    {
+      "section_id": "root._core_thesis",
+      "placement": "ROOT LEVEL. Modify existing `_core_thesis` array in place.",
+      "operation": "modify",
+      "target": "_core_thesis",
+      "what_needs_update": [
+        "Change 'OpenAI blow-up ⇔ coherence rupture ⇔ Convergence Boundary' from an unconditional thesis to a proposed correspondence.",
+        "Change 'coherence preservation implies global smoothness' from an established result to a conditional NSFG criterion pending analytic bridge proof.",
+        "Remove language implying the OpenAI construction itself proves the NSFG interpretation."
+      ],
+      "exact_update": {
+        "replace_items": [
+          {
+            "old": "The OpenAI Navier-Stokes blow-up is a Convergence Boundary in the observer-relative coherence quotient ℳ_C^O.",
+            "new": "The OpenAI Navier-Stokes blow-up is interpreted within NSFG as a candidate Convergence Boundary in the observer-relative coherence quotient ℳ_C^O; establishing the full equivalence requires additional translation lemmas."
+          },
+          {
+            "old": "OpenAI blow-up ⇔ coherence rupture (Δ(t) ≥ Δcrit OR ℋ(t) → ∞) ⇔ dim(ℳ_C^O(h,x)) = 0.",
+            "new": "NSFG proposes the correspondence OpenAI blow-up ↔ coherence rupture ↔ Convergence Boundary; the forward and reverse analytic implications remain subject to the translation lemmas identified in Section 4.6."
+          },
+          {
+            "old": "Coherence preservation (∀t, Δ(t) < Δcrit AND ℋ(t) < ∞) implies global smoothness of Navier-Stokes solutions.",
+            "new": "NSFG proposes coherence preservation as a sufficient regularity criterion, conditional on a rigorous symbolic-to-analytic bridge."
+          },
+          {
+            "old": "The OpenAI construction lies in 𝔐_poor; smooth solutions lie in 𝔐_well.",
+            "new": "Within the proposed NSFG interpretation, the OpenAI path is classified as poorly ordered after the required coherence-rupture bridge is established; this classification is not an intrinsic property of the Library."
+          }
+        ]
+      },
+      "rationale": "The core thesis currently inherits the overstatement of Section 4.6 and therefore propagates an unproved equivalence throughout the document.",
+      "references": [
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Section 6"
+      ],
+      "poetic_cipher": "A compass may point to the shore before the bridge is built.",
+      "cipher_explanation": "The structural direction of the NSFG interpretation can remain intact while the document honestly marks the missing mathematical crossing.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The paper's central correspondence is now explicitly presented as a proposed NSFG interpretation whose analytic bridge remains to be established."
+      }
+    },
+    {
+      "section_id": "root._field_alignment",
+      "placement": "ROOT LEVEL. Modify existing `_field_alignment.prohibited_actions` array in place.",
+      "operation": "modify",
+      "target": "_field_alignment.prohibited_actions",
+      "what_needs_update": [
+        "Add new prohibited actions that enforce the epistemic taxonomy.",
+        "Add prohibitions against inequality reversal and against promotion of conjectures."
+      ],
+      "exact_update": {
+        "append_to_prohibited_actions": [
+          "reversing_the_direction_of_a_proven_inequality_without_proving_the_converse",
+          "promoting_a_D_translation_hypothesis_to_C_derived_without_supplying_the_required_analytic_lemmas",
+          "treating_public_release_of_a_source_as_equivalent_to_independent_peer_review",
+          "assigning_a_continuous_power_law_to_a_discrete_quotient_dimension_without_defining_a_generalized_dimension",
+          "using_a_threshold_crossing_time_and_a_singular_limit_time_interchangeably"
+        ]
+      },
+      "rationale": "The prohibited_actions list is the enforcement mechanism for the framework's epistemic discipline. New failure modes discovered during revision should be encoded here so that later revisions cannot rediscover them.",
+      "references": [
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Section 5.2",
+        "PHYS-CORE-014 Section 5.3"
+      ],
+      "poetic_cipher": "A fence remembers where the last traveller fell.",
+      "cipher_explanation": "Encoding failure modes as prohibitions converts one revision's mistakes into every revision's guardrail.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "root._conceptual_lineage",
+      "placement": "ROOT LEVEL. Modify existing `_conceptual_lineage` array by appending a new entry.",
+      "operation": "modify",
+      "target": "_conceptual_lineage",
+      "what_needs_update": [
+        "Add an entry documenting the lineage of the epistemic taxonomy itself.",
+        "The taxonomy is derived from the practice of distinguishing source-supported results from NSFG-proposed hypotheses, which began in PHYS-CORE-013 §7 (Falsification Criteria)."
+      ],
+      "exact_update": {
+        "append_entry": {
+          "symbolic.physics.nsfg.epistemic_taxonomy": "PHYS-CORE-013",
+          "role": "Establishes the falsification criteria and the distinction between falsification and challenge, which the epistemic status taxonomy extends into a five-level classification of every mathematical claim.",
+          "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/phys-core-013_the_problem_of_singularities.JSON"
+        }
+      },
+      "rationale": "The taxonomy is not invented from nothing; it is a formalization of the epistemic discipline already present in PHYS-CORE-013. Recording this lineage prevents the taxonomy from appearing as an ad hoc addition.",
+      "references": [
+        "PHYS-CORE-013 Section 7"
+      ],
+      "poetic_cipher": "The child names what the parent practiced.",
+      "cipher_explanation": "A taxonomy written down is a practice made explicit; its lineage should be recorded so the practice is not mistaken for a novelty.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "3",
+      "placement": "Within the `sections` array, section with id \"3\" (`Translation Layer: OpenAI Variables → NSFG Coherence Fields`). Modify the section's top-level content and every subsection.",
+      "operation": "major_modify",
+      "target": "every mapping object within Section 3 and its subsections",
+      "what_needs_update": [
+        "Every mapping in Section 3 must carry an explicit `epistemic_status` field.",
+        "Every mapping must carry a `promotion_condition` field stating what would be required to promote it to C_derived.",
+        "Add an introductory paragraph at the start of Section 3 explaining that all mappings in this section are D_translation_hypothesis unless otherwise marked.",
+        "The mapping table in Section 3.5 must be extended with `epistemic_status` and `promotion_condition` columns."
+      ],
+      "exact_update": {
+        "section_3_intro": {
+          "insert_after": "the existing opening prose of Section 3",
+          "new_text": "**Epistemic Note.** Every mapping in this section is classified as `D_translation_hypothesis` unless an independent derivation is supplied. A translation hypothesis is a proposed correspondence whose analytic equivalence has not yet been established. Each mapping carries a `promotion_condition` field specifying what would be required to promote it to `C_derived`. The mapping framework is not weakened by this classification; the promotion conditions make the analytic obligations explicit and actionable."
+        },
+        "mappings_to_update": [
+          {
+            "mapping_identity": "Velocity as coherence gradient (Section 3.1)",
+            "add_fields": {
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "A proof that the Helmholtz decomposition u = ∇ψ + ∇×A holds with the required regularity and gauge conditions for the OpenAI construction, and that ψ and A are uniquely determined by u on the NSFG side, would promote this mapping to C_derived."
+            }
+          },
+          {
+            "mapping_identity": "Pressure as motif curvature (Section 3.2)",
+            "add_fields": {
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "A derivation of κ_swirl from the NSFG axioms that matches the classical pressure p up to the divergence-free component, together with dimensional consistency, would promote this mapping to C_derived."
+            }
+          },
+          {
+            "mapping_identity": "Stress as motif tension (Section 3.3)",
+            "add_fields": {
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "A proof that the physical stress tensor T_{rθ}, T_{rz} constructed in the OpenAI paper equals the NSFG motif tension up to a gauge transformation, together with the required covariance and support properties, would promote this mapping to C_derived."
+            }
+          },
+          {
+            "mapping_identity": "Force as motif injection (Section 3.4)",
+            "add_fields": {
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "A proof that the smooth compactly supported force f ∈ C_c^∞ of the OpenAI construction corresponds to a well-defined motif injection operator I[δM_k] with the required localization and regularity, would promote this mapping to C_derived."
+            }
+          },
+          {
+            "mapping_identity": "Viscosity as decoherence rate (Section 3.2 reference)",
+            "add_fields": {
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "A derivation of the relation ν = α·(1/ℋ)·(dℋ/dt) from the NSFG axioms together with a dimensional audit confirming [ν] = L²/T, would promote this mapping to C_derived."
+            }
+          },
+          {
+            "mapping_identity": "Coherence phase pressure Δ(t) (Section 3.5 reference)",
+            "add_fields": {
+              "epistemic_status": "A_definition within NSFG; relation to classical quantities is D_translation_hypothesis",
+              "promotion_condition": "The definition is internal to NSFG. The relation Δ(t) ≍ Re_θ is a translation hypothesis that would be promoted by a proof that the OpenAI Reynolds number equals the NSFG phase pressure up to constants."
+            }
+          },
+          {
+            "mapping_identity": "Coherence hygiene ℋ(t) (Section 3.5 reference)",
+            "add_fields": {
+              "epistemic_status": "A_definition within NSFG; relation to classical quantities is D_translation_hypothesis",
+              "promotion_condition": "The definition is internal to NSFG. The relation ℋ(t) ≍ τ^{-1/2-3h} would be promoted by a direct derivation from Φ scaling, spatial derivative scaling, and shrinking support volume."
+            }
+          }
+        ]
+      },
+      "rationale": "Universal application of the epistemic taxonomy makes every claim machine-readable and prevents later revisions from silently promoting a hypothesis to a theorem. The promotion conditions make the analytic bridge obligations explicit and actionable.",
+      "references": [
+        "PHYS-CORE-014 Section 3",
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Section 9.1"
+      ],
+      "poetic_cipher": "Give every bridge a weight limit and name the load it must bear.",
+      "cipher_explanation": "A translation hypothesis is not weaker than a theorem; it is a theorem with its obligations written down. The promotion condition is the weight limit.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "Section 4 now receives not only the mappings themselves but their epistemic statuses and promotion conditions. Section 4.6 must show which of these promotion conditions can actually be met and which remain open."
+      }
+    },
+    {
+      "section_id": "3.1",
+      "placement": "Within sections[3].subsections, the entry with id \"3.1\" (`Velocity as Coherence Gradient: Mapping u to ∇ψ`). Modify the math array and content array.",
+      "operation": "modify",
+      "target": "math blocks and content blocks",
+      "what_needs_update": [
+        "Add `epistemic_status` field to the Helmholtz decomposition mapping.",
+        "Add `promotion_condition` field.",
+        "Add a content block stating the epistemic status explicitly."
+      ],
+      "exact_update": {
+        "math_block_to_modify": {
+          "label": "Helmholtz decomposition as coherence-velocity mapping",
+          "add_fields": {
+            "epistemic_status": "D_translation_hypothesis",
+            "promotion_condition": "See Section 3 introduction."
+          }
+        },
+        "content_block_to_add": {
+          "type": "formal_statement",
+          "title": "Epistemic Status of the Velocity-Coherence Mapping",
+          "text": "The mapping u = ∇ψ + ∇×A is classified as `D_translation_hypothesis`. It is not claimed that the NSFG coherence potential ψ uniquely determines the classical velocity field u; the Helmholtz decomposition requires gauge choices and regularity conditions that have not been fully specified. The promotion condition for this mapping is stated in Section 3's introduction.",
+          "interpretation": "The mapping is a proposed correspondence, not a proven equivalence. Treating it as a working hypothesis allows the structural analysis to proceed while marking the analytic bridge as an open obligation."
+        }
+      },
+      "rationale": "Even the foundational velocity mapping is a translation hypothesis, not a definition. Making this explicit at the subsection level prevents the reader from assuming a stronger claim than the document supports.",
+      "references": [
+        "PHYS-CORE-007 Section 4.1",
+        "PHYS-CORE-014 Section 3"
+      ],
+      "poetic_cipher": "Even the first plank is a hypothesis until nailed.",
+      "cipher_explanation": "The foundational mapping of a translation layer is still a translation until proven. Marking it as a hypothesis preserves the analytical honesty of the entire structure.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "3.2",
+      "placement": "Within sections[3].subsections, the entry with id \"3.2\" (`Pressure as Motif Curvature: Mapping p to κ_swirl`). Modify the math array and content array.",
+      "operation": "modify",
+      "target": "math blocks and content blocks",
+      "what_needs_update": [
+        "Add `epistemic_status` field to the pressure-coherence mapping.",
+        "Add `promotion_condition` field.",
+        "Add a dimensional consistency note."
+      ],
+      "exact_update": {
+        "math_block_to_modify": {
+          "label": "Pressure as motif curvature (NSFG mapping)",
+          "add_fields": {
+            "epistemic_status": "D_translation_hypothesis",
+            "promotion_condition": "See Section 3 introduction.",
+            "dimensional_note": "If [p] = ML⁻¹T⁻² and [∇ψ] = LT⁻¹, then [ζ] = ML⁻²T⁻¹ must be specified for this mapping to be dimensionally consistent. This specification is currently pending."
+          }
+        },
+        "content_block_to_add": {
+          "type": "formal_statement",
+          "title": "Epistemic Status and Dimensional Note for the Pressure Mapping",
+          "text": "The mapping p = κ_swirl = ∇ψ · ζ is classified as `D_translation_hypothesis`. A dimensional audit of ζ is required to confirm consistency with the classical pressure dimension. The promotion condition is stated in Section 3's introduction.",
+          "interpretation": "The mapping is plausible but not proven. The dimensional audit obligation is a specific, checkable task that can be undertaken in a later revision."
+        }
+      },
+      "rationale": "The pressure-coherence mapping is central to the paper's interpretation of the blow-up. Marking its status and dimensional obligations explicitly is essential.",
+      "references": [
+        "PHYS-CORE-007 Section 3.2",
+        "PHYS-CORE-014 Section 3"
+      ],
+      "poetic_cipher": "A dimension missing is a bridge missing a plank.",
+      "cipher_explanation": "Dimensional consistency is a checkable obligation. Naming it explicitly converts an invisible risk into a visible task.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "3.3",
+      "placement": "Within sections[3].subsections, the entry with id \"3.3\" (`Stress Tensor as Motif Tension: Mapping T to Δ and ζ`). Modify the math array and content array.",
+      "operation": "modify",
+      "target": "math blocks and content blocks",
+      "what_needs_update": [
+        "Add `epistemic_status` field to the stress-tension mapping.",
+        "Add `promotion_condition` field."
+      ],
+      "exact_update": {
+        "math_block_to_modify": {
+          "label": "NSFG mapping: Stress to motif tension",
+          "add_fields": {
+            "epistemic_status": "D_translation_hypothesis",
+            "promotion_condition": "See Section 3 introduction."
+          }
+        },
+        "content_block_to_add": {
+          "type": "formal_statement",
+          "title": "Epistemic Status of the Stress-Tension Mapping",
+          "text": "The mapping T ↔ (Δ, ζ, ψ_A) is classified as `D_translation_hypothesis`. The physical stress tensor constructed in the OpenAI paper is well-defined on the classical side; its identification with NSFG motif tension is a proposed correspondence whose proof is pending.",
+          "interpretation": "The stress tensor exists on both sides; the mapping between them is what remains to be proven."
+        }
+      },
+      "rationale": "The stress tensor is the mechanism by which the momentum residual is driven in the OpenAI construction. Its NSFG interpretation as motif tension is central to the paper's structural claim.",
+      "references": [
+        "OpenAI (2026) Section 4.1",
+        "PHYS-CORE-007 Section 3.3"
+      ],
+      "poetic_cipher": "Tension is a name on both sides; the bridge is what the names do not prove.",
+      "cipher_explanation": "Naming the same phenomenon with two vocabularies does not establish identity. The translation hypothesis is the bridge that must be built.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "3.4",
+      "placement": "Within sections[3].subsections, the entry with id \"3.4\" (`Force as Motif Injection: Mapping f to I[δM_k]`). Modify the math array and content array.",
+      "operation": "modify",
+      "target": "math blocks and content blocks",
+      "what_needs_update": [
+        "Add `epistemic_status` field to the force-injection mapping.",
+        "Add `promotion_condition` field."
+      ],
+      "exact_update": {
+        "math_block_to_modify": {
+          "label": "Force as coherence perturbation",
+          "add_fields": {
+            "epistemic_status": "D_translation_hypothesis",
+            "promotion_condition": "See Section 3 introduction."
+          }
+        },
+        "content_block_to_add": {
+          "type": "formal_statement",
+          "title": "Epistemic Status of the Force-Injection Mapping",
+          "text": "The mapping f = I[δM_k] is classified as `D_translation_hypothesis`. The classical force f ∈ C_c^∞ is a given; the identification of f with a motif injection operator is a proposed correspondence. The promotion condition is stated in Section 3's introduction.",
+          "interpretation": "The force is an input; the motif injection is an interpretation. The mapping is the hypothesis that connects them."
+        }
+      },
+      "rationale": "The force is the trigger of the blow-up in the OpenAI construction. Its NSFG interpretation as motif injection is the framework's claim about what the force does structurally.",
+      "references": [
+        "PHYS-CORE-007 Section 4.3",
+        "OpenAI (2026) Theorem 1.1"
+      ],
+      "poetic_cipher": "A push and a pattern are the same only if the pattern is proven.",
+      "cipher_explanation": "The force pushes; the motif injection patterns. The identification is the hypothesis, not the fact.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "3.5",
+      "placement": "Within sections[3].subsections, the entry with id \"3.5\" (`Complete Translation Table: OpenAI → NSFG`). Modify the tables array.",
+      "operation": "modify",
+      "target": "the mapping table",
+      "what_needs_update": [
+        "Add two columns: `epistemic_status` and `promotion_condition`.",
+        "Populate every row."
+      ],
+      "exact_update": {
+        "table_modification": {
+          "old_columns": ["OpenAI Variable", "NSFG Variable", "Mapping Rule", "Interpretation", "Singularity Type"],
+          "new_columns": ["OpenAI Variable", "NSFG Variable", "Mapping Rule", "Interpretation", "Epistemic Status", "Promotion Condition", "Singularity Type"],
+          "populate_rows": [
+            {
+              "row_identity": "u ↔ ∇ψ + ∇×A",
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "Proof of well-defined Helmholtz decomposition with regularity and gauge conditions on the NSFG side."
+            },
+            {
+              "row_identity": "p ↔ κ_swirl",
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "Derivation of κ_swirl from NSFG axioms matching classical p up to divergence-free component; dimensional audit of ζ."
+            },
+            {
+              "row_identity": "T ↔ (Δ, ζ, ψ_A)",
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "Proof that classical stress equals NSFG motif tension up to gauge transformation with matching covariance and support."
+            },
+            {
+              "row_identity": "f ↔ I[δM_k]",
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "Proof that classical force corresponds to a well-defined motif injection with required localization and regularity."
+            },
+            {
+              "row_identity": "ν ↔ α(1/ℋ)dℋ/dt",
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "Derivation from NSFG axioms plus dimensional audit confirming [ν] = L²/T."
+            },
+            {
+              "row_identity": "τ ↔ coherence time",
+              "epistemic_status": "A_definition_or_translation_choice",
+              "promotion_condition": "Not applicable; this is a coordinate choice."
+            },
+            {
+              "row_identity": "Re_θ ↔ Δ(t)",
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "Proof that OpenAI angular Reynolds number equals NSFG phase pressure up to constants."
+            },
+            {
+              "row_identity": "A_wave ↔ ψ_A(t)",
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "Derivation from the wave construction in OpenAI §3.3 with matching scaling."
+            },
+            {
+              "row_identity": "ℓ_wave ↔ λ_coherence(t)",
+              "epistemic_status": "D_translation_hypothesis",
+              "promotion_condition": "Derivation from the OpenAI wavelength scaling with matching exponent."
+            },
+            {
+              "row_identity": "t=1 blow-up ↔ Δ ≥ Δcrit OR ℋ → ∞",
+              "epistemic_status": "D_translation_hypothesis (forward direction); E_prediction_or_conjecture (reverse direction)",
+              "promotion_condition": "Forward direction requires the Section 4.6 bridge lemmas B1–B3. Reverse direction requires an independently proved coercive realization theorem."
+            },
+            {
+              "row_identity": "dim(ℳ_C^O(h,x)) = 0 ↔ Convergence Boundary",
+              "epistemic_status": "A_definition within NSFG",
+              "promotion_condition": "Not applicable; this is the definition of the Convergence Boundary within NSFG."
+            }
+          ]
+        }
+      },
+      "rationale": "The mapping table is the paper's central artifact. Making the epistemic status and promotion conditions explicit in the table itself converts the table from a claim of correspondence into a workplan.",
+      "references": [
+        "PHYS-CORE-014 Section 3",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "Every column is a promise; add the column that names the promise's price.",
+      "cipher_explanation": "A mapping table with only correspondence columns implies that correspondence is achieved. Adding status and promotion columns names what is still owed.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "4.6",
+      "placement": "Within sections[4].subsections, the entry with id \"4.6\" (`Formal Proof: Equivalence Between OpenAI Blow-up, Coherence Rupture, and Convergence Boundary`). This is the primary mathematical repair.",
+      "operation": "major_modify",
+      "target": "theorem_and_proof",
+      "what_needs_update": [
+        "Change section status from PROOF to BRIDGE_ANALYSIS.",
+        "Replace the unconditional equivalence theorem with a conditional correspondence theorem.",
+        "Separate source-supported OpenAI facts from NSFG translation hypotheses.",
+        "Repair I1-I4 so they are not called norm equivalences when they are one-sided inequalities or incomplete estimates.",
+        "Remove I5 from the preliminary lemma because it is circular.",
+        "Remove the reverse implications currently inferred from upper bounds.",
+        "Do not use an upper bound of the form X ≤ CY to infer Y → ∞.",
+        "Do not use ||∇u||L∞ → ∞ to infer ||∇u||L2 → ∞ on an unbounded domain.",
+        "Do not infer ||u||L∞ → ∞ from ||u||L2 → ∞ using a global volume factor on ℝ³.",
+        "Replace the claimed completed proof with a precise statement of what remains to be proven."
+      ],
+      "exact_update": {
+        "status": "BRIDGE_ANALYSIS",
+        "title": "Formal Bridge Analysis: OpenAI Blow-up, NSFG Coherence Rupture, and Candidate Convergence Boundary",
+        "theorem": {
+          "name": "Conditional Coherence Rupture Correspondence",
+          "statement": "Let (u,p,f) be the forced Navier-Stokes construction supplied by the OpenAI manuscript on ℝ³ × [0,T), and let an NSFG translation map produce (ψ,Φ,Δ,ℋ). The OpenAI construction establishes the classical blow-up behavior. If the translation layer additionally satisfies the required coercive and reverse estimates specified below, then the corresponding NSFG coherence-rupture conditions follow, and the proposed Convergence Boundary interpretation becomes mathematically supported.",
+          "conditions": {
+            "source_blowup": "limsup_{t→T} ||u(t)||_{L∞(ℝ³)} = ∞ and/or the corresponding classical derivative blow-up asserted by the construction.",
+            "candidate_rupture": "Δ(t) crosses Δcrit and/or ℋ(t) diverges.",
+            "candidate_boundary": "The observer-relative accessible continuation functional collapses according to the independently defined NSFG boundary criterion."
+          },
+          "logical_status": "conditional"
+        },
+        "step_1": {
+          "title": "Required Translation Lemmas",
+          "status": "D_translation_hypothesis",
+          "objective": "Identify the analytic inequalities actually required to connect classical Navier-Stokes quantities to NSFG quantities.",
+          "inequalities": [
+            {
+              "id": "I1",
+              "operation": "modify",
+              "new_status": "candidate_one_sided_estimate",
+              "statement": "An estimate controlling ||u||_{L2} by explicitly defined NSFG quantities may be retained only after Φ, ψ, A, the gauge, domain, boundary conditions, and Sobolev regularity are specified.",
+              "rationale": "The current derivation changes between ||∇×A||L2 and ||∇×A||H2 and uses an incorrect/simple Sobolev step without sufficient hypotheses."
+            },
+            {
+              "id": "I2",
+              "operation": "modify",
+              "new_status": "candidate_upper_bound_only",
+              "statement": "||∇u||_{L∞} ≤ C2(Δ + ||∇²A||_{L∞}) may be retained only as an upper bound if the definition of Δ and the time derivative relation are independently established.",
+              "rationale": "An upper bound does not provide the reverse implication Δ → ∞ ⇒ ||∇u|| → ∞."
+            },
+            {
+              "id": "I3",
+              "operation": "modify",
+              "new_status": "candidate_upper_bound_only",
+              "statement": "Δ ≤ C3(appropriate classical norms plus explicitly controlled A-terms) may be retained only as a forward estimate.",
+              "rationale": "The current proof incorrectly uses this upper bound to infer Δ → ∞ from classical gradient blow-up."
+            },
+            {
+              "id": "I4",
+              "operation": "modify",
+              "new_status": "candidate_upper_bound_only",
+              "statement": "ℋ ≤ C4(classical norms plus explicitly controlled A-terms) may be retained only as an upper estimate.",
+              "rationale": "The current proof incorrectly infers ℋ → ∞ from an upper bound whose right-hand side diverges."
+            },
+            {
+              "id": "I5",
+              "operation": "remove",
+              "reason": "I5 invokes the Coherence Rupture Equivalence Theorem to prove the Coherence Rupture Equivalence Theorem and is therefore circular."
+            }
+          ],
+          "required_new_lemmas": [
+            {
+              "id": "B1",
+              "name": "Coercive_NSFG_to_Classical_Lemma",
+              "required_direction": "NSFG rupture ⇒ classical blow-up",
+              "requirement": "A lower/coercive estimate of the form G_NSFG ≥ c·F_classical, or an equivalent independently proved realization theorem, must be established."
+            },
+            {
+              "id": "B2",
+              "name": "Classical_to_NSFG_Rupture_Lemma",
+              "required_direction": "classical blow-up ⇒ NSFG rupture",
+              "requirement": "A lower bound from classical blow-up to at least one NSFG rupture observable must be established; an upper bound alone is insufficient."
+            },
+            {
+              "id": "B3",
+              "name": "Quotient_Collapse_Lemma",
+              "required_direction": "rupture ⇒ observer-relative quotient collapse",
+              "requirement": "The collapse criterion must be independently derived from the NSFG quotient definitions rather than inserted as an equivalence."
+            }
+          ]
+        },
+        "step_2": {
+          "title": "OpenAI Blow-up ⇒ Candidate NSFG Rupture",
+          "operation": "rewrite",
+          "logic": [
+            "Use the OpenAI scaling laws directly for the classical variables.",
+            "Derive the NSFG scaling of Δ only if Δ is explicitly constructed from the classical fields and the required lower estimate is proved.",
+            "Derive ℋ scaling directly from its definition rather than from an unrelated upper bound.",
+            "If the required bridge cannot yet be proved, label the conclusion 'candidate NSFG rupture' rather than 'proved NSFG rupture'."
+          ],
+          "invalid_reasoning_to_remove": [
+            "||∇u||L∞ → ∞ ⇒ ||∇u||L2 → ∞ on ℝ³.",
+            "X ≤ CY and Y → ∞ ⇒ X → ∞.",
+            "X ≤ CY and X → ∞ ⇒ Y → ∞ without additional hypotheses."
+          ]
+        },
+        "step_3": {
+          "title": "Candidate NSFG Rupture ⇒ OpenAI Blow-up",
+          "operation": "rewrite",
+          "logic": [
+            "Do not infer classical blow-up from I2 or I1 as currently written.",
+            "Require a coercive lower estimate or an independently proved realization theorem.",
+            "If no such lemma is available, classify this direction as CONJECTURAL."
+          ]
+        },
+        "step_4": {
+          "title": "Conditional Correspondence",
+          "operation": "rewrite",
+          "new_conclusion": "The current evidence supports a structured NSFG interpretation of the OpenAI construction and identifies the precise analytic bridges required for a full equivalence. The triple equivalence OpenAI blow-up ⇔ coherence rupture ⇔ Convergence Boundary is not claimed as proved in v0.1.1."
+        },
+        "corollary": {
+          "operation": "modify",
+          "new_status": "conditional",
+          "statement": "If the required NSFG-to-classical coercive bridge is established and Δ(t) remains strictly below Δcrit while ℋ(t) remains in the regularity class required by that bridge for all t, then the proposed NSFG coherence-preservation criterion yields a candidate sufficient condition for global smoothness.",
+          "remove": "Stronger than BKM/LPS/CKN."
+        },
+        "epistemic_status_block": {
+          "status_label": "BRIDGE_ANALYSIS",
+          "explanation": "This section identifies the analytic lemmas required to convert the NSFG interpretation into a rigorous equivalence. It does not claim those lemmas are proved."
+        }
+      },
+      "rationale": "This is the primary mathematical repair. The current Section 4.6 contains several direction-of-inequality errors and circular reasoning. The correct response is not to abandon the bridge, but to expose exactly which estimates would make it rigorous.",
+      "references": [
+        "OpenAI (2026) Theorem 1.1",
+        "OpenAI (2026) Section 2.1",
+        "PHYS-CORE-007 Section 4.4",
+        "PHYS-CORE-013 Sections 3.4 and 4.2.1"
+      ],
+      "poetic_cipher": "A river does not flow uphill because the map has an arrow.",
+      "cipher_explanation": "An inequality has a direction. A proof must travel in the direction the inequality permits; reversing it because the desired conclusion lies downstream does not establish the bridge.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The OpenAI construction supplies the classical blow-up path. Section 4.6 has identified the exact analytic lemmas required to establish its NSFG interpretation, while leaving unsupported reverse implications explicitly conditional. Section 5 may now generalize only those scaling relations that survive this bridge analysis."
+      }
+    },
+    {
+      "section_id": "5.1",
+      "placement": "Within sections[5].subsections, the entry with id \"5.1\" (`The General Coherence Rupture Criterion`). Modify the math array and content array.",
+      "operation": "modify",
+      "target": "general_coherence_rupture_criterion",
+      "what_needs_update": [
+        "Change 'rupture iff' language to an NSFG definition/candidate criterion unless the bridge theorem is proven.",
+        "Separate threshold crossing from singular-limit divergence.",
+        "Do not state that crossing Δcrit automatically proves classical blow-up.",
+        "Add epistemic_status field."
+      ],
+      "exact_update": {
+        "replace": {
+          "old": "Rupture iff Δ(t) ≥ Δcrit or ℋ(t) → ∞",
+          "new": "NSFG coherence-rupture criterion: rupture is defined/identified within the NSFG framework by Δ(t) ≥ Δcrit and/or ℋ(t) → ∞. Classical blow-up follows only if the translation/coercivity bridge established in Section 4.6 applies."
+        },
+        "predictive_form": "If the required classical-to-NSFG and NSFG-to-classical bridge lemmas hold, then NSFG rupture predicts finite-time classical blow-up. Without those lemmas, this remains an NSFG prediction.",
+        "add_fields": {
+          "epistemic_status": "A_definition within NSFG for the criterion itself; E_prediction_or_conjecture for the classical blow-up prediction"
+        }
+      },
+      "rationale": "The criterion may be meaningful within NSFG without already being proven equivalent to classical blow-up.",
+      "references": [
+        "PHYS-CORE-007 Section 8.1",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "The alarm may ring before the fire is proved.",
+      "cipher_explanation": "An NSFG rupture indicator can be a predictive alarm without the mathematical theorem that makes the alarm equivalent to classical singularity.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The rupture criterion is now treated as an NSFG structural criterion whose classical predictive force depends on the bridge identified in Section 4.6."
+      }
+    },
+    {
+      "section_id": "5.2",
+      "placement": "Within sections[5].subsections, the entry with id \"5.2\" (`The OpenAI Construction as a Specific Coherence Rupture Path`). Modify the math array and content array.",
+      "operation": "major_modify",
+      "target": "OpenAI_specific_path",
+      "what_needs_update": [
+        "Correct the rupture-time contradiction.",
+        "Distinguish threshold crossing at τcrit > 0 from the singular limit τ → 0.",
+        "Remove the claim that the OpenAI construction is designed so that τrupture = 0.",
+        "State that Δ(t)=Cτ^-h crosses any finite positive Δcrit at positive τ if C>0 and Δcrit is finite.",
+        "Allow the possibility that the NSFG rupture begins before the classical singular endpoint."
+      ],
+      "exact_update": {
+        "rupture_time": {
+          "equation": "τcrit = (C / Δcrit)^(1/h)",
+          "condition": "C > 0, Δcrit > 0, 0 < h < 1/100",
+          "interpretation": "τcrit > 0 whenever C and Δcrit are finite positive quantities.",
+          "time_coordinate": "tcrit = 1 - τcrit"
+        },
+        "replace_claim": {
+          "old": "The coherence rupture and classical blow-up occur simultaneously at t=1.",
+          "new": "The coherence threshold is crossed at tcrit = 1 - τcrit when Δ(tcrit)=Δcrit. The classical singular endpoint remains t=1 in the OpenAI construction. Whether NSFG rupture begins strictly before the classical endpoint is therefore a prediction of the proposed translation, not a fact supplied by the OpenAI construction."
+        },
+        "remove": [
+          "τrupture = 0 at t=1",
+          "the singularity and threshold crossing are necessarily simultaneous"
+        ],
+        "retain": [
+          "Δ(t) ~ τ^-h",
+          "Δ(t) → ∞ as τ → 0"
+        ],
+        "add_fields": {
+          "epistemic_status": "A_definition for τcrit; D_translation_hypothesis for the prediction that NSFG rupture precedes the classical endpoint"
+        }
+      },
+      "rationale": "The current equation itself contradicts the prose. Solving Cτ^-h=Δcrit yields a positive threshold-crossing time, not τ=0.",
+      "references": [
+        "PHYS-CORE-014 Section 5.2 current scaling relation",
+        "OpenAI (2026) Section 2.1"
+      ],
+      "poetic_cipher": "The bell rings on the road, not at the cliff.",
+      "cipher_explanation": "A threshold crossing occurs when the rising quantity reaches the threshold; the later singular endpoint is a different event unless the threshold is itself infinite.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The OpenAI path now distinguishes an NSFG threshold-crossing time tcrit from the classical singular endpoint t=1. Section 5.3 generalizes this distinction to arbitrary rupture exponents."
+      }
+    },
+    {
+      "section_id": "5.3",
+      "placement": "Within sections[5].subsections, the entry with id \"5.3\" (`Other Coherence Rupture Paths Predicted by NSFG`). Modify the math array and content array.",
+      "operation": "major_modify",
+      "target": "general_scaling_family",
+      "what_needs_update": [
+        "Replace continuous quotient 'dimension' with a continuous accessibility functional D_O.",
+        "Derive the hygiene exponent from the actual definition of ℋ rather than asserting it.",
+        "Do not claim that γ=2α+1/2 is established until the scaling derivation is supplied.",
+        "Retain α as a path parameter, but distinguish NSFG prediction from OpenAI-supported scaling.",
+        "Correct the interpretation of quotient collapse."
+      ],
+      "exact_update": {
+        "new_definition": {
+          "symbol": "D_O(h,x,t)",
+          "meaning": "A continuous observer-relative accessible distinguishability/coherence measure associated with the accessible quotient.",
+          "constraints": [
+            "D_O ≥ 0",
+            "D_O = 0 represents the proposed collapse state",
+            "D_O > 0 represents non-collapsed accessible distinguishability"
+          ],
+          "important_distinction": "dim(ℳ_C^O) remains a discrete/topological or structural quantity and must not be assigned a continuously varying asymptotic law unless a precise dimension notion permitting that behavior is defined."
+        },
+        "replace": {
+          "old": "dim(ℳ_C^O(h,x)) ≍ τ^γ",
+          "new": "D_O(h,x,t) ≍ τ^γ, γ > 0, as a proposed continuous collapse law."
+        },
+        "scaling_derivation_requirement": {
+          "old": "ℋ(t) ≍ τ^{-(2α+1/2)}",
+          "new": "Derive ℋ(t) = ∫Ω |∇²Φ|² dx directly from the specified scaling of Φ, its spatial support/volume, and spatial derivative scaling. Do not insert γ=2α+1/2 without this derivation."
+        },
+        "OpenAI_special_case": {
+          "retain": "α=h for Δ(t) ≍ τ^-h",
+          "do_not_assert_without_derivation": "γ=2h+1/2 for ℋ"
+        },
+        "critical_crossing": {
+          "equation": "τcrit = (C/Δcrit)^(1/α)",
+          "interpretation": "For finite positive C and Δcrit, the threshold is crossed at positive remaining time."
+        },
+        "add_fields": {
+          "epistemic_status": "E_prediction_or_conjecture for the α-family; D_translation_hypothesis for the identification of α with h in the OpenAI case"
+        }
+      },
+      "rationale": "A dimension is not generally a continuous amplitude. The current document simultaneously treats it as an integer/topological quantity and as a continuously vanishing power law. A continuous accessibility functional preserves the NSFG intuition without abusing the mathematical meaning of dimension.",
+      "references": [
+        "PHYS-CORE-013 Section 3.4",
+        "PHYS-CORE-013 Section 4.2.1",
+        "PHYS-CORE-014 Section 5.3",
+        "PHYS-CORE-014 Section 4.2"
+      ],
+      "poetic_cipher": "Do not make the number of doors into the width of a door.",
+      "cipher_explanation": "The number or dimension of accessible directions is structural; the degree of remaining accessibility is continuous. D_O measures the latter without pretending that dimension itself varies fractionally.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The generalized rupture family is now parameterized by α and a continuous accessibility measure D_O rather than a continuously varying quotient dimension. The next section may formulate predictions from α while explicitly marking them as NSFG predictions."
+      }
+    },
+    {
+      "section_id": "5.4",
+      "placement": "Within sections[5].subsections, the entry with id \"5.4\" (`Predicting New Blow-up Scenarios from NSFG Alone`). Modify the math array and content array.",
+      "operation": "modify",
+      "target": "prediction_section",
+      "what_needs_update": [
+        "Change 'there exists a blow-up scenario' to 'NSFG predicts a candidate blow-up scenario' unless a construction is supplied.",
+        "Remove claims that NSFG has already established generative blow-up for every α>0.",
+        "State exactly what would falsify the prediction.",
+        "Separate the scaling prediction from existence of a PDE solution realizing that scaling."
+      ],
+      "exact_update": {
+        "replace": {
+          "old": "For any α > 0, there exists a blow-up scenario with |u| ≍ τ^{-(α+1/2)}.",
+          "new": "For any α > 0 within the domain where the NSFG translation assumptions remain valid, NSFG predicts that a candidate rupture path would have classical velocity scaling |u| ≍ τ^{-(α+1/2)} if the required translation bridge is established."
+        },
+        "new_prediction_structure": [
+          "NSFG path hypothesis: Δ ≍ τ^-α.",
+          "Translation prediction: |u| ≍ τ^{-(α+1/2)}.",
+          "Hygiene prediction: ℋ scaling must be derived from the explicit Φ construction.",
+          "Existence question: a classical Navier-Stokes solution realizing the predicted scaling must be constructed independently.",
+          "Falsifier: failure of the predicted classical scaling under a valid NSFG path, or inability to realize the required NSFG path consistently with the Navier-Stokes equations."
+        ],
+        "add_fields": {
+          "epistemic_status": "E_prediction_or_conjecture",
+          "falsification_condition": "A valid NSFG path with Δ ≍ τ^-α whose classical realization has scaling different from |u| ≍ τ^{-(α+1/2)} would falsify the prediction."
+        }
+      },
+      "rationale": "A scaling prediction is not an existence theorem. This distinction is essential if the paper is to make genuinely falsifiable predictions rather than retrospectively label hypothetical paths as solutions.",
+      "references": [
+        "PHYS-CORE-014 Section 5.3",
+        "OpenAI (2026) Section 2.1"
+      ],
+      "poetic_cipher": "A map of a road is not a road that has been driven.",
+      "cipher_explanation": "NSFG may specify the shape of a candidate path without yet having constructed a classical solution that travels it.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "NSFG now generates explicitly conditional scaling predictions. Section 5.5 must classify the general rupture theorem as conjectural rather than treating these predictions as its proof."
+      }
+    },
+    {
+      "section_id": "5.5",
+      "placement": "Within sections[5].subsections, the entry with id \"5.5\" (`The Coherence Rupture Classification Theorem`). Modify the theorem statement and the content array.",
+      "operation": "major_modify",
+      "target": "Coherence_Rupture_Classification_Theorem",
+      "what_needs_update": [
+        "Keep the theorem explicitly conjectural.",
+        "Remove the claim that it follows automatically from the NSFG axioms.",
+        "Do not assert Δ(t) → Δcrit as the universal terminal behavior when the OpenAI path has Δ(t) → ∞.",
+        "Replace terminal equality with threshold crossing followed by possible supercritical growth.",
+        "Make the theorem conditional on the missing bridge lemmas.",
+        "Change 'all finite-time blow-ups correspond' from established classification to conjectured classification."
+      ],
+      "exact_update": {
+        "status": "E_prediction_or_conjecture",
+        "title": "Conjectured Coherence Rupture Classification",
+        "new_statement": "Conjecture: Under a rigorously established NSFG-to-classical translation satisfying the required coercive and reverse estimates, finite-time classical blow-up corresponds to a loss of NSFG coherence accessibility. A rupture path may be characterized by a threshold crossing Δ(tcrit)=Δcrit followed, depending on the path, by supercritical growth Δ(t)>Δcrit and potentially Δ(t)→∞ as t→T*. The OpenAI construction is one candidate realization of this pattern.",
+        "replace_old_condition": {
+          "old": "Δ(t) → Δcrit as t → T*",
+          "new": "Δ(tcrit) = Δcrit at a finite threshold-crossing time, with the subsequent behavior path-dependent; for the OpenAI scaling Δ ≍ τ^-h, Δ → ∞ as τ → 0."
+        },
+        "converse": "The converse implication remains conjectural until an NSFG-to-classical coercivity/realization theorem is established.",
+        "triadic_closure": "Θ_n behavior remains an NSFG conjectural diagnostic and must not be presented as a consequence of the OpenAI manuscript.",
+        "add_fields": {
+          "falsification_condition": "A classical finite-time blow-up whose NSFG image has no threshold crossing Δ=Δcrit would falsify the conjecture."
+        }
+      },
+      "rationale": "The current theorem contradicts the document's own OpenAI scaling. The correct structure is threshold crossing followed by path-dependent supercritical behavior.",
+      "references": [
+        "PHYS-CORE-014 Section 5.2",
+        "PHYS-CORE-014 Section 5.3",
+        "PHYS-CORE-013 Section 4.2.1"
+      ],
+      "poetic_cipher": "The gate is crossed once; what lies beyond it need not look like the gate.",
+      "cipher_explanation": "A critical threshold is a boundary condition, not necessarily the asymptotic value of the variable after crossing it.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The classification result is now explicitly a conjecture conditioned on the missing analytic bridge. The OpenAI construction supplies one candidate rupture path, not a proof of the universal classification."
+      }
+    },
+    {
+      "section_id": "6",
+      "placement": "Within the sections array, section with id \"6\" (`Implications for the Navier-Stokes Regularity Problem`). Modify the section-level content and math arrays.",
+      "operation": "major_modify",
+      "target": "section_6_claims",
+      "what_needs_update": [
+        "Correct the description of the Navier-Stokes Millennium Problem.",
+        "Do not say the OpenAI construction has already established a negative answer to the Millennium Problem.",
+        "Do not imply that the OpenAI result is prize-qualified, independently validated, or peer-reviewed.",
+        "Reframe the section around conditional implications."
+      ],
+      "exact_update": {
+        "replace": {
+          "old": "The OpenAI construction (2026) provides a counterexample... This establishes that the answer to the regularity problem is negative.",
+          "new": "The supplied OpenAI manuscript presents a forced finite-time blow-up construction that, if its stated theorem is accepted as mathematically valid, supplies an important counterexample to unrestricted global regularity for the forced setting addressed by the construction. This paper does not treat public release as equivalent to independent peer-reviewed validation or prize qualification, and it does not use institutional recognition or non-recognition as mathematical evidence."
+        },
+        "scope_clarification": "The OpenAI construction is forced and existential. It must not be rewritten as an unforced arbitrary-initial-data counterexample.",
+        "millennium_language": "The Clay Millennium Problem remains a separate mathematical question whose precise hypotheses and prize rules must be stated independently. PHYS-CORE-014 analyzes the OpenAI construction and its NSFG interpretation; it does not claim that the construction has thereby satisfied any external prize or publication requirement.",
+        "add_fields": {
+          "epistemic_status": "B_classical_or_source_result for the OpenAI theorem as stated; D_translation_hypothesis for the NSFG interpretation; E_prediction_or_conjecture for any generalization"
+        }
+      },
+      "rationale": "The present section conflates the OpenAI manuscript's construction with a completed resolution of the Millennium Problem and imports an external institutional status that is not part of the mathematics.",
+      "references": [
+        "OpenAI (2026) Theorem 1.1",
+        "PHYS-CORE-014 Section 2",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "A stone can be heavy without yet being accepted as a cornerstone.",
+      "cipher_explanation": "Mathematical content and external qualification are different predicates. The construction can be analyzed for what it mathematically claims without assigning it a publication or prize status it has not earned.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The classical scope and external status of the OpenAI construction have been separated from the NSFG interpretation. Section 7 should therefore discuss philosophical implications without presenting the construction as an independently validated resolution."
+      }
+    },
+    {
+      "section_id": "6.1",
+      "placement": "Within sections[6].subsections, the entry with id \"6.1\" (`Reconciling the OpenAI Counterexample with NSFG Smoothness`). Modify the math array and content array.",
+      "operation": "modify",
+      "target": "compatibility_claims",
+      "what_needs_update": [
+        "Replace 'OpenAI demonstrates quotient collapse' with 'NSFG interprets the construction as candidate quotient collapse.'",
+        "Replace continuous dimension collapse with D_O if a continuous collapse rate is discussed.",
+        "Retain compatibility between a specific blow-up path and separate smooth paths only as an NSFG interpretation."
+      ],
+      "exact_update": {
+        "replace": {
+          "old": "The OpenAI construction demonstrates that there exists a path in the Library where dim(ℳ_C^O(h,x)) collapses to zero dimension.",
+          "new": "Within the NSFG interpretation, the OpenAI construction is modeled as a path approaching a collapse of observer-relative accessible distinguishability. The exact quotient-collapse statement requires the quotient-collapse lemma identified in Section 4.6."
+        },
+        "math": {
+          "replace": "dim(ℳ_C^O(h,x)) → 0",
+          "with": "D_O(h,x,t) → 0, while the structural statement at the boundary remains dim(ℳ_C^O(h,x)) = 0 if that definition is independently satisfied."
+        },
+        "add_fields": {
+          "epistemic_status": "D_translation_hypothesis"
+        }
+      },
+      "rationale": "This preserves the Library interpretation while eliminating the unsupported continuous-dimension claim.",
+      "references": [
+        "PHYS-CORE-013 Section 3.4",
+        "PHYS-CORE-013 Section 4.2.1",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "The path narrows before the door becomes one.",
+      "cipher_explanation": "Continuous accessibility can shrink toward a structural collapse without claiming that the mathematical dimension itself continuously takes fractional values.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The compatibility argument now distinguishes continuous accessibility from the structural quotient boundary."
+      }
+    },
+    {
+      "section_id": "6.2",
+      "placement": "Within sections[6].subsections, the entry with id \"6.2\" (`A New Regularity Criterion: Coherence Preservation`). Modify the theorem and content arrays.",
+      "operation": "major_modify",
+      "target": "regularity_criterion",
+      "what_needs_update": [
+        "Change theorem status from established theorem to conditional criterion/conjecture.",
+        "Remove 'if and only if' unless the analytic bridge is proved.",
+        "Remove claims that the criterion is stronger than BKM/LPS/CKN.",
+        "Remove claims that it replaces classical analytic estimates.",
+        "State exactly what would make it a genuine sufficient regularity theorem."
+      ],
+      "exact_update": {
+        "status": "conditional_derivational",
+        "definition": {
+          "old": "u is globally smooth iff dim(ℳ_C^O)>0 for all t.",
+          "new": "NSFG proposes that persistent positive accessible distinguishability is associated with regularity. A classical sufficient-regularity theorem requires the translation and coercivity lemmas specified in Section 4.6."
+        },
+        "proxy_form": {
+          "old": "Δ<Δcrit and ℋ<∞ ⇒ u∈C∞",
+          "new": "If the NSFG-to-classical regularity bridge is proved, then [Δ(t)<Δcrit and ℋ(t) in the required finite regularity class for all t] ⇒ u∈C∞."
+        },
+        "comparison_to_classical_criteria": {
+          "operation": "rewrite",
+          "new_claim": "The NSFG criterion is proposed as complementary to classical criteria. It must not be called stronger until a formal implication or strict extension has been proved."
+        },
+        "proof": {
+          "replace": [
+            "By the Coherence Rupture Equivalence Theorem, blow-up iff coherence rupture.",
+            "If coherence is preserved, no blow-up occurs.",
+            "Therefore smoothness follows."
+          ],
+          "with": [
+            "Assume the Section 4.6 bridge theorem has been established.",
+            "Assume the NSFG coherence observables remain in the regularity regime for all time.",
+            "Apply the established bridge to exclude the classical blow-up criterion.",
+            "Conclude global regularity under the stated hypotheses."
+          ],
+          "status": "conditional_on_bridge"
+        },
+        "add_fields": {
+          "epistemic_status": "E_prediction_or_conjecture"
+        }
+      },
+      "rationale": "The current proof is valid only if the very theorem it is intended to support is already accepted. This is circular. The criterion can remain as a promising NSFG result, but its status must reflect the missing bridge.",
+      "references": [
+        "Beale, Kato, Majda (1984)",
+        "Ladyzhenskaya (1969)",
+        "Prodi (1959)",
+        "Serrin (1962)",
+        "Caffarelli, Kohn, Nirenberg (1982)",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "A key is useful before it has opened the lock, but it has not yet proved the door.",
+      "cipher_explanation": "The criterion may organize the problem beautifully while its sufficiency remains a mathematical question.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The NSFG regularity criterion is now presented as a conditional result. Section 6.3 may retain the Library interpretation, provided the well/poor partition is described as observer-relative and interpretive rather than classical fact."
+      }
+    },
+    {
+      "section_id": "6.3",
+      "placement": "Within sections[6].subsections, the entry with id \"6.3\" (`The Role of the Library: Well-Ordered vs. Poorly Ordered Regions`). Modify the math array and content array.",
+      "operation": "modify",
+      "target": "Library_partition",
+      "what_needs_update": [
+        "Retain the observer-relative partition.",
+        "Remove claims that the partition is an established classical partition of Navier-Stokes solution space.",
+        "Replace quotient-dimension asymptotics with D_O where continuous behavior is discussed.",
+        "State explicitly that the Library itself is not intrinsically partitioned by the OpenAI construction."
+      ],
+      "exact_update": {
+        "well_ordered": "𝔐_well(O) = {x ∈ ℳ | D_O(x) > 0 and the NSFG regularity conditions hold}",
+        "poorly_ordered": "𝔐_poor(O) = {x ∈ ℳ | D_O(x)=0 at the proposed coherence boundary or the NSFG rupture condition is reached}",
+        "important_note": "These are observer-relative NSFG classifications, not claims that the underlying Library possesses an intrinsic classical partition.",
+        "OpenAI_location": "The OpenAI construction is interpreted as entering 𝔐_poor(O) after the Section 4.6 bridge is established; until then this remains an NSFG classification.",
+        "add_fields": {
+          "epistemic_status": "D_translation_hypothesis"
+        }
+      },
+      "rationale": "The current section already contains the correct observer-relative intuition, but it currently treats the resulting partition as if it had been demonstrated analytically.",
+      "references": [
+        "PHYS-CORE-013 Section 6.3",
+        "PHYS-CORE-013 Section 3.4",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "The Library is not divided; the traveller sees different roads.",
+      "cipher_explanation": "The observer-relative partition belongs to the relation between observer and Library, not to an intrinsic alteration of the Library itself.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The Library remains static and complete; well-ordered and poorly ordered regions are observer-relative NSFG classifications whose connection to classical regularity remains conditional on the analytic bridge."
+      }
+    },
+    {
+      "section_id": "8",
+      "placement": "Within the sections array, section with id \"8\" (`Conclusion`). Modify the content array.",
+      "operation": "major_modify",
+      "target": "Conclusion",
+      "what_needs_update": [
+        "Remove claims that OpenAI 'proves blow-up' without qualification.",
+        "Remove claims that the NSFG equivalence is complete.",
+        "Remove claims that Δ→Δcrit universally.",
+        "Remove claims that NSFG has fully mapped the construction.",
+        "State the exact contribution as a structured translation/interpretation plus identified testable bridges and predictions.",
+        "Preserve the philosophical conclusion but separate it from established mathematics."
+      ],
+      "exact_update": {
+        "replace_core_summary": [
+          "The supplied OpenAI manuscript presents a specific forced finite-time Navier-Stokes blow-up construction.",
+          "PHYS-CORE-014 maps the construction into NSFG variables as a proposed structural interpretation.",
+          "The paper identifies the analytic translation lemmas required to convert that interpretation into a rigorous equivalence.",
+          "The OpenAI scaling Δ≍τ^-h, where used as an NSFG hypothesis, implies threshold crossing at finite positive τ for finite positive Δcrit; it does not imply Δ→Δcrit at the singular endpoint.",
+          "The generalized α-family is an NSFG prediction, not a family of already-constructed classical solutions.",
+          "The Coherence Rupture Classification Theorem remains conjectural pending the missing bridge results.",
+          "The coherence-preservation regularity criterion remains conditional pending those same bridges."
+        ],
+        "new_conclusion_status": "structural_analysis_with_conjectural_extensions",
+        "final_claim": "PHYS-CORE-014 therefore does not present a completed replacement for classical Navier-Stokes analysis. It presents an NSFG translation architecture, a specific interpretation of the OpenAI construction, a set of mathematically identifiable bridge obligations, and a family of falsifiable predictions."
+      },
+      "rationale": "The conclusion currently repeats the strongest claims in the paper and therefore magnifies every unresolved issue. It should become the most epistemically disciplined section rather than the most assertive.",
+      "references": [
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Sections 5.2-5.5",
+        "PHYS-CORE-014 Section 6",
+        "OpenAI (2026) Theorem 1.1"
+      ],
+      "poetic_cipher": "At the end of the road, count the bridges you actually crossed.",
+      "cipher_explanation": "A scientific conclusion should distinguish the terrain traversed from the roads merely drawn on the map.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": {
+          "to": "END",
+          "instruction": "The document concludes with a separation between source-supported classical claims, NSFG definitions, derived relations, translation hypotheses, and predictions. No unresolved equivalence is presented as established.",
+          "preserved_invariant": "The Library remains the NSFG substrate and coherence remains observer-relative and domain-dependent.",
+          "new_construction": "A disciplined account of what PHYS-CORE-014 establishes, proposes, predicts, and still needs to prove."
+        }
+      }
+    },
+    {
+      "section_id": "9.1",
+      "placement": "Within sections[9].subsections, the entry with id \"9.1\" (`Appendix A: Complete Translation Table: OpenAI → NSFG`). Modify the tables array.",
+      "operation": "modify",
+      "target": "translation_table",
+      "what_needs_update": [
+        "Add epistemic status to every classical↔NSFG mapping.",
+        "Do not label proposed correspondences as verified.",
+        "Distinguish definitions from analytic equivalences.",
+        "Add promotion_condition field to every row."
+      ],
+      "exact_update": {
+        "new_field": "epistemic_status and promotion_condition",
+        "classification_examples": [
+          {
+            "mapping": "u ↔ ∇ψ + ∇×A",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "Proof of well-defined Helmholtz decomposition with regularity and gauge conditions."
+          },
+          {
+            "mapping": "p ↔ κ_swirl",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "Derivation of κ_swirl from NSFG axioms matching classical p; dimensional audit of ζ."
+          },
+          {
+            "mapping": "f ↔ I[δM_k]",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "Proof that classical force corresponds to a well-defined motif injection."
+          },
+          {
+            "mapping": "ν ↔ α(1/ℋ)dℋ/dt",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "Derivation plus dimensional audit confirming [ν] = L²/T."
+          },
+          {
+            "mapping": "τ ↔ coherence time coordinate",
+            "status": "A_definition_or_translation_choice",
+            "promotion_condition": "Not applicable; this is a coordinate choice."
+          },
+          {
+            "mapping": "Δ ↔ coherence phase pressure",
+            "status": "A_definition within NSFG; relation to classical quantities is D_translation_hypothesis",
+            "promotion_condition": "The relation Δ ≍ Re_θ would be promoted by a proof that the OpenAI Reynolds number equals the NSFG phase pressure up to constants."
+          }
+        ],
+        "new_status_labels": [
+          "DEFINED",
+          "SOURCE_SUPPORTED",
+          "DERIVED",
+          "TRANSLATION_HYPOTHESIS",
+          "PREDICTION",
+          "CONJECTURE"
+        ]
+      },
+      "rationale": "The paper needs a machine-readable epistemic ledger so later revisions cannot accidentally promote a hypothesis into a theorem.",
+      "references": [
+        "PHYS-CORE-014 Section 3",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "Give every bridge a weight limit.",
+      "cipher_explanation": "The status field records how much logical load each correspondence is actually permitted to carry.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "9.2",
+      "placement": "Within sections[9].subsections, the entry with id \"9.2\" (`Appendix B: Derivation of the Coherence Rupture Criterion`). Modify the math array and add new subsections.",
+      "operation": "modify",
+      "target": "coherence_rupture_derivation",
+      "what_needs_update": [
+        "Replace derivations that rely on invalid inequality reversal.",
+        "Insert explicit derivation obligations for Φ, spatial scaling, support volume, and ∇²Φ.",
+        "Add a subsection for dimensional consistency.",
+        "Add subsection 9.2.6 defining D_O."
+      ],
+      "exact_update": {
+        "new_required_subsections": [
+          {
+            "id": "9.2.1",
+            "title": "Definition of Φ",
+            "placement": "Inside Section 9.2, added to the new_required_subsections array.",
+            "required_content": "Give the exact tensor/scalar definition of Φ used in ℋ and its relation to ψ and A."
+          },
+          {
+            "id": "9.2.2",
+            "title": "Construction of Φ from u",
+            "placement": "Inside Section 9.2, added to the new_required_subsections array.",
+            "required_content": "Specify whether Φ is uniquely determined by u and what gauge or decomposition choices are required."
+          },
+          {
+            "id": "9.2.3",
+            "title": "Direct Scaling Derivation of ℋ",
+            "placement": "Inside Section 9.2, added to the new_required_subsections array.",
+            "required_content": "Derive ℋ=∫|∇²Φ|²dx from amplitude scaling, spatial derivative scaling, and shrinking support volume."
+          },
+          {
+            "id": "9.2.4",
+            "title": "Bridge Inequality Direction",
+            "placement": "Inside Section 9.2, added to the new_required_subsections array.",
+            "required_content": "List every inequality together with the exact direction required for each logical implication."
+          },
+          {
+            "id": "9.2.5",
+            "title": "Dimensional Analysis",
+            "placement": "Inside Section 9.2, added to the new_required_subsections array.",
+            "required_content": "Verify units/dimensions of Δ, Δcrit, ℋ, ν, L, and every proposed mapping."
+          },
+          {
+            "id": "9.2.6",
+            "title": "Definition of D_O",
+            "placement": "Inside Section 9.2, appended after 9.2.5.",
+            "required_content": "Formal definition of the continuous accessibility functional D_O(h,x,t). D_O ≥ 0, D_O = 0 iff the observer-relative accessible quotient is at its proposed collapse boundary, D_O > 0 otherwise. D_O must be continuous in t, monotone decreasing along a rupture path, and related to dim(ℳ_C^O) by the condition: D_O = 0 ⇒ dim(ℳ_C^O) = 0, and D_O > 0 ⇒ dim(ℳ_C^O) > 0. The functional is defined on the NSFG coherence quotient and takes values in ℝ≥0. Its precise formula in terms of ψ, Φ, and A is an open specification task.",
+            "epistemic_status": "A_definition within NSFG",
+            "open_obligations": [
+              "Explicit formula for D_O in terms of ψ, Φ, A",
+              "Proof that D_O = 0 iff the boundary condition is reached",
+              "Proof of continuity and monotonicity"
+            ]
+          }
+        ]
+      },
+      "rationale": "The mathematical appendix should become the place where every hidden assumption is exposed rather than a place where the desired equivalence is restated.",
+      "references": [
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Section 5.3"
+      ],
+      "poetic_cipher": "Turn the bridge upside down and inspect its bolts.",
+      "cipher_explanation": "The appendix should reveal the load-bearing mathematics that the prose currently assumes.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "9.3",
+      "placement": "Within sections[9].subsections, the entry with id \"9.3\" (`Appendix C: Classification of Coherence Rupture Paths`). Modify the classification_table array.",
+      "operation": "modify",
+      "target": "rupture_classification_appendix",
+      "what_needs_update": [
+        "Classify OpenAI as one source-supported classical path.",
+        "Classify α-family as NSFG prediction.",
+        "Classify universal finite-time blow-up correspondence as conjecture.",
+        "Use D_O rather than continuous dimension for collapse-rate plots."
+      ],
+      "exact_update": {
+        "classification_table": [
+          {
+            "class": "OpenAI path",
+            "status": "SOURCE_SUPPORTED_CLASSICAL_PATH + NSFG_INTERPRETATION"
+          },
+          {
+            "class": "α-family",
+            "status": "NSFG_PREDICTION"
+          },
+          {
+            "class": "Universal rupture classification",
+            "status": "CONJECTURE"
+          },
+          {
+            "class": "D_O collapse exponent γ",
+            "status": "PREDICTED_OBSERVABLE_RELATION"
+          }
+        ]
+      },
+      "rationale": "This prevents the existence of one construction from being silently generalized into a universal theorem.",
+      "references": [
+        "OpenAI (2026) Theorem 1.1",
+        "PHYS-CORE-014 Sections 5.3-5.5"
+      ],
+      "poetic_cipher": "One footprint proves one traveller.",
+      "cipher_explanation": "A single realized path establishes existence of that path, not the existence or behavior of every path.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "9.4",
+      "placement": "Within sections[9].subsections, the entry with id \"9.4\" (`Appendix D: The Library and the Navier-Stokes Equations`). Modify the math array and content array.",
+      "operation": "modify",
+      "target": "library_classification_appendix",
+      "what_needs_update": [
+        "Retain the observer-relative partition of the Library.",
+        "Replace continuous dimension asymptotics with D_O.",
+        "State explicitly that the Library itself is not intrinsically partitioned."
+      ],
+      "exact_update": {
+        "library_partition_definition": {
+          "old": "𝔐_well = {x ∈ ℳ : dim(ℳ_C^O(h,x)) > 0}, 𝔐_poor = {x ∈ ℳ : dim(ℳ_C^O(h,x)) = 0}",
+          "new": "𝔐_well(O) = {x ∈ ℳ : D_O(h,x,t) > 0 for all t ≥ 0}, 𝔐_poor(O) = {x ∈ ℳ : D_O(h,x,t) → 0 at the proposed coherence boundary}"
+        },
+        "add_fields": {
+          "epistemic_status": "D_translation_hypothesis for the correspondence between the NSFG partition and classical regularity classes"
+        }
+      },
+      "rationale": "The Library partition is observer-relative; its connection to classical regularity is a translation hypothesis, not a definition.",
+      "references": [
+        "PHYS-CORE-013 Section 6.3",
+        "PHYS-CORE-014 Section 6.3"
+      ],
+      "poetic_cipher": "The Library has no poor regions; the observer does.",
+      "cipher_explanation": "The partition belongs to the observer's relation to the Library, not to an intrinsic property of the Library itself.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "9.5",
+      "placement": "Within sections[9].subsections, the entry with id \"9.5\" (`Appendix E: Mathematical Reference for PHYS-CORE-014`). Modify the math array and add new subsections 9.5.1 and 9.5.2.",
+      "operation": "modify",
+      "target": "mathematical_reference",
+      "what_needs_update": [
+        "Add the epistemic status taxonomy reference.",
+        "Add inequality-direction rules.",
+        "Add quotient-dimension versus accessibility distinction.",
+        "Add threshold-crossing versus singular-limit distinction.",
+        "Add subsections 9.5.1 and 9.5.2."
+      ],
+      "exact_update": {
+        "new_reference_rules": [
+          "Upper bounds cannot be used as lower bounds.",
+          "Divergence of an L∞ norm does not by itself imply divergence of an L2 norm on an unbounded domain.",
+          "Divergence of an L2 norm does not by itself imply L∞ divergence without additional localization or measure hypotheses.",
+          "A threshold crossing Δ=Δcrit is distinct from the asymptotic limit Δ→∞.",
+          "A discrete dimension must not be assigned a continuous power-law collapse without an explicit generalized-dimension definition.",
+          "A source construction does not automatically validate an NSFG translation of that construction.",
+          "Public release, peer review, journal publication, external recognition, and prize qualification are separate predicates from mathematical validity."
+        ],
+        "new_subsections": [
+          {
+            "id": "9.5.1",
+            "title": "Epistemic Status Taxonomy Reference",
+            "placement": "Inside Section 9.5, appended to the math array as a new subsection.",
+            "required_content": "Reproduce the five-level epistemic taxonomy (A_definition, B_classical_or_source_result, C_derived, D_translation_hypothesis, E_prediction_or_conjecture) with definitions and application rules. Cross-reference the root-level _epistemic_status_taxonomy field.",
+            "epistemic_status": "A_definition"
+          },
+          {
+            "id": "9.5.2",
+            "title": "Promotion Conditions for Translation Hypotheses",
+            "placement": "Inside Section 9.5, appended after 9.5.1.",
+            "required_content": "A consolidated table of every D_translation_hypothesis in the document, its promotion condition, and the analytic obligations it implies. This table serves as a research roadmap for the missing bridge lemmas B1–B3 from Section 4.6.",
+            "epistemic_status": "A_definition + roadmap"
+          }
+        ]
+      },
+      "rationale": "These rules are recurring failure modes in the current document and should be encoded as permanent mathematical hygiene constraints.",
+      "references": [
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Section 5.2",
+        "PHYS-CORE-014 Section 5.3"
+      ],
+      "poetic_cipher": "The Library remembers every mistake unless the index learns its name.",
+      "cipher_explanation": "Encoding these constraints prevents later revisions from rediscovering the same logical errors under different notation.",
+      "handoff_update": {
+        "required": false
+      }
+    }
+  ],
+  "_global_removals": [
+    {
+      "target": "Any occurrence of",
+      "text": "The OpenAI paper proves that blow-up is possible",
+      "replace_with": "The supplied OpenAI manuscript presents a construction intended to establish finite-time blow-up under its stated forced Navier-Stokes hypotheses."
+    },
+    {
+      "target": "Any occurrence of",
+      "text": "The OpenAI construction solves/disproves the Millennium Problem",
+      "replace_with": "The OpenAI construction is analyzed as a specific forced blow-up construction; its relationship to the separate Millennium Prize problem must be stated according to the exact problem hypotheses and external qualification rules."
+    },
+    {
+      "target": "Any occurrence of",
+      "text": "Δ(t) → Δcrit at the singularity",
+      "replace_with": "Δ(t) crosses Δcrit at tcrit; subsequent behavior is path-dependent and may diverge."
+    },
+    {
+      "target": "Any occurrence of",
+      "text": "dim(ℳ_C^O) ≍ τ^γ",
+      "replace_with": "D_O ≍ τ^γ, with dim(ℳ_C^O) reserved for the structural quotient dimension."
+    },
+    {
+      "target": "Any occurrence of",
+      "text": "The equivalence theorem is proved",
+      "replace_with": "The correspondence is conditionally established only to the extent supported by the explicit bridge lemmas; the remaining directions are conjectural."
+    },
+    {
+      "target": "Any occurrence of",
+      "text": "stronger than BKM/LPS/CKN",
+      "replace_with": "complementary to classical regularity criteria; comparative strength remains an open question until formal implications are established."
+    }
+  ],
+  "_required_consistency_pass": {
+    "operation": "global_validation",
+    "checks": [
+      "Every occurrence of ℋ scaling must use one internally consistent exponent.",
+      "Every occurrence of τcrit must satisfy τcrit=(C/Δcrit)^(1/α) for Δ=Cτ^-α.",
+      "No text may simultaneously assert τcrit=0 and C,Δcrit finite positive.",
+      "No proof may reverse an inequality.",
+      "No proof may infer global L2 divergence from L∞ divergence on ℝ³ without localization.",
+      "No proof may infer L∞ divergence from L2 divergence on ℝ³ without localization/measure hypotheses.",
+      "No proof may use I5 to establish I5.",
+      "No theorem may rely on an unproved theorem in its own proof.",
+      "No continuous asymptotic law may be assigned directly to discrete quotient dimension.",
+      "Every OpenAI-derived statement must be traceable to an explicit source section.",
+      "Every NSFG translation must carry an epistemic status.",
+      "Every universal NSFG prediction must be marked prediction or conjecture unless a construction/proof is supplied.",
+      "Every D_translation_hypothesis must carry a promotion_condition field.",
+      "Every mapping in Section 3 must carry an epistemic_status field.",
+      "Every theorem, lemma, and corollary in the document must carry a status field.",
+      "D_O must be defined before it is used in any asymptotic statement.",
+      "The root-level _epistemic_status_taxonomy field must appear before any section that uses its labels."
+    ]
+  },
+  "_final_handoff": {
+    "required": true,
+    "to": "END",
+    "instruction": "PHYS-CORE-014 v0.1.1 should conclude with a disciplined separation between the classical construction supplied by the OpenAI manuscript, NSFG definitions, source-supported scaling facts, derived relations, translation hypotheses, and conjectural predictions. The mathematical program is not weakened by this distinction; the missing bridge lemmas become explicit research targets.",
+    "preserved_invariant": "NSFG remains a scale-invariant, observer-relative coherence framework in which the Library is the underlying relational totality and singularity is interpreted through loss of coherent accessibility.",
+    "new_construction": "A mathematically honest bridge architecture in which every claimed equivalence has an explicitly identified load-bearing lemma, every translation hypothesis has an explicit promotion condition, and every continuous asymptotic statement is grounded in the explicitly defined D_O functional."
+  }
+}

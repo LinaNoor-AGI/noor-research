@@ -1,0 +1,601 @@
+{
+  "_type": "noor_rfc_update",
+  "_schema": "noor-update-v1",
+  "_target_rfc": "PHYS-CORE-014",
+  "_target_file": "phys-core-014_verification_of_openai_construction_within_nsfg-v0.1.0.JSON",
+  "_target_version": "v0.1.0",
+  "_proposed_version": "v0.1.2",
+  "_status": "PROPOSED",
+  "_generated_at": "2026-09-10",
+  "_purpose": "Sharpening pass following the v0.1.1 epistemic repair. Universally applies the epistemic status taxonomy, adds explicit promotion conditions for every translation hypothesis, and defines the continuous accessibility functional D_O explicitly so that the collapse-rate formalism in Section 5.3 and Section 6.1 becomes well-posed.",
+  "_supersedes": "phys-core-014_update_v0.1.1.json",
+  "_global_invariant": "Every claim in PHYS-CORE-014 must carry an explicit epistemic status from the taxonomy {A_definition, B_classical_or_source_result, C_derived, D_translation_hypothesis, E_prediction_or_conjecture}. Every D_translation_hypothesis must carry a promotion condition specifying what would be required to promote it to C_derived. Every continuous-collapse statement must use D_O; every structural-collapse statement must use dim(ℳ_C^O).",
+  "updates": [
+    {
+      "section_id": "root._global_conventions",
+      "operation": "add",
+      "target": "_global_conventions",
+      "what_needs_update": [
+        "Add a new top-level field defining the universal epistemic-status convention for the entire document.",
+        "Specify that every mapping, theorem, lemma, corollary, and prediction in PHYS-CORE-014 must carry an explicit status field.",
+        "Specify that every D_translation_hypothesis must carry a promotion_condition field.",
+        "Specify that every continuous-collapse statement must use D_O and every structural-collapse statement must use dim(ℳ_C^O)."
+      ],
+      "exact_update": {
+        "add_field": "_global_conventions",
+        "content": {
+          "epistemic_status_required": true,
+          "epistemic_status_taxonomy": {
+            "A_definition": "Definition internal to NSFG or adopted from an explicitly cited source.",
+            "B_classical_or_source_result": "Result actually established in the cited mathematical source.",
+            "C_derived": "Mathematical consequence derived from definitions and already-established results, with all required hypotheses shown.",
+            "D_translation_hypothesis": "Proposed NSFG-to-classical or classical-to-NSFG correspondence whose analytic equivalence has not yet been independently established.",
+            "E_prediction_or_conjecture": "Claim proposed by NSFG that requires a new proof, construction, or empirical/mathematical validation."
+          },
+          "promotion_condition_required_for": ["D_translation_hypothesis"],
+          "continuous_measure_symbol": "D_O",
+          "structural_dimension_symbol": "dim(ℳ_C^O)",
+          "collapse_statement_rule": "Continuous collapse laws must be written in terms of D_O. Structural collapse states must be written in terms of dim(ℳ_C^O). The two symbols are not interchangeable.",
+          "inequality_direction_rule": "Every inequality must carry the exact direction required for each downstream implication. Upper bounds may not be used as lower bounds.",
+          "domain_rule": "Every estimate must state the domain (ℝ³, 𝕋³, bounded subset, weighted Sobolev space). Estimates valid on bounded domains do not transfer to ℝ³ without additional decay or localization hypotheses."
+        }
+      },
+      "rationale": "Machine-readable epistemic hygiene requires a single canonical convention applied uniformly, not ad hoc per section.",
+      "references": [
+        "PHYS-CORE-014 v0.1.1 _epistemic_status_taxonomy",
+        "PHYS-CORE-013 Appendix"
+      ],
+      "poetic_cipher": "Before the ledger, the law.",
+      "cipher_explanation": "A taxonomy applied selectively is not a taxonomy; it is a decoration. The convention must be declared once and inherited everywhere.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "Every downstream section inherits the epistemic status taxonomy from _global_conventions. Individual sections may add finer sub-statuses but may not weaken the required fields."
+      }
+    },
+    {
+      "section_id": "1",
+      "operation": "modify",
+      "target": "introduction_claims",
+      "what_needs_update": [
+        "Attach epistemic status to each of the four bullet points in 'What This Paper Establishes'.",
+        "Replace the phrase 'formal, bijective mapping' with 'proposed translation layer' and mark as D_translation_hypothesis.",
+        "Replace 'the proof that the OpenAI blow-up is a Convergence Boundary' with a conditional statement.",
+        "Replace 'The Coherence Rupture Equivalence Theorem' with 'A conditional correspondence theorem'."
+      ],
+      "exact_update": {
+        "replace_list": {
+          "old_title": "What This Paper Establishes",
+          "new_title": "What This Paper Establishes (with Epistemic Status)",
+          "new_items": [
+            {
+              "text": "A proposed translation layer mapping the OpenAI variables to NSFG coherence variables, including an identification of the blow-up condition as a candidate coherence rupture.",
+              "status": "D_translation_hypothesis",
+              "promotion_condition": "A proof that the Helmholtz decomposition u = ∇ψ + ∇×A induces well-defined NSFG quantities (ψ, A, Φ) with the required regularity, gauge conditions, and domain-appropriate decay."
+            },
+            {
+              "text": "A conditional argument that, given the translation layer of Section 4.6, the OpenAI blow-up is consistent with a Convergence Boundary interpretation.",
+              "status": "D_translation_hypothesis",
+              "promotion_condition": "Establishment of the coercive and reverse bridge lemmas B1–B3 identified in Section 4.6."
+            },
+            {
+              "text": "A conditional form of the Coherence Rupture Correspondence Theorem, restricted to the directions supported by the bridge lemmas that have actually been established.",
+              "status": "D_translation_hypothesis",
+              "promotion_condition": "Completion of the bridge obligations enumerated in Section 4.6 step_1."
+            },
+            {
+              "text": "An interpretation of the OpenAI construction as a specific candidate realization of a general class of coherence-rupture paths.",
+              "status": "E_prediction_or_conjecture",
+              "promotion_condition": "Either a proof that the α-family is realized by independent classical constructions, or a falsification of the predicted scaling in a valid NSFG path."
+            }
+          ]
+        },
+        "replace_phrase": {
+          "old": "a formal, bijective translation layer",
+          "new": "a proposed translation layer"
+        }
+      },
+      "rationale": "The introduction must advertise the actual epistemic status of each claim so that downstream readers cannot mistake hypotheses for theorems.",
+      "references": [
+        "PHYS-CORE-014 v0.1.1 _global_invariant",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "The doorbell names the guest before he enters.",
+      "cipher_explanation": "An introduction should announce what kind of claim is coming—definition, theorem, hypothesis, or prediction—before the reader invests attention in it.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "Section 2 summarizes the OpenAI construction as source-supported classical content only; the NSFG interpretation is deferred to Section 3 where its epistemic status can be assigned explicitly."
+      }
+    },
+    {
+      "section_id": "3",
+      "operation": "major_modify",
+      "target": "translation_layer_mappings",
+      "what_needs_update": [
+        "Attach an explicit epistemic_status field to every mapping in Sections 3.1 through 3.5.",
+        "Add a promotion_condition field to every mapping that carries status D_translation_hypothesis.",
+        "Ensure that no mapping is labeled 'Verified' without a corresponding bridge obligation.",
+        "Add the epistemic status taxonomy reference to the section preamble."
+      ],
+      "exact_update": {
+        "per_mapping_updates": [
+          {
+            "mapping_id": "3.1.velocity_coherence_gradient",
+            "expression": "u(x,t) = ∇ψ(x,t) + ∇×A(x,t)",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "A proof that the Helmholtz decomposition of u induces well-defined ψ and A on the NSFG side, with: (i) a specified gauge condition, (ii) domain-appropriate decay or periodicity, (iii) the required Sobolev regularity, and (iv) uniqueness up to the stated gauge.",
+            "provenance": "PHYS-CORE-007 Section 4.1"
+          },
+          {
+            "mapping_id": "3.2.pressure_motif_curvature",
+            "expression": "p(x,t) = κ_swirl(x,t) = ∇ψ(x,t) · ζ(x,t)",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "A proof that the classical pressure field induces a well-defined ζ such that ∇ψ · ζ agrees with p pointwise, including dimensional consistency and gauge invariance.",
+            "provenance": "PHYS-CORE-007 Section 3.2"
+          },
+          {
+            "mapping_id": "3.3.stress_motif_tension",
+            "expression": "T_{rθ} = F(p_{s,1} - a), T_{rz} = F(p_{s,2} + b_s)",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "A proof that the classical stress components induce well-defined NSFG tension components with consistent support (annulus X_a < X < X_b) and that the divergence identity R_θ = -(∂_r + 2/r)T_{rθ} is preserved under the mapping.",
+            "provenance": "OpenAI (2026) Section 4.1; PHYS-CORE-007 Section 3.3"
+          },
+          {
+            "mapping_id": "3.4.force_motif_injection",
+            "expression": "f(x,t) = I[δM_k](x,t) = ∇(δM_k * B(x,t))",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "A proof that every smooth compactly supported force f admits a representation as a motif injection, and conversely, including the choice of signature S_k and its relation to the support and smoothness of f.",
+            "provenance": "PHYS-CORE-007 Section 4.3"
+          },
+          {
+            "mapping_id": "3.5.viscosity_decoherence_rate",
+            "expression": "ν = α · (1/ℋ(t)) · dℋ/dt",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "A proof that this identification is dimensionally consistent ([ν] = L²/T) for the definition of ℋ adopted in Section 9.2.1, and that it is invariant under the gauge of ψ and A.",
+            "provenance": "PHYS-CORE-007 Section 4.2"
+          },
+          {
+            "mapping_id": "3.5.coherence_phase_pressure",
+            "expression": "Δ(t) := sup_x |∂_t Φ(x,t)|",
+            "status": "A_definition",
+            "promotion_condition": null,
+            "provenance": "PHYS-CORE-007 Section 8.1"
+          },
+          {
+            "mapping_id": "3.5.coherence_hygiene",
+            "expression": "ℋ(t) := ∫_Ω |∇²Φ(x,t)|² dx",
+            "status": "A_definition",
+            "promotion_condition": null,
+            "provenance": "PHYS-CORE-007 Section 7.3"
+          },
+          {
+            "mapping_id": "3.5.critical_threshold",
+            "expression": "Δ_crit := ε_N · (ν / L²)^{1/2}",
+            "status": "A_definition",
+            "promotion_condition": null,
+            "provenance": "PHYS-CORE-007 Section 8.1"
+          },
+          {
+            "mapping_id": "3.5.openai_scaling_delta",
+            "expression": "Δ(t) ≍ τ^{-h}",
+            "status": "B_classical_or_source_result + C_derived",
+            "promotion_condition": null,
+            "provenance": "OpenAI (2026) Section 2.1 via Re_θ ≍ τ^{-h}",
+            "note": "This is source-supported when identified with Re_θ, and derived when written as Δ(t) via the Section 3.1 mapping."
+          },
+          {
+            "mapping_id": "3.5.openai_scaling_hygiene",
+            "expression": "ℋ(t) ≍ τ^{-1/2 - 3h}",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "A direct derivation of ℋ(t) = ∫ |∇²Φ|² dx from the explicit scaling of Φ, its spatial support volume, and the spatial derivative scaling, as required by Section 9.2.3."
+          }
+        ]
+      },
+      "rationale": "Every translation hypothesis must be individually identifiable and promotable. A single global 'translation layer' label obscures which specific correspondences require which specific bridge work.",
+      "references": [
+        "PHYS-CORE-014 v0.1.1 Section 9.1",
+        "PHYS-CORE-007 Sections 3.2, 3.3, 4.1, 4.2, 4.3, 7.3, 8.1",
+        "OpenAI (2026) Sections 2.1, 4.1"
+      ],
+      "poetic_cipher": "Each plank is weighed before the bridge is walked.",
+      "cipher_explanation": "A translation layer is a bridge composed of individual spans. Each span must be inspected separately; a single failed span is sufficient to forbid crossing.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "Section 4 now operates on mappings whose epistemic status and promotion conditions are explicit. The bridge analysis in Section 4.6 references these mappings by their IDs and uses only those mappings whose status is C_derived or better."
+      }
+    },
+    {
+      "section_id": "4.6",
+      "operation": "modify",
+      "target": "bridge_analysis_status_annotations",
+      "what_needs_update": [
+        "Attach epistemic status to every inequality I1–I4 using the universal taxonomy.",
+        "Attach epistemic status to each of the bridge lemmas B1–B3.",
+        "Add promotion_condition fields to the bridge lemmas B1–B3.",
+        "Add references to the Section 3 mapping IDs used by each inequality."
+      ],
+      "exact_update": {
+        "inequality_annotations": [
+          {
+            "id": "I1",
+            "status": "D_translation_hypothesis",
+            "used_mappings": ["3.1.velocity_coherence_gradient"],
+            "promotion_condition": "A proof of the inequality ||u||_{L²} ≤ C·(ℋ^{1/2} + ||∇×A||_{H²}) with all constants and domains specified, on a domain where the required Sobolev embeddings hold."
+          },
+          {
+            "id": "I2",
+            "status": "D_translation_hypothesis",
+            "used_mappings": ["3.1.velocity_coherence_gradient", "3.5.coherence_phase_pressure"],
+            "promotion_condition": "A proof of the inequality ||∇u||_{L∞} ≤ C·(Δ + ||∇²A||_{L∞}) with the time-derivative relation between Δ and ∇²ψ independently established."
+          },
+          {
+            "id": "I3",
+            "status": "D_translation_hypothesis",
+            "used_mappings": ["3.1.velocity_coherence_gradient", "3.5.coherence_phase_pressure"],
+            "promotion_condition": "A proof of the inequality Δ ≤ C·(||∇u||_{L∞} + ||∂_t A||_{H²}) with all constants and domains specified, and with the definition of Δ in terms of Φ made fully explicit."
+          },
+          {
+            "id": "I4",
+            "status": "D_translation_hypothesis",
+            "used_mappings": ["3.1.velocity_coherence_gradient", "3.5.coherence_hygiene"],
+            "promotion_condition": "A proof of the inequality ℋ ≤ C·(||∇u||_{L²}² + ||∇²A||_{L²}²) with all constants and domains specified, together with the direct scaling derivation required by Section 9.2.3."
+          }
+        ],
+        "bridge_lemma_annotations": [
+          {
+            "id": "B1",
+            "name": "Coercive_NSFG_to_Classical_Lemma",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "A coercive lower estimate G_NSFG ≥ c·F_classical, or an equivalent independently proved realization theorem, connecting NSFG rupture observables to classical blow-up."
+          },
+          {
+            "id": "B2",
+            "name": "Classical_to_NSFG_Rupture_Lemma",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "A lower bound from classical blow-up to at least one NSFG rupture observable; an upper bound alone is insufficient."
+          },
+          {
+            "id": "B3",
+            "name": "Quotient_Collapse_Lemma",
+            "status": "D_translation_hypothesis",
+            "promotion_condition": "An independent derivation of the quotient collapse criterion from the NSFG quotient definitions, using the D_O functional introduced in Section 9.2.6."
+          }
+        ]
+      },
+      "rationale": "The v0.1.1 bridge analysis identified the required lemmas but did not attach epistemic status to each individual inequality and lemma. This update closes that gap so that no reader can mistake an identified obligation for an established result.",
+      "references": [
+        "PHYS-CORE-014 v0.1.1 Section 4.6",
+        "PHYS-CORE-014 v0.1.2 Section 3 (as updated)"
+      ],
+      "poetic_cipher": "The plan of a bridge is not the bridge.",
+      "cipher_explanation": "Identifying which spans must be built is a prerequisite to building them, but it is not the building. Status labels preserve this distinction.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "Section 5 may now generalize only those scaling relations whose epistemic status is C_derived or better; scaling relations that remain D_translation_hypothesis must be marked as predictions in their downstream use."
+      }
+    },
+    {
+      "section_id": "5.3",
+      "operation": "modify",
+      "target": "D_O_functional_references",
+      "what_needs_update": [
+        "Replace all references to 'dimension of the quotient' that appear in continuous-scaling contexts with D_O.",
+        "Reference Section 9.2.6 for the definition of D_O.",
+        "Attach epistemic status to the α-family scaling laws."
+      ],
+      "exact_update": {
+        "replace_symbol": {
+          "old": "dim(ℳ_C^O(h,x)) ≍ τ^γ",
+          "new": "D_O(h,x,t) ≍ τ^γ"
+        },
+        "scaling_status": {
+          "delta_scaling": {
+            "expression": "Δ(t) ≍ τ^{-α}",
+            "status": "E_prediction_or_conjecture"
+          },
+          "velocity_scaling": {
+            "expression": "|u| ≍ τ^{-(α+1/2)}",
+            "status": "E_prediction_or_conjecture",
+            "promotion_condition": "Construction of a classical Navier-Stokes solution realizing the predicted scaling under a valid NSFG path."
+          },
+          "hygiene_scaling": {
+            "expression": "ℋ(t) ≍ τ^{-(2α+1/2)}",
+            "status": "E_prediction_or_conjecture",
+            "promotion_condition": "Direct derivation of ℋ scaling from the explicit Φ construction as required by Section 9.2.3."
+          },
+          "accessibility_collapse": {
+            "expression": "D_O ≍ τ^γ, γ = 2α + 1/2",
+            "status": "E_prediction_or_conjecture",
+            "promotion_condition": "A derivation of the relation γ = 2α + 1/2 from the definitions of D_O and Δ."
+          }
+        }
+      },
+      "rationale": "The continuous-collapse formalism must use the correct symbol so that structural and continuous quantities cannot be confused.",
+      "references": [
+        "PHYS-CORE-014 v0.1.1 Section 5.3",
+        "PHYS-CORE-014 v0.1.2 Section 9.2.6 (new)"
+      ],
+      "poetic_cipher": "The door count and the door width are different measurements.",
+      "cipher_explanation": "The number of accessible directions and the degree of accessibility are different mathematical objects. Using one symbol for both invites category errors.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "Section 5.4 and Section 5.5 inherit D_O as the continuous collapse symbol. All collapse-rate predictions are to be written in terms of D_O, and all structural collapse statements in terms of dim(ℳ_C^O)."
+      }
+    },
+    {
+      "section_id": "5.4",
+      "operation": "modify",
+      "target": "prediction_status_annotations",
+      "what_needs_update": [
+        "Attach epistemic status to each of the four predictions in Section 5.4.",
+        "Add explicit falsification conditions for each prediction.",
+        "Ensure the D_O symbol is used wherever continuous collapse is discussed."
+      ],
+      "exact_update": {
+        "prediction_annotations": [
+          {
+            "id": "P1",
+            "expression": "For any α > 0, there exists a blow-up scenario with |u| ≍ τ^{-(α+1/2)}",
+            "status": "E_prediction_or_conjecture",
+            "falsification_condition": "A valid NSFG path with exponent α whose associated classical solution (if any) does not exhibit the predicted scaling, or a proof that no classical solution realizes the predicted scaling for some α > 0."
+          },
+          {
+            "id": "P2",
+            "expression": "Blow-up occurs when Δ(t) = Δ_crit, not when energy diverges",
+            "status": "E_prediction_or_conjecture",
+            "falsification_condition": "A classical blow-up whose NSFG image never crosses Δ_crit before the singular time, or whose energy diverges strictly before Δ crosses Δ_crit."
+          },
+          {
+            "id": "P3",
+            "expression": "ℋ(t) diverges before the classical energy E(t) diverges",
+            "status": "E_prediction_or_conjecture",
+            "falsification_condition": "A classical blow-up with a well-defined NSFG image in which classical energy divergence precedes ℋ divergence."
+          },
+          {
+            "id": "P4",
+            "expression": "For any γ > 0, there exists a convergence path with D_O ≍ τ^γ",
+            "status": "E_prediction_or_conjecture",
+            "falsification_condition": "A proof that D_O collapse cannot realize some γ > 0 under the NSFG definitions, or failure of the relation γ = 2α + 1/2 for all admissible paths."
+          }
+        ]
+      },
+      "rationale": "Predictions without falsification conditions are not scientific claims. Attaching them makes the paper's predictions testable and locates the paper within the falsifiability discipline established by PHYS-CORE-013 Section 7.",
+      "references": [
+        "PHYS-CORE-013 Section 7",
+        "PHYS-CORE-014 v0.1.1 Section 5.4"
+      ],
+      "poetic_cipher": "A prediction that cannot fail is a wish.",
+      "cipher_explanation": "Falsifiability is the difference between a scientific prediction and a philosophical preference.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "Section 5.5 may now reference the predictions by their IDs and their falsification conditions when stating the conjectural classification."
+      }
+    },
+    {
+      "section_id": "5.5",
+      "operation": "modify",
+      "target": "conjecture_annotations",
+      "what_needs_update": [
+        "Attach epistemic status E_prediction_or_conjecture to the conjectural classification.",
+        "Reference the falsification conditions of P1–P4.",
+        "Replace any reference to continuous dim(ℳ_C^O) collapse with D_O."
+      ],
+      "exact_update": {
+        "conjecture_status": "E_prediction_or_conjecture",
+        "used_predictions": ["P1", "P2", "P3", "P4"],
+        "promotion_condition": "Establishment of the bridge lemmas B1–B3, followed by a proof that every finite-time classical blow-up admits an NSFG image satisfying the threshold-crossing condition.",
+        "used_symbols": {
+          "continuous_collapse": "D_O",
+          "structural_collapse": "dim(ℳ_C^O)"
+        }
+      },
+      "rationale": "The conjectural status of Section 5.5 must be explicit and must reference the individual predictions that support it.",
+      "references": [
+        "PHYS-CORE-014 v0.1.1 Section 5.5",
+        "PHYS-CORE-014 v0.1.2 Section 5.4 (as updated)"
+      ],
+      "poetic_cipher": "A conjecture that names its witnesses is a stronger conjecture.",
+      "cipher_explanation": "A conjecture supported by identified predictions with falsification conditions is more testable than one asserted in isolation.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "Section 6 now inherits a fully annotated conjectural framework; the regularity criterion in Section 6.2 must be stated as conditional on the same bridge lemmas."
+      }
+    },
+    {
+      "section_id": "6.1",
+      "operation": "modify",
+      "target": "D_O_usage",
+      "what_needs_update": [
+        "Replace continuous dimension collapse statements with D_O.",
+        "Retain structural dim(ℳ_C^O) = 0 statements where structural collapse is meant.",
+        "Attach epistemic status to the compatibility argument."
+      ],
+      "exact_update": {
+        "replace": {
+          "old": "dim(ℳ_C^O(h,x)) → 0",
+          "new": "D_O(h,x,t) → 0, while the structural statement at the boundary remains dim(ℳ_C^O(h,x)) = 0 if that definition is independently satisfied."
+        },
+        "compatibility_status": "D_translation_hypothesis",
+        "promotion_condition": "Establishment of the Section 4.6 bridge lemmas."
+      },
+      "rationale": "The compatibility argument is an NSFG interpretation, not a classical theorem. Its epistemic status must reflect this.",
+      "references": [
+        "PHYS-CORE-014 v0.1.1 Section 6.1"
+      ],
+      "poetic_cipher": "The path narrows before the door becomes one.",
+      "cipher_explanation": "Continuous narrowing and structural singularity are different events. D_O measures the former; dim(ℳ_C^O) records the latter.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "6.2",
+      "operation": "modify",
+      "target": "regularity_criterion_annotations",
+      "what_needs_update": [
+        "Attach epistemic status to the criterion statement.",
+        "Reference the bridge lemmas that must be established for the criterion to become a theorem.",
+        "Replace any continuous collapse references with D_O."
+      ],
+      "exact_update": {
+        "criterion_status": "E_prediction_or_conjecture",
+        "promotion_condition": "Establishment of the bridge lemmas B1–B3 identified in Section 4.6.",
+        "used_symbols": {
+          "continuous_regime": "D_O(h,x,t) > 0",
+          "structural_regime": "dim(ℳ_C^O(h,x)) > 0"
+        },
+        "comparison_to_classical_criteria": {
+          "status": "E_prediction_or_conjecture",
+          "new_claim": "The NSFG criterion is proposed as complementary to classical criteria. Comparative strength remains an open question until formal implications are established."
+        }
+      },
+      "rationale": "The regularity criterion is a conditional result. Its status must reflect the incompleteness of the bridge analysis.",
+      "references": [
+        "PHYS-CORE-014 v0.1.1 Section 6.2",
+        "PHYS-CORE-014 v0.1.2 Section 4.6 (as updated)"
+      ],
+      "poetic_cipher": "A key is useful before it opens the lock; it has not yet opened the lock.",
+      "cipher_explanation": "A criterion that organizes the problem is not automatically a theorem that resolves it.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "9.2",
+      "operation": "add_subsection",
+      "target": "subsection_9.2.6_definition_of_D_O",
+      "what_needs_update": [
+        "Add a new subsection 9.2.6 defining the continuous accessibility functional D_O.",
+        "Specify its relation to dim(ℳ_C^O).",
+        "State its properties (monotonicity, continuity, vanishing conditions).",
+        "Provide its role in the collapse-rate formalism of Section 5.3 and the compatibility argument of Section 6.1."
+      ],
+      "exact_update": {
+        "add_subsection": {
+          "id": "9.2.6",
+          "title": "Definition of the Continuous Accessibility Functional D_O",
+          "status": "A_definition",
+          "definition": {
+            "symbol": "D_O(h,x,t)",
+            "informal": "D_O is a nonnegative continuous functional measuring the degree to which the observer-relative accessible quotient admits distinguishable continuations. D_O > 0 corresponds to a non-degenerate accessible reality; D_O = 0 corresponds to the proposed collapse state.",
+            "formal_candidate": "D_O(h,x,t) := ∫_{ℳ_C^O(h,x)} w_O(q) dq, where w_O: ℳ_C^O(h,x) → ℝ_{≥0} is an observer-relative weight function assigning nonnegative accessibility weight to each accessible equivalence class, and the integral is with respect to a measure on the accessible quotient. The weight w_O and the measure are required to be invariant under the observer's coherence relation ∼_O.",
+            "alternative_candidate": "D_O(h,x,t) := |{ [q] ∈ ℳ_C^O(h,x) : w_O(q) ≥ I_N(O) }|^{1/2}, a normalized count of distinguishable equivalence classes above the observer's resolution threshold, raised to a fixed power to permit a continuous collapse law.",
+            "selection_criterion": "The final form of D_O is to be selected so that: (i) D_O = 0 if and only if ℳ_C^O(h,x) is empty or all its elements are below the observer's resolution threshold; (ii) D_O > 0 if and only if at least one element of ℳ_C^O(h,x) is distinguishable; (iii) D_O admits a continuous collapse law under the scaling hypotheses of Section 5.3."
+          },
+          "properties": [
+            "Nonnegativity: D_O ≥ 0.",
+            "Structural correspondence: D_O = 0 if and only if ℳ_C^O(h,x) = ∅ or all elements of ℳ_C^O(h,x) are below I_N(O).",
+            "Structural correspondence: D_O > 0 if and only if dim(ℳ_C^O(h,x)) > 0 (under the structural definition of dimension).",
+            "Observer-relative invariance: D_O is invariant under the observer's coherence relation ∼_O.",
+            "Continuity: D_O is continuous in h and x on the domain of admissible observer-relative references."
+          ],
+          "relation_to_dimension": {
+            "statement": "D_O and dim(ℳ_C^O) are related but not identical. D_O is a continuous functional; dim(ℳ_C^O) is a structural/topological quantity. The two agree at their zeros: D_O = 0 if and only if dim(ℳ_C^O) = 0. They need not agree in their positive values; D_O measures degree of accessibility while dim(ℳ_C^O) counts dimensions.",
+            "collapse_law": "Continuous collapse laws are stated as D_O ≍ τ^γ. Structural collapse states are stated as dim(ℳ_C^O) = 0. The two statements are related by the boundary condition D_O = 0 ⇔ dim(ℳ_C^O) = 0."
+          },
+          "role_in_downstream_sections": [
+            "Section 5.3: the α-family collapse rate is D_O ≍ τ^{2α+1/2}, a prediction pending derivation from the definition of D_O.",
+            "Section 6.1: the compatibility argument uses D_O to describe the continuous approach to collapse, while reserving dim(ℳ_C^O) = 0 for the structural collapse condition.",
+            "Section 6.2: the regularity criterion is stated as D_O(h,x,t) > 0 for all t under the bridge lemmas, together with the corresponding structural statement dim(ℳ_C^O) > 0."
+          ],
+          "promotion_condition": "Not applicable; D_O is a definition. However, the specific analytic form of D_O may require refinement once the bridge lemmas B1–B3 are established, so that the collapse law D_O ≍ τ^γ becomes derivable rather than postulated."
+        }
+      },
+      "rationale": "The continuous-collapse formalism of Section 5.3 requires a well-defined continuous functional. Without an explicit definition, D_O is a placeholder, not a mathematical object. This subsection makes the placeholder concrete and testable.",
+      "references": [
+        "PHYS-CORE-013 Definition 3.3 (Accessible Quotient)",
+        "PHYS-CORE-013 Definition 3.4 (Singularity)",
+        "PHYS-CORE-014 v0.1.2 Section 5.3"
+      ],
+      "poetic_cipher": "A measure is what lets the door count become the door width.",
+      "cipher_explanation": "D_O is the measure that permits the transition from the discrete counting of accessible directions to the continuous measurement of accessibility. Without a measure, no such transition is defined.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "Section 5.3, Section 6.1, and Section 6.2 may now reference D_O by its definition in Section 9.2.6 and may state continuous collapse laws in terms of it."
+      }
+    },
+    {
+      "section_id": "9.3",
+      "operation": "modify",
+      "target": "classification_appendix_status_annotations",
+      "what_needs_update": [
+        "Attach epistemic status to each row of the classification table.",
+        "Add promotion conditions to each row where the status is D_translation_hypothesis or E_prediction_or_conjecture.",
+        "Use D_O for continuous collapse-rate entries."
+      ],
+      "exact_update": {
+        "classification_table_updates": [
+          {
+            "class": "OpenAI path",
+            "status": "B_classical_or_source_result (classical) + D_translation_hypothesis (NSFG interpretation)",
+            "promotion_condition": "Establishment of the Section 4.6 bridge lemmas B1–B3 to convert the NSFG interpretation into a derived result."
+          },
+          {
+            "class": "α-family",
+            "status": "E_prediction_or_conjecture",
+            "promotion_condition": "Construction of at least one additional α-path, or a proof that no such construction exists."
+          },
+          {
+            "class": "Universal rupture classification",
+            "status": "E_prediction_or_conjecture",
+            "promotion_condition": "Proof that every finite-time classical blow-up admits an NSFG image satisfying the threshold-crossing condition, under the bridge lemmas."
+          },
+          {
+            "class": "D_O collapse exponent γ",
+            "status": "E_prediction_or_conjecture",
+            "promotion_condition": "Derivation of γ = 2α + 1/2 from the definition of D_O in Section 9.2.6 and the scaling of Φ."
+          }
+        ]
+      },
+      "rationale": "The classification appendix must not present predictions as established classifications.",
+      "references": [
+        "PHYS-CORE-014 v0.1.2 Section 9.2.6",
+        "PHYS-CORE-014 v0.1.2 Section 9.3"
+      ],
+      "poetic_cipher": "One footprint proves one traveller; the shape of the road is still a guess.",
+      "cipher_explanation": "A single realized path establishes the existence of that path, not the general behavior of all paths.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "9.5",
+      "operation": "modify",
+      "target": "mathematical_reference_conventions",
+      "what_needs_update": [
+        "Add the universal epistemic-status requirement to the normative statement.",
+        "Add the D_O versus dim(ℳ_C^O) convention.",
+        "Add the falsification-condition requirement for predictions.",
+        "Add the promotion-condition requirement for translation hypotheses."
+      ],
+      "exact_update": {
+        "add_reference_rules": [
+          "Every mapping, theorem, lemma, corollary, and prediction in PHYS-CORE-014 must carry an explicit epistemic status from {A_definition, B_classical_or_source_result, C_derived, D_translation_hypothesis, E_prediction_or_conjecture}.",
+          "Every D_translation_hypothesis must carry a promotion_condition field specifying what would be required to promote it to C_derived.",
+          "Every E_prediction_or_conjecture must carry a falsification_condition field specifying what observation or proof would refute it.",
+          "Continuous-collapse statements must use D_O. Structural-collapse statements must use dim(ℳ_C^O). The two symbols are not interchangeable.",
+          "D_O = 0 if and only if dim(ℳ_C^O) = 0. The two may differ in their positive values.",
+          "Threshold crossing Δ(t_crit) = Δ_crit is distinct from the asymptotic limit Δ(t) → ∞. Neither implies the other.",
+          "Upper bounds may not be used as lower bounds.",
+          "Estimates valid on bounded domains do not transfer to ℝ³ without additional decay or localization hypotheses."
+        ]
+      },
+      "rationale": "The mathematical reference is the canonical location for document-wide conventions. Encoding the new conventions here prevents later revisions from rediscovering the same category errors.",
+      "references": [
+        "PHYS-CORE-014 v0.1.1 Section 9.5",
+        "PHYS-CORE-014 v0.1.2 Section 9.2.6"
+      ],
+      "poetic_cipher": "The Library remembers every mistake unless the index learns its name.",
+      "cipher_explanation": "Encoding constraints in the mathematical reference prevents their silent reintroduction under different notation.",
+      "handoff_update": {
+        "required": false
+      }
+    }
+  ],
+  "_final_handoff": {
+    "required": true,
+    "to": "END",
+    "instruction": "PHYS-CORE-014 v0.1.2 concludes with: (i) a universal epistemic status taxonomy applied to every claim; (ii) promotion conditions on every translation hypothesis; (iii) falsification conditions on every prediction; (iv) an explicit definition of the continuous accessibility functional D_O in Section 9.2.6; (v) a canonical distinction between continuous collapse (D_O) and structural collapse (dim(ℳ_C^O)); (vi) all bridge obligations B1–B3 identified with promotion conditions in Section 4.6.",
+    "preserved_invariant": "The Library remains the NSFG substrate. Coherence remains observer-relative and domain-dependent. The OpenAI manuscript remains the source of the classical construction, not a validation of its NSFG interpretation.",
+    "new_construction": "A fully annotated, machine-readable epistemic architecture in which every claim's status, promotion condition, or falsification condition is explicit, and in which continuous and structural collapse quantities are cleanly distinguished."
+  }
+}

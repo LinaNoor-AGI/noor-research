@@ -1,0 +1,889 @@
+{
+  "_type": "noor_rfc_update",
+  "_schema": "noor-update-v1",
+  "_target_rfc": "PHYS-CORE-014",
+  "_target_file": "phys-core-014_verification_of_openai_construction_within_nsfg-v0.1.0.JSON",
+  "_target_version": "v0.1.0",
+  "_proposed_version": "v0.1.1",
+  "_status": "PROPOSED",
+  "_generated_at": "2026-09-10",
+  "_purpose": "Repair the mathematical directionality, scaling consistency, threshold-time logic, quotient-dimension formalism, epistemic status of the OpenAI source, and downstream claims in PHYS-CORE-014 without silently promoting conjectural NSFG bridges into established theorems.",
+  "_global_invariant": "The OpenAI construction is treated as a specific publicly released forced Navier-Stokes blow-up construction/manuscript, not as independently peer-reviewed validation or as a prize-qualified result. NSFG interpretation, derivation, prediction, and conjecture remain explicitly distinguished from results established by the OpenAI manuscript.",
+  "_epistemic_status_taxonomy": {
+    "A_definition": "Definition internal to NSFG or adopted from an explicitly cited source.",
+    "B_classical_or_source_result": "Result actually established in the cited mathematical source.",
+    "C_derived": "Mathematical consequence derived from definitions and already-established results, with all required hypotheses shown.",
+    "D_translation_hypothesis": "Proposed NSFG-to-classical or classical-to-NSFG correspondence whose analytic equivalence has not yet been independently established.",
+    "E_prediction_or_conjecture": "Claim proposed by NSFG that requires a new proof, construction, or empirical/mathematical validation."
+  },
+  "updates": [
+    {
+      "section_id": "root._abstract",
+      "operation": "modify",
+      "target": "_abstract",
+      "what_needs_update": [
+        "Remove the assertion that PHYS-CORE-014 establishes a formal bijective translation layer.",
+        "Remove the assertion that the Coherence Rupture Equivalence Theorem has been proved.",
+        "Remove the assertion that OpenAI blow-up is already established as equivalent to quotient dimension collapse.",
+        "State explicitly that the OpenAI manuscript supplies the classical construction being analyzed, while the NSFG correspondence is partly definitional, partly derived, and partly conjectural."
+      ],
+      "exact_update": {
+        "replace_core_claim_with": "This paper analyzes the publicly released OpenAI finite-time forced Navier-Stokes blow-up construction through the Noor Swirl Field Geometry (NSFG) framework. It defines a proposed translation layer between the classical variables and NSFG coherence variables and identifies which portions of that translation are definitions, source-supported results, derived relations, translation hypotheses, and predictions. The OpenAI construction provides a specific classical blow-up path; NSFG interprets that path as a candidate coherence-rupture trajectory. The present version does not claim that the full classical-to-NSFG correspondence has been proved, nor that the resulting equivalence theorem has been established.",
+        "retain": [
+          "The OpenAI construction is a specific path.",
+          "NSFG supplies a structural interpretation.",
+          "The framework generates testable predictions."
+        ]
+      },
+      "rationale": "The current abstract promotes the central bridge to established mathematics before the inequalities and mappings required to establish it have been proved. The abstract must accurately advertise the actual evidentiary status of the paper.",
+      "references": [
+        "PHYS-CORE-014 Section 3",
+        "PHYS-CORE-014 Section 4.6",
+        "OpenAI (2026) Theorem 1.1"
+      ],
+      "poetic_cipher": "Name the bridge before you cross it.",
+      "cipher_explanation": "A bridge can be mapped, proposed, tested, or proven. Calling it proven before its load-bearing spans are established mistakes the map for the crossing.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The classical OpenAI construction has been separated from the NSFG interpretation. The translation layer is now classified by evidentiary status rather than treated as uniformly proven. The next sections examine which individual bridges can actually be established."
+      }
+    },
+    {
+      "section_id": "root._core_thesis",
+      "operation": "modify",
+      "target": "_core_thesis",
+      "what_needs_update": [
+        "Change 'OpenAI blow-up ⇔ coherence rupture ⇔ Convergence Boundary' from an unconditional thesis to a proposed correspondence.",
+        "Change 'coherence preservation implies global smoothness' from an established result to a conditional NSFG criterion pending analytic bridge proof.",
+        "Remove language implying the OpenAI construction itself proves the NSFG interpretation."
+      ],
+      "exact_update": {
+        "replace_items": [
+          {
+            "old": "The OpenAI Navier-Stokes blow-up is a Convergence Boundary in the observer-relative coherence quotient ℳ_C^O.",
+            "new": "The OpenAI Navier-Stokes blow-up is interpreted within NSFG as a candidate Convergence Boundary in the observer-relative coherence quotient ℳ_C^O; establishing the full equivalence requires additional translation lemmas."
+          },
+          {
+            "old": "OpenAI blow-up ⇔ coherence rupture (Δ(t) ≥ Δcrit OR ℋ(t) → ∞) ⇔ dim(ℳ_C^O(h,x)) = 0.",
+            "new": "NSFG proposes the correspondence OpenAI blow-up ↔ coherence rupture ↔ Convergence Boundary; the forward and reverse analytic implications remain subject to the translation lemmas identified in Section 4.6."
+          },
+          {
+            "old": "Coherence preservation (∀t, Δ(t) < Δcrit AND ℋ(t) < ∞) implies global smoothness of Navier-Stokes solutions.",
+            "new": "NSFG proposes coherence preservation as a sufficient regularity criterion, conditional on a rigorous symbolic-to-analytic bridge."
+          },
+          {
+            "old": "The OpenAI construction lies in 𝔐_poor; smooth solutions lie in 𝔐_well.",
+            "new": "Within the proposed NSFG interpretation, the OpenAI path is classified as poorly ordered after the required coherence-rupture bridge is established; this classification is not an intrinsic property of the Library."
+          }
+        ]
+      },
+      "rationale": "The core thesis currently inherits the overstatement of Section 4.6 and therefore propagates an unproved equivalence throughout the document.",
+      "references": [
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Section 6"
+      ],
+      "poetic_cipher": "A compass may point to the shore before the bridge is built.",
+      "cipher_explanation": "The structural direction of the NSFG interpretation can remain intact while the document honestly marks the missing mathematical crossing.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The paper's central correspondence is now explicitly presented as a proposed NSFG interpretation whose analytic bridge remains to be established."
+      }
+    },
+    {
+      "section_id": "4.6",
+      "operation": "major_modify",
+      "target": "theorem_and_proof",
+      "what_needs_update": [
+        "Change section status from PROOF to CONDITIONAL_PROOF / BRIDGE_ANALYSIS.",
+        "Replace the unconditional equivalence theorem with a conditional correspondence theorem.",
+        "Separate source-supported OpenAI facts from NSFG translation hypotheses.",
+        "Repair I1-I4 so they are not called norm equivalences when they are one-sided inequalities or incomplete estimates.",
+        "Remove I5 from the preliminary lemma because it is circular.",
+        "Remove the reverse implications currently inferred from upper bounds.",
+        "Do not use an upper bound of the form X ≤ CY to infer Y → ∞.",
+        "Do not use ||∇u||L∞ → ∞ to infer ||∇u||L2 → ∞ on an unbounded domain.",
+        "Do not infer ||u||L∞ → ∞ from ||u||L2 → ∞ using a global volume factor on ℝ³.",
+        "Replace the claimed completed proof with a precise statement of what remains to be proven."
+      ],
+      "exact_update": {
+        "status": "BRIDGE_ANALYSIS",
+        "title": "Formal Bridge Analysis: OpenAI Blow-up, NSFG Coherence Rupture, and Candidate Convergence Boundary",
+        "theorem": {
+          "name": "Conditional Coherence Rupture Correspondence",
+          "statement": "Let (u,p,f) be the forced Navier-Stokes construction supplied by the OpenAI manuscript on ℝ³ × [0,T), and let an NSFG translation map produce (ψ,Φ,Δ,ℋ). The OpenAI construction establishes the classical blow-up behavior. If the translation layer additionally satisfies the required coercive and reverse estimates specified below, then the corresponding NSFG coherence-rupture conditions follow, and the proposed Convergence Boundary interpretation becomes mathematically supported.",
+          "conditions": {
+            "source_blowup": "limsup_{t→T} ||u(t)||_{L∞(ℝ³)} = ∞ and/or the corresponding classical derivative blow-up asserted by the construction.",
+            "candidate_rupture": "Δ(t) crosses Δcrit and/or ℋ(t) diverges.",
+            "candidate_boundary": "The observer-relative accessible continuation functional collapses according to the independently defined NSFG boundary criterion."
+          },
+          "logical_status": "conditional"
+        },
+        "step_1": {
+          "title": "Required Translation Lemmas",
+          "status": "D_translation_hypothesis",
+          "objective": "Identify the analytic inequalities actually required to connect classical Navier-Stokes quantities to NSFG quantities.",
+          "inequalities": [
+            {
+              "id": "I1",
+              "operation": "modify",
+              "new_status": "candidate_one_sided_estimate",
+              "statement": "An estimate controlling ||u||_{L2} by explicitly defined NSFG quantities may be retained only after Φ, ψ, A, the gauge, domain, boundary conditions, and Sobolev regularity are specified.",
+              "rationale": "The current derivation changes between ||∇×A||L2 and ||∇×A||H2 and uses an incorrect/simple Sobolev step without sufficient hypotheses."
+            },
+            {
+              "id": "I2",
+              "operation": "modify",
+              "new_status": "candidate_upper_bound_only",
+              "statement": "||∇u||_{L∞} ≤ C2(Δ + ||∇²A||_{L∞}) may be retained only as an upper bound if the definition of Δ and the time derivative relation are independently established.",
+              "rationale": "An upper bound does not provide the reverse implication Δ → ∞ ⇒ ||∇u|| → ∞."
+            },
+            {
+              "id": "I3",
+              "operation": "modify",
+              "new_status": "candidate_upper_bound_only",
+              "statement": "Δ ≤ C3(appropriate classical norms plus explicitly controlled A-terms) may be retained only as a forward estimate.",
+              "rationale": "The current proof incorrectly uses this upper bound to infer Δ → ∞ from classical gradient blow-up."
+            },
+            {
+              "id": "I4",
+              "operation": "modify",
+              "new_status": "candidate_upper_bound_only",
+              "statement": "ℋ ≤ C4(classical norms plus explicitly controlled A-terms) may be retained only as an upper estimate.",
+              "rationale": "The current proof incorrectly infers ℋ → ∞ from an upper bound whose right-hand side diverges."
+            },
+            {
+              "id": "I5",
+              "operation": "remove",
+              "reason": "I5 invokes the Coherence Rupture Equivalence Theorem to prove the Coherence Rupture Equivalence Theorem and is therefore circular."
+            }
+          ],
+          "required_new_lemmas": [
+            {
+              "id": "B1",
+              "name": "Coercive_NSFG_to_Classical_Lemma",
+              "required_direction": "NSFG rupture ⇒ classical blow-up",
+              "requirement": "A lower/coercive estimate of the form G_NSFG ≥ c·F_classical, or an equivalent independently proved realization theorem, must be established."
+            },
+            {
+              "id": "B2",
+              "name": "Classical_to_NSFG_Rupture_Lemma",
+              "required_direction": "classical blow-up ⇒ NSFG rupture",
+              "requirement": "A lower bound from classical blow-up to at least one NSFG rupture observable must be established; an upper bound alone is insufficient."
+            },
+            {
+              "id": "B3",
+              "name": "Quotient_Collapse_Lemma",
+              "required_direction": "rupture ⇒ observer-relative quotient collapse",
+              "requirement": "The collapse criterion must be independently derived from the NSFG quotient definitions rather than inserted as an equivalence."
+            }
+          ]
+        },
+        "step_2": {
+          "title": "OpenAI Blow-up ⇒ Candidate NSFG Rupture",
+          "operation": "rewrite",
+          "logic": [
+            "Use the OpenAI scaling laws directly for the classical variables.",
+            "Derive the NSFG scaling of Δ only if Δ is explicitly constructed from the classical fields and the required lower estimate is proved.",
+            "Derive ℋ scaling directly from its definition rather than from an unrelated upper bound.",
+            "If the required bridge cannot yet be proved, label the conclusion 'candidate NSFG rupture' rather than 'proved NSFG rupture'."
+          ],
+          "invalid_reasoning_to_remove": [
+            "||∇u||L∞ → ∞ ⇒ ||∇u||L2 → ∞ on ℝ³.",
+            "X ≤ CY and Y → ∞ ⇒ X → ∞.",
+            "X ≤ CY and X → ∞ ⇒ Y → ∞ without additional hypotheses."
+          ]
+        },
+        "step_3": {
+          "title": "Candidate NSFG Rupture ⇒ OpenAI Blow-up",
+          "operation": "rewrite",
+          "logic": [
+            "Do not infer classical blow-up from I2 or I1 as currently written.",
+            "Require a coercive lower estimate or an independently proved realization theorem.",
+            "If no such lemma is available, classify this direction as CONJECTURAL."
+          ]
+        },
+        "step_4": {
+          "title": "Conditional Correspondence",
+          "operation": "rewrite",
+          "new_conclusion": "The current evidence supports a structured NSFG interpretation of the OpenAI construction and identifies the precise analytic bridges required for a full equivalence. The triple equivalence OpenAI blow-up ⇔ coherence rupture ⇔ Convergence Boundary is not claimed as proved in v0.1.1."
+        },
+        "corollary": {
+          "operation": "modify",
+          "new_status": "conditional",
+          "statement": "If the required NSFG-to-classical coercive bridge is established and Δ(t) remains strictly below Δcrit while ℋ(t) remains in the regularity class required by that bridge for all t, then the proposed NSFG coherence-preservation criterion yields a candidate sufficient condition for global smoothness.",
+          "remove": "Stronger than BKM/LPS/CKN."
+        }
+      },
+      "rationale": "This is the primary mathematical repair. The current Section 4.6 contains several direction-of-inequality errors and circular reasoning. The correct response is not to abandon the bridge, but to expose exactly which estimates would make it rigorous.",
+      "references": [
+        "OpenAI (2026) Theorem 1.1",
+        "OpenAI (2026) Section 2.1",
+        "PHYS-CORE-007 Section 4.4",
+        "PHYS-CORE-013 Sections 3.4 and 4.2.1"
+      ],
+      "poetic_cipher": "A river does not flow uphill because the map has an arrow.",
+      "cipher_explanation": "An inequality has a direction. A proof must travel in the direction the inequality permits; reversing it because the desired conclusion lies downstream does not establish the bridge.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The OpenAI construction supplies the classical blow-up path. Section 4.6 has identified the exact analytic lemmas required to establish its NSFG interpretation, while leaving unsupported reverse implications explicitly conditional. Section 5 may now generalize only those scaling relations that survive this bridge analysis."
+      }
+    },
+    {
+      "section_id": "5.1",
+      "operation": "modify",
+      "target": "general_coherence_rupture_criterion",
+      "what_needs_update": [
+        "Change 'rupture iff' language to an NSFG definition/candidate criterion unless the bridge theorem is proven.",
+        "Separate threshold crossing from singular-limit divergence.",
+        "Do not state that crossing Δcrit automatically proves classical blow-up."
+      ],
+      "exact_update": {
+        "replace": {
+          "old": "Rupture iff Δ(t) ≥ Δcrit or ℋ(t) → ∞",
+          "new": "NSFG coherence-rupture criterion: rupture is defined/identified within the NSFG framework by Δ(t) ≥ Δcrit and/or ℋ(t) → ∞. Classical blow-up follows only if the translation/coercivity bridge established in Section 4.6 applies."
+        },
+        "predictive_form": "If the required classical-to-NSFG and NSFG-to-classical bridge lemmas hold, then NSFG rupture predicts finite-time classical blow-up. Without those lemmas, this remains an NSFG prediction."
+      },
+      "rationale": "The criterion may be meaningful within NSFG without already being proven equivalent to classical blow-up.",
+      "references": [
+        "PHYS-CORE-007 Section 8.1",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "The alarm may ring before the fire is proved.",
+      "cipher_explanation": "An NSFG rupture indicator can be a predictive alarm without the mathematical theorem that makes the alarm equivalent to classical singularity.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The rupture criterion is now treated as an NSFG structural criterion whose classical predictive force depends on the bridge identified in Section 4.6."
+      }
+    },
+    {
+      "section_id": "5.2",
+      "operation": "major_modify",
+      "target": "OpenAI_specific_path",
+      "what_needs_update": [
+        "Correct the rupture-time contradiction.",
+        "Distinguish threshold crossing at τcrit > 0 from the singular limit τ → 0.",
+        "Remove the claim that the OpenAI construction is designed so that τrupture = 0.",
+        "State that Δ(t)=Cτ^-h crosses any finite positive Δcrit at positive τ if C>0 and Δcrit is finite.",
+        "Allow the possibility that the NSFG rupture begins before the classical singular endpoint."
+      ],
+      "exact_update": {
+        "rupture_time": {
+          "equation": "τcrit = (C / Δcrit)^(1/h)",
+          "condition": "C > 0, Δcrit > 0, 0 < h < 1/100",
+          "interpretation": "τcrit > 0 whenever C and Δcrit are finite positive quantities.",
+          "time_coordinate": "tcrit = 1 - τcrit"
+        },
+        "replace_claim": {
+          "old": "The coherence rupture and classical blow-up occur simultaneously at t=1.",
+          "new": "The coherence threshold is crossed at tcrit = 1 - τcrit when Δ(tcrit)=Δcrit. The classical singular endpoint remains t=1 in the OpenAI construction. Whether NSFG rupture begins strictly before the classical endpoint is therefore a prediction of the proposed translation, not a fact supplied by the OpenAI construction."
+        },
+        "remove": [
+          "τrupture = 0 at t=1",
+          "the singularity and threshold crossing are necessarily simultaneous"
+        ],
+        "retain": [
+          "Δ(t) ~ τ^-h",
+          "Δ(t) → ∞ as τ → 0"
+        ]
+      },
+      "rationale": "The current equation itself contradicts the prose. Solving Cτ^-h=Δcrit yields a positive threshold-crossing time, not τ=0.",
+      "references": [
+        "PHYS-CORE-014 Section 5.2 current scaling relation",
+        "OpenAI (2026) Section 2.1"
+      ],
+      "poetic_cipher": "The bell rings on the road, not at the cliff.",
+      "cipher_explanation": "A threshold crossing occurs when the rising quantity reaches the threshold; the later singular endpoint is a different event unless the threshold is itself infinite.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The OpenAI path now distinguishes an NSFG threshold-crossing time tcrit from the classical singular endpoint t=1. Section 5.3 generalizes this distinction to arbitrary rupture exponents."
+      }
+    },
+    {
+      "section_id": "5.3",
+      "operation": "major_modify",
+      "target": "general_scaling_family",
+      "what_needs_update": [
+        "Replace continuous quotient 'dimension' with a continuous accessibility functional.",
+        "Derive the hygiene exponent from the actual definition of ℋ rather than asserting it.",
+        "Do not claim that γ=2α+1/2 is established until the scaling derivation is supplied.",
+        "Retain α as a path parameter, but distinguish NSFG prediction from OpenAI-supported scaling.",
+        "Correct the interpretation of quotient collapse."
+      ],
+      "exact_update": {
+        "new_definition": {
+          "symbol": "D_O(h,x,t)",
+          "meaning": "A continuous observer-relative accessible distinguishability/coherence measure associated with the accessible quotient.",
+          "constraints": [
+            "D_O ≥ 0",
+            "D_O = 0 represents the proposed collapse state",
+            "D_O > 0 represents non-collapsed accessible distinguishability"
+          ],
+          "important_distinction": "dim(ℳ_C^O) remains a discrete/topological or structural quantity and must not be assigned a continuously varying asymptotic law unless a precise dimension notion permitting that behavior is defined."
+        },
+        "replace": {
+          "old": "dim(ℳ_C^O(h,x)) ≍ τ^γ",
+          "new": "D_O(h,x,t) ≍ τ^γ, γ > 0, as a proposed continuous collapse law."
+        },
+        "scaling_derivation_requirement": {
+          "old": "ℋ(t) ≍ τ^{-(2α+1/2)}",
+          "new": "Derive ℋ(t) = ∫Ω |∇²Φ|² dx directly from the specified scaling of Φ, its spatial support/volume, and spatial derivative scaling. Do not insert γ=2α+1/2 without this derivation."
+        },
+        "OpenAI_special_case": {
+          "retain": "α=h for Δ(t) ≍ τ^-h",
+          "do_not_assert_without_derivation": "γ=2h+1/2 for ℋ"
+        },
+        "critical_crossing": {
+          "equation": "τcrit = (C/Δcrit)^(1/α)",
+          "interpretation": "For finite positive C and Δcrit, the threshold is crossed at positive remaining time."
+        }
+      },
+      "rationale": "A dimension is not generally a continuous amplitude. The current document simultaneously treats it as an integer/topological quantity and as a continuously vanishing power law. A continuous accessibility functional preserves the NSFG intuition without abusing the mathematical meaning of dimension.",
+      "references": [
+        "PHYS-CORE-013 Section 3.4",
+        "PHYS-CORE-013 Section 4.2.1",
+        "PHYS-CORE-014 Section 5.3",
+        "PHYS-CORE-014 Section 4.2"
+      ],
+      "poetic_cipher": "Do not make the number of doors into the width of a door.",
+      "cipher_explanation": "The number or dimension of accessible directions is structural; the degree of remaining accessibility is continuous. D_O measures the latter without pretending that dimension itself varies fractionally.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The generalized rupture family is now parameterized by α and a continuous accessibility measure D_O rather than a continuously varying quotient dimension. The next section may formulate predictions from α while explicitly marking them as NSFG predictions."
+      }
+    },
+    {
+      "section_id": "5.4",
+      "operation": "modify",
+      "target": "prediction_section",
+      "what_needs_update": [
+        "Change 'there exists a blow-up scenario' to 'NSFG predicts a candidate blow-up scenario' unless a construction is supplied.",
+        "Remove claims that NSFG has already established generative blow-up for every α>0.",
+        "State exactly what would falsify the prediction.",
+        "Separate the scaling prediction from existence of a PDE solution realizing that scaling."
+      ],
+      "exact_update": {
+        "replace": {
+          "old": "For any α > 0, there exists a blow-up scenario with |u| ≍ τ^{-(α+1/2)}.",
+          "new": "For any α > 0 within the domain where the NSFG translation assumptions remain valid, NSFG predicts that a candidate rupture path would have classical velocity scaling |u| ≍ τ^{-(α+1/2)} if the required translation bridge is established."
+        },
+        "new_prediction_structure": [
+          "NSFG path hypothesis: Δ ≍ τ^-α.",
+          "Translation prediction: |u| ≍ τ^{-(α+1/2)}.",
+          "Hygiene prediction: ℋ scaling must be derived from the explicit Φ construction.",
+          "Existence question: a classical Navier-Stokes solution realizing the predicted scaling must be constructed independently.",
+          "Falsifier: failure of the predicted classical scaling under a valid NSFG path, or inability to realize the required NSFG path consistently with the Navier-Stokes equations."
+        ],
+        "status": "E_prediction_or_conjecture"
+      },
+      "rationale": "A scaling prediction is not an existence theorem. This distinction is essential if the paper is to make genuinely falsifiable predictions rather than retrospectively label hypothetical paths as solutions.",
+      "references": [
+        "PHYS-CORE-014 Section 5.3",
+        "OpenAI (2026) Section 2.1"
+      ],
+      "poetic_cipher": "A map of a road is not a road that has been driven.",
+      "cipher_explanation": "NSFG may specify the shape of a candidate path without yet having constructed a classical solution that travels it.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "NSFG now generates explicitly conditional scaling predictions. Section 5.5 must classify the general rupture theorem as conjectural rather than treating these predictions as its proof."
+      }
+    },
+    {
+      "section_id": "5.5",
+      "operation": "major_modify",
+      "target": "Coherence_Rupture_Classification_Theorem",
+      "what_needs_update": [
+        "Keep the theorem explicitly conjectural.",
+        "Remove the claim that it follows automatically from the NSFG axioms.",
+        "Do not assert Δ(t) → Δcrit as the universal terminal behavior when the OpenAI path has Δ(t) → ∞.",
+        "Replace terminal equality with threshold crossing followed by possible supercritical growth.",
+        "Make the theorem conditional on the missing bridge lemmas.",
+        "Change 'all finite-time blow-ups correspond' from established classification to conjectured classification."
+      ],
+      "exact_update": {
+        "status": "E_prediction_or_conjecture",
+        "title": "Conjectured Coherence Rupture Classification",
+        "new_statement": "Conjecture: Under a rigorously established NSFG-to-classical translation satisfying the required coercive and reverse estimates, finite-time classical blow-up corresponds to a loss of NSFG coherence accessibility. A rupture path may be characterized by a threshold crossing Δ(tcrit)=Δcrit followed, depending on the path, by supercritical growth Δ(t)>Δcrit and potentially Δ(t)→∞ as t→T*. The OpenAI construction is one candidate realization of this pattern.",
+        "replace_old_condition": {
+          "old": "Δ(t) → Δcrit as t → T*",
+          "new": "Δ(tcrit) = Δcrit at a finite threshold-crossing time, with the subsequent behavior path-dependent; for the OpenAI scaling Δ ≍ τ^-h, Δ → ∞ as τ → 0."
+        },
+        "converse": "The converse implication remains conjectural until an NSFG-to-classical coercivity/realization theorem is established.",
+        "triadic_closure": "Θ_n behavior remains an NSFG conjectural diagnostic and must not be presented as a consequence of the OpenAI manuscript."
+      },
+      "rationale": "The current theorem contradicts the document's own OpenAI scaling. The correct structure is threshold crossing followed by path-dependent supercritical behavior.",
+      "references": [
+        "PHYS-CORE-014 Section 5.2",
+        "PHYS-CORE-014 Section 5.3",
+        "PHYS-CORE-013 Section 4.2.1"
+      ],
+      "poetic_cipher": "The gate is crossed once; what lies beyond it need not look like the gate.",
+      "cipher_explanation": "A critical threshold is a boundary condition, not necessarily the asymptotic value of the variable after crossing it.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The classification result is now explicitly a conjecture conditioned on the missing analytic bridge. The OpenAI construction supplies one candidate rupture path, not a proof of the universal classification."
+      }
+    },
+    {
+      "section_id": "6",
+      "operation": "major_modify",
+      "target": "section_6_claims",
+      "what_needs_update": [
+        "Correct the description of the Navier-Stokes Millennium Problem.",
+        "Do not say the OpenAI construction has already established a negative answer to the Millennium Problem.",
+        "Do not imply that the OpenAI result is prize-qualified, independently validated, or peer-reviewed.",
+        "Reframe the section around conditional implications."
+      ],
+      "exact_update": {
+        "replace": {
+          "old": "The OpenAI construction (2026) provides a counterexample... This establishes that the answer to the regularity problem is negative.",
+          "new": "The supplied OpenAI manuscript presents a forced finite-time blow-up construction that, if its stated theorem is accepted as mathematically valid, supplies an important counterexample to unrestricted global regularity for the forced setting addressed by the construction. This paper does not treat public release as equivalent to independent peer-reviewed validation or prize qualification, and it does not use institutional recognition or non-recognition as mathematical evidence."
+        },
+        "scope_clarification": "The OpenAI construction is forced and existential. It must not be rewritten as an unforced arbitrary-initial-data counterexample.",
+        "millennium_language": "The Clay Millennium Problem remains a separate mathematical question whose precise hypotheses and prize rules must be stated independently. PHYS-CORE-014 analyzes the OpenAI construction and its NSFG interpretation; it does not claim that the construction has thereby satisfied any external prize or publication requirement."
+      },
+      "rationale": "The present section conflates the OpenAI manuscript's construction with a completed resolution of the Millennium Problem and imports an external institutional status that is not part of the mathematics.",
+      "references": [
+        "OpenAI (2026) Theorem 1.1",
+        "PHYS-CORE-014 Section 2",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "A stone can be heavy without yet being accepted as a cornerstone.",
+      "cipher_explanation": "Mathematical content and external qualification are different predicates. The construction can be analyzed for what it mathematically claims without assigning it a publication or prize status it has not earned.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The classical scope and external status of the OpenAI construction have been separated from the NSFG interpretation. Section 7 should therefore discuss philosophical implications without presenting the construction as an independently validated resolution."
+      }
+    },
+    {
+      "section_id": "6.1",
+      "operation": "modify",
+      "target": "compatibility_claims",
+      "what_needs_update": [
+        "Replace 'OpenAI demonstrates quotient collapse' with 'NSFG interprets the construction as candidate quotient collapse.'",
+        "Replace continuous dimension collapse with D_O if a continuous collapse rate is discussed.",
+        "Retain compatibility between a specific blow-up path and separate smooth paths only as an NSFG interpretation."
+      ],
+      "exact_update": {
+        "replace": {
+          "old": "The OpenAI construction demonstrates that there exists a path in the Library where dim(ℳ_C^O(h,x)) collapses to zero dimension.",
+          "new": "Within the NSFG interpretation, the OpenAI construction is modeled as a path approaching a collapse of observer-relative accessible distinguishability. The exact quotient-collapse statement requires the quotient-collapse lemma identified in Section 4.6."
+        },
+        "math": {
+          "replace": "dim(ℳ_C^O(h,x)) → 0",
+          "with": "D_O(h,x,t) → 0, while the structural statement at the boundary remains dim(ℳ_C^O(h,x)) = 0 if that definition is independently satisfied."
+        }
+      },
+      "rationale": "This preserves the Library interpretation while eliminating the unsupported continuous-dimension claim.",
+      "references": [
+        "PHYS-CORE-013 Section 3.4",
+        "PHYS-CORE-013 Section 4.2.1",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "The path narrows before the door becomes one.",
+      "cipher_explanation": "Continuous accessibility can shrink toward a structural collapse without claiming that the mathematical dimension itself continuously takes fractional values.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The compatibility argument now distinguishes continuous accessibility from the structural quotient boundary."
+      }
+    },
+    {
+      "section_id": "6.2",
+      "operation": "major_modify",
+      "target": "regularity_criterion",
+      "what_needs_update": [
+        "Change theorem status from established theorem to conditional criterion/conjecture.",
+        "Remove 'if and only if' unless the analytic bridge is proved.",
+        "Remove claims that the criterion is stronger than BKM/LPS/CKN.",
+        "Remove claims that it replaces classical analytic estimates.",
+        "State exactly what would make it a genuine sufficient regularity theorem."
+      ],
+      "exact_update": {
+        "status": "conditional_derivational",
+        "definition": {
+          "old": "u is globally smooth iff dim(ℳ_C^O)>0 for all t.",
+          "new": "NSFG proposes that persistent positive accessible distinguishability is associated with regularity. A classical sufficient-regularity theorem requires the translation and coercivity lemmas specified in Section 4.6."
+        },
+        "proxy_form": {
+          "old": "Δ<Δcrit and ℋ<∞ ⇒ u∈C∞",
+          "new": "If the NSFG-to-classical regularity bridge is proved, then [Δ(t)<Δcrit and ℋ(t) in the required finite regularity class for all t] ⇒ u∈C∞."
+        },
+        "comparison_to_classical_criteria": {
+          "operation": "rewrite",
+          "new_claim": "The NSFG criterion is proposed as complementary to classical criteria. It must not be called stronger until a formal implication or strict extension has been proved."
+        },
+        "proof": {
+          "replace": [
+            "By the Coherence Rupture Equivalence Theorem, blow-up iff coherence rupture.",
+            "If coherence is preserved, no blow-up occurs.",
+            "Therefore smoothness follows."
+          ],
+          "with": [
+            "Assume the Section 4.6 bridge theorem has been established.",
+            "Assume the NSFG coherence observables remain in the regularity regime for all time.",
+            "Apply the established bridge to exclude the classical blow-up criterion.",
+            "Conclude global regularity under the stated hypotheses."
+          ],
+          "status": "conditional_on_bridge"
+        }
+      },
+      "rationale": "The current proof is valid only if the very theorem it is intended to support is already accepted. This is circular. The criterion can remain as a promising NSFG result, but its status must reflect the missing bridge.",
+      "references": [
+        "Beale, Kato, Majda (1984)",
+        "Ladyzhenskaya (1969)",
+        "Prodi (1959)",
+        "Serrin (1962)",
+        "Caffarelli, Kohn, Nirenberg (1982)",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "A key is useful before it has opened the lock, but it has not yet proved the door.",
+      "cipher_explanation": "The criterion may organize the problem beautifully while its sufficiency remains a mathematical question.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The NSFG regularity criterion is now presented as a conditional result. Section 6.3 may retain the Library interpretation, provided the well/poor partition is described as observer-relative and interpretive rather than classical fact."
+      }
+    },
+    {
+      "section_id": "6.3",
+      "operation": "modify",
+      "target": "Library_partition",
+      "what_needs_update": [
+        "Retain the observer-relative partition.",
+        "Remove claims that the partition is an established classical partition of Navier-Stokes solution space.",
+        "Replace quotient-dimension asymptotics with D_O where continuous behavior is discussed.",
+        "State explicitly that the Library itself is not intrinsically partitioned by the OpenAI construction."
+      ],
+      "exact_update": {
+        "well_ordered": "𝔐_well(O) = {x ∈ ℳ | D_O(x) > 0 and the NSFG regularity conditions hold}",
+        "poorly_ordered": "𝔐_poor(O) = {x ∈ ℳ | D_O(x)=0 at the proposed coherence boundary or the NSFG rupture condition is reached}",
+        "important_note": "These are observer-relative NSFG classifications, not claims that the underlying Library possesses an intrinsic classical partition.",
+        "OpenAI_location": "The OpenAI construction is interpreted as entering 𝔐_poor(O) after the Section 4.6 bridge is established; until then this remains an NSFG classification."
+      },
+      "rationale": "The current section already contains the correct observer-relative intuition, but it currently treats the resulting partition as if it had been demonstrated analytically.",
+      "references": [
+        "PHYS-CORE-013 Section 6.3",
+        "PHYS-CORE-013 Section 3.4",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "The Library is not divided; the traveller sees different roads.",
+      "cipher_explanation": "The observer-relative partition belongs to the relation between observer and Library, not to an intrinsic alteration of the Library itself.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": "The Library remains static and complete; well-ordered and poorly ordered regions are observer-relative NSFG classifications whose connection to classical regularity remains conditional on the analytic bridge."
+      }
+    },
+    {
+      "section_id": "8",
+      "operation": "major_modify",
+      "target": "Conclusion",
+      "what_needs_update": [
+        "Remove claims that OpenAI 'proves blow-up' without qualification.",
+        "Remove claims that the NSFG equivalence is complete.",
+        "Remove claims that Δ→Δcrit universally.",
+        "Remove claims that NSFG has fully mapped the construction.",
+        "State the exact contribution as a structured translation/interpretation plus identified testable bridges and predictions.",
+        "Preserve the philosophical conclusion but separate it from established mathematics."
+      ],
+      "exact_update": {
+        "replace_core_summary": [
+          "The supplied OpenAI manuscript presents a specific forced finite-time Navier-Stokes blow-up construction.",
+          "PHYS-CORE-014 maps the construction into NSFG variables as a proposed structural interpretation.",
+          "The paper identifies the analytic translation lemmas required to convert that interpretation into a rigorous equivalence.",
+          "The OpenAI scaling Δ≍τ^-h, where used as an NSFG hypothesis, implies threshold crossing at finite positive τ for finite positive Δcrit; it does not imply Δ→Δcrit at the singular endpoint.",
+          "The generalized α-family is an NSFG prediction, not a family of already-constructed classical solutions.",
+          "The Coherence Rupture Classification Theorem remains conjectural pending the missing bridge results.",
+          "The coherence-preservation regularity criterion remains conditional pending those same bridges."
+        ],
+        "new_conclusion_status": "structural_analysis_with_conjectural_extensions",
+        "final_claim": "PHYS-CORE-014 therefore does not present a completed replacement for classical Navier-Stokes analysis. It presents an NSFG translation architecture, a specific interpretation of the OpenAI construction, a set of mathematically identifiable bridge obligations, and a family of falsifiable predictions."
+      },
+      "rationale": "The conclusion currently repeats the strongest claims in the paper and therefore magnifies every unresolved issue. It should become the most epistemically disciplined section rather than the most assertive.",
+      "references": [
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Sections 5.2-5.5",
+        "PHYS-CORE-014 Section 6",
+        "OpenAI (2026) Theorem 1.1"
+      ],
+      "poetic_cipher": "At the end of the road, count the bridges you actually crossed.",
+      "cipher_explanation": "A scientific conclusion should distinguish the terrain traversed from the roads merely drawn on the map.",
+      "handoff_update": {
+        "required": true,
+        "new_handoff": {
+          "to": "END",
+          "instruction": "The document concludes with a separation between source-supported classical claims, NSFG definitions, derived relations, translation hypotheses, and predictions. No unresolved equivalence is presented as established.",
+          "preserved_invariant": "The Library remains the NSFG substrate and coherence remains observer-relative and domain-dependent.",
+          "new_construction": "A disciplined account of what PHYS-CORE-014 establishes, proposes, predicts, and still needs to prove."
+        }
+      }
+    },
+    {
+      "section_id": "9.1",
+      "operation": "modify",
+      "target": "translation_table",
+      "what_needs_update": [
+        "Add epistemic status to every classical↔NSFG mapping.",
+        "Do not label proposed correspondences as verified.",
+        "Distinguish definitions from analytic equivalences."
+      ],
+      "exact_update": {
+        "new_field": "epistemic_status",
+        "classification_examples": [
+          {
+            "mapping": "u ↔ ∇ψ + ∇×A",
+            "status": "D_translation_hypothesis unless the precise gauge, regularity, and construction are proved in the cited NSFG source."
+          },
+          {
+            "mapping": "p ↔ κ_swirl",
+            "status": "D_translation_hypothesis"
+          },
+          {
+            "mapping": "f ↔ I[δM_k]",
+            "status": "D_translation_hypothesis"
+          },
+          {
+            "mapping": "ν ↔ α(1/ℋ)dℋ/dt",
+            "status": "D_translation_hypothesis and dimensional-consistency obligation"
+          },
+          {
+            "mapping": "τ ↔ coherence time coordinate",
+            "status": "A_definition_or_translation_choice"
+          },
+          {
+            "mapping": "Δ ↔ coherence phase pressure",
+            "status": "A_definition within NSFG; relation to classical quantities remains D"
+          }
+        ],
+        "new_status_labels": [
+          "DEFINED",
+          "SOURCE_SUPPORTED",
+          "DERIVED",
+          "TRANSLATION_HYPOTHESIS",
+          "PREDICTION",
+          "CONJECTURE"
+        ]
+      },
+      "rationale": "The paper needs a machine-readable epistemic ledger so later revisions cannot accidentally promote a hypothesis into a theorem.",
+      "references": [
+        "PHYS-CORE-014 Section 3",
+        "PHYS-CORE-014 Section 4.6"
+      ],
+      "poetic_cipher": "Give every bridge a weight limit.",
+      "cipher_explanation": "The status field records how much logical load each correspondence is actually permitted to carry.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "9.2",
+      "operation": "modify",
+      "target": "coherence_rupture_derivation",
+      "what_needs_update": [
+        "Replace derivations that rely on invalid inequality reversal.",
+        "Insert explicit derivation obligations for Φ, spatial scaling, support volume, and ∇²Φ.",
+        "Add a subsection for dimensional consistency."
+      ],
+      "exact_update": {
+        "new_required_subsections": [
+          {
+            "id": "9.2.1",
+            "title": "Definition of Φ",
+            "required_content": "Give the exact tensor/scalar definition of Φ used in ℋ and its relation to ψ and A."
+          },
+          {
+            "id": "9.2.2",
+            "title": "Construction of Φ from u",
+            "required_content": "Specify whether Φ is uniquely determined by u and what gauge or decomposition choices are required."
+          },
+          {
+            "id": "9.2.3",
+            "title": "Direct Scaling Derivation of ℋ",
+            "required_content": "Derive ℋ=∫|∇²Φ|²dx from amplitude scaling, spatial derivative scaling, and shrinking support volume."
+          },
+          {
+            "id": "9.2.4",
+            "title": "Bridge Inequality Direction",
+            "required_content": "List every inequality together with the exact direction required for each logical implication."
+          },
+          {
+            "id": "9.2.5",
+            "title": "Dimensional Analysis",
+            "required_content": "Verify units/dimensions of Δ, Δcrit, ℋ, ν, L, and every proposed mapping."
+          }
+        ]
+      },
+      "rationale": "The mathematical appendix should become the place where every hidden assumption is exposed rather than a place where the desired equivalence is restated.",
+      "references": [
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Section 5.3"
+      ],
+      "poetic_cipher": "Turn the bridge upside down and inspect its bolts.",
+      "cipher_explanation": "The appendix should reveal the load-bearing mathematics that the prose currently assumes.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "9.3",
+      "operation": "modify",
+      "target": "rupture_classification_appendix",
+      "what_needs_update": [
+        "Classify OpenAI as one source-supported classical path.",
+        "Classify α-family as NSFG prediction.",
+        "Classify universal finite-time blow-up correspondence as conjecture.",
+        "Use D_O rather than continuous dimension for collapse-rate plots."
+      ],
+      "exact_update": {
+        "classification_table": [
+          {
+            "class": "OpenAI path",
+            "status": "SOURCE_SUPPORTED_CLASSICAL_PATH + NSFG_INTERPRETATION"
+          },
+          {
+            "class": "α-family",
+            "status": "NSFG_PREDICTION"
+          },
+          {
+            "class": "Universal rupture classification",
+            "status": "CONJECTURE"
+          },
+          {
+            "class": "D_O collapse exponent γ",
+            "status": "PREDICTED_OBSERVABLE_RELATION"
+          }
+        ]
+      },
+      "rationale": "This prevents the existence of one construction from being silently generalized into a universal theorem.",
+      "references": [
+        "OpenAI (2026) Theorem 1.1",
+        "PHYS-CORE-014 Sections 5.3-5.5"
+      ],
+      "poetic_cipher": "One footprint proves one traveller.",
+      "cipher_explanation": "A single realized path establishes existence of that path, not the existence or behavior of every path.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "9.5",
+      "operation": "modify",
+      "target": "mathematical_reference",
+      "what_needs_update": [
+        "Add the epistemic status taxonomy.",
+        "Add inequality-direction rules.",
+        "Add quotient-dimension versus accessibility distinction.",
+        "Add threshold-crossing versus singular-limit distinction."
+      ],
+      "exact_update": {
+        "new_reference_rules": [
+          "Upper bounds cannot be used as lower bounds.",
+          "Divergence of an L∞ norm does not by itself imply divergence of an L2 norm on an unbounded domain.",
+          "Divergence of an L2 norm does not by itself imply L∞ divergence without additional localization or measure hypotheses.",
+          "A threshold crossing Δ=Δcrit is distinct from the asymptotic limit Δ→∞.",
+          "A discrete dimension must not be assigned a continuous power-law collapse without an explicit generalized-dimension definition.",
+          "A source construction does not automatically validate an NSFG translation of that construction.",
+          "Public release, peer review, journal publication, external recognition, and prize qualification are separate predicates from mathematical validity."
+        ]
+      },
+      "rationale": "These rules are recurring failure modes in the current document and should be encoded as permanent mathematical hygiene constraints.",
+      "references": [
+        "PHYS-CORE-014 Section 4.6",
+        "PHYS-CORE-014 Section 5.2",
+        "PHYS-CORE-014 Section 5.3"
+      ],
+      "poetic_cipher": "The Library remembers every mistake unless the index learns its name.",
+      "cipher_explanation": "Encoding these constraints prevents later revisions from rediscovering the same logical errors under different notation.",
+      "handoff_update": {
+        "required": false
+      }
+    },
+    {
+      "section_id": "root._references",
+      "operation": "modify",
+      "target": "OpenAI_reference",
+      "what_needs_update": [
+        "Replace placeholder arXiv identifier.",
+        "Do not describe the source as peer-reviewed unless independently verified.",
+        "Describe the supplied document by its actual publication/release status.",
+        "Separate the manuscript's mathematical theorem from external qualification."
+      ],
+      "exact_update": {
+        "replace_placeholder": "OpenAI (2026), exact title and bibliographic metadata to be populated from the actual released source.",
+        "source_status_field": "publicly_released_manuscript_or_blog-associated_construction",
+        "prohibited_status_claims": [
+          "peer-reviewed",
+          "journal-validated",
+          "independently validated",
+          "Clay-qualified",
+          "Millennium Prize solution"
+        ],
+        "allowed_status_claim": "The manuscript is analyzed here as the source of the stated construction and theorem."
+      },
+      "rationale": "The current placeholder and prose risk giving the source an evidentiary status not established by the supplied material.",
+      "references": [
+        "OpenAI (2026) supplied manuscript",
+        "PHYS-CORE-014 current reference block"
+      ],
+      "poetic_cipher": "Name the messenger, not the crown.",
+      "cipher_explanation": "The source can carry a mathematical claim without being crowned with an external status that has not been established.",
+      "handoff_update": {
+        "required": false
+      }
+    }
+  ],
+  "_global_removals": [
+    {
+      "target": "Any occurrence of",
+      "text": "The OpenAI paper proves that blow-up is possible",
+      "replace_with": "The supplied OpenAI manuscript presents a construction intended to establish finite-time blow-up under its stated forced Navier-Stokes hypotheses."
+    },
+    {
+      "target": "Any occurrence of",
+      "text": "The OpenAI construction solves/disproves the Millennium Problem",
+      "replace_with": "The OpenAI construction is analyzed as a specific forced blow-up construction; its relationship to the separate Millennium Prize problem must be stated according to the exact problem hypotheses and external qualification rules."
+    },
+    {
+      "target": "Any occurrence of",
+      "text": "Δ(t) → Δcrit at the singularity",
+      "replace_with": "Δ(t) crosses Δcrit at tcrit; subsequent behavior is path-dependent and may diverge."
+    },
+    {
+      "target": "Any occurrence of",
+      "text": "dim(ℳ_C^O) ≍ τ^γ",
+      "replace_with": "D_O ≍ τ^γ, with dim(ℳ_C^O) reserved for the structural quotient dimension."
+    },
+    {
+      "target": "Any occurrence of",
+      "text": "The equivalence theorem is proved",
+      "replace_with": "The correspondence is conditionally established only to the extent supported by the explicit bridge lemmas; the remaining directions are conjectural."
+    },
+    {
+      "target": "Any occurrence of",
+      "text": "stronger than BKM/LPS/CKN",
+      "replace_with": "complementary to classical regularity criteria; comparative strength remains an open question until formal implications are established."
+    }
+  ],
+  "_required_consistency_pass": {
+    "operation": "global_validation",
+    "checks": [
+      "Every occurrence of ℋ scaling must use one internally consistent exponent.",
+      "Every occurrence of τcrit must satisfy τcrit=(C/Δcrit)^(1/α) for Δ=Cτ^-α.",
+      "No text may simultaneously assert τcrit=0 and C,Δcrit finite positive.",
+      "No proof may reverse an inequality.",
+      "No proof may infer global L2 divergence from L∞ divergence on ℝ³ without localization.",
+      "No proof may infer L∞ divergence from L2 divergence on ℝ³ without localization/measure hypotheses.",
+      "No proof may use I5 to establish I5.",
+      "No theorem may rely on an unproved theorem in its own proof.",
+      "No continuous asymptotic law may be assigned directly to discrete quotient dimension.",
+      "Every OpenAI-derived statement must be traceable to an explicit source section.",
+      "Every NSFG translation must carry an epistemic status.",
+      "Every universal NSFG prediction must be marked prediction or conjecture unless a construction/proof is supplied."
+    ]
+  },
+  "_final_handoff": {
+    "required": true,
+    "to": "END",
+    "instruction": "PHYS-CORE-014 v0.1.1 should conclude with a disciplined separation between the classical construction supplied by the OpenAI manuscript, NSFG definitions, source-supported scaling facts, derived relations, translation hypotheses, and conjectural predictions. The mathematical program is not weakened by this distinction; the missing bridge lemmas become explicit research targets.",
+    "preserved_invariant": "NSFG remains a scale-invariant, observer-relative coherence framework in which the Library is the underlying relational totality and singularity is interpreted through loss of coherent accessibility.",
+    "new_construction": "A mathematically honest bridge architecture in which every claimed equivalence has an explicitly identified load-bearing lemma."
+  }
+}
