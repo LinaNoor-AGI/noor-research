@@ -308,8 +308,8 @@
 		{ "section": "9.5.2", "title": "Promotion Conditions for Translation Hypotheses" },
 		{ "section": "9.6", "title": "Appendix F: Proof Architectures for the Translation Bridge Lemmas" },
 		{ "section": "9.6.B1", "title": "Proof Architecture for Lemma B1: Coercive NSFG-to-Classical Lemma" },
-		{ "section": "9.6.B2", "title": "Appendix F.2: Expanded Proof Architecture for Lemma B2" },
-		{ "section": "9.6.B3", "title": "Appendix F, Subsection B3: Proof Architecture for the Quotient Collapse Lemma" }
+		{ "section": "9.6.B2", "title": "Proof Architecture for Lemma B2: Expanded Proof Architecture for Lemma B2" },
+		{ "section": "9.6.B3", "title": "Proof Architecture for Lemma B3: Proof Architecture for the Quotient Collapse Lemma" }
 	  ],
 
   "sections": [
@@ -9821,7 +9821,7 @@
 			},
 			{
 			  "id": "9.6.B2",
-			  "title": "Appendix F.2: Expanded Proof Architecture for Lemma B2",
+			  "title": "Proof Architecture for Lemma B2: Proof Architecture for Lemma B2",
 			  "subtitle": "Classical-to-NSFG Rupture Lemma: From Source Similarity Profiles to Coherence Phase Divergence",
 			  "purpose": "To expand the B2 proof architecture from a five-step outline into a structured roadmap with explicit sub-steps, required inputs from the source manuscript, intermediate inequalities, and defined promotion conditions. The subsection retains the E_prediction_or_conjecture status and does not claim that any step has been completed.",
 			  "status": "roadmap",
@@ -9996,7 +9996,7 @@
 			},
 			{
 			  "id": "9.6.B3",
-			  "title": "Appendix F, Subsection B3: Proof Architecture for the Quotient Collapse Lemma",
+			  "title": "Proof Architecture for Lemma B3: Proof Architecture for the Quotient Collapse Lemma",
 			  "subtitle": "From Supercritical Motif Tension to Zero-Dimensional Accessible Quotient",
 			  "purpose": "To provide a structured proof architecture for Lemma B3 of Section 4.6, which asserts that an NSFG coherence rupture (Δ(t) reaching or exceeding Δ_crit) necessitates the collapse of the observer-relative accessible coherence quotient ℳ_C^O(h,x) to a Convergence Boundary. This subsection specifies the required steps, the NSFG axioms each step depends on, the obligations that remain unproved, and the falsification conditions under which the architecture would need revision. It does not claim that any step has been completed.",
 			  "status": "roadmap",
