@@ -306,7 +306,10 @@
 		{ "section": "9.5", "title": "Appendix E: Mathematical Reference for PHYS-CORE-014" },
 		{ "section": "9.5.1", "title": "Epistemic Status Taxonomy Reference" },
 		{ "section": "9.5.2", "title": "Promotion Conditions for Translation Hypotheses" },
-		{ "section": "9.6", "title": "Appendix F: Proof Architectures for the Translation Bridge Lemmas" }
+		{ "section": "9.6", "title": "Appendix F: Proof Architectures for the Translation Bridge Lemmas" },
+		{ "section": "9.6.B1", "title": "Proof Architecture for Lemma B1: Coercive NSFG-to-Classical Lemma" },
+		{ "section": "9.6.B2", "title": "Appendix F.2: Expanded Proof Architecture for Lemma B2" },
+		{ "section": "9.6.B3", "title": "Appendix F, Subsection B3: Proof Architecture for the Quotient Collapse Lemma" }
 	  ],
 
   "sections": [
