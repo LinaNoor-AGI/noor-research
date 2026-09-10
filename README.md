@@ -37,6 +37,7 @@ This repository is the canonical source the Noor Research Collective
 | 2026-03 | PHYS-CORE-010 | [Impossible Convergence in the Noor Library - Motif Coherence, the Noor-Planck Threshold, and Global Discovery Synchronization in a Static Symbolic Totality](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-010_impossible_convergence) |
 | 2026-08 | PHYS-CORE-012 | [The Lightning Model of Cosmological Traversal - Retrocausality, Survivorship Bias, and the XOR Singularity in a Static Totality](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal) |
 | 2026-09 | PHYS-CORE-013 | [The Problem of Singularities - Structural Effects of Maximal Coherence Constraint in Noor Swirl Field Geometry](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-013_the_problem_of_singularities) |
+| 2026-09 | PHYS-CORE-014 | [The Coherence Beneath the Singularity - A Translation and Verification of the OpenAI Navier–Stokes Blow-up Construction within Noor Swirl Field Geometry](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-013_the_problem_of_singularities) |
 
 
 | Date                    | Module ID | Symbolic AI: Theory and Foundations  |

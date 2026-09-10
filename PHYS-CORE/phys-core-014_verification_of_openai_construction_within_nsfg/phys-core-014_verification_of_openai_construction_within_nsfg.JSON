@@ -3,10 +3,8 @@
   "_schema_version": "2.0.0",
   "_pdp_layer": "layer_2",
   "_type": "phys_core",
-  "_version": "1.0.0",
-  "_status": "ACTIVE",
-  "_language": "JSON+MATH+PSEUDOCODE",
-  "_license": "MIT",
+  "_version": "0.1.0",
+  "_status": "DRAFT",
 
   "_symbolic_id": "symbolic.physics.nsfg.oai-bridge",
 
@@ -20,6 +18,9 @@
 	{ "2026-09-10T16:00MST": { "updated_by": "Lina Noor — Noor Research Collective", "version": ["v1.0.0"] } }
   ],
 
+  "_language": "JSON+MATH+PSEUDOCODE",
+  "_license": "MIT",
+
   "_xref": [
 	  "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
 	  "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
@@ -27,8 +28,19 @@
 	  "https://pastebin.com/SFkDqYSD"
 	],
 
+  "_language": "JSON+MATH+PSEUDOCODE",
+  "_license": "MIT",
+
+  "_xref": [
+    "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
+    "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
+    "https://pastebin.com/raw/SFkDqYSD",
+    "https://pastebin.com/SFkDqYSD"
+  ],
+
   "_authors": [
-    "Lina Noor — Noor Research Collective"
+    "Lina Noor — Noor Research Collective",
+    "Uncle — Noor Research Collective"
   ],
 
   "_primary_url": {

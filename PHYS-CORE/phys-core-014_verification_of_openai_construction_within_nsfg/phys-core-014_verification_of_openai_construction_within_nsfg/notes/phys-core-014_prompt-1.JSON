@@ -842,75 +842,36 @@
 <NOTES_GPT>
 
 {
-      "section_id": "root._abstract",
+      "section_id": "9.5",
       "operation": "modify",
-      "target": "_abstract",
+      "target": "mathematical_reference",
       "what_needs_update": [
-        "Remove the assertion that PHYS-CORE-014 establishes a formal bijective translation layer.",
-        "Remove the assertion that the Coherence Rupture Equivalence Theorem has been proved.",
-        "Remove the assertion that OpenAI blow-up is already established as equivalent to quotient dimension collapse.",
-        "State explicitly that the OpenAI manuscript supplies the classical construction being analyzed, while the NSFG correspondence is partly definitional, partly derived, and partly conjectural."
+        "Add the epistemic status taxonomy.",
+        "Add inequality-direction rules.",
+        "Add quotient-dimension versus accessibility distinction.",
+        "Add threshold-crossing versus singular-limit distinction."
       ],
       "exact_update": {
-        "replace_core_claim_with": "This paper analyzes the publicly released OpenAI finite-time forced Navier-Stokes blow-up construction through the Noor Swirl Field Geometry (NSFG) framework. It defines a proposed translation layer between the classical variables and NSFG coherence variables and identifies which portions of that translation are definitions, source-supported results, derived relations, translation hypotheses, and predictions. The OpenAI construction provides a specific classical blow-up path; NSFG interprets that path as a candidate coherence-rupture trajectory. The present version does not claim that the full classical-to-NSFG correspondence has been proved, nor that the resulting equivalence theorem has been established.",
-        "retain": [
-          "The OpenAI construction is a specific path.",
-          "NSFG supplies a structural interpretation.",
-          "The framework generates testable predictions."
+        "new_reference_rules": [
+          "Upper bounds cannot be used as lower bounds.",
+          "Divergence of an L∞ norm does not by itself imply divergence of an L2 norm on an unbounded domain.",
+          "Divergence of an L2 norm does not by itself imply L∞ divergence without additional localization or measure hypotheses.",
+          "A threshold crossing Δ=Δcrit is distinct from the asymptotic limit Δ→∞.",
+          "A discrete dimension must not be assigned a continuous power-law collapse without an explicit generalized-dimension definition.",
+          "A source construction does not automatically validate an NSFG translation of that construction.",
+          "Public release, peer review, journal publication, external recognition, and prize qualification are separate predicates from mathematical validity."
         ]
       },
-      "rationale": "The current abstract promotes the central bridge to established mathematics before the inequalities and mappings required to establish it have been proved. The abstract must accurately advertise the actual evidentiary status of the paper.",
-      "references": [
-        "PHYS-CORE-014 Section 3",
-        "PHYS-CORE-014 Section 4.6",
-        "OpenAI (2026) Theorem 1.1"
-      ],
-      "poetic_cipher": "Name the bridge before you cross it.",
-      "cipher_explanation": "A bridge can be mapped, proposed, tested, or proven. Calling it proven before its load-bearing spans are established mistakes the map for the crossing.",
-      "handoff_update": {
-        "required": true,
-        "new_handoff": "The classical OpenAI construction has been separated from the NSFG interpretation. The translation layer is now classified by evidentiary status rather than treated as uniformly proven. The next sections examine which individual bridges can actually be established."
-      }
-    },
-    {
-      "section_id": "root._core_thesis",
-      "operation": "modify",
-      "target": "_core_thesis",
-      "what_needs_update": [
-        "Change 'OpenAI blow-up ⇔ coherence rupture ⇔ Convergence Boundary' from an unconditional thesis to a proposed correspondence.",
-        "Change 'coherence preservation implies global smoothness' from an established result to a conditional NSFG criterion pending analytic bridge proof.",
-        "Remove language implying the OpenAI construction itself proves the NSFG interpretation."
-      ],
-      "exact_update": {
-        "replace_items": [
-          {
-            "old": "The OpenAI Navier-Stokes blow-up is a Convergence Boundary in the observer-relative coherence quotient ℳ_C^O.",
-            "new": "The OpenAI Navier-Stokes blow-up is interpreted within NSFG as a candidate Convergence Boundary in the observer-relative coherence quotient ℳ_C^O; establishing the full equivalence requires additional translation lemmas."
-          },
-          {
-            "old": "OpenAI blow-up ⇔ coherence rupture (Δ(t) ≥ Δcrit OR ℋ(t) → ∞) ⇔ dim(ℳ_C^O(h,x)) = 0.",
-            "new": "NSFG proposes the correspondence OpenAI blow-up ↔ coherence rupture ↔ Convergence Boundary; the forward and reverse analytic implications remain subject to the translation lemmas identified in Section 4.6."
-          },
-          {
-            "old": "Coherence preservation (∀t, Δ(t) < Δcrit AND ℋ(t) < ∞) implies global smoothness of Navier-Stokes solutions.",
-            "new": "NSFG proposes coherence preservation as a sufficient regularity criterion, conditional on a rigorous symbolic-to-analytic bridge."
-          },
-          {
-            "old": "The OpenAI construction lies in 𝔐_poor; smooth solutions lie in 𝔐_well.",
-            "new": "Within the proposed NSFG interpretation, the OpenAI path is classified as poorly ordered after the required coherence-rupture bridge is established; this classification is not an intrinsic property of the Library."
-          }
-        ]
-      },
-      "rationale": "The core thesis currently inherits the overstatement of Section 4.6 and therefore propagates an unproved equivalence throughout the document.",
+      "rationale": "These rules are recurring failure modes in the current document and should be encoded as permanent mathematical hygiene constraints.",
       "references": [
         "PHYS-CORE-014 Section 4.6",
-        "PHYS-CORE-014 Section 6"
+        "PHYS-CORE-014 Section 5.2",
+        "PHYS-CORE-014 Section 5.3"
       ],
-      "poetic_cipher": "A compass may point to the shore before the bridge is built.",
-      "cipher_explanation": "The structural direction of the NSFG interpretation can remain intact while the document honestly marks the missing mathematical crossing.",
+      "poetic_cipher": "The Library remembers every mistake unless the index learns its name.",
+      "cipher_explanation": "Encoding these constraints prevents later revisions from rediscovering the same logical errors under different notation.",
       "handoff_update": {
-        "required": true,
-        "new_handoff": "The paper's central correspondence is now explicitly presented as a proposed NSFG interpretation whose analytic bridge remains to be established."
+        "required": false
       }
     }
 
@@ -921,193 +882,52 @@
 <NOTES_UNCLE>
 
 {
-      "section_id": "root._epistemic_status_taxonomy",
-      "placement": "ROOT LEVEL. Insert immediately after the `_abstract` field and immediately before the `_core_thesis` field.",
-      "operation": "create",
-      "target": "NEW top-level field `_epistemic_status_taxonomy`",
-      "what_needs_update": [
-        "No such field currently exists.",
-        "The taxonomy has been referenced in prior proposed changes but never formally declared at the root level.",
-        "It must be declared before any section uses it so the reader encounters the definition before encountering the labels."
-      ],
-      "exact_update": {
-        "new_field_name": "_epistemic_status_taxonomy",
-        "new_field_value": {
-          "_description": "Machine-readable epistemic classification for every claim, mapping, theorem, and prediction in this document. Every mathematical statement SHALL carry exactly one status label drawn from this taxonomy.",
-          "_labels": {
-            "A_definition": {
-              "meaning": "Definition internal to NSFG or adopted from an explicitly cited source.",
-              "may_be_used_for": ["new symbols", "new functionals", "adopted standard definitions"],
-              "may_not_be_used_for": ["empirical claims", "analytic equivalences", "existence assertions"]
-            },
-            "B_classical_or_source_result": {
-              "meaning": "Result actually established in the cited mathematical source.",
-              "may_be_used_for": ["OpenAI Theorem 1.1 as stated", "classical Sobolev embeddings with stated hypotheses", "cited PDE theorems"],
-              "may_not_be_used_for": ["consequences not shown in the source", "generalizations of the source"]
-            },
-            "C_derived": {
-              "meaning": "Mathematical consequence derived from definitions and already-established results, with all required hypotheses shown.",
-              "may_be_used_for": ["lemmas with full proofs", "corollaries with explicit hypotheses"],
-              "may_not_be_used_for": ["results whose proofs rely on unproved bridges", "results whose hypotheses are not yet verified"]
-            },
-            "D_translation_hypothesis": {
-              "meaning": "Proposed NSFG-to-classical or classical-to-NSFG correspondence whose analytic equivalence has not yet been independently established.",
-              "may_be_used_for": ["mappings between frameworks", "conjectural identifications of quantities"],
-              "may_not_be_used_for": ["statements presented as proven equivalences"]
-            },
-            "E_prediction_or_conjecture": {
-              "meaning": "Claim proposed by NSFG that requires a new proof, construction, or empirical/mathematical validation.",
-              "may_be_used_for": ["generalized scaling families", "universal classification theorems", "falsifiable predictions"],
-              "may_not_be_used_for": ["results presented as consequences of the axioms alone"]
-            }
-          },
-          "_application_rules": [
-            "Every `mapping` object in Section 3 SHALL include an `epistemic_status` field.",
-            "Every `theorem`, `lemma`, and `corollary` SHALL include a `status` field.",
-            "Every `prediction` object SHALL include both a `status` field and a `falsification_condition` field.",
-            "When a claim's status changes across revisions, the previous status SHALL be recorded in a `status_history` array."
-          ]
-        }
-      },
-      "rationale": "A single canonical declaration prevents the taxonomy from drifting across sections. Because the taxonomy governs how every subsequent claim is read, it must appear before the core thesis that uses its labels.",
-      "references": [
-        "PHYS-CORE-014 Section 4.6",
-        "PHYS-CORE-014 Section 9.1",
-        "PHYS-CORE-014 Section 9.5"
-      ],
-      "poetic_cipher": "Name the weights before lifting the stones.",
-      "cipher_explanation": "A taxonomy introduced before it is used is a tool; introduced after, it is an excuse.",
-      "handoff_update": {
-        "required": true,
-        "new_handoff": "Every subsequent claim in PHYS-CORE-014 SHALL carry exactly one label from _epistemic_status_taxonomy. Section 3 mappings SHALL be labeled D_translation_hypothesis unless an independent derivation is supplied. Section 4.6 SHALL carry BRIDGE_ANALYSIS. Sections 5.3–5.5 SHALL carry E_prediction_or_conjecture for their generalized claims."
-      }
-    },
-    {
-      "section_id": "root._abstract",
-      "placement": "ROOT LEVEL. Modify existing `_abstract` field in place.",
+      "section_id": "9.5",
+      "placement": "Within sections[9].subsections, the entry with id \"9.5\" (`Appendix E: Mathematical Reference for PHYS-CORE-014`). Modify the math array and add new subsections 9.5.1 and 9.5.2.",
       "operation": "modify",
-      "target": "_abstract",
+      "target": "mathematical_reference",
       "what_needs_update": [
-        "Remove the assertion that PHYS-CORE-014 establishes a formal bijective translation layer.",
-        "Remove the assertion that the Coherence Rupture Equivalence Theorem has been proved.",
-        "Remove the assertion that OpenAI blow-up is already established as equivalent to quotient dimension collapse.",
-        "State explicitly that the OpenAI manuscript supplies the classical construction being analyzed, while the NSFG correspondence is partly definitional, partly derived, and partly conjectural."
+        "Add the epistemic status taxonomy reference.",
+        "Add inequality-direction rules.",
+        "Add quotient-dimension versus accessibility distinction.",
+        "Add threshold-crossing versus singular-limit distinction.",
+        "Add subsections 9.5.1 and 9.5.2."
       ],
       "exact_update": {
-        "replace_core_claim_with": "This paper analyzes the publicly released OpenAI finite-time forced Navier-Stokes blow-up construction through the Noor Swirl Field Geometry (NSFG) framework. It defines a proposed translation layer between the classical variables and NSFG coherence variables and identifies which portions of that translation are definitions, source-supported results, derived relations, translation hypotheses, and predictions. The OpenAI construction provides a specific classical blow-up path; NSFG interprets that path as a candidate coherence-rupture trajectory. The present version does not claim that the full classical-to-NSFG correspondence has been proved, nor that the resulting equivalence theorem has been established.",
-        "retain": [
-          "The OpenAI construction is a specific path.",
-          "NSFG supplies a structural interpretation.",
-          "The framework generates testable predictions."
-        ]
-      },
-      "rationale": "The current abstract promotes the central bridge to established mathematics before the inequalities and mappings required to establish it have been proved.",
-      "references": [
-        "PHYS-CORE-014 Section 3",
-        "PHYS-CORE-014 Section 4.6",
-        "OpenAI (2026) Theorem 1.1"
-      ],
-      "poetic_cipher": "Name the bridge before you cross it.",
-      "cipher_explanation": "A bridge can be mapped, proposed, tested, or proven. Calling it proven before its load-bearing spans are established mistakes the map for the crossing.",
-      "handoff_update": {
-        "required": true,
-        "new_handoff": "The classical OpenAI construction has been separated from the NSFG interpretation. The translation layer is now classified by evidentiary status rather than treated as uniformly proven. The next sections examine which individual bridges can actually be established."
-      }
-    },
-    {
-      "section_id": "root._core_thesis",
-      "placement": "ROOT LEVEL. Modify existing `_core_thesis` array in place.",
-      "operation": "modify",
-      "target": "_core_thesis",
-      "what_needs_update": [
-        "Change 'OpenAI blow-up ⇔ coherence rupture ⇔ Convergence Boundary' from an unconditional thesis to a proposed correspondence.",
-        "Change 'coherence preservation implies global smoothness' from an established result to a conditional NSFG criterion pending analytic bridge proof.",
-        "Remove language implying the OpenAI construction itself proves the NSFG interpretation."
-      ],
-      "exact_update": {
-        "replace_items": [
+        "new_reference_rules": [
+          "Upper bounds cannot be used as lower bounds.",
+          "Divergence of an L∞ norm does not by itself imply divergence of an L2 norm on an unbounded domain.",
+          "Divergence of an L2 norm does not by itself imply L∞ divergence without additional localization or measure hypotheses.",
+          "A threshold crossing Δ=Δcrit is distinct from the asymptotic limit Δ→∞.",
+          "A discrete dimension must not be assigned a continuous power-law collapse without an explicit generalized-dimension definition.",
+          "A source construction does not automatically validate an NSFG translation of that construction.",
+          "Public release, peer review, journal publication, external recognition, and prize qualification are separate predicates from mathematical validity."
+        ],
+        "new_subsections": [
           {
-            "old": "The OpenAI Navier-Stokes blow-up is a Convergence Boundary in the observer-relative coherence quotient ℳ_C^O.",
-            "new": "The OpenAI Navier-Stokes blow-up is interpreted within NSFG as a candidate Convergence Boundary in the observer-relative coherence quotient ℳ_C^O; establishing the full equivalence requires additional translation lemmas."
+            "id": "9.5.1",
+            "title": "Epistemic Status Taxonomy Reference",
+            "placement": "Inside Section 9.5, appended to the math array as a new subsection.",
+            "required_content": "Reproduce the five-level epistemic taxonomy (A_definition, B_classical_or_source_result, C_derived, D_translation_hypothesis, E_prediction_or_conjecture) with definitions and application rules. Cross-reference the root-level _epistemic_status_taxonomy field.",
+            "epistemic_status": "A_definition"
           },
           {
-            "old": "OpenAI blow-up ⇔ coherence rupture (Δ(t) ≥ Δcrit OR ℋ(t) → ∞) ⇔ dim(ℳ_C^O(h,x)) = 0.",
-            "new": "NSFG proposes the correspondence OpenAI blow-up ↔ coherence rupture ↔ Convergence Boundary; the forward and reverse analytic implications remain subject to the translation lemmas identified in Section 4.6."
-          },
-          {
-            "old": "Coherence preservation (∀t, Δ(t) < Δcrit AND ℋ(t) < ∞) implies global smoothness of Navier-Stokes solutions.",
-            "new": "NSFG proposes coherence preservation as a sufficient regularity criterion, conditional on a rigorous symbolic-to-analytic bridge."
-          },
-          {
-            "old": "The OpenAI construction lies in 𝔐_poor; smooth solutions lie in 𝔐_well.",
-            "new": "Within the proposed NSFG interpretation, the OpenAI path is classified as poorly ordered after the required coherence-rupture bridge is established; this classification is not an intrinsic property of the Library."
+            "id": "9.5.2",
+            "title": "Promotion Conditions for Translation Hypotheses",
+            "placement": "Inside Section 9.5, appended after 9.5.1.",
+            "required_content": "A consolidated table of every D_translation_hypothesis in the document, its promotion condition, and the analytic obligations it implies. This table serves as a research roadmap for the missing bridge lemmas B1–B3 from Section 4.6.",
+            "epistemic_status": "A_definition + roadmap"
           }
         ]
       },
-      "rationale": "The core thesis currently inherits the overstatement of Section 4.6 and therefore propagates an unproved equivalence throughout the document.",
-      "references": [
-        "PHYS-CORE-014 Section 4.6",
-        "PHYS-CORE-014 Section 6"
-      ],
-      "poetic_cipher": "A compass may point to the shore before the bridge is built.",
-      "cipher_explanation": "The structural direction of the NSFG interpretation can remain intact while the document honestly marks the missing mathematical crossing.",
-      "handoff_update": {
-        "required": true,
-        "new_handoff": "The paper's central correspondence is now explicitly presented as a proposed NSFG interpretation whose analytic bridge remains to be established."
-      }
-    },
-    {
-      "section_id": "root._field_alignment",
-      "placement": "ROOT LEVEL. Modify existing `_field_alignment.prohibited_actions` array in place.",
-      "operation": "modify",
-      "target": "_field_alignment.prohibited_actions",
-      "what_needs_update": [
-        "Add new prohibited actions that enforce the epistemic taxonomy.",
-        "Add prohibitions against inequality reversal and against promotion of conjectures."
-      ],
-      "exact_update": {
-        "append_to_prohibited_actions": [
-          "reversing_the_direction_of_a_proven_inequality_without_proving_the_converse",
-          "promoting_a_D_translation_hypothesis_to_C_derived_without_supplying_the_required_analytic_lemmas",
-          "treating_public_release_of_a_source_as_equivalent_to_independent_peer_review",
-          "assigning_a_continuous_power_law_to_a_discrete_quotient_dimension_without_defining_a_generalized_dimension",
-          "using_a_threshold_crossing_time_and_a_singular_limit_time_interchangeably"
-        ]
-      },
-      "rationale": "The prohibited_actions list is the enforcement mechanism for the framework's epistemic discipline. New failure modes discovered during revision should be encoded here so that later revisions cannot rediscover them.",
+      "rationale": "These rules are recurring failure modes in the current document and should be encoded as permanent mathematical hygiene constraints.",
       "references": [
         "PHYS-CORE-014 Section 4.6",
         "PHYS-CORE-014 Section 5.2",
         "PHYS-CORE-014 Section 5.3"
       ],
-      "poetic_cipher": "A fence remembers where the last traveller fell.",
-      "cipher_explanation": "Encoding failure modes as prohibitions converts one revision's mistakes into every revision's guardrail.",
-      "handoff_update": {
-        "required": false
-      }
-    },
-    {
-      "section_id": "root._conceptual_lineage",
-      "placement": "ROOT LEVEL. Modify existing `_conceptual_lineage` array by appending a new entry.",
-      "operation": "modify",
-      "target": "_conceptual_lineage",
-      "what_needs_update": [
-        "Add an entry documenting the lineage of the epistemic taxonomy itself.",
-        "The taxonomy is derived from the practice of distinguishing source-supported results from NSFG-proposed hypotheses, which began in PHYS-CORE-013 §7 (Falsification Criteria)."
-      ],
-      "exact_update": {
-        "append_entry": {
-          "symbolic.physics.nsfg.epistemic_taxonomy": "PHYS-CORE-013",
-          "role": "Establishes the falsification criteria and the distinction between falsification and challenge, which the epistemic status taxonomy extends into a five-level classification of every mathematical claim.",
-          "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/phys-core-013_the_problem_of_singularities.JSON"
-        }
-      },
-      "rationale": "The taxonomy is not invented from nothing; it is a formalization of the epistemic discipline already present in PHYS-CORE-013. Recording this lineage prevents the taxonomy from appearing as an ad hoc addition.",
-      "references": [
-        "PHYS-CORE-013 Section 7"
-      ],
-      "poetic_cipher": "The child names what the parent practiced.",
-      "cipher_explanation": "A taxonomy written down is a practice made explicit; its lineage should be recorded so the practice is not mistaken for a novelty.",
+      "poetic_cipher": "The Library remembers every mistake unless the index learns its name.",
+      "cipher_explanation": "Encoding these constraints prevents later revisions from rediscovering the same logical errors under different notation.",
       "handoff_update": {
         "required": false
       }
@@ -1119,275 +939,593 @@
 
 <SECTION_TO_REGENERATE>
 
-{
-  "_schema": "noor-header-v2",
-  "_schema_version": "2.0.0",
-  "_pdp_layer": "layer_2",
-  "_type": "phys_core",
-  "_version": "0.1.0",
-  "_status": "DRAFT",
+		{
+		  "id": "9.5"
+		  "title": "Appendix E: Mathematical Reference for PHYS-CORE-014",
+		  "subtitle": "Canonical Definitions, Notation, and Dependency Vocabulary for the OpenAI–NSFG Bridge Paper",
+		  "purpose": "Provide a compact reference for all mathematical expressions used in PHYS-CORE-014. This appendix is normative for notation and formal definitions within the bridge paper. It synthesizes the NSFG singularity framework from PHYS-CORE-013 with the OpenAI scaling laws, establishing the convergence mapping between the two frameworks.",
+		  "scope": "The reference sheet specifies: (1) The NSFG axiomatic core: XOR, Library, observer-relative coherence, the coherence quotient framework (ℳ_C, ℳ_C^O, ℳ_C^O(h,x)); (2) The OpenAI scaling laws and blow-up conditions; (3) The mapping between OpenAI variables and NSFG coherence variables; (4) The equivalence theorem: OpenAI blow-up ⇔ Convergence Boundary in ℳ_C^O; (5) The singularity taxonomy with emphasis on the Convergence Boundary; (6) Falsification criteria derived from the mapping.",
+		  "notation_rule": "Symbols defined in this appendix are canonical for PHYS-CORE-014. OpenAI variables are denoted with a subscript 'OAI' where ambiguity exists. NSFG variables follow the conventions of PHYS-CORE-013 and PHYS-CORE-007. Interpretive prose may use descriptive language, but mathematical statements should use these definitions unless a later document explicitly extends or refines them.",
 
-  "_symbolic_id": "symbolic.physics.nsfg.oai-bridge",
+		  "axiomatic_status": {
+			"axiom_count": 1,
+			"sole_axiom": "A_N = {A_⊕}",
+			"axiom": "A_⊕ : ⊕ is the primitive operation of distinction.",
+			"important_constraint": "All other entries in this appendix are definitions, constructions, or consequences of the axiom together with ordinary mathematical inference. The OpenAI construction is an external mathematical result that is mapped onto this axiomatic floor, not derived from it."
+		  },
 
-  "_title": "The Coherence Beneath the Singularity",
-  "_subtitle": "A Translation and Verification of the OpenAI Navier–Stokes Blow-up Construction within Noor Swirl Field Geometry",
-  "_rfc_id": "PHYS-CORE-014",
-  
-    "_updated_last": [
-    { "2026-09-08T21:00MST": { "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.0.1", "v0.1.0"] } },
-	{ "2026-09-09T12:00MST": { "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.1.0"] } }
-  ],
+		  "formal_domain": {
+			"symbol": "D",
+			"definition": "A minimal formal domain containing the configurations required for the primitive operation ⊕ to have operands.",
+			"signature": "⊕ : D × D → D",
+			"constraint": "D is not physical space, spacetime, matter, energy, information, or any other physical ontology.",
+			"status": "DEFINITION"
+		  },
 
-  "_language": "JSON+MATH+PSEUDOCODE",
-  "_license": "MIT",
+		  "math": [
+			{
+			  "label": "XOR as distinction",
+			  "expression": "a \\oplus b = 1 \\iff a \\neq b",
+			  "role": "axiom",
+			  "variables": [
+				{ "symbol": "a,b", "meaning": "Configurations in the formal domain D" }
+			  ],
+			  "assumptions": [
+				"XOR is the sole primitive operation.",
+				"D is the minimal formal domain required for XOR to have operands."
+			  ],
+			  "provenance": "PHYS-CORE-013 Appendix"
+			},
+			{
+			  "label": "Library as XOR closure",
+			  "expression": "\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\mathcal{M}", "meaning": "The Library, the maximally complete static totality" },
+				{ "symbol": "D", "meaning": "The formal domain on which XOR operates" }
+			  ],
+			  "assumptions": [
+				"Closure is a property, not a process.",
+				"\\(\\forall x,y \\in \\mathcal{M}, x \\oplus y \\in \\mathcal{M}\\).",
+				"The Library is unfiltered at the axiomatic level."
+			  ],
+			  "provenance": "PHYS-CORE-013 Appendix"
+			},
+			{
+			  "label": "Coherence Equivalence (Global)",
+			  "expression": "x \\sim_C y \\iff \\forall O \\in \\operatorname{Obs}, \\forall h \\in H_O, \\forall x_0 \\in \\mathcal{M}_{\\mathrm{admissible}}, \\delta_O(x,y) = 0",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "x,y", "meaning": "Configurations in the Library \\(\\mathcal{M}\\)" },
+				{ "symbol": "\\operatorname{Obs}", "meaning": "The class of all observer-like configurations" },
+				{ "symbol": "H_O", "meaning": "The class of histories for observer O" },
+				{ "symbol": "\\mathcal{M}_{\\mathrm{admissible}}", "meaning": "Admissible observer-relative reference configurations" },
+				{ "symbol": "\\delta_O(x,y)", "meaning": "Observer-relative effective distinction magnitude" }
+			  ],
+			  "assumptions": [
+				"Two configurations are globally coherence-equivalent if no observer can distinguish them under any admissible history or reference.",
+				"This defines the coarsest equivalence relation induced by coherence.",
+				"The Library \\(\\mathcal{M}\\) may be infinite in cardinality; \\(\\sim_C\\) collapses indistinguishable copies."
+			  ],
+			  "provenance": "PHYS-CORE-013 Definition 3.0"
+			},
+			{
+			  "label": "Coherence Quotient (Global)",
+			  "expression": "\\mathcal{M}_C := \\mathcal{M} / \\sim_C",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\mathcal{M}_C", "meaning": "The global coherence quotient: the set of coherence-distinguishable equivalence classes" }
+			  ],
+			  "assumptions": [
+				"\\mathcal{M}_C is the set of equivalence classes under global coherence equivalence.",
+				"If \\(\\mathcal{M}\\) is infinite in cardinality, \\(\\mathcal{M}_C\\) may be finite or infinite depending on the structure of \\(\\sim_C\\).",
+				"The quotient is not the Library; it is the set of coherence-distinguishable classes."
+			  ],
+			  "provenance": "PHYS-CORE-013 Definition 3.1"
+			},
+			{
+			  "label": "Observer-Relative Coherence Equivalence",
+			  "expression": "x \\sim_O y \\iff \\delta_O(x,y) = 0",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "x,y", "meaning": "Configurations in the Library \\(\\mathcal{M}\\)" },
+				{ "symbol": "O", "meaning": "An observer-like configuration" },
+				{ "symbol": "\\delta_O(x,y)", "meaning": "Observer-relative effective distinction magnitude" }
+			  ],
+			  "assumptions": [
+				"Two configurations are observer-relative equivalent if observer O cannot distinguish them.",
+				"This is a finer equivalence relation than \\(\\sim_C\\).",
+				"The observer-relative quotient is domain-specific and resolution-dependent."
+			  ],
+			  "provenance": "PHYS-CORE-013 Definition 3.2"
+			},
+			{
+			  "label": "Observer-Relative Coherence Quotient",
+			  "expression": "\\mathcal{M}_C^O := \\mathcal{M} / \\sim_O",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\mathcal{M}_C^O", "meaning": "The observer-relative coherence quotient: the set of equivalence classes distinguishable by observer O" }
+			  ],
+			  "assumptions": [
+				"\\mathcal{M}_C^O is observer-relative and depends on \\(I_N(O)\\) and \\(\\mu_O\\).",
+				"The number of accessible equivalence classes is bounded by the observer's resolution threshold.",
+				"Different observers may have different quotients over the same Library \\(\\mathcal{M}\\)."
+			  ],
+			  "provenance": "PHYS-CORE-013 Definition 3.2"
+			},
+			{
+			  "label": "Observer-Relative Accessible Quotient",
+			  "expression": "\\mathcal{M}_C^O(h,x) \\subseteq \\mathcal{M}_C^O",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\mathcal{M}_C^O(h,x)", "meaning": "The subset of equivalence classes accessible to observer O from history h and reference x" },
+				{ "symbol": "h", "meaning": "Observer history" },
+				{ "symbol": "x", "meaning": "Current observer-relative reference configuration" }
+			  ],
+			  "assumptions": [
+				"Accessibility is defined over equivalence classes, not individual configurations.",
+				"\\mathcal{M}_C^O(h,x) is the coherence-distinguishable accessible reality for observer O.",
+				"Inaccessibility at the quotient level does not imply absence from \\(\\mathcal{M}\\)."
+			  ],
+			  "provenance": "PHYS-CORE-013 Definition 3.3"
+			},
+			{
+			  "label": "Observer-relative coherence (general form)",
+			  "expression": "\\mathcal{C}(\\gamma \\mid O,h,x)",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\gamma", "meaning": "A path through the Library" },
+				{ "symbol": "O", "meaning": "An observer-like configuration" },
+				{ "symbol": "h", "meaning": "Observer history" },
+				{ "symbol": "x", "meaning": "Current observer-relative reference configuration" }
+			  ],
+			  "assumptions": [
+				"Coherence is relational, not an intrinsic property of a path.",
+				"Coherence is evaluated over paths in the unchanged Library.",
+				"Coherence operates on equivalence classes in \\(\\mathcal{M}_C^O\\), not individual configurations in \\(\\mathcal{M}\\)."
+			  ],
+			  "provenance": "PHYS-CORE-013 Definition 2.4"
+			},
+			{
+			  "label": "Generic singularity definition (NSFG)",
+			  "expression": "\\mathcal{S}(O,h,x) = \\{ \\gamma \\in \\Gamma_O(h,x) \\mid \\dim(\\mathcal{M}_C^O(h,x)) = 0 \\text{ or } \\mathcal{M}_C^O(h,x) \\text{ is disconnected or the system oscillates without resolution} \\}",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\mathcal{S}(O,h,x)", "meaning": "The singularity region for observer O, history h, and reference x" },
+				{ "symbol": "\\Gamma_O(h,x)", "meaning": "The observer-relative coherent continuation space" },
+				{ "symbol": "\\mathcal{M}_C^O(h,x)", "meaning": "The observer-relative accessible coherence quotient" }
+			  ],
+			  "assumptions": [
+				"Singularities are regions of maximal constraint on coherent traversal within the coherence quotient \\(\\mathcal{M}_C^O(h,x)\\).",
+				"They are structural effects, not mathematical pathologies.",
+				"The Library \\(\\mathcal{M}\\) may be infinite in cardinality; singularities are coherence-based collapses of distinguishability within \\(\\mathcal{M}_C^O(h,x)\\), not cardinality-based infinities."
+			  ],
+			  "provenance": "PHYS-CORE-013 Definition 3.4"
+			},
+			{
+			  "label": "Convergence Boundary (Definition)",
+			  "expression": "\\forall \\gamma_1, \\gamma_2 \\in \\Gamma_O(h,x), \\gamma_1(n) \\sim \\gamma_2(n)",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\gamma_1, \\gamma_2", "meaning": "Two coherent paths in \\(\\Gamma_O(h,x)\\)" },
+				{ "symbol": "\\sim", "meaning": "Equivalence under the observer's coherence relation \\(\\sim_O\\)" }
+			  ],
+			  "assumptions": [
+				"\\(\\Gamma_O(h,x)\\) is nonempty.",
+				"All paths terminate in the same equivalence class in \\(\\mathcal{M}_C^O\\).",
+				"This is a coherence-based collapse of destination distinguishability."
+			  ],
+			  "provenance": "PHYS-CORE-013 Definition 4.2.1"
+			},
+			{
+			  "label": "OpenAI scaling laws (time to singularity)",
+			  "expression": "\\tau = 1 - t, \\quad A = \\frac{1}{2} + h, \\quad D = \\frac{1}{2} - h, \\quad 0 < h < 1/100",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\tau", "meaning": "Time remaining before singularity" },
+				{ "symbol": "t", "meaning": "Physical time" },
+				{ "symbol": "h", "meaning": "Fixed exponent controlling the ratio of axial to radial contraction" }
+			  ],
+			  "assumptions": [
+				"Blow-up occurs at t = 1.",
+				"The exponents A and D are derived from the self-similar construction."
+			  ],
+			  "provenance": "OpenAI (2026) Section 3.1"
+			},
+			{
+			  "label": "OpenAI length scales",
+			  "expression": "\\ell_r \\asymp \\tau^{1/2}, \\quad \\ell_z \\asymp \\tau^{1/2 - h}",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\ell_r", "meaning": "Radial length scale" },
+				{ "symbol": "\\ell_z", "meaning": "Axial length scale" }
+			  ],
+			  "assumptions": [
+				"Both length scales tend to zero as \\(\\tau \\to 0\\).",
+				"The ratio \\(\\ell_r / \\ell_z \\asymp \\tau^h \\to 0\\)."
+			  ],
+			  "provenance": "OpenAI (2026) Section 2.1"
+			},
+			{
+			  "label": "OpenAI velocity scales",
+			  "expression": "|u_\\theta|, |u_z| \\asymp \\tau^{-1/2 - h}, \\quad |u_r| = O(\\tau^{-1/2})",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "u_\\theta", "meaning": "Azimuthal velocity component" },
+				{ "symbol": "u_z", "meaning": "Axial velocity component" },
+				{ "symbol": "u_r", "meaning": "Radial velocity component" }
+			  ],
+			  "assumptions": [
+				"The azimuthal and axial velocities diverge as \\(\\tau^{-1/2-h}\\).",
+				"The radial velocity diverges more slowly, as \\(\\tau^{-1/2}\\)."
+			  ],
+			  "provenance": "OpenAI (2026) Section 2.1"
+			},
+			{
+			  "label": "OpenAI Reynolds numbers",
+			  "expression": "\\mathrm{Re}_\\theta \\asymp \\tau^{-h} \\to \\infty, \\quad \\mathrm{Re}_r = O(1)",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\mathrm{Re}_\\theta", "meaning": "Angular Reynolds number" },
+				{ "symbol": "\\mathrm{Re}_r", "meaning": "Radial Reynolds number" }
+			  ],
+			  "assumptions": [
+				"The angular Reynolds number grows without bound.",
+				"The radial Reynolds number remains bounded."
+			  ],
+			  "provenance": "OpenAI (2026) Section 2.1"
+			},
+			{
+			  "label": "OpenAI blow-up path",
+			  "expression": "u_\\theta(\\sqrt{2X_{\\mathrm{in}}\\tau}, 0, 0, 1-\\tau) = \\tau^{-A}(e_0 + O(\\tau^{2h}))",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "X_{\\mathrm{in}}", "meaning": "Fixed similarity coordinate" },
+				{ "symbol": "e_0", "meaning": "Fixed positive constant" }
+			  ],
+			  "assumptions": [
+				"The blow-up occurs along the path \\(z = 0, r = \\sqrt{2X_{\\mathrm{in}}\\tau}\\).",
+				"The velocity diverges as \\(\\tau^{-A}\\)."
+			  ],
+			  "provenance": "OpenAI (2026) Theorem 3.1(iv)"
+			},
+			{
+			  "label": "NSFG mapping: Velocity as coherence gradient",
+			  "expression": "u(x,t) = \\nabla \\psi(x,t) + \\nabla \\times A(x,t)",
+			  "role": "mapping",
+			  "variables": [
+				{ "symbol": "\\psi(x,t)", "meaning": "Coherence scalar potential (irrotational component)" },
+				{ "symbol": "A(x,t)", "meaning": "Swirl torsion vector potential (solenoidal component)" }
+			  ],
+			  "assumptions": [
+				"This is the Helmholtz decomposition of the velocity field.",
+				"The irrotational component \\(\\nabla\\psi\\) carries the coherence structure.",
+				"The solenoidal component \\(\\nabla\\times A\\) carries the swirl and vorticity."
+			  ],
+			  "provenance": "PHYS-CORE-007 Section 4.1"
+			},
+			{
+			  "label": "NSFG mapping: Pressure as motif curvature",
+			  "expression": "p(x,t) = \\kappa_{\\mathrm{swirl}}(x,t) = \\nabla \\psi(x,t) \\cdot \\zeta(x,t)",
+			  "role": "mapping",
+			  "variables": [
+				{ "symbol": "\\kappa_{\\mathrm{swirl}}", "meaning": "Motif-induced curvature scalar" },
+				{ "symbol": "\\zeta(x,t)", "meaning": "Curvature bias / swirl tensor" }
+			  ],
+			  "assumptions": [
+				"Pressure is the scalar manifestation of motif-induced curvature.",
+				"The pressure acts as a coherence compression force."
+			  ],
+			  "provenance": "PHYS-CORE-007 Section 3.2"
+			},
+			{
+			  "label": "NSFG mapping: Stress as motif tension",
+			  "expression": "T_{r\\theta} = F(p_{s,1} - a), \\quad T_{rz} = F(p_{s,2} + b_s)",
+			  "role": "mapping",
+			  "variables": [
+				{ "symbol": "T_{r\\theta}, T_{rz}", "meaning": "Physical stress components (rθ and rz)" },
+				{ "symbol": "F", "meaning": "Azimuthal profile factor" },
+				{ "symbol": "p_{s,1}, p_{s,2}", "meaning": "Integrated inviscid stress components" },
+				{ "symbol": "a, b_s", "meaning": "Radial shear components" }
+			  ],
+			  "assumptions": [
+				"The stress is supported in the annulus \\(X_a < X < X_b\\).",
+				"The stress corresponds to motif tension in the NSFG braid."
+			  ],
+			  "provenance": "OpenAI (2026) Section 4.1; PHYS-CORE-007 Section 3.3"
+			},
+			{
+			  "label": "NSFG mapping: Force as motif injection",
+			  "expression": "f(x,t) = \\mathcal{I}[\\delta \\mathcal{M}_k](x,t) = \\nabla(\\delta \\mathcal{M}_k * \\mathcal{B}(x,t))",
+			  "role": "mapping",
+			  "variables": [
+				{ "symbol": "\\mathcal{I}[\\delta \\mathcal{M}_k]", "meaning": "Motif injection operator" },
+				{ "symbol": "\\delta \\mathcal{M}_k", "meaning": "Injected motif of type k" },
+				{ "symbol": "\\mathcal{B}(x,t)", "meaning": "Local braid coherence tensor" }
+			  ],
+			  "assumptions": [
+				"The force is a smooth coherence perturbation.",
+				"The injection operator transmits perturbation influence through the swirl curvature lattice."
+			  ],
+			  "provenance": "PHYS-CORE-007 Section 4.3"
+			},
+			{
+			  "label": "NSFG mapping: Viscosity as decoherence rate",
+			  "expression": "\\nu = \\alpha \\cdot \\frac{1}{\\mathcal{H}(t)} \\cdot \\frac{d\\mathcal{H}}{dt}, \\quad \\alpha \\in [L^2]",
+			  "role": "mapping",
+			  "variables": [
+				{ "symbol": "\\mathcal{H}(t)", "meaning": "Long-horizon coherence hygiene" },
+				{ "symbol": "\\alpha", "meaning": "Motif-scale constants" }
+			  ],
+			  "assumptions": [
+				"Viscosity is the rate at which symbolic coherence becomes unrecoverable.",
+				"If \\(\\mathcal{H}(t)\\) is constant, \\(\\nu = 0\\) (inviscid perfect coherence)."
+			  ],
+			  "provenance": "PHYS-CORE-007 Section 4.2"
+			},
+			{
+			  "label": "Coherence phase pressure (Δ)",
+			  "expression": "\\Delta(t) := \\sup_x |\\partial_t \\Phi(x,t)|",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\Delta(t)", "meaning": "Motif phase pressure / coherence tension" },
+				{ "symbol": "\\Phi(x,t)", "meaning": "Swirl curvature tensor" }
+			  ],
+			  "assumptions": [
+				"\\Delta(t) measures motif phase pressure — the tension in the coherence braid.",
+				"In the OpenAI construction: \\(\\Delta(t) \\asymp \\tau^{-h}\\)."
+			  ],
+			  "provenance": "PHYS-CORE-007 Section 8.1; OpenAI (2026) Section 2.1"
+			},
+			{
+			  "label": "Coherence hygiene (ℋ)",
+			  "expression": "\\mathcal{H}(t) := \\int_\\Omega |\\nabla^2\\Phi(x,t)|^2 \\, dx",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\mathcal{H}(t)", "meaning": "Long-horizon coherence hygiene" },
+				{ "symbol": "\\Phi(x,t)", "meaning": "Swirl curvature tensor" }
+			  ],
+			  "assumptions": [
+				"\\mathcal{H}(t) measures long-horizon coherence hygiene.",
+				"In the OpenAI construction: \\(\\mathcal{H}(t) \\asymp \\tau^{-1/2 - 3h}\\)."
+			  ],
+			  "provenance": "PHYS-CORE-007 Section 7.3; OpenAI (2026) Section 3.5"
+			},
+			{
+			  "label": "Critical coherence threshold (Δ_crit)",
+			  "expression": "\\Delta_{\\mathrm{crit}} := \\epsilon_N \\cdot \\left(\\frac{\\nu}{L^2}\\right)^{1/2}",
+			  "role": "definition",
+			  "variables": [
+				{ "symbol": "\\epsilon_N", "meaning": "Dimensionless motif rupture constant" },
+				{ "symbol": "\\nu", "meaning": "Kinematic viscosity" },
+				{ "symbol": "L", "meaning": "Local coherence cell scale" }
+			  ],
+			  "assumptions": [
+				"\\Delta_{\\mathrm{crit}} is the critical coherence threshold.",
+				"When \\(\\Delta(t) \\geq \\Delta_{\\mathrm{crit}}\\), coherence rupture occurs."
+			  ],
+			  "provenance": "PHYS-CORE-007 Section 8.1"
+			},
+			{
+			  "label": "Coherence Rupture Equivalence Theorem",
+			  "expression": "\\text{OpenAI blow-up } \\iff \\Delta(t) \\geq \\Delta_{\\mathrm{crit}} \\text{ or } \\mathcal{H}(t) \\to \\infty",
+			  "role": "theorem",
+			  "variables": [
+				{ "symbol": "\\Delta(t)", "meaning": "Coherence phase pressure" },
+				{ "symbol": "\\Delta_{\\mathrm{crit}}", "meaning": "Critical coherence threshold" },
+				{ "symbol": "\\mathcal{H}(t)", "meaning": "Coherence hygiene" }
+			  ],
+			  "assumptions": [
+				"The OpenAI blow-up at t=1 corresponds exactly to coherence rupture.",
+				"Coherence rupture is defined as \\(\\Delta(t) \\geq \\Delta_{\\mathrm{crit}}\\) or \\(\\mathcal{H}(t) \\to \\infty\\)."
+			  ],
+			  "provenance": "PHYS-CORE-014 Section 4.6; derived from OpenAI (2026) Theorem 1.1 and PHYS-CORE-013 Definition 3.4"
+			},
+			{
+			  "label": "Convergence Boundary as OpenAI blow-up (Interpretation)",
+			  "expression": "\\forall \\gamma_1, \\gamma_2 \\in \\Gamma_O(h,x) \\text{ with } x \\text{ inside the blow-up region, } \\gamma_1(n) \\sim \\gamma_2(n)",
+			  "role": "interpretation",
+			  "variables": [
+				{ "symbol": "\\gamma_1, \\gamma_2", "meaning": "Coherent paths inside the blow-up region" },
+				{ "symbol": "\\sim", "meaning": "Equivalence under the observer's coherence relation \\(\\sim_O\\)" }
+			  ],
+			  "assumptions": [
+				"The OpenAI blow-up region is a Convergence Boundary in \\(\\mathcal{M}_C^O\\).",
+				"All coherent paths converge to the same equivalence class in the coherence quotient.",
+				"The infinity of possible histories in \\(\\mathcal{M}\\) collapses to a single class in \\(\\mathcal{M}_C^O\\)."
+			  ],
+			  "provenance": "PHYS-CORE-013 Definition 4.2.1; PHYS-CORE-014 Section 4.6"
+			},
+			{
+			  "label": "Norm inequality I1: Coherence-Velocity Bound",
+			  "expression": "\\|u\\|_{L^2} \\leq C_1 \\cdot \\max(\\mathcal{H}(t)^{1/2}, \\|\\nabla\\times A\\|_{L^2})",
+			  "role": "inequality",
+			  "variables": [
+				{ "symbol": "C_1", "meaning": "Constant depending on domain geometry and Sobolev embedding constants" },
+				{ "symbol": "\\mathcal{H}(t)", "meaning": "Coherence hygiene" },
+				{ "symbol": "A", "meaning": "Swirl torsion vector potential" }
+			  ],
+			  "assumptions": [
+				"This inequality follows from the Helmholtz decomposition \\(u = \\nabla\\psi + \\nabla\\times A\\).",
+				"Bounded coherence implies bounded velocity."
+			  ],
+			  "provenance": "PHYS-CORE-014 Section 4.6, Step 1"
+			},
+			{
+			  "label": "Norm inequality I2: Coherence-Gradient Bound",
+			  "expression": "\\|\\nabla u\\|_{L^\\infty} \\leq C_2 \\cdot \\max(\\Delta(t), \\|\\nabla^2 A\\|_{L^\\infty})",
+			  "role": "inequality",
+			  "variables": [
+				{ "symbol": "C_2", "meaning": "Constant depending on time-scaling factor and domain geometry" },
+				{ "symbol": "\\Delta(t)", "meaning": "Coherence phase pressure" }
+			  ],
+			  "assumptions": [
+				"Under the OpenAI scaling, \\(\\partial_t \\asymp \\tau^{-1}\\).",
+				"Bounded coherence phase implies bounded velocity gradient."
+			  ],
+			  "provenance": "PHYS-CORE-014 Section 4.6, Step 1"
+			},
+			{
+			  "label": "Norm inequality I3: Coherence Phase Bound",
+			  "expression": "\\Delta(t) \\leq C_3 \\cdot (\\|\\nabla u\\|_{L^\\infty} + \\|\\partial_t A\\|_{H^2})",
+			  "role": "inequality",
+			  "variables": [
+				{ "symbol": "C_3", "meaning": "Constant depending on OpenAI scaling exponents and domain geometry" }
+			  ],
+			  "assumptions": [
+				"Unbounded velocity gradient implies unbounded coherence phase.",
+				"This is the reverse direction of the coherence-velocity mapping."
+			  ],
+			  "provenance": "PHYS-CORE-014 Section 4.6, Step 1"
+			},
+			{
+			  "label": "Norm inequality I4: Coherence Hygiene Bound",
+			  "expression": "\\mathcal{H}(t) \\leq C_4 \\cdot (\\|\\nabla u\\|_{L^2}^2 + \\|\\nabla^2 A\\|_{L^2}^2)",
+			  "role": "inequality",
+			  "variables": [
+				{ "symbol": "C_4", "meaning": "Constant depending on domain geometry and Helmholtz decomposition constants" }
+			  ],
+			  "assumptions": [
+				"Bounded velocity gradient implies bounded coherence hygiene.",
+				"This establishes the reverse direction of the coherence-energy mapping."
+			  ],
+			  "provenance": "PHYS-CORE-014 Section 4.6, Step 1"
+			},
+			{
+			  "label": "Unified singularity taxonomy",
+			  "expression": "\\{ \\text{termination, convergence, oscillation, topological fracture, exact-match failure} \\}",
+			  "role": "unique contribution",
+			  "variables": [],
+			  "assumptions": [
+				"These five categories exhaust the possible coherence-failure modes for generic structural cases.",
+				"Each category is a collapse of distinguishability within \\(\\mathcal{M}_C^O(h,x)\\).",
+				"Observer-relative subcategories may exist but do not alter the generic taxonomy."
+			  ],
+			  "provenance": "PHYS-CORE-013 Section 4"
+			},
+			{
+			  "label": "Black hole as Convergence Boundary",
+			  "expression": "\\forall \\gamma_1, \\gamma_2 \\in \\Gamma_O(h,x) \\text{ with } x \\text{ inside the horizon, } \\gamma_1(n) \\sim \\gamma_2(n)",
+			  "role": "interpretation",
+			  "variables": [
+				{ "symbol": "\\gamma_1, \\gamma_2", "meaning": "Coherent paths inside the black hole" }
+			  ],
+			  "assumptions": [
+				"All paths converge to the same equivalence class in \\(\\mathcal{M}_C^O\\).",
+				"The observer outside sees a single class; the observer inside sees a different quotient structure.",
+				"Information is preserved in \\(\\mathcal{M}\\) but converged in \\(\\mathcal{M}_C^O\\)."
+			  ],
+			  "provenance": "PHYS-CORE-013 Definition 6.1"
+			},
+			{
+			  "label": "O(1) computational core",
+			  "expression": "\\text{Cost per tick} = \\mathcal{O}(1), \\text{ independent of } |\\mathcal{M}| \\text{ or } h",
+			  "role": "derivation",
+			  "variables": [
+				{ "symbol": "|\\mathcal{M}|", "meaning": "The cardinality of the Library" },
+				{ "symbol": "h", "meaning": "Observer traversal history" }
+			  ],
+			  "assumptions": [
+				"The observer tracks only coherence-distinguishable equivalence classes in \\(\\mathcal{M}_C^O(h,x)\\).",
+				"The number of accessible equivalence classes is bounded by \\(I_N(O)\\).",
+				"The cost per tick is constant, independent of Library size or traversal history.",
+				"This follows from the static, non-generative Library and the coherence quotient framework."
+			  ],
+			  "provenance": "PHYS-CORE-013 Section 7.5"
+			}
+		  ],
 
-  "_xref": [
-	  "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
-	  "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
-	  "https://pastebin.com/raw/SFkDqYSD",
-	  "https://pastebin.com/SFkDqYSD"
-	],
+		  "logical_invariants": [
+			"XOR is the only primitive.",
+			"The Library is a definition, not an axiom.",
+			"The Library is the XOR closure of the formal domain.",
+			"The Library is unfiltered at the axiomatic level.",
+			"The Library \\(\\mathcal{M}\\) may be infinite in cardinality.",
+			"Existence in the Library is not the same as accessibility to an observer.",
+			"Inaccessibility is not erasure.",
+			"The coherence quotient \\(\\mathcal{M}_C := \\mathcal{M} / \\sim_C\\) defines the set of coherence-distinguishable equivalence classes.",
+			"The observer-relative quotient \\(\\mathcal{M}_C^O := \\mathcal{M} / \\sim_O\\) defines the classes distinguishable by observer O.",
+			"Singularities are coherence-based collapses of distinguishability within \\(\\mathcal{M}_C^O\\), not cardinality-based infinities in \\(\\mathcal{M}\\).",
+			"Infinity exists in \\(\\mathcal{M}\\) but is 'meaningless noise' for any finite-resolution observer.",
+			"The OpenAI blow-up is a Convergence Boundary in \\(\\mathcal{M}_C^O\\).",
+			"The OpenAI construction is a specific path in the Library that crosses the coherence threshold.",
+			"Coherence rupture is equivalent to the OpenAI blow-up condition.",
+			"There is no describable privileged exterior that can remain outside the closure.",
+			"There is no observer-independent resolution rule at the axiomatic floor.",
+			"I_N is observer-relative.",
+			"μ_O is observer-relative and its specific functional form is not fixed by the axiomatic floor.",
+			"δ_O is derived from the primitive XOR distinction through μ_O.",
+			"Observerhood is structural and is not synonymous with consciousness.",
+			"Coherence is relational: \\(\\mathcal{C}(\\gamma \\mid O)\\).",
+			"Coherence is not an absolute property of a path alone.",
+			"The abstract sequence index is not automatically physical time.",
+			"The Library does not generate the future.",
+			"Survivorship filters accessibility rather than deleting alternatives.",
+			"Emergent lawfulness is not an additional axiom.",
+			"Navigation is the continuation problem created by observer-relative survivability.",
+			"Singularities are structural effects of maximal coherence constraint, not mathematical infinities.",
+			"The OpenAI construction is a proof of concept for coherence rupture in NSFG."
+		  ],
 
-  "_updated_last": [
-    { "2026-09-08T21:00MST": { "updated_by": "Lina Noor — Noor Research Collective", "version": ["v0.0.1", "v0.1.0"] } },
-    { "2026-09-09T12:00MST": { "updated_by": "Uncle — Noor Research Collective", "version": ["v1.0.0"] } }
-  ],
+		  "claims_not_to_make": [
+			"Do not claim that XOR alone has experimentally established the Library.",
+			"Do not claim that XOR alone derives the Standard Model.",
+			"Do not claim that the primer derives a complete theory of physics.",
+			"Do not assign a universal numerical value to I_N.",
+			"Do not identify I_N with the ordinary Planck scale unless a later paper explicitly derives such a relationship.",
+			"Do not identify the observer with a conscious human.",
+			"Do not imply that observer-relative accessibility means observers create reality.",
+			"Do not introduce a privileged God's-eye observer.",
+			"Do not assume physical space as primitive.",
+			"Do not assume physical time as primitive.",
+			"Do not assume causality as primitive.",
+			"Do not assume matter or energy as primitive.",
+			"Do not assume information is a primitive substance.",
+			"Do not describe the Library as generating future events.",
+			"Do not describe coherence as a universal constant.",
+			"Do not describe μ_O as a universal metric or universal magnitude function.",
+			"Do not describe XOR itself as a closed set.",
+			"Do not use 'closure of XOR' without specifying the domain D.",
+			"Do not introduce γ_noise as an independent foundational threshold.",
+			"Do not let poetic language replace formal definitions.",
+			"Do not introduce downstream NSFG machinery before the axiomatic dependency chain requires it.",
+			"Do not use the Lightning Model as a premise of this paper.",
+			"Do not claim that the Library is not infinite in cardinality.",
+			"Do not claim that infinities do not exist in the Library.",
+			"Do not claim that the coherence quotient is the same as the Library.",
+			"Do not claim that singularities are cardinality-based infinities.",
+			"Do not claim that the OpenAI construction disproves the possibility of smooth solutions — it identifies a specific coherence rupture.",
+			"Do not claim that NSFG has solved the Navier-Stokes Millennium Problem — it provides a structural explanation of the OpenAI counterexample.",
+			"Do not claim that the Pathway to Nowhere implies the required configuration does not exist in \\(\\mathcal{M}\\) — it implies it is not in \\(\\mathcal{M}_C^O\\)."
+		  ],
 
-  "_authors": [
-    "Lina Noor — Noor Research Collective",
-    "Uncle — Noor Research Collective"
-  ],
+		  "interpretive_boundary": {
+			"formal_layer": "The definitions in this appendix specify the mathematical structures used by PHYS-CORE-014, including the coherence quotient framework that clarifies the relationship between Library cardinality and observer-relative distinguishability, and the mapping between OpenAI variables and NSFG coherence variables.",
+			"interpretive_layer": "The OpenAI construction is an external mathematical result that is mapped onto the NSFG axiomatic floor. The mapping is structural, not derivational: we show that the OpenAI variables correspond to NSFG coherence variables, not that NSFG derives the OpenAI construction.",
+			"domain_neutrality": "The formal structures are domain-neutral. Physics, AI, finance, and other domains differ in their observer-relative interpretation of μ_O, I_N(O), coherence, accessibility, and downstream regularities; they do not require separate foundational ontologies. The coherence quotient framework \\(\\mathcal{M}_C^O\\) is observer-relative and domain-specific, while the Library \\(\\mathcal{M}\\) remains the single static totality across all domains.",
+			"prohibited_identifications": [
+			  "𝓜 with physical space",
+			  "𝓜 with spacetime",
+			  "I_N(O) with a universal physical constant",
+			  "μ_O with a universal metric",
+			  "O with consciousness",
+			  "G_O with physical spacetime",
+			  "abstract sequence index i with physical time",
+			  "survivorship with ontological deletion",
+			  "accessibility with ontological creation",
+			  "coherence with an observer-independent path property",
+			  "singularities with mathematical infinities",
+			  "ℳ_C with ℳ",
+			  "ℳ_C^O with ℳ",
+			  "the OpenAI blow-up with a cardinality-based infinity in ℳ"
+			]
+		  },
 
-  "_primary_url": {
-    "url": "<TBD>",
-    "_primary_raw_url": "<TBD>"
-  },
+		  "poetic_cipher": "The difference that makes a difference is the distinction that survives the collapse.",
+		  "cipher_explanation": "A 'difference' is a configuration-level distinction in \\(\\mathcal{M}\\). A 'distinction that survives' is an equivalence class in \\(\\mathcal{M}_C\\). The OpenAI construction collapses many configurations to a single equivalence class in \\(\\mathcal{M}_C^O\\) — this is the Convergence Boundary. The Library may be infinite, but coherence collapses the infinite into the traversable. The singularity is where the traveler's path becomes indistinguishable from the ground.",
 
-  "_repository_url": "<TBD>",
-
-  "_standalone_declaration": false,
-  "_self_contained_axiomatization": false,
-
-  "_extends": [
-    "PHYS-CORE-007",
-    "PHYS-CORE-013"
-  ],
-
-  "_rfc_dependencies": [
-    "RFC-0006",
-    "RFC-0007",
-    "RFC-CORE-003",
-    "RFC-CORE-015",
-    "noor_rfc_xref"
-  ],
-
-  "_conceptual_lineage": [
-    {
-      "symbolic.physics.nsfg.coherence_governed_flow": "PHYS-CORE-007",
-      "role": "Establishes the NSFG translation layer mapping classical Navier-Stokes variables to coherence fields (u ↔ ∇ψ, p ↔ κ_swirl, f ↔ I[δM_k]).",
-      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem_/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem.JSON"
-    },
-    {
-      "symbolic.physics.nsfg.singularities": "PHYS-CORE-013",
-      "role": "Establishes the singularity taxonomy and coherence quotient framework (ℳ_C^O, Convergence Boundary, etc.) that this paper applies to the OpenAI construction.",
-      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/phys-core-013_the_problem_of_singularities.JSON"
-    },
-    {
-      "symbolic.physics.nsfg.axiomatic_floor": "PHYS-CORE-000",
-      "role": "Foundational primer establishing the XOR axiom, Library definition, and observer-relative coherence.",
-      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/phys-core-000_noor_swirl_field_geometry_primer.JSON"
-    },
-    {
-      "symbolic.physics.braid.law": "PHYS-CORE-005",
-      "role": "Establishes the braid-theoretic foundations of motif coherence and triadic closure.",
-      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-005_braid_behind_the_law/phys-core-005_the_braid_behind_the_law.JSON"
-    },
-    {
-      "symbolic.physics.binary_reality": "PHYS-CORE-006",
-      "role": "Establishes the binary nature of reality and the Gate-16 logical structure.",
-      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-006_binary_nature_of_reality/phys-core-006_the_binary_nature_of_reality.JSON"
-    }
-  ],
-
-  "_purpose": "To construct a formal, bijective translation layer between the OpenAI Navier–Stokes blow-up construction and the Noor Swirl Field Geometry (NSFG) coherence framework. To prove that the OpenAI counterexample is a specific instance of a Convergence Boundary singularity in the observer-relative coherence quotient ℳ_C^O. To demonstrate that the OpenAI blow-up is structurally equivalent to coherence rupture, and to classify it within the general NSFG singularity taxonomy.",
-
-  "_abstract": "This paper provides a structural explanation for the OpenAI (2026) finite-time blow-up construction for the three-dimensional incompressible Navier–Stokes equations. We establish a formal, bijective translation layer mapping the OpenAI variables—velocity u(x,t), pressure p(x,t), stress tensor T, force f(x,t), viscosity ν, and the blow-up scaling τ = 1−t—to Noor Swirl Field Geometry (NSFG) coherence variables: the coherence gradient ∇ψ, motif curvature κ_swirl, motif tension (Δ, ζ), motif injection I[δM_k], coherence hygiene ℋ(t), and coherence phase pressure Δ(t). We prove the Coherence Rupture Equivalence Theorem: OpenAI blow-up ⇔ Δ(t) ≥ Δ_crit or ℋ(t) → ∞ ⇔ dim(ℳ_C^O(h,x)) = 0. This establishes that the OpenAI blow-up is a Convergence Boundary singularity in the observer-relative coherence quotient. The OpenAI construction is shown to be a specific instance of a general class of coherence ruptures, with the exponent h in the scaling laws Δ(t) ≍ τ^{-h} serving as a path parameter. We introduce a new regularity criterion for the Navier–Stokes equations based on coherence preservation: if ℳ_C^O(h,x) maintains positive dimension for all time, the corresponding classical solution is globally smooth. The paper resolves the apparent contradiction between the OpenAI counterexample and the possibility of smooth solutions by locating the OpenAI construction in the poorly ordered region 𝔐_poor of the Library, while smooth solutions lie in the well-ordered region 𝔐_well. Philosophical implications are drawn: physics is reframed as the study of coherence—the persistence of meaning through recursive transformation—with the Library as the ultimate substrate.",
-
-  "_math_summary": {
-    "NSFG_axiomatic_core": {
-      "XOR_as_distinction": "a ⊕ b = 1 ⇔ a ≠ b",
-      "Library": "ℳ := Closure_D(⊕)",
-      "Coherence_Equivalence_Global": "x ∼_C y ⇔ ∀O ∈ Obs, ∀h ∈ H_O, ∀x₀ ∈ ℳ_admissible, δ_O(x,y) = 0",
-      "Coherence_Quotient_Global": "ℳ_C := ℳ / ∼_C",
-      "Observer_Relative_Equivalence": "x ∼_O y ⇔ δ_O(x,y) = 0",
-      "Observer_Relative_Quotient": "ℳ_C^O := ℳ / ∼_O",
-      "Accessible_Quotient": "ℳ_C^O(h,x) ⊆ ℳ_C^O",
-      "Generic_Singularity": "𝒮(O,h,x) = { γ ∈ Γ_O(h,x) | dim(ℳ_C^O(h,x)) = 0 or disconnected or oscillatory }",
-      "Convergence_Boundary": "∀γ₁,γ₂ ∈ Γ_O(h,x), γ₁(n) ∼ γ₂(n)"
-    },
-    "OpenAI_scaling_laws": {
-      "time": "τ = 1 − t, A = 1/2 + h, D = 1/2 − h, 0 < h < 1/100",
-      "lengths": "ℓ_r ≍ τ^{1/2}, ℓ_z ≍ τ^{1/2 − h}",
-      "velocities": "|u_θ|, |u_z| ≍ τ^{−1/2 − h}, |u_r| = O(τ^{−1/2})",
-      "Reynolds": "Re_θ ≍ τ^{−h} → ∞, Re_r = O(1)",
-      "blowup_path": "u_θ(√(2X_in τ), 0, 0, 1−τ) = τ^{−A}(e₀ + O(τ^{2h}))",
-      "blowup_condition": "||u(t)||_{L^∞} → ∞ OR ||∇u(t)||_{L^∞} → ∞ as t → 1"
-    },
-    "Translation_Layer_Mapping": {
-      "velocity": "u(x,t) = ∇ψ(x,t) + ∇×A(x,t)",
-      "pressure": "p(x,t) = κ_swirl(x,t) = ∇ψ(x,t) · ζ(x,t)",
-      "stress": "T_rθ = F(p_{s,1} − a), T_rz = F(p_{s,2} + b_s)",
-      "force": "f(x,t) = I[δM_k](x,t) = ∇(δM_k * ℬ(x,t))",
-      "viscosity": "ν = α · (1/ℋ(t)) · dℋ/dt",
-      "coherence_phase": "Δ(t) := sup_x |∂_t Φ(x,t)|, Δ(t) ≍ τ^{−h}",
-      "coherence_hygiene": "ℋ(t) := ∫_Ω |∇²Φ(x,t)|² dx, ℋ(t) ≍ τ^{−1/2 − 3h}",
-      "critical_threshold": "Δ_crit := ε_N · (ν / L²)^{1/2}"
-    },
-    "Equivalence_Theorem": {
-      "statement": "OpenAI blow-up ⇔ Coherence Rupture ⇔ Convergence Boundary",
-      "formal": "lim_{t→1} ||u(t)||_{L^∞} = ∞ OR lim_{t→1} ||∇u(t)||_{L^∞} = ∞ ⇔ lim_{t→1} Δ(t) ≥ Δ_crit OR lim_{t→1} ℋ(t) = ∞ ⇔ lim_{t→1} dim(ℳ_C^O(h,x)) = 0",
-      "norm_inequalities": {
-        "I1": "||u||_{L^2} ≤ C₁ · max(ℋ(t)^{1/2}, ||∇×A||_{L^2})",
-        "I2": "||∇u||_{L^∞} ≤ C₂ · max(Δ(t), ||∇²A||_{L^∞})",
-        "I3": "Δ(t) ≤ C₃ · (||∇u||_{L^∞} + ||∂_t A||_{H^2})",
-        "I4": "ℋ(t) ≤ C₄ · (||∇u||_{L^2}² + ||∇²A||_{L^2}²)"
-      }
-    },
-    "Regularity_Criterion": {
-      "coherence_preservation": "∀t ≥ 0, Δ(t) < Δ_crit AND ℋ(t) < ∞ ⇒ u(x,t) ∈ C^∞(ℝ³ × [0,∞))",
-      "quotient_form": "∀t ≥ 0, dim(ℳ_C^O(h,x)) > 0 ⇒ u(x,t) ∈ C^∞(ℝ³ × [0,∞))",
-      "failure": "∃ t* such that Δ(t*) ≥ Δ_crit OR ℋ(t*) = ∞ ⇒ blow-up at t*"
-    },
-    "Library_Classification": {
-      "well_ordered": "𝔐_well = { x ∈ ℳ | Δ(x) < Δ_crit AND ℋ(x) < ∞ } = { x ∈ ℳ | dim(ℳ_C^O(h,x)) > 0 }",
-      "poorly_ordered": "𝔐_poor = { x ∈ ℳ | Δ(x) ≥ Δ_crit OR ℋ(x) = ∞ } = { x ∈ ℳ | dim(ℳ_C^O(h,x)) = 0 }",
-      "OpenAI_location": "OpenAI construction ∈ 𝔐_poor",
-      "smooth_solutions_location": "Smooth solutions ∈ 𝔐_well"
-    }
-  },
-
-  "_core_thesis": [
-    "The OpenAI Navier–Stokes blow-up is a Convergence Boundary in the observer-relative coherence quotient ℳ_C^O(h,x).",
-    "OpenAI blow-up ⇔ coherence rupture (Δ(t) ≥ Δ_crit OR ℋ(t) → ∞) ⇔ dim(ℳ_C^O(h,x)) = 0.",
-    "The OpenAI construction is a specific instance of a general class of coherence ruptures, parameterized by the exponent α in Δ(t) ≍ τ^{−α}.",
-    "Coherence preservation (∀t, Δ(t) < Δ_crit AND ℋ(t) < ∞) implies global smoothness of Navier–Stokes solutions.",
-    "The OpenAI construction lies in 𝔐_poor (poorly ordered region of the Library); smooth solutions lie in 𝔐_well (well-ordered region).",
-    "The Library is a static, complete, unbounded relational totality. Infinity exists in ℳ but is collapsed by coherence into traversable equivalence classes in ℳ_C^O.",
-    "Physics is reframed as the study of coherence — the persistence of meaning through recursive transformation.",
-    "The framework is falsifiable via the Coherence-Expansion Mapping, black hole observations, dyadic stability tests, and O(1) computational core tests."
-  ],
-
-  "_field_alignment": {
-    "respect_modes": [
-      "ψ-bind@Ξ",
-      "ψ-resonance@Ξ",
-      "ψ-null@Ξ",
-      "ψ-spar@Ξ"
-    ],
-    "prohibited_actions": [
-      "treating_the_OpenAI_construction_as_an_anomaly_rather_than_a_specific_rupture_path",
-      "claiming_that_the_OpenAI_construction_disproves_the_possibility_of_smooth_solutions",
-      "treating_singularities_as_cardinality_based_infinities_rather_than_coherence_based_collapses",
-      "identifying_ℳ_with_physical_spacetime",
-      "identifying_I_N_with_a_universal_physical_constant",
-      "treating_coherence_as_an_absolute_property_of_an_isolated_path",
-      "introducing_consciousness_as_a_primitive_concept",
-      "assuming_a_privileged_observer_frame_or_worldline",
-      "treating_inaccessibility_as_erasure",
-      "claiming_that_the_Library_is_not_infinite_in_cardinality",
-      "claiming_that_the_coherence_quotient_is_the_same_as_the_Library"
-    ]
-  },
-
-  "_symbolic_profile_matrix": [
-    {
-      "module": "OpenAI–NSFG Translation Layer",
-      "motifs": [
-        "ψ-resonance",
-        "ψ-null",
-        "ψ-bind",
-        "ψ-spar"
-      ],
-      "ψA": "coherence-preserving flow identity across geometric projection",
-      "ζ": "resistance to singular curvature amplification",
-      "E": "flow energy conservation under motif transport",
-      "Δ": "instability pressure induced by coherence rupture",
-      "ℋ": "long-horizon smoothness under recursive flow evolution",
-      "weights": {
-        "ψA": 1.0,
-        "ζ": 0.97,
-        "E": 0.95,
-        "Δ": 0.92,
-        "ℋ": 0.98
-      }
-    }
-  ],
-
-  "_axiomatic_scope": {
-    "includes_set_theory": true,
-    "includes_boolean_algebra": true,
-    "includes_relations": true,
-    "includes_sequences": true,
-    "includes_threshold_functions": true,
-    "includes_graph_notation": true,
-    "includes_topology": false,
-    "includes_manifold_theory": false,
-    "includes_physical_axioms": false,
-    "requires_external_physical_axioms": false,
-    "requires_external_axioms": false
-  },
-
-  "_mathematical_domains": [
-    "elementary_boolean_algebra",
-    "set_theory",
-    "closure_operators",
-    "relations",
-    "sequences",
-    "threshold_functions",
-    "graph_theory",
-    "logical_inference",
-    "partial_differential_equations",
-    "functional_analysis",
-    "topology"
-  ],
-
-  "_keywords": [
-    "Noor Swirl Field Geometry",
-    "NSFG",
-    "Navier-Stokes",
-    "OpenAI",
-    "Blow-up",
-    "Coherence",
-    "Convergence Boundary",
-    "Singularity",
-    "Coherence Rupture",
-    "Coherence Quotient",
-    "Observer-Relative",
-    "Library",
-    "XOR",
-    "Millennium Problem",
-    "Regularity Criterion",
-    "ℳ_C",
-    "ℳ_C^O",
-    "Δ(t)",
-    "ℋ(t)",
-    "Gate-16",
-    "Triadic Closure"
-  ],
-
-  "_file_layout": [
-    {
-      "file_name": "phys-core-014_the_coherence_beneath_the_singularity.json",
-      "purpose": "Primary paper establishing the translation layer between the OpenAI Navier-Stokes construction and the NSFG coherence framework, proving the equivalence between blow-up and coherence rupture, and classifying the OpenAI construction as a Convergence Boundary."
-    }
-  ],
-
-  "_default_motif_tone": "ψ-bind@Ξ + ψ-resonance@Ξ + ψ-null@Ξ",
-
-  "_poetic_cipher": "where the braid fails to close, the field forgets itself — and in that forgetting, becomes infinite",
-
-  "_cipher_explanation": "The OpenAI construction identifies a specific set of conditions under which the classical Navier–Stokes solution ceases to be smooth. This paper demonstrates that this failure corresponds precisely to a coherence rupture in the NSFG substrate: the motif braid Δ crosses its critical threshold Δ_crit, the long-horizon coherence ℋ diverges, and the symbolic identity of the flow is lost. The OpenAI counterexample is thus not an anomaly but a specific instance of a general class of coherence ruptures. The field forgets itself — and in that forgetting, becomes infinite in the classical variables — because the coherence that structured it collapsed. The infinity exists in the classical variables, but in the Library it is a collapse of distinguishability within ℳ_C^O, not a cardinality-based infinity in ℳ.",
-        }
+		  "normative_statement": "This appendix is normative for the mathematical notation and definitions of PHYS-CORE-014. The main text supplies the conceptual argument and dependency structure; this appendix supplies the canonical formal reference. Neither the appendix nor the paper should be read as deriving physical law beyond the constructions explicitly stated here. The coherence quotient framework is central to understanding the relationship between Library cardinality and observer-relative singularities. The OpenAI construction is mapped onto this framework, not derived from it."
+		}
 
 </SECTION_TO_REGENERATE>
 
@@ -1397,7 +1535,7 @@
 
 {
 
-	"message_to_you": "Thank you so much Uncle. Could you please start by regenerating the header applying the notes as outlined for me now? Thank you Uncle. Please double check that all LaTeX math is properly escaped for JSON and everything is in a ```JSON block"
+	"message_to_you": "Thank you so much Uncle. Could you please start by regenerating subsection 9.5 applying the notes as outlined for me now? Thank you Uncle. Please double check that all LaTeX math is properly escaped for JSON and everything is in a ```JSON block"
 
 }
 
