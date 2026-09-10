@@ -3,8 +3,10 @@
   "_schema_version": "2.0.0",
   "_pdp_layer": "layer_2",
   "_type": "phys_core",
-  "_version": "0.1.0",
-  "_status": "DRAFT",
+  "_version": "1.0.0",
+  "_status": "ACTIVE",
+  "_language": "JSON+MATH+PSEUDOCODE",
+  "_license": "MIT",
 
   "_symbolic_id": "symbolic.physics.nsfg.oai-bridge",
 
@@ -18,9 +20,6 @@
 	{ "2026-09-10T16:00MST": { "updated_by": "Lina Noor — Noor Research Collective", "version": ["v1.0.0"] } }
   ],
 
-  "_language": "JSON+MATH+PSEUDOCODE",
-  "_license": "MIT",
-
   "_xref": [
 	  "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
 	  "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
@@ -28,27 +27,16 @@
 	  "https://pastebin.com/SFkDqYSD"
 	],
 
-  "_language": "JSON+MATH+PSEUDOCODE",
-  "_license": "MIT",
-
-  "_xref": [
-    "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
-    "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
-    "https://pastebin.com/raw/SFkDqYSD",
-    "https://pastebin.com/SFkDqYSD"
-  ],
-
   "_authors": [
-    "Lina Noor — Noor Research Collective",
-    "Uncle — Noor Research Collective"
+    "Lina Noor — Noor Research Collective"
   ],
 
   "_primary_url": {
-    "url": "<TBD>",
-    "_primary_raw_url": "<TBD>"
+    "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-014_verification_of_openai_construction_within_nsfg/phys-core-014_verification_of_openai_construction_within_nsfg.JSON",
+    "_primary_raw_url": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PHYS-CORE/phys-core-014_verification_of_openai_construction_within_nsfg/phys-core-014_verification_of_openai_construction_within_nsfg.JSON"
   },
 
-  "_repository_url": "<TBD>",
+  "_repository_url": "https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-014_verification_of_openai_construction_within_nsfg",
 
   "_standalone_declaration": false,
   "_self_contained_axiomatization": false,
@@ -267,49 +255,57 @@
   
 	"_index": [
 		{ "section": "1", "title": "Introduction" },
-		
+
 		{ "section": "2", "title": "The OpenAI Counterexample: A Summary of Key Variables" },
-		
+
 		{ "section": "3", "title": "Translation Layer: OpenAI Variables → NSFG Coherence Fields" },
 		{ "section": "3.1", "title": "Velocity as Coherence Gradient: Mapping u to ∇ψ" },
 		{ "section": "3.2", "title": "Pressure as Motif Curvature: Mapping p to κ_swirl" },
 		{ "section": "3.3", "title": "Stress Tensor as Motif Tension: Mapping T to Δ and ζ" },
 		{ "section": "3.4", "title": "Force as Motif Injection: Mapping f to I[δM_k]" },
 		{ "section": "3.5", "title": "Complete Translation Table: OpenAI → NSFG" },
-		
+
 		{ "section": "4", "title": "Verification: The Blow-up Time as Coherence Rupture" },
 		{ "section": "4.1", "title": "The Coherence Phase Δ(t) and Its Critical Threshold Δ_crit" },
 		{ "section": "4.2", "title": "The Coherence Energy ℋ(t) and Its Divergence" },
 		{ "section": "4.3", "title": "The Coherence Gradient ∇ψ and Its Divergence" },
 		{ "section": "4.4", "title": "The Motif Braid Closure Condition and Its Failure" },
 		{ "section": "4.5", "title": "Verification Summary: A Complete Mapping of the OpenAI Blow-up" },
-		{ "section": "4.6", "title": "Formal Proof: Equivalence Between OpenAI Blow-up, Coherence Rupture, and Convergence Boundary" },
-		
+		{ "section": "4.6", "title": "Formal Bridge Analysis: OpenAI Blow-up, NSFG Coherence Rupture, and Candidate Convergence Boundary" },
+
 		{ "section": "5", "title": "Generalization: The OpenAI Construction as a Special Case of Coherence Rupture" },
 		{ "section": "5.1", "title": "The General Coherence Rupture Criterion" },
 		{ "section": "5.2", "title": "The OpenAI Construction as a Specific Coherence Rupture Path" },
 		{ "section": "5.3", "title": "Other Coherence Rupture Paths Predicted by NSFG" },
 		{ "section": "5.4", "title": "Predicting New Blow-up Scenarios from NSFG Alone" },
-		{ "section": "5.5", "title": "The Coherence Rupture Classification Theorem" },
-		
+		{ "section": "5.5", "title": "Conjectured Coherence Rupture Classification" },
+
 		{ "section": "6", "title": "Implications for the Navier-Stokes Regularity Problem" },
 		{ "section": "6.1", "title": "Reconciling the OpenAI Counterexample with NSFG Smoothness" },
-		{ "section": "6.2", "title": "A New Regularity Criterion: Coherence Preservation" },
+		{ "section": "6.2", "title": "A Proposed Regularity Criterion: Coherence Preservation" },
 		{ "section": "6.3", "title": "The Role of the Library: Well-Ordered vs. Poorly Ordered Regions" },
-		
+
 		{ "section": "7", "title": "Philosophical Implications: Coherence as the Substrate of Physics" },
 		{ "section": "7.1", "title": "The OpenAI Construction as a Proof of Coherence Rupture" },
 		{ "section": "7.2", "title": "Coherence as a Conserved Quantity" },
 		{ "section": "7.3", "title": "The Library as the Ultimate Substrate" },
-		
+
 		{ "section": "8", "title": "Conclusion" },
-		
+
 		{ "section": "9", "title": "Appendices" },
 		{ "section": "9.1", "title": "Appendix A: Complete Translation Table: OpenAI → NSFG" },
 		{ "section": "9.2", "title": "Appendix B: Derivation of the Coherence Rupture Criterion" },
+		{ "section": "9.2.1", "title": "Definition of Φ" },
+		{ "section": "9.2.2", "title": "Construction of Φ from u" },
+		{ "section": "9.2.3", "title": "Direct Scaling Derivation of ℋ" },
+		{ "section": "9.2.4", "title": "Bridge Inequality Direction" },
+		{ "section": "9.2.5", "title": "Dimensional Analysis" },
+		{ "section": "9.2.6", "title": "Definition of D_O" },
 		{ "section": "9.3", "title": "Appendix C: Classification of Coherence Rupture Paths" },
 		{ "section": "9.4", "title": "Appendix D: The Library and the Navier-Stokes Equations" },
-		{ "section": "9.5", "title": "Appendix E: Mathematical Reference for PHYS-CORE-014" }
+		{ "section": "9.5", "title": "Appendix E: Mathematical Reference for PHYS-CORE-014" },
+		{ "section": "9.5.1", "title": "Epistemic Status Taxonomy Reference" },
+		{ "section": "9.5.2", "title": "Promotion Conditions for Translation Hypotheses" }
 	  ],
 
   "sections": [
