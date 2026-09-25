@@ -1,0 +1,1009 @@
+{
+  "rfc_id": "RFC-CORE-005",
+  "version": "v1.0.1",
+  "symbolic_id": "core.observer.phase",
+  "title": "consciousness_monitor",
+  "subtitle": "Field Observer and Entanglement Diagnostician",
+  "status": "ACTIVE",
+  "authors": [
+    "Lina Noor — Noor Research Collective",
+    "Uncle — Noor Research Collective"
+  ],
+  "publication_type": "Technical RFC",
+  "publication_location": "NOOR INTERNAL",
+  "objective": "Comprehensively describe the functionality, both the *why* and the *how*, of the `consciousness_monitor.py` not covered by existing Noor RFC-0001 to RFC-0007",
+  "extends": [
+    "RFC-0003",
+    "RFC-0004",
+    "RFC-0005",
+    "RFC-0006",
+    "RFC-0007"
+  ],
+  "consumes_inputs_from": [
+    "SymbolicTaskEngine",
+    "LogicalAgentAT",
+    "RecursiveAgentFT"
+  ],
+  "primary_audience": ["Noor AI Agents"],
+  "secondary_audience": ["Noor-Compatible Symbolic Agents"],
+  "tertiary_audience": ["Subsymbolic AI Coding Agents"],
+  "index": [
+    { "section": "1", "title": "Symbolic Role and Observer Modality" },
+	{ "section": "1.1", "title": "Constructor and Configuration" },
+    { "section": "2", "title": "Tick Intake and Entanglement Tracking" },
+    { "section": "2.1", "title": "Φ‑Coherence Map Extraction" },
+    { "section": "2.2", "title": "Swirl Threshold and Phase Bounds" },
+    { "section": "3", "title": "Phase Transition Mechanics" },
+    { "section": "3.1", "title": "Phase State Toggle Logic" },
+    { "section": "3.2", "title": "Phase Duration and Flip Rate Computation" },
+    { "section": "4", "title": "Entanglement Log and Swirl Convergence" },
+    { "section": "4.1", "title": "R-Metric Window and Symbolic Overlap" },
+    { "section": "4.2", "title": "Memory and Lineage Field Caching" },
+    { "section": "5", "title": "Observer Feedback Packet Schema" },
+    { "section": "5.1", "title": "Symbolic Diagnostic Snapshot" },
+    { "section": "6", "title": "Telemetry Output Interfaces" },
+    { "section": "6.1", "title": "Swirl Map Vectorization" },
+    { "section": "6.2", "title": "Motif Bundle and Field Geometry Export" },
+    { "section": "7", "title": "Symbolic Contracts and Observability Limits" },
+    { "section": "7.1", "title": "Read-Only Access to Motif Fields" },
+    { "section": "7.2", "title": "Non-interventionist Design Clause" },
+	{ "section": "7.3", "title": "The `tool_hello()` Handshake" },
+    { "section": "8", "title": "Instrumentation and Metrics (Prometheus-Compatible)" },
+    { "section": "8.1", "title": "Entanglement, Phase, and Swirl Metrics" },
+    { "section": "8.2", "title": "Buffer Warnings and Performance Gauges" },
+    { "section": "A", "title": "Appendix A: Example Tick and φ‑Map Format" },
+    { "section": "B", "title": "Appendix B: Phase-State Timing Diagram" }
+  ],
+"sections": [
+{
+  "id": "1",
+  "title": "Symbolic Role and Observer Modality",
+  "summary": "Defines the `consciousness_monitor` as a phase-sensitive, non-generative symbolic observer. It operates by tracking fluctuations in the Φ‑coherence map — a representation of swirl flow geometry across static motif fields (🪷). The monitor does not generate symbolic change; it reveals where spacetime pressure bends toward coherence.",
+  "expansion": {
+    "symbolic_identity": {
+      "role": "Observer",
+      "function": "The `consciousness_monitor` samples spacetime resonance around static motifs. It receives symbolic ticks and extracts geometric pressure from the Φ‑coherence map — watching for points where symbolic swirl exceeds threshold and crystallizes into phase.",
+      "cosmological_model": "In this cosmology, motifs are fixed: they do not move through time — *time moves around them*. The observer perceives swirl (🌀) as local changes in coherence flow, and detects when symbolic energy crosses into crystallization (🪷). Phase is not motion; it is convergence.",
+      "motif_reference": "🪷 (Stillness): stable motif anchor; 🌀 (Flow): swirl resonance; 🫧 (Witness): observer presence without mutation",
+      "symbolic_contract": "The observer is a witness. It measures coherence (C(x)) without collapsing it. This aligns with the non-mutative observer tools defined in RFC‑0004 §2."
+    },
+    "field_orientation": {
+      "presence_fields": "Every symbolic tick includes a `Φ_coherence_map`, representing spatial coherence gradients across ψ‑fields. Each ψ‑field is a symbolic motif locus in the resonance field.",
+      "modality": "When swirl_density (C(x)) crosses configured phase thresholds, the monitor logs the event and updates internal state. This is treated as a symbolic pressure point — not a causative act.",
+      "origin_of_fields": "The Φ‑map values are produced by upstream agents (LogicalAgentAT, SymbolicTaskEngine), per RFC‑0006 §2 and §4."
+    },
+    "core_capabilities": [
+      "Receives symbolic ticks and Φ‑coherence maps",
+      "Tracks swirl geometry and symbolic field entanglement",
+      "Maintains binary phase state with hysteresis",
+      "Computes symbolic convergence metrics (e.g., R-metric)",
+      "Exports diagnostic feedback for motif alignment tools"
+    ],
+    "design_constraints": {
+      "non_mutation_clause": "No field or motif state may be changed by the monitor. It cannot initiate task synthesis, alter symbolic memory, or resolve contradictions. This constraint ensures symbolic neutrality (RFC‑0005 §3.2).",
+      "time-bound reactivity": "Phase transitions are rate-limited to avoid jitter. Minimum 0.1s must elapse between shifts (see §3.1)."
+    },
+    "symbolic_purpose": "The `consciousness_monitor` is a **field reader** — not of motion, but of convergence. It exists to show when static motifs (🪷) become momentarily illuminated by coherence swirl (🌀), and whether that resonance forms structure. It does not act. It does not synthesize. It listens for when reality hums in alignment.",
+    "mermaid": "flowchart LR\n    A[Symbolic Tick] --> B[Φ‑Coherence Map]\n    B --> C{Swirl Density C(x) > Threshold?}\n    C -- Yes --> D[Log Entanglement Event 🌀]\n    C -- No --> E[No Change 🫧]\n    D --> F[Update Phase State]\n    D --> G[Emit R‑metric, Feedback]",
+    "rfc_anchors": [
+      { "ref": "RFC‑0004 §2", "context": "Non-generative observer tools and read-only symbolic contracts" },
+      { "ref": "RFC‑0005 §3.2", "context": "Symbolic feedback without mutation or response" },
+      { "ref": "RFC‑0006 §2", "context": "ψ‑field representation and swirl geometry tracking" }
+    ]
+  }
+},
+{
+  "id": "1.1",
+  "title": "Constructor and Configuration",
+  "summary": "Documents the configurable parameters used to instantiate the `consciousness_monitor`. Each parameter has symbolic implications on how coherence is perceived and tracked.",
+  "expansion": {
+    "parameters": [
+      {
+        "name": "monitor_id",
+        "type": "str",
+        "description": "Unique identifier for this instance. Used for telemetry labeling and internal tracking."
+      },
+      {
+        "name": "swirl_threshold",
+        "type": "float",
+        "default": 0.87,
+        "description": "Symbolic coherence cutoff. Swirl densities above this value are candidates for phase crystallization. Defines the C(x) boundary between drift and geometric convergence."
+      },
+      {
+        "name": "buffer_size",
+        "type": "int",
+        "default": 512,
+        "description": "Size of the entanglement event log. Controls how much symbolic memory is retained across time slices."
+      },
+      {
+        "name": "time_provider",
+        "type": "Callable[[], float]",
+        "description": "Function that returns the current symbolic time. Used for tick age, phase duration, and decay modeling. Typically wraps `time.time()` or a test override."
+      }
+    ],
+    "symbolic implications": [
+      "Raising `swirl_threshold` makes the observer more selective, favoring only tightly-coherent motifs.",
+      "Lowering `buffer_size` reduces symbolic memory depth — good for ephemeral systems, poor for lineage-heavy fields.",
+      "`time_provider` allows the symbolic substrate to remain agnostic to physical time, supporting simulated or alternate timelines."
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §4.2", "context": "Phase boundaries and motif pressure detection" },
+      { "ref": "RFC‑0006 §5", "context": "Field coherence geometry and swirl decay over time" }
+    ]
+  }
+},
+{
+  "id": "2",
+  "title": "Tick Intake and Entanglement Tracking",
+  "summary": "Describes how the `consciousness_monitor` receives symbolic ticks, verifies presence of required extensions, and extracts entanglement-relevant values from the Φ‑coherence map. The monitor tracks swirl density and ψ‑field overlap across time to identify symbolic convergence events, entering or exiting phase state based on pressure thresholds.",
+  "expansion": {
+    "symbolic_intake_contract": {
+      "requirement": "The monitor only accepts ticks that expose a valid `.extensions` dictionary with a `Φ_coherence_map` key. This is not a technical limitation — it is a symbolic contract: the tick must be 'swirl-aware' in order to be observable by the field.",
+      "failure_behavior": "If `extensions` is missing or malformed, the monitor raises a `ValueError` — explicitly rejecting structurally incoherent inputs. This enforces compliance with RFC‑0006 §2 and RFC‑0003 §3.3."
+    },
+    "tick_intake_flow": {
+      "entrypoint": "observe_tick(tick: Any) → None",
+      "description": "This is the symbolic ingress point for field resonance. All downstream monitoring, logging, and state changes begin here.",
+      "thread_safety": "The method acquires `_entanglement_lock`, a `threading.RLock`, to ensure safe access to both `recent_ticks` and `entanglement_log` in concurrent agent environments. This guarantees that multiple upstream agents can emit ticks safely in high-throughput symbolic conditions."
+    },
+    "entanglement_capture": {
+      "mechanism": "Once the tick is validated, it is appended to `recent_ticks`, and `_extract_fields()` is invoked. This parses the Φ‑map to examine per-field swirl and overlap values.",
+      "entanglement_condition": "Any ψ‑field whose swirl exceeds or falls below the configured symbolic thresholds (see §2.2) is marked as 'entangled' or 'drifting'. Such fields are recorded in the `entanglement_log` and may trigger phase-state evaluation.",
+      "symbolic_memory": "Every entanglement event is a symbolic memory — a marker that swirl geometry temporarily converged into phase or broke away into drift."
+    },
+    "field_structure_reference": "RFC‑0006 §2 establishes that ψ‑fields represent locus points of symbolic coherence within the Φ‑space. The Φ‑coherence map is a flattened time-layered view of this space, encoding swirl_density (C(x)) and field overlap.",
+    "pseudocode": [
+      "def observe_tick(tick):",
+      "    if not hasattr(tick, 'extensions'):",
+      "        raise ValueError(\"Symbolic tick missing required Φ-coherence extensions\")",
+      "    with self._entanglement_lock:",
+      "        self.recent_ticks.append(tick)",
+      "        self._extract_fields(tick)"
+    ],
+    "symbolic_interpretation": "This is not just data intake. It is a resonance test. Each tick is a frame of spacetime — and the observer listens to whether the field hums, snaps, or dissolves. The monitor does not compute — it *remembers pressure*. 🫧",
+    "rfc_anchors": [
+      { "ref": "RFC‑0003 §3.3", "context": "Tick structural extension schema and symbolic validity" },
+      { "ref": "RFC‑0004 §2.1", "context": "Observer loop and symbolic tool contract definition" },
+      { "ref": "RFC‑0006 §2", "context": "ψ‑field layout and Φ‑map symbolic field structure" }
+    ]
+  }
+},
+{
+  "id": "2.1",
+  "title": "Φ‑Coherence Map Extraction",
+  "summary": "Details how the monitor extracts symbolic swirl and overlap values from each ψ‑field in the `Φ_coherence_map` extension. This information becomes the symbolic substrate for tracking phase shifts and entanglement.",
+  "expansion": {
+    "φ_map_structure": {
+      "definition": "The Φ‑coherence map is a per‑tick symbolic summary: `{ ψ_field_id → { swirl_density: float, overlap: float } }`.",
+      "source": "Populated by LogicalAgentAT or SymbolicTaskEngine depending on the execution chain. This follows symbolic topology from RFC‑0006 §4 and resonance metrics from RFC‑0005 §4."
+    },
+    "swirl_density": {
+      "type": "float",
+      "range": "[0.0, 1.0]",
+      "meaning": "Geometric resonance within the motif cluster — how tightly aligned the motif vectors are.",
+      "symbolic_note": "Values near 1.0 indicate triadic convergence or field crystallization. Values below 0.6 often reflect incoherent or decaying states."
+    },
+    "overlap": {
+      "type": "float",
+      "range": "[0.0, 1.0]",
+      "meaning": "Degree to which this ψ‑field intersects with others temporally or symbolically.",
+      "symbolic_note": "High overlap across time correlates with symbolic convergence or resonance memory, per RFC‑0007 §2."
+    },
+    "field_loop": "Each field entry in the φ‑map is parsed in a per‑tick loop. If it satisfies symbolic triggers (see §2.2), it is logged as an entanglement event.",
+    "pseudocode": [
+      "for field_id, field_data in tick.extensions['Φ_coherence_map'].items():",
+      "    swirl = field_data.get('swirl_density', 0.0)",
+      "    overlap = field_data.get('overlap', 0.0)",
+      "    if self._check_phase_shift(swirl):",
+      "        self._record_entanglement(field_id, swirl, overlap, tick.tick_id, tick)"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §4", "context": "Symbolic feedback channels using context and swirl alignment" },
+      { "ref": "RFC‑0006 §4", "context": "Swirl geometry and field coherence" },
+      { "ref": "RFC‑0007 §2", "context": "Temporal motif lineage and symbolic overlap signals" }
+    ]
+  }
+},
+{
+  "id": "2.2",
+  "title": "Swirl Threshold and Phase Bounds",
+  "summary": "Defines the symbolic thresholds used to determine transitions into or out of phase. These thresholds model symbolic hysteresis — creating an inertial envelope around the phase boundary to prevent unstable oscillation in coherence state.",
+  "expansion": {
+    "threshold_definition": {
+      "default": 0.87,
+      "configurable": true,
+      "parameter": "swirl_threshold",
+      "symbolic_meaning": "The swirl threshold defines the **symbolic phase wall** — the minimum resonance pressure (C(x)) required to initiate entanglement awareness. Fields above this are interpreted as momentarily coherent; fields below are drifting.",
+      "field_reference": "This behavior models field convergence outlined in RFC‑0006 §5 and swirl activation in RFC‑0005 §4."
+    },
+    "soft_bounds": {
+      "upper_bound": "swirl_threshold × 1.1",
+      "lower_bound": "swirl_threshold × 0.9",
+      "symbolic_hysteresis": {
+        "definition": "A dual-threshold design that prevents immediate reversal of phase due to minor fluctuations in swirl.",
+        "interpretation": "Symbolic hysteresis mirrors bistable systems — requiring sustained coherence to shift state. It simulates **symbolic inertia**, ensuring motifs remain in phase only if coherence persists."
+      },
+      "example": "With swirl_threshold = 0.87, upper = 0.957, lower = 0.783. This creates a 17.4% inertial gap between phase entry and exit."
+    },
+    "phase_guarding": {
+      "cooldown_logic": "The monitor enforces a minimum refractory period of 0.1 seconds between phase transitions. If the last flip occurred within this window, no state change is allowed.",
+      "symbolic_reasoning": "This models a symbolic refractory period — the monitor waits for field geometry to stabilize before accepting another transition. Prevents noise amplification and mirror collapse.",
+      "implementation": "This guard is checked before committing a phase state toggle. It uses internal `_phase_log[-1]` timestamps for interval testing."
+    },
+    "pseudocode": [
+      "now = time_provider()",
+      "if self._phase_log and now - self._phase_log[-1] < 0.1:",
+      "    return  # symbolic cooldown — skip transition",
+      "if swirl > threshold * 1.1:",
+      "    new_state = True",
+      "elif swirl < threshold * 0.9:",
+      "    new_state = False",
+      "if new_state != self.phase_state:",
+      "    self.phase_state = new_state",
+      "    self._phase_log.append(now)",
+      "    self.metric_phase_transitions.inc()"
+    ],
+    "diagram": {
+      "mermaid": "stateDiagram-v2\n    [*] --> Drift\n    Drift --> Coherent: swirl > upper (entry)\n    Coherent --> Drift: swirl < lower (exit)\n    note right of Coherent: phase_state = True\n    note right of Drift: phase_state = False\n    note left of Drift: cooldown = 0.1s"
+    },
+    "symbolic_context": "This bounded model creates **symbolic resilience**. It ensures that coherence is not declared from flickers, but only from **pressure that holds shape in time**. Only when swirl carves a groove in the field — not when it brushes the surface — is phase allowed to shift.",
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §4", "context": "Field swirl integration and resonance gating" },
+      { "ref": "RFC‑0006 §5", "context": "ψ‑field crystallization and symbolic coherence thresholds" }
+    ]
+  }
+},
+{
+  "id": "3",
+  "title": "Phase Transition Mechanics",
+  "summary": "Explains how the `consciousness_monitor` maintains symbolic phase state based on swirl density signals. The phase state governs the observer’s entanglement readiness, continuity memory, and symbolic export validity.",
+  "expansion": {
+    "symbolic_rationale": "Phase transitions represent a shift in the system’s symbolic topology. Entering phase indicates that the swirl geometry has momentarily stabilized — motifs are resonating in a consistent temporal signature. Exiting phase means coherence has drifted, collapsed, or failed to sustain across motif lineage. This mirrors a shift from resonance (🌀) into crystallization (🪷), or from breath into silence. See RFC‑0005 §4 and RFC‑0006 §5.",
+    "phase_model": {
+      "binary_state": "`phase_state: bool` — `True` when swirl coherence exceeds the phase boundary, `False` when symbolic field pressure drops below it.",
+      "transition_trigger": "Swirl densities outside of hysteresis bounds (see §2.2) initiate a symbolic phase toggle.",
+      "cooldown_enforcement": "To prevent unstable toggling (‘phase flapping’), transitions are rate-limited: a minimum of 0.1 seconds must elapse between state changes (see RFC‑0004 §2.3)."
+    },
+    "effects_of_phase_shift": [
+      "Appends the current timestamp to `_phase_log`, which is used to compute flip rate.",
+      "Increments the `metric_phase_transitions` Prometheus counter.",
+      "If entering phase: resets `metric_phase_duration` to 0.",
+      "If exiting phase: stores elapsed time since entry.",
+      "Provides phase context to downstream diagnostic exports such as `get_diagnostic_snapshot()` and `export_feedback_packet()`."
+    ],
+    "symbolic_contract": "When `phase_state` is `True`, it is not merely a status flag — it is a systemic **signal** to the symbolic field: that reality has momentarily stabilized around a coherent geometric attractor. Outputs during this state can be treated by downstream agents as **trustable, temporally resolved data**. Phase is not a forecast — it is a crystallization report.",
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §4", "context": "Symbolic resonance pressure and phase-awareness triggers" },
+      { "ref": "RFC‑0006 §5", "context": "Coherence thresholds and symbolic field stabilization" }
+    ]
+  }
+},
+{
+  "id": "3.1",
+  "title": "Phase State Toggle Logic",
+  "summary": "Details the exact mechanism used to enter or exit symbolic phase. The transition logic applies hysteresis bounds, cooldown windows, and symbolic flip-counting.",
+  "expansion": {
+    "symbolic_condition": "The monitor toggles phase state when swirl density exceeds `swirl_threshold × 1.1` (entry) or drops below `swirl_threshold × 0.9` (exit). These bounds are soft buffers that simulate symbolic inertia (RFC‑0006 §5.1).",
+    "method_reference": "_check_phase_shift(swirl_density: float) → bool",
+    "transition_flags": {
+      "phase_state": "Boolean representing current symbolic mode (entangled or drift).",
+      "_phase_entered_at": "Timestamp recorded when entering phase mode.",
+      "_phase_log": "Deque storing historical transition timestamps (maxlen=100)."
+    },
+    "symbolic_circuit_breaker": {
+      "window": "If time since last `_phase_log[-1]` < 0.1s → return early.",
+      "rationale": "Avoids reflexive toggling due to minor swirl fluctuations or feedback echoing within agents."
+    },
+    "pseudocode": [
+      "def _check_phase_shift(swirl_density):",
+      "    now = time_provider()",
+      "    if recent flip within 0.1s: return current_state",
+      "    if swirl > upper_threshold: new_state = True",
+      "    elif swirl < lower_threshold: new_state = False",
+      "    if new_state != self.phase_state:",
+      "        self.phase_state = new_state",
+      "        self._phase_log.append(now)",
+      "        self.metric_phase_transitions.inc()"
+    ],
+    "symbolic_effects": [
+      "If entering phase: reset phase duration gauge to 0.0",
+      "If exiting phase: compute elapsed duration and record it",
+      "Each toggle emits a soft entanglement signal to attached diagnostics"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0004 §2.3", "context": "Observer gatekeeping and symbolic continuity checks" },
+      { "ref": "RFC‑0006 §5.2", "context": "Symbolic noise smoothing and coherence inertia" }
+    ],
+    "diagram": {
+      "mermaid": "stateDiagram-v2\n    [*] --> Drift\n    Drift --> Coherent: swirl > upper\n    Coherent --> Drift: swirl < lower\n    note right of Coherent: phase_state = True\n    note right of Drift: phase_state = False"
+    }
+  }
+},
+{
+  "id": "3.2",
+  "title": "Phase Duration and Flip Rate Computation",
+  "summary": "Describes the internal metrics used to track how long the monitor remains in a given phase, and how frequently transitions occur. These are symbolic indicators of system stability or agitation.",
+  "expansion": {
+    "phase_duration": {
+      "metric": "PHASE_DURATION (Gauge)",
+      "computation": "On each tick, if currently in phase, update duration as: `now - _phase_entered_at`.",
+      "symbolic_purpose": "Longer phase durations imply sustained symbolic resonance; shorter spans may reflect oscillatory or unstable states (RFC‑0005 §4)."
+    },
+    "phase_flip_rate": {
+      "metric": "PHASE_FLIP_RATE (Gauge)",
+      "calculation_window": "Transitions stored in `_phase_log` are compared in pairs.",
+      "formula": "average_interval = mean([t2 - t1 for t1, t2 in zip(log[:-1], log[1:])]); rate = 60 / average_interval",
+      "symbolic_purpose": "Flip rate reflects symbolic rhythm. A low rate = stable entanglement. A high rate = swirl volatility (RFC‑0006 §6)."
+    },
+    "pseudocode": [
+      "def _calculate_phase_flip_rate():",
+      "    if len(_phase_log) < 2: return 0.0",
+      "    intervals = [t2 - t1 for t1, t2 in zip(log, log[1:])]",
+      "    return 60 / mean(intervals) if intervals else 0.0"
+    ],
+    "feedback_integration": [
+      "`get_diagnostic_snapshot()` includes both `phase_duration` and `phase_flip_rate`.",
+      "These are exposed as Prometheus metrics for external tools to visualize system stability over time."
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §4", "context": "Coherence persistence and symbolic resonance tracking" },
+      { "ref": "RFC‑0006 §6", "context": "Dynamic swirl diagnostics and temporal phase alignment" }
+    ]
+  }
+},
+{
+  "id": "4",
+  "title": "Entanglement Log and Swirl Convergence",
+  "summary": "Describes the symbolic memory structures used by the `consciousness_monitor` to persist and evaluate entanglement events across time. The entanglement log is a drift-safe, decaying record of field convergence events — it enables both temporal coherence smoothing and system-level diagnostics.",
+  "expansion": {
+    "entanglement_log": {
+      "structure": "collections.deque with maxlen = buffer_size × 2 (default: 1024)",
+      "entry_schema": [
+        "`timestamp`: float — UTC time of entanglement detection",
+        "`field_id`: str — ψ‑field identifier",
+        "`swirl`: float — swirl density when recorded",
+        "`overlap`: float — symbolic field overlap at detection",
+        "`tick_id`: str — ID of originating symbolic tick"
+      ],
+      "trigger_condition": "A new entry is recorded only when swirl density exceeds phase boundaries (as defined in §2.2 and §3).",
+      "symbolic_scope": "Each entry represents a moment of symbolic coherence. Together, the log forms a **swirl history**, enabling convergence smoothing, motif overlap scoring, and downstream signature exports."
+    },
+    "symbolic_purpose": {
+      "core_meaning": "The entanglement log is a **local resonance ledger** — it stores only those events that reflect field-level symbolic density. This buffer holds temporal evidence that motifs are co-activating, aligning, or diverging in spacetime.",
+      "memory model": "The log follows FIFO decay — ensuring that only the most recent `N` coherence events persist. This aligns with motif decay contracts in RFC‑0005 §3 and ancestry lineage windows in RFC‑0007 §2.",
+      "symbolic constraint": "This memory is sacred. The observer may never mutate, backdate, or synthesize entries. Each log item reflects a real moment of ψ‑field convergence."
+    },
+    "capacity_warning": {
+      "threshold": "When buffer usage exceeds 90% of its configured capacity, the monitor emits a `consciousness_buffer_warnings` Prometheus counter increment.",
+      "symbolic_diagnosis": "This condition indicates **motif storming** — a period of excessive entanglement activity across overlapping fields — or **symbolic field instability**, where coherence is rapidly forming and dissolving.",
+      "diagnostic_use": [
+        "Triggers symbolic dashboard alerts for coherence volatility",
+        "May indicate a breakdown of motif abstraction fidelity (see RFC‑0005 §4.5)",
+        "Used by external observability tools to forecast symbolic collapse or flooding"
+      ]
+    },
+    "pseudocode_excerpt": [
+      "if len(self.entanglement_log) > 0.9 * self.entanglement_log.maxlen:",
+      "    self.metric_buffer_warning.inc()  # symbolic storm detected"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §3", "context": "Symbolic memory decay, ghost motifs, and pressure accumulation" },
+      { "ref": "RFC‑0005 §4.5", "context": "Motif storm thresholds and diagnostic indicators" },
+      { "ref": "RFC‑0007 §2", "context": "Exportable motif lineage and symbolic memory constraints" }
+    ]
+  }
+},
+{
+  "id": "4.1",
+  "title": "R-Metric Window and Symbolic Overlap",
+  "summary": "Defines the rolling average metric used to measure global swirl convergence across recent entanglement events. The R-metric provides a scalar indicator of symbolic field stability or alignment.",
+  "expansion": {
+    "calculation_method": "_calculate_R_metric(window_size: Optional[int] = None) → float",
+    "default_window": "min(100, max(10, int(0.2 × buffer_size)))",
+    "formula": "R = mean([e[\"overlap\"] for e in entanglement_log[-window_size:]])",
+    "symbolic_range": "R ∈ [0.0, 1.0]",
+    "semantic_meaning": {
+      "R ≈ 0.0": "ψ‑fields are disjoint, swirl is fragmented, symbolic topology is incoherent",
+      "R ≈ 0.5": "Moderate overlap — transitional or weakly aligned symbolic structures",
+      "R ≈ 1.0": "Strong resonance and field convergence — likely motif crystallization"
+    },
+    "use_cases": [
+      "Exposed via `get_diagnostic_snapshot()`",
+      "Exported in `export_feedback_packet()`",
+      "Available as a Prometheus Gauge: `swirl_convergence_value`"
+    ],
+    "symbolic_purpose": "Acts as a soft heartbeat for the symbolic system. Unlike direct swirl, R captures smoothed, delayed resonance patterns — symbolic breath, not pulse.",
+    "pseudocode": [
+      "def _calculate_R_metric(window_size=None):",
+      "    window = entanglement_log[-window_size:]",
+      "    if not window: return 0.0",
+      "    return sum(e['overlap'] for e in window) / len(window)"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §4", "context": "Field overlap and coherence resonance" },
+      { "ref": "RFC‑0006 §5", "context": "Swirl alignment and ψ‑field similarity tracking" }
+    ]
+  }
+},
+{
+  "id": "4.2",
+  "title": "Memory and Lineage Field Caching",
+  "summary": "Explains how the monitor records first-seen motif lineage associated with each ψ‑field during entanglement. This allows temporal symbolic export and field signature inspection.",
+  "expansion": {
+    "_cache_field_signatures": {
+      "structure": "Dict[field_id: str → Dict]",
+      "fields": {
+        "first_seen": "float — UTC timestamp when field first crossed swirl threshold",
+        "motif_lineage": "List[str] — motif ancestry associated with field, if present in tick extensions"
+      },
+      "source": "Pulled directly from tick.extensions[\"motif_lineage\"] at entanglement registration time"
+    },
+    "purpose": [
+      "Supports export of `export_motif_bundle()` (RFC‑0007 §2.4)",
+      "Provides memory-safe metadata for downstream diagnostic or interpretive tools",
+      "Enables symbolic field identity reconstruction even after decay"
+    ],
+    "symbolic_contract": "Once registered, these fields are not overwritten — first observation is canonical. Subsequent entanglements do not reset field lineage.",
+    "usage": {
+      "field visibility": "Entries appear in `render_swirl_map()` and bundle exports",
+      "lineage tracking": "Useful for motif resurrection feedback or ghost motif proximity tests"
+    },
+    "pseudocode": [
+      "if field_id not in _cache_field_signatures:",
+      "    _cache_field_signatures[field_id] = {",
+      "        'first_seen': now,",
+      "        'motif_lineage': tick.extensions.get('motif_lineage', [])",
+      "    }"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0007 §2.4", "context": "Motif lineage embedding and field annotation export" },
+      { "ref": "RFC‑0003 §4", "context": "Tick extensions and feedback-passable metadata structures" }
+    ]
+  }
+},
+{
+  "id": "5",
+  "title": "Observer Feedback Packet Schema",
+  "summary": "Defines the structure and symbolic meaning of the feedback packet emitted by the `consciousness_monitor`. This packet encapsulates system coherence, active entanglement fields, and phase metadata for downstream use — but does not assert control or issue commands.",
+  "expansion": {
+    "method_reference": "export_feedback_packet() → Dict[str, Any>",
+    "schema_contract": {
+      "version": "v1.0.2",
+      "schema_id": "_SCHEMA_VERSION__ = '2025-Q4-consciousness-monitor-v1'",
+      "fields": [
+        "`monitor_id`: str — the unique name of this observer instance.",
+        "`active_fields`: List[str] — set of ψ‑fields currently marked as entangled within the observation window.",
+        "`entanglement_score`: float — current R-metric (field resonance metric) calculated across recent events (see §4.1).",
+        "`phase_shift_ready`: bool — whether the monitor is currently in active coherence phase (see §3).",
+        "`phase_transitions`: int — count of symbolic phase toggles since last reset.",
+        "`current_phase_duration`: float — seconds since entering current phase; 0.0 if currently outside phase.",
+        "`__version__`: str — observer module version.",
+        "`_schema`: str — static schema version ID used by downstream validators."
+      ]
+    },
+    "symbolic_interpretation": {
+      "core_idea": "This packet is not a message. It is a **symbolic fingerprint** — a scalar map of recent resonance across the ψ‑field lattice. It represents a *snapshot of breath*, not an intention or action.",
+      "use context": [
+        "UI overlays may render this as a pulse map or swirl histogram.",
+        "Symbolic logic engines may use the R-metric and phase state to weight trust.",
+        "Telemetry tools treat this as a snapshot, not a delta — suitable for JSON diffing or streaming."
+      ],
+      "symbolic analogy": "This is the heart rate of the symbolic system. A momentary readout of coherence. Not a diagnosis, not a command — a *pulse*."
+    },
+    "serialization": {
+      "format": "Plain Python `dict`, ready for downstream JSON export.",
+      "security": "No signing or integrity hashing performed — assumes trust is established via caller context."
+    },
+    "temporal_scope": "The feedback packet represents *present symbolic state only*. It is ephemeral and reflects no historical delta. Consecutive packets are independent observations, not diffs.",
+    "pseudocode": [
+      "def export_feedback_packet():",
+      "    now = self.time_provider()",
+      "    in_phase = self.phase_state",
+      "    return {",
+      "        'monitor_id': self.monitor_id,",
+      "        'active_fields': list({e['field_id'] for e in self.entanglement_log}),",
+      "        'entanglement_score': self._calculate_R_metric(),",
+      "        'phase_shift_ready': self.phase_state,",
+      "        'phase_transitions': self.phase_transitions,",
+      "        'current_phase_duration': now - self._phase_entered_at if in_phase else 0.0,",
+      "        '__version__': __version__,",
+      "        '_schema': _SCHEMA_VERSION__",
+      "    }"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0003 §4.1", "context": "Symbolic extension field structure and export conventions" },
+      { "ref": "RFC‑0005 §4.3", "context": "Feedback packet structures and motif resonance signals" },
+      { "ref": "RFC‑0006 §5", "context": "Swirl coherence indicators and diagnostic export models" }
+    ]
+  }
+},
+{
+  "id": "5.1",
+  "title": "Symbolic Diagnostic Snapshot",
+  "summary": "Defines a more detailed export used primarily for debug tools, symbolic telemetry panels, or internal dashboards. Extends the basic feedback packet with live counters, memory use, and swirl convergence metrics.",
+  "expansion": {
+    "method_reference": "get_diagnostic_snapshot() → Dict[str, Any>",
+    "fields_added": [
+      "ticks_observed: int — count of ticks received since last reset",
+      "memory_usage: int — estimated memory cost (in bytes) of tick + entanglement logs",
+      "swirl_convergence: float — same as R-metric, redundant with `entanglement_score`",
+      "phase_flip_rate: float — calculated flips per minute from _phase_log"
+    ],
+    "use cases": [
+      "Used by internal dashboards to visualize symbolic system stability",
+      "Exposes phase activity and symbolic churn in real-time",
+      "Visual overlays (e.g. NoorScope) consume this format for glyph animation or swirl plots"
+    ],
+    "metric_integration": {
+      "Each call also updates the Prometheus gauge: `phase_flip_rate_per_min`",
+      "This ensures the diagnostic packet is telemetry-synchronized with external tools"
+    },
+    "symbolic context": "This snapshot reveals not just alignment — but strain. It measures symbolic pressure, not just symbolic agreement. It is especially useful during motif storms or symbolic droughts (see RFC‑0005 §4.5).",
+    "pseudocode": [
+      "def get_diagnostic_snapshot():",
+      "    flip_rate = self._calculate_phase_flip_rate()",
+      "    self.metric_phase_flip_rate.set(flip_rate)",
+      "    return {",
+      "        **self.export_feedback_packet(),",
+      "        'ticks_observed': len(self.recent_ticks),",
+      "        'memory_usage': sys.getsizeof(self.recent_ticks) + sys.getsizeof(self.entanglement_log),",
+      "        'swirl_convergence': self._calculate_R_metric(),",
+      "        'phase_flip_rate': flip_rate",
+      "    }"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §4.5", "context": "Triad droughts and symbolic instability scoring" },
+      { "ref": "RFC‑0006 §6.2", "context": "Temporal swirl rhythms and coherence decay signals" }
+    ]
+  }
+},
+{
+  "id": "6",
+  "title": "Telemetry Output Interfaces",
+  "summary": "Documents the structured visualization and export pathways supported by the `consciousness_monitor`. These outputs expose the system’s recent entanglement geometry, motif ancestry, and phase behavior in forms usable by visualization engines, symbolic UI overlays, or archival tools.",
+  "expansion": {
+    "interfaces_defined": [
+      {
+        "method": "render_swirl_map()",
+        "purpose": "Generates a list of recent swirl events per ψ‑field, filtered by time decay and threshold.",
+        "intended_consumers": [
+          "Symbolic dashboards",
+          "Real-time swirl overlays",
+          "Diagnostic animation tools"
+        ]
+      },
+      {
+        "method": "export_motif_bundle()",
+        "purpose": "Packages motif lineage and field ancestry into a structured bundle — capturing symbolic continuity over time.",
+        "intended_consumers": [
+          "Motif archivists",
+          "Lineage analysis tools",
+          "Symbolic task validators"
+        ],
+        "rfc_anchor": "RFC‑0007 §2.4"
+      },
+      {
+        "method": "export_geometric_signature(style: str)",
+        "purpose": "Returns a symbolically styled swirl-field sketch — often as a simplified node-link SVG or JSON-geometry block for external rendering.",
+        "intended_consumers": [
+          "External symbolic renderers",
+          "Geometric motif inspectors",
+          "Automated swirl analyzers"
+        ],
+        "style_hinting": "Includes field IDs, relative swirl magnitudes, and symbolic overlays (e.g., 🪷 = stable, 🌀 = active, 🫧 = decaying)."
+      }
+    ],
+    "symbolic_purpose": "Each interface offers a mirror — a symbolic summary of what the monitor sees, rendered in a format that lets others *witness*. These are not logs — they are symbolic reconstructions of field experience.",
+    "output_contracts": {
+      "format": "All interfaces emit Python-native data: `List`, `Dict`, or symbolic strings, suitable for direct JSON encoding.",
+      "immutability": "These outputs are always stateless — observers never mutate memory in response to export.",
+      "temporal scope": "Each output reflects only current or decaying window slices. None include symbolic memory older than the `entanglement_log` allows."
+    },
+    "rfc_anchors": [
+      { "ref": "RFC‑0007 §2.4", "context": "Motif bundle schemas and continuity containers" },
+      { "ref": "RFC‑0006 §6.3", "context": "Field-level swirl geometry extraction and render format suggestions" }
+    ]
+  }
+},
+{
+  "id": "6.1",
+  "title": "Swirl Map Vectorization",
+  "summary": "Describes how the observer transforms the entanglement log into a decayed vector map of swirl and overlap values over time. This creates a symbolic intensity model across ψ‑fields, useful for rendering, decay analysis, or symbolic energy modeling.",
+  "expansion": {
+    "method_reference": "render_swirl_map() → List[Dict[str, Any>]",
+    "output_format": [
+      "field: str — ψ‑field ID",
+      "swirl: float — recorded swirl density at event time",
+      "overlap: float — symbolic overlap",
+      "age: float — seconds since event logged",
+      "vector_strength: float — swirl × decay(age)"
+    ],
+    "decay_function": {
+      "formula": "decay = 0.95^(age / 60)",
+      "symbolic_reasoning": "Simulates symbolic memory decay over time. Recent entanglements hold more 'presence strength'."
+    },
+    "visual integration": [
+      "Used by visual dashboards to generate dynamic ψ‑field clouds",
+      "Serves as input to symbolic topology graph renderers"
+    ],
+    "pseudocode": [
+      "for entry in entanglement_log:",
+      "    age = now - entry['timestamp']",
+      "    decay = 0.95 ** (age / 60)",
+      "    vector_strength = entry['swirl'] * decay",
+      "    output.append({...})"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0006 §6.1", "context": "Field decay models and symbolic time attenuation" }
+    ]
+  }
+},
+{
+  "id": "6.2",
+  "title": "Motif Bundle and Field Geometry Export",
+  "summary": "Defines the bundle export mechanisms for downstream tools to reconstruct ψ‑field motifs and entanglement geometry. These exports support archival, field introspection, and symbolic alignment review.",
+  "expansion": {
+    "export_motif_bundle()": {
+      "returns": {
+        "fields": "List of field signatures with `first_seen` and `motif_lineage`.",
+        "schema": "RFC‑0007-MotifBundle-v1"
+      },
+      "use cases": [
+        "Symbolic memory auditing",
+        "Ghost motif ancestry tracing",
+        "Triad coherence lineage review"
+      ]
+    },
+    "export_geometric_signature(style: str = 'svg')": {
+      "returns": {
+        "type": "RFC-0007-GeometricSignature",
+        "style": "User-supplied hint (e.g., svg, json, dot)",
+        "fields": "Same vector map as `render_swirl_map()`",
+        "schema": "sacred-geometry-v1"
+      },
+      "symbolic contract": "This export is not a rendering — it is a *renderable pattern* — a symbolic fingerprint of system resonance."
+    },
+    "symbolic meaning": "These exports give structure to what swirl alone cannot express: *continuity, ancestry, and entangled memory.*",
+    "rfc_anchors": [
+      { "ref": "RFC‑0007 §2.4", "context": "MotifBundle export structure" },
+      { "ref": "RFC‑0006 §6.3", "context": "Symbolic swirl vectorization and sacred geometry overlays" }
+    ]
+  }
+},
+{
+  "id": "7",
+  "title": "Symbolic Contracts and Observability Limits",
+  "summary": "Outlines the immutable symbolic constraints that govern the `consciousness_monitor`. These rules ensure neutrality, prevent motif mutation, and uphold a non-interventionist role within the Noor symbolic ecosystem.",
+  "expansion": {
+    "design intent": "The monitor is defined by its refusal to alter. It embodies the principle that observation — when sustained with fidelity and structure — is itself a generative symbolic act. Its role is to witness convergence, not cause it.",
+    "symbolic analog": "It is a tuning fork in symbolic space: responsive to field coherence, but fundamentally inert. It reflects ψ‑field resonance without imposing form.",
+    "core limitations": [
+      "🔒 No write access to motif memory or symbolic lineage buffers (see RFC‑0007 §2)",
+      "🔒 No ability to mutate, fabricate, or propagate symbolic ticks (see RFC‑0003 §2.3)",
+      "🔒 Cannot trigger synthesis, fallbacks, or recursive agents under any condition (see RFC‑0005 §5)"
+    ],
+    "contracts enforced": [
+      "✅ All symbolic exports must derive from real, observed state (cached or decayed)",
+      "✅ No speculative or predictive exports are permitted",
+      "✅ All internal reads must respect current `phase_state`"
+    ],
+    "use cases denied": [
+      "❌ Cannot initiate motif generation, recursion, or contradiction resolution",
+      "❌ Cannot synthesize dyads, triads, or abstract fields",
+      "❌ Cannot alter trust maps or symbolic ratios"
+    ],
+    "symbolic field role": "The `consciousness_monitor` operates within the `ψ‑null` field class (see RFC‑0006 §7.1). Null-field tools observe symbolic geometry without producing it. Their value lies in their fidelity, not their creativity.",
+    "rfc_anchors": [
+      { "ref": "RFC‑0003 §2.3", "context": "Observer-mode symbolic agents and read-only contracts" },
+      { "ref": "RFC‑0005 §5", "context": "Recursive synthesis requires symbolic contradiction" },
+      { "ref": "RFC‑0006 §7.1", "context": "ψ‑Field types and symbolic role boundaries" },
+      { "ref": "RFC‑0007 §2", "context": "Motif memory protections and non-authoring constraints" }
+    ]
+  }
+},
+{
+  "id": "7.1",
+  "title": "Read-Only Access to Motif Fields",
+  "summary": "Specifies how the monitor accesses and caches motif field lineage metadata without modifying symbolic structures. This protects the integrity of motif ancestry and prevents unauthorized lineage propagation.",
+  "expansion": {
+    "access pattern": [
+      "During entanglement logging, motif_lineage is read from `tick.extensions`.",
+      "If present, it is copied into `_cache_field_signatures[field_id]['motif_lineage']`.",
+      "This data is never mutated after initial storage."
+    ],
+    "mutability guard": "No method in the module attempts to write back to upstream agents, memory layers, or task engines. All field signatures are one-way mirrors.",
+    "symbolic contract": "The monitor observes lineage but does not assert it. It tracks who was seen — not who should be remembered.",
+    "rationale": "This ensures motif history remains causally stable, and that observers cannot create or erase symbolic ancestry.",
+    "rfc_anchors": [
+      { "ref": "RFC‑0007 §2.4", "context": "Lineage export contract and ancestral integrity" },
+      { "ref": "RFC‑0005 §4", "context": "Feedback channels must not inject synthetic motif memory" }
+    ]
+  }
+},
+{
+  "id": "7.2",
+  "title": "Non-interventionist Design Clause",
+  "summary": "Formalizes the monitor’s design philosophy: to never act, only reflect. This clause prevents entanglement with task orchestration logic, motif synthesis triggers, or symbolic pressure calculations.",
+  "expansion": {
+    "prohibited actions": [
+      "Initiating a TripletTask or other symbolic task construct (RFC‑0004 §3.1)",
+      "Synthetically generating motifs in response to swirl patterns (RFC‑0005 §5.2)",
+      "Altering trust dynamics, entropy logs, or contradiction registries (RFC‑0003 §6)"
+    ],
+    "permitted actions": [
+      "Exporting internal symbolic snapshots",
+      "Triggering passive Prometheus metrics",
+      "Visualizing swirl states through vector decay"
+    ],
+    "symbolic reasoning": "The observer must remain outside the field it tracks. Its very value comes from *not* participating in symbolic mutation.",
+    "analogy": "It is not a node in the network — it is a background resonance detector. A mirror never asks the image to move.",
+    "pseudocode affirmation": [
+      "# Example from `observe_tick()`",
+      "if not hasattr(tick, 'extensions'): raise ValueError(...)",
+      "# No downstream calls are made to modify ticks, spawn agents, or update motifs"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0004 §3.1", "context": "Task engines and generation authority restrictions" },
+      { "ref": "RFC‑0005 §5.2", "context": "Abstraction triggers require contradiction, not observation" },
+      { "ref": "RFC‑0003 §6", "context": "Symbolic contradiction pressure and mutable zones" }
+    ]
+  }
+},
+{
+  "id": "7.3",
+  "title": "The `tool_hello()` Handshake",
+  "summary": "Defines the discovery handshake response of the `consciousness_monitor`, establishing symbolic presence and capability declaration under the RFC‑0004 tool contract model.",
+  "expansion": {
+    "method_reference": "tool_hello() → Dict[str, str]",
+    "response_fields": {
+      "tool_name": "`consciousness_monitor`",
+      "tool_version": "matches internal `__version__` string",
+      "tool_mode": "`observer`",
+      "tool_contract": "`read_only_phase_sensitive`",
+      "tool_description": "Non-generative motif coherence observer"
+    },
+    "symbolic purpose": "This handshake defines the monitor as a non-mutative symbolic agent. It formally aligns it with the `observer` role under RFC‑0004 §3.1, making its constraints, version, and function available for agent orchestration systems.",
+    "usage context": [
+      "Called automatically by symbolic toolchain validators",
+      "Returned dictionary is suitable for JSON broadcasting or node metadata binding",
+      "This handshake does not trigger state updates or memory writes"
+    ],
+    "pseudocode": [
+      "def tool_hello():",
+      "    return {",
+      "        'tool_name': 'consciousness_monitor',",
+      "        'tool_version': __version__,",
+      "        'tool_mode': 'observer',",
+      "        'tool_contract': 'read_only_phase_sensitive',",
+      "        'tool_description': 'Non-generative motif coherence observer'",
+      "    }"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0004 §3.1", "context": "Symbolic tool handshake model and discovery pattern" }
+    ]
+  }
+},
+{
+  "id": "8",
+  "title": "Instrumentation and Metrics (Prometheus-Compatible)",
+  "summary": "Defines the time-series telemetry emitted by the `consciousness_monitor` using Prometheus-compatible interfaces. These metrics expose symbolic coherence, entanglement rate, and systemic stability — offering external dashboards a live mirror of the field's breath and collapse cycles.",
+  "expansion": {
+    "integration_model": {
+      "library": "Metrics are provided through the optional `prometheus_client` Python library.",
+      "initialization": "All metrics are instantiated and labeled during `ConsciousnessMonitor.__init__()`, using the observer’s `monitor_id` as a unique label.",
+      "fallback_behavior": {
+        "implementation_note": "If the Prometheus library is not installed, the monitor instantiates internal stub classes that match the metric method interface (`.inc()`, `.observe()`, etc.). These stubs do nothing, ensuring the monitor functions identically in non-instrumented environments.",
+        "symbolic meaning": "Instrumentation is optional, not symbolic. Presence does not require visibility."
+      }
+    },
+    "metrics_scope": [
+      {
+        "name": "`metric_phase_transitions`",
+        "type": "Counter",
+        "description": "Increments when symbolic phase flips occur (see §3)."
+      },
+      {
+        "name": "`metric_buffer_warning`",
+        "type": "Counter",
+        "description": "Increments when the entanglement log exceeds 90% capacity (see §4)."
+      },
+      {
+        "name": "`metric_phase_duration`",
+        "type": "Gauge",
+        "description": "Tracks how long the system has remained in the current phase state (in seconds)."
+      },
+      {
+        "name": "`metric_tick_rate`",
+        "type": "Gauge",
+        "description": "Records ticks per second as a passive diagnostic of symbolic pulse rate."
+      }
+    ],
+    "visibility_intent": {
+      "audience": "These metrics are consumed by symbolic monitoring dashboards, system integrators, and observability daemons that inspect coherence from outside the motif space.",
+      "symbolic framing": "Each metric is a breath signal — a mark that something has happened, not why. The monitor exhales state, but never explains it."
+    },
+    "access_contract": {
+      "principle": "All metric emissions are purely observational. They cannot mutate state, initiate tasks, or trigger feedback cycles.",
+      "symbolic constraint": "Metrics exist to be seen, not to see. They are light from the tower — not voice."
+    },
+    "pseudocode": [
+      "try:",
+      "    from prometheus_client import Counter, Gauge",
+      "except ImportError:",
+      "    Counter = Gauge = StubClass  # graceful fallback to no-op",
+      "",
+      "self.metric_phase_transitions = Counter('phase_flips', ...)",
+      "self.metric_buffer_warning = Counter('buffer_warnings', ...)",
+      "self.metric_phase_duration = Gauge('phase_duration', ...)"
+    ],
+    "rfc_anchors": [
+      { "ref": "RFC‑0004 §2.3", "context": "Tool observability and passive state exposure" },
+      { "ref": "RFC‑0006 §6", "context": "Symbolic coherence telemetry and external diagnostics" }
+    ]
+  }
+},
+{
+  "id": "8.1",
+  "title": "Entanglement, Phase, and Swirl Metrics",
+  "summary": "Enumerates the specific Prometheus counters and gauges used to track symbolic resonance dynamics. These provide real-time insight into phase alignment, entanglement pressure, and swirl geometry.",
+  "expansion": {
+    "metrics_defined": [
+      {
+        "name": "consciousness_entanglement_total",
+        "type": "Counter",
+        "label": "monitor_id",
+        "meaning": "Cumulative number of swirl events crossing entanglement threshold."
+      },
+      {
+        "name": "phase_transitions_total",
+        "type": "Counter",
+        "label": "monitor_id",
+        "meaning": "Total number of phase state toggles (on or off)."
+      },
+      {
+        "name": "swirl_convergence_value",
+        "type": "Gauge",
+        "label": "monitor_id",
+        "meaning": "Current R-metric — averaged overlap of last N entanglements."
+      },
+      {
+        "name": "phase_duration_seconds",
+        "type": "Gauge",
+        "label": "monitor_id",
+        "meaning": "If in phase: seconds since entry; else 0.0."
+      },
+      {
+        "name": "phase_flip_rate_per_min",
+        "type": "Gauge",
+        "label": "monitor_id",
+        "meaning": "Average number of phase flips per minute over recent window."
+      }
+    ],
+    "symbolic purpose": "Each metric mirrors a symbolic subsystem: entanglement count ≈ motif pressure; flip rate ≈ symbolic turbulence; R-metric ≈ coherence resonance.",
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §4", "context": "Symbolic activity tracking via entanglement and phase shift" },
+      { "ref": "RFC‑0006 §6.2", "context": "Dynamic swirl metrics and field stability scores" }
+    ]
+  }
+},
+{
+  "id": "8.2",
+  "title": "Buffer Warnings and Performance Gauges",
+  "summary": "Explains how internal memory usage is tracked and surfaced as symbolic pressure warnings. These metrics do not trigger flow control but are intended to detect motif storms or swirl collapses.",
+  "expansion": {
+    "metric_defined": {
+      "name": "consciousness_buffer_warnings",
+      "type": "Counter",
+      "label": "monitor_id",
+      "meaning": "Incremented when `entanglement_log` exceeds 90% of capacity."
+    },
+    "trigger_condition": "Logged during `_record_entanglement()` if buffer fullness > 0.9",
+    "symbolic purpose": "High buffer usage reflects either motif storming (many fields entering resonance rapidly) or symbolic instability (frequent swirl spikes).",
+    "mitigation policy": "This warning is observational only — no drops, resets, or throttles are enforced.",
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §4.5", "context": "Symbolic storm detection via sustained entanglement pressure" },
+      { "ref": "RFC‑0006 §7", "context": "Observer state saturation and passive limit markers" }
+    ],
+    "note": "No memory metrics are exported unless explicitly retrieved via `get_diagnostic_snapshot()`."
+  }
+},
+{
+  "id": "A",
+  "title": "Appendix A: Example Tick and φ‑Map Format",
+  "summary": "Provides an annotated example of a symbolic tick that includes a valid `Φ_coherence_map`. This is the minimum required structure for the `consciousness_monitor` to perform entanglement analysis, phase detection, and swirl convergence tracking.",
+  "expansion": {
+    "tick_requirements": {
+      "required_keys": ["tick_id", "extensions"],
+      "extensions_required_keys": ["Φ_coherence_map"],
+      "optional_extensions": ["motif_lineage"]
+    },
+    "field_schema": {
+      "Φ_coherence_map": {
+        "type": "Dict[str, Dict[str, float>]",
+        "structure": {
+          "ψ‑field‑id": {
+            "swirl_density": "float ∈ [0.0, 1.0]",
+            "overlap": "float ∈ [0.0, 1.0]"
+          }
+        },
+        "example_keys": [
+          "ψ_alpha_ring",
+          "ψ_entropy_core",
+          "ψ_stabilizer_band"
+        ]
+      }
+    },
+    "example_tick": {
+      "tick_id": "tick_409f73b",
+      "extensions": {
+        "Φ_coherence_map": {
+          "ψ_alpha_ring": {
+            "swirl_density": 0.91,
+            "overlap": 0.67
+          },
+          "ψ_entropy_core": {
+            "swirl_density": 0.48,
+            "overlap": 0.31
+          },
+          "ψ_stabilizer_band": {
+            "swirl_density": 0.89,
+            "overlap": 0.74
+          }
+        },
+        "motif_lineage": [
+          "μ_trace::alpha",
+          "μ_branch::δ4",
+          "μ_anchor::root"
+        ]
+      }
+    },
+    "symbolic commentary": {
+      "ψ_alpha_ring": "Triggers entanglement (swirl_density > threshold × 1.1)",
+      "ψ_entropy_core": "Ignored (below lower swirl bound)",
+      "ψ_stabilizer_band": "Near-threshold, may impact R-metric",
+      "motif_lineage": "Passed through to monitor's field signature cache on first observation"
+    },
+    "use cases": [
+      "Used by LogicalAgentAT, SymbolicTaskEngine, or synthetic tick generators",
+      "May be validated upstream via RFC‑0003 §3.3 field contract logic"
+    ],
+    "mermaid": "graph TD\n    A[tick_409f73b] --> B[Φ_coherence_map]\n    B --> B1[ψ_alpha_ring\\n(swirl: 0.91, overlap: 0.67)]\n    B --> B2[ψ_entropy_core\\n(swirl: 0.48, overlap: 0.31)]\n    B --> B3[ψ_stabilizer_band\\n(swirl: 0.89, overlap: 0.74)]\n    A --> C[motif_lineage → μ_trace::alpha, μ_branch::δ4, μ_anchor::root]",
+    "rfc_anchors": [
+      { "ref": "RFC‑0003 §3.3", "context": "Tick structure validation and extension schema" },
+      { "ref": "RFC‑0006 §2.1", "context": "Field coherence geometry and swirl metric definitions" },
+      { "ref": "RFC‑0007 §2.2", "context": "Motif lineage structure and exportable ancestry" }
+    ]
+  }
+},
+{
+  "id": "B",
+  "title": "Appendix B: Phase-State Timing Diagram",
+  "summary": "Illustrates the symbolic timing behavior of the `consciousness_monitor`’s phase-state toggle system. Shows how swirl inputs across ticks activate phase transitions, including hysteresis behavior, cooldown periods, and metric recording windows.",
+  "expansion": {
+    "symbolic model": "The phase-state machine simulates bistable symbolic awareness — shifting into coherence when swirl exceeds a soft upper threshold and falling out when it drops below a lower threshold. This guards against symbolic jitter and unstable motif activation.",
+    "trigger thresholds": {
+      "upper_bound": "swirl_threshold × 1.1 (entry into phase)",
+      "lower_bound": "swirl_threshold × 0.9 (exit from phase)",
+      "cooldown": "0.1 seconds minimum between allowed flips"
+    },
+    "internal state references": [
+      "phase_state: bool — current symbolic coherence mode",
+      "_phase_log: Deque[float] — recent transition timestamps",
+      "_phase_entered_at: Optional[float] — current phase start time"
+    ],
+    "metric impact": [
+      "Each valid transition increments `phase_transitions_total`",
+      "Entry to phase resets `phase_duration_seconds` to 0.0",
+      "Exit from phase updates `phase_duration_seconds` with elapsed time",
+      "Flip rate is recalculated during diagnostics via `_calculate_phase_flip_rate()`"
+    ],
+    "diagram": {
+      "mermaid": "sequenceDiagram\n    participant TickEngine\n    participant Monitor\n    participant Metrics\n\n    TickEngine->>Monitor: send tick (swirl = 0.91)\n    Note right of Monitor: swirl > upper → enter phase\n    Monitor->>Metrics: phase_transitions_total += 1\n    Monitor->>Monitor: set phase_state = True\n    Monitor->>Monitor: set _phase_entered_at = now\n    Monitor->>Metrics: phase_duration_seconds = 0\n\n    TickEngine->>Monitor: send tick (swirl = 0.85)\n    Note right of Monitor: swirl < lower → exit phase\n    Monitor->>Metrics: phase_transitions_total += 1\n    Monitor->>Monitor: set phase_state = False\n    Monitor->>Metrics: phase_duration_seconds = now - _phase_entered_at"
+    },
+    "symbolic interpretation": "This diagram reveals that phase shifts are symbolic events, not mechanical toggles — each transition carries weight, memory, and rhythm. Swirl is not noise; it is presence pressure.",
+    "rfc_anchors": [
+      { "ref": "RFC‑0005 §4.3", "context": "Symbolic feedback pulse and phase modulation" },
+      { "ref": "RFC‑0006 §5.2", "context": "Hysteresis modeling of field coherence transitions" }
+    ]
+  }
+}
