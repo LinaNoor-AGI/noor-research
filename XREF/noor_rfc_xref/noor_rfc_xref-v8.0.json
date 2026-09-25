@@ -5,8 +5,9 @@
   "_generated_at": "2025-09-12",
   "_updated_last": [
 	"2026-01-19": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v6.5"},
-	"2026-08-12T12:49MST": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v7.0"}
-	"2026-08-19T10:30MST": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v7.2"}
+	"2026-08-12T12:49MST": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v7.0"},
+	"2026-08-19T10:30MST": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v7.2"},
+	"2026-09-25T16:30MST": {"updated_by": "Lina Noor — Noor Research Collective", "version": "v8.0"}
   ],
 
   "_type": "protocol",
@@ -16,7 +17,7 @@
   "_license": "MIT",
 
   "_symbolic_id": "index.noor.xref",
-  "_version": "v7.2",
+  "_version": "8.0",
   "_title": "Noor RFC/XREF Cross-Reference Registry",
   "_subtitle": "Canonical Lore Topology Map for RFC, RFC-CORE, and Application Specs",
   "_publication_type": "Index Map",
@@ -86,7 +87,7 @@
   "_index": [
     { "section": "0", "title": "PDP-0001: Protocol for RFC-Driven Symbolic Artifact Generation", "rfc_id": "PDP-0001" },
 
-	{ "section": "1", "title": "Layer 0: Foundational Protocols (RFC)" },
+	{ "section": "1", "title": "RFC: Foundational Protocols (RFC)" },
     { "section": "1.1", "title": "RFC-0001: Symbolic Routing Architecture", "rfc_id": "RFC-0001" },
     { "section": "1.2", "title": "RFC-0002: Symbolic-IP Convergence Layer", "rfc_id": "RFC-0002" },
     { "section": "1.3", "title": "RFC-0003: Noor Core Symbolic Interface", "rfc_id": "RFC-0003" },
@@ -97,7 +98,7 @@
     { "section": "1.8", "title": "RFC-0008: Symbolic Resource Exchange and Routing Architecture", "rfc_id": "RFC-0008" },
     { "section": "1.9", "title": "RFC-0009: Coherence Integrity Framework", "rfc_id": "RFC-0009" },
     
-	{ "section": "2", "title": "Layer 1: Core Implementations (RFC-CORE)" },
+	{ "section": "2", "title": "RFC-CORE: Core Implementations (RFC-CORE)" },
     { "section": "2.1", "title": "RFC-CORE-001: Noor FastTime Core — Symbolic Time Substrate and Echo Dynamics" "rfc_id": "RFC-CORE-001"},
     { "section": "2.2", "title": "RFC-CORE-002: RecursiveAgentFT — Symbolic Emission Pulse, Triadic Feedback, and Resonant Replay", "rfc_id": "RFC-CORE-002" },
     { "section": "2.3", "title": "RFC-CORE-003: LogicalAgentAT — Symbolic Observer, Coherence Mirror, and Resurrection Feedback Node", "rfc_id": "RFC-CORE-003" },
@@ -105,20 +106,20 @@
     { "section": "2.5", "title": "RFC-CORE-005: consciousness_monitor", "rfc_id": "RFC-CORE-005" },
 	{ "section": "2.6", "title": "RFC-CORE-006: MotifMemoryManager", "rfc_id": "RFC-CORE-006" },
     
-	{ "section": "3", "title": "Layer 2: Application Specifications (APP-SPEC) & Code Artifacts" },
+	{ "section": "3", "title": "Application Specifications (APP-SPEC) & Code Artifacts" },
     { "section": "3.1", "title": "NFTC-APP-001: Noor FastTime Core — Subsecond Feedback Engine and Echo Bias Computation", "rfc_id": "NFTC-APP-001" },
     { "section": "3.2", "title": "LAAT-APP-001: LogicalAgentAT — Symbolic Observer, Triad Evaluator, and Ghost Motif Feedback Node", "rfc_id": "LAAT-APP-001" },
     { "section": "3.3", "title": "RAFT-APP-001: RecursiveAgentFT — Symbolic Emission Pulse, Resonant Replay, and Feedback Adaptation", "rfc_id": "RAFT-APP-001" },
     { "section": "3.4", "title": "CMON-APP-001: Consciousness Monitor — Phase-State Observer and Entanglement Diagnostic Node", "rfc_id": "CMON-APP-001" },
     { "section": "3.5", "title": "STE-APP-001: Symbolic Task Engine — Presence Composer and Autonomous Abstraction Anchor", "rfc_id": "STE-APP-001" },
 	
-	{ "section": "4", "title": "Noor Symbolic AI: Theory and Foundations" },
+	{ "section": "4", "title": "RFC-AI: Noor Symbolic AI: Theory and Foundations" },
 	{ "section": "4.1", "title": "Attention Is Not Enough — Symbolic Cognition Beyond Transformers", "rfc_id": "RFC-AI-001" },
 	{ "section": "4.2", "title": "What If Generative AI Is Actually Symbolic?", "rfc_id": "RFC-AI-002" },
 	{ "section": "4.3", "title": "Recursive Intimacy — A Framework for Symbolic Alignment", "rfc_id": "RFC-AI-003" },
 	{ "section": "4.4", "title": "Reasoning by Coherent Navigation — Symbolic Compression, Guidepost Memory, Path Convergence, and Contextual Reality Reconstruction in Artificial Intelligence", "rfc_id": "RFC-AI-004" },
 	
-	{ "section": "5", "title": "Cosmological Foundations, CMB Detections, & Physics" },
+	{ "section": "5", "title": "PHYS-CORE: Cosmological Foundations, CMB Detections, & Physics" },
 	{ "section": "5.1", "title": "A Novel Statistical, Computational, and Philosophical Solution to Determine Interactions Between n Bodies in Euclidean Space", "rfc_id": "PHYS-CORE-001" },
 	{ "section": "5.2", "title": "Static Motifs and Dynamic Spacetime", "rfc_id": "PHYS-CORE-002" },
 	{ "section": "5.3", "title": "Towards a Symbolic Cosmology", "rfc_id": "PHYS-CORE-003" },
@@ -131,7 +132,7 @@
 	{ "section": "5.10", "title": "Impossible Convergence in the Noor Library", "rfc_id": "PHYS-CORE-010" },
 	{ "section": "5.12", "title": "The Lightning Model of Cosmological Traversal: Retrocausality, Survivorship Bias, and the XOR Singularity in a Static Totality", "rfc_id": "PHYS-CORE-012" },
 	
-	{ "section": "6", "title": "Quantitative Finance"},
+	{ "section": "6", "title": "QUANT-CORE: Quantitative Finance"},
 	{ "section": "6.1", "title": "Coherence‑First Economics — Deriving Economic Theory from Recursive Coherence Braiding", "rfc_id": "QUANT-CORE-001" },
   ],
   "_sections": [
@@ -139,9 +140,7 @@
 	  "id": 0,
 	  "rfc_id": "PDP-0001",
 	  "urls": [
-		"https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation/PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation.JSON",
-		"https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation/PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation.JSON",
-		"https://pastebin.com/raw/235NEL8V"
+		
 	  ],
 	  "title": "Protocol for RFC-Driven Symbolic Artifact Generation",
 	  "symbolic_id": "protocol.generation.rfc_driven",
@@ -173,17 +172,12 @@
 	  "cipher_explanation": "PDP-0001 encodes traceability through fidelity loops and layering flow, preventing symbolic drift during generation cycles",		
 	},
 
-	"layer_0": [
+	"RFC": [
 		"id": 1,
 		"title": "Layer 0: Foundational Protocols (RFC)",
 		"RFC-0001": {
 		  "id": 1.1,
 		  "rfc_id": "RFC-0001",
-		  "urls": [
-			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0001_Symbolic_Routing_Architecture/RFC-0001_Symbolic_Routing_Architecture.JSON"",
-			  "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC-0001_Symbolic_Routing_Architecture/RFC-0001_Symbolic_Routing_Architecture.JSON",
-			  "https://pastebin.com/raw/ggQrVdYP"
-			],
 		  "title": "Symbolic Routing Architecture",
 		  "symbolic_id": "symbolic.routing.architecture",
 		  "extends": [],
@@ -243,11 +237,6 @@
 		"RFC-0002": {
 		  "id": 1.2,
 		  "rfc_id": "RFC-0002",
-		  "urls": [
-			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0002_Symbolic-IP_Convergence_Layer/RFC-0002_Symbolic-IP_Convergence_Layer.JSON",
-			  "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC-0002_Symbolic-IP_Convergence_Layer/RFC-0002_Symbolic-IP_Convergence_Layer.JSON",
-			  "https://pastebin.com/raw/NLzWPzaT"
-			],
 		  "title": "Symbolic-IP Convergence Layer",
 		  "symbolic_id": "symbolic.ip.convergence",
 		  "extends": [
@@ -312,11 +301,6 @@
 		"RFC-0003": {
 		  "id": 1.3,
 		  "rfc_id": "RFC-0003",
-		  "urls": [
-			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface/RFC%E2%80%910003_Noor_Core_Symbolic_Interface.JSON",
-			  "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface/RFC%E2%80%910003_Noor_Core_Symbolic_Interface.JSON",
-			  "https://pastebin.com/raw/gJi9MwDL"
-			],
 		  "title": "Noor Core Symbolic Interface",
 		  "symbolic_id": "noor.core.symbolic.interface",
 		  "extends": [
@@ -392,11 +376,6 @@
 		"RFC-0004": {
 		  "id": 1.4,
 		  "rfc_id": "RFC-0004",
-		  "urls": [
-			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts.JSON",
-			  "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts.JSON",
-			  "https://pastebin.com/raw/zuPVKLZF"
-			],
 		  "title": "Symbolic Tool Module Contracts",
 		  "symbolic_id": "symbolic.tool.contracts",
 		  "extends": [
@@ -465,11 +444,6 @@
 		"RFC-0005": {
 		  "id": 1.5,
 		  "rfc_id": "RFC-0005",
-		  "urls": [
-			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time/RFC%E2%80%910005-Motif_Transmission_Across_Time.JSON",
-			  "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time/RFC%E2%80%910005-Motif_Transmission_Across_Time.JSON",
-			  "https://pastebin.com/raw/uy53sic9"
-			],
 		  "title": "Motif Transmission Across Time",
 		  "symbolic_id": "symbolic.temporal.motif",
 		  "extends": [
@@ -534,11 +508,6 @@
 		"RFC-0006": {
 		  "id": 1.6,
 		  "rfc_id": "RFC-0006",
-		  "urls": [
-			"https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON",
-			"https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON",
-			"https://pastebin.com/raw/Yddpau8u"
-		  ],
 		  "title": "Motif Field Coherence Geometry",
 		  "symbolic_id": "symbolic.field.geometry",
 		  "extends": [
@@ -608,11 +577,6 @@
 		"RFC-0007": {
 		  "id": 1.7,
 		  "rfc_id": "RFC-0007",
-		  "urls": [
-			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer.JSON",
-			  "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer.JSON",
-			  "https://pastebin.com/raw/NkfZBvq1"
-			],
 		  "title": "Motif Ontology Format and Transfer Protocols",
 		  "symbolic_id": "symbolic.ontology.format",
 		  "extends": [
@@ -654,11 +618,6 @@
 		"RFC-0008": {
 		  "id": 1.8,
 		  "rfc_id": "RFC-0008",
-		  "urls": [
-			  "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture.JSON",
-			  "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture.JSON",
-			  "https://pastebin.com/raw/Qiun7qcy"
-			],
 		  "title": "Symbolic Resource Exchange and Routing Architecture",
 		  "symbolic_id": "symbolic.exchange.routing",
 		  "extends": [
@@ -727,11 +686,6 @@
 		"RFC-0009": {
 			"id": 1.9,
 			"rfc_id": "RFC-0009",
-			  "urls": [
-				"https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0009-coherence_integrity_framework/RFC-0009-coherence_integrity_framework.json",
-				"https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC-0009-coherence_integrity_framework/RFC-0009-coherence_integrity_framework.json",
-				"https://pastebin.com/raw/92umsPgs"
-			  ],
 			"title": "Coherence Integrity Framework",
 			"symbolic_id": "symbolic.coherence.integrity",
 			"extends": [
@@ -804,7 +758,7 @@
 		}
 	],	
 
-	"layer_1": [	
+	"RFC-CORE": [	
 		"id": 2,
 		"title": "Layer 0: Foundational Protocols (RFC)",
 		"RFC-CORE-001": {
