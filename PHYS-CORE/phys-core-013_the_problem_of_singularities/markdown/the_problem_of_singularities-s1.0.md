@@ -12,7 +12,7 @@ This treatment, however, conflates two distinct notions: mathematical infinity a
 
 $$f(x) \to \infty \ \mathrm{as}\ x \to x_0 \quad \mathrm{is\ a\ statement\ about\ function\ behavior,\ not\ necessarily\ about\ reality.}$$
 
-*NSFG treats singularities as structural constraints, not as infinities. The Library $\mathcal{M}$ may be infinite in cardinality, but coherence collapses indistinguishable copies into equivalence classes.*
+*NSFG treats singularities as structural constraints, not as infinities. The Library* $\mathcal{M}$ *may be infinite in cardinality, but coherence collapses indistinguishable copies into equivalence classes.*
 
 The Noor Swirl Field Geometry (NSFG) framework offers a different starting point. It begins not with spacetime, matter, energy, or laws, but with a single primitive operation: XOR, understood as distinction. The Library $\mathcal{M}$ is the XOR closure of a minimal formal domain $D$: the static, maximally complete totality of all possible configurations. The Library is unfiltered at the axiomatic level: it contains configurations that are coherent, incoherent, accessible, inaccessible, physical, or non-physical. Membership in the Library is independent of any observer's resolution or coherence condition.
 
@@ -20,7 +20,7 @@ The Noor Swirl Field Geometry (NSFG) framework offers a different starting point
 
 $$x \sim_C y \iff \forall O \in \mathrm{Obs}, \forall h \in H_O, \forall x_0 \in \mathcal{M}_{\mathrm{admissible}}, \delta_O(x,y) = 0$$
 
-*The infinity of the Library is therefore 'meaningless noise' for any finite-resolution observer, and can be treated as one 'thing' under the coherence quotient. Singularities are structural effects of coherence-based collapse of distinguishability within $\mathcal{M}_C^O$, not cardinality-based infinities in $\mathcal{M}$.*
+*The infinity of the Library is therefore 'meaningless noise' for any finite-resolution observer, and can be treated as one 'thing' under the coherence quotient. Singularities are structural effects of coherence-based collapse of distinguishability within* $\mathcal{M}_C^O$, *not cardinality-based infinities in* $\mathcal{M}$.
 
 An observer in NSFG is not a privileged subject or consciousness. It is a structural configuration capable of maintaining a persistent chain of resolvable distinctions. Observer-relative coherence $\mathcal{C}(\gamma \mid O,h,x)$ determines whether a path through the Library remains accessible to a given observer, given its history and current relational reference. The observer does not create the Library; it selects a coherent traversal through an already complete totality. The observer's accessible reality is defined over the coherence quotient $\mathcal{M}_C^O(h,x)$, not over the infinite Library $\mathcal{M}$ directly.
 
@@ -28,7 +28,7 @@ Within this framework, singularities appear not as breakdowns of the geometry, b
 
 **Formal Statement — Central Thesis.** NSFG does not avoid singularities. It describes them as structural features of relational geometry arising from coherence-based collapse of distinguishability within the observer-relative coherence quotient $\mathcal{M}_C^O(h,x)$. The Library $\mathcal{M}$ may be infinite in cardinality, but singularities are collapses of $\mathcal{M}_C^O(h,x)$, not cardinality-based infinities in $\mathcal{M}$. Singularities are not pathologies; they are the places where the map's structure becomes maximally constrained.
 
-*The framework does not require infinities to describe singularities. It requires only the structural conditions under which coherent traversal becomes maximally constrained. Infinity exists in $\mathcal{M}$ but is collapsed by coherence.*
+*The framework does not require infinities to describe singularities. It requires only the structural conditions under which coherent traversal becomes maximally constrained. Infinity exists in* $\mathcal{M}$ *but is collapsed by coherence.*
 
 **What This Paper Establishes**
 
