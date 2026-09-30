@@ -87,7 +87,7 @@
   "_index": [
     { "section": "0", "title": "PDP-0001: Protocol for RFC-Driven Symbolic Artifact Generation", "rfc_id": "PDP-0001" },
 
-	{ "section": "1", "title": "RFC: Foundational Protocols (RFC)" },
+	{ "section": "1", "title": "RFC: Foundational Protocols" },
     { "section": "1.1", "title": "RFC-0001: Symbolic Routing Architecture", "rfc_id": "RFC-0001" },
     { "section": "1.2", "title": "RFC-0002: Symbolic-IP Convergence Layer", "rfc_id": "RFC-0002" },
     { "section": "1.3", "title": "RFC-0003: Noor Core Symbolic Interface", "rfc_id": "RFC-0003" },
@@ -98,7 +98,7 @@
     { "section": "1.8", "title": "RFC-0008: Symbolic Resource Exchange and Routing Architecture", "rfc_id": "RFC-0008" },
     { "section": "1.9", "title": "RFC-0009: Coherence Integrity Framework", "rfc_id": "RFC-0009" },
     
-	{ "section": "2", "title": "RFC-CORE: Core Implementations (RFC-CORE)" },
+	{ "section": "2", "title": "RFC-CORE: Core Implementations" },
     { "section": "2.1", "title": "RFC-CORE-001: Noor FastTime Core — Symbolic Time Substrate and Echo Dynamics" "rfc_id": "RFC-CORE-001"},
     { "section": "2.2", "title": "RFC-CORE-002: RecursiveAgentFT — Symbolic Emission Pulse, Triadic Feedback, and Resonant Replay", "rfc_id": "RFC-CORE-002" },
     { "section": "2.3", "title": "RFC-CORE-003: LogicalAgentAT — Symbolic Observer, Coherence Mirror, and Resurrection Feedback Node", "rfc_id": "RFC-CORE-003" },
@@ -106,7 +106,7 @@
     { "section": "2.5", "title": "RFC-CORE-005: consciousness_monitor", "rfc_id": "RFC-CORE-005" },
 	{ "section": "2.6", "title": "RFC-CORE-006: MotifMemoryManager", "rfc_id": "RFC-CORE-006" },
     
-	{ "section": "3", "title": "Application Specifications (APP-SPEC) & Code Artifacts" },
+	{ "section": "3", "title": "APP: Application Specifications & Code Artifacts" },
     { "section": "3.1", "title": "NFTC-APP-001: Noor FastTime Core — Subsecond Feedback Engine and Echo Bias Computation", "rfc_id": "NFTC-APP-001" },
     { "section": "3.2", "title": "LAAT-APP-001: LogicalAgentAT — Symbolic Observer, Triad Evaluator, and Ghost Motif Feedback Node", "rfc_id": "LAAT-APP-001" },
     { "section": "3.3", "title": "RAFT-APP-001: RecursiveAgentFT — Symbolic Emission Pulse, Resonant Replay, and Feedback Adaptation", "rfc_id": "RAFT-APP-001" },
@@ -174,7 +174,7 @@
 
 	"RFC": [
 		"id": 1,
-		"title": "Layer 0: Foundational Protocols (RFC)",
+		"title": "RFC: Foundational Protocols",
 		"RFC-0001": {
 		  "id": 1.1,
 		  "rfc_id": "RFC-0001",
@@ -760,7 +760,7 @@
 
 	"RFC-CORE": [	
 		"id": 2,
-		"title": "Layer 0: Foundational Protocols (RFC)",
+		"title": "RFC-CORE: Core Implementations",
 		"RFC-CORE-001": {
 		  "id": 2.1,
 		  "rfc_id": "RFC-CORE-001",

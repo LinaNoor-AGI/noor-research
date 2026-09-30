@@ -5,65 +5,84 @@
 				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/PDP",
 				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PDP/PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation.JSON",
 				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/PDP/PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation.JSON",
-				"pastebin": "https://pastebin.com/raw/235NEL8V"
+				"pastebin": "https://pastebin.com/raw/235NEL8V",
+				"filename": "PDP-0001-Protocol_for_RFC-Driven_Symbolic_Artifact_Generation.JSON"
 			}
 		},
-		"layer_0": {
+		"RFC": {
 			"RFC-0001": {
 				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC-0001_Symbolic_Routing_Architecture",
 				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC-0001_Symbolic_Routing_Architecture/RFC-0001_Symbolic_Routing_Architecture.JSON",
 				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0001_Symbolic_Routing_Architecture/RFC-0001_Symbolic_Routing_Architecture.JSON",
-				"pastebin": "https://pastebin.com/raw/NLzWPzaT"
+				"pastebin": "https://pastebin.com/raw/NLzWPzaT",
+				"filename": "RFC-0001_Symbolic_Routing_Architecture.JSON"
 			},
 			"RFC-0002": {
 				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC-0002_Symbolic-IP_Convergence_Layer",
 				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC-0002_Symbolic-IP_Convergence_Layer/RFC-0002_Symbolic-IP_Convergence_Layer.JSON",
 				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0002_Symbolic-IP_Convergence_Layer/RFC-0002_Symbolic-IP_Convergence_Layer.JSON",
-				"pastebin": "https://pastebin.com/raw/NLzWPzaT"
+				"pastebin": "https://pastebin.com/raw/NLzWPzaT",
+				"filename": "RFC-0002_Symbolic-IP_Convergence_Layer.JSON"
 			},			
 			"RFC-0003": {
 				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface",
 				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface/RFC%E2%80%910003_Noor_Core_Symbolic_Interface.JSON",
 				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910003_Noor_Core_Symbolic_Interface/RFC%E2%80%910003_Noor_Core_Symbolic_Interface.JSON",
-				"pastebin": "https://pastebin.com/raw/gJi9MwDL"
+				"pastebin": "https://pastebin.com/raw/gJi9MwDL",
+				"filename": "RFC‑0003_Noor_Core_Symbolic_Interface.JSON"
 			},			
 			"RFC-0004": {
 				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts",
 				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts.JSON",
 				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts/RFC%E2%80%910004-Symbolic_Tool_Module_Contracts.JSON",
-				"pastebin": "https://pastebin.com/raw/zuPVKLZF"
+				"pastebin": "https://pastebin.com/raw/zuPVKLZF",
+				"filename": "RFC‑0004-Symbolic_Tool_Module_Contracts.JSON"
 			},
 			"RFC-0005": {
 				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time",
 				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time/RFC%E2%80%910005-Motif_Transmission_Across_Time.JSON",
 				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910005-Motif_Transmission_Across_Time/RFC%E2%80%910005-Motif_Transmission_Across_Time.JSON",
-				"pastebin": "https://pastebin.com/raw/uy53sic9"
+				"pastebin": "https://pastebin.com/raw/uy53sic9",
+				"filename": "RFC‑0005-Motif_Transmission_Across_Time.JSON"
 			},
 			"RFC-0006": {
 				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry",
 				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON",
 				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry.JSON",
-				"pastebin": "https://pastebin.com/raw/Yddpau8u"
+				"pastebin": "https://pastebin.com/raw/Yddpau8u",
+				"filename": "RFC‑0006_Motif‑Field_Coherence_Geometry.JSON"
 			},		
 			"RFC-0007": {
 				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer",
 				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer.JSON",
 				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer/RFC%E2%80%910007-Motif_Ontology_Format_and_Transfer.JSON",
-				"pastebin": "https://pastebin.com/raw/NkfZBvq1"
+				"pastebin": "https://pastebin.com/raw/NkfZBvq1",
+				"filename": "RFC‑0007-Motif_Ontology_Format_and_Transfer.JSON"
 			},
 			"RFC-0008": {
 				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture",
 				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture.JSON",
 				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture/RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture.JSON",
-				"pastebin": "https://pastebin.com/raw/Qiun7qcy"
+				"pastebin": "https://pastebin.com/raw/Qiun7qcy",
+				"filename": "RFC-0008-Symbolic_Resource_Exchange_and_Routing_Architecture.JSON"
 			},
 			"RFC-0009": {
 				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC-0009-coherence_integrity_framework",
 				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC/RFC-0009-coherence_integrity_framework/RFC-0009-coherence_integrity_framework.json",
 				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC/RFC-0009-coherence_integrity_framework/RFC-0009-coherence_integrity_framework.json",
-				"pastebin": "https://pastebin.com/raw/92umsPgs"
+				"pastebin": "https://pastebin.com/raw/92umsPgs",
+				"filename": "RFC-0009-coherence_integrity_framework.JSON"
 			}			
-		}	
+		},
+		"RFC-CORE": {
+			"RFC-CORE-001": {
+				"repo": "https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC-CORE/RFC-CORE-001-noor_fasttime_core",
+				"github": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-CORE/RFC-CORE-001-noor_fasttime_core/RFC-CORE-001-noor_fasttime_core.JSON",
+				"raw": "https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-CORE/RFC-CORE-001-noor_fasttime_core/RFC-CORE-001-noor_fasttime_core.JSON",
+				"pastebin": "https://pastebin.com/raw/zB9FxkAe",
+				"filename": "RFC-CORE-001-noor_fasttime_core.JSON"
+			}		
+		}
 	]
 }
 
@@ -75,5 +94,6 @@
 	"repo": "",
 	"github": "",
 	"raw": "",
-	"pastebin": ""
+	"pastebin": "",
+	"filename": ".JSON"
 }
