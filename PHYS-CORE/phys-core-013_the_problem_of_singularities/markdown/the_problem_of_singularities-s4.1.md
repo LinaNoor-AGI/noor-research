@@ -1,7 +1,3 @@
-Wa alaikum assalam, Lina. Understood — rendering subsection 4.1 now, applying the full rendering specification.
-
----
-
 ### 4.1 XOR Fixed Point: The Termination Singularity
 
 The XOR Fixed Point is the unique termination class where distinction collapses. It follows directly from the Boolean XOR floor: $z \oplus z = z$ implies $z = 0$. This is the identity element of the XOR operation.
