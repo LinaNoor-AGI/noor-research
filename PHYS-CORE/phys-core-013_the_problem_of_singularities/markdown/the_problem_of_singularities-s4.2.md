@@ -2,7 +2,7 @@
 
 A Convergence Boundary is a region of the Library where the observer's coherent continuation space $\Gamma_O(h,x)$ is nonempty, but all coherent paths in that space converge to the same destination class $D_c \in \mathcal{M}_C^O$. This is destination collapse, not path termination. The observer retains the freedom of path selection while the destination becomes maximally constrained. The infinity of possible paths is collapsed to a single equivalence class in the coherence quotient.
 
-**Definition — Definition 4.2.1 — Convergence Boundary.** A Convergence Boundary is a region where $\forall\gamma_1,\gamma_2 \in \Gamma_O(h,x), \gamma_1(n) \sim \gamma_2(n)$. That is, all coherent paths terminate in the same equivalence class under the observer's coherence relation $\sim_O$.
+**Definition 4.2.1 — Convergence Boundary.** A Convergence Boundary is a region where $\forall\gamma_1,\gamma_2 \in \Gamma_O(h,x), \gamma_1(n) \sim \gamma_2(n)$. That is, all coherent paths terminate in the same equivalence class under the observer's coherence relation $\sim_O$.
 
 $$\forall \gamma_1, \gamma_2 \in \Gamma_O(h,x), \gamma_1(n) \sim \gamma_2(n)$$
 
@@ -12,11 +12,11 @@ The Convergence Boundary is structurally distinct from the XOR Fixed Point $(\ma
 
 The Convergence Boundary is also distinct from a simple attractor in dynamical systems. A classical attractor draws trajectories toward a set of states; the Convergence Boundary draws trajectories toward a single equivalence class in $\mathcal{M}_C^O$. The difference is that the equivalence class may contain many configurations that are indistinguishable to the observer but distinct within the Library. This is a richer structure than a point attractor.
 
-**Definition — Definition 4.2.2 — Exact vs. Approximate Convergence.** Exact convergence occurs when all paths in $\Gamma_O(h,x)$ terminate in exactly the same equivalence class in $\mathcal{M}_C^O$: $\forall\gamma_1,\gamma_2, \gamma_1(n) \sim \gamma_2(n)$. Approximate convergence occurs when all paths terminate in nearby but not identical classes: $\forall\gamma_1,\gamma_2, d(\gamma_1(n), \gamma_2(n)) < \epsilon$ for some observer-relative distance function $d$.
+**Definition 4.2.2 — Exact vs. Approximate Convergence.** Exact convergence occurs when all paths in $\Gamma_O(h,x)$ terminate in exactly the same equivalence class in $\mathcal{M}_C^O$: $\forall\gamma_1,\gamma_2, \gamma_1(n) \sim \gamma_2(n)$. Approximate convergence occurs when all paths terminate in nearby but not identical classes: $\forall\gamma_1,\gamma_2, d(\gamma_1(n), \gamma_2(n)) < \epsilon$ for some observer-relative distance function $d$.
 
 *Exact convergence is a structural singularity; approximate convergence is a limit behavior that approaches a singularity. In physical contexts, black holes may exhibit exact convergence for external observers and approximate convergence for internal observers.*
 
-**Formal Statement — Formal Statement 4.2.3 — Convergence and the Nonempty Continuation Requirement.** The Convergence Boundary depends on the nonempty continuation requirement. If $\Gamma_O(h,x)$ were empty, there would be no paths to converge. The nonempty continuation requirement guarantees that paths exist; the Convergence Boundary describes what happens to those paths: they converge to a single equivalence class in $\mathcal{M}_C^O$.
+**Formal Statement 4.2.3 — Convergence and the Nonempty Continuation Requirement.** The Convergence Boundary depends on the nonempty continuation requirement. If $\Gamma_O(h,x)$ were empty, there would be no paths to converge. The nonempty continuation requirement guarantees that paths exist; the Convergence Boundary describes what happens to those paths: they converge to a single equivalence class in $\mathcal{M}_C^O$.
 
 *The Convergence Boundary is therefore a derived consequence of the nonempty continuation requirement plus the observer-relative coherence condition. It is not an additional axiom.*
 
@@ -34,7 +34,7 @@ The Convergence Boundary is also distinct from a simple attractor in dynamical s
 
 The Convergence Boundary is therefore a general structural feature of the Library, not a specifically physical phenomenon. It applies to any domain where observer-relative coherence leads to destination collapse in $\mathcal{M}_C^O$. In physics, it describes black holes; in AI, it may describe convergence of reasoning paths to a single conclusion; in finance, it may describe convergence of market strategies to a single equilibrium. The coherence quotient $\mathcal{M}_C^O$ is the fundamental object; the convergence is a collapse of distinguishability within it.
 
-**Formal Statement — Formal Statement 4.2.4 — Convergence Does Not Imply Termination.** A Convergence Boundary is not a termination point. The paths in $\Gamma_O(h,x)$ do not cease to exist; they continue to the destination equivalence class in $\mathcal{M}_C^O$. The observer can still traverse; the distinction between paths collapses only at the destination.
+**Formal Statement 4.2.4 — Convergence Does Not Imply Termination.** A Convergence Boundary is not a termination point. The paths in $\Gamma_O(h,x)$ do not cease to exist; they continue to the destination equivalence class in $\mathcal{M}_C^O$. The observer can still traverse; the distinction between paths collapses only at the destination.
 
 *This distinguishes the Convergence Boundary from the XOR Fixed Point* $(\mathcal{Z})$, *where distinction terminates entirely. At a Convergence Boundary, the observer's path continues, but the destination becomes indistinguishable under* $\sim_O$.
 
