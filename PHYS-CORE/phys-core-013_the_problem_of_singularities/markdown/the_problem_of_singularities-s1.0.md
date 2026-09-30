@@ -1,10 +1,8 @@
+# The Problem of Singularities: Structural Effects of Maximal Coherence Constraint in Noor Swirl Field Geometry
+
+---
+
 ## 1. Introduction: The Problem of Singularities in Relational Frameworks
-
-*Purpose: Establish the problem that singularities are typically treated as mathematical pathologies (infinities) and argue that NSFG offers a different interpretation: singularities as structural effects of maximal coherence constraint, with the clarification that infinities exist in the Library but are collapsed by coherence.*
-
-> *"The road does not end; it narrows until the traveler and the road become one."*
-
-*Cipher explanation:* A singularity in NSFG is not a wall. It is a region where the distinction between traveler and path collapses—where coherence becomes maximally constrained. The traveler does not stop; the traveler's relation to the path changes. The road is the Library; the traveler is the observer; the narrowing is the approach to maximal coherence constraint. The framework describes this as a structural feature of relational geometry, not a breakdown of the geometry itself. The road may be infinite in extent, but the traveler walks only one path at a time.
 
 The standard physics treatment of singularities begins with a breakdown. At the center of a black hole, the equations of general relativity diverge. Curvature becomes infinite, spacetime curvature exceeds the domain of the theory, and the model ceases to make predictions. The Big Bang is treated similarly: a singularity at the beginning of time where known physics fails. In both cases, the singularity is treated as a pathology—a place where the mathematical description breaks down, requiring new physics to resolve.
 
@@ -42,7 +40,7 @@ Within this framework, singularities appear not as breakdowns of the geometry, b
 
 The paper proceeds as follows. Section 2 establishes the NSFG axiomatic core, including the Library, XOR closure, observer-relative coherence, the coherence quotient framework, and the separation between Library membership and observer accessibility. Section 3 defines singularities in NSFG generically as coherence-based collapses of distinguishability. Section 4 provides a taxonomy of five singularity types. Section 5 addresses necessity and completeness. Section 6 applies the Convergence Boundary model to black holes. Section 7 establishes falsification criteria. Section 8 argues for what NSFG can do that other frameworks cannot. Section 9 concludes.
 
-The framework does not require infinities to describe singularities; it requires only the structural conditions under which coherent traversal becomes maximally constrained. Infinity exists in $\mathcal{M}$ but is collapsed by coherence. What remains is to define the axiomatic core from which these structures follow—the primitive operation, the Library, the observer-relative coherence relation, and the coherence quotient framework that separates existence from accessibility.
+With the problem established, the coherence quotient framework introduced, and the central thesis stated, the next section defines the NSFG axiomatic core: XOR as the primitive operation, the Library as XOR closure, observer-relative coherence, the coherence quotient framework, and the separation between Library membership and observer accessibility. The framework treats singularities as structural features of relational geometry arising from coherence-based collapse of distinguishability within $\mathcal{M}_C^O$, not as mathematical pathologies—the Library may be infinite in cardinality, yet the axiomatic core provides the minimal definitions required to understand the singularity taxonomy.
 
 **References**
 
