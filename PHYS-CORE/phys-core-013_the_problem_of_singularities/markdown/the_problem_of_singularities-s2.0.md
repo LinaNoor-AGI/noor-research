@@ -30,7 +30,7 @@ $$\mathcal{C}(\gamma \mid O,h,x) = \prod_{i=0}^{n-1} \Theta(\delta_O(x_i,x_{i+1}
 
 $$A_O(h,x) = \{ y \in \mathcal{M} \mid \exists\gamma \in \mathrm{Path}(\mathcal{M}) \ \mathrm{beginning\ at}\ (h,x) \ \mathrm{and\ containing}\ y \ \mathrm{such\ that}\ \mathcal{C}(\gamma \mid O,h,x) = 1 \}$$
 
-*Accessibility is a relation over the Library, not a determinant of Library membership. A configuration outside $A_O(h,x)$ remains in $\mathcal{M}$.*
+Accessibility is a relation over the Library, not a determinant of Library membership. A configuration outside $A_O(h,x)$ remains in $\mathcal{M}$.
 
 **Definition 2.6 — Nonempty Coherent Continuation.** For every admissible observer-relative reference configuration $x \in \mathcal{M}_{\mathrm{admissible}}$, the coherent continuation set $\Gamma_O(h,x)$ is nonempty.
 
