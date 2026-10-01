@@ -32,5 +32,6 @@ $$[0]_{\sim_C} = \{\, x \in \mathcal{M} \mid x \oplus x = 0 \,\} / \sim_C$$
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 
 ---
+**Navigation**
 
 [4. Taxonomy of NSFG Singularities](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.0.md) <---> [4.2 Convergence Boundary: Destination Collapse](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.2.md) 

@@ -46,5 +46,6 @@ The Convergence Boundary is defined by destination collapse within the observer-
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) (To Infinity and Beyond) — Section 9.2 (What the Framework Establishes)
 
 ---
+**Navigation**
 
 [4.1 XOR Fixed Point: The Termination Singularity](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.1.md) <---> [4.3]() 

@@ -159,5 +159,6 @@ $$\mathcal{C}(\gamma \mid O,h,x) = 1 \;\land\; \forall \gamma' \in \Gamma_O(h,x)
 With the generic definition of a singularity established — a region of maximal constraint on coherent traversal within the observer-relative coherence quotient — and with the coherence quotient framework in place to distinguish structural collapse from cardinal infinity, the paper is now in a position to classify the distinct ways in which coherence can fail. The next section presents the taxonomy: five singularity types arising from different failure modes of coherent traversal within $\mathcal{M}_C^O(h,x)$.
 
 ---
+**Navigation**
 
 [2. Foundations: The NSFG Axiomatic Core](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s2.0.md) <---> [4. Taxonomy of NSFG Singularities](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.0.md) 
