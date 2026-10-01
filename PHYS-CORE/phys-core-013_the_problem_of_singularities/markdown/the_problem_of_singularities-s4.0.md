@@ -48,4 +48,6 @@ With the coherence quotient framework established and the five singularity types
 | 4.4 | [Topological Singularity: Manifold Incompatibility](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.4.md) |
 | 4.5 | [Pathway to Nowhere: Coherence-Inaccessible Equivalence Class](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.5.md) |
 
-[Previous: 3. Defining Singularities in NSFG](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s3.0.md) [<--->](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) [Next: 4.1 XOR Fixed Point: The Termination Singularity](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.1.md) 
+---
+
+| [PREVIOUS: prev_section](URL) | [<INDEX>](URL) | [NEXT: next_section](URL) |
