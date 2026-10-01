@@ -62,4 +62,4 @@ With these foundations established, we can now define what a singularity means i
 
 ---
 
-[2. Foundations: The NSFG Axiomatic Core](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s2.0.md) <---> [3. Defining Singularities in NSFG](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s3.0.md)
+[1. Introduction: The Problem of Singularities in Relational Frameworks](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s1.0.md) <---> [3. Defining Singularities in NSFG](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s3.0.md)

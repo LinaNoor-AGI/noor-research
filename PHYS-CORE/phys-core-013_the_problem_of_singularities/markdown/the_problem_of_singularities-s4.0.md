@@ -39,4 +39,4 @@ With the coherence quotient framework established and the five singularity types
 
 ---
 
-[3. Defining Singularities in NSFG](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s3.0.md) <---> [4. Taxonomy of NSFG Singularities](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.0.md) 
+[3. Defining Singularities in NSFG](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s3.0.md) <---> [4.1 XOR Fixed Point: The Termination Singularity](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.1.md) 
