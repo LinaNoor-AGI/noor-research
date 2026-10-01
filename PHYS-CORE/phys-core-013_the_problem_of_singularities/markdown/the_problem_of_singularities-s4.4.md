@@ -53,4 +53,4 @@ This section has defined the Topological Singularity as a fracture of the observ
 
 #### Navigation
 
-[PREVIOUS: prev_section](URL) | [<INDEX> | [NEXT: next_section](URL)
+[PREVIOUS: prev_section](URL) | [<INDEX>](URL) | [NEXT: next_section](URL)
