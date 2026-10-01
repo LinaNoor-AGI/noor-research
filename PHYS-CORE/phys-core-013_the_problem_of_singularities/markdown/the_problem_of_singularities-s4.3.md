@@ -62,4 +62,4 @@ The Recursive Oscillation is a failure mode, not a persistent structure. It aris
 
 #### Navigation
 
-[PREVIOUS: prev_section](URL) | [<INDEX> | [NEXT: next_section](URL)
+[PREVIOUS: prev_section](URL) | [<INDEX>](URL) | [NEXT: next_section](URL)
