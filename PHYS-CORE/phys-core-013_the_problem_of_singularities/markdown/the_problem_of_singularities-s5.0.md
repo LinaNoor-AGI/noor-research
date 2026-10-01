@@ -154,6 +154,6 @@ With the taxonomy established and its completeness addressed, the framework is n
 
 ---
 
-#### Navigation
-
-[PREVIOUS: prev_section](URL) | [<INDEX>](URL) | [NEXT: next_section](URL)
+| PREVIOUS | | NEXT |
+| --- | --- | --- | 
+| [prev_section](URL) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](URL) |

@@ -38,7 +38,6 @@ With the coherence quotient framework established and the five singularity types
 - PHYS-CORE-013 (The Problem of Singularities) — [Section 2 (Foundations)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s2.0.md), [Section 3 (Defining Singularities)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s3.0.md)
 
 ---
-**Navigation**
 
 | ID | Subsection Title |
 | --- | --- | 

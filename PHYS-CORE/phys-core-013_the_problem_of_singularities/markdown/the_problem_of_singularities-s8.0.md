@@ -121,6 +121,6 @@ With this, Section 8 stands as a structural, observer-relative, domain-neutral a
 
 ---
 
-#### Navigation
-
-[PREVIOUS: prev_section](URL) | [<INDEX>](URL) | [NEXT: next_section](URL)
+| PREVIOUS | | NEXT |
+| --- | --- | --- | 
+| [prev_section](URL) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](URL) |

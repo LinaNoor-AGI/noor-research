@@ -49,6 +49,7 @@ With the problem established, the coherence quotient framework introduced, and t
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 
 ---
-**Navigation**
 
-[<--->](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) [Next: 2. Foundations: The NSFG Axiomatic Core](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s2.0.md)
+| PREVIOUS | | NEXT |
+| --- | --- | --- | 
+| [prev_section](URL) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](URL) |

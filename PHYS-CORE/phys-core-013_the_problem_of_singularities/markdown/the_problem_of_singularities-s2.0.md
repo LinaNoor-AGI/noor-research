@@ -61,6 +61,7 @@ With these foundations established, we can now define what a singularity means i
 - [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 0.1 (Maximal Totality), Section 2 (XOR), Section 3 (Library), Section 5 (Observer-Relative Resolution), Section 6 (Persistence), Section 7 (Coherence), Section 8 (Accessible Reality)
 
 ---
-**Navigation**
 
-[Previous: 1. Introduction: The Problem of Singularities in Relational Frameworks](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s1.0.md) [<--->](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) [Next: 3. Defining Singularities in NSFG](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s3.0.md) 
+| PREVIOUS | | NEXT |
+| --- | --- | --- | 
+| [prev_section](URL) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](URL) |
