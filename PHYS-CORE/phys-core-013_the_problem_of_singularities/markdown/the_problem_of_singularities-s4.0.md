@@ -50,4 +50,6 @@ With the coherence quotient framework established and the five singularity types
 
 ---
 
-| [PREVIOUS: prev_section](URL) | [<INDEX>](URL) | [NEXT: next_section](URL) |
+| PREVIOUS | | NEXT |
+| --- | --- | --- | 
+| [prev_section](URL) | [<INDEX>](URL) | [next_section](URL) |
