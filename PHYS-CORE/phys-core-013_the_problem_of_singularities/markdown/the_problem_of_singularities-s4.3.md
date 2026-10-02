@@ -2,7 +2,7 @@
 
 The Recursive Oscillation singularity emerges from a specific failure mode of the coherence relation: the inability to close a triad within the observer-relative coherence quotient $\mathcal{M}_C^O(h,x)$. In the NSFG framework, a triad is the minimal relational structure required to stabilize a system into a single equivalence class. A pure dyad—a pair of complementary configurations—is generically unstable. It may cancel, decohere, or drift. Without a third relational vector to provide closure, the system cannot resolve to a stable equivalence class. Instead, it enters a cycle: a sequence of equivalence classes that repeats without generating new distinction.
 
-**Definition — Definition 4.3.1 — Recursive Oscillation.** A Recursive Oscillation is a region of the observer-relative coherent continuation space where the observer can traverse a cycle of equivalence classes in $\mathcal{M}_C^O(h,x)$, but no new distinction emerges. The system is trapped in a repeating sequence of equivalence classes, and the triad fails to close. The oscillation is a failure mode of coherence, not a cardinality-based infinity.
+**Definition 4.3.1 — Recursive Oscillation.** A Recursive Oscillation is a region of the observer-relative coherent continuation space where the observer can traverse a cycle of equivalence classes in $\mathcal{M}_C^O(h,x)$, but no new distinction emerges. The system is trapped in a repeating sequence of equivalence classes, and the triad fails to close. The oscillation is a failure mode of coherence, not a cardinality-based infinity.
 
 $$x_i \rightarrow x_{i+1} \rightarrow \ldots \rightarrow x_{i+n} = x_i, \ \mathrm{and\ no\ new\ distinction\ emerges\ in}\ \mathcal{M}_C^O(h,x)$$
 
@@ -10,13 +10,13 @@ $$x_i \rightarrow x_{i+1} \rightarrow \ldots \rightarrow x_{i+n} = x_i, \ \mathr
 
 The Recursive Oscillation is fundamentally a failure of triadic closure within the coherence quotient. In the NSFG framework, a triad is the minimal structure capable of stabilizing a system into a single equivalence class. A dyad—a pair of complementary configurations—is generically unstable because it lacks an independent contextual reference. The dyad cannot correct perturbations; it cannot anchor itself. The introduction of a third relational vector is required to close the triad and stabilize the system into a single equivalence class in $\mathcal{M}_C^O(h,x)$.
 
-**Formal Statement — Formal Statement 4.3.1 — Failed Triadic Closure.** The Recursive Oscillation occurs when the coherence vectors of the triad do not sum to zero, and the residual oscillates without converging. The system cannot close to a single equivalence class in $\mathcal{M}_C^O(h,x)$.
+**Formal Statement 4.3.1 — Failed Triadic Closure.** The Recursive Oscillation occurs when the coherence vectors of the triad do not sum to zero, and the residual oscillates without converging. The system cannot close to a single equivalence class in $\mathcal{M}_C^O(h,x)$.
 
 $$\mathbf{v}_G + \mathbf{v}_{G^{-1}} + \mathbf{v}_H \neq 0, \ \mathrm{and\ the\ residual\ oscillates\ in}\ \mathcal{M}_C^O(h,x)$$
 
 *The triad is incomplete. The residual vector represents the unresolved tension in the system. Because the residual oscillates, the system cannot converge to a stable equivalence class. The oscillation is a coherence-based failure, not a cardinality-based infinity.*
 
-**Formal Statement — Formal Statement 4.3.2 — Dyadic Instability as the Source.** A pure dyad is generically unstable under the NSFG coherence relation. It may cancel, decohere, or drift in $\mathcal{M}_C^O(h,x)$. Without an external reference, perturbations cannot be corrected.
+**Formal Statement 4.3.2 — Dyadic Instability as the Source.** A pure dyad is generically unstable under the NSFG coherence relation. It may cancel, decohere, or drift in $\mathcal{M}_C^O(h,x)$. Without an external reference, perturbations cannot be corrected.
 
 $$\mathrm{A\ pure\ dyad\ is\ generically\ unstable;\ it\ cancels,\ decoheres,\ or\ drifts\ in}\ \mathcal{M}_C^O(h,x).$$
 
@@ -24,7 +24,7 @@ $$\mathrm{A\ pure\ dyad\ is\ generically\ unstable;\ it\ cancels,\ decoheres,\ o
 
 The Recursive Oscillation is distinct from a stable limit cycle. A stable limit cycle is a persistent structure: the system can maintain the cycle indefinitely without degradation. The Recursive Oscillation is a failure mode: the system is trapped in a cycle and cannot resolve to a stable equivalence class. The distinction is subtle but important. A stable limit cycle is a coherent structure; a Recursive Oscillation is a coherence failure. The infinitude of configurations in $\mathcal{M}$ is collapsed by coherence into an unresolved cycle of equivalence classes.
 
-**Definition — Definition 4.3.2 — Stable Limit Cycle Distinction.** A stable limit cycle is a periodic path in the observer-relative coherent continuation space that can be maintained indefinitely as a coherent structure. A Recursive Oscillation is a periodic path that fails to resolve to a stable equivalence class in $\mathcal{M}_C^O(h,x)$.
+**Definition 4.3.2 — Stable Limit Cycle Distinction.** A stable limit cycle is a periodic path in the observer-relative coherent continuation space that can be maintained indefinitely as a coherent structure. A Recursive Oscillation is a periodic path that fails to resolve to a stable equivalence class in $\mathcal{M}_C^O(h,x)$.
 
 $$\mathrm{Stable\ limit\ cycle:\ } \exists \gamma \in \Gamma_O(h,x) \ \mathrm{such\ that}\ \gamma \ \mathrm{is\ periodic\ and}\ \mathcal{C}(\gamma | O) = 1 \ \mathrm{indefinitely\ in}\ \mathcal{M}_C^O(h,x).$$
 
