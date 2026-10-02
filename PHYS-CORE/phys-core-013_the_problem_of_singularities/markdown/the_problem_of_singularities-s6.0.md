@@ -2,7 +2,7 @@
 
 The Convergence Boundary singularity type introduced in Section 4.2 provides the NSFG model for black holes. A black hole is not a region where the Library ends or where mathematical quantities diverge to infinity. It is a region where observer-relative coherence becomes maximally constrained: all coherent paths converge to a single equivalence class. The observer outside the horizon sees this convergence as a black hole singularity; the observer inside the horizon experiences a different relational structure.
 
-**Definition — Definition 6.1 — Black Hole as Convergence Boundary.** A black hole is an observer-relative Convergence Boundary: a region where the coherent continuation set $\Gamma_O(h,x)$ is nonempty, but every coherent path in $\Gamma_O(h,x)$ converges to the same equivalence class.
+**Definition 6.1 — Black Hole as Convergence Boundary.** A black hole is an observer-relative Convergence Boundary: a region where the coherent continuation set $\Gamma_O(h,x)$ is nonempty, but every coherent path in $\Gamma_O(h,x)$ converges to the same equivalence class.
 
 $$\forall \gamma_1,\gamma_2 \in \Gamma_O(h,x) \ \mathrm{with}\ x \ \mathrm{inside\ the\ horizon},\ \gamma_1(n) \sim \gamma_2(n)$$
 
@@ -10,7 +10,7 @@ $$\forall \gamma_1,\gamma_2 \in \Gamma_O(h,x) \ \mathrm{with}\ x \ \mathrm{insid
 
 The distinction between the outside and inside observers is crucial. The observer outside the horizon sees all paths converge to a single class—what is conventionally called the singularity. The observer inside the horizon experiences a different relational structure: the paths are still coherent, but their destinations are constrained to a single class. The black hole is therefore a boundary in the observer's accessible reality, not a boundary in the Library itself.
 
-**Definition — Definition 6.2 — Information Convergence (Revised).** This model resolves the information paradox without requiring exotic physics. Information is not destroyed; it converges to an equivalence class. The observer outside the horizon loses the ability to distinguish different infalling states because all coherent paths lead to the same class from that observer's perspective. The observer inside the horizon, however, would see the distinctions that remain resolvable at their resolution.
+**Definition 6.2 — Information Convergence (Revised).** This model resolves the information paradox without requiring exotic physics. Information is not destroyed; it converges to an equivalence class. The observer outside the horizon loses the ability to distinguish different infalling states because all coherent paths lead to the same class from that observer's perspective. The observer inside the horizon, however, would see the distinctions that remain resolvable at their resolution.
 
 The key nuance is this: convergence to an equivalence class preserves information in the Library, but not necessarily for the observer. The equivalence class encodes the relational structure of the infalling matter, but different infalling states may map to the same class from the outside observer's perspective. This is not information loss at the ontological level—it is information convergence at the observer-relative level. The outside observer loses the ability to distinguish the states; the Library does not.
 

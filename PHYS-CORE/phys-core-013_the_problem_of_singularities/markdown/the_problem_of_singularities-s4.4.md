@@ -4,7 +4,7 @@ The Topological Singularity is distinct from the Convergence Boundary. In a Conv
 
 The fracture occurs only in the observer-relative accessible quotient $\mathcal{M}_C^O(h,x)$. The underlying Library $\mathcal{M}$ remains a single static totality, which may be infinite in cardinality. The separation is a property of the observer's coherence relation, not an intrinsic partition of the Library. The infinity of $\mathcal{M}$ is collapsed by coherence into the disconnected components of $\mathcal{M}_C^O(h,x)$.
 
-**Definition — Definition 4.4.1 — Topological Singularity.** A Topological Singularity is a region where the observer-relative coherence quotient $\mathcal{M}_C^O(h,x)$ becomes disconnected. Formally: $\exists \gamma_1, \gamma_2 \in \Gamma_O(h,x)$ such that $\gamma_1$ and $\gamma_2$ belong to different connected components of $\mathcal{M}_C^O(h,x)$.
+**Definition 4.4.1 — Topological Singularity.** A Topological Singularity is a region where the observer-relative coherence quotient $\mathcal{M}_C^O(h,x)$ becomes disconnected. Formally: $\exists \gamma_1, \gamma_2 \in \Gamma_O(h,x)$ such that $\gamma_1$ and $\gamma_2$ belong to different connected components of $\mathcal{M}_C^O(h,x)$.
 
 $$\mathcal{M}_C^O(h,x) = \mathcal{Q}_1 \cup \mathcal{Q}_2, \ \mathrm{with}\ \mathcal{Q}_1 \cap \mathcal{Q}_2 = \varnothing \ \mathrm{and\ no\ coherent\ path\ connecting\ them}$$
 
@@ -14,7 +14,7 @@ This is a richer structure than the Convergence Boundary. The observer does not 
 
 The topological fracture is characterized by the disconnection of the accessible quotient $\mathcal{M}_C^O(h,x)$. The dimension of the quotient remains positive—there are still coherently distinguishable equivalence classes available—but the space is no longer connected. The observer cannot continuously traverse from one component to another.
 
-**Definition — Definition 4.4.2 — Connected Components of Accessible Reality.** The connected components of $\mathcal{M}_C^O(h,x)$ are the maximal subsets $\mathcal{Q}_1, \mathcal{Q}_2, \ldots$ such that for any two equivalence classes within the same component, there exists a coherent path connecting them, and for any two classes in different components, no coherent path exists.
+**Definition 4.4.2 — Connected Components of Accessible Reality.** The connected components of $\mathcal{M}_C^O(h,x)$ are the maximal subsets $\mathcal{Q}_1, \mathcal{Q}_2, \ldots$ such that for any two equivalence classes within the same component, there exists a coherent path connecting them, and for any two classes in different components, no coherent path exists.
 
 $$\mathcal{M}_C^O(h,x) = \bigcup_i \mathcal{Q}_i, \ \mathrm{with}\ \mathcal{Q}_i \cap \mathcal{Q}_j = \varnothing \ \mathrm{for}\ i \neq j, \ \mathrm{and}\ \forall q,q' \in \mathcal{Q}_i, \exists \gamma \in \Gamma_O(h,x) \ \mathrm{connecting}\ q \ \mathrm{and}\ q'$$
 
@@ -24,7 +24,7 @@ $$\mathcal{M}_C^O(h,x) = \bigcup_i \mathcal{Q}_i, \ \mathrm{with}\ \mathcal{Q}_i
 
 This singularity type may be the NSFG model of quantum branching or multiverse effects. In quantum mechanics, superposition collapse produces branching outcomes. In NSFG terms, the observer's accessible coherence quotient splits into disconnected components, each representing a different branch of accessible reality. The infinity of configurations in $\mathcal{M}$ collapses under coherence to the finite set of accessible components.
 
-**Formal Statement — Formal Statement 4.4.1 — Relationship to Other Singularity Types.** The Topological Singularity is distinct from the XOR Fixed Point, the Convergence Boundary, and the Recursive Oscillation:
+**Formal Statement 4.4.1 — Relationship to Other Singularity Types.** The Topological Singularity is distinct from the XOR Fixed Point, the Convergence Boundary, and the Recursive Oscillation:
 
 $$\begin{array}{lll} \mathrm{XOR\ Fixed\ Point} & : & \dim(\mathcal{M}_C^O(h,x)) = 0 \\ \mathrm{Convergence\ Boundary} & : & \gamma_1(n) \sim \gamma_2(n) \ \mathrm{for\ all}\ \gamma_1,\gamma_2 \in \Gamma_O(h,x) \\ \mathrm{Recursive\ Oscillation} & : & \Gamma_O(h,x) \ \mathrm{is\ a\ loop\ with\ no\ resolution} \\ \mathrm{Topological\ Singularity} & : & \mathcal{M}_C^O(h,x) \ \mathrm{is\ disconnected} \end{array}$$
 
@@ -32,7 +32,7 @@ $$\begin{array}{lll} \mathrm{XOR\ Fixed\ Point} & : & \dim(\mathcal{M}_C^O(h,x))
 
 The Topological Singularity does not imply that the Library itself is disconnected. The Library $\mathcal{M}$ remains a single static totality, which may be infinite in cardinality. The fracture is observer-relative and coherence-based: it describes a property of $\mathcal{M}_C^O(h,x)$, not of $\mathcal{M}$. Another observer with a different coherence condition or resolution threshold may experience a connected accessible quotient across the same region of the Library.
 
-**Formal Statement — Formal Statement 4.4.2 — Library Invariance.** The Library $\mathcal{M}$ remains unchanged under the Topological Singularity. The fracture is observer-relative and coherence-based.
+**Formal Statement 4.4.2 — Library Invariance.** The Library $\mathcal{M}$ remains unchanged under the Topological Singularity. The fracture is observer-relative and coherence-based.
 
 $$\mathrm{If}\ \mathcal{M}_C^O(h,x) = \mathcal{Q}_1 \cup \mathcal{Q}_2 \ \mathrm{with}\ \mathcal{Q}_1 \cap \mathcal{Q}_2 = \varnothing, \ \mathrm{then}\ \mathcal{M} \ \mathrm{remains}\ \mathcal{M}. \ \mathrm{For\ another\ observer}\ O', \mathcal{M}_C^{O'}(h,x) \ \mathrm{may\ remain\ connected.}$$
 
