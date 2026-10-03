@@ -63,10 +63,6 @@ The binary case is consequently a minimal mathematical laboratory for the primit
 
 Once distinction has been given this minimal algebraic form, the next question is no longer what XOR means. The next question is what follows when the operation is applied repeatedly over a formal configuration domain.
 
-**References**
-
-- PHYS-CORE-000 — *A Noor Swirl Field Geometry Primer*, Section 1 (The Primitive Domain of Distinction)
-
 ---
 
 | PREVIOUS | | NEXT |
