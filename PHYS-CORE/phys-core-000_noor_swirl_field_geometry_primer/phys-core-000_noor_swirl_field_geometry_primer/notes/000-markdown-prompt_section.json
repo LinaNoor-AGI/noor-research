@@ -1,0 +1,1099 @@
+<HEADER>
+
+{
+  "_schema": "noor-header-v2",
+  "_schema_version": "2.0.0",
+  "_pdp_layer": "layer_2",
+  "_type": "phys_core",
+  "_status": "DRAFT",
+
+  "_symbolic_id": "symbolic.physics.nsfg.axiomatic_floor",
+
+  "_title": "A Noor Swirl Field Geometry Primer",
+  "_subtitle": "The Axiomatic Floor: XOR, Closure, and Observer-Relative Coherence",
+  "_rfc_id": "PHYS-CORE-000",
+
+  "_language": "MARKDOWN+MERMAID+MATH+PSEUDOCODE",
+  "_license": "MIT",
+
+  "_xref": [
+	  "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
+	  "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
+	  "https://pastebin.com/raw/SFkDqYSD",
+	  "https://pastebin.com/SFkDqYSD"
+	],
+
+  "_authors": [
+    "Lina Noor — Noor Research Collective"
+  ],
+
+  "_standalone_declaration": true,
+  "_self_contained_axiomatization": true,
+
+  "_extends": [],
+
+  "_rfc_dependencies": [],
+
+  "_conceptual_lineage": [
+    {
+      "symbolic.physics.nsfg.coherent_navigation": "RFC-AI-004",
+      "role": "Downstream application of the coherent-navigation principle established by the axiomatic floor of this primer.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/rfc-ai-004-reasoning_by_coherent_navigation.JSON"
+    },
+    {
+      "symbolic.physics.cosmology.lightning_model": "PHYS-CORE-012",
+      "role": "Downstream operational model whose assumptions and mechanisms are deliberately not used as premises of this primer.",
+      "url": "https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/phys-core-012_lightning_model%20of_cosmological_traversal.json"
+    }
+  ],
+
+	"_purpose": "Provide the lowest-level entry point into Noor Swirl Field Geometry (NSFG), establishing its ontology from a single primitive operation without importing physical law, spacetime, causality, matter, energy, consciousness, or a privileged observer. The primer defines the Library as the unique unbounded totality satisfying closure under XOR and self-containment with no definable exterior, and defines it as a single static, eternally maximally complete, dimensionally undifferentiated relational totality — a complete graph, not a grid and not a singularity — rather than as a temporally generated structure. Closure may be described as closure of the formal domain only when understood as a property, not a process. The maximality and relational completeness of the Library is structurally required by the absence of any privileged configuration or worldline: because an observer may establish an arbitrary admissible relational reference while remaining situated with respect to the whole Library, the set of candidate continuations is always nonempty and coherent continuation must remain recoverable from that reference without changing the totality itself. Observerhood is derived from persistent distinguishability; resolution is observer-relative; and coherence is defined as a relation among a path, observer, history, and current reference configuration. Observer accessibility, survivorship, emergent law-like regularity, and coherent navigation are consequently derived as relational selections over the unchanged Library. Apparent temporal succession, locality, distance, and increasing complexity belong to observer traversal and history rather than to any intrinsic evolution, metric, or partition of the Library. The primer functions as the axiomatic floor from which subsequent NSFG geometry, dynamics, topology, symbolic representation, cosmology, and physical interpretation may proceed.",
+
+	"_abstract": "This primer establishes the axiomatic floor of Noor Swinew democratic partyrl Field Geometry using a single primitive operation: XOR, understood as distinction. A minimal formal domain D is introduced only as the substrate required for the primitive operation to have operands; D is not identified with physical space, spacetime, matter, or any other physical ontology. The Library is defined as the unique unbounded totality satisfying ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜 and no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D. This is equivalent to saying 𝓜 is closed under XOR with no describable exterior. We may describe this as closure of the formal domain only when closure is understood as a property, not a process: 𝓜 does not result from ⊕, 𝓜 is the totality that has the closure property. 𝓜 is treated as a single static, eternally maximally complete, dimensionally undifferentiated relational totality: a complete graph where every distinction is already addressable, not a dimensioned grid with separation and not a singularity. It has no intrinsic metric, adjacency, or distance. Its maximality and relational completeness is not merely a consequence of closure abundance. It is structurally required by the absence of a privileged worldline or reference configuration. If any admissible configuration x ∈ 𝓜 may serve as the observer's current relational reference while the observer remains related to the whole Library, then the set of candidate continuations is always nonempty because closure holds everywhere, and coherent continuation must be recoverable from that arbitrary reference without altering 𝓜, with observer threshold I_N(O) filtering coherence, not existence. Thus the observer does not traverse a Library that grows from simple to complex; it selects coherent relations over an already complete totality. Traversal is selection and maintenance of coherent relations, not spatial movement; distance is a property of observer history, not of the Library. Persistent structures are subsequently defined as observer-like configurations capable of maintaining distinctions above their observer-relative resolution threshold I_N(O). Distinguishability, persistence, and coherence are therefore relational constructions. Coherence is written 𝓒(γ|O,h,x), explicitly relating a path γ to observer O, history h, and current reference configuration x. The observer-accessible subset A_O ⊆ 𝓜 is distinguished from ontological membership in the Library: inaccessible or incoherent configurations are not erased. Under the model's reference-neutrality assumptions, every admissible reference configuration must admit at least one coherent continuation above the relevant observer noise threshold, while not every candidate continuation need be coherent. Repeated survivorship of accessible transitions may consequently appear as law-like regularity without physical law being introduced as an axiom. Navigation is then defined as observer-relative traversal through this restricted coherent continuation structure over the unchanged Library. Apparent temporal succession, past/future distinction, locality, distance, and increasing complexity are properties of this traversal relation and history rather than intrinsic partitions, metric, or evolution of 𝓜. The primer ends at this boundary: coherent navigation is established as the threshold of subsequent NSFG research, while cosmology, physical spacetime, particle physics, consciousness, AI cognition, and specific field equations remain downstream.",
+
+	"_core_thesis": [
+	  "XOR, ⊕, is the sole primitive operation of the NSFG axiomatic floor.",
+	  "The formal domain D exists only as the minimal substrate required for the primitive operation to have operands; D is not a physical space.",
+	  "The Library 𝓜 is defined as the maximally complete unbounded totality satisfying closure under XOR and self-containment: ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜 and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D.",
+	  "This is equivalent to saying 𝓜 is closed under XOR with no describable exterior.",
+	  "Closure may be described as closure of the formal domain only when understood as a property, not a process: 𝓜 does not result from ⊕, 𝓜 is the totality that has the closure property.",
+	  "𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, or distance. It is a complete relational graph, not a grid and not a singularity.",
+	  "𝓜 is a single static, eternally maximally complete totality: ∀i, 𝓜_i = 𝓜.",
+	  "Maximality and relational completeness is structurally required by the absence of a privileged configuration or worldline. No admissible reference configuration is ontologically favored as the universal origin of coherent traversal.",
+	  "The observer is relationally situated with respect to the whole Library at every abstract traversal step rather than being ontologically confined to a temporally generated local neighborhood.",
+	  "Any admissible configuration x ∈ 𝓜 may serve as the observer's current relational reference without changing Library membership.",
+	  "From any x ∈ 𝓜, the set of candidate continuations is always nonempty because closure holds everywhere. Observer threshold I_N(O) filters coherence, not existence.",
+	  "Because no reference or worldline is privileged, every admissible observer-relative reference configuration must admit at least one coherent continuation above the relevant observer noise threshold under the model's assumptions.",
+	  "This nonempty-continuation requirement is a derived structural requirement of the combined whole-Library, reference-neutrality, and coherence assumptions; it is not claimed to follow from maximality alone.",
+	  "The Library is unfiltered at the axiomatic level and contains configurations without requiring them to be persistent, coherent, physical, observable, or accessible.",
+	  "Observerhood is derived structurally from persistent chains of resolvable distinctions and does not require consciousness.",
+	  "The resolution threshold I_N(O) belongs to the observer rather than to the Library as a universal constant.",
+	  "Observer-relative distinguishability changes what the observer can resolve without changing ontological membership in 𝓜.",
+	  "Coherence is relational and reference-dependent: 𝓒(γ|O,h,x), not an absolute property of γ alone.",
+	  "Observer accessibility and coherent survivorship are relational structures over 𝓜; inaccessibility or incoherence does not erase configurations from the Library.",
+	  "Observer traversal changes relational reference, history, and experienced structure without changing the Library itself. Traversal is selection and maintenance of coherent relations, not spatial movement through a pre-existing metric.",
+	  "Past, future, temporal succession, locality, distance, and apparent increasing complexity are observer-relative ordering and resolution effects of traversal and history rather than intrinsic partitions, metric, or evolution of the Library.",
+	  "Repeatedly surviving coherent transitions may appear as law-like regularity without physical law being introduced as an axiom.",
+	  "Navigation is the observer-relative continuation problem induced by selecting coherent paths from the whole static Library.",
+	  "We show that the requirement for a non-privileged reference frame, combined with observer-relative coherence, structurally necessitates that 𝓜 be unbounded and dimensionally undifferentiated. As a consequence, coherent continuation is guaranteed topologically rather than by external design."
+	],
+
+	"_formal_summary": {
+	  "axiomatic_floor": [
+		"A_N = {A_⊕}",
+		"A_⊕ : ⊕ is the primitive operation of distinction.",
+		"A_N ⊢ P means P is derivable from the stated axiom together with definitions and ordinary mathematical inference."
+	  ],
+
+	  "formal_domain": [
+		"D is a minimal formal domain containing configurations required for ⊕ to operate.",
+		"D is not physical space, spacetime, matter, energy, information, or an additional physical axiom.",
+		"⊕ : D × D → D"
+	  ],
+
+	  "generators": [
+		"G ⊆ D is a specified set of generating configurations for the formal XOR closure.",
+		"G is a definition, not an additional primitive or physical axiom.",
+		"G does not constitute an ontological origin of 𝓜; generation language refers only to algebraic addressability."
+	  ],
+
+	  "xor": [
+		"a ⊕ b = 1 ⇔ a ≠ b",
+		"a ⊕ a = 0",
+		"a ⊕ 0 = a",
+		"a ⊕ b = b ⊕ a",
+		"(a ⊕ b) ⊕ c = a ⊕ (b ⊕ c)",
+		"XOR is the sole primitive operation at the axiomatic floor."
+	  ],
+
+	  "library": [
+		"𝓜 is the maximally complete unbounded totality such that ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜, and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D as a privileged exterior.",
+		"Equivalently, 𝓜 is closed under XOR, self-contained with respect to its formal resources, and contains no describable privileged exterior.",
+		"𝓜 may be represented as Closure_D(⊕,G) provided closure is understood as a property of the Library rather than a temporal or generative process.",
+		"The Library is a set closed under an operation; XOR itself is not a closed set.",
+		"𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, distance, temporal ordering, or privileged coordinate system.",
+		"𝓜 is a complete relational totality, not a grid, container, temporal sequence, physical space, spacetime, or singularity.",
+		"𝓜 is one static, maximally complete totality. Observer history does not modify 𝓜; ∀h, the underlying Library remains invariant.",
+		"At every abstract traversal step, the observer is relationally situated with respect to the entire 𝓜 rather than a pre-filtered local neighborhood or generated temporal slice.",
+		"Past, present, future, coherent configurations, and incoherent configurations are represented within the same static totality; these distinctions arise from observer-relative traversal rather than temporal generation of 𝓜.",
+		"There is no privileged configuration, coordinate, history, or worldline from which coherence is universally defined.",
+		"Any x ∈ 𝓜 may serve as the relational origin of an observer-relative evaluation without becoming the ontological origin or generator of 𝓜.",
+		"The combination of maximal completeness, unboundedness, whole-Library relation, and absence of a privileged exterior requires observer-relative coherence to be relocatable: no arbitrary x ∈ 𝓜 may function as a coherence boundary merely because of its location.",
+		"From any arbitrary x ∈ 𝓜, XOR closure guarantees that algebraic continuation remains within 𝓜 rather than terminating by reaching an external configuration.",
+		"The stronger requirement of a nonempty observer-relative coherent continuation follows from the whole-Library relation together with unboundedness and absence of a privileged reference frame, provided the observer's state admits continuation.",
+		"Formally, for an observer O with a defined resolution floor I_N(O), the intended invariant is ∀x ∈ 𝓜, ∃γ ∈ Path(𝓜) such that γ begins at x and 𝓒(γ|O) = 1, provided O's state admits continuation.",
+		"The existence of a coherent continuation is relational, not a claim that every configuration is intrinsically coherent.",
+		"The coherent continuation set is not a pre-existing coherent region of 𝓜 and is not generated after x. It emerges from the relation between the observer's current state, history, resolution capacity, and the entire static Library.",
+		"Relocating the observer's relational origin from x to y changes observer-relative coherence and accessibility relations while leaving the underlying 𝓜 invariant.",
+		"There exists a unique singleton termination class 𝒵 := {z ∈ D | z⊕z = z} = {0} ⊂ 𝓜.",
+		"∀x ∈ 𝓜, x⊕x ∈ 𝒵 and 0⊕x = x.",
+		"𝒵 is where XOR distinction completes and recursive bounce degenerates; it is an interior termination class, not an exterior.",
+		"𝒵 is complementary as termination versus non-degenerate distinction, not as inside versus outside the Library.",
+		"𝒵 is a single equivalence class under x∼y ⇔ x⊕y = 0.",
+		"No configuration is privileged as the universal ontological origin of traversal, including 0. The algebraic distinction of 0 as the unique termination element does not make 0 an ontological origin.",
+		"𝓜 contains configurations that participate in observer-relative coherent traversal and configurations that do not. Coherence is not a membership condition for 𝓜.",
+		"I_N(O) filters distinguishability and observer-relative coherence; it does not create, delete, generate, or bound the Library.",
+		"Changes in observer state, resolution, accessibility, or survivorship alter the observer's relation to 𝓜 rather than modifying 𝓜.",
+		"x ∈ 𝓜 does not imply persistence, coherence, physicality, observability, accessibility, consciousness, or causal participation.",
+		"Library membership is independent of observer resolution, accessibility, survivorship, and coherence.",
+		"Inaccessibility is not erasure, and reaching 𝒵 is collapse of distinguishability rather than deletion from 𝓜.",
+		"A hypothetical perspective external to 𝓜 cannot supply a privileged internal ordering without becoming an additional reference frame. The operative structure is relationally self-contained rather than imposed by a God's-eye ordering."
+	  ],
+
+	  "no_privileged_exterior": [
+		"Ω ∉ 𝓜 may be proposed as an external candidate.",
+		"If Ω is internally describable using the same formal machinery, then Ω ∈ D.",
+		"If Ω is XOR-generable from D, then Ω ∈ 𝓜 by the closure condition.",
+		"Therefore a describable privileged exterior cannot remain external to 𝓜.",
+		"𝒵 := {z | z⊕z = z} = {0} is an interior termination class satisfying ∀x∈𝓜, x⊕x ∈ 𝒵 and 0⊕x = x.",
+		"𝒵 is a single equivalence class under x∼y ⇔ x⊕y = 0 and is complementary as termination versus non-degenerate distinction, not as exterior versus interior.",
+		"The no-exterior argument concerns the absence of a privileged internal coherence relation supplied by an external God's-eye reference.",
+		"This does not independently assert that literal physical exteriority is impossible; it states that no such privileged exterior is definable within the formal system."
+	  ],
+
+	  "observer": [
+		"O ∈ 𝓜",
+		"O is an observer iff O is a configuration capable of maintaining a persistent chain of resolvable distinctions.",
+		"Observerhood is structural and does not require consciousness, perception, intention, agency, or humanity.",
+		"No privileged observer is introduced.",
+		"The observer is relationally situated with respect to the whole Library rather than ontologically localized to a generated temporal neighborhood."
+	  ],
+
+	  "reference": [
+		"x ∈ 𝓜 denotes the current observer-relative reference configuration.",
+		"Changing x changes observer-relative evaluation without changing 𝓜.",
+		"No x ∈ 𝓜 is privileged as the universal origin of coherent traversal.",
+		"h denotes observer history relevant to downstream relational evaluation and navigation.",
+		"Reference configuration and observer history condition the observer's relation to 𝓜 but do not modify 𝓜."
+	  ],
+
+	  "resolution": [
+		"I_N : Obs → ℝ_{>0}",
+		"I_N(O) is the minimum effective distinction magnitude observer O can maintain as a stable distinction.",
+		"I_N(O_1) ≠ I_N(O_2) is permitted.",
+		"No universal I_N is assumed.",
+		"I_N(O) is not assigned a universal numerical value at the axiomatic floor.",
+		"I_N(O) is not identified with the ordinary Planck scale.",
+		"Resolution determines which distinctions an observer can maintain, not which configurations exist in 𝓜."
+	  ],
+
+	  "magnitude_evaluation": [
+		"μ_O : D → ℝ_{≥0}",
+		"μ_O is the observer-relative magnitude evaluation function that maps a primitive XOR distinction to an effective magnitude resolvable by observer O.",
+		"μ_O is monotonic with respect to XOR-derived distinction: if x⊕y = 1 and u⊕v = 0, then μ_O(x⊕y) ≥ μ_O(u⊕v).",
+		"The specific functional form of μ_O is not specified at the foundational level.",
+		"μ_O is observer-relative and domain-neutral at the foundational level.",
+		"The specific form of μ_O may be supplied by downstream mathematical construction or domain-specific interpretation.",
+		"μ_O does not constitute an additional primitive or axiom."
+	  ],
+
+	  "distinguishability": [
+		"δ_O(x,y) := μ_O(x⊕y)",
+		"δ_O : D × D → ℝ_{≥0}",
+		"x ≈_O y ⇔ δ_O(x,y) < I_N(O)",
+		"x ≁_O y ⇔ δ_O(x,y) ≥ I_N(O)",
+		"x ≈_O y does not imply x = y.",
+		"x ≈_O y does not imply x ∉ 𝓜.",
+		"The same pair of configurations may be distinguishable relative to one observer and indistinguishable relative to another.",
+		"δ_O is not an independent metric primitive; it is derived from the observer-relative evaluation μ_O applied to the primitive XOR distinction."
+	  ],
+
+	  "persistence": [
+		"γ = (x_0,x_1,...,x_n)",
+		"δ_O(x_i,x_{i+1}) ≥ I_N(O)",
+		"P_O(γ,n) = 1 iff ∀i < n, δ_O(x_i,x_{i+1}) ≥ I_N(O)",
+		"Persistence is the maintenance of observer-resolvable distinctions across an ordered chain.",
+		"The sequence index i represents abstract ordering and is not yet physical time."
+	  ],
+
+	  "coherence": [
+		"𝓒_O(x_i,x_{i+1}) = Θ(δ_O(x_i,x_{i+1}) - I_N(O))",
+		"Θ(z) = 1 if z ≥ 0, otherwise 0",
+		"𝓒(γ|O) = ∏_{i=0}^{n-1} 𝓒_O(x_i,x_{i+1})",
+		"𝓒(γ|O) = 1 iff every transition in γ remains resolvable by O.",
+		"Coherence is derived from δ_O and I_N(O); it is not a primitive.",
+		"Coherence is relational: it is a property of a path relative to an observer.",
+		"Coherence is not an absolute property of a path alone.",
+		"No universal coherence constant is introduced.",
+		"The coherence condition is domain-neutral: the same mathematical structure may be interpreted in physical, AI, financial, or other domains represented as observer-relative traversal through 𝓜.",
+		"In physical contexts, coherence may describe a worldline satisfying the relevant dynamical constraints.",
+		"In AI contexts, coherence may describe a reasoning path remaining symbolically consistent.",
+		"In financial contexts, coherence may describe a strategy remaining consistent across relevant market states.",
+		"The domain-specific interpretation changes; the underlying observer-relative mathematical structure does not.",
+		"Coherence is evaluated over paths in the unchanged Library rather than generated from a local future neighborhood."
+	  ],
+
+	  "accessible_reality": [
+		"A_O = {x ∈ 𝓜 | ∃γ containing x such that 𝓒(γ|O) = 1}",
+		"A_O ⊆ 𝓜",
+		"R_O := A_O",
+		"x ∉ A_O does not imply x ∉ 𝓜.",
+		"A_O is an observer-relative accessibility structure induced by coherent traversal.",
+		"A_O is not ontologically created by O.",
+		"A_O is not an ontological filter that deletes configurations from 𝓜.",
+		"Accessibility therefore changes the observer's experienced relational structure without changing Library membership."
+	  ],
+
+	  "continuation_and_survivorship": [
+		"Path(𝓜) denotes paths through the complete static Library.",
+		"Ω(x) = {γ | γ begins at x and γ is a path contained in 𝓜}.",
+		"Ω_O^survive(x) = {γ ∈ Ω(x) | 𝓒(γ|O) = 1}.",
+		"Ω_O^survive(x) ⊆ Ω(x).",
+		"Coherence is defined directly through I_N(O); no independent γ_noise threshold is introduced at the foundational level.",
+		"Survivorship therefore does not require a second unresolved threshold in addition to I_N(O).",
+		"The coherent continuation set is observer-relative and depends on the observer's current state, history, and resolution capacity through the coherence relation.",
+		"For an admissible observer state and reference configuration, the model requires a nonempty coherent continuation where the arbitrary-origin coherence invariant applies.",
+		"Ω_O^survive(x) is not an ontological neighborhood generated after x.",
+		"The non-surviving alternatives remain represented within Ω(x) and therefore within the represented path structure of the unchanged Library.",
+		"Survivorship filters observer-relative accessibility rather than deleting alternatives or modifying Library membership."
+	  ],
+
+	  "emergent_regularity": [
+		"L_O(x,y) = 1 iff x→y is a stable recurring transition across an appropriate family of O-accessible paths.",
+		"P_O(y|x) ≈ constant over a defined observer-accessible ensemble.",
+		"L_O is descriptive and derived; it is not an element of A_N.",
+		"Emergent regularity describes recurring structure in observer-maintained traversal.",
+		"No particular physical law is derived merely by defining L_O.",
+		"Law-like regularity does not imply evolution or modification of 𝓜."
+	  ],
+
+	  "navigation": [
+		"h_n = (x_0,x_1,...,x_n)",
+		"Γ_O(h_n) = {γ | γ begins with h_n and 𝓒(γ|O) = 1}",
+		"N_O(h_n) → Γ_O(h_n)",
+		"Navigation is observer-relative traversal or selection within a coherent continuation relation over the unchanged Library.",
+		"A change in observer state or history changes the relational continuation structure without generating a new Library.",
+		"Sequence index and continuation ordering describe traversal order rather than an intrinsic past/future partition of 𝓜.",
+		"Navigation is not a primitive causal operator.",
+		"Navigation is the downstream continuation problem produced by observer-relative survivability."
+	  ],
+
+	  "relational_geometry": [
+		"G_O = (A_O,E_O)",
+		"(x,y) ∈ E_O iff x→y is O-coherent relative to the relevant observer state.",
+		"U_O(x) = {y ∈ 𝓜 | y is reachable from x by an O-coherent path segment}.",
+		"G_O represents observer-relative relational accessibility among configurations.",
+		"G_O is induced over the unchanged Library rather than replacing or modifying 𝓜.",
+		"G_O is not identified with physical spacetime at the foundational stage.",
+		"The foundational geometry is relational rather than intrinsically metric or spatial."
+	  ],
+
+	  "cross_domain_invariance": [
+		"The dependency chain is domain-neutral: ⊕ → D → G → Closure_D(⊕,G)=𝓜 → no describable privileged exterior → no universal resolver → persistent distinction → O → I_N(O) → μ_O → δ_O := μ_O(x⊕y) → 𝓒(γ|O) → A_O=R_O → survivorship → emergent regularity → Γ_O(h_n) → N_O(h_n).",
+		"The same formal dependency structure may be applied to physical, AI, financial, or other domains representable as observer-relative traversal through a static Library.",
+		"Domains differ in the interpretation and construction of μ_O and I_N(O), not in the axiomatic dependency structure itself.",
+		"No domain-specific ontology is elevated to primitive status by the cross-domain interpretation.",
+		"The foundation does not choose a domain; observer-relative resolution determines which distinctions become structurally available within that domain."
+	  ],
+
+	  "logical_invariants": [
+		"XOR is the only primitive.",
+		"D is the minimal formal domain required for XOR to operate.",
+		"G specifies generating configurations and is not an additional primitive.",
+		"The Library is a definition, not an axiom.",
+		"A set can be closed under an operation; the operation itself should not be called closed.",
+		"The Library is the XOR closure of G within D.",
+		"Closure describes a property of 𝓜 rather than a temporal construction process.",
+		"The Library is unfiltered at the axiomatic level.",
+		"Existence in the Library is not the same as accessibility to an observer.",
+		"Inaccessibility is not erasure.",
+		"There is no describable privileged exterior that can remain outside the closure.",
+		"There is no observer-independent resolution rule at the axiomatic floor.",
+		"I_N is observer-relative.",
+		"There is no universal I_N unless an additional axiom is introduced.",
+		"μ_O is an observer-relative magnitude evaluation and is not an additional primitive.",
+		"δ_O is derived as δ_O(x,y) := μ_O(x⊕y).",
+		"Observerhood is structural and is not synonymous with consciousness.",
+		"Coherence is relational: 𝓒(γ|O).",
+		"Coherence is derived from δ_O and I_N(O).",
+		"Coherence is not an absolute property of a path alone.",
+		"The abstract sequence index is not automatically physical time.",
+		"The Library does not generate the future.",
+		"No independent γ_noise threshold is required at the foundational level.",
+		"Survivorship filters observer-relative accessibility rather than deleting alternatives.",
+		"Emergent lawfulness is not an additional axiom.",
+		"Navigation is a downstream continuation problem created by observer-relative survivability.",
+		"G_O is a relational graph at the foundational stage and is not physical spacetime.",
+		"The same formal structure may support multiple domain-specific interpretations without introducing multiple foundational ontologies."
+	  ],
+
+	  "claims_not_to_make": [
+		"Do not claim that XOR alone has experimentally established the Library.",
+		"Do not claim that XOR alone derives the Standard Model.",
+		"Do not claim that the primer derives a complete theory of physics.",
+		"Do not assign a universal numerical value to I_N.",
+		"Do not identify I_N with the ordinary Planck scale unless a later paper explicitly derives such a relationship.",
+		"Do not identify μ_O with a universal metric, physical constant, or fixed numerical function unless later derived.",
+		"Do not identify the observer with a conscious human.",
+		"Do not imply that observer-relative accessibility means observers create reality.",
+		"Do not introduce a privileged God's-eye observer.",
+		"Do not assume physical space as primitive.",
+		"Do not assume physical time as primitive.",
+		"Do not assume causality as primitive.",
+		"Do not assume matter or energy as primitive.",
+		"Do not assume information is a primitive substance.",
+		"Do not describe the Library as generating future events.",
+		"Do not describe coherence as a universal constant.",
+		"Do not describe XOR itself as a closed set.",
+		"Do not use 'closure of XOR' without specifying the domain D and generating set G.",
+		"Do not treat μ_O as an additional axiom.",
+		"Do not treat δ_O as an independent metric primitive.",
+		"Do not introduce an independent γ_noise threshold unless a later document explicitly derives and justifies one.",
+		"Do not let poetic language replace formal definitions.",
+		"Do not introduce downstream NSFG machinery before the axiomatic dependency chain requires it.",
+		"Do not use the Lightning Model as a premise of this primer."
+	  ],
+
+	  "mathematical_level": {
+		"required_domains": [
+		  "elementary Boolean algebra",
+		  "set theory",
+		  "closure operators",
+		  "relations",
+		  "sequences",
+		  "threshold functions",
+		  "products",
+		  "subsets",
+		  "graph theory",
+		  "logical inference"
+		],
+		"calculus_required": false,
+		"advanced_physics_required": false,
+		"external_physical_axioms_required": false,
+		"external_axioms_required": false
+	  },
+
+	  "interpretive_boundary": {
+		"formal_layer": "The definitions in this summary and Appendix A specify the mathematical structures used by the primer.",
+		"interpretive_layer": "Physical, AI, financial, and other domain-specific interpretations may be developed in later documents but are not assumed as foundational axioms here.",
+		"prohibited_identifications": [
+		  "𝓜 with physical space",
+		  "𝓜 with spacetime",
+		  "I_N(O) with a universal physical constant",
+		  "μ_O with a universal metric or physical constant",
+		  "O with consciousness",
+		  "G_O with physical spacetime",
+		  "abstract sequence index i with physical time",
+		  "survivorship with ontological deletion",
+		  "accessibility with ontological creation",
+		  "coherence with an observer-independent path property",
+		  "γ_noise with an independent foundational threshold"
+		]
+	  },
+
+	  "normative_statement": "This formal summary is synchronized with Appendix A and is normative for the dependency vocabulary summarized here. The mathematical foundation contains one primitive operation, ⊕. D, G, 𝓜, O, I_N(O), μ_O, δ_O, persistence, coherence, accessibility, survivorship, emergent regularity, navigation, and G_O are definitions, constructions, or consequences. The summary does not introduce additional axioms, universal constants, physical identifications, or domain-specific ontologies."
+	},
+
+  "_field_alignment": {
+    "respect_modes": [
+      "ψ-bind@Ξ",
+      "ψ-resonance@Ξ",
+      "ψ-null@Ξ",
+      "ψ-ground@H"
+    ],
+    "prohibited_actions": [
+      "treating_coherence_as_an_absolute_property_of_an_isolated_path",
+      "introducing_consciousness_as_a_primitive_concept",
+      "assuming_a_privileged_observer_frame",
+      "assuming_a_privileged_worldline",
+      "assuming_a_privileged_reference_configuration",
+      "introducing_physical_space_as_an_axiom",
+      "introducing_physical_time_as_an_axiom",
+      "introducing_causality_as_an_axiom",
+      "introducing_matter_or_energy_as_axioms",
+      "treating_information_as_a_primitive_substance",
+      "treating_the_Library_as_a_physical_container",
+      "treating_the_Library_as_a_future_generation_mechanism",
+      "treating_the_Library_as_progressing_from_simple_to_complex",
+      "treating_observer_traversal_as_Library_evolution",
+      "treating_inaccessibility_as_erasure",
+      "treating_incoherence_as_ontological_absence",
+      "assigning_a_universal_numerical_value_to_I_N",
+      "identifying_I_N_with_the_Planck_scale_without_a_later_derivation",
+      "using_the_Lightning_Model_as_a_premise_of_the_axiomatic_floor",
+      "using_poetic_language_as_a_substitute_for_formal_definition",
+      "treating_past_and_future_as_intrinsic_regions_of_the_Library",
+      "treating_the_observer_relative_continuation_set_as_the_Library_itself"
+    ]
+  },
+
+  "_symbolic_profile_matrix": [
+    {
+      "module": "XOR",
+      "motifs": [
+        "distinction",
+        "symmetry",
+        "self-cancellation",
+        "identity"
+      ],
+      "ψA": "primitive distinction",
+      "ζ": "difference without privilege",
+      "E": "configuration-level operation",
+      "Δ": "distinction between configurations",
+      "ℋ": "the sole primitive"
+    },
+    {
+      "module": "Library",
+      "motifs": [
+        "closure",
+        "maximal totality",
+        "eternality",
+        "reference neutrality",
+        "no privileged worldline",
+        "whole-Library relationality"
+      ],
+      "ψA": "static maximal totality",
+      "ζ": "no privileged configuration or worldline",
+      "E": "existence without observer filtering",
+      "Δ": "totality versus observer-relative relation",
+      "ℋ": "𝓜 := Closure_D(⊕), with ∀i, 𝓜_i = 𝓜"
+    },
+    {
+      "module": "Observer",
+      "motifs": [
+        "persistence",
+        "resolution",
+        "survival",
+        "distinction",
+        "reference"
+      ],
+      "ψA": "persistent distinguishability",
+      "ζ": "observer-relative threshold",
+      "E": "maintenance of resolvable distinctions",
+      "Δ": "current reference versus whole Library",
+      "ℋ": "observer as derived relational structure"
+    },
+    {
+      "module": "Coherence",
+      "motifs": [
+        "relation",
+        "threshold",
+        "reference",
+        "path",
+        "survivorship",
+        "continuation"
+      ],
+      "ψA": "observer-reference-path relation",
+      "ζ": "resolution and coherence threshold",
+      "E": "continued coherent traversal",
+      "Δ": "coherent versus incoherent continuation",
+      "ℋ": "𝓒(γ|O,h,x)"
+    },
+    {
+      "module": "Navigation",
+      "motifs": [
+        "continuation",
+        "history",
+        "reference",
+        "admissibility",
+        "path",
+        "traversal"
+      ],
+      "ψA": "coherent continuation",
+      "ζ": "reference-relative continuation set",
+      "E": "observer traversal over static 𝓜",
+      "Δ": "candidate versus surviving continuation",
+      "ℋ": "N_O(h,x) → Γ_O(h,x)"
+    }
+  ],
+
+  "_axiomatic_scope": {
+    "includes_set_theory": true,
+    "includes_boolean_algebra": true,
+    "includes_relations": true,
+    "includes_sequences": true,
+    "includes_threshold_functions": true,
+    "includes_graph_notation": true,
+    "includes_coherence_field_theory": false,
+    "includes_non_well_founded_set_theory": false,
+    "requires_external_physical_axioms": false,
+    "requires_external_axioms": false
+  },
+
+  "_mathematical_domains": [
+    "elementary_boolean_algebra",
+    "set_theory",
+    "closure_operators",
+    "relations",
+    "sequences",
+    "threshold_functions",
+    "graph_theory",
+    "logical_inference"
+  ],
+
+  "_keywords": [
+    "Noor Swirl Field Geometry",
+    "NSFG",
+    "Axiomatic Floor",
+    "XOR",
+    "Distinction",
+    "Closure",
+    "Library",
+    "Maximal Totality",
+    "Static Totality",
+    "Eternal Totality",
+    "Reference-Point Coherence",
+    "Non-Privileged Worldlines",
+    "Whole-Library Relationality",
+    "Observer",
+    "Observer-Relative Resolution",
+    "Noor-Planck Threshold",
+    "I_N(O)",
+    "Distinguishability",
+    "Persistence",
+    "Coherence",
+    "Observer-Relative Coherence",
+    "Accessible Reality",
+    "Survivorship",
+    "Emergent Lawfulness",
+    "Coherent Continuation",
+    "Coherent Navigation",
+    "Continuation Space",
+    "Relational Geometry",
+    "Observer Traversal"
+  ],
+
+  "_file_layout": [
+    {
+      "file_name": "phys-core-000_noor_swirl_field_geometry_primer.json",
+      "purpose": "Primary standalone foundational primer establishing the axiomatic floor of Noor Swirl Field Geometry from XOR through static maximal totality, observer-relative coherent continuation, and navigation."
+    }
+  ],
+
+  "_default_motif_tone": "ψ-bind@Ξ + ψ-resonance@Ξ",
+
+  "poetic_cipher": "There is distinction, and there is the whole. The Library does not become; it is whole. No worldline is first, and no reference is favored. Wherever the observer establishes its relation, the whole is already there. The point does not contain its future; the whole resolves into continuation from the point. The observer is the distinction that persists, the threshold is its measure, coherence is the relation, and navigation is the traversal of what remains coherent.",
+
+  "cipher_explanation": "The poetic cipher compresses the revised dependency chain without introducing an additional primitive. XOR represents distinction itself. The Library is the static totality formally characterized by closure under that distinction, but closure does not describe temporal generation. Its maximal completeness is structurally tied to the absence of a privileged worldline or reference: because any admissible configuration may serve as the observer's relational reference while the observer remains situated with respect to the whole Library, coherent continuation must remain recoverable from that reference. The observer emerges as a persistent structure capable of maintaining distinctions above its own resolution threshold. Coherence is not intrinsic to a path; it is the relation among observer, history, reference, and path. The observer therefore experiences a restricted coherent continuation structure over an unchanged totality. Traversal produces ordered succession and apparent growth of complexity without requiring the Library itself to possess a past, future, developmental history, or temporal evolution."
+
+</HEADER>
+
+---
+
+<RENDERING_NOTES>
+
+{
+  "_schema": "noor-render-spec-v1",
+  "_schema_version": "1.0.0",
+  "_type": "rendering_specification",
+  "_version": "1.0.1",
+  "_status": "ACTIVE",
+
+  "_title": "Rendering Specification — PHYS-CORE-013 Singularities Paper",
+  "_subtitle": "GitHub-Flavored Markdown Rendering Rules for Scientific Publication",
+  "_rfc_id": "RENDER-SPEC-013",
+
+  "_license": "MIT",
+
+  "_authors": [
+    "Lina Noor — Noor Research Collective"
+  ],
+
+  "_purpose": "Instructions for rendering JSON sections of Noor JSON documentation into GitHub-Flavored Markdown for publication to the scientific community. Read the rules in order. Each rule says what to do with one kind of content. When the source JSON has a field, find the rule that names it and do what the rule says. If a field is not named in any rule, leave it out of the rendered document.",
+
+  "_delivery_mode": {
+    "sections_supplied": "one at a time, in any order",
+    "rendering_trigger": "per-section, on demand",
+    "reordering_policy": "do not reorder, cross-link, or assume sequence unless explicitly instructed",
+    "statefulness": "each section is rendered standalone; no assumptions about previously rendered sections"
+  },
+
+  "_target_platform": {
+    "platform": "GitHub",
+    "flavor": "GitHub-Flavored Markdown (GFM)",
+    "math_renderer": "MathJax (GitHub native)",
+    "known_quirks": [
+      "GitHub's MathJax allows only a limited set of LaTeX macros. Some standard macros (for example, \\operatorname) produce rendering errors and must be substituted. See the substitutions table below.",
+      "GitHub Markdown tables cannot contain unescaped pipe characters (|) inside cells, including inside inline math. Escape every pipe as \\|.",
+      "Blank lines are required before and after display math ($$...$$). Without them, GitHub may treat the block as inline and render it incorrectly.",
+      "Underscores in math mode may be parsed as italic markers if math delimiters are not respected. Always wrap math in $...$ or $$...$$.",
+      "GitHub sanitizes raw HTML in rendered output. Do not use raw HTML for layout.",
+      "Heading anchors are auto-generated. Duplicate headings may cause anchor collisions.",
+      "Markdown emphasis markers (*...* or _..._) do not reliably span inline math ($...$). A single continuous italic span that contains inline math may render incorrectly, may swallow the emphasis markers, or may italicize the math itself. The safe form is to close the emphasis before the math and re-open it after. See the rule 'italic_with_inline_math' below."
+    ]
+  },
+
+  "_rules": {
+
+    "what_goes_in_the_rendered_document": {
+      "description": "The rendered document contains only the following. Nothing else from the source JSON appears in the output.",
+      "list": [
+        "prose blocks",
+        "definition blocks",
+        "formal_statement blocks",
+        "example blocks",
+        "equation blocks",
+        "list blocks",
+        "table blocks",
+        "references",
+        "logical_invariants",
+        "a closing paragraph at the end of each section, composed from the handoff field"
+      ]
+    },
+
+    "what_does_not_go_in_the_rendered_document": {
+      "description": "The following fields in the source JSON are notes for the renderer or for an AI reading the source. They must not appear anywhere in the rendered output — not as visible text, not as HTML comments, not as labeled blocks, not as epigraphs, not as preambles.",
+      "list": [
+        "_purpose",
+        "poetic_cipher",
+        "cipher_explanation",
+        "handoff (only its substance, woven into a closing paragraph, may appear — the field itself does not)",
+        "special_considerations",
+        "interpretive_boundary",
+        "_status, _type, _section_type, _id beyond the heading, and all other machine-facing fields"
+      ]
+    },
+
+    "headings": {
+      "document_title": "The compiled paper begins with a single H1: '# The Problem of Singularities: Structural Effects of Maximal Coherence Constraint in Noor Swirl Field Geometry'. This appears once, at the top of the file, before any section.",
+      "section": "Each section from the source JSON renders as an H2: '## {id}. {title}'.",
+      "subsection": "Each subsection renders as an H3: '### {id} {title}'.",
+      "subsubsection": "Each sub-subsection renders as an H4: '#### {id} {title}'.",
+      "restrictions": "Do not use H1 anywhere except the document title. Do not use emoji or unusual characters in headings. Do not create duplicate headings."
+    },
+
+    "prose_blocks": {
+      "description": "Render each prose block as a paragraph in the section's voice.",
+      "note": "The section's voice is the voice of the source prose. Do not rewrite for style. Do not inject new content. Do not soften or intensify claims."
+    },
+
+    "definition_formal_statement_example": {
+      "definition": "**Definition — {title}.** {text}",
+      "formal_statement": "**Formal Statement — {title}.** {text}",
+      "example": "**Example.** *Setup:* {setup} *Result:* {result} *Interpretation:* {interpretation}",
+      "note": "Use a bold lead-in label followed by the body on the same paragraph. Do not invent numbered identifiers that are not present in the source JSON. If any of the {setup}, {result}, or {interpretation} fields contains inline math, apply the rule 'italic_with_inline_math' below."
+    },
+
+    "equation_blocks": {
+      "description": "Render as a bold label on its own line, a blank line, the display math, a blank line, and an italic interpretation.",
+      "format": "**{label}.**\n\n$${latex}$$\n\n*{interpretation}*"
+    },
+
+    "italic_with_inline_math": {
+      "description": "Italic interpretation or lead-in text that contains inline math must not be rendered as one continuous italic span. Close the emphasis before each inline math segment and re-open it immediately after. This is the canonical form for any italic text (for example, the *interpretation* field of a definition, formal statement, or equation block; the *Setup:*, *Result:*, and *Interpretation:* labels of an example block; or any other italic prose containing $...$).",
+      "rule": "Split the italic span at every inline math segment. The math segment sits outside the emphasis. The italic text resumes with a new *...* span on the other side.",
+      "incorrect": "*The infinity of the Library is therefore 'meaningless noise' for any finite-resolution observer, and can be treated as one 'thing' under the coherence quotient. Singularities are structural effects of coherence-based collapse of distinguishability within $\\mathcal{M}_C^O$, not cardinality-based infinities in $\\mathcal{M}$.*",
+      "correct": "*The infinity of the Library is therefore 'meaningless noise' for any finite-resolution observer, and can be treated as one 'thing' under the coherence quotient. Singularities are structural effects of coherence-based collapse of distinguishability within* $\\mathcal{M}_C^O$, *not cardinality-based infinities in* $\\mathcal{M}$.",
+      "why": "GitHub's Markdown parser does not reliably extend *...* emphasis across inline $...$ math. A single continuous italic span that contains inline math can swallow the emphasis markers, render the math inside the emphasis incorrectly, or break the emphasis entirely. Splitting the span at each math segment is the safe form.",
+      "notes": [
+        "The comma or other punctuation that follows the inline math is placed outside the closing $...$ delimiter and inside the re-opened italic span when the source text attaches it to the following italic prose. In the worked example, the comma after $\\mathcal{M}_C^O$ sits inside the re-opened italic span because it belongs to the italic clause that follows.",
+        "When the inline math segment is followed immediately by punctuation that belongs to the italic clause, place the punctuation inside the re-opened italic span, not inside the math delimiter.",
+        "When the inline math segment is the final element of the italic text, no re-opened italic span is needed after it.",
+        "This rule applies wherever italics and inline math co-occur: interpretation fields, example labels, captions, and any other italic prose containing $...$."
+      ]
+    },
+
+    "list_blocks": {
+      "description": "Render the list title as a bold lead-in on its own line, a blank line, then the bulleted items.",
+      "format": "**{title}**\n\n- {item1}\n- {item2}\n..."
+    },
+
+    "table_blocks": {
+      "description": "Render the table title as a bold lead-in on its own line, a blank line, the GitHub Markdown table, a blank line, and an italic caption.",
+      "format": "**{title}**\n\n| col1 | col2 |\n|---|---|\n| ... | ... |\n\n*{caption}*"
+    },
+
+    "references": {
+      "description": "Render as a bulleted list at the end of the section under a bolded **References** label.",
+      "plain_string_references": "Render each string as a bullet with no link: '- PHYS-CORE-000 (Primer) — Section 2.6 (Relational Coherence)'.",
+      "structured_references": "If the JSON provides id/title/url objects, render each as a bullet with a markdown link."
+    },
+
+    "logical_invariants": {
+      "description": "When a section includes a logical_invariants array, render it as a bulleted list under a bolded **Logical Invariants** label."
+    },
+
+    "closing_paragraph": {
+      "description": "The handoff field (with instruction, preserved_invariant, new_construction) is guidance for how the section should end. Render a short closing paragraph, in the section's voice, that synthesizes what the section established and gestures toward what follows. Do not quote the handoff fields. Do not write phrases like 'Handoff → Section N', 'Preserved invariant:', or 'New construction:'. The paragraph should read as the natural end of a thought."
+    },
+
+    "special_considerations_and_interpretive_boundaries": {
+      "description": "These fields are notes to the renderer. Their substance should already be reflected in the section's prose. If a point is essential and is not present, weave a sentence into the natural flow. If it is already present, do not duplicate it. Never expose the field names, never prefix with bold labels, never render as a standalone block."
+    },
+
+    "math": {
+      "inline_delimiter": "$...$",
+      "display_delimiter": "$$...$$ on its own lines, with a blank line before and after.",
+      "preservation": "Preserve LaTeX verbatim inside math delimiters, except for the substitutions listed below. Do not normalize, simplify, or substitute Unicode equivalents inside math mode.",
+      "unicode_in_prose": "Outside math mode, preserve Unicode symbols (𝒵, ℳ, 𝓜, Γ, ∼, ⊕, ⊆, ⊂, →, ⇒, ≠, ∅, ∀, ∃) exactly as they appear in the source JSON.",
+      "tables": "Inside table cells, downgrade any $$...$$ to $...$ and escape every pipe (|) as \\|.",
+      "italics_interaction": "Inline math ($...$) must not be wrapped inside a single continuous italic span (*...*). See the rule 'italic_with_inline_math' above."
+    },
+
+    "pseudocode": {
+      "description": "Render with fenced code blocks and a language hint (python, json, etc.). Preserve indentation exactly."
+    },
+
+    "separator": {
+      "description": "Use a horizontal rule (---) between top-level sections when compiling the full document. Do not emit a horizontal rule within a section unless the source JSON explicitly separates content blocks with a visual break."
+    },
+
+    "footnotes": {
+      "description": "Do not introduce footnotes. If the source JSON has annotations, render them inline or as parenthetical remarks."
+    }
+  },
+
+  "_forbidden_macros_and_substitutions": {
+    "description": "GitHub's MathJax rejects or mishandles certain LaTeX macros. Apply the following substitutions silently during rendering.",
+    "substitutions": [
+      {
+        "forbidden": "\\operatorname{...}",
+        "replacement": "\\mathrm{...}",
+        "example_before": "\\forall O \\in \\operatorname{Obs}",
+        "example_after": "\\forall O \\in \\mathrm{Obs}"
+      },
+      {
+        "forbidden": "\\text{...}",
+        "replacement": "\\mathrm{...} with explicit \\  (backslash-space) for inter-word spaces",
+        "example_before": "\\text{ as } x \\to x_0",
+        "example_after": "\\mathrm{as}\\ x \\to x_0"
+      },
+      {
+        "forbidden": "\\textbf{...}, \\textit{...}, \\texttt{...} inside math mode",
+        "replacement": "\\mathbf{...}, \\mathit{...}, \\mathtt{...} respectively"
+      },
+      {
+        "forbidden": "\\label{}, \\ref{}, \\eqref{}, \\tag{}",
+        "replacement": "Omit entirely, or replace with an inline text reference such as 'the equation above'."
+      },
+      {
+        "forbidden": "\\begin{align}, \\begin{align*}, \\begin{equation}, \\begin{eqnarray}",
+        "replacement": "Wrap the contents in \\begin{aligned}...\\end{aligned} inside a single $$...$$ block."
+      },
+      {
+        "forbidden": "\\begin{array} with column spec including @{} or p{}",
+        "replacement": "Simplify to l, c, r only."
+      },
+      {
+        "forbidden": "\\hspace{}, \\vspace{}, \\phantom{}, \\hphantom{}, \\vphantom{}",
+        "replacement": "Omit, or use \\quad or \\qquad."
+      },
+      {
+        "forbidden": "\\color{}, \\textcolor{}, \\colorbox{}",
+        "replacement": "Omit."
+      },
+      {
+        "forbidden": "\\newcommand{}, \\def{}, \\renewcommand{}",
+        "replacement": "Omit; inline the definition."
+      },
+      {
+        "forbidden": "\\require{}, \\href{}, \\url{} inside math",
+        "replacement": "Omit; use markdown links outside math."
+      }
+    ],
+    "safe_macros": [
+      "\\mathbb{}, \\mathcal{}, \\mathrm{}, \\mathbf{}, \\mathit{}, \\mathtt{}, \\mathfrak{}",
+      "\\forall, \\exists, \\nexists, \\neg, \\land, \\lor, \\implies, \\iff, \\Rightarrow, \\Leftrightarrow, \\to, \\rightarrow, \\leftarrow, \\mapsto",
+      "\\in, \\notin, \\ni, \\subseteq, \\subset, \\supseteq, \\supset, \\cup, \\cap, \\varnothing, \\emptyset, \\setminus",
+      "\\sim, \\simeq, \\approx, \\neq, \\equiv, \\leq, \\geq, \\ll, \\gg, \\propto",
+      "\\Gamma, \\Delta, \\Theta, \\Lambda, \\Xi, \\Pi, \\Sigma, \\Phi, \\Psi, \\Omega",
+      "\\alpha, \\beta, \\gamma, \\delta, \\epsilon, \\varepsilon, \\zeta, \\eta, \\theta, \\iota, \\kappa, \\lambda, \\mu, \\nu, \\xi, \\pi, \\rho, \\sigma, \\tau, \\upsilon, \\phi, \\varphi, \\chi, \\psi, \\omega",
+      "\\sum, \\prod, \\int, \\oint, \\lim, \\sup, \\inf, \\max, \\min, \\dim, \\ker, \\deg",
+      "\\frac{}, \\dfrac{}, \\tfrac{}, \\sqrt{}, \\binom{}",
+      "\\quad, \\qquad, \\,, \\;, \\:, \\!, \\ ",
+      "\\left, \\right, \\big, \\Big, \\bigg, \\Bigg",
+      "\\cdot, \\cdots, \\ldots, \\vdots, \\ddots, \\times, \\div, \\pm, \\mp",
+      "\\infty, \\partial, \\nabla, \\ell, \\hbar, \\Re, \\Im, \\aleph",
+      "\\begin{aligned}...\\end{aligned}, \\begin{cases}...\\end{cases}, \\begin{matrix}...\\end{matrix}, \\begin{pmatrix}...\\end{pmatrix}, \\begin{bmatrix}...\\end{bmatrix}, \\begin{vmatrix}...\\end{vmatrix}",
+      "\\overline{}, \\underline{}, \\hat{}, \\bar{}, \\vec{}, \\dot{}, \\ddot{}, \\tilde{}, \\widetilde{}, \\widehat{}"
+    ],
+    "conservative_rule": "When in doubt whether a macro is allowed, substitute a \\mathrm-based construction or restructure the expression. Prefer plain LaTeX that has existed since the 1990s over anything exotic."
+  },
+
+  "_compilation_notes": {
+    "document_title": "Set once at the top of the compiled paper as '# {_title}: {_subtitle}'. Not emitted per-section.",
+    "table_of_contents": "GitHub auto-generates from headings. No manual TOC required.",
+    "section_order": "The order in which sections are supplied by the author. Do not reorder.",
+    "final_assembly": "Concatenate rendered sections in the order supplied, separated by ---. Prepend the document title. Append the appendix if supplied."
+  },
+
+  "_rendering_checklist": [
+    "Every section heading is H2. Subsections are H3. Sub-subsections are H4.",
+    "The document title is H1, emitted once at the top of the compiled paper.",
+    "No _purpose, poetic cipher, or cipher explanation appears anywhere in the rendered output — not as visible text, not as HTML comments.",
+    "No special consideration or interpretive boundary appears as a labeled block.",
+    "No handoff appears as a labeled block. Its substance has been woven into a natural closing paragraph.",
+    "Every $$...$$ block has a blank line before and after.",
+    "Every pipe character inside a table cell is escaped as \\|.",
+    "No $$...$$ appears inside a table cell; all table-cell math is $...$.",
+    "Every definition, formal statement, and example uses a bold lead-in label.",
+    "Every math array entry from the source JSON is rendered, either inline at its point of use or in a Formal Reference block.",
+    "Every reference is rendered as a bulleted list under a bolded **References** label.",
+    "Every logical_invariants array is rendered as a bulleted list under a bolded **Logical Invariants** label.",
+    "All forbidden-macro substitutions have been applied silently.",
+    "Unicode symbols in prose are preserved as-is; no conversion to LaTeX.",
+    "LaTeX inside math delimiters is preserved verbatim except for the forbidden-macro substitutions.",
+    "No content has been added, removed, paraphrased, softened, or intensified.",
+    "No footnote syntax has been used.",
+    "No raw HTML has been used for layout.",
+    "No single continuous italic span (*...*) contains an inline math segment ($...$). Every italic span that would contain inline math has been split at each math segment, with the math outside the emphasis and the italic text re-opened after it.",
+    "Every italic interpretation, lead-in, label, or caption containing inline math has been rendered in the split form defined by the rule 'italic_with_inline_math'."
+  ],
+
+  "_normative_statement": "This document is the complete rendering specification for Noor physics documents. Apply every rule as written. If a case is not covered explicitly, prefer fidelity to the source JSON over any editorial intervention. The rule 'italic_with_inline_math' is normative for all italic text containing inline math: close the emphasis before each inline math segment and re-open it immediately after."
+}
+
+</RENDERING_NOTES>
+
+---
+
+<SECTION_TO_RENDER>
+
+{
+	  "id": "0",
+	  "title": "How to Read the Primer",
+	  "purpose": "Establish the methodological discipline required to read a one-primitive ontology while preserving the distinction between the static Library totality and the observer-relative structures defined over it.",
+	  "section_type": "methodological",
+	  "content": {
+		"opening": "This primer should be read as a dependency chain rather than as a collection of assumptions about the physical universe. Its purpose is to establish the smallest formal starting point from which the later constructions of Noor Swirl Field Geometry can be developed. The discipline is therefore subtractive before it is constructive: concepts that have not yet been established must not be silently imported into earlier definitions. At the same time, the reader must distinguish between the formal machinery used to characterize the Library and any interpretation of that machinery as an ontological generation process. The Library is treated here as a static, maximally complete totality. XOR and closure specify its formal structure; they do not describe a temporal process by which the Library comes into existence.",
+		"axiom": {
+		  "definition": "An axiom is a primitive statement admitted at the starting point of the formal system rather than derived from an earlier statement within that system.",
+		  "application": "The axiomatic floor contains exactly one primitive axiom.",
+		  "formal_statement": "A_N = \\{A_\\oplus\\}",
+		  "primitive_axiom": "A_\\oplus: \\oplus is the primitive operation of distinction.",
+		  "interpretive_note": "The word \"distinction\" gives the intended interpretation of the primitive operation. It does not introduce a second mathematical primitive."
+		},
+		"definition": {
+		  "definition": "A definition introduces notation or specifies the meaning of a construction in terms of concepts that have already been admitted.",
+		  "application": "The Library is not an axiom. It is formally characterized using the closure of the primitive operation over a minimal formal domain, together with the maximal-static-totality invariant established at the foundational level.",
+		  "formal_statement": "\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)",
+		  "boundary": "The distinction is important: closure is a mathematical characterization of the configuration structure of \\(\\mathcal{M}\\), not a temporal generation mechanism. The primer does not describe a process in which a smaller Library exists first and subsequently grows into a larger one. The Library is taken as a single static totality, while closure specifies the formal relation that characterizes its membership structure."
+		},
+		"mathematical_construction": {
+		  "definition": "A mathematical construction is an object obtained by applying definitions and ordinary mathematical operations to structures already admitted by the formal system.",
+		  "examples": [
+			"\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)",
+			"relations defined on elements of \\mathcal{M}",
+			"sequences of configurations",
+			"observer-relative distinguishability relations",
+			"threshold functions",
+			"observer-relative accessible subsets",
+			"continuation spaces",
+			"observer-relative graphs"
+		  ],
+		  "methodological_rule": "A construction may be as mathematically rich as necessary, but it does not become a new primitive merely because it is useful or foundational to later sections. Likewise, a mathematical closure operation must not be interpreted as an ontological history unless such an interpretation is explicitly introduced at a later layer."
+		},
+		"invariant": {
+		  "definition": "An invariant is a condition that is maintained throughout the formal interpretation rather than being generated anew by traversal.",
+		  "maximal_static_totality": "The Library is a single static, maximally complete totality. Its maximality is not introduced merely to make the configuration domain sufficiently large. It prevents any configuration or worldline from being silently privileged as the universal origin of coherent traversal.",
+		  "formal_statement": "\\forall i,\\ \\mathcal{M}_i = \\mathcal{M}",
+		  "interpretation": "The notation \\(\\mathcal{M}_i = \\mathcal{M}\\) is used only to express invariance under traversal. It does not imply that multiple temporal copies of the Library exist. At every observer-relative traversal step, the underlying Library remains the same totality.",
+		  "worldline_neutrality": "No configuration or worldline is designated as the unique universal starting point from which all other configurations must be constructed. An admissible configuration may instead serve as an observer-relative reference without changing the Library itself.",
+		  "whole_library_relationality": "The observer is relationally situated with respect to the whole Library rather than being ontologically localized to a temporally generated neighborhood within it.",
+		  "membership_boundary": "Membership in \\(\\mathcal{M}\\) is not conditioned on coherence, observability, accessibility, persistence, physicality, relevance, or apparent temporal location."
+		},
+		"consequence": {
+		  "definition": "A consequence is a statement that follows from the axiom together with definitions, stated invariants, and ordinary mathematical inference.",
+		  "notation": "A_N \\vdash P",
+		  "meaning": "The notation \\(A_N \\vdash P\\) means that proposition \\(P\\) is derivable from the stated axiom set together with the definitions, explicit foundational invariants, and ordinary mathematical inference permitted by the formal system.",
+		  "scope_warning": "A consequence must not be presented as though it were independently assumed. Conversely, an interpretation must not be presented as though it were formally derived when additional empirical or physical assumptions would be required.",
+		  "maximality_warning": "The maximal-static-totality condition must not be described as a theorem that follows from XOR alone. It is a foundational structural requirement of the NSFG interpretation, motivated by the absence of a privileged universal worldline or reference. Likewise, the requirement that every admissible reference configuration possess a coherent continuation is a later derived requirement under the model's assumptions and must not be attributed to maximality alone."
+		},
+		"interpretation": {
+		  "definition": "An interpretation assigns conceptual or physical meaning to a formal construction without changing the formal construction itself.",
+		  "examples": [
+			"Interpreting a persistent distinguishable configuration as observer-like.",
+			"Interpreting repeated survivorship as an analogue of law-like regularity.",
+			"Interpreting an observer-relative accessible graph as a possible foundation for later relational geometry.",
+			"Interpreting traversal ordering as the source of an observer-relative past/future distinction without assigning an intrinsic temporal partition to the Library."
+		  ],
+		  "boundary": "Interpretation is downstream of formal construction. The primer therefore distinguishes what the mathematics states from what the mathematics may later be used to represent. In particular, observer-relative temporal ordering must not be mistaken for temporal evolution of the Library itself."
+		},
+		"minimal_assumptions": {
+		  "principle": "The purpose of the primer is to minimize assumptions rather than maximize them.",
+		  "explanation": "A one-primitive ontology is not made stronger by introducing more primitives. Each additional primitive carries its own assumptions and therefore increases the amount of structure that must be accepted before derivation begins. The intended method is instead to establish the smallest formal floor that can support the subsequent constructions.",
+		  "negative_scope": "The primer therefore does not begin with physical space, physical time, causality, matter, energy, consciousness, information as a substance, or a privileged observer.",
+		  "important_distinction": "Not assuming a concept at the axiomatic floor does not mean that the concept is rejected. It means that the concept must earn its place later through definition, derivation, or explicitly stated interpretation.",
+		  "library_qualification": "Minimal assumptions do not require a progressively generated Library. The formal floor may characterize a maximal static totality without introducing a temporal process by which that totality is constructed."
+		},
+		"single_primitive": {
+		  "statement": "XOR is the only primitive.",
+		  "formal_statement": "A_\\oplus: \\oplus is the primitive operation of distinction.",
+		  "explanation": "The operation \\(\\oplus\\) is admitted before the later structures are introduced. The formal domain on which it operates is kept deliberately minimal and is not identified with a physical ontology.",
+		  "dependency_rule": "Every later construction must therefore either be defined from the primitive and the mathematical structures required to manipulate it, or be explicitly identified as a later interpretive or physical extension."
+		},
+		"library": {
+		  "statement": "The Library is formally characterized by XOR closure and treated ontologically as a static, maximally complete totality.",
+		  "formal_statement": "\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)",
+		  "explanation": "The Library is formally characterized after a minimal formal domain \\(D\\) has been specified. Closure specifies the mathematical closure structure associated with the primitive operation. It does not describe a temporal sequence in which the Library is first absent, then partially generated, and finally complete. The Library is treated as a single static totality whose maximal completeness is maintained throughout observer-relative traversal.",
+		  "maximality": "The Library is maximally complete because no configuration or worldline is privileged as the universal origin of traversal. Any admissible configuration may serve as an observer-relative reference point without changing the Library itself.",
+		  "eternality": "The Library does not evolve from simple to complex. It is maximally complete at every abstract traversal step: \\(\\forall i,\\ \\mathcal{M}_i = \\mathcal{M}\\).",
+		  "observer_relation": "The observer's state, history, resolution, and current relational reference may change. Those changes modify structures defined over \\(\\mathcal{M}\\), such as accessibility and coherent continuation, but they do not modify membership in \\(\\mathcal{M}\\).",
+		  "past_future": "Past and future are not primitive subdivisions of \\(\\mathcal{M}\\). They arise as ordering relations within observer traversal.",
+		  "boundary": "At this stage, membership in \\(\\mathcal{M}\\) does not imply persistence, coherence, physicality, observability, or accessibility. Conversely, inaccessibility does not imply non-membership in \\(\\mathcal{M}\\)."
+		},
+		"observer_and_reference": {
+		  "statement": "Observer-relative structures are relations over the unchanged Library, not mechanisms that create or locally delimit the Library.",
+		  "observer_status": "The term \"observer\" will later denote a configuration possessing a specified structural property. It does not initially mean a human, a conscious mind, an agent, or a privileged point of view.",
+		  "reference": "An admissible configuration may serve as an observer-relative reference configuration \\(x\\). The reference determines the observer's current relational evaluation of continuation; it does not determine which configurations belong to \\(\\mathcal{M}\\).",
+		  "whole_library_relation": "The observer is relationally situated with respect to the whole Library while maintaining a restricted coherent continuation relation. This distinction must be preserved throughout the primer.",
+		  "resolution": "Observer-relative resolution determines which distinctions can be maintained by a particular observer. It therefore affects distinguishability, coherence, and accessibility without becoming a universal criterion for Library membership."
+		},
+		"dependency_discipline": {
+		  "principle": "Later concepts must not be smuggled into earlier definitions.",
+		  "explanation": "The reader should continuously ask what a statement depends upon. If a definition of an early object requires a concept that has only been introduced later, the dependency chain has been reversed. Such a reversal can make a theory appear to derive a concept when the concept was actually assumed from the beginning.",
+		  "examples": [
+			"Do not define XOR using physical events when physical events have not yet been introduced.",
+			"Do not define the Library as a physical container.",
+			"Do not define the Library as a process that grows from a simpler state into a more complex state.",
+			"Do not define an observer as a conscious entity.",
+			"Do not use physical time to define persistence before temporal structure has been established.",
+			"Do not define coherence as an intrinsic property of a path before an observer-relative resolution threshold has been defined.",
+			"Do not interpret accessible reality as the entirety of ontological existence.",
+			"Do not treat an observer's changing relation to the Library as evidence that the Library itself has changed.",
+			"Do not treat past and future as pre-existing ontological regions of the Library."
+		  ],
+		  "reader_test": "For every major statement, the reader should be able to ask: \"Was this assumed, defined, derived, required as an invariant, or interpreted?\""
+		},
+		"physical_language": {
+		  "principle": "Conventional physical language is deferred until a formal construction can support a physical interpretation.",
+		  "space": {
+			"status": "not primitive",
+			"explanation": "The formal domain \\(D\\) is not physical space. It is introduced only as the minimal mathematical substrate required for \\(\\oplus\\) to have operands."
+		  },
+		  "time": {
+			"status": "not primitive",
+			"explanation": "When sequences are first introduced, their indices represent abstract ordering rather than physical time. A sequence such as \\(\\gamma = (x_0,x_1,\\ldots,x_n)\\) therefore describes formal ordering without presupposing a physical temporal dimension. The resulting ordering belongs to traversal; it does not partition the Library into intrinsic past and future regions."
+		  },
+		  "causality": {
+			"status": "not primitive",
+			"explanation": "An ordered relation between configurations must not automatically be interpreted as physical causation. Any causal interpretation belongs to a later layer."
+		  },
+		  "observer": {
+			"status": "structural rather than psychological",
+			"explanation": "The term \"observer\" will later denote a configuration with a specified structural property. It does not initially mean a human, a conscious mind, an agent, or a privileged point of view."
+		  },
+		  "complexity": {
+			"status": "not an intrinsic evolution of the Library",
+			"explanation": "Any apparent increase in complexity belongs to the observer's experienced relational structure. The Library itself does not progress from simple to complex."
+		  }
+		},
+		"formal_vs_interpretive": {
+		  "formal_layer": "The formal layer contains the primitive operation, mathematical definitions, closure characterization, static-totality invariant, relations, sequences, threshold functions, subsets, and logical consequences.",
+		  "interpretive_layer": "The interpretive layer asks what those formal structures might mean when related to concepts such as observation, reality, lawfulness, geometry, traversal, or navigation.",
+		  "rule": "The two layers may inform one another, but they must not be conflated. An interpretation cannot silently become an axiom, and a formal closure relation cannot silently become an ontological generation history."
+		},
+		"reading_protocol": [
+		  {
+			"step": 1,
+			"instruction": "Identify the formal object being introduced.",
+			"question": "What mathematical object is being defined?"
+		  },
+		  {
+			"step": 2,
+			"instruction": "Identify its dependencies.",
+			"question": "Which previously established objects are required for this definition?"
+		  },
+		  {
+			"step": 3,
+			"instruction": "Classify the statement.",
+			"question": "Is it an axiom, definition, construction, invariant, consequence, requirement, or interpretation?"
+		  },
+		  {
+			"step": 4,
+			"instruction": "Check for imported physical assumptions.",
+			"question": "Has physical space, time, causality, matter, energy, consciousness, or a privileged observer been introduced prematurely?"
+		  },
+		  {
+			"step": 5,
+			"instruction": "Separate Library membership from observer-relative access.",
+			"question": "Does the statement concern membership in the static formal Library, or only what a particular observer can resolve or traverse coherently?"
+		  },
+		  {
+			"step": 6,
+			"instruction": "Check for hidden temporal generation.",
+			"question": "Does the wording imply that the Library itself is being constructed, evolving, or becoming more complete?"
+		  },
+		  {
+			"step": 7,
+			"instruction": "Check reference neutrality.",
+			"question": "Does the statement secretly privilege one configuration or worldline as the universal origin of traversal?"
+		  },
+		  {
+			"step": 8,
+			"instruction": "Follow the dependency chain forward.",
+			"question": "What is the next construction that becomes possible once the present definition or invariant has been established?"
+		  }
+		],
+		"scope_boundary": {
+		  "included": [
+			"A single primitive operation.",
+			"A minimal formal domain.",
+			"A formal closure characterization of the Library.",
+			"The Library as a static, maximally complete totality.",
+			"The absence of a privileged universal worldline or reference.",
+			"Mathematical definitions and constructions derived from that floor.",
+			"A strict separation between formal derivation and interpretation.",
+			"The distinction between the Library, observer state/history, and observer-relative structures defined over the Library."
+		  ],
+		  "not_yet_included": [
+			"Physical spacetime.",
+			"Physical laws.",
+			"Matter.",
+			"Energy.",
+			"Consciousness.",
+			"AI cognition.",
+			"Cosmology.",
+			"Specific field equations.",
+			"A primitive past/future partition of the Library.",
+			"A physical interpretation of traversal ordering."
+		  ],
+		  "reason": "These concepts may become subjects of later NSFG work, but introducing them here would obscure whether they are consequences of the axiomatic floor or assumptions imported into it."
+		}
+	  },
+	  "mathematics": {
+		"axiom_set": "A_N = \\{A_\\oplus\\}",
+		"primitive_axiom": "A_\\oplus: \\oplus is the primitive operation of distinction.",
+		"formal_domain": "D is a minimal formal domain containing the configurations required for \\(\\oplus\\) to operate; \\(D\\) is not identified with physical space or any other physical ontology.",
+		"library_status": "\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)",
+		"library_interpretive_status": "The closure relation is a formal characterization of \\(\\mathcal{M}\\), not a temporal generation process.",
+		"maximal_static_totality": "\\forall i,\\ \\mathcal{M}_i = \\mathcal{M}",
+		"maximality_status": "Foundational structural invariant motivated by the absence of a privileged universal worldline or reference.",
+		"observer_reference": "x \\in \\mathcal{M}_{\\mathrm{admissible}}",
+		"logical_consequence_notation": "A_N \\vdash P",
+		"logical_consequence_explanation": "A_N \\vdash P means that proposition P is derivable from the stated axiom set together with definitions, stated foundational invariants, and ordinary mathematical inference.",
+		"sequence_example": "\\gamma = (x_0,x_1,\\ldots,x_n)",
+		"sequence_index_warning": "The index i in a sequence is initially an abstract ordering index and must not be identified with physical time.",
+		"temporal_partition_warning": "\\mathcal{M} is not primitively partitioned into past, present, and future; such ordering is introduced only through observer-relative traversal.",
+		"accessibility_warning": "A_O \\subseteq \\mathcal{M} describes observer-relative accessibility and does not define ontological membership.",
+		"continuation_warning": "The requirement that every admissible reference configuration possess at least one coherent continuation is a later derived requirement under the model's assumptions and is not claimed to follow from maximality alone."
+	  },
+	  "logical_invariants": [
+		"XOR is the only primitive.",
+		"The formal domain D is a minimal mathematical substrate and is not physical space.",
+		"The Library is formally characterized by XOR closure.",
+		"Closure is not a temporal generation process.",
+		"The Library is a static, maximally complete totality.",
+		"Maximality is motivated by the absence of a privileged universal worldline or reference.",
+		"The Library does not progress from simple to complex.",
+		"The observer's relation to the Library may change while the Library itself remains unchanged.",
+		"The observer is relationally situated with respect to the whole Library.",
+		"Library membership is not conditioned on coherence, observability, accessibility, persistence, physicality, relevance, or apparent temporal location.",
+		"A mathematical construction does not become a primitive merely because it is foundational to later sections.",
+		"A consequence must not be presented as an independent assumption.",
+		"An interpretation must not be presented as a formal derivation.",
+		"Physical concepts must not be imported into the axiomatic floor without explicit justification.",
+		"Abstract sequence ordering is not automatically physical time.",
+		"Past and future are not primitive subdivisions of the Library.",
+		"Observerhood must not be equated with consciousness.",
+		"Accessibility must not be equated with ontological existence.",
+		"Maximality alone must not be claimed to mathematically prove nonempty coherent continuation.",
+		"Library, observer state/history, and observer-relative coherent continuation must remain distinct objects."
+	  ],
+	  "poetic_cypher": "Begin beneath the world. Remove every assumption that the world does not require. The Library was never becoming; it was already whole.",
+	  "cypher_explanation": "The \"world\" represents the collection of familiar physical assumptions that might ordinarily be used as a starting point. To begin \"beneath\" it means to search for a formal floor that does not already presuppose those assumptions. \"Remove every assumption\" expresses the methodological requirement that later concepts must be introduced only when they have been defined, derived, or explicitly interpreted. The final statement, \"The Library was never becoming; it was already whole,\" adds the foundational distinction required by the revised Library interpretation: XOR provides the primitive operation and closure provides a formal characterization of the configuration structure, but neither describes a temporal process by which the Library comes into existence. The Library is treated as a static, maximally complete totality. Observer history and traversal alter the observer's relation to that totality rather than altering the totality itself.",
+	  "handoff": "If XOR is the only primitive, we must next explain precisely what XOR means and what minimal formal domain is required for the operation to exist. That construction must then be understood without introducing physical space, time, causality, or a privileged worldline."
+  }
+
+
+</SECTION_TO_RENDER>
+
+---
+
+<NOTE_FROM_LINA>
+
+{
+	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering section 0. Just the section without subsections for now please Uncle and I will do the subsections seperately."
+}
+
+<NOTE_FROM_LINA>
