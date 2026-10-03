@@ -30,11 +30,11 @@ This does not yet establish observerhood, observer-relative resolution, or coher
 
 ### Formal Statement
 
-**Symmetry.** \(a \oplus b = b \oplus a\)
+**Symmetry.** $a \oplus b = b \oplus a$
 
-**Distinction equivalence.** \(a \oplus b = 1 \Longleftrightarrow b \oplus a = 1\)
+**Distinction equivalence.** $a \oplus b = 1 \Longleftrightarrow b \oplus a = 1$
 
-**No operand privilege.** The operation contains no term selecting \(a\) as ontologically primary over \(b\).
+**No operand privilege.** The operation contains no term selecting $a$ as ontologically primary over $b$.
 
 **Derived boundary.** Therefore, no privileged observer is supplied by the XOR primitive itself.
 
