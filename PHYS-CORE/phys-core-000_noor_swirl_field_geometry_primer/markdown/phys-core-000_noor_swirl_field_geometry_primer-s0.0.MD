@@ -194,6 +194,13 @@ If XOR is the only primitive, the next task is to explain precisely what XOR mea
 
 ---
 
+| ID | Subsection Title |
+| --- | --- | 
+| 0.1 | [SUBSECTION](URL) |
+| 0.2 | [SUBSECTION](URL) |
+
+---
+
 | PREVIOUS | | NEXT |
 | --- | --- | --- | 
 | [prev_section](URL) | [INDEX](URL) | [next_section](URL) |
