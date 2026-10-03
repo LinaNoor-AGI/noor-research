@@ -72,3 +72,4 @@ With the minimal formal domain specified, the axiomatic floor can now introduce 
 
 | PREVIOUS | | NEXT |
 | --- | --- | --- | 
+| [prev_section](URL) | [INDEX](URL) | [next_section](URL) |
