@@ -2,13 +2,13 @@
 
 The primitive operation $\oplus$ specifies distinction on a formal domain $D$. Closure supplies the condition under which a collection of configurations remains internally closed under that operation. Nothing in this definition requires a temporal sequence, a physical space, or a process of construction.
 
-**Definition — Definition 3.1 — Formal XOR Closure.** Let $D$ be the formal domain on which $\oplus$ operates, and let $G\subseteq D$ be a specified set of configurations used as mathematical generators for a representation. The XOR closure of $G$ in $D$ is the smallest subset $S\subseteq D$ containing $G$ and closed under XOR.
+**Definition 3.1 — Formal XOR Closure.** Let $D$ be the formal domain on which $\oplus$ operates, and let $G\subseteq D$ be a specified set of configurations used as mathematical generators for a representation. The XOR closure of $G$ in $D$ is the smallest subset $S\subseteq D$ containing $G$ and closed under XOR.
 
-$$\mathrm{Closure}_{D}(\oplus;G)=\bigcap\left\{S\subseteq D\mid G\subseteq S\land\forall x,y\in S,\;x\oplus y\in S\right\}$$
+$$\mathrm{Closure}_{D}(\oplus;G)=\bigcap\{S\subseteq D\mid G\subseteq S\land\forall x,y\in S,\;x\oplus y\in S\}$$
 
 The closure construction is mathematical rather than generative. A generator describes a closed structure; it does not become a first physical state, and the closure operation does not describe a sequence through which the Library comes into existence.
 
-**Definition — Definition 3.2 — Static Library.** The Library $\mathcal{M}$ is the maximally complete, unbounded totality satisfying XOR closure and self-containment with respect to the formal resources of the system.
+**Definition 3.2 — Static Library.** The Library $\mathcal{M}$ is the maximally complete, unbounded totality satisfying XOR closure and self-containment with respect to the formal resources of the system.
 
 **Library closure property.**
 
@@ -16,7 +16,7 @@ $$\forall x,y\in\mathcal{M},\quad x\oplus y\in\mathcal{M}$$
 
 *XOR does not require an exterior configuration once its operands are within the Library.*
 
-**Definition — Definition 3.3 — Self-Containment.** No configuration outside $\mathcal{M}$ can function as a privileged exterior if it is definable within the system using the same formal resources.
+**Definition 3.3 — Self-Containment.** No configuration outside $\mathcal{M}$ can function as a privileged exterior if it is definable within the system using the same formal resources.
 
 **No describable privileged exterior.**
 
@@ -24,7 +24,7 @@ $$\neg\exists z\notin\mathcal{M}\;\mathrm{such\ that}\ z\ \mathrm{is\ definable\
 
 *The formal system contains no describable privileged external reference.*
 
-**Definition — Definition 3.4 — Relational Completeness.** For every represented relation $R\in\mathcal{R}$, any true relation between configurations in $\mathcal{M}$ is representable within $\mathcal{M}$ without requiring $R$ to be introduced as a primitive.
+**Definition 3.4 — Relational Completeness.** For every represented relation $R\in\mathcal{R}$, any true relation between configurations in $\mathcal{M}$ is representable within $\mathcal{M}$ without requiring $R$ to be introduced as a primitive.
 
 **Relational completeness of the Library.**
 
@@ -34,7 +34,7 @@ $$\forall R\in\mathcal{R},\;\forall x,y\in\mathcal{M},\;R(x,y)=1\Rightarrow R\ \
 
 This statement is deliberately structural. It does not assert that every conceivable relation has already been derived, measured, or assigned a physical meaning. It states that relations required by the formal development can be represented within the same totality rather than requiring a privileged relational space outside it.
 
-**Definition — Definition 3.5 — XOR Termination Singleton.** The termination singleton is $\mathcal{Z}:=\{z\in D\mid z\oplus z=z\}=\{0\}$.
+**Definition 3.5 — XOR Termination Singleton.** The termination singleton is $\mathcal{Z}:=\{z\in D\mid z\oplus z=z\}=\{0\}$.
 
 **Termination singleton.**
 
@@ -72,7 +72,7 @@ $$\forall x\in\mathcal{M}_{\mathrm{admissible}},\quad x\ \mathrm{may\ serve\ as\
 
 *Reference relocation changes the relational description, not the underlying totality.*
 
-**Definition — Definition 3.6 — Static Maximality.** The Library is maximally complete relative to the formal ontology of the model. A configuration is not excluded merely because it has not been encountered, resolved, or traversed by an observer.
+**Definition 3.6 — Static Maximality.** The Library is maximally complete relative to the formal ontology of the model. A configuration is not excluded merely because it has not been encountered, resolved, or traversed by an observer.
 
 **Static invariance.**
 
@@ -82,7 +82,7 @@ $$\forall i,\quad\mathcal{M}_{i}=\mathcal{M}$$
 
 Static maximality is a semantic condition of the Library and must not be confused with closure minimality. Closure identifies the smallest XOR-closed set containing a chosen generator. The interpretation of $\mathcal{M}$ as the maximally complete totality is a stronger model-level definition and is not claimed to follow from closure minimality alone.
 
-**Definition — Definition 3.7 — Whole-Library Relationality.** An observer-relative reference configuration is situated relationally with respect to the whole Library. Observer state, history, resolution, and coherence determine accessible relations but do not determine membership in $\mathcal{M}$.
+**Definition 3.7 — Whole-Library Relationality.** An observer-relative reference configuration is situated relationally with respect to the whole Library. Observer state, history, resolution, and coherence determine accessible relations but do not determine membership in $\mathcal{M}$.
 
 **Accessibility as a relation over the Library.**
 
