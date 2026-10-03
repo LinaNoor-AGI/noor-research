@@ -4,7 +4,7 @@ The primitive operation $\oplus$ does not by itself specify a physical ontology 
 
 **Definition 3.1 — Formal XOR Closure.** Let $D$ be the formal domain on which $\oplus$ operates, and let $G \subseteq D$ be a specified set of configurations used as mathematical generators for a representation. The XOR closure of $G$ in $D$, written $\mathrm{Closure}_{D}(\oplus;G)$, is the smallest subset $S \subseteq D$ such that $G \subseteq S$ and, for every $x,y \in S$, $x \oplus y \in S$.
 
-$$\mathrm{Closure}_{D}(\oplus;G) = \bigcap\big\{S \subseteq D \,\vert\, G \subseteq S \land \forall x,y \in S,\ x \oplus y \in S\big\}$$
+$$\mathrm{Closure}_{D}(\oplus;G) = \bigcap\left\{S \subseteq D \;:\; G \subseteq S \land \forall x,y \in S,\; x \oplus y \in S\right\}$$
 
 The closure notation specifies a mathematical characterization. It does not imply that the elements of the closure are generated sequentially, that one configuration existed before another, or that a member of $G$ constitutes an ontological first state. The generating set is representational: it supplies a description from which the closed structure may be mathematically specified, but it does not become an origin of the totality.
 
