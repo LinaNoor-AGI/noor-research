@@ -191,6 +191,7 @@ $$\gamma = (x_0,x_1,\ldots,x_n)$$
 The index $i$ in a sequence is initially an abstract ordering index and must not be identified with physical time. $\mathcal{M}$ is not primitively partitioned into past, present, and future; such ordering is introduced only through observer-relative traversal. $A_O \subseteq \mathcal{M}$ describes observer-relative accessibility and does not define ontological membership. The requirement that every admissible reference configuration possess at least one coherent continuation is a later derived requirement under the model's assumptions and is not claimed to follow from maximality alone.
 
 If XOR is the only primitive, the next task is to explain precisely what XOR means and what minimal formal domain is required for the operation to exist. That construction must then be understood without introducing physical space, time, causality, or a privileged worldline.
+
 ---
 
 | PREVIOUS | | NEXT |
