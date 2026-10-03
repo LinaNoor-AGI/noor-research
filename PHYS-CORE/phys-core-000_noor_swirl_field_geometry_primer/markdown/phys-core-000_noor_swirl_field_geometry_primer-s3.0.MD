@@ -112,40 +112,7 @@ At the axiomatic floor, membership in $\mathcal{M}$ carries no implication of pe
 
 The central distinction is therefore between closure and generation. Closure states that the Library is structurally invariant under XOR. It does not describe a universe being assembled one XOR operation at a time. Likewise, observer traversal does not cause configurations to become members of the Library. The observer's relation changes; $\mathcal{M}$ does not.
 
-With the Library established as a static, relationally complete, self-contained totality, the next step is to examine whether a candidate described as external to the Library can remain external when it is definable using the same formal machinery. The Library remains a static, unbounded, self-contained totality under XOR closure, and relational descriptions do not constitute additional primitives; what remains to be constructed is the formal problem of a describable privileged exterior to the Library.
-
----
-
-**Logical Invariants**
-
-- XOR is the only primitive operation of distinction.
-- D is the minimal formal domain required for XOR to operate.
-- G specifies generating configurations and is not an additional primitive.
-- The Library is a definition, not an axiom.
-- A set can be closed under an operation; the operation itself should not be called closed.
-- The Library is the XOR closure of G within D.
-- Closure describes a property of 𝓜 rather than a temporal construction process.
-- The Library is unfiltered at the axiomatic level.
-- Existence in the Library is not the same as accessibility to an observer.
-- Inaccessibility is not erasure.
-- There is no describable privileged exterior that can remain outside the closure.
-- There is no observer-independent resolution rule at the axiomatic floor.
-- I_N is observer-relative.
-- There is no universal I_N unless an additional axiom is introduced.
-- μ_O is an observer-relative magnitude evaluation and is not an additional primitive.
-- δ_O is derived as δ_O(x,y) := μ_O(x⊕y).
-- Observerhood is structural and is not synonymous with consciousness.
-- Coherence is relational: 𝓒(γ|O).
-- Coherence is derived from δ_O and I_N(O).
-- Coherence is not an absolute property of a path alone.
-- The abstract sequence index is not automatically physical time.
-- The Library does not generate the future.
-- No independent γ_noise threshold is required at the foundational level.
-- Survivorship filters observer-relative accessibility rather than deleting alternatives.
-- Emergent lawfulness is not an additional axiom.
-- Navigation is a downstream continuation problem created by observer-relative survivability.
-- G_O is a relational graph at the foundational stage and is not physical spacetime.
-- The same formal structure may support multiple domain-specific interpretations without introducing multiple foundational ontologies.
+The Library is therefore not assembled from its configurations the way a structure is assembled from stones. It is the relational ground on which every path is already drawn. Closure does not bring that ground into being; it states the structural condition under which every XOR relation remains internal to the whole. What follows is the question of whether anything describable can stand outside such a totality at all — a question that belongs to the treatment of the privileged exterior in the next section.
 
 ---
 
