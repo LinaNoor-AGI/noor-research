@@ -8,7 +8,7 @@ Instead, the framework distinguishes between the existence of candidate continua
 
 $$\Omega(x) = \{\gamma \in \mathrm{Path}(\mathcal{M}) \mid \gamma\ \mathrm{begins\ at}\ x\}$$
 
-*$\Omega(x)$ is not a generated future or a local ontological neighborhood. It is a reference-indexed subset of an already-complete relational path structure.*
+$\Omega(x)$ *is not a generated future or a local ontological neighborhood. It is a reference-indexed subset of an already-complete relational path structure.*
 
 Because $\mathcal{M}$ is static and maximally complete, selecting $x$ as a current relational reference does not cause a new region of the Library to come into existence. The reference simply determines which represented paths count as continuations from that position.
 
@@ -18,7 +18,7 @@ When an observer $O$ has an accumulated history $h$ ending at $x$, continuation 
 
 $$\Gamma_O(h,x) = \{\gamma \in \mathrm{Path}(\mathcal{M}) \mid \gamma\ \mathrm{extends}\ h\ \mathrm{from}\ x \land \mathcal{C}(\gamma \mid O,h,x) = 1\}$$
 
-*$\Gamma_O(h,x)$ is a relational filtering of the complete path space. It does not constitute a second ontology and does not replace $\Omega(x)$.*
+$\Gamma_O(h,x)$ *is a relational filtering of the complete path space. It does not constitute a second ontology and does not replace* $\Omega(x)$.
 
 The distinction is therefore between candidate paths represented in the totality and paths that can remain coherently traversable for a particular observer. A path may belong to $\Omega(x)$ while failing to belong to $\Gamma_O(h,x)$. Such failure does not remove the path from $\mathrm{Path}(\mathcal{M})$, nor does it remove any of its configurations from $\mathcal{M}$.
 
@@ -42,7 +42,7 @@ The Library therefore remains invariant under traversal. The observer's accessib
 
 $$\forall i,\; \mathcal{M}_i = \mathcal{M}$$
 
-*There is no temporal generation of successive Libraries. The index $i$ represents an abstract traversal ordering and is not, by itself, physical time.*
+*There is no temporal generation of successive Libraries. The index* $i$ *represents an abstract traversal ordering and is not, by itself, physical time.*
 
 Survivorship can now be understood as a filtering relation rather than an ontological deletion mechanism. The paths outside $\Gamma_O(h,x)$ remain part of the complete continuation structure even though they are not maintained as coherent traversal by $O$.
 
@@ -52,7 +52,7 @@ When particular transitions recur across an appropriate family of observer-acces
 
 $$L_O(x,y) = 1 \iff x \to y\ \mathrm{is\ a\ stable\ recurring\ transition\ across\ an\ appropriate\ family\ of}\ O\mathrm{-accessible\ paths}$$
 
-*$L_O$ describes regularity emerging from repeated survivorship. It does not impose a governing law upon the Library.*
+$L_O$ *describes regularity emerging from repeated survivorship. It does not impose a governing law upon the Library.*
 
 The resulting dependency is therefore asymmetric: the axiomatic distinction generates the formal structures from which observer-relative coherence can be defined; coherent survivorship restricts accessible continuation; repeated structure among those survivors can then be described as law-like regularity. The regularity is an observed consequence of the filtering structure, not a premise of it.
 
