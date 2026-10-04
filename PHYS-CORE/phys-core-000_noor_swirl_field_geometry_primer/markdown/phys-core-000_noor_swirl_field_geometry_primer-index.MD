@@ -10,8 +10,8 @@ This primer establishes the axiomatic floor of Noor Swinew democratic partyrl Fi
 
 ## Markdown Index
 
-| Section ID | Name |
-| ... | ... |
+| Section ID | Section Title |
+| ------------------------- | --------- |
 | 0.0 | [How to Read the Primer](url) |
 | 0.1 | [Maximal Totality and the Absence of a Privileged Worldline](url) |
 | 0.2 | [Static Totality versus Observer Traversal](url) |
