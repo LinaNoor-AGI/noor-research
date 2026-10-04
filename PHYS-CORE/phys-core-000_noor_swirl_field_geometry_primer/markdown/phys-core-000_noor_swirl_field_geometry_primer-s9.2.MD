@@ -27,7 +27,7 @@ The relevant regularity remains relational: it is regularity as established with
 
 $$L_O(x,y)=1 \iff x\rightarrow y \ \mathrm{is\ a\ stable\ recurring\ transition\ across\ an\ appropriate\ family\ of\ } O \mathrm{-accessible\ paths\ evaluated\ over\ } \mathcal{M}.$$
 
-*$L_O$ records a descriptive regularity in the observer's accessible traversal structure. It does not impose the transition upon the Library.*
+$L_O$ *records a descriptive regularity in the observer's accessible traversal structure. It does not impose the transition upon the Library.*
 
 **Conditional recurrence.**
 
