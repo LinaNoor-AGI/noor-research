@@ -16,7 +16,7 @@ The same construction permits a local description around an accessible configura
 
 $$U_O(x) = \{y \in \mathcal{M} \mid y\ \mathrm{is\ reachable\ from}\ x\ \mathrm{by\ an}\ O\mathrm{-coherent\ path\ segment}\}$$
 
-*$U_O(x)$ is not assumed to be a geometric neighborhood in the conventional metric sense. It is an accessibility neighborhood: the collection of configurations that can be reached from* $x$ *through path segments that remain coherent relative to* $O$. *If later NSFG work supplies additional structure, this relational neighborhood may acquire familiar geometric interpretations. The axiomatic floor itself does not require such an interpretation.*
+$U_O(x)$ *is not assumed to be a geometric neighborhood in the conventional metric sense. It is an accessibility neighborhood: the collection of configurations that can be reached from* $x$ *through path segments that remain coherent relative to* $O$. *If later NSFG work supplies additional structure, this relational neighborhood may acquire familiar geometric interpretations. The axiomatic floor itself does not require such an interpretation.*
 
 The accessible relational structure can therefore be represented as a graph. Define
 
