@@ -56,7 +56,7 @@ $$
 R_i \subseteq \mathcal{M}, \qquad R_j \subseteq \mathcal{M}
 $$
 
-$R*_{ij}$ *represents shared accessible structure, while* $D_{ij}$ *represents observer-relative difference in accessibility.*
+$R_{ij}$ *represents shared accessible structure, while* $D_{ij}$ *represents observer-relative difference in accessibility.*
 
 **Logical Invariants**
 
