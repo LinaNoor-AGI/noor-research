@@ -163,7 +163,7 @@ $$\forall x, y \in \mathcal{M},\quad x \oplus y \in \mathcal{M}$$
 
 $$\forall x \in \mathcal{M},\ \forall O\ \mathrm{with\ a\ defined\ resolution\ floor}\ I_N(O),\ \exists \gamma \in \mathrm{Path}(\mathcal{M})\ \mathrm{such\ that}\ \gamma\ \mathrm{begins\ at}\ x\ \mathrm{and}\ \mathcal{C}(\gamma \mid O) = 1,\ \mathrm{provided\ the\ observer's\ state\ admits\ continuation.}$$
 
-*No $x$ is excluded from coherent traversal merely by its coordinate within $\mathcal{M}$.*
+*No* $x$ *is excluded from coherent traversal merely by its coordinate within* $\mathcal{M}$.
 
 **Why arbitrary origin is required.** If some $x \in \mathcal{M}$ admitted no coherent continuation solely because of its location, then $x$ would function as a boundary of the unbounded totality or coherence would depend upon a privileged reference frame. Either result would introduce structure external to the relational totality. The absence of a privileged perspective therefore requires coherence to be relocatable: the same relational mechanism must apply from any arbitrary point.
 
@@ -389,7 +389,9 @@ $$\Theta(z) = 1\ \mathrm{if}\ z \geq 0,\ \mathrm{otherwise}\ 0.$$
 
 ## A.13 Coherence
 
-**Step symbol.** $\mathcal{C}_O(x_i, x_{i+1})$
+**Step symbol.** 
+
+$$\mathcal{C}_O(x_i, x_{i+1})$$
 
 **Step coherence.**
 
@@ -521,7 +523,7 @@ $$P_O(y \mid x) \approx \mathrm{constant\ over\ a\ defined\ observer}\text{-}\ma
 
 **Status.** CONSEQUENCE / DERIVED DESCRIPTION
 
-*$L_O$ is not an element of the axiomatic set $A_N$.*
+$L_O$ *is not an element of the axiomatic set* $A_N$.
 
 **Physical law status.** No particular physical law is derived by this definition.
 
