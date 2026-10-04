@@ -2,7 +2,11 @@
 
 Coherence is defined here as a property of the relation between a path and an observer, not as an intrinsic property of the path alone. Let a path be an abstract finite sequence of configurations $\gamma=(x_0,x_1,\ldots,x_n)$, where each $x_i\in\mathcal{M}$. The sequence index $i$ denotes abstract ordering only; it is not yet physical time.
 
-For an observer $O$, let the coherence of each transition be defined by $\mathcal{C}_O(x_i,x_{i+1})=\Theta\!\left(\delta_O(x_i,x_{i+1})-I_N(O)\right)$. Path coherence is then the product of the coherence of every transition along the path:
+For an observer $O$, let the coherence of each transition be defined by 
+
+$$\mathcal{C}_O(x_i,x_{i+1})=\Theta\!\left(\delta_O(x_i,x_{i+1})-I_N(O)\right)$$
+
+Path coherence is then the product of the coherence of every transition along the path:
 
 **Path Coherence.**
 
