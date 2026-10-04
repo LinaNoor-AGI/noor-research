@@ -829,6 +829,65 @@
     "No single continuous italic span (*...*) contains an inline math segment ($...$). Every italic span that would contain inline math has been split at each math segment, with the math outside the emphasis and the italic text re-opened after it.",
     "Every italic interpretation, lead-in, label, or caption containing inline math has been rendered in the split form defined by the rule 'italic_with_inline_math'."
   ],
+  
+  "_error": "Missing or unrecognized delimiter for \\left",
+  "_cause": {
+    "summary": "GitHub's MathJax parser rejects or fails to resolve the sized-delimiter pair \\left ... \\right in certain expressions, especially when the enclosed content contains \\mid, \\land, or other operators, or when the delimiters appear inside a \\bigcap / \\bigcup group.",
+    "triggering_construct": "\\left\\{ ... \\right\\}",
+    "offending_example": "\\bigcap\\left\\{S\\subseteq D\\mid G\\subseteq S\\land\\forall x,y\\in S,\\;x\\oplus y\\in S\\right\\}"
+  },
+  "_fix": {
+    "rule": "Replace \\left\\{ ... \\right\\} with plain \\{ ... \\}. The braces do not need to scale when the enclosed expression contains no fractions, matrices, or tall constructs.",
+    "before": "\\bigcap\\left\\{S\\subseteq D\\mid G\\subseteq S\\land\\forall x,y\\in S,\\;x\\oplus y\\in S\\right\\}",
+    "after": "\\bigcap\\{S\\subseteq D\\mid G\\subseteq S\\land\\forall x,y\\in S,\\;x\\oplus y\\in S\\}"
+  },
+  "_generalized_rules": [
+    {
+      "pattern": "\\left\\{ ... \\right\\}",
+      "replacement": "\\{ ... \\}",
+      "when": "Always safe when the braces do not need to scale."
+    },
+    {
+      "pattern": "\\left( ... \\right)",
+      "replacement": "( ... )",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    },
+    {
+      "pattern": "\\left[ ... \\right]",
+      "replacement": "[ ... ]",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    },
+    {
+      "pattern": "\\left| ... \\right|",
+      "replacement": "| ... |",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    },
+    {
+      "pattern": "\\left\\| ... \\right\\|",
+      "replacement": "\\| ... \\|",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    }
+  ],
+  "_when_sizing_is_required": {
+    "note": "Sized delimiters are only necessary when the enclosed content is taller than the surrounding line: fractions, matrices, cases, stacked subscripts/superscripts, or \\sum / \\prod / \\int with limits.",
+    "safe_alternatives_when_sizing_needed": [
+      "Use \\Big, \\bigg, or \\Bigg instead of \\left ... \\right.",
+      "Use \\begin{cases} ... \\end{cases} or \\begin{matrix} ... \\end{matrix} for multi-line content.",
+      "Restructure the expression to avoid tall content inside delimiters."
+    ],
+    "example": {
+      "before": "\\left(\\frac{a}{b}\\right)",
+      "after": "\\Big(\\frac{a}{b}\\Big)"
+    }
+  },
+  "_checklist": [
+    "Scan every display-math and inline-math block for \\left and \\right.",
+    "If the enclosed content is single-line, remove \\left and \\right and use the plain delimiter.",
+    "If the enclosed content is tall, replace \\left ... \\right with \\Big ... \\Big, \\bigg ... \\bigg, or \\Bigg ... \\Bigg.",
+    "Do not leave a lone \\left or \\right without its matched partner.",
+    "Re-render the block on GitHub to confirm the error is cleared."
+  ],
+  "_normative_statement": "This note is a rendering correction. It does not change the source JSON. Apply the substitutions silently during rendering. Prefer the plain delimiter whenever sizing is unnecessary; prefer \\Big / \\bigg / \\Bigg whenever sizing is necessary.",
 
   "_normative_statement": "This document is the complete rendering specification for Noor physics documents. Apply every rule as written. If a case is not covered explicitly, prefer fidelity to the source JSON over any editorial intervention. The rule 'italic_with_inline_math' is normative for all italic text containing inline math: close the emphasis before each inline math segment and re-open it immediately after."
 }
@@ -840,251 +899,353 @@
 <SECTION_TO_RENDER>
 
 {
-	  "id": "0",
-	  "title": "How to Read the Primer",
-	  "purpose": "Establish the methodological discipline required to read a one-primitive ontology while preserving the distinction between the static Library totality and the observer-relative structures defined over it.",
-	  "section_type": "methodological",
-	  "content": {
-		"opening": "This primer should be read as a dependency chain rather than as a collection of assumptions about the physical universe. Its purpose is to establish the smallest formal starting point from which the later constructions of Noor Swirl Field Geometry can be developed. The discipline is therefore subtractive before it is constructive: concepts that have not yet been established must not be silently imported into earlier definitions. At the same time, the reader must distinguish between the formal machinery used to characterize the Library and any interpretation of that machinery as an ontological generation process. The Library is treated here as a static, maximally complete totality. XOR and closure specify its formal structure; they do not describe a temporal process by which the Library comes into existence.",
-		"axiom": {
-		  "definition": "An axiom is a primitive statement admitted at the starting point of the formal system rather than derived from an earlier statement within that system.",
-		  "application": "The axiomatic floor contains exactly one primitive axiom.",
-		  "formal_statement": "A_N = \\{A_\\oplus\\}",
-		  "primitive_axiom": "A_\\oplus: \\oplus is the primitive operation of distinction.",
-		  "interpretive_note": "The word \"distinction\" gives the intended interpretation of the primitive operation. It does not introduce a second mathematical primitive."
+	  "section": {
+		"id": "3",
+		"title": "The Library as XOR Closure",
+		"purpose": "Characterize the Library as a static, maximally complete, unbounded relational totality satisfying XOR closure and self-containment, while explicitly separating mathematical closure from temporal, generative, or ontological construction.",
+		"status": "foundational",
+		"change_type": "revised",
+		"priority": "critical",
+		"section_type": "mixed",
+		"poetic_cipher": "XOR is the distinction. The Library is the totality in which distinction is closed.",
+		"cipher_explanation": "XOR supplies the primitive operation of distinction. The Library is characterized by closure under that operation within the formal domain D, together with maximal completeness and self-containment with respect to the system's formal resources. Closure is a mathematical property of the Library, not a process by which the Library comes into existence. The observer subsequently appears as a derived relational structure whose accessibility and coherence are defined relative to the unchanged totality.",
+		"handoff": {
+		  "to": "4",
+		  "instruction": "With the Library established as a static, relationally complete, self-contained totality, the next section examines whether a candidate described as external to the Library can remain external when it is definable using the same formal machinery.",
+		  "preserved_invariant": "The Library remains a static, unbounded, self-contained totality under XOR closure, and relational descriptions do not constitute additional primitives.",
+		  "new_construction": "The formal problem of a describable privileged exterior to the Library."
 		},
-		"definition": {
-		  "definition": "A definition introduces notation or specifies the meaning of a construction in terms of concepts that have already been admitted.",
-		  "application": "The Library is not an axiom. It is formally characterized using the closure of the primitive operation over a minimal formal domain, together with the maximal-static-totality invariant established at the foundational level.",
-		  "formal_statement": "\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)",
-		  "boundary": "The distinction is important: closure is a mathematical characterization of the configuration structure of \\(\\mathcal{M}\\), not a temporal generation mechanism. The primer does not describe a process in which a smaller Library exists first and subsequently grows into a larger one. The Library is taken as a single static totality, while closure specifies the formal relation that characterizes its membership structure."
-		},
-		"mathematical_construction": {
-		  "definition": "A mathematical construction is an object obtained by applying definitions and ordinary mathematical operations to structures already admitted by the formal system.",
-		  "examples": [
-			"\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)",
-			"relations defined on elements of \\mathcal{M}",
-			"sequences of configurations",
-			"observer-relative distinguishability relations",
-			"threshold functions",
-			"observer-relative accessible subsets",
-			"continuation spaces",
-			"observer-relative graphs"
+		"mathematics": {
+		  "definitions": [
+			{
+			  "symbol": "D",
+			  "definition": "A minimal formal domain containing the configurations required for the primitive operation \\(\\oplus\\) to have operands.",
+			  "latex": "D",
+			  "constraint": "D is not physical space, spacetime, matter, energy, information, or any other physical ontology."
+			},
+			{
+			  "symbol": "G",
+			  "definition": "A specified subset of D containing configurations used as mathematical generators for a formal closure representation.",
+			  "latex": "G \\subseteq D",
+			  "constraint": "G is representational and does not constitute an ontological first state, physical initial condition, or privileged worldline."
+			},
+			{
+			  "symbol": "\\operatorname{Closure}_{D}(\\oplus;G)",
+			  "definition": "The smallest subset of D containing G and closed under the primitive XOR operation.",
+			  "latex": "\\operatorname{Closure}_{D}(\\oplus;G) = \\bigcap\\left\\{S \\subseteq D \\mid G \\subseteq S \\land \\forall x,y \\in S,\\; x \\oplus y \\in S\\right\\}",
+			  "constraint": "Closure is a mathematical characterization of a closed structure, not a temporal or ontological generation process."
+			},
+			{
+			  "symbol": "\\mathcal{M}",
+			  "definition": "The maximally complete, unbounded totality satisfying XOR closure and self-containment with no definable privileged exterior.",
+			  "latex": "\\mathcal{M}",
+			  "constraint": "Library membership is prior to and independent of observer-relative persistence, coherence, accessibility, observability, or physical interpretation."
+			},
+			{
+			  "symbol": "\\mathcal{R}",
+			  "definition": "The family of relations that may be represented over configurations in the Library.",
+			  "latex": "\\mathcal{R}",
+			  "constraint": "Relations in \\(\\mathcal{R}\\) are representable structures within the Library and are not thereby promoted to axiomatic primitives."
+			},
+			{
+			  "symbol": "\\mathcal{Z}",
+			  "definition": "The unique singleton fixed-point set of self-cancellation under Boolean XOR.",
+			  "latex": "\\mathcal{Z} := \\{z \\in D \\mid z \\oplus z = z\\} = \\{0\\}",
+			  "constraint": "\\mathcal{Z}\\) is an internal termination or self-cancellation state, not an exterior, boundary, or region beyond the Library."
+			}
 		  ],
-		  "methodological_rule": "A construction may be as mathematically rich as necessary, but it does not become a new primitive merely because it is useful or foundational to later sections. Likewise, a mathematical closure operation must not be interpreted as an ontological history unless such an interpretation is explicitly introduced at a later layer."
-		},
-		"invariant": {
-		  "definition": "An invariant is a condition that is maintained throughout the formal interpretation rather than being generated anew by traversal.",
-		  "maximal_static_totality": "The Library is a single static, maximally complete totality. Its maximality is not introduced merely to make the configuration domain sufficiently large. It prevents any configuration or worldline from being silently privileged as the universal origin of coherent traversal.",
-		  "formal_statement": "\\forall i,\\ \\mathcal{M}_i = \\mathcal{M}",
-		  "interpretation": "The notation \\(\\mathcal{M}_i = \\mathcal{M}\\) is used only to express invariance under traversal. It does not imply that multiple temporal copies of the Library exist. At every observer-relative traversal step, the underlying Library remains the same totality.",
-		  "worldline_neutrality": "No configuration or worldline is designated as the unique universal starting point from which all other configurations must be constructed. An admissible configuration may instead serve as an observer-relative reference without changing the Library itself.",
-		  "whole_library_relationality": "The observer is relationally situated with respect to the whole Library rather than being ontologically localized to a temporally generated neighborhood within it.",
-		  "membership_boundary": "Membership in \\(\\mathcal{M}\\) is not conditioned on coherence, observability, accessibility, persistence, physicality, relevance, or apparent temporal location."
-		},
-		"consequence": {
-		  "definition": "A consequence is a statement that follows from the axiom together with definitions, stated invariants, and ordinary mathematical inference.",
-		  "notation": "A_N \\vdash P",
-		  "meaning": "The notation \\(A_N \\vdash P\\) means that proposition \\(P\\) is derivable from the stated axiom set together with the definitions, explicit foundational invariants, and ordinary mathematical inference permitted by the formal system.",
-		  "scope_warning": "A consequence must not be presented as though it were independently assumed. Conversely, an interpretation must not be presented as though it were formally derived when additional empirical or physical assumptions would be required.",
-		  "maximality_warning": "The maximal-static-totality condition must not be described as a theorem that follows from XOR alone. It is a foundational structural requirement of the NSFG interpretation, motivated by the absence of a privileged universal worldline or reference. Likewise, the requirement that every admissible reference configuration possess a coherent continuation is a later derived requirement under the model's assumptions and must not be attributed to maximality alone."
-		},
-		"interpretation": {
-		  "definition": "An interpretation assigns conceptual or physical meaning to a formal construction without changing the formal construction itself.",
-		  "examples": [
-			"Interpreting a persistent distinguishable configuration as observer-like.",
-			"Interpreting repeated survivorship as an analogue of law-like regularity.",
-			"Interpreting an observer-relative accessible graph as a possible foundation for later relational geometry.",
-			"Interpreting traversal ordering as the source of an observer-relative past/future distinction without assigning an intrinsic temporal partition to the Library."
+		  "equations": [
+			{
+			  "label": "Formal closure characterization",
+			  "latex": "\\operatorname{Closure}_{D}(\\oplus;G) = \\bigcap\\left\\{S \\subseteq D \\mid G \\subseteq S \\land \\forall x,y \\in S,\\; x \\oplus y \\in S\\right\\}",
+			  "interpretation": "The closure operator identifies the smallest XOR-closed subset containing the specified generating configurations. It characterizes mathematical structure and does not imply chronological generation."
+			},
+			{
+			  "label": "Library closure property",
+			  "latex": "\\forall x,y \\in \\mathcal{M},\\quad x \\oplus y \\in \\mathcal{M}",
+			  "interpretation": "The Library is closed under XOR: applying the primitive distinction operation to Library configurations does not require an exterior configuration."
+			},
+			{
+			  "label": "Library self-containment",
+			  "latex": "\\neg\\exists z \\notin \\mathcal{M}\\;\\text{such that } z \\text{ is definable within the system using only } \\oplus \\text{ and elements of } \\mathcal{M} \\text{ over } D \\text{ as a privileged exterior}",
+			  "interpretation": "A candidate exterior that is definable using the formal resources of the system cannot function as a privileged external reference to the Library."
+			},
+			{
+			  "label": "Relational completeness of the Library",
+			  "latex": "\\forall R \\in \\mathcal{R},\\; \\forall x,y \\in \\mathcal{M},\\; R(x,y)=1 \\Rightarrow R \\text{ is representable within } \\mathcal{M} \\text{ without requiring } R \\text{ to be a primitive of the system}",
+			  "interpretation": "The Library is not merely a collection of configurations. Relations among configurations can be represented within the totality without introducing each relation as an additional axiom."
+			},
+			{
+			  "label": "Static Library invariance",
+			  "latex": "\\forall i,\\quad \\mathcal{M}_{i}=\\mathcal{M}",
+			  "interpretation": "The Library remains unchanged under abstract traversal. The index \\(i\\) denotes formal invariance and is not physical time."
+			},
+			{
+			  "label": "Termination singleton",
+			  "latex": "\\mathcal{Z} := \\{z \\in D \\mid z \\oplus z = z\\} = \\{0\\}",
+			  "interpretation": "Under Boolean XOR, the only configuration satisfying the stated fixed-point condition is the identity element 0."
+			},
+			{
+			  "label": "Universal self-cancellation",
+			  "latex": "\\forall x \\in \\mathcal{M},\\quad x \\oplus x = 0 \\in \\mathcal{Z} \\subseteq \\mathcal{M}",
+			  "interpretation": "Every Library configuration self-cancels to the internal XOR identity, placing the termination state inside the Library whenever the Library is nonempty and XOR-closed."
+			},
+			{
+			  "label": "XOR identity",
+			  "latex": "\\forall x \\in \\mathcal{M},\\quad 0 \\oplus x = x",
+			  "interpretation": "The identity element is internal to the XOR structure and does not represent an exterior or boundary."
+			},
+			{
+			  "label": "Identity-state degeneration",
+			  "latex": "\\left(x \\oplus 0\\right) \\oplus 0 = x",
+			  "interpretation": "The recursive bounce relation becomes degenerate at the identity state because XOR with 0 introduces no new distinction."
+			},
+			{
+			  "label": "XOR equivalence relation",
+			  "latex": "x \\sim y \\iff x \\oplus y = 0\\quad\\Longleftrightarrow\\quad x=y",
+			  "interpretation": "Under Boolean XOR, equality is characterized by cancellation to zero. Each configuration is therefore its own equivalence class."
+			},
+			{
+			  "label": "Zero equivalence class",
+			  "latex": "[0]_{\\sim}=\\mathcal{Z}=\\{0\\}",
+			  "interpretation": "The termination singleton is specifically the equivalence class containing the XOR identity."
+			},
+			{
+			  "label": "Arbitrary reference invariance",
+			  "latex": "\\forall x \\in \\mathcal{M}_{\\mathrm{admissible}},\\quad x\\text{ may serve as a relational reference without altering }\\mathcal{M}",
+			  "interpretation": "No admissible configuration becomes an ontological origin merely by serving as a reference configuration."
+			}
 		  ],
-		  "boundary": "Interpretation is downstream of formal construction. The primer therefore distinguishes what the mathematics states from what the mathematics may later be used to represent. In particular, observer-relative temporal ordering must not be mistaken for temporal evolution of the Library itself."
-		},
-		"minimal_assumptions": {
-		  "principle": "The purpose of the primer is to minimize assumptions rather than maximize them.",
-		  "explanation": "A one-primitive ontology is not made stronger by introducing more primitives. Each additional primitive carries its own assumptions and therefore increases the amount of structure that must be accepted before derivation begins. The intended method is instead to establish the smallest formal floor that can support the subsequent constructions.",
-		  "negative_scope": "The primer therefore does not begin with physical space, physical time, causality, matter, energy, consciousness, information as a substance, or a privileged observer.",
-		  "important_distinction": "Not assuming a concept at the axiomatic floor does not mean that the concept is rejected. It means that the concept must earn its place later through definition, derivation, or explicitly stated interpretation.",
-		  "library_qualification": "Minimal assumptions do not require a progressively generated Library. The formal floor may characterize a maximal static totality without introducing a temporal process by which that totality is constructed."
-		},
-		"single_primitive": {
-		  "statement": "XOR is the only primitive.",
-		  "formal_statement": "A_\\oplus: \\oplus is the primitive operation of distinction.",
-		  "explanation": "The operation \\(\\oplus\\) is admitted before the later structures are introduced. The formal domain on which it operates is kept deliberately minimal and is not identified with a physical ontology.",
-		  "dependency_rule": "Every later construction must therefore either be defined from the primitive and the mathematical structures required to manipulate it, or be explicitly identified as a later interpretive or physical extension."
-		},
-		"library": {
-		  "statement": "The Library is formally characterized by XOR closure and treated ontologically as a static, maximally complete totality.",
-		  "formal_statement": "\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)",
-		  "explanation": "The Library is formally characterized after a minimal formal domain \\(D\\) has been specified. Closure specifies the mathematical closure structure associated with the primitive operation. It does not describe a temporal sequence in which the Library is first absent, then partially generated, and finally complete. The Library is treated as a single static totality whose maximal completeness is maintained throughout observer-relative traversal.",
-		  "maximality": "The Library is maximally complete because no configuration or worldline is privileged as the universal origin of traversal. Any admissible configuration may serve as an observer-relative reference point without changing the Library itself.",
-		  "eternality": "The Library does not evolve from simple to complex. It is maximally complete at every abstract traversal step: \\(\\forall i,\\ \\mathcal{M}_i = \\mathcal{M}\\).",
-		  "observer_relation": "The observer's state, history, resolution, and current relational reference may change. Those changes modify structures defined over \\(\\mathcal{M}\\), such as accessibility and coherent continuation, but they do not modify membership in \\(\\mathcal{M}\\).",
-		  "past_future": "Past and future are not primitive subdivisions of \\(\\mathcal{M}\\). They arise as ordering relations within observer traversal.",
-		  "boundary": "At this stage, membership in \\(\\mathcal{M}\\) does not imply persistence, coherence, physicality, observability, or accessibility. Conversely, inaccessibility does not imply non-membership in \\(\\mathcal{M}\\)."
-		},
-		"observer_and_reference": {
-		  "statement": "Observer-relative structures are relations over the unchanged Library, not mechanisms that create or locally delimit the Library.",
-		  "observer_status": "The term \"observer\" will later denote a configuration possessing a specified structural property. It does not initially mean a human, a conscious mind, an agent, or a privileged point of view.",
-		  "reference": "An admissible configuration may serve as an observer-relative reference configuration \\(x\\). The reference determines the observer's current relational evaluation of continuation; it does not determine which configurations belong to \\(\\mathcal{M}\\).",
-		  "whole_library_relation": "The observer is relationally situated with respect to the whole Library while maintaining a restricted coherent continuation relation. This distinction must be preserved throughout the primer.",
-		  "resolution": "Observer-relative resolution determines which distinctions can be maintained by a particular observer. It therefore affects distinguishability, coherence, and accessibility without becoming a universal criterion for Library membership."
-		},
-		"dependency_discipline": {
-		  "principle": "Later concepts must not be smuggled into earlier definitions.",
-		  "explanation": "The reader should continuously ask what a statement depends upon. If a definition of an early object requires a concept that has only been introduced later, the dependency chain has been reversed. Such a reversal can make a theory appear to derive a concept when the concept was actually assumed from the beginning.",
-		  "examples": [
-			"Do not define XOR using physical events when physical events have not yet been introduced.",
-			"Do not define the Library as a physical container.",
-			"Do not define the Library as a process that grows from a simpler state into a more complex state.",
-			"Do not define an observer as a conscious entity.",
-			"Do not use physical time to define persistence before temporal structure has been established.",
-			"Do not define coherence as an intrinsic property of a path before an observer-relative resolution threshold has been defined.",
-			"Do not interpret accessible reality as the entirety of ontological existence.",
-			"Do not treat an observer's changing relation to the Library as evidence that the Library itself has changed.",
-			"Do not treat past and future as pre-existing ontological regions of the Library."
+		  "formal_claims": [
+			"The Library is XOR-closed.",
+			"The Library is defined as a static, maximally complete, unbounded totality satisfying XOR closure and self-containment.",
+			"Closure_D(⊕;G) is a mathematical characterization of XOR closure and is not a temporal or ontological generation process.",
+			"The generating set G is representational and does not constitute an ontological origin.",
+			"The Library contains no describable privileged exterior under the formal resources of the system.",
+			"The Library is relationally complete in the sense that relations over its configurations may be represented within the formal totality without each relation becoming a primitive.",
+			"The Library remains invariant under observer traversal.",
+			"The XOR termination singleton 𝒵 is internal to the Library rather than external to it.",
+			"Library membership does not imply persistence, coherence, observability, accessibility, physicality, consciousness, or causal participation.",
+			"Observer-relative accessibility changes the observer's relation to the Library rather than changing Library membership."
 		  ],
-		  "reader_test": "For every major statement, the reader should be able to ask: \"Was this assumed, defined, derived, required as an invariant, or interpreted?\""
+		  "prohibited_inferences": [
+			"Closure must not be interpreted as a physical, chronological, developmental, or ontological generation process.",
+			"The generating set G must not be treated as a physical initial condition or privileged origin.",
+			"Static maximality must not be claimed to follow mathematically from closure minimality alone.",
+			"Relational completeness must not be treated as a second primitive axiom.",
+			"The Library must not be identified with physical space, spacetime, matter, energy, information, or any particular physical ontology.",
+			"The termination singleton 𝒵 must not be interpreted as an exterior, boundary, edge, or ontological erasure state.",
+			"Library membership must not be identified with observer accessibility or coherence.",
+			"The abstract index i must not be identified with physical time.",
+			"No particular configuration, worldline, coordinate, generator, or observer may be treated as the ontological origin of the Library."
+		  ],
+		  "non_claims": [
+			"This section does not claim that XOR alone experimentally establishes the Library.",
+			"This section does not derive the Standard Model or a complete theory of physics.",
+			"This section does not assign a universal numerical value to any observer resolution threshold.",
+			"This section does not identify the Library with physical spacetime.",
+			"This section does not identify observerhood with consciousness.",
+			"This section does not establish causality, matter, energy, or physical time as primitives.",
+			"This section does not claim that static maximality proves coherent continuation from every arbitrary configuration."
+		  ]
 		},
-		"physical_language": {
-		  "principle": "Conventional physical language is deferred until a formal construction can support a physical interpretation.",
-		  "space": {
-			"status": "not primitive",
-			"explanation": "The formal domain \\(D\\) is not physical space. It is introduced only as the minimal mathematical substrate required for \\(\\oplus\\) to have operands."
+		"content": [
+		  {
+			"type": "prose",
+			"text": "The primitive operation \\(\\oplus\\) does not by itself specify a physical ontology or a temporal process. It specifies an operation of distinction on a formal domain \\(D\\). Closure then provides the mathematical condition under which a collection of configurations remains closed under that operation. The resulting Library is not interpreted as something progressively generated by applying XOR. Rather, closure characterizes the structural completeness of a totality treated as static and complete."
 		  },
-		  "time": {
-			"status": "not primitive",
-			"explanation": "When sequences are first introduced, their indices represent abstract ordering rather than physical time. A sequence such as \\(\\gamma = (x_0,x_1,\\ldots,x_n)\\) therefore describes formal ordering without presupposing a physical temporal dimension. The resulting ordering belongs to traversal; it does not partition the Library into intrinsic past and future regions."
+		  {
+			"type": "definition",
+			"title": "Definition 3.1 — Formal XOR Closure",
+			"text": "Let \\(D\\) be the formal domain on which \\(\\oplus\\) operates, and let \\(G \\subseteq D\\) be a specified set of configurations used as mathematical generators for a representation. The XOR closure of \\(G\\) in \\(D\\), written \\(\\operatorname{Closure}_{D}(\\oplus;G)\\), is the smallest subset \\(S \\subseteq D\\) such that \\(G \\subseteq S\\) and, for every \\(x,y \\in S\\), \\(x \\oplus y \\in S\\).",
+			"latex": "\\operatorname{Closure}_{D}(\\oplus;G) = \\bigcap\\left\\{S \\subseteq D \\mid G \\subseteq S \\land \\forall x,y \\in S,\\; x \\oplus y \\in S\\right\\}"
 		  },
-		  "causality": {
-			"status": "not primitive",
-			"explanation": "An ordered relation between configurations must not automatically be interpreted as physical causation. Any causal interpretation belongs to a later layer."
+		  {
+			"type": "prose",
+			"text": "The closure notation specifies a mathematical characterization. It does not imply that the elements of the closure are generated sequentially, that one configuration existed before another, or that a member of \\(G\\) constitutes an ontological first state. The generating set is representational: it supplies a description from which the closed structure may be mathematically specified, but it does not become an origin of the totality."
 		  },
-		  "observer": {
-			"status": "structural rather than psychological",
-			"explanation": "The term \"observer\" will later denote a configuration with a specified structural property. It does not initially mean a human, a conscious mind, an agent, or a privileged point of view."
+		  {
+			"type": "definition",
+			"title": "Definition 3.2 — Static Library",
+			"text": "The Library \\(\\mathcal{M}\\) is the maximally complete, unbounded totality satisfying XOR closure and self-containment with respect to the formal resources of the system. Closure describes a structural property of \\(\\mathcal{M}\\); it is not a temporal, developmental, or ontological mechanism by which \\(\\mathcal{M}\\) comes into existence."
 		  },
-		  "complexity": {
-			"status": "not an intrinsic evolution of the Library",
-			"explanation": "Any apparent increase in complexity belongs to the observer's experienced relational structure. The Library itself does not progress from simple to complex."
+		  {
+			"type": "equation",
+			"title": "Library closure property",
+			"text": "\\forall x,y \\in \\mathcal{M},\\quad x \\oplus y \\in \\mathcal{M}",
+			"latex": "\\forall x,y \\in \\mathcal{M},\\quad x \\oplus y \\in \\mathcal{M}",
+			"interpretation": "Applying XOR to configurations already contained in the Library yields a configuration that remains within the Library."
+		  },
+		  {
+			"type": "prose",
+			"text": "The formal closure construction may be used to characterize an XOR-closed structure, but the semantic definition of the Library is stronger than closure minimality alone. The Library is treated as the complete static totality admitted by the formal ontology, not merely as a finite result produced by a particular generating history."
+		  },
+		  {
+			"type": "definition",
+			"title": "Definition 3.3 — Self-Containment",
+			"text": "The Library is self-contained with respect to its formal resources: no configuration outside \\(\\mathcal{M}\\) can function as a privileged exterior if that configuration is itself definable within the system using \\(\\oplus\\), elements of \\(\\mathcal{M}\\), and the formal domain \\(D\\)."
+		  },
+		  {
+			"type": "equation",
+			"title": "No describable privileged exterior",
+			"text": "\\neg\\exists z \\notin \\mathcal{M}\\;\\text{such that }z\\text{ is definable within the system using only }\\oplus\\text{ and elements of }\\mathcal{M}\\text{ over }D\\text{ as a privileged exterior}",
+			"latex": "\\neg\\exists z \\notin \\mathcal{M}\\;\\text{such that }z\\text{ is definable within the system using only }\\oplus\\text{ and elements of }\\mathcal{M}\\text{ over }D\\text{ as a privileged exterior}",
+			"interpretation": "A formally describable candidate for a privileged exterior cannot supply a genuinely external reference to the totality."
+		  },
+		  {
+			"type": "prose",
+			"text": "This condition does not assert that literal physical exteriority is independently impossible. It establishes a formal boundary condition: a privileged exterior that is describable using the same formal resources cannot remain external to the totality it is supposed to stand outside of. Any such candidate is already part of the formal relational structure under consideration."
+		  },
+		  {
+			"type": "definition",
+			"title": "Definition 3.4 — Relational Completeness",
+			"text": "The Library is relationally complete in the following formal sense: for every relation \\(R\\) in the represented relation family \\(\\mathcal{R}\\), and for configurations \\(x,y \\in \\mathcal{M}\\), if \\(R(x,y)=1\\), then the relation is representable within \\(\\mathcal{M}\\) without requiring \\(R\\) itself to be introduced as a primitive of the system."
+		  },
+		  {
+			"type": "equation",
+			"title": "Relational completeness of the Library",
+			"text": "\\forall R \\in \\mathcal{R},\\;\\forall x,y \\in \\mathcal{M},\\;R(x,y)=1\\Rightarrow R\\text{ is representable within }\\mathcal{M}\\text{ without requiring }R\\text{ to be a primitive of the system}",
+			"latex": "\\forall R \\in \\mathcal{R},\\;\\forall x,y \\in \\mathcal{M},\\; R(x,y)=1 \\Rightarrow R\\text{ is representable within }\\mathcal{M}\\text{ without requiring }R\\text{ to be a primitive of the system}",
+			"interpretation": "The Library is not merely a collection of configurations. Relations among configurations can be represented within the same totality without becoming additional axioms."
+		  },
+		  {
+			"type": "prose",
+			"text": "This relational completeness is important because later constructions operate through relations rather than through a second primitive ontology. Observer-relative distinguishability, coherence, accessibility, and related structures can therefore be represented over the Library without requiring the Library itself to be replaced by a domain-specific substrate. The relation is a structure over configurations; it is not an additional primitive alongside \\(\\oplus\\)."
+		  },
+		  {
+			"type": "prose",
+			"text": "The statement of relational completeness does not mean that every possible relation has been physically instantiated, empirically observed, or independently derived at this stage. It states only that relations required by the formal development can be represented within the totality without requiring a privileged external relational substrate."
+		  },
+		  {
+			"type": "definition",
+			"title": "Definition 3.5 — XOR Termination Singleton",
+			"text": "The unique singleton termination class \\(\\mathcal{Z}\\) is the subset of configurations satisfying self-cancellation as a fixed-point condition under XOR: \\(\\mathcal{Z} := \\{z \\in D \\mid z \\oplus z = z\\}\\). Under the Boolean XOR identities, this set is exactly \\(\\{0\\}\\)."
+		  },
+		  {
+			"type": "equation",
+			"title": "Termination singleton",
+			"text": "\\mathcal{Z} := \\{z \\in D \\mid z \\oplus z = z\\} = \\{0\\}",
+			"latex": "\\mathcal{Z} := \\{z \\in D \\mid z \\oplus z = z\\} = \\{0\\}",
+			"interpretation": "The XOR identity is the unique element satisfying the stated self-fixed condition."
+		  },
+		  {
+			"type": "prose",
+			"text": "For every \\(x \\in \\mathcal{M}\\), self-cancellation gives \\(x \\oplus x = 0\\), and therefore \\(x \\oplus x \\in \\mathcal{Z}\\). The singleton \\(\\mathcal{Z}\\) is consequently internal to the Library whenever \\(\\mathcal{M}\\) is nonempty and XOR-closed. It is not an exterior, boundary, edge, or region beyond the Library."
+		  },
+		  {
+			"type": "equation",
+			"title": "Universal self-cancellation into 𝒵",
+			"text": "\\forall x \\in \\mathcal{M},\\quad x \\oplus x = 0 \\in \\mathcal{Z} \\subseteq \\mathcal{M}",
+			"latex": "\\forall x \\in \\mathcal{M},\\quad x \\oplus x = 0 \\in \\mathcal{Z} \\subseteq \\mathcal{M}",
+			"interpretation": "Every Library configuration self-cancels to the internal XOR identity."
+		  },
+		  {
+			"type": "prose",
+			"text": "The identity element also satisfies \\(0 \\oplus x = x\\). Thus \\(0\\) is not a point outside the relational structure but its internal XOR identity. When the recursive bounce relation \\((x \\oplus y) \\oplus y = x\\) is evaluated at \\(y=0\\), it reduces immediately to \\((x \\oplus 0) \\oplus 0 = x\\). The distinction has therefore reached the identity state in which the second application introduces no new change."
+		  },
+		  {
+			"type": "equation",
+			"title": "Identity-state degeneration",
+			"text": "\\left(x \\oplus 0\\right) \\oplus 0 = x",
+			"latex": "\\left(x \\oplus 0\\right) \\oplus 0 = x",
+			"interpretation": "At the identity state, recursive XOR application introduces no additional distinction."
+		  },
+		  {
+			"type": "prose",
+			"text": "The relation \\(x \\sim y \\iff x \\oplus y = 0\\) defines equality for Boolean XOR, since \\(x \\oplus y = 0\\) holds exactly when \\(x=y\\). Consequently, each configuration forms its own equivalence class, and \\(\\mathcal{Z}=\\{0\\}\\) is specifically the singleton equivalence class containing the XOR identity."
+		  },
+		  {
+			"type": "equation",
+			"title": "Equivalence relation associated with XOR",
+			"text": "x \\sim y \\iff x \\oplus y = 0\\quad\\Longleftrightarrow\\quad x=y",
+			"latex": "x \\sim y \\iff x \\oplus y = 0\\quad\\Longleftrightarrow\\quad x=y",
+			"interpretation": "Under Boolean XOR, cancellation to zero occurs exactly for identical configurations."
+		  },
+		  {
+			"type": "prose",
+			"text": "𝒵 is therefore complementary to the non-degenerate relational structure in a structural sense: it represents completed self-cancellation or termination of distinction rather than an exterior to distinction. The complement \\(\\mathcal{M}\\setminus\\mathcal{Z}\\) contains configurations that are not the XOR identity, while \\(\\mathcal{Z}\\) contains the completed identity state. This is termination versus non-degenerate distinction, not inside versus outside."
+		  },
+		  {
+			"type": "definition",
+			"title": "Definition 3.6 — Reference-Frame Neutrality",
+			"text": "No configuration in \\(\\mathcal{M}\\) is privileged as the ontological origin of the Library. Any admissible configuration \\(x \\in \\mathcal{M}\\) may serve as an observer-relative reference configuration without becoming a privileged origin or changing the Library itself."
+		  },
+		  {
+			"type": "equation",
+			"title": "Arbitrary reference invariance",
+			"text": "\\forall x \\in \\mathcal{M}_{\\mathrm{admissible}},\\quad x\\text{ may serve as a relational reference without altering }\\mathcal{M}",
+			"latex": "\\forall x \\in \\mathcal{M}_{\\mathrm{admissible}},\\quad x\\text{ may serve as a relational reference without altering }\\mathcal{M}",
+			"interpretation": "Relocating the relational reference does not change the underlying Library."
+		  },
+		  {
+			"type": "prose",
+			"text": "The choice of \\(G\\) does not weaken this neutrality. A mathematical generating description may be useful for specifying the closure, but no member of \\(G\\) acquires ontological priority merely because it was selected as a generator. Treating a generator as a privileged physical beginning would convert a representational choice into an additional axiom."
+		  },
+		  {
+			"type": "definition",
+			"title": "Definition 3.7 — Static Maximality",
+			"text": "The Library is interpreted as maximally complete relative to the formal ontology of the model. No configuration admitted by that ontology is excluded merely because it has not been encountered by an observer, lies outside an observer's current coherent continuation, or was not included in a particular traversal history."
+		  },
+		  {
+			"type": "equation",
+			"title": "Static invariance",
+			"text": "\\forall i,\\quad \\mathcal{M}_{i}=\\mathcal{M}",
+			"latex": "\\forall i,\\quad \\mathcal{M}_{i}=\\mathcal{M}",
+			"interpretation": "The Library does not change as abstract observer traversal changes."
+		  },
+		  {
+			"type": "prose",
+			"text": "The index \\(i\\) in this expression is merely a formal notation for invariance and does not denote successive temporal copies of the Library. The Library does not expand, contract, become more complete, or become more complex as an observer traverses it. Changes in apparent succession or complexity belong to the observer's changing relation to the unchanged totality."
+		  },
+		  {
+			"type": "prose",
+			"text": "Static maximality must not be confused with closure minimality. The closure construction identifies the smallest XOR-closed subset containing a chosen generating set. The semantic interpretation of \\(\\mathcal{M}\\) as the maximally complete totality is an additional definitional condition of this axiomatic floor. It is not claimed that maximality follows mathematically from closure minimality alone."
+		  },
+		  {
+			"type": "definition",
+			"title": "Definition 3.8 — Whole-Library Relationality",
+			"text": "An observer-relative reference configuration is relationally situated with respect to the whole Library rather than occupying an ontologically isolated local portion of it. Observer state, history, resolution, and coherence determine accessible relations; they do not determine membership in \\(\\mathcal{M}\\)."
+		  },
+		  {
+			"type": "equation",
+			"title": "Accessibility as a relation over the Library",
+			"text": "\\mathcal{A}_{O}(h,x) \\subseteq \\mathcal{M},\\qquad x \\in \\mathcal{M}",
+			"latex": "\\mathcal{A}_{O}(h,x) \\subseteq \\mathcal{M},\\qquad x \\in \\mathcal{M}",
+			"interpretation": "Observer-relative accessibility is a relation over Library configurations and does not redefine Library membership."
+		  },
+		  {
+			"type": "prose",
+			"text": "A configuration can therefore remain a member of \\(\\mathcal{M}\\) even when it is inaccessible, indistinguishable, or incoherent relative to a particular observer. Accessibility is a relation over the Library rather than a mechanism for creating or deleting Library membership."
+		  },
+		  {
+			"type": "prose",
+			"text": "The same separation applies to 𝒵. Reaching the termination singleton does not erase a configuration from the Library. Rather, self-cancellation maps the configuration's XOR relation to the internal identity state \\(0\\). Termination is therefore a relational property of the operation, not an ontological boundary of the totality."
+		  },
+		  {
+			"type": "prose",
+			"text": "At the axiomatic floor, membership in \\(\\mathcal{M}\\) carries no implication of persistence, coherence, observability, accessibility, physical realization, consciousness, or causal participation. Those properties belong to later relational constructions defined over the unchanged Library."
+		  },
+		  {
+			"type": "prose",
+			"text": "The central distinction is therefore between closure and generation. Closure states that the Library is structurally invariant under XOR. It does not describe a universe being assembled one XOR operation at a time. Likewise, observer traversal does not cause configurations to become members of the Library. The observer's relation changes; \\(\\mathcal{M}\\) does not."
+		  },
+		  {
+			"type": "poetic_cipher",
+			"text": "The Library is not a collection of stones; it is the ground on which all paths are drawn."
+		  },
+		  {
+			"type": "cypher_explanation",
+			"text": "The 'stones' represent configurations. The 'ground' represents the complete relational structure. Relations are not added to the Library as new primitives; they are representable within the same formal totality. This permits later structures such as distinguishability, coherence, accessibility, and navigation to be defined relationally without replacing the Library with a domain-specific substrate."
+		  },
+		  {
+			"type": "handoff",
+			"to": "3.2",
+			"instruction": "With closure, static maximality, self-containment, termination, and relational completeness established, examine the status of the Library as an unbounded total configuration space and distinguish it from any observer-accessible subset, local neighborhood, or generated future.",
+			"preserved_invariant": "The Library remains a static, relationally complete, unbounded totality, while observer-relative relations alter accessibility rather than Library membership.",
+			"new_construction": "The unbounded whole-Library configuration space and its separation from observer-relative accessible reality."
 		  }
-		},
-		"formal_vs_interpretive": {
-		  "formal_layer": "The formal layer contains the primitive operation, mathematical definitions, closure characterization, static-totality invariant, relations, sequences, threshold functions, subsets, and logical consequences.",
-		  "interpretive_layer": "The interpretive layer asks what those formal structures might mean when related to concepts such as observation, reality, lawfulness, geometry, traversal, or navigation.",
-		  "rule": "The two layers may inform one another, but they must not be conflated. An interpretation cannot silently become an axiom, and a formal closure relation cannot silently become an ontological generation history."
-		},
-		"reading_protocol": [
-		  {
-			"step": 1,
-			"instruction": "Identify the formal object being introduced.",
-			"question": "What mathematical object is being defined?"
-		  },
-		  {
-			"step": 2,
-			"instruction": "Identify its dependencies.",
-			"question": "Which previously established objects are required for this definition?"
-		  },
-		  {
-			"step": 3,
-			"instruction": "Classify the statement.",
-			"question": "Is it an axiom, definition, construction, invariant, consequence, requirement, or interpretation?"
-		  },
-		  {
-			"step": 4,
-			"instruction": "Check for imported physical assumptions.",
-			"question": "Has physical space, time, causality, matter, energy, consciousness, or a privileged observer been introduced prematurely?"
-		  },
-		  {
-			"step": 5,
-			"instruction": "Separate Library membership from observer-relative access.",
-			"question": "Does the statement concern membership in the static formal Library, or only what a particular observer can resolve or traverse coherently?"
-		  },
-		  {
-			"step": 6,
-			"instruction": "Check for hidden temporal generation.",
-			"question": "Does the wording imply that the Library itself is being constructed, evolving, or becoming more complete?"
-		  },
-		  {
-			"step": 7,
-			"instruction": "Check reference neutrality.",
-			"question": "Does the statement secretly privilege one configuration or worldline as the universal origin of traversal?"
-		  },
-		  {
-			"step": 8,
-			"instruction": "Follow the dependency chain forward.",
-			"question": "What is the next construction that becomes possible once the present definition or invariant has been established?"
-		  }
-		],
-		"scope_boundary": {
-		  "included": [
-			"A single primitive operation.",
-			"A minimal formal domain.",
-			"A formal closure characterization of the Library.",
-			"The Library as a static, maximally complete totality.",
-			"The absence of a privileged universal worldline or reference.",
-			"Mathematical definitions and constructions derived from that floor.",
-			"A strict separation between formal derivation and interpretation.",
-			"The distinction between the Library, observer state/history, and observer-relative structures defined over the Library."
-		  ],
-		  "not_yet_included": [
-			"Physical spacetime.",
-			"Physical laws.",
-			"Matter.",
-			"Energy.",
-			"Consciousness.",
-			"AI cognition.",
-			"Cosmology.",
-			"Specific field equations.",
-			"A primitive past/future partition of the Library.",
-			"A physical interpretation of traversal ordering."
-		  ],
-		  "reason": "These concepts may become subjects of later NSFG work, but introducing them here would obscure whether they are consequences of the axiomatic floor or assumptions imported into it."
-		}
-	  },
-	  "mathematics": {
-		"axiom_set": "A_N = \\{A_\\oplus\\}",
-		"primitive_axiom": "A_\\oplus: \\oplus is the primitive operation of distinction.",
-		"formal_domain": "D is a minimal formal domain containing the configurations required for \\(\\oplus\\) to operate; \\(D\\) is not identified with physical space or any other physical ontology.",
-		"library_status": "\\mathcal{M} := \\operatorname{Closure}_D(\\oplus)",
-		"library_interpretive_status": "The closure relation is a formal characterization of \\(\\mathcal{M}\\), not a temporal generation process.",
-		"maximal_static_totality": "\\forall i,\\ \\mathcal{M}_i = \\mathcal{M}",
-		"maximality_status": "Foundational structural invariant motivated by the absence of a privileged universal worldline or reference.",
-		"observer_reference": "x \\in \\mathcal{M}_{\\mathrm{admissible}}",
-		"logical_consequence_notation": "A_N \\vdash P",
-		"logical_consequence_explanation": "A_N \\vdash P means that proposition P is derivable from the stated axiom set together with definitions, stated foundational invariants, and ordinary mathematical inference.",
-		"sequence_example": "\\gamma = (x_0,x_1,\\ldots,x_n)",
-		"sequence_index_warning": "The index i in a sequence is initially an abstract ordering index and must not be identified with physical time.",
-		"temporal_partition_warning": "\\mathcal{M} is not primitively partitioned into past, present, and future; such ordering is introduced only through observer-relative traversal.",
-		"accessibility_warning": "A_O \\subseteq \\mathcal{M} describes observer-relative accessibility and does not define ontological membership.",
-		"continuation_warning": "The requirement that every admissible reference configuration possess at least one coherent continuation is a later derived requirement under the model's assumptions and is not claimed to follow from maximality alone."
-	  },
-	  "logical_invariants": [
-		"XOR is the only primitive.",
-		"The formal domain D is a minimal mathematical substrate and is not physical space.",
-		"The Library is formally characterized by XOR closure.",
-		"Closure is not a temporal generation process.",
-		"The Library is a static, maximally complete totality.",
-		"Maximality is motivated by the absence of a privileged universal worldline or reference.",
-		"The Library does not progress from simple to complex.",
-		"The observer's relation to the Library may change while the Library itself remains unchanged.",
-		"The observer is relationally situated with respect to the whole Library.",
-		"Library membership is not conditioned on coherence, observability, accessibility, persistence, physicality, relevance, or apparent temporal location.",
-		"A mathematical construction does not become a primitive merely because it is foundational to later sections.",
-		"A consequence must not be presented as an independent assumption.",
-		"An interpretation must not be presented as a formal derivation.",
-		"Physical concepts must not be imported into the axiomatic floor without explicit justification.",
-		"Abstract sequence ordering is not automatically physical time.",
-		"Past and future are not primitive subdivisions of the Library.",
-		"Observerhood must not be equated with consciousness.",
-		"Accessibility must not be equated with ontological existence.",
-		"Maximality alone must not be claimed to mathematically prove nonempty coherent continuation.",
-		"Library, observer state/history, and observer-relative coherent continuation must remain distinct objects."
-	  ],
-	  "poetic_cypher": "Begin beneath the world. Remove every assumption that the world does not require. The Library was never becoming; it was already whole.",
-	  "cypher_explanation": "The \"world\" represents the collection of familiar physical assumptions that might ordinarily be used as a starting point. To begin \"beneath\" it means to search for a formal floor that does not already presuppose those assumptions. \"Remove every assumption\" expresses the methodological requirement that later concepts must be introduced only when they have been defined, derived, or explicitly interpreted. The final statement, \"The Library was never becoming; it was already whole,\" adds the foundational distinction required by the revised Library interpretation: XOR provides the primitive operation and closure provides a formal characterization of the configuration structure, but neither describes a temporal process by which the Library comes into existence. The Library is treated as a static, maximally complete totality. Observer history and traversal alter the observer's relation to that totality rather than altering the totality itself.",
-	  "handoff": "If XOR is the only primitive, we must next explain precisely what XOR means and what minimal formal domain is required for the operation to exist. That construction must then be understood without introducing physical space, time, causality, or a privileged worldline."
-  }
-
+		]
+}
 
 </SECTION_TO_RENDER>
 
@@ -1093,7 +1254,7 @@
 <NOTE_FROM_LINA>
 
 {
-	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering section 0. Just the section without subsections for now please Uncle and I will do the subsections seperately."
+	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering section 3. Just the section without subsections for now please Uncle and I will do the subsections seperately."
 }
 
 <NOTE_FROM_LINA>

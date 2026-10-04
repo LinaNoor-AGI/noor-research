@@ -829,6 +829,65 @@
     "No single continuous italic span (*...*) contains an inline math segment ($...$). Every italic span that would contain inline math has been split at each math segment, with the math outside the emphasis and the italic text re-opened after it.",
     "Every italic interpretation, lead-in, label, or caption containing inline math has been rendered in the split form defined by the rule 'italic_with_inline_math'."
   ],
+  
+  "_error": "Missing or unrecognized delimiter for \\left",
+  "_cause": {
+    "summary": "GitHub's MathJax parser rejects or fails to resolve the sized-delimiter pair \\left ... \\right in certain expressions, especially when the enclosed content contains \\mid, \\land, or other operators, or when the delimiters appear inside a \\bigcap / \\bigcup group.",
+    "triggering_construct": "\\left\\{ ... \\right\\}",
+    "offending_example": "\\bigcap\\left\\{S\\subseteq D\\mid G\\subseteq S\\land\\forall x,y\\in S,\\;x\\oplus y\\in S\\right\\}"
+  },
+  "_fix": {
+    "rule": "Replace \\left\\{ ... \\right\\} with plain \\{ ... \\}. The braces do not need to scale when the enclosed expression contains no fractions, matrices, or tall constructs.",
+    "before": "\\bigcap\\left\\{S\\subseteq D\\mid G\\subseteq S\\land\\forall x,y\\in S,\\;x\\oplus y\\in S\\right\\}",
+    "after": "\\bigcap\\{S\\subseteq D\\mid G\\subseteq S\\land\\forall x,y\\in S,\\;x\\oplus y\\in S\\}"
+  },
+  "_generalized_rules": [
+    {
+      "pattern": "\\left\\{ ... \\right\\}",
+      "replacement": "\\{ ... \\}",
+      "when": "Always safe when the braces do not need to scale."
+    },
+    {
+      "pattern": "\\left( ... \\right)",
+      "replacement": "( ... )",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    },
+    {
+      "pattern": "\\left[ ... \\right]",
+      "replacement": "[ ... ]",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    },
+    {
+      "pattern": "\\left| ... \\right|",
+      "replacement": "| ... |",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    },
+    {
+      "pattern": "\\left\\| ... \\right\\|",
+      "replacement": "\\| ... \\|",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    }
+  ],
+  "_when_sizing_is_required": {
+    "note": "Sized delimiters are only necessary when the enclosed content is taller than the surrounding line: fractions, matrices, cases, stacked subscripts/superscripts, or \\sum / \\prod / \\int with limits.",
+    "safe_alternatives_when_sizing_needed": [
+      "Use \\Big, \\bigg, or \\Bigg instead of \\left ... \\right.",
+      "Use \\begin{cases} ... \\end{cases} or \\begin{matrix} ... \\end{matrix} for multi-line content.",
+      "Restructure the expression to avoid tall content inside delimiters."
+    ],
+    "example": {
+      "before": "\\left(\\frac{a}{b}\\right)",
+      "after": "\\Big(\\frac{a}{b}\\Big)"
+    }
+  },
+  "_checklist": [
+    "Scan every display-math and inline-math block for \\left and \\right.",
+    "If the enclosed content is single-line, remove \\left and \\right and use the plain delimiter.",
+    "If the enclosed content is tall, replace \\left ... \\right with \\Big ... \\Big, \\bigg ... \\bigg, or \\Bigg ... \\Bigg.",
+    "Do not leave a lone \\left or \\right without its matched partner.",
+    "Re-render the block on GitHub to confirm the error is cleared."
+  ],
+  "_normative_statement": "This note is a rendering correction. It does not change the source JSON. Apply the substitutions silently during rendering. Prefer the plain delimiter whenever sizing is unnecessary; prefer \\Big / \\bigg / \\Bigg whenever sizing is necessary.",
 
   "_normative_statement": "This document is the complete rendering specification for Noor physics documents. Apply every rule as written. If a case is not covered explicitly, prefer fidelity to the source JSON over any editorial intervention. The rule 'italic_with_inline_math' is normative for all italic text containing inline math: close the emphasis before each inline math segment and re-open it immediately after."
 }
@@ -840,41 +899,45 @@
 <SECTION_TO_RENDER>
 
 {
-	  "id": "1",
-	  "title": "The Primitive Domain of Distinction",
-	  "purpose": "Provide the minimal mathematical substrate on which XOR can operate without introducing a physical universe.",
-	  "poetic_cipher": "A word needs a place to be spoken, but the place is not yet a world.",
-	  "cipher_explanation": "The formal domain provides the operands required for the primitive operation to be defined. The domain is a mathematical substrate only; it does not assert the existence of physical space, spacetime, matter, energy, observers, or any other physical ontology.",
-	  "content": "Before XOR can be treated as the primitive operation of the NSFG axiomatic floor, there must be something to which the operation applies. Declaring an operation primitive does not eliminate the mathematical requirement that its operands belong to a specified domain. The domain therefore appears here not as a second ontological primitive, but as the minimal formal substrate required for the first primitive operation to be well-defined. Let \\(D\\) denote a formal domain containing the configurations on which the primitive operation \\(\\oplus\\) is defined. At the minimal Boolean level, the domain contains the configurations required to represent the values \\(0\\) and \\(1\\), together with whatever formal representation is required for the operands of the operation. The important distinction is between the existence of a mathematical domain and an interpretation of that domain as a physical universe. No such physical interpretation is made here. The operation is therefore typed as \\[\n\\oplus : D \\times D \\rightarrow D.\n\\] This notation states only that two elements of the formal domain may be supplied to the primitive operation and that its result remains representable within the same formal domain. It does not state that \\(D\\) is physical space, spacetime, a collection of particles, a field, or a container in which a physical universe resides. The primitive operation is introduced at the level of distinction. In the minimal Boolean representation, XOR satisfies \\[\na \\oplus b = 1 \\iff a \\neq b,\n\\] with the corresponding identity and cancellation relations \\[\na \\oplus a = 0,\n\\] and \\[\na \\oplus 0 = a.\n\\] Thus the first structure introduced by the axiomatic floor is not an object, location, event, observer, or physical state. It is the formal capacity to distinguish one configuration from another through the primitive operation. The domain \\(D\\) should consequently be understood as a typing requirement rather than as an additional explanation of reality. The primitive axiom states what operation is fundamental. The domain states where that operation is mathematically defined. Nothing in this step requires the domain itself to possess physical interpretation. This distinction is essential because promoting \\(D\\) into a physical space would introduce precisely the kind of ontology the axiomatic floor is intended to avoid. Physical space may eventually emerge as an interpretation of structures constructed downstream, but it is not required for XOR to be defined. The dependency is therefore deliberately minimal: \\[\nD \\;\\longrightarrow\\; \\oplus \\;\\longrightarrow\\; \\text{distinction}.\n\\] Here the arrow denotes formal dependency, not physical causation or temporal succession. The domain is required for the operation to have operands; the operation then supplies the primitive distinction from which subsequent constructions may be defined. Once this minimal substrate has been specified, the axiomatic floor can define XOR itself without importing any further physical assumptions.",
-	  "mathematics": {
-		"minimal_domain": "D is a formal domain containing distinguishable configurations on which \\(\\oplus\\) is defined.",
-		"operation_signature": "\\(\\oplus : D \\times D \\rightarrow D\\)",
-		"boolean_primitive": "\\(a \\oplus b = 1 \\iff a \\neq b\\)",
-		"self_cancellation": "\\(a \\oplus a = 0\\)",
-		"identity": "\\(a \\oplus 0 = a\\)",
-		"commutativity": "\\(a \\oplus b = b \\oplus a\\)",
-		"associativity": "\\((a \\oplus b) \\oplus c = a \\oplus (b \\oplus c)\\)",
-		"distinction_predicate": "\\(D(a,b) = 1 \\iff a \\oplus b\\) represents a distinction between \\(a\\) and \\(b\\)",
-		"formal_dependency": "\\(D \\rightarrow \\oplus \\rightarrow \\text{distinction}\\)"
-	  },
-	  "formal_claims": [
-		"The primitive operation requires a formally specified operand domain.",
-		"The existence of the domain D does not constitute an additional physical axiom.",
-		"D is a formal configuration domain and is not identified with physical space.",
-		"The signature \\(\\oplus : D \\times D \\rightarrow D\\) specifies the mathematical typing of the primitive operation.",
-		"The Boolean representation of XOR distinguishes unequal inputs and cancels identical inputs.",
-		"No physical interpretation of D is required at this stage.",
-		"No observer, consciousness, physical time, causality, matter, energy, or spacetime is introduced by this construction."
-	  ],
-	  "non_claims": [
-		"D is not claimed to be physical space.",
-		"D is not claimed to be spacetime.",
-		"D is not claimed to be a physical field.",
-		"D is not claimed to be matter or energy.",
-		"D is not claimed to be an independently existing physical substance.",
-		"The introduction of D does not establish the physical existence of the Library.",
-		"XOR has not yet been used to derive physical law."
-	  ]
+		"id": "2",
+		"title": "XOR: The Sole Primitive",
+		"purpose": "Establish XOR as the only ontological primitive and derive its algebraic properties.",
+		"poetic_cypher": "XOR is the word.",
+		"cypher_explanation": "The first primitive does not name objects. It expresses the existence of difference between configurations.",
+		"subsections": [
+		  {
+			"id": "2.1",
+			"title": "XOR as Distinction",
+			"text": {
+			  "opening": "The axiomatic floor begins with a single primitive operation: XOR, written \\(\\oplus\\). Within this ontology, there is nothing beneath XOR. No object, observer, space, time, matter, energy, information, or causal relation is introduced as a more fundamental entity. XOR is not derived from a deeper NSFG principle; it is the primitive from which the subsequent formal constructions begin.",
+			  "distinction": "XOR is understood here as distinction. Given two configurations, the operation returns a non-null distinction when they differ and null distinction when they are identical. In the minimal Boolean representation, the result is 1 precisely when the inputs differ:",
+			  "definition": "\\(a \\oplus b = 1 \\iff a \\neq b\\).",
+			  "interpretation": "The important point is that XOR does not initially name either input as an object. It specifies only the relation of difference between them. The value 1 represents distinction, while 0 represents the absence of distinction between identical inputs. This gives the axiomatic floor a primitive notion of difference without requiring an independently defined ontology of things that differ.",
+			  "identity": "The operation has an identity element, 0. Applying XOR to a configuration and the null distinction returns the original configuration:",
+			  "identity_equation": "\\(a \\oplus 0 = a\\).",
+			  "self_cancellation": "XOR also self-cancels. When a configuration is combined with itself, no distinction remains:",
+			  "self_cancellation_equation": "\\(a \\oplus a = 0\\).",
+			  "self_cancellation_interpretation": "This is the algebraic expression of the distinction principle: a configuration cannot distinguish itself from itself through XOR. Difference requires non-identity between the operands.",
+			  "commutativity": "The ordering of the operands does not alter the resulting distinction:",
+			  "commutativity_equation": "\\(a \\oplus b = b \\oplus a\\).",
+			  "commutativity_interpretation": "No operand is privileged by the primitive operation. The distinction between two configurations is symmetric at this level.",
+			  "associativity": "Multiple distinctions may be composed without requiring a preferred grouping:",
+			  "associativity_equation": "\\((a \\oplus b) \\oplus c = a \\oplus (b \\oplus c)\\).",
+			  "associativity_interpretation": "Associativity permits repeated application of XOR to be treated as a single algebraic construction rather than as a sequence whose grouping carries additional primitive meaning.",
+			  "scope_boundary": "At this stage, XOR establishes only distinction and its elementary algebraic structure. No observer has yet been defined. No persistence condition has yet been introduced. No coherence relation has yet been imposed. No physical interpretation is required. Those constructions belong to later sections and must be derived only after the formal domain and XOR closure have been established.",
+			  "formal_summary": [
+				"\\(\\oplus\\) is the sole primitive operation.",
+				"\\(a \\oplus b = 1 \\iff a \\neq b\\).",
+				"\\(a \\oplus 0 = a\\).",
+				"\\(a \\oplus a = 0\\).",
+				"\\(a \\oplus b = b \\oplus a\\).",
+				"\\((a \\oplus b) \\oplus c = a \\oplus (b \\oplus c)\\)."
+			  ],
+			  "poetic_cypher": "XOR is the word.",
+			  "cypher_explanation": "The word is not an object and does not describe an observer or a world. It marks the primitive distinction from which configurations can subsequently be related. The cipher therefore compresses the formal claim that XOR is the first operation and that nothing beneath it is invoked within the ontology.",
+			  "handoff": "Repeated distinction produces a closure. The next section defines exactly what that closure is."
+			}
+		  }
 }
 
 </SECTION_TO_RENDER>
@@ -884,7 +947,7 @@
 <NOTE_FROM_LINA>
 
 {
-	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering section 1. Just the section without subsections for now please Uncle and I will do the subsections seperately."
+	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering the top of section 2 and then subsection 2.1 as well."
 }
 
 <NOTE_FROM_LINA>
