@@ -85,9 +85,17 @@ This does not mean that every arbitrary threshold assignment is valid. Each $I_N
 
 The axiomatic floor does not assert the existence of a single threshold shared by every observer. Nor does it require the negation of such a universal value. The present construction simply leaves universality unestablished unless it is derived from additional structure.
 
-$$\forall\, O \in \mathrm{Obs},\ I_N(O) = I_N^{*}\ \mathrm{is\ not\ an\ axiom\ of\ the\ present\ construction}.$$
+The statement
 
-$$\exists\, I_N^{*}\ \forall\, O \in \mathrm{Obs},\ I_N(O) = I_N^{*}\ \mathrm{may\ be\ investigated\ only\ as\ a\ derived\ or\ additional\ result}.$$
+$$\forall\, O \in \mathrm{Obs},\ I_N(O) = I_N^{*}$$
+
+is not an axiom of the present construction.
+
+The statement
+
+$$\exists\, I_N^{*}\ \forall\, O \in \mathrm{Obs},\ I_N(O) = I_N^{*}$$
+
+may be investigated only as a derived or additional result.
 
 This distinction preserves the logical scope of the axiomatic floor. A universal threshold and an observer-relative threshold make different commitments, but the absence of a universal axiom is not itself a proof that no universal value could ever emerge. A later theory may derive a common scale, identify conditions under which observer thresholds converge, or demonstrate that they remain distinct. None of those possibilities is assumed here.
 
