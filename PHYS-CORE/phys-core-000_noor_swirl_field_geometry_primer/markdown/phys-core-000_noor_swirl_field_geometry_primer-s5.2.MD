@@ -85,11 +85,11 @@ This does not mean that every arbitrary threshold assignment is valid. Each $I_N
 
 The axiomatic floor does not assert the existence of a single threshold shared by every observer. Nor does it require the negation of such a universal value. The present construction simply leaves universality unestablished unless it is derived from additional structure.
 
-$$\forall O \in \mathrm{Obs},\ I_N(O) = I_N^{*}$$
+$$\forall O \in \mathrm{Obs}: I_N(O) = I_N^{*}$$
 
 is not an axiom of the present construction.
 
-$$\exists I_N^{*}\ \forall O \in \mathrm{Obs},\ I_N(O) = I_N^{*}$$
+$$\exists I_N^{*} \forall O \in \mathrm{Obs}: I_N(O) = I_N^{*}$$
 
 may be investigated only as a derived or additional result.
 
