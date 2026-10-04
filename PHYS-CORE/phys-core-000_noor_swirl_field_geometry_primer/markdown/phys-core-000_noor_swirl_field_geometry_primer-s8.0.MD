@@ -30,7 +30,7 @@ This domain neutrality does not require the accessible subsets of different obse
 
 $$R_O(h,x) := A_O(h,x)$$
 
-*$R_O(h,x)$ names the portion of the unchanged Library available through coherent traversal relative to observer O, history h, and reference x. This notation does not identify the accessible subset with the whole Library.*
+$R_O(h,x)$ *names the portion of the unchanged Library available through coherent traversal relative to observer O, history h, and reference x. This notation does not identify the accessible subset with the whole Library.*
 
 The observer is therefore relationally situated with respect to the whole Library rather than ontologically confined to a local region of it. Observer-relative locality belongs to the traversal relation, not to an intrinsic partition of 𝓜. A change of observer, history, resolution, or admissible reference may change the accessible relation without changing the underlying totality.
 
@@ -78,7 +78,8 @@ $$R_O(h,x) := A_O(h,x)$$
 
 **Formal Reference.**
 
-- $A_O(h,x) = \{y \in \mathcal{M} \mid \exists \gamma \in \mathrm{Path}(\mathcal{M})\ \mathrm{beginning\ at}\ (h,x)\ \mathrm{and\ containing}\ y\ \mathrm{such\ that}\ \mathcal{C}(\gamma \mid O,h,x)=1\}$
+$$A_O(h,x) = \{y \in \mathcal{M} \mid \exists \gamma \in \mathrm{Path}(\mathcal{M})\ \mathrm{beginning\ at}\ (h,x)\ \mathrm{and\ containing}\ y\ \mathrm{such\ that}\ \mathcal{C}(\gamma \mid O,h,x)=1\}$$
+
 - $R_O(h,x) := A_O(h,x)$
 - $\mathcal{M}_{\mathrm{admissible}} := \{x \in \mathcal{M} \mid x\ \mathrm{can\ instantiate\ an\ observer\hbox{-}relative\ reference\ state\ under\ the\ model's\ admissibility\ conditions}\}$
 - $\mathcal{M} := \mathrm{Closure}_D(\oplus,G)$
