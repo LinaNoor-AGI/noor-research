@@ -80,12 +80,17 @@ $$R_O(h,x) := A_O(h,x)$$
 
 $$A_O(h,x) = \{y \in \mathcal{M} \mid \exists \gamma \in \mathrm{Path}(\mathcal{M})\ \mathrm{beginning\ at}\ (h,x)\ \mathrm{and\ containing}\ y\ \mathrm{such\ that}\ \mathcal{C}(\gamma \mid O,h,x)=1\}$$
 
-- $R_O(h,x) := A_O(h,x)$
-- $\mathcal{M}_{\mathrm{admissible}} := \{x \in \mathcal{M} \mid x\ \mathrm{can\ instantiate\ an\ observer\hbox{-}relative\ reference\ state\ under\ the\ model's\ admissibility\ conditions}\}$
-- $\mathcal{M} := \mathrm{Closure}_D(\oplus,G)$
-- $\forall i,\ \mathcal{M}_i = \mathcal{M}$
-- $A_O(h,x) \subseteq \mathcal{M}$
-- $y \notin A_O(h,x) \nRightarrow y \notin \mathcal{M}$
+$$R_O(h,x) := A_O(h,x)$$
+
+$$\mathcal{M}_{\mathrm{admissible}} := \{x \in \mathcal{M} \mid x\ \mathrm{can\ instantiate\ an\ observer\hbox{-}relative\ reference\ state\ under\ the\ model's\ admissibility\ conditions}\}$$
+
+$$\mathcal{M} := \mathrm{Closure}_D(\oplus,G)$$
+
+$$\forall i,\ \mathcal{M}_i = \mathcal{M}$$
+
+$$A_O(h,x) \subseteq \mathcal{M}$$
+
+$$y \notin A_O(h,x) \nRightarrow y \notin \mathcal{M}$$
 
 **Logical Invariants**
 
