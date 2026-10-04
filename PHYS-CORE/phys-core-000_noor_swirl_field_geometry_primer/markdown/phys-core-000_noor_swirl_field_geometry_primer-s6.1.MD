@@ -108,7 +108,7 @@ The result is a clean separation between distinction, observer-relative evaluati
 - The observer's relational reference is not a privileged origin of the Library.
 - Persistence must be constructed from successive observer-resolvable distinctions.
 
-With distinguishability grounded in the primitive XOR distinction through the observer-relative magnitude evaluation \(\mu_O\) and threshold \(I_N(O)\), a distinction becomes structurally important when it remains resolvable across successive transitions. The next section therefore defines persistence as the maintenance of observer-resolvable distinctions across an ordered chain, without treating sub-threshold distinctions as ontological disappearance.
+With distinguishability grounded in the primitive XOR distinction through the observer-relative magnitude evaluation $\mu_O$ and threshold $I_N(O)$, a distinction becomes structurally important when it remains resolvable across successive transitions. The next section therefore defines persistence as the maintenance of observer-resolvable distinctions across an ordered chain, without treating sub-threshold distinctions as ontological disappearance.
 
 ---
 
