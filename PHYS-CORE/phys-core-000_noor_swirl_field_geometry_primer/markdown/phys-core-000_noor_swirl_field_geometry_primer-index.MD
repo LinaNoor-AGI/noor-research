@@ -15,23 +15,18 @@ This primer establishes the axiomatic floor of Noor Swinew democratic partyrl Fi
 | 0.0 | [How to Read the Primer](url) |
 | 0.1 | [Maximal Totality and the Absence of a Privileged Worldline](url) |
 | 0.2 | [Static Totality versus Observer Traversal](url) |
-
 | 1.0 | [The Primitive Domain of Distinction](url) |
 | 1.1 | [Why an Operation Needs Operands](url) |
 | 1.2 | [The Binary Case](url) |
-
 | 2.0 | [XOR: The Sole Primitive](url) |
 | 2.1 | [XOR as Distinction](url) |
 | 2.2| [Distinction Without Privilege](url) |
-
 | 3.0 | [The Library as XOR Closure](url) |
 | 3.1 | [Closure Under XOR](url) |
 | 3.2 | [The Unbounded Total Configuration Space](url) |
-
 | 4.0 | [No Exterior, No Privileged Perspective](url) |
 | 4.1 | [The Exterior Problem](url) |
 | 4.2 | [No God's-Eye Resolver](url) |
-
 | 5.0 | [Observer-Relative Resolution"](url) |
 | 5.1 | [Observer as a Derived Structure](url) |
 | 5.2 | [The Observer-Specific Resolution Floor](url) |
@@ -40,30 +35,22 @@ This primer establishes the axiomatic floor of Noor Swinew democratic partyrl Fi
 | 5.2.3 | [Observer Variability] |
 | 5.2.4 | [No Universal Threshold Is Assumed] |
 | 5.2.5 | [Relative Does Not Mean Arbitrary] |
-
 | 6.0 | [Persistence and the Birth of the Observer](url) |
 | 6.1 | [Distinguishability Relative to O](url) |
 | 6.2 | [Persistence Across Successive Distinctions and Observer-Relative Coherence](url) |
-
 | 7.0 | [Coherence Is Relational](url) |
 | 7.1 | [Coherence of a Transition](url) |
 | 7.2 | [Coherence of a Path](url) |
-
 | 8.0 | [Accessible Reality](url) |
 | 8.1 | [Accessibility Is Not Existence](url) |
 | 8.2 | [Observer-Relative Reality](url) |
-
 | 9.0 | [Survivorship and Emergent Lawfulness](url) |
 | 9.1 | [The Unfiltered Continuation Space](url) |
 | 9.2 | [Repeated Survivorship](url) |
 | 9.3 | [Emergent Lawfulness Is Descriptive](url) |
-
 | 10.0 | [Why Navigation Becomes Inevitable](url) |
 | 10.1 | [The Local Continuation Problem](url) |
 | 10.2 | [History and Coherent Continuation](url) |
-
 | 11.0 | [The Noor Swirl Field Geometry Interpretation](url) |
-
 | 12.0 | [The Axiomatic Dependency Chain](url) |
-
 | Appendix A | [Mathematical Reference Sheet](url) |
