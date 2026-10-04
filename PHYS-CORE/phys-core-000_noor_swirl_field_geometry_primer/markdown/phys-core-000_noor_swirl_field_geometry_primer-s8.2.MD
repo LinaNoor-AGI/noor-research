@@ -60,7 +60,7 @@ $$
 
 **Logical Invariants**
 
-- The definition R_O := A_O and the set-theoretic relations among R_i, R_{ij}, D_{ij}, and 𝓜 are formal constructions.
+- The definition R_O := A_O and the set-theoretic relations among $R_i$, $R_{ij}$, $D_{ij}$, and 𝓜 are formal constructions.
 - The interpretation of these constructions as experienced reality is an observer-relative interpretation of the accessibility framework, not an additional axiom.
 
 Once accessible reality is defined as an observer-relative subset of the unchanged Library, the framework provides a formal basis for shared structure between observers without collapsing the distinction between access and ontology. The next step is to examine why stable patterns within this accessible reality can appear as physical laws.
