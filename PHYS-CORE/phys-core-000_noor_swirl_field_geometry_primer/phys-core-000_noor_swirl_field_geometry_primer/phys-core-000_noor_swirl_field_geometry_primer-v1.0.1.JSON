@@ -4284,7 +4284,7 @@
 		  "cypher_explanation": "The windows represent observers and their observer-relative accessible realities R_i. The Library represents the common ontological domain 𝓜. Different windows may reveal different portions of that domain, and their views may overlap, but no individual window becomes the Library itself. The metaphor therefore compresses the distinction between observer-relative access and underlying ontological membership without introducing a competing ontology.",
 		  "formal_status": "The definition R_O := A_O and the set-theoretic relations among R_i, R_{ij}, D_{ij}, and 𝓜 are formal constructions. The interpretation of these constructions as experienced reality is an observer-relative interpretation of the accessibility framework, not an additional axiom.",
 		  "handoff": "Once accessible reality is defined, we can examine why stable patterns within it can appear as physical laws."
-		}		  
+		},		  
 		],
 		"interpretive_boundary": {
 		  "formal_layer": "Section 8 formally distinguishes Library membership from observer-relative accessibility and defines experienced reality as the accessible subset A_O(h,x) of the unchanged Library.",
@@ -5367,7 +5367,7 @@
 			  "Navigation is domain-neutral at the foundational level.",
 			  "No physical time, causality, agency, or consciousness is required by the local continuation construction."
 			]
-		  }
+		  },
 		{
 		  "section": {
 			"id": "10.2",
