@@ -14,7 +14,7 @@ The Library consequently has no master lens: there is no axiom at the floor that
 
 $$U : D \times D \to \{0,1\}$$
 
-*$U(x,y)=1$ means that the distinction between $x$ and $y$ is universally resolved; $U(x,y)=0$ means that it is not.*
+$U(x,y)=1$ *means that the distinction between* $x$ and $y$ *is universally resolved;* $U(x,y)=0$ *means that it is not.*
 
 **Axiomatic Status.**
 
