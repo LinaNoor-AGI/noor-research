@@ -8,7 +8,7 @@ The candidate continuation space is therefore defined over the whole path space 
 
 $$\Omega(x) = \{\gamma \in \mathrm{Path}(\mathcal{M}) \mid \gamma\ \mathrm{begins\ at}\ x\}$$
 
-*$\Omega(x)$ contains candidate paths already represented within the complete Library. It is not a collection of future events waiting to be created.*
+$\Omega(x)$ *contains candidate paths already represented within the complete Library. It is not a collection of future events waiting to be created.*
 
 $\Omega(x)$ is unfiltered with respect to observer-relative coherence. It is not a locally generated neighborhood and does not represent a collection of future events waiting to be created. It is the subset of the already-complete relational path structure whose paths have $x$ as their current reference.
 
@@ -18,7 +18,7 @@ More generally, when an observer has an accumulated history $h$ ending at $x$, c
 
 $$\Gamma_O(h,x) = \{\gamma \in \mathrm{Path}(\mathcal{M}) \mid \gamma\ \mathrm{extends}\ h\ \mathrm{from}\ x \land \mathcal{C}(\gamma \mid O,h,x) = 1\}$$
 
-*The independent $\gamma_{\mathrm{noise}}$ threshold is eliminated. Coherence is already determined through the observer-relative resolution floor $I_N(O)$ via the canonical definition of* $\mathcal{C}(\gamma \mid O)$.
+*The independent* $\gamma_{\mathrm{noise}}$ *threshold is eliminated. Coherence is already determined through the observer-relative resolution floor $I_N(O)$ via the canonical definition of* $\mathcal{C}(\gamma \mid O)$.
 
 Here $\Gamma_O(h,x)$ is not a second ontology and does not replace $\Omega(x)$. It is the observer-relative coherent continuation relation induced over the unchanged totality $\mathcal{M}$.
 
