@@ -235,7 +235,7 @@ $$\Omega \notin \mathcal{M}\ \mathrm{may\ be\ proposed\ as\ an\ external\ candid
 
 $$\mathcal{Z} := \{z \mid z \oplus z = z\} = \{0\} \subset \mathcal{M}$$
 
-*satisfies $\forall x,\ x \oplus x \in \mathcal{Z}$ and $0 \oplus x = x$. $\mathcal{Z}$ is where distinction completes and recursive bounce $(x \oplus y) \oplus y = x$ degenerates. $\mathcal{Z}$ is a single equivalence class under $x \sim y \iff x \oplus y = 0$ and is complementary as termination versus generation, not as exterior.*
+*satisfies* $\forall x,\ x \oplus x \in \mathcal{Z}$ *and* $0 \oplus x = x$. $\mathcal{Z}$ *is where distinction completes and recursive bounce* $(x \oplus y) \oplus y = x$ *degenerates.* $\mathcal{Z}$ *is a single equivalence class under* $x \sim y \iff x \oplus y = 0$ *and is complementary as termination versus generation, not as exterior.*
 
 **Conclusion.** A describable privileged exterior cannot remain external to $\mathcal{M}$. Any candidate definable using $\oplus$ and elements of $\mathcal{M}$ over $D$ is already in $\mathcal{M}$, including $\mathcal{Z}$.
 
@@ -289,7 +289,7 @@ $$I_N : \mathrm{Obs} \to \mathbb{R}_{>0}$$
 
 **Status.** DEFINITION
 
-*No universal value of $I_N$ is supplied by the axiomatic floor.*
+*No universal value of* $I_N$ *is supplied by the axiomatic floor.*
 
 ---
 
@@ -421,7 +421,7 @@ $$\mathcal{C}(\gamma \mid O) = \prod_{i=0}^{n-1} \mathcal{C}_O(x_i, x_{i+1})$$
 
 **Status.** DEFINITION / DERIVED CONDITION
 
-*Prefer $\mathcal{C}(\gamma \mid O)$ over $\mathcal{C}(\gamma)$ whenever observer dependence matters.*
+*Prefer* $\mathcal{C}(\gamma \mid O)$ *over* $\mathcal{C}(\gamma)$ *whenever observer dependence matters.*
 
 ---
 
@@ -575,7 +575,7 @@ $$U_O(x) = \{y \in \mathcal{M} \mid y\ \mathrm{is\ reachable\ from}\ x\ \mathrm{
 
 **Status.** DOWNSTREAM CONSTRUCTION
 
-*Do not identify $G_O$ with physical spacetime at the foundational stage.*
+*Do not identify* $G_O$ *with physical spacetime at the foundational stage.*
 
 ---
 
