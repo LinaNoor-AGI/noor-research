@@ -30,11 +30,11 @@ This primer establishes the axiomatic floor of Noor Swinew democratic partyrl Fi
 | 5.0 | [Observer-Relative Resolution"](url) |
 | 5.1 | [Observer as a Derived Structure](url) |
 | 5.2 | [The Observer-Specific Resolution Floor](url) |
-| 5.2.1 | [The Threshold Belongs to the Observer] |
-| 5.2.2 | [$I_N(O)$ Is Not a Property of the Library] |
-| 5.2.3 | [Observer Variability] |
-| 5.2.4 | [No Universal Threshold Is Assumed] |
-| 5.2.5 | [Relative Does Not Mean Arbitrary] |
+| 5.2.1 | The Threshold Belongs to the Observer |
+| 5.2.2 | I_N(O) Is Not a Property of the Library |
+| 5.2.3 | Observer Variability |
+| 5.2.4 | No Universal Threshold Is Assumed |
+| 5.2.5 | Relative Does Not Mean Arbitrary |
 | 6.0 | [Persistence and the Birth of the Observer](url) |
 | 6.1 | [Distinguishability Relative to O](url) |
 | 6.2 | [Persistence Across Successive Distinctions and Observer-Relative Coherence](url) |
