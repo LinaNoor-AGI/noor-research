@@ -20,7 +20,11 @@ The cross-domain character of this construction is deliberate. The same formal r
 
 The distinction between transition coherence and path coherence must also be preserved. A single coherent transition does not establish that an entire path is coherent. A path contains a sequence of transitions, and each transition must independently satisfy the observer-relative coherence condition. Section 7.1 therefore establishes the elementary transition relation before the construction is extended to complete paths.
 
-**Definition — Observer-Relative Transition Coherence.** $\mathcal{C}_O(x_i,x_{i+1})$ is the binary coherence relation for a transition between successive configurations as resolved by observer $O$. The relation is observer-relative and depends on both the distinguishability function $\delta_O$ and the resolution threshold $I_N(O)$.
+**Definition — Observer-Relative Transition Coherence.** 
+
+$$\mathcal{C}_O(x_i,x_{i+1})$$
+
+ is the binary coherence relation for a transition between successive configurations as resolved by observer $O$. The relation is observer-relative and depends on both the distinguishability function $\delta_O$ and the resolution threshold $I_N(O)$.
 
 **Definition — Path Coherence.** $\mathcal{C}(\gamma \mid O)$ is the observer-relative coherence of an ordered path $\gamma$ relative to observer $O$, obtained by requiring every transition in the path to remain resolvable by $O$. Path coherence is defined only after transition coherence has been established.
 
@@ -50,7 +54,11 @@ $$\mathcal{C}(\gamma\mid O) = \prod_{i=0}^{n-1}\mathcal{C}_O(x_i,x_{i+1})$$
 - Domain-specific interpretation does not change the underlying formal relation.
 - No independent $\gamma_{\mathrm{noise}}$ threshold is introduced at the foundational level.
 
-Coherence has now been established as a relation rather than a property. What remains is to make that relation explicit at the level of a single transition, so that the path-level construction can be assembled from it. The next subsection defines the observer-relative transition coherence relation $\mathcal{C}_O(x_i,x_{i+1})$ from the distinguishability function $\delta_O$, the resolution threshold $I_N(O)$, and the elementary threshold function $\Theta$.
+Coherence has now been established as a relation rather than a property. What remains is to make that relation explicit at the level of a single transition, so that the path-level construction can be assembled from it. The next subsection defines the observer-relative transition coherence relation 
+
+$$\mathcal{C}_O(x_i,x_{i+1})$$
+
+from the distinguishability function $\delta_O$, the resolution threshold $I_N(O)$, and the elementary threshold function $\Theta$.
 
 ---
 
