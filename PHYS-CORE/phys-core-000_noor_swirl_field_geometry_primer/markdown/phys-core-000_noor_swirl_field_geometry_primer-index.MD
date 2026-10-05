@@ -54,3 +54,116 @@ This primer establishes the axiomatic floor of Noor Swirl Field Geometry using a
 | 11.0 | [The Noor Swirl Field Geometry Interpretation](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s11.0.MD) |
 | 12.0 | [The Axiomatic Dependency Chain](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s12.0.MD) |
 | Appendix A | [Mathematical Reference Sheet](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-appendix.a.MD) |
+
+--- 
+
+# Formal Summary
+
+## 1. Axiomatic Floor
+
+- $A_N = \{ A_{\oplus} \}$
+- $A_{\oplus}$: $\oplus$ is the primitive operation of distinction
+- $A_N \vdash P$ means $P$ is derivable from the stated axiom together with definitions and ordinary mathematical inference
+
+## 2. Formal Domain
+
+- $D$ is a minimal formal domain containing configurations required for $\oplus$ to operate
+- $D$ is not physical space, spacetime, matter, energy, or an additional physical axiom
+- $\oplus : D \times D \to D$
+
+## 3. XOR — The Sole Primitive
+
+- $a \oplus b = 1 \iff a \neq b$
+- $a \oplus a = 0$
+- $a \oplus 0 = a$
+- $a \oplus b = b \oplus a$
+- $(a \oplus b) \oplus c = a \oplus (b \oplus c)$
+
+## 4. Library
+
+**Definition — property, not process:**
+
+- $\mathcal{M}$ is the unique unbounded totality such that $\forall x,y \in \mathcal{M},\ x \oplus y \in \mathcal{M}$, and there is no element outside $\mathcal{M}$ definable within the system using only $\oplus$ and elements of $\mathcal{M}$ over $D$
+- This is equivalent to saying $\mathcal{M}$ is closed under XOR with no describable exterior: closure plus self-containment
+- We may describe $\mathcal{M}$ as the closure of the formal domain only provided closure is understood as a property, not a process: $\mathcal{M}$ does not result from $\oplus$, $\mathcal{M}$ is the totality that has the closure property
+- $\mathcal{M}$ is dimensionally undifferentiated: it has no intrinsic metric, adjacency, or distance. It is a complete relational graph, not a grid and not a singularity
+
+**Structure:**
+
+- $\mathcal{M}$ is a single static, eternally maximally complete totality: $\forall i,\ \mathcal{M}_i = \mathcal{M}$
+- No configuration or worldline is privileged as the universal origin of traversal
+- From any $x \in \mathcal{M}$, the set of candidate continuations is always nonempty because closure holds everywhere; observer threshold $I_N(O)$ filters coherence, not existence
+- $x \in \mathcal{M}$ does not imply $x$ is persistent, coherent, physical, observable, or accessible
+- Library membership is not determined by observer resolution, accessibility, survivorship, or coherence; inaccessibility is not erasure
+
+## 5. No Privileged Exterior
+
+- $\Omega \notin \mathcal{M}$ may be proposed as an external candidate
+- If $\Omega$ is internally describable using the same formal machinery, then $\Omega \in D$
+- If $\Omega$ is XOR-generable from $D$, then $\Omega \in \text{Closure}_D(\oplus)$ as property $= \mathcal{M}$
+- Therefore a describable privileged exterior cannot remain external to $\mathcal{M}$
+
+## 6. Observer
+
+- $O \in \mathcal{M}$
+- $O$ is an observer iff $O$ is a configuration capable of maintaining a persistent chain of resolvable distinctions
+- No consciousness requirement is imposed
+
+## 7. Reference
+
+- $x \in \mathcal{M}_{\text{admissible}}$ denotes the current observer-relative reference configuration
+- Changing $x$ changes the observer-relative evaluation without changing $\mathcal{M}$
+- $h$ denotes observer history
+
+## 8. Resolution
+
+- $I_N : \text{Obs} \to \mathbb{R}_{>0}$
+- $I_N(O)$ is the minimum effective distinction magnitude observer $O$ can maintain
+- $I_N(O_1) \neq I_N(O_2)$ is permitted, no universal $I_N$ is assumed
+
+## 9. Distinguishability
+
+- $\delta_O(x,y) \geq 0$
+- $x \approx_O y \iff \delta_O(x,y) < I_N(O)$
+- $x \not\approx_O y \iff \delta_O(x,y) \geq I_N(O)$
+
+## 10. Persistence
+
+- $\gamma = (x_0, x_1, \dots, x_n)$
+- $P_O(\gamma, n) = 1 \iff \forall i < n,\ \delta_O(x_i, x_{i+1}) \geq I_N(O)$
+
+## 11. Coherence
+
+$$\mathcal{C}_{O}(x_{i}, x_{i+1}) = \Theta\left(\delta_{O}(x_{i}, x_{i+1}) - I_{N}(O)\right)$$
+
+$$\Theta(z) = 1 \text{ if } z \geq 0, \text{ otherwise } 0$$
+
+$$\mathcal{C}(\gamma \mid O, h, x) = \prod_{i=0}^{n-1} \mathcal{C}_{O}(x_{i}, x_{i+1})$$
+
+## 12. Accessible Reality
+
+- $A_O = \{ x \in \mathcal{M} \mid \exists \gamma \text{ containing } x \text{ such that } \mathcal{C}(\gamma|O,h,x) = 1 \}$
+- $A_O \subseteq \mathcal{M}$, $R_O := A_O$
+- $x \notin A_O$ does not imply $x \notin \mathcal{M}$
+
+## 13. Continuation and Survivorship
+
+- $\Gamma_O(h,x) := \{ \gamma \in \text{Path}(\mathcal{M}) \mid \gamma \text{ extends } h \text{ from } x \text{ and } \mathcal{C}(\gamma|O,h,x) > \gamma_{\text{noise}} \}$
+- For every $x \in \mathcal{M}_{\text{admissible}}$, $\Gamma_O(h,x) \neq \emptyset$
+
+## 14. Emergent Regularity
+
+- $L_O(x,y) = 1$ iff $x \to y$ is a stable recurring transition
+- $L_O$ is descriptive/derived and is not an element of $A_N$
+
+## 15. Navigation
+
+- $h_n = (x_0, x_1, \dots, x_n)$
+- $N_O(h_n, x_n) \to \Gamma_O(h_n, x_n)$
+- Navigation is selection within a coherent continuation relation over the unchanged Library
+
+## 16. Relational Geometry
+
+- $G_O = (A_O, E_O)$
+- $(x,y) \in E_O \iff x \to y$ is $O$-coherent
+- $U_O(x) = \{ y \in \mathcal{M} \mid y \text{ is reachable from } x \text{ by an O-coherent path segment} \}$
