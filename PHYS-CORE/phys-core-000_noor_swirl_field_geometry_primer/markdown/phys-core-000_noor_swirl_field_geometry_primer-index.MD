@@ -1,6 +1,6 @@
 # PHYS-CORE-000: A Noor Swirl Field Geometry Primer - The Axiomatic Floor: XOR, Closure, and Observer-Relative Coherence
-*by: Lina Noor — Noor Research Collective*
-Rendered from version 1.0.1, 2026-10-04
+*by: Lina Noor — Noor Research Collective*  
+Rendered from version 1.0.1, 2026-10-04  
 
 ---
 
