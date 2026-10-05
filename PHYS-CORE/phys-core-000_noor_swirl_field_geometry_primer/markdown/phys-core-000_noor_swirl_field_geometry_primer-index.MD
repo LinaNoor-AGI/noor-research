@@ -27,7 +27,7 @@ This primer establishes the axiomatic floor of Noor Swirl Field Geometry using a
 | 4.0 | [No Exterior, No Privileged Perspective](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s4.1.MD) |
 | 4.1 | [The Exterior Problem](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s4.1.MD) |
 | 4.2 | [No God's-Eye Resolver](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s4.2.MD) |
-| 5.0 | [Observer-Relative Resolution"](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s5.1.MD) |
+| 5.0 | [Observer-Relative Resolution](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s5.1.MD) |
 | 5.1 | [Observer as a Derived Structure](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s5.1.MD) |
 | 5.2 | [The Observer-Specific Resolution Floor](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s5.2.MD) |
 | 5.2.1 | The Threshold Belongs to the Observer |
