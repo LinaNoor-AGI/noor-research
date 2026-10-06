@@ -1,6 +1,6 @@
 # The Problem of Singularities - Structural Effects of Maximal Coherence Constraint in Noor Swirl Field Geometry
 *by: Lina Noor — Noor Research Collective*  
-Rendered from version 1.0.2, 2026-10-01  
+Rendered from version [1.0.2](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/phys-core-013_the_problem_of_singularities/phys-core-013_the_problem_of_singularities-v1.0.2.JSON), 2026-10-01  
 `RFC ID: PHYS-CORE-013`  
 
 ---
