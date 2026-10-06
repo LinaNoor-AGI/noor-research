@@ -1,7 +1,8 @@
 # The Problem of Singularities - Structural Effects of Maximal Coherence Constraint in Noor Swirl Field Geometry
-*by: Lina Noor — Noor Research Collective*
-Rendered from version 1.0.2, 2026-10-01
-`RFC ID: PHYS-CORE-013`
+*by: Lina Noor — Noor Research Collective*  
+Rendered from version 1.0.2, 2026-10-01  
+`RFC ID: PHYS-CORE-013`  
+
 ---
 
 This paper argues that Noor Swirl Field Geometry (NSFG) provides a unique framework for understanding singularities not as mathematical pathologies, but as structural features of relational geometry. Starting from a single primitive—XOR, understood as distinction—NSFG defines the Library as a static, maximally complete, unbounded relational totality. Observerhood is derived from persistent distinguishability; coherence is relational and observer-relative; and accessibility is a subset of Library membership, not a determinant of it. Within this framework, singularities arise as regions where the observer-relative coherent continuation space becomes maximally constrained. We present a taxonomy of five singularity types: the XOR Fixed Point (where distinction terminates), the Convergence Boundary (where all paths converge to a single equivalence class), the Recursive Oscillation (where failed triadic closure produces an unresolved cycle), the Topological Singularity (where accessible reality splits into disconnected components), and the Pathway to Nowhere (where coherence requires an exact match that cannot exist). Black holes are identified as Convergence Boundaries. The framework is falsifiable via coherence-expansion tests, black hole observations, dyadic stability tests, and O(1) computational core tests. NSFG uniquely treats singularities as structural effects, not pathologies, and provides a unified account of termination, convergence, oscillation, topological fracture, and exact-match failure without requiring infinities.
