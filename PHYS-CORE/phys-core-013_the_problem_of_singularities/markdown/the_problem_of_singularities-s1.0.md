@@ -44,7 +44,7 @@ With the problem established, the coherence quotient framework introduced, and t
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section [7.0 (Coherence Is Relational)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 7.0 (Coherence Is Relational)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD)
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) — Section 2 (Point Space, Relational Domain, and Coherence)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 
