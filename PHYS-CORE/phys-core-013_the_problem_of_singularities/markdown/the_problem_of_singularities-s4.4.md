@@ -40,7 +40,7 @@ $$\mathrm{If}\ \mathcal{M}_C^O(h,x) = \mathcal{Q}_1 \cup \mathcal{Q}_2 \ \mathrm
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer)) — Section 3 (Library), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer)) — [Section 3 (Library)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.0.MD), [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s8.0.MD)
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond)4 (To Infinity and Beyond) — Section 2 (Point Space, Relational Domain, and Coherence)
 - [PHYS-CORE-008 (Recursive Bloch Manifold)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-008_noor_library_ontology) — Section 7 (Total Ontological Consequences)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
@@ -53,4 +53,4 @@ This section has defined the Topological Singularity as a fracture of the observ
 
 | PREVIOUS | | NEXT |
 | --- | --- | --- | 
-| [prev_section](URL) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](URL) |
+| [prev_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.3.md) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.5.md) |

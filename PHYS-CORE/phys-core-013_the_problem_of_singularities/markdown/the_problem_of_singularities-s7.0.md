@@ -84,7 +84,7 @@ The criteria in this section are derived strictly from the axioms and definition
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 9.1 (The Unfiltered Continuation Space), Section 9.2 (Repeated Survivorship), Section 9.3 (Emergent Lawfulness Is Descriptive)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 9.1 (The Unfiltered Continuation Space)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s9.1.MD), [Section 9.2 (Repeated Survivorship)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s9.2.MD), [Section 9.3 (Emergent Lawfulness Is Descriptive)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s9.3.MD)
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) — Section 9.2 (What the Framework Establishes)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition) — Section 2.4 (The XOR Ground Condition) 
 
@@ -92,4 +92,4 @@ The criteria in this section are derived strictly from the axioms and definition
 
 | PREVIOUS | | NEXT |
 | --- | --- | --- | 
-| [Introduction: The Problem of Singularities in Relational Frameworks](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s1.0.md) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [Defining Singularities in NSFG](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s3.0.md) |
+| [prev_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s6.0.md) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s8.0.md) |

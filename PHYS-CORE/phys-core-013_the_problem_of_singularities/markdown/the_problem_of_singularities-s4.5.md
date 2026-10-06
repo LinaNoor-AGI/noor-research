@@ -57,7 +57,7 @@ With this fifth singularity type classified, the taxonomy is now complete for ge
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 5 (Observer-Relative Resolution), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 5 (Observer-Relative Resolution)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s5.0.MD), [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s8.0.MD)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 - [RFC-0006 (Motif Field Coherence Geometry)](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry)
 
@@ -65,4 +65,4 @@ With this fifth singularity type classified, the taxonomy is now complete for ge
 
 | PREVIOUS | | NEXT |
 | --- | --- | --- | 
-| [prev_section](URL) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](URL) |
+| [prev_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.4.md) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s5.0.md) |

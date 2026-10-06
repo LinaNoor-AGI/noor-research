@@ -47,7 +47,7 @@ The Recursive Oscillation is a failure mode, not a persistent structure. It aris
 **References**
 
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) — Section 5.2.1 (The Dyadic Problem Revisited), Section 5.2.2 (Triadic Closure as the Minimal Stabilizer)
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 2 (XOR), Section 3 (Library), Section 6.1 (Distinguishability), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 2 (XOR)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s2.0.MD), [Section 3 (Library)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.0.MD), [Section 6.1 (Distinguishability)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s6.1.MD), [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.0.MD)
 
 **Logical Invariants**
 
@@ -62,4 +62,4 @@ The Recursive Oscillation is a failure mode, not a persistent structure. It aris
 
 | PREVIOUS | | NEXT |
 | --- | --- | --- | 
-| [prev_section](URL) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](URL) |
+| [prev_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s1.0.md) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s1.0.md) |
