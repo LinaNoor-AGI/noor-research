@@ -899,45 +899,323 @@
 <SECTION_TO_RENDER>
 
 {
-		"id": "2",
-		"title": "XOR: The Sole Primitive",
-		"purpose": "Establish XOR as the only ontological primitive and derive its algebraic properties.",
-		"poetic_cypher": "XOR is the word.",
-		"cypher_explanation": "The first primitive does not name objects. It expresses the existence of difference between configurations.",
-		"subsections": [
-		  {
-			"id": "2.1",
-			"title": "XOR as Distinction",
-			"text": {
-			  "opening": "The axiomatic floor begins with a single primitive operation: XOR, written \\(\\oplus\\). Within this ontology, there is nothing beneath XOR. No object, observer, space, time, matter, energy, information, or causal relation is introduced as a more fundamental entity. XOR is not derived from a deeper NSFG principle; it is the primitive from which the subsequent formal constructions begin.",
-			  "distinction": "XOR is understood here as distinction. Given two configurations, the operation returns a non-null distinction when they differ and null distinction when they are identical. In the minimal Boolean representation, the result is 1 precisely when the inputs differ:",
-			  "definition": "\\(a \\oplus b = 1 \\iff a \\neq b\\).",
-			  "interpretation": "The important point is that XOR does not initially name either input as an object. It specifies only the relation of difference between them. The value 1 represents distinction, while 0 represents the absence of distinction between identical inputs. This gives the axiomatic floor a primitive notion of difference without requiring an independently defined ontology of things that differ.",
-			  "identity": "The operation has an identity element, 0. Applying XOR to a configuration and the null distinction returns the original configuration:",
-			  "identity_equation": "\\(a \\oplus 0 = a\\).",
-			  "self_cancellation": "XOR also self-cancels. When a configuration is combined with itself, no distinction remains:",
-			  "self_cancellation_equation": "\\(a \\oplus a = 0\\).",
-			  "self_cancellation_interpretation": "This is the algebraic expression of the distinction principle: a configuration cannot distinguish itself from itself through XOR. Difference requires non-identity between the operands.",
-			  "commutativity": "The ordering of the operands does not alter the resulting distinction:",
-			  "commutativity_equation": "\\(a \\oplus b = b \\oplus a\\).",
-			  "commutativity_interpretation": "No operand is privileged by the primitive operation. The distinction between two configurations is symmetric at this level.",
-			  "associativity": "Multiple distinctions may be composed without requiring a preferred grouping:",
-			  "associativity_equation": "\\((a \\oplus b) \\oplus c = a \\oplus (b \\oplus c)\\).",
-			  "associativity_interpretation": "Associativity permits repeated application of XOR to be treated as a single algebraic construction rather than as a sequence whose grouping carries additional primitive meaning.",
-			  "scope_boundary": "At this stage, XOR establishes only distinction and its elementary algebraic structure. No observer has yet been defined. No persistence condition has yet been introduced. No coherence relation has yet been imposed. No physical interpretation is required. Those constructions belong to later sections and must be derived only after the formal domain and XOR closure have been established.",
-			  "formal_summary": [
-				"\\(\\oplus\\) is the sole primitive operation.",
-				"\\(a \\oplus b = 1 \\iff a \\neq b\\).",
-				"\\(a \\oplus 0 = a\\).",
-				"\\(a \\oplus a = 0\\).",
-				"\\(a \\oplus b = b \\oplus a\\).",
-				"\\((a \\oplus b) \\oplus c = a \\oplus (b \\oplus c)\\)."
+	  "id": "6",
+	  "title": "Persistence and the Birth of the Observer",
+	  "purpose": "Formalize survivable distinctions and derive observerhood as persistent structure.",
+	  "status": "derivational",
+	  "poetic_cypher": "A distinction that can be kept is a distinction that can persist. A structure that persists its distinctions becomes an observer.",
+	  "cypher_explanation": "The section moves from primitive XOR distinction through observer-relative magnitude evaluation and resolution toward persistence and observerhood as derived structural properties. No consciousness, intention, agency, or human perception is required. An observer is introduced only as a configuration capable of maintaining distinctions that remain resolvable above its own observer-specific threshold I_N(O) across an ordered sequence of transitions.",
+	  "dependency_position": {
+		"preceding": [
+		  "primitive XOR distinction",
+		  "formal domain D",
+		  "Library M",
+		  "observer-relative resolution threshold I_N(O)"
+		],
+		"current": [
+		  "XOR-derived distinction",
+		  "observer-relative magnitude evaluation mu_O",
+		  "effective distinction delta_O",
+		  "observer-relative distinguishability",
+		  "persistence",
+		  "observerhood"
+		],
+		"following": [
+		  "coherence",
+		  "accessible reality",
+		  "survivorship",
+		  "navigation"
+		]
+	  },
+	  "subsections": [
+		{
+		  "section": {
+			"id": "6.1",
+			"title": "Distinguishability Relative to O",
+			"purpose": "Define observer-relative distinguishability from the XOR-derived distinction relation while separating operational resolution from ontological membership in the static Library.",
+			"status": "derivational",
+			"change_type": "revised",
+			"priority": "critical",
+			"section_type": "mixed",
+			"poetic_cipher": "The distance between two points is not measured by a ruler; it is the distinctions required to walk between them.",
+			"cipher_explanation": "The ruler represents an externally imposed metric. The primitive XOR operation supplies the underlying distinction, while the observer-relative magnitude evaluation mu_O determines how that distinction is operationally resolved. No independent external metric is imported into the axiomatic floor.",
+			"handoff": {
+			  "to": "6.2",
+			  "instruction": "With distinguishability grounded in the primitive XOR distinction through the observer-relative magnitude evaluation mu_O and threshold I_N(O), the next section defines persistence as the maintenance of observer-resolvable distinctions across an ordered chain of transitions.",
+			  "preserved_invariant": "Observer-relative resolution changes accessibility and distinguishability without changing Library membership.",
+			  "new_construction": "Persistence of observer-resolvable distinctions across successive transitions."
+			},
+			"mathematics": {
+			  "definitions": [
+				{
+				  "symbol": "d_{\\oplus}(x,y)",
+				  "definition": "The minimum number of XOR operations required to relate x and y through configurations contained in the Library.",
+				  "latex": "d_{\\oplus}(x,y)=\\min\\left\\{n\\in\\mathbb{N}_0\\mid\\exists z_0,\\ldots,z_n\\in\\mathcal{M},\\ z_0=x,\\ z_n=y,\\ \\forall i<n,\\ \\exists w_i\\in\\mathcal{M}:z_{i+1}=z_i\\oplus w_i\\right\\}",
+				  "constraint": "At the axiomatic Boolean XOR floor, d_{\\oplus}(x,y)=0 when x=y and d_{\\oplus}(x,y)=1 when x\\neq y, because x\\oplus(x\\oplus y)=y. Therefore d_{\\oplus} is a discrete derived distinction relation at this floor, not a nontrivial continuous metric. Any richer multi-step or geometric distance requires additional downstream structure."
+				},
+				{
+				  "symbol": "\\mu_O",
+				  "definition": "The observer-relative magnitude evaluation function that maps a primitive XOR distinction to an effective magnitude resolvable by observer O. mu_O is monotonic with respect to XOR-derived distinction: if x\\oplus y=1 and u\\oplus v=0, then mu_O(x\\oplus y)\\geq mu_O(u\\oplus v). The specific functional form of mu_O is not specified at the foundational level and may vary by domain or observer structure.",
+				  "latex": "\\mu_O:D\\rightarrow\\mathbb{R}_{\\geq0}",
+				  "constraint": "mu_O is observer-relative and domain-neutral at the foundational level. Its specific functional form is a downstream construction or domain-specific interpretation. It is not an additional primitive operation or externally supplied universal metric."
+				},
+				{
+				  "symbol": "\\delta_O(x,y)",
+				  "definition": "The observer-relative effective distinction magnitude obtained by applying the observer-relative magnitude evaluation mu_O to the primitive XOR distinction x\\oplus y.",
+				  "latex": "\\delta_O(x,y):=\\mu_O(x\\oplus y)",
+				  "constraint": "delta_O is grounded directly in the primitive XOR operation through mu_O. No independent metric is introduced at the foundational floor."
+				},
+				{
+				  "symbol": "I_N(O)",
+				  "definition": "The minimum effective distinction magnitude that observer O can maintain as a stable distinction.",
+				  "latex": "I_N:\\mathrm{Obs}\\rightarrow\\mathbb{R}_{>0}",
+				  "constraint": "I_N(O) is observer-relative. No universal numerical value is assumed, and no identification with the ordinary Planck scale is made at the axiomatic floor."
+				}
 			  ],
-			  "poetic_cypher": "XOR is the word.",
-			  "cypher_explanation": "The word is not an object and does not describe an observer or a world. It marks the primitive distinction from which configurations can subsequently be related. The cipher therefore compresses the formal claim that XOR is the first operation and that nothing beneath it is invoked within the ontology.",
-			  "handoff": "Repeated distinction produces a closure. The next section defines exactly what that closure is."
-			}
+			  "equations": [
+				{
+				  "label": "XOR-derived distinction relation",
+				  "latex": "d_{\\oplus}(x,y)=\\min\\left\\{n\\in\\mathbb{N}_0\\mid\\exists z_0,\\ldots,z_n\\in\\mathcal{M},\\ z_0=x,\\ z_n=y,\\ \\forall i<n,\\ \\exists w_i\\in\\mathcal{M}:z_{i+1}=z_i\\oplus w_i\\right\\}",
+				  "interpretation": "The distinction relation is grounded in the primitive operation rather than introduced through an external ruler or geometric metric."
+				},
+				{
+				  "label": "Boolean XOR floor",
+				  "latex": "d_{\\oplus}(x,y)=\\begin{cases}0,&x=y\\\\1,&x\\neq y\\end{cases}",
+				  "interpretation": "Because Boolean XOR can relate any distinct pair in one operation through x\\oplus(x\\oplus y)=y, primitive XOR alone supplies a discrete distinction relation rather than a nontrivial continuous distance."
+				},
+				{
+				  "label": "Observer-relative magnitude evaluation",
+				  "latex": "\\delta_O(x,y):=\\mu_O(x\\oplus y)",
+				  "interpretation": "The observer-relative effective distinction is obtained by evaluating the primitive XOR distinction through mu_O. The magnitude evaluation is observer-relative rather than an externally imposed universal metric."
+				},
+				{
+				  "label": "Observer-relative indistinguishability",
+				  "latex": "x\\approx_O y\\iff\\delta_O(x,y)<I_N(O)",
+				  "interpretation": "Two configurations are operationally indistinguishable to O when their observer-relative effective distinction falls below O's resolution threshold."
+				},
+				{
+				  "label": "Observer-relative distinguishability",
+				  "latex": "x\\not\\approx_O y\\iff\\delta_O(x,y)\\geq I_N(O)",
+				  "interpretation": "A distinction equal to or greater than the observer's threshold is resolvable by that observer."
+				},
+				{
+				  "label": "Non-erasure",
+				  "latex": "x\\approx_O y\\not\\Rightarrow x=y",
+				  "interpretation": "Operational indistinguishability does not establish ontological identity."
+				},
+				{
+				  "label": "Membership independence",
+				  "latex": "x\\approx_O y\\not\\Rightarrow x\\notin\\mathcal{M}\\quad\\text{and}\\quad y\\approx_O x\\not\\Rightarrow y\\notin\\mathcal{M}",
+				  "interpretation": "Observer-relative indistinguishability does not determine Library membership. A configuration may remain in the static Library regardless of whether observer O can resolve its distinction from another configuration."
+				}
+			  ],
+			  "formal_claims": [
+				"The primitive XOR operation supplies the foundational distinction from which observer-relative distinguishability is constructed.",
+				"At the Boolean axiomatic floor, XOR-derived distinction is discrete: equal configurations have zero XOR distance and distinct configurations have one-step XOR distance.",
+				"Primitive Boolean XOR alone does not supply a nontrivial continuous metric or rich geometric distance.",
+				"The observer-relative magnitude evaluation mu_O maps the primitive XOR distinction into an effective magnitude available to observer O.",
+				"mu_O is not an additional foundational primitive; it is an observer-relative evaluation of the primitive distinction.",
+				"The specific functional form of mu_O is not fixed by the axiomatic floor and may be supplied by downstream domain-specific structure.",
+				"delta_O(x,y) is derived from XOR through delta_O(x,y):=mu_O(x\\oplus y).",
+				"Observer-relative distinguishability depends on the relation between the XOR-derived distinction, mu_O, and the observer's resolution threshold I_N(O).",
+				"The threshold I_N(O) belongs to the observer and is not a universal constant.",
+				"The same underlying configurations may be distinguishable to one observer and indistinguishable to another.",
+				"Observer-relative indistinguishability does not imply equality.",
+				"Observer-relative indistinguishability does not imply destruction, deletion, or removal from the Library.",
+				"Library membership x\\in\\mathcal{M} is independent of whether x is operationally distinguishable to O.",
+				"Changing mu_O or I_N(O) changes the observer-relative resolution relation without changing the static Library.",
+				"The observer's current relational reference does not become a privileged origin or boundary of the Library.",
+				"Resolution classes are operational structures induced by an observer and must not be reified as ontological partitions of \\mathcal{M}.",
+				"Any richer multi-step distance, continuous metric, or geometric interpretation of delta_O requires additional structure and is therefore downstream of the axiomatic XOR floor."
+			  ],
+			  "prohibited_inferences": [
+				"Do not treat delta_O as an externally supplied metric.",
+				"Do not treat mu_O as a universal metric or universal magnitude function.",
+				"Do not claim that primitive Boolean XOR alone produces a nontrivial continuous distance.",
+				"Do not interpret x\\approx_O y as x=y.",
+				"Do not interpret observer-relative indistinguishability as destruction, deletion, or ontological disappearance.",
+				"Do not interpret I_N(O) as a universal numerical constant.",
+				"Do not identify I_N(O) with the ordinary Planck scale at this stage.",
+				"Do not claim that the observer creates or determines the underlying configurations.",
+				"Do not treat the observer's current configuration as a privileged universal origin of \\mathcal{M}.",
+				"Do not introduce consciousness as a requirement for observer-relative distinguishability.",
+				"Do not assume physical space, physical time, causality, matter, energy, or information as primitives.",
+				"Do not convert observer-relative resolution classes into ontological partitions of the Library.",
+				"Do not infer that a configuration outside A_O has ceased to belong to \\mathcal{M}.",
+				"Do not identify observer-relative distinguishability with physical measurement before a physical interpretation is separately introduced.",
+				"Do not use the XOR-derived distinction relation as evidence that any particular physical law has already been derived."
+			  ],
+			  "non_claims": [
+				"This section does not claim that XOR alone supplies the full metric structure required by physics.",
+				"This section does not claim that delta_O has a universal numerical magnitude independent of observer or additional structure.",
+				"This section does not claim that mu_O has a universal functional form.",
+				"This section does not identify observer-relative distinguishability with consciousness or human perception.",
+				"This section does not establish physical spacetime.",
+				"This section does not establish a physical interpretation of the Noor-Planck threshold.",
+				"This section does not derive a continuous metric from Boolean XOR."
+			  ]
+			},
+			"content": [
+			  {
+				"type": "poetic_cipher",
+				"text": "The distance between two points is not measured by a ruler; it is the distinctions required to walk between them."
+			  },
+			  {
+				"type": "prose",
+				"text": "The Library is a static totality whose membership is not determined by any particular observer's resolution. Every configuration considered here is already a member of \\(\\mathcal{M}\\). The question is therefore not whether an observer causes a configuration to exist, but whether the observer can maintain a distinction between configurations at its available resolution. Once the observer-specific threshold \\(I_N(O)\\) is introduced, distinguishability becomes relational: the same pair of configurations may be operationally distinguishable to one observer while falling below the resolution threshold of another. This difference belongs to the observer-relative relation, not to the ontological membership of the configurations."
+			  },
+			  {
+				"type": "definition",
+				"title": "XOR-Derived Distinction",
+				"text": "Let \\(x,y\\in\\mathcal{M}\\). Define the XOR-derived distinction relation as the minimum number of XOR operations required to relate \\(x\\) and \\(y\\) through configurations contained in \\(\\mathcal{M}\\).",
+				"latex": "d_{\\oplus}(x,y)=\\min\\left\\{n\\in\\mathbb{N}_0\\mid\\exists z_0,\\ldots,z_n\\in\\mathcal{M},\\ z_0=x,\\ z_n=y,\\ \\forall i<n,\\ \\exists w_i\\in\\mathcal{M}:z_{i+1}=z_i\\oplus w_i\\right\\}",
+				"interpretation": "This grounds the initial distinction relation in the sole primitive operation rather than importing an independent metric. At the Boolean floor, the construction is intentionally minimal and collapses to a discrete 0/1 relation."
+			  },
+			  {
+				"type": "formal_statement",
+				"title": "Boolean XOR Floor",
+				"text": "For primitive Boolean XOR, the minimum-operation construction collapses to a discrete relation.",
+				"latex": "d_{\\oplus}(x,y)=\\begin{cases}0,&x=y\\\\1,&x\\neq y\\end{cases}",
+				"interpretation": "If \\(x\\neq y\\), then choosing \\(w=x\\oplus y\\) gives \\(x\\oplus w=y\\). Thus one XOR operation is sufficient for every distinct pair. This is an important boundary condition: primitive XOR derives distinction, but does not by itself supply a rich continuous metric."
+			  },
+			  {
+				"type": "prose",
+				"text": "The Boolean XOR floor is a boundary condition that must not be overlooked. Primitive XOR supplies a single-step distinction relation because any distinct pair can be related in one XOR operation: \\(x\\oplus(x\\oplus y)=y\\). Consequently, primitive XOR alone does not provide a meaningful multi-step distance or continuous metric geometry. Any such structure requires additional downstream construction, such as multi-step composition, weighted distinctions, or domain-specific interpretation of \\(\\mu_O\\). The foundation is intentionally minimal; richer geometry belongs to later NSFG work."
+			  },
+			  {
+				"type": "prose",
+				"text": "The distinction relation therefore has two layers that must not be conflated. The first is the XOR-derived structural distinction supplied by the axiomatic floor. The second is the observer-relative effective evaluation of that distinction. The latter determines how strongly the primitive distinction is resolved by a particular observer. A richer magnitude, including any multi-step or geometric interpretation, requires additional structure beyond primitive Boolean XOR and must therefore be introduced explicitly rather than silently imported."
+			  },
+			  {
+				"type": "definition",
+				"title": "Observer-Relative Magnitude Evaluation",
+				"text": "Let \\(O\\) be an observer. Define \\(\\mu_O\\) as the observer-relative magnitude evaluation function that maps a primitive XOR distinction to an effective magnitude resolvable by observer \\(O\\). The function is monotonic with respect to the primitive XOR distinction, while its specific functional form remains unspecified at the foundational level.",
+				"latex": "\\mu_O:D\\rightarrow\\mathbb{R}_{\\geq0}",
+				"interpretation": "The function \\(\\mu_O\\) is the observer's mode of evaluating the distinction supplied by XOR. It is not an externally supplied ruler, universal metric, or additional primitive. Its domain-neutral formal role is fixed here; its specific realization may be supplied by a downstream observer structure or domain-specific interpretation."
+			  },
+			  {
+				"type": "formal_statement",
+				"title": "Monotonicity of Observer-Relative Evaluation",
+				"text": "The observer-relative magnitude evaluation preserves the ordering supplied by the primitive Boolean distinction.",
+				"latex": "x\\oplus y=1\\ \\land\\ u\\oplus v=0\\ \\Rightarrow\\ \\mu_O(x\\oplus y)\\geq\\mu_O(u\\oplus v)",
+				"interpretation": "A primitive distinction is not evaluated as weaker than the absence of distinction under the same observer-relative evaluation. No stronger numerical structure is assumed."
+			  },
+			  {
+				"type": "definition",
+				"title": "Observer-Relative Distinguishability Magnitude",
+				"text": "Let \\(O\\) be an observer and let \\(x,y\\in\\mathcal{M}\\). Define \\(\\delta_O(x,y)\\) as the observer-relative effective distinction magnitude obtained by applying \\(\\mu_O\\) to the primitive XOR distinction \\(x\\oplus y\\).",
+				"latex": "\\delta_O(x,y):=\\mu_O(x\\oplus y)",
+				"interpretation": "The effective distinction is now explicitly grounded in the sole primitive. No independent metric is introduced. Observer dependence enters through \\(\\mu_O\\), while operational resolution is subsequently determined by \\(I_N(O)\\)."
+			  },
+			  {
+				"type": "definition",
+				"title": "Observer Resolution Threshold",
+				"text": "The observer-specific threshold \\(I_N(O)\\) is the minimum effective distinction magnitude that observer \\(O\\) can maintain as a stable distinction.",
+				"latex": "I_N:\\mathrm{Obs}\\rightarrow\\mathbb{R}_{>0}",
+				"interpretation": "The threshold belongs to the observer. It is not a universal constant and no universal numerical value is supplied by the axiomatic floor."
+			  },
+			  {
+				"type": "equation",
+				"title": "Observer-Relative Indistinguishability",
+				"text": "Two configurations are observer-relative indistinguishable when their effective distinction falls below the observer's resolution threshold.",
+				"latex": "x\\approx_O y\\iff\\delta_O(x,y)<I_N(O)",
+				"interpretation": "The relation \\(\\approx_O\\) describes what observer \\(O\\) can operationally resolve; it does not identify the configurations ontologically."
+			  },
+			  {
+				"type": "equation",
+				"title": "Observer-Relative Distinguishability",
+				"text": "Two configurations are observer-relative distinguishable when their effective distinction reaches or exceeds the observer's threshold.",
+				"latex": "x\\not\\approx_O y\\iff\\delta_O(x,y)\\geq I_N(O)",
+				"interpretation": "The threshold is inclusive on the distinguishable side. A distinction exactly equal to \\(I_N(O)\\) is resolvable by \\(O\\)."
+			  },
+			  {
+				"type": "prose",
+				"text": "Because the threshold is indexed by \\(O\\), resolution is explicitly relational rather than universal. It is permitted that \\(I_N(O_1)\\neq I_N(O_2)\\), and consequently that the same pair \\((x,y)\\) is distinguishable to \\(O_1\\) while being indistinguishable to \\(O_2\\). Nothing about this difference requires the configurations themselves to have changed. Only the observer-relative resolution relation has changed."
+			  },
+			  {
+				"type": "formal_statement",
+				"title": "Non-Erasure",
+				"text": "Observer-relative indistinguishability does not imply ontological identity or removal from the Library.",
+				"latex": "x\\approx_O y\\not\\Rightarrow x=y",
+				"interpretation": "Two configurations may occupy the same effective resolution class for an observer while remaining distinct configurations of the static Library."
+			  },
+			  {
+				"type": "formal_statement",
+				"title": "Membership Preservation",
+				"text": "Observer-relative resolution does not determine Library membership.",
+				"latex": "x\\approx_O y\\not\\Rightarrow x\\notin\\mathcal{M}\\qquad\\text{and}\\qquad y\\approx_O x\\not\\Rightarrow y\\notin\\mathcal{M}",
+				"interpretation": "Failure to resolve a distinction is not erasure. Both configurations may remain members of \\(\\mathcal{M}\\) regardless of whether observer \\(O\\) can distinguish them."
+			  },
+			  {
+				"type": "prose",
+				"text": "Two distinct relations must therefore remain separate. Library membership is a structural fact within the formal model: \\(x\\in\\mathcal{M}\\). Observer-relative distinguishability is an operational relation: whether \\(O\\) can maintain the distinction between \\(x\\) and \\(y\\) above \\(I_N(O)\\). Observer-relative accessibility is consequently a relation over the Library rather than a criterion that determines which configurations belong to it."
+			  },
+			  {
+				"type": "example",
+				"setup": "Suppose \\(x,y\\in\\mathcal{M}\\) with \\(x\\neq y\\), and suppose their effective distinction for observer \\(O\\) satisfies \\(\\delta_O(x,y)<I_N(O)\\).",
+				"result": "Observer \\(O\\) cannot maintain the difference between \\(x\\) and \\(y\\) as a resolved distinction, so \\(x\\approx_O y\\). Nevertheless, \\(x\\) and \\(y\\) remain distinct members of the static Library.",
+				"interpretation": "A different observer \\(O'\\) may resolve the same pair if its magnitude evaluation or resolution threshold differs. Observer-relative resolution therefore changes the accessible description without changing the underlying totality."
+			  },
+			  {
+				"type": "prose",
+				"text": "Observer-relative distinguishability may consequently induce resolution classes: configurations whose effective distinctions fall below \\(I_N(O)\\) can be grouped together operationally for observer \\(O\\). These classes describe the observer's effective resolution and must not be reified as ontological partitions of \\(\\mathcal{M}\\). The underlying Library remains unchanged while the observer's operational description varies."
+			  },
+			  {
+				"type": "prose",
+				"text": "The observer's relational reference is likewise not a privileged origin. An observer may evaluate distinctions from a particular configuration or history, but that reference does not establish a boundary around \\(\\mathcal{M}\\), generate the Library, or determine which configurations exist. The whole Library remains the unchanged domain over which observer-relative distinctions are evaluated."
+			  },
+			  {
+				"type": "formal_statement",
+				"title": "Foundational Boundary on Distance",
+				"text": "Primitive XOR derives distinction but does not, by itself, determine a rich metric geometry.",
+				"latex": "A_{\\oplus}\\not\\Rightarrow\\text{nontrivial continuous metric structure}",
+				"interpretation": "Any later construction of multi-step distance, geometric magnitude, or physical metric must be explicitly derived from additional structure. This prevents an undeclared metric from entering the axiomatic floor."
+			  },
+			  {
+				"type": "prose",
+				"text": "The result is a clean separation between distinction, observer-relative evaluation, resolution, and membership. XOR supplies the primitive distinction. The observer-relative function \\(\\mu_O\\) evaluates that distinction, producing \\(\\delta_O\\). The observer-specific threshold \\(I_N(O)\\) determines whether the evaluated distinction is operationally resolvable. The Library supplies the unchanged totality in which the configurations already reside. None of these layers requires the observer to create reality, and none permits sub-threshold resolution to be interpreted as ontological disappearance."
+			  },
+			  {
+				"type": "handoff",
+				"to": "6.2",
+				"instruction": "A distinction becomes structurally important when it remains resolvable across successive transitions. The next section therefore defines persistence as the maintenance of observer-resolvable distinctions across an ordered chain, without treating sub-threshold distinctions as ontological disappearance.",
+				"preserved_invariant": "Observer-relative resolution changes distinguishability and accessibility but does not alter the static membership of the Library.",
+				"new_construction": "Persistence of observer-resolvable distinctions across an ordered sequence."
+			  }
+			],
+			"interpretive_boundary": {
+			  "formal_layer": "The section establishes XOR-derived distinction at the axiomatic floor, observer-relative magnitude evaluation through mu_O, observer-relative effective distinction delta_O, observer-relative resolution through I_N(O), and the distinction between operational distinguishability and static Library membership.",
+			  "interpretive_layer": "Later work may extend the discrete XOR-derived relation into richer symbolic, geometric, or physical distance structures, provided those extensions are explicitly introduced rather than treated as primitives.",
+			  "prohibited_identifications": [
+				"delta_O with an externally supplied physical metric",
+				"mu_O with a universal metric",
+				"delta_O with ordinary spatial distance",
+				"I_N(O) with a universal physical constant",
+				"observer-relative indistinguishability with ontological identity",
+				"observer-relative accessibility with ontological creation",
+				"resolution classes with ontological partitions of \\mathcal{M}",
+				"observerhood with consciousness"
+			  ]
+			},
+			"logical_invariants": [
+			  "XOR remains the sole primitive.",
+			  "The Library remains static and unchanged by observer-relative resolution.",
+			  "XOR-derived distinction does not require an externally imposed ruler.",
+			  "Primitive Boolean XOR supplies a discrete distinction relation rather than a nontrivial continuous metric.",
+			  "The Boolean XOR floor does not by itself provide a rich multi-step or continuous geometry.",
+			  "mu_O is an observer-relative evaluation function derived downstream from the primitive distinction rather than an additional primitive.",
+			  "delta_O(x,y) is explicitly defined by delta_O(x,y):=mu_O(x\\oplus y).",
+			  "A richer metric structure must be introduced explicitly as downstream structure.",
+			  "I_N(O) remains observer-relative.",
+			  "There is no universal numerical value for I_N at the axiomatic floor.",
+			  "Sub-threshold distinguishability does not imply equality.",
+			  "Sub-threshold distinguishability does not imply erasure.",
+			  "Library membership is independent of observer-relative accessibility.",
+			  "The observer's relational reference is not a privileged origin of the Library.",
+			  "Persistence must be constructed from successive observer-resolvable distinctions."
+			]
 		  }
+		}
 }
 
 </SECTION_TO_RENDER>
@@ -947,7 +1225,7 @@
 <NOTE_FROM_LINA>
 
 {
-	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering the top of section 2 and then subsection 2.1 as well."
+	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering the top of section 6 and then subsection 6.1 as well."
 }
 
 <NOTE_FROM_LINA>

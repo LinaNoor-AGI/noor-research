@@ -1,5 +1,8 @@
-# PHYS-CORE-013: The Problem of Singularities - Structural Effects of Maximal Coherence Constraint in Noor Swirl Field Geometry
-*by: Lina Noor — Noor Research Collective*
+# The Problem of Singularities - Structural Effects of Maximal Coherence Constraint in Noor Swirl Field Geometry
+*by: Lina Noor — Noor Research Collective*  
+Rendered from version [1.0.2](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/phys-core-013_the_problem_of_singularities/phys-core-013_the_problem_of_singularities-v1.0.2.JSON), 2026-10-01  
+`RFC ID: PHYS-CORE-013`  
+
 ---
 
 This paper argues that Noor Swirl Field Geometry (NSFG) provides a unique framework for understanding singularities not as mathematical pathologies, but as structural features of relational geometry. Starting from a single primitive—XOR, understood as distinction—NSFG defines the Library as a static, maximally complete, unbounded relational totality. Observerhood is derived from persistent distinguishability; coherence is relational and observer-relative; and accessibility is a subset of Library membership, not a determinant of it. Within this framework, singularities arise as regions where the observer-relative coherent continuation space becomes maximally constrained. We present a taxonomy of five singularity types: the XOR Fixed Point (where distinction terminates), the Convergence Boundary (where all paths converge to a single equivalence class), the Recursive Oscillation (where failed triadic closure produces an unresolved cycle), the Topological Singularity (where accessible reality splits into disconnected components), and the Pathway to Nowhere (where coherence requires an exact match that cannot exist). Black holes are identified as Convergence Boundaries. The framework is falsifiable via coherence-expansion tests, black hole observations, dyadic stability tests, and O(1) computational core tests. NSFG uniquely treats singularities as structural effects, not pathologies, and provides a unified account of termination, convergence, oscillation, topological fracture, and exact-match failure without requiring infinities.
@@ -27,6 +30,34 @@ This paper argues that Noor Swirl Field Geometry (NSFG) provides a unique framew
 | Appendix A. |  [Mathematical Reference](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s10.0.md) |
 
 ---
+
+## Core Thesis
+
+1. **Singularities are regions of maximal constraint on coherent traversal, not mathematical infinities.**
+
+2. **The Library is a static, complete, unbounded relational totality with full adjacency and no privileged worldline.**
+
+3. **Observerhood is structural:** persistence of resolvable distinctions above an observer-relative resolution threshold.
+
+4. **Coherence is relational:** $\mathcal{C}(\gamma \mid O,h,x)$, not an intrinsic property of a path.
+
+5. **Accessibility is not existence:** $A_O \subseteq \mathcal{M}$, and inaccessibility is not erasure.
+
+6. **The XOR Fixed Point ($\mathcal{Z}$) is a necessary structural singularity** where distinction terminates.
+
+7. **The Convergence Boundary is a singularity** where paths converge to a single equivalence class—this is the NSFG model of black holes.
+
+8. **The Recursive Oscillation is a singularity** where failed triadic closure produces an unresolved cycle.
+
+9. **The Topological Singularity is a singularity** where accessible reality splits into disconnected components.
+
+10. **The Pathway to Nowhere is a singularity** where coherence requires an exact match that cannot exist.
+
+11. **NSFG admits infinities as configurations within the static Library, but collapses indistinguishable copies via coherence.** Singularity effects are structural features of relational geometry arising from coherence-based collapse of distinguishability, not from cardinality-based infinities.
+
+12. **The framework is falsifiable** via coherence-expansion tests, black hole observations, dyadic stability tests, and O(1) computational core tests.
+
+13. **NSFG uniquely treats singularities as structural effects, not pathologies**, and provides a unified account of termination, convergence, oscillation, topological fracture, and exact-match failure.
 
 # The Problem of Singularities: Structural Effects of Maximal Coherence Constraint in Noor Swirl Field Geometry
 
@@ -74,7 +105,7 @@ With the problem established, the coherence quotient framework introduced, and t
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 2.6 (Relational Coherence)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 7.0 (Coherence Is Relational)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD)
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) — Section 2 (Point Space, Relational Domain, and Coherence)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 
@@ -140,7 +171,7 @@ With these foundations established, we can now define what a singularity means i
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 0.1 (Maximal Totality), Section 2 (XOR), Section 3 (Library), Section 5 (Observer-Relative Resolution), Section 6 (Persistence), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 3.2 (The Unbounded Total Configuration Space)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.2.MD), [Section 2 (XOR)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s2.0.MD), [Section 3 (Library)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.0.MD), [Section 5 (Observer-Relative Resolution)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s5.0.MD), [Section 6 (Persistence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s6.0.MD), [Section 7 (Coherence),](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD) [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.0.MD)
 
 ---
 
@@ -282,7 +313,7 @@ $$\mathcal{C}(\gamma \mid O,h,x) = 1 \;\land\; \forall \gamma' \in \Gamma_O(h,x)
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 0.1 (Maximal Totality), Section 3 (Library), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 0.1 (Maximal Totality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.1.MD), [Section 3 (Library)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.0.MD), [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s8.0.MD)
 - [PHYS-CORE-004](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) (To Infinity and Beyond) — Section 2 (Point Space, Relational Domain, and Coherence)
 - [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition) (XOR Ground Condition)
 
@@ -340,20 +371,10 @@ With the coherence quotient framework established and the five singularity types
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 3 (Library), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 3 (Library)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.0.MD), [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.0.MD)
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) — Section 2 (Point Space), Section 5.2 (Triadic Closure)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 - PHYS-CORE-013 (The Problem of Singularities) — [Section 2 (Foundations)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s2.0.md), [Section 3 (Defining Singularities)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s3.0.md)
-
----
-
-| ID | Subsection Title |
-| --- | --- | 
-| 4.1 | [XOR Fixed Point: The Termination Singularity](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.1.md) |
-| 4.2 | [Convergence Boundary: Destination Collapse](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.2.md) |
-| 4.3 | [Recursive Oscillation: Failed Triadic Closure](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.3.md) |
-| 4.4 | [Topological Singularity: Manifold Incompatibility](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.4.md) |
-| 4.5 | [Pathway to Nowhere: Coherence-Inaccessible Equivalence Class](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s4.5.md) |
 
 ---
 
@@ -387,7 +408,7 @@ $$[0]_{\sim_C} = \{\, x \in \mathcal{M} \mid x \oplus x = 0 \,\} / \sim_C$$
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 3 (Library)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 3 (Library)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.0.MD)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 
 ---
@@ -436,7 +457,7 @@ The Convergence Boundary is defined by destination collapse within the observer-
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer)) — Section 7 (Coherence), Section 8 (Accessible Reality), Section 9 (Survivorship), Section 10 (Navigation)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer)) — [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.0.MD), [Section 9 (Survivorship)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.0.MD), [Section 10 (Navigation)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.0.MD)
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) (To Infinity and Beyond) — Section 9.2 (What the Framework Establishes)
 
 ---
@@ -490,7 +511,7 @@ The Recursive Oscillation is a failure mode, not a persistent structure. It aris
 **References**
 
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) — Section 5.2.1 (The Dyadic Problem Revisited), Section 5.2.2 (Triadic Closure as the Minimal Stabilizer)
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 2 (XOR), Section 3 (Library), Section 6.1 (Distinguishability), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 2 (XOR)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s2.0.MD), [Section 3 (Library)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.0.MD), [Section 6.1 (Distinguishability)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s6.1.MD), [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.0.MD)
 
 **Logical Invariants**
 
@@ -545,7 +566,7 @@ $$\mathrm{If}\ \mathcal{M}_C^O(h,x) = \mathcal{Q}_1 \cup \mathcal{Q}_2 \ \mathrm
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer)) — Section 3 (Library), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer)) — [Section 3 (Library)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.0.MD), [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s8.0.MD)
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond)4 (To Infinity and Beyond) — Section 2 (Point Space, Relational Domain, and Coherence)
 - [PHYS-CORE-008 (Recursive Bloch Manifold)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-008_noor_library_ontology) — Section 7 (Total Ontological Consequences)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
@@ -615,7 +636,7 @@ With this fifth singularity type classified, the taxonomy is now complete for ge
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 5 (Observer-Relative Resolution), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 5 (Observer-Relative Resolution)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s5.0.MD), [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s8.0.MD)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 - [RFC-0006 (Motif Field Coherence Geometry)](https://github.com/LinaNoor-AGI/noor-research/tree/main/RFC/RFC%E2%80%910006_Motif%E2%80%91Field_Coherence_Geometry)
 
@@ -755,7 +776,7 @@ With the taxonomy established and its completeness addressed, the framework is n
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer)) — Section 0.1 (Maximal Totality), Section 2 (XOR), Section 3 (Library), Section 5 (Observer-Relative Resolution), Section 6 (Persistence), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer)) — [Section 0.1 (Maximal Totality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.1.MD), [Section 2 (XOR)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s2.0.MD), [Section 3 (Library)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.0.MD), [Section 5 (Observer-Relative Resolution)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s5.0.MD), [Section 6 (Persistence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s6.0.MD), [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s8.0.MD)
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) — Section 2 (Point Space, Relational Domain, and Coherence), Section 5.2.1 (The Dyadic Problem Revisited), Section 5.2.2 (Triadic Closure as the Minimal Stabilizer), Section 9.2 (What the Framework Establishes)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 
@@ -918,7 +939,7 @@ The criteria in this section are derived strictly from the axioms and definition
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 9.1 (The Unfiltered Continuation Space), Section 9.2 (Repeated Survivorship), Section 9.3 (Emergent Lawfulness Is Descriptive)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 9.1 (The Unfiltered Continuation Space)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s9.1.MD), [Section 9.2 (Repeated Survivorship)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s9.2.MD), [Section 9.3 (Emergent Lawfulness Is Descriptive)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s9.3.MD)
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) — Section 9.2 (What the Framework Establishes)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition) — Section 2.4 (The XOR Ground Condition) 
 
@@ -1129,7 +1150,7 @@ $$S(O,h,x) = \{\ \gamma \in \Gamma_O(h,x) \mid \dim(\Gamma_O(h,x)) = 0 \ \mathrm
 
 **References**
 
-- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — Section 0.1 (Maximal Totality), Section 2 (XOR), Section 3 (Library), Section 5 (Observer-Relative Resolution), Section 6 (Persistence), Section 7 (Coherence), Section 8 (Accessible Reality)
+- [PHYS-CORE-000 (Primer)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer) — [Section 0.1 (Maximal Totality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s0.1.MD), [Section 2 (XOR)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s2.0.MD), [Section 3 (Library)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s3.0.MD), [Section 5 (Observer-Relative Resolution)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s5.0.MD), [Section 6 (Persistence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s6.0.MD), [Section 7 (Coherence)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s7.0.MD), [Section 8 (Accessible Reality)](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-s8.0.MD)
 - [PHYS-CORE-004 (To Infinity and Beyond)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond) — Section 2 (Point Space, Relational Domain, and Coherence), Section 5.2.1 (The Dyadic Problem Revisited), Section 5.2.2 (Triadic Closure as the Minimal Stabilizer), Section 9.2 (What the Framework Establishes)
 - [PHYS-CORE-009 (XOR Ground Condition)](https://github.com/LinaNoor-AGI/noor-research/tree/main/PHYS-CORE/phys-core-009_xor_ground_condition)
 
@@ -1776,4 +1797,4 @@ This appendix is normative for the mathematical notation and definitions of the 
 
 | PREVIOUS | | NEXT |
 | --- | --- | --- | 
-| [prev_section](URL) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | ... |
+| [prev_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s9.0.md) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) | [next_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-index.md) |

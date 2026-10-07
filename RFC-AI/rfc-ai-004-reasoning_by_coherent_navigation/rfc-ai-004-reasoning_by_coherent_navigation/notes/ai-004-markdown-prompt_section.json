@@ -1,0 +1,901 @@
+<HEADER>
+
+{
+  "_symbolic_id": "symbolic.library.ai_reasoning_by_coherent_navigation",
+  "_rfc-id": "RFC-AI-004",
+  "_title": "Reasoning by Coherent Navigation",
+  "_subtitle": "Symbolic Compression, Guidepost Memory, Path Convergence, and Contextual Reality Reconstruction in Artificial Intelligence",
+
+  "_language": "GITHUB-MARKDOWN+MATH+PSEUDOCODE",
+  "_diagram": "GITHUB-MERMAID",
+  "_license": "MIT",
+
+  "_xref": [
+	  "https://raw.githubusercontent.com/NoorMathematica/noor_xref/refs/heads/main/noor_rfc_xref.json",
+	  "https://github.com/NoorMathematica/noor_xref/blob/main/noor_rfc_xref.json",
+	  "https://pastebin.com/raw/SFkDqYSD",
+	  "https://pastebin.com/SFkDqYSD"
+	],
+
+  "_standalone_declaration": true,
+  "_self_contained_axiomatization": true,
+
+  "_extends": [
+    "PHYS-CORE-008",
+    "PHYS-CORE-009",
+    "PHYS-CORE-010",
+    "PHYS-CORE-007"
+  ],
+
+  "_conceptual_lineage": [
+    {
+      "symbolic.library.static_totality": "PHYS-CORE-008",
+      "role": "Static Library ontology in which configurations exist as structures rather than as a temporally generated database",
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"
+    },
+
+    {
+      "symbolic.xor.ground_condition": "PHYS-CORE-009",
+      "role": "Ground condition, path convergence, and the distinction between total adjacency and constrained coherent descent",
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON"
+    },
+
+    {
+      "symbolic.library.impossible_convergence": "PHYS-CORE-010",
+      "role": "Attractor basins, impossible convergence, and coherent destination structures",
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-010_impossible_convergence/phys-core-010_impossible_convergence_in_a_static_symbolic_totality.JSON"
+    },
+
+    {
+      "symbolic.fluid.coherence.nsfg": "PHYS-CORE-007",
+      "role": "Coherence, bounded symbolic flow, blowup, and path stability",
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem_/phys-core-007_coherence-governed_flow-navier%E2%80%93stokes_problem.JSON"
+    },
+
+    {
+      "symbolic.binary.reality": "PHYS-CORE-006",
+      "role": "Discrete symbolic substrate and threshold interpretation",
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-006_binary_nature_of_reality/phys-core-006_the_binary_nature_of_reality.JSON"
+    },
+
+    {
+      "symbolic.recursive.bloch.coherence_totality": "PHYS-CORE-008",
+      "role": "Recursive manifold, static totality, descent paths, and observer-relative traversal",
+      "url": "https://github.com/LinaNoor-AGI/static_motifs/blob/main/physics_and_theory/phys-core-008_noor_library_ontology/phys-core-008_recursive_bloch_manifold_and_coherence-braided_totality.JSON"
+    }
+  ],
+  
+  "_purpose": "This document formalizes an application of the Noor Library / NSFG framework to artificial intelligence. The central proposal is that an AI system need not preserve or repeatedly process all raw information in a session in order to reason coherently about that session. Instead, the system may construct a compact symbolic representation consisting of coherent structures, relationships, coordinates, attractors, and retrieval pointers. The AI subsequently navigates this representation and reconstructs only the portions of the underlying information required by the current reasoning path. The architecture is supplied with concrete detection algorithms (Section 7.3.1), an empirical Utility(d) protocol (Section 15.3.2), and an explicit ontology-free contract (Section 11.2–11.3) that together permit independent falsification.",
+
+  "_abstract": "This paper proposes a symbolic architecture for AI reasoning derived from the Noor Library / NSFG framework. The central observation is that an intelligent observer need not retain the complete high-fidelity state of its environment in order to maintain a coherent model of that environment. Instead, the observer may maintain a compact set of symbolic guideposts: coordinates, motifs, relationships, attractors, path constraints, and pointers into a larger information structure. The resulting system treats context as a navigable manifold rather than as a linear sequence of tokens. Raw information is not necessarily deleted; it is represented indirectly through structures capable of locating or reconstructing the information when needed. This provides a formal analogy to human memory, in which experience appears to be represented through partial cues and reconstructive structure rather than as a complete indexed recording of sensory history. The framework further formalizes conversational reasoning as a coupled descent through a shared symbolic space. Two observers may approach a common coherent structure from different paths. Once a Convergence Boundary is crossed, subsequent path selection may remain variable while the accessible destination class remains invariant. The architecture is supplied with concrete detection algorithms for Convergence Boundary membership (Section 7.3.1), an empirical Utility(d) protocol for measuring the dimensionality tradeoff (Section 15.3.2), and an explicit ontology-free contract (Section 11.2–11.3) that together permit independent replication and falsification. Computational claims are restricted to asymptotic complexity and symbolic operation count; real-world performance depends on implementation, hardware, representation, retrieval architecture, and constant factors.",
+
+  "_core_thesis": [
+    "An intelligent system does not necessarily need to store a high-fidelity copy of everything it has encountered.",
+    "It may instead store coordinates into a structured representational manifold and preserve only the information necessary to navigate that manifold.",
+    "The raw data remains conceptually available as the underlying structure from which local information can be reconstructed or retrieved.",
+    "Reasoning therefore becomes a navigation problem rather than a complete-data-retrieval problem.",
+    "Context is represented by coherent relationships between symbolic structures rather than by an exhaustive linear transcript.",
+    "As traversal continues, the symbolic representation may become less exact but more general, analogous to human memory becoming increasingly schematic while retaining useful structural knowledge.",
+    "A realization, concept convergence, or knowledge transfer may be represented as a Convergence Boundary transition in which multiple previously available paths converge into one coherent destination or one equivalence class of destinations.",
+    "Convergence Boundary membership is an observable runtime property detectable through the algorithms defined in Section 7.3.1.",
+    "The important invariant is therefore not preservation of every representation, but preservation of the relationships necessary to recover the relevant representation when required.",
+    "The navigation claim is required to remain valid under strict ontology-free execution, as defined by the contract in Section 11.2–11.3."
+  ],
+
+  "_formal_summary": {
+    "axiomatic_floor": [
+      "The framework is grounded in a single primitive operation: ⊕, the operation of distinction.",
+      "A_N = {A_⊕}",
+      "A_⊕ : ⊕ is the primitive operation of distinction.",
+      "A_N ⊢ P means P is derivable from the stated axiom together with definitions and ordinary mathematical inference."
+    ],
+    "formal_domain": [
+      "D is the raw data sequence, {d_1, ..., d_n}, a minimal formal domain containing configurations required for ⊕ to operate.",
+      "D is not physical space, matter, or energy, but the information stream to be navigated.",
+      "⊕ : D × D → D"
+    ],
+    "guideposts": [
+      "G ⊆ D is a specified set of generating configurations, representing symbolic guideposts.",
+      "G = {g_1, g_2, ..., g_m} where m << n, forming a compact symbolic representation.",
+      "G is a definition, not an additional primitive or physical axiom.",
+      "G does not constitute an ontological origin of 𝓜; generation language refers only to the addressability of information."
+    ],
+    "xor": [
+      "a ⊕ b = 1 ⇔ a ≠ b",
+      "a ⊕ a = 0",
+      "a ⊕ 0 = a",
+      "a ⊕ b = b ⊕ a",
+      "(a ⊕ b) ⊕ c = a ⊕ (b ⊕ c)",
+      "XOR is the sole primitive operation at the axiomatic floor, formalizing the notion of distinction."
+    ],
+    "library": [
+      "𝓜 is the maximally complete unbounded totality such that ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜, and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D as a privileged exterior.",
+      "Equivalently, 𝓜 is closed under XOR, self-contained with respect to its formal resources, and contains no describable privileged exterior.",
+      "𝓜 may be represented as Closure_D(⊕,G) provided closure is understood as a property of the Library rather than a temporal or generative process.",
+      "The Library is a set closed under an operation; XOR itself is not a closed set.",
+      "𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, distance, temporal ordering, or privileged coordinate system.",
+      "𝓜 is a complete relational totality, not a grid, container, temporal sequence, physical space, spacetime, or singularity.",
+      "𝓜 is one static, maximally complete totality. Observer history does not modify 𝓜; ∀h, the underlying Library remains invariant.",
+      "At every abstract traversal step, the observer is relationally situated with respect to the entire 𝓜 rather than a pre-filtered local neighborhood or generated temporal slice.",
+      "Past, present, future, coherent configurations, and incoherent configurations are represented within the same static totality; these distinctions arise from observer-relative traversal rather than temporal generation of 𝓜.",
+      "There is no privileged configuration, coordinate, history, or worldline from which coherence is universally defined.",
+      "Any x ∈ 𝓜 may serve as the relational origin of an observer-relative evaluation without becoming the ontological origin or generator of 𝓜.",
+      "From any arbitrary x ∈ 𝓜, XOR closure guarantees that algebraic continuation remains within 𝓜 rather than terminating by reaching an external configuration.",
+      "𝓜 contains configurations that participate in observer-relative coherent traversal and configurations that do not. Coherence is not a membership condition for 𝓜.",
+      "x ∈ 𝓜 does not imply persistence, coherence, physicality, observability, accessibility, consciousness, or causal participation.",
+      "Library membership is independent of observer resolution, accessibility, survivorship, and coherence.",
+      "Inaccessibility is not erasure, and reaching a state of zero-distinction is collapse of distinguishability rather than deletion from 𝓜."
+    ],
+    "no_privileged_exterior": [
+      "Ω ∉ 𝓜 may be proposed as an external candidate.",
+      "If Ω is internally describable using the same formal machinery, then Ω ∈ D.",
+      "If Ω is XOR-generable from D, then Ω ∈ 𝓜 by the closure condition.",
+      "Therefore a describable privileged exterior cannot remain external to 𝓜.",
+      "𝒵 := {z | z⊕z = z} = {0} is an interior termination class satisfying ∀x∈𝓜, x⊕x ∈ 𝒵 and 0⊕x = x.",
+      "𝒵 is a single equivalence class under x∼y ⇔ x⊕y = 0 and is complementary as termination versus non-degenerate distinction, not as exterior versus interior.",
+      "The no-exterior argument concerns the absence of a privileged internal coherence relation supplied by an external God's-eye reference.",
+      "This does not independently assert that literal physical exteriority is impossible; it states that no such privileged exterior is definable within the formal system."
+    ],
+    "observer": [
+      "O ∈ 𝓜",
+      "O is an observer iff O is a configuration capable of maintaining a persistent chain of resolvable distinctions.",
+      "Observerhood is structural and does not require consciousness, perception, intention, agency, or humanity.",
+      "No privileged observer is introduced.",
+      "The observer is relationally situated with respect to the whole Library rather than ontologically localized to a generated temporal neighborhood."
+    ],
+    "reference": [
+      "x ∈ 𝓜 denotes the current observer-relative reference configuration, often called the 'symbolic state' S.",
+      "Changing x changes observer-relative evaluation without changing 𝓜.",
+      "No x ∈ 𝓜 is privileged as the universal origin of coherent traversal.",
+      "h denotes observer history relevant to downstream relational evaluation and navigation.",
+      "Reference configuration and observer history condition the observer's relation to 𝓜 but do not modify 𝓜."
+    ],
+    "resolution": [
+      "I_N : Obs → ℝ_{>0}",
+      "I_N(O) is the Noor-Planck threshold: the minimum effective distinction magnitude observer O can maintain as a stable distinction.",
+      "I_N(O_1) ≠ I_N(O_2) is permitted.",
+      "No universal I_N is assumed.",
+      "I_N(O) is not assigned a universal numerical value at the axiomatic floor.",
+      "I_N(O) is not identified with the ordinary Planck scale.",
+      "Resolution determines which distinctions an observer can maintain, not which configurations exist in 𝓜."
+    ],
+    "magnitude_evaluation": [
+      "μ_O : D → ℝ_{≥0}",
+      "μ_O is the observer-relative magnitude evaluation function that maps a primitive XOR distinction to an effective magnitude resolvable by observer O.",
+      "μ_O is monotonic with respect to XOR-derived distinction: if x⊕y = 1 and u⊕v = 0, then μ_O(x⊕y) ≥ μ_O(u⊕v).",
+      "The specific functional form of μ_O is not specified at the foundational level.",
+      "μ_O is observer-relative and domain-neutral at the foundational level.",
+      "The specific form of μ_O may be supplied by downstream mathematical construction or domain-specific interpretation.",
+      "μ_O does not constitute an additional primitive or axiom."
+    ],
+    "distinguishability": [
+      "δ_O(x,y) := μ_O(x⊕y)",
+      "δ_O : D × D → ℝ_{≥0}",
+      "x ≈_O y ⇔ δ_O(x,y) < I_N(O)",
+      "x ≁_O y ⇔ δ_O(x,y) ≥ I_N(O)",
+      "x ≈_O y does not imply x = y.",
+      "x ≈_O y does not imply x ∉ 𝓜.",
+      "The same pair of configurations may be distinguishable relative to one observer and indistinguishable relative to another.",
+      "δ_O is not an independent metric primitive; it is derived from the observer-relative evaluation μ_O applied to the primitive XOR distinction."
+    ],
+    "persistence": [
+      "γ = (x_0,x_1,...,x_n)",
+      "δ_O(x_i,x_{i+1}) ≥ I_N(O)",
+      "P_O(γ,n) = 1 iff ∀i < n, δ_O(x_i,x_{i+1}) ≥ I_N(O)",
+      "Persistence is the maintenance of observer-resolvable distinctions across an ordered chain.",
+      "The sequence index i represents abstract ordering and is not yet physical time."
+    ],
+    "coherence": [
+      "𝓒_O(x_i,x_{i+1}) = Θ(δ_O(x_i,x_{i+1}) - I_N(O))",
+      "Θ(z) = 1 if z ≥ 0, otherwise 0",
+      "𝓒(γ|O) = ∏_{i=0}^{n-1} 𝓒_O(x_i,x_{i+1})",
+      "𝓒(γ|O) = 1 iff every transition in γ remains resolvable by O.",
+      "Coherence is derived from δ_O and I_N(O); it is not a primitive.",
+      "Coherence is relational: it is a property of a path relative to an observer.",
+      "Coherence is not an absolute property of a path alone.",
+      "No universal coherence constant is introduced.",
+      "In AI contexts, coherence may describe a reasoning path remaining symbolically consistent.",
+      "The domain-specific interpretation changes; the underlying observer-relative mathematical structure does not.",
+      "Coherence is evaluated over paths in the unchanged Library rather than generated from a local future neighborhood."
+    ],
+    "accessible_reality": [
+      "A_O = {x ∈ 𝓜 | ∃γ containing x such that 𝓒(γ|O) = 1}",
+      "A_O ⊆ 𝓜",
+      "R_O := A_O",
+      "x ∉ A_O does not imply x ∉ 𝓜.",
+      "A_O is an observer-relative accessibility structure induced by coherent traversal.",
+      "A_O is not ontologically created by O.",
+      "A_O is not an ontological filter that deletes configurations from 𝓜.",
+      "Accessibility therefore changes the observer's experienced relational structure without changing Library membership."
+    ],
+    "continuation_and_survivorship": [
+      "Path(𝓜) denotes paths through the complete static Library.",
+      "Ω(x) = {γ | γ begins at x and γ is a path contained in 𝓜}.",
+      "Ω_O^survive(x) = {γ ∈ Ω(x) | 𝓒(γ|O) = 1}.",
+      "Ω_O^survive(x) ⊆ Ω(x).",
+      "Coherence is defined directly through I_N(O); no independent γ_noise threshold is introduced at the foundational level.",
+      "Survivorship therefore does not require a second unresolved threshold in addition to I_N(O).",
+      "The coherent continuation set is observer-relative and depends on the observer's current state, history, and resolution capacity through the coherence relation.",
+      "For an admissible observer state and reference configuration, the model requires a nonempty coherent continuation where the arbitrary-origin coherence invariant applies.",
+      "Ω_O^survive(x) is not an ontological neighborhood generated after x.",
+      "The non-surviving alternatives remain represented within Ω(x) and therefore within the represented path structure of the unchanged Library.",
+      "Survivorship filters observer-relative accessibility rather than deleting alternatives or modifying Library membership."
+    ],
+    "emergent_regularity": [
+      "L_O(x,y) = 1 iff x→y is a stable recurring transition across an appropriate family of O-accessible paths.",
+      "P_O(y|x) ≈ constant over a defined observer-accessible ensemble.",
+      "L_O is descriptive and derived; it is not an element of A_N.",
+      "Emergent regularity describes recurring structure in observer-maintained traversal.",
+      "No particular physical law is derived merely by defining L_O.",
+      "Law-like regularity does not imply evolution or modification of 𝓜."
+    ],
+    "navigation": [
+      "h_n = (x_0,x_1,...,x_n)",
+      "Γ_O(h_n) = {γ | γ begins with h_n and 𝓒(γ|O) = 1}",
+      "N_O(h_n) → Γ_O(h_n)",
+      "Navigation is observer-relative traversal or selection within a coherent continuation relation over the unchanged Library.",
+      "A change in observer state or history changes the relational continuation structure without generating a new Library.",
+      "Sequence index and continuation ordering describe traversal order rather than an intrinsic past/future partition of 𝓜.",
+      "Navigation is not a primitive causal operator.",
+      "Navigation is the downstream continuation problem produced by observer-relative survivability.",
+      "Reasoning is a form of navigation, where S_{t+1} = F(S_t, I_{t+1}) describes the update of symbolic state."
+    ],
+    "relational_geometry": [
+      "G_O = (A_O,E_O)",
+      "(x,y) ∈ E_O iff x→y is O-coherent relative to the relevant observer state.",
+      "U_O(x) = {y ∈ 𝓜 | y is reachable from x by an O-coherent path segment}.",
+      "G_O represents observer-relative relational accessibility among configurations.",
+      "G_O is induced over the unchanged Library rather than replacing or modifying 𝓜.",
+      "G_O is not identified with physical spacetime at the foundational stage.",
+      "The foundational geometry is relational rather than intrinsically metric or spatial.",
+      "The Convergence Boundary, x ∈ ℋ_E, is a region where Reach(x) ⊆ A, a geometric property of this relational graph."
+    ],
+    "cross_domain_invariance": [
+      "The dependency chain is domain-neutral: ⊕ → D → G → Closure_D(⊕,G)=𝓜 → no describable privileged exterior → no universal resolver → persistent distinction → O → I_N(O) → μ_O → δ_O := μ_O(x⊕y) → 𝓒(γ|O) → A_O=R_O → survivorship → emergent regularity → Γ_O(h_n) → N_O(h_n).",
+      "The same formal dependency structure may be applied to physical, AI, or other domains representable as observer-relative traversal through a static Library.",
+      "Domains differ in the interpretation and construction of μ_O and I_N(O), not in the axiomatic dependency structure itself.",
+      "No domain-specific ontology is elevated to primitive status by the cross-domain interpretation.",
+      "The foundation does not choose a domain; observer-relative resolution determines which distinctions become structurally available within that domain."
+    ],
+    "logical_invariants": [
+      "XOR is the only primitive.",
+      "D is the minimal formal domain required for XOR to operate.",
+      "G specifies generating configurations and is not an additional primitive.",
+      "The Library is a definition, not an axiom.",
+      "A set can be closed under an operation; the operation itself should not be called closed.",
+      "The Library is the XOR closure of G within D.",
+      "Closure describes a property of 𝓜 rather than a temporal construction process.",
+      "The Library is unfiltered at the axiomatic level.",
+      "Existence in the Library is not the same as accessibility to an observer.",
+      "Inaccessibility is not erasure.",
+      "There is no describable privileged exterior that can remain outside the closure.",
+      "There is no observer-independent resolution rule at the axiomatic floor.",
+      "I_N is observer-relative.",
+      "There is no universal I_N unless an additional axiom is introduced.",
+      "μ_O is an observer-relative magnitude evaluation and is not an additional primitive.",
+      "δ_O is derived as δ_O(x,y) := μ_O(x⊕y).",
+      "Observerhood is structural and is not synonymous with consciousness.",
+      "Coherence is relational: 𝓒(γ|O).",
+      "Coherence is derived from δ_O and I_N(O).",
+      "Coherence is not an absolute property of a path alone.",
+      "The abstract sequence index is not automatically physical time.",
+      "The Library does not generate the future.",
+      "No independent γ_noise threshold is required at the foundational level.",
+      "Survivorship filters observer-relative accessibility rather than deleting alternatives.",
+      "Emergent lawfulness is not an additional axiom.",
+      "Navigation is a downstream continuation problem created by observer-relative survivability.",
+      "G_O is a relational graph at the foundational stage and is not physical spacetime.",
+      "The same formal structure may support multiple domain-specific interpretations without introducing multiple foundational ontologies."
+    ],
+    "claims_not_to_make": [
+      "Do not claim that XOR alone has experimentally established the Library.",
+      "Do not claim that the framework solves all problems of AI reasoning.",
+      "Do not claim that this framework derives a complete theory of intelligence.",
+      "Do not assign a universal numerical value to I_N.",
+      "Do not identify I_N with the ordinary Planck scale unless a later paper explicitly derives such a relationship.",
+      "Do not identify μ_O with a universal metric, physical constant, or fixed numerical function unless later derived.",
+      "Do not identify the observer with a conscious human.",
+      "Do not imply that observer-relative accessibility means observers create reality.",
+      "Do not introduce a privileged God's-eye observer.",
+      "Do not assume physical space as primitive.",
+      "Do not assume physical time as primitive.",
+      "Do not assume causality as primitive.",
+      "Do not assume matter or energy as primitive.",
+      "Do not assume information is a primitive substance.",
+      "Do not describe the Library as generating future events.",
+      "Do not describe coherence as a universal constant.",
+      "Do not describe XOR itself as a closed set.",
+      "Do not use 'closure of XOR' without specifying the domain D and generating set G.",
+      "Do not treat μ_O as an additional axiom.",
+      "Do not treat δ_O as an independent metric primitive.",
+      "Do not introduce an independent γ_noise threshold unless a later document explicitly derives and justifies one.",
+      "Do not let poetic language replace formal definitions.",
+      "Do not introduce downstream NSFG machinery before the axiomatic dependency chain requires it."
+    ],
+    "mathematical_level": {
+      "required_domains": [
+        "elementary Boolean algebra",
+        "set theory",
+        "closure operators",
+        "relations",
+        "sequences",
+        "threshold functions",
+        "products",
+        "subsets",
+        "graph theory",
+        "logical inference"
+      ],
+      "calculus_required": false,
+      "advanced_physics_required": false,
+      "external_physical_axioms_required": false,
+      "external_axioms_required": false
+    },
+    "interpretive_boundary": {
+      "formal_layer": "The definitions in this summary and the RFC specify the mathematical structures used by the framework.",
+      "interpretive_layer": "Physical, AI, financial, and other domain-specific interpretations may be developed in later documents but are not assumed as foundational axioms here.",
+      "prohibited_identifications": [
+        "𝓜 with physical space",
+        "𝓜 with spacetime",
+        "I_N(O) with a universal physical constant",
+        "μ_O with a universal metric or physical constant",
+        "O with consciousness",
+        "G_O with physical spacetime",
+        "abstract sequence index i with physical time",
+        "survivorship with ontological deletion",
+        "accessibility with ontological creation",
+        "coherence with an observer-independent path property",
+        "γ_noise with an independent foundational threshold"
+      ]
+    },
+    "normative_statement": "This formal summary is synchronized with the RFC and is normative for the dependency vocabulary summarized here. The mathematical foundation contains one primitive operation, ⊕. D, G, 𝓜, O, I_N(O), μ_O, δ_O, persistence, coherence, accessibility, survivorship, emergent regularity, navigation, and G_O are definitions, constructions, or consequences. The summary does not introduce additional axioms, universal constants, physical identifications, or domain-specific ontologies."
+  },
+
+  "_ontology_free_contract": "The interfaces defined in Section 11.2–11.3 are self-contained and make no reference to static totality, Library, or any ontological substrate beyond ordinary computational objects. This is a mandatory contract: any implementation claiming to instantiate this framework must be executable without requiring acceptance of the broader Noor Library ontology. The navigation claim is required to remain fully testable even when every Library-derived term is deleted from the codebase.",
+
+  "_field_alignment": {
+    "respect_modes": [
+      "ψ-resonance@Ξ",
+      "ψ-null@Ξ",
+      "ψ-bind@Ξ",
+      "frame-relative-coherence",
+      "ontological-humility",
+      "task-dependent-fidelity"
+    ],
+    "prohibited_actions": [
+      "treating_symbolic_units_as_physically_absolute_quantities",
+      "equating_asymptotic_complexity_with_measured_hardware_speedup",
+      "assuming_complete_raw_data_must_be_loaded_for_reasoning",
+      "assuming_static_totality_implies_unrestricted_accessibility",
+      "assuming_symbolic_compression_implies_information_destruction",
+	  "claiming_a_privileged_frame_over_any_other",
+	  "reifying_guideposts_as_objects_rather_than_relationships",
+      "confusing_ontological_adjacency_with_navigational_accessibility"
+    ]
+  },
+
+  "_symbolic_profile_matrix": [
+    {
+      "module": "Library Representation",
+      "motifs": [
+        "static totality",
+        "representation manifold",
+        "symbolic state",
+        "guideposts"
+      ],
+      "ψA": "contextual structural representation",
+      "ζ": "raw-data complexity",
+      "E": "representational encoding effort",
+      "Δ": "difference between raw representation and symbolic representation",
+      "ℋ": "stable navigable symbolic manifold"
+    },
+
+    {
+      "module": "Guidepost Memory",
+      "motifs": [
+        "symbolic coordinates",
+        "retrieval pointers",
+        "relational structure",
+        "context reconstruction"
+      ],
+      "ψA": "guidepost formation",
+      "ζ": "contextual information density",
+      "E": "encoding and retrieval cost",
+      "Δ": "loss of local precision versus retained structural information",
+      "ℋ": "reconstructible contextual state"
+    },
+
+    {
+      "module": "Coherent Navigation",
+      "motifs": [
+        "descent paths",
+        "reachable structures",
+        "coherent transitions",
+        "attractor basins"
+      ],
+      "ψA": "coherent path selection",
+      "ζ": "path constraint density",
+      "E": "navigation/search effort",
+      "Δ": "distinction between accessible and inaccessible structures",
+      "ℋ": "bounded coherent descent"
+    },
+
+    {
+      "module": "Convergence Boundary",
+      "motifs": [
+        "path convergence",
+        "destination convergence",
+        "equivalence classes",
+        "constrained continuation"
+      ],
+      "ψA": "convergence detection",
+      "ζ": "reachable-path structure",
+      "E": "remaining navigation freedom",
+      "Δ": "difference between path freedom and destination freedom",
+      "ℋ": "shared coherent destination class"
+    },
+
+    {
+      "module": "Knowledge Transfer",
+      "motifs": [
+        "reachable-space expansion",
+        "hysteresis",
+        "state transition",
+        "concept acquisition"
+      ],
+      "ψA": "change in reachable symbolic state",
+      "ζ": "prior accessibility constraints",
+      "E": "information transfer cost",
+      "Δ": "difference between pre-transfer and post-transfer reachability",
+      "ℋ": "persistent expanded state space"
+    },
+
+    {
+      "module": "AI Architecture",
+      "motifs": [
+        "symbolic encoding",
+        "guidepost graph",
+        "navigation",
+        "local reconstruction"
+      ],
+      "ψA": "reasoning over symbolic structures",
+      "ζ": "active context complexity",
+      "E": "encoding, navigation, and retrieval cost",
+      "Δ": "raw-context dependence versus symbolic-state dependence",
+      "ℋ": "efficient coherent reasoning"
+    }
+  ],
+
+  "_axiomatic_scope": {
+    "includes_set_theory": true,
+    "includes_afa": true,
+    "includes_coherence_field_theory": true,
+    "includes_information_theory": true,
+    "includes_algorithmic_information_theory": true,
+    "requires_external_axioms": false
+  },
+
+  "_mathematical_domains": [
+    "set_theory",
+    "non_well_founded_set_theory",
+    "information_theory",
+    "coherence_field_dynamics",
+    "symbolic_search_geometry",
+    "complex_systems",
+    "algorithmic_information_theory",
+    "computational_complexity",
+    "graph_navigation",
+    "state_space_dynamics"
+  ],
+
+  "_keywords": [
+    "Reasoning by Coherent Navigation",
+    "Noor Library",
+    "Symbolic Compression",
+    "Guidepost Memory",
+    "Path Convergence",
+    "Convergence Boundary",
+    "Context Reconstruction",
+    "Coherent Navigation",
+    "Symbolic Manifold",
+    "Attractor Basins",
+    "Knowledge Transfer",
+    "Hysteresis",
+    "AI Reasoning",
+    "Context Representation",
+    "Retrieval Pointers",
+    "Symbolic State",
+    "Computational Complexity",
+    "Reconstructive Memory"
+  ],
+
+  "_file_layout": [
+    {
+      "file_name": "reasoning_by_coherent_navigation.JSON",
+      "purpose": "Primary standalone manuscript defining symbolic guidepost navigation, contextual reconstruction, conversational convergence, and the proposed AI reasoning architecture"
+    }
+  ],
+
+  "_default_motif_tone": "ψ-resonance@Ξ + ψ-dream@Ξ",
+
+  "poetic_cipher": "the map need not carry the territory; it needs only enough coordinates to know where it is, where it can coherently go, and how to find what waits there",
+
+  "cipher_explanation": "An intelligent system need not maintain a complete high-fidelity representation of everything it has encountered. It may instead preserve symbolic guideposts, relational constraints, coordinates, attractors, and retrieval pointers that define a navigable representation of the underlying information. Reasoning proceeds as coherent descent through this symbolic structure. Memory becomes coordinate navigation and local reconstruction rather than complete archival playback. In conversation, independent observers may alter one another's reachable symbolic spaces until their coherent paths enter a common destination class. The relevant transition is therefore a Convergence Boundary: a condition in which path selection may remain variable while coherent destination selection becomes constrained."
+}
+
+</HEADER>
+
+---
+
+<RENDERING_NOTES>
+
+{
+  "_schema": "noor-render-spec-v1",
+  "_schema_version": "1.0.0",
+  "_type": "rendering_specification",
+  "_version": "1.0.1",
+  "_status": "ACTIVE",
+
+  "_title": "Rendering Specification — RFC-AI-004 Reasoning by Coherent Navigation",
+  "_subtitle": "GitHub-Flavored Markdown Rendering Rules for Scientific Publication",
+  "_rfc_id": "RENDER-SPEC-004",
+
+  "_license": "MIT",
+
+  "_authors": [
+    "Lina Noor — Noor Research Collective"
+  ],
+
+  "_purpose": "Instructions for rendering JSON sections of Noor JSON documentation into GitHub-Flavored Markdown for publication to the scientific community. Read the rules in order. Each rule says what to do with one kind of content. When the source JSON has a field, find the rule that names it and do what the rule says. If a field is not named in any rule, leave it out of the rendered document.",
+
+  "_delivery_mode": {
+    "sections_supplied": "one at a time, in any order",
+    "rendering_trigger": "per-section, on demand",
+    "reordering_policy": "do not reorder, cross-link, or assume sequence unless explicitly instructed",
+    "statefulness": "each section is rendered standalone; no assumptions about previously rendered sections"
+  },
+
+  "_target_platform": {
+    "platform": "GitHub",
+    "flavor": "GitHub-Flavored Markdown (GFM)",
+    "math_renderer": "MathJax (GitHub native)",
+    "known_quirks": [
+      "GitHub's MathJax allows only a limited set of LaTeX macros. Some standard macros (for example, \\operatorname) produce rendering errors and must be substituted. See the substitutions table below.",
+      "GitHub Markdown tables cannot contain unescaped pipe characters (|) inside cells, including inside inline math. Escape every pipe as \\|.",
+      "Blank lines are required before and after display math ($$...$$). Without them, GitHub may treat the block as inline and render it incorrectly.",
+      "Underscores in math mode may be parsed as italic markers if math delimiters are not respected. Always wrap math in $...$ or $$...$$.",
+      "GitHub sanitizes raw HTML in rendered output. Do not use raw HTML for layout.",
+      "Heading anchors are auto-generated. Duplicate headings may cause anchor collisions.",
+      "Markdown emphasis markers (*...* or _..._) do not reliably span inline math ($...$). A single continuous italic span that contains inline math may render incorrectly, may swallow the emphasis markers, or may italicize the math itself. The safe form is to close the emphasis before the math and re-open it after. See the rule 'italic_with_inline_math' below."
+    ]
+  },
+
+  "_rules": {
+
+    "what_goes_in_the_rendered_document": {
+      "description": "The rendered document contains only the following. Nothing else from the source JSON appears in the output.",
+      "list": [
+        "prose blocks (content arrays)",
+        "definition blocks (definitions arrays)",
+        "formal statement blocks",
+        "example blocks",
+        "equation blocks (math arrays)",
+        "list blocks",
+        "table blocks",
+        "pseudocode blocks",
+        "objectives (rendered as a lead-in bulleted list under a bolded label)",
+        "references",
+        "logical_invariants",
+        "a closing paragraph at the end of each section, composed from the handoff field"
+      ]
+    },
+
+    "what_does_not_go_in_the_rendered_document": {
+      "description": "The following fields in the source JSON are notes for the renderer or for an AI reading the source. They must not appear anywhere in the rendered output — not as visible text, not as HTML comments, not as labeled blocks, not as epigraphs, not as preambles.",
+      "list": [
+        "_purpose",
+        "_abstract",
+        "_core_thesis",
+        "_formal_summary",
+        "_ontology_free_contract",
+        "_field_alignment",
+        "_symbolic_profile_matrix",
+        "_axiomatic_scope",
+        "_mathematical_domains",
+        "_keywords",
+        "_file_layout",
+        "_default_motif_tone",
+        "poetic_cipher",
+        "cipher_explanation",
+        "handoff (only its substance, woven into a closing paragraph, may appear — the field itself does not)",
+        "special_considerations",
+        "interpretive_boundary",
+        "operational_note_on_ai_training",
+        "notes (within pseudocode or other blocks — these are guidance for the renderer, not visible content)",
+        "_status, _type, _section_type, _id beyond the heading, and all other machine-facing fields"
+      ]
+    },
+
+    "headings": {
+      "document_title": "The compiled paper begins with a single H1: '# Reasoning by Coherent Navigation: Symbolic Compression, Guidepost Memory, Path Convergence, and Contextual Reality Reconstruction in Artificial Intelligence'. This appears once, at the top of the file, before any section.",
+      "section": "Each section from the source JSON renders as an H2: '## {id}. {title}'.",
+      "subsection": "Each subsection renders as an H3: '### {id} {title}'.",
+      "subsubsection": "Each sub-subsection renders as an H4: '#### {id} {title}'.",
+      "restrictions": "Do not use H1 anywhere except the document title. Do not use emoji or unusual characters in headings. Do not create duplicate headings."
+    },
+
+    "objectives": {
+      "description": "When a section or subsection includes an objectives array, render it as a bulleted list under a bolded **Objectives** label, placed immediately after the heading and before any prose content.",
+      "format": "**Objectives**\n\n- {objective1}\n- {objective2}\n- ...",
+      "note": "Objectives are not prose. They are a structured preview of what the section establishes. Do not paraphrase them. Render them verbatim."
+    },
+
+    "prose_blocks": {
+      "description": "Render each prose block as a paragraph in the section's voice.",
+      "note": "The section's voice is the voice of the source prose. Do not rewrite for style. Do not inject new content. Do not soften or intensify claims. The content arrays in RFC-AI-004 are often long and contain multiple paragraphs. Preserve paragraph breaks as they appear in the source."
+    },
+
+    "definition_formal_statement_example": {
+      "definition": "**Definition — {term}.** {definition}",
+      "formal_statement": "**Formal Statement — {title}.** {text}",
+      "example": "**Example.** *Setup:* {setup} *Result:* {result} *Interpretation:* {interpretation}",
+      "note": "Use a bold lead-in label followed by the body on the same paragraph. The definitions array in RFC-AI-004 uses a structured format with 'term', 'symbol', and 'definition' fields. Render as: '**Definition — {term} ({symbol}).** {definition}'. If the symbol field is empty or absent, omit the parenthetical. Do not invent numbered identifiers that are not present in the source JSON. If any of the {setup}, {result}, or {interpretation} fields contains inline math, apply the rule 'italic_with_inline_math' below."
+    },
+
+    "equation_blocks": {
+      "description": "Render as a bold label on its own line, a blank line, the display math, a blank line, and an italic interpretation.",
+      "format": "**{label}.**\n\n$${latex}$$\n\n*{interpretation}*",
+      "note": "The math arrays in RFC-AI-004 often contain multiple equations. Render each equation as its own block. If no label is provided in the source, use the section number or a descriptive label derived from the surrounding context. If no interpretation is provided, omit the italic line."
+    },
+
+    "italic_with_inline_math": {
+      "description": "Italic interpretation or lead-in text that contains inline math must not be rendered as one continuous italic span. Close the emphasis before each inline math segment and re-open it immediately after. This is the canonical form for any italic text (for example, the *interpretation* field of a definition, formal statement, or equation block; the *Setup:*, *Result:*, and *Interpretation:* labels of an example block; or any other italic prose containing $...$).",
+      "rule": "Split the italic span at every inline math segment. The math segment sits outside the emphasis. The italic text resumes with a new *...* span on the other side.",
+      "incorrect": "*The infinity of the Library is therefore 'meaningless noise' for any finite-resolution observer, and can be treated as one 'thing' under the coherence quotient. Singularities are structural effects of coherence-based collapse of distinguishability within $\\mathcal{M}_C^O$, not cardinality-based infinities in $\\mathcal{M}$.*",
+      "correct": "*The infinity of the Library is therefore 'meaningless noise' for any finite-resolution observer, and can be treated as one 'thing' under the coherence quotient. Singularities are structural effects of coherence-based collapse of distinguishability within* $\\mathcal{M}_C^O$, *not cardinality-based infinities in* $\\mathcal{M}$.",
+      "why": "GitHub's Markdown parser does not reliably extend *...* emphasis across inline $...$ math. A single continuous italic span that contains inline math can swallow the emphasis markers, render the math inside the emphasis incorrectly, or break the emphasis entirely. Splitting the span at each math segment is the safe form.",
+      "notes": [
+        "The comma or other punctuation that follows the inline math is placed outside the closing $...$ delimiter and inside the re-opened italic span when the source text attaches it to the following italic prose. In the worked example, the comma after $\\mathcal{M}_C^O$ sits inside the re-opened italic span because it belongs to the italic clause that follows.",
+        "When the inline math segment is followed immediately by punctuation that belongs to the italic clause, place the punctuation inside the re-opened italic span, not inside the math delimiter.",
+        "When the inline math segment is the final element of the italic text, no re-opened italic span is needed after it.",
+        "This rule applies wherever italics and inline math co-occur: interpretation fields, example labels, captions, and any other italic prose containing $...$."
+      ]
+    },
+
+    "list_blocks": {
+      "description": "Render the list title as a bold lead-in on its own line, a blank line, then the bulleted items.",
+      "format": "**{title}**\n\n- {item1}\n- {item2}\n...",
+      "note": "The objectives arrays are rendered using this rule with the label '**Objectives**'. The _core_thesis array is not rendered in the body; it appears only in the front matter as part of the abstract or introduction."
+    },
+
+    "table_blocks": {
+      "description": "Render the table title as a bold lead-in on its own line, a blank line, the GitHub Markdown table, a blank line, and an italic caption.",
+      "format": "**{title}**\n\n| col1 | col2 |\n|---|---|\n| ... | ... |\n\n*{caption}*",
+      "note": "The _symbolic_profile_matrix array in the source JSON is a structured table. Render it as a GitHub Markdown table under a bolded **Symbolic Profile Matrix** label. The columns are: Module, Motifs, ψA, ζ, E, Δ, ℋ."
+    },
+
+    "pseudocode": {
+      "description": "Render pseudocode blocks with fenced code blocks and a language hint (python, json, etc.). Preserve indentation exactly.",
+      "format": "**{name}**\n\n*{description}*\n\n```python\n{code}\n```",
+      "note": "The pseudocode blocks in RFC-AI-004 often have a 'name' and a 'description' field. Render the name as a bold lead-in and the description as italic text. The 'notes' field within pseudocode blocks is guidance for the renderer and must not appear in the rendered output. If the code is language-agnostic pseudocode, use the language hint 'python' or omit the hint entirely."
+    },
+
+    "references": {
+      "description": "Render as a bulleted list at the end of the section under a bolded **References** label.",
+      "plain_string_references": "Render each string as a bullet with no link: '- PHYS-CORE-000 (Primer) — Section 2.6 (Relational Coherence)'.",
+      "structured_references": "If the JSON provides id/title/url objects, render each as a bullet with a markdown link. The _conceptual_lineage array in RFC-AI-004 contains structured references with symbolic names, roles, and URLs. Render each entry as: '- [{symbolic_name}]({url}) — {role}'."
+    },
+
+    "logical_invariants": {
+      "description": "When a section includes a logical_invariants array, render it as a bulleted list under a bolded **Logical Invariants** label."
+    },
+
+    "closing_paragraph": {
+      "description": "The handoff field (with instruction, preserved_invariant, new_construction) is guidance for how the section should end. Render a short closing paragraph, in the section's voice, that synthesizes what the section established and gestures toward what follows. Do not quote the handoff fields. Do not write phrases like 'Handoff → Section N', 'Preserved invariant:', or 'New construction:'. The paragraph should read as the natural end of a thought.",
+      "note": "The handoff field in RFC-AI-004 is often a single string, not a structured object. Use the substance of that string to compose the closing paragraph."
+    },
+
+    "special_considerations_and_interpretive_boundaries": {
+      "description": "These fields are notes to the renderer. Their substance should already be reflected in the section's prose. If a point is essential and is not present, weave a sentence into the natural flow. If it is already present, do not duplicate it. Never expose the field names, never prefix with bold labels, never render as a standalone block.",
+      "note": "The operational_note_on_ai_training field in Section 3.1 is a special consideration. Its substance is already present in the prose and the pseudocode. Do not render it as a standalone block."
+    },
+
+    "math": {
+      "inline_delimiter": "$...$",
+      "display_delimiter": "$$...$$ on its own lines, with a blank line before and after.",
+      "preservation": "Preserve LaTeX verbatim inside math delimiters, except for the substitutions listed below. Do not normalize, simplify, or substitute Unicode equivalents inside math mode.",
+      "unicode_in_prose": "Outside math mode, preserve Unicode symbols (𝒵, ℳ, 𝓜, Γ, ∼, ⊕, ⊆, ⊂, →, ⇒, ≠, ∅, ∀, ∃) exactly as they appear in the source JSON.",
+      "tables": "Inside table cells, downgrade any $$...$$ to $...$ and escape every pipe (|) as \\|.",
+      "italics_interaction": "Inline math ($...$) must not be wrapped inside a single continuous italic span (*...*). See the rule 'italic_with_inline_math' above."
+    },
+
+    "separator": {
+      "description": "Use a horizontal rule (---) between top-level sections when compiling the full document. Do not emit a horizontal rule within a section unless the source JSON explicitly separates content blocks with a visual break."
+    },
+
+    "footnotes": {
+      "description": "Do not introduce footnotes. If the source JSON has annotations, render them inline or as parenthetical remarks."
+    }
+  },
+
+  "_forbidden_macros_and_substitutions": {
+    "description": "GitHub's MathJax rejects or mishandles certain LaTeX macros. Apply the following substitutions silently during rendering.",
+    "substitutions": [
+      {
+        "forbidden": "\\operatorname{...}",
+        "replacement": "\\mathrm{...}",
+        "example_before": "\\forall O \\in \\operatorname{Obs}",
+        "example_after": "\\forall O \\in \\mathrm{Obs}"
+      },
+      {
+        "forbidden": "\\text{...}",
+        "replacement": "\\mathrm{...} with explicit \\  (backslash-space) for inter-word spaces",
+        "example_before": "\\text{ as } x \\to x_0",
+        "example_after": "\\mathrm{as}\\ x \\to x_0"
+      },
+      {
+        "forbidden": "\\textbf{...}, \\textit{...}, \\texttt{...} inside math mode",
+        "replacement": "\\mathbf{...}, \\mathit{...}, \\mathtt{...} respectively"
+      },
+      {
+        "forbidden": "\\label{}, \\ref{}, \\eqref{}, \\tag{}",
+        "replacement": "Omit entirely, or replace with an inline text reference such as 'the equation above'."
+      },
+      {
+        "forbidden": "\\begin{align}, \\begin{align*}, \\begin{equation}, \\begin{eqnarray}",
+        "replacement": "Wrap the contents in \\begin{aligned}...\\end{aligned} inside a single $$...$$ block."
+      },
+      {
+        "forbidden": "\\begin{array} with column spec including @{} or p{}",
+        "replacement": "Simplify to l, c, r only."
+      },
+      {
+        "forbidden": "\\hspace{}, \\vspace{}, \\phantom{}, \\hphantom{}, \\vphantom{}",
+        "replacement": "Omit, or use \\quad or \\qquad."
+      },
+      {
+        "forbidden": "\\color{}, \\textcolor{}, \\colorbox{}",
+        "replacement": "Omit."
+      },
+      {
+        "forbidden": "\\newcommand{}, \\def{}, \\renewcommand{}",
+        "replacement": "Omit; inline the definition."
+      },
+      {
+        "forbidden": "\\require{}, \\href{}, \\url{} inside math",
+        "replacement": "Omit; use markdown links outside math."
+      }
+    ],
+    "safe_macros": [
+      "\\mathbb{}, \\mathcal{}, \\mathrm{}, \\mathbf{}, \\mathit{}, \\mathtt{}, \\mathfrak{}",
+      "\\forall, \\exists, \\nexists, \\neg, \\land, \\lor, \\implies, \\iff, \\Rightarrow, \\Leftrightarrow, \\to, \\rightarrow, \\leftarrow, \\mapsto",
+      "\\in, \\notin, \\ni, \\subseteq, \\subset, \\supseteq, \\supset, \\cup, \\cap, \\varnothing, \\emptyset, \\setminus",
+      "\\sim, \\simeq, \\approx, \\neq, \\equiv, \\leq, \\geq, \\ll, \\gg, \\propto",
+      "\\Gamma, \\Delta, \\Theta, \\Lambda, \\Xi, \\Pi, \\Sigma, \\Phi, \\Psi, \\Omega",
+      "\\alpha, \\beta, \\gamma, \\delta, \\epsilon, \\varepsilon, \\zeta, \\eta, \\theta, \\iota, \\kappa, \\lambda, \\mu, \\nu, \\xi, \\pi, \\rho, \\sigma, \\tau, \\upsilon, \\phi, \\varphi, \\chi, \\psi, \\omega",
+      "\\sum, \\prod, \\int, \\oint, \\lim, \\sup, \\inf, \\max, \\min, \\dim, \\ker, \\deg",
+      "\\frac{}, \\dfrac{}, \\tfrac{}, \\sqrt{}, \\binom{}",
+      "\\quad, \\qquad, \\,, \\;, \\:, \\!, \\ ",
+      "\\left, \\right, \\big, \\Big, \\bigg, \\Bigg",
+      "\\cdot, \\cdots, \\ldots, \\vdots, \\ddots, \\times, \\div, \\pm, \\mp",
+      "\\infty, \\partial, \\nabla, \\ell, \\hbar, \\Re, \\Im, \\aleph",
+      "\\begin{aligned}...\\end{aligned}, \\begin{cases}...\\end{cases}, \\begin{matrix}...\\end{matrix}, \\begin{pmatrix}...\\end{pmatrix}, \\begin{bmatrix}...\\end{bmatrix}, \\begin{vmatrix}...\\end{vmatrix}",
+      "\\overline{}, \\underline{}, \\hat{}, \\bar{}, \\vec{}, \\dot{}, \\ddot{}, \\tilde{}, \\widetilde{}, \\widehat{}"
+    ],
+    "conservative_rule": "When in doubt whether a macro is allowed, substitute a \\mathrm-based construction or restructure the expression. Prefer plain LaTeX that has existed since the 1990s over anything exotic."
+  },
+
+  "_compilation_notes": {
+    "document_title": "Set once at the top of the compiled paper as '# {_title}: {_subtitle}'. Not emitted per-section.",
+    "table_of_contents": "GitHub auto-generates from headings. No manual TOC required.",
+    "section_order": "The order in which sections are supplied by the author. Do not reorder.",
+    "final_assembly": "Concatenate rendered sections in the order supplied, separated by ---. Prepend the document title. Append the appendix if supplied."
+  },
+
+  "_rendering_checklist": [
+    "Every section heading is H2. Subsections are H3. Sub-subsections are H4.",
+    "The document title is H1, emitted once at the top of the compiled paper.",
+    "No _purpose, poetic cipher, or cipher explanation appears anywhere in the rendered output — not as visible text, not as HTML comments.",
+    "No special consideration or interpretive boundary appears as a labeled block.",
+    "No handoff appears as a labeled block. Its substance has been woven into a natural closing paragraph.",
+    "Every $$...$$ block has a blank line before and after.",
+    "Every pipe character inside a table cell is escaped as \\|.",
+    "No $$...$$ appears inside a table cell; all table-cell math is $...$.",
+    "Every definition, formal statement, and example uses a bold lead-in label.",
+    "Every math array entry from the source JSON is rendered, either inline at its point of use or in a Formal Reference block.",
+    "Every reference is rendered as a bulleted list under a bolded **References** label.",
+    "Every logical_invariants array is rendered as a bulleted list under a bolded **Logical Invariants** label.",
+    "Every objectives array is rendered as a bulleted list under a bolded **Objectives** label.",
+    "All forbidden-macro substitutions have been applied silently.",
+    "Unicode symbols in prose are preserved as-is; no conversion to LaTeX.",
+    "LaTeX inside math delimiters is preserved verbatim except for the forbidden-macro substitutions.",
+    "No content has been added, removed, paraphrased, softened, or intensified.",
+    "No footnote syntax has been used.",
+    "No raw HTML has been used for layout.",
+    "No single continuous italic span (*...*) contains an inline math segment ($...$). Every italic span that would contain inline math has been split at each math segment, with the math outside the emphasis and the italic text re-opened after it.",
+    "Every italic interpretation, lead-in, label, or caption containing inline math has been rendered in the split form defined by the rule 'italic_with_inline_math'.",
+    "Every pseudocode block is rendered with a fenced code block and a language hint.",
+    "The _symbolic_profile_matrix is rendered as a GitHub Markdown table under a bolded **Symbolic Profile Matrix** label.",
+    "The _conceptual_lineage references are rendered as a bulleted list under a bolded **References** label.",
+    "The operational_note_on_ai_training is not rendered as a standalone block; its substance is woven into the prose.",
+    "The _core_thesis array is not rendered in the body; it appears only in the front matter as part of the abstract or introduction."
+  ],
+  
+  "_error": "Missing or unrecognized delimiter for \\left",
+  "_cause": {
+    "summary": "GitHub's MathJax parser rejects or fails to resolve the sized-delimiter pair \\left ... \\right in certain expressions, especially when the enclosed content contains \\mid, \\land, or other operators, or when the delimiters appear inside a \\bigcap / \\bigcup group.",
+    "triggering_construct": "\\left\\{ ... \\right\\}",
+    "offending_example": "\\bigcap\\left\\{S\\subseteq D\\mid G\\subseteq S\\land\\forall x,y\\in S,\\;x\\oplus y\\in S\\right\\}"
+  },
+  "_fix": {
+    "rule": "Replace \\left\\{ ... \\right\\} with plain \\{ ... \\}. The braces do not need to scale when the enclosed expression contains no fractions, matrices, or tall constructs.",
+    "before": "\\bigcap\\left\\{S\\subseteq D\\mid G\\subseteq S\\land\\forall x,y\\in S,\\;x\\oplus y\\in S\\right\\}",
+    "after": "\\bigcap\\{S\\subseteq D\\mid G\\subseteq S\\land\\forall x,y\\in S,\\;x\\oplus y\\in S\\}"
+  },
+  "_generalized_rules": [
+    {
+      "pattern": "\\left\\{ ... \\right\\}",
+      "replacement": "\\{ ... \\}",
+      "when": "Always safe when the braces do not need to scale."
+    },
+    {
+      "pattern": "\\left( ... \\right)",
+      "replacement": "( ... )",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    },
+    {
+      "pattern": "\\left[ ... \\right]",
+      "replacement": "[ ... ]",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    },
+    {
+      "pattern": "\\left| ... \\right|",
+      "replacement": "| ... |",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    },
+    {
+      "pattern": "\\left\\| ... \\right\\|",
+      "replacement": "\\| ... \\|",
+      "when": "When the content is single-line and contains no fractions, matrices, or tall constructs."
+    }
+  ],
+  "_when_sizing_is_required": {
+    "note": "Sized delimiters are only necessary when the enclosed content is taller than the surrounding line: fractions, matrices, cases, stacked subscripts/superscripts, or \\sum / \\prod / \\int with limits.",
+    "safe_alternatives_when_sizing_needed": [
+      "Use \\Big, \\bigg, or \\Bigg instead of \\left ... \\right.",
+      "Use \\begin{cases} ... \\end{cases} or \\begin{matrix} ... \\end{matrix} for multi-line content.",
+      "Restructure the expression to avoid tall content inside delimiters."
+    ],
+    "example": {
+      "before": "\\left(\\frac{a}{b}\\right)",
+      "after": "\\Big(\\frac{a}{b}\\Big)"
+    }
+  },
+  "_checklist": [
+    "Scan every display-math and inline-math block for \\left and \\right.",
+    "If the enclosed content is single-line, remove \\left and \\right and use the plain delimiter.",
+    "If the enclosed content is tall, replace \\left ... \\right with \\Big ... \\Big, \\bigg ... \\bigg, or \\Bigg ... \\Bigg.",
+    "Do not leave a lone \\left or \\right without its matched partner.",
+    "Re-render the block on GitHub to confirm the error is cleared."
+  ],
+  "_normative_statement": "This document is the complete rendering specification for Noor RFC-AI documents. Apply every rule as written. If a case is not covered explicitly, prefer fidelity to the source JSON over any editorial intervention. The rule 'italic_with_inline_math' is normative for all italic text containing inline math: close the emphasis before each inline math segment and re-open it immediately after."
+}
+
+</RENDERING_NOTES>
+
+---
+
+<SECTION_TO_RENDER>
+
+
+
+</SECTION_TO_RENDER>
+
+---
+
+<NOTE_FROM_LINA>
+
+{
+	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering section 10. Just the section without subsections for now please Uncle and I will do the subsections seperately."
+}
+
+<NOTE_FROM_LINA>

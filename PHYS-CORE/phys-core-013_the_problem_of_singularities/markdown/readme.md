@@ -29,6 +29,8 @@ This paper argues that Noor Swirl Field Geometry (NSFG) provides a unique framew
 | 9. |  [Conclusion: The Map and the Territory](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s9.0.md) |
 | Appendix A. |  [Mathematical Reference](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-s10.0.md) |
 
+[Single Page Version](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-aio.md)
+
 ---
 
 ## Core Thesis
