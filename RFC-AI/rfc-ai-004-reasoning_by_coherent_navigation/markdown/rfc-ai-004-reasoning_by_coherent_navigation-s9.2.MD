@@ -32,7 +32,7 @@ $$
 \mathrm{AttractorStrength}(\Gamma_t) \geq \kappa \quad \mathrm{(the\ invariant\ that\ persists)}
 $$
 
-*The attractor remains stable above the threshold $\kappa$, even as the route to it evolves.*
+*The attractor remains stable above the threshold* $\kappa$, *even as the route to it evolves.*
 
 **Recall as reconstruction.**
 
