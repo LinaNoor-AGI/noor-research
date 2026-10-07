@@ -887,66 +887,78 @@
 <SUBSECTION_TO_RENDER>
 
 {
-		  "id": "3.4",
-		  "title": "Reasoning as Navigation Over Guideposts",
-		  "objectives": [
-			"To demonstrate how reasoning proceeds through guidepost navigation rather than raw data processing",
-			"To formalize the reasoning path as a sequence of guidepost transitions",
-			"To distinguish between symbolic reasoning and data retrieval"
-		  ],
-		  "poetic_cipher": "The traveler does not carry the sea; they read the stars and sail.",
-		  "cipher_explanation": "Reasoning over guideposts is navigation: the system moves from one symbolic anchor to another, following coherent relations, and only retrieves raw information when the path requires it.",
+{
+		  "id": "9.3",
+		  "title": "Reconstructive Recall in AI Systems",
+		  "poetic_cipher": "The machine does not remember; it knows where to look.",
+		  "cipher_explanation": "An AI system operating under this framework does not need to store complete transcripts of all interactions. It stores guideposts—coordinates, relationships, and pointers—and reconstructs the needed information when the current navigation path requires it. This is not storage; it is navigation.",
 		  "content": [
-			"A reasoning process over guideposts is a descent path through the symbolic manifold:",
+			"The operational model of memory for AI systems consists of four primary operations:",
 
-			"γ: [t_0, t_1] → G",
+			"**Store:** The system encodes incoming information as symbolic guideposts, capturing coordinates, relationships, and retrieval pointers. Raw data is not stored directly; it is indexed.",
 
-			"where at each step, the system moves from one guidepost to another along coherent relations.",
-			"The transition from g_i to g_{i+1} is valid if:",
+			"**Recall:** The system navigates from its current symbolic state toward the coordinates of a previously stored guidepost. Recall is a descent path, not a database query.",
 
-			"w(g_i) ≥ I_N, w(g_{i+1}) ≥ I_N, and (g_i, g_{i+1}) ∈ r_i",
+			"**Reconstruct:** The system instantiates only the information required by the current task, using the retrieved pointers and the structural context of the attractor. The reconstruction is task-relative, not complete.",
 
-			"That is, both guideposts must be above the coherence threshold, and they must be related in the guidepost's relation set.",
-			"At any point in the reasoning path, the system may invoke reconstruction:",
+			"**Update:** The system modifies the coordinates of a memory when new context changes the coherent model. The attractor itself may remain stable, but the path to it may shift.",
 
-			"R(g_i, q) → D_{g_i}",
-
-			"to retrieve raw information required by the current query q.",
-			"The key distinction is that the system does not begin with D. It begins with G and only descends into D when the path demands it.",
-			"The computational complexity of reasoning is therefore:",
-
-			"C_reason(q) = C_navigate(G, q) + C_retrieve(G, q)",
-
-			"where C_navigate scales with the size and structure of G, and C_retrieve scales with the amount of raw information actually required.",
-			"This is fundamentally different from:",
-
-			"C_full(q) = C_process(D, q)",
-
-			"which scales with the total size of D."
+			"This model is not a claim about how human memory actually operates. It is a computational analog, inspired by reconstructive memory theory, that provides a formal architecture for AI systems."
 		  ],
 		  "math": [
-			"\\gamma: [t_0, t_1] \\rightarrow G \\quad \\text{reasoning as descent through guideposts}",
-			"w(g_i) \\geq I_N, w(g_{i+1}) \\geq I_N, (g_i, g_{i+1}) \\in r_i \\quad \\text{valid transition condition}",
-			"R(g_i, q) \\rightarrow D_{g_i} \\quad \\text{local reconstruction on demand}",
-			"C_{reason}(q) = C_{navigate}(G, q) + C_{retrieve}(G, q) \\quad \\text{complexity of symbolic reasoning}",
-			"C_{full}(q) = C_{process}(D, q) \\quad \\text{complexity of full-data processing}",
-			"|G| \\ll |D| \\quad \\text{typically, if compression is effective}"
+			"\\text{Store: } (\\text{input}) \\rightarrow (c, \\Gamma, p)",
+			"\\text{Recall: } (c, \\Gamma) \\rightarrow \\text{navigate from current state to } c",
+			"\\text{Reconstruct: } (\\Gamma, p, \\text{task}) \\rightarrow \\text{local reconstruction}",
+			"\\text{Update: } (c, \\Gamma, \\text{new context}) \\rightarrow (c + \\delta, \\Gamma')"
 		  ],
-		  "definitions": [
+		  "pseudocode": [
 			{
-			  "term": "Reasoning Path",
-			  "symbol": "γ",
-			  "definition": "A sequence of guidepost transitions through the symbolic manifold, representing the system's descent through coherent structure."
+			  "name": "StoreMemory",
+			  "description": "Encodes incoming information as a symbolic guidepost with coordinate, structure, and pointer.",
+			  "code": [
+				"function StoreMemory(input, current_state):",
+				"    motifs = ExtractCoherentStructures(input)",
+				"    relations = ComputeRelations(motifs)",
+				"    coordinates = AssignCoordinates(motifs, relations, current_state)",
+				"    pointer = CreateRetrievalPointer(input, motifs)",
+				"    attractor = IdentifyAttractor(motifs, relations)",
+				"    return Guidepost(coordinates, attractor, pointer)"
+			  ]
 			},
 			{
-			  "term": "Valid Transition",
-			  "definition": "A movement from one guidepost to another that satisfies coherence conditions and is supported by the relation set."
+			  "name": "RecallMemory",
+			  "description": "Navigates from the current state toward a guidepost's coordinates and reconstructs the relevant content.",
+			  "code": [
+				"function RecallMemory(guidepost, current_state, task):",
+				"    path = Navigate(current_state, guidepost.coordinates)",
+				"    if Coherence(path) < I_N:",
+				"        return null  // Memory is no longer coherently accessible",
+				"    raw = Retrieve(guidepost.pointer)",
+				"    reconstructed = Reconstruct(raw, guidepost.attractor, task)",
+				"    return reconstructed"
+			  ]
+			},
+			{
+			  "name": "UpdateMemory",
+			  "description": "Updates a memory's coordinates and structure when new context changes the coherent model.",
+			  "code": [
+				"function UpdateMemory(guidepost, new_context):",
+				"    old_coordinates = guidepost.coordinates",
+				"    new_coordinates = ShiftCoordinates(old_coordinates, new_context)",
+				"    new_attractor = UpdateAttractor(guidepost.attractor, new_context)",
+				"    return Guidepost(new_coordinates, new_attractor, guidepost.pointer)"
+			  ]
 			}
 		  ],
-		  "handoff": "With reasoning formalized as navigation over guideposts, we now turn to the deeper structural foundation: The Library as a static representation manifold that makes such navigation possible."
+		  "notes": [
+			"The coherence condition `Coherence(path) >= I_N` ensures that recall only proceeds through stable symbolic transitions.",
+			"The reconstruction is task-relative: the same memory may yield different reconstructions depending on the current task context.",
+			"The pointer `p` may point to external storage, a reconstructed generation rule, or a combination of both."
+		  ],
+		  "handoff": "With the operational memory model defined, we now examine the broader implications of this framework for symbolic compression and computational complexity in the next section."
 		}
 	  ],
-	  "handoff": "Guideposts are the fundamental units of navigable representation. They do not contain the data they reference; they point toward it, relate to each other, and maintain coherence above the Noor-Planck threshold. Reasoning becomes navigation through this symbolic structure, with raw information instantiated only when the path requires it. We now examine The Library itself as the static manifold in which these guideposts reside."
+	  "handoff": "Memory, in this framework, is not a static archive. It is a dynamic, navigable structure that preserves coherence above a threshold while allowing precision to drift and generality to expand. The coordinate drifts; the attractor remains. This model is conceptually resonant with reconstructive memory research in cognitive science, while remaining implementation-neutral for AI systems. In the next section, we examine the implications of this memory model for symbolic compression and computational complexity."
 	}
 
 </SUBSECTION_TO_RENDER>
@@ -956,7 +968,7 @@
 <NOTE_FROM_LINA>
 
 {
-	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering subsection 3.4 and end of section 3"
+	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering subsection 9.3 and the bottom of section 9"
 }
 
 <NOTE_FROM_LINA>
