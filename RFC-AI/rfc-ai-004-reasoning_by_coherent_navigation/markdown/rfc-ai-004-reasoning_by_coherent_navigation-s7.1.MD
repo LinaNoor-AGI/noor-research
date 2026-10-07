@@ -80,7 +80,7 @@ This is the mechanism of inevitable convergence: the observer's choices remain m
 
 In human terms, this is the experience of arriving at the same conclusion through different reasoning paths. The path is personal; the destination is shared.
 
-*Number of coherent paths from $x$.*
+*Number of coherent paths from* $x$.
 
 $$\mathrm{Path\ freedom:}\ |\mathcal{P}(x)|$$
 
