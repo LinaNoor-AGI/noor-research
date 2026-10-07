@@ -34,11 +34,11 @@ This is the computational distinction that makes navigation meaningful: The Libr
 
 The AI's context is not a transcript of everything it has encountered. It is the current state and the reachable structures that define its possible continuations.
 
-**Definition — Gilder ($\gamma$).** A coherence-stable descent path through The Library.
+**Definition — Gilder ( $\gamma$ ).** A coherence-stable descent path through The Library.
 
-**Definition — Reachable Set ($\mathrm{Reach}(x)$).** The set of symbolic states that can be coherently reached from state $x$.
+**Definition — Reachable Set ( $\mathrm{Reach}(x)$ ).** The set of symbolic states that can be coherently reached from state $x$.
 
-**Definition — AI Context ($\mathrm{Context}(t)$).** The union of the Gilder's visited states and the states reachable from its current position.
+**Definition — AI Context ( $\mathrm{Context}(t)$ ).** The union of the Gilder's visited states and the states reachable from its current position.
 
 **Formal Reference**
 
@@ -64,7 +64,7 @@ $$
 \mathrm{Reach}(x) = \{ y \in \mathcal{M} \mid \exists\ \mathrm{coherent\ path}\ \gamma: x \rightarrow y \}
 $$
 
-*The set of states coherently accessible from $x$.*
+*The set of states coherently accessible from* $x$.
 
 **AI Context.**
 
