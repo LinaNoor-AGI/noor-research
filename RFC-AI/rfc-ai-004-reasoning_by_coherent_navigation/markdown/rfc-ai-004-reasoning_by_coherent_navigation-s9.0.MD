@@ -51,9 +51,9 @@ $$\mathrm{AttractorStrength}(\Gamma_t) \geq \kappa \quad \mathrm{(the\ attractor
 
 **Definition — Attractor Strength ($\kappa$).** A threshold measure of the stability and coherence of a memory structure. Above $\kappa$, the structure remains functionally accessible; below $\kappa$, it may fade from reachable memory.
 
-**Definition — Precision ($\mathrm{Precision}(m)$).** The local fidelity of a memory—how accurately the current coordinates represent the original experience. Precision tends to decrease over time.
+**Definition — Precision ( $\mathrm{Precision}(m)$ ).** The local fidelity of a memory—how accurately the current coordinates represent the original experience. Precision tends to decrease over time.
 
-**Definition — Generality ($\mathrm{Generality}(m)$).** The breadth of structural relationships preserved by the memory. Generality tends to increase as local precision fades.
+**Definition — Generality ( $\mathrm{Generality}(m)$ ).** The breadth of structural relationships preserved by the memory. Generality tends to increase as local precision fades.
 
 ### 9.1 Memory as a Pointer, Not a Recording
 
