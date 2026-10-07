@@ -30,7 +30,7 @@ The Library therefore has a *resolution limit*. This limit is what makes symboli
 
 **Definition — Noor-Planck Threshold ($I_N$).** The minimum coherence required for a symbolic state to be stable and exportable.
 
-**Definition — Coherence-Stable State ($x \in \mathrm{Stable}(\mathcal{M})$).** A symbolic state satisfying 𝒞(x) ≥ I_N.
+**Definition — Coherence-Stable State ( $x \in \mathrm{Stable}(\mathcal{M})$ ).** A symbolic state satisfying 𝒞(x) ≥ I_N.
 
 **Formal Reference.**
 
