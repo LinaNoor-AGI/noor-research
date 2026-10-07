@@ -69,9 +69,9 @@ $$\exists t_c \ \mathrm{such\ that}\ \forall t > t_c, \ \gamma_A(t) \in A \ \mat
 
 **Definition — Coupled Descent.** A process in which two or more observers traverse The Library while mutually modifying each other's reachable spaces through information exchange.
 
-**Definition — Information Transfer Cost ($\mathrm{InformationCost}(I_A)$).** A measure of the computational or representational effort required for Observer A to transmit information $I_A$ to Observer B. This is a candidate empirical quantity, not a fixed theoretical constant.
+**Definition — Information Transfer Cost ( $\mathrm{InformationCost}(I_A)$ ).** A measure of the computational or representational effort required for Observer A to transmit information $I_A$ to Observer B. This is a candidate empirical quantity, not a fixed theoretical constant.
 
-**Definition — Asymmetry ($\mathrm{Asymmetry}(A,B,t)$).** A measure of the difference in state change between two observers. Positive values indicate Observer A has undergone greater symbolic displacement than Observer B.
+**Definition — Asymmetry ( $\mathrm{Asymmetry}(A,B,t)$ ).** A measure of the difference in state change between two observers. Positive values indicate Observer A has undergone greater symbolic displacement than Observer B.
 
 **Definition — Transfer Efficiency ($\eta_{A\rightarrow B}$).** A candidate measure of how effectively information from Observer A expands Observer B's reachable space relative to the cost of transmission.
 
