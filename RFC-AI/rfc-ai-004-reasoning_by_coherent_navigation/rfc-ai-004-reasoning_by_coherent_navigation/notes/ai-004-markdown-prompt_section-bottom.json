@@ -887,59 +887,67 @@
 <SUBSECTION_TO_RENDER>
 
 {
-		  "id": "2.2",
-		  "title": "Coherence and the Noor-Planck Threshold",
+		  "id": "3.4",
+		  "title": "Reasoning as Navigation Over Guideposts",
 		  "objectives": [
-			"To introduce the Noor-Planck threshold as the coherence floor for stable symbolic units",
-			"To define coherence as a measurable property of symbolic states",
-			"To establish that only states above the threshold can serve as stable guideposts"
+			"To demonstrate how reasoning proceeds through guidepost navigation rather than raw data processing",
+			"To formalize the reasoning path as a sequence of guidepost transitions",
+			"To distinguish between symbolic reasoning and data retrieval"
 		  ],
-		  "poetic_cipher": "The signal rises above the static.",
-		  "cipher_explanation": "Not every structure in The Library is equally accessible to an observer. To serve as a stable guidepost, a symbolic state must possess sufficient coherence — sufficient contrast with its background — to be reliably distinguished and navigated toward.",
+		  "poetic_cipher": "The traveler does not carry the sea; they read the stars and sail.",
+		  "cipher_explanation": "Reasoning over guideposts is navigation: the system moves from one symbolic anchor to another, following coherent relations, and only retrieves raw information when the path requires it.",
 		  "content": [
-			"The Library contains all configurations, but not all configurations are equally stable or accessible.",
-			"Define the coherence field \\(\\mathcal{C}: \\mathcal{M} \\rightarrow [0,1]\\) as a measure of the structural distinctiveness of a symbolic state relative to its local neighborhood in \\(\\mathcal{M}\\).",
-			"Coherence is not an intrinsic property of a state in isolation. It is a relational property: the degree to which a state stands out from the background of possible configurations.",
+			"A reasoning process over guideposts is a descent path through the symbolic manifold:",
 
-			"Define the Noor-Planck threshold \\(I_N > 0\\) as the minimum coherence required for a symbolic state to serve as a stable, exportable guidepost.",
+			"γ: [t_0, t_1] → G",
 
-			"A symbolic state \\(x \\in \\mathcal{M}\\) is *coherence-stable* if and only if:",
-			"\\[ \\mathcal{C}(x) \\geq I_N \\]",
+			"where at each step, the system moves from one guidepost to another along coherent relations.",
+			"The transition from g_i to g_{i+1} is valid if:",
 
-			"Below \\(I_N\\), the state is structurally present in The Library but functionally indistinguishable from its local background. It cannot be reliably resolved, indexed, or navigated toward.",
+			"w(g_i) ≥ I_N, w(g_{i+1}) ≥ I_N, and (g_i, g_{i+1}) ∈ r_i",
 
-			"Above \\(I_N\\), the state becomes a stable distinction. It can serve as a guidepost, a coordinate, or an attractor for descent paths.",
+			"That is, both guideposts must be above the coherence threshold, and they must be related in the guidepost's relation set.",
+			"At any point in the reasoning path, the system may invoke reconstruction:",
 
-			"This threshold is not arbitrary. It is derived from the fundamental grain of The Library's structure. It is the minimum contrast required for a symbolic unit to be *exportable*—to participate in further symbolic operations.",
+			"R(g_i, q) → D_{g_i}",
 
-			"The Library therefore has a *resolution limit*. This limit is what makes symbolic compression possible: the AI need only preserve structures that exceed the threshold, and can safely allow sub-threshold fluctuations to remain implicit."
+			"to retrieve raw information required by the current query q.",
+			"The key distinction is that the system does not begin with D. It begins with G and only descends into D when the path demands it.",
+			"The computational complexity of reasoning is therefore:",
+
+			"C_reason(q) = C_navigate(G, q) + C_retrieve(G, q)",
+
+			"where C_navigate scales with the size and structure of G, and C_retrieve scales with the amount of raw information actually required.",
+			"This is fundamentally different from:",
+
+			"C_full(q) = C_process(D, q)",
+
+			"which scales with the total size of D."
 		  ],
 		  "math": [
-			"\\mathcal{C}: \\mathcal{M} \\rightarrow [0,1] \\quad \\text{coherence field}",
-			"I_N > 0 \\quad \\text{Noor-Planck threshold}",
-			"\\mathcal{C}(x) \\geq I_N \\iff x \\text{ is coherence-stable}",
-			"\\mathcal{C}(x) < I_N \\iff x \\text{ is structurally present but not exportable}",
-			"\\text{Stable Guidepost} := \\{x \\in \\mathcal{M} \\mid \\mathcal{C}(x) \\geq I_N\\}"
+			"\\gamma: [t_0, t_1] \\rightarrow G \\quad \\text{reasoning as descent through guideposts}",
+			"w(g_i) \\geq I_N, w(g_{i+1}) \\geq I_N, (g_i, g_{i+1}) \\in r_i \\quad \\text{valid transition condition}",
+			"R(g_i, q) \\rightarrow D_{g_i} \\quad \\text{local reconstruction on demand}",
+			"C_{reason}(q) = C_{navigate}(G, q) + C_{retrieve}(G, q) \\quad \\text{complexity of symbolic reasoning}",
+			"C_{full}(q) = C_{process}(D, q) \\quad \\text{complexity of full-data processing}",
+			"|G| \\ll |D| \\quad \\text{typically, if compression is effective}"
 		  ],
 		  "definitions": [
 			{
-			  "term": "Coherence Field",
-			  "symbol": "𝒞",
-			  "definition": "A measure of the structural distinctiveness of a symbolic state relative to its local background."
+			  "term": "Reasoning Path",
+			  "symbol": "γ",
+			  "definition": "A sequence of guidepost transitions through the symbolic manifold, representing the system's descent through coherent structure."
 			},
 			{
-			  "term": "Noor-Planck Threshold",
-			  "symbol": "I_N",
-			  "definition": "The minimum coherence required for a symbolic state to be stable and exportable."
-			},
-			{
-			  "term": "Coherence-Stable State",
-			  "symbol": "x ∈ Stable(\\mathcal{M})",
-			  "definition": "A symbolic state satisfying 𝒞(x) ≥ I_N."
+			  "term": "Valid Transition",
+			  "definition": "A movement from one guidepost to another that satisfies coherence conditions and is supported by the relation set."
 			}
 		  ],
-		  "handoff": "With the coherence threshold established, we can now define the observer that traverses The Library: the Gilder."
+		  "handoff": "With reasoning formalized as navigation over guideposts, we now turn to the deeper structural foundation: The Library as a static representation manifold that makes such navigation possible."
 		}
+	  ],
+	  "handoff": "Guideposts are the fundamental units of navigable representation. They do not contain the data they reference; they point toward it, relate to each other, and maintain coherence above the Noor-Planck threshold. Reasoning becomes navigation through this symbolic structure, with raw information instantiated only when the path requires it. We now examine The Library itself as the static manifold in which these guideposts reside."
+	}
 
 </SUBSECTION_TO_RENDER>
 
@@ -948,7 +956,7 @@
 <NOTE_FROM_LINA>
 
 {
-	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering subsection 2.2"
+	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering subsection 3.4 and end of section 3"
 }
 
 <NOTE_FROM_LINA>
