@@ -65,13 +65,13 @@ $$H(A) = -\sum_i p_i \log p_i$$
 
 $$\mathrm{crossed} \iff (\mathrm{mean\_window}\ H(A) < \theta_H) \land (\mathrm{path\_diversity} \geq \theta_D)$$
 
-*Destination entropy has dropped below threshold $\theta_H$ while path diversity remains above threshold $\theta_D$.*
+*Destination entropy has dropped below threshold* $\theta_H$ *while path diversity remains above threshold* $\theta_D$.
 
 **Recurrence.**
 
 $$\mathrm{Recurrence}(x) = \frac{1}{N} \sum_{t=1}^N \mathbf{1}_{\gamma(t) \in B_\epsilon(\gamma(0))}$$
 
-*The fraction of descent states that return to the $\epsilon$-neighborhood of the starting state.*
+*The fraction of descent states that return to the* $\epsilon$-neighborhood *of the starting state.*
 
 **Lyapunov Shear.**
 
