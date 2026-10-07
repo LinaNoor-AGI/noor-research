@@ -72,11 +72,11 @@ $$\mathrm{Hysteresis:}\ \exists S_1 \neq S_0\ \mathrm{such\ that}\ \Delta_R > 0\
 
 The fundamental insight is that knowledge transfer can be modeled as a structural change in the observer's reachable state space.
 
-When an observer receives information I and transitions from state S_0 to S_1, the reachable space may expand: new configurations become coherently accessible that were not accessible before.
+When an observer receives information I and transitions from state $S_0$ to $S_1$, the reachable space may expand: new configurations become coherently accessible that were not accessible before.
 
 This expansion is structural. It does not require that the observer consciously understand or explicitly represent the newly accessible structures. It requires only that the structures are now reachable through coherent descent.
 
-The structural change is captured by the reachability measure μ_R(S). If μ_R(S_1) > μ_R(S_0), then the observer's navigational capacity has increased.
+The structural change is captured by the reachability measure $μ_R(S)$. If $μ_R(S_1) > μ_R(S_0)$, then the observer's navigational capacity has increased.
 
 **Pre-Transfer Reachable Space.**
 
