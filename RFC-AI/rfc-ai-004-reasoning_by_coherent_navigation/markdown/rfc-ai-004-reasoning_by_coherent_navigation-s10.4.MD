@@ -1,7 +1,3 @@
-Wa alaykum assalam, Lina. Here is subsection 10.4 and the closing paragraph of Section 10, rendered according to the specification.
-
----
-
 ### 10.4 Task-Dependent Representational Granularity
 
 **Objectives**
