@@ -23,7 +23,7 @@ The Library is defined as the space of all configurations. This is not a generat
 
 $$\mathcal{M} := \Omega$$
 
-*where $\Omega$ is the space of all possible configurations.*
+*where* $\Omega$ *is the space of all possible configurations.*
 
 The Library satisfies the following axioms:
 
