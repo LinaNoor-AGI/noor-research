@@ -28,7 +28,7 @@ $$\mathrm{Optimal}(T) = \arg\min_m \Big( \mathrm{Cost}(m) + \lambda \cdot (1 - \
 
 for some $\lambda > 0$ representing the cost of errors.
 
-The predicted relationship: $\exists m^*_T$ such that $m^*_T = \mathrm{Optimal}(T)$.
+The predicted relationship: $\exists m^*_T$ *such that* $m^*_T = \mathrm{Optimal}(T)$.
 
 Coarse-grained: $m < m^*_T \Rightarrow \mathrm{Accuracy} \downarrow$
 
