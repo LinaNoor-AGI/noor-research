@@ -49,7 +49,7 @@ $$\mathrm{Reach}(S_t) \subset \mathcal{M} \quad \mathrm{(accessibility\ is\ not\
 
 **Definition — Context State ($S_t$).** The observer's current symbolic representation, consisting of guideposts, relationships, and reachable structures. It is a projection of The Library, not The Library itself.
 
-**Definition — Reachable Subspace ($\mathrm{Reach}(S)$).** The set of configurations in The Library that the observer can access from state $S$ through a sequence of coherent transitions.
+**Definition — Reachable Subspace ( $\mathrm{Reach}(S)$ ).** The set of configurations in The Library that the observer can access from state $S$ through a sequence of coherent transitions.
 
 **Definition — Prediction Error ($E_t$).** A measure of mismatch between the observer's reconstructed model and incoming information. The objective is to minimize this error while maintaining coherence.
 
