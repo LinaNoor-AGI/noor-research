@@ -1,11 +1,5 @@
 ### 10.2 Symbolic Compression and Guidepost Complexity
 
-**Objectives**
-
-- To formalize the relationship between guidepost count and active reasoning cost
-- To define the Guidepost, Pointer, and Relation schemas as the structural basis of symbolic compression
-- To establish the asymptotic behavior of symbolic operations relative to raw-context operations
-
 A symbolic representation reduces the active reasoning state to a set of guideposts.
 
 Each guidepost is a compact structure containing coordinates, relational metadata, coherence weight, and a retrieval pointer.

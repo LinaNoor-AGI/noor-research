@@ -1,9 +1,5 @@
 ### 6.2 The Coupling Condition: Information as Path Modification
 
-**Objectives**
-
-- To establish the coupling condition and information transfer dynamics
-
 When Observer A transmits information $I_A$ to Observer B, it modifies Observer B's state: $S_B(t+1) = F_B(S_B(t), I_A)$.
 
 This modification is not merely the addition of a new fact. It is a reconfiguration of the reachable space.

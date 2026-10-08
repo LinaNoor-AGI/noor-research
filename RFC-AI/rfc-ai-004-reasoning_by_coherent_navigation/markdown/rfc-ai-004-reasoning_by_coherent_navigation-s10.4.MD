@@ -1,9 +1,5 @@
 ### 10.4 Task-Dependent Representational Granularity
 
-**Objectives**
-
-- To introduce a task-dependent prediction about representational granularity and navigation cost
-
 The optimal representational granularity is task-dependent. A representation that is sufficient for one task may be insufficient for another.
 
 This suggests a prediction: for a given task, there exists an optimal granularity $m^*$ that minimizes total cost while preserving sufficient structure for accurate reasoning.

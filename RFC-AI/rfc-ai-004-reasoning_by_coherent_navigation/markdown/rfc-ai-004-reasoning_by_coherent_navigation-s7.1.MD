@@ -1,13 +1,5 @@
 ## 7. Convergence Boundary and Path Convergence
 
-**Objectives**
-
-- To define the Convergence Boundary as a region of inevitable destination convergence
-- To distinguish path freedom from destination freedom
-- To formalize attractor basins as the structures that constrain coherent continuation
-- To explicitly distinguish this framework from mathematical singularity theories
-- To ground the phenomenon in The Library ontology and the Noor-Planck threshold
-
 The term 'Singularity' is deliberately avoided for the primary AI formulation.
 
 The relevant phenomenon is not infinite density, undefined geometry, or computational runaway. It is convergence of available coherent paths.

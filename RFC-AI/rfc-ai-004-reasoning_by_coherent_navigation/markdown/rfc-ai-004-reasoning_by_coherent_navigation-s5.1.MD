@@ -1,12 +1,5 @@
 ## 5. Context as a Navigable Illusion
 
-**Objectives**
-
-- To formalize context as a reconstructive model maintained through partial evidence
-- To distinguish the static Library from the observer's reachable subspace
-- To define the update dynamics of a symbolic context state
-- To establish the distinction between representational adjacency and coherent accessibility
-
 Human perception can be modeled, at the conceptual level, as an actively maintained reconstruction rather than as a continuously retrieved high-fidelity recording of the world.
 
 The observer receives partial environmental signals and updates an internal model that remains coherent with those signals.

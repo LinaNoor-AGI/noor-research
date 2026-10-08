@@ -1,11 +1,5 @@
 ### 8.2 Distinguishing Structural Expansion from Knowledge Acquisition
 
-**Objectives**
-
-- To distinguish structural expansion from knowledge acquisition
-- To introduce the knowledge measure K(S) as a task-dependent quantity
-- To establish that reachable-space expansion is a necessary but not sufficient condition for knowledge acquisition
-
 A larger reachable space is not automatically equivalent to greater knowledge.
 
 Knowledge acquisition is a semantic or task-dependent change. It requires that the observer can identify, access, and use the newly available structures in a way that improves task performance or understanding.

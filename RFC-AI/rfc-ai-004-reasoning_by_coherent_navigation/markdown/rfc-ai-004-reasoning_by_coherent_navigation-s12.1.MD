@@ -1,13 +1,5 @@
 ## 12. Formal Definitions
 
-**Objectives**
-
-- To provide a consolidated reference for all key terms and symbols used in the paper
-- To define core entities including Raw Data, Symbolic State, Guidepost, Pointer, and Descent Path
-- To formalize coherence conditions and the Noor-Planck threshold
-- To define reachability, attractors, and Convergence Boundaries
-- To establish the distinction between adjacency and accessibility
-
 This section provides a consolidated reference for all key terms and symbols used in the paper. The definitions are self-contained and consistent with the background documents, particularly PHYS-CORE-008 (Library ontology), PHYS-CORE-009 (XOR ground condition), and PHYS-CORE-010 (Impossible Convergence).
 
 The definitions are organized into three categories: Core Entities, Coherence Conditions, and Reachability Structures. Each definition includes a symbol, a formal statement where applicable, and a plain-language interpretation.

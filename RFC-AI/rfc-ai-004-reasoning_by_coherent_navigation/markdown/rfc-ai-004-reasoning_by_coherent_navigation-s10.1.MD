@@ -1,13 +1,5 @@
 ## 10. Symbolic Compression and Computational Complexity
 
-**Objectives**
-
-- To establish the asymptotic motivation for symbolic compression
-- To distinguish between operation-level complexity and total system cost
-- To formalize the relationship between guidepost count and active reasoning cost
-- To introduce a task-dependent granularity prediction
-- To ground the framework in cognitive science via reconstructive memory
-
 The computational motivation for symbolic navigation is asymptotic rather than a claim of a universal percentage reduction in real hardware cost.
 
 If an algorithm repeatedly operates over *n* raw information-bearing units, its computational complexity may grow as a function of *n*.
@@ -77,11 +69,6 @@ $$
 **Definition — Reconstructive Memory.** A cognitive process in which recall involves reconstruction from stored schemas and cues rather than playback of a complete recording (Bartlett, 1932).
 
 ### 10.1 Asymptotic Complexity of Raw Context
-
-**Objectives**
-
-- To characterize the scaling problem of sequential context handling
-- To identify the failure mode of unbounded historical dependence
 
 In a system that operates directly on raw context, the cost of processing is typically a function of the size of the context.
 

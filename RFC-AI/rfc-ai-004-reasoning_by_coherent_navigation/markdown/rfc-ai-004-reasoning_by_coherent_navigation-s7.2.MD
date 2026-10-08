@@ -1,11 +1,5 @@
 ### 7.2 The Attractor Basin (A)
 
-**Objectives**
-
-- To define the attractor basin as a structural region of the symbolic manifold
-- To formalize the closure and stability conditions that make a basin a coherent destination structure
-- To distinguish path freedom from destination constraint within the basin
-
 *The valley draws all rivers, regardless of their source.*
 
 An attractor basin A is a subset of The Library such that any coherent path that enters A remains within A and converges toward a coherent destination class.

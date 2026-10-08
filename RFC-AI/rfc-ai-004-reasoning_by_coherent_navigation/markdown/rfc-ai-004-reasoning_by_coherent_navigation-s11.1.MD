@@ -1,13 +1,5 @@
 ## 11. AI Architecture
 
-**Objectives**
-
-- To define a concrete, language-agnostic architecture for symbolic navigation
-- To separate encoding, navigation, and retrieval into distinct functional layers
-- To provide illustrative data structures for Guidepost, Pointer, and Relation
-- To present the architecture as a reference schema, not a mandatory implementation
-- To maintain implementation neutrality while enabling engineering translation
-
 The proposed architecture separates representation, navigation, and retrieval.
 
 The system receives raw input and converts it into symbolic structures. Those structures are linked to source data through pointers. Reasoning occurs primarily over the symbolic graph or manifold. Only when a reasoning path requires exact evidence does the system retrieve the corresponding raw information.

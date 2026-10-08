@@ -5,9 +5,9 @@
   "_type": "rfc_core",
   "_version": "1.0.4",
   "_status": "ACTIVE",
-  "_rfc-id": "RFC-AI-004",
 
   "_symbolic_id": "symbolic.library.ai_reasoning_by_coherent_navigation",
+  "_rfc-id": "RFC-AI-004",
 
   "_title": "Reasoning by Coherent Navigation",
   "_subtitle": "Symbolic Compression, Guidepost Memory, Path Convergence, and Contextual Reality Reconstruction in Artificial Intelligence",

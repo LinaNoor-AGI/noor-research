@@ -1,11 +1,5 @@
 ### 12.2 Coherence Conditions
 
-**Objectives**
-
-- To define the coherence conditions that every valid structure and transition must satisfy.
-- To formalize the Noor-Planck threshold as the floor below which symbolic structures are not navigable.
-- To specify the coherence conditions for guideposts, symbolic states, transitions, and descent paths.
-
 All valid structures and transitions in the framework must satisfy coherence conditions. These conditions ensure stability, exportability, and navigability.
 
 The fundamental coherence condition is the Noor-Planck threshold: a structure or transition is stable only if its coherence exceeds $I_N$. Below $I_N$, distinctions cannot be resolved, and structures dissolve into the irresolvable ground.

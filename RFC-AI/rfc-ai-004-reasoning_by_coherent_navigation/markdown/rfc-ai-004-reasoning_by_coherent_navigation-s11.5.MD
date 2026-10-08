@@ -1,9 +1,5 @@
 ### 11.5 Architectural Pseudocode
 
-**Objectives**
-
-*(No objectives array is present in this subsection in the source JSON, so none are rendered.)*
-
 The following pseudocode defines the core operations of the architecture. It is intentionally implementation-neutral and language-agnostic.
 
 The INGEST function converts raw input into guideposts. The UPDATE function incorporates new information into the existing state. The REASON function navigates the guidepost manifold to answer a query. The COMPRESS_CONTEXT function constructs a symbolic state from a raw session. The RECONSTRUCT function retrieves and reconstructs local context on demand.

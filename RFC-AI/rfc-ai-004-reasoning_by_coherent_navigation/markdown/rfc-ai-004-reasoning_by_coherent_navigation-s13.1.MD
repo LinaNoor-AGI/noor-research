@@ -1,7 +1,5 @@
 ## 13. Worked Conversational Example
 
-**Objectives**
-
 We now illustrate the framework through a concrete example drawn from a technical domain.
 
 The example demonstrates how two observers with different initial models, different expertise, and different language can converge on a shared structural explanation through the exchange of symbolic guideposts.

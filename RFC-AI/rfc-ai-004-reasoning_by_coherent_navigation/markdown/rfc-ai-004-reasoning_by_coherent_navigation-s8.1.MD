@@ -1,13 +1,5 @@
 ## 8. Hysteresis and Knowledge Transfer
 
-**Objectives**
-
-- To formalize knowledge transfer as a structural change in reachable state space
-- To distinguish reachable-space expansion from task-relevant knowledge acquisition
-- To define hysteresis as irreversible structural change in the symbolic manifold
-- To provide an algorithmic detection criterion for candidate hysteresis events
-- To label the relationship between structural transitions and genuine understanding as a testable hypothesis
-
 Knowledge transfer is not necessarily equivalent to copying a proposition from one agent to another.
 
 A stronger form of transfer occurs when the recipient's symbolic state is changed so that a previously inaccessible or weakly accessible coherent structure becomes part of its reachable state space.

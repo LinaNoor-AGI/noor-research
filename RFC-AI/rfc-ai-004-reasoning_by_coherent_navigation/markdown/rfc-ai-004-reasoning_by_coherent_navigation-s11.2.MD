@@ -1,9 +1,5 @@
 ### 11.2 Illustrative Data Structures: The Ontology-Free Core
 
-**Objectives**
-
-- *(No objectives array was present in the source for this subsection.)*
-
 The architecture is defined by the following core data structures. These structures are presented as a reference schema, not as a mandatory implementation. They can be instantiated in any programming language or storage system.
 
 The Guidepost is the primary unit of symbolic representation. It identifies a coherent structure and provides the information needed to navigate toward it.

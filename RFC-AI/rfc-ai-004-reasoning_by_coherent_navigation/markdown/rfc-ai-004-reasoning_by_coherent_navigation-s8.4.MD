@@ -1,12 +1,5 @@
 ### 8.4 Algorithmic Detection of Candidate Hysteresis Events
 
-**Objectives**
-
-- To provide an algorithmic detection criterion for candidate hysteresis events
-- To formalize the disproportion between structural change and informational stimulus
-- To distinguish candidate hysteresis events from false positives arising from re-indexing, representation changes, or exploration
-- To frame the relationship between sudden structural expansion and genuine understanding as a testable hypothesis
-
 Algorithmically, a candidate hysteresis event may be detected by monitoring changes in the structure or estimated measure of the reachable state space.
 
 A disproportionately large structural change following a comparatively small informational perturbation may indicate a representational phase transition—a candidate 'aha' moment.

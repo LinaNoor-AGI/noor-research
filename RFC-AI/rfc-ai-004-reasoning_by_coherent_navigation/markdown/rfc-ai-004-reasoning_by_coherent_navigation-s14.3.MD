@@ -1,12 +1,5 @@
 # 14.3 Implications for Safe AI Reasoning
 
-**Objectives**
-
-- To distinguish between representational adjacency and coherent accessibility in symbolic systems
-- To define symbolic blowup as unbounded contradiction during attempted transitions
-- To establish the boundary between coherent navigation and incoherent mutation
-- To derive practical constraints for safe AI reasoning from the coherence framework
-
 The distinction between adjacency and accessibility, combined with the definition of symbolic blowup, yields practical constraints for AI reasoning.
 
 **Constraint 1: Prefer Coherent Descent.** The system should navigate through coherent transitions rather than arbitrary state mutations. A transition is coherent if it maintains $\mathrm{Coherence}(S) \geq I_N$ throughout.

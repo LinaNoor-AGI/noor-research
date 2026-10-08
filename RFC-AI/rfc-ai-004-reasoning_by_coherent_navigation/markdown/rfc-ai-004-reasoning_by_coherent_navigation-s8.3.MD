@@ -1,9 +1,5 @@
 ### 8.3 Hysteresis as Irreversible Structural Change
 
-**Objectives**
-
-*(No objectives array is present for this subsection in the source JSON, so no Objectives block is rendered.)*
-
 Hysteresis is the property that a state transition is irreversible: reversing the input that caused the transition does not restore the previous state.
 
 In the symbolic framework, hysteresis occurs when the reachable space expands and the expansion cannot be undone by reversing the information input.

@@ -1,9 +1,5 @@
 # 8.5 Implications for AI and Knowledge Transfer
 
-**Objectives**
-
-- This subsection is rendered on demand; no objectives array is present in the source.
-
 Knowledge transfer is a structural change in the recipient's symbolic state.
 
 The recipient does not need to receive the complete model. It needs to receive enough information to expand its reachable space so that the relevant coherent structures become accessible.

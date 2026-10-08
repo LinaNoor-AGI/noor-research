@@ -1,11 +1,5 @@
 # 3.2 The Coherence Condition for a Valid Guidepost
 
-**Objectives**
-
-- To formalize the coherence condition that distinguishes a valid guidepost from noise
-- To link the guidepost coherence weight to the Noor-Planck threshold $I_N$
-- To specify the conditions under which a guidepost may decay or become invalid
-
 A guidepost is valid only if its coherence weight exceeds the Noor-Planck threshold $I_N$, which is the minimum coherence required for a stable, exportable binary distinction.
 
 Formally:

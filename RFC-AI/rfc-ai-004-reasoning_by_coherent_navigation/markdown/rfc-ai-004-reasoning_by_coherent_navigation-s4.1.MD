@@ -1,11 +1,5 @@
 ## 4. Scale Invariance of Symbolic Measurement
 
-**Objectives**
-
-- To establish that symbolic coordinate values are not physically fundamental
-- To define the conditions under which transformations preserve relational structure
-- To show that implementation-specific scales do not affect the underlying reasoning architecture
-
 The numerical values assigned to symbolic units in a coordinate system are not assumed to possess intrinsic universal meaning. They are choices of representation, not properties of the represented structure.
 
 A symbolic coordinate system may use arbitrary empirical scales provided that the same measurement convention is maintained between the structures being compared. The important quantity is therefore relational transformation rather than absolute numerical magnitude.
@@ -69,11 +63,6 @@ $$\mathrm{when\ the\ transformation\ preserves\ the\ relevant\ relational\ struc
 **Principle — The Symbolic Measurement System is a Coordinate Choice.** The symbolic measurement system is a coordinate choice. The invariant object is the relational structure represented by the coordinates, not the absolute numerical values assigned to individual symbolic units.
 
 ### 4.1 The Arbitrariness of Numerical Scales
-
-**Objectives**
-
-- To establish that symbolic coordinates are conventional, not fundamental
-- To distinguish between coordinate values and the structures they represent
 
 A symbolic coordinate is a label assigned to a position in a representation space. The label is conventional: it depends on the choice of origin, orientation, scale, and metric used by the representation system.
 

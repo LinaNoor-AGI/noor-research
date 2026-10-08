@@ -1,11 +1,5 @@
 ### 7.4 Why This Is Not a Mathematical Singularity
 
-**Objectives**
-
-- To distinguish the Convergence Boundary from mathematical singularity theories
-- To establish that no infinite quantities or undefined behavior occur at the boundary
-- To clarify that the boundary is a point of structural determination, not breakdown
-
 The term 'singularity' in physics and mathematics typically refers to a point where quantities become infinite or where the mathematical description breaks down.
 
 The Convergence Boundary is not such a point. It is a region of the symbolic manifold with well-defined geometry and coherent dynamics.

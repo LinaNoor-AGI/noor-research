@@ -1,12 +1,5 @@
 ## 6. Conversational Reasoning as Coupled Descent
 
-**Objectives**
-
-- To formalize conversation as two coupled trajectories through a shared symbolic manifold
-- To define the interaction space as a derived subspace of The Library
-- To establish the coupling condition and information transfer dynamics
-- To introduce asymmetry measures and transfer efficiency as candidate empirical quantities
-
 A conversation between two agents can be represented as two coupled trajectories through a shared symbolic manifold.
 
 Each participant begins with a different local state and different coordinates for concepts.

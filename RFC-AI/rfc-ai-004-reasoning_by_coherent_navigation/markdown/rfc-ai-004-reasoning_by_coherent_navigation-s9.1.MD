@@ -1,12 +1,5 @@
 ## 9. Memory as Coordinate Navigation
 
-**Objectives**
-
-- To reconceptualize memory as coordinate-based navigation rather than archival storage
-- To establish the connection to reconstructive memory in cognitive science as a motivating analogy
-- To formalize the drift of precision and the stability of attractors
-- To define the operational model of memory for AI systems
-
 Under this framework, memory need not be conceptualized as an exhaustive indexed archive of experience.
 
 A memory can instead be represented as a coordinate or pointer into a structured manifold.

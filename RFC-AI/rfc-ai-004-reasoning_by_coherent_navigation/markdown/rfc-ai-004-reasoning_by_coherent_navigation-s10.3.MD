@@ -1,9 +1,5 @@
 ### 10.3 Operation Cost vs. Total System Cost
 
-**Objectives**
-
-- To distinguish between operation-level complexity and total system cost
-
 Asymptotic complexity describes the scaling behavior of a specific operation. It does not describe the total cost of the system.
 
 The total cost of a symbolic navigation system includes encoding raw data into guideposts, indexing those guideposts, navigating through the symbolic manifold, and retrieving raw data when needed.

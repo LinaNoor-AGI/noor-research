@@ -1,11 +1,5 @@
 ### 3.3 Retrieval Pointers and Local Reconstruction
 
-**Objectives**
-
-- To formalize the retrieval pointer as the connection between symbolic structure and raw data
-- To specify the reconstruction process by which raw information is instantiated from guideposts
-- To distinguish between direct retrieval and generative reconstruction
-
 The retrieval pointer $p$ is a mapping from a symbolic guidepost to the underlying raw data or reconstructible information.
 
 Formally:

@@ -1,11 +1,5 @@
 ### 4.3 Consequences for Implementation
 
-**Objectives**
-
-- To show that implementation-specific scales do not affect the architecture
-- To explain why different AI systems can use different coordinate systems and still converge
-- To establish that tuning is a matter of representation choice, not fundamental constraint
-
 The scale invariance of symbolic measurement has a direct consequence for AI architecture: implementation-specific coordinate systems do not affect the core reasoning architecture, provided they preserve relational structure.
 
 Two different AI systems may use different coordinate scales for the same symbolic manifold. One may represent similarity on a scale from 0 to 1, another on a scale from -10 to 10. These systems can still interoperate or converge on the same reasoning outcomes if their relational structures correspond.

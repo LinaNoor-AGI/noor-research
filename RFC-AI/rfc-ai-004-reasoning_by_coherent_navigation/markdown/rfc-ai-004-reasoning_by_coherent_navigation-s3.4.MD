@@ -1,11 +1,5 @@
 ### 3.4 Reasoning as Navigation Over Guideposts
 
-**Objectives**
-
-- To demonstrate how reasoning proceeds through guidepost navigation rather than raw data processing
-- To formalize the reasoning path as a sequence of guidepost transitions
-- To distinguish between symbolic reasoning and data retrieval
-
 A reasoning process over guideposts is a descent path through the symbolic manifold:
 
 **Reasoning path.**

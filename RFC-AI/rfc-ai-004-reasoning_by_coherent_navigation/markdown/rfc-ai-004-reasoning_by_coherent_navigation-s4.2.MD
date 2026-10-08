@@ -1,11 +1,5 @@
 ### 4.2 Relational Invariance Under Transformation
 
-**Objectives**
-
-- To define the conditions for relational invariance
-- To distinguish between metric invariance and relational invariance
-- To show that monotonic transformations preserve reasoning structure
-
 The important property preserved under transformation is not equality of numerical values but preservation of relational structure. Two representations are equivalent for reasoning purposes if they preserve the same ordering, containment, proximity, and reachability relationships among their symbols.
 
 Let $d_A$ and $d_B$ be distance functions on two symbolic manifolds $\mathcal{M}_A$ and $\mathcal{M}_B$. A transformation $T: \mathcal{M}_A \rightarrow \mathcal{M}_B$ preserves the relevant reasoning structure if for all $x, y, z \in \mathcal{M}_A$:

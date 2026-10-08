@@ -1,18 +1,6 @@
 ## 3. Guideposts Instead of Complete Data
 
-**Objectives**
-
-- To define the symbolic guidepost as the fundamental unit of navigable representation
-- To formalize the coherence condition that distinguishes a valid guidepost from noise
-- To specify the structure of retrieval pointers and their role in local reconstruction
-- To demonstrate how guideposts enable reasoning without complete data retention
-
 ### 3.1 Definition of a Symbolic Guidepost
-
-**Objectives**
-
-- To provide a formal definition of a guidepost as a structured symbolic entity
-- To specify the minimal components required for a valid guidepost
 
 A guidepost is a symbolic representation that identifies a coherent region, object, relationship, event, or attractor within The Library without reproducing all information associated with it.
 

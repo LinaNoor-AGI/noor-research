@@ -1,11 +1,5 @@
 ### 11.4 Architectural Flow Summary
 
-**Objectives**
-
-- To render the architectural flow as a mandatory, ontology-free execution path
-- To make explicit the five checkpoints required for any claim of practical viability
-- To separate the primary execution path from derivative metaphysical interpretation
-
 The architecture's overall flow consists of the following mandatory steps. All steps are executable using only the standalone modules (Guidepost, GuidepostStore, CoherentNavigator, BoundaryEvent) and make no reference to The Library, static totality, or any ontological substrate beyond ordinary computational objects.
 
 **1. Guidepost Construction:** Raw input is ingested and converted into symbolic guideposts with coordinates, relations, pointers, and optional basin hints. The `GuidepostStore.add()` method handles this transformation. `basin_hint` is explicitly optional; the system must function normally if omitted, as required by Section 7.3.2.
