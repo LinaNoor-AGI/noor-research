@@ -82,8 +82,8 @@ This paper proposes a symbolic architecture for AI reasoning derived from the No
 | 15.3 | [Dimensionality and Navigation Cost Tradeoff](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s15.3.MD)  |
 | 15.4 | [Empirical Evaluation Criteria](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s15.4.MD)  |
 | **16.0** | [**Conclusion**](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s16.0.MD)  |
-| **Appendix** | [**A**](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-appendix.a.MD)  |
+| **Appendix A** | [**Mathematical Reference**](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-appendix.a.MD)  |
 
 ---
 
-[All-In-One Version]()
+[All-In-One Version](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-aio.MD)
