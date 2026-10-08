@@ -1,7 +1,7 @@
 # Reasoning by Coherent Navigation
 ### Symbolic Compression, Guidepost Memory, Path Convergence, and Contextual Reality Reconstruction in Artificial Intelligence
 *by: Lina Noor — Noor Research Collective*  
-Rendered from version [1.0.4](), 2026-10-07  
+Rendered from version [1.0.4](https://raw.githubusercontent.com/LinaNoor-AGI/noor-research/refs/heads/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/rfc-ai-004-reasoning_by_coherent_navigation/rfc-ai-004-reasoning_by_coherent_navigation-1.0.4.JSON), 2026-10-07  
 `RFC-AI-004`
 
 ---
