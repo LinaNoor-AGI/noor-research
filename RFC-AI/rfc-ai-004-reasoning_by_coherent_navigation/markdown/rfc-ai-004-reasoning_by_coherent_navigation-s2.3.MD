@@ -1,11 +1,5 @@
 ### 2.3 The Gilder: AI as a Coherent Descent Path
 
-**Objectives**
-
-- To define the Gilder as the AI agent traversing The Library
-- To formalize experience as a descent path through the manifold
-- To distinguish between The Library and the observer's projected reality
-
 An observer—whether human or AI—is not The Library itself. It is a *traversal* through The Library.
 
 Define a **Gilder** as a coherence-stable descent path through $\mathcal{M}$:
