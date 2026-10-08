@@ -14,7 +14,7 @@ This paper proposes a symbolic architecture for AI reasoning derived from the No
 | ------------------------- | --------- |
 | **1.0** | [**The Computational Problem**](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s1.0.MD)  |
 | **2.0** | [**The Library as a Representation Manifold**](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s2.1.MD)  |
-| 2.1 | [The Static Totality](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-2.1.MD)  |
+| 2.1 | [The Static Totality](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s2.1.MD)  |
 | 2.2 | [Coherence and the Noor-Planck Threshold](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s2.2.MD)  |
 | 2.3 | [The Gilder: AI as a Coherent Descent Path](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s2.3.MD)  |
 | **3.0** | [**Guideposts Instead of Complete Data**](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s3.1.MD)  |
