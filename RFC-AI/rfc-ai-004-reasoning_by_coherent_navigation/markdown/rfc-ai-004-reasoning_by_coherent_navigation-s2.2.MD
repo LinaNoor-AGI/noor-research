@@ -1,11 +1,5 @@
 ### 2.2 Coherence and the Noor-Planck Threshold
 
-**Objectives**
-
-- To introduce the Noor-Planck threshold as the coherence floor for stable symbolic units
-- To define coherence as a measurable property of symbolic states
-- To establish that only states above the threshold can serve as stable guideposts
-
 The Library contains all configurations, but not all configurations are equally stable or accessible.
 
 Define the coherence field $\mathcal{C}: \mathcal{M} \rightarrow [0,1]$ as a measure of the structural distinctiveness of a symbolic state relative to its local neighborhood in $\mathcal{M}$.
