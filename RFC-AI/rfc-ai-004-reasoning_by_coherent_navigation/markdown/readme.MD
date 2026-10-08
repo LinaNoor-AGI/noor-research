@@ -86,4 +86,4 @@ This paper proposes a symbolic architecture for AI reasoning derived from the No
 
 ---
 
-[All-In-One Version](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-aio.MD)
+[All-In-One Version]()
