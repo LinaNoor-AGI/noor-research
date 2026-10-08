@@ -12,7 +12,7 @@ The distinction between adjacency and accessibility is fundamental: two configur
 
 $$\mathrm{Reach}(S) = \{ x \in \mathcal{M} \mid \exists \gamma: \gamma(0) = S, \gamma(t_f) = x, \mathcal{C}(\gamma(\tau)) \geq I_N \, \forall \tau \}$$
 
-*Reachability is the set of configurations accessible from state $S$ through a coherent path $\gamma$ whose coherence never falls below the Noor-Planck threshold $I_N$.*
+*Reachability is the set of configurations accessible from state* $S$ *through a coherent path* $\gamma$ *whose coherence never falls below the Noor-Planck threshold* $I_N$.
 
 $$\mathrm{Reach}(S) \subset \mathcal{M}$$
 
@@ -24,7 +24,7 @@ $$A = \{ x \in \mathcal{M} \mid \mathrm{Reach}(x) \rightarrow A \}$$
 
 $$\mathcal{H}_E = \{ x \in \mathcal{M} \mid \forall \gamma \in \mathcal{P}(x), \lim_{t \rightarrow t_f} \gamma(t) \in A \}$$
 
-*A Convergence Boundary is the region of states from which every coherent path terminates in the same attractor $A$.*
+*A Convergence Boundary is the region of states from which every coherent path terminates in the same attractor* $A$.
 
 $$\mathrm{Adjacency} \neq \mathrm{Accessibility}$$
 
