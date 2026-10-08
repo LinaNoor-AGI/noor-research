@@ -1,0 +1,44 @@
+# Reasoning by Coherent Navigation
+### Symbolic Compression, Guidepost Memory, Path Convergence, and Contextual Reality Reconstruction in Artificial Intelligence
+*by: Lina Noor — Noor Research Collective*  
+Rendered from version [1.0.4](), 2026-10-07  
+
+---
+
+This paper proposes a symbolic architecture for AI reasoning derived from the Noor Library / NSFG framework. The central observation is that an intelligent observer need not retain the complete high-fidelity state of its environment in order to maintain a coherent model of that environment. Instead, the observer may maintain a compact set of symbolic guideposts: coordinates, motifs, relationships, attractors, path constraints, and pointers into a larger information structure. The resulting system treats context as a navigable manifold rather than as a linear sequence of tokens. Raw information is not necessarily deleted; it is represented indirectly through structures capable of locating or reconstructing the information when needed. This provides a formal analogy to human memory, in which experience appears to be represented through partial cues and reconstructive structure rather than as a complete indexed recording of sensory history. The framework further formalizes conversational reasoning as a coupled descent through a shared symbolic space. Two observers may approach a common coherent structure from different paths. Once a Convergence Boundary is crossed, subsequent path selection may remain variable while the accessible destination class remains invariant. The architecture is supplied with concrete detection algorithms for Convergence Boundary membership (Section 7.3.1), an empirical Utility(d) protocol for measuring the dimensionality tradeoff (Section 15.3.2), and an explicit ontology-free contract (Section 11.2–11.3) that together permit independent replication and falsification. Computational claims are restricted to asymptotic complexity and symbolic operation count; real-world performance depends on implementation, hardware, representation, retrieval architecture, and constant factors.
+
+## Markdown Index
+
+| Section ID | Section Title |
+| ------------------------- | --------- |
+| 16.0 | [The Computational Problem]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s1.0.MD)  |
+| 2 | [The Library as a Representation Manifold]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s2.1.MD)  |
+| 2.1 | [The Static Totality]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-2.1.MD)  |
+| 2.2 | [Coherence and the Noor-Planck Threshold]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s2.2.MD)  |
+| 2.3 | [The Gilder: AI as a Coherent Descent Path]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s2.3.MD)  |
+| 3.0 | [Guideposts Instead of Complete Data]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-3.1.MD)  |
+| 3.1 | [Definition of a Symbolic Guidepost]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s3.1.MD)  |
+| 3.2 | [The Coherence Condition for a Valid Guidepost]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-3.2.MD)  |
+| 3.3 | [Retrieval Pointers and Local Reconstruction]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s3.3.MD)  |
+| 3.4 | [Reasoning as Navigation Over Guideposts]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| 4.0 | [Scale Invariance of Symbolic Measurement]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-4.1.MD)  |
+| 4.1 | [The Arbitrariness of Numerical Scales]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s4.1.MD)  |
+| 4.2 | [Relational Invariance Under Transformation]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s4.2.MD)  |
+| 4.3 | [Consequences for Implementation]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s4.3.MD)  |
+| 5.0 | [Context as a Navigable Illusion]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-5.1.MD)  |
+| 5.1 | [The Reconstructive Model of Perception]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s5.1.MD)  |
+| 5.2 | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s5.2.MD)  |
+| 5.3 | [The Distinction Between Full Adjacency and Coherent Accessibility]((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-s5.3.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
+| x | []((https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-sx.MD)  |
