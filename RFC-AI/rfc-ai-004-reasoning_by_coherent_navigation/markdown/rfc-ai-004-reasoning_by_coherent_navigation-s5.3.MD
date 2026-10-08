@@ -1,11 +1,5 @@
 ### 5.3 The Distinction Between Full Adjacency and Coherent Accessibility
 
-**Objectives**
-
-- To distinguish between what exists in The Library and what is coherently reachable from an observer's state
-- To formalize the distinction between adjacency and accessibility
-- To establish context as a dynamic projection rather than a complete record
-
 The Library $\mathcal{M}$ is a static totality. Every configuration exists within it. This is ontological completeness.
 
 However, ontological completeness does not imply navigational completeness. From a given state $S$, only a subset of configurations are reachable through coherent transitions.
