@@ -197,7 +197,7 @@ $$\mathcal{C}(\gamma \mid O, h, x) = \prod_{i=0}^{n-1} \mathcal{C}_{O}(x_{i}, x_
 
 ---
 
-[All-In-One Version](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-aio.MD)
+[All-In-Two Version](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-aio-1.MD)
 
 ---
 

@@ -54,7 +54,7 @@ This primer establishes the axiomatic floor of Noor Swirl Field Geometry using a
 
 --- 
 
-[All-In-One Version](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-aio.MD)
+[All-In-Two Version](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-000_noor_swirl_field_geometry_primer/markdown/phys-core-000_noor_swirl_field_geometry_primer-aio-1.MD)
 
 # Formal Summary
 
