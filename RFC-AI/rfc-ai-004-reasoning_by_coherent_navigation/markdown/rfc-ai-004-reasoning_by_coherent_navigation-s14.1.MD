@@ -58,9 +58,9 @@ $$\mathrm{Accessibility}(x,y) \neq \mathrm{Adjacency}(x,y)$$
 
 **Definition — Symbolic Blowup ($\Delta \rightarrow \infty$).** A condition in which an attempted transition between symbolic states requires an unbounded number or magnitude of contradictions. The system cannot satisfy the relational constraints of the target state without destroying coherence.
 
-**Definition — Adjacency ($\mathrm{Adj}(x,y)$).** A structural relationship indicating that two configurations are both present in The Library. Adjacency does not imply that a coherent transition exists between them.
+**Definition — Adjacency ( $\mathrm{Adj}(x,y)$ ).** A structural relationship indicating that two configurations are both present in The Library. Adjacency does not imply that a coherent transition exists between them.
 
-**Definition — Accessibility ($\mathrm{Reach}(S)$).** The set of configurations that can be reached from a given state $S$ through a sequence of coherent transitions, each maintaining coherence above $I_N$.
+**Definition — Accessibility ( $\mathrm{Reach}(S)$ ).** The set of configurations that can be reached from a given state $S$ through a sequence of coherent transitions, each maintaining coherence above $I_N$.
 
 **Definition — Coherent Transition ($S \rightarrow S'$).** A transition between symbolic states that preserves coherence above $I_N$ and does not introduce unbounded contradiction.
 
