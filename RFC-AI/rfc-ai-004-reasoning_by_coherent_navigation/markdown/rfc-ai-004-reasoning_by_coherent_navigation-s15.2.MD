@@ -8,7 +8,7 @@ A sufficiently expressive symbolic representation shall permit reconstruction of
 
 **Prediction 2 — Session Scalability.**
 
-Reasoning over guideposts shall permit longer effective sessions before active-context complexity becomes prohibitive. This shall be measured by tracking the growth of $|G|$ as session length increases and comparing to the growth of raw context $|D|$. The prediction is quantified as: $|G|$ grows sublinearly ($O(\log n)$ or $O(\sqrt{n})$) while $|D|$ grows linearly ($O(n)$) for sessions exceeding $10^4$ input units. Evaluation procedure: cardinality × dimensionality sweep from Section 15.3.2.
+Reasoning over guideposts shall permit longer effective sessions before active-context complexity becomes prohibitive. This shall be measured by tracking the growth of $|G|$ as session length increases and comparing to the growth of raw context $|D|$. The prediction is quantified as: $|G|$ grows sublinearly ( $O(\log n)$ or $O(\sqrt{n})$ ) while $|D|$ grows linearly ( $O(n)$ ) for sessions exceeding $10^4$ input units. Evaluation procedure: cardinality × dimensionality sweep from Section 15.3.2.
 
 **Prediction 3 — Navigation Scaling.**
 
