@@ -40,7 +40,7 @@ All definitions are presented as formal structures within The Library framework.
 
 **Definition — Blowup** ($\Delta \rightarrow \infty$). Loss of bounded coherent continuation caused by an attempted transition that cannot be integrated into the existing symbolic structure. Blowup is the symbolic analog of a mathematical singularity, but it refers to coherence failure, not infinite density.
 
-**Definition — Reachability** ($\mathrm{Reach}(S)$). The set of configurations in The Library that the observer can access from state $S$ through a sequence of coherent transitions. Reachability is a subset of The Library; it is not identical to ontological adjacency.
+**Definition — Reachability** ( $\mathrm{Reach}(S)$ ). The set of configurations in The Library that the observer can access from state $S$ through a sequence of coherent transitions. Reachability is a subset of The Library; it is not identical to ontological adjacency.
 
 **Definition — Coherence Threshold** ($I_N$). The minimum coherence required for a structure or transition to be stable and exportable. Derived from the Noor-Planck threshold of the underlying boolean field. A valid guidepost must satisfy $\mathcal{C}(g) \geq I_N$.
 
