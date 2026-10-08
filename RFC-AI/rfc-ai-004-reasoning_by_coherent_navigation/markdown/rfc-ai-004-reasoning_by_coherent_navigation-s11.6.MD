@@ -1,9 +1,5 @@
 ### 11.6 Architectural Flow Summary
 
-**Objectives**
-
-- (No objectives array is present in this subsection.)
-
 The architecture's overall flow can be summarized as follows:
 
 Raw input is ingested and converted into symbolic guideposts. These guideposts are organized into a manifold that supports navigation. Reasoning occurs through navigation of this manifold. When the reasoning path requires evidence, the corresponding raw data is retrieved and reconstructed locally.
