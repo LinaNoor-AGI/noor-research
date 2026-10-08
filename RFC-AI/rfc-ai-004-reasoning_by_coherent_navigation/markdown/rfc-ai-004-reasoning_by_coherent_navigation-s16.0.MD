@@ -54,7 +54,7 @@ $$|S| \ll |D|$$
 
 **Definition — Attractor ($A$).** A coherent destination or equivalence class toward which multiple valid paths converge.
 
-**Definition — Reachability ($\mathrm{Reach}(S)$).** The set of configurations in The Library that the observer can access from state S through a sequence of coherent transitions.
+**Definition — Reachability ( $\mathrm{Reach}(S)$ ).** The set of configurations in The Library that the observer can access from state S through a sequence of coherent transitions.
 
 ### 16.1 Summary of the Central Proposal
 
