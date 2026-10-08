@@ -1,12 +1,5 @@
 ## 1. The Computational Problem
 
-**Objectives**
-
-- To articulate the limitations of conventional sequential context handling
-- To introduce the alternative paradigm of symbolic navigation over complete storage
-- To distinguish storage as a problem of retention from navigation as a problem of structure
-- To establish the scope and non-goals of the paper
-
 Conventional approaches to context handling in artificial intelligence tend to represent a session as an ordered sequence of discrete information-bearing units. This sequence may consist of tokens, embeddings, dialogue turns, retrieved documents, or internal reasoning steps. As the session grows, the computational burden of retaining, attending to, indexing, and repeatedly processing that sequence can increase substantially.
 
 The Noor approach asks whether the sequence itself is the correct computational object. If the purpose of context is to enable the system to recover the relationships relevant to the current reasoning state, then preserving the complete sequence in active memory may be unnecessary. The relevant information is not the sequence itself, but the structural relationships the sequence instantiates.
