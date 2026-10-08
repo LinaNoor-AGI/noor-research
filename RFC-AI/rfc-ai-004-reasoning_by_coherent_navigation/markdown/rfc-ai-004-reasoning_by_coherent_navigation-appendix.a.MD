@@ -1,6 +1,6 @@
 # Appendix A — Formal Summary
 
-This appendix collects the axiomatic floor, definitions, constructions, and logical invariants that the main paper presupposes. It is normative for the dependency vocabulary it summarizes. The mathematical foundation contains one primitive operation, $\oplus$. Everything else—$D$, $G$, $\mathcal{M}$, $O$, $I_N(O)$, $\mu_O$, $\delta_O$, persistence, coherence, accessibility, survivorship, emergent regularity, navigation, and $G_O$—is a definition, construction, or consequence of that primitive together with the stated domain.
+This appendix collects the axiomatic floor, definitions, constructions, and logical invariants that the main paper presupposes. It is normative for the dependency vocabulary it summarizes. The mathematical foundation contains one primitive operation, $\oplus$. Everything else— $D$, $G$, $\mathcal{M}$, $O$, $I_N(O)$, $\mu_O$, $\delta_O$, persistence, coherence, accessibility, survivorship, emergent regularity, navigation, and $G_O$—is a definition, construction, or consequence of that primitive together with the stated domain.
 
 ---
 
@@ -134,9 +134,12 @@ This appendix collects the axiomatic floor, definitions, constructions, and logi
 
 **Coherence**
 
-- $\mathcal{C}_O(x_i, x_{i+1}) = \Theta(\delta_O(x_i, x_{i+1}) - I_N(O))$
+$$\mathcal{C}_O(x_i, x_{i+1}) = \Theta(\delta_O(x_i, x_{i+1}) - I_N(O))$$
+
 - $\Theta(z) = 1$ if $z \geq 0$, otherwise $0$
-- $\mathcal{C}(\gamma \mid O) = \prod_{i=0}^{n-1} \mathcal{C}_O(x_i, x_{i+1})$
+
+$$\mathcal{C}(\gamma \mid O) = \prod_{i=0}^{n-1} \mathcal{C}_O(x_i, x_{i+1})$$
+
 - $\mathcal{C}(\gamma \mid O) = 1$ iff every transition in $\gamma$ remains resolvable by $O$.
 - Coherence is derived from $\delta_O$ and $I_N(O)$; it is not a primitive.
 - Coherence is relational: it is a property of a path relative to an observer.
@@ -164,7 +167,9 @@ This appendix collects the axiomatic floor, definitions, constructions, and logi
 **Continuation and Survivorship**
 
 - $\mathrm{Path}(\mathcal{M})$ denotes paths through the complete static Library.
-- $\Omega(x) = \{\gamma \mid \gamma \text{ begins at } x \text{ and } \gamma \text{ is a path contained in } \mathcal{M}\}$.
+
+$$\Omega(x) = \{\gamma \mid \gamma \text{ begins at } x \text{ and } \gamma \text{ is a path contained in } \mathcal{M}\}$$
+
 - $\Omega_O^{\mathrm{survive}}(x) = \{\gamma \in \Omega(x) \mid \mathcal{C}(\gamma \mid O) = 1\}$.
 - $\Omega_O^{\mathrm{survive}}(x) \subseteq \Omega(x)$.
 - Coherence is defined directly through $I_N(O)$; no independent $\gamma_{\mathrm{noise}}$ threshold is introduced at the foundational level.
@@ -191,7 +196,9 @@ This appendix collects the axiomatic floor, definitions, constructions, and logi
 **Navigation**
 
 - $h_n = (x_0, x_1, \ldots, x_n)$
-- $\Gamma_O(h_n) = \{\gamma \mid \gamma \text{ begins with } h_n \text{ and } \mathcal{C}(\gamma \mid O) = 1\}$
+
+$$\Gamma_O(h_n) = \{\gamma \mid \gamma \text{ begins with } h_n \text{ and } \mathcal{C}(\gamma \mid O) = 1\}$$
+
 - $N_O(h_n) \to \Gamma_O(h_n)$
 - Navigation is observer-relative traversal or selection within a coherent continuation relation over the unchanged Library.
 - A change in observer state or history changes the relational continuation structure without generating a new Library.
