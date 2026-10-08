@@ -78,7 +78,7 @@ The utility tradeoff defined in 15.3.1 is an empirical claim. To evaluate it, th
 
 **Sensitivity Analysis:** Report the sensitivity of $d_{opt}$ and plateau width to variations in the data-generation process. This should include at least three distinct generative processes with different structural properties (e.g., random, hierarchical, modular).
 
-**Falsification Clause:** If no usable plateau (a range of $d$ where $U(d)$ is within 95% of $U(d_{opt})$) can be found under the defined protocol, the dimensionality-optimality claim is falsified for that regime. This is a strong test: it requires the framework to demonstrate a genuine, measurable optimum rather than a monotonic or flat surface.
+**Falsification Clause:** If no usable plateau (a range of $d$ where $U(d)$ is within 95% of $U(d_{opt})$ ) can be found under the defined protocol, the dimensionality-optimality claim is falsified for that regime. This is a strong test: it requires the framework to demonstrate a genuine, measurable optimum rather than a monotonic or flat surface.
 
 **Reference Implementation:** The protocol should be implemented using the standalone CoherentNavigator, GuidepostStore, and measure_utility functions from the reference implementation. This ensures that the results are reproducible and not dependent on unpublished optimizations.
 
