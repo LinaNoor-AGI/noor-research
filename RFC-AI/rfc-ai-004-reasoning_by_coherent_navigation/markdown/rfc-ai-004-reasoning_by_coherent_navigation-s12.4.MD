@@ -1,11 +1,5 @@
 ### 12.4 Adjacency vs. Accessibility
 
-**Objectives**
-
-- To distinguish adjacency from accessibility in the symbolic manifold
-- To formalize accessibility as a navigational property of the observer rather than an ontological property of The Library
-- To establish that context is the observer's reachable subspace, not The Library itself
-
 The distinction between adjacency and accessibility is one of the most important in the framework.
 
 Adjacency is a property of The Library: two configurations are adjacent if they are related in The Library's structure. Adjacency is ontological—it describes what exists.
