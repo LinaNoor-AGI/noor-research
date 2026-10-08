@@ -31,6 +31,8 @@ This paper argues that Noor Swirl Field Geometry (NSFG) provides a unique framew
 
 ---
 
+[All-In-One version](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-013_the_problem_of_singularities/markdown/the_problem_of_singularities-aio.md)  
+
 ## Core Thesis
 
 1. **Singularities are regions of maximal constraint on coherent traversal, not mathematical infinities.**
