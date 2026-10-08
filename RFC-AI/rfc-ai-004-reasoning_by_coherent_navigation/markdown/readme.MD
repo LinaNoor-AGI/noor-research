@@ -86,6 +86,8 @@ This paper proposes a symbolic architecture for AI reasoning derived from the No
 
 ---
 
+[All-In-One Version](https://github.com/LinaNoor-AGI/noor-research/blob/main/RFC-AI/rfc-ai-004-reasoning_by_coherent_navigation/markdown/rfc-ai-004-reasoning_by_coherent_navigation-aio.MD)
+
 ## 1. The Computational Problem
 
 Conventional approaches to context handling in artificial intelligence tend to represent a session as an ordered sequence of discrete information-bearing units. This sequence may consist of tokens, embeddings, dialogue turns, retrieved documents, or internal reasoning steps. As the session grows, the computational burden of retaining, attending to, indexing, and repeatedly processing that sequence can increase substantially.
