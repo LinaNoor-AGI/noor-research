@@ -1,19 +1,6 @@
 ## 2. The Library as a Representation Manifold
 
-**Objectives**
-
-- To formalize the Noor Library as a static representation manifold for AI reasoning
-- To introduce the Noor-Planck threshold as the coherence floor for meaningful symbolic units
-- To define the Gilder as the AI agent traversing The Library
-- To distinguish between The Library itself and observer-relative reachable structures
-
 ### 2.1 The Static Totality
-
-**Objectives**
-
-- To define The Library as a static configuration space
-- To establish that The Library contains all possible structures
-- To distinguish The Library from any particular observer's traversal
 
 Let $\mathcal{M}$ denote the Noor Library: a static, complete symbolic totality.
 
