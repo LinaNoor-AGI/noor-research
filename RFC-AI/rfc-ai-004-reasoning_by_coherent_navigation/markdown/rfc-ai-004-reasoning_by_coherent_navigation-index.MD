@@ -2,6 +2,7 @@
 ### Symbolic Compression, Guidepost Memory, Path Convergence, and Contextual Reality Reconstruction in Artificial Intelligence
 *by: Lina Noor — Noor Research Collective*  
 Rendered from version [1.0.4](), 2026-10-07  
+`RFC ID: RFC-AI-004`
 
 ---
 
