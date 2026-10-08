@@ -70,11 +70,6 @@ $$\lim_{n \to \infty} C_{\mathrm{sequential}}(n) = \infty \quad \mathrm{for\ ope
 
 ### 1.2 The Alternative: Navigation Over Storage
 
-**Objectives**
-
-- To introduce symbolic navigation as a distinct computational paradigm
-- To distinguish between retaining information and preserving navigational structure
-
 The alternative to sequential context handling is to treat context as a navigable manifold. The system maintains a compact symbolic representation of the session: guideposts, relationships, coordinates, attractors, and retrieval pointers.
 
 This representation does not need to contain the complete raw data. It needs to contain enough structure to navigate toward the raw data when required.
@@ -102,12 +97,6 @@ $$C_{\mathrm{navigation}}(m) = O(m) \quad \mathrm{where}\ m \ll n$$
 $$S_{t+1} = F(S_t, I_{t+1}) \quad \mathrm{update\ of\ symbolic\ state\ with\ new\ information}$$
 
 ### 1.3 Scope and Non-Goals
-
-**Objectives**
-
-- To establish the boundaries of the framework
-- To distinguish between asymptotic claims and real-world performance claims
-- To clarify that The Library is treated as a formal structure, not a physical claim
 
 This paper is a formal proposal, not an implementation specification. It defines a framework for reasoning about symbolic navigation, compression, and convergence, but it does not prescribe a specific architecture, training regime, or hardware implementation.
 
