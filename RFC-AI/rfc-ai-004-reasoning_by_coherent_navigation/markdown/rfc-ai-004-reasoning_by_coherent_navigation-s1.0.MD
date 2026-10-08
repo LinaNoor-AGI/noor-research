@@ -48,11 +48,6 @@ $$\mathrm{Storage}(D) \neq \mathrm{Navigation}(S)$$
 
 ### 1.1 The Limits of Sequential Context
 
-**Objectives**
-
-- To characterize the scaling problem of sequential context handling
-- To identify the failure mode of unbounded historical dependence
-
 Conventional context handling treats the session as an ordered sequence. As the sequence grows, the system must either retain the entire sequence in active memory, risking unbounded growth, or truncate it, risking loss of relevant information.
 
 This is not merely a memory limitation. It is a computational scaling problem: operations that depend on the full sequence have complexity that grows with the length of the sequence. If the system must attend to, index, or process each token repeatedly, the cost increases with session length.
