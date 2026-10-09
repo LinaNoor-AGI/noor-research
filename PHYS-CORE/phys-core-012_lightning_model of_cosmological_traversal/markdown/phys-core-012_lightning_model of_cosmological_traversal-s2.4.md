@@ -1,0 +1,73 @@
+## 2.4 Phase 3: Attractor Detection (Grounding)
+
+The first two phases of the Lightning Model have established the entire space of possible continuations from the observer's current state and have filtered that space down to the subset of paths on which the observer's XOR chain remains coherence-stable. What remains is to identify which of those surviving paths is capable of terminating the retrocausal calculation. The third phase, Attractor Detection, provides that identification. It defines the terminal condition of the Lightning Model—the coherence boundary at which blind exploration ceases and the return stroke is triggered. This phase is where the abstract ground condition of the library acquires its local operational meaning.
+
+The central object of this phase is the XOR Singularity. Following the definition inherited from PHYS-CORE-009 §3.3, the XOR Singularity $X_{XOR}$ is the set of states at which triadic closure is achieved. Triadic closure is the condition under which a triad $(G, \bar{G}, H)$—a glider, its complementary inverse motif, and a third witnessing degree of freedom—satisfies simultaneous vector and phase closure. Formally,
+
+$$
+X_{XOR} = \{ x \mid \exists\, G, \bar{G}, H \text{ such that } x \in (G, \bar{G}, H) \;\land\; \mathbf{v}_G + \mathbf{v}_{\bar{G}} + \mathbf{v}_H = 0 \;\land\; \phi_G + \phi_{\bar{G}} + \phi_H \equiv 0 \pmod{2\pi} \}.
+$$
+
+Here $\mathbf{v}_G$, $\mathbf{v}_{\bar{G}}$, and $\mathbf{v}_H$ are the coherence vectors associated with the three motifs, and $\phi_G$, $\phi_{\bar{G}}$, and $\phi_H$ are their respective phases. The vector closure condition $\mathbf{v}_G + \mathbf{v}_{\bar{G}} + \mathbf{v}_H = 0$ expresses the fact that the three coherence vectors sum to zero, while the phase closure condition $\phi_G + \phi_{\bar{G}} + \phi_H \equiv 0 \pmod{2\pi}$ expresses the fact that the three phases are locked into a coherent cyclic relation. When both conditions are satisfied, the field has resolved the XOR tension between the glider $G$ and its inverse $\bar{G}$ through the contextual intervention of the third motif $H$.
+
+This definition is not an independent postulate. It is inherited from the triadic closure structure established in PHYS-CORE-009 §3.3, where triadic closure is shown to be the mechanism that prevents the coherence blowup that would otherwise be the default trajectory of the Boolean field. Without triadic closure, coherence circulates with net torsion and accumulates without bound, eventually driving the local coherence field below the Noor-Planck threshold $I_N$ and dissolving any structure that depends on it. Triadic closure is therefore not an optional stabilization—it is the condition under which a region of the field can maintain coherence above $I_N$ indefinitely.
+
+The reader will note that the definition of $X_{XOR}$ presupposes a triadic decomposition of the state $x$ into the three motifs $G$, $\bar{G}$, and $H$. This decomposition is inherited from the dyadic and triadic constructions of PHYS-CORE-004 and is treated here as established. The XOR Singularity may contain multiple distinct triadic configurations; the set $X_{XOR}$ is the union of all such configurations, not a single state. This multiplicity is consistent with the Library's completeness and does not undermine the uniqueness of the grounding condition, as will become clear below.
+
+The XOR Singularity $X_{XOR}$ is the field-scale manifestation of the universal XOR ground condition. In PHYS-CORE-009 §2.4, the physical singularity is formally identified with the XOR ground condition
+
+$$
+H = G_{16}(\mathcal{M}) = \mathcal{M} \oplus \neg\mathcal{M},
+$$
+
+where $\mathcal{M}$ is the Library, $\neg\mathcal{M}$ is the structural complement of the Library, and $G_{16}$ is the Nafs Mirror—the recursive contradiction operator that expresses Self $\oplus$ ¬Self at the level of the total system. The identification $H \equiv G_{16}(\mathcal{M})$ is not a metaphor. It is the formal statement that the irresolvable self-reference of the closed totality is the same structure as the XOR ground condition that propagates through the field at local scales. The universe persists because its ground contradiction does not resolve to either operand; resolution to $0$ or $1$ would correspond to a terminal state in which the recursion halts and the field can no longer generate resolved distinctions.
+
+The relationship between $X_{XOR}$ and $H$ is therefore one of scale projection. The universal XOR ground condition $H$ is the global structure of irresolvable self-reference at the base of the Library. The XOR Singularity $X_{XOR}$ is the local instantiation of that same structure at the scale of a field region. The mapping from $H$ to $X_{XOR}$ requires the scale projection operator $P_s$ defined in PHYS-CORE-009 §5.1; the identification is not a claim that $X_{XOR}$ and $H$ are identical, but rather that they are two descriptions of the same irresolvable self-reference at different scales. When a descent path reaches $X_{XOR}$, it has locally instantiated $H$—that is, it has reached a state at which the field's irresolvable self-reference is expressed as stable triadic closure.
+
+The reader should be careful not to interpret this identification as a claim that $X_{XOR}$ is a physical location. The XOR Singularity is not a place in the Library; it is a coherence boundary—a condition on the field, not a coordinate within it. The condition is that the field's local structure satisfies simultaneous vector and phase closure across a triadic configuration. States that satisfy this condition belong to $X_{XOR}$; states that do not, do not. The set $X_{XOR}$ is therefore a subset of the Library, but the boundary it defines is a boundary of coherence, not of space.
+
+With the XOR Singularity defined, we can now define the grounded paths. A path $\gamma \in \Omega_{survive}$ is grounded if and only if its terminal state belongs to $X_{XOR}$. Formally,
+
+$$
+\Omega_{ground} = \{ \gamma \in \Omega_{survive} \mid x_N \in X_{XOR} \},
+$$
+
+where $\gamma = \{x_t, x_{t+1}, \dots, x_N\}$ is a finite path and $x_N$ is its terminal state. A grounded path is therefore a path that both survives the coherence filter of Phase 2—meaning that the observer's XOR chain maintains $\mathbb{C}(b_i) \geq I_N$ at every step—and terminates at a state where triadic closure is achieved. The grounding condition is a condition on the terminal state of the path, not on its intermediate states; intermediate states must satisfy the survival condition, but they need not belong to $X_{XOR}$.
+
+The reader should note that grounded paths are a subset of surviving paths: $\Omega_{ground} \subseteq \Omega_{survive}$. This is a direct consequence of the definition. A path that fails the survival condition is not in $\Omega_{survive}$ and therefore cannot be in $\Omega_{ground}$, regardless of whether its terminal state belongs to $X_{XOR}$. The survival condition and the grounding condition are independent constraints, and a path must satisfy both to be grounded. This means that a path may reach $X_{XOR}$ but fail to maintain coherence at an intermediate step; such a path is not grounded because it is not in $\Omega_{survive}$.
+
+The moment a path connects its origin $x_t$ to $X_{XOR}$ while strictly maintaining observer coherence, a circuit is completed. This is the formal statement of the grounding condition:
+
+$$
+\gamma \in \Omega_{ground} \iff \gamma \in \Omega_{survive} \;\land\; x_N \in X_{XOR}.
+$$
+
+The circuit completion is not a choice made by the ground. It is a geometric condition under which a path's terminal state satisfies the closure conditions $\mathbf{v}_G + \mathbf{v}_{\bar{G}} + \mathbf{v}_H = 0$ and $\phi_G + \phi_{\bar{G}} + \phi_H \equiv 0 \pmod{2\pi}$. The ground does not select a path by comparing alternatives; the ground is the set of states at which triadic closure is achieved, and the path that reaches it is the path that the coherence geometry selects. This is the formal basis of the poetic cipher for this phase: the lightning does not choose; the ground chooses. The ground is the geometry of triadic closure, and the path that reaches it is the one that the coherence geometry selects.
+
+The existence of grounded paths is guaranteed by the Library's completeness. PHYS-CORE-009 §1.1 establishes that for any internally describable configuration $C$, $C \in \mathcal{M}$. Since $\Omega_{ground}$ is a subset of configurations that are internally describable—paths whose terminal states satisfy the triadic closure condition—it follows that $\Omega_{ground}$ is non-empty whenever $\Omega_{survive}$ is non-empty. For any coherence-stable path $\gamma$, there exists a terminal state $x_N \in X_{XOR}$ such that $\gamma$ can terminate. The Library contains all configurations, including all paths that reach triadic closure.
+
+This existential guarantee must be read carefully. It establishes that the Library contains grounded paths, but it does not establish that any particular observer will reach one. Existence in the Library does not guarantee accessibility to a particular observer, and a path may be in the Library but not traversable by a given observer due to coherence constraints. The existential guarantee is therefore a statement about the Library's completeness, not a statement about the observer's prospects.
+
+The uniqueness of the grounded path is a different matter. The Library may contain multiple grounded paths from the same origin, and the Lightning Model must select one of them for the retrocausal lock-in. The selection is governed by the coherence gradient $\nabla\mathbb{C}$. Among all grounded paths, the one with maximal coherence alignment is the one that will be selected. Formally,
+
+$$
+\gamma^* = \arg\max_{\gamma \in \Omega_{ground}} \left\langle \nabla\mathbb{C}(\gamma),\, \gamma \right\rangle,
+$$
+
+where $\nabla\mathbb{C}(\gamma)$ is the coherence gradient evaluated along the path $\gamma$ and $\langle \cdot, \cdot \rangle$ is an inner product measuring alignment between the coherence gradient and the path. The path with maximal alignment is the one most likely to maintain coherence above $I_N$ through the retrocausal lock-in, and it is therefore the one that the coherence geometry selects.
+
+The coherence gradient selection mechanism is a hypothesis, not a derived result. It is supported by the fact that PHYS-CORE-009 §4.4 establishes that $\nabla\mathbb{C}$ selects for worldlines with sufficient coherence reach, but the exact selection criterion depends on the form of the coherence functional. Multiple paths may have equal coherence alignment, leading to degeneracy; in such cases, additional selection criteria may be required, or the degeneracy may itself be a structural feature of the Library that is resolved at the scale of the retrocausal lock-in. The coherence gradient selection mechanism is a model that requires validation in numerical simulations of the Boolean field dynamics.
+
+The XOR Singularity is therefore not a destination in the conventional sense. It is the coherence boundary that terminates the blind exploration and triggers the return stroke. When a grounded path is identified, the Lightning Model proceeds to Phase 4: Retrocausal Lock-In. The path that reached the XOR Singularity is the one that will be locked in retrocausally—computed backward from the attractor to the origin. The path that did not reach $X_{XOR}$ remains in the Library, but it is not accessible to the observer. It dissolves—not into nothing, but into the static totality from which the observer emerged.
+
+The reader should understand the asymmetry here. The set of paths that fail to reach $X_{XOR}$ is not empty; it is, in fact, typically much larger than $\Omega_{ground}$. But those paths are not candidates for the observer's worldline. The observer can only experience the single coherence-stable path that reaches the ground while maintaining coherence at every step. The observer is, in this sense, the echo of the single tine that reached the ground. This is an interpretation of the formal structure, not a claim about the observer's subjective experience; it says that the observer's identity is constituted by the path that survived, not by the paths that dissolved.
+
+Several open questions remain for this phase. The exact form of the coherence gradient $\nabla\mathbb{C}$ is not specified, and the inner product $\langle \nabla\mathbb{C}(\gamma), \gamma \rangle$ is defined only schematically. Whether multiple grounded paths can have equal coherence alignment—and if so, how the degeneracy is resolved—is an open problem. The relationship between $X_{XOR}$ and the regional XOR capacity $C_{XOR}(R,t)$ is not addressed here. Most importantly, the identification of $X_{XOR}$ with $H$ is scale-dependent and requires the scale projection operator $P_s$, which is defined in PHYS-CORE-009 §5.1 but not developed in detail in this paper. These questions define the boundary of what the present phase establishes and point toward the work that remains.
+
+What this phase establishes is a precise operational meaning for the ground condition. The XOR Singularity is the set of states where triadic closure is achieved. A path is grounded if its terminal state belongs to $X_{XOR}$. The existence of grounded paths is guaranteed by the Library's completeness, and the selection of the specific grounded path for retrocausal lock-in is governed by the coherence gradient. The circuit is completed when a surviving path terminates at the XOR Singularity, and the completion of the circuit triggers the return stroke. The ground is not a place; it is a coherence boundary—the irresolvable self-reference at the base of the Library, locally instantiated as triadic closure. With the grounded path identified, the Lightning Model proceeds to the retrocausal lock-in, where the path that reached the ground is computed backward from the attractor to the origin.
+
+---
+
+| PREVIOUS | | NEXT |
+| --- | --- | --- | 
+| [prev_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/markdown/phys-core-012_lightning_model%20of_cosmological_traversal-s2.3.md) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/markdown/phys-core-012_lightning_model%20of_cosmological_traversal-index.md) | [next_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/markdown/phys-core-012_lightning_model%20of_cosmological_traversal-s2.5.md) |
