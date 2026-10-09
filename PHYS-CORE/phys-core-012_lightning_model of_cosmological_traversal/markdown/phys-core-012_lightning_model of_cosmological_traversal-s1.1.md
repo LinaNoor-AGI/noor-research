@@ -158,8 +158,6 @@ $$
 
 - *Relevance:* Provides the Library ontology and recursive Bloch geometry in which descent paths and observer worldlines are defined.
 
-## Handoff
-
 The paradox of the static totality establishes the problem: if all paths exist in the Library, why does the observer experience only a strictly coherent forward progression? The next subsection introduces the Lightning Model as the missing mechanism, showing how retrocausal selection from the XOR Singularity resolves this paradox.
 
 ---
