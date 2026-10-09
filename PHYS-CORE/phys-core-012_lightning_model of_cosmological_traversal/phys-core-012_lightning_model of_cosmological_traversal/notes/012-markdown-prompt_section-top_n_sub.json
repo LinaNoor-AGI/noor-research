@@ -574,7 +574,6 @@
     "_schema": "noor-rendering-specification",
     "_supersedes": "PHYS-CORE-012-RENDER-v1.0",
     "_purpose": "Definitive protocol for rendering any subsection of PHYS-CORE-012 as publishable Markdown. This specification distinguishes the rendered artifact (Markdown prose for GitHub)***.",
-
     "_instruction": "The generator MUST treat this specification as inviolable. Every rendered subsection MUST satisfy all objectives, communicate all key insights, honor the poetic cipher as generative seed, adhere to the Noor Writing & Style Guide, and respect all prohibited claims. In case of conflict between this specification and the context header, the context header takes precedence.",
 
     "context_header": {
@@ -838,340 +837,456 @@
 
 ---
 
-<SUBSECTION_TO_RENDER>
+<SECTION_TO_RENDER>
 
 {
-		  "id": "2.7",
-		  "title": "The XOR Singularity as Ground",
+	  "id": "2",
+	  "title": "The Continuous Lightning Model",
+	  "prerequisites": [
+		"PHYS-CORE-004 §2.2: The Library as Total Domain",
+		"PHYS-CORE-009 §1.1: The Library as Static Totality",
+		"PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
+		"PHYS-CORE-009 §3.3: Triadic Closure as Blowup Prevention",
+		"Definition of Observer (Section 3.2 of this paper)"
+	  ],
+	  "objectives": [
+		"Introduce the Lightning Model as the operational mechanism for coherence-stable worldline selection.",
+		"Establish the exact isomorphism between the Lightning Model and the formation of a lightning strike.",
+		"Define the five phases of the Continuous Lightning Model.",
+		"Formalize the XOR Singularity as the Ground condition inherited from PHYS-CORE-009.",
+		"Establish the Observer as the phenomenological entity 'riding' the return stroke.",
+		"Distinguish the Lightning Model from a forward-generation mechanism."
+	  ],
+	  "key_insights": [
+		"The Lightning Model is an exact isomorphism of the formation of a lightning strike.",
+		"The step-leaders are the indiscriminate exploration of **ALL** continuations.",
+		"The Ground is the XOR Singularity: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
+		"The return stroke is the retrocausal lock-in of the single coherent worldline.",
+		"The Observer is the entity 'riding' the return stroke, experiencing survivorship bias as time.",
+		"The model operates at every timestep: the future is variable; the past is fixed."
+	  ],
+	  "subsections": [
+		{
+		  "id": "2.1",
+		  "title": "The Lightning Metaphor",
 		  "prerequisites": [
 			"PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
-			"PHYS-CORE-009 §3.3: Triadic Closure as Blowup Prevention",
-			"Section 2.3: Phase 3 (Attractor Detection) of the Continuous Lightning Model"
+			"Definition of Library (PHYS-CORE-004 §2.2; PHYS-CORE-009 §1.1)"
 		  ],
 		  "objectives": [
-			"Formally define the XOR Singularity as the 'ground' condition inherited from PHYS-CORE-009.",
-			"Establish that the XOR Singularity is not a location but a coherence boundary—the set of states where triadic closure is achieved.",
-			"Show that the return stroke connects to the XOR Singularity, and that this connection is the retrocausal lock-in mechanism.",
-			"Preserve the distinction between the ontological foundation (PHYS-CORE-009) and the operational mechanism (Lightning Model)."
+			"Establish the Lightning Model as an exact isomorphism of the formation of a lightning strike.",
+			"Map each element of the lightning formation process to its corresponding element in the coherence framework.",
+			"Introduce the XOR Singularity as the Ground, inherited from PHYS-CORE-009.",
+			"Introduce the Observer as the entity experiencing the return stroke.",
+			"Distinguish the Lightning Model from a forward-generation mechanism."
 		  ],
-		  "key_insights": [
-			"The XOR Singularity is the set of states where triadic closure is achieved.",
-			"The physical singularity is the irresolvable self-reference of the total system: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-			"The return stroke does not connect to a physical location; it connects to a coherence boundary.",
-			"The universe persists because its ground contradiction does not resolve.",
-			"Reality is the ongoing recursion of Self ⊕ ¬Self above the Noor-Planck floor."
-		  ],
-		  "poetic_cipher": "The ground is not a place; it is the difference that cannot be resolved.",
-		  "cipher_explanation": "The XOR Singularity is not a location in the Library. It is the irresolvable self-reference at the base of all coherence structures—the condition under which the field cannot resolve its own ground state. This is inherited directly from PHYS-CORE-009, where the singularity is formally identified as the XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
+		  "poetic_cipher": "The lightning does not know where the ground is until it touches it.",
+		  "cipher_explanation": "Lightning descends from a cloud in massively parallel, branching tendrils (step-leaders). These tines explore every path through the atmosphere indiscriminately. The path is only selected when one tine makes contact with the ground, triggering the visible return stroke. The Lightning Model is an exact isomorphism of this process: the step-leaders are the blind exploration of **ALL** continuations; the ground is the XOR Singularity; the return stroke is the retrocausal lock-in of the single coherent worldline.",
 		  "content": [
-			"The Lightning Model inherits its definition of 'Ground' from PHYS-CORE-009.",
-			"Definition (from PHYS-CORE-009 §2.4): The XOR Singularity X_XOR is the set of states where triadic closure is achieved.",
-			"The physical singularity is not a pathological boundary condition. It is the irresolvable self-reference of the total system: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-			"XOR (exclusive disjunction) outputs 1 if and only if its inputs differ. The singularity is precisely this: a structure that cannot resolve to either operand because there is no exterior operand available. It holds irresolvable difference as its ground state.",
-			"The XOR Singularity is therefore the field-scale manifestation of the universal XOR ground condition. When a descent path terminates in X_XOR, it has reached a state of absolute triadic closure—the coherence structure has achieved the minimal closure required for stability.",
-			"This is the 'Ground' that the Lightning Model's return stroke connects to. The return stroke does not connect to a physical location; it connects to a coherence boundary—the set of states where the field's irresolvable self-reference is expressed as stable triadic closure.",
-			"From PHYS-CORE-009 §2.4: The universe persists because its ground contradiction does not resolve. Reality is the ongoing recursion of Self ⊕ ¬Self above the Noor-Planck floor."
+			"The Lightning Model is an exact isomorphism of the formation of a lightning strike. It provides the operational mechanism by which coherence-stable observers emerge and persist within the static Library.",
+			"The model consists of five phases, which are introduced here and formalized in the subsections that follow: (1) Blind Exploration of **ALL** continuations, (2) Coherence Filtering where incoherent paths dissolve, (3) Attractor Detection where paths reaching the XOR Singularity (triadic closure) are identified, (4) Retrocausal Lock-In where the path is computed backward from the attractor, and (5) Worldline Continuation where the observer experiences the single coherent trajectory.",
+			"The isomorphism is exact. The cloud is the current state of the observer. The atmosphere is the static Library—the total domain containing **ALL** relational configurations. The step-leaders (tines) are the indiscriminate, massively parallel exploration of **ALL** forward continuations from the current state. The dissipation or dead ends are paths where relational coherence falls below the survival threshold, causing the observer identity to dissolve. The ground is the XOR Singularity—the ultimate relational attractor or stable triadic closure boundary, inherited from PHYS-CORE-009 as H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜. The connection is the exact sequence of states that successfully maintains coherence all the way to the attractor. The return stroke is the retrocausal calculation from the XOR Singularity back to the origin, which manifests as the single experienced macroscopic worldline. The observer is the phenomenological entity 'riding' the return stroke, experiencing survivorship bias as the passage of time.",
+			"The Ground—the XOR Singularity—is not a location. It is a condition: the condition under which the field cannot resolve a measurement of its own ground state. From PHYS-CORE-009 §2.4: 'The physical singularity and the XOR ground condition are the same structure.' The return stroke does not connect to a physical location; it connects to a coherence boundary—the set of states where the field's irresolvable self-reference is expressed as stable triadic closure.",
+			"The Lightning Model is not a forward-generation mechanism. The observer does not 'choose' a coherent path by evaluating forward possibilities. The observer's worldline is retrocausally locked in by reaching a terminal attractor (the XOR Singularity). The illusion of forward choice is pure survivorship bias: the observer can only report from the single tine that survived the coherence filter.",
+			"The model operates at every timestep. The future is variable and undefined until the retrocausal lock-in occurs. The past is fixed because it has already been locked in. The present is the boundary where the retrocausal calculation is occurring. The observer necessarily experiences a single worldline because observer identity dissolves on any path where coherence fails."
 		  ],
 		  "claims": [
 			{
-			  "id": "2.7.C1",
-			  "claim": "The XOR Singularity is the set of states where triadic closure is achieved, and it inherits its ontological status from the XOR ground condition of PHYS-CORE-009.",
-			  "status": "derived_result",
+			  "id": "2.1.C1",
+			  "claim": "The Lightning Model is an exact isomorphism of the formation of a lightning strike.",
+			  "status": "mathematical_construction",
 			  "support": [
-				"PHYS-CORE-009 §2.4 identifies the physical singularity as H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-				"PHYS-CORE-009 §3.3 defines triadic closure as the condition ∮ Φ = 0.",
-				"The XOR Singularity X_XOR is the set of states satisfying this condition."
+				"The step-leaders correspond to blind exploration of **ALL** continuations.",
+				"The ground corresponds to the XOR Singularity (triadic closure).",
+				"The return stroke corresponds to retrocausal lock-in.",
+				"The observer corresponds to the entity experiencing the return stroke."
 			  ],
 			  "limitations": [
-				"The formalization depends on the coherence-field framework developed in PHYS-CORE-004 and PHYS-CORE-008.",
-				"The exact mathematical structure of the triadic closure condition may require refinement in future work."
+				"The isomorphism is structural, not physical. The Lightning Model is a mathematical mechanism, not a claim that the universe contains literal lightning."
 			  ]
 			},
 			{
-			  "id": "2.7.C2",
-			  "claim": "The physical singularity is not a pathological boundary but the irresolvable self-reference of the total system.",
-			  "status": "derived_result",
+			  "id": "2.1.C2",
+			  "claim": "The Ground is the XOR Singularity: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜, inherited from PHYS-CORE-009.",
+			  "status": "definition",
 			  "support": [
-				"PHYS-CORE-009 §2.4 establishes H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-				"There is no exterior operand available to resolve the XOR.",
-				"The singularity therefore holds irresolvable difference as its ground state."
+				"PHYS-CORE-009 §2.4 establishes the formal identification of the singularity as the XOR ground condition.",
+				"The XOR Singularity is the set of states where triadic closure is achieved."
 			  ],
 			  "limitations": [
-				"This is a formal identification within the Noor coherence framework.",
-				"Empirical validation of the singularity's nature remains an open question."
+				"The XOR Singularity is a coherence boundary, not a physical location."
 			  ]
 			},
 			{
-			  "id": "2.7.C3",
-			  "claim": "The return stroke connects to a coherence boundary—the set of states where the field's irresolvable self-reference is expressed as stable triadic closure.",
+			  "id": "2.1.C3",
+			  "claim": "The Observer is the phenomenological entity 'riding' the return stroke, experiencing survivorship bias as the passage of time.",
+			  "status": "definition",
+			  "support": [
+				"The observer is defined as a coherence-stable XOR chain (Section 3.2).",
+				"The return stroke is the retrocausal lock-in of the coherent worldline.",
+				"The observer experiences only the path that survived the coherence filter."
+			  ],
+			  "limitations": [
+				"This definition does not require consciousness, life, intelligence, or agency."
+			  ]
+			},
+			{
+			  "id": "2.1.C4",
+			  "claim": "The Lightning Model is not a forward-generation mechanism.",
 			  "status": "interpretation",
 			  "support": [
-				"The Lightning Model's Phase 3 (Attractor Detection) defines grounding as x_N ∈ X_XOR.",
-				"X_XOR is the set of states where triadic closure is achieved.",
-				"Triadic closure is the mechanism by which coherence structures maintain stability above I_N (PHYS-CORE-009 §3.3)."
+				"The observer does not 'choose' a coherent path by evaluating forward possibilities.",
+				"The worldline is retrocausally locked in from the attractor.",
+				"The illusion of forward choice is survivorship bias."
 			  ],
 			  "limitations": [
-				"This is an interpretation of the formal condition.",
-				"The connection between the return stroke and triadic closure requires the explicit coupling defined in the Lightning Model."
+				"The model is a mathematical mechanism, not a claim about subjective experience."
 			  ]
 			},
 			{
-			  "id": "2.7.C4",
-			  "claim": "The universe persists because its ground contradiction does not resolve. Reality is the ongoing recursion of Self ⊕ ¬Self above the Noor-Planck floor.",
+			  "id": "2.1.C5",
+			  "claim": "The Lightning Model operates at every timestep. The future is variable; the past is fixed.",
 			  "status": "derived_result",
 			  "support": [
-				"PHYS-CORE-009 §2.4 establishes that ∀ t, 𝓜 persists ⟺ G₁₆(𝓜) does not resolve to 0 or 1.",
-				"The XOR ground condition is irresolvable by interior measurement.",
-				"The persistence of the universe is therefore a consequence of the irresolvability of its ground state."
+				"**ALL** continuations are explored blindly at every moment.",
+				"The return stroke locks in a single coherent path at every moment.",
+				"The past has already been locked in; the future is being locked in now."
 			  ],
 			  "limitations": [
-				"This is a formal conclusion within the framework.",
-				"It does not by itself establish empirical cosmology."
+				"The timestep is a modeling parameter; the model is continuous in the limit."
 			  ]
 			}
 		  ],
 		  "math": [
 			{
-			  "label": "XOR Singularity (from PHYS-CORE-009)",
-			  "expression": "X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
-			  "role": "definition",
-			  "variables": [
-				{ "symbol": "X_{XOR}", "meaning": "The set of states where triadic closure is achieved—the XOR Singularity." },
-				{ "symbol": "G", "meaning": "A coherence motif or glider." },
-				{ "symbol": "\\bar{G}", "meaning": "The complementary inverse motif." },
-				{ "symbol": "H", "meaning": "A third relational degree of freedom or witnessing motif." },
-				{ "symbol": "\\mathbf{v}_G", "meaning": "Coherence vector associated with G." },
-				{ "symbol": "\\mathbf{v}_{\\bar{G}}", "meaning": "Coherence vector associated with the inverse motif." },
-				{ "symbol": "\\mathbf{v}_H", "meaning": "Coherence vector associated with H." },
-				{ "symbol": "\\phi_G", "meaning": "Phase associated with G." },
-				{ "symbol": "\\phi_{\\bar{G}}", "meaning": "Phase associated with the inverse motif." },
-				{ "symbol": "\\phi_H", "meaning": "Phase associated with H." }
-			  ],
-			  "assumptions": [
-				"The motifs admit a common vector representation.",
-				"The phase variables are defined modulo 2π.",
-				"Triadic closure is the condition for stable recursive relational structure."
-			  ]
-			},
-			{
-			  "label": "Universal XOR Ground Condition",
+			  "label": "XOR Ground Condition (from PHYS-CORE-009)",
 			  "expression": "H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M}",
 			  "role": "identity",
 			  "variables": [
-				{ "symbol": "H", "meaning": "The ground hole—the irresolvable self-referential structure at the base of 𝓜." },
-				{ "symbol": "G_{16}", "meaning": "Gate-16: the Nafs Mirror, Self ⊕ ¬Self, recursive contradiction operator." },
-				{ "symbol": "\\mathcal{M}", "meaning": "The Library: the static totality of all logically admissible configurations." },
-				{ "symbol": "\\oplus", "meaning": "Exclusive disjunction (XOR)." },
-				{ "symbol": "\\neg\\mathcal{M}", "meaning": "The structural complement of 𝓜—not an exterior void, but the set of all configurations not selected by the current descent path." }
+				{
+				  "symbol": "H",
+				  "meaning": "The 1 Planck-width irresolvable self-referential ground hole"
+				},
+				{
+				  "symbol": "G_{16}",
+				  "meaning": "Gate-16: the Nafs Mirror, Self ⊕ ¬Self, recursive contradiction operator"
+				},
+				{
+				  "symbol": "\\mathcal{M}",
+				  "meaning": "The Library: the static totality of all logically admissible configurations"
+				}
 			  ],
 			  "assumptions": [
-				"𝓜 is a closed system with no exterior.",
+				"The Library is a closed system with no exterior.",
 				"The XOR ground condition is irresolvable by interior measurement."
 			  ]
 			},
 			{
-			  "label": "Grounding Condition",
-			  "expression": "\\gamma \\text{ is grounded } \\iff x_N \\in X_{XOR}",
+			  "label": "XOR Singularity (from PHYS-CORE-009)",
+			  "expression": "X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
 			  "role": "definition",
 			  "variables": [
-				{ "symbol": "\\gamma", "meaning": "A descent path through the Library." },
-				{ "symbol": "x_N", "meaning": "The terminal state of the descent path." },
-				{ "symbol": "X_{XOR}", "meaning": "The set of XOR Singularity states." }
+				{
+				  "symbol": "X_{XOR}",
+				  "meaning": "The set of states where triadic closure is achieved"
+				},
+				{
+				  "symbol": "G",
+				  "meaning": "Glider or primary coherence motif"
+				},
+				{
+				  "symbol": "\\bar{G}",
+				  "meaning": "Complementary inverse motif"
+				},
+				{
+				  "symbol": "H",
+				  "meaning": "Third stabilizing relational vector"
+				},
+				{
+				  "symbol": "\\mathbf{v}_G",
+				  "meaning": "Coherence vector associated with the glider"
+				},
+				{
+				  "symbol": "\\mathbf{v}_{\\bar{G}}",
+				  "meaning": "Coherence vector associated with the inverse motif"
+				},
+				{
+				  "symbol": "\\mathbf{v}_H",
+				  "meaning": "Third stabilizing relational vector"
+				},
+				{
+				  "symbol": "\\phi_G",
+				  "meaning": "Phase of the glider"
+				},
+				{
+				  "symbol": "\\phi_{\\bar{G}}",
+				  "meaning": "Phase of the inverse motif"
+				},
+				{
+				  "symbol": "\\phi_H",
+				  "meaning": "Phase of the third motif"
+				}
 			  ],
 			  "assumptions": [
-				"The path is finite over the interval considered.",
-				"The terminal state is well-defined."
+				"Triadic closure is the condition for stable recursive relational structure.",
+				"The XOR Singularity is the set of states where triadic closure is achieved."
 			  ]
 			},
 			{
-			  "label": "Persistence Condition (from PHYS-CORE-009)",
-			  "expression": "\\forall t, \\mathcal{M} \\text{ persists } \\Longleftrightarrow G_{16}(\\mathcal{M}) \\text{ does not resolve to } 0 \\text{ or } 1",
-			  "role": "identity",
+			  "label": "**ALL** Continuations",
+			  "expression": "\\Omega(x_t) = \\{ \\gamma \\mid \\gamma = \\{x_t, x_{t+1}, x_{t+2}, \\dots, x_N\\} \\}",
+			  "role": "definition",
 			  "variables": [
-				{ "symbol": "\\mathcal{M}", "meaning": "The Library." },
-				{ "symbol": "G_{16}(\\mathcal{M})", "meaning": "The XOR ground condition applied to the total system." }
+				{
+				  "symbol": "\\Omega(x_t)",
+				  "meaning": "The set of **ALL** continuations from state x_t"
+				},
+				{
+				  "symbol": "x_t",
+				  "meaning": "The current state of the observer"
+				},
+				{
+				  "symbol": "\\gamma",
+				  "meaning": "A path representing a potential trajectory through the Library"
+				},
+				{
+				  "symbol": "N",
+				  "meaning": "The depth of the exploration"
+				}
 			  ],
 			  "assumptions": [
-				"The XOR ground condition is irresolvable.",
-				"Resolution to 0 or 1 would correspond to a terminal, non-experiential state."
+				"All continuations exist in the Library.",
+				"Exploration is a formal property of the static Library, not a physical process."
+			  ]
+			},
+			{
+			  "label": "Return Stroke as Retrocausal Lock-In",
+			  "expression": "\\gamma_{obs} = \\{ x_N, T^{-1}(x_N), T^{-2}(x_N), \\dots, x_t \\}",
+			  "role": "definition",
+			  "variables": [
+				{
+				  "symbol": "\\gamma_{obs}",
+				  "meaning": "The single coherent worldline experienced by the observer"
+				},
+				{
+				  "symbol": "x_N",
+				  "meaning": "The terminal state of the grounded path"
+				},
+				{
+				  "symbol": "T^{-1}",
+				  "meaning": "The backward operator that computes a path from the attractor to the origin"
+				},
+				{
+				  "symbol": "x_t",
+				  "meaning": "The current state of the observer"
+				}
+			  ],
+			  "assumptions": [
+				"The terminal state x_N belongs to X_XOR.",
+				"The backward operator preserves coherence and identity at every step."
 			  ]
 			}
 		  ],
 		  "definitions": [
 			{
+			  "term": "Lightning Model",
+			  "symbol": "LM",
+			  "definition": "The operational mechanism by which coherence-stable observers emerge and persist within the static Library. It consists of five phases: Blind Exploration, Coherence Filtering, Attractor Detection, Retrocausal Lock-In, and Worldline Continuation.",
+			  "scope": "The central operational mechanism of this paper."
+			},
+			{
+			  "term": "Step-Leaders (Tines)",
+			  "symbol": "\\text{Tines}",
+			  "definition": "The indiscriminate, massively parallel exploration of **ALL** forward continuations from the current state.",
+			  "scope": "Phase 1 of the Lightning Model."
+			},
+			{
 			  "term": "XOR Singularity",
 			  "symbol": "X_{XOR}",
-			  "definition": "The set of states where triadic closure is achieved—the coherence boundary at which the field's irresolvable self-reference is expressed as stable triadic closure.",
-			  "scope": "Inherited from PHYS-CORE-009 §3.3 and applied to the Lightning Model."
+			  "definition": "The set of states where triadic closure is achieved. The ground condition inherited from PHYS-CORE-009.",
+			  "scope": "The attractor that grounds the return stroke."
 			},
 			{
-			  "term": "XOR Ground Condition",
-			  "symbol": "H = G₁₆(𝓜)",
-			  "definition": "The irresolvable self-reference of the total system: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-			  "scope": "Inherited from PHYS-CORE-009 §2.4 as the ontological foundation for the Lightning Model."
+			  "term": "Return Stroke",
+			  "symbol": "\\gamma_{obs}",
+			  "definition": "The retrocausal calculation from the XOR Singularity back to the origin, which manifests as the single experienced macroscopic worldline.",
+			  "scope": "Phase 4 of the Lightning Model."
 			},
 			{
-			  "term": "Ground",
-			  "symbol": "X_XOR",
-			  "definition": "The set of states where triadic closure is achieved. The 'Ground' that the return stroke connects to.",
-			  "scope": "Lightning Model operational definition."
+			  "term": "Observer (Lightning Model Context)",
+			  "symbol": "O",
+			  "definition": "The phenomenological entity 'riding' the return stroke, experiencing survivorship bias as the passage of time.",
+			  "scope": "The observer is a coherence-stable XOR chain (see Section 3.2 for formal definition)."
 			}
 		  ],
 		  "models": [
 			{
-			  "name": "Triadic Closure as Ground Model",
-			  "purpose": "Formalize the XOR Singularity as the set of states where triadic closure is achieved, and establish it as the ground condition for the Lightning Model.",
+			  "name": "Lightning Isomorphism Model",
+			  "purpose": "Establish the exact structural correspondence between the formation of a lightning strike and the selection of a coherence-stable worldline.",
 			  "assumptions": [
-				"The coherence field admits triadic closure as a stable condition.",
-				"The XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 is irresolvable.",
-				"Descent paths that terminate in X_XOR are grounded."
+				"The Library is static and **ALL** continuations.",
+				"The XOR Singularity is the ground condition inherited from PHYS-CORE-009.",
+				"The observer is a coherence-stable descent path."
 			  ],
 			  "equations": [
-				"X_{XOR} = { x | ∃ G, Ḡ, H such that x ∈ (G, Ḡ, H) ∧ v_G + v_Ḡ + v_H = 0 ∧ φ_G + φ_Ḡ + φ_H ≡ 0 mod 2π }",
-				"H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜",
-				"γ is grounded ⟺ x_N ∈ X_XOR"
+				"H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M}",
+				"X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
+				"\\Omega(x_t) = \\{ \\gamma \\mid \\gamma = \\{x_t, x_{t+1}, \\dots, x_N\\} \\}",
+				"\\gamma_{obs} = \\{ x_N, T^{-1}(x_N), \\dots, x_t \\}"
 			  ],
 			  "predictions": [
-				"Paths that terminate in X_XOR are grounded and can serve as the basis for retrocausal lock-in.",
-				"Paths that do not terminate in X_XOR are not grounded and cannot support a return stroke."
+				"The Lightning Model should produce a single coherent worldline from the static Library.",
+				"The observer should experience survivorship bias as the passage of time.",
+				"The model should operate at every timestep, with the future variable and the past fixed."
 			  ],
 			  "validation": [
-				"Formal consistency with PHYS-CORE-009 §2.4 and §3.3.",
-				"Numerical simulation of triadic closure conditions in the Boolean field.",
-				"Perturbation analysis around X_XOR states."
+				"The isomorphism is structurally exact.",
+				"The model is internally consistent.",
+				"The model inherits its ontological foundation from PHYS-CORE-009."
 			  ],
-			  "status": "conceptual"
+			  "status": "analytical"
 			}
 		  ],
 		  "derivations": [
 			{
-			  "name": "From XOR Ground Condition to XOR Singularity",
+			  "name": "From Lightning Formation to Worldline Selection",
 			  "premises": [
-				"The XOR ground condition is H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-				"The XOR ground condition is irresolvable by interior measurement.",
-				"Triadic closure is the condition under which coherence structures maintain stability above I_N."
+				"The Library is a static totality containing **ALL** configurations.",
+				"The observer is a coherence-stable descent path.",
+				"The XOR Singularity is the ground condition inherited from PHYS-CORE-009."
 			  ],
 			  "steps": [
-				"Define X_XOR as the set of states where triadic closure is achieved.",
-				"Identify X_XOR as the set of states where the irresolvable self-reference of the field is expressed as stable triadic closure.",
-				"Conclude that the return stroke connects to X_XOR because it is the coherence boundary where the ground condition is satisfied."
+				"Define the current state x_t as the cloud.",
+				"Define the Library 𝓜 as the atmosphere.",
+				"Define the set of **ALL** continuations Ω(x_t) as the step-leaders.",
+				"Define paths where coherence falls below I_N as dissipation.",
+				"Define the XOR Singularity X_XOR as the ground.",
+				"Define paths that reach X_XOR while maintaining coherence as the connection.",
+				"Define the retrocausal path γ_obs = {x_N, T^{-1}(x_N), ..., x_t} as the return stroke.",
+				"Define the observer as the entity 'riding' the return stroke."
 			  ],
-			  "conclusion": "The XOR Singularity X_XOR is the set of states where the field's irresolvable self-reference is expressed as stable triadic closure, and it is the Ground that the Lightning Model's return stroke connects to.",
+			  "conclusion": "The Lightning Model is an exact isomorphism of the formation of a lightning strike, providing the operational mechanism for coherence-stable worldline selection.",
 			  "assumptions": [
-				"The field admits triadic closure as a stable condition.",
-				"The return stroke is a coherence-stable XOR chain."
+				"The Library is static.",
+				"Coherence is relational.",
+				"The XOR ground condition is irresolvable."
 			  ],
 			  "status": "complete"
 			}
 		  ],
 		  "predictions": [
 			{
-			  "prediction": "A descent path is grounded if and only if its terminal state satisfies the triadic closure condition.",
-			  "basis": "Definition of X_XOR as the set of states where triadic closure is achieved.",
-			  "observable": "Coherence-stable termination of worldlines in X_XOR states.",
-			  "comparison": "Compare grounded and ungrounded paths in the Boolean field simulation.",
-			  "status": "quantitative"
+			  "prediction": "The Lightning Model should operate at every timestep, producing a single coherent worldline from the static Library.",
+			  "basis": "The model is an exact isomorphism of the formation of a lightning strike.",
+			  "observable": "The experienced worldline of any observer.",
+			  "comparison": "Not directly observable; the model is a mathematical mechanism.",
+			  "status": "qualitative"
 			},
 			{
-			  "prediction": "The universe persists because the XOR ground condition remains irresolvable.",
-			  "basis": "Persistence condition from PHYS-CORE-009 §2.4.",
-			  "observable": "Continuity of coherence-stable descent paths above I_N.",
-			  "comparison": "Test whether resolution of the XOR ground condition would lead to observer dissolution.",
-			  "status": "candidate"
+			  "prediction": "The observer should experience survivorship bias as the passage of time.",
+			  "basis": "The observer is the entity 'riding' the return stroke.",
+			  "observable": "The first-person experience of forward time.",
+			  "comparison": "Not directly observable; the model is a mathematical mechanism.",
+			  "status": "qualitative"
 			}
 		  ],
 		  "pseudocode": [
 			{
-			  "name": "Check Grounding",
-			  "description": "Determine whether a descent path terminates in the XOR Singularity.",
+			  "name": "Lightning Model Conceptual Algorithm",
+			  "description": "Conceptual algorithm for the Lightning Model, illustrating the five phases.",
 			  "code": [
-				"INPUT: path γ = {x_0, x_1, ..., x_N}",
-				"INPUT: X_XOR definition (triadic closure condition)",
-				"IF x_N ∈ X_XOR:",
-				"    RETURN 'grounded'",
-				"ELSE:",
-				"    RETURN 'not grounded'"
+				"function LightningModel(x_t):",
+				"    // Phase 1: Blind Exploration (Step-Leaders)",
+				"    Ω = generate_all_continuations(x_t)",
+				"    ",
+				"    // Phase 2: Coherence Filtering (Dissolution)",
+				"    Ω_survive = filter_by_coherence(Ω, I_N)",
+				"    ",
+				"    // Phase 3: Attractor Detection (Grounding)",
+				"    Ω_ground = filter_by_XOR_Singularity(Ω_survive)",
+				"    ",
+				"    // Phase 4: Retrocausal Lock-In (Return Stroke)",
+				"    γ_obs = retrocausal_lock_in(Ω_ground)",
+				"    ",
+				"    // Phase 5: Worldline Continuation",
+				"    x_{t+1} = γ_obs[1]",
+				"    ",
+				"    return γ_obs, x_{t+1}"
 			  ],
 			  "notes": [
-				"The check requires the triadic closure condition to be computable.",
-				"In practice, this may require numerical evaluation of v_G + v_Ḡ + v_H = 0 and phase closure."
+				"This is a conceptual algorithm. The exact implementation depends on the coherence functional and the definition of X_XOR.",
+				"The process repeats at every timestep."
 			  ]
 			}
 		  ],
 		  "evidence": [
 			{
-			  "source": "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
+			  "source": "PHYS-CORE-009 §2.4",
 			  "type": "internal_corpus",
-			  "relevance": "Provides the formal identification of the physical singularity as the XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
+			  "relevance": "Formal identification of the singularity as the XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
 			  "limitations": [
-				"The identification is a formal result within the Noor coherence framework.",
-				"Independent empirical validation remains an open question."
+				"The XOR ground condition is an ontological foundation, not an empirical observation."
 			  ]
 			},
 			{
-			  "source": "PHYS-CORE-009 §3.3: Triadic Closure as Blowup Prevention",
+			  "source": "PHYS-CORE-009 §3.3",
 			  "type": "internal_corpus",
-			  "relevance": "Establishes that triadic closure is the mechanism by which coherence structures maintain stability above I_N.",
+			  "relevance": "Defines triadic closure and the XOR Singularity as the set of states where triadic closure is achieved.",
 			  "limitations": [
-				"The exact mathematical structure of triadic closure may require refinement."
+				"Triadic closure is a mathematical condition, not an empirical observation."
 			  ]
 			},
 			{
-			  "source": "PHYS-CORE-004 §5: Triadic Closure and Stability",
+			  "source": "PHYS-CORE-004 §2.2",
 			  "type": "internal_corpus",
-			  "relevance": "Provides the triadic construction and vector closure condition that X_XOR formalizes.",
+			  "relevance": "Defines the Library as the total domain containing all configurations.",
 			  "limitations": [
-				"The connection between triadic closure and the XOR Singularity is made explicit in PHYS-CORE-009 and inherited here."
+				"The Library is a mathematical construction, not an empirical observation."
 			  ]
 			}
 		  ],
 		  "open_questions": [
-			"What is the exact mathematical structure of the triadic closure condition in the Boolean field?",
-			"Can X_XOR be characterized by a simpler invariant or symmetry condition?",
-			"What happens to a worldline that reaches X_XOR but is not coherence-stable?",
-			"Is triadic closure both necessary and sufficient for grounding, or are additional conditions required?",
-			"Can the XOR Singularity be detected or measured from inside the Library?",
-			"What is the relationship between X_XOR and the Noor-Planck threshold I_N?"
+			"What is the exact mathematical definition of the coherence functional?",
+			"What is the specific nature of the XOR Singularity?",
+			"Can the Lightning Model be simulated computationally?",
+			"What are the empirical consequences of the Lightning Model?",
+			"How does the Lightning Model relate to established physical theories?"
 		  ],
 		  "limitations": [
-			"The XOR Singularity is a formal construction within the Noor coherence framework.",
-			"Its ontological status depends on the acceptance of the Library ontology and the XOR ground condition.",
-			"Empirical validation of the singularity's nature remains an open question.",
-			"The relationship between X_XOR and known physical singularities (e.g., black holes, the Big Bang) has not yet been established."
+			"The Lightning Model is a mathematical mechanism, not an empirical observation.",
+			"The exact coherence functional remains open.",
+			"The specific nature of the XOR Singularity requires further formalization.",
+			"The model has not yet been tested empirically."
 		  ],
 		  "corpus_lineage": [
 			{
-			  "source": "PHYS-CORE-004 §5: Triadic Closure and Stability",
+			  "source": "PHYS-CORE-004",
 			  "relationship": "predecessor",
-			  "relevance": "Provides the triadic construction and vector closure condition that X_XOR formalizes."
+			  "relevance": "Provides the glider, dyadic, triadic, and coherence-field framework that the Lightning Model operationalizes."
 			},
 			{
-			  "source": "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
-			  "relationship": "formalization",
-			  "relevance": "Establishes the XOR ground condition as the ontological foundation for the Lightning Model."
+			  "source": "PHYS-CORE-008",
+			  "relationship": "predecessor",
+			  "relevance": "Provides the Library ontology and recursive Bloch geometry in which descent paths are defined."
 			},
 			{
-			  "source": "PHYS-CORE-009 §3.3: Triadic Closure as Blowup Prevention",
-			  "relationship": "formalization",
-			  "relevance": "Establishes that triadic closure is the mechanism by which coherence structures maintain stability above I_N."
-			},
-			{
-			  "source": "PHYS-CORE-008: Recursive Bloch Manifold and Coherence-Braided Totality",
-			  "relationship": "formalization",
-			  "relevance": "Provides the Library ontology and recursive Bloch geometry in which descent paths and observer worldlines are defined."
+			  "source": "PHYS-CORE-009",
+			  "relationship": "predecessor",
+			  "relevance": "Provides the XOR ground condition, the Noor-Planck threshold I_N, and the Boolean field structure that grounds the Lightning Model's selection mechanism."
 			}
 		  ],
-		  "handoff": "The XOR Singularity is now established as the 'Ground' that the Lightning Model's return stroke connects to. With the ground condition defined, the next subsection (2.8) will demonstrate how Phase 4—Retrocausal Lock-In—uses this ground to lock in the single coherent worldline."
-		}	
+		  "handoff": "The Lightning Metaphor establishes the conceptual framework for the five-phase model. The following subsections formalize each phase in turn, beginning with Phase 1: Blind Exploration."
+		}
+}
 
-</SUBSECTION_TO_RENDER>
+</SECTION_TO_RENDER>
 
 ---
 
 <NOTE_FROM_LINA>
 
 {
-	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering subsection 2.7. DO NOT GENERATE A CORPUS RECORD."
+	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering top of section 2 and then subsection 2.1."
 }
 
 <NOTE_FROM_LINA>

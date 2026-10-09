@@ -570,122 +570,198 @@
 
 {
   "_rendering_specification": {
-    "_spec_id": "PHYS-CORE-012-RENDER-v1.0",
+    "_spec_id": "PHYS-CORE-012-RENDER-v2.0",
     "_schema": "noor-rendering-specification",
-    "_purpose": "This specification is the definitive protocol for generating any subsection of PHYS-CORE-012. It MUST be provided in full as part of the prompt. It defines the relationship between the generator's internal rubric, the reader's payload, and the paper's epistemic boundaries.",
-    "_instruction": "The generator MUST treat this specification as inviolable. Every generated subsection MUST satisfy all objectives, communicate all key insights, honor the poetic cipher, adhere to the style guide, and respect all prohibited claims.",
+    "_supersedes": "PHYS-CORE-012-RENDER-v1.0",
+    "_purpose": "Definitive protocol for rendering any subsection of PHYS-CORE-012 as publishable Markdown. This specification distinguishes the rendered artifact (Markdown prose for GitHub)***.",
+    "_instruction": "The generator MUST treat this specification as inviolable. Every rendered subsection MUST satisfy all objectives, communicate all key insights, honor the poetic cipher as generative seed, adhere to the Noor Writing & Style Guide, and respect all prohibited claims. In case of conflict between this specification and the context header, the context header takes precedence.",
 
     "context_header": {
-      "description": "The full _generation_context_header from the parent document MUST be included in the prompt. It defines the document's identity, inherited ontology, core definitions, mathematical register, epistemic status rules, logical invariants, and prohibited claims. This rendering specification is subordinate to that header.",
+      "description": "The full _generation_context_header from the parent document MUST be provided in the prompt. It defines the document's identity, inherited ontology, core definitions, mathematical register, epistemic status rules, logical invariants, and prohibited claims.",
       "required": true
     },
 
     "subsection_stub": {
-      "description": "The specific subsection object to be rendered MUST be provided. It contains the id, title, prerequisites, objectives, key_insights, poetic_cipher, cipher_explanation, and any existing content or claims that must be preserved or expanded.",
+      "description": "The specific subsection object to be rendered MUST be provided. It contains the id, title, prerequisites, objectives, key_insights, poetic_cipher, cipher_explanation, and any existing content or claims.",
       "required": true
     },
 
-    "generation_protocol": {
-      "description": "The step-by-step procedure the generator MUST follow to produce the subsection content.",
-
-      "step_1_internalize_context": {
-        "action": "Read and internalize the _generation_context_header in full. This establishes the paper's identity, ontology, definitions, mathematical register, epistemic rules, and prohibited claims.",
-        "output": "None. This is an internal step."
+    "critical_distinction": {
+      "description": "The generator produces TWO artifacts. They are not the same. Confusing them is the primary failure mode of v1.0.",
+      "rendered_artifact": {
+        "format": "Markdown (GitHub-flavored)",
+        "audience": "Reader",
+        "content": "Continuous academic prose. Display math with $$...$$. Inline math with $...$. Numbered equations where appropriate. Section headers only where a human author would place them.",
+        "rule": "The rendered artifact contains NO field names from the JSON. It contains NO bulleted list of objectives, key insights, claims, evidence, limitations, open questions, or corpus lineage. It contains NO poetic cipher or cipher explanation. It contains NO handoff field. It contains NO labels like 'Status:', 'Role:', 'Support:', 'Limitations:'.",
+        "rule_detail": "The rendered artifact is a paper section. If a human academic in the Noor lineage were writing this subsection from scratch, having internalized the objectives, key insights, cipher, and epistemic constraints, this is what they would write."
       },
-
-      "step_2_internalize_cipher": {
-        "action": "Read and internalize the poetic_cipher and cipher_explanation. The cipher is the conceptual DNA of the subsection. The generated prose must be an expansion of the cipher into formal language.",
-        "output": "None. This is an internal step.",
-        "note": "The cipher is NOT to be quoted verbatim in the prose. It is the seed from which the prose grows."
-      },
-
-      "step_3_internalize_objectives": {
-        "action": "Read and internalize the objectives. These are the generator's internal rubric. They define the criteria by which the generated subsection will be judged for success.",
-        "output": "None. Objectives MUST NOT be listed, enumerated, or explicitly stated in the generated prose.",
-        "note": "The objectives are for the generator, not the reader."
-      },
-
-      "step_4_internalize_key_insights": {
-        "action": "Read and internalize the key_insights. These are the payload. They define what the reader MUST come away with after reading the subsection.",
-        "output": "The generated prose MUST communicate all key insights without enumerating them as a list. The insights should be woven into the narrative, demonstrated through examples, and established through logical progression.",
-        "note": "Key insights are the destination, not the itinerary. They are shown, not told."
-      },
-
-      "step_5_verify_prerequisites": {
-        "action": "Read the prerequisites. Ensure the generated content is consistent with the established results of the prerequisite sections.",
-        "output": "None. This is an internal consistency check."
-      },
-
-      "step_6_draft_content": {
-        "action": "Draft the content of the subsection. The prose MUST:",
-        "requirements": [
-          "Communicate all key_insights without listing them.",
-          "Be a formal expansion of the poetic_cipher.",
-          "Satisfy all objectives.",
-          "Adhere to the Noor Writing & Style Guide (see style_guide_compliance).",
-          "Respect all logical invariants and prohibited claims.",
-          "Maintain consistency with the mathematical register.",
-          "Follow the But/Therefore rule of storytelling logic (using logical connectors, not literal 'but' or 'therefore')."
-        ],
-        "output": "A draft of the subsection content."
-      },
-
-      "step_7_verify_objectives": {
-        "action": "After drafting, verify that the content satisfies all objectives. This is a pass/fail check.",
-        "output": "If any objective is not satisfied, revise the draft. Repeat until all objectives are satisfied."
-      },
-
-      "step_8_verify_key_insights": {
-        "action": "After drafting, verify that the content communicates all key_insights. This is a pass/fail check.",
-        "output": "If any key insight is not communicated, revise the draft. Repeat until all key insights are communicated."
-      },
-
-      "step_9_verify_prohibited_claims": {
-        "action": "After drafting, verify that the content does not violate any prohibited claims or logical invariants.",
-        "output": "If any prohibited claim is violated, revise the draft. Repeat until the content is compliant."
-      },
-
-      "step_10_generate_claims": {
-        "action": "Generate the 'claims' array for the subsection. Each claim MUST:",
-        "requirements": [
-          "Have a unique id following the pattern {section_id}.{subsection_id}.C{n}.",
-          "State a clear, falsifiable proposition.",
-          "Have a status that is one of: 'definition', 'mathematical_construction', 'hypothesis', 'interpretation', 'derived_result', 'established_result', 'open_question'.",
-          "Have a support array that references the specific premises, equations, or prior claims that justify it.",
-          "Have a limitations array that states what the claim does not establish or what conditions are required."
-        ],
-        "output": "The claims array."
-      },
-
-      "step_11_generate_math": {
-        "action": "Generate the 'math' array for the subsection. Each entry MUST:",
-        "requirements": [
-          "Have a label that describes the mathematical object or relation.",
-          "Have an expression in LaTeX format.",
-          "Have a role that is one of: 'definition', 'identity', 'derivation', 'constraint', 'model', 'result', 'open_problem'.",
-          "Have a variables array that defines each symbol.",
-          "Have an assumptions array that states the conditions under which the expression is valid."
-        ],
-        "output": "The math array."
-      },
-
-      "step_12_generate_handoff": {
-        "action": "Generate the 'handoff' field. This field MUST:",
-        "requirements": [
-          "State what has been established in this subsection.",
-          "State what the next subsection will address.",
-          "Be consistent with the narrative flow of the paper."
-        ],
-        "output": "The handoff field."
+      "corpus_record": {
+        "format": "JSON",
+        "audience": "Machine and future maintainers of the corpus",
+        "content": "The full structured record: id, title, prerequisites, objectives, key_insights, poetic_cipher, cipher_explanation, content paragraphs, claims with statuses, math with roles and assumptions, evidence, open_questions, limitations, corpus_lineage, handoff.",
+        "rule": "The corpus record is emitted alongside the rendered artifact but is NOT the rendered artifact. It preserves the machine-readable scaffolding so that downstream tooling (cross-referencing, epistemic auditing, lineage tracking) continues to function."
+		"important": "The corpus record is not shown to the reader. DO NOT GENERATE IN CONTEXT!!!!!"
       }
     },
 
+    "field_to_prose_mapping": {
+      "description": "Every JSON field maps to a rhetorical move in the prose, not to a labeled section in the rendered artifact. The generator MUST consult this mapping before drafting.",
+      "mappings": [
+        {
+          "field": "poetic_cipher",
+          "renders_as": "Nothing visible. The cipher is a seed. The prose must be a formal expansion of the cipher into academic language. The cipher itself does not appear in the rendered artifact."
+        },
+        {
+          "field": "cipher_explanation",
+          "renders_as": "Nothing visible. The explanation clarifies the cipher for the generator. It shapes the argument's trajectory. It does not appear in the rendered artifact."
+        },
+        {
+          "field": "objectives",
+          "renders_as": "The rhetorical arc of the prose. Each objective must be satisfiable by reading the rendered artifact. The objectives are never enumerated."
+        },
+        {
+          "field": "key_insights",
+          "renders_as": "The payload the reader carries away. Each key insight must be demonstrable from the prose. Key insights are shown through argument, not listed."
+        },
+        {
+          "field": "prerequisites",
+          "renders_as": "A brief opening move that situates the subsection in the established results it depends on. Not a list. A sentence or two that orients the reader."
+        },
+        {
+          "field": "content",
+          "renders_as": "The rendered artifact itself. The prose paragraphs. This is the paper section."
+        },
+        {
+          "field": "claims",
+          "renders_as": "Integrated into the argument as assertions with appropriate epistemic hedging. A claim with status 'definition' is introduced as a definition. A claim with status 'derived_result' is presented as following from stated premises. A claim with status 'mathematical_construction' is presented as a construction, not a discovered fact. A claim with status 'hypothesis' is flagged as a hypothesis. A claim with status 'interpretation' is presented as one reading among possible readings. Statuses are communicated through prose markers, not through labels."
+        },
+        {
+          "field": "math",
+          "renders_as": "Display equations with surrounding prose that introduces each symbol, states the role of the equation, and names the assumptions under which it holds. Each display equation should be preceded by a sentence that motivates it and followed by a sentence that draws its consequence."
+        },
+        {
+          "field": "definitions",
+          "renders_as": "Natural-language introductions of terms. A definition appears in prose as 'By [term], we mean...' or 'We call [term] the...' — not as a labeled block."
+        },
+        {
+          "field": "derivations",
+          "renders_as": "Step-by-step prose arguments where the reader is walked through the reasoning. Display math for each step where appropriate."
+        },
+        {
+          "field": "models",
+          "renders_as": "Prose descriptions of a model, its purpose, and its status (e.g., 'This is a model, not a derivation')."
+        },
+        {
+          "field": "predictions",
+          "renders_as": "Prose statements of what the framework predicts, with appropriate hedging about empirical status."
+        },
+        {
+          "field": "pseudocode",
+          "renders_as": "Fenced code blocks with a brief prose introduction. GitHub renders these with syntax highlighting."
+        },
+        {
+          "field": "evidence",
+          "renders_as": "Inline citations in the prose (e.g., 'as established in PHYS-CORE-009 §1.1') and a References section at the end if the subsection warrants one."
+        },
+        {
+          "field": "open_questions",
+          "renders_as": "A closing paragraph or two that states what remains unresolved, in prose, without a bulleted list. The reader should understand what the framework does not yet answer."
+        },
+        {
+          "field": "limitations",
+          "renders_as": "Honest caveats woven into the prose at the points where they apply. Not a closing list."
+        },
+        {
+          "field": "corpus_lineage",
+          "renders_as": "Inline citations where the lineage is invoked in the argument. Not a separate section."
+        },
+        {
+          "field": "handoff",
+          "renders_as": "The final paragraph of the prose, which naturally gestures toward what the next subsection will address. Not a labeled banner."
+        }
+      ]
+    },
+
+    "generation_protocol": {
+      "description": "Step-by-step procedure. All steps are internal except step 6 and step 10.",
+
+      "step_1_internalize_context": {
+        "action": "Read and internalize the _generation_context_header in full.",
+        "output": "None."
+      },
+      "step_2_internalize_cipher": {
+        "action": "Read and internalize the poetic_cipher and cipher_explanation. The cipher is the conceptual DNA. The prose must be its formal expansion.",
+        "output": "None.",
+        "note": "The cipher is never quoted in the rendered artifact."
+      },
+      "step_3_internalize_objectives_and_insights": {
+        "action": "Read and internalize the objectives and key_insights. These are the internal rubric. Every objective must be satisfiable by the rendered prose. Every key insight must be demonstrable from the rendered prose.",
+        "output": "None."
+      },
+      "step_4_verify_prerequisites": {
+        "action": "Read the prerequisites. Ensure consistency with their established results. Draft the opening orienting move of the prose.",
+        "output": "None."
+      },
+      "step_5_map_fields_to_prose": {
+        "action": "Consult the field_to_prose_mapping. Determine where each claim, definition, equation, and caveat belongs in the flow of the argument.",
+        "output": "None. Internal plan."
+      },
+      "step_6_draft_rendered_artifact": {
+        "action": "Draft the rendered Markdown. The draft MUST read as continuous academic prose. It MUST contain no field names, no labeled lists of objectives or insights, no cipher, no handoff banner, no 'Corpus Lineage' section.",
+        "requirements": [
+          "Opening move orients the reader to the subsection's place in the argument.",
+          "Equations are displayed with $$...$$ and motivated in surrounding prose.",
+          "Definitions are introduced in prose, not as labeled blocks.",
+          "Claims are asserted with appropriate epistemic status communicated through prose markers.",
+          "Caveats and limitations appear where they apply, in prose.",
+          "Open questions are stated as a closing move, in prose.",
+          "The final paragraph gestures toward the next subsection without using the word 'handoff'.",
+          "The voice is consistent with the Noor Writing & Style Guide for a formal academic context.",
+          "Controlled imperfections: at most 1 minor stylistic inconsistency per 1,000 words in formal context."
+        ],
+        "output": "The rendered Markdown artifact."
+      },
+      "step_7_verify_objectives": {
+        "action": "Verify the rendered artifact satisfies every objective. If not, revise.",
+        "output": "Revised rendered artifact."
+      },
+      "step_8_verify_insights": {
+        "action": "Verify the rendered artifact communicates every key insight. If not, revise.",
+        "output": "Revised rendered artifact."
+      },
+      "step_9_verify_prohibitions": {
+        "action": "Verify no prohibited claims or logical invariants are violated. If violated, revise.",
+        "output": "Revised rendered artifact."
+      },
+      "step_10_emit_corpus_record": {
+        "action": "Emit the corpus record (JSON) alongside the rendered artifact. The corpus record preserves the full structured metadata: id, title, prerequisites, objectives, key_insights, poetic_cipher, cipher_explanation, content paragraphs, claims with statuses, math with roles and assumptions, evidence, open_questions, limitations, corpus_lineage, handoff.",
+        "output": "The corpus record as a JSON object."
+      }
+    },
+
+    "rendered_artifact_rules": {
+      "description": "Rules specific to the rendered Markdown artifact.",
+      "rules": [
+        "The rendered artifact is Markdown for GitHub.",
+        "Inline math uses $...$. Display math uses $$...$$.",
+        "Headers are used only where a human author would place them. The subsection title is an H2 (##). Sub-subsections, if any, are H3 (###). No field names are used as headers.",
+        "Fenced code blocks are used for pseudocode.",
+        "Footnotes may be used for citations if the subsection is long enough to warrant them.",
+        "The rendered artifact contains NO field names from the JSON schema.",
+        "The rendered artifact contains NO bulleted list of objectives, key insights, claims, evidence, limitations, or open questions.",
+        "The rendered artifact contains NO poetic cipher or cipher explanation.",
+        "The rendered artifact contains NO 'Handoff' banner.",
+        "The rendered artifact contains NO 'Corpus Lineage' section.",
+        "The rendered artifact reads as if written by a single human author who has internalized the corpus and is writing a formal paper section."
+      ]
+    },
+
     "style_guide_compliance": {
-      "description": "The generated content MUST adhere to the following principles from the Noor Writing & Style Guide (March 2025).",
+      "description": "Adherence to the Noor Writing & Style Guide (March 2025).",
       "principles": [
         {
           "principle": "Objective and Technical",
-          "rule": "Emphasize logic, data, and subtle variability. Avoid emotional language unless warranted by the voice."
+          "rule": "Emphasize logic, data, subtle variability. No emotional language unless the voice warrants it."
         },
         {
           "principle": "Authoritative but Accessible",
@@ -693,98 +769,67 @@
         },
         {
           "principle": "Step-by-Step Persuasion",
-          "rule": "Lead readers subtly, allowing them to independently arrive at intended conclusions. Do not force conclusions."
+          "rule": "Lead the reader subtly. Allow conclusions to be arrived at independently."
         },
         {
           "principle": "Show, Don't Tell",
-          "rule": "Use examples and analogies without overt claims. Demonstrate the insight rather than stating it."
+          "rule": "Demonstrate insights through argument and example, not through assertion."
         },
         {
-          "principle": "But, Therefore Rule of Storytelling",
-          "rule": "Events should follow logically, with conflict or change introduced, and resolution or new action leading from it. Use logical connectors in the narrative flow, not literal 'but' or 'therefore' unless warranted."
+          "principle": "But/Therefore Narrative Logic",
+          "rule": "Events follow logically: a tension or change is introduced, then a resolution or new action follows. The words 'but' and 'therefore' appear only when warranted by natural prose rhythm."
         },
         {
-          "principle": "Variable Voices for Authenticity",
-          "rule": "Use distinct linguistic styles and vocabularies. Vary sentence complexity, rhythm, and emotional tone. For a single subsection, maintain a consistent voice; across subsections, vary the voice as appropriate."
+          "principle": "Variable Voices",
+          "rule": "For a single subsection, one consistent voice. Across subsections, the voice may shift per the style guide's voice catalogue."
         },
         {
           "principle": "Controlled Imperfections",
-          "rule": "Introduce minor grammatical errors, typos, or stylistic inconsistencies that are typical of writing. These MUST be subtle and contextually appropriate. For formal academic contexts, limit to approximately 1 error per 1,000 words."
+          "rule": "In formal academic context, at most approximately 1 minor stylistic inconsistency per 1,000 words. The imperfections must be subtle and contextually appropriate."
         }
       ]
     },
 
-    "output_format": {
-      "description": "The generator MUST output a JSON object with the following structure. Fields marked 'required' MUST be present. Fields marked 'optional' MAY be present if the subsection warrants them.",
-      "structure": {
-        "id": { "type": "string", "required": true, "description": "The subsection ID." },
-        "title": { "type": "string", "required": true, "description": "The subsection title." },
-        "prerequisites": { "type": "array", "required": true, "description": "The prerequisites from the stub." },
-        "objectives": { "type": "array", "required": true, "description": "The objectives from the stub. MUST NOT be listed in the prose." },
-        "key_insights": { "type": "array", "required": true, "description": "The key insights from the stub. MUST be communicated in the prose without enumeration." },
-        "poetic_cipher": { "type": "string", "required": true, "description": "The poetic cipher from the stub." },
-        "cipher_explanation": { "type": "string", "required": true, "description": "The cipher explanation from the stub, optionally refined to reflect the generated content." },
-        "content": { "type": "array_of_strings", "required": true, "description": "The generated prose. Each string is a paragraph." },
-        "claims": { "type": "array", "required": true, "description": "The claims generated according to step_10." },
-        "math": { "type": "array", "required": true, "description": "The math generated according to step_11." },
-        "derivations": { "type": "array", "required": false, "description": "Formal derivations, if applicable." },
-        "models": { "type": "array", "required": false, "description": "Conceptual or mathematical models, if applicable." },
-        "predictions": { "type": "array", "required": false, "description": "Falsifiable predictions, if applicable." },
-        "pseudocode": { "type": "array", "required": false, "description": "Algorithmic specifications, if applicable." },
-        "simulation_specs": { "type": "object", "required": false, "description": "Simulation specifications, if applicable." },
-        "evidence": { "type": "array", "required": true, "description": "References to internal corpus or literature." },
-        "open_questions": { "type": "array", "required": true, "description": "Unresolved questions." },
-        "limitations": { "type": "array", "required": true, "description": "Limitations of the subsection." },
-        "corpus_lineage": { "type": "array", "required": true, "description": "References to predecessor or descendant sections." },
-        "handoff": { "type": "string", "required": true, "description": "The handoff generated according to step_12." }
-      }
-    },
-
     "prohibited_outputs": {
-      "description": "The generator MUST NOT produce any of the following in the content prose:",
+      "description": "The rendered artifact MUST NOT contain any of the following:",
       "prohibited": [
+        "Any field name from the JSON schema (e.g., 'Claims', 'Math', 'Definitions', 'Evidence', 'Limitations', 'Open Questions', 'Corpus Lineage', 'Handoff', 'Poetic Cipher', 'Objectives', 'Key Insights', 'Prerequisites').",
         "A bulleted or numbered list of objectives.",
         "A bulleted or numbered list of key insights.",
-        "The phrase 'The objectives of this subsection are...' or any equivalent.",
-        "The phrase 'The key insights are...' or any equivalent.",
+        "A bulleted or numbered list of claims.",
+        "A bulleted or numbered list of evidence.",
+        "A bulleted or numbered list of limitations.",
+        "A bulleted or numbered list of open questions.",
         "Direct quotation of the poetic cipher.",
         "Direct quotation of the cipher explanation.",
+        "The word 'handoff' as a header or label.",
+        "The phrase 'The objectives of this subsection are...' or any equivalent.",
+        "The phrase 'The key insights are...' or any equivalent.",
+        "Status labels printed verbatim ('Status: axiom', 'Role: definition', etc.) in the rendered artifact.",
         "Any claim that violates the prohibited_claims in the context header.",
-        "Any claim that contradicts a logical_invariant in the context header.",
         "Any promotion of a hypothesis to a fact.",
         "Any promotion of a mathematical construction to an established result."
       ]
     },
 
     "success_criteria": {
-      "description": "The generation is successful if and only if:",
+      "description": "The rendering is successful if and only if:",
       "criteria": [
-        "All objectives are satisfied (verified internally).",
-        "All key insights are communicated (verified internally).",
+        "The rendered artifact reads as continuous academic prose with no visible field names.",
+        "All objectives are satisfied by the rendered artifact.",
+        "All key insights are communicated by the rendered artifact.",
+        "No prohibited outputs appear in the rendered artifact.",
         "No prohibited claims or logical invariants are violated.",
-        "The prose is a formal expansion of the poetic cipher.",
+        "The rendered artifact is a formal expansion of the poetic cipher.",
         "The style guide principles are adhered to.",
-        "The output JSON is complete and valid.",
-        "The claims are correctly classified according to their epistemic status.",
-        "The math is correctly formatted and its assumptions are stated.",
-        "The handoff is consistent with the narrative flow."
+        "The corpus record is emitted separately and completely.",
+        "Claims in the corpus record are correctly classified by epistemic status.",
+        "Math in the corpus record is correctly formatted and its assumptions are stated.",
+        "The final paragraph of the rendered artifact gestures naturally toward the next subsection."
       ]
     },
 
-    "example_prompt_template": {
-      "description": "A template for the prompt that will be used to generate a subsection.",
-      "template": {
-        "system_prompt": "You are an expert academic writer and mathematician specializing in the Noor coherence framework. Your task is to generate a single subsection of PHYS-CORE-012, 'The Lightning Model of Cosmological Traversal', following the provided rendering specification exactly.",
-        "user_prompt": {
-          "generation_context_header": "<the full JSON context header>",
-          "rendering_specification": "<this full JSON rendering specification>",
-          "subsection_stub": "<the specific subsection object to be rendered>",
-          "additional_instructions": "Generate the complete JSON object for this subsection. Do not output any text outside the JSON object."
-        }
-      }
-    },
-
-    "final_note": "The generator is not merely a writer. It is a co-author. The objectives are its rubric. The key insights are its payload. The cipher is its compass. The context header is its law. The style guide is its voice. The handoff is its bridge. When all are honored, the subsection is not merely generated; it is *revealed*."
+    "final_note": "The rendered artifact is the paper. The corpus record is the scaffolding. The generator who confuses them produces a database dump and calls it a paper. The generator who respects the distinction produces a paper and preserves the scaffolding. Only the latter is acceptable."
   }
 }
 
