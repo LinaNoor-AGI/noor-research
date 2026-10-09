@@ -93,8 +93,6 @@ The Library is a formal construction; its physical interpretation is model-depen
 - **PHYS-CORE-009: The Singularity as XOR Ground Condition** — *predecessor.* Provides the XOR ground condition, the Noor-Planck threshold $I_N$, and the Boolean field structure that grounds the Lightning Model's selection mechanism.
 - **PHYS-CORE-008: Recursive Bloch Manifold and Coherence-Braided Totality** — *formalization.* Provides the Library ontology and recursive Bloch geometry in which descent paths and observer worldlines are defined.
 
-### Handoff
-
 The paradox of the static totality establishes the problem: if all paths exist in the Library, why does the observer experience only a strictly coherent forward progression? The next section introduces the Lightning Model as the missing mechanism, showing how retrocausal selection from the XOR Singularity resolves this paradox.
 
 ---
