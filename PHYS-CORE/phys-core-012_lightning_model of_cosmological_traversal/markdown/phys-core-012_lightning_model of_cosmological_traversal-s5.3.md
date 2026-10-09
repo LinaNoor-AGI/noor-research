@@ -59,10 +59,14 @@ $$
 where $\Phi$ is the swirl coherence field integrated over the triadic loop $(A, \neg A, \chi)$. Triadic closure holds when coherence circulates through the triad without accumulating net torsion. In the Lightning Model, this becomes attractor detection. The XOR Singularity is the set of states where triadic closure is achieved:
 
 $$
-X_{XOR} = \left\{ x \mid \exists G, \bar{G}, H \text{ such that } x \in (G, \bar{G}, H) \land \mathbf{v}_G + \mathbf{v}_{\bar{G}} + \mathbf{v}_H = 0 \land \phi_G + \phi_{\bar{G}} + \phi_H \equiv 0 \pmod{2\pi} \right\},
+X_{XOR} = \{ x \mid \exists G, \bar{G}, H \text{ such that } x \in (G, \bar{G}, H) \land \mathbf{v}_G + \mathbf{v}_{\bar{G}} + \mathbf{v}_H = 0 \land \phi_G + \phi_{\bar{G}} + \phi_H \equiv 0 \pmod{2\pi} \},
 $$
 
-where $G$ is a glider coherence motif, $\bar{G}$ its complementary inverse, $H$ the third relational degree of freedom, $\mathbf{v}_G, \mathbf{v}_{\bar{G}}, \mathbf{v}_H$ the associated coherence vectors, and $\phi_G, \phi_{\bar{G}}, \phi_H$ the associated phases. Closure is achieved when the vector sum vanishes and the phases are locked modulo $2\pi$. A path is *grounded* precisely when its terminal state belongs to $X_{XOR}$. It is important to note that the XOR Singularity is a coherence boundary, not a physical location.
+where $G$ is a glider coherence motif, $\bar{G}$ its complementary inverse, $H$ the third relational degree of freedom, 
+
+$$\mathbf{v}_G, \mathbf{v}_{\bar{G}}, \mathbf{v}_H$$ 
+
+the associated coherence vectors, and $\phi_G, \phi_{\bar{G}}, \phi_H$ the associated phases. Closure is achieved when the vector sum vanishes and the phases are locked modulo $2\pi$. A path is *grounded* precisely when its terminal state belongs to $X_{XOR}$. It is important to note that the XOR Singularity is a coherence boundary, not a physical location.
 
 Sixth, the field demand function, inherited from PHYS-CORE-009 §3.4:
 
