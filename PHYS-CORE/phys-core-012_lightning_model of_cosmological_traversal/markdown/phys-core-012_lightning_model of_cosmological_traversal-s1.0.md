@@ -97,3 +97,8 @@ The Library is a formal construction; its physical interpretation is model-depen
 
 The paradox of the static totality establishes the problem: if all paths exist in the Library, why does the observer experience only a strictly coherent forward progression? The next section introduces the Lightning Model as the missing mechanism, showing how retrocausal selection from the XOR Singularity resolves this paradox.
 
+---
+
+| PREVIOUS | | NEXT |
+| --- | --- | --- | 
+| [prev_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/markdown/phys-core-012_lightning_model%20of_cosmological_traversal-index.md) | [INDEX](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/markdown/phys-core-012_lightning_model%20of_cosmological_traversal-index.md) | [next_section](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/markdown/phys-core-012_lightning_model%20of_cosmological_traversal-s1.1.md) |
