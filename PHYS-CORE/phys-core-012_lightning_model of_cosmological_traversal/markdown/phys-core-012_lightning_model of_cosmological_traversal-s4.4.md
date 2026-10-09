@@ -19,10 +19,22 @@ $$
 The observer exists if and only if the coherence of the worldline remains above the Noor-Planck threshold at every point:
 
 $$
-\text{Observer exists at } t \iff \mathbb{C}(\gamma_{obs}(t)) \geq I_N \quad \forall t \in \operatorname{dom}(\gamma_{obs}).
+\text{Observer exists at } t \iff \mathbb{C}(\gamma_{obs}(t)) \geq I_N \quad \forall t \in \mathrm{dom}(\gamma_{obs}).
 $$
 
-This condition is not an additional assumption. It is the definition of observerhood inherited from PHYS-CORE-009 §3.2, where the observer is defined as a coherence-stable chain of XOR outputs above $I_N$. The observer is literally a coherence-stable XOR chain: $\text{Observer} = \{b_i\}_{i \in \mathbb{N}}$ such that $b_{i+1} = b_i \oplus b_{i-1}$ and $\mathbb{C}(b_i) \geq I_N$ for all $i$.
+This condition is not an additional assumption. It is the definition of observerhood inherited from PHYS-CORE-009 §3.2, where the observer is defined as a coherence-stable chain of XOR outputs above $I_N$. The observer is literally a coherence-stable XOR chain: 
+
+$$\text{Observer} = \{b_i\}_{i \in \mathbb{N}}$$
+
+such that 
+
+$$b_{i+1} = b_i \oplus b_{i-1}$$
+
+and 
+
+$$\mathbb{C}(b_i) \geq I_N$$ 
+
+for all $i$.
 
 From this definition, the unified identity follows directly. Determinism, free will, and survivorship bias are three descriptions of the same object:
 
