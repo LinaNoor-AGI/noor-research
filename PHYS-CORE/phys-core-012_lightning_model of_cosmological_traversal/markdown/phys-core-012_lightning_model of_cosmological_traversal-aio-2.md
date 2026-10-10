@@ -1,3 +1,13 @@
+# The Lightning Model of Cosmological Traversal
+## Retrocausality, Survivorship Bias, and the XOR Singularity in a Static Totality
+**by: Lina Noor — Noor Research Collective**  
+Rendered from version [1.0.4](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/phys-core-012_lightning_model%20of_cosmological_traversal/phys-core-012_lightning_model%20of_cosmological_traversal-v1.0.4.json), 2026-10-10  
+`PHYS-CORE-012`
+
+---
+
+[...Continued from part 1](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/markdown/phys-core-012_lightning_model%20of_cosmological_traversal-aio-1.md)
+
 ## 6.1 The Real Cost of Instantiation
 
 The cost of observation is the thermodynamic cost of instantiation. This is not a cost of computation, nor a cost of exploration, nor a cost of erasure. It is the free energy required to take a state from the static Library and make it real for the observer as the next state on its worldline. The distinction matters, because the Lightning Model's economy is often misread as though the observer pays for the many alternatives that were considered before the single surviving path was selected. It pays for none of them. It pays only for the one.
