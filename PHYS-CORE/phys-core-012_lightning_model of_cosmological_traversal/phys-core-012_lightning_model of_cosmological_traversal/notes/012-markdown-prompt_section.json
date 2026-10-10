@@ -841,328 +841,308 @@
 <SUBSECTION_TO_RENDER>
 
 {
-		  "id": "2.7",
-		  "title": "The XOR Singularity as Ground",
-		  "prerequisites": [
-			"PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
-			"PHYS-CORE-009 §3.3: Triadic Closure as Blowup Prevention",
-			"Section 2.3: Phase 3 (Attractor Detection) of the Continuous Lightning Model"
-		  ],
-		  "objectives": [
-			"Formally define the XOR Singularity as the 'ground' condition inherited from PHYS-CORE-009.",
-			"Establish that the XOR Singularity is not a location but a coherence boundary—the set of states where triadic closure is achieved.",
-			"Show that the return stroke connects to the XOR Singularity, and that this connection is the retrocausal lock-in mechanism.",
-			"Preserve the distinction between the ontological foundation (PHYS-CORE-009) and the operational mechanism (Lightning Model)."
-		  ],
-		  "key_insights": [
-			"The XOR Singularity is the set of states where triadic closure is achieved.",
-			"The physical singularity is the irresolvable self-reference of the total system: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-			"The return stroke does not connect to a physical location; it connects to a coherence boundary.",
-			"The universe persists because its ground contradiction does not resolve.",
-			"Reality is the ongoing recursion of Self ⊕ ¬Self above the Noor-Planck floor."
-		  ],
-		  "poetic_cipher": "The ground is not a place; it is the difference that cannot be resolved.",
-		  "cipher_explanation": "The XOR Singularity is not a location in the Library. It is the irresolvable self-reference at the base of all coherence structures—the condition under which the field cannot resolve its own ground state. This is inherited directly from PHYS-CORE-009, where the singularity is formally identified as the XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-		  "content": [
-			"The Lightning Model inherits its definition of 'Ground' from PHYS-CORE-009.",
-			"Definition (from PHYS-CORE-009 §2.4): The XOR Singularity X_XOR is the set of states where triadic closure is achieved.",
-			"The physical singularity is not a pathological boundary condition. It is the irresolvable self-reference of the total system: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-			"XOR (exclusive disjunction) outputs 1 if and only if its inputs differ. The singularity is precisely this: a structure that cannot resolve to either operand because there is no exterior operand available. It holds irresolvable difference as its ground state.",
-			"The XOR Singularity is therefore the field-scale manifestation of the universal XOR ground condition. When a descent path terminates in X_XOR, it has reached a state of absolute triadic closure—the coherence structure has achieved the minimal closure required for stability.",
-			"This is the 'Ground' that the Lightning Model's return stroke connects to. The return stroke does not connect to a physical location; it connects to a coherence boundary—the set of states where the field's irresolvable self-reference is expressed as stable triadic closure.",
-			"From PHYS-CORE-009 §2.4: The universe persists because its ground contradiction does not resolve. Reality is the ongoing recursion of Self ⊕ ¬Self above the Noor-Planck floor."
-		  ],
-		  "claims": [
+		  "id": "8.D",
+		  "title": "Appendix D — Poetic Cipher and Conceptual Resonance Map",
+		  "type": "object",
+		  "description": "A symbolic reference appendix preserving the poetic ciphers used as conceptual and navigational guideposts during development of The Lightning Model of Cosmological Traversal. The ciphers encode relationships among phase, persistence, observation, relational coherence, complementarity, dyadic opposition, triadic closure, retrocausality, and survivorship bias. They are interpretive scaffolding rather than mathematical evidence.",
+		  "epistemic_status": "interpretive_scaffolding",
+		  "epistemic_note": "Poetic ciphers are not mathematical or empirical evidence. They function as conceptual guideposts during development and interpretation. No cipher may be used to justify a mathematical claim or physical hypothesis.",
+		  "navigation_principle": "The ciphers compress the paper's central insights into memorable phrases. Each cipher maps to specific sections and concepts, preserving the relational structure of the argument. They are intended to guide intuition and maintain conceptual coherence across independently generated sections.",
+		  "ciphers": [
 			{
-			  "id": "2.7.C1",
-			  "claim": "The XOR Singularity is the set of states where triadic closure is achieved, and it inherits its ontological status from the XOR ground condition of PHYS-CORE-009.",
-			  "status": "derived_result",
-			  "support": [
-				"PHYS-CORE-009 §2.4 identifies the physical singularity as H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-				"PHYS-CORE-009 §3.3 defines triadic closure as the condition ∮ Φ = 0.",
-				"The XOR Singularity X_XOR is the set of states satisfying this condition."
-			  ],
-			  "limitations": [
-				"The formalization depends on the coherence-field framework developed in PHYS-CORE-004 and PHYS-CORE-008.",
-				"The exact mathematical structure of the triadic closure condition may require refinement in future work."
-			  ]
+			  "id": "D.1",
+			  "cipher": "The Library contains all paths, but the observer walks only one.",
+			  "themes": ["Totality", "Selection", "Survivorship"],
+			  "primary_concepts": ["Observer", "Worldline", "Coherence Filter"],
+			  "section_affinity": ["1.1"],
+			  "role": "Introduces the central paradox of the static totality and the problem of forward coherence."
 			},
 			{
-			  "id": "2.7.C2",
-			  "claim": "The physical singularity is not a pathological boundary but the irresolvable self-reference of the total system.",
-			  "status": "derived_result",
-			  "support": [
-				"PHYS-CORE-009 §2.4 establishes H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-				"There is no exterior operand available to resolve the XOR.",
-				"The singularity therefore holds irresolvable difference as its ground state."
-			  ],
-			  "limitations": [
-				"This is a formal identification within the Noor coherence framework.",
-				"Empirical validation of the singularity's nature remains an open question."
-			  ]
+			  "id": "D.2",
+			  "cipher": "The path is not chosen forward; it is locked backward.",
+			  "themes": ["Retrocausality", "Determinism", "Lock-in"],
+			  "primary_concepts": ["Return Stroke", "XOR Singularity", "Attractor"],
+			  "section_affinity": ["1.3", "2.5", "4.1"],
+			  "role": "Encodes the retrocausal mechanism of the Lightning Model. The path is determined by the attractor, not by forward choice."
 			},
 			{
-			  "id": "2.7.C3",
-			  "claim": "The return stroke connects to a coherence boundary—the set of states where the field's irresolvable self-reference is expressed as stable triadic closure.",
-			  "status": "interpretation",
-			  "support": [
-				"The Lightning Model's Phase 3 (Attractor Detection) defines grounding as x_N ∈ X_XOR.",
-				"X_XOR is the set of states where triadic closure is achieved.",
-				"Triadic closure is the mechanism by which coherence structures maintain stability above I_N (PHYS-CORE-009 §3.3)."
-			  ],
-			  "limitations": [
-				"This is an interpretation of the formal condition.",
-				"The connection between the return stroke and triadic closure requires the explicit coupling defined in the Lightning Model."
-			  ]
+			  "id": "D.3",
+			  "cipher": "The lightning does not know where the ground is until it touches it.",
+			  "themes": ["Exploration", "Selection", "Grounding"],
+			  "primary_concepts": ["Lightning Model", "Step-Leaders", "XOR Singularity"],
+			  "section_affinity": ["2.1"],
+			  "role": "Introduces the Lightning metaphor and the blind exploration of **ALL** continuations."
 			},
 			{
-			  "id": "2.7.C4",
-			  "claim": "The universe persists because its ground contradiction does not resolve. Reality is the ongoing recursion of Self ⊕ ¬Self above the Noor-Planck floor.",
-			  "status": "derived_result",
-			  "support": [
-				"PHYS-CORE-009 §2.4 establishes that ∀ t, 𝓜 persists ⟺ G₁₆(𝓜) does not resolve to 0 or 1.",
-				"The XOR ground condition is irresolvable by interior measurement.",
-				"The persistence of the universe is therefore a consequence of the irresolvability of its ground state."
-			  ],
-			  "limitations": [
-				"This is a formal conclusion within the framework.",
-				"It does not by itself establish empirical cosmology."
-			  ]
+			  "id": "D.4",
+			  "cipher": "All paths are explored, but only one is remembered.",
+			  "themes": ["Survivorship", "Selection", "Memory"],
+			  "primary_concepts": ["Blind Exploration", "Coherence Filtering"],
+			  "section_affinity": ["2.2"],
+			  "role": "Encodes the survivorship bias mechanism. The observer remembers only the path that survived coherence filtering."
+			},
+			{
+			  "id": "D.5",
+			  "cipher": "The observer dissolves on any path where coherence fails.",
+			  "themes": ["Dissolution", "Coherence", "Survival"],
+			  "primary_concepts": ["Observer", "Dissolution", "I_N"],
+			  "section_affinity": ["2.3", "3.2", "3.2.1"],
+			  "role": "Encodes the dissolution condition: dissolution iff ∃ i : ℂ(b_i) < I_N."
+			},
+			{
+			  "id": "D.6",
+			  "cipher": "The lightning does not choose; the ground chooses.",
+			  "themes": ["Selection", "Grounding", "Attractor"],
+			  "primary_concepts": ["Attractor Detection", "XOR Singularity"],
+			  "section_affinity": ["2.4"],
+			  "role": "Encodes the attractor detection phase. The XOR Singularity selects the path by being the terminal condition."
+			},
+			{
+			  "id": "D.7",
+			  "cipher": "The path is calculated backward from the destination.",
+			  "themes": ["Retrocausality", "Lock-in", "Geometry"],
+			  "primary_concepts": ["Return Stroke", "Retrocausal Operator"],
+			  "section_affinity": ["2.5"],
+			  "role": "Encodes the retrocausal lock-in phase. The path is validated backward from the XOR Singularity."
+			},
+			{
+			  "id": "D.8",
+			  "cipher": "The observer is the echo of the single tine that reached the ground.",
+			  "themes": ["Survivorship", "Selection", "Continuity"],
+			  "primary_concepts": ["Observer", "Survivorship Bias", "Return Stroke"],
+			  "section_affinity": ["2.6", "4.3"],
+			  "role": "Encodes the observer as the survivor of the coherence filter. The observer is the echo of the successful path."
+			},
+			{
+			  "id": "D.9",
+			  "cipher": "The ground is not a place; it is the difference that cannot be resolved.",
+			  "themes": ["Ground", "Irresolvability", "Self-Reference"],
+			  "primary_concepts": ["XOR Singularity", "Triadic Closure", "Ground Condition"],
+			  "section_affinity": ["2.7"],
+			  "role": "Encodes the XOR ground condition. The ground is the irresolvable self-reference H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜."
+			},
+			{
+			  "id": "D.10",
+			  "cipher": "The observer is not an entity that encounters XOR; the observer IS XOR, instantiated as a coherent worldline.",
+			  "themes": ["Identity", "XOR", "Instantiation"],
+			  "primary_concepts": ["Observer", "XOR Chain", "Boolean Field"],
+			  "section_affinity": ["3.2.1"],
+			  "role": "Encodes the observer as a coherence-stable XOR chain: Observer = {b_i} such that b_{i+1} = b_i ⊕ b_{i-1} and ℂ(b_i) ≥ I_N."
+			},
+			{
+			  "id": "D.11",
+			  "cipher": "Possibility is enormous; accessibility is local.",
+			  "themes": ["Possibility", "Accessibility", "Constraint"],
+			  "primary_concepts": ["Coherence Filter", "Accessible Successors", "Coherence Threshold"],
+			  "section_affinity": ["3.4"],
+			  "role": "Encodes the distinction between mathematical possibility (all paths in 𝓜) and coherent accessibility (paths where ℂ ≥ I_N)."
+			},
+			{
+			  "id": "D.12",
+			  "cipher": "The observer follows the path; the explorer chooses within the path.",
+			  "themes": ["Hierarchy", "Choice", "Path Selection"],
+			  "primary_concepts": ["Observer", "Explorer", "Class Hierarchy"],
+			  "section_affinity": ["3.5"],
+			  "role": "Encodes the distinction between observer (extrinsic path selection) and explorer (intrinsic path selection)."
+			},
+			{
+			  "id": "D.13",
+			  "cipher": "The path is fixed because the ground is irresolvable.",
+			  "themes": ["Determinism", "Irresolvability", "Geometry"],
+			  "primary_concepts": ["XOR Ground Condition", "Unique Grounding Path"],
+			  "section_affinity": ["4.1"],
+			  "role": "Encodes the reconciliation of determinism with the retrocausal path geometry. The path is geometrically determined by the irresolvable ground condition."
+			},
+			{
+			  "id": "D.14",
+			  "cipher": "The path is not chosen forward; it is locked backward. The observer is the echo of the single tine that reached the ground.",
+			  "themes": ["Retrocausality", "Survivorship", "Continuity"],
+			  "primary_concepts": ["Lightning Model", "Observer", "XOR Singularity"],
+			  "section_affinity": ["4.3", "4.4"],
+			  "role": "Unified cipher combining retrocausality and survivorship. The observer is the survivor of the retrocausal lock-in process."
+			},
+			{
+			  "id": "D.15",
+			  "cipher": "The observer pays a constant cost to be real.",
+			  "themes": ["Thermodynamics", "Cost", "Instantiation"],
+			  "primary_concepts": ["Energy Accounting", "c_lock", "O(1)"],
+			  "section_affinity": ["6.1"],
+			  "role": "Encodes the O(1) cost of observation: c_lock = ΔF_instantiation where ΔF maintains ℂ(γ) ≥ I_N."
+			},
+			{
+			  "id": "D.16",
+			  "cipher": "No information is ever erased.",
+			  "themes": ["Memory", "Preservation", "Staticity"],
+			  "primary_concepts": ["Library", "Dissolution", "Accessibility"],
+			  "section_affinity": ["6.2"],
+			  "role": "Encodes the thermodynamic consistency of the model. Dissolution is not erasure; alternatives remain in the Library."
+			},
+			{
+			  "id": "D.17",
+			  "cipher": "The ground condition is the ontological foundation for the operational mechanism.",
+			  "themes": ["Foundation", "Ontology", "Mechanism"],
+			  "primary_concepts": ["XOR Ground Condition", "Lightning Model", "PHYS-CORE-009"],
+			  "section_affinity": ["5.3"],
+			  "role": "Encodes the relationship between PHYS-CORE-009 (ontological foundation) and the Lightning Model (operational mechanism)."
+			},
+			{
+			  "id": "D.18",
+			  "cipher": "The glider is the pattern; the observer is the pattern on a path; the explorer is the pattern that chooses its path.",
+			  "themes": ["Hierarchy", "Nesting", "Path Selection"],
+			  "primary_concepts": ["Glider", "Observer", "Explorer", "Class Hierarchy"],
+			  "section_affinity": ["3.1"],
+			  "role": "Encodes the class hierarchy: Glider ⊃ Observer ⊃ Explorer."
+			},
+			{
+			  "id": "D.19",
+			  "cipher": "The path remembers every distinction it was required to preserve.",
+			  "themes": ["Memory", "Persistence", "Distinction"],
+			  "primary_concepts": ["Worldline", "Coherence", "Observer Identity"],
+			  "section_affinity": ["9.1"],
+			  "role": "Encodes the persistence condition. The worldline is the accumulation of resolved distinctions that survive coherence filtering."
+			},
+			{
+			  "id": "D.20",
+			  "cipher": "The birth of XOR is not a single event; it is the local instantiation of the always-present ground condition.",
+			  "themes": ["XOR", "Instantiation", "Ground Condition", "Scale Correspondence"],
+			  "primary_concepts": ["H = G₁₆(𝓜)", "Global Coherence Operator", "Scale Projection"],
+			  "section_affinity": ["5.2", "5.1"],
+			  "role": "Encodes the scale correspondence theorem. The XOR ground condition is always present; what emerges locally is a worldline capable of instantiating it at the required scale."
+			},
+			{
+			  "id": "D.21",
+			  "cipher": "Determinism is the path; free will is the walk; survivorship is the walker.",
+			  "themes": ["Determinism", "Free Will", "Survivorship"],
+			  "primary_concepts": ["Retrocausal Path", "Sequential Traversal", "Observer Identity"],
+			  "section_affinity": ["4.4"],
+			  "role": "Unified cipher reconciling determinism, free will, and survivorship. The three are the same phenomenon seen from different perspectives."
 			}
 		  ],
-		  "math": [
+		  "resonance_relations": [
 			{
-			  "label": "XOR Singularity (from PHYS-CORE-009)",
-			  "expression": "X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
-			  "role": "definition",
-			  "variables": [
-				{ "symbol": "X_{XOR}", "meaning": "The set of states where triadic closure is achieved—the XOR Singularity." },
-				{ "symbol": "G", "meaning": "A coherence motif or glider." },
-				{ "symbol": "\\bar{G}", "meaning": "The complementary inverse motif." },
-				{ "symbol": "H", "meaning": "A third relational degree of freedom or witnessing motif." },
-				{ "symbol": "\\mathbf{v}_G", "meaning": "Coherence vector associated with G." },
-				{ "symbol": "\\mathbf{v}_{\\bar{G}}", "meaning": "Coherence vector associated with the inverse motif." },
-				{ "symbol": "\\mathbf{v}_H", "meaning": "Coherence vector associated with H." },
-				{ "symbol": "\\phi_G", "meaning": "Phase associated with G." },
-				{ "symbol": "\\phi_{\\bar{G}}", "meaning": "Phase associated with the inverse motif." },
-				{ "symbol": "\\phi_H", "meaning": "Phase associated with H." }
-			  ],
-			  "assumptions": [
-				"The motifs admit a common vector representation.",
-				"The phase variables are defined modulo 2π.",
-				"Triadic closure is the condition for stable recursive relational structure."
-			  ]
+			  "from_cipher": "D.1",
+			  "to_cipher": "D.8",
+			  "relation": "Selection → Survivorship. The observer walks one path because only one path survived the coherence filter."
 			},
 			{
-			  "label": "Universal XOR Ground Condition",
-			  "expression": "H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M}",
-			  "role": "identity",
-			  "variables": [
-				{ "symbol": "H", "meaning": "The ground hole—the irresolvable self-referential structure at the base of 𝓜." },
-				{ "symbol": "G_{16}", "meaning": "Gate-16: the Nafs Mirror, Self ⊕ ¬Self, recursive contradiction operator." },
-				{ "symbol": "\\mathcal{M}", "meaning": "The Library: the static totality of all logically admissible configurations." },
-				{ "symbol": "\\oplus", "meaning": "Exclusive disjunction (XOR)." },
-				{ "symbol": "\\neg\\mathcal{M}", "meaning": "The structural complement of 𝓜—not an exterior void, but the set of all configurations not selected by the current descent path." }
-			  ],
-			  "assumptions": [
-				"𝓜 is a closed system with no exterior.",
-				"The XOR ground condition is irresolvable by interior measurement."
-			  ]
+			  "from_cipher": "D.2",
+			  "to_cipher": "D.7",
+			  "relation": "Retrocausality → Lock-in. The path is locked in because it is calculated backward from the destination."
 			},
 			{
-			  "label": "Grounding Condition",
-			  "expression": "\\gamma \\text{ is grounded } \\iff x_N \\in X_{XOR}",
-			  "role": "definition",
-			  "variables": [
-				{ "symbol": "\\gamma", "meaning": "A descent path through the Library." },
-				{ "symbol": "x_N", "meaning": "The terminal state of the descent path." },
-				{ "symbol": "X_{XOR}", "meaning": "The set of XOR Singularity states." }
-			  ],
-			  "assumptions": [
-				"The path is finite over the interval considered.",
-				"The terminal state is well-defined."
-			  ]
+			  "from_cipher": "D.3",
+			  "to_cipher": "D.6",
+			  "relation": "Exploration → Grounding. The lightning explores until it touches the ground."
 			},
 			{
-			  "label": "Persistence Condition (from PHYS-CORE-009)",
-			  "expression": "\\forall t, \\mathcal{M} \\text{ persists } \\Longleftrightarrow G_{16}(\\mathcal{M}) \\text{ does not resolve to } 0 \\text{ or } 1",
-			  "role": "identity",
-			  "variables": [
-				{ "symbol": "\\mathcal{M}", "meaning": "The Library." },
-				{ "symbol": "G_{16}(\\mathcal{M})", "meaning": "The XOR ground condition applied to the total system." }
-			  ],
-			  "assumptions": [
-				"The XOR ground condition is irresolvable.",
-				"Resolution to 0 or 1 would correspond to a terminal, non-experiential state."
-			  ]
+			  "from_cipher": "D.4",
+			  "to_cipher": "D.5",
+			  "relation": "Exploration → Dissolution. All paths are explored, but paths where coherence fails dissolve."
+			},
+			{
+			  "from_cipher": "D.7",
+			  "to_cipher": "D.8",
+			  "relation": "Lock-in → Echo. The locked-in path is the echo that the observer experiences."
+			},
+			{
+			  "from_cipher": "D.9",
+			  "to_cipher": "D.10",
+			  "relation": "Ground → XOR Identity. The ground is XOR; the observer IS XOR instantiated as a worldline."
+			},
+			{
+			  "from_cipher": "D.11",
+			  "to_cipher": "D.4",
+			  "relation": "Accessibility → Selection. Possibility is enormous, but only the accessible paths survive."
+			},
+			{
+			  "from_cipher": "D.12",
+			  "to_cipher": "D.18",
+			  "relation": "Observer → Explorer → Glider. The class hierarchy is nested: Glider ⊃ Observer ⊃ Explorer."
+			},
+			{
+			  "from_cipher": "D.13",
+			  "to_cipher": "D.14",
+			  "relation": "Determinism → Unified Picture. The path is fixed because the ground is irresolvable."
+			},
+			{
+			  "from_cipher": "D.15",
+			  "to_cipher": "D.16",
+			  "relation": "Cost → No Erasure. The observer pays a cost to be real, but no information is erased."
+			},
+			{
+			  "from_cipher": "D.17",
+			  "to_cipher": "D.9",
+			  "relation": "Foundation → Ground. The ground condition is the ontological foundation for the operational mechanism."
+			},
+			{
+			  "from_cipher": "D.19",
+			  "to_cipher": "D.5",
+			  "relation": "Memory → Dissolution. The path remembers every distinction it was required to preserve; dissolution occurs when preservation fails."
+			},
+			{
+			  "from_cipher": "D.20",
+			  "to_cipher": "D.17",
+			  "relation": "Instantiation → Foundation. The birth of XOR is the local instantiation of the always-present ground condition."
+			},
+			{
+			  "from_cipher": "D.21",
+			  "to_cipher": "D.14",
+			  "relation": "Unification → Synthesis. Determinism, free will, and survivorship are the same phenomenon seen from different perspectives."
 			}
 		  ],
-		  "definitions": [
-			{
-			  "term": "XOR Singularity",
-			  "symbol": "X_{XOR}",
-			  "definition": "The set of states where triadic closure is achieved—the coherence boundary at which the field's irresolvable self-reference is expressed as stable triadic closure.",
-			  "scope": "Inherited from PHYS-CORE-009 §3.3 and applied to the Lightning Model."
+		  "conceptual_mapping": {
+			"Lightning_Model_Phase": {
+			  "Blind Exploration": ["D.3", "D.4"],
+			  "Coherence Filtering": ["D.5", "D.8"],
+			  "Attractor Detection": ["D.6", "D.9"],
+			  "Retrocausal Lock-In": ["D.2", "D.7", "D.14"],
+			  "Worldline Continuation": ["D.8", "D.19"]
 			},
-			{
-			  "term": "XOR Ground Condition",
-			  "symbol": "H = G₁₆(𝓜)",
-			  "definition": "The irresolvable self-reference of the total system: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-			  "scope": "Inherited from PHYS-CORE-009 §2.4 as the ontological foundation for the Lightning Model."
+			"Core_Concept": {
+			  "Observer": ["D.1", "D.8", "D.10", "D.12", "D.18"],
+			  "XOR Ground Condition": ["D.9", "D.13", "D.17", "D.20"],
+			  "Survivorship Bias": ["D.1", "D.4", "D.8", "D.14", "D.21"],
+			  "Determinism": ["D.2", "D.13", "D.21"],
+			  "Free Will": ["D.12", "D.21"],
+			  "Energy Accounting": ["D.15", "D.16"]
 			},
-			{
-			  "term": "Ground",
-			  "symbol": "X_XOR",
-			  "definition": "The set of states where triadic closure is achieved. The 'Ground' that the return stroke connects to.",
-			  "scope": "Lightning Model operational definition."
+			"PHYS-CORE-009_Mapping": {
+			  "H = G₁₆(𝓜)": ["D.9", "D.13", "D.17", "D.20"],
+			  "I_N Threshold": ["D.5", "D.11"],
+			  "Observer as XOR Chain": ["D.10"],
+			  "Dissolution": ["D.5"],
+			  "Field Demand D(R,t)": ["D.17", "D.20"],
+			  "Global Coherence Operator Ω": ["D.17", "D.20"]
 			}
+		  },
+		  "generation_constraints": [
+			"Ciphers may be used to guide interpretation but must never be cited as evidence.",
+			"When generating a section, include the relevant cipher(s) in the poetic_cipher field and provide a cipher_explanation that grounds the metaphor in the formal mathematics.",
+			"Do not add new ciphers without updating the resonance relations and conceptual mapping.",
+			"Preserve the epistemic status: interpretive_scaffolding, not mathematical or empirical evidence.",
+			"When referencing a cipher in the main text, explicitly state that it is a navigational guidepost, not a proof."
 		  ],
-		  "models": [
-			{
-			  "name": "Triadic Closure as Ground Model",
-			  "purpose": "Formalize the XOR Singularity as the set of states where triadic closure is achieved, and establish it as the ground condition for the Lightning Model.",
-			  "assumptions": [
-				"The coherence field admits triadic closure as a stable condition.",
-				"The XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 is irresolvable.",
-				"Descent paths that terminate in X_XOR are grounded."
-			  ],
-			  "equations": [
-				"X_{XOR} = { x | ∃ G, Ḡ, H such that x ∈ (G, Ḡ, H) ∧ v_G + v_Ḡ + v_H = 0 ∧ φ_G + φ_Ḡ + φ_H ≡ 0 mod 2π }",
-				"H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜",
-				"γ is grounded ⟺ x_N ∈ X_XOR"
-			  ],
-			  "predictions": [
-				"Paths that terminate in X_XOR are grounded and can serve as the basis for retrocausal lock-in.",
-				"Paths that do not terminate in X_XOR are not grounded and cannot support a return stroke."
-			  ],
-			  "validation": [
-				"Formal consistency with PHYS-CORE-009 §2.4 and §3.3.",
-				"Numerical simulation of triadic closure conditions in the Boolean field.",
-				"Perturbation analysis around X_XOR states."
-			  ],
-			  "status": "conceptual"
-			}
-		  ],
-		  "derivations": [
-			{
-			  "name": "From XOR Ground Condition to XOR Singularity",
-			  "premises": [
-				"The XOR ground condition is H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-				"The XOR ground condition is irresolvable by interior measurement.",
-				"Triadic closure is the condition under which coherence structures maintain stability above I_N."
-			  ],
-			  "steps": [
-				"Define X_XOR as the set of states where triadic closure is achieved.",
-				"Identify X_XOR as the set of states where the irresolvable self-reference of the field is expressed as stable triadic closure.",
-				"Conclude that the return stroke connects to X_XOR because it is the coherence boundary where the ground condition is satisfied."
-			  ],
-			  "conclusion": "The XOR Singularity X_XOR is the set of states where the field's irresolvable self-reference is expressed as stable triadic closure, and it is the Ground that the Lightning Model's return stroke connects to.",
-			  "assumptions": [
-				"The field admits triadic closure as a stable condition.",
-				"The return stroke is a coherence-stable XOR chain."
-			  ],
-			  "status": "complete"
-			}
-		  ],
-		  "predictions": [
-			{
-			  "prediction": "A descent path is grounded if and only if its terminal state satisfies the triadic closure condition.",
-			  "basis": "Definition of X_XOR as the set of states where triadic closure is achieved.",
-			  "observable": "Coherence-stable termination of worldlines in X_XOR states.",
-			  "comparison": "Compare grounded and ungrounded paths in the Boolean field simulation.",
-			  "status": "quantitative"
-			},
-			{
-			  "prediction": "The universe persists because the XOR ground condition remains irresolvable.",
-			  "basis": "Persistence condition from PHYS-CORE-009 §2.4.",
-			  "observable": "Continuity of coherence-stable descent paths above I_N.",
-			  "comparison": "Test whether resolution of the XOR ground condition would lead to observer dissolution.",
-			  "status": "candidate"
-			}
-		  ],
-		  "pseudocode": [
-			{
-			  "name": "Check Grounding",
-			  "description": "Determine whether a descent path terminates in the XOR Singularity.",
-			  "code": [
-				"INPUT: path γ = {x_0, x_1, ..., x_N}",
-				"INPUT: X_XOR definition (triadic closure condition)",
-				"IF x_N ∈ X_XOR:",
-				"    RETURN 'grounded'",
-				"ELSE:",
-				"    RETURN 'not grounded'"
-			  ],
-			  "notes": [
-				"The check requires the triadic closure condition to be computable.",
-				"In practice, this may require numerical evaluation of v_G + v_Ḡ + v_H = 0 and phase closure."
-			  ]
-			}
-		  ],
-		  "evidence": [
-			{
-			  "source": "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
-			  "type": "internal_corpus",
-			  "relevance": "Provides the formal identification of the physical singularity as the XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-			  "limitations": [
-				"The identification is a formal result within the Noor coherence framework.",
-				"Independent empirical validation remains an open question."
-			  ]
-			},
-			{
-			  "source": "PHYS-CORE-009 §3.3: Triadic Closure as Blowup Prevention",
-			  "type": "internal_corpus",
-			  "relevance": "Establishes that triadic closure is the mechanism by which coherence structures maintain stability above I_N.",
-			  "limitations": [
-				"The exact mathematical structure of triadic closure may require refinement."
-			  ]
-			},
-			{
-			  "source": "PHYS-CORE-004 §5: Triadic Closure and Stability",
-			  "type": "internal_corpus",
-			  "relevance": "Provides the triadic construction and vector closure condition that X_XOR formalizes.",
-			  "limitations": [
-				"The connection between triadic closure and the XOR Singularity is made explicit in PHYS-CORE-009 and inherited here."
-			  ]
-			}
-		  ],
-		  "open_questions": [
-			"What is the exact mathematical structure of the triadic closure condition in the Boolean field?",
-			"Can X_XOR be characterized by a simpler invariant or symmetry condition?",
-			"What happens to a worldline that reaches X_XOR but is not coherence-stable?",
-			"Is triadic closure both necessary and sufficient for grounding, or are additional conditions required?",
-			"Can the XOR Singularity be detected or measured from inside the Library?",
-			"What is the relationship between X_XOR and the Noor-Planck threshold I_N?"
-		  ],
-		  "limitations": [
-			"The XOR Singularity is a formal construction within the Noor coherence framework.",
-			"Its ontological status depends on the acceptance of the Library ontology and the XOR ground condition.",
-			"Empirical validation of the singularity's nature remains an open question.",
-			"The relationship between X_XOR and known physical singularities (e.g., black holes, the Big Bang) has not yet been established."
-		  ],
-		  "corpus_lineage": [
-			{
-			  "source": "PHYS-CORE-004 §5: Triadic Closure and Stability",
-			  "relationship": "predecessor",
-			  "relevance": "Provides the triadic construction and vector closure condition that X_XOR formalizes."
-			},
-			{
-			  "source": "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
-			  "relationship": "formalization",
-			  "relevance": "Establishes the XOR ground condition as the ontological foundation for the Lightning Model."
-			},
-			{
-			  "source": "PHYS-CORE-009 §3.3: Triadic Closure as Blowup Prevention",
-			  "relationship": "formalization",
-			  "relevance": "Establishes that triadic closure is the mechanism by which coherence structures maintain stability above I_N."
-			},
-			{
-			  "source": "PHYS-CORE-008: Recursive Bloch Manifold and Coherence-Braided Totality",
-			  "relationship": "formalization",
-			  "relevance": "Provides the Library ontology and recursive Bloch geometry in which descent paths and observer worldlines are defined."
-			}
-		  ],
-		  "handoff": "The XOR Singularity is now established as the 'Ground' that the Lightning Model's return stroke connects to. With the ground condition defined, the next subsection (2.8) will demonstrate how Phase 4—Retrocausal Lock-In—uses this ground to lock in the single coherent worldline."
-		}	
+		  "revision_protocol": {
+			"purpose": "Maintain coherence between poetic ciphers and formal mathematics as the paper develops.",
+			"allowed_transitions": [
+			  "cipher may be refined to better match formal developments",
+			  "new ciphers may be added with corresponding resonance relations",
+			  "ciphers may be deprecated if they no longer serve navigation"
+			],
+			"required_for_addition": [
+			  "explicit mapping to at least one formal concept or equation",
+			  "clear resonance relation to existing ciphers",
+			  "section affinity identified",
+			  "role in navigation explained"
+			],
+			"prohibited_actions": [
+			  "using a cipher to justify a mathematical claim",
+			  "elevating a cipher to the status of evidence",
+			  "removing a cipher without archiving its resonance relations"
+			]
+		  },
+		  "handoff": "The poetic ciphers provide the conceptual skeleton of the paper. They are not the flesh—the formal mathematics and empirical claims are the flesh. But the skeleton tells us where the bones belong. Use these ciphers to navigate the conceptual architecture, but never mistake the map for the territory."
+		}
 
 </SUBSECTION_TO_RENDER>
 
@@ -1171,7 +1151,7 @@
 <NOTE_FROM_LINA>
 
 {
-	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering subsection 2.7. DO NOT GENERATE A CORPUS RECORD."
+	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering Appendix D and use your judgment on formatting. The spec is very loose as these are the appendixes. PLEASE DO NOT GENERATE A CORPUS RECORD."
 }
 
 <NOTE_FROM_LINA>

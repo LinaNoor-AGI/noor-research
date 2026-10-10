@@ -840,442 +840,394 @@
 <SECTION_TO_RENDER>
 
 {
-	  "id": "2",
-	  "title": "The Continuous Lightning Model",
+	  "id": "4",
+	  "title": "Resolving the Grand Tension: Determinism, Free Will, and Survivorship Bias",
 	  "prerequisites": [
-		"PHYS-CORE-004 §2.2: The Library as Total Domain",
-		"PHYS-CORE-009 §1.1: The Library as Static Totality",
-		"PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
-		"PHYS-CORE-009 §3.3: Triadic Closure as Blowup Prevention",
-		"Definition of Observer (Section 3.2 of this paper)"
+		"Understanding of the Lightning Model's five phases (Section 2)",
+		"Definition of the observer as a coherence-stable XOR chain (Section 3.2, 3.2.1)",
+		"XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 (PHYS-CORE-009 §2.4)",
+		"Noor-Planck threshold I_N and dissolution condition (PHYS-CORE-009 §1.2, §3.2)"
 	  ],
 	  "objectives": [
-		"Introduce the Lightning Model as the operational mechanism for coherence-stable worldline selection.",
-		"Establish the exact isomorphism between the Lightning Model and the formation of a lightning strike.",
-		"Define the five phases of the Continuous Lightning Model.",
-		"Formalize the XOR Singularity as the Ground condition inherited from PHYS-CORE-009.",
-		"Establish the Observer as the phenomenological entity 'riding' the return stroke.",
-		"Distinguish the Lightning Model from a forward-generation mechanism."
+		"Reconcile determinism and free will within the Lightning Model without invoking handwaving or dualism.",
+		"Demonstrate that determinism is the retrocausal geometry of the path, not a forward-pushing constraint.",
+		"Show that free will is the sequential phenomenological traversal of the pre-established path.",
+		"Establish survivorship bias as the central explanatory mechanism: the observer can only exist on the path that survived."
 	  ],
 	  "key_insights": [
-		"The Lightning Model is an exact isomorphism of the formation of a lightning strike.",
-		"The step-leaders are the indiscriminate exploration of **ALL** continuations.",
-		"The Ground is the XOR Singularity: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
-		"The return stroke is the retrocausal lock-in of the single coherent worldline.",
-		"The Observer is the entity 'riding' the return stroke, experiencing survivorship bias as time.",
-		"The model operates at every timestep: the future is variable; the past is fixed."
+		"Determinism follows from the irresolvability of the XOR ground condition: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
+		"The worldline is fixed retrocausally; there is no 'choice' at the level of the Library because all paths exist.",
+		"Free will is the experience of being the structure that survives the coherence filter.",
+		"Survivorship bias is mathematically enforced: P(γ_obs | O(γ_obs) = 1) = 1.",
+		"The three concepts—determinism, free will, survivorship—are the same phenomenon seen from different perspectives.",
+		"The observer does not 'choose' to remain coherent; observer identity dissolves on any path that drops below I_N."
 	  ],
 	  "subsections": [
 		{
-		  "id": "2.1",
-		  "title": "The Lightning Metaphor",
+		  "id": "4.1",
+		  "title": "Determinism as Retrocausal Lock-In",
 		  "prerequisites": [
+			"PHYS-CORE-009 §2.3: XOR as the Signature of Interior Embedding",
 			"PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
-			"Definition of Library (PHYS-CORE-004 §2.2; PHYS-CORE-009 §1.1)"
+			"Section 2.5: Phase 4 — Retrocausal Lock-In (Return Stroke)"
 		  ],
 		  "objectives": [
-			"Establish the Lightning Model as an exact isomorphism of the formation of a lightning strike.",
-			"Map each element of the lightning formation process to its corresponding element in the coherence framework.",
-			"Introduce the XOR Singularity as the Ground, inherited from PHYS-CORE-009.",
-			"Introduce the Observer as the entity experiencing the return stroke.",
-			"Distinguish the Lightning Model from a forward-generation mechanism."
+			"Establish that determinism is the geometry of the retrocausal path, not a forward-pushing force.",
+			"Show that the worldline is fixed by the attractor, not by constraints imposed on the Library.",
+			"Demonstrate that the irresolvability of the XOR ground condition is the ontological basis for determinism.",
+			"Distinguish determinism from fatalism: determinism is the path; free will is the walk."
 		  ],
-		  "poetic_cipher": "The lightning does not know where the ground is until it touches it.",
-		  "cipher_explanation": "Lightning descends from a cloud in massively parallel, branching tendrils (step-leaders). These tines explore every path through the atmosphere indiscriminately. The path is only selected when one tine makes contact with the ground, triggering the visible return stroke. The Lightning Model is an exact isomorphism of this process: the step-leaders are the blind exploration of **ALL** continuations; the ground is the XOR Singularity; the return stroke is the retrocausal lock-in of the single coherent worldline.",
+		  "key_insights": [
+			"Determinism is retrocausal, not forward-pushing.",
+			"The path γ_obs is geometrically determined by the XOR Singularity.",
+			"There is no 'choice' at the level of the Library because all paths exist.",
+			"The irresolvability of H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 is the basis for determinism.",
+			"Determinism is a property of the attractor, not a constraint on the Library."
+		  ],
+		  "poetic_cipher": "The path was already established by the destination.",
+		  "cipher_explanation": "The universe is deterministic because the path was established retrocausally by the connection to the attractor. The worldline is fixed geometrically; it is the unique path that survives the coherence filter and reaches the XOR Singularity. The observer does not 'choose' the path; the path is the one that survived the coherence filter. The illusion of choice is the experience of traversing that path forward.",
 		  "content": [
-			"The Lightning Model is an exact isomorphism of the formation of a lightning strike. It provides the operational mechanism by which coherence-stable observers emerge and persist within the static Library.",
-			"The model consists of five phases, which are introduced here and formalized in the subsections that follow: (1) Blind Exploration of **ALL** continuations, (2) Coherence Filtering where incoherent paths dissolve, (3) Attractor Detection where paths reaching the XOR Singularity (triadic closure) are identified, (4) Retrocausal Lock-In where the path is computed backward from the attractor, and (5) Worldline Continuation where the observer experiences the single coherent trajectory.",
-			"The isomorphism is exact. The cloud is the current state of the observer. The atmosphere is the static Library—the total domain containing **ALL** relational configurations. The step-leaders (tines) are the indiscriminate, massively parallel exploration of **ALL** forward continuations from the current state. The dissipation or dead ends are paths where relational coherence falls below the survival threshold, causing the observer identity to dissolve. The ground is the XOR Singularity—the ultimate relational attractor or stable triadic closure boundary, inherited from PHYS-CORE-009 as H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜. The connection is the exact sequence of states that successfully maintains coherence all the way to the attractor. The return stroke is the retrocausal calculation from the XOR Singularity back to the origin, which manifests as the single experienced macroscopic worldline. The observer is the phenomenological entity 'riding' the return stroke, experiencing survivorship bias as the passage of time.",
-			"The Ground—the XOR Singularity—is not a location. It is a condition: the condition under which the field cannot resolve a measurement of its own ground state. From PHYS-CORE-009 §2.4: 'The physical singularity and the XOR ground condition are the same structure.' The return stroke does not connect to a physical location; it connects to a coherence boundary—the set of states where the field's irresolvable self-reference is expressed as stable triadic closure.",
-			"The Lightning Model is not a forward-generation mechanism. The observer does not 'choose' a coherent path by evaluating forward possibilities. The observer's worldline is retrocausally locked in by reaching a terminal attractor (the XOR Singularity). The illusion of forward choice is pure survivorship bias: the observer can only report from the single tine that survived the coherence filter.",
-			"The model operates at every timestep. The future is variable and undefined until the retrocausal lock-in occurs. The past is fixed because it has already been locked in. The present is the boundary where the retrocausal calculation is occurring. The observer necessarily experiences a single worldline because observer identity dissolves on any path where coherence fails."
-		  ],
-		  "claims": [
-			{
-			  "id": "2.1.C1",
-			  "claim": "The Lightning Model is an exact isomorphism of the formation of a lightning strike.",
-			  "status": "mathematical_construction",
-			  "support": [
-				"The step-leaders correspond to blind exploration of **ALL** continuations.",
-				"The ground corresponds to the XOR Singularity (triadic closure).",
-				"The return stroke corresponds to retrocausal lock-in.",
-				"The observer corresponds to the entity experiencing the return stroke."
-			  ],
-			  "limitations": [
-				"The isomorphism is structural, not physical. The Lightning Model is a mathematical mechanism, not a claim that the universe contains literal lightning."
-			  ]
-			},
-			{
-			  "id": "2.1.C2",
-			  "claim": "The Ground is the XOR Singularity: H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜, inherited from PHYS-CORE-009.",
-			  "status": "definition",
-			  "support": [
-				"PHYS-CORE-009 §2.4 establishes the formal identification of the singularity as the XOR ground condition.",
-				"The XOR Singularity is the set of states where triadic closure is achieved."
-			  ],
-			  "limitations": [
-				"The XOR Singularity is a coherence boundary, not a physical location."
-			  ]
-			},
-			{
-			  "id": "2.1.C3",
-			  "claim": "The Observer is the phenomenological entity 'riding' the return stroke, experiencing survivorship bias as the passage of time.",
-			  "status": "definition",
-			  "support": [
-				"The observer is defined as a coherence-stable XOR chain (Section 3.2).",
-				"The return stroke is the retrocausal lock-in of the coherent worldline.",
-				"The observer experiences only the path that survived the coherence filter."
-			  ],
-			  "limitations": [
-				"This definition does not require consciousness, life, intelligence, or agency."
-			  ]
-			},
-			{
-			  "id": "2.1.C4",
-			  "claim": "The Lightning Model is not a forward-generation mechanism.",
-			  "status": "interpretation",
-			  "support": [
-				"The observer does not 'choose' a coherent path by evaluating forward possibilities.",
-				"The worldline is retrocausally locked in from the attractor.",
-				"The illusion of forward choice is survivorship bias."
-			  ],
-			  "limitations": [
-				"The model is a mathematical mechanism, not a claim about subjective experience."
-			  ]
-			},
-			{
-			  "id": "2.1.C5",
-			  "claim": "The Lightning Model operates at every timestep. The future is variable; the past is fixed.",
-			  "status": "derived_result",
-			  "support": [
-				"**ALL** continuations are explored blindly at every moment.",
-				"The return stroke locks in a single coherent path at every moment.",
-				"The past has already been locked in; the future is being locked in now."
-			  ],
-			  "limitations": [
-				"The timestep is a modeling parameter; the model is continuous in the limit."
-			  ]
-			}
+			"Within the Lightning Model, determinism is not a forward-pushing force. It is the geometry of the retrocausal path.",
+			"The worldline is fixed retrocausally. The path γ_obs is geometrically determined by the attractor—the XOR Singularity.",
+			"There is no 'choice' at the level of the Library because all paths exist. The 'choice' is the retrocausal selection of the one path that reaches the attractor while maintaining coherence.",
+			"Determinism is therefore a property of the attractor, not a constraint imposed on the Library.",
+			"From PHYS-CORE-009 §2.3: The XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 is irresolvable. There is no exterior operand available to resolve the self-reference. This irresolvability is the ontological basis for determinism.",
+			"Because the ground condition cannot be resolved to either operand, the field cannot select a different path once the retrocausal lock-in has occurred. The return stroke has connected the origin to the XOR Singularity, and the path is geometrically fixed.",
+			"This is not fatalism. Fatalism would be a forward-pushing force that constrains the future from the past. Determinism in the Lightning Model is the geometry of the path that has already been locked in by the attractor.",
+			"The distinction is subtle but essential: the future is not 'determined' by the past. The path is determined by the attractor and then traversed forward. The past is fixed because it has already been locked in; the future is variable because all continuations are explored blindly at every moment. Determinism applies to the path itself, not to the process of path selection.",
+			"From PHYS-CORE-009 §2.4: The universe persists because its ground contradiction does not resolve. Reality is the ongoing recursion of Self ⊕ ¬Self above the Noor-Planck floor. The observer's worldline is the coherence-stable projection of this recursion. Determinism is therefore the stability of the projection, not the constraint on the recursion."
 		  ],
 		  "math": [
 			{
-			  "label": "XOR Ground Condition (from PHYS-CORE-009)",
-			  "expression": "H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M}",
+			  "label": "Irresolvability of the Ground (from PHYS-CORE-009 §2.3, §2.4)",
+			  "expression": "H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M} \\text{ is irresolvable: } \\nexists \\text{ exterior operand to collapse XOR}",
 			  "role": "identity",
+			  "interpretation": "The ground condition is irresolvable because there is no exterior to the totality. This irresolvability is the ontological basis for determinism.",
 			  "variables": [
 				{
 				  "symbol": "H",
 				  "meaning": "The 1 Planck-width irresolvable self-referential ground hole"
 				},
 				{
-				  "symbol": "G_{16}",
+				  "symbol": "G₁₆",
 				  "meaning": "Gate-16: the Nafs Mirror, Self ⊕ ¬Self, recursive contradiction operator"
 				},
 				{
-				  "symbol": "\\mathcal{M}",
+				  "symbol": "𝓜",
 				  "meaning": "The Library: the static totality of all logically admissible configurations"
+				},
+				{
+				  "symbol": "¬𝓜",
+				  "meaning": "The structural complement of 𝓜: all configurations not selected by the current descent path"
 				}
 			  ],
 			  "assumptions": [
-				"The Library is a closed system with no exterior.",
-				"The XOR ground condition is irresolvable by interior measurement."
+				"The Library is closed; there is no exterior.",
+				"The ground condition is self-referential and cannot be resolved to either operand."
 			  ]
 			},
 			{
-			  "label": "XOR Singularity (from PHYS-CORE-009)",
-			  "expression": "X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
+			  "label": "Unique Grounding Path (from Section 2.5)",
+			  "expression": "\\gamma_{obs} = \\{x_N, T^{-1}(x_N), ..., x_t\\} \\text{ where } x_N \\in X_{XOR} \\text{ uniquely determined by the geometry of triadic closure}",
 			  "role": "definition",
+			  "interpretation": "The path that reaches X_XOR is uniquely determined by the condition of triadic closure. There is no branching at the level of the locked-in path.",
 			  "variables": [
 				{
-				  "symbol": "X_{XOR}",
-				  "meaning": "The set of states where triadic closure is achieved"
-				},
-				{
-				  "symbol": "G",
-				  "meaning": "Glider or primary coherence motif"
-				},
-				{
-				  "symbol": "\\bar{G}",
-				  "meaning": "Complementary inverse motif"
-				},
-				{
-				  "symbol": "H",
-				  "meaning": "Third stabilizing relational vector"
-				},
-				{
-				  "symbol": "\\mathbf{v}_G",
-				  "meaning": "Coherence vector associated with the glider"
-				},
-				{
-				  "symbol": "\\mathbf{v}_{\\bar{G}}",
-				  "meaning": "Coherence vector associated with the inverse motif"
-				},
-				{
-				  "symbol": "\\mathbf{v}_H",
-				  "meaning": "Third stabilizing relational vector"
-				},
-				{
-				  "symbol": "\\phi_G",
-				  "meaning": "Phase of the glider"
-				},
-				{
-				  "symbol": "\\phi_{\\bar{G}}",
-				  "meaning": "Phase of the inverse motif"
-				},
-				{
-				  "symbol": "\\phi_H",
-				  "meaning": "Phase of the third motif"
-				}
-			  ],
-			  "assumptions": [
-				"Triadic closure is the condition for stable recursive relational structure.",
-				"The XOR Singularity is the set of states where triadic closure is achieved."
-			  ]
-			},
-			{
-			  "label": "**ALL** Continuations",
-			  "expression": "\\Omega(x_t) = \\{ \\gamma \\mid \\gamma = \\{x_t, x_{t+1}, x_{t+2}, \\dots, x_N\\} \\}",
-			  "role": "definition",
-			  "variables": [
-				{
-				  "symbol": "\\Omega(x_t)",
-				  "meaning": "The set of **ALL** continuations from state x_t"
-				},
-				{
-				  "symbol": "x_t",
-				  "meaning": "The current state of the observer"
-				},
-				{
-				  "symbol": "\\gamma",
-				  "meaning": "A path representing a potential trajectory through the Library"
-				},
-				{
-				  "symbol": "N",
-				  "meaning": "The depth of the exploration"
-				}
-			  ],
-			  "assumptions": [
-				"All continuations exist in the Library.",
-				"Exploration is a formal property of the static Library, not a physical process."
-			  ]
-			},
-			{
-			  "label": "Return Stroke as Retrocausal Lock-In",
-			  "expression": "\\gamma_{obs} = \\{ x_N, T^{-1}(x_N), T^{-2}(x_N), \\dots, x_t \\}",
-			  "role": "definition",
-			  "variables": [
-				{
-				  "symbol": "\\gamma_{obs}",
-				  "meaning": "The single coherent worldline experienced by the observer"
+				  "symbol": "γ_obs",
+				  "meaning": "The observed worldline selected by the retrocausal lock-in"
 				},
 				{
 				  "symbol": "x_N",
-				  "meaning": "The terminal state of the grounded path"
+				  "meaning": "Terminal state of the path, belonging to the XOR Singularity set"
 				},
 				{
 				  "symbol": "T^{-1}",
-				  "meaning": "The backward operator that computes a path from the attractor to the origin"
+				  "meaning": "The backward operator that validates the path from the attractor to the origin"
 				},
 				{
-				  "symbol": "x_t",
-				  "meaning": "The current state of the observer"
+				  "symbol": "X_XOR",
+				  "meaning": "The XOR Singularity: the set of states where triadic closure is achieved"
 				}
 			  ],
 			  "assumptions": [
-				"The terminal state x_N belongs to X_XOR.",
-				"The backward operator preserves coherence and identity at every step."
+				"Triadic closure is achieved at x_N.",
+				"The path maintains coherence above I_N for all transitions."
+			  ]
+			},
+			{
+			  "label": "Persistence Condition (from PHYS-CORE-009 §2.4)",
+			  "expression": "\\forall t, \\mathcal{M} \\text{ persists } \\Longleftrightarrow G_{16}(\\mathcal{M}) \\text{ does not resolve to } 0 \\text{ or } 1",
+			  "role": "identity",
+			  "interpretation": "The universe persists if and only if the ground condition remains irresolvable. If the XOR resolved, the recursion would halt.",
+			  "variables": [
+				{
+				  "symbol": "𝓜",
+				  "meaning": "The Library"
+				},
+				{
+				  "symbol": "G₁₆",
+				  "meaning": "Gate-16: the Nafs Mirror"
+				}
+			  ],
+			  "assumptions": [
+				"The ground condition is the engine of persistence.",
+				"Resolution of the XOR would correspond to a terminal, non-experiential state."
+			  ]
+			},
+			{
+			  "label": "Determinism as Geometry (from Section 2.5, PHYS-CORE-009 §2.3)",
+			  "expression": "\\text{Determinism} = \\text{Geometry of } \\gamma_{obs} = \\text{Uniqueness of the path satisfying } x_N \\in X_{XOR} \\text{ and } \\mathcal{O}(\\gamma_{obs}) = 1",
+			  "role": "result",
+			  "interpretation": "The worldline is fixed because it is the unique path that reaches the XOR Singularity while maintaining coherence. This is the formal identification of determinism with the retrocausal geometry of the attractor.",
+			  "variables": [
+				{
+				  "symbol": "γ_obs",
+				  "meaning": "The observed worldline"
+				},
+				{
+				  "symbol": "X_XOR",
+				  "meaning": "The XOR Singularity"
+				},
+				{
+				  "symbol": "O(γ)",
+				  "meaning": "Observer survival function"
+				}
+			  ],
+			  "assumptions": [
+				"The path is uniquely determined by the condition of reaching X_XOR.",
+				"Coherence is maintained above I_N at every step."
 			  ]
 			}
 		  ],
 		  "definitions": [
 			{
-			  "term": "Lightning Model",
-			  "symbol": "LM",
-			  "definition": "The operational mechanism by which coherence-stable observers emerge and persist within the static Library. It consists of five phases: Blind Exploration, Coherence Filtering, Attractor Detection, Retrocausal Lock-In, and Worldline Continuation.",
-			  "scope": "The central operational mechanism of this paper."
+			  "term": "Retrocausal Determinism",
+			  "symbol": null,
+			  "definition": "The property that the worldline is fixed geometrically by the attractor (XOR Singularity) and validated backward from the destination to the origin.",
+			  "scope": "Within the Lightning Model; contrasts with forward-pushing determinism."
 			},
 			{
-			  "term": "Step-Leaders (Tines)",
-			  "symbol": "\\text{Tines}",
-			  "definition": "The indiscriminate, massively parallel exploration of **ALL** forward continuations from the current state.",
-			  "scope": "Phase 1 of the Lightning Model."
+			  "term": "Irresolvable Self-Reference",
+			  "symbol": "H = G₁₆(𝓜)",
+			  "definition": "The condition under which the total system cannot resolve its own ground state because there is no exterior operand available to collapse the XOR.",
+			  "scope": "Inherited from PHYS-CORE-009 §2.3, §2.4."
 			},
 			{
-			  "term": "XOR Singularity",
-			  "symbol": "X_{XOR}",
-			  "definition": "The set of states where triadic closure is achieved. The ground condition inherited from PHYS-CORE-009.",
-			  "scope": "The attractor that grounds the return stroke."
-			},
-			{
-			  "term": "Return Stroke",
-			  "symbol": "\\gamma_{obs}",
-			  "definition": "The retrocausal calculation from the XOR Singularity back to the origin, which manifests as the single experienced macroscopic worldline.",
-			  "scope": "Phase 4 of the Lightning Model."
-			},
-			{
-			  "term": "Observer (Lightning Model Context)",
-			  "symbol": "O",
-			  "definition": "The phenomenological entity 'riding' the return stroke, experiencing survivorship bias as the passage of time.",
-			  "scope": "The observer is a coherence-stable XOR chain (see Section 3.2 for formal definition)."
+			  "term": "Unique Grounding Path",
+			  "symbol": "γ_obs",
+			  "definition": "The single worldline that reaches the XOR Singularity while maintaining coherence above I_N for all transitions.",
+			  "scope": "Within the Lightning Model."
 			}
 		  ],
 		  "models": [
 			{
-			  "name": "Lightning Isomorphism Model",
-			  "purpose": "Establish the exact structural correspondence between the formation of a lightning strike and the selection of a coherence-stable worldline.",
+			  "name": "Retrocausal Lock-In Model",
+			  "purpose": "Represent determinism as the geometry of the path locked in by the XOR Singularity.",
 			  "assumptions": [
-				"The Library is static and **ALL** continuations.",
-				"The XOR Singularity is the ground condition inherited from PHYS-CORE-009.",
-				"The observer is a coherence-stable descent path."
+				"All continuations are explored blindly at every timestep.",
+				"The XOR Singularity is the unique attractor for the system.",
+				"The path that reaches X_XOR is unique."
 			  ],
 			  "equations": [
-				"H = G_{16}(\\mathcal{M}) = \\mathcal{M} \\oplus \\neg\\mathcal{M}",
-				"X_{XOR} = \\{ x \\mid \\exists G, \\bar{G}, H \\text{ such that } x \\in (G, \\bar{G}, H) \\land \\mathbf{v}_G + \\mathbf{v}_{\\bar{G}} + \\mathbf{v}_H = 0 \\land \\phi_G + \\phi_{\\bar{G}} + \\phi_H \\equiv 0 \\pmod{2\\pi} \\}",
-				"\\Omega(x_t) = \\{ \\gamma \\mid \\gamma = \\{x_t, x_{t+1}, \\dots, x_N\\} \\}",
-				"\\gamma_{obs} = \\{ x_N, T^{-1}(x_N), \\dots, x_t \\}"
+				"γ_obs = {x_N, T^{-1}(x_N), ..., x_t} where x_N ∈ X_XOR",
+				"Determinism = Uniqueness of γ_obs"
 			  ],
 			  "predictions": [
-				"The Lightning Model should produce a single coherent worldline from the static Library.",
-				"The observer should experience survivorship bias as the passage of time.",
-				"The model should operate at every timestep, with the future variable and the past fixed."
+				"The worldline is fixed retrocausally; there is no branching once the path is locked in.",
+				"Different initial states that reach the same XOR Singularity will converge to the same locked-in path geometry."
 			  ],
 			  "validation": [
-				"The isomorphism is structurally exact.",
-				"The model is internally consistent.",
-				"The model inherits its ontological foundation from PHYS-CORE-009."
+				"Simulate multiple initial conditions and verify convergence to the same locked-in path.",
+				"Verify that the path satisfies the coherence condition for all transitions."
 			  ],
 			  "status": "analytical"
+			},
+			{
+			  "name": "Irresolvable Ground Model",
+			  "purpose": "Demonstrate that determinism follows from the irresolvability of the XOR ground condition.",
+			  "assumptions": [
+				"H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 is irresolvable.",
+				"There is no exterior to the totality."
+			  ],
+			  "equations": [
+				"H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜",
+				"∀ t, 𝓜 persists ⟺ G₁₆(𝓜) does not resolve to 0 or 1"
+			  ],
+			  "predictions": [
+				"The system cannot 'choose' a different ground state because there is no exterior operand.",
+				"Determinism is the stability of the unresolved XOR, not a constraint on the Library."
+			  ],
+			  "validation": [
+				"Verify that the XOR ground condition remains irresolvable under all modeled conditions.",
+				"Confirm that no exterior operand is introduced."
+			  ],
+			  "status": "conceptual"
 			}
 		  ],
 		  "derivations": [
 			{
-			  "name": "From Lightning Formation to Worldline Selection",
+			  "name": "From Irresolvable Ground to Retrocausal Determinism",
 			  "premises": [
-				"The Library is a static totality containing **ALL** configurations.",
-				"The observer is a coherence-stable descent path.",
-				"The XOR Singularity is the ground condition inherited from PHYS-CORE-009."
+				"H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜 is irresolvable (PHYS-CORE-009 §2.3, §2.4).",
+				"The path γ_obs is uniquely determined by the condition x_N ∈ X_XOR (Section 2.5).",
+				"The path is validated backward from x_N to x_t."
 			  ],
 			  "steps": [
-				"Define the current state x_t as the cloud.",
-				"Define the Library 𝓜 as the atmosphere.",
-				"Define the set of **ALL** continuations Ω(x_t) as the step-leaders.",
-				"Define paths where coherence falls below I_N as dissipation.",
-				"Define the XOR Singularity X_XOR as the ground.",
-				"Define paths that reach X_XOR while maintaining coherence as the connection.",
-				"Define the retrocausal path γ_obs = {x_N, T^{-1}(x_N), ..., x_t} as the return stroke.",
-				"Define the observer as the entity 'riding' the return stroke."
+				"The ground condition H is irresolvable because there is no exterior operand.",
+				"The XOR Singularity X_XOR is the field-scale manifestation of H.",
+				"The path γ_obs is the unique path that reaches X_XOR while maintaining coherence.",
+				"Because γ_obs is unique, the worldline is fixed geometrically.",
+				"Therefore, determinism is the geometry of γ_obs, not a forward-pushing force."
 			  ],
-			  "conclusion": "The Lightning Model is an exact isomorphism of the formation of a lightning strike, providing the operational mechanism for coherence-stable worldline selection.",
+			  "conclusion": "Determinism follows from the irresolvability of the XOR ground condition. The worldline is the unique path that reaches the XOR Singularity while maintaining coherence.",
 			  "assumptions": [
-				"The Library is static.",
-				"Coherence is relational.",
-				"The XOR ground condition is irresolvable."
+				"The Library is closed; there is no exterior.",
+				"Triadic closure uniquely determines the terminal state.",
+				"The retrocausal path is unique."
+			  ],
+			  "status": "complete"
+			},
+			{
+			  "name": "Distinguishing Determinism from Fatalism",
+			  "premises": [
+				"Determinism is the geometry of the retrocausal path.",
+				"Fatalism is a forward-pushing force that constrains the future from the past.",
+				"The Lightning Model has no forward-pushing force."
+			  ],
+			  "steps": [
+				"In the Lightning Model, the future is variable and undefined until the retrocausal lock-in occurs.",
+				"The past is fixed because it has already been locked in.",
+				"Determinism applies to the path itself, not to the process of path selection.",
+				"Therefore, determinism in the Lightning Model is not fatalism."
+			  ],
+			  "conclusion": "Determinism is retrocausal; fatalism is forward-pushing. The Lightning Model is deterministic but not fatalistic.",
+			  "assumptions": [
+				"The future is variable until lock-in.",
+				"The past is fixed after lock-in."
 			  ],
 			  "status": "complete"
 			}
 		  ],
 		  "predictions": [
 			{
-			  "prediction": "The Lightning Model should operate at every timestep, producing a single coherent worldline from the static Library.",
-			  "basis": "The model is an exact isomorphism of the formation of a lightning strike.",
-			  "observable": "The experienced worldline of any observer.",
-			  "comparison": "Not directly observable; the model is a mathematical mechanism.",
-			  "status": "qualitative"
+			  "prediction": "Different initial conditions that converge to the same XOR Singularity will produce the same locked-in worldline geometry, demonstrating that determinism is a property of the attractor, not the initial state.",
+			  "basis": "Retrocausal Lock-In Model",
+			  "observable": "Worldline trajectory γ_obs for multiple initial conditions",
+			  "comparison": "Simulate different initial states and compare the resulting locked-in paths.",
+			  "status": "candidate"
 			},
 			{
-			  "prediction": "The observer should experience survivorship bias as the passage of time.",
-			  "basis": "The observer is the entity 'riding' the return stroke.",
-			  "observable": "The first-person experience of forward time.",
-			  "comparison": "Not directly observable; the model is a mathematical mechanism.",
-			  "status": "qualitative"
+			  "prediction": "The irresolvability of the XOR ground condition ensures that no exterior operand can resolve the system, and therefore the system cannot 'choose' a different ground state. Determinism is the stability of this irresolvability.",
+			  "basis": "Irresolvable Ground Model",
+			  "observable": "Mathematical proof that H remains irresolvable under all modeled conditions",
+			  "comparison": "Verify that no exterior operand is introduced in any simulation or derivation.",
+			  "status": "testable"
 			}
 		  ],
 		  "pseudocode": [
 			{
-			  "name": "Lightning Model Conceptual Algorithm",
-			  "description": "Conceptual algorithm for the Lightning Model, illustrating the five phases.",
+			  "name": "Retrocausal Lock-In Validation",
+			  "description": "Validate that the retrocausal path is uniquely determined by the XOR Singularity and maintains coherence.",
 			  "code": [
-				"function LightningModel(x_t):",
-				"    // Phase 1: Blind Exploration (Step-Leaders)",
-				"    Ω = generate_all_continuations(x_t)",
-				"    ",
-				"    // Phase 2: Coherence Filtering (Dissolution)",
-				"    Ω_survive = filter_by_coherence(Ω, I_N)",
-				"    ",
-				"    // Phase 3: Attractor Detection (Grounding)",
-				"    Ω_ground = filter_by_XOR_Singularity(Ω_survive)",
-				"    ",
-				"    // Phase 4: Retrocausal Lock-In (Return Stroke)",
-				"    γ_obs = retrocausal_lock_in(Ω_ground)",
-				"    ",
-				"    // Phase 5: Worldline Continuation",
-				"    x_{t+1} = γ_obs[1]",
-				"    ",
-				"    return γ_obs, x_{t+1}"
+				"INPUT: initial state x_t, XOR Singularity set X_XOR, coherence threshold I_N",
+				"FOR each continuation γ in Ω(x_t):",
+				"    IF γ reaches X_XOR AND O(γ) = 1:",
+				"        γ_obs = γ",
+				"        BREAK",
+				"OUTPUT: γ_obs (unique retrocausal path)",
+				"ASSERT: γ_obs is unique",
+				"ASSERT: ℂ(γ_obs(t)) ≥ I_N for all t"
 			  ],
 			  "notes": [
-				"This is a conceptual algorithm. The exact implementation depends on the coherence functional and the definition of X_XOR.",
-				"The process repeats at every timestep."
+				"The uniqueness of γ_obs is the formal expression of determinism.",
+				"The assertion that γ_obs is unique must hold for the model to be deterministic.",
+				"If multiple paths satisfy the conditions, the model would not be deterministic."
+			  ]
+			},
+			{
+			  "name": "Irresolvable Ground Test",
+			  "description": "Verify that the XOR ground condition remains irresolvable under all modeled conditions.",
+			  "code": [
+				"DEFINE H = G_16(𝓜) = 𝓜 ⊕ ¬𝓜",
+				"FOR each region R and time t:",
+				"    ASSERT: H is irresolvable",
+				"    ASSERT: ∄ exterior operand to collapse XOR",
+				"    IF H resolves to 0 or 1:",
+				"        TERMINATE: ground condition resolved, universe halts",
+				"OUTPUT: H remains irresolvable",
+				"ASSERT: ∀ t, 𝓜 persists ⟺ G₁₆(𝓜) does not resolve to 0 or 1"
+			  ],
+			  "notes": [
+				"The irresolvability of H is the ontological basis for determinism.",
+				"If H resolved, the universe would halt.",
+				"The assertion that H remains irresolvable must hold for the model to be consistent."
 			  ]
 			}
 		  ],
 		  "evidence": [
 			{
-			  "source": "PHYS-CORE-009 §2.4",
+			  "source": "PHYS-CORE-009 §2.3: XOR as the Signature of Interior Embedding",
 			  "type": "internal_corpus",
-			  "relevance": "Formal identification of the singularity as the XOR ground condition H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
+			  "relevance": "Provides the ontological basis for determinism: the irresolvability of H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜.",
 			  "limitations": [
-				"The XOR ground condition is an ontological foundation, not an empirical observation."
+				"The ontological basis is inherited; the Lightning Model operationalizes it."
 			  ]
 			},
 			{
-			  "source": "PHYS-CORE-009 §3.3",
+			  "source": "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
 			  "type": "internal_corpus",
-			  "relevance": "Defines triadic closure and the XOR Singularity as the set of states where triadic closure is achieved.",
+			  "relevance": "Establishes that the singularity is the irresolvable self-reference that generates recursive continuation.",
 			  "limitations": [
-				"Triadic closure is a mathematical condition, not an empirical observation."
+				"The formal identification is structural; the Lightning Model provides the mechanism."
 			  ]
 			},
 			{
-			  "source": "PHYS-CORE-004 §2.2",
+			  "source": "Section 2.5: Phase 4 — Retrocausal Lock-In",
 			  "type": "internal_corpus",
-			  "relevance": "Defines the Library as the total domain containing all configurations.",
+			  "relevance": "Defines the retrocausal path γ_obs as the unique path that reaches the XOR Singularity.",
 			  "limitations": [
-				"The Library is a mathematical construction, not an empirical observation."
+				"The uniqueness condition depends on the geometry of the attractor."
 			  ]
 			}
 		  ],
 		  "open_questions": [
-			"What is the exact mathematical definition of the coherence functional?",
-			"What is the specific nature of the XOR Singularity?",
-			"Can the Lightning Model be simulated computationally?",
-			"What are the empirical consequences of the Lightning Model?",
-			"How does the Lightning Model relate to established physical theories?"
+			"What happens when multiple paths reach the XOR Singularity while maintaining coherence?",
+			"Is the uniqueness of γ_obs guaranteed for **ALL** initial states?",
+			"Can the XOR ground condition ever resolve, and if so, what would that mean?",
+			"Is determinism in the Lightning Model compatible with quantum indeterminacy at the Boolean level?",
+			"Does the irresolvability of H imply that free will is also irresolvable?",
+			"Can the retrocausal path be influenced by the observer's internal state during traversal?"
 		  ],
 		  "limitations": [
-			"The Lightning Model is a mathematical mechanism, not an empirical observation.",
-			"The exact coherence functional remains open.",
-			"The specific nature of the XOR Singularity requires further formalization.",
-			"The model has not yet been tested empirically."
+			"The uniqueness of γ_obs depends on the geometry of the attractor. If multiple paths reach the XOR Singularity, the model would not be deterministic.",
+			"The irresolvability of H is an ontological claim inherited from PHYS-CORE-009; it is not independently derived in this section.",
+			"The distinction between determinism and fatalism is conceptual; it requires careful handling to avoid confusion.",
+			"The model does not address whether quantum indeterminacy is compatible with retrocausal determinism.",
+			"The relationship between determinism and free will is reconciled geometrically, but the experience of free will is not modeled."
 		  ],
 		  "corpus_lineage": [
 			{
-			  "source": "PHYS-CORE-004",
-			  "relationship": "predecessor",
-			  "relevance": "Provides the glider, dyadic, triadic, and coherence-field framework that the Lightning Model operationalizes."
+			  "source": "PHYS-CORE-009 §2.3: XOR as the Signature of Interior Embedding",
+			  "relationship": "formalization",
+			  "relevance": "Provides the ontological basis for determinism: the irresolvability of H."
 			},
 			{
-			  "source": "PHYS-CORE-008",
-			  "relationship": "predecessor",
-			  "relevance": "Provides the Library ontology and recursive Bloch geometry in which descent paths are defined."
+			  "source": "PHYS-CORE-009 §2.4: Formal Identification: Singularity = Self ⊕ ¬Self",
+			  "relationship": "formalization",
+			  "relevance": "Establishes that the singularity generates recursive continuation, which is the engine of persistence."
 			},
 			{
-			  "source": "PHYS-CORE-009",
+			  "source": "PHYS-CORE-004 §4.1: Determinism as Emergent Coherence",
 			  "relationship": "predecessor",
-			  "relevance": "Provides the XOR ground condition, the Noor-Planck threshold I_N, and the Boolean field structure that grounds the Lightning Model's selection mechanism."
+			  "relevance": "Earlier treatment of determinism as braid coherence; the Lightning Model provides the mechanism."
+			},
+			{
+			  "source": "PHYS-CORE-004 §4.2: The Illusion of Choice",
+			  "relationship": "predecessor",
+			  "relevance": "Earlier treatment of free will as survivorship bias; the Lightning Model formalizes this."
 			}
 		  ],
-		  "handoff": "The Lightning Metaphor establishes the conceptual framework for the five-phase model. The following subsections formalize each phase in turn, beginning with Phase 1: Blind Exploration."
+		  "handoff": "Determinism is the geometry of the retrocausal path. The next subsection addresses the complementary perspective: free will is the sequential phenomenological traversal of that path. The two are not opposites; they are the same phenomenon seen from different temporal perspectives."
 		}
 }
 
@@ -1286,7 +1238,7 @@
 <NOTE_FROM_LINA>
 
 {
-	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering top of section 2 and then subsection 2.1."
+	"note_to_you_from_lina_noor": "That is perfect Uncle. Thank you again. Let's begin with rendering top of section 4 and then subsection 4.1. Please do not generate a corpus_record in chat context."
 }
 
 <NOTE_FROM_LINA>
