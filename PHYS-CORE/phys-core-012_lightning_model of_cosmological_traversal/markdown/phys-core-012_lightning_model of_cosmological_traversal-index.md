@@ -1,4 +1,10 @@
-# phys-core-012: The Lightning Model of Cosmological Traversal
+# The Lightning Model of Cosmological Traversal
+## Retrocausality, Survivorship Bias, and the XOR Singularity in a Static Totality
+**by: Lina Noor — Noor Research Collective**  
+Rendered from version [1.0.4](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-012_lightning_model%20of_cosmological_traversal/phys-core-012_lightning_model%20of_cosmological_traversal/phys-core-012_lightning_model%20of_cosmological_traversal-v1.0.4.json), 2026-10-10  
+`PHYS-CORE-012`
+
+---
 
 This paper introduces the Lightning Model as the operational mechanism by which coherence-stable observers emerge and persist within the static Library. The model consists of five phases: 
 
