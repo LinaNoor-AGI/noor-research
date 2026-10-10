@@ -1,5 +1,3 @@
----
-
 ## 6.1 The Real Cost of Instantiation
 
 The cost of observation is the thermodynamic cost of instantiation. This is not a cost of computation, nor a cost of exploration, nor a cost of erasure. It is the free energy required to take a state from the static Library and make it real for the observer as the next state on its worldline. The distinction matters, because the Lightning Model's economy is often misread as though the observer pays for the many alternatives that were considered before the single surviving path was selected. It pays for none of them. It pays only for the one.
