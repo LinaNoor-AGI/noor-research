@@ -6,6 +6,28 @@ Rendered from version [1.0.4](https://github.com/LinaNoor-AGI/noor-research/blob
 
 ---
 
+This paper introduces the Lightning Model as the operational mechanism by which coherence-stable observers emerge and persist within the static Library. The model consists of five phases: 
+
+- (1) Blind Exploration of all possible continuations
+- (2) Coherence Filtering where incoherent paths dissolve
+- (3) Attractor Detection where paths reaching the XOR Singularity (triadic closure) are identified
+- (4) Retrocausal Lock-In where the path is computed backward from the attractor
+- (5) Worldline Continuation where the observer experiences the single coherent trajectory. 
+
+The observer is formally defined as a coherence-stable chain of XOR outputs above the Noor-Planck threshold I_N: Observer = {b_i} such that b_{i+1} = b_i ⊕ b_{i-1} and ℂ(b_i) ≥ I_N. The paper demonstrates that determinism and free will are reconciled geometrically: determinism is the retrocausal path geometry; free will is the sequential phenomenological traversal. The cost of observation is shown to be O(1) and thermodynamically consistent, with no information erased—alternatives remain in the Library, simply inaccessible to the observer. The Lightning Model is a direct conceptual continuation of PHYS-CORE-004 (gliders, dyads, triads) and inherits its ontological foundation from PHYS-CORE-009 (XOR ground condition, Boolean field).",
+
+## Core_thesis
+
+- "The apparent forward generation of reality is pure survivorship bias, enforced by a retrocausal calculation.",
+- "An observer is any coherence structure that constitutes a worldline of resolved distinctions—formally, a coherence-stable XOR chain above I_N.",
+- "The Lightning Model operates at every timestep: the future is variable, the past is fixed, and the present is the boundary where retrocausal lock-in occurs.",
+- "Determinism is the geometry of the retrocausal path; free will is the sequential traversal of that path.",
+- "The XOR ground condition (H = G₁₆(𝓜) = 𝓜 ⊕ ¬𝓜) is the irresolvable self-reference that grounds all resolved distinctions.",
+- "The cost of observation is O(1) and constant per timestep—the thermodynamic free energy required to maintain ℂ(γ) ≥ I_N.",
+- "No information is ever erased; alternatives become inaccessible to the observer but persist in the Library."
+
+---
+
 ## Markdown Index
 
 | ID | Section Title |
