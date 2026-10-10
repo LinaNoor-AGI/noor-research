@@ -14,7 +14,7 @@ $$
 \Omega(x_t) = \{\, \gamma \mid \gamma = \{x_t, x_{t+1}, x_{t+2}, \dots, x_N\} \,\},
 $$
 
-where each $\gamma$ is a path—a sequence of states representing a potential trajectory through the Library. The depth $N$ of the path may be finite in a given analysis, or it may be taken to be unbounded in the formal limit. The symbol $x_i$ denotes the $i$-th state in the path, and $\gamma$ denotes the path itself.
+where each $\gamma$ is a path—a sequence of states representing a potential trajectory through the Library. The depth $N$ of the path may be finite in a given analysis, or it may be taken to be unbounded in the formal limit. The symbol $x_i$ denotes the $i$ -th state in the path, and $\gamma$ denotes the path itself.
 
 A path is not an object that must be constructed. It is a sequence of states, each of which already exists in the Library. The set $\Omega(x_t)$ is therefore not a collection of things that must be generated; it is a formal description of which sequences of states are available as continuations of $x_t$.
 
@@ -30,7 +30,7 @@ $$
 b_{i+1} = b_i \oplus b_{i-1},
 $$
 
-where $b_i \in \{F, E\}$ is the $i$-th resolved binary distinction in the observer's worldline and $\oplus$ denotes logical exclusive disjunction.
+where $b_i \in \{F, E\}$ is the $i$ -th resolved binary distinction in the observer's worldline and $\oplus$ denotes logical exclusive disjunction.
 
 During Blind Exploration, this rule propagates into every successor state. The XOR operation does not select a continuation; it generates all continuations consistent with the current state. The observer's structure, understood as the coherence-stable chain of XOR outputs, conceptually "bleeds out" into every adjacent state. Each successor state that is consistent with the propagation rule becomes a candidate continuation of the observer's worldline.
 
