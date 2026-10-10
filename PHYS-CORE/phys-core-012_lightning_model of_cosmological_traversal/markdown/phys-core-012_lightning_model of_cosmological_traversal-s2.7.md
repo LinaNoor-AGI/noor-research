@@ -28,7 +28,7 @@ $$\phi_H$$
 
 are their respective phases, defined modulo $2\pi$. A state belongs to $X_{XOR}$ precisely when the vector closure condition and the phase closure condition hold simultaneously. These assumptions—that the motifs admit a common vector representation, that the phases are defined modulo $2\pi$, and that triadic closure is the condition for stable recursive relational structure—are inherited unchanged from PHYS-CORE-009.
 
-Two features of this definition deserve emphasis. First, $X_{XOR}$ is defined as a set of states, not as a point, a region, or a trajectory. It is a coherence boundary: a condition on states rather than a location in any background. Second, the condition is purely relational. No property of any single motif suffices to determine membership in $X_{XOR}$; the closure condition is a statement about the joint configuration of $G$, $\bar{G}$, and $H$. The XOR Singularity is therefore not a destination in the ordinary sense. It is the boundary at which the field's internal relations close.
+Two features of this definition deserve emphasis. First, $X_{XOR}$ is defined as a set of states, not as a point, a region, or a trajectory. It is a coherence boundary: a condition on states rather than a location in any background. Second, the condition is purely relational. No property of any single motif suffices to determine membership in $X_{XOR}$ ; the closure condition is a statement about the joint configuration of $G$, $\bar{G}$, and $H$. The XOR Singularity is therefore not a destination in the ordinary sense. It is the boundary at which the field's internal relations close.
 
 A descent path $\gamma$ is said to be *grounded* when its terminal state lies in this set:
 
