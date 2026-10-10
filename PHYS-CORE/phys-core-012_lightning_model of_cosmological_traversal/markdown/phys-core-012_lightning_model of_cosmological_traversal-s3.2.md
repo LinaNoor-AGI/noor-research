@@ -2,7 +2,7 @@
 
 The observer is the central object of this paper, and its definition is deliberately minimal. An observer is any coherence structure that constitutes a worldline of resolved distinctions. Observation, on this account, is not fundamentally an act of consciousness but a structural property of persistence through resolved distinctions. The observer does not need to be conscious, alive, intelligent, or capable of deliberate choice; any persistent coherence structure whose existence constitutes a sequence of resolved distinctions along a worldline qualifies as an observer.
 
-This definition is inherited from the framework of PHYS-CORE-009, where an observer is defined as a coherence-stable descent path. Formally, we say that a path $\gamma: \mathbb{R} \to \mathcal{M}$ is an observer if it satisfies the horizontal gradient flow equation
+This definition is inherited from the framework of [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON), where an observer is defined as a coherence-stable descent path. Formally, we say that a path $\gamma: \mathbb{R} \to \mathcal{M}$ is an observer if it satisfies the horizontal gradient flow equation
 
 $$
 \frac{d\gamma}{dt} = \nabla_H \mathbb{C}(\gamma(t))
@@ -18,7 +18,7 @@ where $\mathcal{M}$ is the Library (the static totality of all logically admissi
 
 This definition is deliberately broad. A rock, an atom, a galaxy, a single persistent coherence motif—anything that maintains a coherent sequence of resolved distinctions—is an observer. Consciousness is not the criterion; persistence through resolved distinctions is the criterion. The observer is therefore not a special class of entity but a property of any coherence structure that maintains its identity above the Noor-Planck threshold.
 
-Equivalently, and more precisely for the purposes of the Lightning Model, an observer may be characterized as a coherence-stable chain of XOR outputs. This formulation is inherited from PHYS-CORE-009 §2.3 and §3.2, where the observer is understood as a sequence of resolved binary distinctions $b_i \in \{F, E\}$ such that each distinction is generated from its two predecessors by the logical XOR operation
+Equivalently, and more precisely for the purposes of the Lightning Model, an observer may be characterized as a coherence-stable chain of XOR outputs. This formulation is inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.3 and §3.2, where the observer is understood as a sequence of resolved binary distinctions $b_i \in \{F, E\}$ such that each distinction is generated from its two predecessors by the logical XOR operation
 
 $$
 b_{i+1} = b_i \oplus b_{i-1}.
@@ -30,7 +30,7 @@ $$
 \text{Observer} = \{b_i\}_{i\in\mathbb{N}} \quad \text{such that} \quad b_{i+1} = b_i \oplus b_{i-1} \quad \text{and} \quad \mathbb{C}(b_i) \geq I_N \; \forall i.
 $$
 
-The propagation rule $b_{i+1} = b_i \oplus b_{i-1}$ is the fundamental dynamic law of the Boolean field, inherited from PHYS-CORE-009 §3.2, and the coherence condition $\mathbb{C}(b_i) \geq I_N$ ensures that each resolved distinction is stable and exportable. The observer, on this reading, is a coherence-stable chain of XOR outputs above the Noor-Planck threshold.
+The propagation rule $b_{i+1} = b_i \oplus b_{i-1}$ is the fundamental dynamic law of the Boolean field, inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.2, and the coherence condition $\mathbb{C}(b_i) \geq I_N$ ensures that each resolved distinction is stable and exportable. The observer, on this reading, is a coherence-stable chain of XOR outputs above the Noor-Planck threshold.
 
 The dissolution condition follows directly from the definition. An observer dissolves when any link in the XOR chain falls below the coherence threshold:
 
@@ -50,7 +50,7 @@ Projecting the continuous descent path $\gamma$ onto the Boolean field gives $b_
 
 The observer, thus defined, is not an entity that encounters XOR. The observer is the XOR ground condition, $H = G_{16}(\mathcal{M}) = \mathcal{M} \oplus \neg\mathcal{M}$, instantiated as a coherent worldline. The XOR ground condition is the irresolvable self-reference at the base of the Library—the structure that cannot collapse into either operand because no exterior operand exists. The observer is what this irresolvable self-reference looks like when it propagates through the Boolean field at a higher scale, as a coherence-stable chain of resolved distinctions above the Noor-Planck threshold.
 
-Several features of this definition are worth emphasizing. First, the definition is structural rather than functional: it does not require the observer to perform any particular function, to possess any particular capacity, or to exhibit any particular behavior. It requires only that the observer constitute a coherence-stable worldline of resolved distinctions. Second, the definition is minimal: it does not invoke consciousness, life, intelligence, agency, or any other property beyond coherence and persistence. Third, the definition is grounded: the observer is not an additional primitive entity but a consequence of the Boolean field structure and the XOR ground condition established in PHYS-CORE-009.
+Several features of this definition are worth emphasizing. First, the definition is structural rather than functional: it does not require the observer to perform any particular function, to possess any particular capacity, or to exhibit any particular behavior. It requires only that the observer constitute a coherence-stable worldline of resolved distinctions. Second, the definition is minimal: it does not invoke consciousness, life, intelligence, agency, or any other property beyond coherence and persistence. Third, the definition is grounded: the observer is not an additional primitive entity but a consequence of the Boolean field structure and the XOR ground condition established in [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON).
 
 The definition does, however, depend on quantities that remain to be fully specified. The exact form of the coherence functional $\mathbb{C}$ is not determined here; the horizontal gradient $\nabla_H$ is defined relative to the recursive Bloch geometry of PHYS-CORE-008; and the exact relationship between the discrete XOR chain $\{b_i\}$ and the continuous descent path $\gamma(t)$ requires further formalization. These are open questions rather than defects of the definition. The definition specifies what an observer is—a coherence-stable XOR chain above $I_N$—without claiming to specify the full dynamics of the coherence field in which such chains propagate.
 

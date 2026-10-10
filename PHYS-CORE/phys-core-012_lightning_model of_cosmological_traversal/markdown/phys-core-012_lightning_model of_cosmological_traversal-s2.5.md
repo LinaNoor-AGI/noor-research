@@ -10,7 +10,7 @@ $$
 
 Here $T^{-1}$ is the backward operator that computes the predecessor state from its successor. The subscript *obs* denotes that this is the worldline segment the observer will experience. The terminal state $x_N$ belongs to the XOR Singularity $X_{XOR}$, and the path is required to maintain coherence above the Noor-Planck threshold $I_N$ at every step. The path is not generated forward. It is locked backward.
 
-This backward evaluation is not a second process running alongside the first. It is the formal operation by which the coherence-stable XOR chain is validated. From PHYS-CORE-009 §2.3, the observer is a coherence-stable chain of XOR outputs: $b_{i+1} = b_i \oplus b_{i-1}$. The return stroke confirms that this chain—read from its terminal state back to its origin—satisfies the coherence and identity conditions at every link. The observer is not an entity that encounters XOR; the observer *is* XOR, instantiated as a coherent worldline.
+This backward evaluation is not a second process running alongside the first. It is the formal operation by which the coherence-stable XOR chain is validated. From [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.3, the observer is a coherence-stable chain of XOR outputs: $b_{i+1} = b_i \oplus b_{i-1}$. The return stroke confirms that this chain—read from its terminal state back to its origin—satisfies the coherence and identity conditions at every link. The observer is not an entity that encounters XOR; the observer *is* XOR, instantiated as a coherent worldline.
 
 At each step of the backward evaluation, two conditions must hold. The coherence condition requires that the transition from predecessor to successor remains above threshold:
 
@@ -24,7 +24,7 @@ $$
 \text{Identity}(T^{-1}(x_{i+1})) = \text{Identity}(x_{i+1})
 $$
 
-Under the PHYS-CORE-009 mapping, 
+Under the [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) mapping, 
 
 $$\mathcal{C}_{min}$$ 
 
@@ -62,7 +62,7 @@ This reframing has consequences for how we understand retrocausality in the mode
 
 Determinism in this model is therefore not a forward-pushing force. It is the geometry of the retrocausal path. The path $\gamma_{obs}$ is uniquely determined by the condition that it reaches $X_{XOR}$ while maintaining $\mathbb{C} \geq I_N$ at every step. There is no branching at the level of the locked-in path. The future is variable and undefined until the retrocausal lock-in occurs; the past is fixed because it has already been locked in; the present is the boundary where the retrocausal lock-in is occurring.
 
-The ontological basis for this mechanism lies in the XOR ground condition inherited from PHYS-CORE-009 §2.4:
+The ontological basis for this mechanism lies in the XOR ground condition inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.4:
 
 $$
 H = G_{16}(\mathcal{M}) = \mathcal{M} \oplus \neg\mathcal{M}

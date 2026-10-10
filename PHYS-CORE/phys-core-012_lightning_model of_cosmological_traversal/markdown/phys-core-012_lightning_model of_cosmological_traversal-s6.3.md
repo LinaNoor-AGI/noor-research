@@ -12,7 +12,7 @@ An alternative path that the observer did not traverse is not thereby annihilate
 
 $$ \mathcal{M}(t) = \mathcal{M} \quad \forall t \in \mathbb{R} $$
 
-This is the staticity axiom inherited from PHYS-CORE-009 §1.1, and it is the load-bearing premise of the present subsection. Because the Library is static, no configuration is ever removed from it. Because no configuration is ever removed, no information is ever erased. Because no information is ever erased, Landauer's principle does not impose a lower bound on any operation the Lightning Model performs.
+This is the staticity axiom inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1, and it is the load-bearing premise of the present subsection. Because the Library is static, no configuration is ever removed from it. Because no configuration is ever removed, no information is ever erased. Because no information is ever erased, Landauer's principle does not impose a lower bound on any operation the Lightning Model performs.
 
 What the observer does pay — and this is a real thermodynamic cost, not a notational convenience — is the free energy required to instantiate the next state. The cost is denoted $c_{lock}$, and it is defined as follows:
 

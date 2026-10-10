@@ -4,7 +4,7 @@ The preceding sections have established the five-phase mechanism of the Lightnin
 
 Survivorship bias is the central explanatory mechanism. It resolves the paradox of why an observer experiences a single, coherent worldline despite the existence of **ALL** continuations in the static Library.
 
-The dissolution condition, inherited from PHYS-CORE-009, is precise:
+The dissolution condition, inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON), is precise:
 
 $$
 \text{Dissolution} \iff \exists i : \mathbb{C}(b_i) < I_N

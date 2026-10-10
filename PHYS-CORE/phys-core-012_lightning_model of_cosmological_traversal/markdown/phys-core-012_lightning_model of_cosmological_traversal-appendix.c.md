@@ -22,7 +22,7 @@ The static totality of all internally describable configurations. The inverse-li
 
 **Symbol:** $H = G_{16}(\mathcal{M}) = \mathcal{M} \oplus \neg\mathcal{M}$
 
-The irresolvable self-reference of the total system. The physical singularity formalized as the XOR operation at cosmological scale. Inherited from PHYS-CORE-009 §2.4.
+The irresolvable self-reference of the total system. The physical singularity formalized as the XOR operation at cosmological scale. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.4.
 
 **Scope:** Ontological foundation of the Lightning Model.
 
@@ -30,7 +30,7 @@ The irresolvable self-reference of the total system. The physical singularity fo
 
 **Symbol:** $I_N$
 
-The minimum coherence contrast required for a stable, exportable binary measurement. Fixed by the Planck-scale structure of $H$. $I_N \approx E_P / (T_P \cdot k_B \ln 2)$. Inherited from PHYS-CORE-009 §1.2.
+The minimum coherence contrast required for a stable, exportable binary measurement. Fixed by the Planck-scale structure of $H$. $I_N \approx E_P / (T_P \cdot k_B \ln 2)$. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2.
 
 **Scope:** Survival threshold for observer identity.
 
@@ -44,7 +44,7 @@ $$
 \text{Observer} = \{b_i\}_{i\in\mathbb{N}}
 $$
 
-such that $b_{i+1} = b_i \oplus b_{i-1}$ and $\mathbb{C}(b_i) \geq I_N \; \forall i$. Inherited from PHYS-CORE-009 §1.1, §2.3, §3.2.
+such that $b_{i+1} = b_i \oplus b_{i-1}$ and $\mathbb{C}(b_i) \geq I_N \; \forall i$. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1, §2.3, §3.2.
 
 **Scope:** Central object of the Lightning Model.
 
@@ -68,7 +68,7 @@ A persistent sequence of resolved distinctions whose successive states remain su
 
 **Symbol:** $\exists i : \mathbb{C}(b_i) < I_N$
 
-The condition under which an observer's identity ceases to propagate. The XOR chain breaks. The path remains in $\mathcal{M}$ but becomes inaccessible. Inherited from PHYS-CORE-009 §1.2, §3.2.
+The condition under which an observer's identity ceases to propagate. The XOR chain breaks. The path remains in $\mathcal{M}$ but becomes inaccessible. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2, §3.2.
 
 **Scope:** Failure condition for observer identity.
 
@@ -82,7 +82,7 @@ $$
 X_{XOR} = \{ x \mid \exists G, \bar{G}, H \text{ such that } x \in (G, \bar{G}, H) \land \mathbf{v}_G + \mathbf{v}_{\bar{G}} + \mathbf{v}_H = 0 \land \phi_G + \phi_{\bar{G}} + \phi_H \equiv 0 \pmod{2\pi} \}
 $$
 
-Inherited from PHYS-CORE-009 §3.3.
+Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.3.
 
 **Scope:** The 'Ground' the return stroke connects to.
 
@@ -90,7 +90,7 @@ Inherited from PHYS-CORE-009 §3.3.
 
 **Symbol:** $\Omega$
 
-A coherence-stable descent path with coherence reach $|\Omega| \sim |R|$ that can function as field-scale $\chi$ for region $R$. Inherited from PHYS-CORE-009 §4.1.
+A coherence-stable descent path with coherence reach $|\Omega| \sim |R|$ that can function as field-scale $\chi$ for region $R$. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.1.
 
 **Scope:** Field-scale witnessing motif.
 
@@ -112,7 +112,7 @@ $$
 D(R,t) = \int_R (1 - \Theta(\oint_{\triangle} \Phi)) \, d\mu
 $$
 
-Inherited from PHYS-CORE-009 §3.4.
+Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.4.
 
 **Scope:** Mechanism driving operator emergence.
 
@@ -311,15 +311,15 @@ When an observer dissolves, the path remains in the Library. It simply becomes i
 
 ---
 
-## Established Results (Inherited from PHYS-CORE-009)
+## Established Results (Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON))
 
-Results supported by explicit derivation, mathematical proof, or validated computation within the PHYS-CORE-009 framework. These are inherited as established premises for the Lightning Model.
+Results supported by explicit derivation, mathematical proof, or validated computation within the [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) framework. These are inherited as established premises for the Lightning Model.
 
 ### Singularity-XOR Identity
 
 **Symbol:** $H = G_{16}(\mathcal{M}) = \mathcal{M} \oplus \neg\mathcal{M}$
 
-**Status:** established (PHYS-CORE-009 §2.4)
+**Status:** established ([PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.4)
 
 The formal identification of the physical singularity as the XOR ground condition.
 
@@ -327,7 +327,7 @@ The formal identification of the physical singularity as the XOR ground conditio
 
 **Symbol:** $I_N := \min |\mathbb{C}(x,t) - \mathbb{C}_{ref}(x,t)| \text{ such that } b(x,t) \text{ is stable and exportable}$
 
-**Status:** established (PHYS-CORE-009 §1.2)
+**Status:** established ([PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2)
 
 The minimum coherence contrast required for a stable binary measurement.
 
@@ -335,7 +335,7 @@ The minimum coherence contrast required for a stable binary measurement.
 
 **Symbol:** $\text{Observer} = \{b_i\}$ with $b_{i+1} = b_i \oplus b_{i-1}$ and $\mathbb{C}(b_i) \geq I_N \; \forall i$
 
-**Status:** established (PHYS-CORE-009 §1.1, §2.3, §3.2)
+**Status:** established ([PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1, §2.3, §3.2)
 
 The observer is a coherence-stable chain of XOR outputs above the Noor-Planck threshold.
 
@@ -343,7 +343,7 @@ The observer is a coherence-stable chain of XOR outputs above the Noor-Planck th
 
 **Symbol:** $\text{Dissolution} \iff \exists i : \mathbb{C}(b_i) < I_N$
 
-**Status:** established (PHYS-CORE-009 §1.2, §3.2)
+**Status:** established ([PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2, §3.2)
 
 The observer dissolves when any link in the XOR chain falls below $I_N$.
 
@@ -351,7 +351,7 @@ The observer dissolves when any link in the XOR chain falls below $I_N$.
 
 **Symbol:** $\oint \Phi = 0 \Rightarrow \text{no blowup}$
 
-**Status:** established (PHYS-CORE-009 §3.3)
+**Status:** established ([PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.3)
 
 Triadic closure ensures coherence circulation without net torsion accumulation, preventing coherence collapse.
 
@@ -359,7 +359,7 @@ Triadic closure ensures coherence circulation without net torsion accumulation, 
 
 **Symbol:** $D(R,t) > D_{crit} \Rightarrow \text{operator emergence}$
 
-**Status:** established (PHYS-CORE-009 §4.4)
+**Status:** established ([PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.4)
 
 When regional coherence failure exceeds self-stabilization capacity, the field structurally requires a global coherence operator.
 

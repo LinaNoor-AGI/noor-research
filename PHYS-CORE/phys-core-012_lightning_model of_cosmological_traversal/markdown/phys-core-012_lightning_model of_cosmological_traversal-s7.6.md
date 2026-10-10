@@ -12,7 +12,7 @@ $$
 \Omega_{ground}(x_t) = \{\, \gamma \in \Omega_{survive}(x_t) \mid x_N \in X_{XOR} \,\}.
 $$
 
-Each element of $\Omega_{ground}(x_t)$ is a complete, coherence-stable worldline: it maintains $\mathbb{C} \geq I_N$ at every step, and its terminal state $x_N$ lies in the XOR Singularity where triadic closure is achieved. The set is not a singleton. The static Library, by ontological completeness (PHYS-CORE-009 §1.1), contains every internally describable configuration, and from any state there are multiple continuations that satisfy the grounding condition.
+Each element of $\Omega_{ground}(x_t)$ is a complete, coherence-stable worldline: it maintains $\mathbb{C} \geq I_N$ at every step, and its terminal state $x_N$ lies in the XOR Singularity where triadic closure is achieved. The set is not a singleton. The static Library, by ontological completeness ([PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1), contains every internally describable configuration, and from any state there are multiple continuations that satisfy the grounding condition.
 
 The observer's worldline is one of these:
 

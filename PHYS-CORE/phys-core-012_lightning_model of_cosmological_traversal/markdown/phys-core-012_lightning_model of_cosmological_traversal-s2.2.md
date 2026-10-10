@@ -18,13 +18,13 @@ where each $\gamma$ is a path—a sequence of states representing a potential tr
 
 A path is not an object that must be constructed. It is a sequence of states, each of which already exists in the Library. The set $\Omega(x_t)$ is therefore not a collection of things that must be generated; it is a formal description of which sequences of states are available as continuations of $x_t$.
 
-This distinction is essential, and it is the source of the apparent paradox with which we began. If the Library is static and complete—as established in PHYS-CORE-009 §1.1—then every continuation already exists. The "exploration" performed in this phase is not a physical process that brings paths into being. It is the formal consideration of which paths are coherently accessible from the current state. The universe does not compute the step-leaders. The step-leaders are the structural form of the Library's completeness, viewed from the perspective of a state that has not yet been resolved into its successor.
+This distinction is essential, and it is the source of the apparent paradox with which we began. If the Library is static and complete—as established in [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1—then every continuation already exists. The "exploration" performed in this phase is not a physical process that brings paths into being. It is the formal consideration of which paths are coherently accessible from the current state. The universe does not compute the step-leaders. The step-leaders are the structural form of the Library's completeness, viewed from the perspective of a state that has not yet been resolved into its successor.
 
 ---
 
 ## The Observer's XOR Chain Propagates Into Every Successor
 
-The formal apparatus that generates this structure is the XOR chain, inherited from PHYS-CORE-009 §2.3. There, the observer is defined as a coherence-stable chain of XOR outputs, with the fundamental propagation rule
+The formal apparatus that generates this structure is the XOR chain, inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.3. There, the observer is defined as a coherence-stable chain of XOR outputs, with the fundamental propagation rule
 
 $$
 b_{i+1} = b_i \oplus b_{i-1},
@@ -46,7 +46,7 @@ $$
 \mathcal{C}(x_i, x_{i+1}) \geq \mathcal{C}_{\min},
 $$
 
-where $\mathcal{C}(x_i, x_{i+1})$ is the coherence between successive states and $\mathcal{C}_{\min}$ is the minimum coherence required for the observer to persist. This threshold is identified with the Noor-Planck threshold $I_N$ inherited from PHYS-CORE-009 §1.2, which fixes the minimum coherence contrast for a stable, exportable binary measurement.
+where $\mathcal{C}(x_i, x_{i+1})$ is the coherence between successive states and $\mathcal{C}_{\min}$ is the minimum coherence required for the observer to persist. This threshold is identified with the Noor-Planck threshold $I_N$ inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2, which fixes the minimum coherence contrast for a stable, exportable binary measurement.
 
 A path dissolves when any transition along it violates this condition:
 
@@ -56,7 +56,7 @@ $$
 
 Because coherence is a strong constraint, the vast majority of continuations in $\Omega(x_t)$ violate it at some transition. These paths are explored formally, but they do not survive. They dissolve.
 
-We must be precise about what "dissolve" means here. Dissolution is not erasure. The path remains in the Library; it is simply not accessible to the observer, because the observer's identity has ceased to propagate along it. As established in PHYS-CORE-009 §1.2 and §3.2, when the XOR chain drops below the Noor-Planck threshold, the chain breaks. There is no longer a stable sequence of resolved distinctions to constitute the observer's worldline. The path persists in the static Library, but it is no longer traversed.
+We must be precise about what "dissolve" means here. Dissolution is not erasure. The path remains in the Library; it is simply not accessible to the observer, because the observer's identity has ceased to propagate along it. As established in [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2 and §3.2, when the XOR chain drops below the Noor-Planck threshold, the chain breaks. There is no longer a stable sequence of resolved distinctions to constitute the observer's worldline. The path persists in the static Library, but it is no longer traversed.
 
 The dissolution of the vast majority of paths is the first appearance, within the Lightning Model, of a phenomenon whose implications will unfold across the remaining phases. We call it survivorship. The observer who eventually traverses a single coherent worldline does so because that worldline is the one that survived the coherence filter. The others did not fail in any active sense. They simply did not maintain the coherence required for the observer's identity to continue.
 

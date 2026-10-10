@@ -1,6 +1,6 @@
 ## 1.1 The Paradox of Forward Coherence
 
-The Library, as established in PHYS-CORE-004 §2.2 and formalized in PHYS-CORE-009 §1.1, is a static totality. It contains **ALL** configurations. It has no exterior and no temporal variation. The inverse-limit construction
+The Library, as established in [PHYS-CORE-004](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json) §2.2 and formalized in [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1, is a static totality. It contains **ALL** configurations. It has no exterior and no temporal variation. The inverse-limit construction
 
 $$
 \mathcal{M} \cong NS = \lim_{k\to\infty} NS_k
@@ -44,7 +44,7 @@ $$
 H = G_{16}(\mathcal{M}) = \mathcal{M} \oplus \neg\mathcal{M}
 $$
 
-inherited from PHYS-CORE-009. The static Library contains all paths. The Lightning Model is the mechanism by which coherent paths are selected retrocausally.
+inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON). The static Library contains all paths. The Lightning Model is the mechanism by which coherent paths are selected retrocausally.
 
 The paradox of the static totality therefore establishes the problem that the remainder of this paper addresses. If all paths exist, why does the observer experience only one—and why is that one strictly coherent? The next subsection introduces the Lightning Model as the missing mechanism, showing how retrocausal selection from the XOR Singularity resolves this paradox without invoking a forward-pushing force, without erasing any configuration from the Library, and without requiring consciousness, life, intelligence, or agency as primitive concepts.
 

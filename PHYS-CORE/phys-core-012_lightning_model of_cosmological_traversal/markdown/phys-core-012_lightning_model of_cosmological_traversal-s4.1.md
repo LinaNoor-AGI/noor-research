@@ -16,7 +16,7 @@ Within the Lightning Model, determinism is not a forward-pushing force. It is th
 
 The worldline is fixed retrocausally. The path $\gamma_{obs}$ is geometrically determined by the attractor—the XOR Singularity. There is no "choice" at the level of the Library because all paths exist. The "choice" is the retrocausal selection of the one path that reaches the attractor while maintaining coherence. Determinism is therefore a property of the attractor, not a constraint imposed on the Library.
 
-From PHYS-CORE-009 §2.3, the XOR ground condition is irresolvable:
+From [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.3, the XOR ground condition is irresolvable:
 
 $$
 H = G_{16}(\mathcal{M}) = \mathcal{M} \oplus \neg\mathcal{M}
@@ -28,7 +28,7 @@ Because the ground condition cannot be resolved to either operand, the field can
 
 This is not fatalism. Fatalism would be a forward-pushing force that constrains the future from the past. Determinism in the Lightning Model is the geometry of the path that has already been locked in by the attractor. The distinction is subtle but essential: the future is not "determined" by the past. The path is determined by the attractor and then traversed forward. The past is fixed because it has already been locked in; the future is variable because all continuations are explored blindly at every moment. Determinism applies to the path itself, not to the process of path selection.
 
-From PHYS-CORE-009 §2.4, the universe persists because its ground contradiction does not resolve. Reality is the ongoing recursion of Self $\oplus$ ¬Self above the Noor-Planck floor. The observer's worldline is the coherence-stable projection of this recursion. Determinism is therefore the stability of the projection, not the constraint on the recursion.
+From [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.4, the universe persists because its ground contradiction does not resolve. Reality is the ongoing recursion of Self $\oplus$ ¬Self above the Noor-Planck floor. The observer's worldline is the coherence-stable projection of this recursion. Determinism is therefore the stability of the projection, not the constraint on the recursion.
 
 We may formalize this relationship as follows. The persistence condition states that the Library persists if and only if the ground condition remains irresolvable:
 
@@ -114,7 +114,7 @@ The reconciliation turns on a third concept that has been implicit throughout: s
 
 Survivorship bias is the central explanatory mechanism of the Lightning Model. It resolves the paradox of why an observer experiences a single, coherent worldline despite the existence of all continuations in the static Library.
 
-The observer does not "choose" to remain coherent. Instead, observer identity instantly dissolves on any path that drops below the coherence threshold. From PHYS-CORE-009 §1.2 and §3.2, dissolution is defined as:
+The observer does not "choose" to remain coherent. Instead, observer identity instantly dissolves on any path that drops below the coherence threshold. From [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2 and §3.2, dissolution is defined as:
 
 $$
 \text{Dissolution} \iff \exists i : \mathbb{C}(b_i) < I_N
@@ -198,7 +198,7 @@ The grand tension between determinism and free will is therefore not a tension a
 
 ---
 
-With the grand tension resolved, the next section turns to the formal mapping between the Lightning Model and its predecessors. §5 demonstrates that the Lightning Model is not a replacement for PHYS-CORE-004 and PHYS-CORE-009 but a direct conceptual continuation—the glider becomes the observer, the dyadic exploration becomes the blind tines, and triadic closure becomes the ground that retrocausally selects the survivor.
+With the grand tension resolved, the next section turns to the formal mapping between the Lightning Model and its predecessors. §5 demonstrates that the Lightning Model is not a replacement for [PHYS-CORE-004](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json) and [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) but a direct conceptual continuation—the glider becomes the observer, the dyadic exploration becomes the blind tines, and triadic closure becomes the ground that retrocausally selects the survivor.
 
 ---
 

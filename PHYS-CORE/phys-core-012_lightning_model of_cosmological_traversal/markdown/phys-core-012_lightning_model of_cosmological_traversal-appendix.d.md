@@ -4,7 +4,7 @@ The formal development of the Lightning Model proceeds through equations, defini
 
 The epistemic status of this appendix is different from that of the rest of the paper. The ciphers are not mathematical objects, and they are not empirical claims. They are interpretive scaffolding: conceptual guideposts that compress the relational structure of the argument into language that can be carried in the mind while reading sections whose formal content is dense. A cipher may suggest a connection. It cannot establish one. No cipher in this appendix may be used to justify a mathematical claim or a physical hypothesis, and the reader should be careful not to mistake the resonance of a well-turned phrase for the warrant of a derivation.
 
-With that caveat stated plainly, the ciphers themselves are worth preserving. They served as navigational aids during the development of the paper, and they continue to serve as a compressed index of the framework's conceptual architecture. Each cipher maps to one or more sections of the paper, to a set of primary concepts, and to a role in the overall argument. The relations among ciphers form a small graph whose edges track the way one insight flows into another. The conceptual mapping, finally, groups the ciphers by the phase of the Lightning Model, by core concept, and by their correspondence with the ontological structures inherited from PHYS-CORE-009.
+With that caveat stated plainly, the ciphers themselves are worth preserving. They served as navigational aids during the development of the paper, and they continue to serve as a compressed index of the framework's conceptual architecture. Each cipher maps to one or more sections of the paper, to a set of primary concepts, and to a role in the overall argument. The relations among ciphers form a small graph whose edges track the way one insight flows into another. The conceptual mapping, finally, groups the ciphers by the phase of the Lightning Model, by core concept, and by their correspondence with the ontological structures inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON).
 
 ### D.1 The Ciphers
 
@@ -76,7 +76,7 @@ This cipher encodes the thermodynamic consistency of the model. Dissolution is n
 
 **D.17.** *The ground condition is the ontological foundation for the operational mechanism.*
 
-This cipher encodes the relationship between PHYS-CORE-009 as ontological foundation and the Lightning Model as operational mechanism. Its themes are foundation, ontology, and mechanism; its primary concepts are the XOR ground condition, the Lightning Model, and PHYS-CORE-009. It belongs to §5.3.
+This cipher encodes the relationship between [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) as ontological foundation and the Lightning Model as operational mechanism. Its themes are foundation, ontology, and mechanism; its primary concepts are the XOR ground condition, the Lightning Model, and [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON). It belongs to §5.3.
 
 **D.18.** *The glider is the pattern; the observer is the pattern on a path; the explorer is the pattern that chooses its path.*
 
@@ -119,7 +119,7 @@ A reader who works through the resonance graph will find that the edges cluster 
 
 ### D.3 Conceptual Mapping
 
-The ciphers admit a second organization, one that cuts across the ordering in which they were introduced. The mappings below group the ciphers by the phase of the Lightning Model to which they belong, by the core concept they are most directly illuminating, and by the structures they inherit from PHYS-CORE-009.
+The ciphers admit a second organization, one that cuts across the ordering in which they were introduced. The mappings below group the ciphers by the phase of the Lightning Model to which they belong, by the core concept they are most directly illuminating, and by the structures they inherit from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON).
 
 **By Lightning Model phase.**
 
@@ -142,9 +142,9 @@ The ciphers admit a second organization, one that cuts across the ordering in wh
 | Free Will | D.12, D.21 |
 | Energy Accounting | D.15, D.16 |
 
-**By correspondence with PHYS-CORE-009.**
+**By correspondence with [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON).**
 
-| PHYS-CORE-009 structure | Ciphers |
+| [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) structure | Ciphers |
 |-------------------------|---------|
 | $H = G_{16}(\mathcal{M})$ | D.9, D.13, D.17, D.20 |
 | $I_N$ threshold | D.5, D.11 |
@@ -153,7 +153,7 @@ The ciphers admit a second organization, one that cuts across the ordering in wh
 | Field demand $D(R,t)$ | D.17, D.20 |
 | Global coherence operator $\Omega$ | D.17, D.20 |
 
-These mappings are not independent of one another. A cipher that appears under a particular Lightning Model phase will generally also appear under one of the core concepts and under one of the PHYS-CORE-009 structures, because the phases, the concepts, and the inherited structures are three ways of describing the same underlying architecture. The mappings are provided here to make that architecture legible from different angles.
+These mappings are not independent of one another. A cipher that appears under a particular Lightning Model phase will generally also appear under one of the core concepts and under one of the [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) structures, because the phases, the concepts, and the inherited structures are three ways of describing the same underlying architecture. The mappings are provided here to make that architecture legible from different angles.
 
 ### D.4 On the Use of Ciphers
 

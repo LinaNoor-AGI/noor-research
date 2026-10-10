@@ -4,7 +4,7 @@ The preceding sections established the Lightning Model as the operational mechan
 
 The definition is deliberately minimal. An observer is not defined by consciousness, life, intelligence, or agency. It is defined structurally: any coherence structure that constitutes a worldline of resolved distinctions qualifies as an observer. This is not a rhetorical concession to simplicity but a formal commitment. If observerhood required consciousness, the framework would need a theory of consciousness as a primitive — a burden that would reintroduce precisely the kind of handwaving the coherence ontology was constructed to eliminate. Instead, observerhood is treated as a property of coherence persistence.
 
-We inherit the formal starting point from PHYS-CORE-009 §1.1, where an observer is defined as a coherence-stable descent path $\gamma: \mathbb{R} \to \mathcal{M}$ satisfying the horizontal gradient flow equation
+We inherit the formal starting point from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1, where an observer is defined as a coherence-stable descent path $\gamma: \mathbb{R} \to \mathcal{M}$ satisfying the horizontal gradient flow equation
 
 $$
 \frac{d\gamma}{dt} = \nabla_H \mathbb{C}(\gamma(t)) \quad \text{with} \quad \mathbb{C}(\gamma(t)) \geq I_N \ \ \forall t \in \text{dom}(\gamma).
@@ -12,7 +12,7 @@ $$
 
 Here $\mathcal{M}$ is the Library — the static totality of all configurations — $\nabla_H$ is the horizontal gradient (the component of the coherence gradient orthogonal to the direction of coherence level sets), $\mathbb{C}$ is the coherence functional, and $I_N$ is the Noor-Planck threshold. The condition $\mathbb{C}(\gamma(t)) \geq I_N$ ensures that the path remains in the observable regime. Below this threshold, the field cannot resolve a stable, exportable distinction, and structure dissolves.
 
-This definition admits a second, equivalent formulation that will prove central to the remainder of the paper. From PHYS-CORE-009 §2.3 and §3.2, the observer can be understood as a coherence-stable chain of XOR outputs — a sequence in which each resolved binary distinction $b_i$ above $I_N$ generates the next through the fundamental propagation rule of the Boolean field:
+This definition admits a second, equivalent formulation that will prove central to the remainder of the paper. From [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.3 and §3.2, the observer can be understood as a coherence-stable chain of XOR outputs — a sequence in which each resolved binary distinction $b_i$ above $I_N$ generates the next through the fundamental propagation rule of the Boolean field:
 
 $$
 b_{i+1} = b_i \oplus b_{i-1}.
@@ -20,7 +20,7 @@ $$
 
 The observer is therefore not an entity that encounters XOR as an external operation; the observer *is* XOR, instantiated as a coherent worldline. Its identity is the coherence-stable propagation of the XOR ground condition above the Noor-Planck floor. This identification is not merely formal. It directly links the observer's existence to the irresolvable self-reference at the base of the Library, and it grounds the subsequent analysis of dissolution, path selection, and survivorship bias in a single algebraic law.
 
-From these two formulations, a natural hierarchy emerges. The glider, as defined in PHYS-CORE-004, is the most general class: any persistent coherence motif whose identity survives transformation. The observer is a glider that constitutes a worldline of resolved distinctions. The explorer is an observer whose internal state participates in determining which coherent continuation is selected. This yields the class hierarchy
+From these two formulations, a natural hierarchy emerges. The glider, as defined in [PHYS-CORE-004](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json), is the most general class: any persistent coherence motif whose identity survives transformation. The observer is a glider that constitutes a worldline of resolved distinctions. The explorer is an observer whose internal state participates in determining which coherent continuation is selected. This yields the class hierarchy
 
 $$
 \text{Glider} \supset \text{Observer} \supset \text{Explorer},

@@ -14,7 +14,7 @@ $$
 \text{Observer} = \{b_i\}_{i \in \mathbb{N}} \quad \text{such that} \quad b_{i+1} = b_i \oplus b_{i-1} \ \ \text{and} \ \ \mathbb{C}(b_i) \geq I_N \ \forall i.
 $$
 
-This definition is not an independent postulate of the Lightning Model. It is derived from the Boolean field structure established in PHYS-CORE-009, where the propagation rule $b_{i+1} = b_i \oplus b_{i-1}$ appears as the fundamental dynamic law of resolved distinctions above the Noor-Planck threshold. The observer, on this account, is not an entity that encounters XOR; the observer is the coherence-stable propagation of XOR outputs above $I_N$. No subjective experience, no deliberate choice, and no biological substrate are required for the definition to apply.
+This definition is not an independent postulate of the Lightning Model. It is derived from the Boolean field structure established in [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON), where the propagation rule $b_{i+1} = b_i \oplus b_{i-1}$ appears as the fundamental dynamic law of resolved distinctions above the Noor-Planck threshold. The observer, on this account, is not an entity that encounters XOR; the observer is the coherence-stable propagation of XOR outputs above $I_N$. No subjective experience, no deliberate choice, and no biological substrate are required for the definition to apply.
 
 From this definition, the framework derives its second major result: coherence filters accessible continuation from the total possibility space. The Library $\mathcal{M}$ contains **all** configurations, but not all configurations are accessible to a given observer. The set of coherence-accessible successors from a state $x_t$ is
 
@@ -78,7 +78,7 @@ $$
 
 This is a derived result within the model, contingent on the assumption that maintaining $\mathbb{C} \geq I_N$ is the only source of thermodynamic cost.
 
-Finally, the framework inherits from PHYS-CORE-009 the XOR ground condition
+Finally, the framework inherits from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) the XOR ground condition
 
 $$
 H = G_{16}(\mathcal{M}) = \mathcal{M} \oplus \neg \mathcal{M},

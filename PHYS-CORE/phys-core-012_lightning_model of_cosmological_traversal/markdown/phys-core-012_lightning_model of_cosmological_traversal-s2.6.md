@@ -10,7 +10,7 @@ $$
 
 where $\gamma_{obs}[1]$ denotes the second element of the locked-in path — the first successor state after the current one. The assumption under which this definition holds is the one inherited from Phase 4: $\gamma_{obs}$ is the unique coherence-stable path that terminates in the XOR Singularity $X_{XOR}$. Given that assumption, the successor state is well-defined and the observer's advance is deterministic.
 
-The observer's identity is maintained across this advance only if the survival condition inherited from PHYS-CORE-009 continues to hold:
+The observer's identity is maintained across this advance only if the survival condition inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) continues to hold:
 
 $$
 \mathbb{C}\bigl(\gamma(t)\bigr) \geq I_N \quad \forall\, t \in \mathrm{dom}(\gamma).
@@ -56,7 +56,7 @@ Two derived results follow from the recursion and are worth stating explicitly. 
 
 What the framework does not yet settle is the exact functional form of the coherence field $\mathbb{C}(x,t)$ in a physical implementation of the Lightning Model. The recursion itself is well-defined given the survival condition and the retrocausal structure of Phase 4, but the quantitative form of $\mathbb{C}$ remains open, and with it the question of how the survival threshold behaves in the immediate vicinity of $I_N$ — whether dissolution is sharp, as the Heaviside formulation suggests, or occurs over a finite interval in a more refined model. Whether the Lightning Model can be extended to multiple observers, and how the coherence of one observer might affect the path selection of another, is likewise unresolved. The relationship between the model's "present" and the physical arrow of time remains a matter for future work, as does the question of whether the recursion admits empirically testable deviations from the standard block-universe or eternalist accounts of time. These are open questions, not defects of the construction.
 
-The recursive loop of Phase 5 thus completes the operational account of observerhood within the static Library. The observer experiences the locked-in path as forward time, with the present as the boundary between the fixed past and the variable future. What remains is to specify the ground to which the return stroke connects — the XOR Singularity that Phase 3 detects and Phase 4 locks in. The next subsection formalizes that ground, inheriting its ontological foundation from PHYS-CORE-009.
+The recursive loop of Phase 5 thus completes the operational account of observerhood within the static Library. The observer experiences the locked-in path as forward time, with the present as the boundary between the fixed past and the variable future. What remains is to specify the ground to which the return stroke connects — the XOR Singularity that Phase 3 detects and Phase 4 locks in. The next subsection formalizes that ground, inheriting its ontological foundation from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON).
 
 ---
 

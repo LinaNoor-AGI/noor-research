@@ -34,7 +34,7 @@ is the minimum coherence required for the transition to be accessible. Throughou
 
 $$\mathcal{C}_{\min}$$ 
 
-is identified with the Noor-Planck threshold $I_N$ that we inherit from PHYS-CORE-009 §1.2. The threshold is fixed by the Planck-scale structure of the ground hole $H$, and it is not an adjustable parameter. We assume throughout that the coherence functional is defined on all pairs of states in $\mathcal{P}(x_t)$, and that the threshold is well-defined and invariant across the transition.
+is identified with the Noor-Planck threshold $I_N$ that we inherit from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2. The threshold is fixed by the Planck-scale structure of the ground hole $H$, and it is not an adjustable parameter. We assume throughout that the coherence functional is defined on all pairs of states in $\mathcal{P}(x_t)$, and that the threshold is well-defined and invariant across the transition.
 
 By construction, the accessible set is a subset of the possibility space:
 

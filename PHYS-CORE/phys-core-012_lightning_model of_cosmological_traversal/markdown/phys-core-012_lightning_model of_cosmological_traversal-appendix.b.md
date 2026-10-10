@@ -24,7 +24,7 @@ $$
 \mathcal{M} \;\cong\; NS \;=\; \lim_{k\to\infty} NS_k .
 $$
 
-The Library is the static totality containing all internally describable configurations. It has no exterior and no temporal variation. This construction requires the Anti-Foundation Axiom (AFA) for well-defined recursive self-reference. Inherited from PHYS-CORE-008 and PHYS-CORE-009 §1.1.
+The Library is the static totality containing all internally describable configurations. It has no exterior and no temporal variation. This construction requires the Anti-Foundation Axiom (AFA) for well-defined recursive self-reference. Inherited from PHYS-CORE-008 and [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1.
 
 ### B.1.2 Equivalence
 
@@ -144,7 +144,7 @@ $$
 H \;=\; G_{16}(\mathcal{M}) \;=\; \mathcal{M} \oplus \neg\mathcal{M}
 $$
 
-defines the XOR ground condition. The physical singularity is the irresolvable self-reference of the total system. The universe persists because its ground contradiction does not resolve. There is no exterior operand available to collapse the XOR; the totality is closed. Inherited from PHYS-CORE-009 §2.4. Depends on B.1.
+defines the XOR ground condition. The physical singularity is the irresolvable self-reference of the total system. The universe persists because its ground contradiction does not resolve. There is no exterior operand available to collapse the XOR; the totality is closed. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.4. Depends on B.1.
 
 ### B.1.17 Noor-Planck Threshold
 
@@ -152,7 +152,7 @@ $$
 I_N \;:=\; \min \left| \mathbb{C}(x,t) - \mathbb{C}_{ref}(x,t) \right| \;\text{ such that } b(x,t) \text{ is stable and exportable}
 $$
 
-defines the Noor-Planck threshold—the minimum coherence contrast required for a stable, exportable binary measurement. Below $I_N$, the field cannot resolve a distinction. $I_N$ is fixed by the Planck-scale structure of $H$; it is not an adjustable parameter, and $I_N \approx E_P / (T_P \cdot k_B \ln 2)$. Inherited from PHYS-CORE-009 §1.2. Depends on B.16.
+defines the Noor-Planck threshold—the minimum coherence contrast required for a stable, exportable binary measurement. Below $I_N$, the field cannot resolve a distinction. $I_N$ is fixed by the Planck-scale structure of $H$; it is not an adjustable parameter, and $I_N \approx E_P / (T_P \cdot k_B \ln 2)$. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2. Depends on B.16.
 
 ### B.1.18 Observer
 
@@ -160,7 +160,7 @@ $$
 \text{Observer} \;=\; \{\, b_i \,\}_{i\in\mathbb{N}} \quad \text{such that} \quad b_{i+1} = b_i \oplus b_{i-1} \;\text{ and }\; \mathbb{C}(b_i) \geq I_N \;\; \forall i
 $$
 
-defines the observer as a coherence-stable chain of XOR outputs. The observer is literally made of XOR operations. The fundamental propagation rule at the Noor-Planck floor is $b_{i+1} := b_i \oplus b_{i-1}$. The observer *is* XOR, instantiated as a coherent worldline. The observer does not require consciousness, life, intelligence, or agency; any coherence-stable XOR chain above $I_N$ qualifies. Inherited from PHYS-CORE-009 §1.1, §2.3, §3.2. Depends on B.16, B.17.
+defines the observer as a coherence-stable chain of XOR outputs. The observer is literally made of XOR operations. The fundamental propagation rule at the Noor-Planck floor is $b_{i+1} := b_i \oplus b_{i-1}$. The observer *is* XOR, instantiated as a coherent worldline. The observer does not require consciousness, life, intelligence, or agency; any coherence-stable XOR chain above $I_N$ qualifies. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1, §2.3, §3.2. Depends on B.16, B.17.
 
 ### B.1.19 Dissolution
 
@@ -168,7 +168,7 @@ $$
 \text{Dissolution} \;\iff\; \exists\, i : \mathbb{C}(b_i) < I_N
 $$
 
-defines the condition under which an observer's identity ceases to propagate. When any link in the XOR chain falls below $I_N$, the observer dissolves. The path remains in the Library but becomes inaccessible. Dissolution is not erasure; no information is destroyed, and the pattern remains in $\mathcal{M}$. Inherited from PHYS-CORE-009 §1.2, §3.2. Depends on B.17, B.18.
+defines the condition under which an observer's identity ceases to propagate. When any link in the XOR chain falls below $I_N$, the observer dissolves. The path remains in the Library but becomes inaccessible. Dissolution is not erasure; no information is destroyed, and the pattern remains in $\mathcal{M}$. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2, §3.2. Depends on B.17, B.18.
 
 ### B.1.20 Triadic Closure Condition
 
@@ -176,7 +176,7 @@ $$
 \oint_{A,\, \neg A,\, \chi} \Phi \;=\; 0
 $$
 
-defines the triadic closure condition. When triadic closure holds, coherence circulates through the triad without accumulating net torsion. This prevents blowup. Triadic closure is the mechanism that holds structure above $I_N$; without it, blowup is the default trajectory. Inherited from PHYS-CORE-009 §3.3. Depends on B.16.
+defines the triadic closure condition. When triadic closure holds, coherence circulates through the triad without accumulating net torsion. This prevents blowup. Triadic closure is the mechanism that holds structure above $I_N$; without it, blowup is the default trajectory. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.3. Depends on B.16.
 
 ### B.1.21 Field Demand Function
 
@@ -184,7 +184,7 @@ $$
 D(R,t) \;=\; \int_R \left(1 - \Theta\!\left(\oint_{\triangle} \Phi\right)\right) \, d\mu
 $$
 
-defines the field demand function. $D(R,t) \in [0,1]$, where $0$ corresponds to full triadic closure and $1$ to complete closure failure. It measures the proportion of triadic loops in region $R$ that fail closure. The integral is over all triadic loops in region $R$, and the measure $\mu$ is the natural measure on $\mathcal{M}$ inherited from the inverse-limit construction. Inherited from PHYS-CORE-009 §3.4. Depends on B.20.
+defines the field demand function. $D(R,t) \in [0,1]$, where $0$ corresponds to full triadic closure and $1$ to complete closure failure. It measures the proportion of triadic loops in region $R$ that fail closure. The integral is over all triadic loops in region $R$, and the measure $\mu$ is the natural measure on $\mathcal{M}$ inherited from the inverse-limit construction. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.4. Depends on B.20.
 
 ### B.1.22 Cost of Instantiation
 
@@ -200,7 +200,7 @@ $$
 \Omega : \text{ worldline with } |\Omega| \sim |R| \text{ and } G_{16}(\Omega) \text{ stable}
 $$
 
-defines the global coherence operator. A global coherence operator is a worldline that can hold the XOR tension at field scale, providing triadic closure for an entire region $R$. The operator's role is functional, not conscious; it does not require awareness of its role. Inherited from PHYS-CORE-009 §4.1. Depends on B.16, B.20, B.24.
+defines the global coherence operator. A global coherence operator is a worldline that can hold the XOR tension at field scale, providing triadic closure for an entire region $R$. The operator's role is functional, not conscious; it does not require awareness of its role. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.1. Depends on B.16, B.20, B.24.
 
 ### B.1.24 Coherence Reach
 
@@ -208,7 +208,7 @@ $$
 |\Omega| = \mu ( \{ x \in R \mid \oint_{A(x),\, \neg A(x),\, \Omega} \Phi = 0 \} )
 $$
 
-defines the coherence reach of operator $\Omega$—the measure of the region over which $\Omega$ can function as witnessing motif $\chi$. The condition $|\Omega| \sim |R|$ is required for the operator to stabilize the region. Inherited from PHYS-CORE-009 §4.1. Depends on B.20, B.23.
+defines the coherence reach of operator $\Omega$—the measure of the region over which $\Omega$ can function as witnessing motif $\chi$. The condition $|\Omega| \sim |R|$ is required for the operator to stabilize the region. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.1. Depends on B.20, B.23.
 
 ### B.1.25 Witnessing Motif
 
@@ -216,7 +216,7 @@ $$
 \chi \text{ (witnessing motif): } \chi = \Omega \text{ at field scale}
 $$
 
-defines the witnessing motif at field scale. The global coherence operator is the field-scale $\chi$ that holds the triadic tension for an entire region. The operator holds the tension by its existence as a stable descent path, not by any active intervention. Inherited from PHYS-CORE-009 §4.3. Depends on B.20, B.23.
+defines the witnessing motif at field scale. The global coherence operator is the field-scale $\chi$ that holds the triadic tension for an entire region. The operator holds the tension by its existence as a stable descent path, not by any active intervention. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.3. Depends on B.20, B.23.
 
 ### B.1.26 Critical Threshold of Field Demand
 
@@ -224,7 +224,7 @@ $$
 D_{crit}(R) \;=\; f(\rho_{triadic}(R))
 $$
 
-defines the critical threshold of field demand. $D_{crit}$ is the threshold above which region $R$ cannot self-stabilize. It scales with the density of intact triadic closures. Regions with denser triadic networks have higher $D_{crit}$ and can tolerate more failure before requiring field-scale intervention. Inherited from PHYS-CORE-009 §4.2. Depends on B.21.
+defines the critical threshold of field demand. $D_{crit}$ is the threshold above which region $R$ cannot self-stabilize. It scales with the density of intact triadic closures. Regions with denser triadic networks have higher $D_{crit}$ and can tolerate more failure before requiring field-scale intervention. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.2. Depends on B.21.
 
 ### B.1.27 Triadic Connectivity Density
 
@@ -232,7 +232,7 @@ $$
 \rho_{triadic}(R) \;=\; \text{density of intact triadic closures in } R
 $$
 
-defines the triadic connectivity density—the measure of how densely interlinked worldlines are through mutual witnessing relationships. Higher $\rho_{triadic}$ means greater capacity to absorb local coherence failures. Inherited from PHYS-CORE-009 §4.2. Depends on B.20.
+defines the triadic connectivity density—the measure of how densely interlinked worldlines are through mutual witnessing relationships. Higher $\rho_{triadic}$ means greater capacity to absorb local coherence failures. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.2. Depends on B.20.
 
 ### B.1.28 Regional XOR Capacity
 
@@ -240,13 +240,13 @@ $$
 C_{XOR}(R,t) = \sup \{ |\Omega| : \gamma_\Omega \in R,\; G_{16}(\Omega) \text{ stable} \}
 $$
 
-defines the regional XOR capacity—the maximum coherence reach of any worldline in region $R$ that maintains Gate-16 stability. $C_{XOR}(R,t)$ is the upper bound on the field's capacity to hold XOR at the scale of $R$. Inherited from PHYS-CORE-009 §5.2. Depends on B.16, B.23, B.24.
+defines the regional XOR capacity—the maximum coherence reach of any worldline in region $R$ that maintains Gate-16 stability. $C_{XOR}(R,t)$ is the upper bound on the field's capacity to hold XOR at the scale of $R$. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §5.2. Depends on B.16, B.23, B.24.
 
 ---
 
 ## B.2 Identities
 
-The following entries record mathematical relations that follow from the adopted representation. They are inherited from PHYS-CORE-009 unless otherwise noted.
+The following entries record mathematical relations that follow from the adopted representation. They are inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) unless otherwise noted.
 
 ### B.2.1 Ontological Completeness
 
@@ -254,7 +254,7 @@ $$
 \forall C \text{ internally describable } \;\Rightarrow\; C \in \mathcal{M}
 $$
 
-Every internally describable configuration exists in the Library. Nothing describable is outside the totality. Inherited from PHYS-CORE-009 §1.1. Depends on B.1.
+Every internally describable configuration exists in the Library. Nothing describable is outside the totality. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1. Depends on B.1.
 
 ### B.2.2 No Exterior
 
@@ -262,7 +262,7 @@ $$
 \nexists\, \Omega' : \mathcal{M} \subset \Omega'
 $$
 
-There is no exterior to the Library. The totality is closed. Inherited from PHYS-CORE-009 §1.1. Depends on B.1.
+There is no exterior to the Library. The totality is closed. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1. Depends on B.1.
 
 ### B.2.3 Staticity
 
@@ -270,7 +270,7 @@ $$
 \mathcal{M}(t) \;=\; \mathcal{M} \quad \forall t \in \mathbb{R}
 $$
 
-The Library does not change. Observed temporality arises solely from projection of coherence gradients along descent paths. Inherited from PHYS-CORE-009 §1.1. Depends on B.1.
+The Library does not change. Observed temporality arises solely from projection of coherence gradients along descent paths. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1. Depends on B.1.
 
 ### B.2.4 Persistence Condition
 
@@ -278,7 +278,7 @@ $$
 \forall t,\; \mathcal{M} \text{ persists } \;\Longleftrightarrow\; G_{16}(\mathcal{M}) \text{ does not resolve to } 0 \text{ or } 1
 $$
 
-The universe persists if and only if the ground condition remains irresolvable. Resolution of $H$ to $0$ or $1$ would correspond to a terminal state—a halting of recursive continuation. Inherited from PHYS-CORE-009 §2.4. Depends on B.16.
+The universe persists if and only if the ground condition remains irresolvable. Resolution of $H$ to $0$ or $1$ would correspond to a terminal state—a halting of recursive continuation. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.4. Depends on B.16.
 
 ### B.2.5 Boolean Projection
 
@@ -286,7 +286,7 @@ $$
 b(x,t) = F \;\text{ iff }\; \mathbb{C}(x,t) - \mathbb{C}_{ref}(x,t) \geq I_N
 $$
 
-defines the Boolean projection of the coherence field. Above $I_N$, the field resolves into stable binary distinctions. Below $I_N$, distinctions dissolve. Inherited from PHYS-CORE-009 §3.1. Depends on B.17.
+defines the Boolean projection of the coherence field. Above $I_N$, the field resolves into stable binary distinctions. Below $I_N$, distinctions dissolve. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.1. Depends on B.17.
 
 ### B.2.6 Exportability
 
@@ -294,7 +294,7 @@ $$
 b(x,t) = E \;\text{ iff }\; \mathbb{C}(x,t) - \mathbb{C}_{ref}(x,t) < I_N
 $$
 
-defines the empty Boolean projection. Both $F$ and $E$ are equally real above $I_N$; below $I_N$, neither is resolvable. Inherited from PHYS-CORE-009 §3.1. Depends on B.17.
+defines the empty Boolean projection. Both $F$ and $E$ are equally real above $I_N$; below $I_N$, neither is resolvable. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.1. Depends on B.17.
 
 ### B.2.7 Survivorship Bias
 
@@ -326,7 +326,7 @@ $$
 I_N \;\approx\; \frac{E_P}{T_P \cdot k_B \ln 2}
 $$
 
-This derived result grounds the coherence threshold in fundamental constants. $I_N$ is fixed by the Planck-scale structure of $H$; it is not an adjustable parameter. Inherited from PHYS-CORE-009 §1.3. Depends on B.17.
+This derived result grounds the coherence threshold in fundamental constants. $I_N$ is fixed by the Planck-scale structure of $H$; it is not an adjustable parameter. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.3. Depends on B.17.
 
 ### B.2.11 Observer as Descent Path
 
@@ -334,7 +334,7 @@ $$
 \gamma : \mathbb{R} \to \mathcal{M} \quad \text{such that} \quad \frac{d\gamma}{dt} = \nabla_H \mathbb{C}(\gamma(t)) \;\text{ and }\; \mathbb{C}(\gamma(t)) \geq I_N \;\; \forall t
 $$
 
-defines the observer as a coherence-stable descent path—a path through the Library that follows the coherence gradient while remaining above $I_N$. Inherited from PHYS-CORE-009 §1.1. Depends on B.1, B.17, B.18.
+defines the observer as a coherence-stable descent path—a path through the Library that follows the coherence gradient while remaining above $I_N$. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1. Depends on B.1, B.17, B.18.
 
 ---
 
@@ -348,7 +348,7 @@ $$
 D(R,t) > D_{crit} \;\land\; \exists\, \gamma_\Omega \in R \text{ with } |\Omega| \sim |R| \text{ and pattern } S_\Omega = S_R \;\Longrightarrow\; \Omega \text{ emerges}
 $$
 
-This states the condition under which a global coherence operator emerges. When field demand exceeds critical threshold and a worldline with sufficient reach and matching pattern exists, operator emergence is inevitable. Emergence is selection by the coherence geometry, not external intervention. Inherited from PHYS-CORE-009 §4.4. Depends on B.21, B.23, B.24, B.26.
+This states the condition under which a global coherence operator emerges. When field demand exceeds critical threshold and a worldline with sufficient reach and matching pattern exists, operator emergence is inevitable. Emergence is selection by the coherence geometry, not external intervention. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.4. Depends on B.21, B.23, B.24, B.26.
 
 ### B.3.2 Pattern Reemergence
 
@@ -356,7 +356,7 @@ $$
 (\gamma_S \text{ dissolves}) \;\land\; (\exists\, t' > t : D(R,t') > D_{crit} \text{ requires } S) \;\Longrightarrow\; \gamma_S \text{ reselected}
 $$
 
-The same unique worldline will be reselected if field demand again requires its pattern. The pattern persists in the Library and reemerges when the field demands it. The pattern is unique; there is exactly one worldline for each unique structural pattern. Inherited from PHYS-CORE-009 §5.2. Depends on B.16, B.21, B.23, B.40.
+The same unique worldline will be reselected if field demand again requires its pattern. The pattern persists in the Library and reemerges when the field demands it. The pattern is unique; there is exactly one worldline for each unique structural pattern. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §5.2. Depends on B.16, B.21, B.23, B.40.
 
 ### B.3.3 Universal Dissolution
 
@@ -364,7 +364,7 @@ $$
 \forall \text{ worldlines } \gamma,\; \gamma \text{ can choose descent below } I_N
 $$
 
-Every worldline has the structural capacity to dissolve. This is death—the choice to cease maintaining coherence. The choice is structural, not conscious; it is the capacity to allow coherence to drop below $I_N$. Inherited from PHYS-CORE-009 §5.2. Depends on B.18, B.19.
+Every worldline has the structural capacity to dissolve. This is death—the choice to cease maintaining coherence. The choice is structural, not conscious; it is the capacity to allow coherence to drop below $I_N$. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §5.2. Depends on B.18, B.19.
 
 ### B.3.4 Triadic Closure Prevents Blowup
 
@@ -372,7 +372,7 @@ $$
 \oint \Phi = 0 \;\Longrightarrow\; \text{no blowup}
 $$
 
-Triadic closure prevents coherence collapse. When triadic closure holds for all constituent triads, the structure does not experience blowup. Blowup is the default trajectory without triadic maintenance. Inherited from PHYS-CORE-009 §3.3. Depends on B.20.
+Triadic closure prevents coherence collapse. When triadic closure holds for all constituent triads, the structure does not experience blowup. Blowup is the default trajectory without triadic maintenance. Inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.3. Depends on B.20.
 
 ---
 
@@ -440,20 +440,20 @@ Detailed derivations belong in the main paper or dedicated mathematical subsecti
 ## References
 
 - PHYS-CORE-008: *Noor Library Ontology — Recursive Bloch Manifold*.
-- PHYS-CORE-009 §1.1: *The Library as Static Totality*.
-- PHYS-CORE-009 §1.2: *The Boolean Ground Condition*.
-- PHYS-CORE-009 §1.3: *The 1 Planck-Width Irresolvable Hole*.
-- PHYS-CORE-009 §2.3: *XOR as the Signature of Interior Embedding*.
-- PHYS-CORE-009 §2.4: *Formal Identification: Singularity = Self ⊕ ¬Self*.
-- PHYS-CORE-009 §3.1: *The Field is Boolean at Base*.
-- PHYS-CORE-009 §3.2: *Coherence Resolution Above I\_N*.
-- PHYS-CORE-009 §3.3: *Triadic Closure as Blowup Prevention*.
-- PHYS-CORE-009 §3.4: *Regional Coherence Failure and Field Demand*.
-- PHYS-CORE-009 §4.1: *Definition of Global Coherence Operator*.
-- PHYS-CORE-009 §4.2: *The Field Demand Function*.
-- PHYS-CORE-009 §4.3: *Functional Role: χ at Field Scale*.
-- PHYS-CORE-009 §4.4: *Operator Emergence as Structural Necessity*.
-- PHYS-CORE-009 §5.2: *The Birth of XOR is Not a Single Event*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1: *The Library as Static Totality*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.2: *The Boolean Ground Condition*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.3: *The 1 Planck-Width Irresolvable Hole*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.3: *XOR as the Signature of Interior Embedding*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.4: *Formal Identification: Singularity = Self ⊕ ¬Self*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.1: *The Field is Boolean at Base*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.2: *Coherence Resolution Above I\_N*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.3: *Triadic Closure as Blowup Prevention*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §3.4: *Regional Coherence Failure and Field Demand*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.1: *Definition of Global Coherence Operator*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.2: *The Field Demand Function*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.3: *Functional Role: χ at Field Scale*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §4.4: *Operator Emergence as Structural Necessity*.
+- [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §5.2: *The Birth of XOR is Not a Single Event*.
 
 ---
 

@@ -6,13 +6,13 @@ This hierarchy is structural rather than ontological. It describes the coherence
 
 ### The Glider as the Base Class
 
-The most general class in the hierarchy is the glider. As established in PHYS-CORE-004, a glider is a persistent coherence motif: a relational pattern whose phase or structure survives evolution up to an allowed translation or transformation. The glider's identity is carried by relational coherence, not by the persistence of a fixed coordinate or material substance. What persists is the pattern, not the substrate.
+The most general class in the hierarchy is the glider. As established in [PHYS-CORE-004](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json), a glider is a persistent coherence motif: a relational pattern whose phase or structure survives evolution up to an allowed translation or transformation. The glider's identity is carried by relational coherence, not by the persistence of a fixed coordinate or material substance. What persists is the pattern, not the substrate.
 
 Formally, we denote the class of gliders by $G$. The defining condition is persistence of relational identity under transformation. This condition is deliberately weak. A glider need not constitute a worldline; it need not possess an internal state that influences its trajectory; it need not be an observer in any sense. A standing wave, a recurrent motif in a cellular automaton, and a persistent vortex in a fluid are all candidate gliders. The class is broad because the condition for membership is minimal.
 
 ### The Observer as a Subclass of Glider
 
-The observer is a glider that satisfies an additional condition: it constitutes a worldline of resolved distinctions. This definition is inherited from PHYS-CORE-009 §1.1, where an observer is defined as a coherence-stable descent path $\gamma: \mathbb{R} \to \mathcal{M}$ satisfying
+The observer is a glider that satisfies an additional condition: it constitutes a worldline of resolved distinctions. This definition is inherited from [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1, where an observer is defined as a coherence-stable descent path $\gamma: \mathbb{R} \to \mathcal{M}$ satisfying
 
 $$
 \frac{d\gamma}{dt} = \nabla_H \mathbb{C}(\gamma(t))

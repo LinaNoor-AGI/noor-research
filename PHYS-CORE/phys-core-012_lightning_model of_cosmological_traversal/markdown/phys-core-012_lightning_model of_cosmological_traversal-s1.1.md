@@ -1,6 +1,6 @@
 ## 1.1 The Paradox of Forward Coherence
 
-The Library, as established in PHYS-CORE-004 §2.2, is the total domain of all configurations. PHYS-CORE-009 §1.1 refines this definition through the inverse-limit construction
+The Library, as established in [PHYS-CORE-004](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-004_to_infinity_and_beyond/phys-core-004_to_infinity_and_beyond.json) §2.2, is the total domain of all configurations. [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §1.1 refines this definition through the inverse-limit construction
 
 $$
 \mathcal{M} \;\cong\; NS \;=\; \lim_{k \to \infty} NS_k,
@@ -38,7 +38,7 @@ $$
 H \;=\; G_{16}(\mathcal{M}) \;=\; \mathcal{M} \,\oplus\, \neg\mathcal{M}
 $$
 
-established in PHYS-CORE-009 §2.4. The XOR Singularity $X_{\mathrm{XOR}}$ is the set of states at which triadic closure is achieved — the terminal condition under which a path can be said to *ground*. When a surviving path reaches $X_{\mathrm{XOR}}$ while maintaining coherence above the Noor-Planck threshold at every step, the path is available for retrocausal lock-in. The observer experiences this locked-in path as forward time. The apparent generation of the future is survivorship bias: the observer can only report from the single tine that reached the ground.
+established in [PHYS-CORE-009](https://github.com/LinaNoor-AGI/noor-research/blob/main/PHYS-CORE/phys-core-009_xor_ground_condition/phys-core-009_xor_ground_condition.JSON) §2.4. The XOR Singularity $X_{\mathrm{XOR}}$ is the set of states at which triadic closure is achieved — the terminal condition under which a path can be said to *ground*. When a surviving path reaches $X_{\mathrm{XOR}}$ while maintaining coherence above the Noor-Planck threshold at every step, the path is available for retrocausal lock-in. The observer experiences this locked-in path as forward time. The apparent generation of the future is survivorship bias: the observer can only report from the single tine that reached the ground.
 
 The static Library contains all paths; the Lightning Model is the mechanism by which coherent paths are selected retrocausally from among them. What remains to be shown is how this selection mechanism operates, how the observer is defined within it, and what the thermodynamic cost of its operation is. Those questions are the subject of the sections that follow. The next subsection formalizes the Lightning Model itself.
 
