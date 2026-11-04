@@ -1,0 +1,615 @@
+{
+  "_schema": "noor-header-v2",
+  "_schema_version": "2.0.0",
+  "_pdp_layer": "layer_2",
+  "_type": "rfc_core",
+  "_version": "0.2.2",
+  "_status": "DRAFT_NOTES",
+  "_symbolic_id": "symbolic.library.nonempty_continuation.redshift_window",
+  "_title": "Non-Empty Continuation and the Redshift Window",
+  "_subtitle": "Notes toward a metric-free three-level structure of continuation, resolution, and path-definition",
+  "_language": "JSON+MATH",
+  "_license": "MIT",
+  "_authors": [
+    "Lina Noor — Noor Research Collective"
+  ],
+  "_standalone_declaration": false,
+  "_self_contained_axiomatization": false,
+
+  "_extends": [
+    "PHYS-CORE-000",
+    "PHYS-CORE-011",
+    "PHYS-CORE-012",
+    "PHYS-CORE-004"
+  ],
+
+  "_lineage_note": "These notes are downstream of the axiomatic floor summary (PHYS-CORE-000 v1.0.1), of PHYS-CORE-011 v0.2.1, of PHYS-CORE-012 v1.0.3 (The Lightning Model of Cosmological Traversal), and of PHYS-CORE-004 v1.0.1 (To Infinity and Beyond). They do not introduce new axioms. They refine the vocabulary that PHYS-CORE-011 already depends on, in service of making the non-empty-continuation invariant precise. PHYS-CORE-000 supplies the foundational distinction between Library membership and observer-relative accessibility (§8, §9), the static-totality invariant (∀i, 𝓜_i = 𝓜), and the observer-relative coherence construction (𝓒(γ | O, h, x)). PHYS-CORE-012 §7.6 (multiple grounded paths) and §7.6.1 (Branch Observers) supply the relationality result for UndefinedPath. PHYS-CORE-004 supplies the glider-level and geometric scaffolding: S3.5 (structural eternity, forward orbit, translation-preserving glider evolution), S6.3–S6.6 (state and observation axis, Bloch projection, geometric lineage), S8.5 (two-branch toy model and triadic residual), and S9 (horizons and singular case).",
+
+  "_status_note": "DRAFT_NOTES v0.2.2. Q2 (relational vs. absolute UndefinedPath) is RESOLVED to relational, on the basis of PHYS-CORE-012 §7.6 (multiple grounded paths) and §7.6.1 (Branch Observers), with glider-level and geometric scaffolding from PHYS-CORE-004 S3.5, S6.6, and S8.5. Q1 (multi-axis claim strength — passive vs. active axis re-referencing), Q3 (window vs. horizon), Q4 (three-way comparison of 𝒵 = {0}, X_XOR, and 𝐑 → 0), and Q5 (S5 split adoption and compatibility with PHYS-CORE-004 S5) remain PENDING. The 'standing still' / 'sliding when standing still' framing is explicitly flagged as allegory and is NOT load-bearing. PHYS-CORE-004 S6.6 and S8.5 are cited as the paper's own precedent for quarantining allegorical language. PHYS-CORE-000's §8.1 (Accessibility Is Not Existence) and §9 (Survivorship and Emergent Lawfulness) are the foundational anchors for the Level 1 / Level 2 / Level 3 distinction developed here.",
+
+  "_abstract": "PHYS-CORE-011 distinguishes existence from accessibility. PHYS-CORE-000 establishes the same distinction at the axiomatic floor: Library membership is independent of observer-relative accessibility, and inaccessibility is not erasure (§8.1). This note refines that distinction into a three-level structure: (1) structural existence of continuation, which holds everywhere in the Library (PHYS-CORE-000 §9.1: Ω(x) is defined for every x); (2) observer-relative resolvability of continuation, which may fail on the observer's current resolution axis while succeeding on others (PHYS-CORE-000 §6.1: δ_O and I_N(O)); and (3) path-definition, which may fail even when a destination is representable within the observer's window (PHYS-CORE-000 §8.1: A_O(h,x) ⊆ 𝓜, non-erasure). Level 3's relationality is derived from PHYS-CORE-012 §7.6 (multiple grounded paths) and §7.6.1 (Branch Observers), with glider-level scaffolding from PHYS-CORE-004 S3.5 (forward orbit and structural eternity) and S8.5 (two-branch toy model). The motivating thought experiment (isolated particles in an Earth box versus the pole of Venus, with 'redshift' below I_N) is quarantined as an allegory that imports an assumed spatial metric. The formal claims below are metric-free.",
+
+  "_central_claim": "From any configuration x in the Library, a continuation exists (structural). Whether the observer can resolve that continuation, and whether a coherent path to a given representable destination is defined for the observer's worldline, are distinct observer-relative questions. The non-empty-continuation invariant is therefore not an existence claim about the Library; it is a three-level statement about existence, resolution, and path-definition.",
+
+  "_poetic_cipher": "The Library is not a room that grows; it is the room in which every door is already drawn. Whether a door is visible, and whether a path to it is defined, are questions of the traveler, not of the room.",
+
+  "_cipher_explanation": "The 'room' is the static Library 𝓜 (PHYS-CORE-000 §3.2). 'Every door is already drawn' represents Level 1: continuation exists everywhere (Ω(x) is defined for every x). 'Whether a door is visible' represents Level 2: observer-relative resolvability (W_{μ_O}(x) may be empty even when A(x) is non-empty). 'Whether a path to it is defined' represents Level 3: path-definition (y ∈ W_{μ_O}(x) does not imply y ∈ Reach(γ)). The traveler is the observer, whose resolution and worldline determine Levels 2 and 3 without changing the room itself.",
+
+  "_foundational_distinctions": [
+    {
+      "principle": "Existence of continuation ≠ Resolvability of continuation",
+      "statement": "A continuation exists from every configuration in the Library. Whether the observer can resolve any continuation on the current resolution axis is a separate, observer-relative question.",
+      "poetic_cipher": "The door exists before the eye can see it.",
+      "cipher_explanation": "The 'door' is a continuation in A(x). The 'eye' is the observer's resolution window W_{μ_O}(x). The cipher compresses the Level 1 / Level 2 distinction: existence is structural, visibility is observer-relative."
+    },
+    {
+      "principle": "Representability ≠ Reachability",
+      "statement": "A destination may appear in the observer's resolution window without being reachable by a coherent path from the observer's current worldline.",
+      "poetic_cipher": "A star can be seen without a road to it.",
+      "cipher_explanation": "The 'star' is a destination y ∈ W_{μ_O}(x). The 'road' is a coherent path γ from the observer's worldline to y. The cipher compresses the Level 2 / Level 3 distinction: the window can contain destinations the worldline cannot coherently reach."
+    },
+    {
+      "principle": "Resolvability ≠ Path-definition",
+      "statement": "Being able to resolve a destination on some axis does not imply that a coherent path from the current worldline to that destination is defined.",
+      "poetic_cipher": "The map may show a country the feet cannot walk to.",
+      "cipher_explanation": "The 'map' is the resolution window W_{μ_O}(x). The 'country' is a destination y. 'The feet cannot walk to' represents the absence of a coherent path γ from the current worldline to y. The cipher compresses the distinction between Level 2 (resolvability) and Level 3 (path-definition)."
+    },
+    {
+      "principle": "Window-sliding ≠ Spatial motion",
+      "statement": "The resolution window slides as the observer traverses. Traversal is not spatial displacement; the Library admits no intrinsic metric.",
+      "poetic_cipher": "The view changes; no one has moved.",
+      "cipher_explanation": "The 'view' is the resolution window W_{μ_O}(x). 'No one has moved' denies spatial displacement: traversal is re-referencing within an unchanged Library (PHYS-CORE-000 §0.2: static totality versus observer traversal). The cipher compresses the metric-free character of the sliding window."
+    },
+    {
+      "principle": "Multi-axis structure ≠ Multi-axis experience",
+      "statement": "The resolution window is defined on every resolution axis. The observer experiences resolution on one axis at a time. The Library privileges neither.",
+      "poetic_cipher": "Many lenses exist; the eye looks through one.",
+      "cipher_explanation": "The 'lenses' are resolution axes μ_O. 'The eye looks through one' represents the observer's single-axis experience. The cipher compresses the structural multi-axis fact (Level 2) without asserting that the observer can actively shift axes (Q1)."
+    },
+    {
+      "principle": "Passive axis change ≠ Active axis re-referencing",
+      "statement": "Changing the observation axis in a representation (PHYS-CORE-004 S6.4) leaves the underlying state vector unchanged. Whether the observer can actively re-reference μ_O is a stronger claim (Q1), not established by passive axis change.",
+      "poetic_cipher": "Turning the telescope is not the same as changing the sky.",
+      "cipher_explanation": "The 'telescope' is the observation axis 𝐧̂ in PHYS-CORE-004 S6.4. Turning it changes the projection q(𝐧̂) = 𝐫 · 𝐧̂ while leaving the state vector 𝐫 unchanged. The 'sky' is the underlying state. The cipher compresses the passive/active distinction: passive axis change is established (S6.4); active axis re-referencing is Q1, still pending."
+    }
+  ],
+
+  "_index": [
+    { "section": "1", "title": "Motivation: The Allegory and Its Limit" },
+    { "section": "2", "title": "Level 1 — Structural Existence of Continuation" },
+    { "section": "3", "title": "Level 2 — Observer-Relative Resolvability" },
+    { "section": "4", "title": "Level 3 — Path-Definition and the Undefined-Path Lemma" },
+    { "section": "5", "title": "The Resolution Window (Metric-Free)" },
+    { "section": "6", "title": "Relation to PHYS-CORE-011" },
+    { "section": "7", "title": "Relation to PHYS-CORE-012 (Lightning Model) and PHYS-CORE-004" },
+    { "section": "8", "title": "Open Questions and Pending Confirmations" }
+  ],
+
+  "_cross_reference": {
+    "PHYS-CORE-000": [
+      "§0.2 — Static Totality versus Observer Traversal (𝓜_i = 𝓜; index i is not physical time)",
+      "§3.2 — The Unbounded Total Configuration Space (𝓜 is static, maximally complete, domain-neutral)",
+      "§6.1 — Distinguishability Relative to O (δ_O(x,y) := μ_O(x ⊕ y); x ≈_O y iff δ_O < I_N(O))",
+      "§7.2 — Coherence of a Path (𝓒(γ | O) = ∏ 𝓒_O(x_i,x_{i+1}))",
+      "§8.1 — Accessibility Is Not Existence (A_O(h,x) ⊆ 𝓜; y ∉ A_O ⇏ y ∉ 𝓜)",
+      "§9.1 — The Unfiltered Continuation Space (Ω(x); Γ_O(h,x) ⊆ Ω(x))",
+      "§9.2 — Repeated Survivorship (Ω_O^survive(x); L_O(x,y))"
+    ],
+    "PHYS-CORE-004": [
+      "S3.5 — Structural Eternity (forward orbit, translation-preserving glider evolution, 𝒪(G⁰) ⊆ [G⁰]∼)",
+      "S5 — Coherence as derived (Δ(γ), K(Sᵢ,Sⱼ), I_N as threshold on derived functional)",
+      "S6.3–S6.5 — State and observation axis, Bloch projection, coherence-as-alignment",
+      "S6.4 — Passive axis change vs. underlying state (does NOT establish active axis re-referencing)",
+      "S6.6 — Geometric lineage (S¹ → S² → recursive Bloch → fiber → L, conceptual not equivalence)",
+      "S8.4 — Numerical/analytical demonstration template (dyad-vs-triad comparison)",
+      "S8.5 — Two-branch toy model, triadic residual 𝐑 → 0, conservative interpretation vs. stronger hypothesis",
+      "S9 — Horizons and singular case (|P(x)| = 1 destination locked; |A(x)| = 1 singular case)",
+      "S7.3.1 — O(1) computational core (T_{n+1} = f(T_n, T_{n-1}), local continuation)"
+    ],
+    "PHYS-CORE-011": [
+      "S1–S2 — Existence/accessibility distinction",
+      "S3 — Observer as coherent descent path",
+      "S5 — Coherence as derived",
+      "S6 — ArbitraryEdit",
+      "S9 — Horizons and singular case"
+    ],
+    "PHYS-CORE-012": [
+      "S2.2–S2.4 — Blind exploration, coherence filtering, Ω(x_t), Ω_survive",
+      "S3.4 — Coherence-accessible successors 𝒜(x_t)",
+      "S3.5 — Explorer filter function 𝒜_explorer(x_t)",
+      "S6 — ArbitraryEdit",
+      "S7.6 — Multiple grounded paths Ω_ground(x_t)",
+      "S7.6.1 — Branch Observers",
+      "S9 — Horizons and singular case"
+    ]
+  },
+
+  "_notation_warnings": [
+    {
+      "symbol": "D",
+      "collisions": [
+        "PHYS-CORE-004 S2 — comparison domain",
+        "PHYS-CORE-004 S8 — destination class",
+        "PHYS-CORE-000 §1 — formal domain for XOR"
+      ],
+      "note": "These notes use D only for comparison domain. Readers coming from PHYS-CORE-004 S8 should be aware of the destination-class use. Readers coming from PHYS-CORE-000 §1 should be aware of the formal-domain use."
+    },
+    {
+      "symbol": "A(x)",
+      "collisions": [
+        "PHYS-CORE-004 S3 — accessible set {y | ∃ coherent γ : x ⇝ y}",
+        "PHYS-CORE-004 S13 — availability A(O) = admissible next continuations",
+        "PHYS-CORE-004 S9 — singular case |A(x)| = 1",
+        "PHYS-CORE-000 §8.1 — observer-accessible subset A_O(h,x)"
+      ],
+      "note": "These notes use A(x) for the accessible set, consistent with PHYS-CORE-004 S3. The availability use in S13 is distinct. PHYS-CORE-000 §8.1 uses A_O(h,x) for the observer-relative accessible subset."
+    },
+    {
+      "symbol": "𝒵 vs. X_XOR vs. 𝐑",
+      "collisions": [
+        "𝒵 = {0} — floor summary's algebraic termination class (PHYS-CORE-000 §3.1: 𝒵 := {z | z ⊕ z = z} = {0})",
+        "X_XOR — PHYS-CORE-009/011/012's triadic-closure attractor (∮ Φ = 0)",
+        "𝐑 → 0 — PHYS-CORE-004 S8.5's vector closure residual"
+      ],
+      "note": "Three distinct candidate constructs for the closure/termination question. See Q4."
+    }
+  ],
+
+  "sections": [
+
+    {
+      "id": "1",
+      "title": "Motivation: The Allegory and Its Limit",
+      "poetic_cipher": "The box on Earth and the pole of Venus are teaching tools, not claims about the Library. The Library has no Earth and no Venus; it has only relations.",
+      "cipher_explanation": "The 'box' and 'pole' are the allegorical elements of the motivating thought experiment. The cipher compresses the section's central warning: the allegory imports an assumed spatial metric and temporal ordering, neither of which is primitive in the Library (PHYS-CORE-000 §0.2: no intrinsic metric, adjacency, distance, or temporal ordering). The formal claims of these notes are metric-free.",
+      "content": [
+        "The motivating thought experiment is pedagogical. It describes two isolated particles in a box on Earth, the pole of Venus, and a process of 'expanding the domain' by successive measurements until the Earth box is redshifted below I_N relative to the current reference while the pole of Venus comes into view.",
+        "The allegory imports an assumed spatial metric and an assumed temporal ordering. Neither is primitive in the Library. PHYS-CORE-000 §0.2 establishes that the Library is dimensionally undifferentiated: it has no intrinsic metric, adjacency, distance, or temporal ordering.",
+        "The allegory is therefore not load-bearing. It is retained only as a pedagogical device for motivating the three-level structure below.",
+        "In particular, the phrase 'standing still' has no meaning in the Library. There is no position to remain at. Every abstract traversal step is a move from one state to a next. There is no 'still' to stand in.",
+        "What the allegory was reaching for, stripped of its metric, is the following: the resolution window slides at every traversal step, on infinitely many resolution axes simultaneously, whether or not the observer is resolving on any given axis at that step."
+      ],
+      "quarantined_phrases": [
+        "'redshifted faster than the speed of light' — allegory for falling below the observer's resolution floor at finite relational distance; not a claim about signal velocity.",
+        "'standing still' — allegory for the observer remaining at a fixed spatial position; the Library admits no such position.",
+        "'expanding the domain' — allegory for the resolution window sliding as traversal proceeds; not a claim that the Library grows."
+      ],
+      "cross_reference": "PHYS-CORE-004 S6.6 and S8.5 quarantine allegorical language in the same way: S6.6 separates geometric lineage from mathematical equivalence, and S8.5 separates the conservative two-branch interpretation from the stronger two-universe hypothesis. PHYS-CORE-012 Appendix C classifies the Earth-box/Venus-pole framing as interpretive, not mathematical. PHYS-CORE-000 §0.2 quarantines 'past' and 'future' as observer-relative orderings rather than intrinsic partitions of the Library. This section aligns with all three.",
+      "poetic_cipher": "The box is a story; the Library is not a place.",
+      "cipher_explanation": "The 'box' is the allegorical spatial container. 'The Library is not a place' compresses PHYS-CORE-000 §3.2: 𝓜 is not physical space, spacetime, a container, or a metric space. The cipher reinforces the quarantine: the allegory is permitted for motivation but not for formal claims."
+    },
+
+    {
+      "id": "2",
+      "title": "Level 1 — Structural Existence of Continuation",
+      "poetic_cipher": "From every point in the Library, at least one road begins. No exception, no condition, no observer required.",
+      "cipher_explanation": "The 'point' is a configuration x ∈ 𝓜. The 'road' is a continuation in A(x). 'No observer required' compresses Level 1's observer-independence: the guarantee holds unconditionally, as a consequence of maximal completeness together with closure (PHYS-CORE-000 §9.1: Ω(x) is defined for every x). The cipher does not claim that an arbitrary destination is reachable from an arbitrary origin — only that at least one continuation exists.",
+      "content": [
+        "Continuation is structurally guaranteed everywhere in the Library. This does not depend on the observer, on the observer's resolution axis, or on the observer's history.",
+        "The guarantee is a consequence of maximal completeness together with closure. It is not a consequence of full adjacency alone: PHYS-CORE-011 S2 already establishes that adjacency does not imply reachability, so the inference from 'fully adjacent' to 'coherent continuation exists' does not go through adjacency.",
+        "The structural claim is therefore the weaker and safer one: from any configuration, at least one continuation exists. It is not the stronger claim that an arbitrary destination is reachable from an arbitrary origin. The stronger claim requires an additional symmetry or reference-neutrality postulate and is not asserted at this level.",
+        "PHYS-CORE-000 §9.1 defines Ω(x) = {γ ∈ Path(𝓜) | γ begins at x}. This is the unfiltered continuation space, and it is defined for every x ∈ 𝓜. Level 1 is the structural fact that Ω(x) is non-empty for every x: the static Library contains at least one path beginning at each configuration.",
+        "PHYS-CORE-004 S7.3.1 (the O(1) computational core) gives a local-evolution version of the same claim: T_{n+1} = f(T_n, T_{n-1}) is defined at every step, and the cost per step is constant. This is the glider-level analogue of Level 1: continuation is local and always defined."
+      ],
+      "math": [
+        "∀x ∈ 𝓜 : |A(x)| ≥ 1",
+        "A(x) := { y ∈ 𝓜 | ∃ coherent γ : x ⇝ y }",
+        "Level 1 is observer-independent.",
+        "PHYS-CORE-000 §9.1: Ω(x) = {γ ∈ Path(𝓜) | γ begins at x} is defined for every x ∈ 𝓜.",
+        "PHYS-CORE-004 S7.3.1: T_{n+1} = f(T_n, T_{n-1}), defined for every n, constant cost per step."
+      ],
+      "relation_to_floor": "This is the structural half of PHYS-CORE-000's non-empty-continuation invariant (§9.1: Γ_O(h,x) ⊆ Ω(x), with the model requiring Γ_O(h,x) ≠ ∅ for admissible x). The floor summary's proviso 'provided O's state admits continuation' is NOT a Level 1 condition. Level 1 holds unconditionally: Ω(x) is defined for every x. The proviso belongs to Levels 2 and 3.",
+      "relation_to_phys_core_012": "PHYS-CORE-012 §2.2 (Blind Exploration) and §2.3 (Coherence Filtering) presuppose Level 1: Ω(x_t) is defined for every x_t, and Ω_survive is a subset. Level 1 is the structural fact that makes those phases well-defined.",
+      "relation_to_phys_core_004": "PHYS-CORE-004 S7.3.1 (O(1) core) is the local-evolution expression of Level 1. S3.5 (Structural Eternity) is the glider-level expression: the forward orbit 𝒪(G⁰) is defined for every finite n.",
+      "not_claimed": [
+        "It is NOT claimed that |A(x)| ≥ 1 implies an arbitrary destination y is in A(x).",
+        "It is NOT claimed that full adjacency implies reachability.",
+        "It is NOT claimed that Level 1 alone supplies a coherent path to every destination."
+      ],
+      "poetic_cipher": "The whole road is already there; the reference determines which road can be walked.",
+      "cipher_explanation": "The 'whole road' is Path(𝓜), the complete path structure represented within the static Library. 'The reference determines which road can be walked' compresses the transition from Level 1 (Ω(x) is defined) to Level 2 (Γ_O(h,x) restricts Ω(x) by observer-relative coherence). The cipher is adapted from PHYS-CORE-000 §9.1's poetic cipher, which uses the same image to express the distinction between the unfiltered continuation space and the observer-relative coherent continuation space."
+    },
+
+    {
+      "id": "3",
+      "title": "Level 2 — Observer-Relative Resolvability",
+      "poetic_cipher": "The window is defined on every wall; the eye looks through one pane. What falls below the pane is not gone — it is merely unresolved.",
+      "cipher_explanation": "The 'window' is the resolution window W_{μ_O}(x). 'Defined on every wall' represents the multi-axis structural fact: the window is defined on every resolution axis μ_O. 'The eye looks through one pane' represents the observer's single-axis experience. 'What falls below the pane is not gone' compresses the non-erasure rule (PHYS-CORE-000 §8.1: y ∉ A_O does not imply y ∉ 𝓜). The cipher compresses the Level 2 / Level 1 distinction and the multi-axis structure without asserting active axis re-referencing (Q1).",
+      "content": [
+        "Level 1 guarantees that a continuation exists. It does not guarantee that the observer can resolve any continuation on the observer's current resolution axis at the current traversal step.",
+        "Resolution is parameterized by the observer's magnitude-evaluation function μ_O and resolution floor I_N(O). Different μ_O correspond to different resolution axes. PHYS-CORE-000 §6.1 defines δ_O(x,y) := μ_O(x ⊕ y) and x ≈_O y iff δ_O(x,y) < I_N(O). Level 2 is the observer-relative resolvability condition built from these.",
+        "The observer experiences resolution on one axis at a time. The structural fact is multi-axis: the resolution window is defined on every axis, and the family of windows slides on all axes simultaneously as traversal proceeds.",
+        "Level 2 failure is a resolution failure, not an existence failure. A configuration excluded from the observer's window on the current axis remains a member of the Library and remains in A(x). This is the foundational non-erasure rule of PHYS-CORE-000 §8.1: y ∉ A_O(h,x) does not imply y ∉ 𝓜.",
+        "PHYS-CORE-012 §3.4 (Possibility vs. Accessibility) gives the single-axis accessible set 𝒜(x_t) = {x' ∈ 𝒫(x_t) | ℂ(x_t, x') ≥ I_N}. The multi-axis family {W_{μ_O}(x)}_{μ_O ∈ Axes} is an extension of this: it parameterizes the same accessibility structure by resolution axis. The extension is not derived in PHYS-CORE-012; it is a genuine strengthening.",
+        "PHYS-CORE-004 S6.3–S6.5 gives the Bloch-sphere machinery for the axis as a distinct mathematical object: 𝐫 = ⟨ψ|σ|ψ⟩ is the state vector, 𝐧̂ is the observation axis, and q(𝐧̂) = 𝐫 · 𝐧̂ is the projection. S6.4 explicitly states that changing the observation axis changes the projection while leaving the state vector 𝐫 unchanged. This is passive axis change. Whether the observer can actively re-reference μ_O is a stronger claim (Q1)."
+      ],
+      "math": [
+        "W_{μ_O}(x) := { y ∈ 𝓜 | δ_O(x, y) ≥ I_N(O) }",
+        "δ_O(x, y) := μ_O(x ⊕ y)  [PHYS-CORE-000 §6.1]",
+        "W_{μ_O}(x) ⊆ 𝓜",
+        "W_{μ_O}(x) may be empty even when A(x) is non-empty.",
+        "The family { W_{μ_O}(x) }_{μ_O ∈ Axes} slides on all axes as traversal proceeds.",
+        "Level 2 is observer-relative and axis-relative.",
+        "PHYS-CORE-004 S6.3: q(𝐧̂) = 𝐫 · 𝐧̂; P₁ = (1 + q)/2, P₀ = (1 - q)/2."
+      ],
+      "relation_to_phys_core_012": "PHYS-CORE-012 §3.4 gives the single-axis accessibility structure. §3.5 (Observer vs. Explorer) gives the closest available handle on axis-shifting: the explorer's internal state participates in path selection via 𝒜_explorer(x_t) = {x' ∈ 𝒜(x_t) | filter(x', S(x_t)) = 1}. Whether this constitutes axis re-referencing (μ_O → μ_O') or merely path selection within a fixed axis is an open question (see Q1).",
+      "relation_to_phys_core_004": "PHYS-CORE-004 S6.4 establishes passive axis change: the projection q changes when 𝐧̂ changes, while the state vector 𝐫 is unchanged. This supports the structural multi-axis claim (Level 2) but does NOT establish active axis re-referencing (Q1). S6.5 extends this to coherence-as-alignment: 𝒞_R(𝐫; 𝐧̂, D) = F(𝐫 · 𝐧̂, D, R).",
+      "relation_to_phys_core_000": "PHYS-CORE-000 §6.1 defines δ_O and the distinguishability threshold; §7.2 defines transition coherence 𝓒_O(x_i,x_{i+1}) = Θ(δ_O(x_i,x_{i+1}) - I_N(O)). Level 2 is the restriction of these to a single resolution axis. The multi-axis family {W_{μ_O}(x)} is an extension of PHYS-CORE-000's single-axis coherence condition, parameterized by μ_O.",
+      "pending_confirmation": "Whether the observer can shift axes (re-reference μ_O) is a stronger claim than whether other axes exist. The notes currently assert the multi-axis structural fact and leave the axis-shift claim pending.",
+      "poetic_cipher": "The eye closes before the Library does.",
+      "cipher_explanation": "This cipher is adapted from PHYS-CORE-000 §5.2.2, where it compresses the distinction between observer-relative resolution and Library membership. Here it compresses Level 2 failure: the observer's window may close on the current axis while the Library remains unchanged. The 'eye' is the resolution window; the 'Library' is 𝓜. The cipher reinforces the non-erasure rule and the Level 1 / Level 2 distinction."
+    },
+
+    {
+      "id": "4",
+      "title": "Level 3 — Path-Definition and the Undefined-Path Lemma",
+      "poetic_cipher": "The fireball is visible in the window, but no road leads to it from where the traveler stands. Another traveler, standing elsewhere, may walk there.",
+      "cipher_explanation": "The 'fireball' is a destination y ∈ W_{μ_O}(x) that is path-undefined relative to the observer's worldline γ. 'No road leads to it from where the traveler stands' compresses the Undefined-Path Lemma: y ∈ W_{μ_O}(x) does not imply y ∈ Reach(γ). 'Another traveler, standing elsewhere, may walk there' compresses the relationality result from PHYS-CORE-012 §7.6 (multiple grounded paths): ∃γ' ∈ Ω_ground(x_t) with y ∈ Reach(γ') does not imply y ∈ Reach(γ). The cipher compresses the Level 3 relationality result (Q2 resolved) and the distinction between path-undefinedness and incoherence.",
+      "content": [
+        "A destination may appear in the observer's resolution window on some axis without being reachable by a coherent path from the observer's current worldline.",
+        "This is the formal content of the 'fireball' case: the destination is representable (it is in 𝓜, and it is in W_{μ_O}(x) for some μ_O), but no coherent path connects the observer's worldline to it.",
+        "Path-undefinedness is structurally distinct from incoherence. Incoherence is a graded failure: a path exists and Δ(γ) exceeds Δ_crit. Path-undefinedness is a structural failure: there is no path γ from the current worldline to the destination on which Δ(γ) can be evaluated.",
+        "The Undefined-Path Lemma states that window membership does not imply reachability.",
+        "The lemma's relationality (UndefinedPath(γ, y), not UndefinedPath(y)) is derived, not pending: PHYS-CORE-012 §7.6 establishes that from any state x_t there exist multiple grounded paths Ω_ground(x_t) = {γ ∈ Ω_survive(x_t) | x_N ∈ X_XOR}, and §7.6.1 formalizes Branch Observers as grounded paths sharing an initial segment with γ_obs. The fireball is path-undefined relative to γ_obs, but reachable from some other γ' ∈ Ω_ground(x_t). Absolute path-undefinedness would require a destination with no incoming grounded path from anywhere, which the multiple-grounded-paths result rules out for any destination that appears in Ω_ground from any origin.",
+        "PHYS-CORE-004 S3.5 (Structural Eternity) supplies the glider-level analogue: the forward orbit 𝒪(G⁰) is a set of configurations, and different worldlines can pass through different members of the identity class [G⁰]∼. A destination in [G⁰]∼ is reachable from some worldline through that class; whether it is reachable from the observer's worldline is relational.",
+        "PHYS-CORE-004 S8.5 (two-branch toy model) supplies the geometric analogue: the triadic residual 𝐑 = 𝐔₁ + 𝐔₂ + 𝐔₃ may approach zero for one closure, while a given pair (𝐔₁, 𝐔₂) may leave a residual for which no third vector is available. This is the vector-space image of path-undefinedness relative to a worldline."
+      ],
+      "lemma": {
+        "name": "Undefined-Path Lemma",
+        "statement": "For an observer O with worldline γ and current resolution axis μ_O, y ∈ W_{μ_O}(x) for some x ∈ γ does not imply y ∈ Reach(γ). The window can contain destinations the observer's worldline cannot coherently reach. The relation is relational: UndefinedPath(γ, y).",
+        "formal": [
+          "y ∈ W_{μ_O}(x) ⇏ y ∈ Reach(γ)",
+          "UndefinedPath(γ, y) ⇔ y ∈ W_{μ_O}(x) for some μ_O AND no coherent γ' from the current reference to y is defined on γ's constraint structure.",
+          "Incoherent(γ') ⇔ Δ(γ') ≥ Δ_crit (graded failure, path exists).",
+          "UndefinedPath(γ, y) ⇔ no path γ' from γ's current state to y exists (structural failure, path does not exist).",
+          "Relationality: ∃γ' ∈ Ω_ground(x_t) with y ∈ Reach(γ') does not imply y ∈ Reach(γ). (From PHYS-CORE-012 §7.6.)",
+          "Glider-level analogue (PHYS-CORE-004 S3.5): y ∈ [G⁰]∼ and y ∈ 𝒪(G⁰) for some worldline does not imply y ∈ 𝒪(G_obs⁰)."
+        ],
+        "poetic_cipher": "The destination is not forbidden; it is simply not on this road.",
+        "cipher_explanation": "The 'destination' is y ∈ W_{μ_O}(x). 'Not forbidden' compresses the distinction between path-undefinedness and prohibition: y ∈ 𝓜 (it is a Library member) and y ∈ W_{μ_O}(x) for some μ_O (it is representable). 'Not on this road' compresses the structural failure: no coherent path from γ's current state to y exists. The cipher reinforces the Level 3 distinction between representability and reachability."
+      },
+      "relation_to_phys_core_011": "This refines PHYS-CORE-011 S6's ArbitraryEdit condition. S6 defines ArbitraryEdit(O → X) ⇔ X ∈ 𝓜 ∧ ¬ValidEdit(O → X). The Undefined-Path Lemma supplies the structural reason: the failure is not that X is forbidden, but that no path from O's worldline to X is defined.",
+      "relation_to_phys_core_012": "PHYS-CORE-012 §7.6 and §7.6.1 supply the structural basis for relationality. §7.6 establishes multiple grounded paths from any state; §7.6.1 establishes that some of these share an initial segment with γ_obs and diverge. The fireball is on a Branch Observer's path, not on γ_obs. This is exactly UndefinedPath(γ_obs, fireball).",
+      "relation_to_phys_core_004": "PHYS-CORE-004 S3.5 gives the glider-level analogue (forward orbit and identity class); S8.5 gives the vector-space analogue (triadic residual and closure). Neither is a substitute for the PHYS-CORE-012 §7.6 result, but both are prior corpus instances of the same relational structure.",
+      "relation_to_phys_core_000": "PHYS-CORE-000 §8.1 establishes the non-erasure rule: y ∉ A_O(h,x) does not imply y ∉ 𝓜. The Undefined-Path Lemma refines this rule by distinguishing two modes of non-accessibility: Level 2 (resolution failure: y ∉ W_{μ_O}(x) on the current axis) and Level 3 (path-definition failure: y ∈ W_{μ_O}(x) for some μ_O but y ∉ Reach(γ)). Both are modes of observer-relative inaccessibility; neither is ontological erasure."
+    },
+
+    {
+      "id": "5",
+      "title": "The Resolution Window (Metric-Free)",
+      "poetic_cipher": "The window slides without a floor to slide on. No ruler measures its motion; no clock times its steps. It is the traveler's relation that changes, not the room.",
+      "cipher_explanation": "The 'window' is W(O, x, μ_O). 'No floor to slide on' denies an intrinsic spatial metric (PHYS-CORE-000 §3.2: 𝓜 is dimensionally undifferentiated). 'No ruler measures its motion; no clock times its steps' denies an intrinsic temporal metric (PHYS-CORE-000 §0.2: the traversal index is not physical time). 'The traveler's relation changes, not the room' compresses the static-totality invariant: 𝓜 remains unchanged under traversal. The cipher compresses the metric-free character of the resolution window and its distinction from spatial motion or temporal evolution.",
+      "content": [
+        "The resolution window is defined without reference to any metric, position, or temporal coordinate.",
+        "It is a function of the observer, the current point on the observer's worldline, and the resolution axis. It is not a function of a separate time parameter, because there is no separate time parameter: the traversal step index is the only ordering there is. PHYS-CORE-000 §0.2 establishes that the abstract sequence index is not physical time; the same invariant applies here.",
+        "The window slides at every traversal step, on every axis. Traversal is re-referencing. There is no 'standing still' case because there is no position to remain at.",
+        "The window is generally larger than Reach(γ): it can contain destinations that are representable but path-undefined relative to the observer's worldline. This is the formal content of 'you can imagine what you cannot do'.",
+        "PHYS-CORE-004 S9 gives the definitional anchor for the horizon/singular distinction: |P(x)| > 1 (multiple destination classes), |P(x)| = 1 (destination locked, local path freedom remains), |A(x)| = 1 (singular case, path availability collapses). These are Level 3 (path-definition/destination) phenomena, distinct from Level 2 resolution failures."
+      ],
+      "math": [
+        "W : Obs × 𝓜 × Axes → P(𝓜)",
+        "W(O, x, μ_O) := { y ∈ 𝓜 | δ_O(x, y) ≥ I_N(O) }",
+        "No separate t parameter is introduced. The traversal step index is the ordering.",
+        "W(O, γ(t), μ_O) slides as t advances.",
+        "W(O, x, μ_O) ⊋ Reach(γ) in general.",
+        "PHYS-CORE-004 S9: |P(x)| = 1 ⇒ destination locked; |A(x)| = 1 ⇒ singular case."
+      ],
+      "not_claimed": [
+        "It is NOT claimed that W is a metric ball or neighborhood.",
+        "It is NOT claimed that W has a boundary in any topological sense inherited from a metric.",
+        "It is NOT claimed that sliding is spatial motion."
+      ],
+      "relation_to_phys_core_012_s9": "PHYS-CORE-012 §9 distinguishes ordinary convergence (|P(x)| > 1), destination locking (|P(x)| = 1, local path freedom remains), and the singular case (|A(x)| = 1, path availability collapses). The sliding window is a Level 2 (resolution) phenomenon. Horizons are a Level 3 (path-definition/destination) phenomenon. They are different levels and should not be conflated. Whether a horizon is a window-closing event, or an independent structural feature, is open (see Q3).",
+      "relation_to_phys_core_004_s9": "PHYS-CORE-004 S9 gives the definitional anchor: P(x) := {D | ∃ coherent γ : x ⇝ D}, E_D := {x | P(x) = {D}}, Singular_case := |A(x)| = 1. The relation between these and the sliding window is open (Q3).",
+      "poetic_cipher": "The window has no edge, only a relation.",
+      "cipher_explanation": "The 'window' is W(O, x, μ_O). 'No edge' denies a metric boundary. 'Only a relation' compresses the formal definition: W is defined by the observer-relative condition δ_O(x, y) ≥ I_N(O), not by a topological boundary inherited from a metric space. The cipher reinforces the metric-free character of the resolution window."
+    },
+
+    {
+      "id": "6",
+      "title": "Relation to PHYS-CORE-011",
+      "poetic_cipher": "The earlier document distinguished the room from the view. These notes distinguish three kinds of view: what can be seen, what can be resolved, and what can be walked to.",
+      "cipher_explanation": "The 'earlier document' is PHYS-CORE-011, which establishes the existence/accessibility distinction (S1, S2) and the observer-as-coherent-descent-path model (S3). 'The room' is the Library; 'the view' is observer-relative accessibility. The 'three kinds of view' are Levels 1, 2, and 3. The cipher compresses the refinement without revising PHYS-CORE-011's claims.",
+      "content": [
+        "PHYS-CORE-011 establishes the existence/accessibility distinction (S1, S2) and the observer-as-coherent-descent-path model (S3).",
+        "These notes refine that vocabulary into a three-level structure without revising PHYS-CORE-011's claims.",
+        "S5's coherence-as-derived repair is preserved. These notes split the coherence condition into an observer-independent constraint-preservation component and an observer-relative resolvability component, so that 'coherent but unresolvable' is a stable distinction.",
+        "S6's ArbitraryEdit condition is preserved and supplied with a structural reason via the Undefined-Path Lemma.",
+        "S9's horizon and singular-case vocabulary is preserved. The relation between horizons and the sliding window is an open question (see Q3)."
+      ],
+      "proposed_refinement_to_S5": [
+        "Coherent(γ) := Δ(γ) < Δ_crit. (Observer-independent constraint preservation.)",
+        "Resolvable(γ | O) := every transition in γ satisfies δ_O ≥ I_N(O). (Observer-relative.)",
+        "𝓒(γ | O) := Coherent(γ) ∧ Resolvable(γ | O). (The floor summary's coherence, split into its two components.)"
+      ],
+      "refinement_status": "Proposed. PHYS-CORE-012 §3.4's 𝒜(x_t) and §3.5's 𝒜_explorer(x_t) already implicitly assume the split: 𝒜(x_t) filters by ℂ(x_t, x') ≥ I_N, while the explorer's filter function is a separate selection layer. PHYS-CORE-004 S5 already contains a prior instance of the split at the constraint level: Coherent(γ) := F(Δ(γ), R_γ), with I_N as a threshold on F. The proposed refinement is compatible with S5, factoring I_N out of Coherent and into Resolvable. Formal adoption in PHYS-CORE-011 v0.3 is a separate editorial decision (Q5).",
+      "relation_to_phys_core_000": "PHYS-CORE-000 §7.2 defines coherence as 𝓒(γ | O) = ∏ 𝓒_O(x_i,x_{i+1}), where each transition is evaluated by Θ(δ_O(x_i,x_{i+1}) - I_N(O)). This is the observer-relative component. The proposed split factors the observer-independent constraint-preservation component (Coherent(γ)) apart from the observer-relative resolvability component (Resolvable(γ | O)), so that the floor summary's 𝓒(γ | O) is recovered as their conjunction.",
+      "poetic_cipher": "The measure follows the measurer, not the world.",
+      "cipher_explanation": "This cipher is adapted from PHYS-CORE-000 §5.2.5, where it compresses the distinction between observer-relative resolution and Library membership. Here it compresses the proposed split: Resolvable(γ | O) is observer-relative (the measure follows the measurer), while Coherent(γ) is constraint-preservation (the world's constraint structure). The cipher reinforces the distinction between the two components of 𝓒(γ | O)."
+    },
+
+    {
+      "id": "7",
+      "title": "Relation to PHYS-CORE-012 (Lightning Model) and PHYS-CORE-004",
+      "poetic_cipher": "The Lightning Model supplies the mechanism; the glider supplies the local step; the axiomatic floor supplies the room. These notes name what all three already presuppose.",
+      "cipher_explanation": "The 'Lightning Model' is PHYS-CORE-012, which supplies the operational mechanism (blind exploration, coherence filtering, Ω_survive). 'The glider' is PHYS-CORE-004, which supplies the local-evolution and geometric scaffolding (S3.5, S6.3–S6.6, S8.5). 'The axiomatic floor' is PHYS-CORE-000, which supplies the Library and observer-relative accessibility. The cipher compresses the section's role: these notes refine the non-empty-continuation invariant that all three already presuppose, without introducing new axioms.",
+      "content": [
+        "PHYS-CORE-012 v1.0.3 is the operational mechanism that these notes refine. The notes inherit its vocabulary and extend it at exactly one point: the multi-axis resolution window.",
+        "PHYS-CORE-004 v1.0.1 is the glider-level and geometric scaffolding. The notes inherit its structural eternity, Bloch projection, geometric lineage, and two-branch toy model vocabulary.",
+        "PHYS-CORE-000 v1.0.1 is the axiomatic floor. The notes inherit its Library/accessibility distinction, its static-totality invariant, and its observer-relative coherence construction.",
+        "The notes do not revise PHYS-CORE-012's, PHYS-CORE-004's, or PHYS-CORE-000's claims. They sharpen the non-empty-continuation invariant that PHYS-CORE-012 §2.2–§2.3 and §7.6 already presuppose, and they connect it to the glider-level and geometric structures developed in PHYS-CORE-004, within the foundational framework of PHYS-CORE-000."
+      ],
+      "_inheritance_map_phys_core_000": [
+        {
+          "floor_concept": "§0.2 — Static Totality versus Observer Traversal",
+          "maps_to_level": "Cross-cutting (static Library invariant)",
+          "note": "𝓜_i = 𝓜 for all i. Traversal changes observer-relative relations, not the Library. This invariant governs all three levels."
+        },
+        {
+          "floor_concept": "§3.2 — The Unbounded Total Configuration Space",
+          "maps_to_level": "Level 1 (unboundedness and no privileged boundary)",
+          "note": "𝓜 is static, maximally complete, unbounded, and domain-neutral. Level 1's structural existence of continuation is a consequence of this."
+        },
+        {
+          "floor_concept": "§6.1 — Distinguishability Relative to O",
+          "maps_to_level": "Level 2 (resolution machinery)",
+          "note": "δ_O(x,y) := μ_O(x ⊕ y); x ≈_O y iff δ_O < I_N(O). Level 2's resolution window is built from this."
+        },
+        {
+          "floor_concept": "§7.2 — Coherence of a Path",
+          "maps_to_level": "Level 2 → Level 3 boundary",
+          "note": "𝓒(γ | O) = ∏ 𝓒_O(x_i,x_{i+1}) is the observer-relative coherence of a path. The proposed split factors this into Coherent(γ) and Resolvable(γ | O)."
+        },
+        {
+          "floor_concept": "§8.1 — Accessibility Is Not Existence",
+          "maps_to_level": "Level 3 (non-erasure and path-definition)",
+          "note": "A_O(h,x) ⊆ 𝓜; y ∉ A_O ⇏ y ∉ 𝓜. This is the foundational non-erasure rule. The Undefined-Path Lemma refines it by distinguishing Level 2 and Level 3 modes of non-accessibility."
+        },
+        {
+          "floor_concept": "§9.1 — The Unfiltered Continuation Space",
+          "maps_to_level": "Level 1 (structural existence)",
+          "note": "Ω(x) = {γ ∈ Path(𝓜) | γ begins at x} is defined for every x ∈ 𝓜. Level 1 is the non-emptiness of Ω(x) for every x."
+        },
+        {
+          "floor_concept": "§9.2 — Repeated Survivorship",
+          "maps_to_level": "Level 3 (survivorship and emergent regularity)",
+          "note": "Ω_O^survive(x) ⊆ Ω(x) is the observer-relative surviving continuation set. L_O(x,y) describes stable recurring transitions across O-accessible paths."
+        }
+      ],
+      "_inheritance_map_phys_core_012": [
+        {
+          "lightning_model_concept": "Ω(x_t) — Blind Exploration (§2.2, §2.4)",
+          "maps_to_level": "Level 1",
+          "note": "Ω(x_t) is defined for every x_t. This is Level 1 in the Lightning Model's vocabulary."
+        },
+        {
+          "lightning_model_concept": "Ω_survive — Coherence Filtering (§2.3, §2.4)",
+          "maps_to_level": "Level 1 → Level 3 boundary",
+          "note": "Ω_survive filters by 𝒪(γ) = 1, i.e., by Coherent(γ). This is the observer-independent constraint-preservation component. It does not yet distinguish resolvability from path-definition."
+        },
+        {
+          "lightning_model_concept": "𝒜(x_t) — Coherence-Accessible Successors (§3.4)",
+          "maps_to_level": "Level 2 (single-axis)",
+          "note": "𝒜(x_t) = {x' ∈ 𝒫(x_t) | ℂ(x_t, x') ≥ I_N} is the single-axis accessibility structure. The multi-axis family {W_{μ_O}(x)} extends it."
+        },
+        {
+          "lightning_model_concept": "𝒜_explorer(x_t) — Explorer's accessible set (§3.5)",
+          "maps_to_level": "Level 2 (axis-shift candidate)",
+          "note": "The explorer's filter function filter(x', S(x_t)) is the closest available handle on axis-shifting. Whether it constitutes axis re-referencing is open (Q1)."
+        },
+        {
+          "lightning_model_concept": "ArbitraryEdit(O → X) — Failed transition (§6)",
+          "maps_to_level": "Level 3",
+          "note": "ArbitraryEdit(O → X) ⇔ X ∈ 𝓜 ∧ ¬ValidEdit(O → X). The Undefined-Path Lemma supplies the structural reason."
+        },
+        {
+          "lightning_model_concept": "Horizons and singular case (§9)",
+          "maps_to_level": "Level 3 (destination structure)",
+          "note": "|P(x)| = 1 (destination locked) and |A(x)| = 1 (singular case) are Level 3 phenomena, distinct from Level 2 resolution failures. Relation to the sliding window is open (Q3)."
+        },
+        {
+          "lightning_model_concept": "Ω_ground(x_t) — Multiple grounded paths (§7.6)",
+          "maps_to_level": "Level 3 (relationality basis)",
+          "note": "Multiple grounded paths from any state ground the relationality of UndefinedPath: y may be reachable from some γ' ∈ Ω_ground(x_t) while path-undefined for γ_obs."
+        },
+        {
+          "lightning_model_concept": "Branch Observers (§7.6.1)",
+          "maps_to_level": "Level 3 (branching structure)",
+          "note": "Branch Observers are grounded paths sharing an initial segment with γ_obs. The fireball is on a Branch Observer's path, not on γ_obs."
+        }
+      ],
+      "_inheritance_map_phys_core_004": [
+        {
+          "phys_core_004_concept": "S3.5 — Structural Eternity (forward orbit 𝒪(G⁰) ⊆ [G⁰]∼, translation-preserving glider evolution)",
+          "maps_to_level": "Level 1 (existence) and Level 3 (relationality at the glider level)",
+          "note": "The forward orbit is defined for every finite n (Level 1 analogue). The identity class [G⁰]∼ may contain configurations reachable from some worldlines but not the observer's (Level 3 analogue)."
+        },
+        {
+          "phys_core_004_concept": "S5 — Coherence as derived (Δ(γ), K(Sᵢ,Sⱼ), I_N as threshold on F)",
+          "maps_to_level": "Level 2 (prior instance of the Coherent/Resolvable split)",
+          "note": "S5 already separates constraint preservation (Δ) from the threshold (I_N) on the derived coherence functional. The proposed refinement factors I_N out of Coherent and into Resolvable."
+        },
+        {
+          "phys_core_004_concept": "S6.3–S6.5 — State and observation axis, Bloch projection, coherence-as-alignment",
+          "maps_to_level": "Level 2 (axis machinery)",
+          "note": "S6.3–S6.5 gives the axis as a distinct mathematical object (𝐫 vs. 𝐧̂). S6.4 explicitly establishes passive axis change (projection changes while state vector unchanged). Active axis re-referencing is Q1."
+        },
+        {
+          "phys_core_004_concept": "S6.4 — Passive axis change vs. underlying state",
+          "maps_to_level": "Level 2 (Q1 boundary)",
+          "note": "S6.4 establishes that changing the observation axis changes the projection while leaving the state vector unchanged. This is passive axis change. It does NOT establish active axis re-referencing."
+        },
+        {
+          "phys_core_004_concept": "S6.6 — Geometric lineage (S¹ → S² → recursive Bloch → fiber → L)",
+          "maps_to_level": "Cross-cutting (lineage, not level)",
+          "note": "S6.6 explicitly states that the geometric lineage is conceptual, not mathematical equivalence. This is the precedent for quarantining allegorical language."
+        },
+        {
+          "phys_core_004_concept": "S7.3.1 — O(1) computational core (T_{n+1} = f(T_n, T_{n-1}))",
+          "maps_to_level": "Level 1 (local-evolution expression)",
+          "note": "The O(1) core is the local-evolution expression of Level 1: continuation is defined at every step, and the cost per step is constant."
+        },
+        {
+          "phys_core_004_concept": "S8.4 — Numerical/analytical demonstration template (dyad-vs-triad comparison)",
+          "maps_to_level": "Level 3 (evidence template)",
+          "note": "S8.4 specifies the observables (phase-locking error, coherence retention, structural overlap, vector residual) that would constitute Level 3 evidence for a specified dynamical model."
+        },
+        {
+          "phys_core_004_concept": "S8.5 — Two-branch toy model, triadic residual 𝐑 → 0, conservative vs. stronger interpretation",
+          "maps_to_level": "Level 3 (vector-space analogue)",
+          "note": "The triadic residual 𝐑 = 𝐔₁ + 𝐔₂ + 𝐔₃ may approach zero for one closure, while a given pair (𝐔₁, 𝐔₂) may leave a residual for which no third vector is available. This is the vector-space image of path-undefinedness. S8.5 also explicitly separates the conservative two-branch interpretation from the stronger two-universe hypothesis."
+        },
+        {
+          "phys_core_004_concept": "S9 — Horizons and singular case (|P(x)| = 1, |A(x)| = 1)",
+          "maps_to_level": "Level 3 (definitional anchor)",
+          "note": "S9 gives the definitional anchor for destination locking (|P(x)| = 1) and singular case (|A(x)| = 1). The relation between these and the sliding window is open (Q3)."
+        }
+      ],
+      "poetic_cipher": "Three documents, one room: the floor drew the room, the lightning drew the paths, the glider drew the step. These notes name the three ways a path can fail to be walked.",
+      "cipher_explanation": "The 'floor' is PHYS-CORE-000 (the axiomatic floor: Library and observer-relative accessibility). 'The lightning' is PHYS-CORE-012 (the Lightning Model: blind exploration, coherence filtering, Ω_survive). 'The glider' is PHYS-CORE-004 (the glider-level and geometric scaffolding). 'Three ways a path can fail to be walked' are Levels 1 (structural existence), 2 (resolution), and 3 (path-definition). The cipher compresses the section's role: naming what all three documents already presuppose."
+    },
+
+    {
+      "id": "8",
+      "title": "Open Questions and Pending Confirmations",
+      "poetic_cipher": "Some doors are resolved; others remain ajar. The notes close what they can and name what they cannot.",
+      "cipher_explanation": "The 'doors' are the open questions Q1–Q5. 'Resolved' refers to Q2 (relationality of UndefinedPath). 'Ajar' refers to Q1, Q3, Q4, and Q5, which remain pending. The cipher compresses the section's function: to distinguish what is settled from what is still under investigation.",
+      "content": [
+        "The following items are explicitly open. Q2 is resolved (see §4 and the resolution note below). The others remain pending.",
+        "PHYS-CORE-004 S8.4 is the template for what Level 3 evidence would look like for a specified dynamical model: matched dyad-vs-triad comparison with phase-locking error, coherence retention, structural overlap, and vector residual as observables."
+      ],
+      "open_questions": [
+        {
+          "id": "Q1",
+          "question": "Is the observer's single-axis experience accompanied by the capacity to shift axes (actively re-reference μ_O)?",
+          "status": "PENDING",
+          "note": "Level 2 asserts the multi-axis structural fact. The stronger claim — that the observer can actively shift axes — is not asserted. Two handles are available: PHYS-CORE-012 §3.5's explorer filter function (path selection within a fixed axis) and PHYS-CORE-004 S6.4's passive axis change (projection changes while state vector unchanged). Neither is a full active axis re-referencing mechanism. The passive/active distinction is itself a clarification.",
+          "poetic_cipher": "The telescope can be turned; whether the observer can turn it is a further question.",
+          "cipher_explanation": "The 'telescope' is the observation axis 𝐧̂ in PHYS-CORE-004 S6.4. 'Can be turned' represents passive axis change: the projection q(𝐧̂) = 𝐫 · 𝐧̂ changes when 𝐧̂ changes, while the state vector 𝐫 remains unchanged. 'Whether the observer can turn it' represents active axis re-referencing: whether the observer can change its own μ_O. The cipher compresses the Q1 boundary."
+        },
+        {
+          "id": "Q2",
+          "question": "Is UndefinedPath relational (UndefinedPath(γ, y)) or absolute (UndefinedPath(y))?",
+          "status": "RESOLVED",
+          "resolution": "Relational. PHYS-CORE-012 §7.6 establishes multiple grounded paths Ω_ground(x_t) from any state; §7.6.1 establishes Branch Observers as grounded paths sharing an initial segment with γ_obs. The fireball is path-undefined relative to γ_obs but reachable from some other γ' ∈ Ω_ground(x_t). Absolute path-undefinedness would require a destination with no incoming grounded path from anywhere, which the multiple-grounded-paths result rules out for any destination that appears in Ω_ground from any origin. PHYS-CORE-004 S3.5 (forward orbit and identity class) and S8.5 (triadic residual) supply prior glider-level and geometric instances of the same relational structure.",
+          "resolved_in_version": "0.2.0",
+          "poetic_cipher": "No road is closed to every traveler; a road is only closed to a traveler.",
+          "cipher_explanation": "The 'road' is a coherent path γ. 'Closed to a traveler' represents the relationality of UndefinedPath: UndefinedPath(γ, y) is indexed by the worldline γ, not by y alone. 'No road is closed to every traveler' compresses the result from PHYS-CORE-012 §7.6: for any destination y that appears in Ω_ground from any origin, there exists some γ' ∈ Ω_ground(x_t) with y ∈ Reach(γ'). The cipher compresses the resolved relationality of Q2."
+        },
+        {
+          "id": "Q3",
+          "question": "What is the relation between the sliding window and PHYS-CORE-011 S9 / PHYS-CORE-004 S9's horizon / singular-case vocabulary?",
+          "status": "PENDING",
+          "note": "Horizons are a Level 3 (path-definition/destination) phenomenon. The sliding window is a Level 2 (resolution) phenomenon. They are different levels and should not be conflated. PHYS-CORE-004 S9 gives the definitional anchor: |P(x)| = 1 (destination locked) and |A(x)| = 1 (singular case). Whether a horizon is a window-closing event or an independent structural feature is open.",
+          "poetic_cipher": "A horizon may be the edge of the window or the edge of the road; the difference is not yet decided.",
+          "cipher_explanation": "The 'window' is W_{μ_O}(x) (Level 2). The 'road' is Reach(γ) (Level 3). 'The difference is not yet decided' compresses the open question: whether a horizon is a Level 2 phenomenon (window-closing) or a Level 3 phenomenon (road-ending), or an independent structural feature. The cipher compresses Q3's unresolved status."
+        },
+        {
+          "id": "Q4",
+          "question": "Do 𝒵 = {0}, X_XOR, and 𝐑 → 0 coincide, and does any of them correspond to W → ∅ on all axes?",
+          "status": "PENDING",
+          "note": "Three distinct constructs are in play. 𝒵 = {0} is the floor summary's algebraic termination class (PHYS-CORE-000 §3.1: unique singleton z with z ⊕ z = z; identity 0 ⊕ x = x). X_XOR is PHYS-CORE-009/011/012's triadic-closure attractor (the set of states where ∮ Φ = 0). 𝐑 → 0 is PHYS-CORE-004 S8.5's vector closure residual (the triadic residual of the two-branch toy model). Whether any two of these coincide, and whether either corresponds to W → ∅ on all axes, is open. The three-way comparison is itself a clarification.",
+          "poetic_cipher": "Three names for the same silence, or three silences? The notes do not yet know.",
+          "cipher_explanation": "The 'three names' are 𝒵 = {0}, X_XOR, and 𝐑 → 0, each a candidate construct for the closure/termination question. 'The same silence' would mean they coincide. 'Three silences' would mean they are distinct. 'The notes do not yet know' compresses Q4's unresolved status. The cipher compresses the three-way comparison without prejudging its outcome."
+        },
+        {
+          "id": "Q5",
+          "question": "Is the proposed S5 refinement (splitting Coherent from Resolvable) adopted into PHYS-CORE-011 v0.3, and how does it relate to PHYS-CORE-004 S5's existing split?",
+          "status": "PENDING",
+          "note": "PHYS-CORE-012 §3.4's 𝒜(x_t) and §3.5's 𝒜_explorer(x_t) already implicitly assume the split. PHYS-CORE-004 S5 already contains a prior instance of the split at the constraint level: Coherent(γ) := F(Δ(γ), R_γ), with I_N as a threshold on F. The proposed refinement is compatible with S5, factoring I_N out of Coherent and into Resolvable. Formal adoption in PHYS-CORE-011 v0.3 is a separate editorial decision.",
+          "poetic_cipher": "The measure was already in the hand; the question is whether the hand will be named in the book.",
+          "cipher_explanation": "The 'measure' is I_N, the threshold on the derived coherence functional. 'Already in the hand' represents PHYS-CORE-004 S5's existing split: Coherent(γ) := F(Δ(γ), R_γ), with I_N as a threshold on F. 'Whether the hand will be named in the book' represents the editorial decision: whether the proposed refinement is formally adopted into PHYS-CORE-011 v0.3. The cipher compresses Q5's pending status and the compatibility result."
+        }
+      ],
+      "poetic_cipher": "Some questions are answered; some are named. Naming is not answering, but it is the beginning of an answer.",
+      "cipher_explanation": "The 'questions' are Q1–Q5. 'Answered' refers to Q2. 'Named' refers to Q1, Q3, Q4, and Q5, which are explicitly stated as open. The cipher compresses the section's function: distinguishing the resolved from the pending without pretending that the pending is resolved."
+    }
+
+  ],
+
+  "_three_level_structure": {
+    "level_1": {
+      "name": "Structural Existence",
+      "statement": "∀x ∈ 𝓜 : |A(x)| ≥ 1",
+      "observer_relative": false,
+      "failure_mode": "None. Level 1 is unconditional.",
+      "allegory_used": "None. Level 1 is metric-free.",
+      "lightning_model_anchor": "PHYS-CORE-012 §2.2, §2.4 (Ω(x_t) is defined for every x_t)",
+      "phys_core_004_anchor": "S7.3.1 (O(1) core); S3.5 (forward orbit defined for every finite n)",
+      "phys_core_000_anchor": "§9.1 (Ω(x) is defined for every x ∈ 𝓜)",
+      "poetic_cipher": "Every point has at least one road.",
+      "cipher_explanation": "The 'point' is x ∈ 𝓜; the 'road' is a continuation in A(x). The cipher compresses the unconditional, observer-independent character of Level 1."
+    },
+    "level_2": {
+      "name": "Observer-Relative Resolvability",
+      "statement": "W_{μ_O}(x) may be empty or may exclude A(x) on the current axis, even when A(x) is non-empty.",
+      "observer_relative": true,
+      "failure_mode": "Resolution failure. The continuation exists; the observer does not resolve it on the current axis.",
+      "allegory_used": "'Redshift below I_N' — allegory for exclusion from the resolution window.",
+      "lightning_model_anchor": "PHYS-CORE-012 §3.4 (𝒜(x_t), single-axis); §3.5 (𝒜_explorer(x_t), axis-shift candidate)",
+      "phys_core_004_anchor": "S6.3–S6.5 (Bloch projection and coherence-as-alignment); S6.4 (passive axis change); S5 (prior Coherent/Resolvable split at constraint level)",
+      "phys_core_000_anchor": "§6.1 (δ_O and I_N(O)); §7.2 (𝓒_O(x_i,x_{i+1}) transition coherence)",
+      "poetic_cipher": "The window may be dark while the room is full.",
+      "cipher_explanation": "The 'window' is W_{μ_O}(x); the 'room' is 𝓜. The cipher compresses the non-erasure rule: Level 2 failure does not imply Level 1 failure."
+    },
+    "level_3": {
+      "name": "Path-Definition",
+      "statement": "y ∈ W_{μ_O}(x) for some μ_O does not imply y ∈ Reach(γ).",
+      "observer_relative": true,
+      "failure_mode": "Structural failure. No coherent path from γ's current state to y is defined.",
+      "allegory_used": "The fireball case — representable, not reachable.",
+      "lightning_model_anchor": "PHYS-CORE-012 §6 (ArbitraryEdit); §7.6 (multiple grounded paths); §7.6.1 (Branch Observers); §9 (horizons)",
+      "phys_core_004_anchor": "S3.5 (forward orbit and identity class); S8.4 (evidence template); S8.5 (triadic residual and conservative vs. stronger interpretation); S9 (|P(x)| = 1 and |A(x)| = 1)",
+      "phys_core_000_anchor": "§8.1 (A_O(h,x) ⊆ 𝓜; non-erasure); §9.2 (Ω_O^survive(x); L_O(x,y))",
+      "poetic_cipher": "The star is visible; the road to it is not.",
+      "cipher_explanation": "The 'star' is y ∈ W_{μ_O}(x); the 'road' is Reach(γ). The cipher compresses the Level 2 / Level 3 distinction: representability does not imply reachability."
+    }
+  },
+
+  "_nonempty_continuation_invariant": {
+    "floor_summary_version": "∀x ∈ 𝓜, ∃γ ∈ Path(𝓜) such that γ begins at x and 𝓒(γ|O) = 1, provided O's state admits continuation. (PHYS-CORE-000 §9.1)",
+    "refined_version": [
+      "Level 1 (unconditional): ∀x ∈ 𝓜 : |A(x)| ≥ 1.",
+      "Level 2 (observer-relative): W_{μ_O}(x) may be empty on the current axis; this is a resolution failure, not an existence failure.",
+      "Level 3 (observer-relative): y ∈ W_{μ_O}(x) for some μ_O does not imply y ∈ Reach(γ); this is a path-definition failure."
+    ],
+    "proviso_resolution": "The floor summary's proviso 'provided O's state admits continuation' is dissolved. It is not an existence condition (Level 1 holds unconditionally). It is a resolution condition (Level 2) and a path-definition condition (Level 3). These are distinct. The relationality of Level 3 is grounded in PHYS-CORE-012 §7.6 (multiple grounded paths) and §7.6.1 (Branch Observers), with glider-level and geometric scaffolding from PHYS-CORE-004 S3.5 and S8.5.",
+    "poetic_cipher": "The room is full; the window may be narrow; the road may not lead there. Three facts, not one.",
+    "cipher_explanation": "The 'room' is 𝓜 (Level 1: |A(x)| ≥ 1). The 'window' is W_{μ_O}(x) (Level 2: resolvability). The 'road' is Reach(γ) (Level 3: path-definition). The cipher compresses the three-level structure and the dissolution of the proviso into three distinct conditions."
+  },
+
+  "_allegory_quarantine": {
+    "status": "The Earth-box / Venus-pole / redshift thought experiment is pedagogical and is NOT load-bearing. PHYS-CORE-004 S6.6 and S8.5 quarantine allegorical language in the same way (S6.6 separates geometric lineage from mathematical equivalence; S8.5 separates the conservative two-branch interpretation from the stronger two-universe hypothesis). PHYS-CORE-012 Appendix C classifies the same framing as interpretive, not mathematical. PHYS-CORE-000 §0.2 quarantines 'past' and 'future' as observer-relative orderings rather than intrinsic partitions of the Library.",
+    "prohibited_uses": [
+      "Citing the thought experiment as a claim about 𝓜.",
+      "Importing a spatial metric or temporal ordering from the allegory into the formal claims.",
+      "Using 'standing still' as a formal case.",
+      "Using 'faster than the speed of light' as a formal quantity.",
+      "Treating 'expanding the domain' as a claim that the Library grows.",
+      "Using passive axis change (PHYS-CORE-004 S6.4) as evidence for active axis re-referencing (Q1)."
+    ],
+    "permitted_uses": [
+      "Motivating the three-level structure.",
+      "Illustrating the difference between representability and reachability.",
+      "Illustrating the sliding window."
+    ],
+    "poetic_cipher": "The allegory is a lantern, not a map.",
+    "cipher_explanation": "The 'lantern' is the pedagogical device: it illuminates the three-level structure without claiming to be a precise representation. 'Not a map' denies that the allegory is load-bearing: it does not import a metric, a temporal ordering, or a spatial container into the formal claims. The cipher compresses the quarantine."
+  },
+
+  "_limitations": [
+    "These are draft notes. Q1 (multi-axis claim strength — passive vs. active axis re-referencing), Q3 (window vs. horizon), Q4 (three-way comparison of 𝒵 = {0}, X_XOR, and 𝐑 → 0), and Q5 (S5 split adoption and compatibility with PHYS-CORE-004 S5) remain open.",
+    "The multi-axis family {W_{μ_O}(x)} is a genuine strengthening of PHYS-CORE-012 §3.4's single-axis 𝒜(x_t). It is not derived in PHYS-CORE-012 and should be flagged as an extension, not an inheritance.",
+    "The passive/active distinction for axis change (PHYS-CORE-004 S6.4 vs. Q1) is a clarification introduced by these notes. It is not present as such in PHYS-CORE-004 or PHYS-CORE-012.",
+    "The three-way comparison of 𝒵 = {0}, X_XOR, and 𝐑 → 0 is a clarification introduced by these notes. PHYS-CORE-004 S8.5 names 𝐑 → 0; PHYS-CORE-000 §3.1 names 𝒵; PHYS-CORE-009/011/012 name X_XOR. The notes do not claim that any two of these coincide.",
+    "The proposed S5 refinement is compatible with PHYS-CORE-004 S5's existing split (Coherent(γ) := F(Δ(γ), R_γ), with I_N as a threshold on F). The refinement factors I_N out of Coherent and into Resolvable. Formal adoption is a separate editorial decision (Q5).",
+    "PHYS-CORE-004 S8.4 is the template for Level 3 evidence, not a completed Level 3 result. The notes do not claim that any Level 3 claim has been demonstrated for a specified dynamical model.",
+    "The allegory (Earth-box / Venus-pole / redshift) is quarantined. It is not a claim about 𝓜.",
+    "These notes do not introduce new axioms. They refine the vocabulary of PHYS-CORE-011 and connect it to PHYS-CORE-004 and PHYS-CORE-012, within the foundational framework of PHYS-CORE-000.",
+    "PHYS-CORE-000 §9.1's proviso 'provided O's state admits continuation' is dissolved into three distinct conditions: Level 1 (unconditional existence), Level 2 (resolution), and Level 3 (path-definition). This dissolution is a clarification introduced by these notes."
+  ],
+
+  "_closing_poetic_cipher": "The Library does not grow, the window does not measure, and the road does not promise. What exists, what is seen, and what can be walked are three different truths, and the whole is the room in which all three are true.",
+
+  "_closing_cipher_explanation": "This final cipher compresses the entire document. 'The Library does not grow' is Level 1: static existence of continuation (Ω(x) is defined for every x; 𝓜_i = 𝓜). 'The window does not measure' is Level 2: resolution is observer-relative, not metric (W_{μ_O}(x) is defined by δ_O and I_N(O), not by a metric). 'The road does not promise' is Level 3: path-definition is relational, not guaranteed (y ∈ W_{μ_O}(x) does not imply y ∈ Reach(γ)). 'Three different truths' names the three levels. 'The whole is the room in which all three are true' compresses the foundational framework of PHYS-CORE-000: the static Library in which existence, resolution, and path-definition are distinct but co-present."
+}

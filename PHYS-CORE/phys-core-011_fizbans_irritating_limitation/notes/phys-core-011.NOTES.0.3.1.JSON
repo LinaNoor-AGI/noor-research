@@ -1,0 +1,238 @@
+{
+  "_schema": "noor-update-spec-v1",
+  "_schema_version": "1.0.0",
+  "_type": "update_specification",
+  "_target_document": "phys-core-000_noor_swirl_field_geometry_primer.JSON",
+  "_source_document": "Coherence-Constrained Traversal in the Static Library (v2.0.0)",
+  "_purpose": "Map the relevant content from the Coherence-Constrained Traversal notes into the axiomatic floor primer, identifying where Fizban's Limitation (the distinction between existence and accessibility, and the further distinction between representability and reachability) should be formally incorporated, clarified, or cross-referenced.",
+  "_fizban_limitation_definition": "Fizban's Limitation is the principle that a configuration may exist in the Library without being reachable from a given observer-state. It is not a prohibition imposed on the Library; it is the absence of a coherent transition. The limitation is structural, not normative. The name is borrowed from D&D's Fizban the Fabulous (a wizard whose fireballs are notoriously unreliable), but the formal content is the existence/accessibility distinction refined into three levels: (1) structural existence, (2) observer-relative resolvability, and (3) path-definition.",
+  "_fizban_limitation_poetic_cipher": "The fireball exists in the Library; the wizard's hands may not know the road to it.",
+  "_fizban_limitation_cipher_explanation": "The 'fireball' is a configuration X ∈ 𝓜. The 'wizard's hands' are the observer's current state and its admissible continuations. 'May not know the road to it' represents the absence of a coherent path γ from O to X. The cipher compresses Fizban's Limitation: existence does not imply accessibility; the Library contains the fireball without guaranteeing that the wizard can cast it.",
+
+  "_relevant_source_sections": [
+    {
+      "source_id": "1",
+      "source_title": "The Fundamental Distinction: Existence Is Not Accessibility",
+      "relevance": "Directly maps to PHYS-CORE-000 §8.1 (Accessibility Is Not Existence) and §9.1 (The Unfiltered Continuation Space). The source's distinction between Existence(X) := X ∈ 𝓜 and Accessibility(O,X) := ∃γ : O ⇝ X is already present in the primer as A_O(h,x) ⊆ 𝓜 and y ∉ A_O ⇏ y ∉ 𝓜.",
+      "mapping": "Already covered, but could be sharpened with an explicit cross-reference to Fizban's Limitation."
+    },
+    {
+      "source_id": "2",
+      "source_title": "The Static Library and Full Adjacency",
+      "relevance": "Maps to PHYS-CORE-000 §3.2 (The Unbounded Total Configuration Space) and §3.1 (Closure Under XOR). The source's Adj(x,y) ⇏ Reach(x,y) is the same as the primer's distinction between membership in 𝓜 and accessibility via A_O(h,x).",
+      "mapping": "Already covered, but the phrase 'full adjacency does not imply reachability' could be added as an explicit invariant."
+    },
+    {
+      "source_id": "3",
+      "source_title": "The Observer as a Coherent Descent Path",
+      "relevance": "Maps to PHYS-CORE-000 §5.1 (Observer as a Derived Structure) and §6.2 (Persistence Across Successive Distinctions). The source's γ : T → 𝓜 is the observer's worldline; A(x) is the admissible next continuation set.",
+      "mapping": "Already covered, but the explicit path notation γ : T → 𝓜 could be added to §6.2."
+    },
+    {
+      "source_id": "4",
+      "source_title": "The Colony: Local Path and Higher-Order Braid",
+      "relevance": "Maps to PHYS-CORE-000 §11 (The Noor Swirl Field Geometry Interpretation). The source's Γ (colony or braid) is the higher-order structure containing multiple coherent paths; this is related to the primer's G_O (observer-relative accessible graph).",
+      "mapping": "Partially covered. The primer discusses G_O as a graph of accessible configurations and coherent transitions, but does not explicitly introduce the colony/braid concept. This could be added as a clarification in §11."
+    },
+    {
+      "source_id": "5",
+      "source_title": "Relational Constraints and the Derived Condition of Accessibility",
+      "relevance": "Maps to PHYS-CORE-000 §7 (Coherence Is Relational) and §7.1 (Coherence of a Transition). The source's K(S_i,S_j), Δ(γ), and Coherence(γ) := F(Δ(γ), R_γ) are the constraint-preservation machinery underlying the primer's coherence condition 𝓒(γ | O) = ∏ 𝓒_O(x_i,x_{i+1}).",
+      "mapping": "Partially covered. The primer defines coherence via δ_O and I_N(O) but does not explicitly introduce the constraint-preservation functional Δ(γ) or the symbolic tension K(S_i,S_j). These could be added as a refinement to §7.1, or as a cross-reference to the source."
+    },
+    {
+      "source_id": "6",
+      "source_title": "Arbitrary Edits as Failed Transitions",
+      "relevance": "Directly maps to PHYS-CORE-000 §9.2 (Repeated Survivorship) and §8.1 (Accessibility Is Not Existence). The source's ArbitraryEdit(O → X) ⇔ X ∈ 𝓜 ∧ ¬ValidEdit(O → X) is the same as the primer's distinction between membership and accessibility.",
+      "mapping": "Already covered, but the explicit term 'ArbitraryEdit' and the canonical examples (FIREBALL, extra finger, historical state) could be added as examples in §8.1 or §9.2."
+    },
+    {
+      "source_id": "8",
+      "source_title": "Convergence and Destination Equivalence",
+      "relevance": "Maps to PHYS-CORE-000 §9.2 (Repeated Survivorship) and §11 (The Noor Swirl Field Geometry Interpretation). The source's destination equivalence γ_1 ~_D γ_2 ⇔ Dest(γ_1) = Dest(γ_2) is related to the primer's L_O(x,y) (stable recurring transition) and G_O (accessible relational graph).",
+      "mapping": "Partially covered. The primer discusses stable recurrence but does not explicitly define destination classes or convergence horizons. This could be added as a refinement to §9.2 or as a new subsection."
+    },
+    {
+      "source_id": "9",
+      "source_title": "Blowup, Path-Space Horizons, and the Singular Case",
+      "relevance": "Maps to PHYS-CORE-000 §9.2 (Repeated Survivorship) and §10.2 (History and Coherent Continuation). The source's P(x), E_D, and Singular_case are the destination-class structure; blowup is the failure of coherent continuation.",
+      "mapping": "Partially covered. The primer discusses Γ_O(h,x) ≠ ∅ (nonempty coherent continuation) but does not explicitly introduce destination classes |P(x)| = 1 or the singular case |A(x)| = 1. This could be added as a refinement to §9.2 or §10.1."
+    },
+    {
+      "source_id": "13",
+      "source_title": "Formal Unified Model",
+      "relevance": "Maps to PHYS-CORE-000 §12 (The Axiomatic Dependency Chain). The source's formal model (library, observer, path, coherent_path, accessibility, availability, destination_class, convergence, destination_horizon, arbitrary_edit, decoherence, blowup) is a compression of the primer's dependency chain.",
+      "mapping": "Partially covered. The primer's §12 covers the dependency chain but does not explicitly list destination_class, convergence, destination_horizon, or blowup. These could be added as derived consequences in §12."
+    },
+    {
+      "source_id": "14",
+      "source_title": "Canonical Examples",
+      "relevance": "Maps to PHYS-CORE-000 §8.1 (Accessibility Is Not Existence) and §9.2 (Repeated Survivorship). The source's examples (FIREBALL, Extra Finger, Dictionary, Conversation, Memory, AI Context) are illustrative instances of the existence/accessibility distinction.",
+      "mapping": "Not covered. The primer does not include canonical examples. These could be added as a new appendix or as examples in §8.1."
+    },
+    {
+      "source_id": "15",
+      "source_title": "Implications, Limitations, and Empirical Separation",
+      "relevance": "Maps to PHYS-CORE-000 §12 (The Axiomatic Dependency Chain) and the primer's overall interpretive boundary. The source's epistemic levels (L1–L5) are a useful framework for distinguishing conceptual model from empirical confirmation.",
+      "mapping": "Partially covered. The primer's §12 includes 'What is not derived' and the interpretive boundary, but does not explicitly use the L1–L5 epistemic levels. These could be added as a refinement to §12."
+    }
+  ],
+
+  "_proposed_updates": [
+    {
+      "update_id": "U1",
+      "target_section": "3.1",
+      "target_title": "Closure Under XOR",
+      "update_type": "ADD_INVARIANT",
+      "current_content_summary": "The subsection establishes XOR closure, Library self-containment, relational completeness, static invariance, reference neutrality, and the internal status of the XOR termination singleton.",
+      "proposed_change": "Add an explicit invariant: 'Full adjacency does not imply reachability. Adj(x,y) may hold for all x,y ∈ 𝓜, but Reach(x,y) := ∃ coherent γ : x ⇝ y is a strictly stronger condition. The Library's closure guarantees that configurations exist; it does not guarantee that coherent paths between them exist.'",
+      "rationale": "The source document (§2: The Static Library and Full Adjacency) establishes Adj(x,y) ⇏ Reach(x,y). The primer's §3.1 establishes closure and self-containment but does not explicitly state that adjacency does not imply reachability. Adding this invariant sharpens the distinction between Library membership and observer-relative accessibility, which is the core of Fizban's Limitation.",
+      "supporting_references": [
+        "Source §2: Adj(x,y) ⇏ Reach(x,y); Reach(x,y) := ∃ coherent γ : x ⇝ y",
+        "PHYS-CORE-000 §8.1: A_O(h,x) ⊆ 𝓜; y ∉ A_O ⇏ y ∉ 𝓜",
+        "PHYS-CORE-000 §9.1: Ω(x) is defined for every x; Γ_O(h,x) ⊆ Ω(x)"
+      ],
+      "poetic_cipher": "Every stone touches every other stone; not every stone has a road to every other.",
+      "cipher_explanation": "The 'stones' are configurations in 𝓜. 'Touches every other stone' represents full adjacency (Adj(x,y) may hold for all x,y). 'Not every stone has a road to every other' represents the failure of reachability: Reach(x,y) is a strictly stronger condition than Adj(x,y). The cipher compresses the distinction between ontological adjacency and coherent reachability."
+    },
+    {
+      "update_id": "U2",
+      "target_section": "5.2.1",
+      "target_title": "The Threshold Belongs to the Observer",
+      "update_type": "ADD_CLARIFICATION",
+      "current_content_summary": "The subsection defines I_N(O) as the observer-relative resolution threshold and establishes that it is domain-neutral while its interpretation may vary by domain.",
+      "proposed_change": "Add a clarification: 'The resolution threshold I_N(O) filters distinguishability and coherence; it does not create, delete, or bound the Library. A configuration may exist in 𝓜 while falling below I_N(O) on the observer's current resolution axis. This is a Level 2 (resolution) failure, not a Level 1 (existence) failure. The distinction is formalized in the three-level structure: Level 1 (structural existence) holds unconditionally; Level 2 (observer-relative resolvability) may fail; Level 3 (path-definition) may fail even when Level 2 succeeds.'",
+      "rationale": "The source document (§3: The Observer as a Coherent Descent Path) establishes that the observer experiences a constrained subset of the ontologically available totality. The three-level structure (Level 1: structural existence; Level 2: observer-relative resolvability; Level 3: path-definition) is a refinement of the primer's existence/accessibility distinction. Adding this clarification to §5.2.1 connects the resolution threshold to the three-level structure and prepares the reader for the path-definition refinement in §9.1.",
+      "supporting_references": [
+        "Source §3: γ(t + Δt) ∈ A(γ(t)); A(x) := {y ∈ 𝓜 | ∃ coherent γ : x ⇝ y}",
+        "PHYS-CORE-000 §6.1: δ_O(x,y) := μ_O(x ⊕ y); x ≈_O y iff δ_O < I_N(O)",
+        "PHYS-CORE-000 §8.1: A_O(h,x) ⊆ 𝓜; y ∉ A_O ⇏ y ∉ 𝓜"
+      ],
+      "poetic_cipher": "The eye closes before the Library does; the window may be dark while the room is full.",
+      "cipher_explanation": "The 'eye' is the resolution window W_{μ_O}(x); the 'Library' is 𝓜. 'Closes before the Library does' represents Level 2 failure: the observer's window may be empty on the current axis while the Library remains unchanged. 'The window may be dark while the room is full' compresses the non-erasure rule: Level 2 failure does not imply Level 1 failure. The cipher is adapted from PHYS-CORE-000 §5.2.2, where it compresses the distinction between observer-relative resolution and Library membership."
+    },
+    {
+      "update_id": "U3",
+      "target_section": "6.2",
+      "target_title": "Persistence Across Successive Distinctions and Observer-Relative Coherence",
+      "update_type": "ADD_EXPLICIT_PATH_NOTATION",
+      "current_content_summary": "The subsection defines persistence as the maintenance of observer-resolvable distinctions across an ordered sequence and identifies observerhood as a structural capacity.",
+      "proposed_change": "Add explicit path notation: 'The observer's worldline is represented as γ : T → 𝓜, where T is the abstract traversal ordering. The admissible next continuations from the current state are A(γ(t)) := {y ∈ 𝓜 | ∃ coherent γ : γ(t) ⇝ y}. The observer's experienced future is therefore a constrained subset of the ontologically available totality.'",
+      "rationale": "The source document (§3: The Observer as a Coherent Descent Path) uses the path notation γ : T → 𝓜 and the admissible next continuation set A(x) := {y ∈ 𝓜 | ∃ coherent γ : x ⇝ y}. The primer uses h_n = (x_0,...,x_n) for observer history and Γ_O(h,x) for coherent continuation, but does not explicitly define the admissible next continuation set A(x). Adding this notation connects the primer's vocabulary to the source's and makes the constrained-subset relation explicit.",
+      "supporting_references": [
+        "Source §3: γ : T → 𝓜; γ(t + Δt) ∈ A(γ(t)); A(x) := {y ∈ 𝓜 | ∃ coherent γ : x ⇝ y}",
+        "PHYS-CORE-000 §6.2: P_O(γ,n) = 1 iff ∀i < n, δ_O(x_i,x_{i+1}) ≥ I_N(O)",
+        "PHYS-CORE-000 §10.2: h_n = (x_0,...,x_n); Γ_O(h_n) ⊆ Ω(x_n)"
+      ],
+      "poetic_cipher": "The traveler does not walk every road; the traveler walks the road that remains visible.",
+      "cipher_explanation": "The 'traveler' is the observer; the 'roads' are configurations in 𝓜. 'Walks the road that remains visible' represents the constrained-subset relation: the observer's experienced future is a subset of the ontologically available totality, filtered by coherence. The cipher compresses the distinction between the full Library and the observer's accessible continuation set."
+    },
+    {
+      "update_id": "U4",
+      "target_section": "7.1",
+      "target_title": "Coherence of a Transition",
+      "update_type": "ADD_CONSTRAINT_PRESERVATION_FUNCTIONAL",
+      "current_content_summary": "The subsection defines transition coherence as 𝓒_O(x_i,x_{i+1}) = Θ(δ_O(x_i,x_{i+1}) - I_N(O)), derived from distinguishability and the observer-relative resolution threshold.",
+      "proposed_change": "Add a refinement: 'The coherence condition can be decomposed into two components: (1) an observer-independent constraint-preservation component, Coherent(γ) := Δ(γ) < Δ_crit, where Δ(γ) is the accumulated constraint deviation along γ; and (2) an observer-relative resolvability component, Resolvable(γ | O) := every transition in γ satisfies δ_O ≥ I_N(O). The full coherence condition is then 𝓒(γ | O) := Coherent(γ) ∧ Resolvable(γ | O). This decomposition makes explicit that a path may be constraint-preserving but unresolvable (the observer cannot maintain the distinctions), or resolvable but constraint-violating (the path undergoes symbolic blowup).'",
+      "rationale": "The source document (§5: Relational Constraints and the Derived Condition of Accessibility) establishes that coherence is a derived property: Coherent(γ) := F(Δ(γ), R_γ), with I_N as a threshold on F. The proposed decomposition factors the observer-independent constraint-preservation component from the observer-relative resolvability component. This is compatible with PHYS-CORE-004 S5's existing split at the constraint level. Adding this refinement to §7.1 makes the two components explicit and prepares the reader for the path-definition refinement in §9.1.",
+      "supporting_references": [
+        "Source §5: K(S_i,S_j) := measure of constraint violation; Δ(γ) := ∫_γ k(s) ds; Coherence(γ) := F(Δ(γ), R_γ); Reach(x,y) ⇔ ∃γ : x ⇝ y ∧ Δ(γ) < Δ_crit",
+        "PHYS-CORE-004 S5: Coherent(γ) := F(Δ(γ), R_γ), with I_N as a threshold on F",
+        "PHYS-CORE-000 §7.1: 𝓒_O(x_i,x_{i+1}) = Θ(δ_O(x_i,x_{i+1}) - I_N(O))"
+      ],
+      "poetic_cipher": "The road may hold, and the eye may fail; the road may fail, and the eye may hold.",
+      "cipher_explanation": "The 'road' is the constraint-preservation component Coherent(γ); the 'eye' is the observer-relative resolvability component Resolvable(γ | O). 'The road may hold, and the eye may fail' represents a constraint-preserving but unresolvable path. 'The road may fail, and the eye may hold' represents a resolvable but constraint-violating path (symbolic blowup). The cipher compresses the decomposition of coherence into its two components."
+    },
+    {
+      "update_id": "U5",
+      "target_section": "8.1",
+      "target_title": "Accessibility Is Not Existence",
+      "update_type": "ADD_FIZBAN_LIMITATION_AND_EXAMPLES",
+      "current_content_summary": "The subsection defines observer-relative accessibility over the unchanged Library, establishes arbitrary observer-relative reference, and states the Reference-Point Coherence Proposition.",
+      "proposed_change": "Add the explicit term 'Fizban's Limitation' and canonical examples. Proposed text: 'The distinction between existence and accessibility is sometimes called Fizban's Limitation, after the observation that a configuration may exist in the Library without being reachable from a given observer-state. The fireball exists in the Library; the wizard's hands may not know the road to it. Canonical examples include: (1) FIREBALL: FIREBALL ∈ 𝓜, but FIREBALL ∉ Reach(O) may hold; the command to cast does not supply the coherent transition. (2) Extra Finger: X_extra_finger ∈ 𝓜, but X_extra_finger ∉ Reach(O) may hold; the transition must remain coherent with the observer's body, history, causal relations, environment, and shared braid. (3) Historical State: a historical state may exist without being available as a continuation of the observer's present worldline. In each case, the failure is not that the configuration is forbidden, but that no coherent path from the observer's current state to the requested configuration exists.'",
+      "rationale": "The source document (§6: Arbitrary Edits as Failed Transitions; §14: Canonical Examples) explicitly introduces the arbitrary-edit problem and the canonical examples (FIREBALL, Extra Finger, Dictionary, Conversation, Memory, AI Context). The primer's §8.1 establishes the existence/accessibility distinction but does not use the term 'Fizban's Limitation' or include the canonical examples. Adding these makes the connection explicit and provides concrete illustrations of the abstract distinction.",
+      "supporting_references": [
+        "Source §6: ArbitraryEdit(O → X) ⇔ X ∈ 𝓜 ∧ ¬ValidEdit(O → X)",
+        "Source §14: FIREBALL, Extra Finger, Dictionary, Conversation, Memory, AI Context",
+        "PHYS-CORE-000 §8.1: A_O(h,x) ⊆ 𝓜; y ∉ A_O ⇏ y ∉ 𝓜"
+      ],
+      "poetic_cipher": "The fireball exists in the Library; the wizard's hands may not know the road to it.",
+      "cipher_explanation": "The 'fireball' is a configuration X ∈ 𝓜. The 'wizard's hands' are the observer's current state and its admissible continuations. 'May not know the road to it' represents the absence of a coherent path γ from O to X. The cipher compresses Fizban's Limitation: existence does not imply accessibility; the Library contains the fireball without guaranteeing that the wizard can cast it."
+    },
+    {
+      "update_id": "U6",
+      "target_section": "9.2",
+      "target_title": "Repeated Survivorship",
+      "update_type": "ADD_DESTINATION_CLASSES_AND_CONVERGENCE",
+      "current_content_summary": "The subsection explains how recurrence among observer-accessible transitions can be identified without treating recurrence itself as an axiom.",
+      "proposed_change": "Add a refinement: 'The surviving continuation paths may converge on a common destination class. Define the destination class of a path γ as D(γ) := equivalence class of γ under destination identity. Two paths are destination-equivalent, γ_1 ~_D γ_2, iff D(γ_1) = D(γ_2). A convergence event occurs when multiple admissible paths become equivalent under this relation. The destination therefore becomes an invariant of a family of paths rather than a property of one unique route. This is important because it separates convergence from deterministic path identity: different observers, different histories, or different intermediate symbolic states can converge on the same structural destination.'",
+      "rationale": "The source document (§8: Convergence and Destination Equivalence) establishes the destination-class structure: γ_1 ~_D γ_2 ⇔ Dest(γ_1) = Dest(γ_2); D(x) := {γ | γ starts at x ∧ Dest(γ) = D}; Convergence(D) := |D(x)| ≥ 2. The primer's §9.2 discusses stable recurrence but does not explicitly define destination classes or convergence. Adding this refinement connects the primer's survivorship construction to the source's destination-class structure and prepares the reader for the horizon/singular-case discussion in §10.1.",
+      "supporting_references": [
+        "Source §8: γ_1 ~_D γ_2 ⇔ Dest(γ_1) = Dest(γ_2); D(x) := {γ | γ starts at x ∧ Dest(γ) = D}; Convergence(D) := |D(x)| ≥ 2",
+        "PHYS-CORE-000 §9.2: L_O(x,y) = 1 iff x → y is a stable recurring transition",
+        "PHYS-CORE-000 §11: G_O = (A_O, E_O) is the accessible relational graph"
+      ],
+      "poetic_cipher": "Many rivers, one sea.",
+      "cipher_explanation": "The 'rivers' are distinct coherent paths γ_1, γ_2, ...; the 'sea' is the common destination class D. The cipher compresses the convergence relation: γ_1 ~_D γ_2 ⇔ Dest(γ_1) = Dest(γ_2). Different paths may terminate in the same destination class without being identical."
+    },
+    {
+      "update_id": "U7",
+      "target_section": "10.1",
+      "target_title": "The Local Continuation Problem",
+      "update_type": "ADD_HORIZON_AND_SINGULAR_CASE",
+      "current_content_summary": "The subsection defines the immediate continuation problem at an observer-relative reference configuration without introducing physical time, causality, agency, or a generated future.",
+      "proposed_change": "Add a refinement: 'The destination-class structure admits a horizon distinction. Define P(x) := {D | ∃ coherent γ : x ⇝ D} as the set of destination classes reachable from x. If |P(x)| > 1, multiple destination classes remain available. If |P(x)| = 1, the destination is locked: all remaining coherent continuations from x belong to the same destination class D, and E_D := {x ∈ 𝓜 | P(x) = {D}} is the destination horizon. Local path freedom may remain even after destination locking: the observer may still choose among multiple paths that all terminate in D. A singular case is the limiting condition in which path availability itself collapses: |A(x)| = 1. In that case, there is no meaningful 'outside' path from within the structure. The useful distinction is therefore between ordinary convergence (|P(x)| > 1), destination locking (|P(x)| = 1), and the singular case (|A(x)| = 1).'",
+      "rationale": "The source document (§9: Blowup, Path-Space Horizons, and the Singular Case) establishes the horizon/singular-case distinction: P(x) := {D | ∃ coherent γ : x ⇝ D}; |P(x)| > 1 ⇒ multiple destination classes; |P(x)| = 1 ⇒ destination locked; E_D := {x ∈ 𝓜 | P(x) = {D}}; Singular_case := |A(x)| = 1. The primer's §10.1 discusses local continuation but does not explicitly introduce destination classes, horizons, or the singular case. Adding this refinement connects the primer's continuation construction to the source's horizon/singular-case vocabulary and prepares the reader for the interpretive boundary in §12.",
+      "supporting_references": [
+        "Source §9: P(x) := {D | ∃ coherent γ : x ⇝ D}; |P(x)| > 1 ⇒ multiple destination classes; |P(x)| = 1 ⇒ destination locked; E_D := {x ∈ 𝓜 | P(x) = {D}}; Singular_case := |A(x)| = 1",
+        "PHYS-CORE-000 §10.1: Γ_O(h,x) ≠ ∅ (nonempty coherent continuation)",
+        "PHYS-CORE-004 S9: |P(x)| = 1 ⇒ destination locked; |A(x)| = 1 ⇒ singular case"
+      ],
+      "poetic_cipher": "A horizon may be the edge of the window or the edge of the road; the difference is not yet decided.",
+      "cipher_explanation": "The 'window' is W_{μ_O}(x) (Level 2: resolution); the 'road' is Reach(γ) (Level 3: path-definition). 'The difference is not yet decided' compresses the open question Q3 from the Non-Empty Continuation notes: whether a horizon is a Level 2 phenomenon (window-closing) or a Level 3 phenomenon (road-ending), or an independent structural feature. The cipher compresses the distinction between convergence, destination locking, and the singular case."
+    },
+    {
+      "update_id": "U8",
+      "target_section": "11",
+      "target_title": "The Noor Swirl Field Geometry Interpretation",
+      "update_type": "ADD_COLONY_AND_BRAID",
+      "current_content_summary": "The section introduces the geometric interpretation only after the ontology and observer-relative coherence structure have been established.",
+      "proposed_change": "Add a clarification: 'The accessible relational graph G_O = (A_O, E_O) represents the observer-relative accessible configurations and coherent transitions. A single worldline γ may be treated as a local thread within a higher-order coherent structure Γ, the colony or braid. The local observer experiences one thread while the higher-order structure contains a family of related coherent paths. Decoherence of one local thread does not mathematically require the disappearance of the larger structure. This distinction is useful because an apparently singular personal trajectory can coexist with a much larger family of structurally related trajectories.'",
+      "rationale": "The source document (§4: The Colony: Local Path and Higher-Order Braid) establishes the colony/braid structure: γ_i : T_i → 𝓜; Γ := ⋃_{i ∈ I_coherent} γ_i; γ_i ⊂ Γ; Coherence(γ_i) ≥ I_N; Decoherence(γ_i) ⇏ Decoherence(Γ). The primer's §11 discusses G_O as a graph of accessible configurations and coherent transitions but does not explicitly introduce the colony/braid concept. Adding this clarification connects the primer's relational graph to the source's higher-order structure and provides a language for discussing multi-path coherence.",
+      "supporting_references": [
+        "Source §4: γ_i : T_i → 𝓜; Γ := ⋃_{i ∈ I_coherent} γ_i; γ_i ⊂ Γ; Decoherence(γ_i) ⇏ Decoherence(Γ)",
+        "PHYS-CORE-000 §11: G_O := (A_O, E_O); (x,y) ∈ E_O iff x → y is O-coherent",
+        "PHYS-CORE-000 §9.2: Ω_O^survive(x) ⊆ Ω(x)"
+      ],
+      "poetic_cipher": "One thread may break; the braid may hold.",
+      "cipher_explanation": "The 'thread' is a local worldline γ_i; the 'braid' is the higher-order structure Γ. 'One thread may break' represents decoherence of a local path; 'the braid may hold' represents the persistence of the larger structure: Decoherence(γ_i) ⇏ Decoherence(Γ). The cipher compresses the distinction between local and higher-order coherence."
+    },
+    {
+      "update_id": "U9",
+      "target_section": "12",
+      "target_title": "The Axiomatic Dependency Chain",
+      "update_type": "ADD_DESTINATION_CLASSES_AND_EPISTEMIC_LEVELS",
+      "current_content_summary": "The section compresses the entire primer into one explicit derivational architecture and establishes the boundary between the static Library and observer-relative traversal.",
+      "proposed_change": "Add two refinements: (1) Add destination classes, convergence, and horizons to the 'Derived or downstream consequences' list: 'Destination classes: D(γ) := equivalence class of γ under destination identity. Convergence: γ_1 ~_D γ_2 ⇔ D(γ_1) = D(γ_2). Destination horizon: E_D := {x | P(x) = {D}}. Singular case: |A(x)| = 1.' (2) Add an epistemic-levels subsection: 'The framework can be separated into five epistemic levels: L1 (Conceptual Model): the distinctions between existence, accessibility, convergence, and arbitrary editing are internally useful. L2 (Mathematical Formalization): the proposed relations can be represented using sets, paths, equivalence classes, thresholds, and recursive constructions. L3 (Computational Hypothesis): guidepost-based context representation may offer useful alternative architectures for symbolic or artificial reasoning. L4 (Physical Hypothesis): the Library, coherence gradients, and related structures may correspond to physical reality only if independently connected to observation and established theory. L5 (Empirical Confirmation): claims about physical reality require predictions, measurements, reproducible computation, and comparison against competing models.'",
+      "rationale": "The source document (§13: Formal Unified Model; §15: Implications, Limitations, and Empirical Separation) establishes the destination-class structure and the L1–L5 epistemic levels. The primer's §12 covers the dependency chain but does not explicitly list destination classes, convergence, or the epistemic levels. Adding these refinements connects the primer's dependency chain to the source's formal model and provides a framework for distinguishing conceptual model from empirical confirmation.",
+      "supporting_references": [
+        "Source §13: destination_class, convergence, destination_horizon",
+        "Source §15: epistemic_levels L1–L5",
+        "PHYS-CORE-000 §12: 'Derived or downstream consequences' list; 'What is not derived' list"
+      ],
+      "poetic_cipher": "The map is not the territory; the model is not the measurement.",
+      "cipher_explanation": "The 'map' is the formal model (L1–L2); the 'territory' is physical reality (L4). 'The model is not the measurement' represents the distinction between mathematical formalization (L2) and empirical confirmation (L5). The cipher compresses the epistemic-levels framework: internal consistency does not establish physical correspondence."
+    },
+    {
+      "update_id": "U10",
+      "target_section": "Appendix A",
+      "target_title": "Mathematical Reference Sheet",
+      "update_type": "ADD_DESTINATION_CLASS_AND_CONVERGENCE_DEFINITIONS",
+      "current_content_summary": "The appendix specifies the formal domain, primitive XOR operation, generating configurations, XOR closure, observer structure, observer-relative resolution, observer-relative magnitude evaluation, distinguishability, persistence, coherence, accessible reality, continuation spaces, survivorship, navigation, and the resulting observer-relative graph structure.",
+      "proposed_change": "Add new definitions: (1) Destination class: D(γ) := equivalence class of γ under destination identity. (2) Convergence: γ_1 ~_D γ_2 ⇔ D(γ_1) = D(γ_2). (3) Destination horizon: E_D := {x ∈ 𝓜 | P(x) = {D}}, where P(x) := {D | ∃ coherent γ : x ⇝ D}. (4) Singular case: Singular_case := |A(x)| = 1. (5) Colony/braid: Γ := ⋃_{i ∈ I_coherent} γ_i, where each γ_i is a coherent worldline. Add these to the 'geometry' section or as a new 'destination structure' section.",
+      "rationale": "The source document (§8: Convergence and Destination Equivalence; §9: Blowup, Path-Space Horizons, and the Singular Case; §4: The Colony: Local Path and Higher-Order Braid) establishes these definitions. The primer's Appendix A is the canonical mathematical reference sheet; adding these definitions ensures that the destination-class structure and the colony/braid concept are formally specified in the primer's vocabulary.",
+      "supporting_references": [
+        "Source §8: γ_1 ~_D γ_2 ⇔ Dest(γ_1) = Dest(γ_2); D(x) := {γ | γ starts at x ∧ Dest(γ) = D}",
+        "Source §9: P(x) := {D | ∃ coherent γ : x ⇝ D}; E_D := {x ∈ 𝓜 | P(x) = {D}}; Singular_case := |A(x)| = 1",
+        "Source §4: Γ := ⋃_{i ∈ I_coherent} γ_i; γ_i ⊂ Γ",
+        "PHYS-CORE
