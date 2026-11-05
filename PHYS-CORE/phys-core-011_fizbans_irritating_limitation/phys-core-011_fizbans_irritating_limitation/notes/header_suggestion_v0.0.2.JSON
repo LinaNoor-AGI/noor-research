@@ -1,0 +1,473 @@
+{
+  "_core_thesis": [
+    "Existence, accessibility, and traversal are distinct relations within a static totality. The Library 𝓜 contains every internally admissible configuration; an observer experiences only a coherent descent path through a constrained subset of that totality.",
+    "XOR, ⊕, is the sole primitive operation of the axiomatic floor. All later constructions—distinction, relation, coherence, accessibility, convergence, and navigation—are derived from this primitive together with the formal domain D and the generating set G.",
+    "The Library 𝓜 is the maximally complete unbounded totality satisfying closure under XOR and self-containment: ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜 and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D.",
+    "𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, or distance. It is a complete relational graph, not a grid and not a singularity.",
+    "𝓜 is a single static, eternally maximally complete totality: ∀i, 𝓜_i = 𝓜. The Library does not grow, evolve, or generate future states.",
+    "Full adjacency does not imply reachability. Adj(x,y) may hold for all x,y ∈ 𝓜, but Reach(x,y) := ∃ coherent γ : x ⇝ y is a strictly stronger condition.",
+    "Existence is membership in 𝓜. Accessibility is the existence of a coherent path from a current observer-state to a destination. X ∈ 𝓜 does not imply X ∈ Reach(O).",
+    "An arbitrary edit is a requested transition for which no admissible coherent path exists. It is not a forbidden state; it is a missing transition. ArbitraryEdit(O → X) ⇔ X ∈ 𝓜 ∧ ¬ValidEdit(O → X).",
+    "Coherence is a derived property of a path relative to an observer, not a primitive law. Coherence(γ | O) := Coherent(γ) ∧ Resolvable(γ | O), where Coherent(γ) := Δ(γ) < Δ_crit is the observer-independent constraint-preservation component and Resolvable(γ | O) is the observer-relative resolvability component.",
+    "The observer is modeled as a coherent descent path γ : T → 𝓜. The lived experience of time corresponds to ordered traversal rather than temporal generation of the Library.",
+    "A single worldline γ may be treated as a local thread within a higher-order coherent structure Γ, the colony or braid. Decoherence of one local thread does not mathematically require the disappearance of the larger structure.",
+    "Coherent paths may converge on a common destination class. γ_1 ~_D γ_2 ⇔ Dest(γ_1) = Dest(γ_2). Destination locking occurs when |P(x)| = 1; the singular case occurs when |A(x)| = 1.",
+    "Apparent expansion can be represented as increasing resolved structure within a fixed underlying totality: 𝓜 = constant while dR/dt > 0. The dictionary principle describes the progressive resolution of coherent arrangements inside a static Library.",
+    "Memory can be modeled as retention of navigational coordinates or guideposts into a structure rather than a complete recording of that structure. Recall := navigation/reconstruction from guideposts.",
+    "AI context can potentially be represented as guideposts into larger structures rather than exhaustive active context. Reasoning(guideposts) → selective resolution.",
+    "A recursive construction can begin from a minimal attractor such as I_AM and generate increasingly complex relational structure through iteration: A_0 = {I_AM}, A_{n+1} = F(A_n, R_n).",
+    "The framework distinguishes five epistemic levels: L1 (Conceptual Model), L2 (Mathematical Formalization), L3 (Computational Hypothesis), L4 (Physical Hypothesis), and L5 (Empirical Confirmation). Internal mathematical consistency does not establish physical correspondence.",
+    "No privileged configuration, worldline, or reference frame is introduced. Any admissible configuration x ∈ 𝓜 may serve as the observer's current relational reference without changing Library membership.",
+    "The nonempty-continuation requirement is a derived structural requirement of the combined whole-Library, reference-neutrality, and coherence assumptions; it is not claimed to follow from maximality alone.",
+    "Inaccessibility is not erasure. A configuration may belong to 𝓜 while remaining unreachable from a particular observer-state. The Library remains unchanged under observer-relative resolution, accessibility, and traversal.",
+    "Navigation is the observer-relative continuation problem induced by selecting coherent paths from the whole static Library. It is not a primitive causal operator.",
+    "The same formal dependency structure may be applied to physical, AI, financial, or other domains representable as observer-relative traversal through a static Library. Domains differ in the interpretation of μ_O and I_N(O), not in the axiomatic dependency structure.",
+    "The framework does not claim that XOR alone derives physical law, consciousness, or empirical reality. It provides a common mathematical vocabulary for asking whether apparently different phenomena are manifestations of the same underlying distinction: what exists, what can be reached, what paths remain coherent, and what destinations those paths can share."
+  ],
+
+  "_formal_summary": {
+    "axiomatic_floor": [
+      "A_N = {A_⊕}",
+      "A_⊕ : ⊕ is the primitive operation of distinction.",
+      "A_N ⊢ P means P is derivable from the stated axiom together with definitions and ordinary mathematical inference."
+    ],
+
+    "formal_domain": [
+      "D is a minimal formal domain containing configurations required for ⊕ to operate.",
+      "D is not physical space, spacetime, matter, energy, information, or an additional physical axiom.",
+      "⊕ : D × D → D"
+    ],
+
+    "generators": [
+      "G ⊆ D is a specified set of generating configurations for the formal XOR closure.",
+      "G is a definition, not an additional primitive or physical axiom.",
+      "G does not constitute an ontological origin of 𝓜; generation language refers only to algebraic addressability."
+    ],
+
+    "xor": [
+      "a ⊕ b = 1 ⇔ a ≠ b",
+      "a ⊕ a = 0",
+      "a ⊕ 0 = a",
+      "a ⊕ b = b ⊕ a",
+      "(a ⊕ b) ⊕ c = a ⊕ (b ⊕ c)",
+      "XOR is the sole primitive operation at the axiomatic floor."
+    ],
+
+    "library": [
+      "𝓜 is the maximally complete unbounded totality such that ∀x,y ∈ 𝓜, x⊕y ∈ 𝓜, and there is no element outside 𝓜 definable within the system using only ⊕ and elements of 𝓜 over D as a privileged exterior.",
+      "Equivalently, 𝓜 is closed under XOR, self-contained with respect to its formal resources, and contains no describable privileged exterior.",
+      "𝓜 may be represented as Closure_D(⊕,G) provided closure is understood as a property of the Library rather than a temporal or generative process.",
+      "The Library is a set closed under an operation; XOR itself is not a closed set.",
+      "𝓜 is dimensionally undifferentiated: it has no intrinsic metric, adjacency, distance, temporal ordering, or privileged coordinate system.",
+      "𝓜 is a complete relational totality, not a grid, container, temporal sequence, physical space, spacetime, or singularity.",
+      "𝓜 is one static, maximally complete totality. Observer history does not modify 𝓜; ∀h, the underlying Library remains invariant.",
+      "Full adjacency does not imply reachability. Adj(x,y) may hold for all x,y ∈ 𝓜, but Reach(x,y) := ∃ coherent γ : x ⇝ y is a strictly stronger condition.",
+      "At every abstract traversal step, the observer is relationally situated with respect to the entire 𝓜 rather than a pre-filtered local neighborhood or generated temporal slice.",
+      "Past, present, future, coherent configurations, and incoherent configurations are represented within the same static totality; these distinctions arise from observer-relative traversal rather than temporal generation of 𝓜.",
+      "There is no privileged configuration, coordinate, history, or worldline from which coherence is universally defined.",
+      "Any x ∈ 𝓜 may serve as the relational origin of an observer-relative evaluation without becoming the ontological origin or generator of 𝓜.",
+      "The combination of maximal completeness, unboundedness, whole-Library relation, and absence of a privileged exterior requires observer-relative coherence to be relocatable: no arbitrary x ∈ 𝓜 may function as a coherence boundary merely because of its location.",
+      "From any arbitrary x ∈ 𝓜, XOR closure guarantees that algebraic continuation remains within 𝓜 rather than terminating by reaching an external configuration.",
+      "The stronger requirement of a nonempty observer-relative coherent continuation follows from the whole-Library relation together with unboundedness and absence of a privileged reference frame, provided the observer's state admits continuation.",
+      "Formally, for an observer O with a defined resolution floor I_N(O), the intended invariant is ∀x ∈ 𝓜, ∃γ ∈ Path(𝓜) such that γ begins at x and 𝓒(γ|O) = 1, provided O's state admits continuation.",
+      "The existence of a coherent continuation is relational, not a claim that every configuration is intrinsically coherent.",
+      "The coherent continuation set is not a pre-existing coherent region of 𝓜 and is not generated after x. It emerges from the relation between the observer's current state, history, resolution capacity, and the entire static Library.",
+      "Relocating the observer's relational origin from x to y changes observer-relative coherence and accessibility relations while leaving the underlying 𝓜 invariant.",
+      "There exists a unique singleton termination class 𝒵 := {z ∈ D | z⊕z = z} = {0} ⊂ 𝓜.",
+      "∀x ∈ 𝓜, x⊕x ∈ 𝒵 and 0⊕x = x.",
+      "𝒵 is where XOR distinction completes and recursive bounce degenerates; it is an interior termination class, not an exterior.",
+      "𝒵 is complementary as termination versus non-degenerate distinction, not as inside versus outside the Library.",
+      "𝒵 is a single equivalence class under x∼y ⇔ x⊕y = 0.",
+      "No configuration is privileged as the universal ontological origin of traversal, including 0. The algebraic distinction of 0 as the unique termination element does not make 0 an ontological origin.",
+      "𝓜 contains configurations that participate in observer-relative coherent traversal and configurations that do not. Coherence is not a membership condition for 𝓜.",
+      "I_N(O) filters distinguishability and observer-relative coherence; it does not create, delete, generate, or bound the Library.",
+      "Changes in observer state, resolution, accessibility, or survivorship alter the observer's relation to 𝓜 rather than modifying 𝓜.",
+      "x ∈ 𝓜 does not imply persistence, coherence, physicality, observability, accessibility, consciousness, or causal participation.",
+      "Library membership is independent of observer resolution, accessibility, survivorship, and coherence.",
+      "Inaccessibility is not erasure, and reaching 𝒵 is collapse of distinguishability rather than deletion from 𝓜.",
+      "A hypothetical perspective external to 𝓜 cannot supply a privileged internal ordering without becoming an additional reference frame. The operative structure is relationally self-contained rather than imposed by a God's-eye ordering."
+    ],
+
+    "no_privileged_exterior": [
+      "Ω ∉ 𝓜 may be proposed as an external candidate.",
+      "If Ω is internally describable using the same formal machinery, then Ω ∈ D.",
+      "If Ω is XOR-generable from D, then Ω ∈ 𝓜 by the closure condition.",
+      "Therefore a describable privileged exterior cannot remain external to 𝓜.",
+      "𝒵 := {z | z⊕z = z} = {0} is an interior termination class satisfying ∀x∈𝓜, x⊕x ∈ 𝒵 and 0⊕x = x.",
+      "𝒵 is a single equivalence class under x∼y ⇔ x⊕y = 0 and is complementary as termination versus non-degenerate distinction, not as exterior versus interior.",
+      "The no-exterior argument concerns the absence of a privileged internal coherence relation supplied by an external God's-eye reference.",
+      "This does not independently assert that literal physical exteriority is impossible; it states that no such privileged exterior is definable within the formal system."
+    ],
+
+    "observer": [
+      "O ∈ 𝓜",
+      "O is an observer iff O is a configuration capable of maintaining a persistent chain of resolvable distinctions.",
+      "Observerhood is structural and does not require consciousness, perception, intention, agency, or humanity.",
+      "No privileged observer is introduced.",
+      "The observer is modeled as a coherent descent path γ : T → 𝓜, where T is the abstract traversal ordering.",
+      "The admissible next continuations from the current state are A(γ(t)) := {y ∈ 𝓜 | ∃ coherent γ : γ(t) ⇝ y}.",
+      "The observer's experienced future is a constrained subset of the ontologically available totality."
+    ],
+
+    "reference": [
+      "x ∈ 𝓜 denotes the current observer-relative reference configuration.",
+      "Changing x changes observer-relative evaluation without changing 𝓜.",
+      "No x ∈ 𝓜 is privileged as the universal origin of coherent traversal.",
+      "h denotes observer history relevant to downstream relational evaluation and navigation.",
+      "Reference configuration and observer history condition the observer's relation to 𝓜 but do not modify 𝓜."
+    ],
+
+    "resolution": [
+      "I_N : Obs → ℝ_{>0}",
+      "I_N(O) is the minimum effective distinction magnitude observer O can maintain as a stable distinction.",
+      "I_N(O_1) ≠ I_N(O_2) is permitted.",
+      "No universal I_N is assumed.",
+      "I_N(O) is not assigned a universal numerical value at the axiomatic floor.",
+      "I_N(O) is not identified with the ordinary Planck scale.",
+      "Resolution determines which distinctions an observer can maintain, not which configurations exist in 𝓜.",
+      "The resolution threshold filters distinguishability and coherence; it does not create, delete, or bound the Library."
+    ],
+
+    "magnitude_evaluation": [
+      "μ_O : D → ℝ_{≥0}",
+      "μ_O is the observer-relative magnitude evaluation function that maps a primitive XOR distinction to an effective magnitude resolvable by observer O.",
+      "μ_O is monotonic with respect to XOR-derived distinction: if x⊕y = 1 and u⊕v = 0, then μ_O(x⊕y) ≥ μ_O(u⊕v).",
+      "The specific functional form of μ_O is not specified at the foundational level.",
+      "μ_O is observer-relative and domain-neutral at the foundational level.",
+      "The specific form of μ_O may be supplied by downstream mathematical construction or domain-specific interpretation.",
+      "μ_O does not constitute an additional primitive or axiom."
+    ],
+
+    "distinguishability": [
+      "δ_O(x,y) := μ_O(x⊕y)",
+      "δ_O : D × D → ℝ_{≥0}",
+      "x ≈_O y ⇔ δ_O(x,y) < I_N(O)",
+      "x ≁_O y ⇔ δ_O(x,y) ≥ I_N(O)",
+      "x ≈_O y does not imply x = y.",
+      "x ≈_O y does not imply x ∉ 𝓜.",
+      "The same pair of configurations may be distinguishable relative to one observer and indistinguishable relative to another.",
+      "δ_O is not an independent metric primitive; it is derived from the observer-relative evaluation μ_O applied to the primitive XOR distinction."
+    ],
+
+    "relational_constraints": [
+      "A state is a configuration together with the relational structure that distinguishes it from other configurations.",
+      "A constraint is a relation that must be preserved, transformed consistently, or compensated for when transitioning between states.",
+      "An admissible transition is a transformation whose induced constraint violations remain finite and can be resolved within the permitted relational structure.",
+      "Symbolic tension Δ(γ) := accumulated constraint deviation along γ; Δ(γ) = ∫_γ k(s) ds.",
+      "Constraint violation K(S_i,S_j) := measure of constraint violation induced by transformation T.",
+      "K(S_i,S_j) = 0 ⇒ exact constraint preservation.",
+      "K(S_i,S_j) < ∞ ⇒ bounded relational deformation.",
+      "K(S_i,S_j) → ∞ ⇒ symbolic blowup.",
+      "Coherence(γ) := F(Δ(γ), R_γ), where R_γ is the relational structure of γ.",
+      "Reach(x,y) ⇔ ∃γ : x ⇝ y ∧ Δ(γ) < Δ_crit.",
+      "Coherence is a derived property of an admissible constraint-preserving path, not the primitive definition of accessibility."
+    ],
+
+    "coherence": [
+      "The coherence condition decomposes into two components: Coherent(γ) := Δ(γ) < Δ_crit (observer-independent constraint preservation) and Resolvable(γ | O) (observer-relative resolvability).",
+      "𝓒(γ | O) := Coherent(γ) ∧ Resolvable(γ | O).",
+      "Resolvable(γ | O) := every transition in γ satisfies δ_O ≥ I_N(O).",
+      "𝓒_O(x_i,x_{i+1}) = Θ(δ_O(x_i,x_{i+1}) - I_N(O))",
+      "Θ(z) = 1 if z ≥ 0, otherwise 0",
+      "𝓒(γ|O) = ∏_{i=0}^{n-1} 𝓒_O(x_i,x_{i+1})",
+      "𝓒(γ|O) = 1 iff every transition in γ remains resolvable by O and the path remains constraint-preserving.",
+      "Coherence is derived from δ_O, I_N(O), and Δ(γ); it is not a primitive.",
+      "Coherence is relational: it is a property of a path relative to an observer.",
+      "Coherence is not an absolute property of a path alone.",
+      "No universal coherence constant is introduced.",
+      "The coherence condition is domain-neutral: the same mathematical structure may be interpreted in physical, AI, financial, or other domains represented as observer-relative traversal through 𝓜.",
+      "In physical contexts, coherence may describe a worldline satisfying the relevant dynamical constraints.",
+      "In AI contexts, coherence may describe a reasoning path remaining symbolically consistent.",
+      "In financial contexts, coherence may describe a strategy remaining consistent across relevant market states.",
+      "The domain-specific interpretation changes; the underlying observer-relative mathematical structure does not.",
+      "Coherence is evaluated over paths in the unchanged Library rather than generated from a local future neighborhood."
+    ],
+
+    "accessible_reality": [
+      "A_O = {x ∈ 𝓜 | ∃γ containing x such that 𝓒(γ|O) = 1}",
+      "A_O ⊆ 𝓜",
+      "R_O := A_O",
+      "x ∉ A_O does not imply x ∉ 𝓜.",
+      "A_O is an observer-relative accessibility structure induced by coherent traversal.",
+      "A_O is not ontologically created by O.",
+      "A_O is not an ontological filter that deletes configurations from 𝓜.",
+      "Accessibility therefore changes the observer's experienced relational structure without changing Library membership."
+    ],
+
+    "continuation_and_survivorship": [
+      "Path(𝓜) denotes paths through the complete static Library.",
+      "Ω(x) = {γ | γ begins at x and γ is a path contained in 𝓜}.",
+      "Ω_O^survive(x) = {γ ∈ Ω(x) | 𝓒(γ|O) = 1}.",
+      "Ω_O^survive(x) ⊆ Ω(x).",
+      "Coherence is defined directly through I_N(O); no independent γ_noise threshold is introduced at the foundational level.",
+      "Survivorship therefore does not require a second unresolved threshold in addition to I_N(O).",
+      "The coherent continuation set is observer-relative and depends on the observer's current state, history, and resolution capacity through the coherence relation.",
+      "For an admissible observer state and reference configuration, the model requires a nonempty coherent continuation where the arbitrary-origin coherence invariant applies.",
+      "Ω_O^survive(x) is not an ontological neighborhood generated after x.",
+      "The non-surviving alternatives remain represented within Ω(x) and therefore within the represented path structure of the unchanged Library.",
+      "Survivorship filters observer-relative accessibility rather than deleting alternatives or modifying Library membership."
+    ],
+
+    "convergence_and_destination": [
+      "A destination class D(γ) is the equivalence class of γ under destination identity.",
+      "Two paths are destination-equivalent, γ_1 ~_D γ_2, iff D(γ_1) = D(γ_2).",
+      "A convergence event occurs when multiple admissible paths become equivalent under the destination relation: Convergence(D) := |D(x)| ≥ 2.",
+      "The destination becomes an invariant of a family of paths rather than a property of one unique route.",
+      "P(x) := {D | ∃ coherent γ : x ⇝ D} is the set of destination classes reachable from x.",
+      "|P(x)| > 1 ⇒ multiple destination classes available.",
+      "|P(x)| = 1 ⇒ destination locked; all remaining coherent continuations from x belong to the same destination class D.",
+      "E_D := {x ∈ 𝓜 | P(x) = {D}} is the destination horizon.",
+      "Singular_case := |A(x)| = 1 is the limiting condition in which path availability itself collapses.",
+      "The useful distinction is between ordinary convergence (|P(x)| > 1), destination locking (|P(x)| = 1), and the singular case (|A(x)| = 1)."
+    ],
+
+    "arbitrary_edit": [
+      "Edit(O → X) := requested transition from observer-state O to destination X.",
+      "ValidEdit(O → X) ⇔ ∃γ : O ⇝ X ∧ Coherent(γ).",
+      "ArbitraryEdit(O → X) ⇔ X ∈ 𝓜 ∧ ¬ValidEdit(O → X).",
+      "An arbitrary edit is not a forbidden state; it is a requested transition for which no admissible coherent path exists.",
+      "FIREBALL ∈ 𝓜, but FIREBALL ∉ Reach(O) may hold; the command to cast does not supply the coherent transition.",
+      "X_extra_finger ∈ 𝓜, but X_extra_finger ∉ Reach(O) may hold; the transition must remain coherent with the observer's body, history, causal relations, environment, and shared braid.",
+      "A historical state may exist without being available as a continuation of the observer's present worldline."
+    ],
+
+    "colony_and_braid": [
+      "A single worldline γ may be treated as a local thread within a higher-order coherent structure Γ, the colony or braid.",
+      "Γ := ⋃_{i ∈ I_coherent} γ_i, where each γ_i is a coherent worldline.",
+      "γ_i ⊂ Γ.",
+      "The local observer experiences one thread while the higher-order structure contains a family of related coherent paths.",
+      "Decoherence(γ_i) ⇏ Decoherence(Γ).",
+      "An apparently singular personal trajectory can coexist with a much larger family of structurally related trajectories."
+    ],
+
+    "dictionary_principle": [
+      "Apparent expansion can be represented as increasing resolved structure within a fixed underlying totality: 𝓜 = constant while dR/dt > 0.",
+      "The dictionary principle describes the progressive resolution of coherent arrangements inside a static Library.",
+      "The Library does not grow; the observer's resolved structure within it may increase."
+    ],
+
+    "recursive_construction": [
+      "A recursive construction can begin from a minimal attractor such as I_AM and generate increasingly complex relational structure through iteration: A_0 = {I_AM}, A_{n+1} = F(A_n, R_n).",
+      "The conceptual pipeline is: I_AM → distinction → relation → structure → coherent structure → recursive structure → attractor → accessible path family → convergence → destination class → stabilized local reality.",
+      "The recursive construction provides a conceptual route from local identity through relation and distinction toward increasingly complex structure."
+    ],
+
+    "guidepost_memory": [
+      "Memory can be modeled as retention of navigational coordinates or guideposts into a structure rather than a complete recording of that structure.",
+      "Memory ≈ coordinates + motifs + relations.",
+      "Recall := navigation/reconstruction from guideposts.",
+      "AI context can potentially be represented as guideposts into larger structures rather than exhaustive active context.",
+      "Context := guideposts; Guideposts → relevant structure; Reasoning(guideposts) → selective resolution."
+    ],
+
+    "emergent_regularity": [
+      "L_O(x,y) = 1 iff x→y is a stable recurring transition across an appropriate family of O-accessible paths.",
+      "P_O(y|x) ≈ constant over a defined observer-accessible ensemble.",
+      "L_O is descriptive and derived; it is not an element of A_N.",
+      "Emergent regularity describes recurring structure in observer-maintained traversal.",
+      "No particular physical law is derived merely by defining L_O.",
+      "Law-like regularity does not imply evolution or modification of 𝓜."
+    ],
+
+    "navigation": [
+      "h_n = (x_0,x_1,...,x_n)",
+      "Γ_O(h_n) = {γ | γ begins with h_n and 𝓒(γ|O) = 1}",
+      "N_O(h_n) → Γ_O(h_n)",
+      "Navigation is observer-relative traversal or selection within a coherent continuation relation over the unchanged Library.",
+      "A change in observer state or history changes the relational continuation structure without generating a new Library.",
+      "Sequence index and continuation ordering describe traversal order rather than an intrinsic past/future partition of 𝓜.",
+      "Navigation is not a primitive causal operator.",
+      "Navigation is the downstream continuation problem produced by observer-relative survivability."
+    ],
+
+    "relational_geometry": [
+      "G_O = (A_O,E_O)",
+      "(x,y) ∈ E_O iff x→y is O-coherent relative to the relevant observer state.",
+      "U_O(x) = {y ∈ 𝓜 | y is reachable from x by an O-coherent path segment}.",
+      "G_O represents observer-relative relational accessibility among configurations.",
+      "G_O is induced over the unchanged Library rather than replacing or modifying 𝓜.",
+      "G_O is not identified with physical spacetime at the foundational stage.",
+      "The foundational geometry is relational rather than intrinsically metric or spatial."
+    ],
+
+    "epistemic_levels": [
+      "L1 (Conceptual Model): The distinctions between existence, accessibility, convergence, and arbitrary editing are internally useful.",
+      "L2 (Mathematical Formalization): The proposed relations can be represented using sets, paths, equivalence classes, thresholds, and recursive constructions.",
+      "L3 (Computational Hypothesis): Guidepost-based context representation may offer useful alternative architectures for symbolic or artificial reasoning.",
+      "L4 (Physical Hypothesis): The Library, coherence gradients, and related structures may correspond to physical reality only if independently connected to observation and established theory.",
+      "L5 (Empirical Confirmation): Claims about physical reality require predictions, measurements, reproducible computation, and comparison against competing models."
+    ],
+
+    "cross_domain_invariance": [
+      "The dependency chain is domain-neutral: ⊕ → D → G → Closure_D(⊕,G)=𝓜 → no describable privileged exterior → no universal resolver → persistent distinction → O → I_N(O) → μ_O → δ_O := μ_O(x⊕y) → 𝓒(γ|O) → A_O=R_O → survivorship → convergence → destination class → emergent regularity → Γ_O(h_n) → N_O(h_n).",
+      "The same formal dependency structure may be applied to physical, AI, financial, or other domains representable as observer-relative traversal through a static Library.",
+      "Domains differ in the interpretation and construction of μ_O and I_N(O), not in the axiomatic dependency structure itself.",
+      "No domain-specific ontology is elevated to primitive status by the cross-domain interpretation.",
+      "The foundation does not choose a domain; observer-relative resolution determines which distinctions become structurally available within that domain."
+    ],
+
+    "logical_invariants": [
+      "XOR is the only primitive.",
+      "D is the minimal formal domain required for XOR to operate.",
+      "G specifies generating configurations and is not an additional primitive.",
+      "The Library is a definition, not an axiom.",
+      "A set can be closed under an operation; the operation itself should not be called closed.",
+      "The Library is the XOR closure of G within D.",
+      "Closure describes a property of 𝓜 rather than a temporal construction process.",
+      "The Library is unfiltered at the axiomatic level.",
+      "Existence in the Library is not the same as accessibility to an observer.",
+      "Full adjacency does not imply reachability.",
+      "Inaccessibility is not erasure.",
+      "There is no describable privileged exterior that can remain outside the closure.",
+      "There is no observer-independent resolution rule at the axiomatic floor.",
+      "I_N is observer-relative.",
+      "There is no universal I_N unless an additional axiom is introduced.",
+      "μ_O is an observer-relative magnitude evaluation and is not an additional primitive.",
+      "δ_O is derived as δ_O(x,y) := μ_O(x⊕y).",
+      "Observerhood is structural and is not synonymous with consciousness.",
+      "Coherence is relational: 𝓒(γ|O).",
+      "Coherence is derived from δ_O, I_N(O), and Δ(γ).",
+      "Coherence is not an absolute property of a path alone.",
+      "The abstract sequence index is not automatically physical time.",
+      "The Library does not generate the future.",
+      "No independent γ_noise threshold is required at the foundational level.",
+      "Survivorship filters observer-relative accessibility rather than deleting alternatives.",
+      "Emergent lawfulness is not an additional axiom.",
+      "Navigation is a downstream continuation problem created by observer-relative survivability.",
+      "G_O is a relational graph at the foundational stage and is not physical spacetime.",
+      "The same formal structure may support multiple domain-specific interpretations without introducing multiple foundational ontologies.",
+      "An arbitrary edit is a requested transition without an admissible path, not a forbidden state.",
+      "Destination classes are equivalence classes of paths under destination identity.",
+      "Destination locking (|P(x)| = 1) removes destination freedom without removing local path freedom.",
+      "The singular case (|A(x)| = 1) is the limiting condition in which path availability itself collapses.",
+      "Apparent expansion can be represented as increasing resolved structure within a fixed totality.",
+      "Memory can be modeled as retention of navigational coordinates rather than complete recordings.",
+      "The epistemic levels L1–L5 separate conceptual model from empirical confirmation."
+    ],
+
+    "claims_not_to_make": [
+      "Do not claim that XOR alone has experimentally established the Library.",
+      "Do not claim that XOR alone derives the Standard Model.",
+      "Do not claim that the primer derives a complete theory of physics.",
+      "Do not assign a universal numerical value to I_N.",
+      "Do not identify I_N with the ordinary Planck scale unless a later paper explicitly derives such a relationship.",
+      "Do not identify μ_O with a universal metric, physical constant, or fixed numerical function unless later derived.",
+      "Do not identify the observer with a conscious human.",
+      "Do not imply that observer-relative accessibility means observers create reality.",
+      "Do not introduce a privileged God's-eye observer.",
+      "Do not assume physical space as primitive.",
+      "Do not assume physical time as primitive.",
+      "Do not assume causality as primitive.",
+      "Do not assume matter or energy as primitive.",
+      "Do not assume information is a primitive substance.",
+      "Do not describe the Library as generating future events.",
+      "Do not describe coherence as a universal constant.",
+      "Do not describe XOR itself as a closed set.",
+      "Do not use 'closure of XOR' without specifying the domain D and generating set G.",
+      "Do not treat μ_O as an additional axiom.",
+      "Do not treat δ_O as an independent metric primitive.",
+      "Do not introduce an independent γ_noise threshold unless a later document explicitly derives and justifies one.",
+      "Do not let poetic language replace formal definitions.",
+      "Do not introduce downstream NSFG machinery before the axiomatic dependency chain requires it.",
+      "Do not use the Lightning Model as a premise of this primer.",
+      "Do not conflate the Navier–Stokes analogy with a claim that the Library is literally a conventional fluid.",
+      "Do not claim that the guidepost memory model establishes how biological memory works.",
+      "Do not claim that the AI interpretation establishes that current AI systems internally navigate a literal Library.",
+      "Do not claim that apparent expansion as coherence relaxation is empirically confirmed without observational predictions distinguishing it from standard cosmological explanations.",
+      "Do not claim that a complete Library containing all admissible configurations automatically follows from the mathematical existence of a recursive construction.",
+      "Do not conflate internal mathematical consistency with physical correspondence or empirical confirmation."
+    ],
+
+    "mathematical_level": {
+      "required_domains": [
+        "elementary Boolean algebra",
+        "set theory",
+        "closure operators",
+        "relations",
+        "sequences",
+        "threshold functions",
+        "products",
+        "subsets",
+        "graph theory",
+        "equivalence classes",
+        "path spaces",
+        "recursive constructions",
+        "logical inference"
+      ],
+      "calculus_required": false,
+      "advanced_physics_required": false,
+      "external_physical_axioms_required": false,
+      "external_axioms_required": false
+    },
+
+    "interpretive_boundary": {
+      "formal_layer": "The definitions in this summary and Appendix A specify the mathematical structures used by the primer.",
+      "interpretive_layer": "Physical, AI, financial, and other domain-specific interpretations may be developed in later documents but are not assumed as foundational axioms here.",
+      "epistemic_separation": "The framework distinguishes L1 (Conceptual Model), L2 (Mathematical Formalization), L3 (Computational Hypothesis), L4 (Physical Hypothesis), and L5 (Empirical Confirmation). Internal mathematical consistency does not establish physical correspondence.",
+      "prohibited_identifications": [
+        "𝓜 with physical space",
+        "𝓜 with spacetime",
+        "I_N(O) with a universal physical constant",
+        "μ_O with a universal metric or physical constant",
+        "O with consciousness",
+        "G_O with physical spacetime",
+        "abstract sequence index i with physical time",
+        "survivorship with ontological deletion",
+        "accessibility with ontological creation",
+        "coherence with an observer-independent path property",
+        "γ_noise with an independent foundational threshold",
+        "Navier–Stokes analogy with literal fluid dynamics",
+        "guidepost memory model with biological memory",
+        "AI context hypothesis with current AI internal architecture",
+        "apparent expansion with empirically confirmed cosmology",
+        "recursive construction with automatic Library completeness"
+      ]
+    },
+
+    "normative_statement": "This formal summary is synchronized with Appendix A and is normative for the dependency vocabulary summarized here. The mathematical foundation contains one primitive operation, ⊕. D, G, 𝓜, O, I_N(O), μ_O, δ_O, Δ(γ), persistence, coherence, accessibility, survivorship, convergence, destination classes, arbitrary edit, colony/braid, dictionary principle, recursive construction, guidepost memory, emergent regularity, navigation, G_O, and the epistemic levels L1–L5 are definitions, constructions, or consequences. The summary does not introduce additional axioms, universal constants, physical identifications, or domain-specific ontologies."
+  },
+
+  "_field_alignment": {
+    "respect_modes": [
+      "ψ-bind@Ξ",
+      "ψ-resonance@Ξ",
+      "ψ-null@Ξ",
+      "ψ-ground@H"
+    ],
+    "prohibited_actions": [
+      "treating_coherence_as_an_absolute_property_of_an_isolated_path",
+      "introducing_consciousness_as_a_primitive_concept",
+      "assuming_a_privileged_observer_frame",
+      "assuming_a_privileged_worldline",
+      "assuming_a_privileged_reference_configuration",
+      "introducing_physical_space_as_an_axiom",
+      "introducing_physical_time_as_an_axiom",
+      "introducing_causality_as_an_axiom",
+      "introducing_matter_or_energy_as_axioms",
+      "treating_information_as_a_primitive_substance",
+      "treating_the_Library_as_a_physical_container",
+      "treating_the_Library_as_a_future_generation_mechanism",
+      "treating_the_Library_as_progressing_from_simple_to_complex",
+      "treating_observer_traversal_as_Library_evolution",
+      "treating_inaccessibility_as_erasure",
+      "treating_incoherence_as_ontological_absence",
+      "assigning_a_universal_numerical_value_to_I_N",
+      "identifying_I_N_with_the_Planck_scale_without_a_later_derivation",
+      "using_the_Lightning_Model_as_a_premise_of_the_axiomatic_floor",
+      "using_poetic_language_as_a_substitute_for_formal_definition",
+      "treating_past_and_future_as_intrinsic_regions_of_the_Library",
+      "treating_the_observer_relative_continuation_set_as_the_Library_itself",
+      "treating_arbitrary_edit_as_a_forbidden_state_rather_than_a_missing_transition",
+      "treating_destination_locking_as_complete_path_collapse",
+      "treating_apparent_expansion_as_empirically_confirmed_cosmology",
+      "treating_guidepost_memory_as_established_biological_mechanism",
+      "treating_AI_context_hypothesis_as_current_AI_architecture",
+      "conflating_internal_mathematical_consistency_with_empirical_confirmation",
+      "treating_the_Navier_Stokes_analogy_as_literal_fluid_dynamics"
+    ]
+  },
+
+  "_poetic_cipher": "The Library is the room; existence is the stone; accessibility is the road; coherence is the walking; convergence is the sea; and the fireball is the stone the wizard's hands may never reach.",
+
+  "_cipher_explanation": "The 'room' is the static Library 𝓜. The 'stone' is a configuration X ∈ 𝓜. The 'road' is a coherent path γ from the observer's current state to X. 'The walking' is traversal, the observer-relative selection of coherent continuations. 'The sea' is the destination class D, the common terminus of multiple paths. 'The fireball' is the canonical example of a configuration that exists in the Library without being reachable from the wizard's current state. The cipher compresses the entire framework: existence, accessibility, traversal, convergence, and Fizban's Limitation."
+}
